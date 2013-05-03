@@ -1,7 +1,7 @@
 <?php
 
 
-	// import the design list
+	// import common functions & the design list
 	include($SERVER_ROOT . "includes/functions.php");
 
 
