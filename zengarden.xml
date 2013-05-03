@@ -1,0 +1,60 @@
+<?xml  version="1.0"?>
+
+<rss version="2.0">
+
+<channel>
+
+<title>css Zen Garden</title>
+
+<description>A demonstration of what can be accomplished visually through CSS-based design. This feed announces the past 8 new entries.</description>
+<link>http://www.csszengarden.com/</link>
+<language>en-ca</language>
+<webMaster>dave@example.com</webMaster>
+
+<lastBuildDate>Thurs, 17 Apr 2008 23:10:00 PST</lastBuildDate>
+
+<item>
+  <title>#213 - 17 Apr 2008</title>
+  <description>'Under the Sea!' by Eric Stoltz</description>
+  <link>http://www.csszengarden.com/?cssfile=213/213.css</link>
+</item>
+
+<item>
+  <title>#212 - 17 Apr 2008</title>
+  <description>'Make 'em Proud!' by Michael McAghon and Scotty Reifsnyder</description>
+  <link>http://www.csszengarden.com/?cssfile=212/212.css</link>
+</item>
+
+<item>
+  <title>#211 - 17 Apr 2008</title>
+  <description>'Orchid Beauty' by Kevin Addison</description>
+  <link>http://www.csszengarden.com/?cssfile=211/211.css</link>
+</item>
+
+<item>
+  <title>#210 - 17 Apr 2008</title>
+  <description>'Oceanscape' by Justin Gray</description>
+  <link>http://www.csszengarden.com/?cssfile=210/210.css</link>
+</item>
+
+<item>
+  <title>#209 - 21 Nov 2007</title>
+  <description>'CSS Co., Ltd.' by Benjamin Klemm</description>
+  <link>http://www.csszengarden.com/?cssfile=209/209.css</link>
+</item>
+
+<item>
+  <title>#208 - 21 Nov 2007</title>
+  <description>'Sakura' by Tatsuya Uchida</description>
+  <link>http://www.csszengarden.com/?cssfile=208/208.css</link>
+</item>
+
+<item>
+  <title>#207 - 15 Nov 2007</title>
+  <description>'Kyoto Forest' by John Politowski</description>
+  <link>http://www.csszengarden.com/?cssfile=207/207.css</link>
+</item>
+
+
+</channel>
+</rss> 

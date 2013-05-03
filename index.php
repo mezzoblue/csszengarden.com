@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+
+
+	// import the design list
+	include($SERVER_ROOT . "includes/functions.php");
+
+
+?><!DOCTYPE html >
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -7,22 +14,14 @@
 	<meta name="robots" content="all">
 	<title>css Zen Garden: The Beauty in CSS Design</title>
 
-	<style title="currentStyle" media="screen">
-		@import "/001/001.css";
-	</style>
+	<link rel="stylesheet" media="screen" href="<?= $currentDesign; ?>"></style>
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
 </head>
 
-<!--
+<!-- 
 
 
-	This html document is marked up to provide the designer with the maximum possible flexibility.
-	There are more classes and extraneous tags than needed, and in a real world situation, it's more
-	likely that it would be much leaner.
-	
-	However, I think we can all agree that even given that, we're still better off than if this had been
-	built with tables.
-
+	to do: a new comment for people viewing source
 
 -->
 
@@ -60,7 +59,8 @@
 			<p class="p1"><span>Graphic artists only please. You are modifying this page, so strong <abbr title="Cascading Style Sheets">CSS</abbr> skills are necessary, but the example files are commented well enough that even <abbr title="Cascading Style Sheets">CSS</abbr> novices can use them as starting points. Please see the <a href="http://www.mezzoblue.com/zengarden/resources/" title="A listing of CSS-related resources"><abbr title="Cascading Style Sheets">CSS</abbr> Resource Guide</a> for advanced tutorials and tips on working with <abbr title="Cascading Style Sheets">CSS</abbr>.</span></p>
 			<p class="p2"><span>You may modify the style sheet in any way you wish, but not the <abbr title="HyperText Markup Language">HTML</abbr>. This may seem daunting at first if you&#8217;ve never worked this way before, but follow the listed links to learn more, and use the sample files as a guide.</span></p>
 			<p class="p3"><span>Download the sample <a href="/zengarden-sample.html" title="This page's source HTML code, not to be modified.">html file</a> and <a href="/zengarden-sample.css" title="This page's sample CSS, the file you may modify.">css file</a> to work on a copy locally. Once you have completed your masterpiece (and please, don&#8217;t submit half-finished work) upload your .css file to a web server under your control. <a href="http://www.mezzoblue.com/zengarden/submit/" title="Use the contact form to send us your CSS file">Send us a link</a> to the file and if we choose to use it, we will spider the associated images. Final submissions will be placed on our server.</span></p>
-					</div>
+			<? /*<p class="p4"><span>update: I&#8217;m looking for translators. If you are fluent in English and another language, this is another way to get involved with the project. Please <a href="http://www.mezzoblue.com/contact/" title="Send me an e-mail mentioning which languages you are fluent in.">contact me</a> for details. Existing translations are <a href="http://www.mezzoblue.com/zengarden/translations/">available</a>.</span></p>*/ ?>
+		</div>
 
 		<div id="benefits">
 			<h3><span>Benefits</span></h3>
@@ -77,11 +77,11 @@
 		</div>
 
 		<div id="footer">
-			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML">html</a> &nbsp; 
-			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS">css</a> &nbsp; 
-			<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">cc</a> &nbsp;
+			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML">HTML</a> &nbsp; 
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS">CSS</a> &nbsp; 
+			<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">CC</a> &nbsp;
 			<a href="http://mezzoblue.com/zengarden/faq/#s508" title="Read about the accessibility of this site">508</a> &nbsp;
-			<a href="http://www.mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site">aaa</a>
+			<a href="http://www.mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site">AAA</a>
 		</div>
 
 	</div>
@@ -92,32 +92,68 @@
 			<div id="lselect">
 				<h3 class="select"><span>Select a Design:</span></h3>
 				<ul>
-					<li><a href="?cssfile=/213/213.css&amp;page=0" title="AccessKey: a" accesskey="a">Under the Sea!</a> by <a href="http://www.ericstoltz.com/" class="c">Eric Stoltz</a></li>
-					<li><a href="?cssfile=/212/212.css&amp;page=0" title="AccessKey: b" accesskey="b">Make &#8217;em Proud</a> by <a href="http://skybased.com/" class="c">Michael McAghon and Scotty Reifsnyder</a></li>
-					<li><a href="?cssfile=/211/211.css&amp;page=0" title="AccessKey: c" accesskey="c">Orchid Beauty</a> by <a href="http://www.kevinaddison.com/" class="c">Kevin Addison</a></li>
-					<li><a href="?cssfile=/210/210.css&amp;page=0" title="AccessKey: d" accesskey="d">Oceanscape</a> by <a href="http://www.pixel-house.com.au/" class="c">Justin Gray</a></li>
-					<li><a href="?cssfile=/209/209.css&amp;page=0" title="AccessKey: e" accesskey="e">CSS Co., Ltd.</a> by <a href="http://www.benklemm.de/" class="c">Benjamin Klemm</a></li>
-					<li><a href="?cssfile=/208/208.css&amp;page=0" title="AccessKey: f" accesskey="f">Sakura</a> by <a href="http://www.re-bloom.com/" class="c">Tatsuya Uchida</a></li>
-					<li><a href="?cssfile=/207/207.css&amp;page=0" title="AccessKey: g" accesskey="g">Kyoto Forest</a> by <a href="http://rpmdesignfactory.com/" class="c">John Politowski</a></li>
-					<li><a href="?cssfile=/206/206.css&amp;page=0" title="AccessKey: h" accesskey="h">A Walk in the Garden</a> by <a href="http://users.skynet.be/bk316398/temp.html" class="c">Simon Van Hauwermeiren</a></li>
+<?php
+		echo getDesignList($listStart, $numDesigns, $designList);
+?>
 				</ul>
 			</div>
 
 			<div id="larchives">
 				<h3 class="archives"><span>Archives:</span></h3>
 				<ul>
-					<li><a href="/?cssfile=/001/001.css&amp;page=1" title="View next set of designs. AccessKey: n" accesskey="n"><span class="accesskey">n</span>ext designs &raquo;</a></li>
-					<li><a href="http://www.mezzoblue.com/zengarden/alldesigns/" title="View every submission to the Zen Garden. AccessKey: w" accesskey="w">Vie<span class="accesskey">w</span> All Designs</a></li>
+<?
+	if ($listStart > $numDesigns) {
+?>
+					<li>
+						<a href="?cssfile=<?= $currentDesign ?>&amp;page=<?= $thisPage + 1 ?>">
+							Next Designs <span class="indicator">&raquo;</span>
+						</a>
+					</li>
+<?
+	}
+
+	if ($thisPage > 0) {
+?>
+					<li>
+						<a href="?cssfile=<?= $currentDesign ?>&amp;page=<?= $thisPage - 1 ?>">
+							<span class="indicator">&laquo;</span> Previous Designs
+						</a>
+					</li>
+<?
+	}
+?>
+					<li><a href="http://www.mezzoblue.com/zengarden/alldesigns/" title="View every submission to the Zen Garden.">View All Designs</a></li>
 				</ul>
 			</div>
 			
 			<div id="lresources">
 				<h3 class="resources"><span>Resources:</span></h3>
 				<ul>
-					<li><a href="/001/001.css" title="View the source CSS file for the currently-viewed design, AccessKey: v" accesskey="v"><span class="accesskey">V</span>iew This Design&#8217;s <abbr title="Cascading Style Sheets">CSS</abbr></a></li>					<li><a href="http://www.mezzoblue.com/zengarden/resources/" title="Links to great sites with information on using CSS. AccessKey: r" accesskey="r"><abbr title="Cascading Style Sheets">CSS</abbr> <span class="accesskey">R</span>esources</a></li>
-					<li><a href="http://www.mezzoblue.com/zengarden/faq/" title="A list of Frequently Asked Questions about the Zen Garden. AccessKey: q" accesskey="q"><abbr title="Frequently Asked Questions">FA<span class="accesskey">Q</span></abbr></a></li>
-					<li><a href="http://www.mezzoblue.com/zengarden/submit/" title="Send in your own CSS file. AccessKey: s" accesskey="s"><span class="accesskey">S</span>ubmit a Design</a></li>
-					<li><a href="http://www.mezzoblue.com/zengarden/translations/" title="View translated versions of this page. AccessKey: t" accesskey="t"><span class="accesskey">T</span>ranslations</a></li>
+					<li>
+						<a href="<?= $currentDesign ?>" title="View the source CSS file of the currently-viewed design.">
+							View This Design&#8217;s <abbr title=\"Cascading Style Sheets\">CSS</abbr>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.mezzoblue.com/zengarden/resources/" title="Links to great sites with information on using CSS.">
+							<abbr title="Cascading Style Sheets">CSS</abbr> Resources
+						</a>
+					</li>
+					<li>
+						<a href="http://www.mezzoblue.com/zengarden/faq/" title="A list of Frequently Asked Questions about the Zen Garden.">
+							<abbr title="Frequently Asked Questions">FAQ</abbr>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.mezzoblue.com/zengarden/submit/" title="Send in your own CSS file.">
+							Submit a Design
+						</a>
+					</li>
+					<li>
+						<a href="http://www.mezzoblue.com/zengarden/translations/" title="View translated versions of this page.">
+							Translations
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
