@@ -1,0 +1,115 @@
+<?xml  version="1.0"?>
+
+<rss version="2.0">
+
+<channel>
+
+<title>css Zen Garden</title>
+
+<description>A demonstration of what can be accomplished visually through CSS-based design. This feed announces the past 15 new entries.</description>
+
+<link>http://www.csszengarden.com/</link>
+
+<language>en-ca</language>
+
+<webMaster>dave@mezzoblue.com</webMaster>
+
+<lastBuildDate>Mon, 6 Oct 2003 13:35:00 PST</lastBuildDate>
+
+<item>
+<title>047 - 10/06/03</title>
+<description>dusk by Jon Hicks</description>
+<link>http://www.csszengarden.com/?cssfile=/047/047.css</link>
+</item>
+
+<item>
+<title>046 - 09/29/03</title>
+<description>sub:lime by Andy Budd</description>
+<link>http://www.csszengarden.com/?cssfile=/046/046.css</link>
+</item>
+
+
+<item>
+<title>045 - 9/26/03</title>
+<description>I Dream in Colour by Jeff Bilen</description>
+<link>http://www.csszengarden.com/?cssfile=/045/045.css</link>
+</item>
+
+<item>
+<title>044 - 9/09/03</title>
+<description>si6 by Shaun Inman</description>
+<link>http://www.csszengarden.com/?cssfile=/044/044.css</link>
+</item>
+
+<item>
+<title>043 - 9/08/03</title>
+<description>Burning by Kevin &#038; Ethel Davis</description>
+<link>http://www.csszengarden.com/?cssfile=/043/043.css</link>
+</item>
+
+<item>
+<title>042 - 9/08/03</title>
+<description>Stone Washed by Andrew Hayward</description>
+<link>http://www.csszengarden.com/?cssfile=/042/042.css</link>
+</item>
+
+<item>
+<title>041 - 8/27/03</title>
+<description>door to my garden by Patrick H. Lauke</description>
+<link>http://www.csszengarden.com/?cssfile=/041/041.css</link>
+</item>
+
+<item>
+<title>040 - 8/27/03</title>
+<description>The Question Why by Diane Clayton</description>
+<link>http://www.csszengarden.com/?cssfile=/040/040.css</link>
+</item>
+
+<item>
+<title>039 - 8/15/03</title>
+<description>Erratic Blue by Ian Main</description>
+<link>http://www.csszengarden.com/?cssfile=/039/039.css</link>
+</item>
+
+<item>
+<title>038 - 8/14/03</title>
+<description>Creepy Crawly by Luke Redpath</description>
+<link>http://www.csszengarden.com/?cssfile=/038/038.css</link>
+</item>
+
+<item>
+<title>037 - 8/08/03</title>
+<description>pr&#234;t-&#224;-porter by Minz Meyer</description>
+<link>http://www.csszengarden.com/?cssfile=/037/037.css</link>
+</item>
+
+<item>
+<title>036 - 8/01/03</title>
+<description>White Lily by Jens Kristensen</description>
+<link>http://www.csszengarden.com/?cssfile=/036/036.css</link>
+</item>
+<item>
+<title>035 - 07/31/03</title>
+<description>Release One by Didier Hilhorst</description>
+<link>http://www.csszengarden.com/?cssfile=/035/035.css</link>
+</item>
+<item>
+<title>034 - 07/30/03</title>
+<description>zengrounds by Andrea Piernock</description>
+<link>http://www.csszengarden.com/?cssfile=/034/034.css</link>
+</item>
+
+<item>
+<title>033 - 07/30/03</title>
+<description>Fleur-de-lys by Claire Campbell</description>
+<link>http://www.csszengarden.com/?cssfile=/033/033.css</link>
+</item>
+
+<item>
+<title>032 - 07/30/03</title>
+<description>Crab Apple by Jai Brinkofski</description>
+<link>http://www.csszengarden.com/?cssfile=/032/032.css</link>
+</item>
+
+</channel>
+</rss> 
