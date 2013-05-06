@@ -270,7 +270,7 @@ footer a:link, footer a:visited {
 	color: #00CCFF;
 	}
 	
-#extra1 { 
+.extra1 { 
 	background: transparent url(mole.jpg) bottom left no-repeat; 
 	position: absolute;
 	top: 0px;

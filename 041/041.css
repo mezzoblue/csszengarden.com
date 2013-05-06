@@ -192,7 +192,7 @@ p:hover a {
 
 /* and now...the extras */
 
-#extra1 {
+.extra1 {
 	/* this one makes up for the screwy handling of the flower background on .design-selection in IE */
 	position: absolute;
 	top: 165px;
@@ -202,13 +202,13 @@ p:hover a {
 	height: 150px;
 }
 
-body>#extra1 {
+body>.extra1 {
 	/* and this reverses the previous rule for those browsers (i.e. non IE ones) that already showed
 	the flower background correctly as it was applied to .design-selection */
 	display: none;
 }
 
 
-#extra2, #extra3, #extra4, #extra5, #extra6 {
+.extra2, .extra3, .extra4, .extra5, .extra6 {
 	display: none;
 }

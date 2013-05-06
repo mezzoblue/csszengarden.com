@@ -49,7 +49,7 @@ a:hover {
 /* ------------------------------------------------------------ */
 
 /* big grey stripe */
-#extra1 {
+.extra1 {
 	background: #666 url(end_block.gif) no-repeat right top;
 	position: absolute;
 	left: 10px;
@@ -60,7 +60,7 @@ a:hover {
 }
 
 /* top left corner image of big grey stripe */
-#extra1 span{
+.extra1 span{
 	display: block;
 	background: url(corner.gif) no-repeat left top;
 	width: 360px;

@@ -64,7 +64,7 @@ header {
 	width: 306px;
 }
 
-#extra3 {
+.extra3 {
 	position: absolute;
 	right: 30px;
 	top: 280px;
@@ -326,7 +326,7 @@ a:hover, a:focus {
 	text-decoration: underline;
 }
 
-#extra1 {
+.extra1 {
 	position: absolute;
 	background-image: url(validation.gif);
 	background-repeat: no-repeat;
@@ -353,7 +353,7 @@ footer {
 	width: 228px;
 }
 
-#extra2 {
+.extra2 {
 	position: absolute;
 	background-image: url(download.gif);
 	background-repeat: no-repeat;

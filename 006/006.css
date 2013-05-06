@@ -192,7 +192,7 @@ footer a:link, footer a:visited {
 	color: #FF0000;
 	}
 
-#extra1 { 
+.extra1 { 
 	background: transparent;
 	position: absolute; 
 	top: 40px; 

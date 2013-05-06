@@ -283,6 +283,6 @@ a.designer-name:link, a.designer-name:visited, a.designer-name:hover, a.designer
 	font-weight:normal;
 }
 
-#extra1, #extra2 {
+.extra1, .extra2 {
 	display:none;
 }

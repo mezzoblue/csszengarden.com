@@ -299,7 +299,7 @@ footer a:link, footer a:visited {
 
 
 /* extra divs */
-#extra1 {
+.extra1 {
 	margin: 10px 0 0 410px; 
 	background: url(sig.gif) no-repeat bottom right;
 }

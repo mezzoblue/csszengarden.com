@@ -339,7 +339,7 @@ text-decoration: none;
 
 /* images */
 
-#extra1 {
+.extra1 {
 position: absolute;
 top: 0;
 left: 150px;
@@ -349,7 +349,7 @@ color: #000;
 background: transparent url(beauty.gif) top left no-repeat;
 z-index: 5;
 }
-#extra2 {
+.extra2 {
 position: absolute;
 top: 218px;
 left: 139px;
@@ -358,7 +358,7 @@ height: 17px;
 color: #fff;
 background: transparent url(streifen.gif) top left no-repeat;
 }
-#extra3 {
+.extra3 {
 position: absolute;
 top: 0;
 right: 0;
@@ -368,7 +368,7 @@ color: #000;
 background: transparent url(graeser.gif) top right no-repeat;
 z-index: 2;
 }
-#extra4 {
+.extra4 {
 position: absolute;
 top: 235px;
 left: 244px;

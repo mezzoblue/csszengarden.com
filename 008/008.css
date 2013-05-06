@@ -60,7 +60,7 @@ body {
 	z-index:2;
 	}
 
-#extra1 {
+.extra1 {
 	background-image:url(tunami2.jpg);
 	position:absolute;
 	left:0px;

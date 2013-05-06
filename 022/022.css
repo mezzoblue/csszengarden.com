@@ -312,7 +312,7 @@ footer {
 	margin-bottom: 5px;
 	}
 /* leaf */
-#extra1 {
+.extra1 {
 	background-image: url(z_cont.gif);
 	background-repeat: no-repeat;
 	position: absolute;

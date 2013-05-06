@@ -187,7 +187,7 @@ header h2 span {
 	display: inline;
 }
 
-#extra1 {
+.extra1 {
 	background-image: url(platform.png);
 	position: fixed;
 	top: 270px;
@@ -197,7 +197,7 @@ header h2 span {
 	margin: -85px;
 }
 
-#extra2 {
+.extra2 {
 	background-image: url(edge_bottom_black.gif);
 	background-repeat: repeat-x;
 	position: fixed;
@@ -208,7 +208,7 @@ header h2 span {
 	margin-left: -100%;
 }
 
-#extra3 {
+.extra3 {
 	background-image: url(edge_top_black.gif);
 	background-repeat: repeat-x;
 	position: fixed;
@@ -219,7 +219,7 @@ header h2 span {
 	margin-left: -100%;
 }
 
-#extra4 {
+.extra4 {
 	background-image: url(edge_left_black.gif);
 	background-repeat: repeat-y;
 	position: fixed;
@@ -230,7 +230,7 @@ header h2 span {
 	margin: 0;
 }
 
-#extra5 {
+.extra5 {
 	background-image: url(edge_right_black.gif);
 	background-repeat: repeat-y;
 	position: fixed;

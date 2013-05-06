@@ -94,7 +94,7 @@ footer{
 
 /* Cosmetics */
 
-#extra1 {
+.extra1 {
 	background-image:url(background.jpg);
 	background-repeat:no-repeat;
 	position:absolute;

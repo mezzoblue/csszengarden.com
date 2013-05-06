@@ -299,7 +299,7 @@ background: #f0e7d7 url(linkbg.jpg) no-repeat 0% 0%;
 border-color: #aaab9c #ffe #ffe #ccc;
 }
 
-#extra1	{
+.extra1	{
 clear:both;
 display: block;
 position: relative;
@@ -313,5 +313,5 @@ height: 17px;
 width: 760px;
 }
 
-#extraDiv span #extra2, #extra3, #extra4, #extra5, #extra6	
+#extraDiv span .extra2, .extra3, .extra4, .extra5, .extra6	
 {display: none;}

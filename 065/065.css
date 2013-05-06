@@ -263,7 +263,7 @@ footer a {
 
 /* ----- Extra images ----- */
 
-#extra1 {
+.extra1 {
   position:absolute;
   top:220px;
   left:320px;
@@ -273,13 +273,13 @@ footer a {
   z-index:10;
 }
 
-#extra2 {
+.extra2 {
   position:relative;
   display:block;
   height:0px;
 }
 
-#extra2 span{
+.extra2 span{
   position:absolute;
   bottom:20px;
   right:10%;
@@ -289,7 +289,7 @@ footer a {
   z-index:0;
 }
 
- #extra3 {
+ .extra3 {
   position:absolute;
   top:0px;
   left:0px;
@@ -299,13 +299,13 @@ footer a {
   z-index:0;
 } 
 
-#extra4 {
+.extra4 {
   position:relative;
   display:block;
   height:0px;
 }
 
- #extra4 span {
+ .extra4 span {
   position:absolute;
   bottom:200px;
   right:0px;

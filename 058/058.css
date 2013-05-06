@@ -457,7 +457,7 @@ header h2 span {
 	display:none
 	}
 
-#extra1 {
+.extra1 {
 	position: absolute;
 	width: 1600px;
 	height: 400px;
@@ -468,7 +468,7 @@ header h2 span {
 	z-index: 0;
 	}
 
-#extra2 {
+.extra2 {
 	position: absolute;
 	width: 321px;
 	height: 194px;

@@ -426,7 +426,7 @@ abbr {
 
 
 /* EXTRAS */
-	div#extra1 {
+	div.extra1 {
 		z-index:11;
 		position:absolute;
 		top:68px;
@@ -437,7 +437,7 @@ abbr {
 		
 		background: url("stamp.jpg") no-repeat top left;
 	}
-	div#extra2 {
+	div.extra2 {
 		z-index:11;
 		position:absolute;
 		top:260px;
@@ -452,7 +452,7 @@ abbr {
 		border-style:solid;
 		border-color:white;
 	}
-	div#extra3 {
+	div.extra3 {
 		z-index:2;
 		position:absolute;
 		top:265px;

@@ -20,7 +20,7 @@ body {
 	margin: 0; 
   }
 
-#extra1 {
+.extra1 {
 	z-index: 0;
 	background: #030409 url(bg_body.jpg) no-repeat top left; 
 	position: absolute;

@@ -79,7 +79,7 @@ footer a:visited         { font: bold 12px/15px Georgia, serif; color: #600; bac
 .sidebar li a:active     { color: #6CF; }
 .design-selection li a.designer-name:hover, 
 .sidebar li a.designer-name:active   { color: #6CF; }
-#extra1                { }
+.extra1                { }
 
 /* Mozilla - Safari - Opera */
 
@@ -160,4 +160,4 @@ body[id=css-zen-garden] .sidebar li a:link       { color: #f90; }
 body[id=css-zen-garden] .sidebar li a:visited    { color: #f90; }
 body[id=css-zen-garden] .sidebar li a:hover, 
 body[id=css-zen-garden] .sidebar li a:active     { color: #6CF; }
-body[id=css-zen-garden] #extra1                { position: absolute; top: 105px; left: 200px; width: 250px; height: 350px; background: url(intro.png) no-repeat left top; }
+body[id=css-zen-garden] .extra1                { position: absolute; top: 105px; left: 200px; width: 250px; height: 350px; background: url(intro.png) no-repeat left top; }
