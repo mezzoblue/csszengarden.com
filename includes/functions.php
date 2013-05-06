@@ -15,7 +15,7 @@
 		for ($i = $start - 1; $i >= ($start - $count); $i--) {
 	
 			$id = $list[$i][0];
-			$designURL = "/$id/$id.css";
+			$designURL = "?cssfile=/$id/$id.css";
 			$designName = $list[$i][1];
 			$designerName = $list[$i][2];
 			$designerURL = $list[$i][3];
