@@ -422,7 +422,66 @@ $designList = array(
 			"Cedric Savarese",
 			"http://www.4213miles.com/",
 	),
-
+	array(
+			"071",
+			"Garden Party",
+			"Bobby van der Sluis",
+			"http://www.bobbyvandersluis.com/",
+	),
+	array(
+			"072",
+			"Outburst",
+			"Chris Vincent",
+			"#",
+	),
+	array(
+			"073",
+			"Emmakade",
+			"Alexander Christiaan Jacob (ACJ)",
+			"http://acjs.net/",
+	),
+	array(
+			"074",
+			"Egyptian Dawn",
+			"James Abbott",
+			"mailto:jambot@hotmail.com",
+	),
+	array(
+			"075",
+			"Lost HighWay",
+			"Julien Roumagnac",
+			"http://www.j-roumagnac.net/",
+	),
+	array(
+			"076",
+			"Lotus",
+			"Chika",
+			"http://deja.boo.jp/japdsn/",
+	),
+	array(
+			"077",
+			"Hop",
+			"Guillaume Lahalle",
+			"#",
+	),
+	array(
+			"078",
+			"Muto Verde",
+			"Alex Taylor",
+			"#",
+	),
+	array(
+			"079",
+			"Green Tea",
+			"Amy Rae Som",
+			"http://www.avisualmind.com/",
+	),
+	array(
+			"080",
+			"Zen Pool",
+			"Clinton Barth",
+			"http://www.516media.com/",
+	),
 
 
 
