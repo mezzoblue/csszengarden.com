@@ -68,7 +68,7 @@ abbr {
 	text-decoration: none;
 	border-width: 0px;
 	}
-#container {
+.page-wrapper {
 	width: 744px;
 	}
 
@@ -99,36 +99,36 @@ header h2 {
 	}
 header h1 span,
 header h2 span,
-#preamble h3 span,
-#explanation h3 span,
-#participation h3 span,
-#benefits h3 span,
-#requirements h3 span,
+.preamble h3 span,
+.explanation h3 span,
+.participation h3 span,
+.benefits h3 span,
+.requirements h3 span,
 .design-selection h3 span,
 #lfavorites h3 span,
 .design-archives h3 span,
 .zen-resources h3 span	{ display: none; }
 
-#quickSummary p { color: #828200; }
-#quickSummary a,
-#quickSummary a:visited {
+.summary p { color: #828200; }
+.summary a,
+.summary a:visited {
 	color: #626200;
 	text-decoration: none;
 	border-bottom: 2px solid #979600;
 	}
-#quickSummary a:hover { color: #A2A200; border-bottom: 2px solid #C7C600; }
-#quickSummary		{ margin-top: 144px; width: 608px; }
-#quickSummary p.p1	{ background: url(p1_on_yellow.gif) no-repeat; }
-#quickSummary p.p2 	{ background: url(p2_on_yellow.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
+.summary a:hover { color: #A2A200; border-bottom: 2px solid #C7C600; }
+.summary		{ margin-top: 144px; width: 608px; }
+.summary p.p1	{ background: url(p1_on_yellow.gif) no-repeat; }
+.summary p.p2 	{ background: url(p2_on_yellow.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
 
-#preamble,
-#explanation,
-#participation,
-#benefits,
-#requirements,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
 footer { position: relative; }
 
-#preamble h3 {
+.preamble h3 {
 	position: absolute;
 	top: -11px;
 	left: 88px;
@@ -138,13 +138,13 @@ footer { position: relative; }
 	height: 22px;
 	}
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
-* html*#preamble h3 { left: 53px; }
+* html*.preamble h3 { left: 53px; }
 /* GOTTA WAKE UP IE5 MAC! */
-#preamble p.p1 { background: url(p1_cropped.gif) no-repeat; }
-#preamble p.p2 { background: url(p2_cropped.gif) no-repeat; }
-#preamble p.p3 { background: url(p3_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
+.preamble p.p1 { background: url(p1_cropped.gif) no-repeat; }
+.preamble p.p2 { background: url(p2_cropped.gif) no-repeat; }
+.preamble p.p3 { background: url(p3_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
 
-#explanation h3 {
+.explanation h3 {
 	position: absolute;
 	top: -12px;
 	left: 89px;
@@ -154,12 +154,12 @@ footer { position: relative; }
 	height: 23px;
 	}
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
-* html*#explanation h3 { left: 54px; }
+* html*.explanation h3 { left: 54px; }
 /* GOTTA WAKE UP IE5 MAC! */
-#explanation p.p1 { background: url(p1_unlabeled.gif) no-repeat; }
-#explanation p.p2 { padding-bottom: 0px; margin-bottom: 16px; }
+.explanation p.p1 { background: url(p1_unlabeled.gif) no-repeat; }
+.explanation p.p2 { padding-bottom: 0px; margin-bottom: 16px; }
 
-#participation h3 {
+.participation h3 {
 	position: absolute;
 	top: -11px;
 	left: 86px;
@@ -169,11 +169,11 @@ footer { position: relative; }
 	height: 22px;
 	}
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
-* html*#participation h3 { left: 51px; }
+* html*.participation h3 { left: 51px; }
 /* GOTTA WAKE UP IE5 MAC! */
-#participation p.p4 { padding-bottom: 0px; margin-bottom: 16px; }
+.participation p.p4 { padding-bottom: 0px; margin-bottom: 16px; }
 
-#benefits h3 {
+.benefits h3 {
 	position: absolute;
 	top: -11px;
 	left: 88px;
@@ -183,11 +183,11 @@ footer { position: relative; }
 	height: 22px;
 	}
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
-* html*#benefits h3 { left: 53px; }
+* html*.benefits h3 { left: 53px; }
 /* GOTTA WAKE UP IE5 MAC! */
-#benefits p.p1 { padding-bottom: 0px; margin-bottom: 16px; }
+.benefits p.p1 { padding-bottom: 0px; margin-bottom: 16px; }
 
-#requirements h3 {
+.requirements h3 {
 	position: absolute;
 	top: -11px;
 	left: 89px;
@@ -197,10 +197,10 @@ footer { position: relative; }
 	height: 22px;
 	}
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
-* html*#requirements h3 { left: 54px; }
+* html*.requirements h3 { left: 54px; }
 /* GOTTA WAKE UP IE5 MAC! */
-#requirements p.p4 { background: url(p4_on_blue.gif) no-repeat; }	
-#requirements p.p5 { background: url(p5_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }	
+.requirements p.p4 { background: url(p4_on_blue.gif) no-repeat; }	
+.requirements p.p5 { background: url(p5_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }	
 
 .sidebar {
 	position: absolute;
@@ -290,7 +290,7 @@ footer a	{ padding-bottom: 9px; }
 /* MORE NONSENSE JUST FOR IE <SHAKES HEAD /> */
 * html footer a { position: relative; top: -1px; }
 
-footer,#requirements { z-index: 2; }
+footer,.requirements { z-index: 2; }
 #extraDiv1 {
 	position: relative;
 	height: 1px;

@@ -50,7 +50,7 @@ a:hover, a:active {
 
 /* specific divs */
 
-#container {
+.page-wrapper {
 	background: transparent url(top_left.jpg) top left no-repeat; 
 	padding: 0px;  
 	margin: 0px;
@@ -58,7 +58,7 @@ a:hover, a:active {
 	padding-bottom: 100px; 
 }
 
-#intro {
+.intro {
 	background: transparent url(intro_back.jpg) top left no-repeat;
 	margin-top: 133px;
 	width: 253px;
@@ -73,40 +73,40 @@ header h2 span {
 	display:none
 }
 
-#quickSummary {
+.summary {
 	width: 210px;
 	margin-left: 15px;
 	margin-top: 20px;
 }
 
-#quickSummary p {
+.summary p {
 	font: bold italic 8pt/11pt "Times New Roman", serif, georgia;
 	color: #000000;
 	text-align: center;
 }
 
-#preamble {
+.preamble {
 	width: 210px;
 	margin-left: 15px;
 	margin-top: 25px;
 }
 
-#preamble h3 {
+.preamble h3 {
 	background: transparent url(en_hdr.gif) top center no-repeat;
 	width: 210px;
 	height: 19px;
 	margin-left: 5px;
 }
-#preamble h3 span {
+.preamble h3 span {
 	display: none;
 }
 
-#preamble p {
+.preamble p {
 	padding-left: 5px;
 	font: 8pt/14pt "Times New Roman", serif, georgia;
 }
 
-#supportingText {
+.supporting {
 	background: transparent url(main_back.jpg) top left no-repeat;
 	position: relative;
 	margin-left: 258px;
@@ -116,66 +116,66 @@ header h2 span {
 	padding-top: 25px;
 }
 
-#explanation h3 {
+.explanation h3 {
 	background: transparent url(what_hdr.gif) top left no-repeat;
 	height: 11px;
 	text-align: left;
 }
 
-#explanation h3 span {
+.explanation h3 span {
 	display: none;
 }
 
-#supportingText p {
+.supporting p {
 	width: 315px;
 	text-align: left;
 }
 
-#explanation h3 {
+.explanation h3 {
 	background: transparent url(what_hdr.gif) top left no-repeat;
 	height: 11px;
 }
 
-#explanation {
+.explanation {
 	padding-bottom: 10px;
 }
 
-#participation {
+.participation {
 	padding-bottom: 10px;
 }
 
-#benefits {
+.benefits {
 	padding-bottom: 10px;
 }
 
-#requirements {
+.requirements {
 	padding-bottom: 10px;
 }
 
-#participation h3 {
+.participation h3 {
 	background: transparent url(part_hdr.gif) top left no-repeat;
 	height: 11px;
 }
 
-#participation h3 span {
+.participation h3 span {
 	display: none;
 }
 
-#benefits h3 {
+.benefits h3 {
 	background: transparent url(ben_hdr.gif) top left no-repeat;
 	height: 11px;
 }
 
-#benefits h3 span {
+.benefits h3 span {
 	display: none;
 }
 
-#requirements h3 {
+.requirements h3 {
 	background: transparent url(req_hdr.gif) top left no-repeat;
 	height: 13px;
 }
 
-#requirements h3 span {
+.requirements h3 span {
 	display: none;
 }
 

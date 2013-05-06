@@ -57,7 +57,7 @@ a:hover, a:active
 
 /* ---( specific divs )----------------------------- */
 
-#container 
+.page-wrapper 
 	{
 		position: relative;
 		background: #FFFBDF url(fade.gif) no-repeat 0 92px;
@@ -97,7 +97,7 @@ header h2
 
 /* ---( quick summary)---------------------------- */
 
-#quickSummary 
+.summary 
 	{
 		position: absolute;
 		top: 92px;
@@ -110,12 +110,12 @@ header h2
  		width: 300px;
 	}
 
-html>body #quickSummary
+html>body .summary
 	{
   		width: 300px;
 	} 
 
-#quickSummary p 
+.summary p 
 	{
 		margin: 15px 15px 15px 15px; 
 		font-style: italic;
@@ -126,7 +126,7 @@ html>body #quickSummary
 		color: #444;
 	}
 
-#quickSummary p.p2 
+.summary p.p2 
 	{
 		font-style: normal;
 		font-weight: normal;
@@ -134,12 +134,12 @@ html>body #quickSummary
 		margin-top: 0;
 	}
 
-#preamble 
+.preamble 
 	{
 		margin: 104px 340px 0px 20px;
 	}
 	
-#supportingText 
+.supporting 
 	{
 		padding-left: 20px; 
 		margin: 0 350px 40px 0;

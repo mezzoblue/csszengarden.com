@@ -36,12 +36,12 @@ h3 span {
 	display: none;
 }
 
-div#preamble p.p3 {
+div.preamble p.p3 {
 	padding-bottom: 15px;
 }
 
 /* Main div styling */
-div#container {
+div.page-wrapper {
 	background-color: #2F2F13;
 	color: inherit;
 	background-image: url(container_background.jpg);
@@ -51,7 +51,7 @@ div#container {
 	border-bottom: 1px solid #8F8C4E;
 }
 
-div#intro {
+.intro {
 	position: relative;
 	overflow: hidden;
 }
@@ -95,7 +95,7 @@ header h2 span {
 	display: none;
 }
 
-div#quickSummary {
+div.summary {
 	position: relative;
 	float:left;
 	width: 150px;
@@ -105,17 +105,17 @@ div#quickSummary {
 	color: inherit;
 }
 
-div#quickSummary p {
+div.summary p {
 	margin-top: 0px;
 	font: italic 14px Verdana, sans-serif;
 	text-align: center;
 }
 
-div#quickSummary p.p2 {
+div.summary p.p2 {
 	font: italic 11px Verdana, sans-serif;
 }
 
-div#preamble {
+div.preamble {
 	border-bottom: 1px solid #8F8C4E;
 	margin-top: -16px;
 	margin-right: 222px;
@@ -125,14 +125,14 @@ div#preamble {
 	color: inherit;
 	
 }
-div#preamble h3 {
+div.preamble h3 {
 	background-image: url(preamble_h3_background.jpg);
 	background-repeat: no-repeat; 
 	margin-top: 0px;
 	margin-left: 170px;
 }
 
-div#preamble p {
+div.preamble p {
 	padding-right: 30px;
 	margin-left: 200px;
 	color: inherit;
@@ -142,37 +142,37 @@ div#preamble p {
 	width: auto;
 }
 
-div#supportingText {
+.supporting {
 	margin-top: 0px;
 }
 
-div#explanation, div#participation, div#benefits, div#requirements {
+div.explanation, div.participation, div.benefits, div.requirements {
 	margin-right: 222px;
 	margin-bottom: 30px;
 }
 
 
-div#supportingText p {
+.supporting p {
 	padding-left: 30px;
 	padding-right: 30px;
 }
 
-div#explanation h3 {
+div.explanation h3 {
 	background-image: url(explanation_h3_background.jpg);
 	background-repeat: no-repeat;
 }
 
-div#participation h3 {
+div.participation h3 {
 	background-image: url(participation_h3_background.jpg);
 	background-repeat: no-repeat;
 }
 
-div#benefits h3 {
+div.benefits h3 {
 	background-image: url(benefits_h3_background.jpg);
 	background-repeat: no-repeat;
 }
 
-div#requirements h3 {
+div.requirements h3 {
 	background-image: url(requirements_h3_background.jpg);
 	background-repeat: no-repeat;
 }
@@ -288,7 +288,7 @@ footer {
 	overflow: hidden;
 }
 
-div#supportingText footer a {
+.supporting footer a {
 	line-height: 40px;
 }
 

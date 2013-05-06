@@ -59,7 +59,7 @@ a:active {
 	color: #9B3F17;
 	}
 
-#container {
+.page-wrapper {
 	position: relative;
 	top: 0;
 	margin: 0 auto;
@@ -87,7 +87,7 @@ header {
 	border: 0;
 	}
 
-#quickSummary p.p1 {
+.summary p.p1 {
 	position: absolute;
 	top: 293px;
 	left:640px;
@@ -101,7 +101,7 @@ header {
 	line-height: 1.2;
 	}
 
-#quickSummary p.p2 {
+.summary p.p2 {
 	position: absolute;
 	top: 72px;
 	left: 0px;
@@ -112,7 +112,7 @@ header {
 	z-index: 2;
 	}
 
-#preamble {
+.preamble {
 	position: absolute;
 	top: 97px;
 	left: 230px;
@@ -124,14 +124,14 @@ header {
 	overflow: auto;
 	}
 
-#preamble h3 {
+.preamble h3 {
 	background: transparent url(roadtoenlightenment.gif) no-repeat top left;
 	width: 257px;
 	height: 27px;
 	margin: 5px 0px 0px 5px;
 	}
 	
-#preamble p {
+.preamble p {
 	margin: -2px 88px 7px 18px;
 	font: 11px/7px Tahoma,sans-serif;
 	line-height: 1.2;
@@ -139,7 +139,7 @@ header {
 	}
 
 /* main text and subsections */
-#supportingText {
+.supporting {
 	position: absolute;
 	top: 290px;
 	left: 180px;
@@ -149,13 +149,13 @@ header {
 	display: block;
 	}
 
-#supportingText p {
+.supporting p {
 	font: x-small Verdana,sans-serif;
 	color: #333;
 	text-align: justify;
 	}
 
-#explanation {
+.explanation {
 	position: relative;
 	top: 0;
 	left: 0;
@@ -163,7 +163,7 @@ header {
 	width: 440px;
 	}
 
-#explanation h3 {
+.explanation h3 {
 	width: 258px;
 	height: 21px;
 	margin: 0;
@@ -172,14 +172,14 @@ header {
 	background: transparent url(sowhatisthisabout.gif) no-repeat;
 	}
 
-#participation {
+.participation {
 	float: left;
 	width: 210px;
 	padding: 0;
 	margin: 10px 0;
 	}
 
-#participation h3 {
+.participation h3 {
 	width: 210px;
 	height: 21px;
 	margin: 0;
@@ -188,14 +188,14 @@ header {
 	background: transparent url(participation.gif) no-repeat;
 	}
 
-#benefits {
+.benefits {
 	float: right;
 	width: 210px;
 	padding: 0;
 	margin: 10px 0;	
 	}
 
-#benefits h3 {
+.benefits h3 {
 	width: 210px;
 	height: 21px;
 	margin: 0;
@@ -204,14 +204,14 @@ header {
 	background: transparent url(benefits_old.gif) no-repeat;
 	}
 
-#requirements {
+.requirements {
 	float: right;
 	width: 210px;
 	padding:0;
 	margin: 10px 0;
 	}
 
-#requirements h3 {
+.requirements h3 {
 	width: 210px;
 	height: 21px;
 	margin: 0;
@@ -317,8 +317,8 @@ footer a {
 
 header h1,
 header h2,
-#preamble h3 span,
-#supportingText h3 span,
+.preamble h3 span,
+.supporting h3 span,
 .sidebar h3 span {
 	display: none;
 	}

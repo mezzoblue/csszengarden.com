@@ -26,7 +26,7 @@ abbr {
 	border-bottom: none;
 	}
 
-#intro	{
+.intro	{
 	position: absolute;
 	width: 1590px;
 	font-style: italic; 
@@ -56,7 +56,7 @@ header H2	{
 
 
 
-#quickSummary	{
+.summary	{
 	position: absolute;
 	right: 0px;
 	text-align: left;
@@ -65,7 +65,7 @@ header H2	{
 	top: 95px;
 	padding-top: 40px;}
 
-#quickSummary P	{
+.summary P	{
 	margin-top: 3px;
 	margin-bottom: 8px;
 	margin-left: 8px;
@@ -73,18 +73,18 @@ header H2	{
 	color: #555F44;
 	}
 
-#quickSummary  a:link, #quickSummary  a:visited { 
+.summary  a:link, .summary  a:visited { 
 	color: #744646; 
 	text-decoration: none;
 	border-bottom: 1px dashed #744646;
 	}
 
-#quickSummary  a:hover, #quickSummary  a:active { 
+.summary  a:hover, .summary  a:active { 
 	color: #000000; 
 	text-decoration: underline;
 	}
 
-#preamble	{
+.preamble	{
 	position: absolute;
 	left: 10px;
 	text-align: right; 
@@ -92,7 +92,7 @@ header H2	{
 	top: 95px;
 	}
 
-#preamble	 P	{
+.preamble	 P	{
 	margin-top: 3px;
 	margin-bottom: 8px;
 	margin-left: 8px;
@@ -100,7 +100,7 @@ header H2	{
 	color: #555F44;
 	}
 
-#preamble h3	{
+.preamble h3	{
 	margin: 0px;
 	font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -112,7 +112,7 @@ header H2	{
 	margin-right: 8px;
 	}
 
-#supportingText	{
+.supporting	{
 	position: absolute;
 	width: 1230px;
 	padding-left: 185px;
@@ -124,19 +124,19 @@ header H2	{
 	z-index: 3;
 	}
 
-#supportingText a:link, #supportingText a:visited { 
+.supporting a:link, .supporting a:visited { 
 	color: #744646; 
 	text-decoration: none;
 	border-bottom: 1px dashed #744646;
 	}
 
-#supportingText a:hover, #supportingText a:active { 
+.supporting a:hover, .supporting a:active { 
 	color: #000000; 
 	text-decoration: underline;
 	}
 
 
-#supportingText P	{
+.supporting P	{
 	margin-top: 3px;
 	margin-bottom: 8px;
 	margin-left: 8px;
@@ -144,7 +144,7 @@ header H2	{
 	color: #353638;
 	}
 
-#supportingText h3	{
+.supporting h3	{
 	margin: 0px;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #422222; 
@@ -159,21 +159,21 @@ header H2	{
 	}
 
 
-#explanation	{
+.explanation	{
 	float: left;
 	width: 290px;
 	}
 
-#participation	{
+.participation	{
 	float: left;
 	width: 290px;
 	}
 
-#benefits	{
+.benefits	{
 	float: left;
 	width: 150px;}
 
-#requirements	{
+.requirements	{
 	float: left;
 	width: 500px;}
 
@@ -374,18 +374,18 @@ footer a:hover, footer a:active {
 	}
 
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-#explanation h3 { 
+.explanation h3 { 
 	background: transparent url(sowhat.gif) no-repeat top left; 
 	margin-top: 10px; 
 	width: 250px; 
 	height: 32px; 
 	float: left;
 	}
-#explanation h3 span {
+.explanation h3 span {
 	display:none
 	}
 
-#participation h3 { 
+.participation h3 { 
 	background: transparent url(part.gif) no-repeat top left; 
 	margin-top: 10px; 
 	width: 250px; 
@@ -393,11 +393,11 @@ footer a:hover, footer a:active {
 	float: left;
 	}
 
-#participation h3 span {
+.participation h3 span {
 	display:none
 	}
 
-#benefits h3 { 
+.benefits h3 { 
 	background: transparent url(ben.gif) no-repeat top left; 
 	margin-top: 10px; 
 	width: 120px; 
@@ -405,11 +405,11 @@ footer a:hover, footer a:active {
 	float: left;
 	}
 
-#benefits h3 span {
+.benefits h3 span {
 	display:none
 	}
 
-#requirements h3 { 
+.requirements h3 { 
 	background: transparent url(rec.gif) no-repeat top left; 
 	margin-top: 10px; 
 	width: 470px; 
@@ -417,11 +417,11 @@ footer a:hover, footer a:active {
 	float: left;
 	}
 
-#requirements h3 span {
+.requirements h3 span {
 	display:none
 	}
 
-#preamble h3 { 
+.preamble h3 { 
 	background: transparent url(road.gif) no-repeat top right; 
 	margin-top: 10px; 
 	width: 140px; 
@@ -429,7 +429,7 @@ footer a:hover, footer a:active {
 	float: left;
 	}
 
-#preamble h3 span {
+.preamble h3 span {
 	display:none
 	}
 

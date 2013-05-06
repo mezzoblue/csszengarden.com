@@ -53,49 +53,49 @@ abbr {
 		color:white;
 	}
 
-	div#intro a,
-	div#intro a:link 
-	div#intro a:active {
+	.intro a,
+	.intro a:link 
+	.intro a:active {
 		color:black;
 		text-decoration:none;
 		font-weight:normal;
 	}
-	div#intro a:visited {
+	.intro a:visited {
 		color:#666;
 	}
-	div#intro a:hover {
+	.intro a:hover {
 		background-color:#FE7996;
 		color: white;
 	}
 	
-	div#supportingText a,
-	div#supportingText a:link 
-	div#supportingText a:active {
+	.supporting a,
+	.supporting a:link 
+	.supporting a:active {
 		background-color: white;
 		color: black;
 		text-decoration:none;
 		font-weight:normal;
 	}
-	div#supportingText a:visited {
+	.supporting a:visited {
 		color:#666;
 	}
-	div#supportingText a:hover {
+	.supporting a:hover {
 		background-color: black;
 		color: white;
 	}
 	
-	div#supportingText footer a,
-	div#supportingText footer a:link 
-	div#supportingText footer a:active {
+	.supporting footer a,
+	.supporting footer a:link 
+	.supporting footer a:active {
 		background-color:transparent;
 		color:black;
 		text-decoration:none;
 		font-weight:bold;
 	}
-	div#supportingText footer a:visited {
+	.supporting footer a:visited {
 		color:black;
 	}
-	div#supportingText footer a:hover {
+	.supporting footer a:hover {
 		background-color: black;
 		color: white;
 	}
@@ -122,7 +122,7 @@ abbr {
 /* END LINK STYLES */
 
 /* CONTAINER */
-	div#container {
+	div.page-wrapper {
 		z-index:1;
 		width:780px;
 		padding-bottom:100px;
@@ -132,7 +132,7 @@ abbr {
 /* END CONTAINER */
 
 /* INTRO */
-	div#intro {
+	.intro {
 		position:relative;
 		top:0;
 		left:0;
@@ -146,11 +146,11 @@ abbr {
 		
 		background: url("card.jpg") repeat-y left top;
 	}
-	html>body div#intro {
+	html>body .intro {
 		height:auto;
 	}
 	
-	div#intro h1 {
+	.intro h1 {
 		z-index:10;
 		position:absolute;
 		top:50px;
@@ -164,10 +164,10 @@ abbr {
 		
 		background: url(logo.jpg) no-repeat left top;
 	}
-	div#intro h1 span {
+	.intro h1 span {
 		display: none;	
 	}
-	div#intro h2 {
+	.intro h2 {
 		z-index:10;
 		position:absolute;
 		top:119px;
@@ -181,11 +181,11 @@ abbr {
 		
 		background: url(tagline.jpg) no-repeat left top;
 	}
-	div#intro h2 span {
+	.intro h2 span {
 		display: none;	
 	}
 	
-		div#intro header {
+		.intro header {
 			z-index:2;
 			position:absolute;
 			top:0;
@@ -197,7 +197,7 @@ abbr {
 			background: url("card_top.jpg") no-repeat left top;
 		}
 		
-		div#intro div#quickSummary {
+		.intro div.summary {
 			z-index:10;
 			position:absolute;
 			top:37px;
@@ -207,12 +207,12 @@ abbr {
 		
 			background: white url("rounded_top.jpg") no-repeat left top;
 		}
-		div#intro div#quickSummary p {
+		.intro div.summary p {
 			padding-left:100px;
 			padding-right:15px;
 			
 		}
-		div#intro div#quickSummary p.p1 {
+		.intro div.summary p.p1 {
 			height:107px;
 			
 			margin-top:26px;
@@ -221,10 +221,10 @@ abbr {
 
 			background: url("a_demonstration_of.gif") no-repeat 100px 22px;
 		}
-		div#intro div#quickSummary p.p1 span {
+		.intro div.summary p.p1 span {
 			display:none;
 		}
-		div#intro div#quickSummary p.p2 {
+		.intro div.summary p.p2 {
 			padding-bottom:20px;
 
 			color:#aaa;
@@ -232,7 +232,7 @@ abbr {
 			background: url("rounded_bottom.jpg") no-repeat bottom left;
 		}
 		
-		div#intro div#preamble {
+		.intro div.preamble {
 			z-index:10;
 			position:relative;
 			width:198px;
@@ -244,7 +244,7 @@ abbr {
 			
 			background: #071969 url("blue_top.gif") no-repeat top left;
 		}
-		div#intro div#preamble h3 {
+		.intro div.preamble h3 {
 			position:absolute;
 			top:15px;
 			right:15px;
@@ -257,20 +257,20 @@ abbr {
 			
 			background: url(the_road_to_enlightenment2.gif) no-repeat left top;	
 		}
-		div#intro div#preamble h3 span {
+		.intro div.preamble h3 span {
 			display:none;
 		}
-		div#intro div#preamble p {
+		.intro div.preamble p {
 			padding-left:15px;
 			padding-right:15px;
 			margin-left:0px;
 			margin-right:30px;
 		}
-		div#intro div#preamble p.p1 {
+		.intro div.preamble p.p1 {
 			padding-top:65px;
 			margin-top:0;
 		}
-		div#intro div#preamble p.p3 {
+		.intro div.preamble p.p3 {
 			padding-bottom:30px;
 			margin-bottom:0;
 			background: url("blue_bottom.gif") no-repeat bottom left;
@@ -278,7 +278,7 @@ abbr {
 /* END INTRO */
 	
 /* SUPPORTINGTEXT */
-	div#supportingText {
+	.supporting {
 		position:absolute;
 		z-index:10;
 		left:240px;
@@ -295,16 +295,16 @@ abbr {
 		border-style:solid;
 		border-color:white;
 	}
-	div#supportingText p {
+	.supporting p {
 		padding-left:35px;
 		padding-right:15px;
 		/*margin-right:35px;*/ /*to sort ie/mac horiz scrollbar*/
 	}
 	
-		div#supportingText div#explanation {
+		.supporting div.explanation {
 			background: url("do_not_duplicate.gif") no-repeat 5px 14px;
 		}
-		div#supportingText div#explanation h3 {
+		.supporting div.explanation h3 {
 			width: 166px;
 			height: 15px;
 			margin:10px 0 6px 34px;
@@ -312,44 +312,44 @@ abbr {
 			
 			background: url(so_what_is_this_about.gif) no-repeat left top;	
 		}
-		div#supportingText div#explanation h3 span {
+		.supporting div.explanation h3 span {
 			display:none;
 		}
 		
-		div#supportingText div#participation h3 {
+		.supporting div.participation h3 {
 			width: 166px;
 			height: 18px;
 			margin:0px 0 3px 34px;
 			
 			background: url(participation.gif) no-repeat left top;	
 		}
-		div#supportingText div#participation h3 span {
+		.supporting div.participation h3 span {
 			display:none;
 		}
 		
-		div#supportingText div#benefits h3 {
+		.supporting div.benefits h3 {
 			width: 166px;
 			height: 15px;
 			margin:0px 0 6px 34px;
 			
 			background: url(benefits.gif) no-repeat left top;	
 		}
-		div#supportingText div#benefits h3 span {
+		.supporting div.benefits h3 span {
 			display:none;
 		}
 		
-		div#supportingText div#requirements h3 {
+		.supporting div.requirements h3 {
 			width: 166px;
 			height: 18px;
 			margin:0px 0 3px 34px;
 			
 			background: url(requirements.gif) no-repeat left top;	
 		}
-		div#supportingText div#requirements h3 span {
+		.supporting div.requirements h3 span {
 			display:none;
 		}
 		
-		div#supportingText footer {
+		.supporting footer {
 			padding:0 15px 17px 35px;
 			background: url("footer.gif") no-repeat bottom left;
 		}

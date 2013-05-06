@@ -61,10 +61,10 @@ a:hover, a:active {
 /*Structural Elements */
 /* the background is the repeating grid running down the right side of the page. So to create a layered effect with the
     repeating lines background of the body */
-#container {
+.page-wrapper {
 	background: transparent url(bg-2.gif) top right repeat-y;
 }
-#intro {
+.intro {
 	padding: 0px;
 	margin: 0px;
 }
@@ -103,7 +103,7 @@ header h2 span {
 	display: none;
 }
 
-#quickSummary p.p1 {
+.summary p.p1 {
 	width: 310px;
 	height: 67px;
 	background: transparent url(cr-r1.png) top right no-repeat;
@@ -112,10 +112,10 @@ header h2 span {
 	right: 0px;
 	margin: 0px;
 }
-#quickSummary p.p1 span {
+.summary p.p1 span {
 	display: none;
 }
-#quickSummary p.p2 {
+.summary p.p2 {
 	position: absolute;
 	top: 154px;
 	left: 25px;
@@ -125,12 +125,12 @@ header h2 span {
 	padding-left: 8px;
 	background: transparent url(glitch.gif) center left no-repeat;
 }
-#quickSummary p.p2 a {
+.summary p.p2 a {
 	color: #D9D48C;
 	font-weight: bold;
 	text-decoration: none;
 }
-#quickSummary p.p2 a:hover {
+.summary p.p2 a:hover {
 	color: #fff;
 	text-decoration: underline;
 }
@@ -140,16 +140,16 @@ header h2 span {
     anyone's actually reading the page anymore. And if they are, well, all 24 of the other designs have this text.
 
    All of this is me making excuses because through some remarkably poor judgement I don't have a container
-   other than the big #container which encompassing the header and the rest of the text. Which was
+   other than the big .page-wrapper which encompassing the header and the rest of the text. Which was
    a problem when it came to the white background. Ah well.
 */
-#preamble {
+.preamble {
 	display: none;
 }
 
 /* I reaaaallly wanted to give this a scrollbar, and keep the whole design constrained vertically. But the validation
     links at the top wouldn't display properly when absolutely positioned outside of this white box. Ah well. */
-#supportingText {
+.supporting {
 	font: 85%/140% arial, sans-serif;
 	color: #302D0A;
 	background-color: #fff;
@@ -161,23 +161,23 @@ header h2 span {
 	padding: 10px 20px;
 }
 
-#explanation h3 {
+.explanation h3 {
 	height: 10px;
 	background: transparent url(h_sowhat.gif) top left no-repeat;
 }
-#participation h3 {
+.participation h3 {
 	height: 10px;
 	background: transparent url(h_participation.gif) top left no-repeat;
 }
-#benefits h3 {
+.benefits h3 {
 	height: 10px;
 	background: transparent url(h_benefits.gif) top left no-repeat;
 }
-#requirements h3 {
+.requirements h3 {
 	height: 10px;
 	background: transparent url(h_requirements.gif) top left no-repeat;
 }
-#explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span {
+.explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
 	display: none;
 }
 
@@ -511,7 +511,7 @@ footer a:hover {
 /* I tried running the Owen Hack (http://www.albin.net/CSS/OwenHack.html) to keep Op<7 
     from doing this, but Op7 missed it too. So Op 6 has to suffer for it. I've heard Op7 is
     supposed to be smarter than that - I guess not. */
-#supportingText>footer {
+.supporting>footer {
 	background: none;
 }
 

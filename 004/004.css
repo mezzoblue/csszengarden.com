@@ -49,10 +49,10 @@ a:active, a:hover {
 	}
 
 /* specific divs */
-#preamble {
+.preamble {
 	padding: 0px 180px 0px 25px;
 	}
-#supportingText {
+.supporting {
 	padding: 0px 180px 0px 25px;
 	}
 
@@ -85,7 +85,7 @@ header h2 span {
 	display: none;
 	}
 
-#quickSummary .p1 {
+.summary .p1 {
 	font: 11px tahoma, verdana, sans-serif;
 	line-height: 18px;
 	color: #7799AC;
@@ -96,18 +96,18 @@ header h2 span {
 	right: 10px;
 	width: 150px;
 	}
-#quickSummary .p2 {
+.summary .p2 {
 	font: 10px tahoma, verdana, sans-serif;
 	color: #7799AC;
 	position: absolute;
 	top: 32px;
 	right: 5px;
 	}
-#quickSummary .p2 a:link, #quickSummary .p2 a:visited {
+.summary .p2 a:link, .summary .p2 a:visited {
 	color: #7799AC;
 	text-decoration: underline;
 	}
-#quickSummary .p2 a:active, #quickSummary .p2 a:hover {
+.summary .p2 a:active, .summary .p2 a:hover {
 	color: #8AF44F;
 	}
 

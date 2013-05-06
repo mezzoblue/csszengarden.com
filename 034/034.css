@@ -25,7 +25,7 @@ a:hover { color: #ff3; }
 abbr { cursor: help; border-bottom: 1px dotted #fff; }
 a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 
-#container {
+.page-wrapper {
 	position: relative;
 	top: 0;
 	left: 50%;
@@ -34,88 +34,88 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 	padding: 0;
 	background: #222; }
 
-#container #intro {
+.page-wrapper .intro {
 	margin: 0 215px 0 0;
 	padding: 10px 0 0 0;
 	border-right: 10px solid #4E441B; }
-#container #intro header {
+.page-wrapper .intro header {
 	width: 500px;
 	height: 105px;
 	margin: 0 10px;
 	padding: 10px 0 0 0;
 	background: url(csszen.gif) top left no-repeat; }
-#container #intro header h1, #container #intro header h2 { display: none; }
+.page-wrapper .intro header h1, .page-wrapper .intro header h2 { display: none; }
 
-#container #intro #quickSummary { margin: 0 20px; padding: 0 0 10px 0; }
-#container #intro #quickSummary p.p1 {
+.page-wrapper .intro .summary { margin: 0 20px; padding: 0 0 10px 0; }
+.page-wrapper .intro .summary p.p1 {
 	height: 75px;
 	margin: 0;
 	padding: 0;
 	background: url(demo.gif) top left no-repeat; }
-#container #intro #quickSummary p.p1 span { display: none; }
-#container #intro #quickSummary p.p2 {
+.page-wrapper .intro .summary p.p1 span { display: none; }
+.page-wrapper .intro .summary p.p2 {
 	margin: 10 0 0 0;
 	padding: 0;
 	font-size: 0.7em;
 	font-weight: bold;
 	text-align: center; }
 
-#container #intro #preamble {
+.page-wrapper .intro .preamble {
 	width: 500px;
 	margin: 0 10px 15px 10px;
 	padding: 0 0 15px 0;
 	background: url(bottomRoad.gif) bottom left no-repeat; }
-#container #intro #preamble h3 {
+.page-wrapper .intro .preamble h3 {
 	height: 15px;
 	margin: 0;
 	padding: 0;
 	background: url(road.gif) top left no-repeat; }
-#container #intro #preamble h3 span { display: none; }
-#container #intro #preamble p {
+.page-wrapper .intro .preamble h3 span { display: none; }
+.page-wrapper .intro .preamble p {
 	margin: 0;
 	padding: 5px 10px;
 	background: url(tileRoad.gif) top left repeat-y;
 	font-size: 0.8em; }
 
-#container #supportingText {
+.page-wrapper .supporting {
 	margin: 0 215px 0 0;
 	padding: 0;
 	border-right: 10px solid #4E441B; }
-#container #supportingText div {
+.page-wrapper .supporting div {
 	width: 500px;
 	margin: 0 10px 15px 10px;
 	padding: 0;
 	background: url(textBoxBg.gif) bottom left repeat-y; }
-#container #supportingText h3 { height: 65px; margin: 0; padding: 0; }
-#container #supportingText h3 span { display: none; }
-#container #supportingText #explanation h3 { background: url(textBoxHeadExplain.gif) top left no-repeat; }
-#container #supportingText #participation h3 { background: url(textBoxHeadPart.gif) top left no-repeat; }
-#container #supportingText #benefits h3 { background: url(textBoxHeadBenefits.gif) top left no-repeat; }
-#container #supportingText #requirements h3 { background: url(textBoxHeadRequir.gif) top left no-repeat; }
-#container #supportingText p { margin: 0; padding: 0 10px 10px 15px; font-size: 0.8em; }
-#container #supportingText p.p1 { margin-top: -35px; padding-right: 75px; }
-#container #supportingText #explanation p.p2,
-#container #supportingText #participation p.p4,
-#container #supportingText #benefits p.p1,
-#container #supportingText #requirements p.p5 {
+.page-wrapper .supporting h3 { height: 65px; margin: 0; padding: 0; }
+.page-wrapper .supporting h3 span { display: none; }
+.page-wrapper .supporting .explanation h3 { background: url(textBoxHeadExplain.gif) top left no-repeat; }
+.page-wrapper .supporting .participation h3 { background: url(textBoxHeadPart.gif) top left no-repeat; }
+.page-wrapper .supporting .benefits h3 { background: url(textBoxHeadBenefits.gif) top left no-repeat; }
+.page-wrapper .supporting .requirements h3 { background: url(textBoxHeadRequir.gif) top left no-repeat; }
+.page-wrapper .supporting p { margin: 0; padding: 0 10px 10px 15px; font-size: 0.8em; }
+.page-wrapper .supporting p.p1 { margin-top: -35px; padding-right: 75px; }
+.page-wrapper .supporting .explanation p.p2,
+.page-wrapper .supporting .participation p.p4,
+.page-wrapper .supporting .benefits p.p1,
+.page-wrapper .supporting .requirements p.p5 {
 	padding-bottom: 25px;
 	background: url(textBoxBottom.gif) bottom left no-repeat; }
 
-#container #supportingText footer {
+.page-wrapper .supporting footer {
 	margin: 0;
 	padding: 0 0 25px 0;
 	background: none;
 	font-size: 0.7em;
 	font-weight: bold;
 	text-align: center; }
-#container #supportingText footer a {
+.page-wrapper .supporting footer a {
 	margin: 0;
 	padding: 0 10px;
 	border-left: 5px solid #666;
 	border-right: 5px solid #666; }
-#container #supportingText footer a:hover { background: #444; color: #fff; }
+.page-wrapper .supporting footer a:hover { background: #444; color: #fff; }
 
-#container .sidebar {
+.page-wrapper .sidebar {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -123,49 +123,49 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 	margin: 0;
 	padding: 5px 0 0 0;
 	background: url(linkTile.gif) top right repeat-y; }
-#container .sidebar .wrapper div h3 span { display: none; }
+.page-wrapper .sidebar .wrapper div h3 span { display: none; }
 
-#container .sidebar .wrapper .design-selection a { display: block; width: 100%; }
-#container .sidebar .wrapper .design-selection a.designer-name { display: inline; width: auto; }
+.page-wrapper .sidebar .wrapper .design-selection a { display: block; width: 100%; }
+.page-wrapper .sidebar .wrapper .design-selection a.designer-name { display: inline; width: auto; }
 
-#container .sidebar .wrapper .design-selection {
+.page-wrapper .sidebar .wrapper .design-selection {
 	margin: 0 0 10px 0;
 	padding: 0 0 20px 0;
 	background: url(styleBottom.gif) bottom right no-repeat; }
-#container .sidebar .wrapper #lfavorites,
-#container .sidebar .wrapper .design-archives,
-#container .sidebar .wrapper .zen-resources {
+.page-wrapper .sidebar .wrapper #lfavorites,
+.page-wrapper .sidebar .wrapper .design-archives,
+.page-wrapper .sidebar .wrapper .zen-resources {
 	margin: 0 0 10px 0;
 	padding: 0 0 15px 0;
 	background: url(boxBottom.gif) bottom right no-repeat; }
-#container .sidebar .wrapper .design-selection h3.select,
-#container .sidebar .wrapper #lfavorites h3.favorites,
-#container .sidebar .wrapper .design-archives h3.archives,
-#container .sidebar .wrapper .zen-resources h3.resources {
+.page-wrapper .sidebar .wrapper .design-selection h3.select,
+.page-wrapper .sidebar .wrapper #lfavorites h3.favorites,
+.page-wrapper .sidebar .wrapper .design-archives h3.archives,
+.page-wrapper .sidebar .wrapper .zen-resources h3.resources {
 	height: 40px;
 	margin: 0;
 	padding: 0; }
-#container .sidebar .wrapper .design-selection h3.select { background: url(headStyle.gif) top right no-repeat; }
-#container .sidebar .wrapper #lfavorites h3.favorites { background: url(faves.gif) top right no-repeat; }
-#container .sidebar .wrapper .design-archives h3.archives { background: url(arcs.gif) top right no-repeat; }
-#container .sidebar .wrapper .zen-resources h3.resources { background: url(res.gif) top right no-repeat; }
+.page-wrapper .sidebar .wrapper .design-selection h3.select { background: url(headStyle.gif) top right no-repeat; }
+.page-wrapper .sidebar .wrapper #lfavorites h3.favorites { background: url(faves.gif) top right no-repeat; }
+.page-wrapper .sidebar .wrapper .design-archives h3.archives { background: url(arcs.gif) top right no-repeat; }
+.page-wrapper .sidebar .wrapper .zen-resources h3.resources { background: url(res.gif) top right no-repeat; }
 
-#container .sidebar .wrapper .design-selection ul {
+.page-wrapper .sidebar .wrapper .design-selection ul {
 	list-style: none;
 	margin: 0 10px 0 0;
 	padding: 0 10px 5px 80px;
 	background: url(tileStyle.gif) top right repeat-y; }
-#container .sidebar .wrapper #lfavorites ul,
-#container .sidebar .wrapper .design-archives ul,
-#container .sidebar .wrapper .zen-resources ul {
+.page-wrapper .sidebar .wrapper #lfavorites ul,
+.page-wrapper .sidebar .wrapper .design-archives ul,
+.page-wrapper .sidebar .wrapper .zen-resources ul {
 	list-style: none;
 	margin: 0 10px 0 0;
 	padding: 0 10px 5px 40px;
 	background: url(tile.gif) top right repeat-y; }
-#container .sidebar .wrapper .design-selection li,
-#container .sidebar .wrapper #lfavorites li,
-#container .sidebar .wrapper .design-archives li,
-#container .sidebar .wrapper .zen-resources li {
+.page-wrapper .sidebar .wrapper .design-selection li,
+.page-wrapper .sidebar .wrapper #lfavorites li,
+.page-wrapper .sidebar .wrapper .design-archives li,
+.page-wrapper .sidebar .wrapper .zen-resources li {
 	margin: 0;
 	padding: 0;
 	font-size: 0.7em; }

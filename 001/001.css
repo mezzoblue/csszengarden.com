@@ -64,14 +64,14 @@ abbr {
 
 
 /* specific divs */
-#container { 
+.page-wrapper { 
 	background: url(zen-bg.jpg) no-repeat top left; 
 	padding: 0 175px 0 110px;  
 	margin: 0; 
 	position: relative;
 	}
 
-#intro { 
+.intro { 
 	min-width: 470px;
 	width: 100%;
 	}
@@ -104,22 +104,22 @@ header {
 	height: 87px;
 }
 
-#quickSummary {
+.summary {
 	clear: both; 
 	margin: 20px 20px 20px 10px; 
 	width: 160px; 
 	float: left;
 	}
-#quickSummary p {
+.summary p {
 	font: italic 1.1em/2.2 georgia; 
 	text-align: center;
 	}
 
-#preamble {
+.preamble {
 	clear: right; 
 	padding: 0px 10px 0 10px;
 	}
-#supportingText {	
+.supporting {	
 	padding-left: 10px; 
 	margin-bottom: 40px;
 	}

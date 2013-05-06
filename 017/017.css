@@ -24,13 +24,13 @@ body {
   voice-family: "\"}\""; voice-family:inherit;
   font-size:small;
   } html>body {font-size:small;}
-#container {
+.page-wrapper {
   position:relative;
   width:732px;
   margin:0 auto;
   text-align:left;
   }
-#intro {
+.intro {
   border:1px solid #A79355;
   border-width:0 1px;
   }
@@ -43,7 +43,7 @@ h1, h2, h3 {
   background-repeat:no-repeat;
   background-position:left top;
   }
-h1 span, h2 span, h3 span, #quickSummary p.p1 span {display:none;}
+h1 span, h2 span, h3 span, .summary p.p1 span {display:none;}
 
   
 /* header and summary
@@ -56,12 +56,12 @@ header h2 {
   height:115px;
   background:url("bg_beautyof.jpg") no-repeat left top;
   }
-#quickSummary p.p1 {
+.summary p.p1 {
   height:76px;
   margin:0;
   background:url("bg_quicksum.gif") no-repeat 35px 18px;
   }
-#quickSummary p.p2 {
+.summary p.p2 {
   position:absolute;
   top:78px;
   right:35px;
@@ -73,7 +73,7 @@ header h2 {
   color:#A79355;
   background-color:transparent;
   }
-#quickSummary p.p2 a:link, #quickSummary p.p2 a:visited {
+.summary p.p2 a:link, .summary p.p2 a:visited {
   white-space:nowrap;
   font:bold 92%/1.3em Verdana,Arial,Sans-serif;
   text-transform:uppercase;
@@ -82,17 +82,17 @@ header h2 {
 
 /* preamble
 --------------------------------- */
-#preamble {
+.preamble {
   position:absolute;
   top:304px;
   right:0;
   width:180px;
   }
-#preamble h3 {
+.preamble h3 {
   height:44px;
   background-image:url("bg_road.gif");
   }
-#preamble p {
+.preamble p {
   margin:.5em 0;
   font-size:93%;
   font-style:italic;
@@ -104,34 +104,34 @@ header h2 {
 
 /* supporting text
 --------------------------------- */
-#supportingText {
+.supporting {
   margin:0 200px;
   border:1px solid #A79355;
   border-width:0 1px;
   padding-bottom:8px;
   border-bottom:8px solid #BDAF83;
   }
-#supportingText p {
+.supporting p {
   margin:.75em 0;
   line-height:1.5em;
   padding:0 20px;
   }
-#supportingText h3 {
+.supporting h3 {
   height:40px;
   border:1px solid #A79355;
   border-width:1px 0;
   margin:1em 0 .5em;
   background-color:#D9D98B;
   }
-#explanation h3 {
+.explanation h3 {
   height:80px;
   background-image:url("bg_what.jpg");
   border-top-width:0;
   margin:0 0 10px;
   }
-#participation h3 {background-image:url("bg_participation.jpg");}
-#benefits h3 {background-image:url("bg_benefits.jpg");}
-#requirements h3 {background-image:url("bg_requirements.jpg");}
+.participation h3 {background-image:url("bg_participation.jpg");}
+.benefits h3 {background-image:url("bg_benefits.jpg");}
+.requirements h3 {background-image:url("bg_requirements.jpg");}
 
 
 /* link list

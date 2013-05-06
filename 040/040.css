@@ -30,14 +30,14 @@ body {
 	height: 980px;
 	}
 
-#preamble p, #supportingText p { 	
+.preamble p, .supporting p { 	
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
 	line-height: 18px;
 	text-align: justify;
 	margin: 0;
 	padding: 0px 20px 10px 20px;
 	}
-#preamble p, #supportingText p {
+.preamble p, .supporting p {
 	background: #8B95A8 url(bg_lightblue.gif) repeat;	   /* stupid browser color shifts */
 	}
 
@@ -63,7 +63,7 @@ a:hover, a:active {
 
 /* structuring and main content
 ---------------------------------------------------------------*/
-#container {
+.page-wrapper {
 	z-index: 1;
 	position: absolute;
 	top: 0;
@@ -72,7 +72,7 @@ a:hover, a:active {
 	margin: 0;
 	}
 
-#intro { 
+.intro { 
 	z-index: 1;
 	position: absolute;
 	left: 710px;
@@ -81,11 +81,11 @@ a:hover, a:active {
 	padding: 0;
 	}
 
-header h1 span, header h2 span, #quickSummary p.p1 span {
+header h1 span, header h2 span, .summary p.p1 span {
 	display: none;
 	}
 
-#quickSummary {	
+.summary {	
 	position: absolute;
 	top: 150px;
 	right: 20px;
@@ -96,13 +96,13 @@ header h1 span, header h2 span, #quickSummary p.p1 span {
 	letter-spacing: 1px;
 	text-align: right;
 	}
-#quickSummary p {
+.summary p {
 	padding: 0;
 	margin: 0;
 	border: 0;
 	}
 
-#preamble {	
+.preamble {	
 	background: transparent url(bg_preamble.gif) no-repeat left bottom;
 	position: absolute;
 	top: 327px;
@@ -111,67 +111,67 @@ header h1 span, header h2 span, #quickSummary p.p1 span {
 	padding-bottom: 70px;
 	overflow: hidden;	
 	}
-#preamble h3 {
+.preamble h3 {
 	background: transparent url(bg_preambleh3.gif) no-repeat left top;
 	height: 60px;
 	}
 
-#supportingText, #explanation, #participation, #benefits, #requirements {
+.supporting, .explanation, .participation, .benefits, .requirements {
 	margin: 0;
 	padding: 0;
 	}
 
-#supportingText {
+.supporting {
 	z-index: 1;
 	position: absolute;
 	top: 327px;
 	left: 285px;
 	}
 
-#explanation {
+.explanation {
 	background: transparent url(bg_explanation.gif) no-repeat left bottom;
 	color: #030409;
 	width: 400px;
 	padding-bottom: 25px;
 	margin-bottom: 10px;
 	}
-#explanation h3 {
+.explanation h3 {
 	background: transparent url(bg_explanationh3.gif) no-repeat left top;
 	height: 40px;
 	}
 
-#participation {
+.participation {
 	background: transparent url(bg_participation.gif) no-repeat left bottom;
 	color: #030409;
 	width: 400px;
 	padding-bottom: 30px;
 	margin-bottom: 10px;
 	}
-#participation h3 {
+.participation h3 {
 	background: transparent url(bg_participationh3.gif) no-repeat left top;
 	height: 50px;
 	}
 
-#benefits {
+.benefits {
 	background: transparent url(bg_benefits.gif) no-repeat left bottom;
 	color: #030409;
 	width: 400px;
 	padding-bottom: 25px;
 	margin-bottom: 20px;
 	}
-#benefits h3 {
+.benefits h3 {
 	background: transparent url(bg_benefitsh3.gif) no-repeat left top;
 	height: 45px;
 	}
 
-#requirements {
+.requirements {
 	background: transparent url(bg_requirements.gif) no-repeat left bottom;
 	color: #030409;
 	width: 400px;
 	padding-bottom: 20px;
 	margin-bottom: 30px;
 	}
-#requirements h3 {
+.requirements h3 {
 	background: transparent url(bg_requirementsh3.gif) no-repeat left top;
 	height: 35px;
 	}

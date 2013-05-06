@@ -51,7 +51,7 @@ cursor:help;
 font-family:georgia,serif;
 }
 
-div#container{
+div.page-wrapper{
 width:732px;
 margin:auto; /* ignored by IE5/win */
 background:url(main_top.png) no-repeat 0% 0%;
@@ -78,32 +78,32 @@ header h1:after{
 content:":"; /* ignored by IE */
 }
 
-div#quickSummary,div#preamble,div#explanation,div#participation,div#benefits,div#requirements,footer{
+div.summary,div.preamble,div.explanation,div.participation,div.benefits,div.requirements,footer{
 color:#CFA343;
 padding:0px 325px 0px 27px;
 text-align:justify;
 }
 
-div#container p,div#container h3{
+div.page-wrapper p,div.page-wrapper h3{
 margin:10px 0px;
 }
 
-div#container div#intro h3,div#container div#supportingText h3{
+div.page-wrapper .intro h3,div.page-wrapper .supporting h3{
 color:#EFD396;
 font:bold 12px verdana,sans-serif;
 }
 
-div#container div#intro h3{
+div.page-wrapper .intro h3{
 padding:2px 5px 3px 5px;
 background:url(headerbg.png) no-repeat right top;
 }
 
-html>body div#container div#supportingText h3{ /* IE/win bug workaround */
+html>body div.page-wrapper .supporting h3{ /* IE/win bug workaround */
 padding:2px 5px 3px 5px;
 background:url(headerbg.png) no-repeat right top;
 }
 
-div#quickSummary{
+div.summary{
 margin:0px 325px 0px 27px;
 padding:0px 38px;
 text-align:center;
@@ -112,35 +112,35 @@ background:url(sides.png) no-repeat 50% 0%;
 min-height:82px;
 }
 
-div#quickSummary p{
+div.summary p{
 margin: 0px 0px 10px 0px;
 }
 
-div#quickSummary p.p1{
+div.summary p.p1{
 font-weight:bold;
 }
 
-div#quickSummary p.p2{
+div.summary p.p2{
 text-transform:lowercase;
 margin-bottom:0px;
 padding-bottom:10px;
 }
 
-div#quickSummary p:before{
+div.summary p:before{
 content:"::: ";
 font-family:verdana,sans-serif;
 color:#B68F3B;
 font-weight:bold;
 }
 
-div#quickSummary p:after{
+div.summary p:after{
 content:" :::";
 font-family:verdana,sans-serif;
 color:#B68F3B;
 font-weight:bold;
 }
 
-div#preamble{
+div.preamble{
 padding:0px;
 margin:0px 310px 0px 27px;
 height:259px;
@@ -150,11 +150,11 @@ voice-family: inherit;
 margin-right:325px;
 }
 
-html>body div#preamble{
+html>body div.preamble{
 margin-right:325px;
 }
 
-div#supportingText{
+.supporting{
 background:url(main_middle.png) repeat-y;
 }
 

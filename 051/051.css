@@ -86,7 +86,7 @@ a:hover  {
 	}
 	
 /* specific divs */
-#container {
+.page-wrapper {
 	background: #CED41E;
 	color: #000000;
 	padding: 5px 5px 5px 5px;
@@ -99,7 +99,7 @@ a:hover  {
 	border-left: 5px solid #000000;
 	}
 	
-#intro { 
+.intro { 
 	min-width: 300px;
 	}
 header { 
@@ -129,7 +129,7 @@ header h2 span {
 	display:none;
 	}
 	
-#quickSummary {
+.summary {
 	clear:both; 
 	margin: 20px 20px 10px 10px; 
 	padding:20px 5px 5px 5px;
@@ -140,84 +140,84 @@ header h2 span {
 	border-left: 5px solid #000000;
 	border-bottom: 5px solid #000000;
 	}
-#quickSummary p {
+.summary p {
 	font: 10px verdana, sans-serif; 
 	text-align:center;
 	}
 
 /*/*/a{}
-body #quickSummary p {
+body .summary p {
   font-size: x-small;
   voice-family: "\"}\"";
   voice-family: inherit;
   font-size: small;
 }
-html>body #quickSummary,
-html>body #quickSummary p {
+html>body .summary,
+html>body .summary p {
   font-size: small;
 }  
 /* */
 
-#preamble {
+.preamble {
 	padding:5px 5px 5px 5px;
 	}
-#preamble h3 { 
+.preamble h3 { 
 	background: transparent url("enlightenment.gif") no-repeat top left;
 	text-align:center;
 	color:#000000; 
 	width: 250px; 
 	height: 25px; 
 	}
-#preamble h3 span {
+.preamble h3 span {
 	display:none;
 	}	
 		
-#supportingText {
+.supporting {
 	padding:5px 5px 5px 5px; 
 	margin-bottom: 20px;
 	}
 
-#explanation h3 { 
+.explanation h3 { 
 	background: transparent url("about.gif") no-repeat top left; 
 	text-align:center;
 	color:#000000;
 	width: 250px; 
 	height: 25px; 
 	}
-#explanation h3 span {
+.explanation h3 span {
 	display:none;
 	}
 	
-#participation h3 { 
+.participation h3 { 
 	background: transparent url("participation.gif") no-repeat top left; 
 	text-align:center;
 	color:#000000;
 	width: 250px; 
 	height: 25px; 
 	}
-#participation h3 span {
+.participation h3 span {
 	display:none;
 	}
 	
-#benefits h3 { 
+.benefits h3 { 
 	background: transparent url("benefits.gif") no-repeat top left;
 	text-align:center;
 	color:#000000; 
 	width: 250px; 
 	height: 25px; 
 	}
-#benefits h3 span {
+.benefits h3 span {
 	display:none;
 	}
 	
-#requirements h3 { 
+.requirements h3 { 
 	background: transparent url("requirements.gif") no-repeat top left; 
 	text-align:center;
 	color:#000000;
 	width: 250px; 
 	height: 25px; 
 	}
-#requirements h3 span {
+.requirements h3 span {
 	display:none;
 	}
 	

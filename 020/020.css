@@ -18,7 +18,7 @@
 }p {
 	line-height: 180%;
 	}
-#container {
+.page-wrapper {
 	background-color: #EDEEF0;
 	border: 1px solid #DAD5D9;
 	padding: 0px;
@@ -52,7 +52,7 @@ header h2 abbr {
 	color: #FFF;
 	border-bottom: 1px #FFF dashed;
 }
-#quickSummary p.p1 {
+.summary p.p1 {
 	position: absolute;
 	right: 21px;
 	top: 21px;
@@ -69,14 +69,14 @@ header h2 abbr {
 	background-position: 50% 100%; 
 	background-color: #0C2953;	
 }
-#quickSummary p.p1 span {
+.summary p.p1 span {
 	display: block;
 	padding: 3px;
 }
-#preamble {
+.preamble {
 	padding: 0px 15em 0px 3em;
 }
-#preamble h3 {
+.preamble h3 {
 	margin: 15px 0px 0px 0px;
 	padding: 6px 20px 2px 6px;
 	text-align: left;
@@ -88,17 +88,17 @@ header h2 abbr {
 	background-position: 100% 0px;
 	background-color: #F6F7F7;
 }
-#preamble h3 span {
+.preamble h3 span {
 	display: block;
 	padding: 20px 0px 15px 48px;
 	background-image: url(preambleShell.jpg);
 	background-repeat: no-repeat;
 	background-position: 0px 50%;
 }
-#preamble p {
+.preamble p {
 	text-align: justify;
 }
-#preamble p.p1, #preamble p.p2 {
+.preamble p.p1, .preamble p.p2 {
 	margin: 0px;
 	padding: 10px 20px 2px 6px;
 	background-image: url(bordDroitPreamble.gif);
@@ -106,7 +106,7 @@ header h2 abbr {
 	background-position: 100% 0px;
 	background-color: #F6F7F7;
 }
-#preamble p.p3 {
+.preamble p.p3 {
 	margin: 0px;
 	padding: 0px;
 	background-image: url(bordBasPreamble.gif);
@@ -114,46 +114,46 @@ header h2 abbr {
 	background-position: 100% 100%;
 	background-color: #F6F7F7;
 }
-#preamble p.p1 span, #preamble p.p2 span, #preamble p.p3 span {
+.preamble p.p1 span, .preamble p.p2 span, .preamble p.p3 span {
 	display: block;
 }
-#preamble p.p3 span {
+.preamble p.p3 span {
 	margin: 0px;
 	padding: 10px 20px 20px 6px;
 	background-image: url(bordBasPreambleGauche.gif);
 	background-repeat: no-repeat;
 	background-position: 0% 100%;
 }
-#preamble p:first-letter, #preamble p span:first-letter {
+.preamble p:first-letter, .preamble p span:first-letter {
 	color: #6BA0D2;
 	font-size: 140%;
 	font-weight: bold;
 	margin: 0px 2px 0px 0px;
 }
-#supportingText {
+.supporting {
 	margin: 0px;
 	padding: 10px 16em 0px 1em;
 	font-size: 90%;
 }
-#explanation, #participation, #benefits, #requirements {
+.explanation, .participation, .benefits, .requirements {
 	border: 2px solid #FFF;
 	padding: 0px;
 }
-#explanation {
+.explanation {
 	margin: 0px 0px 10px 0px;
 }
-#participation {
+.participation {
 	margin: 0px 0px 10px 0px;
 	float: left;
 	width: 30%;
 }
-#benefits {
+.benefits {
 	margin: 0px 0px 10px 32%;
 }
-#requirements {
+.requirements {
 	margin: 0px 0px 10px 32%;
 }
-#supportingText h3 {
+.supporting h3 {
 	margin: 0px;
 	padding: 5px 30px 1px 2px;
 	text-align: left;
@@ -165,40 +165,40 @@ header h2 abbr {
 	background-repeat: no-repeat;
 	background-position: 100% 50%;
 }
-#explanation h3 {
+.explanation h3 {
 	background-image: url(explanationShell.jpg);
 }
-#participation h3 {
+.participation h3 {
 	background-image: url(participationShell.jpg);
 }
-#benefits h3 {
+.benefits h3 {
 	background-image: url(benefitsShell.jpg);
 }
-#requirements h3 {
+.requirements h3 {
 	background-image: url(requirementsRock.jpg);
 }
-#supportingText p {
+.supporting p {
 	text-align: justify;
 	margin: 10px 0px 0px 0px;
 	padding: 1px 3px 2px 3px;
 }
-#supportingText p:first-letter, #supportingText p span:first-letter {
+.supporting p:first-letter, .supporting p span:first-letter {
 	font-weight: bold;
 }
-#supportingText a:link {
+.supporting a:link {
 	color: #0083FF;
 	font-weight: bold;
 }
-#supportingText a:visited {
+.supporting a:visited {
 	color: #204160;
 	font-weight: bold;
 }
-#supportingText a:hover, #supportingText a:active {
+.supporting a:hover, .supporting a:active {
 	color: #8C0000;
 	font-weight: bold;
 	text-decoration: none;
 }
-.sidebar, #quickSummary p.p2 {
+.sidebar, .summary p.p2 {
 	font-size: 90%;
 	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
 	position: absolute;
@@ -209,13 +209,13 @@ header h2 abbr {
 	margin: 0px;
 	background-color: #A4ACB3;
 }
-#quickSummary p.p2 {
+.summary p.p2 {
 	height: 50px;
 	text-align: center;
 	top: 217px;
 }
 
-#quickSummary p.p2 span {
+.summary p.p2 span {
 	font-size: 90%;
 	display: block;
 	padding: 3px;
@@ -271,14 +271,14 @@ header h2 abbr {
 	border: 1px dotted #0C2953;
 	background-color: #6BA0D2;
 }
-#quickSummary p.p2 span a:link {
+.summary p.p2 span a:link {
 	color: #FFF;
 	font-weight: bold;
 }
-#quickSummary p.p2 span a:visited {
+.summary p.p2 span a:visited {
 	color: #204160;
 }
-#quickSummary p.p2 span a:hover, #quickSummary p.p2 span a:active {
+.summary p.p2 span a:hover, .summary p.p2 span a:active {
 	color: #FFD800;
 	font-weight: bold;
 	text-decoration: none;

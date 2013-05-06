@@ -23,20 +23,20 @@ body {
 
 /* Layout Definitions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#container {
+.page-wrapper {
 	background: transparent url(bg_rel-one.gif) no-repeat bottom right;
 	margin: 0;
 	padding: 0;
 	}
 
-#intro {
+.intro {
 	background: transparent url(bg_pattern.gif) repeat top left;
 	margin: 0;
 	padding: 0;
 	border-bottom: 2px solid #fff
 	}
 
-#supportingText {
+.supporting {
 	background: transparent url(bg_left.gif) repeat-y top left;
 	margin: 0;
 	padding: 0;
@@ -58,7 +58,7 @@ header h2 {
 	display: none;
 	}
 
-#quickSummary {
+.summary {
 	height: 166px;
 	width: 735px;
 	background: #100b0a url(bg_sub_header.jpg) no-repeat top right;
@@ -67,7 +67,7 @@ header h2 {
 	margin: 0;
 	}
 
-#quickSummary p.p1 {
+.summary p.p1 {
 	padding: 14px;
 	margin: 0;
 	width: 188px;  /* False value for IE4-5.x/Win */	
@@ -76,11 +76,11 @@ header h2 {
 	width: 160px;	 /* Actual value for conformant browsers */	
 	}
 
-html>#quickSummary p.p1 {
+html>.summary p.p1 {
 	width: 160px; /* Be nice to Opera */
 	}
 
-#quickSummary p.p2 {
+.summary p.p2 {
 	padding: 0px 14px 14px 14px;
 	margin: 0;
 	width: 158px;  /* False value for IE4-5.x/Win */	
@@ -89,11 +89,11 @@ html>#quickSummary p.p1 {
 	width: 130px;	 /* Actual value for conformant browsers */	
 	}
 
-html>#quickSummary p.p2 {
+html>.summary p.p2 {
 	width: 130px; /* Be nice to Opera */
 	}
 
-#preamble {
+.preamble {
 	margin-left: 233px;
 	background: #f90 url(bg_preamble.gif) no-repeat top right;
 	color: #fff;
@@ -105,11 +105,11 @@ html>#quickSummary p.p2 {
 	width: 500px;	 /* Actual value for conformant browsers */	
 	}
 
-html>#preamble {
+html>.preamble {
 	width: 500px; /* Be nice to Opera */
 	}
 
-#explanation, #participation, #benefits {
+.explanation, .participation, .benefits {
 	margin-left: 233px;
 	border: 1px solid #bbb;
 	background: #f5f5f5;
@@ -121,11 +121,11 @@ html>#preamble {
 	width: 498px;	 /* Actual value for conformant browsers */	
 	}
 
-html>#explanation, #participation, #benefits {
+html>.explanation, .participation, .benefits {
 	width: 498px; /* Be nice to Opera */
 	}
 
-#requirements {
+.requirements {
 	margin-left: 233px;
 	border: 1px solid #bbb;
 	background: #f5f5f5;
@@ -138,7 +138,7 @@ html>#explanation, #participation, #benefits {
 	width: 498px;	 /* Actual value for conformant browsers */	
 	}
 
-html>#requirements {
+html>.requirements {
 	width: 498px; /* Be nice to Opera */
 	}
 
@@ -199,27 +199,27 @@ p {
 	}
 
 
-#preamble p, #quickSummary p.p2 {
+.preamble p, .summary p.p2 {
 	line-height: 1.5;
 	color: #fff;
 	background: transparent;
 	}
 
-#preamble p {
+.preamble p {
 	font-size: 10px;
 	width: 250px;
 	text-align: justify;
 	}
 
-#preamble p.p1 {
+.preamble p.p1 {
 	margin: 16px 18px 10px 18px;
 	}
 
-#preamble p.p2 {
+.preamble p.p2 {
 	margin: 0 18px 10px 18px;
 }
 
-#preamble p.p3 {
+.preamble p.p3 {
 	padding: 0;
 	margin: 0 18px 0 18px;
 	}
@@ -227,7 +227,7 @@ p {
 
 /* First Paragraphs */
 
-#explanation p.p1, #participation p.p1, #requirements p.p1 {
+.explanation p.p1, .participation p.p1, .requirements p.p1 {
 	padding: 0;
 	margin: 16px 18px 12px 18px;
 	}
@@ -235,7 +235,7 @@ p {
 
 /* Intermediate Paragraphs */
 
-#participation p.p2, #participation p.p3, #requirements p.p2, #requirements p.p3, #requirements p.p4 {
+.participation p.p2, .participation p.p3, .requirements p.p2, .requirements p.p3, .requirements p.p4 {
 	padding: 0;
 	margin: 12px 18px 12px 18px;
 	}
@@ -243,12 +243,12 @@ p {
 
 /* Last Paragraphs */
 
-#explanation p.p2, #participation p.p4 {
+.explanation p.p2, .participation p.p4 {
 	padding: 0;
 	margin: 0px 18px 16px 18px;
 	}
 
-#requirements p.p5 {
+.requirements p.p5 {
 	margin: 0px 18px 0px 18px;
 	padding: 0;
 	}
@@ -256,23 +256,23 @@ p {
 
 /* One Paragraph */
 
-#benefits p.p1 {
+.benefits p.p1 {
 	margin: 16px 18px 16px 18px;
 	}
 
 
-#supportingText p {
+.supporting p {
 	line-height: 1.5;
 	}
 
-#quickSummary p.p1 {
+.summary p.p1 {
 	font-size: 9px;
 	background: transparent;
 	color: #999;
 	text-align: left;
 	}
 
-#quickSummary p.p2 {
+.summary p.p2 {
 	font-size: 9px;
 	color: #999;
 	text-align: left;
@@ -337,7 +337,7 @@ a:hover {
 	text-decoration: none;
 	}
 
-#quickSummary a, #quickSummary a:link, #quickSummary a:visited {
+.summary a, .summary a:link, .summary a:visited {
 	background: transparent url(download.gif) no-repeat 0 4px;
 	color: #fff;
 	text-transform: uppercase;
@@ -345,7 +345,7 @@ a:hover {
 	padding-left: 8px;
 	}
 
-#quickSummary a:hover {
+.summary a:hover {
 	text-decoration: underline;
 	}
 
@@ -411,7 +411,7 @@ h3 span {
 	margin-top: 20px;
 	}
 
-#preamble h3 {
+.preamble h3 {
 	background: transparent url(title_road.gif) no-repeat top left;
 	width: 500px;
 	height: 34px;
@@ -423,29 +423,29 @@ h3 span {
 	height: 34px; /* Actual value for conformant browsers */	
 	}
 
-html>#preamble h3 {
+html>.preamble h3 {
 	height: 34px; /* Be nice to Opera */
 	}
 
-#explanation h3, #participation h3, #benefits h3, #requirements h3 {
+.explanation h3, .participation h3, .benefits h3, .requirements h3 {
 	width: 498px;
 	height: 30px;
 	margin: 0;
 	}
 
-#explanation h3 {
+.explanation h3 {
 	background: transparent url(title_about.gif) no-repeat top left;
 	}
 
-#participation h3 {
+.participation h3 {
 	background: transparent url(title_partici.gif) no-repeat top left;
 	}
 
-#benefits h3 {
+.benefits h3 {
 	background: transparent url(title_benef.gif) no-repeat top left;
 	}
 
-#requirements h3 {
+.requirements h3 {
 	background: transparent url(title_req.gif) no-repeat top left;
 	}
 
@@ -478,7 +478,7 @@ abbr {
 	cursor: help;
 	}
 
-#preamble abbr {
+.preamble abbr {
 	border-bottom: 1px dotted #ffe0b3;
 }
 
@@ -486,7 +486,7 @@ abbr {
 	border-bottom: 1px dotted #999;
 }
 
-#supportingText abbr {
+.supporting abbr {
 	background: transparent url(acro.gif) no-repeat center right;
 	padding-right: 11px;
 	margin-right: 1px;
@@ -494,7 +494,7 @@ abbr {
 	border: 0;
 	}
 
-#participation a abbr {
+.participation a abbr {
 	background: transparent;
 	padding: 0;
 	margin: 0;

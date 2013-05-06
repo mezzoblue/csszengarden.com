@@ -43,7 +43,7 @@ border: 0 none;
 
 /* divs and related classes */
 
-#container {
+.page-wrapper {
 position: relative;
 display: block;
 width: 737px;
@@ -53,7 +53,7 @@ color: #000;
 background: transparent url(zengarden.jpg) top left no-repeat;
 border-left: 1px solid #545D64;
 }
-#intro {
+.intro {
 padding-top: 330px;
 }
 header h1 {
@@ -63,7 +63,7 @@ header h2 {
 display: none;
 }
 
-#quickSummary {
+.summary {
 position: absolute;
 top: 0;
 left: 560px;
@@ -73,14 +73,14 @@ height: 330px;
 color: #000;
 background: transparent;
 }
-#quickSummary p {
+.summary p {
 font-size: .78em;
 width: 120px;
 }
-#quickSummary .p1 {
+.summary .p1 {
 display: none;
 }
-#quickSummary .p2 {
+.summary .p2 {
 position: absolute;
 top: 230px;
 left: -330px;
@@ -89,158 +89,158 @@ width: 90px;
 font-family: Arial, Helvetica, sans-serif;
 }
 
-#preamble {	
+.preamble {	
 display: block;
 width: 626px;
 margin-left: 110px;
 color: #fff;
 background: #B5BB7D url(enlightenment_default.gif) 100% 3em no-repeat;
 }
-#preamble h3 {
+.preamble h3 {
 display: none;
 }
-#preamble p {
+.preamble p {
 font-size: 0.8em;
 line-height: 140%;
 width: 440px;
 color: #000;
 background: #B5BB7D;
 }
-#preamble .p1, #preamble .p2, #preamble .p3 {
+.preamble .p1, .preamble .p2, .preamble .p3 {
 width: 290px;
 margin: 0 0 0 110px;
 padding: 10px 20px 5px 20px;
 color: #fff;
 background: #537E53;
 }
-#preamble .p1 {
+.preamble .p1 {
 padding-top: 4em;
 }
-#preamble .p2 {
+.preamble .p2 {
 margin-top: -2px;
 }
-#preamble .p3 {
+.preamble .p3 {
 margin-top: -2px;
 padding-bottom: 20px;
 }
 
-#supportingText {
+.supporting {
 display: block;
 width: 736px;
 color: #000;
 background: #B5BB7D url(main_bg.gif);
 border-bottom: 20px solid #B62814;
 }
-#explanation, #participation, #benefits, #requirements {
+.explanation, .participation, .benefits, .requirements {
 margin-left: 110px;
 width: 626px;
 }
-#explanation {
+.explanation {
 color: #000;
 background: #FFFFCD url(about.gif) 100% 20px no-repeat;
 }
-#participation {
+.participation {
 color: #000;
 background: #FAC46C url(participation.gif) 100% 20px no-repeat;
 }
-#benefits {
+.benefits {
 color: #000;
 background: #FFFFCD url(benefits.gif) 100% 20px no-repeat;
 }
-#requirements {
+.requirements {
 color: #000;
 background: #FAC46C url(requirements.gif) 100% 20px no-repeat;
 }
-#explanation p, #benefits p, #requirements p, #participation p {
+.explanation p, .benefits p, .requirements p, .participation p {
 width: 440px;
 font-size: 0.8em;
 line-height: 140%;
 }
 
-#explanation h3 {
+.explanation h3 {
 display: none;
 }
-#explanation p {
+.explanation p {
 color: #000;
 background: #FAC46C;
 }
-#explanation .p1 {
+.explanation .p1 {
 border-top: 4px solid #B52814;
 width: 340px;
 padding: 25px 20px 5px 80px;
 }
-#explanation .p2 {
+.explanation .p2 {
 width: 340px;
 padding: 10px 20px 20px 80px;
 margin-top: -2px;
 }
 
-#participation h3 span {
+.participation h3 span {
 display: none;
 }
-#participation p {
+.participation p {
 color: #000;
 background: #B5BB7D;
 }
-#participation .p1 {
+.participation .p1 {
 width: 340px;
 padding: 25px 20px 5px 80px;
 }
-#participation .p2 {
+.participation .p2 {
 width: 340px;
 padding: 10px 20px 5px 80px;
 margin-top: -2px;
 }
-#participation .p3 {
+.participation .p3 {
 width: 340px;
 padding: 10px 20px 5px 80px;
 margin-top: -2px;
 }
-#participation .p4 {
+.participation .p4 {
 width: 340px;
 padding: 10px 20px 20px 80px;
 margin-top: -2px;
 }
 
-#benefits h3 {
+.benefits h3 {
 display: none;
 }
-#benefits p {
+.benefits p {
 color: #000;
 background: #FAC46C; 
 }
-#benefits .p1 {
+.benefits .p1 {
 width: 340px;
 padding: 25px 20px 20px 80px;
 }
 
-#requirements h3 {
+.requirements h3 {
 display: none;
 }
-#requirements p {
+.requirements p {
 color: #000;
 background: #B5BB7D;
 }
-#requirements .p1 {
+.requirements .p1 {
 width: 340px;
 padding: 25px 20px 5px 80px;
 }
-#requirements .p2 {
+.requirements .p2 {
 width: 340px;
 padding: 10px 20px 5px 80px;
 margin-top: -2px;
 }
-#requirements .p3 {
+.requirements .p3 {
 width: 340px;
 padding: 10px 20px 5px 80px;
 margin-top: -2px;
 }
-#requirements .p4 {
+.requirements .p4 {
 width: 340px;
 padding: 10px 20px 5px 80px;
 margin-top: -2px;
 }
-#requirements .p5 {
+.requirements .p5 {
 width: 340px;
 padding: 10px 20px 20px 80px;
 margin-top: -2px;
@@ -248,12 +248,12 @@ margin-top: -2px;
 
 /* The Tan-Hack for IE 5.0 */
 
-* html #preamble .p1, * html #preamble .p2, * html #preamble .p3 {
+* html .preamble .p1, * html .preamble .p2, * html .preamble .p3 {
 width: 330px;
 w\idth: 290px;	
 }
 
-* html #supportingText .p1, * html #supportingText .p2, * html #supportingText .p3, * html #supportingText .p4, * html #supportingText .p5  {
+* html .supporting .p1, * html .supporting .p2, * html .supporting .p3, * html .supporting .p4, * html .supporting .p5  {
 width: 440px;
 w\idth: 340px;
 }

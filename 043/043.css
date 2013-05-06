@@ -30,7 +30,7 @@ body {
 }
 
 /******************************************************************* primary hyperlink styling */
-#supportingText a:link {
+.supporting a:link {
 	font-weight: normal;
 	text-decoration: none;
 	background: transparent;
@@ -38,7 +38,7 @@ body {
 	border-bottom: 1px solid #D1E8CC;
 }
 
-#supportingText a:visited {
+.supporting a:visited {
 	font-weight: normal;
 	text-decoration: none;
 	background: transparent;
@@ -46,7 +46,7 @@ body {
 	border-bottom: 1px solid #BBD9BA;
 }
 
-#supportingText a:hover, a:active {
+.supporting a:hover, a:active {
 	text-decoration: none;
 	background: transparent;
 	color: #fff;
@@ -77,7 +77,7 @@ body {
 
 /***********************************************/
 
-#intro #quickSummary a:link {
+.intro .summary a:link {
 	font-weight: normal;
 	text-decoration: none;
 	background: transparent;
@@ -85,7 +85,7 @@ body {
 	border-bottom: 1px solid #555;
 }
 
-#intro #quickSummary a:visited {
+.intro .summary a:visited {
 	font-weight: normal;
 	text-decoration: none;
 	background: transparent;
@@ -93,7 +93,7 @@ body {
 	border-bottom: 1px solid #555;
 }
 
-#intro #quickSummary a:hover, a:active {
+.intro .summary a:hover, a:active {
 	text-decoration: none;
 	background: transparent;
 	color: #fff;
@@ -101,7 +101,7 @@ body {
 }
 
 /******************************************************************* body content */
-#container {
+.page-wrapper {
 	margin-top: 33px;
 	margin-left: 0px;
 	margin-bottom: 0px;
@@ -117,7 +117,7 @@ body {
 	width:750px;
 }
 
-html>body #container {
+html>body .page-wrapper {
 	width: 750px;
 }
 
@@ -205,7 +205,7 @@ header {
 
 
 /******************************************************************* intro section */
-#intro {
+.intro {
 	margin-top: 243px;
 	margin-left: 58px;
 	margin-right: 242px;
@@ -216,13 +216,13 @@ header {
 	border-bottom: 1px solid #394A38;
 }
 
-	#intro abbr, .sidebar abbr {
+	.intro abbr, .sidebar abbr {
 		cursor: help;
 		border: 0px;
 		letter-spacing: 0.1em;
 	}
 
-	#quickSummary p.p2 {
+	.summary p.p2 {
 		position: absolute;
 
 		top: 255px;
@@ -248,7 +248,7 @@ header {
 		color: #bbb; background: transparent;
 	}
 
-	#intro p {
+	.intro p {
 		margin-top: 0px;
 		margin-bottom: 8px;
 
@@ -268,7 +268,7 @@ header {
 
 	/* Thanks Mike! http://phark.typepad.com */
 
-	#intro h3 {
+	.intro h3 {
 		width: 100%;
 		height: 30px;
 
@@ -286,10 +286,10 @@ header {
 		background: transparent url(header-enlighten.gif) no-repeat top left;
 	}
 
-	#intro h3 span {display: none;}
+	.intro h3 span {display: none;}
 
 /******************************************************************* supportingtext section */
-#supportingText {
+.supporting {
 	margin-top: 0px;
 	margin-left: 58px;
 	margin-right: 242px;
@@ -297,14 +297,14 @@ header {
 	padding: 15px;
 }
 
-	#supportingText abbr {
+	.supporting abbr {
 		cursor: help;
 		background: transparent url(abbr.gif) top left no-repeat;
 		padding-left: 15px;
 		border-bottom: 0px dotted #fff;
 	}
 
-	#supportingText p {
+	.supporting p {
 		margin-top: 0px;
 		margin-left: 0px;
 		margin-right: 0px;
@@ -324,7 +324,7 @@ header {
 		color: #fff; background: transparent;
 	}
 
-	#supportingText h3 {
+	.supporting h3 {
 		width: 100%;
 		height: 30px;
 
@@ -336,21 +336,21 @@ header {
 		border-bottom: 1px solid #5F705E;
 	}
 
-	#supportingText h3 span {display: none;}
+	.supporting h3 span {display: none;}
 
-	#explanation h3 {
+	.explanation h3 {
 		background: transparent url(header-sowhat.gif) no-repeat top left;
 	}
 
-	#participation h3 {
+	.participation h3 {
 		background: transparent url(header-participation.gif) no-repeat top left;
 	}
 
-	#benefits h3 {
+	.benefits h3 {
 		background: transparent url(header-benefits.gif) no-repeat top left;
 	}
 
-	#requirements h3 {
+	.requirements h3 {
 		background: transparent url(header-requirements.gif) no-repeat top left;
 	}
 

@@ -32,14 +32,14 @@ margin:0;
 padding:0;
 }
 
-div#intro {
+.intro {
 background-image:url("header.jpg");
 background-repeat:no-repeat;
 background-position:left top;
 height:550px;
 }
 
-div#intro p {
+.intro p {
 width:350px;
 }
 
@@ -47,7 +47,7 @@ h1 span, h3 span, #extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #e
 display:none;
 }
 
-#explanation h3 span, #preamble h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span {
+.explanation h3 span, .preamble h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
 display:block;
 font-family:Century Gothic, AvantGarde, Verdana, Arial, sans-serif;
 font-weight:normal;
@@ -64,17 +64,17 @@ letter-spacing:0.4em;
 padding-left:3em;
 }
 
-div#quickSummary {
+div.summary {
 margin-left:0.8em;
 }
 
-div#quickSummary a, footer a, p a {
+div.summary a, footer a, p a {
 color:#c9380b;
 text-decoration:none;
 font-weight:bold;
 }
 
-div#quickSummary a:hover, p a:hover, footer a:hover {
+div.summary a:hover, p a:hover, footer a:hover {
 text-decoration:underline;
 }
 
@@ -155,7 +155,7 @@ width:255px;
 height:100px;
 }
 
-div#preamble, div#explanation, div#participation, div#benefits, div#requirements {
+div.preamble, div.explanation, div.participation, div.benefits, div.requirements {
 position:absolute;
 background-repeat:no-repeat;
 top:0px;
@@ -163,45 +163,45 @@ font-size:75%;
 height:550px;
 }
 
-div#preamble {
+div.preamble {
 left:628px;
 background-image:url("theroad.jpg");
 width:379px;
 }
 
-div#preamble h3, div#requirements h3, div#participation h3 {
+div.preamble h3, div.requirements h3, div.participation h3 {
 padding-top:280px;
 }
 
-div#preamble p, div#requirements p, div#participation p, div#explanation p, div#benefits p, div#preamble h3, div#requirements h3, div#participation h3, div#explanation h3, div#benefits h3, div#requirements p, div#requirements h3 {
+div.preamble p, div.requirements p, div.participation p, div.explanation p, div.benefits p, div.preamble h3, div.requirements h3, div.participation h3, div.explanation h3, div.benefits h3, div.requirements p, div.requirements h3 {
 padding-left:8px;
 padding-right:8px;
 text-align:justify;
 }
 
-div#explanation {
+div.explanation {
 left:1007px;
 background-image:url("sowhat.jpg");
 width:398px;
 }
 
-div#explanation h3, div#benefits h3 {
+div.explanation h3, div.benefits h3 {
 padding-top:15px;
 }
 
-div#participation {
+div.participation {
 left:1405px;
 background-image:url("participation.jpg");
 width:656px;
 }
 
-div#benefits {
+div.benefits {
 left:2061px;
 background-image:url("benefits.jpg");
 width:390px;
 }
 
-div#requirements {
+div.requirements {
 left:2451px;
 width:1050px;
 }
@@ -220,7 +220,7 @@ p {
 font-size:0.9em;
 }
 
-#requirements .p5 {
+.requirements .p5 {
 margin-top:15px;
 color:#ccc;
 }

@@ -58,7 +58,7 @@ abbr {
 
 
 /* specific elements */
-#intro {
+.intro {
 	background: transparent url(coastal.jpg) top left no-repeat; 
 	width: 700px;
 	margin-left: auto;
@@ -89,14 +89,14 @@ header h2 span {
 	display: none;
 }
 
-#preamble {
+.preamble {
 	position: relative;
 	top: -80px;
 	padding-right: 250px;
 	padding-left: 140px;
 
 }
-#quickSummary {
+.summary {
 	float: right;
 	text-align: left;
 	padding-right: 70px;
@@ -106,13 +106,13 @@ header h2 span {
 	width: 160px;
 }
 /* over-clarified to fix IE5/Win */
-#quickSummary p, #quickSummary .p1, #quickSummary .p2 {
+.summary p, .summary .p1, .summary .p2 {
 	font: italic 13pt/18pt garamond, serif;
 	text-align: left;
 	color: #A29D66;
 	background-color: transparent;
 }
-#supportingText {
+.supporting {
 	margin-left: auto;
 	margin-right: auto;
 	padding-right: 250px;
@@ -234,7 +234,7 @@ footer a:hover {
 
 
 /* extra bits on the last paragraph in each text block */
-#preamble .p3, #explanation .p2, #participation .p3, #benefits .p1, #requirements .p4 {
+.preamble .p3, .explanation .p2, .participation .p3, .benefits .p1, .requirements .p4 {
 	background: transparent url(filler.gif) bottom center no-repeat;
 	padding-bottom: 25px;
 }

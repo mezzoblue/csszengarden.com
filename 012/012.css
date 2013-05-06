@@ -32,7 +32,7 @@ IDs and Classes when the graphics call for it, in my case the barebones basic la
 first with designs in my head BEFORE I open PhotoShop... but that's just me */
 
 h1, h2, h3, h4, h5, h6 { color: #FFAE00; }
-#container {
+.page-wrapper {
 	margin: 0px auto 60px;
 	width: 760px;
 	border-top: 0px solid #000000;
@@ -64,7 +64,7 @@ header h2 {
 }
 header h2 span { display: none; }
 header { position: relative; }
-#quickSummary {
+.summary {
 	margin: 0px;
 	border: 0px none;
 	padding: 0px;
@@ -75,7 +75,7 @@ header { position: relative; }
 	left: 0px;
 	height: 266px;
 }
-#preamble {
+.preamble {
 	margin: 10px 0px 30px 235px;
 	width: 510px;
 	border: 2px solid #000000;
@@ -87,7 +87,7 @@ header { position: relative; }
 	left: 0px;
 	z-index: 3;
 }
-#preamble p {
+.preamble p {
 	padding: 0px 0px 1.3em;
 	margin: 0px auto;
 	width: 320px;
@@ -96,8 +96,8 @@ header { position: relative; }
 	letter-spacing: 0.08em;
 	text-align: left;
 }
-#preamble p.p3 { padding-bottom: 0px; }
-div#preamble h3 {
+.preamble p.p3 { padding-bottom: 0px; }
+div.preamble h3 {
 	width: 400px;
 	margin: 0px;
 	padding: 0px 0px 0px 34px;
@@ -111,7 +111,7 @@ div#preamble h3 {
 	left: -3px;
 	height: 23px;
 }
-#supportingText {
+.supporting {
 	margin: 0px 0px 0px 235px;
 	width: 510px;
 	padding: 0px;
@@ -127,8 +127,8 @@ div#preamble h3 {
 	top: 360px;
 	z-index: 2;
 }
-#supportingText p { padding: 5px 12px 1em; }
-#supportingText div {
+.supporting p { padding: 5px 12px 1em; }
+.supporting div {
 	border: 1px solid #000000;
 	padding: 0px;
 	margin: 22px 0px 40px;
@@ -137,7 +137,7 @@ div#preamble h3 {
 	position: relative;
 	z-index: 2;
 }
-#supportingText h3 {
+.supporting h3 {
 	width: 400px;
 	margin: 0px;
 	padding: 0px 0px 0px 34px;
@@ -150,27 +150,27 @@ div#preamble h3 {
 	height: 23px;
 	left: -2px;
 }
-#intro a {
+.intro a {
 	color: #FFCC00;
 	font-weight: bold;
 	text-decoration: none;
 }
-#supportingText a {
+.supporting a {
 	color: #FFAE00;
 	font-weight: bold;
 	text-decoration: none;
 }
-#supportingText a:hover { border-bottom: 2px dashed #FFAE00; color: #CCCCCC; }
-#supportingText a:active { border-bottom: 2px dashed #333333; background: #5A6269; }
-div#supportingText div#requirements {
+.supporting a:hover { border-bottom: 2px dashed #FFAE00; color: #CCCCCC; }
+.supporting a:active { border-bottom: 2px dashed #333333; background: #5A6269; }
+.supporting div.requirements {
 	margin-bottom: 0px;
 	background: #61605F url(bandwidthkiller-alpha.jpg) no-repeat center bottom;
 }
 /* the background image above is what gives the transparency effect, 
-it's just a carefully cut out chunk of the #container divs background image
+it's just a carefully cut out chunk of the .page-wrapper divs background image
 with a semi-transparent overlay on it.   Oh... I can't wait for true PNG surrport*/
 
-div#supportingText footer {
+.supporting footer {
 	width: 200px;
 	border-top: 0px none #000000;
 	border-right: 0px none #000000;
@@ -185,23 +185,23 @@ div#supportingText footer {
 	left: -220px;
 	top: -64px;
 }
-#quickSummary p {
+.summary p {
 	margin: 0px 20px 10px 25px;
 	color: #A3A3A3;
 	font: bolder small-caps 1.1em/1em "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
-#quickSummary p.p1 {
+.summary p.p1 {
 	margin-top: 20px;
 	border: 1px solid #23282C;
 	padding: 10px;
 	color: #FFAE00;
 }
-#quickSummary p.p2 {
+.summary p.p2 {
 	color: #999999;
 	font-weight: normal;
 	text-align: center;
 }
-#quickSummary p a {
+.summary p a {
 	color: #CCCCCC;
 	font-weight: normal;
 	text-decoration: none;

@@ -22,7 +22,7 @@ body {
 	letter-spacing: 0.1em;
 }
 
-#container {
+.page-wrapper {
 	background-color: transparent;
 	background-position: bottom left;
 	background-image: url(manta.jpg);
@@ -76,7 +76,7 @@ header {
 	overflow: hidden;
 }
 
-#preamble {
+.preamble {
 	margin-right: 420px;
 	margin-left: 25px;
 	padding: 5px;
@@ -84,7 +84,7 @@ header {
 	border-right: 1px solid;
 }
 
-#preamble h3 {
+.preamble h3 {
 	width: 190px;
 	height: 190px;
 	margin-top: 0;
@@ -93,18 +93,18 @@ header {
 	background-image: url(theroad.jpg);
 }
 
-#preamble h3 span {
+.preamble h3 span {
 	display:  none;
 }
 
-#preamble p {
+.preamble p {
 	margin-left: 25px;
 	margin-right: 15px;
 	font-style: italic;
 	text-align: justify;
 }
 
-#explanation {
+.explanation {
 	margin-left: 10px;
 	margin-top: 30px;
 	margin-bottom: 100px;
@@ -114,7 +114,7 @@ header {
 	border-left: 1px solid;
 }
 
-#explanation h3 {
+.explanation h3 {
 	width: 150px;
 	height: 140px;
 	display: inline;
@@ -122,17 +122,17 @@ header {
 	background-image: url(whatabout.jpg);
 }
 
-#explanation h3 span {
+.explanation h3 span {
 	display: none;
 }
 
-#explanation p {
+.explanation p {
 	margin-left: 25px;
 	margin-right: 15px;
 	text-align: justify;
 }
 
-#benefits {
+.benefits {
 	margin-left: 150px;
 	margin-top: 30px;
 	margin-bottom: 100px;
@@ -142,7 +142,7 @@ header {
 	border-left: 1px solid;
 }
 
-#benefits h3 {
+.benefits h3 {
 	width: 150px;
 	height: 150px;
 	display: inline;
@@ -150,17 +150,17 @@ header {
 	background-image: url(benefits.jpg);
 }
 
-#benefits h3 span {
+.benefits h3 span {
 	display: none;
 }
 
-#benefits p {
+.benefits p {
 	margin-left: 15px;
 	margin-right: 25px;
 	text-align: justify;
 }
 
-#participation {
+.participation {
 	margin-top: 30px;
 	margin-bottom: 110px;
 	margin-left: 50px;
@@ -170,7 +170,7 @@ header {
 	border-right: 1px solid;
 }
 
-#participation h3 {
+.participation h3 {
 	width: 160px;
 	height: 155px;
 	margin-top: 15px;
@@ -180,17 +180,17 @@ header {
 	background-repeat: no-repeat;
 }
 
-#participation h3 span {
+.participation h3 span {
 	display: none;
 }
 
-#participation p {
+.participation p {
 	margin-left: 25px;
 	margin-right: 15px;
 	text-align: justify;
 }
 
-#requirements {
+.requirements {
 	margin-top: 30px;
 	margin-bottom: 100px;
 	margin-left: 130px;
@@ -200,7 +200,7 @@ header {
 	border-right: 1px solid;
 }
 
-#requirements h3 {
+.requirements h3 {
 	margin-top: 15px;
 	width: 160px;
 	height: 160px;
@@ -210,17 +210,17 @@ header {
 	background-repeat: no-repeat;
 }
 
-#requirements h3 span {
+.requirements h3 span {
 	display: none;
 }
 
-#requirements p {
+.requirements p {
 	margin-left: 25px;
 	margin-right: 15px;
 	text-align: justify;
 }
 
-#supportingText {
+.supporting {
 	margin-top: 100px;
 
 }
@@ -363,11 +363,11 @@ footer {
 	height: 100px;
 	z-index: 1;
 }
-* html #quickSummary {
+* html .summary {
 	width: 260px;
 	w\idth: 228px;
 }
-#quickSummary {
+.summary {
 	width: 228px;
 	position: absolute;
 	top: 1022px;
@@ -379,11 +379,11 @@ footer {
 }
 
 
-#quickSummary p.p1  {
+.summary p.p1  {
 	display: none;
 }
 
-#quickSummary p.p2 {
+.summary p.p2 {
 	margin-top: 4px;
 	color: #95A5BB;
 	background-color: transparent;

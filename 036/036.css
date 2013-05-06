@@ -34,7 +34,7 @@ body {
 /* container keeps it all together */
 /*---------------------------------------------------*/
 
-#container{
+.page-wrapper{
 	border-top:1px solid #230;
 	border-right: 1px solid #230;
 	width:760px;
@@ -47,7 +47,7 @@ body {
 /* intro div and its content */
 /*---------------------------------------------------*/
 
-#intro { 
+.intro { 
 	margin:0;
 	padding:0;
 	margin-top:20px;
@@ -76,7 +76,7 @@ header h1 span,header h2,header h2 span {
 	display:none;
 }
 
-#quickSummary{
+.summary{
 	margin: 0 0 0 355px;
 	width:332px;
 	height: 200px;
@@ -85,13 +85,13 @@ header h1 span,header h2,header h2 span {
 	border-top:1px solid #ABBC47;
 }
 
-#quickSummary p.p1 {
+.summary p.p1 {
 	font: bold 11px/14px arial,verdana, sans serif;
 	color:#fff; 
 	padding:100px 30px 2px 30px;
 }
 
-#quickSummary p.p2{
+.summary p.p2{
 	position:absolute;
 	left:0;
 	top:230px;
@@ -113,11 +113,11 @@ footer{
 	text-align:right;
 }
 
-#quickSummary p.p2 a, footer a{
+.summary p.p2 a, footer a{
 	color:#fff;
 }
 
-#quickSummary p.p2 a:hover, footer a:hover{
+.summary p.p2 a:hover, footer a:hover{
 	color:#230;
 	background-color:#fff;
 	text-decoration:none;
@@ -126,7 +126,7 @@ footer{
 /* visually we now move into the main area of the page
 /*---------------------------------------------------*/
 
-#preamble{
+.preamble{
 	padding:50px 30px 30px 30px;
 	margin:30px 0 0 355px;
 	border-width:0 0 1px 1px;
@@ -138,26 +138,26 @@ footer{
 	width:343px;
 }
 
-#preamble p, #explanation p, #benefits p, #participation p, #requirements p{
+.preamble p, .explanation p, .benefits p, .participation p, .requirements p{
 	text-align:justify;
 }
 
-#preamble h3{
+.preamble h3{
 	background: transparent url(h3preamble.gif) no-repeat bottom left; 
 	margin: 0px;
 	width: 270px; 
 	height: 36px;
 	border-bottom:1px solid #ddd;
 }
-#preamble h3 span{
+.preamble h3 span{
 	display:none
 }
-#preamble p.p1{
+.preamble p.p1{
 	width: 270px;
 }
 
 
-#supportingText{
+.supporting{
 	border-width:0 0 1px 1px;
 	border-color:#fff #ddd;
 	border-style:solid;
@@ -171,7 +171,7 @@ footer{
 
 }
 
-#explanation, #benefits, #participation, #requirements {
+.explanation, .benefits, .participation, .requirements {
 	padding:0 0 20px 0;
 	margin-bottom:20px;
 	text-align:left;
@@ -187,32 +187,32 @@ p{
 	margin-top:26px;
 }
 
-#quickSummary .p1{
+.summary .p1{
 	margin-top:0;
 }
 
 /* use images to display headers */
 
-#explanation h3{
+.explanation h3{
 	background: transparent url(h3explanation.gif) no-repeat bottom left; 
 }
-#benefits h3{
+.benefits h3{
 	background: transparent url(h3benefits.gif) no-repeat bottom left; 
 }
-#participation h3{
+.participation h3{
 	background: transparent url(h3participation.gif) no-repeat bottom left; 
 }
-#requirements h3{
+.requirements h3{
 	background: transparent url(h3requirements.gif) no-repeat bottom left; 
 }
 	
-#explanation h3, #benefits h3, #participation h3, #requirements h3 {
+.explanation h3, .benefits h3, .participation h3, .requirements h3 {
 	margin: 0px;
 	min-width: 200px; 
 	height: 36px;
 	border-bottom:1px solid #ddd;
 }
-#explanation h3 span, #benefits h3 span, #participation h3 span, #requirements h3 span {
+.explanation h3 span, .benefits h3 span, .participation h3 span, .requirements h3 span {
 	display:none
 }
 

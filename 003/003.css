@@ -58,13 +58,13 @@ a:active, a:hover {
 
 /* specific divs */
 
-#container {
+.page-wrapper {
 	background: #849AA9 url(bg1.gif) top left repeat-y;
 	text-align: left;
 	width: 750px; margin: 0px auto;
 	position: relative;
 	} 
-#supportingText {
+.supporting {
 	/*position: relative; top: -120px;*/
 	padding: 0px 40px 0px 0;
 	/*clear:right;*/
@@ -86,17 +86,17 @@ header h2 span {
 	display: none;
 	}
 
-#quickSummary { 
+.summary { 
 	width: 685px; 
 	margin: 0px auto; 
 	position: relative; 
 	top: -50px;
 	}
-html>body #quickSummary {
+html>body .summary {
 	margin-top:-50px; 
 	top: 0;
 	}
-#quickSummary .p1 {
+.summary .p1 {
 	font-size: 1px;
 	color: white;
 	background: transparent url(panel1-2.jpg) no-repeat top left;
@@ -107,10 +107,10 @@ html>body #quickSummary {
 	voice-family:inherit;
 	height: 258px; 
 	}
-#quickSummary .p1 span {
+.summary .p1 span {
 	display: none;
 	}
-#quickSummary .p2 {
+.summary .p2 {
 	color: #7593A7;
 	background: transparent url(panel3.jpg) no-repeat 0 0;
 	padding: 90px 45px 0px 45px;
@@ -122,19 +122,19 @@ html>body #quickSummary {
 	width: 124px;
 	height: 178px;
 	}
-#quickSummary .p2 span {
+.summary .p2 span {
 	letter-spacing: -1px;
 	line-height: 26px;
 	display: block;
 	}
-#quickSummary .p2 a:link, #quickSummary .p2 a:visited {
+.summary .p2 a:link, .summary .p2 a:visited {
 	color: #7593A7;
 	}
-#quickSummary .p2 a:hover {
+.summary .p2 a:hover {
 	color: #85ABC5;
 	}
 
-#preamble { 
+.preamble { 
 	/*position: relative; top: -120px; */
 	padding: 0px 0px 70px 33px; 
 	margin: 0px 0 20px 0px; 
@@ -142,12 +142,12 @@ html>body #quickSummary {
 	float: left;
 	background: transparent url(tag.gif) 50% 100% no-repeat;
 	}
-#preamble h2 { 
+.preamble h2 { 
 	font: bold 14px georgia, serif; 
 	margin-top: 0px;
 	padding: 0px;
 	}
-#preamble p {
+.preamble p {
 	font: italic 12px/20px georgia, serif;
 	}
 

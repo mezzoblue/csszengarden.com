@@ -21,7 +21,7 @@ body {
 p {
 	margin-top:0;
 	}
-#container {
+.page-wrapper {
 	width:745px;
 	margin-left:30px;
 	position:relative;
@@ -30,7 +30,7 @@ p {
 	
 /* Intro section
 ------------------------------*/
-#intro {
+.intro {
 	position:relative;
 	background-color:white;
 	}
@@ -53,7 +53,7 @@ header h2 {
 	margin:0;padding:0;
 	}
 	
-#quickSummary {
+.summary {
 	text-align:right;
 	position:absolute;
 	top:75px;
@@ -63,31 +63,31 @@ header h2 {
 	font-style:italic;
 	font-family:times new roman, serif;	
 	}
-#quickSummary p {
+.summary p {
 	margin-bottom:0px;
 	}
-#quickSummary a {
+.summary a {
 	color:#C52E00;
 	}
 	
 /* Left-hand column
 ------------------------*/
-#supportingText, #preamble {
+.supporting, .preamble {
 	width:505px;
 	background-image:url("burlap.jpg");
 	color:white;
 	line-height:140%;
 	}
 
-#supportingText p, #preamble p {
+.supporting p, .preamble p {
 	margin:0;
 	padding:4px 10px 10px 10px;
 	}
-#supportingText a, #preamble a {
+.supporting a, .preamble a {
 	color:#FFAF7F;
 	}
 
-#preamble h3, #supportingText h3 { 
+.preamble h3, .supporting h3 { 
 	height:44px; 
 	margin:0; 
 	padding:0;
@@ -95,15 +95,15 @@ header h2 {
 	border-bottom:1px solid #F7F0E9;
 	border-left:1px solid #735B5A;
 	}
-#preamble h3 { border-top-width:0px; }
+.preamble h3 { border-top-width:0px; }
 	
-#preamble h3 span, #supportingText h3 span { display: none; }
+.preamble h3 span, .supporting h3 span { display: none; }
 	
-#preamble h3 		{ background-image:url("enlightenment.gif"); }
-#explanation h3 	{ background-image:url("whatabout.gif"); }
-#participation h3 	{ background-image:url("participation.gif"); }
-#benefits h3 		{ background-image:url("benefits.gif"); }
-#requirements h3 	{ background-image:url("requirements.gif"); }
+.preamble h3 		{ background-image:url("enlightenment.gif"); }
+.explanation h3 	{ background-image:url("whatabout.gif"); }
+.participation h3 	{ background-image:url("participation.gif"); }
+.benefits h3 		{ background-image:url("benefits.gif"); }
+.requirements h3 	{ background-image:url("requirements.gif"); }
 
 /* Footer
 -----------------------------*/

@@ -28,19 +28,19 @@ h1 span,h2 span,h3 span {
 **  Layout
 **----------------------------------------*/
 
-#container {
+.page-wrapper {
   position: relative;
   width: 760px;
   margin: 0 auto;
   text-align: left;
   }
-#intro {
+.intro {
   position: absolute;
   top: 28px;
   left: 0;
   width: 310px;
   }
-#supportingText {
+.supporting {
   width: 690px;
   }
 .sidebar{
@@ -58,9 +58,9 @@ a:link,
 a:visited { color: #49f; background-color: transparent; text-decoration: none; }
 a:hover   { color: #f00; background-color: transparent; text-decoration: none; }
 
-#quickSummary p.p2 a:link,
-#quickSummary p.p2 a:visited { color: #348633; background-color: transparent; }
-#quickSummary p.p2 a:hover   { color: #f00; background-color: transparent; }
+.summary p.p2 a:link,
+.summary p.p2 a:visited { color: #348633; background-color: transparent; }
+.summary p.p2 a:hover   { color: #f00; background-color: transparent; }
 
 footer a:link,
 footer a:visited { color: #348633; background-color: transparent; }
@@ -71,10 +71,10 @@ footer a:hover   { color: #f00; background-color: transparent; }
 .sidebar a.designer-name:hover   { color: #f00; background-color: transparent; }
 
 /*----------------------------------------*
-**  #intro
+**  .intro
 **----------------------------------------*/
 
-#intro {
+.intro {
   font: italic 11px/150% Georgia, Times, "Times New Roman", serif;
   color: #888;
   background-color: transparent;
@@ -91,13 +91,13 @@ header h2 {
   width: 195px; 
   height: 73px; 
   }
-#quickSummary p.p1 {
+.summary p.p1 {
   margin: 5px 0 55px 4px;
   color: #fa0;
   background-color: transparent;
   line-height: 160%;
   }
-#quickSummary p.p2 {
+.summary p.p2 {
   margin: 0 150px 0 4px;
   padding: 4px 25px 5px 10px;
   background: transparent url(gradGreen.jpg) repeat-y;
@@ -105,47 +105,47 @@ header h2 {
   color: #888;
   line-height: 130%;
   }
-#preamble {
+.preamble {
   margin-left: 4px;
   padding: 20px 0 0 15px;
   border-left: 1px solid #a7d9a8;
   }
-#preamble h3 {
+.preamble h3 {
   background: transparent url(introEnlightenment.gif) no-repeat 0 0; 
   width: 138px; 
   height: 37px; 
   }
-#preamble p {
+.preamble p {
   margin: 10px 140px 0 0;
   }
 
 /*----------------------------------------*
-**  #supportingText
+**  .supporting
 **----------------------------------------*/
 
-#supportingText {
+.supporting {
   padding-bottom: 40px;
   font: 13px/140% Georgia, Times, "Times New Roman", serif;
   color: #888;
   background: transparent url(textBack.jpg) no-repeat 0 40px;
   }
-#supportingText p {
+.supporting p {
   margin: 0 125px 10px 221px;
   }
-#supportingText h3 {
+.supporting h3 {
   margin: 25px 0 6px 220px;
   width: 206px; 
   height: 21px; 
   }
-#explanation h3   { background: transparent url(textAbout.gif)         no-repeat 0 100%; margin-top: 0; padding-top: 430px; }
-#participation h3 { background: transparent url(textParticipation.gif) no-repeat 0 0; }
-#benefits h3      { background: transparent url(textBenefits.gif)      no-repeat 0 0; }
+.explanation h3   { background: transparent url(textAbout.gif)         no-repeat 0 100%; margin-top: 0; padding-top: 430px; }
+.participation h3 { background: transparent url(textParticipation.gif) no-repeat 0 0; }
+.benefits h3      { background: transparent url(textBenefits.gif)      no-repeat 0 0; }
 
 /*----------------------------------------*
-**  #supportingText > #requirements
+**  .supporting > .requirements
 **----------------------------------------*/
 
-#requirements {
+.requirements {
   margin: 30px 0 0 221px;
   padding: 0 0 15px 0;
   border-left: 1px solid #a7d9a8;
@@ -153,18 +153,18 @@ header h2 {
   color: #888;
   background-color: transparent;
   }
-#requirements h3 {
+.requirements h3 {
   margin: 0 0 13px 0;
   background: transparent url(textRequirements.jpg) no-repeat 0 0;
   width: 175px;
   height: 25px;
   }
-#requirements p {
+.requirements p {
   margin: 9px 0 0 15px;
   }
 
 /*----------------------------------------*
-**  #supportingText > footer
+**  .supporting > footer
 **----------------------------------------*/
 
 footer {

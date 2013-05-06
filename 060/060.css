@@ -54,14 +54,14 @@ a:hover, a:active {
 
 
 /* specific divs */
-#container { 
+.page-wrapper { 
 	padding: 0px 0px 0px 0px;  
 	margin: 0px 0px 0px 0px; 
 	width: 780px;
 
 	}
 
-#intro { 
+.intro { 
 
 
 
@@ -96,20 +96,20 @@ header h2 span {
 	display:none;
 	}
 
-#quickSummary {
+.summary {
 	clear:both; 
 	margin: -78px 0px 0px 5px; 
 	width: 160px; 
 
 	}
-#quickSummary p {
+.summary p {
     width: 240px;
 	font: 10px; 
 	text-align:center;
 	line-height: 12px;
 	}
 
-#preamble {
+.preamble {
     background: url(road2enlinghtenbg.jpg) no-repeat;
 	margin: 18px 5px 5px 3px;
 	width: 249px;
@@ -118,29 +118,29 @@ header h2 span {
 
 	}
 
-#preamble h3 {
+.preamble h3 {
 	margin: 20px 10px 0px 15px;
 	width: 200px;
 }
 	
-#preamble p {
+.preamble p {
 	margin: 10px 10px 0px 15px;
 	width: 210px;
 }
 
 
 	
-#supportingText {
+.supporting {
 	margin: 25px 145px 0px 255px;
 	text-align: left;
 	width: 370px;
 }
 
-#explanation p.p1 {
+.explanation p.p1 {
 	margin-right:  140px;
 	text-align: left;	
 }
-#explanation p.p2 {
+.explanation p.p2 {
 	margin-right: 20px;
 	text-align: left;
 }

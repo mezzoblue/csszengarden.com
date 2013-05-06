@@ -73,7 +73,7 @@ a:hover, a:active {
 	color: #ffffff;
 	}
 
-#container {
+.page-wrapper {
 	background-image: url(geco_garden.gif);
 	background-position: 221px 0px; 
 	background-repeat:no-repeat;
@@ -81,7 +81,7 @@ a:hover, a:active {
 	height:80%;
 	}
 
-#explanation {
+.explanation {
 	BACKGROUND:#880622 url(eye.gif) 0 10px no-repeat;
 	width:520px;
 	padding-bottom:35px;
@@ -89,7 +89,7 @@ a:hover, a:active {
 	border-right: solid 1px #5F0116;
 	}
 
-#participation, #benefits, #requirements {
+.participation, .benefits, .requirements {
 	BACKGROUND:#880622 url(eye.gif) 0 10px no-repeat;
 	width:520px;
 	padding-bottom:35px;
@@ -97,12 +97,12 @@ a:hover, a:active {
 	border-right: solid 1px #5F0116;
 	}
 	
-#explanation p, #participation p, #benefits p, #requirements p {
+.explanation p, .participation p, .benefits p, .requirements p {
 	width:490px;
 	margin-left:10px;
 	}
 	
-#explanation h3, #participation h3, #benefits h3, #requirements h3 {
+.explanation h3, .participation h3, .benefits h3, .requirements h3 {
 	margin-left:55px;
 	padding-top:30px;
 	color: #d3f580;
@@ -128,7 +128,7 @@ footer a:hover {
 	color:#880622;
 	}
 
-#intro { 
+.intro { 
 	min-width: 200px;
 	}
 
@@ -160,7 +160,7 @@ footer a:hover {
 	}
 		
  
-#quickSummary {
+.summary {
 	position:absolute;
 	top: 0; 
 	left: 520px; 
@@ -174,7 +174,7 @@ footer a:hover {
 	
 
 	
-#quickSummary p {
+.summary p {
 	font: 8pt/12pt Verdana, Arial, Helvetica, sans-serif;
 	text-align: left;
 	margin-left:5px;
@@ -189,7 +189,7 @@ p:first-letter {
 	}
 
 
-#preamble {
+.preamble {
 	BACKGROUND:#497c89;
 	width:221px;
 	border-right: solid 1px #EEE9E0;
@@ -198,7 +198,7 @@ p:first-letter {
 	padding-top:1px;
 	}
 	
-#preamble h3 {
+.preamble h3 {
 	color: #d3f580;
 	padding-bottom:5px;
 	margin-left:10px;

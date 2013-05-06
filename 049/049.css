@@ -57,17 +57,17 @@
 		border-bottom: none;
 	}
 	/* specific divs */
-	#container {
+	.page-wrapper {
 		padding: 0px;
 		margin: 0px;
 	}
-	#intro{
+	.intro{
 		width: 760px;
 		position:absolute;
 		top:0px;
 		left:0px;
 	}
-	#intro{
+	.intro{
 		width: 760px;
 	}
 	header {
@@ -94,21 +94,21 @@
 	header h2 span {
 		display:none
 	}
-	#quickSummary p.p1{
+	.summary p.p1{
 		margin:0px;
 		margin-left: 199px;
 		padding: 20px;
 		text-align:justify;
 		background: transparent url(hordot.gif) repeat-x bottom;
 	}
-	#quickSummary p.p2{
+	.summary p.p2{
 		margin:0px;
 		margin-left: 199px;
 		padding: 20px;
 		width: 520px;
 		background: transparent url(hordot.gif) repeat-x bottom;
 	}
-	#preamble{
+	.preamble{
 		margin-left: 199px;
 		padding-left: 20px ;
 		padding-right: 20px;
@@ -116,42 +116,42 @@
 		width: 520px;
 		background:transparent url(hordot.gif) repeat-x bottom;
 	}
-	#supportingText {
+	.supporting {
 		position: absolute;
 		top:390px;
 		left: 199px;
 		width: 560px;
 		padding-bottom: 20px;
 	}
-	#preamble h3, #explanation h3, #participation h3, #benefits h3, #requirements h3{
+	.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3{
 		margin:20px 0px 10px 0px;
 		width:200px;
 		height:19px;
 	}
-	#preamble h3{
+	.preamble h3{
 		background: transparent url(preh3.gif) no-repeat top left;
 	}
-	#explanation h3{
+	.explanation h3{
 		background: transparent url(exph3.gif) no-repeat top left;
 	}
-	#participation h3{
+	.participation h3{
 		background: transparent url(parth3.gif) no-repeat top left;
 	}
-	#benefits h3, #requirements h3{
+	.benefits h3, .requirements h3{
 		background: transparent url(benh3.gif) no-repeat top left;
 	}
-	#requirements h3{
+	.requirements h3{
 		background: transparent url(reqh3.gif) no-repeat top left;
 	}
 	
-	#preamble h3 span, #explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span, .design-selection h3 span, #lfavorites h3 span, .design-archives h3 span, .zen-resources h3 span{
+	.preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span, .design-selection h3 span, #lfavorites h3 span, .design-archives h3 span, .zen-resources h3 span{
 		display:none;
 	}
-	#preamble p.p3, #explanation p.p2, #participation p.p4, #benefits p.p1, #requirements p.p5 {
+	.preamble p.p3, .explanation p.p2, .participation p.p4, .benefits p.p1, .requirements p.p5 {
 		padding-bottom: 20px;
 		margin:0px;
 	}
-	#preamble, #explanation, #participation, #benefits, #requirements {
+	.preamble, .explanation, .participation, .benefits, .requirements {
 		padding-left: 20px ;
 		padding-right: 20px;
 		padding-bottom: 4px;

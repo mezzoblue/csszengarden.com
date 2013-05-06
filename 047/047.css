@@ -67,7 +67,7 @@ a:hover {
 	height: 60px;
 }
 
-#container {
+.page-wrapper {
 	margin-left: 358px;
 	margin-top: 260px;
 	width: 550px;
@@ -84,7 +84,7 @@ header {
 	z-index: 2;	
 }
 
-#preamble {
+.preamble {
 	color: #eee;
 	position: absolute;
 	height: 190px;
@@ -95,18 +95,18 @@ header {
 	z-index: 2;
 	overflow: auto;
 }
-#preamble h3 {
+.preamble h3 {
 	background: url(road.gif) no-repeat left top;	
 	height: 19px;
 	width: 216px;
 	margin: 0 0 8px 0;	
 	}
 	
-#preamble h3 span {
+.preamble h3 span {
 	display: none;	
 	}
 
-#quickSummary  {
+.summary  {
 	position: absolute;
 	left: 52px;
 	top: 365px;
@@ -117,14 +117,14 @@ header {
 	line-height: 2em;
 }
 
-#quickSummary  p.p2{	
+.summary  p.p2{	
 	padding-top: 10px;
 }
 
 
 /* This is the bit that screws up in Opera 6 */
 
-#supportingText { 
+.supporting { 
 	width: 375px;
 	height: 150px;
 	overflow: auto;
@@ -133,13 +133,13 @@ header {
 	border-left: solid 1px #999;
 }
 
-#supportingText h3 {
+.supporting h3 {
 	font-size: 13px;
 	color: #7fbb09;
 	border-bottom: 1px solid #ccc;
 	margin: 1.6em 0 0.8em 0;
 }
-#supportingText h3 span {
+.supporting h3 span {
 	border-bottom: 5px solid #ccc;
 }
 

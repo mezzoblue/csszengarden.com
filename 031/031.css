@@ -25,7 +25,7 @@ body
 
 
 
-#container
+.page-wrapper
 {
 	position: relative;
 	padding:0;
@@ -45,7 +45,7 @@ h1, h2, h3
 	background-position: left top;
 }
 
-h1 span, h2 span,h3 span, #quickSummary p.p span { display: none; }
+h1 span, h2 span,h3 span, .summary p.p span { display: none; }
 
 /* header and summary
 --------------------------------- */
@@ -57,7 +57,7 @@ header h1
 	padding:0;
 }
 
-#quickSummary p.p1
+.summary p.p1
 {
 	position: absolute;
 	top: 12em;
@@ -68,7 +68,7 @@ header h1
 	text-align: right;
 }
 
-#quickSummary p.p2
+.summary p.p2
 {
 	position: absolute;
 	top: 25em;
@@ -82,7 +82,7 @@ header h1
 	background-repeat: no-repeat;
 }
 
-#quickSummary p.p2 a:link, #quickSummary p.p2 a:visited
+.summary p.p2 a:link, .summary p.p2 a:visited
 {
 	white-space: nowrap;
 	font: bold 92%/1.3em Verdana,Arial,Sans-serif;
@@ -92,7 +92,7 @@ header h1
 /* preamble
 --------------------------------- */
 
-#preamble
+.preamble
 {
 	position: relative;
 	left: 195px;
@@ -101,13 +101,13 @@ header h1
 
 }
 
-#preamble h3
+.preamble h3
 {
 	height: 70px;
 	background-image: url("road.gif");
 }
 
-#preamble p
+.preamble p
 {
 	width: 350px;
 }
@@ -115,7 +115,7 @@ header h1
 /* supporting text
 --------------------------------- */
 
-#supportingText
+.supporting
 {
 	position: relative;
 	left: 195px;
@@ -124,29 +124,29 @@ header h1
 	width: 400px;
 }
 
-#supportingText p
+.supporting p
 {
 	line-height: 1.5em;
 }
 
-#supportingText h3 { height: 70px; }
+.supporting h3 { height: 70px; }
 
-#explanation h3
+.explanation h3
 {
 	background-image: url("what.gif");
 }
 
-#participation h3
+.participation h3
 {
 	background-image: url("participation.gif");
 }
 
-#benefits h3
+.benefits h3
 {
 	background-image: url("benefits.gif");
 }
 
-#requirements h3
+.requirements h3
 {
 	background-image: url("requirements.gif");
 }

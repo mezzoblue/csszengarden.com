@@ -60,7 +60,7 @@ a:active { color: #988; background: transparent }
 
 /* let's start with the whole page container */
 
-#container {
+.page-wrapper {
 	position: relative;
 	margin: 10px auto;
 	width: 750px;
@@ -88,25 +88,25 @@ header h1, header h2 {
 }
 
 
-#quickSummary {
+.summary {
 	border: 1px #000 dotted;
 	background: #fff;
 	color: inherit;
 	font-size: 0.85em;
 }
 
-#quickSummary, #preamble, #supportingText {
+.summary, .preamble, .supporting {
 	text-align: left;
 	margin: 1em 170px 1em 25px;
 	padding: 5px;
 }
 
-#quickSummary a, #preamble a, #supportingText a {
+.summary a, .preamble a, .supporting a {
 	text-decoration: none;
 	font-weight: bold;
 }
 
-#explanation {
+.explanation {
 	/* a little inelegant, but gets the job done */
 	margin-top: -3em;
 }
@@ -187,7 +187,7 @@ this is again hidden from IE, as it tends to crash otherwise and
 I really can't be bothered to work around its flaws...consider it
 icing on the cake for non-IE users */
 
-body > div#supportingText p:first-letter {
+body > .supporting p:first-letter {
 	font: 2em Times, Helvetica, serif;
 	float: left;
 	text-transform: uppercase;
@@ -201,14 +201,14 @@ the first one works in all 5+ browsers, whereas the second one is only for CSS2 
 ones. also, use of the |= selector may be "unorthodox", but it was the best I could come up
 with since the two download links in the "participation" div are not especially marked up
 with a class, AND there are other links in that div ("CSS Resource Guide", "Send us a link" and "contact me") that
-do not need the little icon...hence the rule could not be applied to "#participation a" */
+do not need the little icon...hence the rule could not be applied to ".participation a" */
 
-#quickSummary a {
+.summary a {
 	padding-left: 15px;
 	background: url(download.png) no-repeat left center;
 }
 
-#participation a[href|=zengarden] { 
+.participation a[href|=zengarden] { 
 	/* CSS2-compliant only */
 	padding-left: 15px;
 	background: url(download.png) no-repeat left center;

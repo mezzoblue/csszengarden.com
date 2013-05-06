@@ -46,13 +46,13 @@
 
 /* ---[ Container ]---------------------------------- */
 
-    #container {
+    .page-wrapper {
         background: transparent url('side.gif') 100% 0px repeat-y;
     }
 
     /* ---[ Intro ]---------------------------------- */
 
-        #intro {
+        .intro {
             margin: 100px 275px 0px 100px;
             background: #fff url('inner_shadow.gif') 0px 0px repeat-x;
             padding: 30px 10px 10px 10px;
@@ -107,7 +107,7 @@
 
         /* ---[ Quick Summary ]---------------------- */
 
-            #quickSummary {
+            .summary {
                 width: 270px;
                 float: left;
                 border-top: solid 1px #ddd;
@@ -120,13 +120,13 @@
                 font-size: 1em;
             }
 
-            #quickSummary p, #quickSummary p:first-letter {
+            .summary p, .summary p:first-letter {
                 text-align: center;
                 color: #666;
                 font-weight: normal;
             }
 
-            #quickSummary .p1 {
+            .summary .p1 {
                 background: #fff url('demo.p1.gif') 0% 0% no-repeat;
                 /* padding-bottom: 60px; */
                 height: 176px;
@@ -134,27 +134,27 @@
                 margin: 0px;
             }
             
-            #quickSummary .p1 span {
+            .summary .p1 span {
                 display: none;
             }
             
-            #quickSummary .p2 {
+            .summary .p2 {
                 position: relative;
                 bottom: 0px;
                 text-align: right;
                 padding-bottom: 15px;
             }
             
-            #quickSummary>.p2 {
+            .summary>.p2 {
                 padding-bottom: 0px;
             }
             
-            #quickSummary .p2 span {
+            .summary .p2 span {
                 visibility: hidden;
                 font-size: 0px;
             }
             
-            #quickSummary .p2 span a {
+            .summary .p2 span a {
                 margin-left: 75px;
                 font-size: 10pt;
                 visibility: visible;
@@ -169,7 +169,7 @@
                 text-transform: capitalize;
             }
 
-            #quickSummary .p2 span a:hover {
+            .summary .p2 span a:hover {
                 background: transparent url('file2.gif') 100% 50% no-repeat;
                 color: #819bb2;
             }
@@ -177,11 +177,11 @@
 
         /* ---[ Preamble ]--------------------------- */
 
-            #preamble h3 {
+            .preamble h3 {
                 display: none;
             }
             
-            #preamble p {
+            .preamble p {
                 font-size: 0.9em;
                 color: #819bb2;
                 padding-left: 300px;
@@ -193,44 +193,44 @@
 
     /* ---[ Supporting Text ]------------------------ */
 
-        #supportingText {
+        .supporting {
             margin: 0px 275px 0px 100px;
             background: #fff;
             padding: 10px 0px 10px 0px;
             border-left: solid 1px #ccc;
         }
         
-        #supportingText div {
+        .supporting div {
             clear: both;
         }
         
-        #supportingText h3 {
+        .supporting h3 {
             padding-top: 30px;
             height: 25px;
             border-bottom: solid 1px #819bb2;
         }
 
-        #supportingText h3 span {
+        .supporting h3 span {
             display: none;
         }
         
         /* ---[ Explanation ]------------------------ */
         
-            #explanation {
+            .explanation {
                 padding-left: 10px;
                 padding-right: 10px;
             }
         
-            #explanation h3 {
+            .explanation h3 {
                 background: #fff url('h3.explanation.gif') 100% 100% no-repeat;
             }
 
-            #explanation p.p1 {
+            .explanation p.p1 {
                 width: 45%;
                 float: left;
             }
             
-            #explanation p.p2 {
+            .explanation p.p2 {
                 width: 45%;
                 float: right;
             }
@@ -239,28 +239,28 @@
 
         /* ---[ Participation ]---------------------- */
         
-            #participation {
+            .participation {
                 background: #fff url('stone.circle.jpg') 50% 100% no-repeat;
                 padding-left: 10px;
                 padding-right: 10px;
             }
 
-            #participation h3 {
+            .participation h3 {
                 background: #fff url('h3.participation.gif') 100% 100% no-repeat;
                 /* border-top: solid 1px #ccc; */
             }
 
-            #participation p.p2 {
+            .participation p.p2 {
                 width: 45%;
                 float: left;
             }
             
-            #participation p.p3 {
+            .participation p.p3 {
                 width: 45%;
                 float: right;
             }
 
-            #participation p.p4 {
+            .participation p.p4 {
                 clear: both;
             }
 
@@ -268,12 +268,12 @@
 
         /* ---[ Benefits ]--------------------------- */
         
-            #benefits {
+            .benefits {
                 padding-left: 10px;
                 padding-right: 10px;
             }
 
-            #benefits h3 {
+            .benefits h3 {
                 background: #fff url('h3.benefits.gif') 100% 100% no-repeat;
                 /* border-top: solid 1px #ccc; */
             }
@@ -282,28 +282,28 @@
 
         /* ---[ Requirements ]----------------------- */
         
-            #requirements {
+            .requirements {
                 background: #fff url('bamboo.leaf.jpg') 100% 100% no-repeat;
                 padding-left: 10px;
                 padding-right: 10px;
             }
 
-            #requirements h3 {
+            .requirements h3 {
                 background: #fff url('h3.requirements.gif') 100% 100% no-repeat;
                 /* border-top: solid 1px #ccc; */
             }
 
-            #requirements p.p2 {
+            .requirements p.p2 {
                 width: 45%;
                 float: left;
             }
             
-            #requirements p.p3, #requirements p.p4 {
+            .requirements p.p3, .requirements p.p4 {
                 width: 45%;
                 float: right;
             }
             
-            #requirements p.p5 {
+            .requirements p.p5 {
                 clear: both;
             }
 

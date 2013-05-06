@@ -16,7 +16,7 @@ body {
 	margin:0; 
 	padding:0;
 }
-#container {
+.page-wrapper {
 	width:auto;
 	margin:22px 0 0 0;
 	padding:7px 0 0 0;
@@ -27,7 +27,7 @@ abbr {
 }
 
 /*-- intro section --*/
-#intro {
+.intro {
 	background:#fff url(intro_bg.jpg) no-repeat top left;
 	width:339px;
 	height:471px;
@@ -42,16 +42,16 @@ header {
 	padding:0;
 	border-bottom:1px dotted #c8c8c8;
 }
-#quickSummary, #preamble {
+.summary, .preamble {
 	font-size:11px;
 	margin:0 0 0 100px;
 	width:202px;
 }
-#quickSummary p, #preamble p {
+.summary p, .preamble p {
 	margin-bottom:10px;
 	line-height:16px;
 }
-#preamble h3 {
+.preamble h3 {
 	background:#fff url(preamble_h3_bg.gif) no-repeat top left;
 	width:142px;
 	height:13px;
@@ -59,12 +59,12 @@ header {
 }
 
 /*-- supportingText section --*/
-#supportingText {
+.supporting {
 	background:transparent;
 	font-size:11px;
 	width:auto;
 }
-#explanation {
+.explanation {
 	position:absolute;
 	top:80px;
 	left:520px;
@@ -75,19 +75,19 @@ header {
 	padding:10px 0 0 0;
 	height:410px;
 }
-#explanation h3 {
+.explanation h3 {
 	background:#F4F4F3 url(explan_h3_bg.gif) no-repeat top left;
 	width:137px;
 	height:13px;
 	margin:30px 10px 10px 10px;
 }
-#explanation p {
+.explanation p {
 	margin:10px;
 	line-height:16px;
 }
 
 /*-- participation section --*/
-#participation {
+.participation {
 	position:absolute;
 	top:80px;
 	left:868px;
@@ -97,19 +97,19 @@ header {
 	padding:10px 0 0 3px;
 	height:410px;
 }
-#participation h3 {
+.participation h3 {
 	background:#fff url(part_h3_bg.gif) no-repeat top left;
 	width:73px;
 	height:13px;
 	margin:30px 10px 10px 10px;
 }
-#participation p {
+.participation p {
 	margin:10px;
 	line-height:16px;
 }
 
 /*-- benefits section --*/
-#benefits {
+.benefits {
 	position:absolute;
 	top:80px;
 	left:1216px;
@@ -119,19 +119,19 @@ header {
 	padding:10px 0 0 3px;
 	height:410px;
 }
-#benefits h3 {
+.benefits h3 {
 	background:#F4F4F3 url(ben_h3_bg.gif) no-repeat top left;
 	width:45px;
 	height:13px;
 	margin:30px 10px 10px 10px;
 }
-#benefits p {
+.benefits p {
 	margin:10px;
 	line-height:16px;
 }
 
 /*-- requirements section --*/
-#requirements {
+.requirements {
 	position:absolute;
 	top:80px;
 	left:1564px;
@@ -141,13 +141,13 @@ header {
 	padding:10px 0 0 3px;
 	height:410px;
 }
-#requirements h3 {
+.requirements h3 {
 	background:#fff url(req_h3_bg.gif) no-repeat top left;
 	width:73px;
 	height:13px;
 	margin:30px 10px 10px 10px;
 }
-#requirements p {
+.requirements p {
 	margin:10px;
 	line-height:16px;
 }
@@ -259,14 +259,14 @@ footer {
 }
 
 /*-- LINKS --*/
-#quickSummary a:link, #quickSummary a:visited, #quickSummary a:active, #supportingText a:link, #supportingText a:visited, #supportingText a:active, .design-archives a:link, .design-archives a:visited, .design-archives a:active, .zen-resources a:link, .zen-resources a:visited, .zen-resources a:active {
+.summary a:link, .summary a:visited, .summary a:active, .supporting a:link, .supporting a:visited, .supporting a:active, .design-archives a:link, .design-archives a:visited, .design-archives a:active, .zen-resources a:link, .zen-resources a:visited, .zen-resources a:active {
 	color:#65625B;
 }
-#quickSummary a:hover, #supportingText a:hover, .design-archives a:hover, .zen-resources a:hover{
+.summary a:hover, .supporting a:hover, .design-archives a:hover, .zen-resources a:hover{
 	color:#434039;
 }
 
 /*-- hidden --*/
-header h1, header h2, #preamble h3 span, #preamble p.p3, #participation p.p4, #explanation h3 span, #participation h3 span, #benefits h3 span, #supportingText h3 span, .design-selection h3 span, .design-archives h3 span, .zen-resources h3 span, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+header h1, header h2, .preamble h3 span, .preamble p.p3, .participation p.p4, .explanation h3 span, .participation h3 span, .benefits h3 span, .supporting h3 span, .design-selection h3 span, .design-archives h3 span, .zen-resources h3 span, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
 	display:none;
 }

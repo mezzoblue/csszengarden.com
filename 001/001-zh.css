@@ -54,7 +54,7 @@ abbr {
 
 
 /* specific divs */
-#container { 
+.page-wrapper { 
 	background: url(/001/zen-bg.jpg) no-repeat top left; 
 	padding: 0px 175px 0px 110px;  
 	margin: 0px; 
@@ -63,7 +63,7 @@ abbr {
 	left: 0px;
 	}
 
-#intro { 
+.intro { 
 	min-width: 470px;
 	}
 header { 
@@ -93,22 +93,22 @@ header h2 span {
 	display:none
 	}
 
-#quickSummary {
+.summary {
 	clear:both; 
 	margin: 20px 20px 20px 10px; 
 	width: 160px; 
 	float: left;
 	}
-#quickSummary p {
+.summary p {
 	font: italic 20px/240% georgia; 
 	text-align:center;
 	}
 
-#preamble {
+.preamble {
 	clear: right; 
 	padding: 0px 10px 0px 10px;
 	}
-#supportingText {	
+.supporting {	
 	padding-left: 10px; 
 	margin-bottom: 40px;
 	}

@@ -57,19 +57,19 @@ header h2 {
 header h2 span {
 	display:none;
 	}
-#quickSummary {
+.summary {
 	display:block;
 	}
-#quickSummary .p1 {
+.summary .p1 {
 display:none;
 	}
-#quickSummary .p2 {
+.summary .p2 {
  	position:absolute;
 	top:0px;
 	left:300px;
 	padding:0;margin:0;
 	}
-#preamble {
+.preamble {
 	border-top:1px solid #fff;
 	background-image:url(halfscreen-gray.gif);
 	width:250px;
@@ -78,31 +78,31 @@ display:none;
 	top:18px;
 	right:10px;
 		}
-#preamble p{
+.preamble p{
 	margin:10px;
 	}
-#preamble h3{
+.preamble h3{
 	font-style:oblique;
 	margin:10px;
 	}
-#supportingText {
+.supporting {
 	margin:350px auto 0 auto;
 	width:90%;
 	}
-#supportingText div {
+.supporting div {
 	/*background-image:url(halfscreen-gray.gif);*/
 	border-top:1px solid #fff;
 	clear:both;
 	}
 
-#supportingText h3 span{
+.supporting h3 span{
 	display:none;	
 	}
-#supportingText p {
+.supporting p {
 	padding:5px 10px;
 	line-height:150%;
 	}
-#explanation h3{
+.explanation h3{
 	Float:left;
 	background-image:url(about.gif);
 	width:46px;
@@ -111,20 +111,20 @@ display:none;
 	margin:0 10px 0px 0px;
 	border-right:1px solid white;
 	}
-#explanation p{
+.explanation p{
 		margin:0px 0px 0px 43px;
 		}
-#supportingText div#explanation {
+.supporting div.explanation {
 	margin:20px 10px 0 200px;
 	background:url(about_background.gif) no-repeat 100% 100%;
 	min-height:234px;
 	height:234px;
 	clear:none;
 	}
-#supportingText #explanation[id] {
+.supporting .explanation[id] {
 	height:auto;
 	}
-#participation h3{
+.participation h3{
 	Float:right;
 	background-image:url(participation.gif);
 	width:46px;
@@ -133,19 +133,19 @@ display:none;
 	margin:0 0px 0px 10px;
 	border-left:1px solid white;
 	}
-#supportingText #participation {
+.supporting .participation {
 	margin:20px 200px 0 10px;
 	min-height:234px;
 	height:234px;
 	background:url(participation_back.gif) no-repeat 0 100%;
 	}
-#participation p{
+.participation p{
 		margin:0px 43px 0px 0px;
 		}
-#supportingText #participation[id] {
+.supporting .participation[id] {
 	height:auto;
 	}
-#benefits h3{
+.benefits h3{
 	Float:left;
 	background-image:url(benefits.gif);
 	width:46px;
@@ -154,19 +154,19 @@ display:none;
 	margin:0 10px 0px 0px;
 	border-right:1px solid white;
 	}
-#benefits p{
+.benefits p{
 		margin:0px 0px 0px 43px;
 		}
-#supportingText #benefits {
+.supporting .benefits {
 margin:20px 10px 0 200px;
 	min-height:133px;
 	height:133px;
 	background:url(benefits_back.gif) no-repeat 100% 100%;
 	}
-#supportingText #benefits[id] {
+.supporting .benefits[id] {
 	height:auto;
 	}
-#requirements h3{
+.requirements h3{
 	Float:right;
 	background-image:url(Requirements.gif);
 	width:46px;
@@ -175,19 +175,19 @@ margin:20px 10px 0 200px;
 	margin:0 0px 0px 10px;
 	border-left:1px solid white;
 	}
-#requirements p{
+.requirements p{
 		margin:0px 43px 0px 0px;
 		}
-#supportingText #requirements {
+.supporting .requirements {
 	margin:20px 200px 30px 10px;
 	min-height:234px;
 	height:234px ;
 	background:url(requirements_back.gif) no-repeat 0 100%;
 	}
-#supportingText #requirements[id] {
+.supporting .requirements[id] {
 	height:auto;
 	}
-#supportingText footer { 
+.supporting footer { 
 	text-align:center;
 	padding-top:3px;
 	}

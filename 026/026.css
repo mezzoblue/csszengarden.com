@@ -31,21 +31,21 @@ abbr {
 	border: 0 none;
 }
 
-#container {
+.page-wrapper {
 	margin: 0;
 	padding: 0;
 }
 
-#quickSummary p, #preamble p {
+.summary p, .preamble p {
 	margin: 0;
 	padding: 8px 30px 4px 18px;
 }
-#quickSummary .p1 {
+.summary .p1 {
 	font-weight: bold;
 	color: #777;
 }
 
-#intro {
+.intro {
 	margin: 0;
 	padding: 0;
 	width: 303px;
@@ -71,18 +71,18 @@ h2 span {
 	display: none;
 }
 
-#preamble h3 {
+.preamble h3 {
 	margin: 5px 0 0;
 	padding: 0;
 	width: 303px;
 	height: 36px;
 	background: url(the_road.jpg) no-repeat transparent;
 }
-#preamble h3 span {
+.preamble h3 span {
 	display: none;
 }
 
-#supportingText {
+.supporting {
 	position: absolute;
 	top: 70px;
 	left: 303px;
@@ -91,55 +91,55 @@ h2 span {
 	padding: 0;
 	background: url(support_bg.gif) repeat-y top right transparent;
 }
-#supportingText h3, #supportingText p {
+.supporting h3, .supporting p {
 	margin: 0;
 	padding: 0 40px 10px 0px;
 }
-#supportingText h3 span {
+.supporting h3 span {
 	display: none;
 }
 
-#participation h3 {
+.participation h3 {
 	margin: 0 40px 5px 0px;
 	padding: 0;
 	height: 34px;
 	background: url(parti.gif) no-repeat transparent;
 	border-bottom: 1px solid #ccc;
 }
-#benefits h3 {
+.benefits h3 {
 	margin: 0 40px 5px 0px;
 	padding: 0;
 	height: 34px;
 	background: url(bene.gif) no-repeat transparent;
 	border-bottom: 1px solid #ccc;
 }
-#requirements h3 {
+.requirements h3 {
 	margin: 0 40px 5px 0px;
 	padding: 0;
 	height: 34px;
 	background: url(req.gif) no-repeat transparent;
 	border-bottom: 1px solid #ccc;
 }
-#requirements p.p5 {
+.requirements p.p5 {
 	border-top: 1px solid #ccc;
 	margin: 10px 40px 5px 0;
 	padding: 10px 0 0;
 }
-#preamble h3 span {
+.preamble h3 span {
 	display: none;
 }
 
 
-#explanation {
+.explanation {
 	background: url(so_what_bg.gif) no-repeat top right transparent;
 }
-#explanation h3 {
+.explanation h3 {
 	margin: 0 15px 20px 0;
 	padding: 0;
 	height: 36px;
 	background: url(so_what.jpg) no-repeat transparent;
 }
-#explanation h3 span {
+.explanation h3 span {
 	display: none;
 }
 

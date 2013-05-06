@@ -67,7 +67,7 @@ header h2 span {
 	display:none;
 	}
 
-#quickSummary {
+.summary {
 	position: absolute;
 	left: 55px;
 	top: 170px;
@@ -75,12 +75,12 @@ header h2 span {
 	z-index: 2;
 	}
 	
-#quickSummary p {
+.summary p {
 	font: italic 10px/16px georgia; 
 	text-align: right;
 	}
 
-#preamble {
+.preamble {
 	position: absolute;
 	background: transparent url(femur.jpg) no-repeat bottom left;
 	top: 170px;
@@ -90,20 +90,20 @@ header h2 span {
 	z-index: 2;
 	}
 	
-#preamble h3 {
+.preamble h3 {
 	background: transparent url(the_road.jpg) no-repeat top left;  
 	width: 300px; 
 	height: 25px;
 	}
 	
-#preamble h3 span {
+.preamble h3 span {
 	display: none;
 	}
 	
-#supportingText {
+.supporting {
 	}
 	
-#explanation {
+.explanation {
 	position: absolute;
 	top: 170px;
 	left: 865px;
@@ -111,17 +111,17 @@ header h2 span {
 	z-index: 2;
 	}
 	
-#explanation h3 {
+.explanation h3 {
 	background: transparent url(so_what.jpg) no-repeat top left;  
 	width: 300px; 
 	height: 25px;
 	}
 	
-#explanation h3 span {
+.explanation h3 span {
 	display: none;
 	}
 	
-#participation {
+.participation {
 	position: absolute;
 	background: transparent url(tin_can.jpg) no-repeat top left;
 	top: 170px;
@@ -131,17 +131,17 @@ header h2 span {
 	padding-bottom: 40px;
 	}
 	
-#participation h3 {
+.participation h3 {
 	background: transparent url(participation.jpg) no-repeat top left;  
 	width: 300px; 
 	height: 25px;
 	}
 	
-#participation h3 span {
+.participation h3 span {
 	display: none;
 	}
 	
-#benefits {
+.benefits {
 	background: transparent url(ants.jpg) no-repeat top left; 
 	position: absolute;
 	top: 170px;
@@ -151,17 +151,17 @@ header h2 span {
 	z-index: 2;
 	}
 	
-#benefits h3 {
+.benefits h3 {
 	background: transparent url(benefits.jpg) no-repeat top left; 
 	width: 300px;
 	height: 25px;
 	}
 	
-#benefits h3 span {
+.benefits h3 span {
 	display: none;
 	}
 	
-#requirements {
+.requirements {
 	position: absolute;
 	top: 170px;
 	left: 1825px;
@@ -170,17 +170,17 @@ header h2 span {
 	padding-bottom: 40px;
 	}
 	
-#requirements h3 {
+.requirements h3 {
 	background: transparent url(requirements.jpg) no-repeat top left; 
 	width: 300px;
 	height: 25px;
 	}
 	
-#requirements h3 span {
+.requirements h3 span {
 	display: none;
 	}
 	
-#requirements p {
+.requirements p {
 	font: 9px/15px verdana;
 	}
 

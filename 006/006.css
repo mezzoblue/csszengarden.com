@@ -45,7 +45,7 @@ a:hover, a:active {
 
 
 /* specific divs */
-#container { 
+.page-wrapper { 
 	background: #9cf url(trees.jpg) no-repeat left top; 
 	padding: 200px 0px 0px 0px;  
 	margin: 0px auto; 
@@ -82,7 +82,7 @@ header h2 span {
 	display:none;
 	}
 
-#quickSummary {
+.summary {
 	width: 130px;
 	float: left;
 	padding:5px;
@@ -90,28 +90,28 @@ header h2 span {
 	background:#0099FF;
 	
 	}
-#quickSummary p {
+.summary p {
 	font: bold 8pt/12pt verdana, sans-serif; 
 	text-align:right;
 	color:#fff;
 	}
 	
-#quickSummary a:link { 
+.summary a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #003;
 	}
-#quickSummary a:visited { 
+.summary a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #006;
 	}
-#quickSummary a:hover, #quickSummary a:active { 
+.summary a:hover, .summary a:active { 
 	text-decoration: underline; 
 	color: #FF6600;
 	}
 	
-#preamble, #supporting text, #explanation, #participation, #benefits, #requirements {
+.preamble, #supporting text, .explanation, .participation, .benefits, .requirements {
 	padding: 0px 170px 0px 30px;
 }
 

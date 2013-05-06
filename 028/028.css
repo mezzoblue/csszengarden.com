@@ -49,7 +49,7 @@ a:hover, a:active {
 }
 
 /******************************************************************* body content */
-#container { 
+.page-wrapper { 
 	position: relative;
 	
 	margin-top: 0px;
@@ -88,7 +88,7 @@ header {
 		display: none;
 	}
 		
-#intro {
+.intro {
 	position: relative;
 	
 	margin-top: 225px;
@@ -104,7 +104,7 @@ header {
 	border: 1px dashed #fff;
 }
 
-	#quickSummary {
+	.summary {
 		float: left;
 		clear:both;
 		
@@ -121,14 +121,14 @@ header {
 		width: 175px;
 	}
 	
-	#quickSummary p {
+	.summary p {
 		font: italic 10pt/22pt georgia,palatino,times,serif; 
 		text-align:center;
 		margin: 4px;
 		padding: 0px;
 	}
 	
-	#preamble {
+	.preamble {
 		clear: right; 
 		
 		padding-top: 0px;
@@ -137,7 +137,7 @@ header {
 		padding-right: 0px;
 	}
 	
-	#intro h3 {
+	.intro h3 {
 		margin-top: 0px;
 		margin-left: 0px;
 		margin-bottom: 15px;
@@ -156,7 +156,7 @@ header {
 		color: #fff;
 	}
 
-#supportingText {
+.supporting {
 	margin-top: 0px;
 	margin-left: 218px;
 	margin-bottom: 10px;
@@ -164,7 +164,7 @@ header {
 	padding: 0px;
 }
 
-	#supportingText h3 {
+	.supporting h3 {
 		margin-top: 15px;
 		margin-left: 0px;
 		margin-bottom: 15px;

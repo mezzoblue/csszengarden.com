@@ -7,7 +7,7 @@ body {
 	background: #ddd url(bg.gif) repeat-y left;
 	}
 
-#container {
+.page-wrapper {
 	text-align: left;
 	background-color: #eee;
 	padding-bottom: 125px;
@@ -21,7 +21,7 @@ p {
 
 /* sections */
 
-#intro {
+.intro {
 	text-align: left;
 	height: 223px;
 	padding: 130px 0 0 0;
@@ -47,7 +47,7 @@ header h2 {
 	display: none;
 	}
 
-#quickSummary {
+.summary {
 	height: 37px;
 	width: 735px;
 	padding-bottom: 4px;
@@ -59,11 +59,11 @@ header h2 {
 	height: 28px;
 	}
 
-#quickSummary p {
+.summary p {
 	display: none;
 	}
 
-#quickSummary p.p2 {
+.summary p.p2 {
 	padding-left: 5px;
 	color: #555;
 	font: 9px Verdana, Arial, Sans-Serif;
@@ -71,16 +71,16 @@ header h2 {
 	display: inline;
 	}
 
-#quickSummary p.p2 a, a {
+.summary p.p2 a, a {
 	color: #777;
 	text-decoration: none;
 	}
 
-#quickSummary p.p2 a:hover, a:hover {
+.summary p.p2 a:hover, a:hover {
 	color: #36c;
 	}
 
-#preamble {
+.preamble {
 	text-align: justify;
 	position: absolute;
 	margin: 0 0 0 0;
@@ -95,18 +95,18 @@ header h2 {
 	width: 501px;
 	}
 
-#preamble h3 {
+.preamble h3 {
 	height: 20px;
 	padding: 0;
 	margin: 0;
 	background: #ddd url(1.gif) no-repeat left top;
 	}
 
-#preamble p.p3 {
+.preamble p.p3 {
 	padding: 0 10px 10px 10px;
 	}
 
-#supportingText {
+.supporting {
 	position: absolute;
 	margin-top: 139px;
 	width: 510px;
@@ -116,11 +116,11 @@ header h2 {
 	width: 510px;
 	}
 
-#preamble h3 span, #supportingText h3 span, #explanation h3 span {
+.preamble h3 span, .supporting h3 span, .explanation h3 span {
 	display: none;
 	}
 
-#explanation {
+.explanation {
 	text-align: justify;
 	margin: 0 0 0 225px;
 	width: 510px;
@@ -132,18 +132,18 @@ header h2 {
 	width: 276px;
 	}
 
-#explanation h3 {
+.explanation h3 {
 	height: 20px;
 	padding: 0;
 	margin: 0;
 	background: #ddd url(2.gif) no-repeat left top;
 	}
 
-#explanation p.p2 {
+.explanation p.p2 {
 	padding: 0 10px 10px 10px;
 	}
 
-#participation, #benefits, #requirements {
+.participation, .benefits, .requirements {
 	text-align: justify;
 	margin: 0 0 0 225px;
 	width: 510px;
@@ -154,26 +154,26 @@ header h2 {
 	width: 490px;
 	}
 
-#participation h3, #benefits h3, #requirements h3 {
+.participation h3, .benefits h3, .requirements h3 {
 	display: block;
 	width: 300px;
 	height: 20px;
 	margin-left: 45px;
 	}
 
-#participation h3 {
+.participation h3 {
 	background: transparent url(3.gif) no-repeat;
 	}
 
-#benefits h3 {
+.benefits h3 {
 	background: transparent url(4.gif) no-repeat;
 	}
 
-#requirements h3 {
+.requirements h3 {
 	background: transparent url(5.gif) no-repeat;
 	}
 
-#requirements, #benefits, #participation {
+.requirements, .benefits, .participation {
 	background: #ddd url(corner.gif) no-repeat top left;
 	margin-top: 15px;
 	}

@@ -69,7 +69,7 @@ a:hover, a:active {
 	}
 	
 /* Layout */	
-#container {
+.page-wrapper {
 	position: relative;
 	width: 712px; 
 	padding: 0px;
@@ -83,7 +83,7 @@ a:hover, a:active {
 	create a background image to fake the 100% column. */
 	background: #A1D9FC url(bg-full.gif) repeat-y;
 	}
-html>body #container {
+html>body .page-wrapper {
 	width: 712px; /* ie5win fudge ends */
 	}
 
@@ -129,7 +129,7 @@ header h1 span, header h2 span, #extradiv1, #extradiv3, #extradiv4, #extradiv5, 
 	
 /* Extra Divs Finish Here ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-#quickSummary p.p1 {
+.summary p.p1 {
 	position: relative;
 	margin-left: 465px;
 	width: 235px;
@@ -140,7 +140,7 @@ header h1 span, header h2 span, #extradiv1, #extradiv3, #extradiv4, #extradiv5, 
 	padding: 0 5px 5px 5px;
 	}
 
-#quickSummary p.p2 {
+.summary p.p2 {
 	position: absolute;
 	top: 147px;
 	margin-left: 10px;
@@ -219,7 +219,7 @@ a.designer-name:link, a.designer-name:visited, a.designer-name:hover, a.designer
 	font-weight: normal;
 	
 	}
-#preamble {
+.preamble {
 	padding: 10px; 
 	width: 450px; 
 	margin-top: -110px;
@@ -229,7 +229,7 @@ a.designer-name:link, a.designer-name:visited, a.designer-name:hover, a.designer
 	background: transparent url(text-bg.gif) top left repeat-y;	
 	}
 
-#preamble h3 {
+.preamble h3 {
 	margin-top: 10px;
 	font-family: verdana, sans-serif;	
 	margin-bottom: 20px;
@@ -243,7 +243,7 @@ a.designer-name:link, a.designer-name:visited, a.designer-name:hover, a.designer
 	font-size: 18px;
 	}
 
-#supportingText {
+.supporting {
 	padding: 10px; 
 	width: 450px; 
 	font-family: verdana, sans-serif;
@@ -254,18 +254,18 @@ a.designer-name:link, a.designer-name:visited, a.designer-name:hover, a.designer
 	width: 440px;
 	}
 
-#supportingText a:link, #supportingText a:visited {
+.supporting a:link, .supporting a:visited {
 	color: #3B92C9;
 	text-decoration: none;
 	}
 
-#supportingText a:hover, #supportingText a:active { 
+.supporting a:hover, .supporting a:active { 
 	color: #fff;
 	border-bottom: 1px solid #fff;
 	text-decoration: none;
 	}
 
-#explanation h3, #participation h3, #benefits h3, #requirements h3 {
+.explanation h3, .participation h3, .benefits h3, .requirements h3 {
 	margin-top: 10px;
 	font-family: verdana, sans-serif;	
 	margin-bottom: 20px;
@@ -279,10 +279,10 @@ a.designer-name:link, a.designer-name:visited, a.designer-name:hover, a.designer
 	font-size: 18px;
 	}
 
-#requirements {
+.requirements {
 	}
 
-#requirements p.p5 {
+.requirements p.p5 {
 	
 	margin-top: 20px;
 	padding: 5px;

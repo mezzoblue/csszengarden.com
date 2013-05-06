@@ -101,7 +101,7 @@ header h2 span {
 	display: none;
 }
 
-div#quickSummary {
+div.summary {
 	position: absolute;
 	width: 1300px;
 	left: 228px;
@@ -113,7 +113,7 @@ div#quickSummary {
 
 /* Have the summary displayed in a single line */
 
-div#quickSummary p.p2, div#quickSummary p.p1 {
+div.summary p.p2, div.summary p.p1 {
 	display: inline;
 	margin: 0;
 }
@@ -146,7 +146,7 @@ a:hover {
 
 /* The Preamble */
 
-div#preamble {
+div.preamble {
 	position: absolute;
 	left: 375px;
 	top: 160px;
@@ -154,25 +154,25 @@ div#preamble {
 	text-align: justify;
 }
 
-div#preamble h3 {
+div.preamble h3 {
 	width: 200px;
 	height: 25px;
 	background-image: url(theroad.jpg);
 	margin: 0 0 0.5em;
 }
 
-div#preamble h3 span {
+div.preamble h3 span {
 	display: none;
 }
 
-div#preamble p {
+div.preamble p {
 	margin: 0 0.5em 0.5em;
 }
 
 /* Supporting Text
 --------------------------------------*/
 
-div#explanation {
+div.explanation {
 	position: absolute;
 	left: 625px;
 	top: 160px;
@@ -180,22 +180,22 @@ div#explanation {
 	text-align: justify;
 }
 
-div#explanation h3 {
+div.explanation h3 {
 	width: 200px;
 	height: 25px;
 	background-image: url(sowhatisthisabout.jpg);
 	margin: 0 0 0.5em;
 }
 
-div#explanation h3 span {
+div.explanation h3 span {
 	display: none;
 }
 
-div#explanation p {
+div.explanation p {
 	margin: 0 0.5em 0.5em;
 }
 
-div#participation {
+div.participation {
 	position: absolute;
 	left: 875px;
 	top: 160px;
@@ -203,22 +203,22 @@ div#participation {
 	text-align: justify;
 }
 
-div#participation h3 {
+div.participation h3 {
 	width: 200px;
 	height: 25px;
 	background-image: url(participation.jpg);
 	margin: 0 0 0.5em;
 }
 
-div#participation h3 span {
+div.participation h3 span {
 	display: none;
 }
 
-div#participation p {
+div.participation p {
 	margin: 0 0.5em 0.5em;
 }
 
-div#benefits {
+div.benefits {
 	position: absolute;
 	left: 1125px;
 	top: 160px;
@@ -226,22 +226,22 @@ div#benefits {
 	text-align: justify;
 }
 
-div#benefits h3 {
+div.benefits h3 {
 	width: 200px;
 	height: 25px;
 	background-image: url(benefits.jpg);
 	margin: 0 0 0.5em;
 }
 
-div#benefits h3 span {
+div.benefits h3 span {
 	display: none;
 }
 
-div#benefits p {
+div.benefits p {
 	margin: 0 0.5em 0.5em;
 }
 
-div#requirements {
+div.requirements {
 	position: absolute;
 	left: 1375px;
 	top: 160px;
@@ -249,18 +249,18 @@ div#requirements {
 	text-align: justify;
 }
 
-div#requirements h3 {
+div.requirements h3 {
 	width: 400px;
 	height: 25px;
 	background-image: url(requirements.jpg);
 	margin: 0 0 0.5em;
 }
 
-div#requirements h3 span {
+div.requirements h3 span {
 	display: none;
 }
 
-div#requirements p {
+div.requirements p {
 	margin: 0 0.5em 0.5em;
 }
 

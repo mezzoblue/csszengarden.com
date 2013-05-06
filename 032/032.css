@@ -10,7 +10,7 @@
 
 /* hide this stuff */
 
-header h1 span, header h2 span, header, #quickSummary p.p1, #preamble h3 span, #explanation h3, #participation h3, #benefits h3, #requirements h3, .design-selection h3, .design-archives h3, .zen-resources h3  {display: none}
+header h1 span, header h2 span, header, .summary p.p1, .preamble h3 span, .explanation h3, .participation h3, .benefits h3, .requirements h3, .design-selection h3, .design-archives h3, .zen-resources h3  {display: none}
 
 /* show this stuff */
 
@@ -18,41 +18,41 @@ body {background-color: #D0D1D0; background-image: url(banner.jpg);	background-r
 
 abbr {border-bottom-width: 1px; border-bottom-style: dashed;	cursor: help}
 
-#container {background-image: url(t.jpg); background-repeat: no-repeat; left: 0px; top: 0px; background-position: 0px 99px; position: absolute; width: 770px; padding-bottom: 5px}
+.page-wrapper {background-image: url(t.jpg); background-repeat: no-repeat; left: 0px; top: 0px; background-position: 0px 99px; position: absolute; width: 770px; padding-bottom: 5px}
 
-#intro {position: relative;	left: 133px; top: 207px; padding-bottom: 50px; z-index: 2}
+.intro {position: relative;	left: 133px; top: 207px; padding-bottom: 50px; z-index: 2}
 
-#quickSummary {top: -57px; position: absolute; left: 291px; z-index: 2}
+.summary {top: -57px; position: absolute; left: 291px; z-index: 2}
 
-#quickSummary p.p2 {color: #FFFFFF;	font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: bold}
+.summary p.p2 {color: #FFFFFF;	font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: bold}
 
-#quickSummary p.p2 a:link {color: maroon; font-weight: bold; font-size: 12px; text-decoration: none}
-#quickSummary p.p2 a:visited {color: maroon; font-weight: bold;	font-size: 12px; text-decoration: none}
-#quickSummary p.p2 a:hover {color: yellow; font-weight: bold; font-size: 12px; text-decoration: none; background-color: #333333}
-#quickSummary p.p2 a:active {color: maroon;	font-weight: bold; font-size: 12px;	text-decoration: none}
+.summary p.p2 a:link {color: maroon; font-weight: bold; font-size: 12px; text-decoration: none}
+.summary p.p2 a:visited {color: maroon; font-weight: bold;	font-size: 12px; text-decoration: none}
+.summary p.p2 a:hover {color: yellow; font-weight: bold; font-size: 12px; text-decoration: none; background-color: #333333}
+.summary p.p2 a:active {color: maroon;	font-weight: bold; font-size: 12px;	text-decoration: none}
 
-#preamble {width: 614px; position:relative; left: 7px; top: -40px; overflow: visible; z-index: 1; padding-right: 3px}
+.preamble {width: 614px; position:relative; left: 7px; top: -40px; overflow: visible; z-index: 1; padding-right: 3px}
 
-#preamble p {padding-right: 20px; padding-left: 5px; font-family: Arial, Helvetica, sans-seri; font-size: 10px; color: #333333}
+.preamble p {padding-right: 20px; padding-left: 5px; font-family: Arial, Helvetica, sans-seri; font-size: 10px; color: #333333}
 
-#preamble p.p1 {padding-top: 28px}
+.preamble p.p1 {padding-top: 28px}
 
-#supportingText {font-family: Arial, Helvetica, sans-serif;	font-size: 10px; color: #333333; width: 614px; position:relative;	left:141px;	margin-top: 30px; top: 100px; z-index: 1; border-width:1px;border-color:#c2c2c2; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; padding-right: 3px; margin-bottom: 100px}
+.supporting {font-family: Arial, Helvetica, sans-serif;	font-size: 10px; color: #333333; width: 614px; position:relative;	left:141px;	margin-top: 30px; top: 100px; z-index: 1; border-width:1px;border-color:#c2c2c2; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; padding-right: 3px; margin-bottom: 100px}
 
-#supportingText p {padding-right: 20px; padding-left: 5px}
+.supporting p {padding-right: 20px; padding-left: 5px}
 
-#supportingText a:link {color: #FF0000;	font-weight: normal; text-decoration: none}
-#supportingText a:visited {color: #990000; text-decoration: underline;}
-#supportingText a:hover {color: #FFFFFF; background-color: #666666;	text-decoration: none}
-#supportingText a:active {color: #FF0000; text-decoration: underline overline; background-color: #FFFFFF}
+.supporting a:link {color: #FF0000;	font-weight: normal; text-decoration: none}
+.supporting a:visited {color: #990000; text-decoration: underline;}
+.supporting a:hover {color: #FFFFFF; background-color: #666666;	text-decoration: none}
+.supporting a:active {color: #FF0000; text-decoration: underline overline; background-color: #FFFFFF}
 
-#explanation {background-image: url(sowhatisthisabout.jpg);	background-repeat: no-repeat;  padding-top: 23px; padding-right: 3px}
+.explanation {background-image: url(sowhatisthisabout.jpg);	background-repeat: no-repeat;  padding-top: 23px; padding-right: 3px}
 
-#participation {background-image: url(participation.jpg); background-repeat: no-repeat; left: 0px; top: 153px; z-index: 1; padding-top: 23px}
+.participation {background-image: url(participation.jpg); background-repeat: no-repeat; left: 0px; top: 153px; z-index: 1; padding-top: 23px}
 
-#benefits {background-image: url(benefits.jpg); background-repeat: no-repeat; left: 0px; top: 366px; z-index: 1; padding-top: 23px}
+.benefits {background-image: url(benefits.jpg); background-repeat: no-repeat; left: 0px; top: 366px; z-index: 1; padding-top: 23px}
 
-#requirements {background-image: url(requirements.jpg); background-repeat: no-repeat; left: 0px; top: 466px; z-index: 1; padding-top: 23px}
+.requirements {background-image: url(requirements.jpg); background-repeat: no-repeat; left: 0px; top: 466px; z-index: 1; padding-top: 23px}
 
 footer {padding-left: 10px;}
 

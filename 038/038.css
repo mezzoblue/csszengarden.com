@@ -16,7 +16,7 @@ body {
 	padding: 0;
 	background: #97B661 url(body_bground.gif) repeat-y;
 }
-#container {
+.page-wrapper {
 	width: 760px;
 	background-color: #6E7F71;
 }
@@ -42,18 +42,18 @@ header h2 {
 }
 
 /* Main content */
-#quickSummary {
+.summary {
 	margin-left: 289px;
 	background-image: url(summary_background.jpg);
 	background-repeat: no-repeat;
 }
-#preamble,
-#supportingText {
+.preamble,
+.supporting {
 	margin-left: 289px;
 }
-#quickSummary p,
-#preamble p,
-#supportingText p {
+.summary p,
+.preamble p,
+.supporting p {
 	margin: 0 30px 20px 20px;;
 	padding: 0;
 	font-family: Georgia, serif;
@@ -63,7 +63,7 @@ header h2 {
 }
 
 /* Paragraph headers */
-#preamble h3 {
+.preamble h3 {
 	height: 36px;
 	padding: 0;
 	margin: 0 0 10px 0;
@@ -71,7 +71,7 @@ header h2 {
 	overflow: hidden;
 	background: url(headers/preamble.gif) no-repeat;
 }
-#explanation h3 {
+.explanation h3 {
 	height: 36px;
 	padding: 0;
 	margin: 0 0 10px 0;
@@ -79,7 +79,7 @@ header h2 {
 	overflow: hidden;
 	background: url(headers/explanation.gif) no-repeat;
 }
-#participation h3 {
+.participation h3 {
 	height: 36px;
 	padding: 0;
 	margin: 0 0 10px 0;
@@ -87,7 +87,7 @@ header h2 {
 	overflow: hidden;
 	background: url(headers/participation.gif) no-repeat;
 }
-#benefits h3 {
+.benefits h3 {
 	height: 36px;
 	padding: 0;
 	margin: 0 0 10px 0;
@@ -95,7 +95,7 @@ header h2 {
 	overflow: hidden;
 	background: url(headers/benefits.gif) no-repeat;
 }
-#requirements h3 {
+.requirements h3 {
 	height: 36px;
 	padding: 0;
 	margin: 0 0 10px 0;

@@ -39,9 +39,9 @@ background: transparent;
 text-decoration: underline;
 }
 
-#intro	{clear: both;}
+.intro	{clear: both;}
 
-#container	{
+.page-wrapper	{
 width: 760px; 
 background: #f0e7d7 url(bodybg.jpg) repeat-y 0% 0%;
 color: #000;
@@ -77,7 +77,7 @@ display: none;
 
 header h1 span	{display: none;}
 
-#quickSummary	{
+.summary	{
 position: relative;
 width: 230px;
 float: right;
@@ -88,7 +88,7 @@ margin: 0;
 padding: 0 0 20px 0;
 }
 
-#quickSummary p	{
+.summary p	{
 font-family: georgia, serif;
 margin: 0;
 padding: 10px 10px 10px 20px;
@@ -96,7 +96,7 @@ text-align: right;
 }
 
 
-#preamble	{
+.preamble	{
 width: 530px;
 background: #fff url(lilybg.jpg) no-repeat 0% 0%;
 color: #000;
@@ -104,27 +104,27 @@ margin: 0;
 padding: 50px 0 0 0;
 }
 
-#preamble h3	{
+.preamble h3	{
 width: 350px;
 height: 40px;
 padding: 0;
 margin: 0 0 0 170px;
 }
 
-#preamble h3 span	{display: none;}
+.preamble h3 span	{display: none;}
 
-#preamble p	{
+.preamble p	{
 padding: 0;
 margin: 0;
 padding: 20px 30px 0px 0px;
 text-align: justify;
 }
 
-#preamble p.p3	{
+.preamble p.p3	{
 padding-bottom: 20px;
 }
 
-#preamble p:first-letter 	{
+.preamble p:first-letter 	{
 color: #800000;
 background: transparent;
 font-size: 16px;
@@ -133,11 +133,11 @@ vertical-align: baseline;
 }
 
 
-#preamble p.p1	{margin-left: 200px;}
-#preamble p.p2	{margin-left: 180px;}
-#preamble p.p3	{margin-left: 80px;}
+.preamble p.p1	{margin-left: 200px;}
+.preamble p.p2	{margin-left: 180px;}
+.preamble p.p3	{margin-left: 80px;}
 
-#supportingText	{
+.supporting	{
 float: left;
 clear: left;
 text-align: justify;
@@ -151,7 +151,7 @@ width: 530px;
 w\idth: 530px;
 }
 
-#supportingText h3	{
+.supporting h3	{
 padding: 5px 30px 6px 0;
 margin: 10px 0 0 0;
 border-top: 1px solid #aaab9c;
@@ -161,11 +161,11 @@ background: #fff url(suph3bg.jpg) no-repeat bottom right;
 color: #aaab9c;
 }
 
-#supportingText h3 span	{}
+.supporting h3 span	{}
 
-#supportingText p	{padding: 15px 20px 0 50px; margin: 0;}
+.supporting p	{padding: 15px 20px 0 50px; margin: 0;}
 
-#supportingText p:first-letter	{
+.supporting p:first-letter	{
 color: #800000;
 background: transparent;
 font-size: 16px;
@@ -173,15 +173,15 @@ font-weight: bold;
 vertical-align: baseline;
 }
 
-#explanation	{
+.explanation	{
 background: #fff url(sowhatbg.jpg) no-repeat 0% 0%;
 color: #000;
 }
-#explanation h3	{visibility: hidden;}
-#explanation h3 span	{}
-#explanation p.p1	{padding-top: 30px;}
+.explanation h3	{visibility: hidden;}
+.explanation h3 span	{}
+.explanation p.p1	{padding-top: 30px;}
 
-#requirements p.p5	{
+.requirements p.p5	{
 text-align: right; 
 padding-bottom: 0; 
 margin-bottom: -180px;

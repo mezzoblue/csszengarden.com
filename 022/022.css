@@ -67,7 +67,7 @@ a:hover, a:active {
 	}
 /* specific divs */
 /*outermost div*/
-#container {
+.page-wrapper {
 	position: absolute;
 	margin-top: 0px;
 	top: 0px;
@@ -102,7 +102,7 @@ header h1 span {
 header h2 span {
 	display:none;
 	}
-#preamble h3 {
+.preamble h3 {
 	background: #CCFFFF url(h3_preamble.gif) no-repeat left top;
 	color: #003333;
 	margin-top:0px;
@@ -112,10 +112,10 @@ header h2 span {
 	border-bottom-style: solid;
 	border-bottom-color: #003333;
 }
-#preamble h3 span{
+.preamble h3 span{
 	display:none;
 	}
-#explanation h3 {
+.explanation h3 {
 	background: #CCFFFF url(h3_support1.gif) no-repeat left top;
 	color: #003333;
 	margin-top:0px;
@@ -128,10 +128,10 @@ header h2 span {
 	border-top-style: solid;
 	border-top-color: #003333;
 	}
-#explanation h3 span{
+.explanation h3 span{
 	display:none;
 	}
-#participation h3 {
+.participation h3 {
 	background: #CCFFFF url(h3_support2.gif) no-repeat left top;
 	color: #003333;
 	margin-top:0px;
@@ -144,10 +144,10 @@ header h2 span {
 	border-top-style: solid;
 	border-top-color: #003333;
 	}
-#participation h3 span{
+.participation h3 span{
 	display:none;
 	}
-#benefits h3 {
+.benefits h3 {
 	background: #CCFFFF url(h3_support3.gif) no-repeat left top;
 	color: #003333;
 	margin-top:0px;
@@ -160,10 +160,10 @@ header h2 span {
 	border-top-style: solid;
 	border-top-color: #003333;
 	}
-#benefits h3 span{
+.benefits h3 span{
 	display:none;
 	}
-#requirements h3 {
+.requirements h3 {
 	background: #CCFFFF url(h3_support4.gif) no-repeat left top;
 	color: #003333;
 	margin-top:0px;
@@ -176,11 +176,11 @@ header h2 span {
 	border-top-style: solid;
 	border-top-color: #003333;
 	}
-#requirements h3 span{
+.requirements h3 span{
 	display:none;
 	}
 /* blurb */
-#quickSummary {
+.summary {
 	color: #CCCCCC;
 	background-color: transparent;
 	width: 75%;
@@ -188,13 +188,13 @@ header h2 span {
 	display: block;
 	padding-top: 125px;
 	}
-#quickSummary p {
+.summary p {
 	font: italic normal 10px/16px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	text-align:left;
 	padding-top: 5px;
 	}
 /* written intro - first paragraph */
-#preamble {
+.preamble {
 	color: #333333;
 	background-color: #99CCCC;
 	width: 70%;
@@ -203,16 +203,16 @@ header h2 span {
 	padding-bottom: 10px;
 	border: 1px solid #003333;
 	}
-#preamble a:link {
+.preamble a:link {
 	color: #CCFFFF;
 	background-color: #669999;
 }
-#preamble a:hover, a:active {
+.preamble a:hover, a:active {
 	color: #006666;
 	background-color: #CCFFFF;
 	}
 /* the rest */
-#supportingText {
+.supporting {
 	color: #333333;
 	background-color: #99CCCC;
 	width: 70%;
@@ -223,11 +223,11 @@ header h2 span {
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	}
-#supportingText a:link {
+.supporting a:link {
 	color: #CCFFFF;
 	background-color: #669999;
 }
-#supportingText a:hover, a:active {
+.supporting a:hover, a:active {
 	color: #006666;
 	background-color: #CCFFFF;
 	}

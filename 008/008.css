@@ -19,7 +19,7 @@ body {
 	margin:0px;
 	}
 
-#container {
+.page-wrapper {
 	margin-left:0px;
 	margin-top:0px;
 	padding:0px;
@@ -27,7 +27,7 @@ body {
 	z-index:1;
 	}
 
-#intro {
+.intro {
 	width:275px;
 	position:absolute;
 	left:88px;
@@ -35,14 +35,14 @@ body {
 	z-index:2;
 	}
 
-#supportingText {
+.supporting {
 	width:450px;
 	position:absolute;
 	left:411px;
 	top:535px;
 	z-index:2;
 	}
-#explanation, #participation, #requirements, #benefits, footer, #quickSummary, #preamble, .design-selection, #lfavorites, .zen-resources, .design-archives {
+.explanation, .participation, .requirements, .benefits, footer, .summary, .preamble, .design-selection, #lfavorites, .zen-resources, .design-archives {
 	padding:7px;
 	margin:5px;
 	border-left:1px solid #aaa;

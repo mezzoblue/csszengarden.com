@@ -25,7 +25,7 @@ body {
         font-size:    small;     
 }
 
-div#container {
+div.page-wrapper {
 	float: left;
 	margin: 160px auto 0 auto;
 	padding: 0;
@@ -34,7 +34,7 @@ div#container {
 	text-align: left;
 }
 
-div#intro {
+.intro {
 	position: relative;
 	background: #369;
 	border: solid 1px #000;
@@ -60,7 +60,7 @@ header h1, header h2 {
 	display: none;
 }
 
-div#quickSummary {
+div.summary {
 	float: left;
 	clear: both;
 	margin: 0 0 0 5px;
@@ -69,29 +69,29 @@ div#quickSummary {
 	height: 169px;
 }
 
-div#quickSummary p.p1 {
+div.summary p.p1 {
 	background: url("quickSum.gif") no-repeat top left;
 	width: 159px;
 	height: 139px;
 }
 
-div#quickSummary p.p1 span {
+div.summary p.p1 span {
 	display: none;
 }
 
-div#quickSummary p.p2 {
+div.summary p.p2 {
 	position: absolute;
 	top: 165px;
 	font-size: 10px;    
 	width: 169px;  
 }
 
-div#quickSummary a {
+div.summary a {
 	color: #fff;
 	font-weight: bold;
 }
 
-div#preamble {
+div.preamble {
 	margin: 0 0 0 175px;
 	padding: 5px 10px;
 	background: #69c;
@@ -102,23 +102,23 @@ div#preamble {
 	width: 545px;	 /* Actual value for conformant browsers */
 }
 
-div#preamble h3 {
+div.preamble h3 {
 	margin: 0 0 10px 0;
 	padding: 0;
 	height: 26px;
 	background: url(road.gif) no-repeat top left;
 }
 
-div#preamble h3 span {
+div.preamble h3 span {
 	display: none;
 }
 
-div#preamble p {
+div.preamble p {
 	margin: 8px 0 0 0;
 	line-height: 1.5em;
 }
 
-div#supportingText {
+.supporting {
 	float: left;
 	margin: 0;
 	padding: 20px 20px 0 66px;
@@ -129,41 +129,41 @@ div#supportingText {
 		width: 410px;	 /* Actual value for conformant browsers */
 }
 
-div#supportingText h3 {
+.supporting h3 {
 	margin: 25px 0 0 0;
 	padding: 0;
 	width: 409px;
 	height: 26px;
 }
 
-div#supportingText h3 span {
+.supporting h3 span {
 	display: none;
 }
 
-div#explanation h3 {
+div.explanation h3 {
 	margin-top: 0;
 	background: url(what.gif) no-repeat top left;
 }
 
-div#participation h3 {
+div.participation h3 {
 	background: url(part.gif) no-repeat top left;
 }
 
-div#benefits h3 {
+div.benefits h3 {
 	background: url(bene.gif) no-repeat top left;
 }
 
-div#requirements h3 {
+div.requirements h3 {
 	background: url(requ.gif) no-repeat top left;
 }
 
-div#supportingText p {
+.supporting p {
 	margin: 15px 0 0 0;
 	letter-spacing: .1em;
 	line-height: 1.2em;
 }
 
-div#supportingText a {
+.supporting a {
 	color: #036;
 }
 

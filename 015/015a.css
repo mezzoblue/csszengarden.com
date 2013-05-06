@@ -40,12 +40,12 @@ a:hover, a:active {
 
 /* layout */
 
-#container { 
+.page-wrapper { 
 	text-align: left;
 	background: url(sig.gif) no-repeat bottom right;
 }
 
-#intro { 
+.intro { 
 	min-width: 400px;
 	}
 
@@ -71,7 +71,7 @@ header h2 span {
 	display:none;
 	}
 
-#quickSummary p.p1 {
+.summary p.p1 {
 	position: absolute;
 	top: 30px;
 	left: 410px;
@@ -81,7 +81,7 @@ header h2 span {
 	text-transform: lowercase;
 	color: #869152;
 }
-#quickSummary p.p2 {
+.summary p.p2 {
 	position: absolute;
 	top: 850px;
 	left: 0;
@@ -94,72 +94,72 @@ header h2 span {
 	background: #677235;
 }
 
-#preamble {
+.preamble {
 	margin: 10px 50px 40px 410px; 
 	padding: 20px 0 40px 0;
 	border-top: 1px dotted #869152;
 	background: url(koi.gif) no-repeat bottom center;
 	}
-#preamble h3 {
+.preamble h3 {
 	background: url(hd_enlighten.gif) no-repeat 0 0;
 	width: 301px;
 	height: 23px;
 }
-#preamble h3 span {
+.preamble h3 span {
 	display:none;
 }
 
-#supportingText {
+.supporting {
 	margin: 0 50px 0 410px; 
 	}
-#explanation {
+.explanation {
 	padding-bottom: 40px;
 	background: url(koi.gif) no-repeat bottom center;
 }
-#explanation h3 {
+.explanation h3 {
 	background: url(hd_about.gif) no-repeat 0 0;
 	width: 302px;
 	height: 19px;
 }
-#explanation h3 span {
+.explanation h3 span {
 	display:none;
 }
-#participation {
+.participation {
 	margin-top: 20px;
 	padding-bottom: 40px;
 	background: url(koi.gif) no-repeat bottom center;
 }
-#participation h3 {
+.participation h3 {
 	background: transparent url(hd_participation.gif) no-repeat 0 0;
 	width: 140px;
 	height: 23px;
 }
-#participation h3 span {
+.participation h3 span {
 	display:none;
 }
-#benefits {
+.benefits {
 	margin-top: 20px;
 	padding-bottom: 40px;
 	background: url(koi.gif) no-repeat bottom center;
 }
-#benefits h3 {
+.benefits h3 {
 	background: transparent url(hd_benefits.gif) no-repeat 0 0;
 	width: 106px;
 	height: 24px;
 }
-#benefits h3 span {
+.benefits h3 span {
 	display:none;
 }
-#requirements {
+.requirements {
 	margin-top: 20px;
 	padding-bottom: 40px;
 }
-#requirements h3 {
+.requirements h3 {
 	background: transparent url(hd_requirements.gif) no-repeat 0 0;
 	width: 155px;
 	height: 23px;
 }
-#requirements h3 span {
+.requirements h3 span {
 	display:none;
 }
 

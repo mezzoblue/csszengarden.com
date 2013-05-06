@@ -18,7 +18,7 @@
 
 /* Warning message styles for browsers that don't support CSS attribute selectors... */
 #extraDiv1 { position: absolute; top: 112px; left: 292px; width: 340px; height: 166px; background: url(txt_upgrade.gif) no-repeat; z-index: 10; }
-#container { padding: 296px 0 0 294px; z-index: 99; }
+.page-wrapper { padding: 296px 0 0 294px; z-index: 99; }
 /* Clear the warning styles for those that do... */
 div[id="extraDiv1"] { display: none; }
 div[id="container"] { padding: 226px 0 0 294px !important; }
@@ -77,9 +77,9 @@ body {
 	background: url(bg_header.jpg) no-repeat #FFF;
 	}
 
-#quickSummary,
-#preamble,
-#supportingText { width: 336px; z-index: 1; }
+.summary,
+.preamble,
+.supporting { width: 336px; z-index: 1; }
 
 p {
 	text-align: justify; 
@@ -96,34 +96,34 @@ p a, footer a { color: #866F5B; text-decoration: none;  border-bottom: 1px dotte
 p a:hover, footer a:hover { color: #A51A0A; border-style: none; }
 footer>a { border-style: none !important; }
 
-#preamble { margin-bottom: 2em; }
-#preamble p.p2 { background: url(head_enlightenment.gif) no-repeat; padding-top: 2.4em; }
-div[id="preamble"]>p.p2 { background: url(head_enlightenment.png) no-repeat !important; }
+.preamble { margin-bottom: 2em; }
+.preamble p.p2 { background: url(head_enlightenment.gif) no-repeat; padding-top: 2.4em; }
+div[class="preamble"]>p.p2 { background: url(head_enlightenment.png) no-repeat !important; }
 
-#explanation,
-#participation,
-#benefits,
-#requirements { padding-top: 1.8em; margin-bottom: 2em; }
+.explanation,
+.participation,
+.benefits,
+.requirements { padding-top: 1.8em; margin-bottom: 2em; }
 
 
 @media tty { /* Mid pass to square away some IE 5 PC hinkyness. */
-	i{content:"\";/*" "*/}} #explanation p.p1,#participation p.p1,#benefits p.p1,#requirements p.p1 { padding-top: 1.8em; } /*";}
+	i{content:"\";/*" "*/}} .explanation p.p1,.participation p.p1,.benefits p.p1,.requirements p.p1 { padding-top: 1.8em; } /*";}
  	}/* */
  	
-#explanation 	{ background: url(head_explanation.gif) no-repeat; }
-#participation 	{ background: url(head_participation.gif) no-repeat; }
-#benefits 		{ background: url(head_benefits.gif) no-repeat; }
-#requirements 	{ position: relative; background: url(head_requirements.gif) no-repeat; z-index: 1; }
+.explanation 	{ background: url(head_explanation.gif) no-repeat; }
+.participation 	{ background: url(head_participation.gif) no-repeat; }
+.benefits 		{ background: url(head_benefits.gif) no-repeat; }
+.requirements 	{ position: relative; background: url(head_requirements.gif) no-repeat; z-index: 1; }
 
-#quickSummary { margin-bottom: 2em; }
-div[id="quickSummary"] { margin-bottom: 0 !important; }
-#quickSummary>p[class="p1"] { position: absolute; top: 230px; left: 108px; background: url(txt_demo.jpg) no-repeat; width: 143px; height: 0; padding-top: 57px; overflow: hidden; }
-#quickSummary>p[class="p2"] { position: absolute; top: 328px; left: 105px; background: url(txt_download.gif) 5px 5px; background-repeat: no-repeat; width: 107px; height: 29px; z-index: 15; margin: 0; color: #FFF; font-size: 1px; padding-top: 36px; }
-#quickSummary>p[class="p2"] a[href="zengarden-sample.html"] { position: absolute; top: 17px; left: 5px; width: 35px; height: 0px; padding-top:9px; overflow: hidden; }
-#quickSummary>p[class="p2"] a[href="zengarden-sample.html"]:hover { background: url(button_html_over.gif) no-repeat; }
-#quickSummary>p[class="p2"] a[href="zengarden-sample.css"] { position: absolute; top: 17px; left: 63px; width: 31px; height: 0px; padding-top:9px; overflow: hidden; }
-#quickSummary>p[class="p2"] a[href="zengarden-sample.css"]:hover { background: url(button_css_over.gif) no-repeat; }
-div[id="quickSummary"] a { border-style: none; }
+.summary { margin-bottom: 2em; }
+div[class="summary"] { margin-bottom: 0 !important; }
+.summary>p[class="p1"] { position: absolute; top: 230px; left: 108px; background: url(txt_demo.jpg) no-repeat; width: 143px; height: 0; padding-top: 57px; overflow: hidden; }
+.summary>p[class="p2"] { position: absolute; top: 328px; left: 105px; background: url(txt_download.gif) 5px 5px; background-repeat: no-repeat; width: 107px; height: 29px; z-index: 15; margin: 0; color: #FFF; font-size: 1px; padding-top: 36px; }
+.summary>p[class="p2"] a[href="zengarden-sample.html"] { position: absolute; top: 17px; left: 5px; width: 35px; height: 0px; padding-top:9px; overflow: hidden; }
+.summary>p[class="p2"] a[href="zengarden-sample.html"]:hover { background: url(button_html_over.gif) no-repeat; }
+.summary>p[class="p2"] a[href="zengarden-sample.css"] { position: absolute; top: 17px; left: 63px; width: 31px; height: 0px; padding-top:9px; overflow: hidden; }
+.summary>p[class="p2"] a[href="zengarden-sample.css"]:hover { background: url(button_css_over.gif) no-repeat; }
+div[class="summary"] a { border-style: none; }
 /**/
 
 /**/
@@ -254,5 +254,5 @@ footer a.zen-legacy-aaa:hover { background: url(button_aaa_over.gif) no-repeat; 
 
 /* Move this junk out of the way */
 header,
-#preamble h3,
-#supportingText h3 { position: absolute; top: -1000px; left: -1000px; width: 1px; height: 1px; overflow: hidden; }
+.preamble h3,
+.supporting h3 { position: absolute; top: -1000px; left: -1000px; width: 1px; height: 1px; overflow: hidden; }

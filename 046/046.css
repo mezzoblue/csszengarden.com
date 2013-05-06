@@ -36,7 +36,7 @@ a:hover {
 }
 
 
-#container {
+.page-wrapper {
   position: relative;
 	width: 715px;
 	margin: 0 auto;
@@ -49,7 +49,7 @@ a:hover {
 	width: 665px;
 }
 
-html>body #container {
+html>body .page-wrapper {
 	width: 665px;
 } 
 
@@ -77,24 +77,24 @@ header h2 {
 
 /* quickSummary stuff */
 
-#quickSummary {
+.summary {
 	background: url(limes.gif) no-repeat;
 	width: 665px;
 }
 
-#quickSummary .p1 {
+.summary .p1 {
 	background: url(callout.gif) no-repeat right;
 	height: 160px;
 	margin: 0px;
 	padding: 0px;
 }
 
-#quickSummary .p1 span {
+.summary .p1 span {
   display: none;
 }
 
 
-#quickSummary .p2 {
+.summary .p2 {
 	height: 27px;
 	background: #97a25e;
 	margin: 5px 0 5px 0;
@@ -105,33 +105,33 @@ header h2 {
 	height: 22px;
 }
 
-html>body #quickSummary .p2 {
+html>body .summary .p2 {
 	height: 22px;
 } 
 
 /* preamble stuff */
 
-#preamble {
+.preamble {
 	margin: 0 0 0 225px;
 	background: #a5b77a;
 	padding: 15px;
 }
 
-#preamble h3 {
+.preamble h3 {
 	background: url(enlightenment.gif) no-repeat;
   height: 19px;
 	margin: 0px;
 	padding: 0px;
 }
 
-#preamble h3 span{
+.preamble h3 span{
   display: none;
 }
 
 
 /* supportingText stuff */
 
-#supportingText {
+.supporting {
 	margin: 0 0 0 225px;
 	background: #a5b77a;
 	padding: 0 15px 1px 15px;
@@ -143,33 +143,33 @@ html>body #quickSummary .p2 {
 	or why this fixed it. */
 }
 
-#explanation h3 {
+.explanation h3 {
 	background: url(about.gif) no-repeat;
   height: 19px;
 	margin: 0px;
 	padding: 0px;
 }
 
-#participation h3 {
+.participation h3 {
 	background: url(participation.gif) no-repeat;
   height: 15px;
 }
 
-#benefits h3 {
+.benefits h3 {
 	background: url(benefits.gif) no-repeat;
   height: 18px;
 }
 
-#requirements h3 {
+.requirements h3 {
 	background: url(requirements.gif) no-repeat;
   height: 15px;
 }
 
-#supportingText h3 span{
+.supporting h3 span{
   display: none;
 }
 
-footer /*#requirements .p5*/ {
+footer /*.requirements .p5*/ {
 	position: absolute;
 	margin: 0;
 	padding: 0;
@@ -189,7 +189,7 @@ to produce the bottom yellow bar */
 }
 
 /* bit of a hack topositiuon the bandwidth text */
-#requirements .p5 {
+.requirements .p5 {
 	position: absolute;
 	margin: 0;
 	padding: 0;
