@@ -38,7 +38,7 @@ a:hover, a:active {
 
 
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-#pageHeader h1 {
+header h1 {
 	margin:10px 15px;
 	background-image:url(logo.gif);
 	height:83px; 
@@ -48,13 +48,13 @@ a:hover, a:active {
 	background-position:top right;
 	color:#000;
 	}
-#pageHeader h1 span {
+header h1 span {
 	display:none
 	}
-#pageHeader h2 { 
+header h2 { 
 	display:none;
 	}
-#pageHeader h2 span {
+header h2 span {
 	display:none;
 	}
 #quickSummary {
@@ -187,11 +187,11 @@ margin:20px 10px 0 200px;
 #supportingText #requirements[id] {
 	height:auto;
 	}
-#supportingText #footer { 
+#supportingText footer { 
 	text-align:center;
 	padding-top:3px;
 	}
-#footer a:link, #footer a:visited { 
+footer a:link, footer a:visited { 
 	font-weight:bold;
 	text-decoration:none;
 	}

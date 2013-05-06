@@ -72,19 +72,19 @@ a:hover, a:active {
 	
 }
 
-#pageHeader { 
+header { 
 	display: none;
 }
-	#pageHeader h1 { 
+	header h1 { 
 		display: none;
 	}
-	#pageHeader h1 span {
+	header h1 span {
 		display: none;
 	}
-	#pageHeader h2 { 
+	header h2 { 
 		display: none;
 	}
-	#pageHeader h2 span {
+	header h2 span {
 		display: none;
 	}
 		
@@ -185,7 +185,7 @@ a:hover, a:active {
 		border-bottom: 1px solid #fff;
 	}
 
-#footer { 
+footer { 
 	margin-top: 30px;
 	margin-left: 0px;
 	margin-bottom: 30px;
@@ -199,7 +199,7 @@ a:hover, a:active {
 	border-bottom: 1px solid #fff;
 	
 }
-	#footer a:link, #footer a:visited { 
+	footer a:link, footer a:visited { 
 		background-color: transparent;
 		margin-left: 10px;
 		margin-right: 10px; 

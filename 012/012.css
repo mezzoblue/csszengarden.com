@@ -44,16 +44,16 @@ h1, h2, h3, h4, h5, h6 { color: #FFAE00; }
 	text-align: left;
 	position: relative;
 }
-#pageHeader h1 {
+header h1 {
 	margin-bottom: 12px;
 	background: url(to_header_01.jpg) no-repeat;
 	height: 186px;
 }
-#pageHeader h1 span { display: none; }
+header h1 span { display: none; }
 
 /* Above: That's just for dumping the text allowing the backround image in it's containing element to show through*/
 
-#pageHeader h2 {
+header h2 {
 	width: 261px;
 	background: url(to_beauty.gif) no-repeat;
 	position: absolute;
@@ -62,8 +62,8 @@ h1, h2, h3, h4, h5, h6 { color: #FFAE00; }
 	right: 5px;
 	cursor: text; /* just goofing off */
 }
-#pageHeader h2 span { display: none; }
-#pageHeader { position: relative; }
+header h2 span { display: none; }
+header { position: relative; }
 #quickSummary {
 	margin: 0px;
 	border: 0px none;
@@ -170,7 +170,7 @@ div#supportingText div#requirements {
 it's just a carefully cut out chunk of the #container divs background image
 with a semi-transparent overlay on it.   Oh... I can't wait for true PNG surrport*/
 
-div#supportingText div#footer {
+div#supportingText footer {
 	width: 200px;
 	border-top: 0px none #000000;
 	border-right: 0px none #000000;

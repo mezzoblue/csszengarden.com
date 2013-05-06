@@ -51,24 +51,24 @@ a:hover, a:active {
 	min-width: 470px;
 	}
 
-#pageHeader { 
+header { 
 	width: 280px;
 	float: left;
 	margin-top: 40px;
 	}
 	
-	#pageHeader h1 { 
+	header h1 { 
 		background: transparent url(pageheader-bg.png) no-repeat; 
 		margin-left: 40px;
 		width: 240px; 
 		height: 220px; 
 		}
 
-	#pageHeader h1 span {
+	header h1 span {
 		display:none
 		}
 
-	#pageHeader h2 span {
+	header h2 span {
 		display:none;
 		}
 		
@@ -197,7 +197,7 @@ a:hover, a:active {
 		line-height: 140%;
 		}
 		
-#footer {
+footer {
 	margin-top: 40px;
 	background: transparent url(footer.png) repeat-x;
 	height: 58px;
@@ -321,7 +321,7 @@ a:hover, a:active {
 		margin-left: 280px;
 		}
 		
-	#footer {
+	footer {
 		margin-left: 0px;
 	}
 }

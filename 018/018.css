@@ -34,15 +34,15 @@ p {
 	position:relative;
 	background-color:white;
 	}
-#pageHeader {
+header {
 	background-image:url("title.gif");
 	background-repeat:no-repeat;
 	height:181px;
 	}
-#pageHeader h1, #pageHeader h2 span {
+header h1, header h2 span {
 	display:none;
 	}
-#pageHeader h2 {
+header h2 {
 	width:75px;
 	height:84px;
 	background-image:url("small_tree.gif");
@@ -107,18 +107,18 @@ p {
 
 /* Footer
 -----------------------------*/
-#footer {
+footer {
 	text-align:center;
 	background:#F7F0E9 url("footer_bg.jpg");
 	padding:8px 0px;
 	font-size:120%;
 	font-weight:bold;
 	}
-#footer a {
+footer a {
 	color:#583C3B;
 	text-decoration:none;
 	}
-#footer a:hover {
+footer a:hover {
 	color:#D17B00;
 	}
 	

@@ -60,8 +60,8 @@ a:hover, a:active {
 	background: url(top.jpg) no-repeat center top;
 	padding-top: 186px;
 }
-#pageHeader h1 span,
-#pageHeader h2 span {
+header h1 span,
+header h2 span {
 	display:none
 }
 #quickSummary p.p1:first-line {
@@ -88,14 +88,14 @@ a:hover, a:active {
 	height: 30px;
 	text-align: center;
 }		
-#footer {
+footer {
 	background: url(bot.jpg) no-repeat center bottom;
 	margin-right: -80px;
 	margin-left: -300px;
 	height: 110px;
 	text-align: center;
 }
-#footer a:link, #footer a:visited {
+footer a:link, footer a:visited {
 	font-size: 15px;
 	color: #390404;
 }
@@ -178,9 +178,9 @@ content: "(";
 #linkList h3 :after {
 content: ")";
 }
-#footer a:before {
+footer a:before {
 content: "{ ";
 }
-#footer a:after {
+footer a:after {
 content: " }";
 }

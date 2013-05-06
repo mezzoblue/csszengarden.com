@@ -73,7 +73,7 @@ a:active { color: #988; background: transparent }
 
 /* and now the specific divs */
 
-#pageHeader {
+header {
 	padding: 5px;
 	height: 160px;
 	margin: 5px;
@@ -83,7 +83,7 @@ a:active { color: #988; background: transparent }
 	color: inherit;
 }
 
-#pageHeader h1, #pageHeader h2 {
+header h1, header h2 {
 	display: none;
 }
 
@@ -164,7 +164,7 @@ any clues to a solution would be appreciated ;) */
 
 
 
-#footer {
+footer {
 	margin: 0;
 	padding: 5px;
 	/* again, I can live with IE's dashed line */
@@ -174,7 +174,7 @@ any clues to a solution would be appreciated ;) */
 	text-align: center;
 }
 
-#footer a {
+footer a {
 	margin-right: 20px;
 	padding-left: 18px;
 	background: url(bullet.png) no-repeat left center;

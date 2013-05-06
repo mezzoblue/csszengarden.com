@@ -54,12 +54,12 @@ a:hover, a:active {
 	border-right: 2px dashed #fff;
 	}
 
-#pageHeader { 
+header { 
 	margin-bottom: 10px;
 	}
 
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-#pageHeader h1 { 
+header h1 { 
 background: transparent; 
 	margin-top: -180px; 
 	width: 500px; 
@@ -67,10 +67,10 @@ background: transparent;
 	float: left;
 	color:#fff;
 	}
-#pageHeader h1 span {
+header h1 span {
 	display:none;
 	}
-#pageHeader h2 { 
+header h2 { 
 	background: transparent url(tag.gif) no-repeat top left; 
 	width: 300px; 
 	margin-top:-60px;
@@ -78,7 +78,7 @@ background: transparent;
 	height: 100px; 
 	float: right;
 	}
-#pageHeader h2 span {
+header h2 span {
 	display:none;
 	}
 
@@ -115,10 +115,10 @@ background: transparent;
 	padding: 0px 170px 0px 30px;
 }
 
-#footer { 
+footer { 
 	text-align: center; 
 	}
-#footer a:link, #footer a:visited { 
+footer a:link, footer a:visited { 
 	margin-right: 20px; 
 	}
 

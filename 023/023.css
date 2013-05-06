@@ -74,7 +74,7 @@ a:active {
 	}
 
 /* page intro and subsections */
-#pageHeader {
+header {
 	position: absolute;
 	top: 30px;
 	left: 520px;
@@ -220,13 +220,13 @@ a:active {
 	background: transparent url(requirements.gif) no-repeat;
 	}
 
-#footer {
+footer {
 	width: 210px;
 	display: block;
 	text-align: right;
 	}
 	
-#footer a {
+footer a {
 	display: block;
 	font: 9px Verdana, sans-serif;
 	font-weight: 900;
@@ -315,8 +315,8 @@ a:active {
 	background: transparent url(resources.gif) no-repeat;
 	}
 
-#pageHeader h1,
-#pageHeader h2,
+header h1,
+header h2,
 #preamble h3 span,
 #supportingText h3 span,
 #linkList h3 span {

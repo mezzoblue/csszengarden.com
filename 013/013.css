@@ -64,20 +64,20 @@ abbr {
 	margin-left: auto;
 	margin-right: auto;
 }
-#pageHeader {
+header {
 	text-align: right;
 	padding: 70px 60px 0px 0px;
 }
-#pageHeader h1 {
+header h1 {
 	background: transparent url(papier.jpg) top left no-repeat;
 	width: 192px;
 	height: 70px;
 	margin: 0px 0px 0px 448px;;
 }
-#pageHeader h1 span {
+header h1 span {
 	display: none;
 }
-#pageHeader h2 {
+header h2 {
 	background: transparent url(beauty.gif) top left no-repeat;
 	width: 83px;
 	height: 14px;
@@ -85,7 +85,7 @@ abbr {
 	position: relative;
 	top: -17px;
 }
-#pageHeader h2 span {
+header h2 span {
 	display: none;
 }
 
@@ -213,14 +213,14 @@ abbr {
 	left: -10px;
 }
 
-#footer a {
+footer a {
 	font: italic 11pt/14pt garamond, georgia, serif;
 	color: #A29D66;
 	background-color: transparent;
 	text-decoration: none;
 	padding-left: 15px;
 }
-#footer a:hover {
+footer a:hover {
 	color: #464128;
 	background: transparent url(fleurdelis.gif) center left no-repeat;
 	text-decoration: none;

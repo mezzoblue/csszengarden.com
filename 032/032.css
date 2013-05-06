@@ -10,7 +10,7 @@
 
 /* hide this stuff */
 
-#pageHeader h1 span, #pageHeader h2 span, #pageHeader, #quickSummary p.p1, #preamble h3 span, #explanation h3, #participation h3, #benefits h3, #requirements h3, #lselect h3, #larchives h3, #lresources h3  {display: none}
+header h1 span, header h2 span, header, #quickSummary p.p1, #preamble h3 span, #explanation h3, #participation h3, #benefits h3, #requirements h3, #lselect h3, #larchives h3, #lresources h3  {display: none}
 
 /* show this stuff */
 
@@ -54,10 +54,10 @@ abbr {border-bottom-width: 1px; border-bottom-style: dashed;	cursor: help}
 
 #requirements {background-image: url(requirements.jpg); background-repeat: no-repeat; left: 0px; top: 466px; z-index: 1; padding-top: 23px}
 
-#footer {padding-left: 10px;}
+footer {padding-left: 10px;}
 
-#footer a:link {font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; font-weight: bold; font-size: 12px}
-#footer a:hover {font-family: Arial, Helvetica, sans-serif; color: yellow; font-weight: bold; font-size: 12px; background-color: #333333}
+footer a:link {font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; font-weight: bold; font-size: 12px}
+footer a:hover {font-family: Arial, Helvetica, sans-serif; color: yellow; font-weight: bold; font-size: 12px; background-color: #333333}
 
 #linkList {position: absolute; left: 9px; top: 0px; width: 121px; font-family: Arial, Helvetica, sans-serif;	font-size: 10px; color: #333333; z-index: 2; border-right-width: 1px; border-bottom-width: 1px;	border-left-width: 1px;	border-right-color: #c2c2c2; border-bottom-color: #c2c2c2; border-left-color: #c2c2c2;	border-right-style: solid;	border-bottom-style: solid;	border-left-style: solid; margin-top: 208px; bottom: 5px}
 

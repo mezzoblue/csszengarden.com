@@ -50,7 +50,7 @@ h1 span, h2 span,h3 span, #quickSummary p.p span { display: none; }
 /* header and summary
 --------------------------------- */
 
-#pageHeader h1
+header h1
 {
 	height: 200px;
 	background: url("nutitle.gif") no-repeat;
@@ -217,7 +217,7 @@ h1 span, h2 span,h3 span, #quickSummary p.p span { display: none; }
 /* footer
 --------------------------------- */
 
-#footer
+footer
 {
 	background: #D9D98B;
 	color: #fff;
@@ -227,7 +227,7 @@ h1 span, h2 span,h3 span, #quickSummary p.p span { display: none; }
 	text-align: center;
 }
 
-#footer a:link, #footer a:visited
+footer a:link, footer a:visited
 {
 	padding: 0 5px;
 	font-weight: normal;

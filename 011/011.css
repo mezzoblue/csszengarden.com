@@ -67,9 +67,9 @@ a:hover   { color: #f00; background-color: transparent; text-decoration: none; }
 #quickSummary p.p2 a:visited { color: #348633; background-color: transparent; }
 #quickSummary p.p2 a:hover   { color: #f00; background-color: transparent; }
 
-#footer a:link,
-#footer a:visited { color: #348633; background-color: transparent; }
-#footer a:hover   { color: #f00; background-color: transparent; }
+footer a:link,
+footer a:visited { color: #348633; background-color: transparent; }
+footer a:hover   { color: #f00; background-color: transparent; }
 
 #linkList a.c:link,
 #linkList a.c:visited { color: #fa5; background-color: transparent; }
@@ -84,13 +84,13 @@ a:hover   { color: #f00; background-color: transparent; text-decoration: none; }
   color: #888;
   background-color: transparent;
   }
-#pageHeader h1 {
+header h1 {
   margin-left: 4px; 
   background: transparent url(introGarden.gif) no-repeat 0 0;
   width: 115px; 
   height: 12px; 
   }
-#pageHeader h2 {
+header h2 {
   margin-top: 80px; 
   background: transparent url(introBeauty.gif) no-repeat 0 0; 
   width: 195px; 
@@ -169,10 +169,10 @@ a:hover   { color: #f00; background-color: transparent; text-decoration: none; }
   }
 
 /*----------------------------------------*
-**  #supportingText > #footer
+**  #supportingText > footer
 **----------------------------------------*/
 
-#footer {
+footer {
   margin: 0 0 0 221px;
   padding: 4px 0 5px 15px;
   background: transparent url(gradGreen.jpg) repeat-y; 

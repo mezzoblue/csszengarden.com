@@ -60,30 +60,30 @@ a:active, a:hover {
 
 
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-#pageHeader {
+header {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 770px;
 	}
-#pageHeader h1 {
+header h1 {
 	background: transparent url(/002/h1.gif) no-repeat top left;
 	width: 258px;
 	height: 61px;
 	float: left;
 	margin: 1px 0px 0px 3px;
 	}
-#pageHeader h1 span {
+header h1 span {
 	display: none;
 	}
-#pageHeader h2 {
+header h2 {
 	background: transparent url(/002/h2.gif) no-repeat top left;
 	width: 206px;
 	height: 28px;
 	float: right;
 	margin: 22px 15px 0px 0px;
 	}
-#pageHeader h2 span {
+header h2 span {
 	display: none;
 	}
 
@@ -140,15 +140,15 @@ a:active, a:hover {
 	color: #B27F66;
 	}
 
-#footer {
+footer {
 	text-align: right;
 	border-top: solid 1px #FFCDB5;
 	padding-top: 10px;
 	}
-#footer a:link, #footer a:visited {
+footer a:link, footer a:visited {
 	padding: 2px 6px 2px 6px;
 	}
-#footer a:hover {
+footer a:hover {
 	background-color: #FFD7BF;
 	text-decoration: none;
 	}

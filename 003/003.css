@@ -73,16 +73,16 @@ a:active, a:hover {
 	}
 
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-#pageHeader h1 {
+header h1 {
 	background: transparent url(h1.jpg) no-repeat top left;
 	width: 750px;
 	height: 152px;
 	margin: 0px;
 	}
-#pageHeader h1 span {
+header h1 span {
 	display: none;
 	}
-#pageHeader h2 span {
+header h2 span {
 	display: none;
 	}
 
@@ -151,18 +151,18 @@ html>body #quickSummary {
 	font: italic 12px/20px georgia, serif;
 	}
 
-#footer {
+footer {
 	text-align: right;
 	clear: both;
 	}
-#footer a {
+footer a {
 	font-weight: normal;
 	text-decoration: none;
 	margin-right: 10px;
 	border: solid 1px #859BAA;
 	padding: 6px;
 	}
-#footer a:hover {
+footer a:hover {
 	color: #7E868D;
 	background-color: #fff;
 	border-right: solid 1px #6F818D;

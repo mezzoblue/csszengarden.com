@@ -55,7 +55,7 @@ body {
 	background: transparent url(lsh.gif) no-repeat 687px 231px;
 }
 
-#pageHeader { 
+header { 
 	position:absolute;
 	left:0;
 	width: 355px; 
@@ -64,7 +64,7 @@ body {
 	}
 
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-#pageHeader h1 { 
+header h1 { 
 	background: transparent url(centerpiece.jpg) no-repeat; 
 	margin-top: 0px;
 	width: 355px; 
@@ -72,7 +72,7 @@ body {
 	float: left;
 }
 
-#pageHeader h1 span,#pageHeader h2,#pageHeader h2 span {
+header h1 span,header h2,header h2 span {
 	display:none;
 }
 
@@ -102,7 +102,7 @@ body {
 
 /* visually footer is moved up to be with the intro stuff */
 
-#footer{
+footer{
 	position:absolute;
 	left:0;
 	top:230px;
@@ -113,11 +113,11 @@ body {
 	text-align:right;
 }
 
-#quickSummary p.p2 a, #footer a{
+#quickSummary p.p2 a, footer a{
 	color:#fff;
 }
 
-#quickSummary p.p2 a:hover, #footer a:hover{
+#quickSummary p.p2 a:hover, footer a:hover{
 	color:#230;
 	background-color:#fff;
 	text-decoration:none;

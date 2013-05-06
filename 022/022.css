@@ -78,7 +78,7 @@ a:hover, a:active {
 	padding-left: 130px;
 	}
 /* where the logos are */
-#pageHeader {
+header {
 	width: 575px;
 	height: 65px;
 	position: absolute;
@@ -88,7 +88,7 @@ a:hover, a:active {
 	}
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
 /*and this trick totally rocks*/
-#pageHeader h1 {
+header h1 {
 	background: transparent url(zh1_combo.gif) no-repeat 0px 0px;
 	width: 575px;
 	height: 65px;
@@ -96,10 +96,10 @@ a:hover, a:active {
 	top: 0px;
 	margin-top: 0px;
 	}
-#pageHeader h1 span {
+header h1 span {
 	display:none;
 	}
-#pageHeader h2 span {
+header h2 span {
 	display:none;
 	}
 #preamble h3 {
@@ -231,7 +231,7 @@ a:hover, a:active {
 	color: #006666;
 	background-color: #CCFFFF;
 	}
-#footer {
+footer {
 	color: #CCCCCC;
 	background-color: #006666;
 	text-align: center;

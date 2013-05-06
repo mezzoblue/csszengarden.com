@@ -56,7 +56,7 @@ a:hover, a:active {
 	margin-bottom:0;
 }
 
-#pageHeader { 
+header { 
 	margin: 0;
 	padding:0;
 	width:770px;
@@ -66,7 +66,7 @@ a:hover, a:active {
 	margin-bottom:22px;
 }
 
-#pageHeader h1 { 
+header h1 { 
 	background: transparent url(intro_bg.jpg) no-repeat top left; 
 	margin-top: 0; 
 	width: 403px; 
@@ -74,7 +74,7 @@ a:hover, a:active {
 	float: left;
 }
 
-#pageHeader h2 { 
+header h2 { 
 	background: transparent url(intro_bg2.jpg) no-repeat top left; 
 	margin: 0; 
 	width: 367px; 
@@ -82,7 +82,7 @@ a:hover, a:active {
 	float: right;
 }
 
-#pageHeader h1 span, #pageHeader h2 span {
+header h1 span, header h2 span {
 	display:none
 }
 
@@ -196,14 +196,14 @@ a:hover, a:active {
 	display:none;
 }
 	
-#footer { 
+footer { 
 	text-align: center; 
 	border-top:1px solid #CBCBC2;
 	font-family:verdana, arial, sans serif;
 	font-size:10px;
 }
 
-#footer a:link, #footer a:visited { 
+footer a:link, footer a:visited { 
 	margin: 5px;
 	font-weight: normal; 
 }

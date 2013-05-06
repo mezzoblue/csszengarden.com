@@ -38,13 +38,13 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 	margin: 0 215px 0 0;
 	padding: 10px 0 0 0;
 	border-right: 10px solid #4E441B; }
-#container #intro #pageHeader {
+#container #intro header {
 	width: 500px;
 	height: 105px;
 	margin: 0 10px;
 	padding: 10px 0 0 0;
 	background: url(csszen.gif) top left no-repeat; }
-#container #intro #pageHeader h1, #container #intro #pageHeader h2 { display: none; }
+#container #intro header h1, #container #intro header h2 { display: none; }
 
 #container #intro #quickSummary { margin: 0 20px; padding: 0 0 10px 0; }
 #container #intro #quickSummary p.p1 {
@@ -101,19 +101,19 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 	padding-bottom: 25px;
 	background: url(textBoxBottom.gif) bottom left no-repeat; }
 
-#container #supportingText #footer {
+#container #supportingText footer {
 	margin: 0;
 	padding: 0 0 25px 0;
 	background: none;
 	font-size: 0.7em;
 	font-weight: bold;
 	text-align: center; }
-#container #supportingText #footer a {
+#container #supportingText footer a {
 	margin: 0;
 	padding: 0 10px;
 	border-left: 5px solid #666;
 	border-right: 5px solid #666; }
-#container #supportingText #footer a:hover { background: #444; color: #fff; }
+#container #supportingText footer a:hover { background: #444; color: #fff; }
 
 #container #linkList {
 	position: absolute;

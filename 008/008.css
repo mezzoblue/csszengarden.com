@@ -42,7 +42,7 @@ body {
 	top:535px;
 	z-index:2;
 	}
-#explanation, #participation, #requirements, #benefits, #footer, #quickSummary, #preamble, #lselect, #lfavorites, #lresources, #larchives {
+#explanation, #participation, #requirements, #benefits, footer, #quickSummary, #preamble, #lselect, #lfavorites, #lresources, #larchives {
 	padding:7px;
 	margin:5px;
 	border-left:1px solid #aaa;
@@ -69,7 +69,7 @@ body {
 	height:1515px;
 	z-index:1;
 	}
-#pageHeader {
+header {
 	display:none;
 	}
 h3 {

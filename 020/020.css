@@ -27,20 +27,20 @@
 abbr {
 	border-bottom: 1px #6BA0D2 dashed;
 }
-#pageHeader {
+header {
 	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
 	background-color: #A4ACB3;
 }
-#pageHeader h1 {
+header h1 {
 	height: 190px;
 	margin: 0px;
 	background-image: url(headerh1.jpg);
 	background-repeat: no-repeat;
 }
-#pageHeader h1 span, #pageHeader h2 span {
+header h1 span, header h2 span {
 	display: none;
 }
-#pageHeader h2 {
+header h2 {
 	background-color: #EDEEF0;
 	margin: 0px;
 	height: 24px;
@@ -48,7 +48,7 @@ abbr {
 	background-image: url(headerh2.gif);
 	background-repeat: no-repeat;
 }
-#pageHeader h2 abbr {
+header h2 abbr {
 	color: #FFF;
 	border-bottom: 1px #FFF dashed;
 }
@@ -314,7 +314,7 @@ abbr {
 #linkList abbr {
 	border-bottom: 1px #FFF dashed;
 }
-#footer {
+footer {
 	clear: both;
 	text-align: right;
 	margin: 0px -16em 0px 0px;
@@ -323,7 +323,7 @@ abbr {
 	background-image: url(signSoph.gif);
 	background-position: 0% 95%;
 }
-#footer a {
+footer a {
 	font-size: 70%;
 	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
 }

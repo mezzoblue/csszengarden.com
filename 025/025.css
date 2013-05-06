@@ -61,13 +61,13 @@ a:hover, a:active {
 	margin: 0px;
 }
 
-#pageHeader {
+header {
 	height: 171px;
 	padding: 0px;
 	background: transparent url(bg-4.gif) top left repeat-x;
 }
 
-#pageHeader h1 {
+header h1 {
 	padding: 0px;
 	margin: 0px;
 	float: left;
@@ -75,10 +75,10 @@ a:hover, a:active {
 	height: 171px;
 	background: transparent url(cr-tl.jpg) top right no-repeat;
 }
-#pageHeader h1 span {
+header h1 span {
 	display: none;
 }
-#pageHeader h2 {
+header h2 {
 	padding: 0px;
 	margin: 0px;
 	position: absolute;
@@ -88,7 +88,7 @@ a:hover, a:active {
 	height: 171px;
 	background: transparent url(cr-tr.gif) top right no-repeat;
 }
-#pageHeader h2 span {
+header h2 span {
 	display: none;
 }
 
@@ -160,7 +160,7 @@ a:hover, a:active {
 	display: none;
 }
 
-#footer {
+footer {
 	z-index: 1;
 	position: absolute;
 	top: 64px;
@@ -174,17 +174,17 @@ a:hover, a:active {
 	voice-family:inherit;
 	height: 32px;
 }
-#footer a:link, #footer a:visited {
+footer a:link, footer a:visited {
 	font-size: 10px;
 	font-weight: normal;
 	color: #fff;
 	text-decoration: none;
 	padding: 4px 12px 4px 13px;
 }
-#footer a:hover {
+footer a:hover {
 	background: transparent url(bg-6a.png) center center no-repeat;
 }
-/*#footer a {
+/*footer a {
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
@@ -196,7 +196,7 @@ a:hover, a:active {
 	margin-right: 10px;
 	background: transparent url(bg-5.png) top left no-repeat;
 }
-#footer a:hover {
+footer a:hover {
 		background: transparent url(bg-5a.png) top left no-repeat;
 }*/
 
@@ -394,7 +394,7 @@ a:hover, a:active {
 #lselect ul>li+li+li+li+li+li+li+li {position: relative; left: 104px; top: -11em;}
 
 
-#larchives ul>li a[accesskey="p"] {
+#larchives ul>li.previous a {
 	display: block;
 	width: 37px;
 	height: 0;
@@ -406,11 +406,11 @@ a:hover, a:active {
 	left: 70px;
 	color: #958500;
 }
-#larchives ul>li a[accesskey="p"]:hover {
+#larchives ul>li.previous a:hover {
 	background: transparent url(archive-b1b.gif) top left no-repeat;
 }
 
-#larchives ul>li a[accesskey="n"] {
+#larchives ul>li.next a {
 	display: block;
 	width: 31px;
 	height: 0;
@@ -422,13 +422,13 @@ a:hover, a:active {
 	left: 108px;
 	color: #958500;
 }
-#larchives ul>li a[accesskey="n"]:hover {
+#larchives ul>li.next a:hover {
 	background: transparent url(archive-b2b.gif) top left no-repeat;
 }
 
 
 
-#larchives ul>li+li a[accesskey="w"] {
+#larchives ul>li.viewall a {
 	display: block;
 	width: 35px;
 	height: 0;
@@ -440,17 +440,17 @@ a:hover, a:active {
 	left: 170px;
 	color: #958500;
 }
-#larchives ul>li+li a[accesskey="w"]:hover {
+#larchives ul>li.viewall a:hover {
 	background: transparent url(archive-b3b.gif) top left no-repeat;
 }
 
 
 
-#supportingText>div#footer {
+#supportingText>footer {
 	background: none;
 }
 
-div#footer>a:link, div#footer>a:visited {
+footer>a:link, footer>a:visited {
 	display: block;
 	width: 46px;
 	height: 45px;
@@ -460,14 +460,14 @@ div#footer>a:link, div#footer>a:visited {
 	top: 0px;
 	left: 0px;
 }
-div#footer>a:hover {
+footer>a:hover {
 	background: transparent url(bg-5a.png) top left no-repeat;
 }
 
-div#footer>a+a:link, div#footer>a+a:visited {left: 53px;}
-div#footer>a+a+a:link, div#footer>a+a+a:visited {left: 106px;}
-div#footer>a+a+a+a:link, div#footer>a+a+a+a:visited {left: 159px;}
-div#footer>a+a+a+a+a:link, div#footer>a+a+a+a+a:visited {left: 212px;}
+footer>a+a:link, footer>a+a:visited {left: 53px;}
+footer>a+a+a:link, footer>a+a+a:visited {left: 106px;}
+footer>a+a+a+a:link, footer>a+a+a+a:visited {left: 159px;}
+footer>a+a+a+a+a:link, footer>a+a+a+a+a:visited {left: 212px;}
 
 #extraDiv3 {
 	background: transparent url(bg-5a.png) top left no-repeat;

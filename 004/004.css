@@ -56,13 +56,13 @@ a:active, a:hover {
 	padding: 0px 180px 0px 25px;
 	}
 
-#pageHeader {
+header {
 	width: 100%;
 	height: 217px;
 	background: #fff url(cr1.jpg) top left no-repeat;
 	margin-top: 47px;
 	}
-#pageHeader h1 {
+header h1 {
 	background: transparent url(h1.gif) no-repeat top left;
 	width: 296px;
 	height: 46px;
@@ -70,10 +70,10 @@ a:active, a:hover {
 	top: 185px;
 	right: 10px;
 	}
-#pageHeader h1 span {
+header h1 span {
 	display: none;
 	}
-#pageHeader h2 {
+header h2 {
 	background: transparent url(h2.gif) no-repeat top left;
 	width: 229px;
 	height: 16px;
@@ -81,7 +81,7 @@ a:active, a:hover {
 	top: 230px;
 	right: 12px;
 	}
-#pageHeader h2 span {
+header h2 span {
 	display: none;
 	}
 
@@ -164,14 +164,14 @@ a:active, a:hover {
 	}
 
 
-#footer {
+footer {
 	text-align: right; border-top: solid 1px #1E5E82;
 	padding-top: 10px;
 	}
-#footer a:link, #footer a:visited {
+footer a:link, footer a:visited {
 	padding: 2px 6px 2px 6px;
 	}
-#footer a:hover {
+footer a:hover {
 	background: transparent url(bg2.gif) top left repeat-x;
 	text-decoration: none;
 	}

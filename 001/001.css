@@ -77,7 +77,7 @@ abbr {
 	}
 
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-#pageHeader h1 { 
+header h1 { 
 	background: transparent url(h1.gif) no-repeat top left;
 	margin-top: 10px;
 	display: block;
@@ -85,10 +85,10 @@ abbr {
 	height: 87px;
 	float: left;
 	}
-#pageHeader h1 span {
+header h1 span {
 	display:none
 	}
-#pageHeader h2 { 
+header h2 { 
 	background: transparent url(h2.gif) no-repeat top left; 
 	margin-top: 58px; 
 	margin-bottom: 40px; 
@@ -96,10 +96,10 @@ abbr {
 	height: 18px; 
 	float: right;
 	}
-#pageHeader h2 span {
+header h2 span {
 	display:none
 	}
-#pageHeader {
+header {
 	padding-top: 20px;
 	height: 87px;
 }
@@ -124,10 +124,10 @@ abbr {
 	margin-bottom: 40px;
 	}
 
-#footer { 
+footer { 
 	text-align: center; 
 	}
-#footer a:link, #footer a:visited { 
+footer a:link, footer a:visited { 
 	margin-right: 20px; 
 	}
 

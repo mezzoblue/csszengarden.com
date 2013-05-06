@@ -47,7 +47,7 @@ border: 0 none;
 }
 
 /* divs and related classes */
-#pageHeader h1 {
+header h1 {
 font: bold 3.2em Arial, Helvetica, sans-serif;
 color: #8ab;
 background: transparent;
@@ -57,7 +57,7 @@ left: 256px;
 z-index: 5;
 text-transform: lowercase;
 }
-#pageHeader h2 {
+header h2 {
 position: absolute;
 left: 20px;
 top: 68px;
@@ -68,7 +68,7 @@ font: bold 1em Arial, Helvetica, sans-serif;
 color: #449498;
 background: transparent url(cssdesign.gif) top left no-repeat;
 }
-#pageHeader h2 span {
+header h2 span {
 display: none;
 }
 
@@ -229,7 +229,7 @@ margin: 10px 20px 15px 0;
 clear: left;
 }
 
-#footer {
+footer {
 border-top: 1px dashed #999;
 padding-top: 5px;
 margin: 20px 30px 20px 5em;
@@ -237,16 +237,16 @@ clear: both;
 font-size: .82em;
 padding-left: 0.7em;
 }
-#footer a {
+footer a {
 padding: 0 10px 0 15px;
 color: #069;
 background: transparent url(link.gif) left no-repeat;
 }
-#footer a:link, #footer a:visited {
+footer a:link, footer a:visited {
 color: #069;
 background: transparent url(link.gif) left no-repeat;
 }
-#footer a:hover, #footer a:active {
+footer a:hover, footer a:active {
 color: #900;
 background: transparent url(linkhover.gif) left no-repeat;
 }

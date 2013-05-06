@@ -33,7 +33,7 @@ body {
 	padding: 0;
 }
 
-#pageHeader h1 {
+header h1 {
 	background-image: url(zengarden.gif);
 	background-repeat: no-repeat;
 	width: 306px;
@@ -41,11 +41,11 @@ body {
 	margin: 0;
 }
 
-#pageHeader h1 span {
+header h1 span {
 	display: none;
 }
 
-#pageHeader h2 {
+header h2 {
 	background-image: url(thebeauty.gif);
 	background-repeat: no-repeat;
 	width: 306px;
@@ -53,11 +53,11 @@ body {
 	margin: 0px;
 }
 
-#pageHeader h2 span {
+header h2 span {
 	display: none;
 }
 
-#pageHeader {
+header {
 	position: absolute;
 	right: 28px;
 	top: 195px;
@@ -337,11 +337,11 @@ a:hover, a:focus {
 	z-index: 1;
 }
 
-* html #footer {
+* html footer {
 	width: 260px;
 	w\idth: 228px;
 }
-#footer {
+footer {
 	font: 11px "Courier New", monospace;
 	position: absolute;
 	top: 922px;

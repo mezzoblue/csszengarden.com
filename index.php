@@ -30,10 +30,10 @@
 
 <div id="container">
 	<div id="intro">
-		<div id="pageHeader">
+		<header>
 			<h1><span>css Zen Garden</span></h1>
 			<h2><span>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</span></h2>
-		</div>
+		</header>
 
 		<div id="quickSummary">
 			<p class="p1"><span>A demonstration of what can be accomplished visually through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.</span></p>
@@ -77,13 +77,13 @@
 			<p class="p5"><span>Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. Now available: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.</span>&nbsp;</p>
 		</div>
 
-		<div id="footer">
+		<footer>
 			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML">HTML</a> &nbsp; 
 			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS">CSS</a> &nbsp; 
 			<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">CC</a> &nbsp;
 			<a href="http://mezzoblue.com/zengarden/faq/#s508" title="Read about the accessibility of this site">508</a> &nbsp;
 			<a href="http://www.mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site">AAA</a>
-		</div>
+		</footer>
 
 	</div>
 
@@ -105,7 +105,7 @@
 <?
 	if ($listStart > $numDesigns) {
 ?>
-					<li>
+					<li class="next">
 						<a href="?cssfile=<?= $currentDesign ?>&amp;page=<?= $thisPage + 1 ?>">
 							Next Designs <span class="indicator">&raquo;</span>
 						</a>
@@ -115,7 +115,7 @@
 
 	if ($thisPage > 0) {
 ?>
-					<li>
+					<li class="previous">
 						<a href="?cssfile=<?= $currentDesign ?>&amp;page=<?= $thisPage - 1 ?>">
 							<span class="indicator">&laquo;</span> Previous Designs
 						</a>
@@ -123,7 +123,11 @@
 <?
 	}
 ?>
-					<li><a href="http://www.mezzoblue.com/zengarden/alldesigns/" title="View every submission to the Zen Garden.">View All Designs</a></li>
+					<li class="viewall">
+						<a href="http://www.mezzoblue.com/zengarden/alldesigns/" title="View every submission to the Zen Garden.">
+							View All Designs
+						</a>
+					</li>
 				</ul>
 			</div>
 			

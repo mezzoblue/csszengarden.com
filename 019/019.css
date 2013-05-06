@@ -47,23 +47,23 @@ a:hover, a:active {
 
 /* specific divs */
 	
-#pageheader {
+header {
 	}
 
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
 
-#pageHeader h1 { 
+header h1 { 
 	background: transparent url(title.jpg) no-repeat top left;
 	width: 2300px; 
 	height: 85px;
 	margin-top: 70px;
 	}
 	
-#pageHeader h1 span {
+header h1 span {
 	display:none
 	}
 
-#pageHeader h2 span {
+header h2 span {
 	display:none;
 	}
 
@@ -184,7 +184,7 @@ a:hover, a:active {
 	font: 9px/15px verdana;
 	}
 
-#footer { 
+footer { 
 	position: absolute;
 	background: transparent url(worm.jpg) no-repeat;
 	text-align: right;
@@ -195,7 +195,7 @@ a:hover, a:active {
 	z-index: 2;
 	}
 	
-#footer a:link, #footer a:visited { 
+footer a:link, footer a:visited { 
 	display: block;
 	}
 

@@ -19,7 +19,7 @@ text-align: center;
 min-width: 760px;
 }
 
-p, ul, #footer {font-size: 0.8em;}
+p, ul, footer {font-size: 0.8em;}
 
 h1, h2, h3	{
 font-family: georgia, serif;
@@ -49,7 +49,7 @@ padding: 0;
 margin: 0 auto;
 }
 
-#pageHeader	{
+header	{
 position: relative;
 float: right;
 width: 230px;
@@ -61,7 +61,7 @@ color: #000;
 }
 
 
-#pageHeader h1	{
+header h1	{
 background: #f0e7d7 url(zenhead.jpg) no-repeat 0% 0%;
 color: #800000;
 height: 174px;
@@ -69,13 +69,13 @@ padding: 0;
 margin: 0;
 }
 
-#pageHeader h2	{
+header h2	{
 padding: 0;
 margin: 0;
 display: none;
 }
 
-#pageHeader h1 span	{display: none;}
+header h1 span	{display: none;}
 
 #quickSummary	{
 position: relative;
@@ -270,7 +270,7 @@ color: #aaab9c;
 padding: 0;
 }
 			
-#footer	{
+footer	{
 margin: 0;
 padding: 0;
 position: relative;
@@ -281,7 +281,7 @@ text-align: center;
 padding-bottom: 10px;
 }
 
-#footer a	{
+footer a	{
 display: block;
 width: 100%;
 background: #f7f2ea url(linkfootbg.jpg) no-repeat 0% 0%;
@@ -293,7 +293,7 @@ border-style: solid;
 text-decoration: none;
 }
 
-#footer a:hover	{
+footer a:hover	{
 color: #800000; 
 background: #f0e7d7 url(linkbg.jpg) no-repeat 0% 0%;
 border-color: #aaab9c #ffe #ffe #ccc;

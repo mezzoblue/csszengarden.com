@@ -70,7 +70,7 @@ a:hover, a:active {
 }
 
 /* The repeating background is what holds together our right and left halves of the header */
-#pageHeader {
+header {
 	height: 171px;
 	padding: 0px;
 	background: transparent url(bg-4.gif) top left repeat-x;
@@ -78,7 +78,7 @@ a:hover, a:active {
 
 /* A bit of trickery. Since the h2 contains all the text, all of a sudden we have a free, modifiable element on our
    hands. Let's use it, shall we? */
-#pageHeader h1 {
+header h1 {
 	padding: 0px;
 	margin: 0px;
 	float: left;
@@ -86,10 +86,10 @@ a:hover, a:active {
 	height: 171px;
 	background: transparent url(cr-tl.jpg) top right no-repeat;
 }
-#pageHeader h1 span {
+header h1 span {
 	display: none;
 }
-#pageHeader h2 {
+header h2 {
 	padding: 0px;
 	margin: 0px;
 	position: absolute;
@@ -99,7 +99,7 @@ a:hover, a:active {
 	height: 171px;
 	background: transparent url(cr-tr.gif) top right no-repeat;
 }
-#pageHeader h2 span {
+header h2 span {
 	display: none;
 }
 
@@ -184,7 +184,7 @@ a:hover, a:active {
 /* Let's get these pesky links back up to the top, shall we? */
 /* If you're wondering why IE sees one thing and Mozilla/Opera/Safari see another, look way down below under 
     the 'enhancements' section for the details. The following is the IE style */
-#footer {
+footer {
 	z-index: 1;
 	position: absolute;
 	top: 64px;
@@ -198,17 +198,17 @@ a:hover, a:active {
 	voice-family:inherit;
 	height: 32px;
 }
-#footer a:link, #footer a:visited {
+footer a:link, footer a:visited {
 	font-size: 10px;
 	font-weight: normal;
 	color: #fff;
 	text-decoration: none;
 	padding: 4px 12px 4px 13px;
 }
-#footer a:hover {
+footer a:hover {
 	background: transparent url(bg-6a.png) center center no-repeat;
 }
-/*#footer a {
+/*footer a {
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
@@ -220,7 +220,7 @@ a:hover, a:active {
 	margin-right: 10px;
 	background: transparent url(bg-5.png) top left no-repeat;
 }
-#footer a:hover {
+footer a:hover {
 		background: transparent url(bg-5a.png) top left no-repeat;
 }*/
 
@@ -511,7 +511,7 @@ a:hover, a:active {
 /* I tried running the Owen Hack (http://www.albin.net/CSS/OwenHack.html) to keep Op<7 
     from doing this, but Op7 missed it too. So Op 6 has to suffer for it. I've heard Op7 is
     supposed to be smarter than that - I guess not. */
-#supportingText>div#footer {
+#supportingText>footer {
 	background: none;
 }
 
@@ -520,7 +520,7 @@ a:hover, a:active {
     I have to do a bit of hacking. 
 	
     The nice thing about this section is that I get to use PNGs with alpha transparency since IE is out of the picture. */
-div#footer>a:link, div#footer>a:visited {
+footer>a:link, footer>a:visited {
 	display: block;
 	width: 46px;
 	height: 45px;
@@ -530,16 +530,16 @@ div#footer>a:link, div#footer>a:visited {
 	top: 0px;
 	left: 0px;
 }
-div#footer>a:hover {
+footer>a:hover {
 	background: transparent url(bg-5a.png) top left no-repeat;
 }
 /* If you're with me so far, this isn't too new. All I'm doing is selecting each link individually
     and setting it's position. Same theory as the design list - each new level controls itself plus levels
     below it. */
-div#footer>a+a:link, div#footer>a+a:visited {left: 53px;}
-div#footer>a+a+a:link, div#footer>a+a+a:visited {left: 106px;}
-div#footer>a+a+a+a:link, div#footer>a+a+a+a:visited {left: 159px;}
-div#footer>a+a+a+a+a:link, div#footer>a+a+a+a+a:visited {left: 212px;}
+footer>a+a:link, footer>a+a:visited {left: 53px;}
+footer>a+a+a:link, footer>a+a+a:visited {left: 106px;}
+footer>a+a+a+a:link, footer>a+a+a+a:visited {left: 159px;}
+footer>a+a+a+a+a:link, footer>a+a+a+a+a:visited {left: 212px;}
 
 /* 	nb: right now, for whatever reason, this is not working. I'm assuming Mozilla is 
 	intelligent enough to realize that it's completely hidden, and therefore doesn't

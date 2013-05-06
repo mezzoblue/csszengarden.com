@@ -42,7 +42,7 @@ body {
 	padding: 0;
 	}
 
-#pageHeader {
+header {
 	background: #9bec37 url(bg_header.gif) repeat-y top left;
 	color: #666;
 	height: 180px;
@@ -50,11 +50,11 @@ body {
 	border-bottom: 2px solid #fff;
 	}
 
-#pageHeader h1 {
+header h1 {
 	display: none;
 	}
 
-#pageHeader h2 {
+header h2 {
 	display: none;
 	}
 
@@ -142,7 +142,7 @@ html>#requirements {
 	width: 498px; /* Be nice to Opera */
 	}
 
-#footer {
+footer {
 	border-top: 2px solid #fff;
 	background: #9bec37 url(bg_footer.gif) no-repeat top left;
 	color: #fff;
@@ -153,7 +153,7 @@ html>#requirements {
 	height: 12px; /* Actual value for conformant browsers (IE6 needs a height value to display the background correctly. Don't even start...) */	
 	}
 
-html>#footer {
+html>footer {
 	height: 12px; /* Be nice to Opera */
 	}
 
@@ -278,7 +278,7 @@ p {
 	text-align: left;
 	}
 
-#footer {
+footer {
 	font-size: 9px;
 	font-family: 'Arial', Helvetica, sans-serif; /* Looks slightly better  */
 	}
@@ -382,7 +382,7 @@ a:hover {
 	text-transform: lowercase;
 	}
 
-#footer a, #footer a:link, #footer a:visited {
+footer a, footer a:link, footer a:visited {
 	background: transparent url(arrow_footer.gif) no-repeat 0 2px;
 	color: #fff;
 	text-decoration: none;
@@ -390,7 +390,7 @@ a:hover {
 	padding-left: 8px;
 	}
 
-#footer a:hover {
+footer a:hover {
 	text-decoration: underline;
 	}
 

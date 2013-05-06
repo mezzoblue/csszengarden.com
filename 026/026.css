@@ -205,14 +205,14 @@ h2 span {
 
 
 
-#footer {
+footer {
 	position: relative;
 	margin: 25px 15px 0 -14px;
 	padding: 3px 0 0 20px;
 	background: url(foot.jpg) no-repeat;
 	height: 23px;
 }
-#footer a {
+footer a {
 	color: #fff;
 	vertical-align: middle;
 }

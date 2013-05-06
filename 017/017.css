@@ -48,11 +48,11 @@ h1 span, h2 span, h3 span, #quickSummary p.p1 span {display:none;}
   
 /* header and summary
 --------------------------------- */
-#pageHeader h1 {
+header h1 {
   height:71px;
   background:url("bg_zengarden.gif") no-repeat 35px 42px;
   }
-#pageHeader h2 {
+header h2 {
   height:115px;
   background:url("bg_beautyof.jpg") no-repeat left top;
   }
@@ -183,7 +183,7 @@ h1 span, h2 span, h3 span, #quickSummary p.p1 span {display:none;}
 
 /* footer
 --------------------------------- */
-#footer {
+footer {
   background:#D9D98B url("bg_pattern.gif");
   color:#fff;
   margin:1.75em 0 0;
@@ -193,7 +193,7 @@ h1 span, h2 span, h3 span, #quickSummary p.p1 span {display:none;}
   font:85% Verdana,Arial,Sans-serif;
   text-align:center;
   }
-#footer a:link, #footer a:visited {
+footer a:link, footer a:visited {
   padding:0 5px;
   font-weight:normal;
   }
