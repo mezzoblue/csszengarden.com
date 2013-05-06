@@ -281,13 +281,13 @@ h3.select span, h3.archives span, h3.resources span{
 	font-weight:bold;
 }
 
-.design-selection li a.c{
+.design-selection li a.designer-name{
 	text-decoration:none;
 	display:inline;
 	font-weight:normal;
 }
 
-.design-selection li a.c:hover{
+.design-selection li a.designer-name:hover{
 	text-decoration:underline;
 }
 

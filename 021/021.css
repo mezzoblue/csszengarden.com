@@ -281,11 +281,11 @@ background: transparent url(css.gif) 0 3px no-repeat;
 .design-selection a {
 display: block;
 }
-.design-selection a.c {
+.design-selection a.designer-name {
 display: inline;
 font-weight: normal;
 }
-.design-selection a:hover.c {
+.design-selection a:hovera.designer-name {
 display: inline;
 font-weight: normal;
 }

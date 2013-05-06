@@ -78,10 +78,10 @@
 		</div>
 
 		<footer>
-			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML">HTML</a> &nbsp; 
-			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS">CSS</a> &nbsp; 
-			<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">CC</a> &nbsp;
-			<a href="http://mezzoblue.com/zengarden/faq/#s508" title="Read about the accessibility of this site">508</a> &nbsp;
+			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML">HTML</a> 
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS">CSS</a>
+			<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">CC</a>
+			<a href="http://mezzoblue.com/zengarden/faq/#s508" title="Read about the accessibility of this site">508</a>
 			<a href="http://www.mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site">AAA</a>
 		</footer>
 

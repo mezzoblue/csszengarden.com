@@ -314,7 +314,7 @@ footer {
 	display: block;
 	}
 
-.sidebar .design-selection a.c:link, .sidebar .design-selection a.c:visited, .sidebar #lfavorites a.c:link, .sidebar #lfavorites a.c:visited {
+.sidebar .design-selection a.designer-name:link, .sidebar .design-selection a.designer-name:visited, .sidebar #lfavorites a.designer-name:link, .sidebar #lfavorites a.designer-name:visited {
 	display:inline;
 	}
 
@@ -361,13 +361,13 @@ a:hover {
 	text-decoration: underline;
 	}
 
-.sidebar a.c, .sidebar a.c:link, .sidebar a.c:visited {
+.sidebar a.designer-name, .sidebar a.designer-name:link, .sidebar a.designer-name:visited {
 	background: transparent;
 	color: #666;
 	text-decoration: none;
 	}
 
-.sidebar a.c:hover {
+.sidebar a.designer-name:hover {
 	background: transparent;
 	color: #333;
 	text-decoration: underline;
@@ -377,7 +377,7 @@ a:hover {
 	font-size: 10px;
 	}
 
-.sidebar .design-selection a.c {
+.sidebar .design-selection a.designer-name {
 	font-size: 9px;
 	text-transform: lowercase;
 	}

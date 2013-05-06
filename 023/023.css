@@ -271,22 +271,22 @@ footer a {
 	color: #9B3F17;
 	}
 	
-.sidebar ul li a.c {
+.sidebar ul li a.designer-name {
 	display: inline;
 	}
 	
-.sidebar ul li a.c:link {
+.sidebar ul li a.designer-name:link {
 	font-weight: 500;
 	color: #4C83AE;
 	}
 
-.sidebar ul li a.c:visited {
+.sidebar ul li a.designer-name:visited {
 	font-weight: 500;
 	color: #999;
 	}
 
-.sidebar ul li a.c:hover,
-.sidebar ul li a.c:active {
+.sidebar ul li a.designer-name:hover,
+.sidebar ul li a.designer-name:active {
 	font-weight: 500;
 	color: #9B3F17;
 	}

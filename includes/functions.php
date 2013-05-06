@@ -24,8 +24,8 @@
 			ob_start();
 ?>
 					<li>
-						<a href="<?= $designURL ?>"><?= $designName ?></a> by
-						<a href="<?= $designerURL ?>"><?= $designerName ?></a>
+						<a href="<?= $designURL ?>" class="design-name"><?= $designName ?></a> by
+						<a href="<?= $designerURL ?>" class="designer-name"><?= $designerName ?></a>
 					</li>
 <?	
 			// dump and close buffering

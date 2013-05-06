@@ -66,9 +66,9 @@ footer a:link,
 footer a:visited { color: #348633; background-color: transparent; }
 footer a:hover   { color: #f00; background-color: transparent; }
 
-.sidebar a.c:link,
-.sidebar a.c:visited { color: #fa5; background-color: transparent; }
-.sidebar a.c:hover   { color: #f00; background-color: transparent; }
+.sidebar a.designer-name:link,
+.sidebar a.designer-name:visited { color: #fa5; background-color: transparent; }
+.sidebar a.designer-name:hover   { color: #f00; background-color: transparent; }
 
 /*----------------------------------------*
 **  #intro

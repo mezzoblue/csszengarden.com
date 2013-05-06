@@ -273,4 +273,4 @@ footer {
 		}
 
 			.design-selection a, #lfavorites a { display:block; text-transform:lowercase; }
-			.design-selection a.c, #lfavorites a.c {display:inline; text-transform: none; }
+			.design-selection a.designer-name, #lfavorites a.designer-name {display:inline; text-transform: none; }

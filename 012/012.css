@@ -234,7 +234,7 @@ div#supportingText footer {
 .sidebar h3 span { margin: 0px; padding: 0px 0px 0px 34px; }
 /*.sidebar span { margin: 0px; padding: 0px; display: block; }*/
 
-div.design-selection a.c {
+div.design-selection a.designer-name {
 	margin: 0px 0px -15px; /* seemed to have to do that because of the extra &nbsp; in each li item */
 	padding: 0px 15px 0px 0px;
 	display: inline;
@@ -287,7 +287,7 @@ steps here and do the lists, I'll try to reorder the css later to make increment
 	background: url(ani2.gif) no-repeat left center;
 	color: #EBEBEB;
 }
-div.design-selection a.c:hover {
+div.design-selection a.designer-name:hover {
 	background: none;
 	color: #CCCCCC;
 	font-style: italic;

@@ -126,7 +126,7 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 #container .sidebar .wrapper div h3 span { display: none; }
 
 #container .sidebar .wrapper .design-selection a { display: block; width: 100%; }
-#container .sidebar .wrapper .design-selection a.c { display: inline; width: auto; }
+#container .sidebar .wrapper .design-selection a.designer-name { display: inline; width: auto; }
 
 #container .sidebar .wrapper .design-selection {
 	margin: 0 0 10px 0;

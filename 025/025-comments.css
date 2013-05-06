@@ -263,7 +263,7 @@ footer a:hover {
 	color: #fff;
 	letter-spacing: normal;
 }
-.design-selection a.c {
+.design-selection a.designer-name {
 	font-weight: normal;
 	color: #6D6100;
 	text-transform: lowercase;
@@ -418,7 +418,7 @@ footer a:hover {
 	line-height: 10px;
 }
 .design-selection ul>li a {display: block;}
-.design-selection ul>li a.c {display: inline;}
+.design-selection ul>li a.designer-name {display: inline;}
 
 /* The only way I have control over each individual item 
 	in this list is by using the combination of CSS-2

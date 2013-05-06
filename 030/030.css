@@ -155,7 +155,7 @@ linkList h3.favorites {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }	
-.sidebar .design-selection a.c{
+.sidebar .design-selection a.designer-name{
 	display: inline;
 	margin-bottom: -1em;
 	font-style: italic;

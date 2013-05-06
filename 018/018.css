@@ -159,8 +159,8 @@ footer a:hover {
 /* To get a linebreak between title and author */
 .sidebar .design-selection a { display:block; }
 .sidebar .design-selection a:hover {color:#C52E00; }
-.sidebar .design-selection a.c { display:inline; }
-.sidebar .design-selection a.c:hover {color:#686057; }
+.sidebar .design-selection a.designer-name { display:inline; }
+.sidebar .design-selection a.designer-name:hover {color:#686057; }
 
 .sidebar h3 { 
 	margin:0; padding:0; 

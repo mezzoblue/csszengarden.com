@@ -189,16 +189,16 @@ h2 span {
 	text-decoration: underline;
 	color: #e60;
 }
-.sidebar .design-selection a.c {
+.sidebar .design-selection a.designer-name {
 	display: inline;
 	text-decoration: none;
 	color: #888;
 }
-.sidebar .design-selection a.c:visited {
+.sidebar .design-selection a.designer-name:visited {
 	text-decoration: none;
 	color: #999;
 }
-.sidebar .design-selection a.c:hover {
+.sidebar .design-selection a.designer-name:hover {
 	text-decoration: none;
 	color: #e60;
 }

@@ -171,7 +171,7 @@ header h2 {
   color:#A79355;
   }
 .sidebar .design-selection a:link, .sidebar .design-selection a:visited {display:block;}
-.sidebar .design-selection a.c:link, .sidebar .design-selection a.c:visited {
+.sidebar .design-selection a.designer-name:link, .sidebar .design-selection a.designer-name:visited {
   display:inline;
   font-family:Georgia,Serif;
   font-weight:normal;

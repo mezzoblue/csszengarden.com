@@ -299,13 +299,13 @@ header h2 abbr {
 	text-decoration: none;
 	font-weight: bold;
 }
-.sidebar a.c:link, .sidebar a.c:visited {
+.sidebar a.designer-name:link, .sidebar a.designer-name:visited {
 	border-left: none;
 	padding-left: 0px;
 	font-weight: normal;
 	color: #FFF;
 }
-.sidebar a.c:hover, .sidebar a.c:active {
+.sidebar a.designer-name:hover, .sidebar a.designer-name:active {
 	border-left: none;
 	padding-left: 0px;
 	color: #FFD800;

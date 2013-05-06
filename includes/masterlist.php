@@ -198,7 +198,7 @@ $designList = array(
 			"033",
 			"Fleur-de-lys",
 			"Claire Campbell",
-			"http://www.tanfa.co.uk/",
+			"http://www.tanfa.designer-nameo.uk/",
 	),
 	array(
 			"034",
@@ -213,13 +213,13 @@ $designList = array(
 			"http://www.nundroo.com/",
 	),
 	array(
-			"035",
+			"036",
 			"White Lily",
 			"Jens Kristensen",
 			"http://j-k.com/",
 	),
 	array(
-			"036",
+			"037",
 			"pr&#234;t-&#225;-porter",
 			"Minz Meyer",
 			"http://www.minzweb.de/",
