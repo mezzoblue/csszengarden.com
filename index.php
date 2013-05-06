@@ -9,7 +9,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>css Zen Garden: The Beauty in CSS Design</title>
+	<title>CSS Zen Garden: The Beauty in CSS Design</title>
 
 	<link rel="stylesheet" media="screen" href="<?= $currentDesign; ?>"></style>
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
@@ -31,7 +31,7 @@
 
 	<section class="intro" id="zen-intro">
 		<header>
-			<h1><span>css Zen Garden</span></h1>
+			<h1><span>CSS Zen Garden</span></h1>
 			<h2><span>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</span></h2>
 		</header>
 
@@ -44,7 +44,7 @@
 			<h3><span>The Road to Enlightenment</span></h3>
 			<p class="p1"><span>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr title="Document Object Model">DOM</abbr>s, and broken <abbr title="Cascading Style Sheets">CSS</abbr> support.</span></p>
 			<p class="p2"><span>Today, we must clear the mind of past practices. Web enlightenment has been achieved thanks to the tireless efforts of folk like the <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr title="Web Standards Project">WaSP</abbr> and the major browser creators.</span></p>
-			<p class="p3"><span>The css Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the (yet to be) time-honored techniques in new and invigorating fashion. Become one with the web.</span></p>
+			<p class="p3"><span>The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the (yet to be) time-honored techniques in new and invigorating fashion. Become one with the web.</span></p>
 		</div>
 	</section>
 
