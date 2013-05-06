@@ -222,14 +222,14 @@ footer {
 
 	
 /* extra bits */
-#extra1 {
+.extra1 {
 	position: absolute;
 	top: 41px;
 	left: 0;
 	text-align: center;
 	width: 100%;
 	}
-#extra1 span {
+.extra1 span {
 	width: 400px;
 	height: 123px;
 	background: transparent url(granville.jpg) top left no-repeat;
@@ -242,17 +242,17 @@ footer {
 	voice-family:inherit;
 	width: 400px;
 	}
-html>body #extra1 span {
+html>body .extra1 span {
 	width: 400px;
 }
-#extra2 {
+.extra2 {
 	position: absolute;
 	top: 41px;
 	left: 0;
 	text-align: center;
 	width: 100%;
 	}
-#extra2 span {
+.extra2 span {
 	height: 70px;
 	background: transparent url(falsecreek.jpg) top right no-repeat;
 	display: block;
@@ -264,17 +264,17 @@ html>body #extra1 span {
 	voice-family:inherit;
 	width: 367px;
 	}
-html>body #extra2 span {
+html>body .extra2 span {
 	width: 367px;
 } 
-#extra3 {
+.extra3 {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	text-align: center;
 }
-#extra3 span {
+.extra3 span {
 	text-align: left;
 	width: 770px;
 	height: 38px;
@@ -283,7 +283,7 @@ html>body #extra2 span {
 	margin-left: auto;
 	margin-right: auto;
 }
-#extra4 {
+.extra4 {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -291,7 +291,7 @@ html>body #extra2 span {
 	text-align: center;
 }
 /* IE doesn't support PNG transparency. No soup for you. */
-html>body #extra4 span {
+html>body .extra4 span {
 	width: 790px;
 	height: 94px;
 	background: transparent url(seal.png) top right no-repeat;

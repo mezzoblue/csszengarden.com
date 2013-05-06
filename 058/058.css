@@ -251,12 +251,12 @@ footer a:hover, footer a:active {
 	text-decoration: underline;
 	}
 
-.design-selection a.designer-name, .design-selection a:linka.designer-name , .design-selection a:visited.c{
+.design-selection a.designer-name, .design-selection a.designer-name:link , .design-selection a:visited.c{
 	color: #422222;
 	font-weight: normal;
 	}
 
-.design-selection a:hover.c, .design-selection a:activea.designer-name {
+.design-selection a.designer-name:hover, .design-selection a.designer-name:active {
 	display: inline;
 	}
 
@@ -311,11 +311,11 @@ footer a:hover, footer a:active {
 	text-decoration: underline;
 	}
 
-.design-archives a.designer-name, .design-archives a:linka.designer-name , .design-archivest a:visited.c{
+.design-archives a.designer-name, .design-archives a.designer-name:link , .design-archivest a:visited.c{
 	color: #006633;
 	}
 
-.design-archives a:hover.c, .design-archives a:activea.designer-name {
+.design-archives a.designer-name:hover, .design-archives a.designer-name:active {
 	display: inline;
 	}
 
@@ -365,11 +365,11 @@ footer a:hover, footer a:active {
 	text-decoration: underline;
 	}
 
-.zen-resources a.designer-name, .zen-resources a:linka.designer-name , .zen-resources a:visited.c{
+.zen-resources a.designer-name, .zen-resources a.designer-name:link , .zen-resources a:visited.c{
 	color: 422222;
 	}
 
-.zen-resources a:hover.c, .zen-resources a:activea.designer-name {
+.zen-resources a.designer-name:hover, .zen-resources a.designer-name:active {
 	display: inline;
 	}
 

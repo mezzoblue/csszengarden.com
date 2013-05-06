@@ -176,13 +176,13 @@ header h2 span {
 	width: 53%;
 }
 
-.design-selection a:linka.designer-name , .design-selection a:visiteda.designer-name {
+.design-selection a.designer-name:link , .design-selection a.designer-name:visited {
 	color:#EBE2A8;
 	text-decoration: none;
 	display: inline;
 }
 
-.design-selection a:hover.c, .design-selection a:activea.designer-name {
+.design-selection a.designer-name:hover, .design-selection a.designer-name:active {
 	text-decoration: underline;
 	display: inline;
 }

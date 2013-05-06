@@ -332,12 +332,12 @@ color: #fff;
 background: #D28B6B url(anim.gif) bottom center no-repeat;
 text-decoration: underline;
 }
-.design-selection a.designer-name, .design-selection a:linka.designer-name , .design-selection a:visited.c{
+.design-selection a.designer-name, .design-selection a.designer-name:link , .design-selection a:visited.c{
 color: #000;
 background: transparent;
 display: inline;
 }
-.design-selection a:hover.c, .design-selection a:activea.designer-name {
+.design-selection a.designer-name:hover, .design-selection a.designer-name:active {
 display: inline;
 }
 
@@ -384,12 +384,12 @@ color: #fff;
 background: #D28B6B url(anim.gif) bottom center no-repeat;
 text-decoration: underline;
 }
-#lfavorites a.designer-name, #lfavorites a:linka.designer-name , #lfavorites a:visited.c{
+#lfavorites a.designer-name, #lfavorites a.designer-name:link , #lfavorites a:visited.c{
 color: #000;
 background: transparent;
 display: inline;
 }
-#lfavorites a:hover.c, #lfavorites a:activea.designer-name {
+#lfavorites a.designer-name:hover, #lfavorites a.designer-name:active {
 display: inline;
 }
 
