@@ -42,7 +42,7 @@ ul, li {
 display: block;
 list-style: none;
 }
-acronym {
+abbr {
 border: 0 none;
 }
 

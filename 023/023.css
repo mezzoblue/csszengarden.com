@@ -33,11 +33,11 @@ ul {
 	padding: 2px 0 5px 0;
 	}
 
-acronym {
+abbr {
 	border-bottom: 1px dashed #4C83AE;
 	}
 
-a acronym {
+a abbr {
 	border-bottom: 0;
 	}
 

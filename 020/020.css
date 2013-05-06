@@ -24,7 +24,7 @@
 	padding: 0px;
 	margin: 0px;
 }
-acronym {
+abbr {
 	border-bottom: 1px #6BA0D2 dashed;
 }
 #pageHeader {
@@ -48,7 +48,7 @@ acronym {
 	background-image: url(headerh2.gif);
 	background-repeat: no-repeat;
 }
-#pageHeader h2 acronym {
+#pageHeader h2 abbr {
 	color: #FFF;
 	border-bottom: 1px #FFF dashed;
 }
@@ -311,7 +311,7 @@ acronym {
 	color: #FFD800;
 	text-decoration: none;
 }
-#linkList acronym {
+#linkList abbr {
 	border-bottom: 1px #FFF dashed;
 }
 #footer {

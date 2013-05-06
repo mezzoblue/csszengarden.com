@@ -48,7 +48,7 @@ html > body h3 {
 	border-bottom: #000 1px dotted;
 }
 
-acronym {
+abbr {
 	/* in this case, I can live with IE's dashed line */
 	border-bottom: #000 1px dotted;
 }

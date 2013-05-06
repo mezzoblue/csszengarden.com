@@ -474,19 +474,19 @@ html>#preamble h3 {
 
 /* Other Definitions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-acronym {
+abbr {
 	cursor: help;
 	}
 
-#preamble acronym {
+#preamble abbr {
 	border-bottom: 1px dotted #ffe0b3;
 }
 
-#lresources acronym {
+#lresources abbr {
 	border-bottom: 1px dotted #999;
 }
 
-#supportingText acronym {
+#supportingText abbr {
 	background: transparent url(acro.gif) no-repeat center right;
 	padding-right: 11px;
 	margin-right: 1px;
@@ -494,7 +494,7 @@ acronym {
 	border: 0;
 	}
 
-#participation a acronym {
+#participation a abbr {
 	background: transparent;
 	padding: 0;
 	margin: 0;

@@ -16,7 +16,7 @@
 
 body {background-color: #D0D1D0; background-image: url(banner.jpg);	background-repeat: no-repeat; left: 0px; top: 0px; width: 770px}
 
-acronym {border-bottom-width: 1px; border-bottom-style: dashed;	cursor: help}
+abbr {border-bottom-width: 1px; border-bottom-style: dashed;	cursor: help}
 
 #container {background-image: url(t.jpg); background-repeat: no-repeat; left: 0px; top: 0px; background-position: 0px 99px; position: absolute; width: 770px; padding-bottom: 5px}
 

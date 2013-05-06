@@ -22,8 +22,8 @@ a:link { color: #fc3; }
 a:visited { color: #f90; }
 a:active { color: #fff; }
 a:hover { color: #ff3; }
-acronym { cursor: help; border-bottom: 1px dotted #fff; }
-a acronym { cursor: help; border-bottom: 1px dotted #fc3; }
+abbr { cursor: help; border-bottom: 1px dotted #fff; }
+a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 
 #container {
 	position: relative;

@@ -292,7 +292,7 @@ div#supportingText div#footer a {
 	line-height: 40px;
 }
 
-acronym {
+abbr {
 	border-bottom: none;
 	cursor: help;
 }
