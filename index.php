@@ -173,8 +173,8 @@
 	These days we have full ::before and ::after support, favour using those instead. 
 	These remain for historical design compatibility.
 -->
-<div class="extra1"><span></span></div><div class="extra2"><span></span></div><div id="extra3"><span></span></div>
-<div class="extra4"><span></span></div><div class="extra5"><span></span></div><div id="extra6"><span></span></div>
+<div class="extra1"><span></span></div><div class="extra2"><span></span></div><div class="extra3"><span></span></div>
+<div class="extra4"><span></span></div><div class="extra5"><span></span></div><div class="extra6"><span></span></div>
 
 </body>
 </html>
