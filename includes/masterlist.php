@@ -362,6 +362,68 @@ $designList = array(
 			"Richard Chatfield",
 			"#",
 	),
+	array(
+			"061",
+			"Sky",
+			"Stefan Petre",
+			"http://www.eyecon.ro/",
+	),
+	array(
+			"062",
+			"Gemination",
+			"Egor Kloos",
+			"http://www.dutchcelt.nl/",
+	),
+	array(
+			"063",
+			"Elastic Lawn",
+			"Patrick Grifiths",
+			"http://htmldog.com/ptg/",
+	),
+	array(
+			"064",
+			"Night Drive",
+			"Dave Shea",
+			"http://www.mezzoblue.com/",
+	),
+	array(
+			"065",
+			"New Groove",
+			"Martin Neumann",
+			"http://www.rushmedia.de/",
+	),
+	array(
+			"066",
+			"Focus &amp; Shoot",
+			"Colectivo YTW",
+			"#",
+	),
+	array(
+			"067",
+			"A Silent Strength",
+			"Ray Henry",
+			"http://www.reh3.com/",
+	),
+	array(
+			"068",
+			"Ballade",
+			"Charlotte Lambert",
+			"#",
+	),
+	array(
+			"069",
+			"Bonsai Sky",
+			"Mike Davidson",
+			"http://www.mikeindustries.com/",
+	),
+	array(
+			"070",
+			"CS(S) Monk",
+			"Cedric Savarese",
+			"http://www.4213miles.com/",
+	),
+
+
 
 
 );
