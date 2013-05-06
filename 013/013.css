@@ -127,7 +127,7 @@ header h2 span {
 
 
 
-#linkList {
+.sidebar {
 	font: italic 9pt/14pt garamond, georgia, serif;
 	text-transform: lowercase;
 	text-align: left;
@@ -138,7 +138,7 @@ header h2 span {
 	left: 0px;
 	width: 100%;
 }
-#linkList2 {
+.sidebar .wrapper {
 	padding-left: 470px;
 	padding-right: 70px;
 	margin-left: auto;
@@ -148,7 +148,7 @@ header h2 span {
 	voice-family: inherit;
 	width: 160px;
 }
-#linkList h3 {
+.sidebar h3 {
 	font: italic 12pt/15pt garamond, georgia, serif;
 	text-transform: capitalize;
 	color: #464128; 
@@ -156,56 +156,56 @@ header h2 span {
 	text-align: left;
 	background-image: none;
 }
-#linkList a {
+.sidebar a {
 	font: italic 11pt/14pt garamond, georgia, serif;
 	color: #A29D66;
 	background-color: transparent;
 	text-decoration: none;
 }
-#linkList a:hover {
+.sidebar a:hover {
 	color: #464128;
 	background-color: transparent;
 	text-decoration: underline;
 }
 
-#linkList a.c {
+.sidebar a.c {
 	font: italic 9pt/14pt garamond, georgia, serif;
 }
-#linkList ul {
+.sidebar ul {
 	margin: 0px;
 	padding: 0px;
 }
-#linkList li {
+.sidebar li {
 	text-align: left;
 	list-style-type: none;
 }
 
-#linkList h3 {
+.sidebar h3 {
 	margin-right: auto;
 	margin-left: 0px;
 	margin-top: 25px;
 }
-#linkList h3 span {
+.sidebar h3 span {
 	display: none;
 }
-#linkList h3.select {
+.sidebar h3.select {
 	width: 113px;
 	height: 19px;
 	background: transparent url(h-select.gif) top left no-repeat;
 }
-#linkList h3.archives {
+.sidebar h3.archives {
 	width: 134px;
 	height: 17px;
 	background: transparent url(h-archives.gif) top left no-repeat;
 }
-#linkList h3.favorites {
+.sidebar h3.favorites {
 	width: 76px;
 	height: 23px;
 	background: transparent url(h-favorites.gif) top left no-repeat;
 	position: relative;
 	left: -10px;
 }
-#linkList h3.resources {
+.sidebar h3.resources {
 	width: 125px;
 	height: 13px;
 	background: transparent url(h-resources.gif) top left no-repeat;

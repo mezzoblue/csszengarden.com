@@ -154,7 +154,7 @@ header h1
 /* link list
 --------------------------------- */
 
-#linkList
+.sidebar
 {
 	position: absolute;
 	top: 200px;
@@ -162,24 +162,24 @@ header h1
 	width: 190px;
 }
 
-#linkList h3 { height: 41px; }
+.sidebar h3 { height: 41px; }
 
-#lselect h3
+.design-selection h3
 {
 	background-image: url("select.gif");
 }
 
-#larchives h3
+.design-archives h3
 {
 	background-image: url("archives.gif");
 }
 
-#lresources h3
+.zen-resources h3
 {
 	background-image: url("resources.gif");
 }
 
-#linkList ul
+.sidebar ul
 {
 	margin: 1em 0 1em;
 	padding: 0;
@@ -188,24 +188,24 @@ header h1
 	text-align: left;
 }
 
-#larchives li, #lresources li { text-transform: lowercase; }
+.design-archives li, .zen-resources li { text-transform: lowercase; }
 
-#linkList ul li
+.sidebar ul li
 {
 	margin: 0 0 .5em;
 
 	line-height: 1em;
 }
 
-#linkList li a:link, #linkList li a:visited
+.sidebar li a:link, .sidebar li a:visited
 {
 	font-family: Verdana,Arial,Sans-serif;
 	font-size: 90%;
 }
 
-#linkList #lselect a:link, #linkList #lselect a:visited { display: block; }
+.sidebar .design-selection a:link, .sidebar .design-selection a:visited { display: block; }
 
-#linkList #lselect a.c:link, #linkList #lselect a.c:visited
+.sidebar .design-selection a.c:link, .sidebar .design-selection a.c:visited
 {
 	display: inline;
 	font-family: Georgia,Serif;

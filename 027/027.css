@@ -111,7 +111,7 @@ header h1, header h2 {
 	margin-top: -3em;
 }
 
-#linkList {
+.sidebar {
 	position: absolute;
 	top: 180px;
 	right: 0;
@@ -121,12 +121,12 @@ header h1, header h2 {
 	background: url(spikes.png) no-repeat center top;
 }
 
-#lselect ul, #lresources ul, #larchives ul {
+.design-selection ul, .zen-resources ul, .design-archives ul {
 	margin: 0 0 0.5em 0;
 	padding: 0;
 }
 
-#lselect ul li, #lresources ul li, #larchives ul li{
+.design-selection ul li, .zen-resources ul li, .design-archives ul li{
 	list-style-type: none;
 	border: #000 1px solid;
 	padding: 2px;
@@ -139,17 +139,17 @@ header h1, header h2 {
 /* there seems to be an issue in Opera with the hover on the lselect...
 any clues to a solution would be appreciated ;) */
 
-#lselect ul li:hover, #lresources ul li:hover, #larchives ul li:hover {
+.design-selection ul li:hover, .zen-resources ul li:hover, .design-archives ul li:hover {
 	background: #900;
 	color: #fff;
 }
 
-#lselect ul li:hover a, #lresources ul li:hover a, #larchives ul li:hover a {
+.design-selection ul li:hover a, .zen-resources ul li:hover a, .design-archives ul li:hover a {
 	background: inherit;
 	color: #eee;
 }
 
-#lselect ul a:hover, #lresources ul a:hover, #larchives ul a:hover {
+.design-selection ul a:hover, .zen-resources ul a:hover, .design-archives ul a:hover {
 	/* this style is there to make up for IE's inability to apply
 	:hover pseudo to an li. of course, it won't look the same as having the whole
 	li turn red, but it should be an acceptable compromise */
@@ -157,7 +157,7 @@ any clues to a solution would be appreciated ;) */
 	color: #eee;
 }
 
-#lresources, #larchives {
+.zen-resources, .design-archives {
 	padding: 25px 5px 5px 5px;
 	background: url(spikes.png) no-repeat center top;
 }

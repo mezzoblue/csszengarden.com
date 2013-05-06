@@ -144,7 +144,7 @@ h2 span {
 }
 
 
-#linkList {
+.sidebar {
 	position: absolute;
 	top: 130px;
 	left: 608px;
@@ -152,53 +152,53 @@ h2 span {
 	padding: 0;
 	width: 200px;
 }
-#linkList h3.select {
+.sidebar h3.select {
 	margin: 0;
 	padding: 0;
 	background: url(select.jpg) no-repeat transparent;
 	height: 26px;
 }
-#linkList h3.archives {
+.sidebar h3.archives {
 	margin: 0;
 	padding: 0;
 	background: url(archives.jpg) no-repeat transparent;
 	height: 26px;
 }
-#linkList h3.resources {
+.sidebar h3.resources {
 	margin: 0;
 	padding: 0;
 	background: url(resources.jpg) no-repeat transparent;
 	height: 26px;
 }
-#linkList h3 span {
+.sidebar h3 span {
 	display: none;
 }
 
 
 
-#linkList #lselect a {
+.sidebar .design-selection a {
 	text-decoration: underline;
 	color: #766;
 	display: block;
 }
-#linkList #lselect a:visited {
+.sidebar .design-selection a:visited {
 	text-decoration: underline;
 	color: #aaa;
 }
-#linkList #lselect a:hover {
+.sidebar .design-selection a:hover {
 	text-decoration: underline;
 	color: #e60;
 }
-#linkList #lselect a.c {
+.sidebar .design-selection a.c {
 	display: inline;
 	text-decoration: none;
 	color: #888;
 }
-#linkList #lselect a.c:visited {
+.sidebar .design-selection a.c:visited {
 	text-decoration: none;
 	color: #999;
 }
-#linkList #lselect a.c:hover {
+.sidebar .design-selection a.c:hover {
 	text-decoration: none;
 	color: #e60;
 }

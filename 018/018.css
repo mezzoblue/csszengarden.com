@@ -125,7 +125,7 @@ footer a:hover {
 	
 /* Link List	
 ------------------------------------*/
-#linkList {
+.sidebar {
 	position:absolute;
 	top:181px;
 	left:505px;
@@ -138,38 +138,38 @@ footer a:hover {
 	padding-bottom:200px;
 	line-height:140%;
 	}
-#linkList ul {
+.sidebar ul {
 	padding-left:30px;
 	margin-left:0px;
 	}
-#linkList li {
+.sidebar li {
 	margin-bottom:15px;
 	}
-#linkList a {
+.sidebar a {
 	color:#686057; 
 	text-decoration:none;
 	}
-#linkList a:hover {
+.sidebar a:hover {
 	text-decoration:underline;
 	}
-#linkList a:visited {
+.sidebar a:visited {
 	color:#999189;
 	}
 
 /* To get a linebreak between title and author */
-#linkList #lselect a { display:block; }
-#linkList #lselect a:hover {color:#C52E00; }
-#linkList #lselect a.c { display:inline; }
-#linkList #lselect a.c:hover {color:#686057; }
+.sidebar .design-selection a { display:block; }
+.sidebar .design-selection a:hover {color:#C52E00; }
+.sidebar .design-selection a.c { display:inline; }
+.sidebar .design-selection a.c:hover {color:#686057; }
 
-#linkList h3 { 
+.sidebar h3 { 
 	margin:0; padding:0; 
 	background-repeat:no-repeat;
 	height:46px;	
 	}
-#linkList h3 span { display:none; }
-#linkList h3.select { background-image:url("select.gif"); }
-#linkList h3.archives { background-image:url("archives.gif"); }
-#linkList h3.resources { background-image:url("resources.gif"); }
+.sidebar h3 span { display:none; }
+.sidebar h3.select { background-image:url("select.gif"); }
+.sidebar h3.archives { background-image:url("archives.gif"); }
+.sidebar h3.resources { background-image:url("resources.gif"); }
 
 

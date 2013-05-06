@@ -207,7 +207,7 @@ footer {
 	
 /******************************************************************* link list */
 
-#linkList {
+.sidebar {
 	position: absolute;
 	margin: 0px;
 	padding: 0px;
@@ -219,46 +219,46 @@ footer {
 	text-align: left;
 }
 
-	#linkList h3.select { 
+	.sidebar h3.select { 
 		background: transparent url(linkhead-select.jpg) no-repeat top left; 
 		margin: 0px 0px 0px 0px; width: 150px; height: 21px;
 	}
-		#linkList h3.select span {
+		.sidebar h3.select span {
 			display: none;
 		}
 		
-	#linkList h3.favorites { 
+	.sidebar h3.favorites { 
 		background: transparent url(linkhead-favorites.jpg) no-repeat top left; 
 		margin: 10px 0px 0px 0px; width: 150px; height: 21px;
 	}
-		#linkList h3.favorites span {
+		.sidebar h3.favorites span {
 			display: none;
 		}
 		
-	#linkList h3.archives { 
+	.sidebar h3.archives { 
 		background: transparent url(linkhead-archives.jpg) no-repeat top left; 
 		margin: 10px 0px 0px 0px; width: 150px; height: 21px;
 	}
-		#linkList h3.archives span {
+		.sidebar h3.archives span {
 			display: none;
 		}
 		
-	#linkList h3.resources { 
+	.sidebar h3.resources { 
 		background: transparent url(linkhead-resources.jpg) no-repeat top left; 
 		margin: 10px 0px 0px 0px; width: 150px; height: 21px;
 	}
-		#linkList h3.resources span {
+		.sidebar h3.resources span {
 			display: none;
 		}
 		
-	#linkList ul {
+	.sidebar ul {
 		margin-top: 0px;
 		margin-bottom: 10px;
 		margin-left: 10px;
 		margin-right: 0px;
 		padding: 0px;
 	}
-		#linkList li {
+		.sidebar li {
 			line-height: 2.5ex; 
 			list-style-type: none;
 			background: transparent url(cr1.gif) no-repeat top center; 
@@ -267,10 +267,10 @@ footer {
 			margin-bottom: 5px;
 		}
 		
-		#lselect li, #lfavorites li {
+		.design-selection li, #lfavorites li {
 			background: url(docbullet.gif) no-repeat 0px 7px;
 			padding-left: 11px;
 		}
 
-			#lselect a, #lfavorites a { display:block; text-transform:lowercase; }
-			#lselect a.c, #lfavorites a.c {display:inline; text-transform: none; }
+			.design-selection a, #lfavorites a { display:block; text-transform:lowercase; }
+			.design-selection a.c, #lfavorites a.c {display:inline; text-transform: none; }

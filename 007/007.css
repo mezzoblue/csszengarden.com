@@ -195,63 +195,63 @@ footer a:link, footer a:visited {
 	font-weight:bold;
 	text-decoration:none;
 	}
-#linkList {
+.sidebar {
 	position:absolute;
 	top:98px;
 	left:30px;
 	width:198px;
 	}
 
-#linkList h3.select { 
+.sidebar h3.select { 
 	height:53px;
 	background-image:url(select.gif);
 	margin:0px;
 	padding:0px;
 	}
-#linkList h3.select span {
+.sidebar h3.select span {
 	display:none
 	}
-#linkList h3.favorites { 
+.sidebar h3.favorites { 
 	height:53px;
 	background-image:url(favorites.gif);
 	margin:0px;
 	padding:0px;
 	}
-#linkList h3.favorites span {
+.sidebar h3.favorites span {
 	display:none
 	}
-#linkList h3.archives { 
+.sidebar h3.archives { 
 	height:53px;
 	background-image:url(archives.gif);
 	margin:0px;
 	padding:0px;
 	}
-#linkList h3.archives span {
+.sidebar h3.archives span {
 	display:none
 	}
-#linkList h3.resources { 
+.sidebar h3.resources { 
 	height:53px;
 	background-image:url(resources.gif);
 	margin:0px;
 	padding:0px;
 	}
-#linkList h3.resources span {
+.sidebar h3.resources span {
 	display:none
 	}
 
 
-#linkList ul {
+.sidebar ul {
 	margin: 0px;
 	padding: 0px;
 	}
-#linkList li {
+.sidebar li {
 	display:block;
 	background-image:url(halfscreen-gray.gif);
 	padding:3px;
 	margin:1px 0;
 	list-style-type: none;
 	}
-#linkList li a:link, #linkList li a:visited { 
+.sidebar li a:link, .sidebar li a:visited { 
 	color:#fff;
 	background-color:transparent;
 	}

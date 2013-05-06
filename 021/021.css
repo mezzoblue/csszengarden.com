@@ -252,7 +252,7 @@ background: transparent url(linkhover.gif) left no-repeat;
 }
 
 /* left Menu */
-#linkList {
+.sidebar {
 font-size:  .82em;
 position: absolute;
 top: 33.6em;
@@ -260,7 +260,7 @@ left: 15px;
 float: left;
 width: 18em;
 }
-#linkList h3 {
+.sidebar h3 {
 color: #900;
 background: transparent;
 font-size: 1.2em;
@@ -268,69 +268,69 @@ padding: 1em 0 0.4em 0;
 margin: 10px 0 0 0;
 }
 
-#linkList ul {
+.sidebar ul {
 margin-top: 0.5em;
 }
-#lselect li {
+.design-selection li {
 display: block;
 height: 2.5em;
 margin-top: 0.5em;
 padding: 0 0 3px 20px;
 background: transparent url(css.gif) 0 3px no-repeat;
 }
-#lselect a {
+.design-selection a {
 display: block;
 }
-#lselect a.c {
+.design-selection a.c {
 display: inline;
 font-weight: normal;
 }
-#lselect a:hover.c {
+.design-selection a:hover.c {
 display: inline;
 font-weight: normal;
 }
 
-#larchives li {
+.design-archives li {
 padding: 0 0 10px 0;
 text-transform: lowercase;
 color: #069;
 background: transparent url(linkhover.gif) 0 3px no-repeat; /* preload hoverimage */
 }
-#larchives a {
+.design-archives a {
 padding: 0 0 10px 20px;
 }
-#larchives a:link {
+.design-archives a:link {
 color: #069;
 background: #F1ECE3 url(link.gif) 0 3px no-repeat;
 }
-#larchives a:visited {
+.design-archives a:visited {
 color: #000;
 background: #F1ECE3 url(link.gif) 0 3px no-repeat;
 }
-#larchives a:hover, #larchives a:active {
+.design-archives a:hover, .design-archives a:active {
 color: #900;
 background: #F1ECE3 url(linkhover.gif) 0 3px no-repeat;
 text-decoration: none;
 }
 
-#lresources li {
+.zen-resources li {
 padding: 0 0 10px 0;
 text-transform: lowercase;
 color: #069;
 background: transparent url(linkhover.gif) 0 3px no-repeat;	/* preload hoverimage */
 }
-#lresources a {
+.zen-resources a {
 padding: 0 0 10px 20px;
 }
-#lresources a:link {
+.zen-resources a:link {
 color: #069;
 background: #F1ECE3 url(link.gif) 0 3px no-repeat;
 }
-#lresources a:visited {
+.zen-resources a:visited {
 color: #000;
 background: #F1ECE3 url(link.gif) 0 3px no-repeat;
 }
-#lresources a:hover, #lresources a:active {
+.zen-resources a:hover, .zen-resources a:active {
 color: #900;
 background: #F1ECE3 url(linkhover.gif) 0 3px no-repeat;
 text-decoration: none;

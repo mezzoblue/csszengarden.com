@@ -178,7 +178,7 @@ div#requirements h3 {
 }
 
 
-div#linkList {
+.sidebar {
 	position: absolute;
 	top: 62px;
 	right: 50px;
@@ -188,7 +188,7 @@ div#linkList {
 	font: 10px/1.5 Verdana, sans-serif;
 }
 
-div#linkList h3.select {
+.sidebar h3.select {
 	background-color: #2F2F13;
 	background-image: url(select_h3_background.jpg);
 	background-repeat: no-repeat;	
@@ -200,22 +200,22 @@ div#linkList h3.select {
 	
 }
 
-div#linkList h3.resources {
+.sidebar h3.resources {
 	background-image: url(resource_h3_background.jpg);
 	background-repeat: no-repeat;
 }
 
-div#linkList h3.archives {
+.sidebar h3.archives {
 	background-image: url(archives_h3_background.jpg);
 	background-repeat: no-repeat;
 }
 
-div#linkList h3.favorites {
+.sidebar h3.favorites {
 	background-image: url(favorites_h3_background.jpg);
 	background-repeat: no-repeat;
 }
 
-div#linkList h3 {
+.sidebar h3 {
 	background-color: #2F2F13;
 	color: inherit;
 	margin-top: 20px;
@@ -233,11 +233,11 @@ span.iL {
 	line-height: 2;
 }
 
-div#linkList ul {
+.sidebar ul {
 	list-style: none;
 }
 
-div#linkList li {
+.sidebar li {
 	margin-left: -15px;
 	margin-bottom: 10px;
 	line-height: 1.5;

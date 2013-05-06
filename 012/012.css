@@ -117,7 +117,7 @@ div#preamble h3 {
 	padding: 0px;
 	position: relative;
 }
-#linkList {
+.sidebar {
 	margin: 7em 10px 0px 12px;
 	padding: 0px;
 	width: 200px;
@@ -206,7 +206,7 @@ div#supportingText footer {
 	font-weight: normal;
 	text-decoration: none;
 }
-#lselect, #lfavorites, #larchives, #lresources {
+.design-selection, #lfavorites, .design-archives, .zen-resources {
 	border: 1px solid #000000;
 	padding: 0px;
 	margin: 0px 0px 60px;
@@ -214,7 +214,7 @@ div#supportingText footer {
 	font-size: .9em;
 	position: relative;
 }
-#linkList h3 {
+.sidebar h3 {
 	width: 200px;
 	border-top: 0px #000000;
 	border-right: 1px solid #000000;
@@ -231,10 +231,10 @@ div#supportingText footer {
 	left: -2px;
 	height: 23px;
 }
-#linkList h3 span { margin: 0px; padding: 0px 0px 0px 34px; }
-/*#linkList span { margin: 0px; padding: 0px; display: block; }*/
+.sidebar h3 span { margin: 0px; padding: 0px 0px 0px 34px; }
+/*.sidebar span { margin: 0px; padding: 0px; display: block; }*/
 
-div#lselect a.c {
+div.design-selection a.c {
 	margin: 0px 0px -15px; /* seemed to have to do that because of the extra &nbsp; in each li item */
 	padding: 0px 15px 0px 0px;
 	display: inline;
@@ -252,15 +252,15 @@ div#lselect a.c {
  use the background-position to offset it in different divs for the illusion 
  of more than one file without the bandwith loss*/
  
-div#lselect {
+div.design-selection {
 	background: url(to_leftcol_02.jpg) repeat-y -50px -60px;
 	color: #999999;
 }
-div#lresources {
+div.zen-resources {
 	background: url(to_leftcol_02.jpg) no-repeat -5px -20px;
 	text-align: left;
 }
-div#larchives {
+div.design-archives {
 	background: url(to_leftcol_02.jpg) no-repeat -40px -220px;
 }
 div#lfavorites {
@@ -269,9 +269,9 @@ div#lfavorites {
 /* Bahaaa!  Somebody switched the menus to an unordered list structure, 
 good bye spans! I have to jump back a few 
 steps here and do the lists, I'll try to reorder the css later to make incremental sense */
-#linkList ul { list-style: none; text-align: center; }
-#linkList li { margin: 0px; padding: 6px 0px; }
-#linkList a {
+.sidebar ul { list-style: none; text-align: center; }
+.sidebar li { margin: 0px; padding: 6px 0px; }
+.sidebar a {
 	padding-left: 32px;
 	margin-left: 6px;
 	display: block;
@@ -283,27 +283,27 @@ steps here and do the lists, I'll try to reorder the css later to make increment
 	text-decoration: none;
 	text-align: left;
 }
-#linkList a:hover {
+.sidebar a:hover {
 	background: url(ani2.gif) no-repeat left center;
 	color: #EBEBEB;
 }
-div#lselect a.c:hover {
+div.design-selection a.c:hover {
 	background: none;
 	color: #CCCCCC;
 	font-style: italic;
 	text-decoration: none;
 }
-div#linkList div#lresources a {
+.sidebar div.zen-resources a {
 	margin: 0px 0px -10px;
 	padding: 0px;
 	display: inline;
 	background: url(none);
 	text-transform: capitalize;
 }
-div#linkList div#lresources ul { margin: 0px; padding-left: 15px; text-align: left; }
+.sidebar div.zen-resources ul { margin: 0px; padding-left: 15px; text-align: left; }
 /* Stupid IE5, almost made it without a hack, but don't have time figure 
 out how to get rid of extra pixels from the border or even if I can without 
 resorting to a hack.  By the way, this is called the SBMH short for Simple
 Box Model Hack, just Google it for more info if you need*/
-#linkList h3 { \left: -1px; lef\t: -2px; \width: 201px; w\idth: 200px; }
+.sidebar h3 { \left: -1px; lef\t: -2px; \width: 201px; w\idth: 200px; }
 

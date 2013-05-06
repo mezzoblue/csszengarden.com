@@ -190,19 +190,19 @@ header h2 span {
 	font: 12px/11px arial, sans-serif;
 	}
 
-#linkList {
+.sidebar {
 	position: absolute;
 	top: 0px;
 	left: 20px;
 	}
-#linkList2 {
+.sidebar .wrapper {
 	font: 12px courier, monospace;
 	padding: 10px;
 	margin-top: 115px;
 	width: 130px;
 	}
 
-#linkList li {
+.sidebar li {
 	line-height: 2.5ex;
 	display: block;
 	padding-top: 5px;
@@ -210,7 +210,7 @@ header h2 span {
 	list-style-type: none;
 	}
 
-#linkList ul {
+.sidebar ul {
 	margin: 0px;
 	padding: 0px;
 	}

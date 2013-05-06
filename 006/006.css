@@ -122,7 +122,7 @@ footer a:link, footer a:visited {
 	margin-right: 20px; 
 	}
 
-#linkList {
+.sidebar {
     background: transparent url(menu.gif) top left no-repeat; 
 	position: absolute;
 	top: 0px;
@@ -132,52 +132,52 @@ footer a:link, footer a:visited {
 	width: 130px; 
 	}
 	
-#linkList2 { 
+.sidebar .wrapper { 
 	font: 10px verdana, sans-serif;
 	padding-top:35px; 
 	}
-#linkList h3.select { 
+.sidebar h3.select { 
 	background: transparent url(select.gif) top left no-repeat;  
 	width: 130px; 
 	height: 25px; 
 	margin-left:-8px;
 	}
-#linkList h3.select span {
+.sidebar h3.select span {
 	display:none
 	}
-#linkList h3.favorites { 
+.sidebar h3.favorites { 
 	background: transparent url(favorites.gif) top left no-repeat;  
 	width: 130px; 
 	height: 25px; 
 	margin-left:-8px;
 	}
-#linkList h3.favorites span {
+.sidebar h3.favorites span {
 	display:none
 	}
-#linkList h3.archives { 
+.sidebar h3.archives { 
 	background: transparent url(archives.gif) top left no-repeat;  
 	width: 130px; 
 	height: 25px; 
 	margin-left:-8px;
 	}
-#linkList h3.archives span {
+.sidebar h3.archives span {
 	display:none
 	}
-#linkList h3.resources { 
+.sidebar h3.resources { 
 	background: transparent url(resources.gif) top left no-repeat;  
 	width: 130px; 
 	height: 25px; 
 	margin-left:-8px;
 	}
-#linkList h3.resources span {
+.sidebar h3.resources span {
 	display:none
 	}
 
-#linkList ul {
+.sidebar ul {
 	margin: 0px;
 	padding: 0px;
 	}
-#linkList li {
+.sidebar li {
 	line-height: 2.5ex; 
 	background: transparent; 
 	display: block; 
@@ -185,10 +185,10 @@ footer a:link, footer a:visited {
 	margin-bottom: 5px;
 	list-style-type: none;
 	}
-#linkList li a:link { 
+.sidebar li a:link { 
 	color: #FF3300;
 	}
-#linkList li a:visited {
+.sidebar li a:visited {
 	color: #FF0000;
 	}
 

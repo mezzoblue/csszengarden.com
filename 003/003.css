@@ -169,7 +169,7 @@ footer a:hover {
 	border-bottom: solid 1px #6F818D;
 	}
 
-#lselect {
+.design-selection {
 	position: absolute;
 	top: 15px;
 	left: 0px;
@@ -180,45 +180,45 @@ footer a:hover {
 	voice-family:inherit;
 	width: 380px;
 	}
-#linkList h3 {
+.sidebar h3 {
 	display: inline;
 	margin-right: 5px;
 	}
 
-#linkList ul {
+.sidebar ul {
 	margin: 0px;
 	padding: 0px;
 	}
-#linkList li {
+.sidebar li {
 	font-size: 10px;
 	margin-right: 5px;
 	list-style-type: none;
 	display: inline;
 	}
-#linkList li a {
+.sidebar li a {
 	font-weight: normal;
 	}
 
-#lselect h3 {
+.design-selection h3 {
 	font: bold 11px georgia;
 	letter-spacing: -1px;
 	}
-#lselect li {
+.design-selection li {
 	font: 11px/12px georgia;
 	letter-spacing: -1px;
 	color: #758C9B;
 	}
-#lselect li a:link, #lselect li a:visited {
+.design-selection li a:link, .design-selection li a:visited {
 	font-weight: normal;
 	color: #fff;
 	text-decoration: none;
 	}
-#lselect li a:hover {
+.design-selection li a:hover {
 	color: #D1E9FC;
 	text-decoration: underline;
 	}
 
-#lresources, #larchives, #lfavorites {
+.zen-resources, .design-archives, #lfavorites {
 	padding: 0px 40px 0px 266px;
 	clear: both;
 	/*position: relative; top: -20px;*/

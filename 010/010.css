@@ -159,7 +159,7 @@ footer a:link, footer a:visited
 
 /* ---( right side nav)----------------------------- */
 
-#linkList 
+.sidebar 
 	{
 		position: absolute; 
 		top: 92px; 
@@ -173,12 +173,12 @@ footer a:link, footer a:visited
 		z-index: 1;
 	}
 	
-#linkList2 
+.sidebar .wrapper 
 	{ 
 		margin: 190px 15px 15px 15px; 
 	}
 
-#linkList h3
+.sidebar h3
 	{
 		color: #635F57;
 		font-family: trebuchet ms;
@@ -187,12 +187,12 @@ footer a:link, footer a:visited
 		padding: 0;
 	}	
 	
-#linkList ul
+.sidebar ul
 	{
 		margin: 0px;
 		padding: 0px;
 	}
-#linkList li
+.sidebar li
 	{
 		display: block; 
 		margin-bottom: 2px;
@@ -201,19 +201,19 @@ footer a:link, footer a:visited
 		list-style-type: none;
 	}
 	
-#linkList li a:link
+.sidebar li a:link
 	{ 
 		color: #c96;
 		border-bottom: none;
 	}
 	
-#linkList li a:visited
+.sidebar li a:visited
 	{
 		color: #c96;
 		border-bottom: none;
 	}
 	
-#linkList li a:hover
+.sidebar li a:hover
 	{
 		color: #963;
 	}
@@ -221,14 +221,14 @@ footer a:link, footer a:visited
 
 
 
-#lselect
+.design-selection
 	{
 		padding: 12px 0 12px 0;
 		border-top: 1px dashed #CDC4AC;
 		border-bottom: 1px dashed #CDC4AC;
 	}
 	
-#lresources
+.zen-resources
 	{
 		margin-top: 12px;
 	}

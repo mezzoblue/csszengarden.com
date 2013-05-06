@@ -199,7 +199,7 @@ footer a:link, footer a:visited {
 	display: block;
 	}
 
-#linkList { 
+.sidebar { 
 	position: absolute;
 	left: 325px;
 	top: 170px;
@@ -207,66 +207,66 @@ footer a:link, footer a:visited {
 	z-index: 2;
 	}
 	
-#linkList2 { 
+.sidebar .wrapper { 
 	font: 9px verdana, sans-serif; 
 	}
 	
-#linkList h3.select { 
+.sidebar h3.select { 
 	background: transparent url(select.jpg) no-repeat top left;  
 	width: 200px; 
 	height: 25px;
 	}
 	
-#linkList h3.select span {
+.sidebar h3.select span {
 	display:none
 	}
-#linkList h3.favorites { 
+.sidebar h3.favorites { 
 	background: transparent url(favorites.jpg) no-repeat top left; 
 	margin-top: 15px; 
 	width: 200px; 
 	height: 25px; 
 	}
-#linkList h3.favorites span {
+.sidebar h3.favorites span {
 	display:none
 	}
-#linkList h3.archives { 
+.sidebar h3.archives { 
 	background: transparent url(archives.jpg) no-repeat top left;
 	margin-top: 15px;
 	width: 200px; 
 	height: 25px; 
 	}
-#linkList h3.archives span {
+.sidebar h3.archives span {
 	display:none
 	}
-#linkList h3.resources { 
+.sidebar h3.resources { 
 	background: transparent url(resources.jpg) no-repeat top left; 
 	margin-top: 15px; 
 	width: 200px; 
 	height: 25px; 
 	}
-#linkList h3.resources span {
+.sidebar h3.resources span {
 	display:none
 	}
 
 
-#linkList ul {
+.sidebar ul {
 	margin: 0px;
 	padding: 0px;
 	}
-#linkList li {
+.sidebar li {
 	line-height: 2.5ex; 
 	list-style-type: none;
 	display: block; 
 	padding-top: 5px; 
 	margin-bottom: 5px;
 	}
-#linkList li a:link { 
+.sidebar li a:link { 
 	color: #E8AD62;
 	}
-#linkList li a:visited {
+.sidebar li a:visited {
 	color: #E0922F;
 	}
-#linklist li a:hover, a:active {
+.sidebar li a:hover, a:active {
 	color: #00CCFF;
 	}
 	

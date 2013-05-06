@@ -219,7 +219,7 @@ p{
 /* and finally we place the list of links */
 /*---------------------------------------------------*/
 
-#linkList{
+.sidebar{
 	position:absolute;
 	left:0px;
 	top:252px;
@@ -231,7 +231,7 @@ p{
 	width:195px;
 }
 
-#linkList2{
+.sidebar .wrapper{
 	padding:0;
 }
 
@@ -260,12 +260,12 @@ h3.select span, h3.archives span, h3.resources span{
 /* put some style on the lists */
 
 /* first the list of designs */
-#lselect ul {
+.design-selection ul {
 	margin: 10px 0 0 0;
 	padding: 10px;
 }
 
-#lselect li {
+.design-selection li {
 	line-height: 2.5ex; 
 	list-style-type: none;
 	display: block; 
@@ -275,30 +275,30 @@ h3.select span, h3.archives span, h3.resources span{
 	background: transparent url(bullet.gif) no-repeat 0px 7px;
 }
 
-#lselect li a{
+.design-selection li a{
 	white-space:nowrap;
 	display:block;
 	font-weight:bold;
 }
 
-#lselect li a.c{
+.design-selection li a.c{
 	text-decoration:none;
 	display:inline;
 	font-weight:normal;
 }
 
-#lselect li a.c:hover{
+.design-selection li a.c:hover{
 	text-decoration:underline;
 }
 
 /* then the lists of general info etc */
 
-#larchives ul, #lresources ul {
+.design-archives ul, .zen-resources ul {
 	margin: 10px 0 0 0;
 	padding: 10px;
 }
 
-#larchives li, #lresources li { 
+.design-archives li, .zen-resources li { 
 	list-style-type: none;
 	display: block; 
 	padding: 0px; 

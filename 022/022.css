@@ -242,13 +242,13 @@ footer {
 	height: 32px;
 	}
 /* link-tastic */
-#linkList {
+.sidebar {
 	position: absolute;
 	top: 114px;
 	left: 0px;
 	z-index: auto;
 	}
-#linkList2 {
+.sidebar .wrapper {
 	color: #333333;
 	background-color: transparent;
 	font: 10px "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -264,47 +264,47 @@ footer {
 	border-right-style: solid;
 	border-right-color: #003333;
 	}
-#linkList h3.select {
+.sidebar h3.select {
 	background: transparent url(zh3_select.gif) no-repeat 0px 0px;
 	margin: 0px 0px 5px;
 	width: 130px;
 	height: 100px;
 	}
-#linkList h3.select span {
+.sidebar h3.select span {
 	display:none;
 	}
-#linkList h3.favorites { 
+.sidebar h3.favorites { 
 	background: transparent url(zh3_favs.gif) no-repeat left top; 
 	margin: 25px 0px 5px; 
 	width: 130px; 
 	height: 50px; 
 	}
-#linkList h3.favorites span {
+.sidebar h3.favorites span {
 	display:none;
 	}
-#linkList h3.archives {
+.sidebar h3.archives {
 	background: transparent url(zh3_arch.gif) no-repeat left top;
 	margin: 25px 0px 5px;
 	width:130px;
 	height: 50px;
 	}
-#linkList h3.archives span {
+.sidebar h3.archives span {
 	display:none;
 	}
-#linkList h3.resources { 
+.sidebar h3.resources { 
 	background: transparent url(zh3_res.gif) no-repeat left top; 
 	margin: 25px 0px 5px; 
 	width:130px; 
 	height: 50px; 
 	}
-#linkList h3.resources span {
+.sidebar h3.resources span {
 	display:none;
 	}
-#linkList ul {
+.sidebar ul {
 	margin: 0px 5px;
 	padding: 0px 5px;
 	}
-#linkList li {
+.sidebar li {
 	line-height: 2.5ex; 
 	list-style-type: none; 
 	display: block; 

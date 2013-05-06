@@ -226,7 +226,7 @@ footer a:hover {
 
 
 /* left hand fooling around */
-#lselect {
+.design-selection {
 	position: absolute;
 	top: 238px;
 	right: 0px;
@@ -239,41 +239,41 @@ footer a:hover {
 	width: 195px;
 	height: 193px;
   }
-#lselect h3 {
+.design-selection h3 {
 	height: 15px;
 	background: transparent url(h_select.gif) top left no-repeat;
 	margin: 0px 10px 8px 0px;
 	position: relative;
 	left: -20px;
 }
-#lselect h3 span {
+.design-selection h3 span {
 	display: none;
 }
-#lselect li {
+.design-selection li {
 	font: normal 10px arial, sans-serif;
 	line-height: 170%;
 	text-decoration: none;
 	color: #6D6100;
 	letter-spacing: -1px;
 }
-#lselect a {
+.design-selection a {
 	font: bold 10px arial, sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fff;
 	letter-spacing: normal;
 }
-#lselect a.c {
+.design-selection a.c {
 	font-weight: normal;
 	color: #6D6100;
 	text-transform: lowercase;
 	letter-spacing: -1px;
 }
-#lselect a:hover {
+.design-selection a:hover {
 	text-decoration: underline;
 }
 
-#larchives {
+.design-archives {
 	position: absolute;
 	line-height: 80%;
 	text-align: center;
@@ -288,44 +288,44 @@ footer a:hover {
 	width: 200px;
 	height: 29px;
 }
-#larchives h3 {
+.design-archives h3 {
 	display: none;
 }
-#larchives li {
+.design-archives li {
 	font: normal 10px arial, sans-serif;
 	display: inline;
 	padding-right: 6px;
 }
-#larchives li a {
+.design-archives li a {
 	color: #443901;
 	text-decoration: none;
 }
-#larchives li a:hover {
+.design-archives li a:hover {
 	color: #fff;
 	text-decoration: underline;
 }
   
-#lresources {
+.zen-resources {
 	height: 74px;
 	background: transparent url(bg-7.png) top right repeat-x;
 }
-#lresources h3 {
+.zen-resources h3 {
 	width: 310px;
 	height: 74px;
 	float: right;
 	background: transparent url(cr-br.png) top right no-repeat;
 	margin: 0px;
 }
-#lresources h3 span {
+.zen-resources h3 span {
 	display: none;
 }
-#lresources ul {
+.zen-resources ul {
 	padding: 37px 0px 0px 25px;
 }
-#lresources li {
+.zen-resources li {
 	display: inline;
 }
-#lresources li a {
+.zen-resources li a {
 	color: #fff;
 	font-size: 9px;
 	font-weight: bold;
@@ -334,7 +334,7 @@ footer a:hover {
 	padding-right: 5px;
 }
 
-#lresources li a:hover {
+.zen-resources li a:hover {
 	text-decoration: underline;
 }
 
@@ -411,14 +411,14 @@ footer a:hover {
 	provided better initial markup. Live and learn.
 */
 
-/* The > is a CSS2 selector. Roughly translated, this selects all li's that are children of ul's within #lselect.
+/* The > is a CSS2 selector. Roughly translated, this selects all li's that are children of ul's within .design-selection.
     unsupported by IE6, so anything we do here is neatly ignored by it */
-#lselect ul>li {
+.design-selection ul>li {
 	width: 100px;
 	line-height: 10px;
 }
-#lselect ul>li a {display: block;}
-#lselect ul>li a.c {display: inline;}
+.design-selection ul>li a {display: block;}
+.design-selection ul>li a.c {display: inline;}
 
 /* The only way I have control over each individual item 
 	in this list is by using the combination of CSS-2
@@ -430,20 +430,20 @@ footer a:hover {
 	For what the > and + mean, consult
 	http://www.w3.org/TR/REC-CSS2/selector.html
 	*/
-#lselect ul>li {position: relative; left: -14px;}
-#lselect ul>li+li {position: relative; left: -12px;}
-#lselect ul>li+li+li {position: relative; left: -10px;}
-#lselect ul>li+li+li+li {position: relative; left: -8px;}
+.design-selection ul>li {position: relative; left: -14px;}
+.design-selection ul>li+li {position: relative; left: -12px;}
+.design-selection ul>li+li+li {position: relative; left: -10px;}
+.design-selection ul>li+li+li+li {position: relative; left: -8px;}
 
 /* What a headache. The right column's top position is entirely
 	dependent on the bottom of the left, which really messes with
 	things when you throw font re-sizing into the mix. This
 	seems to hold up best. I thought of absolute positioning, but
 	it had its own set of problems. */
-#lselect ul>li+li+li+li+li {position: relative; left: 98px; top: -11em;}
-#lselect ul>li+li+li+li+li+li {position: relative; left: 100px; top: -11em;}
-#lselect ul>li+li+li+li+li+li+li {position: relative; left: 102px; top: -11em;}
-#lselect ul>li+li+li+li+li+li+li+li {position: relative; left: 104px; top: -11em;}
+.design-selection ul>li+li+li+li+li {position: relative; left: 98px; top: -11em;}
+.design-selection ul>li+li+li+li+li+li {position: relative; left: 100px; top: -11em;}
+.design-selection ul>li+li+li+li+li+li+li {position: relative; left: 102px; top: -11em;}
+.design-selection ul>li+li+li+li+li+li+li+li {position: relative; left: 104px; top: -11em;}
 
 
 /* 	Whoa. What is this that we're looking at? [accesskey="p"]? What IS that? Welcome 
@@ -455,7 +455,7 @@ footer a:hover {
 	Anyway, the bulk of what the following really complicated looking selectors do 
 	is apply images to the archives section, rather than text links.
 	*/
-#larchives ul>li a[accesskey="p"] {
+.design-archives ul>li a[accesskey="p"] {
 	display: block;
 	width: 37px;
 	height: 0;
@@ -467,11 +467,11 @@ footer a:hover {
 	left: 70px;
 	color: #958500;
 }
-#larchives ul>li a[accesskey="p"]:hover {
+.design-archives ul>li a[accesskey="p"]:hover {
 	background: transparent url(archive-b1b.gif) top left no-repeat;
 }
 
-#larchives ul>li a[accesskey="n"] {
+.design-archives ul>li a[accesskey="n"] {
 	display: block;
 	width: 31px;
 	height: 0;
@@ -483,12 +483,12 @@ footer a:hover {
 	left: 108px;
 	color: #958500;
 }
-#larchives ul>li a[accesskey="n"]:hover {
+.design-archives ul>li a[accesskey="n"]:hover {
 	background: transparent url(archive-b2b.gif) top left no-repeat;
 }
 
 
-#larchives ul>li+li a[accesskey="w"] {
+.design-archives ul>li+li a[accesskey="w"] {
 	display: block;
 	width: 35px;
 	height: 0;
@@ -500,7 +500,7 @@ footer a:hover {
 	left: 170px;
 	color: #958500;
 }
-#larchives ul>li+li a[accesskey="w"]:hover {
+.design-archives ul>li+li a[accesskey="w"]:hover {
 	background: transparent url(archive-b3b.gif) top left no-repeat;
 }
 

@@ -88,9 +88,10 @@
 	</div>
 
 	
-	<div id="linkList">
-		<div id="linkList2">
-			<div id="lselect">
+	<aside class="sidebar">
+		<div class="wrapper">
+
+			<div class="design-selection" id="design-selection">
 				<h3 class="select"><span>Select a Design:</span></h3>
 				<ul>
 <?php
@@ -99,7 +100,7 @@
 				</ul>
 			</div>
 
-			<div id="larchives">
+			<div class="design-archives" id="design-archives">
 				<h3 class="archives"><span>Archives:</span></h3>
 				<ul>
 <?
@@ -131,30 +132,30 @@
 				</ul>
 			</div>
 			
-			<div id="lresources">
+			<div class="zen-resources" id="zen-resources">
 				<h3 class="resources"><span>Resources:</span></h3>
 				<ul>
-					<li>
+					<li class="view-css">
 						<a href="<?= $currentDesign ?>" title="View the source CSS file of the currently-viewed design.">
 							View This Design&#8217;s <abbr title=\"Cascading Style Sheets\">CSS</abbr>
 						</a>
 					</li>
-					<li>
+					<li class="css-resources">
 						<a href="http://www.mezzoblue.com/zengarden/resources/" title="Links to great sites with information on using CSS.">
 							<abbr title="Cascading Style Sheets">CSS</abbr> Resources
 						</a>
 					</li>
-					<li>
+					<li class="zen-faq">
 						<a href="http://www.mezzoblue.com/zengarden/faq/" title="A list of Frequently Asked Questions about the Zen Garden.">
 							<abbr title="Frequently Asked Questions">FAQ</abbr>
 						</a>
 					</li>
-					<li>
+					<li class="zen-submit">
 						<a href="http://www.mezzoblue.com/zengarden/submit/" title="Send in your own CSS file.">
 							Submit a Design
 						</a>
 					</li>
-					<li>
+					<li class="zen-translations">
 						<a href="http://www.mezzoblue.com/zengarden/translations/" title="View translated versions of this page.">
 							Translations
 						</a>
@@ -162,7 +163,7 @@
 				</ul>
 			</div>
 		</div>
-	</div>
+	</aside>
 
 
 </div>

@@ -48,7 +48,7 @@ h1 span,h2 span,h3 span {
 #supportingText {
   width: 690px;
   }
-#linkList {
+.sidebar {
   position: absolute;
   top: 40px;
   left: 585px;
@@ -71,9 +71,9 @@ footer a:link,
 footer a:visited { color: #348633; background-color: transparent; }
 footer a:hover   { color: #f00; background-color: transparent; }
 
-#linkList a.c:link,
-#linkList a.c:visited { color: #fa5; background-color: transparent; }
-#linkList a.c:hover   { color: #f00; background-color: transparent; }
+.sidebar a.c:link,
+.sidebar a.c:visited { color: #fa5; background-color: transparent; }
+.sidebar a.c:hover   { color: #f00; background-color: transparent; }
 
 /*----------------------------------------*
 **  #intro
@@ -181,38 +181,38 @@ footer {
   }
 
 /*----------------------------------------*
-**  #linkList
+**  .sidebar
 **----------------------------------------*/
 
-#linkList {
+.sidebar {
   border-left: 1px solid #8bf;
   font: italic 11px/130% Georgia, Times, "Times New Roman", serif;
   color: #999;
   background: transparent url(linksBack.jpg) no-repeat;
   }
-#lselect h3 {
+.design-selection h3 {
   background: transparent url(linksSelect.gif) no-repeat 0 0; 
   margin: 240px 0 10px 14px; 
   width: 118px; 
   height: 73px; 
   }
-div#lselect {
+div.design-selection {
   margin-bottom: 50px;
   }
-#linkList ul {
+.sidebar ul {
   margin-left: 15px;
   }
-#linkList li {
+.sidebar li {
   list-style-type: none;
   margin-top: 5px;
   }
-#lresources h3,
+.zen-resources h3,
 #lfavorites h3,
-#larchives h3 {
+.design-archives h3 {
   margin: 25px 0 8px 0; 
   width: 175px; 
   height: 25px; 
   }
-#lresources h3 { background: transparent url(linksResources.jpg) no-repeat 0 0; }
+.zen-resources h3 { background: transparent url(linksResources.jpg) no-repeat 0 0; }
 #lfavorites h3 { background: transparent url(linksFavorites.jpg) no-repeat 0 0; }
-#larchives h3  { background: transparent url(linksArchives.jpg)  no-repeat 0 0; }
+.design-archives h3  { background: transparent url(linksArchives.jpg)  no-repeat 0 0; }

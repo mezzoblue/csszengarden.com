@@ -111,7 +111,7 @@ header h2 span {
 	color: #8AF44F;
 	}
 
-#linkList{
+.sidebar{
 	font: 11px tahoma, verdana, sans-serif;
 	line-height: 18px;
 	color: #7799AC;
@@ -120,46 +120,46 @@ header h2 span {
 	right: 0px;
 	width: 150px;
 	}
-#linkList2 h3 span {
+.sidebar .wrapper h3 span {
 	display: none;
 	}
-#linkList2 h3.select {
+.sidebar .wrapper h3.select {
 	background: transparent url(h3.gif) no-repeat top left;
 	width: 157px;
 	height: 14px;
 	}
-#linkList2 h3.favorites{
+.sidebar .wrapper h3.favorites{
 	background: transparent url(h5.gif) no-repeat top left;
 	width: 157px;
 	height: 14px;
 	}
-#linkList2 h3.archives{
+.sidebar .wrapper h3.archives{
 	background: transparent url(h6.gif) no-repeat top left;
 	width: 157px;
 	height: 14px;
 	}
-#linkList2 h3.resources{
+.sidebar .wrapper h3.resources{
 	background: transparent url(h4.gif) no-repeat top left;
 	width: 157px;
 	height: 14px;
 	}
-#linkList li {
+.sidebar li {
 	font-size: 10px;
 	line-height: 2.5ex;
 	display: block;
 	padding: 2px 10px 0px 0px;
 	margin-bottom: 5px;
 	}
-#linkList #lresources li {
+.sidebar .zen-resources li {
 	margin-bottom: 0px;
 	}
 
-#linkList ul {
+.sidebar ul {
 	margin: 0px;
 	padding: 0px;
 	}
 
-#linkList li {
+.sidebar li {
 	list-style-type: none;
 	}
 

@@ -42,7 +42,7 @@ body {
 	top:535px;
 	z-index:2;
 	}
-#explanation, #participation, #requirements, #benefits, footer, #quickSummary, #preamble, #lselect, #lfavorites, #lresources, #larchives {
+#explanation, #participation, #requirements, #benefits, footer, #quickSummary, #preamble, .design-selection, #lfavorites, .zen-resources, .design-archives {
 	padding:7px;
 	margin:5px;
 	border-left:1px solid #aaa;
@@ -52,7 +52,7 @@ body {
 	background-image:url(transparent.gif);
 	}
 
-#linkList2 {
+.sidebar .wrapper {
 	width:275px;
 	position:absolute;
 	left:88px;
@@ -102,12 +102,12 @@ a:visited {
 	text-decoration:underline;
 	}
 
-#linkList ul {
+.sidebar ul {
 	margin: 0px;
 	padding: 0px;
 	}
 
-#linkList li {
+.sidebar li {
 	list-style-type: none;
 	display: inline;
 	}

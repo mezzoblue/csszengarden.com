@@ -206,19 +206,19 @@ footer {
 	margin-left: -280px;
 	}
 		
-#linkList {
+.sidebar {
 	position: absolute; 
 	top: 28em;
 	left: 40px;
 	width: 240px;
 	}
 	
-#linkList2 { 
+.sidebar .wrapper { 
 	font: 10px georgia, times, serif;
 	text-transform: uppercase;
 	}
 	
-	#linkList h3.select { 
+	.sidebar h3.select { 
 		background: transparent url(select.png) no-repeat top left; 
 		margin: 10px 0px 5px 0px; 
 		width: 240px; 
@@ -226,54 +226,54 @@ footer {
 		margin-bottom: 10px;
 		}
 		
-	#lselect {
+	.design-selection {
 		padding-bottom: 20px;
 		}
 
-	#linkList h3.select span {
+	.sidebar h3.select span {
 		display:none
 		}
 
-	#linkList h3.favorites { 
+	.sidebar h3.favorites { 
 		background: transparent url(favorites.png) no-repeat top left; 
 		width: 240px; 
 		height: 50px;
 		margin-bottom: 10px;
 		}
 
-	#linkList h3.favorites span {
+	.sidebar h3.favorites span {
 		display:none
 		}
 
-	#linkList h3.archives { 
+	.sidebar h3.archives { 
 		background: transparent url(archives.png) no-repeat top left; 
 		width: 240px; 
 		height: 50px;
 		margin-bottom: 10px;
 		}
 	
-	#linkList h3.archives span {
+	.sidebar h3.archives span {
 		display:none
 		}
 
-	#linkList h3.resources { 
+	.sidebar h3.resources { 
 		background: transparent url(resources.png) no-repeat top left; 
 		width: 250px; 
 		height: 50px;
 		margin-bottom: 10px;
 		}
 	
-	#linkList h3.resources span {
+	.sidebar h3.resources span {
 		display:none
 		}
 
 
-	#linkList ul {
+	.sidebar ul {
 		margin: 0px;
 		padding: 0px;
 		}
 
-	#linkList li {
+	.sidebar li {
 		line-height: 2.5ex; 
 		display: block;
 		text-align: center;
@@ -284,11 +284,11 @@ footer {
 		list-style-type: none;
 		}
 	
-	#linkList li a:link { 
+	.sidebar li a:link { 
 		color: #000;
 		}
 	
-	#linkList li a:visited {
+	.sidebar li a:visited {
 		color: #333;
 		}
 			

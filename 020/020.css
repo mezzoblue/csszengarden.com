@@ -198,7 +198,7 @@ header h2 abbr {
 	font-weight: bold;
 	text-decoration: none;
 }
-#linkList, #quickSummary p.p2 {
+.sidebar, #quickSummary p.p2 {
 	font-size: 90%;
 	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
 	position: absolute;
@@ -221,40 +221,40 @@ header h2 abbr {
 	padding: 3px;
 	color: #FFF;
 }
-#linkList {
+.sidebar {
 	top: 266px;
 }
-#linkList h3 {
+.sidebar h3 {
 	background-color: #0C2953;
 	color: #FFF;
 	margin: 0px;
 	padding: 30px 1px 1px 1px;
 	background-repeat: no-repeat;
 }
-#linkList h3.select {
+.sidebar h3.select {
 	background-image: url(selecth3.jpg);
 	background-position: 50% 0%;
 }
-#linkList h3.favorites {
+.sidebar h3.favorites {
 	border-top: 1px solid #0C2953;
 	background-image: url(favoritesh3.jpg);
 	background-position: 40% 100%;
 }
-#linkList h3.archives {
+.sidebar h3.archives {
 	border-top: 1px solid #0C2953;
 	background-image: url(archivesh3.jpg);
 	background-position: 40% 100%;
 }
-#linkList h3.resources {
+.sidebar h3.resources {
 	border-top: 1px solid #0C2953;
 	background-image: url(resourcesh3.jpg);
 	background-position: 50% 30%;
 }
-#linkList h3:first-letter, #linkList h3 span:first-letter {
+.sidebar h3:first-letter, .sidebar h3 span:first-letter {
 	color: #FFF;
 	font-size: 160%;
 }
-#linkList ul {
+.sidebar ul {
 	list-style-type: none;
 	font-size: 90%;
 	color: #FFF;
@@ -262,11 +262,11 @@ header h2 abbr {
 	padding: 0px;
 	background-color: #A4ACB3;
 }
-#linkList li {
+.sidebar li {
 	padding: 3px 2px 3px 2px;
 	margin-bottom: 4px;
 }
-#linkList li:hover {
+.sidebar li:hover {
 	padding: 2px 1px 2px 1px;
 	border: 1px dotted #0C2953;
 	background-color: #6BA0D2;
@@ -283,35 +283,35 @@ header h2 abbr {
 	font-weight: bold;
 	text-decoration: none;
 }
-#linkList a:link, #linkList a:visited {
+.sidebar a:link, .sidebar a:visited {
 	border-left: 6px solid #FFF;
 	padding-left: 2px;
 	font-weight: bold;
 	color: #FFF;
 }
-#linkList a:visited {
+.sidebar a:visited {
 	color: #204160;
 }
-#linkList a:hover, #linkList a:active {
+.sidebar a:hover, .sidebar a:active {
 	border-left: 6px solid #FFD800;
 	padding-left: 2px;
 	color: #FFD800;
 	text-decoration: none;
 	font-weight: bold;
 }
-#linkList a.c:link, #linkList a.c:visited {
+.sidebar a.c:link, .sidebar a.c:visited {
 	border-left: none;
 	padding-left: 0px;
 	font-weight: normal;
 	color: #FFF;
 }
-#linkList a.c:hover, #linkList a.c:active {
+.sidebar a.c:hover, .sidebar a.c:active {
 	border-left: none;
 	padding-left: 0px;
 	color: #FFD800;
 	text-decoration: none;
 }
-#linkList abbr {
+.sidebar abbr {
 	border-bottom: 1px #FFF dashed;
 }
 footer {

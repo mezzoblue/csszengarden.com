@@ -233,7 +233,7 @@ footer a {
 	}
 
 /* links and subsections */
-#linkList {
+.sidebar {
 	position: absolute;
 	top: 321px;
 	left: 6px;
@@ -241,63 +241,63 @@ footer a {
 	height: 66%;
 }
 
-#linkList div {
+.sidebar div {
 	padding-bottom: 10px;
 	}
  
-#linkList ul {
+.sidebar ul {
 	margin-left: 5px;
 	list-style: none;
 	color: #fff;
 	}
 	
-#linkList ul li a {
+.sidebar ul li a {
 	display: block;
 	}
 	
-#linkList ul li a:link {
+.sidebar ul li a:link {
 	font-weight: 900;
 	color: #4C83AE;
 	}
 
-#linkList ul li a:visited {
+.sidebar ul li a:visited {
 	font-weight: 900;
 	color: #999999;
 	}
 
-#linkList ul li a:hover,
-#linkList ul li a:active {
+.sidebar ul li a:hover,
+.sidebar ul li a:active {
 	font-weight: 900;
 	color: #9B3F17;
 	}
 	
-#linkList ul li a.c {
+.sidebar ul li a.c {
 	display: inline;
 	}
 	
-#linkList ul li a.c:link {
+.sidebar ul li a.c:link {
 	font-weight: 500;
 	color: #4C83AE;
 	}
 
-#linkList ul li a.c:visited {
+.sidebar ul li a.c:visited {
 	font-weight: 500;
 	color: #999;
 	}
 
-#linkList ul li a.c:hover,
-#linkList ul li a.c:active {
+.sidebar ul li a.c:hover,
+.sidebar ul li a.c:active {
 	font-weight: 500;
 	color: #9B3F17;
 	}
 
-#lselect h3 {
+.design-selection h3 {
 	width: 139px;
 	height: 19px;
 	background: transparent url(selectdesign.gif) no-repeat;
 	}
 	
-#larchives h3 {
+.design-archives h3 {
 	width: 75px;
 	height: 16px;
 	background: transparent url(archives.gif) no-repeat;
@@ -309,7 +309,7 @@ footer a {
 	background: transparent url(favorites.gif) no-repeat;
 	}
 
-#lresources h3 {
+.zen-resources h3 {
 	width: 91px;
 	height: 19px;
 	background: transparent url(resources.gif) no-repeat;
@@ -319,6 +319,6 @@ header h1,
 header h2,
 #preamble h3 span,
 #supportingText h3 span,
-#linkList h3 span {
+.sidebar h3 span {
 	display: none;
 	}

@@ -172,7 +172,7 @@ footer a:link, footer a:visited {
 
 /* navigation / links */
 
-#linkList {
+.sidebar {
 	position: absolute;
 	top: 940px;
 	left: 0;
@@ -186,7 +186,7 @@ footer a:link, footer a:visited {
 /* linklist WITHOUT favorites */
 /* NOTE: keep this linklist CSS if favorites remains hidden */
 
-#lselect { 
+.design-selection { 
 	float: left;
 	width: 150px;
 	padding: 0 19px 0 20px;
@@ -199,13 +199,13 @@ footer a:link, footer a:visited {
 	padding: 0 0 0 20px;
 	margin: 0 0 30px 0;
 }
-#larchives { 
+.design-archives { 
 	float: left;
 	width: 150px;
 	padding: 0 0 0 20px;
 	margin: 0 0 30px 0;
 }
-#lresources { 
+.zen-resources { 
 	float: left;
 	width: 150px;
 	padding: 0 19px 0 20px;
@@ -217,7 +217,7 @@ footer a:link, footer a:visited {
 /* linklist WITH #lfavorites */
 /* NOTE: in case you decide to uncomment #lfavorites div, comment the above  link list CSS and uncomment the below */
 /*
-#lselect { 
+.design-selection { 
 	float: left;
 	width: 150px;
 	padding: 0 19px 0 20px;
@@ -230,14 +230,14 @@ footer a:link, footer a:visited {
 	padding: 0 0 0 20px;
 	margin: 0 0 30px 0;
 }
-#larchives { 
+.design-archives { 
 	float: left;
 	width: 150px;
 	padding: 0 19px 0 20px;
 	margin: 0 0 30px 0;
 	border-right: 1px solid #677235;
 }
-#lresources { 
+.zen-resources { 
 	float: left;
 	width: 150px;
 	padding: 0 0 0 20px;
@@ -246,51 +246,51 @@ footer a:link, footer a:visited {
 
 /* /end linklist WITH #lfavorites */
 
-#linkList h3.select { 
+.sidebar h3.select { 
 	background: url(hd_select.gif);
 	margin: 0; 
 	width: 96px;
 	height: 12px; 
 	border: 0;
 }
-#linkList h3.select span {
+.sidebar h3.select span {
 	display:none
 }
-#linkList h3.favorites { 
+.sidebar h3.favorites { 
 	background: url(hd_favorites.gif);
 	margin: 0; 
 	width: 58px;
 	height: 10px; 
 	border: 0;
 }
-#linkList h3.favorites span {
+.sidebar h3.favorites span {
 	display:none
 }
-#linkList h3.archives { 
+.sidebar h3.archives { 
 	background: url(hd_archives.gif);
 	margin: 0; 
 	width: 53px; 
 	height: 10px;
 	border: 0;
 }
-#linkList h3.archives span {
+.sidebar h3.archives span {
 	display:none
 }
-#linkList h3.resources { 
+.sidebar h3.resources { 
 	background: url(hd_resources.gif);
 	margin: 0; 
 	width: 66px;
 	border: 0;
 	height: 10px; 
 }
-#linkList h3.resources span {
+.sidebar h3.resources span {
 	display:none
 }
-#linkList ul {
+.sidebar ul {
 	margin: 0px;
 	padding: 0px;
 }
-#linkList li {
+.sidebar li {
 	list-style-type: none;
 	display: block; 
 	padding-top: 2px; 

@@ -157,7 +157,7 @@ html>footer {
 	height: 12px; /* Be nice to Opera */
 	}
 
-#linkList {
+.sidebar {
 	position: absolute;
 	background: #b5b5b5;
 	color: #666;
@@ -170,11 +170,11 @@ html>footer {
 	width: 207px;	 /* Actual value for conformant browsers */	
 	}
 
-html>#linkList {
+html>.sidebar {
 	width: 207px; /* Be nice to Opera */
 	}
 
-#larchives, #lfavorites, #lresources {
+.design-archives, #lfavorites, .zen-resources {
 	background: #dfdfdf;
 	color: #666;
 	border: 2px solid #fff;
@@ -182,7 +182,7 @@ html>#linkList {
 	margin: 0 0 12px 0;
 	}
 
-#lselect {
+.design-selection {
 	background: #dfdfdf url(bg_lselect.gif) no-repeat top right;
 	color: #666;
 	border: 2px solid #fff;
@@ -285,14 +285,14 @@ footer {
 
 /* Lists Definitions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#linkList ul {
+.sidebar ul {
 	font-size: 10px;
 	list-style:none;
 	margin: 0;
 	padding: 0;
 	}
 
-#linkList ul li {
+.sidebar ul li {
 	background:   url(bullet_gen.gif) no-repeat 2px 3px;
 	margin: 0;
 	padding: 0 0 5px 15px;
@@ -300,25 +300,25 @@ footer {
 	color: #999;
 	}
 
-#linkList #lselect li {
+.sidebar .design-selection li {
 	background:   url(bullet_design.gif) no-repeat 2px 3px;
 	font-size: 9px;
 	}
 
-#linkList #lfavorites li {
+.sidebar #lfavorites li {
 	background:   url(bullet_fav.gif) no-repeat;
 	font-size: 9px;
 	}
 
-#linkList #lselect a:link, #linkList #lselect a:visited, #linkList #lfavorites a:link, #linkList #lfavorites a:visited {
+.sidebar .design-selection a:link, .sidebar .design-selection a:visited, .sidebar #lfavorites a:link, .sidebar #lfavorites a:visited {
 	display: block;
 	}
 
-#linkList #lselect a.c:link, #linkList #lselect a.c:visited, #linkList #lfavorites a.c:link, #linkList #lfavorites a.c:visited {
+.sidebar .design-selection a.c:link, .sidebar .design-selection a.c:visited, .sidebar #lfavorites a.c:link, .sidebar #lfavorites a.c:visited {
 	display:inline;
 	}
 
-#larchives li, #lresources li {
+.design-archives li, .zen-resources li {
 	text-transform: lowercase;
 	}
 
@@ -349,35 +349,35 @@ a:hover {
 	text-decoration: underline;
 	}
 
-#linkList a, #linkList a:link, #linkList a:visited {
+.sidebar a, .sidebar a:link, .sidebar a:visited {
 	background: transparent;
 	color: #444;
 	text-decoration: none;
 	}
 
-#linkList a:hover {
+.sidebar a:hover {
 	background: transparent;
 	color: #333;
 	text-decoration: underline;
 	}
 
-#linkList a.c, #linkList a.c:link, #linkList a.c:visited {
+.sidebar a.c, .sidebar a.c:link, .sidebar a.c:visited {
 	background: transparent;
 	color: #666;
 	text-decoration: none;
 	}
 
-#linkList a.c:hover {
+.sidebar a.c:hover {
 	background: transparent;
 	color: #333;
 	text-decoration: underline;
 	}
 
-#linkList #lselect a {
+.sidebar .design-selection a {
 	font-size: 10px;
 	}
 
-#linkList #lselect a.c {
+.sidebar .design-selection a.c {
 	font-size: 9px;
 	text-transform: lowercase;
 	}
@@ -405,7 +405,7 @@ h3 span {
 	display: none;
 	}
 
-#linkList h3 {
+.sidebar h3 {
 	width: 150px;
 	height: 20px;
 	margin-top: 20px;
@@ -449,13 +449,13 @@ html>#preamble h3 {
 	background: transparent url(title_req.gif) no-repeat top left;
 	}
 
-#lselect h3, #lfavorites h3, #larchives h3, #lresources h3 {
+.design-selection h3, #lfavorites h3, .design-archives h3, .zen-resources h3 {
 	height: 28px;
 	width: 100%;
 	margin: 0;
 	}
 
-#lselect h3 {
+.design-selection h3 {
 	background: transparent url(bg_select_des.gif) no-repeat top left;
 	}
 
@@ -463,11 +463,11 @@ html>#preamble h3 {
 	background: transparent url(bg_select_fav.gif) no-repeat top left;
 	}
 
-#larchives h3 {
+.design-archives h3 {
 	background: transparent url(bg_select_arc.gif) no-repeat top left;
 	}
 
-#lresources h3 {
+.zen-resources h3 {
 	background: transparent url(bg_select_res.gif) no-repeat top left;
 	}
 
@@ -482,7 +482,7 @@ abbr {
 	border-bottom: 1px dotted #ffe0b3;
 }
 
-#lresources abbr {
+.zen-resources abbr {
 	border-bottom: 1px dotted #999;
 }
 

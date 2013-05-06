@@ -102,7 +102,7 @@ footer a:link, footer a:visited {
 
 
 /* sidelinks styles */
-#linkList {
+.sidebar {
  	background: url(b5.jpg) no-repeat center bottom;
  	padding-bottom: 150px;
 	width: 195px;
@@ -111,13 +111,13 @@ footer a:link, footer a:visited {
 	top: 200px;
 	border-right: 1px dotted #930;
 }	
-#linkList h3 {
+.sidebar h3 {
 	text-align: center;
 	font-style: italic;
 	text-transform: lowercase;
 	letter-spacing: 0.1em;
 }	
-#linkList h3.select {
+.sidebar h3.select {
 	background: url(b1.jpg) no-repeat center top;
 	padding-top: 110px;
 	font-style: italic;
@@ -129,40 +129,40 @@ linkList h3.favorites {
  	background: url(b2.jpg) no-repeat center top;
 	padding-top: 110px;
 }
-#linkList h3.archives { 
+.sidebar h3.archives { 
 	margin-top: 30px;
 	background: url(b3.jpg) no-repeat center top;
 	padding-top: 110px;
 }
-#linkList h3.resources { 
+.sidebar h3.resources { 
 	margin-top: 30px;
 	background: url(b4.jpg) no-repeat center top;
 	padding-top: 105px;
 }
-#linkList ul {
+.sidebar ul {
 	margin: -0.5em 0 0 0;
 	padding: 0px;
 	list-style-type: none;
 	text-align: center;
 }
-#linkList li {
+.sidebar li {
  	background: url(listline.gif) no-repeat center bottom;
  	padding-bottom: 15px;
 }
-#linkList #lselect a {
+.sidebar .design-selection a {
 	display: block;
 	font-style: normal;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }	
-#linkList #lselect a.c{
+.sidebar .design-selection a.c{
 	display: inline;
 	margin-bottom: -1em;
 	font-style: italic;
 	text-transform: none;
 	letter-spacing: 0em;
 }	
-#linkList #lselect li{
+.sidebar .design-selection li{
 	font-style: italic;
 }		
 
@@ -172,10 +172,10 @@ linkList h3.favorites {
 h3:first-letter {
 	font-size: 16px;
 }
-#linkList h3 :before {
+.sidebar h3 :before {
 content: "(";
 }
-#linkList h3 :after {
+.sidebar h3 :after {
 content: ")";
 }
 footer a:before {

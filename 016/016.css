@@ -225,7 +225,7 @@ header {
 
 }
 
-#linkList {
+.sidebar {
 	position: absolute;
 	color: #425162;
 	background-color: transparent;
@@ -239,7 +239,7 @@ header {
 	
 }
 
-#linkList2 {
+.sidebar .wrapper {
 	margin-top: 30px;
 	margin-left: 20px;
 	margin-right: 25px;
@@ -290,7 +290,7 @@ h3.resources {
 	background-color: #555764;
 }
 
-#linkList ul {
+.sidebar ul {
 	list-style: none;
 	margin-top: 0;
 }

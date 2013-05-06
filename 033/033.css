@@ -187,14 +187,14 @@ padding-bottom: 0;
 margin-bottom: -180px;
 }
 
-#linkList	{
+.sidebar	{
 margin: 0;
 padding: 0;
 margin-left: 530px;
 padding: 30px 15px 20px 0px;
 }
 
-#linkList h3	{
+.sidebar h3	{
 padding: 5px 0 6px 30px;
 margin: 0;
 border-top: 1px solid #aaab9c;
@@ -206,7 +206,7 @@ color: #aaab9c;
 text-align: left;
 }
 
-#linkList ul {
+.sidebar ul {
 margin: 0;
 padding: 0 0 10px 0;
 color: #aaab9c;
@@ -214,7 +214,7 @@ background: transparent;
 border-right: 1px solid #aaab9c;
 }
 
-#linkList li {
+.sidebar li {
 list-style-type: none;
 display: block;
 padding: 0; 
@@ -222,20 +222,20 @@ margin: 0;
 padding: 0;
 }
 
-#linkList #lselect li	{padding: 1px 0; margin: 3px 0;}
+.sidebar .design-selection li	{padding: 1px 0; margin: 3px 0;}
 
-#linkList #larchives li, #linkList #lresources li	{ 
+.sidebar .design-archives li, .sidebar .zen-resources li	{ 
 padding: 1px 0; 
 margin: 0;
 text-align: right;
 }
 		
-#larchives, #lresources	{
+.design-archives, .zen-resources	{
 margin-top: 30px;
 text-align: left;
 }
 		
-#lselect a, #larchives a, #lresources a { 
+.design-selection a, .design-archives a, .zen-resources a { 
 display:block; 
 text-transform: lowercase;
 font-family: georgia, serif;
@@ -244,13 +244,13 @@ font-weight: 700;
 padding: 10px 0 3px 0;
 }
 		
-#lselect a	{
+.design-selection a	{
 letter-spacing: 0.1em;
 background: #f0e7d7 url(linkbg.jpg) no-repeat 50% 0%;
 color: #800000;
 }
 		
-#larchives a, #lresources a	{
+.design-archives a, .zen-resources a	{
 font-family: verdana, helvetica, arial, sans-serif;
 background: #f0e7d7;
 padding: 3px 30px 3px 0;
@@ -259,7 +259,7 @@ background: #f0e7d7 url(link2bg.jpg) no-repeat 100% 50%;
 color: #800000;
 }
 			
-#lselect a.c {
+.design-selection a.c {
 display:inline; 
 text-transform: none;
 border-width: 0px;
