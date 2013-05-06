@@ -97,7 +97,7 @@ header h1{
 	margin-bottom: 25px;
 	}
 	
-header h1 span, header h2 span, #extradiv1, #extradiv3, #extradiv4, #extradiv5, #extradiv6 { 
+header h1 span, header h2 span, #extra1, #extra3, #extra4, #extra5, #extra6 { 
 	margin: 0;
 	padding: 0;
 	display: none;
@@ -107,7 +107,7 @@ header h1 span, header h2 span, #extradiv1, #extradiv3, #extradiv4, #extradiv5, 
 /* An overview title for quickSummary. Great idea but couldn't get to work. 
 	It would have sat at the top of the right column. Oh well, next time maybe! */
  
-/* #extraDiv1 {
+/* #extra1 {
 	position: relative;	
 	margin-left: auto;
 	margin-right: auto;
@@ -115,7 +115,7 @@ header h1 span, header h2 span, #extradiv1, #extradiv3, #extradiv4, #extradiv5, 
 	height: 57px;
 	} */
 	
- #extraDiv2 {
+ #extra2 {
  	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -314,6 +314,6 @@ footer a:hover, footer a:active {
 	text-decoration: none;
 }
 
-#extraDiv1, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+#extra1, #extra3, #extra4, #extra5, #extra6 {
 	display: none;
 	}

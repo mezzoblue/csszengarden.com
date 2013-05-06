@@ -180,7 +180,7 @@ footer /*.requirements .p5*/ {
 
 /* bit of a nasty use of an extraDiv and a bg image
 to produce the bottom yellow bar */
-#extraDiv1 {
+#extra1 {
 	height: 40px;
 	width: 715px;
 	margin: 0 auto;

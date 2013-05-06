@@ -454,7 +454,7 @@
 
 /* ---[ Extra Div 1 ]-------------------------------- */
 
-    #extraDiv1 {
+    #extra1 {
        position: absolute;
        top: 0px;
        right: 0px;
@@ -468,7 +468,7 @@
 
 /* ---[ Extra Div 2 ]-------------------------------- */
 
-    #extraDiv2 {
+    #extra2 {
        position: absolute;
        top: 125px;
        left: 105px;
@@ -482,7 +482,7 @@
 
 /* ---[ Extra Div 3 ]-------------------------------- */
 
-    #extraDiv3 {
+    #extra3 {
        position: absolute;
        top: 125px;
        left: 359px;

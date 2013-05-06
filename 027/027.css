@@ -216,6 +216,6 @@ do not need the little icon...hence the rule could not be applied to ".participa
 
 /* no need for extras...they're just not displayed */
 
-#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+#extra1, #extra2, #extra3, #extra4, #extra5, #extra6 {
 	display: none;
 }

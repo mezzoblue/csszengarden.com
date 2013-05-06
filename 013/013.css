@@ -239,14 +239,14 @@ footer a:hover {
 	padding-bottom: 25px;
 }
 
-#extraDiv1 {
+#extra1 {
 	text-align: center;
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 100%;	
 }
-#extraDiv1 span {
+#extra1 span {
 	display: block;
 	width: 600px;
 	height: 82px;

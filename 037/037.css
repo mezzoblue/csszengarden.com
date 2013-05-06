@@ -31,7 +31,7 @@ body {
 
 /* Different behaviour of the lady. Just a compromise for IE */
 
-div#extraDiv2 {
+div#extra2 {
 	background-image: url(bg_face_ie.jpg);
 	background-repeat: no-repeat;
 	background-position: left bottom;
@@ -44,7 +44,7 @@ div#extraDiv2 {
 
 /* And now the cool stuff, hiding from IE with child-selectors */
 
-body#css-zen-garden>div#extraDiv2 {
+body#css-zen-garden>div#extra2 {
 	background-image: url(bg_face.jpg);
 	background-repeat: no-repeat;
 	background-position: left bottom;
@@ -59,7 +59,7 @@ body#css-zen-garden>div#extraDiv2 {
 /* Using Geckos capability of PNG transparency to create the smooth scrolling border,
 when the screen is scrolled and the content vanishes to the left */
 
-body#css-zen-garden>div#extraDiv3 {
+body#css-zen-garden>div#extra3 {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -118,7 +118,7 @@ div.summary p.p2, div.summary p.p1 {
 	margin: 0;
 }
 
-div#extraDiv1 { /*adding a border */
+div#extra1 { /*adding a border */
 	position: absolute;
 	left: 225px; 
 	top: 90px;
@@ -387,7 +387,7 @@ footer a:link, footer a:visited {
 
 /* and extra artwork */
 
-div#extraDiv4 {
+div#extra4 {
 	position: absolute;
 	left: 1828px;
 	top: 20px;

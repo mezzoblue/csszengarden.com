@@ -133,7 +133,7 @@ footer a:hover {
 	}
 
 
-#extraDiv1 { 
+#extra1 { 
 	background:#9E9E9E url(garden_css.gif) top left no-repeat; 
 	position: absolute; 
 	top: 145px; 
@@ -145,7 +145,7 @@ footer a:hover {
 	border-top: solid 1px #EEE9E0;
 	}
 	
-#extraDiv2 { 
+#extra2 { 
 	position: absolute;
 	top: 0;
 	left: 195px;
@@ -155,7 +155,7 @@ footer a:hover {
 	height:220px;
 	}
 		
-#extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 { 
+#extra3, #extra4, #extra5, #extra6 { 
 	display:none;
 	}
 		

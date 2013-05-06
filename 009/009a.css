@@ -5,4 +5,4 @@
 		}
 	.sidebar li {		line-height: 2.5ex; 		display: block;		text-align: center;		padding-top: 5px;		padding-left: 20px;		padding-right: 20px;		margin-bottom: 5px;		list-style-type: none;
 		}		.sidebar li a:link { 		color: #000;		}		.sidebar li a:visited {		color: #333;		}
-		#extraDiv1 { 	background: transparent url(certified.png) top left no-repeat; 	position: absolute; 	top: 160px; 	left: 0px; 	width: 100px; 	height: 110px;	z-index: 0;	}
+		#extra1 { 	background: transparent url(certified.png) top left no-repeat; 	position: absolute; 	top: 160px; 	left: 0px; 	width: 100px; 	height: 110px;	z-index: 0;	}

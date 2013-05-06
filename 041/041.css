@@ -146,7 +146,7 @@ bracket (left or right) with its own different texture of dirt */
 
 .sidebar .wrapper>.design-selection {
 	/* slight kludge ? sure...but it adds nice eye candy. hidden from IE through the child selector,
-	and we make up for it later with extraDiv1 */
+	and we make up for it later with extra1 */
 	background: url(flower.png) no-repeat top left;
 	margin-left: -65px;
 	padding-left: 80px;
@@ -192,7 +192,7 @@ p:hover a {
 
 /* and now...the extras */
 
-#extraDiv1 {
+#extra1 {
 	/* this one makes up for the screwy handling of the flower background on .design-selection in IE */
 	position: absolute;
 	top: 165px;
@@ -202,13 +202,13 @@ p:hover a {
 	height: 150px;
 }
 
-body>#extraDiv1 {
+body>#extra1 {
 	/* and this reverses the previous rule for those browsers (i.e. non IE ones) that already showed
 	the flower background correctly as it was applied to .design-selection */
 	display: none;
 }
 
 
-#extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+#extra2, #extra3, #extra4, #extra5, #extra6 {
 	display: none;
 }

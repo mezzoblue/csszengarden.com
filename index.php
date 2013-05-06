@@ -168,9 +168,13 @@
 
 </div>
 
-<!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
-<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div>
-<div id="extraDiv4"><span></span></div><div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
+<!-- 
+	These extra divs/spans were originally provided as catch-alls to add extra imagery.
+	These days we have full ::before and ::after support, favour using those instead. 
+	These remain for historical design compatibility.
+-->
+<div class="extra1"><span></span></div><div class="extra2"><span></span></div><div id="extra3"><span></span></div>
+<div class="extra4"><span></span></div><div class="extra5"><span></span></div><div id="extra6"><span></span></div>
 
 </body>
 </html>

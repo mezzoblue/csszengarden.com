@@ -315,7 +315,7 @@ footer a:hover {
 }
 
 /* Extra elements */
-#extraDiv1 {
+#extra1 {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -323,7 +323,7 @@ footer a:hover {
 	height: 118px;
 	background: transparent url(mnemonic.gif) top left no-repeat;
 }
-#extraDiv2 {
+#extra2 {
 	width: 90px;
 	height: 18px;
 	position: absolute;
@@ -331,7 +331,7 @@ footer a:hover {
 	left: 156px;
 	background: transparent url(ani1.gif) top left no-repeat;
 }
-#extraDiv3 span {
+#extra3 span {
 	width: 61px;
 	height: 51px;
 	position: absolute;
@@ -339,7 +339,7 @@ footer a:hover {
 	left: 315px;
 	background: transparent url(ani2.gif) top left no-repeat;
 }
-#extraDiv4 {
+#extra4 {
 	width: 256px;
 	height: 6px;
 	position: absolute;
@@ -347,12 +347,12 @@ footer a:hover {
 	left: 98px;
 	background: transparent url(ani3.gif) top left no-repeat;
 }
-#extraDiv5 {
+#extra5 {
 	width: 100%;
 	position: relative;
 	top: -21px;
 }
-#extraDiv5 span {
+#extra5 span {
 	float: right;
 	width: 209px;
 	height: 2px;
@@ -469,6 +469,6 @@ footer>a+a+a:link, footer>a+a+a:visited {left: 106px;}
 footer>a+a+a+a:link, footer>a+a+a+a:visited {left: 159px;}
 footer>a+a+a+a+a:link, footer>a+a+a+a+a:visited {left: 212px;}
 
-#extraDiv3 {
+#extra3 {
 	background: transparent url(bg-5a.png) top left no-repeat;
 }

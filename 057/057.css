@@ -11,25 +11,25 @@
 
 /* Photography © Bradley Mason http://www.sxc.hu/browse.phtml?f=profile&l=bradleym */
 
-#extraDiv3,
-#extraDiv4,
-#extraDiv5,
-#extraDiv6 { display: none; }
+#extra3,
+#extra4,
+#extra5,
+#extra6 { display: none; }
 
 /* Warning message styles for browsers that don't support CSS attribute selectors... */
-#extraDiv1 { position: absolute; top: 112px; left: 292px; width: 340px; height: 166px; background: url(txt_upgrade.gif) no-repeat; z-index: 10; }
+#extra1 { position: absolute; top: 112px; left: 292px; width: 340px; height: 166px; background: url(txt_upgrade.gif) no-repeat; z-index: 10; }
 .page-wrapper { padding: 296px 0 0 294px; z-index: 99; }
 /* Clear the warning styles for those that do... */
-div[id="extraDiv1"] { display: none; }
+div[id="extra1"] { display: none; }
 div[id="container"] { padding: 226px 0 0 294px !important; }
 
 /* Spoon graphic and pull-quote */
-#extraDiv2 { position: absolute; top: 1200px; left: 0px; width: 229px; height: 580px; background: url(spoon_flake.png) no-repeat; z-index: 0; }
-div[id="extraDiv2"] { top: 712px !important; }
+#extra2 { position: absolute; top: 1200px; left: 0px; width: 229px; height: 580px; background: url(spoon_flake.png) no-repeat; z-index: 0; }
+div[id="extra2"] { top: 712px !important; }
 
 /* Coffee graphic */
-#extraDiv3 { display: block !important; position: relative; margin-left: 496px; height: 0; z-index: 0; }
-#extraDiv3 span {
+#extra3 { display: block !important; position: relative; margin-left: 496px; height: 0; z-index: 0; }
+#extra3 span {
 	position: absolute;
 	bottom: -33px;
 	width: 100%;
@@ -38,20 +38,20 @@ div[id="extraDiv2"] { top: 712px !important; }
 	}
 
 /* Small logo */
-div[id="extraDiv4"] { display: block !important; position: relative; margin-left: 64px; width: 168px; height: 0; z-index: 3; }
-div[id="extraDiv4"]>span {
+div[id="extra4"] { display: block !important; position: relative; margin-left: 64px; width: 168px; height: 0; z-index: 3; }
+div[id="extra4"]>span {
 	position: absolute;
 	bottom: -33px;
 	width: 100%;
 	height: 98px;
 	background: url(logo_small.gif) no-repeat;
 	}
-/* div[id="extraDiv4"] span:active { background: url(logo_small_over.gif) no-repeat; } */
+/* div[id="extra4"] span:active { background: url(logo_small_over.gif) no-repeat; } */
 
 
 /* Photo Credit */
-div[id="extraDiv5"] { display: block !important; position: relative; margin-left: 4px; height: 0; z-index: 0; }
-div[id="extraDiv5"]>span {
+div[id="extra5"] { display: block !important; position: relative; margin-left: 4px; height: 0; z-index: 0; }
+div[id="extra5"]>span {
 	position: absolute;
 	bottom: -33px;
 	width: 100%;
@@ -60,7 +60,7 @@ div[id="extraDiv5"]>span {
 	}
 
 /* Quality text and SI logo */
-div[id="extraDiv6"] {
+div[id="extra6"] {
 	display: block !important;
 	position: absolute;
 	top: 476px;
