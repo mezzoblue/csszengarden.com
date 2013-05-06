@@ -1,0 +1,267 @@
+/* css Zen Garden submission 007 - 'deep thought' by Jason Estes, http://www.bewb.org/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Jason Estes */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* basic elements */
+body#css-zen-garden { 
+	background-color:#424242;
+	font-size:75%;
+	font-family:arial, verdana, sans-serif;
+	margin:0;
+	padding:0;
+	color:#fff;
+	background-image:url(background.jpg);
+	background-repeat:no-repeat;
+	background-position:150px 50px;
+	}
+
+a:link { 
+	color:#FF9638;
+		background-color:transparent;
+	}
+a:visited { 
+		color:#FF9638;
+		background-color:transparent;
+	}
+a:hover, a:active { 
+		color:#FF9638;
+		background-color:transparent;
+	}
+/* specific divs */
+
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 {
+	margin:10px 15px;
+	background-image:url(logo.gif);
+	height:83px; 
+	background-color:transparent;
+	width:480px;
+	background-repeat:no-repeat;
+	background-position:top right;
+	color:#000;
+	}
+#pageHeader h1 span {
+	display:none
+	}
+#pageHeader h2 { 
+	display:none;
+	}
+#pageHeader h2 span {
+	display:none;
+	}
+#quickSummary {
+	display:block;
+	}
+#quickSummary .p1 {
+display:none;
+	}
+#quickSummary .p2 {
+ 	position:absolute;
+	top:0px;
+	left:300px;
+	padding:0;margin:0;
+	}
+#preamble {
+	border-top:1px solid #fff;
+	background-image:url(halfscreen-gray.gif);
+	width:250px;
+	margin-left:30px;
+	position:absolute;
+	top:18px;
+	right:10px;
+		}
+#preamble p{
+	margin:10px;
+	}
+#preamble h3{
+	font-style:oblique;
+	margin:10px;
+	}
+#supportingText {
+	margin:350px auto 0 auto;
+	width:90%;
+	}
+#supportingText div {
+	/*background-image:url(halfscreen-gray.gif);*/
+	border-top:1px solid #fff;
+	clear:both;
+	}
+
+#supportingText h3 span{
+	display:none;	
+	}
+#supportingText p {
+	padding:5px 10px;
+	line-height:150%;
+	}
+#explanation h3{
+	Float:left;
+	background-image:url(about.gif);
+	width:46px;
+	height:234px;
+	padding:0;
+	margin:0 10px 0px 0px;
+	border-right:1px solid white;
+	}
+#explanation p{
+		margin:0px 0px 0px 43px;
+		}
+#supportingText div#explanation {
+	margin:20px 10px 0 200px;
+	background:url(about_background.gif) no-repeat 100% 100%;
+	min-height:234px;
+	height:234px;
+	clear:none;
+	}
+#supportingText #explanation[id] {
+	height:auto;
+	}
+#participation h3{
+	Float:right;
+	background-image:url(participation.gif);
+	width:46px;
+	height:234px;
+	padding:0;
+	margin:0 0px 0px 10px;
+	border-left:1px solid white;
+	}
+#supportingText #participation {
+	margin:20px 200px 0 10px;
+	min-height:234px;
+	height:234px;
+	background:url(participation_back.gif) no-repeat 0 100%;
+	}
+#participation p{
+		margin:0px 43px 0px 0px;
+		}
+#supportingText #participation[id] {
+	height:auto;
+	}
+#benefits h3{
+	Float:left;
+	background-image:url(benefits.gif);
+	width:46px;
+	height:133px;
+	padding:0;
+	margin:0 10px 0px 0px;
+	border-right:1px solid white;
+	}
+#benefits p{
+		margin:0px 0px 0px 43px;
+		}
+#supportingText #benefits {
+margin:20px 10px 0 200px;
+	min-height:133px;
+	height:133px;
+	background:url(benefits_back.gif) no-repeat 100% 100%;
+	}
+#supportingText #benefits[id] {
+	height:auto;
+	}
+#requirements h3{
+	Float:right;
+	background-image:url(Requirements.gif);
+	width:46px;
+	height:234px;
+	padding:0;
+	margin:0 0px 0px 10px;
+	border-left:1px solid white;
+	}
+#requirements p{
+		margin:0px 43px 0px 0px;
+		}
+#supportingText #requirements {
+	margin:20px 200px 30px 10px;
+	min-height:234px;
+	height:234px ;
+	background:url(requirements_back.gif) no-repeat 0 100%;
+	}
+#supportingText #requirements[id] {
+	height:auto;
+	}
+#supportingText #footer { 
+	text-align:center;
+	padding-top:3px;
+	}
+#footer a:link, #footer a:visited { 
+	font-weight:bold;
+	text-decoration:none;
+	}
+#linkList {
+	position:absolute;
+	top:98px;
+	left:30px;
+	width:198px;
+	}
+
+#linkList h3.select { 
+	height:53px;
+	background-image:url(select.gif);
+	margin:0px;
+	padding:0px;
+	}
+#linkList h3.select span {
+	display:none
+	}
+#linkList h3.favorites { 
+	height:53px;
+	background-image:url(favorites.gif);
+	margin:0px;
+	padding:0px;
+	}
+#linkList h3.favorites span {
+	display:none
+	}
+#linkList h3.archives { 
+	height:53px;
+	background-image:url(archives.gif);
+	margin:0px;
+	padding:0px;
+	}
+#linkList h3.archives span {
+	display:none
+	}
+#linkList h3.resources { 
+	height:53px;
+	background-image:url(resources.gif);
+	margin:0px;
+	padding:0px;
+	}
+#linkList h3.resources span {
+	display:none
+	}
+
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+#linkList li {
+	display:block;
+	background-image:url(halfscreen-gray.gif);
+	padding:3px;
+	margin:1px 0;
+	list-style-type: none;
+	}
+#linkList li a:link, #linkList li a:visited { 
+	color:#fff;
+	background-color:transparent;
+	}
+
+#extraDiv1 { 
+	clear:both;
+	}
+acronym {
+	color:#FF9638;
+	background-color:transparent;
+	border:0;
+	cursor:help;
+	}

@@ -1,0 +1,216 @@
+/* css Zen Garden submission 005 - 'Blood Lust' by Dave Shea - http://www.mezzoblue.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Dave Shea */
+/* Added: May 7th, 2003 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* love it or hate it. This one is one of my favourites because I don't generally design this way. It reaches into the past
+    for a vaguely Futurist style, complete with duotone for that screenprint feel, combined with modern GIF 
+    patterned-dithering to really mess with tradition.
+
+    You may find it challenging, silly, visually stimulating, or a mess. I didn't do it for you, I did it for me. */
+
+
+/* basic elements */
+body {
+	font: 12px/13px courier, monospace;
+	color: #000;
+	background-color: #fff;
+	margin: 0px;
+	}
+p {
+	font: 12px/13px courier, monospace;
+	text-align: justify;
+	}
+h3 {
+	font:bold 14px courier, monospace;
+	letter-spacing: 1px;
+	margin-bottom: 0px;
+	color: #000;
+	}
+a:link {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #FF4F3E;
+	}
+a:visited {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #FF4F3E;
+	}
+a:hover, a:active {
+	text-decoration: underline;
+	color: #000;
+	}
+acronym {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+#container {
+	background: #fff url(bloodlust.gif) no-repeat top left;
+	margin: 50px 0px 0px 0px;
+	padding: 150px 0px 0px 200px;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 {
+	background: transparent url(h1.gif) no-repeat top left;
+	margin-top: 10px;
+	width: 461px;
+	height: 116px;
+	position: absolute;
+	top: 20px;
+	left: 305px;
+	}
+#pageHeader h1 span {
+	display: none;
+	}
+#pageHeader h2 {
+	background: transparent url(h2.gif) no-repeat top left;
+	width: 253px;
+	height: 34px;
+	position: absolute;
+	top: 150px;
+	left: 216px;
+	}
+#pageHeader h2 span {
+	display: none;
+	}
+
+
+#quickSummary .p1 {
+	font: 400 18px/16px 'arial black', sans-serif;
+	text-align: right;
+	width: 340px;
+	float: left;
+	margin: 40px 20px 20px 0px;
+	}
+#quickSummary .p2 {
+	font: 9px verdana, sans-serif;
+	text-align: left;
+	line-height: 24px;
+	width: 295px;
+	position: absolute;
+	top: 20px;
+	left: 25px;
+	}
+#preamble {
+	width: 170px;
+	float: right;
+	margin-top: 50px;
+	clear: left;
+	position: relative;
+	top: -270px;
+	}
+#preamble h3 {
+	font: bold 12pt/10pt 'trebuchet ms', sans-serif;
+	text-align: right;
+	}
+#preamble p {
+	font: bold 10pt/11pt arial, sans-serif;
+	text-align: right;
+	}
+#supportingText {
+	clear: left;
+	}
+#explanation h3 {
+	font: bold 18px courier, monospace;
+	}
+#explanation .p1 {
+	font: 18px courier, monospace;
+	line-height: 5ex;
+	}
+#explanation .p2 {
+	font: 11px/16px courier, monospace;
+	width: 220px;
+	float: left;
+	margin-right: 10px;
+	}
+#explanation .p3 {
+	font: 14px/14px courier, monospace;
+	margin-top: 30px;
+	}
+
+#participation h3 {
+	background: transparent url(h3.gif) no-repeat top left;
+	width: 174px;
+	height: 66px;
+	margin: 0px;
+	float: left;
+	}
+#participation h3 span {
+	display: none;
+	}
+#participation .p1:first-line {
+	font: 16px 'arial black', sans-serif;
+	}
+#participation .p2 {
+	line-height: 16px;
+	text-align: right;
+	float: left;
+	width: 200px;
+	margin: 0px 5px 15px 0px;
+	}
+#participation .p3 {
+	font-family: arial, sans-serif;
+	}
+
+#benefits h3 {
+	background: transparent url(h4.gif) no-repeat top left;
+	width: 107px;
+	height: 26px;
+	margin: 0px;
+	float: left;
+	}
+#benefits h3 span {
+	display: none;
+	}
+
+
+#requirements h3 {
+	font: bold 18px 'arial black', sans-serif;
+	clear: left;
+	float: right;
+	}
+#requirements .p1 {
+	font: bold 11px/16px trebuchet ms, sans-serif;
+	float: left;
+	width: 300px;
+	margin-right: 10px;
+	}
+#requirements .p3 {
+	font: 12px/11px arial, sans-serif;
+	}
+
+#linkList {
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	}
+#linkList2 {
+	font: 12px courier, monospace;
+	padding: 10px;
+	margin-top: 115px;
+	width: 130px;
+	}
+
+#linkList li {
+	line-height: 2.5ex;
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}

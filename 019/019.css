@@ -1,0 +1,281 @@
+/* css Zen Garden submission 019 - 'What Lies Beneath' v1.01 by Michael Pick, http://www.mikepick.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Mike Pick */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* basic elements */
+body { 
+	font: 11px/18px verdana; 
+	color: #ffffff; 
+	background: #000000 url(body-background.jpg) repeat-x; 
+	margin: 0px;
+	margin-bottom: 20px;
+	width: 2300px;
+	}
+p { 
+	font: 11px/18px verdana; 
+	margin-top: 0px; 
+	text-align: left;
+	}
+h3 { 
+	font: 12pt georgia;
+	margin-top: 0px;
+	margin-bottom: 5px; 
+	color: #ffffff;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #E8AD62;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #E0922F;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #FFCC00;
+	}
+
+
+/* specific divs */
+	
+#pageheader {
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+
+#pageHeader h1 { 
+	background: transparent url(title.jpg) no-repeat top left;
+	width: 2300px; 
+	height: 85px;
+	margin-top: 70px;
+	}
+	
+#pageHeader h1 span {
+	display:none
+	}
+
+#pageHeader h2 span {
+	display:none;
+	}
+
+#quickSummary {
+	position: absolute;
+	left: 55px;
+	top: 170px;
+	width: 250px;
+	z-index: 2;
+	}
+	
+#quickSummary p {
+	font: italic 10px/16px georgia; 
+	text-align: right;
+	}
+
+#preamble {
+	position: absolute;
+	background: transparent url(femur.jpg) no-repeat bottom left;
+	top: 170px;
+	left: 545px;
+	width: 300px;
+	height: 431px;
+	z-index: 2;
+	}
+	
+#preamble h3 {
+	background: transparent url(the_road.jpg) no-repeat top left;  
+	width: 300px; 
+	height: 25px;
+	}
+	
+#preamble h3 span {
+	display: none;
+	}
+	
+#supportingText {
+	}
+	
+#explanation {
+	position: absolute;
+	top: 170px;
+	left: 865px;
+	width: 300px;
+	z-index: 2;
+	}
+	
+#explanation h3 {
+	background: transparent url(so_what.jpg) no-repeat top left;  
+	width: 300px; 
+	height: 25px;
+	}
+	
+#explanation h3 span {
+	display: none;
+	}
+	
+#participation {
+	position: absolute;
+	background: transparent url(tin_can.jpg) no-repeat top left;
+	top: 170px;
+	left: 1185px;
+	width: 300px;
+	z-index: 2;
+	padding-bottom: 40px;
+	}
+	
+#participation h3 {
+	background: transparent url(participation.jpg) no-repeat top left;  
+	width: 300px; 
+	height: 25px;
+	}
+	
+#participation h3 span {
+	display: none;
+	}
+	
+#benefits {
+	background: transparent url(ants.jpg) no-repeat top left; 
+	position: absolute;
+	top: 170px;
+	height: 450px;
+	left: 1505px;
+	width: 300px;
+	z-index: 2;
+	}
+	
+#benefits h3 {
+	background: transparent url(benefits.jpg) no-repeat top left; 
+	width: 300px;
+	height: 25px;
+	}
+	
+#benefits h3 span {
+	display: none;
+	}
+	
+#requirements {
+	position: absolute;
+	top: 170px;
+	left: 1825px;
+	width: 300px;
+	z-index: 2;
+	padding-bottom: 40px;
+	}
+	
+#requirements h3 {
+	background: transparent url(requirements.jpg) no-repeat top left; 
+	width: 300px;
+	height: 25px;
+	}
+	
+#requirements h3 span {
+	display: none;
+	}
+	
+#requirements p {
+	font: 9px/15px verdana;
+	}
+
+#footer { 
+	position: absolute;
+	background: transparent url(worm.jpg) no-repeat;
+	text-align: right;
+	top: 170px;
+	left: 2145px;
+	width: 100px; 
+	height: 325px;
+	z-index: 2;
+	}
+	
+#footer a:link, #footer a:visited { 
+	display: block;
+	}
+
+#linkList { 
+	position: absolute;
+	left: 325px;
+	top: 170px;
+	width: 200px;
+	z-index: 2;
+	}
+	
+#linkList2 { 
+	font: 9px verdana, sans-serif; 
+	}
+	
+#linkList h3.select { 
+	background: transparent url(select.jpg) no-repeat top left;  
+	width: 200px; 
+	height: 25px;
+	}
+	
+#linkList h3.select span {
+	display:none
+	}
+#linkList h3.favorites { 
+	background: transparent url(favorites.jpg) no-repeat top left; 
+	margin-top: 15px; 
+	width: 200px; 
+	height: 25px; 
+	}
+#linkList h3.favorites span {
+	display:none
+	}
+#linkList h3.archives { 
+	background: transparent url(archives.jpg) no-repeat top left;
+	margin-top: 15px;
+	width: 200px; 
+	height: 25px; 
+	}
+#linkList h3.archives span {
+	display:none
+	}
+#linkList h3.resources { 
+	background: transparent url(resources.jpg) no-repeat top left; 
+	margin-top: 15px; 
+	width: 200px; 
+	height: 25px; 
+	}
+#linkList h3.resources span {
+	display:none
+	}
+
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+#linkList li {
+	line-height: 2.5ex; 
+	list-style-type: none;
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	}
+#linkList li a:link { 
+	color: #E8AD62;
+	}
+#linkList li a:visited {
+	color: #E0922F;
+	}
+#linklist li a:hover, a:active {
+	color: #00CCFF;
+	}
+	
+#extraDiv1 { 
+	background: transparent url(mole.jpg) bottom left no-repeat; 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2300px;
+	height: 630px;
+	z-index: 1;
+	}

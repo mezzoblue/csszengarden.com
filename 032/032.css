@@ -1,0 +1,74 @@
+/* css Zen Garden submission 032 - 'Crab Apple' by Jai Brinkofski - http://www.jaiandbecky.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Jai Brinkofski */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+/* hide this stuff */
+
+#pageHeader h1 span, #pageHeader h2 span, #pageHeader, #quickSummary p.p1, #preamble h3 span, #explanation h3, #participation h3, #benefits h3, #requirements h3, #lselect h3, #larchives h3, #lresources h3  {display: none}
+
+/* show this stuff */
+
+body {background-color: #D0D1D0; background-image: url(banner.jpg);	background-repeat: no-repeat; left: 0px; top: 0px; width: 770px}
+
+acronym {border-bottom-width: 1px; border-bottom-style: dashed;	cursor: help}
+
+#container {background-image: url(t.jpg); background-repeat: no-repeat; left: 0px; top: 0px; background-position: 0px 99px; position: absolute; width: 770px; padding-bottom: 5px}
+
+#intro {position: relative;	left: 133px; top: 207px; padding-bottom: 50px; z-index: 2}
+
+#quickSummary {top: -57px; position: absolute; left: 291px; z-index: 2}
+
+#quickSummary p.p2 {color: #FFFFFF;	font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: bold}
+
+#quickSummary p.p2 a:link {color: maroon; font-weight: bold; font-size: 12px; text-decoration: none}
+#quickSummary p.p2 a:visited {color: maroon; font-weight: bold;	font-size: 12px; text-decoration: none}
+#quickSummary p.p2 a:hover {color: yellow; font-weight: bold; font-size: 12px; text-decoration: none; background-color: #333333}
+#quickSummary p.p2 a:active {color: maroon;	font-weight: bold; font-size: 12px;	text-decoration: none}
+
+#preamble {width: 614px; position:relative; left: 7px; top: -40px; overflow: visible; z-index: 1; padding-right: 3px}
+
+#preamble p {padding-right: 20px; padding-left: 5px; font-family: Arial, Helvetica, sans-seri; font-size: 10px; color: #333333}
+
+#preamble p.p1 {padding-top: 28px}
+
+#supportingText {font-family: Arial, Helvetica, sans-serif;	font-size: 10px; color: #333333; width: 614px; position:relative;	left:141px;	margin-top: 30px; top: 100px; z-index: 1; border-width:1px;border-color:#c2c2c2; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; padding-right: 3px; margin-bottom: 100px}
+
+#supportingText p {padding-right: 20px; padding-left: 5px}
+
+#supportingText a:link {color: #FF0000;	font-weight: normal; text-decoration: none}
+#supportingText a:visited {color: #990000; text-decoration: underline;}
+#supportingText a:hover {color: #FFFFFF; background-color: #666666;	text-decoration: none}
+#supportingText a:active {color: #FF0000; text-decoration: underline overline; background-color: #FFFFFF}
+
+#explanation {background-image: url(sowhatisthisabout.jpg);	background-repeat: no-repeat;  padding-top: 23px; padding-right: 3px}
+
+#participation {background-image: url(participation.jpg); background-repeat: no-repeat; left: 0px; top: 153px; z-index: 1; padding-top: 23px}
+
+#benefits {background-image: url(benefits.jpg); background-repeat: no-repeat; left: 0px; top: 366px; z-index: 1; padding-top: 23px}
+
+#requirements {background-image: url(requirements.jpg); background-repeat: no-repeat; left: 0px; top: 466px; z-index: 1; padding-top: 23px}
+
+#footer {padding-left: 10px;}
+
+#footer a:link {font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; font-weight: bold; font-size: 12px}
+#footer a:hover {font-family: Arial, Helvetica, sans-serif; color: yellow; font-weight: bold; font-size: 12px; background-color: #333333}
+
+#linkList {position: absolute; left: 9px; top: 0px; width: 121px; font-family: Arial, Helvetica, sans-serif;	font-size: 10px; color: #333333; z-index: 2; border-right-width: 1px; border-bottom-width: 1px;	border-left-width: 1px;	border-right-color: #c2c2c2; border-bottom-color: #c2c2c2; border-left-color: #c2c2c2;	border-right-style: solid;	border-bottom-style: solid;	border-left-style: solid; margin-top: 208px; bottom: 5px}
+
+#linkList a:link {color: #003366; font-weight: normal; text-decoration: none}
+#linkList a:visited {color: #000033; font-weight: normal; text-decoration: none}
+#linkList a:hover {color: #FFFFFF; font-weight: normal; text-decoration: none; background-color: #666666}
+#linkList a:active {color: #FF0000;	text-decoration: underline overline; background-color: #FFFFFF}
+
+#lselect {width: 121px; left: 0px; top: -1px; z-index: 1; padding-top: 23px}
+
+#larchives {background-image: url(archives.jpg); background-repeat: no-repeat; left: 0px; width: 121px; z-index: 1;	padding-top: 23px; background-position: -9px 0px}
+li {list-style-position: outside; list-style: url(li.jpg); margin: 0px 10px 0px -10px; padding-top: 7px}
+
+#lresources {background-image: url(resources.jpg); background-repeat: no-repeat; left: 0px;	width: 121px; z-index: 1; padding-top: 23px; background-position: -9px 0px}

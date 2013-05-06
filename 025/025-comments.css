@@ -1,0 +1,569 @@
+/* css Zen Garden submission 025 - 'mnemonic', by Dave Shea, http://www.mezzoblue.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2003, Dave Shea */
+/* Added: July, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/* Built in Nick Bradbury's wonderful TopStyle Pro - http://www.bradsoft.com/topstyle/ */
+/* See http://www.csszengarden.com/025/025-comments.css for the fully commented version of this file. */
+/* See the last section, MOS Enhancements, on why some things look different between IE and the rest */
+
+
+/* Basic HTML Elements */
+
+/* I'm not convinced this is necessary. */
+html {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Basic, n'est pas? The background image is the set of faint yellow lines */
+body {
+	font-size: small;
+	font-family: arial, sans-serif;
+	background: #B0A40B url(bg-1.gif) top left repeat-x;
+	margin: 0px;
+	padding: 0px;
+}
+
+acronym {
+	border-bottom: none;
+}
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a:link {
+	color: #DF0245;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:visited {
+	color: #6F4600;
+	font-weight: normal;
+	text-decoration: underline;
+}
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+
+
+/*Structural Elements */
+/* the background is the repeating grid running down the right side of the page. So to create a layered effect with the
+    repeating lines background of the body */
+#container {
+	background: transparent url(bg-2.gif) top right repeat-y;
+}
+#intro {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* The repeating background is what holds together our right and left halves of the header */
+#pageHeader {
+	height: 171px;
+	padding: 0px;
+	background: transparent url(bg-4.gif) top left repeat-x;
+}
+
+/* A bit of trickery. Since the h2 contains all the text, all of a sudden we have a free, modifiable element on our
+   hands. Let's use it, shall we? */
+#pageHeader h1 {
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	width: 396px;
+	height: 171px;
+	background: transparent url(cr-tl.jpg) top right no-repeat;
+}
+#pageHeader h1 span {
+	display: none;
+}
+#pageHeader h2 {
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 350px;
+	height: 171px;
+	background: transparent url(cr-tr.gif) top right no-repeat;
+}
+#pageHeader h2 span {
+	display: none;
+}
+
+#quickSummary p.p1 {
+	width: 310px;
+	height: 67px;
+	background: transparent url(cr-r1.png) top right no-repeat;
+	position: absolute;
+	top: 171px;
+	right: 0px;
+	margin: 0px;
+}
+#quickSummary p.p1 span {
+	display: none;
+}
+#quickSummary p.p2 {
+	position: absolute;
+	top: 154px;
+	left: 25px;
+	margin: 0px;
+	font-size: 10px;
+	color: #CDC667;
+	padding-left: 8px;
+	background: transparent url(glitch.gif) center left no-repeat;
+}
+#quickSummary p.p2 a {
+	color: #D9D48C;
+	font-weight: bold;
+	text-decoration: none;
+}
+#quickSummary p.p2 a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* Yeah. I knew you'd call me on this sooner or later. See, I figure this section of text has the least importance on
+    this page. It's about the equivalent of my top left corner graphic - nice, but not necessary. Besides, it's not like
+    anyone's actually reading the page anymore. And if they are, well, all 24 of the other designs have this text.
+
+   All of this is me making excuses because through some remarkably poor judgement I don't have a container
+   other than the big #container which encompassing the header and the rest of the text. Which was
+   a problem when it came to the white background. Ah well.
+*/
+#preamble {
+	display: none;
+}
+
+/* I reaaaallly wanted to give this a scrollbar, and keep the whole design constrained vertically. But the validation
+    links at the top wouldn't display properly when absolutely positioned outside of this white box. Ah well. */
+#supportingText {
+	font: 85%/140% arial, sans-serif;
+	color: #302D0A;
+	background-color: #fff;
+	border: solid 1px #997E00;
+	/*height: 350px;
+	overflow: auto;*/
+	margin-left: 21px;
+	margin-right: 310px;
+	padding: 10px 20px;
+}
+
+#explanation h3 {
+	height: 10px;
+	background: transparent url(h_sowhat.gif) top left no-repeat;
+}
+#participation h3 {
+	height: 10px;
+	background: transparent url(h_participation.gif) top left no-repeat;
+}
+#benefits h3 {
+	height: 10px;
+	background: transparent url(h_benefits.gif) top left no-repeat;
+}
+#requirements h3 {
+	height: 10px;
+	background: transparent url(h_requirements.gif) top left no-repeat;
+}
+#explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span {
+	display: none;
+}
+
+/* Let's get these pesky links back up to the top, shall we? */
+/* If you're wondering why IE sees one thing and Mozilla/Opera/Safari see another, look way down below under 
+    the 'enhancements' section for the details. The following is the IE style */
+#footer {
+	z-index: 1;
+	position: absolute;
+	top: 64px;
+	left: 150px;
+	text-align: center; 
+	width: 257px;
+	background: transparent url(bg-6.png) top left no-repeat;
+	height: 45px;
+	padding-top: 13px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	height: 32px;
+}
+#footer a:link, #footer a:visited {
+	font-size: 10px;
+	font-weight: normal;
+	color: #fff;
+	text-decoration: none;
+	padding: 4px 12px 4px 13px;
+}
+#footer a:hover {
+	background: transparent url(bg-6a.png) center center no-repeat;
+}
+/*#footer a {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	float: left;
+	width: 46px;
+	height: 45px;
+	margin: 0px;
+	margin-right: 10px;
+	background: transparent url(bg-5.png) top left no-repeat;
+}
+#footer a:hover {
+		background: transparent url(bg-5a.png) top left no-repeat;
+}*/
+
+
+/* left hand fooling around */
+#lselect {
+	position: absolute;
+	top: 238px;
+	right: 0px;
+	background: transparent url(cr-r2a.png) top right no-repeat;
+	width: 310px;
+	height: 213px;
+	padding: 10px 60px 10px 55px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 195px;
+	height: 193px;
+  }
+#lselect h3 {
+	height: 15px;
+	background: transparent url(h_select.gif) top left no-repeat;
+	margin: 0px 10px 8px 0px;
+	position: relative;
+	left: -20px;
+}
+#lselect h3 span {
+	display: none;
+}
+#lselect li {
+	font: normal 10px arial, sans-serif;
+	line-height: 170%;
+	text-decoration: none;
+	color: #6D6100;
+	letter-spacing: -1px;
+}
+#lselect a {
+	font: bold 10px arial, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: normal;
+}
+#lselect a.c {
+	font-weight: normal;
+	color: #6D6100;
+	text-transform: lowercase;
+	letter-spacing: -1px;
+}
+#lselect a:hover {
+	text-decoration: underline;
+}
+
+#larchives {
+	position: absolute;
+	line-height: 80%;
+	text-align: center;
+	top: 451px;
+	right: 0px;
+	background: transparent url(cr-r3a.png) top right no-repeat;
+	width: 310px;
+	height: 50px;	
+	padding: 15px 65px 6px 45px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 200px;
+	height: 29px;
+}
+#larchives h3 {
+	display: none;
+}
+#larchives li {
+	font: normal 10px arial, sans-serif;
+	display: inline;
+	padding-right: 6px;
+}
+#larchives li a {
+	color: #443901;
+	text-decoration: none;
+}
+#larchives li a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+  
+#lresources {
+	height: 74px;
+	background: transparent url(bg-7.png) top right repeat-x;
+}
+#lresources h3 {
+	width: 310px;
+	height: 74px;
+	float: right;
+	background: transparent url(cr-br.png) top right no-repeat;
+	margin: 0px;
+}
+#lresources h3 span {
+	display: none;
+}
+#lresources ul {
+	padding: 37px 0px 0px 25px;
+}
+#lresources li {
+	display: inline;
+}
+#lresources li a {
+	color: #fff;
+	font-size: 9px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: lowercase;
+	padding-right: 5px;
+}
+
+#lresources li a:hover {
+	text-decoration: underline;
+}
+
+/* Extra elements */
+/* the top left corner chunk */
+#extraDiv1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 750px;
+	height: 118px;
+	background: transparent url(mnemonic.gif) top left no-repeat;
+}
+/* there are a few little subtle animated bits. see if you can spot 'em. */
+#extraDiv2 {
+	width: 90px;
+	height: 18px;
+	position: absolute;
+	top: 112px;
+	left: 156px;
+	background: transparent url(ani1.gif) top left no-repeat;
+}
+#extraDiv3 span {
+	width: 61px;
+	height: 51px;
+	position: absolute;
+	top: 13px;
+	left: 315px;
+	background: transparent url(ani2.gif) top left no-repeat;
+}
+#extraDiv4 {
+	width: 256px;
+	height: 6px;
+	position: absolute;
+	top: 45px;
+	left: 98px;
+	background: transparent url(ani3.gif) top left no-repeat;
+}
+#extraDiv5 {
+	width: 100%;
+	position: relative;
+	top: -21px;
+}
+#extraDiv5 span {
+	float: right;
+	width: 209px;
+	height: 2px;
+	background: transparent url(ani4.gif) top left no-repeat;
+	margin-right: 40px;
+}
+
+
+
+
+/* 
+
+
+
+
+	**** Beginning of Advanced Effects ****
+
+
+
+
+
+	Let's keep the Mozilla/Opera/Safari upgrades separate, shall we? 
+	Brace yourself. It's about to get ugly.
+	
+	These are not for the faint of heart. It should be noted that most aren't actually hacks, they are
+	all legitimate uses of CSS-2 and a bit of CSS-3, and are used to extend the capabilities for browsers that 
+	support them.
+	
+	A lot of the ugliness is myself fighting with myself, since I now see a lot of spots where I could have
+	provided better initial markup. Live and learn.
+*/
+
+/* The > is a CSS2 selector. Roughly translated, this selects all li's that are children of ul's within #lselect.
+    unsupported by IE6, so anything we do here is neatly ignored by it */
+#lselect ul>li {
+	width: 100px;
+	line-height: 10px;
+}
+#lselect ul>li a {display: block;}
+#lselect ul>li a.c {display: inline;}
+
+/* The only way I have control over each individual item 
+	in this list is by using the combination of CSS-2
+	selectors below. This works in advanced browsers. 
+	The theory: each new level's style controls it, plus
+	the elements below it. Since I've defined all 8 links,
+	the net effect is that I control each individually. 
+	
+	For what the > and + mean, consult
+	http://www.w3.org/TR/REC-CSS2/selector.html
+	*/
+#lselect ul>li {position: relative; left: -14px;}
+#lselect ul>li+li {position: relative; left: -12px;}
+#lselect ul>li+li+li {position: relative; left: -10px;}
+#lselect ul>li+li+li+li {position: relative; left: -8px;}
+
+/* What a headache. The right column's top position is entirely
+	dependent on the bottom of the left, which really messes with
+	things when you throw font re-sizing into the mix. This
+	seems to hold up best. I thought of absolute positioning, but
+	it had its own set of problems. */
+#lselect ul>li+li+li+li+li {position: relative; left: 98px; top: -11em;}
+#lselect ul>li+li+li+li+li+li {position: relative; left: 100px; top: -11em;}
+#lselect ul>li+li+li+li+li+li+li {position: relative; left: 102px; top: -11em;}
+#lselect ul>li+li+li+li+li+li+li+li {position: relative; left: 104px; top: -11em;}
+
+
+/* 	Whoa. What is this that we're looking at? [accesskey="p"]? What IS that? Welcome 
+	to attribute selectors. In this case the elements are being selected on the basis
+	of the 'accesskey' attribute, and which value is set. The Previous link, with
+	its accesskey value of 'p', is given a slightly different width and a separate
+	background image from the Next link, with its value of 'n'.
+	
+	Anyway, the bulk of what the following really complicated looking selectors do 
+	is apply images to the archives section, rather than text links.
+	*/
+#larchives ul>li a[accesskey="p"] {
+	display: block;
+	width: 37px;
+	height: 0;
+	overflow: hidden;
+	padding-top: 18px;
+	background: transparent url(archive-b1a.gif) top left no-repeat;
+	position: absolute;
+	top: 16px;
+	left: 70px;
+	color: #958500;
+}
+#larchives ul>li a[accesskey="p"]:hover {
+	background: transparent url(archive-b1b.gif) top left no-repeat;
+}
+
+#larchives ul>li a[accesskey="n"] {
+	display: block;
+	width: 31px;
+	height: 0;
+	overflow: hidden;
+	padding-top: 18px;
+	background: transparent url(archive-b2a.gif) top left no-repeat;
+	position: absolute;
+	top: 16px;
+	left: 108px;
+	color: #958500;
+}
+#larchives ul>li a[accesskey="n"]:hover {
+	background: transparent url(archive-b2b.gif) top left no-repeat;
+}
+
+
+#larchives ul>li+li a[accesskey="w"] {
+	display: block;
+	width: 35px;
+	height: 0;
+	overflow: hidden;
+	padding-top: 18px;
+	background: transparent url(archive-b3a.gif) top left no-repeat;
+	position: absolute;
+	top: 16px;
+	left: 170px;
+	color: #958500;
+}
+#larchives ul>li+li a[accesskey="w"]:hover {
+	background: transparent url(archive-b3b.gif) top left no-repeat;
+}
+
+
+
+
+
+/* I tried running the Owen Hack (http://www.albin.net/CSS/OwenHack.html) to keep Op<7 
+    from doing this, but Op7 missed it too. So Op 6 has to suffer for it. I've heard Op7 is
+    supposed to be smarter than that - I guess not. */
+#supportingText>div#footer {
+	background: none;
+}
+
+/* I wish I had been thinking clearer on this, and arranged these links as an unordered list rather than just a loose
+    collection of links inside a DIV. The effect below would have been possible even in IE. However, since I didn't,
+    I have to do a bit of hacking. 
+	
+    The nice thing about this section is that I get to use PNGs with alpha transparency since IE is out of the picture. */
+div#footer>a:link, div#footer>a:visited {
+	display: block;
+	width: 46px;
+	height: 45px;
+	padding: 13px 0px 0px 0px;
+	background: transparent url(bg-5.png) top left no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+div#footer>a:hover {
+	background: transparent url(bg-5a.png) top left no-repeat;
+}
+/* If you're with me so far, this isn't too new. All I'm doing is selecting each link individually
+    and setting it's position. Same theory as the design list - each new level controls itself plus levels
+    below it. */
+div#footer>a+a:link, div#footer>a+a:visited {left: 53px;}
+div#footer>a+a+a:link, div#footer>a+a+a:visited {left: 106px;}
+div#footer>a+a+a+a:link, div#footer>a+a+a+a:visited {left: 159px;}
+div#footer>a+a+a+a+a:link, div#footer>a+a+a+a+a:visited {left: 212px;}
+
+/* 	nb: right now, for whatever reason, this is not working. I'm assuming Mozilla is 
+	intelligent enough to realize that it's completely hidden, and therefore doesn't
+	bother downloading it. I'll have to investigate further. My notes remain:
+	
+	------
+
+	Now here's a fun little problem. I want to load the hover state
+	for the links. As you've seen, I've had nothing but a headache getting
+	those to the point where I could style them in the first place due to
+	lack of containers, so I'll have to pre-load it elsewhere on an element
+	that's going to be hidden.
+	
+	Why not just load it as a background to one of the links then immediately
+	replace it? Because Mozilla is smart - it doesn't bother downloading
+	images that aren't used. Good for the end user, bad for me right now.
+	
+	Luckily, one of my extra fancy divs is the right size, so I can use the
+	span it contains for the actual image, and drop the hover image into
+	the div background. Barring any nasty glitches, it should be covered 
+	up nicely. I'd like to pre-load the archive links too, but you just
+	can't have everything. 
+
+*/
+#extraDiv3 {
+	background: transparent url(bg-5a.png) top left no-repeat;
+}
