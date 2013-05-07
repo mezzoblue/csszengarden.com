@@ -602,15 +602,72 @@ $designList = array(
 			"Eric Meyer &amp; Dave Shea",
 			"http://www.meyerweb.com/",
 	),
+	array(
+			"101",
+			"Punkass",
+			"Mikhel Proulx",
+			"",
+	),
+	array(
+			"102",
+			"Revolution!",
+			"David Hellsing",
+			"",
+	),
+	array(
+			"103",
+			"Odyssey",
+			"Terrence Conley",
+			"http://www.liquidarch.com/",
+	),
+	array(
+			"104",
+			"Invitation",
+			"Brad Daily",
+			"http://www.bradleyboy.com/",
+	),
+	array(
+			"105",
+			"Austrian&#8217;s Darker Side",
+			"Rene Grassegger",
+			"#",
+	),
+	array(
+			"106",
+			"Mediterranean",
+			"John Whittet",
+			"http://www.basseq.com/",
+	),
+	array(
+			"107",
+			"Defiance",
+			"James Ehly",
+			"http://www.ehlydesign.com/",
+	),
 
-
-
-
-
+	// 108 removed for copyright violation
+	
+	array(
+			"109",
+			"Pneuma",
+			"Adam Polselli",
+			"http://www.adampolselli.com/",
+	),
+	array(
+			"110",
+			"Perfume de Gardenias",
+			"Armando Sosa",
+			"http://nolimit-studio.com/yosoysosa/",
+	),
+	array(
+			"111",
+			"Gr&#252;ener Entwurf",
+			"Hannah F. Liesong",
+			"http://www.liesong.de/",
+	),
 
 
 
 );
-
 
 ?>

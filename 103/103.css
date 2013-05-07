@@ -1,0 +1,399 @@
+/* css Zen Garden submission 103 - 'Odyssey', by Terrence Conley, http://www.liquidarch.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Terrence Conley */
+/* Added: May 3rd, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* Inspired by Homer's Odyssey*/
+/* All original artwork copyright 2004, Terrence Conley */
+
+
+/*B A S I C  T A G  R U L E S */
+
+body { 
+color: #000; 
+background:url(ody-bg3.jpg) repeat-y #000 fixed;
+margin:0; 
+padding:0;
+}
+
+h3 span, h2 span, h1 span{
+display:none;
+margin:0;
+padding:0;
+}
+
+h3, h2, h1, p{
+margin:0;
+padding:0;
+}
+
+a:link, a:visited {  
+text-decoration: none; 
+color: #C29E47;
+}
+
+a:hover, a:active { 
+text-decoration: underline; 
+color: #FFEAC8;
+}
+
+abbr{
+margin:0;
+cursor:help;	
+}
+
+
+ul{
+list-style:none;
+margin:0;
+padding:0 0 10px 0;
+}
+
+/* M A C R O  R U L E S */
+
+.page-wrapper { 
+position: relative;
+margin-bottom: 0px;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+.intro { 
+position:relative;
+width:auto;
+margin-bottom:0px;	
+margin-left:35px;
+background:url(intro-bg.gif) top left repeat-x transparent; 
+}
+
+
+
+.supporting{
+width:424px;
+margin-left:33px;
+text-align:center;
+font:.8em/1.5em arial,sans-serif;
+}
+
+.supporting p{
+text-align:left;
+margin:20px 105px 20px 30px;
+padding:0;
+}
+
+.supporting .p1{
+padding:0;
+margin-top:-40px;
+}
+
+* html .supporting.p1 {margin-top:0px;}
+
+.supporting .p5{
+margin-bottom:10px;
+font:11px/14px  arial, sans-serif;
+font-style:italic;
+}
+
+.sidebar{
+background:transparent;
+position:absolute;
+left:405px;
+right:0px;
+top:98px;
+height:320px;
+color:#73552A;
+font-size:.6em;
+font-family:arial, sans-serif;
+overflow:hidden;
+background:url(list-bg.gif) bottom right repeat-y;
+}
+
+* html .sidebar {left:375px; right:36px}
+
+.sidebar .wrapper{
+height:100%;
+background:url(blend.gif) repeat-y;
+padding:12px 25px 5px 15px;
+}
+
+/* M I C R O  R U L E S */
+
+header{
+height:98px;
+background:url(title2.gif) -2px 0px no-repeat;
+margin-left:0px;
+}
+
+header h1, header h2{
+display:none;
+}
+
+
+.summary{
+position:absolute;
+left:425px;
+top:425px;
+text-align:left;
+width:18em;
+height:95px;
+color:#AF9874;
+padding:0px 10px;
+}
+
+* html .summary{top:435px;}
+
+
+.summary p{
+font:.7em/1.2em  arial, sans-serif;
+font-style:italic;
+}
+
+.summary .p2{
+color:#E4CF9D;
+line-height:10px;
+line-height:30px;
+}
+
+.preamble{
+height:450px;
+width:424px;
+font:12px/15px  arial, georgia, serif;
+font-style:italic;
+position:relative;
+color:#AF9874;
+background:url(preamb2.gif) -2px 231px no-repeat;
+text-align:left;
+overflow:hidden;
+
+}
+
+.preamble p{
+margin-top:4px;
+margin-left:20px;
+width:310px;
+text-indent:10px;
+}
+
+.preamble h3{
+color:#E4CF9D;
+height:20px;
+padding-top:20px;
+margin:0px;
+margin-left:20px;
+background:url(preamb_title.gif) bottom left no-repeat;
+}
+
+.preamble abbr, .summary abbr{
+color:#E4CF9D;
+}
+
+.explanation .p1{
+text-indent:10px;
+margin-top:-90px;
+}
+
+
+.explanation{
+color:#E4CF9D;
+padding:0;
+margin-bottom:-30px;	
+}
+
+
+
+.explanation h3{
+margin:0;
+background:url(hd-explain.gif) 0 0 no-repeat transparent;
+height:134px;
+}
+
+.participation{
+margin-bottom:-30px;
+margin-top:2em;
+color:#E4CF9D;
+padding:0;	
+}
+
+.participation h3{
+background:url(hd-partic.gif) 0 0 no-repeat transparent;
+height:134px;	
+}
+
+
+.benefits{
+margin-bottom:-30px;
+margin-top:2em;
+color:#E4CF9D;
+padding:0;
+}
+
+.benefits h3{
+background:url(hd-benefits.gif) 0 0 no-repeat transparent;
+height:134px;		
+}
+
+
+.requirements{
+margin-top:2em;
+color:#E4CF9D;
+padding:0;
+}
+
+.requirements h3{
+background:url(hd-require.gif) 0 0 no-repeat transparent;
+height:134px;
+}
+
+footer{
+background:url(footer.gif) top  left no-repeat black;
+height:56px;
+text-align:left;
+padding-left:30px;
+}
+
+
+footer a:link, footer a:visited {
+color: #C29E47;
+text-transform:uppercase;
+font:11px/54px  arial, serif;
+}
+
+footer a:hover{
+text-decoration: none; 
+color: #FFEAC8;
+text-transform:uppercase;
+}
+	
+/* T H E   L I S T S */
+
+
+.design-selection h3, .design-archives h3, #lfavorites h3, .zen-resources h3 {
+color:#E4CF9D;
+padding-left:12px;
+}
+
+.design-selection h3{
+background:url(select.gif) 0 0 no-repeat;
+height:17px;
+}	
+
+* html .design-selection h3 {height:17px;}
+
+.design-archives h3{
+background:url(archives.gif) 0 0 no-repeat;
+height:17px;	
+}
+
+* html .design-archives h3 {height:17px;}
+
+#lfavorites h3{
+background:url(favorites.gif) 0 0 no-repeat;
+height:17px;
+	
+}
+
+* html #lfavorites h3 {height:17px;}
+
+
+.zen-resources h3{
+background:url(resources.gif) 0 0 no-repeat;
+height:17px;
+	
+}
+
+* html .zen-resources h3 {height:17px;}
+
+.design-selection, #lfavorites{
+float:left;
+margin-right:0px;
+width:18em;
+}
+
+.design-archives{
+float:left;
+margin-right:0px;
+width:14em;
+}
+.zen-resources{
+float:left;
+margin-right:0px;
+width:16em;
+}
+
+.design-selection h3, .design-archives h3, .zen-resources h3, #lfavorites h3{
+margin:0 0 4px 0;
+}
+
+.design-selection li, #lfavorites li{
+padding-bottom:6px;
+padding-left:25px;
+background:url(bullet.gif) 14px .4em no-repeat;
+}
+
+.design-selection li a, #lfavorites li a{
+display:inline;
+}
+
+.design-archives li, .zen-resources li{
+padding-bottom:2px
+}
+
+.design-selection a:link, .design-selection a:visited, #lfavorites a:link, #lfavorites a:visited{
+font-family:georgia,"times new roman", serif;
+font-size:120%;
+padding-bottom:2px;
+color:#E4CF9D;
+
+
+text-transform:capitalize;
+}
+
+.design-selection a:hover, #lfavorites a:hover{
+font-family:georgia,"times new roman", serif;
+font-size:120%;
+color:#C29E47;
+padding-bottom:2px;
+text-transform:capitalize;
+text-decoration:none;
+}
+.design-selection a.designer-name:link, .design-selection a.designer-name:visited, #lfavorites a.designer-name:link, #lfavorites a.designer-name:visited{
+background:transparent;
+font-size:100%;
+color:#AF9874;
+padding:0;
+display:inline;
+}
+
+.design-selection a.designer-name:hover, #lfavorites a.designer-name:hover{
+background:transparent;
+font-size:100%;
+color:#C29E47;
+display:inline;
+padding:0;
+}
+
+.design-archives a,.zen-resources a{
+font-family:georgia,"times new roman", serif;
+color:#E4CF9D;
+text-transform:capitalize;;
+font-size:100%;
+padding:0 0 10px 30px;
+}
+
+.design-archives a:hover,.zen-resources a:hover{
+color:#C29E47;
+}
+
+
+
+
+/* E X T R A  D I V S */
+
+.extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {display:none}	

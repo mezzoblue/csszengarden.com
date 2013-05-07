@@ -1,0 +1,220 @@
+/* css Zen Garden submission 106 - 'Mediterranean', by John Whittet, http://www.basseq.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, John Whittet */
+/* Added: May 31st, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/*
+	image: Erdogan Ergun
+		http://yunus.hacettepe.edu.tr/~ergun/
+		http://www.sxc.hu
+*/
+
+/*
+	Works as expected in:
+		Mozilla 1.6 Mac
+		Safari 1.0 Mac
+		Firefox 0.8 Mac
+
+	Small loss of effects in:
+		IE 5.2 Mac
+		IE 5.0 PC
+
+	Errors in:
+		Opera 6.03 Mac - link colors incorrect
+			       - overline instead of underline (??)
+			
+*/
+
+/* Basic Default Styles */
+body {
+	font: 12px Verdana;
+	color: #000;
+	background: #DFE3BA; margin: 5px 0 5px 50%;
+}
+a:link, a:visited {
+	font: 12px "Trebuchet MS", Verdana;
+	text-decoration: underline;
+	color: #000;
+}
+a:hover, a:active {
+	font: 12px "Trebuchet MS", Verdana;
+	text-decoration: none;
+	color: #A03E19;
+}
+/* I probably would have left off the border on the container, but
+   Safari puts some sort of weird top margin on the div if there's
+   no border. Silly, really. */
+.page-wrapper {
+	position: relative;
+	width: 700px;
+	background: #ADB583 url(header.jpg) no-repeat top left;
+	margin: 0 0 0 -350px;
+	/* Could also use margin-left and -right: auto
+		but IE 5 PC doesn't like that */
+	border: 5px solid #FFF;
+}
+h3 {
+	color: #A03E19;
+	font: 22px "Trebuchet MS", Verdana;
+	margin: 0;
+	text-transform: lowercase;
+}
+abbr {
+	border: 0;
+	font-style: normal;
+}
+
+/* Header - just provides space */
+header {
+	height: 350px;
+}
+header span {
+	display: none;
+}
+
+/* Content */
+.summary {
+	margin-top: 50px;
+	width: 430px;
+	margin-left: 250px;
+	color: #42443A;
+}
+.summary a:link, .summary a:visited {
+	color: #42443A;
+}
+.summary a:hover, .summary a:active {
+	color: #42443A;
+}
+/* This .p1 info is in the header image... */
+.summary .p1 {
+	display: none;
+}
+.preamble, .supporting {
+	width: 430px;
+	margin-left: 250px;
+	margin-top: 15px;
+}
+footer { 
+	position: relative; 
+	left: -250px; 
+	width: 400px;
+	height: 20px; 
+	padding: 78px 0 0 50px; 
+	background: #ADB583 url(footer.jpg) no-repeat top left; 
+}
+footer a:link, footer a:visited {
+	color: #61A7BC;
+	text-decoration: none;
+}
+footer a:hover, footer a:active {
+	color: #61A7BC;
+	text-decoration: underline;
+}
+.extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {
+	display: none;
+}
+
+/* Left Bar */
+.page-wrapper .sidebar {
+	position: absolute;
+	left: 18px;
+	top: 340px;
+	width: 198px;
+	font: 10px "Trebuchet MS", Verdana;
+}
+.sidebar h3 {
+	width: 198px;
+	height: 18px;
+	margin-top: 20px;
+}
+.sidebar h3 span {
+	display: none;
+}
+
+/* left header images */
+.sidebar h3.select {
+	background: url(left_select.gif) no-repeat top left;
+}
+.sidebar h3.archives {
+	background: url(left_archive.gif) no-repeat top left;
+}
+.sidebar h3.resources {
+	background: url(left_resources.gif) no-repeat top left;
+}
+.sidebar h3.favorites {
+	background: url(left_favorites.gif) no-repeat top left;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0 0 18px 0;
+	margin: 0;
+	background: url(left_footer.gif) no-repeat bottom left;
+}
+.sidebar ul li {
+	padding: 5px 10px 5px 10px;
+	background: url(li_bg.png) bottom left;
+	border-bottom: 1px solid #1A4861;
+	margin: 0;
+}
+/* li:hover style... have to replace the BG so the color will show up. */
+.sidebar ul li:hover {
+	background: #A03E19 url(spacer.gif);
+	color: #FFF;
+}
+/* bunch of crazy styles... so IE will still look ok when it
+   doesn't parse :hover. */
+.sidebar .design-selection {
+	color: #666;
+}
+.sidebar ul li a {
+	/* this would be block, save for the nbsp at the end of the
+		link for "accessibility" purposes. :P */
+	display: inline;
+	color: #000;
+	text-transform: lowercase;
+}
+.sidebar .design-selection ul li a {
+	font: 14px "Trebuchet MS", Verdana;
+	display: block;
+	color: #000;
+	text-transform: lowercase;
+}
+
+.sidebar .design-selection ul li a.designer-name, .sidebar ul li a.designer-name {
+	display: inline;
+	font: 10px "Trebuchet MS", Verdana;
+	color: #666;
+	text-transform: none;
+}
+/* if the browser doesn't read the :hover pseudoclass, this
+	shouldn't render and the text shouldn't change color */
+.sidebar ul li:hover a, .sidebar .design-selection ul li:hover a {
+	color: #FFF;
+}
+
+/* Crazy :Hovers Experimentation
+	uncomment for fun */
+
+/*
+.preamble p, .explanation p, .participation p, 
+.benefits p, .requirements p {
+	display: none;
+}
+.preamble:hover p, .explanation:hover p, .participation:hover p, 
+.benefits:hover p, .requirements:hover p {
+	display: block;
+}
+.design-selection ul, .design-archives ul, .zen-resources ul {
+	display: none;
+}
+.design-selection:hover ul, .design-archives:hover ul, .zen-resources:hover ul {
+	display: block;
+}
+*/

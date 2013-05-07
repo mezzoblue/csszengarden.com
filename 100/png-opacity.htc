@@ -1,0 +1,78 @@
+<public:component>
+<public:attach event="onpropertychange" onevent="propertyChanged()" />
+<script>
+
+/*
+ * PNG Behavior
+ *
+ * This script was created by Erik Arvidsson (erik(at)eae.net)
+ * for WebFX (http://webfx.eae.net)
+ * Copyright 2002
+ * 
+ * For usage see license at http://webfx.eae.net/license.html	
+ *
+ * Version: 1.01
+ * Created: 2001-??-??	First working version
+ * Updated: 2002-03-28	Fixed issue when starting with a non png image and
+ *                      switching between non png images
+ *          2003-01-06	Fixed RegExp to correctly work with IE 5.0x
+ *
+ */
+
+var supported = /MSIE (5\.5)|[6789]/.test(navigator.userAgent) && navigator.platform == "Win32";
+var realSrc;
+var blankSrc = "blank.gif";
+
+if (supported) fixImage();
+
+function propertyChanged() {
+   if (!supported) return;
+   
+   var pName = event.propertyName;
+   if (pName != "src") return;
+   // if not set to blank
+   if ( ! new RegExp(blankSrc).test(src))
+      fixImage();
+};
+
+function fixImage() {
+
+	// Replace h1's contents with an image. -Porter
+	element.innerHTML = "<img src='ph-flower.png' height=330 width=250 alt='' />";
+	
+	// Get the newly created image for manipulation. -Porter
+	var img = element.firstChild;
+
+   // get src
+   var src = img.src;
+
+   // check for real change
+   if (src == realSrc) {
+      img.src = blankSrc;
+      return;
+   }
+
+   if ( ! new RegExp(blankSrc).test(src)) {
+      // backup old src
+      realSrc = src;
+   }
+   
+   // test for png
+   if ( /\.png$/.test( realSrc.toLowerCase() ) ) {
+      // set blank image
+      img.src = blankSrc;
+      // set filter
+      img.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" +
+                                     src + "',sizingMethod='scale')";
+   		
+			// Remove the background image version of the PNG. -Porter
+			element.style.backgroundImage = "none";
+	 }
+   else {
+      // remove filter
+      img.runtimeStyle.filter = "";
+   }
+}
+
+</script>
+</public:component>

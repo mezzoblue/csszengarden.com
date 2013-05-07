@@ -1,0 +1,287 @@
+/* css Zen Garden submission 110 - 'Perfume de Gardenias', by Armando Sosa, http://nolimit-studio.com/yosoysosa/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Armando Sosa */
+/* Added: June 21st, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+/* basic elements */
+body { 
+	font: 10px/16px verdana; 
+	color: 333; 
+	margin: 0px;
+  background:#f60 url('bg.gif') repeat-y;	 
+	}
+
+h3 { 
+  font-family:georgia;
+	font-style:italic;
+  font-size:14px;
+	letter-spacing: 1px; 
+	margin-bottom: 0px; 
+	text-align:center;
+	color:#c00;
+	}
+	
+a:link { 
+  font-family:"courier new",verdana;
+	font-weight: bold; 
+	text-decoration: none; 
+	color:#c00;
+	text-transform:uppercase;	
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	}
+
+
+	
+/* specific divs */
+.page-wrapper { 
+position:absolute;
+top:0;
+left:50px;
+width:90%;	 
+color:#333;
+padding:0 30px;
+	}
+
+.intro,.supporting{
+text-align:justify;
+}
+
+.intro abbr,.intro abbr .supporting abbr,.supporting abbr{
+  font-family:"courier new",verdana;
+	text-transform:uppercase;
+	color:#000;
+	}
+	
+header {
+position:absolute;
+top:0;
+left:0;
+width:650px;
+height:400px;
+background:#fcc url('head_bg.gif') repeat-x -50px;;
+}
+
+header h1{
+top:-40px;
+left:45px;
+position:absolute;
+width:515px;
+height:70px;
+text-indent:-5000px;
+background:transparent url('zengardenia.gif') no-repeat bottom;
+}
+
+header h2{
+font-family:georgia;
+font-size:25px;
+font-style:italic;
+position:absolute;
+top:15px;
+left:130px;
+padding:0px !important;
+padding:20px;
+color:#900;
+z-index:2
+}
+
+
+.summary{
+position:absolute;
+top:65px;
+left:100px;
+width:350px;
+font-family:georgia;
+font-size:13px;
+font-weight:bold;
+text-align:center;
+padding:15px;
+color:#000;
+z-index:3;
+}
+
+.preamble{
+position:absolute;
+top:200px;
+width:450px;
+left:50px;
+padding:10px;
+}
+
+.supporting{
+padding:15px;
+position:absolute;
+top:500px;
+left:230px;
+width:360px;
+height:600px;
+overflow:auto;
+  /* I've used an ExtraDiv to display the background behind this layer, but IE 
+	doesn't like my idea. So i put the background directly in the Div for browsers 
+	that do not support "!important" */  
+background:transparent !important;
+background:transparent url('supp_bg.gif') no-repeat fixed;
+z-index:2;
+}
+
+
+.explanation{
+margin-top:50px;
+}
+
+footer{
+padding-bottom:100px;
+}
+
+.sidebar{
+text-align:center;
+width:200px;
+height:600px;
+position:absolute;
+top:560px;
+left:5px;
+padding:75px 25px 0px 0px;
+color:#b63;
+background:transparent url('sidebar_bg.gif') no-repeat;
+}
+
+
+.sidebar h3{
+color:#c96;
+}
+
+.sidebar ul{
+margin:0px;
+padding:15px;
+}
+
+.sidebar li{
+margin:0;
+padding:0;
+list-style:none inside;
+display:block;
+padding:2px;
+}
+
+.sidebar a{
+font-family:verdana;
+color:#c96;
+}
+
+h3.select{
+display:none;
+}
+
+.design-selection ul li{
+padding-bottom:5px;
+margin-bottom:5px;
+border-bottom:dotted 1px #b63;
+}
+
+.design-selection ul li a{
+display:block;
+}
+
+.design-selection ul li a.designer-name{
+display:inline;
+text-transform:lowercase;
+}
+
+.zen-resources{
+left:-5px;
+top:710px;
+width:651px;
+position:absolute;
+color:#333;
+background:#900;
+}
+
+.zen-resources h3{
+display:none;
+}
+
+.zen-resources ul li{
+display:inline;
+}
+
+/* Extra Divs */
+
+/* I've used all and everyone of the six provided by the XHTML
+maybe if there were more, i would used it too :P*/
+
+.extra1{
+position:absolute;
+top:-65px ;
+left:580px;
+width:150px;
+height:615px;
+background:transparent url('girl.gif') no-repeat;
+z-index:2;
+}
+
+.extra2{
+position:absolute;
+top:1070px ;
+left:250px;
+width:150px;
+height:200px;
+background:transparent url('girl.gif') no-repeat;
+z-index:2;
+}
+
+/*Because of some weird thing, I cannot make this layer to go under the
+supportingText one, so i've discovered for accident that leaving no space between
+the url for the graphic used in the background and the no-repeat attribute causes IE 
+to not display any background at all*/
+ 
+.extra3{
+position:absolute;
+top:470px;
+left:270px;
+width:430px;
+height:700px;
+background:transparent url('supp_bg.gif')no-repeat; 
+z-index:0;
+}
+
+.extra4{
+position:absolute;
+top:1098px;
+left:590px;
+background:transparent url('gardenia.gif') no-repeat;
+width:200px;
+height:180px;
+}
+
+.extra5{
+position:absolute;
+top:420px;
+left:50px;
+background:transparent url('dead.gif') no-repeat;
+width:515px;
+height:150px;
+}
+
+.extra6{
+position:absolute;
+top:0px;
+left:0px;
+background:transparent url('gardenia.gif') no-repeat;
+width:200px;
+height:200px;
+}
+
+
+

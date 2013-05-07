@@ -1,0 +1,375 @@
+/* css Zen Garden submission 101 - 'punkass', by Mikhel Proulx, http://www.mikhel.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Mikhel Proulx */
+/* Added: May 3rd, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: transparent url(bg.gif) no-repeat top left;
+	background-color: #ffffff;
+	width: 1972px;
+	height: 667px;
+	font-family: Verdana; 
+	font-size: 11px;
+	line-height: 110%;
+	color: #333333;
+}
+
+a:link {
+	font-weight: bold;
+	color: #075E7B;
+	text-decoration: none;
+}
+
+a:visited {
+	font-weight: bold;
+	color: #075E7B;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	font-weight: bold;
+	color: #737373;
+	text-decoration: underline;
+}
+
+
+.page-wrapper {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+}
+
+.intro {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	z-index: 1;
+}
+
+header {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+}
+
+header h1 {
+	z-index: 1;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	background: transparent url(tit.gif) no-repeat top left;
+	width: 278px;
+	height: 186px;
+	left: 25px;
+	top: 165px;
+	
+}
+
+header h1 span {
+	display: none;
+}
+
+header h2 {
+	z-index:1;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	background: #fff url(cat.gif) no-repeat top left;
+	width: 193px;
+	height: 18px;
+	left: 225px;
+	top: 40px;
+	opacity: .70;
+}
+
+header h2 span {
+	display: none;
+}
+
+.summary {
+	
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	width: 300px;
+	left: 230px;
+	top: 50px;
+background: #fff;
+	opacity: .70;
+}
+
+.summary p  {
+	z-index:2;
+	position: relative;
+	margin: 0px;
+	padding: 6px 0px 6px 0px;
+	
+}
+
+.preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
+	display: none;
+	
+}
+
+.preamble p, .explanation p, .participation p, .benefits p, .requirements p  {
+	position: relative;
+	margin: 0px;
+	padding: 6px 0px 6px 15px;
+}
+
+.preamble {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	background: #fff;
+	width: 260px;
+	height: 300px;
+	left: 560px;
+	top: 29px;
+	opacity: .70;
+}
+
+.preamble h3 {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	background: transparent url(read.gif) no-repeat top left;
+	width: 298px;
+	height: 25px;
+}
+
+.supporting {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	z-index: 0;
+}
+
+.explanation {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	width: 300px;
+	height: 300px;
+	left: 773px;
+	top: 360px;
+	background: #fff;
+	opacity: .70;
+}
+
+.explanation h3 {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	background: transparent url(head_explanation.gif) no-repeat top left;
+	width: 241px;
+	height: 25px;
+}
+
+.participation {
+	position: absolute;
+	left: 1059px;
+	top: 10px;
+	padding: 0px;
+	width: 300px;
+	height: 400px;
+	background: #fff;
+	opacity: .70;
+}
+
+.participation h3 {
+	position: relative;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	background: transparent url(head_participation.gif) no-repeat bottom left;
+	width: 142px;
+	height: 25px;
+}
+
+.benefits {
+	position: absolute;
+	left: 1260px;
+	top: 470px;
+	padding: 0px;
+	background: transparent;
+	width: 300px;
+	height: 170px;
+	background: #fff;
+	opacity: .70;
+}
+
+.benefits h3 {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	background: transparent url(head_benefits.gif) no-repeat top left;
+	width: 94px;
+	height: 25px;
+}
+
+.requirements {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	background: transparent;
+	width: 300px;
+	height: 300px;
+	left: 1593px;
+	top: 23px;
+	background: #fff;
+	opacity: .70;
+}
+
+
+.requirements h3 {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	background: transparent url(head_requirements.gif) no-repeat top left;
+	width: 153px;
+	height: 25px;
+}
+
+footer {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	background: transparent;
+	width: 300px;
+	left: 1650px;
+	top: 633px;
+	background: #fff;
+	opacity: .70;
+}
+
+.sidebar {
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+.sidebar ul {
+	position: relative;
+	margin: 0px;
+	padding: 2px 0px 0px 23px;
+	list-style-type: none;
+}
+
+.sidebar li {
+	position: relative;
+	margin: 0px;
+	padding: 2px 0px 1px 0px;
+}
+
+.sidebar a {
+	font-weight: normal;
+}
+
+.sidebar .wrapper {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.design-selection h3 span, .design-archives h3 span, .zen-resources h3 span {
+	display: none;
+}
+
+
+.design-selection {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	width: 145px;
+	left: 360px;
+	top: 189px;
+	background: #fff;
+	opacity: .70;
+}
+
+.design-selection h3 {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	background: transparent url(head_select.gif) no-repeat top left;
+	width: 127px;
+	height: 19px;
+}
+
+.design-selection a {
+	margin: 0px;
+	padding: 4px 0px 0px 0px;
+	font-weight: bold;
+	display:block;
+}
+
+.design-selection a.designer-name {
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+	display:inline;
+}
+
+.design-archives {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	width: 270px;
+	left: 30px;
+	top: 461px;
+	background: #fff;
+	opacity: .70;
+}
+
+.design-archives h3 {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	background: transparent url(head_archives.gif) no-repeat top left;
+	width: 72px;
+	height: 19px;
+}
+
+.zen-resources {
+	position: absolute;
+	left: 45px;
+	top: 535px;
+	padding: 0px;
+	width: 270px;
+	background: #fff;
+	opacity: .70;
+}
+
+.zen-resources h3 {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	background: transparent url(head_resources.gif) no-repeat top left;
+	width: 88px;
+	height: 19px;
+}
+
+.extra1 {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	background: transparent;
+	width: 5px;
+	height: 258px;
+	left: 1095px;
+	top: 117px;
+}
+
+.extra2, .extra3, .extra4, .extra5, .extra6 {
+	display: none;
+}
