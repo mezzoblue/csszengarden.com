@@ -1,0 +1,140 @@
+/* css Zen Garden submission 156 - 'Table Layout Assassination', by Marko Krsul & Marko Dugonjic, http://web.burza.hr/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Marko Krsul & Marko Dugonjic */
+/* Added: Mar. 7th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/* general settings */
+
+* { margin: 0; padding: 0; }
+
+html { background: #000; color: #000; font: 65%/1.5 Arial, Helvetica, sans-serif; }
+
+body { background: #000 url(body.gif) repeat-y 747px 0; }
+
+p { font-size: 1.2em; line-height: 19px; }
+
+* html p { line-height: 1.5em; }
+
+ul { list-style: none; }
+
+a { color: #da0000; text-decoration: none; border-bottom: 1px solid #da0000; }
+
+a:hover { color: #000; border: 0 !important; }
+
+abbr { border: 0; font-style: italic; color: #da0000; cursor: help; }
+
+a abbr { color: inherit; }
+
+/* header and overall layout */
+
+.page-wrapper { position: relative; width: 747px; background: #fff url(ferlauf.png) repeat-x 0 95%; }
+
+.intro { background: url(header.jpg) no-repeat 0 0; width: 747px; padding-top: 184px; }
+
+header { position: absolute; left: -9999px; top: 0; width: 0; height: 0; overflow: hidden; }
+
+.summary { width: 175px; margin-left: 262px; }
+
+.summary p { margin-bottom: 10px; color: #f6f6f6; }
+
+.summary abbr { color: #fff; font-weight: bold; }
+
+.summary a { color: #ff0705; font-weight: bold; border-bottom: 1px solid #ff0705; }
+
+.summary p.p2 { width: 130px; margin-bottom: 45px; }
+
+.preamble p, .supporting p { margin-left: 262px; width: 282px; margin-bottom: 1em; text-align: justify; }
+
+.preamble a, .supporting a { font-weight: bold; }
+
+.summary h3, .preamble h3, .supporting h3 { height: 46px; margin-left: 262px; }
+
+.supporting footer { position: absolute; top: 150px; left: 0; margin: 0 !important; width: 262px; height: 200px; text-align: center; }
+
+* html .supporting footer/**/{ left: -262px; }
+
+footer a { border: 0; font-size: 1.1em; }
+
+footer a:hover { text-decoration: underline; }
+
+.supporting, .supporting .requirements { position: relative; }
+
+.supporting { background: url(footer.gif) no-repeat 0 100%; }
+
+.supporting .requirements .p5 { margin: 0; width: 747px; padding: 140px 0 20px 0; text-align: center; color: #fff; font-size: 1.1em; }
+
+.supporting .requirements .p5 a { color: #ff0705; }
+
+.extra1 { position: absolute; top: 367px; left: 45px; width: 161px; height: 411px; background: url(herLegs.gif) no-repeat 0 0; }
+
+.extra2, .extra3, .extra4, .extra5, .extra6 { display: none; }
+
+/* h3 image replacements and icons */
+
+h3 { background-repeat: no-repeat; background-position: 0 15px; }
+
+h3 span { display: block; text-indent: -9999px; }
+
+.preamble h3 { background-image: url(h3road.gif); }
+
+.preamble { background: url(road.gif) no-repeat 216px 0; }
+
+.explanation h3 { position: relative; background-image: url(h3about.gif); }
+
+.explanation h3 span { position: absolute; left: -46px; top: 0; width: 46px; height: 38px; background: url(about.gif) no-repeat 0 0;  }
+
+.participation h3 { background-image: url(h3part.gif); }
+
+.participation { background: url(part.gif) no-repeat 223px 20px; }
+
+.benefits h3 { background-image: url(h3ben.gif); }
+
+.benefits { background: url(ben.gif) no-repeat 223px 5px; }
+
+.requirements h3 { background-image: url(h3req.gif); }
+
+.requirements { background: url(req.gif) no-repeat 225px 18px; }
+
+.sidebar h3 { font-size: 1.2em; height: 20px; background-position: 0 0; margin-bottom: 1em; }
+
+.design-selection h3 { background-image: url(h3sel.gif); }
+
+.design-archives h3 { background-image: url(h3arc.gif); }
+
+.zen-resources h3 { background-image: url(h3res.gif); }
+
+/* sidebar */
+
+.sidebar { position: absolute; top: 387px; right: 0; width: 182px; }
+
+.sidebar ul { margin-bottom: 2em;  }
+
+.sidebar li { font-size: 1.1em; padding: 0 16px; }
+
+.sidebar a { font-weight: bold; border: 0; text-transform: lowercase; }
+
+.sidebar a:hover { text-decoration: underline; }
+
+.sidebar abbr { font-style: normal; cursor: pointer; }
+
+.design-selection li { margin-bottom: 1em; }
+
+.design-selection a { display: block; line-height: 1.2em;  }
+
+.sidebar a.designer-name { display: inline; clear: none; color: #000; }
+
+.sidebar a.designer-name:hover { text-decoration: none; color: #51C3C4; }
+
+.design-selection li { background: url(shuriken.gif) no-repeat 2px .3em;  }
+
+.design-archives li { background: url(ninjapac.gif) no-repeat 5px .5em; }
+
+.zen-resources li { background: url(lamp.gif) no-repeat 0 .3em; }

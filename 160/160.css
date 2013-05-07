@@ -1,0 +1,90 @@
+/* css Zen Garden submission 160 - 'Daruma', by Stuart Cruickshank, http://www.stuartandpetra.designer-nameom/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Stuart Cruickshank */
+/* Added: Apr. 15th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+body {background:#dcdcdc url(grad_top.jpg) repeat-x; font:12px "Trebuchet MS", verdana, arial, sans-serif; color:#606060;}
+
+.page-wrapper {width:765px; margin:0 auto;}
+
+header {background-image:url(header.jpg); width:699px; height:347px;}
+header h1, h2 {display:none;}
+
+.summary {position:relative;}
+.summary p.p1 {display:none;}
+.summary p.p2 {position:absolute; left:600px; top:-65px; width: 130px;}
+.summary p.p2 a:link {color: #606060; text-decoration:underline; font-weight:bold;}
+.summary p.p2 a:visited {color:#787878;}
+.summary p.p2 a:hover {color:#949494;}
+
+.preamble {width:765px; background:url(preamble_bg.gif) bottom; padding-bottom:15px; line-height:22px; text-align:justify;}
+.preamble h3 span {display:none; } 
+.preamble h3 {position:relative; background-image:url(preamble_hdr.gif); width:765px; height:35px;}
+.preamble p {padding: 7px 20px;}
+
+.supporting {float:left; width:543px; background-image:url(body_bg.gif); line-height:22px; text-align:justify;}
+.supporting p {padding: 7px 20px;}
+.supporting a:link {color:#df0000; text-decoration:none; font-weight:bold; border-bottom:1px solid #930000;}
+.supporting a:visited {color:#df0000; text-decoration:none; border:0;}
+.supporting a:hover{border-bottom: 1px solid #df0000;}
+
+.explanation {background:url(so_what_btrflys.gif) bottom left no-repeat;}
+.explanation h3 span {display:none;} 
+.explanation h3 {position:relative; background-image:url(so_what_hdr.gif); width:543px; height:28px;}
+
+.participation {background: url(participation_btrflys.gif) bottom left no-repeat;}
+.participation h3 span {display:none;} 
+.participation h3 {position:relative; background-image:url(participation_hdr.gif); width:543px; height:37px;}
+
+.benefits h3 span {display:none;} 
+.benefits h3 {position:relative; background-image:url(benefits_hdr.gif); width:543px; height:35px;}
+
+.requirements {background: url(req_btrflys.gif) top left no-repeat;}
+.requirements h3 span {display:none;} 
+.requirements h3 {position:relative; background-image:url(req_hdr.gif); width:543px; height:36px;}
+.requirements .p5 {margin-bottom:0; padding-bottom:14px;}
+
+footer {position:relative; font-size: 14px; text-align:center;background:url(footer_bg.gif) no-repeat; width:543px; height:35px; padding-top:63px;}
+footer a:link {color: #c20000; font-weight:bolder; text-decoration:none; border:0;}
+footer a:visited {color:#c20000; font-weight:bolder;}
+footer a:hover {color:#f33; border:0;}
+
+.sidebar {float:right; width:195px; color:#d70000; background-image:url(linklist_bg.gif); font-size:11px;}
+.sidebar ul {list-style-type:none;}
+
+.design-selection a:link {display:block;color: #d70000; text-decoration:none; font-weight:bolder; border-bottom:1px solid #ddd;}
+.design-selection a:visited {display:block; color:#c66; text-decoration:none; border-bottom:1px solid #b1b1b1;}
+.design-selection a:hover {color: #f70000;}
+.design-selection a.designer-name:link {display:inline; color:#5d5d5d; text-decoration:none; font-style:italic; margin-left:5px; border:0;}
+.design-selection a.designer-name:visited {display:inline; color:#787878; font-weight:normal; text-decoration:none; border:0;}
+.design-selection a.designer-name:hover{color:#949494;}
+
+.sidebar .wrapper li {padding: 0 20px;}
+.sidebar .wrapper {background:url(resources_btm_2.gif) bottom no-repeat; padding-bottom: 10px; padding-bottom: 119px;}
+
+.design-selection h3 {position:relative; background-image: url(select_design_hdr.gif); width:195px; height:60px;}
+.design-selection h3 span {display:none;}
+.design-selection ul {padding-top:8px;}
+.design-selection li {padding-bottom:10px;}
+
+.design-archives h3 {position:relative; background-image: url(archives_hdr.gif); width:195px; height:30px;}
+.design-archives h3 span {display:none;}
+
+.zen-resources h3 {position:relative; background: url(resources_hdr.gif) no-repeat; width:195px; height:30px;}
+.zen-resources h3 span {display:none;}
+
+.design-archives ul, .zen-resources ul {padding-top:8px;}
+.design-archives ul li, .zen-resources ul li {padding-bottom:8px;}
+
+.design-archives a:link, .zen-resources a:link {color:#606060; text-decoration:none; font-weight:bolder;}
+.design-archives a:visited, .zen-resources a:visited {color:#787878;text-decoration:none;}
+.design-archives a:hover, .zen-resources a:hover {color:#949494; font-style:italic;}
+
+* {margin:0; padding:0;}
+abbr {border-bottom: 1px dotted #606060; cursor:help;}
