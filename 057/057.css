@@ -171,7 +171,7 @@ div[class="zen-resources"]:hover h3 { position: absolute; top: 5px !important; l
 	}
 
 /**/
-div[class="design-selection"]>ul,
+div[class="design-selection"]>nav>ul,
 div[class="zen-resources"]>ul { position: absolute; top: -1000px; left: -1000px; width: 203px !important; background: url(bg_menu.png) left bottom no-repeat !important; }
 
 div[class="design-selection"]:hover ul,
