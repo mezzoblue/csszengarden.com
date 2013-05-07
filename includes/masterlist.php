@@ -258,7 +258,7 @@ $designList = array(
 			"043",
 			"Burning",
 			"Kevin &#038; Ethel Davis",
-			"http://etheldavisgallery.com/",
+			"#",
 	),
 	array(
 			"044",
@@ -482,6 +482,68 @@ $designList = array(
 			"Clinton Barth",
 			"http://www.516media.com/",
 	),
+	array(
+			"081",
+			"seashore",
+			"Clinton Barth",
+			"http://www.sightdesign.de/",
+	),
+	array(
+			"082",
+			"Miracle Cure",
+			"Joseph Pearson",
+			"http://www.make-believe.org/",
+	),
+	array(
+			"083",
+			"Springtime",
+			"Bo&eacute;r Attila",
+			"http://www.calcium.ro/",
+	),
+	array(
+			"084",
+			"Start Listening!",
+			"Liz Lubowitz",
+			"#",
+	),
+	array(
+			"085",
+			"Oceans Apart",
+			"Ryan Sims",
+			"http://www.justwatchthesky.com/",
+	),
+	array(
+			"086",
+			"RedFrog",
+			"Bernd Willenberg",
+			"http://www.willenberg.biz/",
+	),
+	array(
+			"087",
+			"Maya",
+			"Bernd Willenberg",
+			"http://www.willenberg.biz/",
+	),
+	array(
+			"088",
+			"Tulipe",
+			"Eric Shepherd",
+			"http://www.arkitrave.com/",
+	),
+	array(
+			"089",
+			"Dark Industrial",
+			"Ray Henry",
+			"http://www.reh3.com/",
+	),
+	array(
+			"090",
+			"Open Window",
+			"Ray Henry",
+			"http://www.reh3.com/",
+	),
+
+
 
 
 
