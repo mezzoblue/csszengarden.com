@@ -1,0 +1,252 @@
+/* css Zen Garden submission - 'A Walk in the Garden', by Simon Van Hauwermeiren,, http://users.skynet.be/bk316398/temp.html */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Simon Van Hauwermeiren */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+html {
+	background: url(02.gif);
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.page-wrapper {
+	background: url(08.jpg) no-repeat 270px 1335px;
+}
+
+p {
+	font-family: Georgia, serif;
+	font-size: 12px;
+	color: #666;
+	margin: 10px 15px 20px 10px;
+	line-height: 16px;
+}
+
+abbr {
+	color: #063;
+	border-bottom: 1px dotted #063;
+	cursor: help;
+}
+
+header h1 {
+	background: url(01.jpg) no-repeat left top;
+	width: 750px;
+	height: 404px;
+	margin: 0;
+}
+
+header h1 span, header h2, .summary p.p1 {
+	display: none;
+}
+
+.preamble h3 {
+	background: url(conh1.gif) no-repeat left top;
+	width: 367px;
+	height: 68px;
+	margin: 0;
+}
+
+.preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
+	display: none;
+}
+
+.explanation h3 {
+	background: url(conh2.gif) no-repeat left top;
+	width: 367px;
+	height: 68px;
+	margin: 0;
+}
+
+.participation h3 {
+	background: url(conh3.gif) no-repeat left top;
+	width: 367px;
+	height: 68px;
+	margin: 0;
+}
+
+.benefits h3 {
+	background: url(conh4.gif) no-repeat left top;
+	width: 367px;
+	height: 68px;
+	margin: 0;
+}
+
+.requirements h3 {
+	background: url(conh5.gif) no-repeat left top;
+	width: 367px;
+	height: 68px;
+	margin: 0;
+}
+
+.participation a, .requirements a, .summary a, footer a {
+	color: #063;
+	text-decoration: underline;
+}
+
+.participation a:hover, .requirements a:hover, .summary a:hover {
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #FFF;
+	text-decoration: none;
+	background: #063;
+}
+
+.supporting {
+	width: 367px;
+	text-align: justify;
+}
+
+.intro {
+	width: 367px;
+	text-align: justify;
+}
+
+.summary p.p2 {
+	background: url(05.gif) no-repeat right top;
+	padding: 0 40px 0 0;
+	margin: -20px 0 0 0;
+	height: 50px;
+	line-height: 42px;
+	text-align: right;
+	font-style: italic;
+}
+
+.sidebar {
+	position: absolute;
+	top: 470px;
+	left: 405px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 10px;
+}
+
+.design-selection ul {
+	background: url(03.gif) no-repeat left top;
+	height: 465px;
+	width: 208px;
+	margin: 0;
+	padding: 0;
+}
+
+.design-selection li {
+	background: url(04.gif) no-repeat left top;
+	height: 39px;
+	width: 120px;
+	list-style-type: none;
+	padding: 5px 0 0 55px;
+}
+
+.design-archives ul {
+	background: url(06.gif) no-repeat left top;
+	width: 208px;
+	height: 113px;
+	margin: 0;
+	padding: 0;
+}
+
+.design-archives li {
+	list-style-type: square;
+	padding: 7px 0 0 5px;
+	margin: 0 0 0 35px;
+}
+
+.zen-resources ul {
+	background: url(07.gif) no-repeat left top;
+	width: 208px;
+	height: 164px;
+	margin: 0;
+	padding: 0;
+}
+
+.zen-resources li {
+	list-style-type: square;
+	padding: 7px 0 0 5px;
+	margin: 0 0 0 35px;
+}
+
+.zen-resources h3 {
+	padding: 0;
+	background: url(listh3.gif) no-repeat left bottom;
+	width: 208px;
+	height: 50px;
+	margin: 0;
+}
+
+.zen-resources h3 span {
+	display: none;
+}
+
+.design-archives h3 {
+	padding: 0;
+	background: url(listh2.gif) no-repeat left bottom;
+	width: 208px;
+	height: 50px;
+	margin: 0;
+}
+
+.design-archives h3 span {
+	display: none;
+}
+
+.design-selection h3 {
+	background: url(listh1.gif) no-repeat left bottom;
+	width: 208px;
+	height: 50px;
+	margin: 0;
+}
+
+.design-selection h3 span {
+	display: none;
+}
+
+.design-selection a.designer-name {
+	display: inline;
+	color: #333;
+	text-decoration: underline;
+	font-size: 10px;
+}
+
+.design-selection a.designer-name:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+.design-selection a {
+	font-family: Arial, Verdana, sans-serif;
+	display: block;
+	font-size: 12px;
+	color: #063;
+	text-decoration: underline;
+}
+
+.design-selection a:hover, .zen-resources a:hover, .design-archives a:hover {
+	color: #633;
+	text-decoration: none;
+}
+
+.zen-resources a, .design-archives a {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	color: #063;
+	text-decoration: underline;
+}
+
+footer {
+	clear: both;
+	width: 605px;
+	border-top: 1px solid #666;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 14px;
+	text-align: right;
+	margin: 0 0 15px 0;
+}
