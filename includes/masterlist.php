@@ -1015,8 +1015,132 @@ $designList = array(
 			"Love Is In The Air",
 			"Nele Goetz",
 			"http://www.april-design.de/",
-
 	),
+	array(
+			"171",
+			"Shaolin Yokobue",
+			"Javier Cabrera",
+			"http://www.emaginacion.com.ar/hacks/",
+	),
+	array(
+			"172",
+			"blackcomb*75",
+			"Bryan Carichner",
+			"http://www.carichner.com/",
+	),
+	array(
+			"173",
+			"Red Stars",
+			"Shafiq Rizwan",
+			"http://www.1988online.net/",
+	),
+	array(
+			"174",
+			"Simple",
+			"Shawn Chin",
+			"http://www.shawnchin.net/",
+	),
+	array(
+			"175",
+			"Business Style",
+			"Gunta Klavina",
+			"http://www.klavina.com/",
+	),
+	array(
+			"176",
+			"Kelmscott",
+			"Bronwen Hodgkinson",
+			"http://www.cdevision.com/",
+	),
+	array(
+			"177",
+			"Zen City Morning",
+			"Ray Henry",
+			"http://www.reh3.com/",
+	),
+	array(
+			"178",
+			"Pinups",
+			"Emiliano Pennisi",
+			"http://www.peamarte.it/02/03.html",
+	),
+	array(
+			"179",
+			"Vin Rouge",
+			"Thorsten Bopp",
+			"http://www.bopp-medien.de/",
+	),
+	array(
+			"180",
+			"Vertigo",
+			"Antonio Cella",
+			"http://www.digitalink.it/",
+	),
+	array(
+			"181",
+			"Pretty in Pink",
+			"Jordi Romkema",
+			"http://www.jor-on.com/",
+	),
+	array(
+			"182",
+			"45 RPM",
+			"Thomas Michaud",
+			"http://www.ivfx.com/",
+	),
+
+	// 183 removed for being very broken 
+
+	array(
+			"184",
+			"Peace Of Mind",
+			"Carlos Varela",
+			"http://www.carlosvarela.net",
+	),
+	array(
+			"185",
+			"Manhattan Edition",
+			"Jos&#233; Tom&#225;s Tocino Garc&#237;a",
+			"#",
+	),
+	array(
+			"186",
+			"Faded Flowers",
+			"Mani Sheriar",
+			"http://www.ManiSheriar.com",
+	),
+	array(
+			"187",
+			"Wilderness",
+			"Aadesh Mistry",
+			"#",
+	),
+	array(
+			"188",
+			"Organica Creativa",
+			"Eduardo Cesario",
+			"http://www.criaturacreativa.com",
+	),
+	array(
+			"189",
+			"Mozart",
+			"Andrew Brundle",
+			"#",
+	),
+	array(
+			"190",
+			"Lonely Flower",
+			"Mitja Ribic",
+			"http://www.ribic.org/",
+	),
+	array(
+			"191",
+			"The Diary",
+			"Alexander Shabuniewicz",
+			"http://eye.loveline.ru",
+	),
+
+
 
 
 

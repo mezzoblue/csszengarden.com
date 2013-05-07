@@ -1,0 +1,225 @@
+/* css Zen Garden submission 181 - 'Pretty in Pink', by Jordi Romkema, http://www.jor-on.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Jordi Romkema */
+/* Added: September 1st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+html, body {
+	background: url(images/bg.gif) left top repeat-y #F06;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Tahoma, Lucida Sans, Arial, Verdana, Helvetica, sans-serif;
+}
+
+abbr, abbr {
+	border-bottom: 1px dotted #FFE6F0;
+}
+
+header h1, header h2, .sidebar h3 {
+	display: none;
+}
+
+.wrapper {
+	display: block;
+}
+
+.intro {
+	display: block;
+}
+
+@media screen {
+	header, div.summary {
+		position: fixed;
+	}
+		
+	* html header, * html div.summary {
+		position: absolute;
+	}
+}
+
+header {
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 320px;
+	background: url(images/logo.gif) left top no-repeat;
+}
+
+div.summary {
+	left: 0;
+	top: 250px;
+	width: 185px;
+	color: #FFE6F0;
+	font-size: 12px;
+	padding: 5px;
+	padding-right: 10px;
+}
+
+div.summary a {
+	font-weight: bold;
+	color: #FFE6F0;
+}
+
+div.summary a:hover {
+	color: #000;
+}
+
+div.preamble, .supporting {
+	margin-left: 463px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-bottom: 0;
+}
+
+div.preamble h3, .supporting h3 {
+	display: block;
+	background: url(images/hbg.gif) left top repeat #000;
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+	color: #FFF;
+	font-size: 24px;
+	line-height: 50px;
+	text-transform: lowercase;
+}
+
+div.preamble p, .supporting p {
+	font-size: 14px;
+	color: #000;
+	line-height: 1.5em;
+}
+
+div.preamble a, .supporting a {
+	color: #000;
+}
+
+div.preamble a:hover, .supporting a:hover {
+	color: #FFF;
+}
+
+div.preamble abbr, div.preamble abbr, .supporting abbr, .supporting abbr {
+	border-bottom: 1px dotted #000;
+}
+
+footer {
+	display: block;
+	height: 20px;
+	background: url(images/hbg.gif) left top repeat #000;
+	padding: 3px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+footer a {
+	color: #FFF;
+	font-weight: bold;
+}
+
+footer a:hover {
+	color: #000;
+}
+
+.sidebar {
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	width: 263px;
+	font-family: Baskerville, Georgia, Garamond, Times New Roman, serif;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar ul {
+	list-style: none;
+}
+
+.sidebar ul li {
+	border-bottom: 1px solid #CCC;
+}
+
+.sidebar ul li a {
+	display: block;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #F06;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+	background-color: #000;
+	color: #FFF;
+}
+
+.sidebar div.design-selection ul li {
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 10px;
+}
+
+.sidebar div.design-selection ul li a {
+	padding: 0;
+	font-size: 12px;
+}
+
+.sidebar div.design-selection ul li a:hover {
+	color: #000;
+	background-color: #FFF;
+}
+
+.sidebar div.design-selection ul li a.designer-name {
+	display: inline;
+	text-transform: none;
+	font-size: 10px;
+	color: #000;
+}
+
+.sidebar div.design-selection ul li a.designer-name:hover {
+	text-decoration: underline;
+}
+
+.sidebar div.design-selection, .sidebar div.design-archives, .sidebar div.zen-resources {
+	display: block;
+	margin-top: 10px;
+}
+
+.sidebar div.design-selection h3, .sidebar div.design-archives h3, .sidebar div.zen-resources h3 {
+	display: block;
+	height: 35px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar div.design-selection h3 span, .sidebar div.design-archives h3 span, .sidebar div.zen-resources h3 span {
+	display: none;
+}
+
+.sidebar div.design-selection h3 {	
+	background: url(images/ll_selectadesign.gif) left top no-repeat;
+}
+
+.sidebar div.design-archives h3 {
+	background: url(images/ll_archives.gif) left top no-repeat;
+}
+
+.sidebar div.zen-resources h3 {
+	background: url(images/ll_resources.gif) left top no-repeat;
+}

@@ -1,0 +1,196 @@
+/* css Zen Garden submission 177 - 'Zen City Morning', by Ray Henry, http://www.reh3.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Ray Henry */
+/* Added: July 9th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/*
+-----------------------------------------------------------------------------------------
+Global 
+-------------------------------------------------------------------------------------- */
+* {margin:0;padding:0;}  /* zero out everything */
+body {
+	width:100%;
+	background:#0A3443 url(r3_zc_main_bg.jpg) repeat-y top left;
+	font-family:verdana, arial, sans-serif;
+}
+ul, ol {list-style:none;}
+/*
+-----------------------------------------------------------------------------------------
+Layout Structure
+-------------------------------------------------------------------------------------- */
+.page-wrapper {width:760px;}
+.intro, .supporting {
+	float:left;
+	width:570px;
+}
+.sidebar {
+	padding:190px 0 0 0;
+	margin:0 0 0 570px;
+	font-size:11px;
+}
+* html .sidebar {position:absolute;left:0;top:0;} /* For Internet Explorer */
+/*
+-----------------------------------------------------------------------------------------
+=intro
+-------------------------------------------------------------------------------------- */
+header h1 {
+	width:570px;
+	height:190px;
+	background:url(r3_zc_title.gif) no-repeat top left;
+	text-indent:-5000px;
+}
+header h2 {display:none;}
+.summary p {font-size:11px;margin:0;padding:0;}
+.summary p.p1 {
+	float:left;
+	width:380px;
+	height:178px;
+	background:url(r3_zc_summary.gif) no-repeat top left;
+	text-indent:-5000px;
+}
+.summary p.p2 {
+	float:left;
+	width:190px;
+	padding:102px 0 50px 9px;
+	height:76px;
+	background:url(r3_zc_download.gif) no-repeat top left;
+	color:#E6B788;
+	/* start box model to fix main nav in IE 5.5 */
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width:181px;
+	padding:102px 0 0 9px;
+	height:76px;
+	/* end box model to fix main nav in IE 5.5 */
+}
+.summary p.p2 a:link, .summary p.p2 a:visited, .summary p.p2 a:active {color:#E6B788;}
+.summary p.p2 a:hover {color:#F4D3B3;}
+.preamble {
+	clear:both;
+	width:570px;
+	padding:0 0 20px 0;
+	background:#4A6774 url(r3_zc_road_bg.gif) repeat-x top left;
+	font-size:11px;
+}
+.preamble h3 {
+	width:268px;
+	height:45px;
+	background:url(r3_zc_road_title.gif) no-repeat top left;
+	text-indent:-5000px;
+}
+.preamble p {
+	margin:12px;
+	color:#CFD9DC;
+}
+/*
+-----------------------------------------------------------------------------------------
+=supportingText
+-------------------------------------------------------------------------------------- */
+.supporting div {
+	padding: 19px 0;
+	background:#DECD95 url(r3_zc_support_bg.gif) repeat-x top left;
+}
+.supporting h3 {
+	float:left;
+	width:190px;
+	text-indent:-5000px;
+}
+.supporting .explanation h3 {
+	height:40px;
+	background:url(r3_zc_what_title.gif) no-repeat top left;
+}
+.supporting .participation h3 {
+	height:28px;
+	background:url(r3_zc_participation_title.gif) no-repeat top left;
+}
+.supporting .benefits h3 {
+	height:26px;
+	background:url(r3_zc_benefits_title.gif) no-repeat top left;
+}
+.supporting .requirements h3 {
+	height:26px;
+	background:url(r3_zc_requirements_title.gif) no-repeat top left;
+}
+.supporting p {
+	margin:0 0 0 190px;
+	padding:0 10px 22px 0;
+	font-size:11px;
+	line-height:16.5px;
+	color:#4D3A33;
+}
+.supporting p a {padding:2px;text-decoration:none;}
+.supporting p a:link {color:#C64708;}
+.supporting p a:visited {color:#4D3A33;}
+.supporting p a:active {color:#C64708;}
+.supporting p a:hover {background:#C6B478;color:#fff;}
+.supporting footer {
+	clear:both;
+	padding:6px 0;
+	background:#555;
+	text-align:center;
+	font-size:10px;
+}
+.supporting footer a {
+	margin:5px 15px;
+	padding:5px;
+}
+.supporting footer a:link, .supporting footer a:visited, .supporting footer a:active {color:#999;text-decoration:none;}
+.supporting footer a:hover {background:#777;color:#bbb;}
+/*
+-----------------------------------------------------------------------------------------
+=linkList
+-------------------------------------------------------------------------------------- */
+.sidebar .wrapper {
+	width:180px;
+	padding:0 0 250px 10px;
+	background:url(r3_zc_linklist_bg.gif) no-repeat top left;
+}
+.sidebar .wrapper h3 {
+	width:180px;
+	height:22px;
+	text-indent:-5000px;
+}
+.design-selection h3 {background:url(r3_zc_lselect_title.gif) no-repeat top left;}
+.design-archives h3 {background:url(r3_zc_larchives_title.gif) no-repeat top left;}
+.zen-resources h3 {background:url(r3_zc_lresources_title.gif) no-repeat top left;}
+.sidebar .wrapper ul {
+	margin:10px 0 20px 0;
+	color:#7FA2B0;
+}
+.sidebar .wrapper ul li {margin:10px 0 0 0;padding: 1px 0 0 12px;}
+.design-selection ul li {background:url(r3_zc_lselect_bullet.gif) no-repeat top left;}
+.design-selection ul li a:link, .design-selection ul li a:visited, .design-selection ul li a:active {
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+}
+.design-selection ul li a:hover {color:#C64708;}
+.design-selection ul li a.designer-name:link, .design-selection ul li a.designer-name:visited, .design-selection ul li a.designer-name:active, .design-archives ul li a:link, .design-archives ul li a:visited, .design-archives ul li a:active, .zen-resources ul li a:link, .zen-resources ul li a:visited, .zen-resources ul li a:active {
+	color:#7FA2B0;
+	font-weight:normal;
+}
+.design-selection ul li a.designer-name:hover, .design-archives ul li a:hover, .zen-resources ul li a:hover {color:#C64708;}
+ {
+	color:#7FA2B0;
+	font-weight:normal;
+}
+
+/*
+-----------------------------------------------------------------------------------------
+=Extra Divs
+-------------------------------------------------------------------------------------- */
+.extra1 {
+	position:fixed;
+	left:0;
+	top:0;
+	width:770px;
+	height:184px;
+	background:url(r3_zc_clouds.png) no-repeat top left;
+}
+* html .extra1 {display:none;} /* Hide from Internet Explorer */
