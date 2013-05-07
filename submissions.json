@@ -1,7 +1,7 @@
 <?php
 
   include($SERVER_ROOT . "includes/masterlist.php");
-  header('Content-Type: application/json');
+  header('Content-Type: application/json; charset=utf-8');
 
   function jsonify($entry) {
     return array(
