@@ -1,0 +1,8 @@
+RewriteEngine On
+Options +FollowSymlinks
+
+# dude built a design browser. Cool.
+# dude ran ads on it. Not as.
+SetEnvIfNoCase Referer ".*coret.org$" BadReferrer
+order deny,allow
+deny from env=BadReferrer
