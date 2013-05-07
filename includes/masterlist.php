@@ -542,6 +542,69 @@ $designList = array(
 			"Ray Henry",
 			"http://www.reh3.com/",
 	),
+	array(
+			"091",
+			"webZine",
+			"Vincent Valentin",
+			"#",
+	),
+	array(
+			"092",
+			"Port of Call",
+			"Jessica Dunn",
+			"http://vcdesignconcept.com/",
+	),
+	array(
+			"093",
+			"South of the Border",
+			"Rob Shields",
+			"http://www.dotcat.org/",
+	),
+	array(
+			"094",
+			"Deco",
+			"Marc Trudel",
+			"http://www.marctrudel.com/",
+	),
+	array(
+			"095",
+			"Corporate ZenWorks",
+			"Derek Hansen",
+			"http://www.dejoha.com/",
+	),
+	array(
+			"096",
+			"Japanese Garden",
+			"Masanori Kawachi",
+			"http://www.jugglinglife.org/",
+	),
+	array(
+			"097",
+			"No Frontiers!",
+			"Michal Mokrzycki",
+			"http://hyperreal.info/bhang/",
+	),
+	array(
+			"098",
+			"Edo and Tokyo",
+			"Daisuke Sato",
+			"http://www.coutworks.com/",
+	),
+	array(
+			"099",
+			"Wiggles the Wonderworm",
+			"Joseph Pearson",
+			"http://www.make-believe.org/",
+	),
+	array(
+			"100",
+			"15 Petals",
+			"Eric Meyer &amp; Dave Shea",
+			"http://www.meyerweb.com/",
+	),
+
+
+
 
 
 
