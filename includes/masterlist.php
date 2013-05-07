@@ -582,7 +582,7 @@ $designList = array(
 			"097",
 			"No Frontiers!",
 			"Michal Mokrzycki",
-			"http://hyperreal.info/bhang/",
+			"#",
 	),
 	array(
 			"098",
@@ -665,7 +665,123 @@ $designList = array(
 			"Hannah F. Liesong",
 			"http://www.liesong.de/",
 	),
+	array(
+			"112",
+			"Mountain Resort",
+			"Jordi Romkema",
+			"http://www.jor-on.com/",
+	),
+	array(
+			"113",
+			"Switch On",
+			"Michael Fasani",
+			"#",
+	),
+	array(
+			"114",
+			"Salvage Yard",
+			"Justin Peters",
+			"http://www.vatoweb.com/",
+	),
+	array(
+			"115",
+			"Burnt Offering",
+			"Jonny Blair",
+			"http://www.jonnyblair.co.uk/",
+	),
+	array(
+			"116",
+			"Ragged",
+			"Jose Florido",
+			"http://www.avidos.net/blogold/",
+	),
+	array(
+			"117",
+			"Brushwood",
+			"Katrin Zieger",
+			"#",
+	),
+	array(
+			"118",
+			"Some Leafs",
+			"Michael Tupy",
+			"http://www.t-2.at/",
+	),
+	array(
+			"119",
+			"Pleasant Day",
+			"Kyle Jones",
+			"http://www.justkyle.com/",
+	),
+	array(
+			"120",
+			"Medioevo",
+			"Emiliano Pennisi",
+			"http://www.peamarte.it/02/03.html",
+	),
+	array(
+			"121",
+			"60&#8217;s Lifestyle",
+			"Emiliano Pennisi",
+			"http://www.peamarte.it/02/03.html",
+	),
+	array(
+			"122",
+			"Centerfold",
+			"John Oxton",
+			"#",
+	),
+	array(
+			"123",
+			"Skyroots",
+			"Axel Hebenstreit",
+			"http://www.sonnenvogel.com/",
+	),
+	array(
+			"124",
+			"Teatime",
+			"Michaela Maria Sampl",
+			"http://members.chello.at/michaela.sampl/",
+	),
+	array(
+			"125",
+			"Beccah",
+			"Chris Morrell",
+			"http://www.cmorrell.com/",
+	),
+	array(
+			"126",
+			"C-Note",
+			"Brian Williams",
+			"http://www.ploughdeep.com/",
+	),
+	array(
+			"127",
+			"Vivacity",
+			"Sofiane Toudji",
+			"http://soso.2037.org/",
+	),
+	array(
+			"128",
+			"Dragen",
+			"Matthew Buchanan",
+			"http://www.cactuslab.com/",
+	),
 
+	// 129 removed for reasons lost in the mists of time
+
+	array(
+			"130",
+			"Pseudo Sahara",
+			"John Barrick",
+			"http://www.waycoolwebdesign.com/",
+	),
+	array(
+			"131",
+			"Type Thing",
+			"Michal Mokrzycki",
+			"#",
+	),
 
 
 );
