@@ -20,12 +20,12 @@
 .extra1 { position: absolute; top: 112px; left: 292px; width: 340px; height: 166px; background: url(txt_upgrade.gif) no-repeat; z-index: 10; }
 .page-wrapper { padding: 296px 0 0 294px; z-index: 99; }
 /* Clear the warning styles for those that do... */
-div[id="extra1"] { display: none; }
-div[id="container"] { padding: 226px 0 0 294px !important; }
+div[class="extra1"] { display: none; }
+div[class="page-wrapper"] { padding: 226px 0 0 294px !important; }
 
 /* Spoon graphic and pull-quote */
 .extra2 { position: absolute; top: 1200px; left: 0px; width: 229px; height: 580px; background: url(spoon_flake.png) no-repeat; z-index: 0; }
-div[id="extra2"] { top: 712px !important; }
+div[class="extra2"] { top: 712px !important; }
 
 /* Coffee graphic */
 .extra3 { display: block !important; position: relative; margin-left: 496px; height: 0; z-index: 0; }
@@ -38,20 +38,20 @@ div[id="extra2"] { top: 712px !important; }
 	}
 
 /* Small logo */
-div[id="extra4"] { display: block !important; position: relative; margin-left: 64px; width: 168px; height: 0; z-index: 3; }
-div[id="extra4"]>span {
+div[class="extra4"] { display: block !important; position: relative; margin-left: 64px; width: 168px; height: 0; z-index: 3; }
+div[class="extra4"]>span {
 	position: absolute;
 	bottom: -33px;
 	width: 100%;
 	height: 98px;
 	background: url(logo_small.gif) no-repeat;
 	}
-/* div[id="extra4"] span:active { background: url(logo_small_over.gif) no-repeat; } */
+/* div[class="extra4"] span:active { background: url(logo_small_over.gif) no-repeat; } */
 
 
 /* Photo Credit */
-div[id="extra5"] { display: block !important; position: relative; margin-left: 4px; height: 0; z-index: 0; }
-div[id="extra5"]>span {
+div[class="extra5"] { display: block !important; position: relative; margin-left: 4px; height: 0; z-index: 0; }
+div[class="extra5"]>span {
 	position: absolute;
 	bottom: -33px;
 	width: 100%;
@@ -60,7 +60,7 @@ div[id="extra5"]>span {
 	}
 
 /* Quality text and SI logo */
-div[id="extra6"] {
+div[class="extra6"] {
 	display: block !important;
 	position: absolute;
 	top: 476px;
@@ -246,11 +246,11 @@ footer a.zen-validate-css:hover { background: url(button_css_footer_over.gif) no
 footer a.zen-license { position: absolute; top: 17px; left: 170px; width: 13px; height: 0px; padding-top:9px; overflow: hidden; }
 footer a.zen-license:hover { background: url(button_cc_over.gif) no-repeat; }
 /* 508 */
-footer a.zen-legacy-508 { position: absolute; top: 17px; left: 189px; width: 15px; height: 0px; padding-top:9px; overflow: hidden; }
-footer a.zen-legacy-508:hover { background: url(button_508_over.gif) no-repeat; }
+footer a.zen-accessibility { position: absolute; top: 17px; left: 189px; width: 15px; height: 0px; padding-top:9px; overflow: hidden; }
+footer a.zen-accessibility:hover { background: url(button_508_over.gif) no-repeat; }
 /* aaa */
-footer a.zen-legacy-aaa { position: absolute; top: 17px; left: 228px; width: 20px; height: 0px; padding-top:9px; overflow: hidden; }
-footer a.zen-legacy-aaa:hover { background: url(button_aaa_over.gif) no-repeat; }
+footer a.zen-github { position: absolute; top: 17px; left: 228px; width: 20px; height: 0px; padding-top:9px; overflow: hidden; }
+footer a.zen-github:hover { background: url(button_aaa_over.gif) no-repeat; }
 
 /* Move this junk out of the way */
 header,
