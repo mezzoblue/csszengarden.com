@@ -88,7 +88,7 @@
 	</div>
 
 	
-	<aside class="sidebar">
+	<aside class="sidebar" role="sidebar">
 		<div class="wrapper">
 
 			<div class="design-selection" id="design-selection">
