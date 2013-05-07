@@ -1,6 +1,10 @@
 # csszengarden.com
 
-In the not so distant future this repo will host the full site.
+The official repo of the CSS Zen Garden.
 
-In the meantime, what exists here is a bare minimum working version as it's 
-converted to HTML5.
+Pull requests with improvements welcomed, but remember that changes to the
+HTML file affect the entire archive of 200+ designs. If you're changing the
+markup, you'll need to commit changes to all designs affected.
+
+Please do not submit new designs as pull requests, use the official submission
+form instead: http://www.mezzoblue.com/zengarden/submit/
