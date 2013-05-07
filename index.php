@@ -93,13 +93,13 @@
 
 			<div class="design-selection" id="design-selection">
 				<h3 class="select"><span>Select a Design:</span></h3>
-					<nav role="navigation">
-						<ul>
+				<nav role="navigation">
+					<ul>
 <?php
 		echo getDesignList($listStart, $numDesigns, $designList);
 ?>
-						</ul>
-					</nav>
+					</ul>
+				</nav>
 			</div>
 
 			<div class="design-archives" id="design-archives">
