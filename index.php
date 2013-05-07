@@ -30,7 +30,7 @@
 <div class="page-wrapper">
 
 	<section class="intro" id="zen-intro">
-		<header>
+		<header role="banner">
 			<h1><span>CSS Zen Garden</span></h1>
 			<h2><span>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</span></h2>
 		</header>
