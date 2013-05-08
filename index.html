@@ -10,16 +10,16 @@
 	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design." />
 	<meta name="robots" content="all" />
 
-    <script type="text/javascript">
-        // figure out what design we're showing and load it up
-        var design = window.location.hash.substr(1) || '001';
-        var link = document.createElement('link');
-        link.setAttribute('id', 'css-file');
-        link.setAttribute('rel', 'stylesheet');
-        link.setAttribute('type', 'text/css');
-        link.setAttribute('href', design + '/' + design + '.css');
-        document.getElementsByTagName('head')[0].appendChild(link)
-    </script>
+	<script type="text/javascript">
+		// figure out what design we're showing and load it up
+		var design = window.location.hash.substr(1) || '001';
+		var link = document.createElement('link');
+		link.setAttribute('id', 'css-file');
+		link.setAttribute('rel', 'stylesheet');
+		link.setAttribute('type', 'text/css');
+		link.setAttribute('href', design + '/' + design + '.css');
+		document.getElementsByTagName('head')[0].appendChild(link)
+	</script>
 </head>
 
 <!-- 
@@ -97,7 +97,7 @@
 				<h3 class="select"><span>Select a Design:</span></h3>
 				<nav role="navigation">
 					<ul id="design-list">
-                        <!-- populated by JS later -->
+						<!-- populated by JS later -->
 					</ul>
 				</nav>
 			</div>
@@ -105,7 +105,7 @@
 			<div class="design-archives" id="design-archives">
 				<h3 class="archives"><span>Archives:</span></h3>
 				<ul>
-                    <!-- shown/hidden by JS -->
+					<!-- shown/hidden by JS -->
 					<li id="next-design" class="next">
 						<a id="next-link" href="#">
 							Next Designs <span class="indicator">&raquo;</span>
