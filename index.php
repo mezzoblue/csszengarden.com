@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<title>CSS Zen Garden: The Beauty in CSS Design</title>
 
-	<link rel="stylesheet" media="screen" href="<?= $currentDesign; ?>"></style>
+	<link rel="stylesheet" media="screen" href="<?= $currentDesign; ?>">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
 
 	<meta name="author" content="Dave Shea">
@@ -88,7 +88,7 @@
 	</div>
 
 	
-	<aside class="sidebar" role="sidebar">
+	<aside class="sidebar">
 		<div class="wrapper">
 
 			<div class="design-selection" id="design-selection">
@@ -139,7 +139,7 @@
 				<ul>
 					<li class="view-css">
 						<a href="<?= $currentDesign ?>" title="View the source CSS file of the currently-viewed design.">
-							View This Design&#8217;s <abbr title=\"Cascading Style Sheets\">CSS</abbr>
+							View This Design&#8217;s <abbr title="Cascading Style Sheets">CSS</abbr>
 						</a>
 					</li>
 					<li class="css-resources">
