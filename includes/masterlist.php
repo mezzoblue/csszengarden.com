@@ -1,4 +1,4 @@
-<?
+<?php
 
 // Design master list
 $designList = array(
@@ -283,31 +283,31 @@ $designList = array(
 			"dusk",
 			"Jon Hicks",
 			"http://exp.hicksdesign.co.uk/",
-	),	
+	),
 	array(
 			"048",
 			"HoriZental",
 			"Cl&#233;ment &#8216;fastclemmy&#8217; Hardouin",
 			"http://www.fastclemmy.com/",
-	),	
+	),
 	array(
 			"049",
 			"Buddha",
 			"Daniel Leroux",
 			"#",
-	),	
+	),
 	array(
 			"050",
 			"First Summary",
 			"Cornelia Lange",
 			"http://www.clkm.de/",
-	),	
+	),
 	array(
 			"051",
 			"Commercial Drive",
 			"Wendy Foster",
 			"#",
-	),	
+	),
 	array(
 			"052",
 			"Postage Paid",
@@ -646,7 +646,7 @@ $designList = array(
 	),
 
 	// 108 removed for copyright violation
-	
+
 	array(
 			"109",
 			"Pneuma",
@@ -1089,7 +1089,7 @@ $designList = array(
 			"http://www.ivfx.com/",
 	),
 
-	// 183 removed for being very broken 
+	// 183 removed for being very broken
 
 	array(
 			"184",
