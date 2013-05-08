@@ -8,15 +8,16 @@ var prevLi         = document.getElementById('previous-design');
 var prevA          = document.getElementById('previous-link');
 var designList     = document.getElementById('design-list');
 var g_perpage      = 8;
-var g_currentPage  = null; // 0 based index of page id
-var g_pageSets     = {};   // 0 based index of page id
+var g_currentPage  = null; // 0 based index of current "page" id
+var g_pageSets     = {};   // All the navigation pages' html contents
 
 // function to keep the "view css source" link correctly pointed
 function updateViewSourceLink() {
     viewSourceLink.href = cssElement.href;
 }
 
-function setCurrentPage() {
+// set the current page and initialize all the pageSets
+function initCurrentPage() {
     var page;
     for (var i in g_designs) {
         page = Math.floor(i/g_perpage);
@@ -33,7 +34,10 @@ function setCurrentPage() {
     }
 }
 
+// change which page set is showing and update next/prev button visiblity
 function updateNavToPage(page) {
+
+    // valid page? that's gonna be needed
     if (!g_pageSets.hasOwnProperty(page)) {
         return;
     }
@@ -51,7 +55,8 @@ function updateNavToPage(page) {
         links[i].onclick = change;
     }
 
-    // hide/unhide prev/next links
+    // hide/unhide prev/next links -- use visibility in case designers want display:inline.
+    // todo: could utilize classes to denote "hidden" and "visible"
     prevLi.style.visibility = g_pageSets.hasOwnProperty(page-1) ? 'visible' : 'hidden';
     nextLi.style.visibility = g_pageSets.hasOwnProperty(page+1) ? 'visible' : 'hidden';
 
@@ -76,6 +81,6 @@ nextA.onclick = function(){
 };
 
 // one first load, get everything squared away
-setCurrentPage();
+initCurrentPage();
 updateNavToPage(g_currentPage);
 updateViewSourceLink();
