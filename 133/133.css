@@ -61,7 +61,7 @@ header {
 	padding:0;
 }
 
-.summary .p1 {
+.summary p:first-child {
 	position:absolute;
 	top:0;
 	left:0;
@@ -70,9 +70,9 @@ header {
 	background:#555040 url(style/quick_summary_p1.jpg) no-repeat top left;
 }
 
-.summary .p1 span { display:none; }
+.summary p:first-child span { display:none; }
 
-.summary .p2 {
+.summary p:last-child {
 	position:absolute;
 	top:0;
 	left:410px;
@@ -82,12 +82,12 @@ header {
 	overflow:hidden;
 }
 
-.summary .p2 span {
+.summary p:last-child span {
 	visibility:hidden;
 	white-space:nowrap;
 }
 
-.summary .p2 a {
+.summary p:last-child a {
 	width:230px;
 	height:60px;
 	float:right;
@@ -123,7 +123,7 @@ header h1, header h2 {
 	padding:0;
 }
 
-.preamble p.p3 {
+.preamble p:nth-child(4) {
 	margin:0 10px 5px;
 }
 

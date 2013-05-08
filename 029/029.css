@@ -104,19 +104,19 @@ header h1 span, header h2 span {
 	width:180px;
 }
 	
-.summary p.p1:first-letter {
+.summary p:first-child:first-letter {
 	padding-right:5px;
 	font-size: 300%; 
 	color:#811610;
 }
 
- .preamble p.p1:first-letter {
+ .preamble p:nth-child(2):first-letter {
 	padding-right:5px;
 	font-size: 300%; 
 	color:#811610;
 }
 	
-.summary p.p2 {
+.summary p:last-child {
 	line-height:18px;
 	font-family:verdana, arial, sans serif;
 	font-size:11px;

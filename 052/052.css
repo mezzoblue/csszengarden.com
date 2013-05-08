@@ -212,7 +212,7 @@ abbr {
 			padding-right:15px;
 			
 		}
-		.intro div.summary p.p1 {
+		.intro div.summary p:first-child {
 			height:107px;
 			
 			margin-top:26px;
@@ -221,10 +221,10 @@ abbr {
 
 			background: url("a_demonstration_of.gif") no-repeat 100px 22px;
 		}
-		.intro div.summary p.p1 span {
+		.intro div.summary p:first-child span {
 			display:none;
 		}
-		.intro div.summary p.p2 {
+		.intro div.summary p:last-child {
 			padding-bottom:20px;
 
 			color:#aaa;
@@ -266,11 +266,11 @@ abbr {
 			margin-left:0px;
 			margin-right:30px;
 		}
-		.intro div.preamble p.p1 {
+		.intro div.preamble p:nth-child(2) {
 			padding-top:65px;
 			margin-top:0;
 		}
-		.intro div.preamble p.p3 {
+		.intro div.preamble p:nth-child(4) {
 			padding-bottom:30px;
 			margin-bottom:0;
 			background: url("blue_bottom.gif") no-repeat bottom left;

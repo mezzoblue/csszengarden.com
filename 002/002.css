@@ -95,7 +95,7 @@ header h2 span {
 .preamble {
 	padding: 0px 40px 0px 40px;
 	}
-.preamble .p3 {
+.preamble p:nth-child(4) {
 	margin-bottom: 0px;
 	}
 .supporting {
@@ -112,7 +112,7 @@ header h2 span {
 	padding-top: 47px;
 	}
 
-.summary .p1 {
+.summary p:first-child {
 	width: 430px;
 	height: 195px;
 	background: transparent url(/002/splash.jpg) top left no-repeat;
@@ -121,10 +121,10 @@ header h2 span {
 	top: 93px;
 	left: 244px;
 	}
-.summary .p1 span {
+.summary p:first-child span {
 	display: none;
 	}
-.summary .p2 {
+.summary p:last-child {
 	font-size: 9px;
 	line-height: 22px;
 	text-align: left;
@@ -136,7 +136,7 @@ header h2 span {
 	margin: 0px 10px 0px 40px;
 	height: 140px;
 	}
-.summary .p2 a:link {	
+.summary p:last-child a:link {	
 	color: #B27F66;
 	}
 

@@ -62,7 +62,7 @@ margin:0 0 0 0;
 border:0px dotted #999999;
 }
 
-.summary .p2 {
+.summary p:last-child {
 border:0px solid #000000;
 margin:-110px 0 95px 288px;
 padding: 0 0 0 15px;
@@ -136,7 +136,7 @@ height:66px;
 margin-bottom:-5px;
 }
 
-header h1, header h2, .summary .p1, .preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
+header h1, header h2, .summary p:first-child, .preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
 display:none;
 }
 

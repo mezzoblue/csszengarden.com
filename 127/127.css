@@ -85,7 +85,7 @@
 		color: #999;
 		text-align: center;
 	}
-	.summary .p1 {
+	.summary p:first-child {
 		background: url('bg_quickSummary.png') bottom right no-repeat;
 		min-height: 125px;
 	}

@@ -228,14 +228,14 @@ footer a:link, footer a:visited {
 /* Modifications */
 
 
-p.p2{
+p:nth-child(3){
 	font: bold 11px verdana;
 	text-align: center;
 	color: #DB008C;
 	padding: 30px 10px 0px 10px;}
 
 	
-.summary p.p2{
+.summary p:last-child{
 	font: bold 11px verdana;
 	text-align: center;
 	color: #DB008C;
@@ -248,7 +248,7 @@ header h2 span,
 .participation h3 span,
 .benefits h3 span,
 .requirements h3 span,
-.summary p.p1
+.summary p:first-child
 {display: none;}
 
 
@@ -313,13 +313,13 @@ header h2 span,
 }
 
 
-.p1 {padding: 0px 0px 0px 21px;}
-.p2 {padding: 0px 0px 0px 21px;}
-.p3 {padding: 0px 0px 0px 21px;}
-.p4 {padding: 0px 0px 0px 21px;}
-.p5 {padding: 0px 0px 0px 21px;}
+p:nth-child(2) {padding: 0px 0px 0px 21px;}
+p:nth-child(3) {padding: 0px 0px 0px 21px;}
+p:nth-child(4) {padding: 0px 0px 0px 21px;}
+p:nth-child(5) {padding: 0px 0px 0px 21px;}
+p:nth-child(6) {padding: 0px 0px 0px 21px;}
 
-.requirements p.p5 span{
+.requirements p:nth-child(6) span{
     font: bold 15px arial;
 	text-align: center;
 	color: #DB008C;

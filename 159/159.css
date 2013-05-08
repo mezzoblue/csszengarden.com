@@ -123,7 +123,7 @@ header h2 {
 	background: url(bg_preamble.gif) no-repeat;
 	height: 29px;
 }
-.preamble p.p3 {
+.preamble p:nth-child(4) {
 	padding-bottom: 15px;
 }
 
@@ -152,7 +152,7 @@ header h2 {
 	background-repeat:;
 	height: 29px;
 }
-.explanation p.p2, .participation p.p3, .benefits p.p1 {
+.explanation p:nth-child(3), .participation p:nth-child(4), .benefits p:nth-child(2) {
 	margin-bottom: 20px;
 }
 .participation h3 {
@@ -169,7 +169,7 @@ header h2 {
 	background: url(bg_requirements.gif) no-repeat;
 	height: 29px;
 }
-.requirements p.p5 {
+.requirements p:nth-child(6) {
 	margin-top: 30px;
 }
 
@@ -259,7 +259,7 @@ footer a:hover, footer a:visited {
 /* ********************************
 	Hidden
 ******************************** */
-header h1 span, header h2 span, .summary p.p1 span,
+header h1 span, header h2 span, .summary p:first-child span,
 .preamble h3 span, .explanation h3 span, .participation h3 span, 
 .benefits h3 span, .requirements h3 span, .sidebar h3 span {
 	display:none;

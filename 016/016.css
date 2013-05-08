@@ -379,11 +379,11 @@ footer {
 }
 
 
-.summary p.p1  {
+.summary p:first-child  {
 	display: none;
 }
 
-.summary p.p2 {
+.summary p:last-child {
 	margin-top: 4px;
 	color: #95A5BB;
 	background-color: transparent;

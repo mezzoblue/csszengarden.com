@@ -72,7 +72,7 @@ header:hover {
 }
 
 /* intro */
-header h1, header h2, .summary p.p1 {display:none;}
+header h1, header h2, .summary p:first-child {display:none;}
 .preamble {
 	position:relative;
 	left:0;

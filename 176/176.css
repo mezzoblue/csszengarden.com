@@ -31,8 +31,8 @@ a:hover, a:active {text-decoration:underline; color:#c00;}
 		header h2 {background:transparent url(h2.gif) no-repeat; width:377px; float:right;}
 		header h1 span, header h2 span {display:none}
 	.summary {clear:both; margin:0 0 6px 0; width:600px; height:73px; background:url(summary.gif) 0 0 no-repeat;}
-		.summary p.p1 {display:none;}
-		.summary p.p2 {position:absolute; top:129px; left:430px; padding:0; font-size:8pt; z-index:10; font-weight:bold; width:150px; text-align:left;}			
+		.summary p:first-child {display:none;}
+		.summary p:last-child {position:absolute; top:129px; left:430px; padding:0; font-size:8pt; z-index:10; font-weight:bold; width:150px; text-align:left;}			
 	.preamble {padding:210px 0 0 20px; margin:0 188px 0 0; background:url(mainImage.gif) 13px 0 no-repeat; width:392px;}
 		.preamble h3 {background:url(preAmble.gif) -9px 0 no-repeat; height:41px; width:392px; margin:0; padding:0;}
 		.preamble h3 span {display:none;}

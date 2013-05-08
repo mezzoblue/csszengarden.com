@@ -102,15 +102,15 @@ header h1,header h2{
 }
 
 /*Hide quicksummary*/
-.summary .p2 a{
+.summary p:last-child a{
 	color: #A3181E;
 }
 
-.summary p.p1 span{
+.summary p:first-child span{
 	display: none;
 }
 
-.summary p.p2 {
+.summary p:last-child {
 	font-size: 0.9em;
 	line-height: 12px;
 	position: absolute;

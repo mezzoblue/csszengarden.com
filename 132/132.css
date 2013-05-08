@@ -97,14 +97,14 @@ header h1 span, h2 span {
 	background: url(summary_bg.gif) 0 0 no-repeat;
 	float: left;
 }
-.summary .p1 span {
+.summary p:first-child span {
 	display: none;
 }
-.summary .p1 {
+.summary p:first-child {
 	margin: 0;
 	padding: 0;
 }
-.summary .p2 {
+.summary p:last-child {
 	margin: 0;
 	padding: 290px 20px 0 50px;
 	text-align: right;

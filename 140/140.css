@@ -200,7 +200,7 @@ footer a:hover {
 	background: url(images/t_requirements.jpg) no-repeat;
 }
 
-.page-wrapper .supporting .requirements p.p5 {
+.page-wrapper .supporting .requirements p:nth-child(6) {
 	margin: 40px 0 40px 42px;
 	font-size: 11px;
 	font-style: italic;

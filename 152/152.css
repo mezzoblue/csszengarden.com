@@ -175,9 +175,9 @@ text-decoration: none;
 .design-archives ul li a:hover, .zen-resources ul li a:hover { background-image: url(images/bullet_oval_on.gif); }
 
 /*VARIOUS======================================*/
-.summary p.p1 { display: none; }
+.summary p:first-child { display: none; }
 
-.summary p.p2
+.summary p:last-child
 {
 text-indent: 4px;
 padding-top: 140px;

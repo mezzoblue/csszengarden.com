@@ -129,7 +129,7 @@ header h1 span, header h2 span, .extra1, .extra3, .extra4, .extra5, .extra6 {
 	
 /* Extra Divs Finish Here ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.summary p.p1 {
+.summary p:first-child {
 	position: relative;
 	margin-left: 465px;
 	width: 235px;
@@ -140,7 +140,7 @@ header h1 span, header h2 span, .extra1, .extra3, .extra4, .extra5, .extra6 {
 	padding: 0 5px 5px 5px;
 	}
 
-.summary p.p2 {
+.summary p:last-child {
 	position: absolute;
 	top: 147px;
 	margin-left: 10px;
@@ -282,7 +282,7 @@ a.designer-name:link, a.designer-name:visited, a.designer-name:hover, a.designer
 .requirements {
 	}
 
-.requirements p.p5 {
+.requirements p:nth-child(6) {
 	
 	margin-top: 20px;
 	padding: 5px;

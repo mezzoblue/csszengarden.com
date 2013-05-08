@@ -57,7 +57,7 @@ header h1
 	padding:0;
 }
 
-.summary p.p1
+.summary p:first-child
 {
 	position: absolute;
 	top: 12em;
@@ -68,7 +68,7 @@ header h1
 	text-align: right;
 }
 
-.summary p.p2
+.summary p:last-child
 {
 	position: absolute;
 	top: 25em;
@@ -82,7 +82,7 @@ header h1
 	background-repeat: no-repeat;
 }
 
-.summary p.p2 a:link, .summary p.p2 a:visited
+.summary p:last-child a:link, .summary p:last-child a:visited
 {
 	white-space: nowrap;
 	font: bold 92%/1.3em Verdana,Arial,Sans-serif;

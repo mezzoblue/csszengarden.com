@@ -58,11 +58,11 @@ abbr {
 	width: 172px; height: 160px;
 	}
 	
-	.intro .summary .p1 {
+	.intro .summary p:first-child {
 		display: none;
 		}
 
-	.intro .summary .p2 {
+	.intro .summary p:last-child {
 		background: transparent url(images/bullet_download.gif) no-repeat 0px 4px;		
 		color: #E8D6A3;
 		padding: 0px 0px 0px 12px;
@@ -70,9 +70,9 @@ abbr {
 		width: 150px;
 		}
 		
-		.intro .summary .p2 a {color: #DEC35A; text-decoration: underline;}
-		.intro .summary .p2 a:visited {color: #DEC35A;}
-		.intro .summary .p2 a:hover {color: #E8D6A3;}
+		.intro .summary p:last-child a {color: #DEC35A; text-decoration: underline;}
+		.intro .summary p:last-child a:visited {color: #DEC35A;}
+		.intro .summary p:last-child a:hover {color: #E8D6A3;}
 
 
 .intro .preamble {
@@ -81,7 +81,7 @@ abbr {
 	width: 464px;
 	}
 
-	.intro .preamble .p1, .intro .preamble .p2, .intro .preamble .p3, .intro .preamble .p4, .intro .preamble .p5 {
+	.intro .preamble p:nth-child(2), .intro .preamble p:nth-child(3), .intro .preamble p:nth-child(4), .intro .preamble p:nth-child(5), .intro .preamble p:nth-child(6) {
 		padding: 0px 0px 0px 49px;
 		}
 
@@ -107,7 +107,7 @@ abbr {
 	width: 464px;
 	}
 
-	.supporting .p1, .supporting .p2, .supporting .p3, .supporting .p4, .supporting .p5 {
+	.supporting p:nth-child(2), .supporting p:nth-child(3), .supporting p:nth-child(4), .supporting p:nth-child(5), .supporting p:nth-child(6) {
 		padding: 0px 0px 0px 49px;
 		} 
 		

@@ -91,8 +91,8 @@ header span {
 .summary a:hover, .summary a:active {
 	color: #42443A;
 }
-/* This .p1 info is in the header image... */
-.summary .p1 {
+/* This p:nth-child(2) info is in the header image... */
+.summary p:first-child {
 	display: none;
 }
 .preamble, .supporting {

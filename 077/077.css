@@ -95,7 +95,7 @@ header {
 .preamble h3 {
 	margin-top: 18px;
 }
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	line-height: 12px;
 	font-size: 12px;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -104,7 +104,7 @@ header {
 	margin-bottom: 10px;
 	padding-bottom: 0px;
    }
-.preamble p.p2 {
+.preamble p:nth-child(3) {
 	font-size: 12px;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #2F4F4F;
@@ -113,7 +113,7 @@ header {
 	margin-bottom: 10px;
 	margin-top: 0px;
    }
-.preamble p.p3 {
+.preamble p:nth-child(4) {
 font-size: 12px;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #2F4F4F;

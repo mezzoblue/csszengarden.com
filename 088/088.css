@@ -189,12 +189,12 @@ body {
 			background: transparent url(sectionBack_main.png) repeat-y;  /*thin repeated background*/
 			}
 			
-		.preamble p.p3 {
+		.preamble p:nth-child(4) {
 			margin: 0;
 			padding: 5px 20px 25px 20px;
 			}
 			
-		html>head:first-child+body .preamble p.p3 {    /*selects last paragraph*/
+		html>head:first-child+body .preamble p:nth-child(4) {    /*selects last paragraph*/
 			background: transparent url(sectionBack_foot.png) no-repeat bottom right;  /*footer background*/
 			}
 		
@@ -256,13 +256,13 @@ body {
 			background: transparent url(sectionBack_main.png) repeat-y; /*middle background*/
 			}
 			
-		.explanation p.p2, .participation p.p4, .benefits p.p1, .requirements p.p5 {
+		.explanation p:nth-child(3), .participation p:nth-child(5), .benefits p:nth-child(2), .requirements p:nth-child(6) {
 			margin: 0;
 			padding: 5px 20px 25px 20px;
 			}
 			
-		html>head:first-child+body .explanation p.p2, html>head:first-child+body .participation p.p4,
-		html>head:first-child+body .benefits p.p1, html>head:first-child+body .requirements p.p5 {
+		html>head:first-child+body .explanation p:nth-child(3), html>head:first-child+body .participation p:nth-child(5),
+		html>head:first-child+body .benefits p:nth-child(2), html>head:first-child+body .requirements p:nth-child(6) {
 			background: transparent url(sectionBack_foot.png) no-repeat bottom right; /*last p gets bottom*/
 			}
 			

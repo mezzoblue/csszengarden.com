@@ -60,10 +60,10 @@ header h2 span {
 .summary {
 	display:block;
 	}
-.summary .p1 {
+.summary p:first-child {
 display:none;
 	}
-.summary .p2 {
+.summary p:last-child {
  	position:absolute;
 	top:0px;
 	left:300px;

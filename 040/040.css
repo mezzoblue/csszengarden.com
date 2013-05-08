@@ -81,7 +81,7 @@ a:hover, a:active {
 	padding: 0;
 	}
 
-header h1 span, header h2 span, .summary p.p1 span {
+header h1 span, header h2 span, .summary p:first-child span {
 	display: none;
 	}
 

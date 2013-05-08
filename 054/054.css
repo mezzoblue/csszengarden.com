@@ -26,7 +26,7 @@ p {
 	margin-right:5px;
 	}
 
-.p1, .p2 { 
+p:nth-child(2), p:nth-child(3) { 
 	background-image: url(separator.gif);
 	background-position: left bottom; 
  	background-repeat:no-repeat;
@@ -34,12 +34,12 @@ p {
 	margin-left:10px;
 	}
 	
-.p3 { 
+p:nth-child(4) { 
 	padding-bottom:12px;
 	margin-left:10px;
 	}
 
-.p4 {
+p:nth-child(5) {
 	background-image: url(separator.gif);
 	background-position: left bottom; 
 	background-repeat:no-repeat;

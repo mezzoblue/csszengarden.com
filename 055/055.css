@@ -69,17 +69,17 @@ div.summary {
 	height: 169px;
 }
 
-div.summary p.p1 {
+div.summary p:first-child {
 	background: url("quickSum.gif") no-repeat top left;
 	width: 159px;
 	height: 139px;
 }
 
-div.summary p.p1 span {
+div.summary p:first-child span {
 	display: none;
 }
 
-div.summary p.p2 {
+div.summary p:last-child {
 	position: absolute;
 	top: 165px;
 	font-size: 10px;    

@@ -27,10 +27,10 @@ header h1 span {position: absolute; left:-5000px;}
 header h2 {position: absolute; left:-5000px;}
 
 .summary {margin-left: 100px; height: 50px; background: url(img/summarybg.jpg) 5px 5px no-repeat;}
-.summary p.p1 {height: 41px; line-height: 41px; background: url(img/summarytxt_1.gif) 232px 7px no-repeat;}
-.summary p.p1 span {position: absolute; left:-5000px;}
+.summary p:first-child {height: 41px; line-height: 41px; background: url(img/summarytxt_1.gif) 232px 7px no-repeat;}
+.summary p:first-child span {position: absolute; left:-5000px;}
 .extra1 {position: absolute; top: 107px; left: 332px; width: 257px; height: 41px; background: url(img/summarytxt_2.gif) no-repeat;}
-.summary p.p2 {position: absolute; top: 423px; left: 0; width: 100px; height: 83px; color: #ffeed6; background: url(img/sample.gif) no-repeat; text-indent: -5000px;}
+.summary p:last-child {position: absolute; top: 423px; left: 0; width: 100px; height: 83px; color: #ffeed6; background: url(img/sample.gif) no-repeat; text-indent: -5000px;}
 
 .supporting {margin: 0 148px 0 100px; background: #982417 url(img/red.gif) bottom no-repeat; }
 .supporting a {color: #f93; font-weight: bold;}
@@ -41,8 +41,8 @@ header h2 {position: absolute; left:-5000px;}
 .preamble, .supporting div.explanation {background: #fdf3e5; color: #333; font-size: 12px; margin-right: 0;}
 .preamble {margin-left: 100px; padding: 30px 30px 0 30px; background: #fdf3e5 url(img/preamblebg.gif) 5px 0 no-repeat;}
 .supporting div.explanation {padding: 30px 30px 18px 30px; margin-left: 0;}
-.preamble p, .explanation p.p1 {display: inline;}
-.explanation p.p2 {padding-top: 12px;}
+.preamble p, .explanation p:nth-child(2) {display: inline;}
+.explanation p:nth-child(3) {padding-top: 12px;}
 
 .participation, .benefits, .requirements {padding: 15px 0 3px 0; border-bottom: 1px solid #b76151;}
 .participation h3 {width: 102px; left: -122px; background: url(img/participation.gif) no-repeat;}
@@ -50,7 +50,7 @@ header h2 {position: absolute; left:-5000px;}
 .requirements h3 {width: 107px; left: -127px; background: url(img/requirements.gif) no-repeat;}
 .participation h3, .benefits h3, .requirements h3 {height: 17px; line-height: 17px; position: relative;}
 .participation h3 span, .benefits h3 span, .requirements h3 span {position: relative; left: -5000px;}
-.participation p.p1, .benefits p.p1, .requirements p.p1 {margin-top: -17px;}
+.participation p:nth-child(2), .benefits p:nth-child(2), .requirements p:nth-child(2) {margin-top: -17px;}
 
 .supporting footer {padding: 20px 0 20px 1.5em; text-transform: uppercase; background: #982417 url(img/bullet.gif) 0 50% no-repeat; margin-right: 0;}
 footer a {padding: 0 1.5em 0 0; margin: 0 .5em 0 0; background: url(img/bullet.gif) 100% 50% no-repeat; width: 5%;}

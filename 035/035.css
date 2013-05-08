@@ -67,7 +67,7 @@ header h2 {
 	margin: 0;
 	}
 
-.summary p.p1 {
+.summary p:first-child {
 	padding: 14px;
 	margin: 0;
 	width: 188px;  /* False value for IE4-5.x/Win */	
@@ -76,11 +76,11 @@ header h2 {
 	width: 160px;	 /* Actual value for conformant browsers */	
 	}
 
-html>.summary p.p1 {
+html>.summary p:first-child {
 	width: 160px; /* Be nice to Opera */
 	}
 
-.summary p.p2 {
+.summary p:last-child {
 	padding: 0px 14px 14px 14px;
 	margin: 0;
 	width: 158px;  /* False value for IE4-5.x/Win */	
@@ -89,7 +89,7 @@ html>.summary p.p1 {
 	width: 130px;	 /* Actual value for conformant browsers */	
 	}
 
-html>.summary p.p2 {
+html>.summary p:last-child {
 	width: 130px; /* Be nice to Opera */
 	}
 
@@ -199,7 +199,7 @@ p {
 	}
 
 
-.preamble p, .summary p.p2 {
+.preamble p, .summary p:last-child {
 	line-height: 1.5;
 	color: #fff;
 	background: transparent;
@@ -211,15 +211,15 @@ p {
 	text-align: justify;
 	}
 
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	margin: 16px 18px 10px 18px;
 	}
 
-.preamble p.p2 {
+.preamble p:nth-child(3) {
 	margin: 0 18px 10px 18px;
 }
 
-.preamble p.p3 {
+.preamble p:nth-child(4) {
 	padding: 0;
 	margin: 0 18px 0 18px;
 	}
@@ -227,7 +227,7 @@ p {
 
 /* First Paragraphs */
 
-.explanation p.p1, .participation p.p1, .requirements p.p1 {
+.explanation p:nth-child(2), .participation p:nth-child(2), .requirements p:nth-child(2) {
 	padding: 0;
 	margin: 16px 18px 12px 18px;
 	}
@@ -235,7 +235,7 @@ p {
 
 /* Intermediate Paragraphs */
 
-.participation p.p2, .participation p.p3, .requirements p.p2, .requirements p.p3, .requirements p.p4 {
+.participation p:nth-child(3), .participation p:nth-child(4), .requirements p:nth-child(3), .requirements p:nth-child(4), .requirements p:nth-child(5) {
 	padding: 0;
 	margin: 12px 18px 12px 18px;
 	}
@@ -243,12 +243,12 @@ p {
 
 /* Last Paragraphs */
 
-.explanation p.p2, .participation p.p4 {
+.explanation p:nth-child(3), .participation p:nth-child(5) {
 	padding: 0;
 	margin: 0px 18px 16px 18px;
 	}
 
-.requirements p.p5 {
+.requirements p:nth-child(6) {
 	margin: 0px 18px 0px 18px;
 	padding: 0;
 	}
@@ -256,7 +256,7 @@ p {
 
 /* One Paragraph */
 
-.benefits p.p1 {
+.benefits p:nth-child(2) {
 	margin: 16px 18px 16px 18px;
 	}
 
@@ -265,14 +265,14 @@ p {
 	line-height: 1.5;
 	}
 
-.summary p.p1 {
+.summary p:first-child {
 	font-size: 9px;
 	background: transparent;
 	color: #999;
 	text-align: left;
 	}
 
-.summary p.p2 {
+.summary p:last-child {
 	font-size: 9px;
 	color: #999;
 	text-align: left;

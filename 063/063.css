@@ -88,13 +88,13 @@ h1 {
 	margin: 0;
 }
 
-.summary .p1 span {
+.summary p:first-child span {
 	font-weight: bold;
 	background: url(curve.gif) top right no-repeat;
 	padding: 2.2em 15em 1em 3em;
 }
 
-.summary .p2 span {
+.summary p:last-child span {
 	position: absolute;
 	top: 10.3em;
 	left: 50%;
@@ -105,7 +105,7 @@ h1 {
 	voice-family: inherit;
 	width: 11em;
 }
-html>.summary .p2 { width: 11em; }
+html>.summary p:last-child { width: 11em; }
 
 .summary a {
 	color: #070;
@@ -151,18 +151,18 @@ html>.preamble, html>.supporting { margin: 0 0 0 auto; }
 	margin: 0 2em;
 }
 
-.preamble .p1, .participation .p1, .requirements .p1 {
+.preamble p:nth-child(2), .participation p:nth-child(2), .requirements p:nth-child(2) {
 	position: relative;
 	top: -15px;
 	background: url(corner_yelongreen_br.gif) top right no-repeat;
 	margin: 0 2em -15px 2em;
 }
 
-.preamble .p1 {
+.preamble p:nth-child(2) {
 	margin: 0 0 -15px 0;
 }
 
-.participation .p1 span, .requirements .p1 span {
+.participation p:nth-child(2) span, .requirements p:nth-child(2) span {
 	display: block;
 	background: url(corner_yelongreen_bl.gif) top left no-repeat;
 	padding-top: 4em;
@@ -170,16 +170,16 @@ html>.preamble, html>.supporting { margin: 0 0 0 auto; }
 	padding-left: 2em;
 }
 
-.preamble .p1 span {
+.preamble p:nth-child(2) span {
 	display: block;
 	padding-top: 4em;
 }
 
-.explanation .p1, .benefits .p1 {
+.explanation p:nth-child(2), .benefits p:nth-child(2) {
 	background: url(corner_yelongreen_tl.gif) top left no-repeat;
 }
 
-.explanation .p1 span, .benefits .p1 span {
+.explanation p:nth-child(2) span, .benefits p:nth-child(2) span {
 	display: block;
 	background: url(corner_yelongreen_tr.gif) top right no-repeat;
 	padding-top: 3em;

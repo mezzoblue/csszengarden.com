@@ -99,11 +99,11 @@ header {
              margin: 0;             
 	}
 
-.summary p.p1 {             
+.summary p:first-child {             
 	display: none;             
 	}
 
-.summary p.p2 {
+.summary p:last-child {
              position: absolute;
              top: 140px;
              left: 235px;	
@@ -167,7 +167,7 @@ header {
              padding: 0 60px 15px 235px;
 	}
 
-.explanation p.p1, .participation p.p1, .benefits p.p1, .requirements p.p1 {	
+.explanation p:nth-child(2), .participation p:nth-child(2), .benefits p:nth-child(2), .requirements p:nth-child(2) {	
 	margin-top: -46px;             
 	}
 

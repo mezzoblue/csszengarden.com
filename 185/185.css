@@ -48,26 +48,26 @@ header{
 	background-repeat:no-repeat;
 	background-position:bottom;
 }
-.summary p.p1{
+.summary p:first-child{
 	background-image:url(panel_naranja_medio.gif);
 	width: 161px;
 	min-height: 86px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
-.summary p.p1 span{
+.summary p:first-child span{
 	background-image:url(panel_naranja_top.gif);
 	background-position:top;
 	background-repeat:no-repeat;
 }
-.summary p.p1 span, .summary p.p2 span{
+.summary p:first-child span, .summary p:last-child span{
 	margin: 0px;
 	padding-left: 35px;
 	padding-top: 9px;
 	padding-right: 10px;
 	display: block;
 }
-.summary p.p2{
+.summary p:last-child{
 	margin-top: 0px;
 	padding-top: 0px;
 	margin-bottom: 0px;
@@ -76,7 +76,7 @@ header{
 	width: 161px;
 	min-height: 39px;
 }
-.summary p.p2 span{	
+.summary p:last-child span{	
 	padding-top: 24px;
 	background-image:url(panel_naranja_bottom.gif);
 	background-repeat:no-repeat;

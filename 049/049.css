@@ -94,14 +94,14 @@
 	header h2 span {
 		display:none
 	}
-	.summary p.p1{
+	.summary p:first-child{
 		margin:0px;
 		margin-left: 199px;
 		padding: 20px;
 		text-align:justify;
 		background: transparent url(hordot.gif) repeat-x bottom;
 	}
-	.summary p.p2{
+	.summary p:last-child{
 		margin:0px;
 		margin-left: 199px;
 		padding: 20px;
@@ -147,7 +147,7 @@
 	.preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span, .design-selection h3 span, #lfavorites h3 span, .design-archives h3 span, .zen-resources h3 span{
 		display:none;
 	}
-	.preamble p.p3, .explanation p.p2, .participation p.p4, .benefits p.p1, .requirements p.p5 {
+	.preamble p:nth-child(4), .explanation p:nth-child(3), .participation p:nth-child(5), .benefits p:nth-child(2), .requirements p:nth-child(6) {
 		padding-bottom: 20px;
 		margin:0px;
 	}

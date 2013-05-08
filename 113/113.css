@@ -57,7 +57,7 @@ header span {
 		display:none;
 }
 
-.summary .p1 {	
+.summary p:first-child {	
 		position:	absolute;
 		width:		586px;
 		padding:	14px;
@@ -71,7 +71,7 @@ header span {
 		border: 	1px solid #ffffff;
 }
 
-.summary .p2 {	
+.summary p:last-child {	
 		position:	absolute;
 		font-size:	7.5pt;
 		text-transform:	uppercase;
@@ -124,7 +124,7 @@ footer a:hover {
 		left: 		-10px;
 }
 
-.preamble .p1 	{
+.preamble p:nth-child(2) 	{
 		text-indent:	20px;
 		margin-top:	-28px
 }
@@ -142,7 +142,7 @@ footer a:hover {
 		left:		-10px;
 }
 
-.explanation .p1 {
+.explanation p:nth-child(2) {
 		text-indent:	20px;
 		margin-top:	-28px
 }
@@ -163,16 +163,16 @@ footer a:hover {
 		display:	none;
 }
 
-.participation .p1 {
+.participation p:nth-child(2) {
 		text-indent:	20px;
 		margin-top:	-28px
 }
 
-.participation .p2 {
+.participation p:nth-child(3) {
 		width:		440px;
 }
 
-.participation .p1{
+.participation p:nth-child(2){
 		width:		440px;
 }
 
@@ -188,7 +188,7 @@ footer a:hover {
 		left:		-10px;
 }
 
-.benefits .p1 	{
+.benefits p:nth-child(2) 	{
 		text-indent:	20px;
 		margin-top:	-28px
 }
@@ -205,7 +205,7 @@ footer a:hover {
 		left:		-10px;
 }
 
-.requirements .p1 {
+.requirements p:nth-child(2) {
 		text-indent:	20px;
 		margin-top:	-28px
 }

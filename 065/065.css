@@ -73,7 +73,7 @@ header h1 span, h2 span {
   z-index:10; 
 }
 
-.summary .p1 {
+.summary p:first-child {
   display:none;
 }
 
