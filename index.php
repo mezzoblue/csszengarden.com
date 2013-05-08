@@ -5,13 +5,13 @@
 	include($SERVER_ROOT . "includes/functions.php");
 
 
-?><!DOCTYPE html >
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>CSS Zen Garden: The Beauty in CSS Design</title>
 
-	<link rel="stylesheet" media="screen" href="<?= $currentDesign; ?>">
+	<link rel="stylesheet" media="screen" href="<?php echo $currentDesign; ?>">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
 	<meta name="robots" content="all">
 </head>
 
-<!-- 
+<!--
 
 
 	to do: a new comment for people viewing source
@@ -79,7 +79,7 @@
 		</div>
 
 		<footer>
-			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML" class="zen-validate-html">HTML</a> 
+			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML" class="zen-validate-html">HTML</a>
 			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS" class="zen-validate-css">CSS</a>
 			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Creative Commons license of this site: Attribution-NonCommercial-ShareAlike." class="zen-license">CC</a>
 			<a href="http://mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site" class="zen-accessibility">A11y</a>
@@ -88,7 +88,7 @@
 
 	</div>
 
-	
+
 	<aside class="sidebar">
 		<div class="wrapper">
 
@@ -106,25 +106,25 @@
 			<div class="design-archives" id="design-archives">
 				<h3 class="archives"><span>Archives:</span></h3>
 				<ul>
-<?
+<?php
 	if ($listStart > $numDesigns) {
 ?>
 					<li class="next">
-						<a href="?cssfile=<?= $currentDesign ?>&amp;page=<?= $thisPage + 1 ?>">
+						<a href="?cssfile=<?php echo $currentDesign ?>&amp;page=<?php echo $thisPage + 1 ?>">
 							Next Designs <span class="indicator">&raquo;</span>
 						</a>
 					</li>
-<?
+<?php
 	}
 
 	if ($thisPage > 0) {
 ?>
 					<li class="previous">
-						<a href="?cssfile=<?= $currentDesign ?>&amp;page=<?= $thisPage - 1 ?>">
+						<a href="?cssfile=<?php echo $currentDesign ?>&amp;page=<?php echo $thisPage - 1 ?>">
 							<span class="indicator">&laquo;</span> Previous Designs
 						</a>
 					</li>
-<?
+<?php
 	}
 ?>
 					<li class="viewall">
@@ -134,12 +134,12 @@
 					</li>
 				</ul>
 			</div>
-			
+
 			<div class="zen-resources" id="zen-resources">
 				<h3 class="resources"><span>Resources:</span></h3>
 				<ul>
 					<li class="view-css">
-						<a href="<?= $currentDesign ?>" title="View the source CSS file of the currently-viewed design.">
+						<a href="<?php echo $currentDesign ?>" title="View the source CSS file of the currently-viewed design.">
 							View This Design&#8217;s <abbr title="Cascading Style Sheets">CSS</abbr>
 						</a>
 					</li>
@@ -171,9 +171,9 @@
 
 </div>
 
-<!-- 
+<!--
 	These extra divs/spans were originally provided as catch-alls to add extra imagery.
-	These days we have full ::before and ::after support, favour using those instead. 
+	These days we have full ::before and ::after support, favour using those instead.
 	These remain for historical design compatibility.
 -->
 <div class="extra1"><span></span></div><div class="extra2"><span></span></div><div class="extra3"><span></span></div>
