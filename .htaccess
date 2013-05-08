@@ -7,6 +7,6 @@ SetEnvIfNoCase Referer ".*coret.org$" BadReferrer
 order deny,allow
 deny from env=BadReferrer
 
-<files submissions.json>
-AddHandler application/x-httpd-php .json
-</files>
+<FilesMatch "^.*submissions\.json$">
+  SetHandler php-script
+</FilesMatch>
