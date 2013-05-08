@@ -7,49 +7,54 @@ var nextA          = document.getElementById('next-link');
 var prevLi         = document.getElementById('previous-design');
 var prevA          = document.getElementById('previous-link');
 var designList     = document.getElementById('design-list');
+var g_perpage      = 8;
+var g_currentPage  = null; // 0 based index of page id
+var g_pageSets     = {};   // 0 based index of page id
 
 // function to keep the "view css source" link correctly pointed
 function updateViewSourceLink() {
     viewSourceLink.href = cssElement.href;
 }
 
-// A function to update both prev/next navigation in a single loop.
-// todo: could possibly be most optimized, but this is O()fast enough.
-function updateNav(prevNext, li, a) {
-    var foundDesign = false;
-    var designCount = g_designs.length;
-    var current = 0;
-    var i;
-    while (current <= designCount) {
-        if (prevNext == 'prev') {
-            i = current;
+function setCurrentPage() {
+    var page;
+    for (var i in g_designs) {
+        page = Math.floor(i/g_perpage);
+        if (!g_pageSets.hasOwnProperty(page)) {
+            g_pageSets[page] = '';
         }
-        else {
-            i = designCount - (current+1);
-        }
+        g_pageSets[page] += '<li><a href="#'+ g_designs[i][0] +'" class="design-name">'+ g_designs[i][1] +'</a> by <a href="'+ g_designs[i][3] +'" class="designer-name">'+ g_designs[i][2] +'</a></li>';
         if (g_designs[i][0] == design) {
-            break;
+            g_currentPage = page;
         }
-        foundDesign = g_designs[i];
-        current++;
     }
-    // we don't use display incase people want it to be block/inline/etc
-    if (foundDesign) {
-        li.style.visibility = 'visible';
-        a.href = '#' + foundDesign[0];
-    }
-    else {
-        li.style.visibility = 'hidden';
+    if (design == '001') {
+        g_currentPage = page;
     }
 }
 
-// two little helper functions to trigger the real navigation button changer
-function updateNext() {
-    updateNav('next', nextLi, nextA);
-}
+function updateNavToPage(page) {
+    if (!g_pageSets.hasOwnProperty(page)) {
+        return;
+    }
 
-function updatePrev() {
-    updateNav('prev', prevLi, prevA);
+    // set the html and page
+    designList.innerHTML = g_pageSets[page];
+    g_currentPage = page;
+
+    // rebind the links to change designs
+    var links = document.getElementsByClassName('design-name');
+    var change = function() {
+        changeDesign(this.href.split('#')[1]);
+    };
+    for (var i in links) {
+        links[i].onclick = change;
+    }
+
+    // hide/unhide prev/next links
+    prevLi.style.visibility = g_pageSets.hasOwnProperty(page-1) ? 'visible' : 'hidden';
+    nextLi.style.visibility = g_pageSets.hasOwnProperty(page+1) ? 'visible' : 'hidden';
+
 }
 
 // the real meat of this which changes our CSS/links/hash around properly
@@ -57,18 +62,20 @@ function changeDesign(designId) {
     design = designId;
     window.location.hash = '#' + design;
     cssElement.href = design + '/' + design + '.css';
-    updateNext();
-    updatePrev();
     updateViewSourceLink();
 }
 
 // hook into the links to execute the design change
-prevA.onclick = nextA.onclick = function(){
-    changeDesign(this.href.split('#')[1]);
+prevA.onclick = function(){
+    updateNavToPage(g_currentPage-1);
+    return false;
+};
+nextA.onclick = function(){
+    updateNavToPage(g_currentPage+1);
     return false;
 };
 
 // one first load, get everything squared away
-updateNext();
-updatePrev();
+setCurrentPage();
+updateNavToPage(g_currentPage);
 updateViewSourceLink();
