@@ -23,7 +23,11 @@
 <!--
 
 
-	to do: a new comment for people viewing source
+	View source is a feature, not a bug. Thanks for your curiosity and
+	interest in participating!
+
+	
+
 
 -->
 
@@ -49,7 +53,7 @@
 		</div>
 	</section>
 
-	<div class="supporting" id="zen-supporting">
+	<div class="main supporting" id="zen-supporting" role="main">
 		<div class="explanation" id="zen-explanation">
 			<h3><span>So What is This About?</span></h3>
 			<p><span>There is a continuing need to show the power of <abbr title="Cascading Style Sheets">CSS</abbr>. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet into this very page. The <abbr title="HyperText Markup Language">HTML</abbr> remains the same, the only thing that has changed is the external <abbr title="Cascading Style Sheets">CSS</abbr> file. Yes, really.</span></p>
