@@ -1,7 +1,7 @@
 <?php
 
 $loadCSS = "/001/001-jp.css";
-include '../../masterlist.php';
+include '../../includes/masterlist.php';
 $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m");
 
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
