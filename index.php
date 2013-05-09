@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<title>CSS Zen Garden: The Beauty in CSS Design</title>
 
-	<link rel="stylesheet" media="screen" href="<?php echo $currentDesign; ?>">
+	<link rel="stylesheet" media="screen" href="<?php echo $currentDesign; ?>?v=8may2013">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
