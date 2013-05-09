@@ -4,9 +4,9 @@
 
 	// shorthand alias for `htmlspecialchars` with the needed settings
 	function hsc($string) {
-		return $string; // htmlspecialchars($string, ENT_HTML5, 'UTF-8');
+		// avoid using `ENT_HTML5` for PHP 5.3 support
+		return htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
 	}
-
 
 	// generate the list of designs in the site navigation
 	function getDesignList($start, $count, $list) {
