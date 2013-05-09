@@ -26,8 +26,12 @@
 	View source is a feature, not a bug. Thanks for your curiosity and
 	interest in participating!
 
-	
+	A few tips for the new and improved csszengarden:
 
+	- use classes for styling. don't use ids.
+	- use :first-child, :last-child and :nth-child to get at non-classed elements
+	- go responsive; test your layout at multiple screen sizes.
+	- use the Kellum Method for image replacement if needed. http://goo.gl/GXxdI
 
 -->
 
