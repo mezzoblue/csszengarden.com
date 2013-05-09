@@ -67,9 +67,10 @@ height: 88px;
 font: bold 1em Arial, Helvetica, sans-serif;
 color: #449498;
 background: transparent url(cssdesign.gif) top left no-repeat;
-}
-header h2 span {
-display: none;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 
 .summary {
@@ -90,7 +91,7 @@ height: 6em;
 clear: both;
 padding: 5.8em 0 0 4.7em;
 }
-.preamble h3 span {
+.preamble h3 {
 display: none;
 }
 .preamble p:nth-child(2), .preamble p:nth-child(3), .preamble p:nth-child(4) {
@@ -139,8 +140,8 @@ height: 4em;
 clear: both;
 padding: 6.5em 0 0 4.7em;
 }
-.explanation h3 span {
-display: none;
+.explanation h3 {
+	display: none;
 }
 .explanation p:nth-child(2) {
 width: 320px;
@@ -159,7 +160,7 @@ background: transparent url(participation.gif) top left no-repeat;
 clear: both;
 padding: 6em 0 0 4.7em;
 }
-.participation h3 span, .benefits h3 span {
+.participation h3, .benefits h3 {
 display: none;
 }
 .participation p:nth-child(2) {
@@ -203,7 +204,7 @@ background: transparent url(requirements.gif) top left no-repeat;
 clear: both;
 padding: 7.3em 0 0 4.7em;
 }
-.requirements h3 span {
+.requirements h3 {
 display: none;
 }
 .requirements p:nth-child(2) {
