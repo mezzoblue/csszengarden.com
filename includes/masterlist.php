@@ -11,7 +11,7 @@ $designList = array(
 	array(
 			"002",
 			"Salmon Cream Cheese",
-			"Dave Shea",
+			"Dave Shea"	,
 			"http://www.mezzoblue.com/",
 	),
 	array(
@@ -124,7 +124,7 @@ $designList = array(
 	),
 	array(
 			"021",
-			"Calm & Smooth",
+			"Calm &amp; Smooth",
 			"Cornelia Lange",
 			"http://www.clkm.de/",
 	),
@@ -136,7 +136,7 @@ $designList = array(
 	),
 	array(
 			"023",
-			"fleur de l’avant-garde",
+			"fleur de l&#8217;avant-garde",
 			"Michael Switzer",
 			"#",
 	),
@@ -220,7 +220,7 @@ $designList = array(
 	),
 	array(
 			"037",
-			"prêt-á-porter",
+			"pr&#234;t-&#225;-porter",
 			"Minz Meyer",
 			"http://www.minzweb.de/",
 	),
@@ -257,7 +257,7 @@ $designList = array(
 	array(
 			"043",
 			"Burning",
-			"Kevin & Ethel Davis",
+			"Kevin &#038; Ethel Davis",
 			"#",
 	),
 	array(
@@ -287,7 +287,7 @@ $designList = array(
 	array(
 			"048",
 			"HoriZental",
-			"Clément ‘fastclemmy’ Hardouin",
+			"Cl&#233;ment &#8216;fastclemmy&#8217; Hardouin",
 			"http://www.fastclemmy.com/",
 	),
 	array(
@@ -322,7 +322,7 @@ $designList = array(
 	),
 	array(
 			"054",
-			"Gecko’s Eye",
+			"Gecko&#8217;s Eye",
 			"Sandra Greco",
 			"http://www.magritte.it/",
 	),
@@ -394,7 +394,7 @@ $designList = array(
 	),
 	array(
 			"066",
-			"Focus & Shoot",
+			"Focus &amp; Shoot",
 			"Colectivo YTW",
 			"#",
 	),
@@ -599,7 +599,7 @@ $designList = array(
 	array(
 			"100",
 			"15 Petals",
-			"Eric Meyer & Dave Shea",
+			"Eric Meyer &amp; Dave Shea",
 			"http://www.meyerweb.com/",
 	),
 	array(
@@ -628,7 +628,7 @@ $designList = array(
 	),
 	array(
 			"105",
-			"Austrian’s Darker Side",
+			"Austrian&#8217;s Darker Side",
 			"Rene Grassegger",
 			"#",
 	),
@@ -661,7 +661,7 @@ $designList = array(
 	),
 	array(
 			"111",
-			"Grüener Entwurf",
+			"Gr&#252;ener Entwurf",
 			"Hannah F. Liesong",
 			"http://www.liesong.de/",
 	),
@@ -721,7 +721,7 @@ $designList = array(
 	),
 	array(
 			"121",
-			"60’s Lifestyle",
+			"60&#8217;s Lifestyle",
 			"Emiliano Pennisi",
 			"http://www.peamarte.it/02/03.html",
 	),
@@ -826,7 +826,7 @@ $designList = array(
 	),
 	array(
 			"139",
-			"Neat & Tidy",
+			"Neat &amp; Tidy",
 			"Oli Dale",
 			"#",
 	),
@@ -869,7 +869,7 @@ $designList = array(
 	array(
 			"146",
 			"Urban",
-			"Matt Kim & Nicole",
+			"Matt Kim &amp; Nicole",
 			"http://www.learnnewmedia.ca/",
 	),
 	array(
@@ -929,7 +929,7 @@ $designList = array(
 	array(
 			"156",
 			"Table Layout Assassination!",
-			"Marko Krsul & Marko Dugonjic",
+			"Marko Krsul &amp; Marko Dugonjic",
 			"http://web.burza.hr/",
 	),
 	array(
@@ -1100,7 +1100,7 @@ $designList = array(
 	array(
 			"185",
 			"Manhattan Edition",
-			"José Tomás Tocino García",
+			"Jos&#233; Tom&#225;s Tocino Garc&#237;a",
 			"#",
 	),
 	array(
@@ -1202,7 +1202,7 @@ $designList = array(
 	array(
 			"202",
 			"Retro Theater",
-			"Eric Rogé",
+			"Eric Rog&#233;",
 			"#",
 	),
 	array(
@@ -1261,7 +1261,7 @@ $designList = array(
 	),
 	array(
 			"212",
-			"Make ’em Proud",
+			"Make &#8217;em Proud",
 			"Michael McAghon and Scotty Reifsnyder",
 			"http://skybased.com/",
 	),
