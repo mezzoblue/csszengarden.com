@@ -93,7 +93,7 @@
 	</div>
 
 
-	<aside class="sidebar">
+	<aside class="sidebar" role="complementary">
 		<div class="wrapper">
 
 			<div class="design-selection" id="design-selection">
