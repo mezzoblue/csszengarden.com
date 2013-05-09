@@ -63,7 +63,6 @@ abbr {
 	width: 100%;
 	}
 
-/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
 header h1 { 
 	background: transparent url(h1.gif) no-repeat top left;
 	margin-top: 10px;

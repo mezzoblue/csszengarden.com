@@ -78,12 +78,15 @@ header h1 {
 	width: 750px;
 	height: 152px;
 	margin: 0px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-header h1 span {
-	display: none;
-	}
-header h2 span {
-	display: none;
+header h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .summary { 
@@ -106,9 +109,10 @@ html>body .summary {
 	voice-family: "\"}\""; 
 	voice-family:inherit;
 	height: 258px; 
-	}
-.summary p:first-child span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .summary p:last-child {
 	color: #7593A7;
@@ -121,11 +125,10 @@ html>body .summary {
 	voice-family:inherit;
 	width: 124px;
 	height: 178px;
-	}
-.summary p:last-child span {
-	letter-spacing: -1px;
-	line-height: 26px;
-	display: block;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .summary p:last-child a:link, .summary p:last-child a:visited {
 	color: #7593A7;
