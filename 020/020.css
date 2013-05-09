@@ -52,7 +52,7 @@ header h2 abbr {
 	color: #FFF;
 	border-bottom: 1px #FFF dashed;
 }
-.summary p.p1 {
+.summary p:first-child {
 	position: absolute;
 	right: 21px;
 	top: 21px;
@@ -69,7 +69,7 @@ header h2 abbr {
 	background-position: 50% 100%; 
 	background-color: #0C2953;	
 }
-.summary p.p1 span {
+.summary p:first-child span {
 	display: block;
 	padding: 3px;
 }
@@ -98,7 +98,7 @@ header h2 abbr {
 .preamble p {
 	text-align: justify;
 }
-.preamble p.p1, .preamble p.p2 {
+.preamble p:nth-child(2), .preamble p:nth-child(3) {
 	margin: 0px;
 	padding: 10px 20px 2px 6px;
 	background-image: url(bordDroitPreamble.gif);
@@ -106,7 +106,7 @@ header h2 abbr {
 	background-position: 100% 0px;
 	background-color: #F6F7F7;
 }
-.preamble p.p3 {
+.preamble p:nth-child(4) {
 	margin: 0px;
 	padding: 0px;
 	background-image: url(bordBasPreamble.gif);
@@ -114,10 +114,10 @@ header h2 abbr {
 	background-position: 100% 100%;
 	background-color: #F6F7F7;
 }
-.preamble p.p1 span, .preamble p.p2 span, .preamble p.p3 span {
+.preamble p:nth-child(2) span, .preamble p:nth-child(3) span, .preamble p:nth-child(4) span {
 	display: block;
 }
-.preamble p.p3 span {
+.preamble p:nth-child(4) span {
 	margin: 0px;
 	padding: 10px 20px 20px 6px;
 	background-image: url(bordBasPreambleGauche.gif);
@@ -198,7 +198,7 @@ header h2 abbr {
 	font-weight: bold;
 	text-decoration: none;
 }
-.sidebar, .summary p.p2 {
+.sidebar, .summary p:last-child {
 	font-size: 90%;
 	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
 	position: absolute;
@@ -209,13 +209,13 @@ header h2 abbr {
 	margin: 0px;
 	background-color: #A4ACB3;
 }
-.summary p.p2 {
+.summary p:last-child {
 	height: 50px;
 	text-align: center;
 	top: 217px;
 }
 
-.summary p.p2 span {
+.summary p:last-child span {
 	font-size: 90%;
 	display: block;
 	padding: 3px;
@@ -271,14 +271,14 @@ header h2 abbr {
 	border: 1px dotted #0C2953;
 	background-color: #6BA0D2;
 }
-.summary p.p2 span a:link {
+.summary p:last-child span a:link {
 	color: #FFF;
 	font-weight: bold;
 }
-.summary p.p2 span a:visited {
+.summary p:last-child span a:visited {
 	color: #204160;
 }
-.summary p.p2 span a:hover, .summary p.p2 span a:active {
+.summary p:last-child span a:hover, .summary p:last-child span a:active {
 	color: #FFD800;
 	font-weight: bold;
 	text-decoration: none;

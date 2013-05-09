@@ -122,7 +122,7 @@ ul {
 header {
 }
 
-.summary p.p1 {
+.summary p:first-child {
 	width:115px;
 	position:absolute;
 	left:15px;
@@ -130,7 +130,7 @@ header {
 	color:#FFFFFF;
 }
 
-.summary p.p2 {
+.summary p:last-child {
 	position:absolute;
 	left:5px;
 	top:2985px;
@@ -163,18 +163,18 @@ header {
 	top:700px;
 }
 
-.preamble p.p1{
+.preamble p:nth-child(2){
 	position:absolute;
 	left:-50px;
 }
 
-.preamble p.p2{
+.preamble p:nth-child(3){
 	position:absolute;
 	top:55px;
 	left:-30px;
 }
 
-.preamble p.p3{
+.preamble p:nth-child(4){
 	position:absolute;
 	top:120px;
 	left:20px;
@@ -233,7 +233,7 @@ header {
 	text-align:right;
 }
 
-.requirements p.p5{
+.requirements p:nth-child(6){
 	width:520px;
 	position:absolute;
 	top:550px;
@@ -242,21 +242,21 @@ header {
 	color:#FFFFFF;
 }
 
-.requirements p.p5 a {
+.requirements p:nth-child(6) a {
 	color:#FFFFFF;
 }
 
-.requirements p.p5 a:active {
+.requirements p:nth-child(6) a:active {
 	color:#FF0000;
 	text-decoration:line-through;
 }
 
-.requirements p.p5 a:visited {
+.requirements p:nth-child(6) a:visited {
 	color:#FF0000;
 	text-decoration:line-through;
 }
 
-.requirements p.p5 a:hover {
+.requirements p:nth-child(6) a:hover {
 	color:#FF0000;
 	text-decoration:line-through;
 }

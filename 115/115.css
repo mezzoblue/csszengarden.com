@@ -107,7 +107,7 @@ header h2 {
    padding: 0px;
    display: none;
 }
-.summary p.p1 {
+.summary p:first-child {
    border: 1px solid red;
 }
 
@@ -148,7 +148,7 @@ header h2 {
    padding: 0;
    line-height: 1.6em;
 }
-.summary p.p1{
+.summary p:first-child{
    display: none;
 }
 .summary a:link, .summary a:active, .summary a:visited {

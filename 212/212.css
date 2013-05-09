@@ -145,13 +145,13 @@ a img { border: 0; }
 		padding: 125px 0 0;
 	}
 	
-	.intro .summary p.p1 {
+	.intro .summary p:first-child {
 		font-size: 1.2em !important;
 		font-style: italic;
 		padding: 0 11px 0 14px;
 	}
 	
-	.intro .summary p.p2 {
+	.intro .summary p:last-child {
 		background: #2d1100 url("h_get-started.gif") 50% 1.5em no-repeat;
 		padding: 5em 15px 1.6em;
 		margin: 0;

@@ -126,7 +126,7 @@ html>body .summary
 		color: #444;
 	}
 
-.summary p.p2 
+.summary p:last-child 
 	{
 		font-style: normal;
 		font-weight: normal;

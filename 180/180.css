@@ -72,11 +72,11 @@ ul {
 
 /* CLASS STYLES */
 
-.p1 {
+p:nth-child(2) {
   text-indent: 33px;
   }
 
-.p5 {
+p:nth-child(6) {
   margin-top: 15px;
   width: 300px;
   text-align: left;

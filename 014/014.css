@@ -36,7 +36,7 @@ h3 span {
 	display: none;
 }
 
-div.preamble p.p3 {
+div.preamble p:nth-child(4) {
 	padding-bottom: 15px;
 }
 
@@ -111,7 +111,7 @@ div.summary p {
 	text-align: center;
 }
 
-div.summary p.p2 {
+div.summary p:last-child {
 	font: italic 11px Verdana, sans-serif;
 }
 

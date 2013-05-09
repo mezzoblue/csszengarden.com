@@ -246,7 +246,7 @@ top:325px;
 text-align:center;
 }
 
-.summary .p1 {
+.summary p:first-child {
 text-indent:-9999px;
 height:200px;
 display:none;
@@ -254,7 +254,7 @@ margin:0;
 padding:0;
 }
 
-.summary .p2 {
+.summary p:last-child {
 background:transparent;
 font-style:normal;
 text-transform:uppercase;
@@ -270,7 +270,7 @@ margin:0;
 padding:0;
 }
 
-.requirements .p5 {
+.requirements p:nth-child(6) {
 height:200px;
 background:url(flower.jpg) center no-repeat;
 text-align:center;

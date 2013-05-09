@@ -110,11 +110,11 @@ h3	{
 	}
 
 /* Content */
-.p1	{
+p:nth-child(2)	{
 	margin-top:1px;
 	padding-top:30px;
 	}
-.p5	{
+p:nth-child(6)	{
 	text-align:center;
 	color:#FFE1A4;
 	font: 8pt/12pt Arial, sans-serif; 

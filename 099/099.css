@@ -72,7 +72,7 @@ header {
 	height:491px;
 	background:url(P1PANEL1.jpg) no-repeat black;
 }
-.summary p.p1 span {
+.summary p:first-child span {
 	position: absolute;
 	left: 71px;
 	top: 28px;
@@ -80,16 +80,16 @@ header {
 	height: 80px;
 	font-size: 16px;
 }
-.summary p.p2 span {
+.summary p:last-child span {
 	position:absolute;
 	left:551px;
 	top:0;
 	font: 9px Arial, Helvetica, sans serif;
 }
-.summary p.p2 span:before {
+.summary p:last-child span:before {
 	content:"® "
 }
-.preamble p.p1{
+.preamble p:nth-child(2){
 	position:absolute;
 	left:5px;
 	top:506px;
@@ -97,14 +97,14 @@ header {
 	height:428px;
 	background:url(P1PANEL2.jpg) no-repeat black;
 }
-.preamble p.p1 span {
+.preamble p:nth-child(2) span {
 	position: absolute;
 	left: 217px;
 	top: 30px;
 	width: 127px;
 	height: 92px;
 }
-.preamble p.p2{
+.preamble p:nth-child(3){
 	position:absolute;
 	left:384px;
 	top:507px;
@@ -112,14 +112,14 @@ header {
 	height:429px;
 	background:url(P1PANEL3.jpg) no-repeat black;
 }
-.preamble p.p2 span {
+.preamble p:nth-child(3) span {
 	position: absolute;
 	left: 18px;
 	top: 12px;
 	width: 160px;
 	height: 104px;
 }
-.preamble p.p3{
+.preamble p:nth-child(4){
 	position:absolute;
 	left:4px;
 	top:941px;
@@ -127,7 +127,7 @@ header {
 	height:421px;
 	background:url(P1PANEL45.jpg) no-repeat black;
 }
-.preamble p.p3 span {
+.preamble p:nth-child(4) span {
 	position: absolute;
 	left: 5px;
 	top: 5px;
@@ -156,7 +156,7 @@ header {
 	margin-top:100px;
 	background:#EEEACD;
 }
-.explanation p.p1 {
+.explanation p:nth-child(2) {
 	position:absolute;
 	left:3px;
 	top:1px;
@@ -164,14 +164,14 @@ header {
 	height:509px;
 	background:url(P2PANEL1.jpg) no-repeat black;
 }
-.explanation p.p1 span {
+.explanation p:nth-child(2) span {
 	position: absolute;
 	left: 197px;
 	top: 3px;
 	width: 256px;
 	height: 116px;
 }
-.explanation p.p2 {
+.explanation p:nth-child(3) {
 	position:absolute;
 	left:462px;
 	top:12px;
@@ -179,7 +179,7 @@ header {
 	height:491px;
 	background:url(P2PANEL2.jpg) no-repeat black;
 }
-.explanation p.p2 span {
+.explanation p:nth-child(3) span {
 	position: absolute;
 	left: 10px;
 	top: 7px;
@@ -218,7 +218,7 @@ header {
 	margin-bottom:0;
 	padding:0;
 }
-.participation p.p1 {
+.participation p:nth-child(2) {
 	margin:0;
 }
 .participation p span {
@@ -254,7 +254,7 @@ header {
 	background:url(P3PANEL1.jpg) no-repeat black;
 	margin-top:112px;
 }
-.benefits p.p1 {
+.benefits p:nth-child(2) {
 	position:absolute;
 	left:53px;
 	top:418px;
@@ -264,7 +264,7 @@ header {
 	text-align:center;
 	margin:0;
 }
-.benefits p.p1 span {
+.benefits p:nth-child(2) span {
 	line-height:100%;
 	text-align:center;
 }
@@ -288,16 +288,16 @@ header {
 .requirements h3 span {
 	display:none;
 }
-.requirements p.p1 {
+.requirements p:nth-child(2) {
 }
 .requirements span {
 	font: 9pt Arial, Helvetica, sans serif;
 	line-height:140%;
 }
-.requirements p.p1 span {
+.requirements p:nth-child(2) span {
 	font-style:italic;
 }
-.requirements > p.p5 {
+.requirements > p:nth-child(6) {
 	display:none; /*this line is shown in the footer for MOSe browsers*/
 }
 /*=========================

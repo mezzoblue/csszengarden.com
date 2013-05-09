@@ -20,7 +20,7 @@ a:visited {color: #559999; text-decoration:none; font-weight:bolder;}
 a:hover {color: #ffffff; background: #ccc;}
 a:link {color: #FACD56; text-decoration:none; font-weight:bolder;}
 p {font: normal 10px/16px Tahoma, Verdana, Arial, sans-serif; text-align: justify; text-decoration:none;}
-.summary p.p2 {position:absolute; z-index:3; text-align:center; left: 158px; top: 244px; width: 216px; height: 20px;}
+.summary p:last-child {position:absolute; z-index:3; text-align:center; left: 158px; top: 244px; width: 216px; height: 20px;}
 h3 {font: normal 10px/16px Tahoma, Verdana, Arial, sans-serif; letter-spacing: 1px; color: #7D775C;}
 /* start of body of text */
 .preamble {top: 330px; height: 207px;}
@@ -55,9 +55,9 @@ header h1 {background-image:url("title.gif"); background-repeat:no-repeat; heigh
 .sidebar h3.resources span {display:none;}
 header h1 span {display:none;}
 header h2 span {display:none;}
-.summary p.p1{width: 202px;}
-.summary p.p2{width: 118px;}
-.summary p.p2 a:visited {color:#FFFFFF;}
+.summary p:first-child{width: 202px;}
+.summary p:last-child{width: 118px;}
+.summary p:last-child a:visited {color:#FFFFFF;}
 .preamble h3 span {display:none;}
 .explanation h3 span {display:none;}
 .explanation h3 {background-image:url("what.gif"); background-repeat:no-repeat; height:20px; padding-top:10px;}
@@ -67,5 +67,5 @@ header h2 span {display:none;}
 .benefits h3 {background-image:url("benefits.gif"); background-repeat:no-repeat; height:27px;}
 .requirements h3 span {display:none;}
 .requirements h3 {background-image:url("require.gif"); background-repeat:no-repeat; height:27px;}
-.summary p.p1 {display:none;}
+.summary p:first-child {display:none;}
 .extra1 {background-image:url("background2.gif"); height:1617px; float:right; width:345px; z-index:0; background-repeat:no-repeat; margin-top:10px;}

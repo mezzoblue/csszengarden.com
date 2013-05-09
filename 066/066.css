@@ -154,7 +154,7 @@ p {
 	}
 
 
-.requirements p.p5 {
+.requirements p:nth-child(6) {
 	color:#c00;
 	font-weight:bold;
 	}

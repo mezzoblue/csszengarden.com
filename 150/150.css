@@ -98,14 +98,14 @@ header h1 span, header h2 span { display: none; }
 	position: absolute;
 }
 
-.summary .p1 span
+.summary p:first-child span
 {
 	display: none;
 	margin: 0;
 	padding: 0;
 }
 
-.summary .p2 span
+.summary p:last-child span
 {
 	color: #699fc8;
 	font-size: 10px;
@@ -196,7 +196,7 @@ header h1 span, header h2 span { display: none; }
 	float: right;
 }
 
-.p1, .p2, .p3, .p4, .p5
+p:nth-child(2), p:nth-child(3), p:nth-child(4), p:nth-child(5), p:nth-child(6)
 {
 	text-align: left;
 	margin: 0;

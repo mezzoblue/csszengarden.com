@@ -80,14 +80,14 @@ header h2 {
 	width: 301px;
 
 }
-.summary .p1 {
+.summary p:first-child {
 	margin: 0px;
 	padding-top: 2px;
 	padding-right: 0px;
 	padding-bottom: 2px;
 	padding-left: 0px;
 }
-.summary .p2 {
+.summary p:last-child {
 	margin: 0px;
 	padding-top: 2px;
 	padding-right: 0px;
@@ -108,7 +108,7 @@ header h2 {
 .preamble h3 {
 	display: none;
 }
-.preamble .p1 {
+.preamble p:nth-child(2) {
 	margin: 0px 0px 0px 345px;
 	background-image: url(tit_01.gif);
 	background-repeat: no-repeat;
@@ -116,7 +116,7 @@ header h2 {
 	padding: 48px 0px 0px;
 	width: 301px;
 }
-.preamble .p2 {
+.preamble p:nth-child(3) {
 	margin: 0px 0px 0px 345px;
 	padding-top: 3px;
 	padding-right: 0px;
@@ -124,7 +124,7 @@ header h2 {
 	padding-left: 0px;
 	width: 301px;
 }
-.preamble .p3 {
+.preamble p:nth-child(4) {
 	margin: 0px 0px 0px 345px;
 	padding-top: 3px;
 	padding-right: 0px;
@@ -147,7 +147,7 @@ header h2 {
 .explanation h3 {
 	display: none;
 }
-.explanation .p1 {
+.explanation p:nth-child(2) {
 	margin: 0px 0px 0px 345px;
 	background-image: url(tit_02.gif);
 	background-repeat: no-repeat;
@@ -155,7 +155,7 @@ header h2 {
 	padding: 48px 0px 0px;
 	width: 301px;
 }
-.explanation .p2 {
+.explanation p:nth-child(3) {
 	margin: 0px 0px 0px 345px;
 	padding-top: 3px;
 	padding-right: 0px;
@@ -175,7 +175,7 @@ header h2 {
 	padding: 0px;
 	display: none;
 }
-.participation .p1 {
+.participation p:nth-child(2) {
 	margin: 0px 0px 0px 345px;
 	background-image: url(tit_03.gif);
 	background-repeat: no-repeat;
@@ -183,7 +183,7 @@ header h2 {
 	padding: 48px 0px 0px;
 	width: 301px;
 }
-.participation .p2 {
+.participation p:nth-child(3) {
 	margin: 0px 0px 0px 345px;
 	padding-top: 3px;
 	padding-right: 0px;
@@ -191,7 +191,7 @@ header h2 {
 	padding-left: 0px;
 	width: 301px;
 }
-.participation .p3 {
+.participation p:nth-child(4) {
 	margin: 0px 0px 0px 345px;
 	padding-top: 3px;
 	padding-right: 0px;
@@ -210,7 +210,7 @@ header h2 {
 .benefits h3 {
 	display: none;
 }
-.benefits .p1 {
+.benefits p:nth-child(2) {
 	margin: 0px 0px 0px 345px;
 	background-image: url(tit_04.gif);
 	background-repeat: no-repeat;
@@ -231,7 +231,7 @@ header h2 {
 	padding: 0px;
 	display: none;
 }
-.requirements .p1 {
+.requirements p:nth-child(2) {
 	margin: 0px 0px 0px 345px;
 	background-image: url(tit_05.gif);
 	background-repeat: no-repeat;
@@ -239,7 +239,7 @@ header h2 {
 	padding: 48px 0px 0px;
 	width: 301px;
 }
-.requirements .p2 {
+.requirements p:nth-child(3) {
 	margin: 0px 0px 0px 345px;
 	padding-top: 3px;
 	padding-right: 0px;
@@ -247,7 +247,7 @@ header h2 {
 	padding-left: 0px;
 	width: 301px;
 }
-.requirements .p3 {
+.requirements p:nth-child(4) {
 	margin: 0px 0px 0px 345px;
 	padding-top: 3px;
 	padding-right: 0px;
@@ -255,7 +255,7 @@ header h2 {
 	padding-left: 0px;
 	width: 301px;
 }
-.requirements .p4 {
+.requirements p:nth-child(5) {
 	margin: 0px 0px 0px 345px;
 	padding-top: 3px;
 	padding-right: 0px;
@@ -263,7 +263,7 @@ header h2 {
 	padding-left: 0px;
 	width: 301px;
 }
-.requirements .p5 {
+.requirements p:nth-child(6) {
 	margin: 0px 0px 0px 345px;
 	padding-top: 3px;
 	padding-right: 0px;

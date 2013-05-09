@@ -63,10 +63,10 @@ header h1, header h2 {
 
 .summary {
 	width: 140px; position: absolute; top: 270px; left: 298px; }
-.summary p.p1 {
+.summary p:first-child {
 	text-indent: -9000px; width: 1px; height: 1px;
 	position: absolute; left: -10px; }
-.summary p.p2 {
+.summary p:last-child {
 	font-weight: bold; }
 
 	 

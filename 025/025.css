@@ -92,7 +92,7 @@ header h2 span {
 	display: none;
 }
 
-.summary p.p1 {
+.summary p:first-child {
 	width: 310px;
 	height: 67px;
 	background: transparent url(cr-r1.png) top right no-repeat;
@@ -101,10 +101,10 @@ header h2 span {
 	right: 0px;
 	margin: 0px;
 }
-.summary p.p1 span {
+.summary p:first-child span {
 	display: none;
 }
-.summary p.p2 {
+.summary p:last-child {
 	position: absolute;
 	top: 154px;
 	left: 25px;
@@ -114,12 +114,12 @@ header h2 span {
 	padding-left: 8px;
 	background: transparent url(glitch.gif) center left no-repeat;
 }
-.summary p.p2 a {
+.summary p:last-child a {
 	color: #D9D48C;
 	font-weight: bold;
 	text-decoration: none;
 }
-.summary p.p2 a:hover {
+.summary p:last-child a:hover {
 	color: #fff;
 	text-decoration: underline;
 }

@@ -136,11 +136,11 @@ header h2 span {
 	width: 370px;
 }
 
-.explanation p.p1 {
+.explanation p:nth-child(2) {
 	margin-right:  140px;
 	text-align: left;	
 }
-.explanation p.p2 {
+.explanation p:nth-child(3) {
 	margin-right: 20px;
 	text-align: left;
 }

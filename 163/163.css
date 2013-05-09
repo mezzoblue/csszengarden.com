@@ -30,7 +30,7 @@ a:hover {
 a:active, a:focus {
     color: #566047;
 }  
-.p5 span a {
+p:nth-child(6) span a {
     font-weight: bold;
 }
 p {
@@ -58,7 +58,7 @@ header {
 header h1 span, header h2 span {
     display: none;
 }
-.summary .p1 {
+.summary p:first-child {
 	position: absolute;
     top: 65px;
     left: 40px;
@@ -66,7 +66,7 @@ header h1 span, header h2 span {
     color: #FBFBE5;
     width: 475px;
 }
-.summary .p2 span {
+.summary p:last-child span {
 	position: absolute;
 	color: #566047;
 	font-size: 100%;

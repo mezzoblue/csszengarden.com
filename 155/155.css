@@ -74,10 +74,10 @@ header h1{
 	text-indent:-2000px;
 }
 header h2,
-.summary .p1{
+.summary p:first-child{
 	display:none;
 }
-.summary .p2{
+.summary p:last-child{
 	margin:0 0 0 16px;
 	padding-left:343px;
 	font-size:6px;
@@ -85,10 +85,10 @@ header h2,
 	background:url(quicksummary_back.gif) no-repeat;
 	white-space:no-wrap;
 }
-.summary .p2 span{
+.summary p:last-child span{
 	visibility:hidden;
 }
-.summary .p2 a{
+.summary p:last-child a{
 	width:36px;
 	height:20px;
 	float:left;
@@ -97,7 +97,7 @@ header h2,
 	margin:-7px 17px 0 0;
 	padding:0;
 }
-.summary .p2 a:hover{
+.summary p:last-child a:hover{
 	background:none;
 }
 .preamble{

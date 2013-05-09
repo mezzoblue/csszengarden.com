@@ -88,34 +88,34 @@ font-size : 100%;
 line-height : 110%;
 }
 
-.summary p.p1 { display : none; }
+.summary p:first-child { display : none; }
 
-.summary p.p2 { 
+.summary p:last-child { 
 float : right; 
 width : 400px; 
 padding-right: 10px;
 text-align : right; 
 }
 
-.preamble p.p1, .preamble p.p2 { display : none; }
+.preamble p:nth-child(2), .preamble p:nth-child(3) { display : none; }
 
-.preamble p.p3 {
+.preamble p:nth-child(4) {
 width : 220px; 
 font-size : 120%;
 }
 
-.explanation p.p1 { display : none; }
+.explanation p:nth-child(2) { display : none; }
 
-.explanation p.p2 { 
+.explanation p:nth-child(3) { 
 margin-left : 230px;
 line-height : 110%;
 }
 
-.participation p.p1, .participation p.p2 { display : none; }
-.participation p.p3 { margin-right : 240px; }
-.requirements p.p1, .requirements p.p2, .requirements p.p4 { display : none; }
-.requirements p.p3 { margin-left : 240px; } 
-.requirements p.p5 { clear : both; margin-left : 240px; }
+.participation p:nth-child(2), .participation p:nth-child(3) { display : none; }
+.participation p:nth-child(4) { margin-right : 240px; }
+.requirements p:nth-child(2), .requirements p:nth-child(3), .requirements p:nth-child(5) { display : none; }
+.requirements p:nth-child(4) { margin-left : 240px; } 
+.requirements p:nth-child(6) { clear : both; margin-left : 240px; }
 
 abbr {
 text-decoration : none;
@@ -146,7 +146,7 @@ letter-spacing : -1px;
 color : #fff;
 }
 
-.summary p.p2 a {
+.summary p:last-child a {
 font-size : 160%;
 }
 

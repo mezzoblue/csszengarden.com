@@ -53,7 +53,7 @@ text-indent: 10px;
 padding: 3px 5px 2px 5px;
 margin: 0px;}
 
-.preamble P.p3, .explanation P.p2, .participation P.p3, .benefits P.p1, .requirements P.p5{
+.preamble p:nth-child(4), .explanation p:nth-child(3), .participation p:nth-child(4), .benefits p:nth-child(2), .requirements p:nth-child(6){
 padding-bottom: 5px;
 border-bottom: solid 1px #cfb35b;}
 /*************** End fonts and decoration. *************************/ 
@@ -164,21 +164,21 @@ position: absolute; left: 534px; top: 173px;
 padding: 5px 0px 50px 0px;
 background: #000 url(border-3.gif) repeat-y right;} 
 					
-.summary p.p1{
+.summary p:first-child{
 display: none}
 						
-.summary p.p2{
+.summary p:last-child{
 text-align: center;
 text-indent: 0px;
 padding: 0px 0px 10px 0px;
 margin: 0px 13px 0px 10px;
 background: url(divider.gif) no-repeat center bottom;}
 						
-.summary p.p2 a:link, a:visited{
+.summary p:last-child a:link, a:visited{
 font-weight: bold;
 text-decoration: none;}
 
-.summary p.p2 a:hover, a:active{
+.summary p:last-child a:hover, a:active{
 color: #000;		
 background: #cfb35b;}
 

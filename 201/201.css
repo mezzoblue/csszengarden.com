@@ -50,10 +50,10 @@ header {
 	left: 250px;
 	z-index: 1;
 }
-	.summary p.p1 {
+	.summary p:first-child {
 	display: none;
 	}
-		.summary p.p2 {
+		.summary p:last-child {
 			width: 425px;
 			margin-top: 0px;
 			margin-left: 0px;
@@ -229,11 +229,11 @@ p {
 	padding: 0 15px 0 15px;
 }
 
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	margin-top: -20px;
 }
 
-.preamble p.p1, .preamble p.p2, .preamble p.p3 {
+.preamble p:nth-child(2), .preamble p:nth-child(3), .preamble p:nth-child(4) {
 	color: #ffffff;
 	font-size: 1.25em;
 	font-style: italic;
@@ -243,11 +243,11 @@ p {
 	background-color: #341256;
 }
 
-.summary p.p1 {
+.summary p:first-child {
 	display: none;
 	}
 
-.summary p.p2 {
+.summary p:last-child {
 	color: #ffffff;
 	font-weight: bold;
 	text-align: right;
@@ -258,7 +258,7 @@ p {
 	color: #072849;
 }
 
-.requirements p.p5 {
+.requirements p:nth-child(6) {
 	margin-top: 0px;
 	margin-left: 0px;
 	position: absolute;
@@ -273,7 +273,7 @@ p {
 	padding: 0;
 	}
 
-.requirements p.p5 span {
+.requirements p:nth-child(6) span {
 	position: relative;
 	top: 10px;
 	}
@@ -320,13 +320,13 @@ a:hover {
 	color: #770e77;
 }
 
-.requirements p.p5 a {
+.requirements p:nth-child(6) a {
 	color: #336699;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-.requirements p.p5 a:hover {
+.requirements p:nth-child(6) a:hover {
 	color: #339999;
 	text-decoration: underline;
 }

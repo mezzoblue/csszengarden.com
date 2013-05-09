@@ -43,7 +43,7 @@ h1, h2, h3 {
   background-repeat:no-repeat;
   background-position:left top;
   }
-h1 span, h2 span, h3 span, .summary p.p1 span {display:none;}
+h1 span, h2 span, h3 span, .summary p:first-child span {display:none;}
 
   
 /* header and summary
@@ -56,12 +56,12 @@ header h2 {
   height:115px;
   background:url("bg_beautyof.jpg") no-repeat left top;
   }
-.summary p.p1 {
+.summary p:first-child {
   height:76px;
   margin:0;
   background:url("bg_quicksum.gif") no-repeat 35px 18px;
   }
-.summary p.p2 {
+.summary p:last-child {
   position:absolute;
   top:78px;
   right:35px;
@@ -73,7 +73,7 @@ header h2 {
   color:#A79355;
   background-color:transparent;
   }
-.summary p.p2 a:link, .summary p.p2 a:visited {
+.summary p:last-child a:link, .summary p:last-child a:visited {
   white-space:nowrap;
   font:bold 92%/1.3em Verdana,Arial,Sans-serif;
   text-transform:uppercase;

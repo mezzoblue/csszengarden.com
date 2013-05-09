@@ -87,14 +87,14 @@ header {
 	background: url(introbg.jpg) repeat-y 99px;
 	}
 	
-	.summary p.p1  {
+	.summary p:first-child  {
 	position: relative;
 	left: 210px;
 	width: 530px;
 	margin: 0;
 	}
 	
-	.summary p.p2  {
+	.summary p:last-child  {
 	position: relative;
 	left: 210px;
 	width: 345px;

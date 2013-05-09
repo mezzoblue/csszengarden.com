@@ -202,11 +202,11 @@ footer {
     padding: 5px 0 5px 15px;
     }
 
-header h1 span,header h2 span,.summary p.p1 {
+header h1 span,header h2 span,.summary p:first-child {
 	display: none;
 	}
 
-.summary p.p2 {
+.summary p:last-child {
 	text-align: left;
 	color: #ffffff;
 	font: 11px Tahoma;

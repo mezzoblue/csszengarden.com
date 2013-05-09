@@ -45,7 +45,7 @@ p {
 	margin: 0 0 5px 0;
 	}
 
-p.p1 {
+p:nth-child(2) {
 	font-size: 13px;
 	line-height: 20px;
 	}
@@ -121,12 +121,12 @@ header h1, header h2 {
 	background: #147;
 	}
 
-.summary p.p1 {
+.summary p:first-child {
 	position: absolute;
 	left: -999em;
 	}
 
-.summary p.p2 {
+.summary p:last-child {
 	width: 248px !important;
 	width /**/: 276px;
 	height: 28px !important;

@@ -75,7 +75,7 @@ margin-top:2em;
 
 /* display:none content */
 
-.intro h2, .summary p.p1{display:none;}
+.intro h2, .summary p:first-child{display:none;}
 
 /* headers and paragraphs */
 
@@ -101,7 +101,7 @@ p{
 letter-spacing:+0.05em;
 word-spacing:0.1em;
 }
-.summary p.p2 {
+.summary p:last-child {
 float:right;
 width:70px;
 height:4em;

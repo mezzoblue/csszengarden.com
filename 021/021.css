@@ -78,7 +78,7 @@ margin: 235px 0 20px 15px;
 padding: 20px 0 0 0;
 font-size: 0.92em;
 }
-.summary .p2 {
+.summary p:last-child {
 padding-top: 10px;
 }
 
@@ -93,19 +93,19 @@ padding: 5.8em 0 0 4.7em;
 .preamble h3 span {
 display: none;
 }
-.preamble .p1, .preamble .p2, .preamble .p3 {
+.preamble p:nth-child(2), .preamble p:nth-child(3), .preamble p:nth-child(4) {
 display: block;
 float: left;
 }
-.preamble .p1 {
+.preamble p:nth-child(2) {
 margin: 10px 20px 15px 0;
 width: 160px;
 }
-.preamble .p2 {
+.preamble p:nth-child(3) {
 margin: 10px 20px 15px 0;
 width: 230px;
 }
-.preamble .p3 {
+.preamble p:nth-child(4) {
 margin: 10px 15px 15px 0;
 width: 270px;
 }
@@ -120,7 +120,7 @@ background: transparent;
 margin: 0 0 0 13.5em;
 clear: both;
 }
-.supporting .p1, .supporting .p2, .supporting .p3, .supporting .p4, .supporting .p5 {
+.supporting p:nth-child(2), .supporting p:nth-child(3), .supporting p:nth-child(4), .supporting p:nth-child(5), .supporting p:nth-child(6) {
 display: block;
 float: left;
 }
@@ -142,11 +142,11 @@ padding: 6.5em 0 0 4.7em;
 .explanation h3 span {
 display: none;
 }
-.explanation .p1 {
+.explanation p:nth-child(2) {
 width: 320px;
 margin: 10px 20px 15px 0;
 }
-.explanation .p2 {
+.explanation p:nth-child(3) {
 width: 360px;
 margin: 10px 20px 15px 0;
 }
@@ -162,20 +162,20 @@ padding: 6em 0 0 4.7em;
 .participation h3 span, .benefits h3 span {
 display: none;
 }
-.participation .p1 {
+.participation p:nth-child(2) {
 width: 390px;
 margin: 10px 20px 15px 0;
 }
-.participation .p2 {
+.participation p:nth-child(3) {
 width: 290px;
 margin: 10px 20px 15px 0;
 }
-.participation .p3 {
+.participation p:nth-child(4) {
 width: 390px;
 margin: 10px 20px 15px 0;
 clear: left;
 }
-.participation .p4 {
+.participation p:nth-child(5) {
 width: 290px;
 margin: 10px 20px 15px 0;
 }
@@ -206,24 +206,24 @@ padding: 7.3em 0 0 4.7em;
 .requirements h3 span {
 display: none;
 }
-.requirements .p1 {
+.requirements p:nth-child(2) {
 width: 230px;
 margin: 10px 20px 15px 0;
 }
-.requirements .p2 {
+.requirements p:nth-child(3) {
 width: 450px;
 margin: 10px 20px 15px 0;
 }
-.requirements .p3 {
+.requirements p:nth-child(4) {
 width: 230px;
 margin: 10px 20px 15px 0;
 clear: left;
 }
-.requirements .p4 {
+.requirements p:nth-child(5) {
 width: 450px;
 margin: 10px 20px 15px 0;
 }
-.requirements .p5 {
+.requirements p:nth-child(6) {
 width: 450px;
 margin: 10px 20px 15px 0;
 clear: left;

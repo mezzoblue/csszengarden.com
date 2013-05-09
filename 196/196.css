@@ -61,10 +61,10 @@ header h1,
 header h2 {
 	display:none;
 	}
-.summary p.p1 {
+.summary p:first-child {
 	display:none;
 	}
-.summary p.p2 {
+.summary p:last-child {
 	font:normal 12px/12px Georgia,"Times New Roman",Times, serif;
 	color:#a8a781;
 	position:absolute;
@@ -73,7 +73,7 @@ header h2 {
 	background:url(download.gif) no-repeat left center;
 	text-indent:14px;
 	}
-.summary p.p2 a {
+.summary p:last-child a {
 	display:inline;
 	position:relative;
 	}

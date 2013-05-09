@@ -84,7 +84,7 @@ header *{
  color:#966;
  text-align:center;
 }
-.preamble .p3{
+.preamble p:nth-child(4){
  padding-bottom:30px;
 }
 .preamble h3{
@@ -113,10 +113,10 @@ p{
  background-image:url(zbg.gif);
  background-position:0 -50px;
 }
-.requirements .p5{
+.requirements p:nth-child(6){
  background-image:none;
 }
-.requirements .p5{
+.requirements p:nth-child(6){
  padding-top:50px;
  background-image:url(z-leaf3.gif);
  background-position:right center;
@@ -128,10 +128,10 @@ p{
  background-color:#fff;
  height:250px;
 }
-.requirements .p5 span{
+.requirements p:nth-child(6) span{
  margin-right:30px;
 }
-.requirements .p5 a{
+.requirements p:nth-child(6) a{
  color:#aaa;
  text-decoration:none;
  font-style:italic;
@@ -141,7 +141,7 @@ p{
  background-position:7px 12px;
  margin-left:4px;
 }
-.requirements .p4, .benefits .p1, .participation .p3, .explanation .p2, .preamble .p3 {
+.requirements p:nth-child(5), .benefits p:nth-child(2), .participation p:nth-child(4), .explanation p:nth-child(3), .preamble p:nth-child(4) {
  background-image:url(zbg.gif);
  background-position:center bottom;
 }
