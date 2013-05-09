@@ -18,7 +18,7 @@
 		for ($i = $start - 1; $i >= ($start - $count); $i--) {
 
 			$id = $list[$i][0];
-			$designURL = "?cssfile=/$id/$id.css";
+			$designURL = "?cssfile=/designs/$id/$id.css";
 			$designName = hsc($list[$i][1]);
 			$designerName = hsc($list[$i][2]);
 			$designerURL = hsc($list[$i][3]);
@@ -67,7 +67,7 @@
 	if ($loadCSS) {
 		$currentDesign = $loadCSS;
 	} else {
-		$currentDesign = "001/001.css";
+		$currentDesign = "designs/001/001.css";
 	}
 
 
