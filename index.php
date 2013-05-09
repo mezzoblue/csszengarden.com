@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<title>CSS Zen Garden: The Beauty in CSS Design</title>
 
-	<link rel="stylesheet" media="screen" href="<?php echo $currentDesign; ?>">
+	<link rel="stylesheet" media="screen" href="<?php echo $currentDesign; ?>?v=8may2013">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,8 +26,12 @@
 	View source is a feature, not a bug. Thanks for your curiosity and
 	interest in participating!
 
-	
+	A few tips for the new and improved csszengarden:
 
+	- use classes for styling. don't use ids.
+	- use :first-child, :last-child and :nth-child to get at non-classed elements
+	- go responsive; test your layout at multiple screen sizes.
+	- use the Kellum Method for image replacement if needed. http://goo.gl/GXxdI
 
 -->
 
