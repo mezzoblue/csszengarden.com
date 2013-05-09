@@ -4,7 +4,7 @@
 
 	// shorthand alias for `htmlspecialchars` with the needed settings
 	function hsc($string) {
-		return htmlspecialchars($string, ENT_HTML5, 'UTF-8');
+		return $string; // htmlspecialchars($string, ENT_HTML5, 'UTF-8');
 	}
 
 
