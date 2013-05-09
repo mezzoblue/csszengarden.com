@@ -220,7 +220,7 @@ p {
 font-size:0.9em;
 }
 
-.requirements .p5 {
+.requirements p:nth-child(6) {
 margin-top:15px;
 color:#ccc;
 }

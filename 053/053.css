@@ -267,6 +267,6 @@ footer {
 }
 
 /*-- hidden --*/
-header h1, header h2, .preamble h3 span, .preamble p.p3, .participation p.p4, .explanation h3 span, .participation h3 span, .benefits h3 span, .supporting h3 span, .design-selection h3 span, .design-archives h3 span, .zen-resources h3 span, .extra2, .extra3, .extra4, .extra5, .extra6 {
+header h1, header h2, .preamble h3 span, .preamble p:nth-child(4), .participation p:nth-child(5), .explanation h3 span, .participation h3 span, .benefits h3 span, .supporting h3 span, .design-selection h3 span, .design-archives h3 span, .zen-resources h3 span, .extra2, .extra3, .extra4, .extra5, .extra6 {
 	display:none;
 }

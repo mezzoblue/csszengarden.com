@@ -62,12 +62,12 @@ header h2 span{ /*misused for the googbye-grafic*/
 	color:#C5E1FF;
 	font-style:italic;
 	padding:0}
-.summary p.p1{
+.summary p:first-child{
 	font-size:1em;
 	margin:30px 10px;
 	width:70%;
 	float:left}
-.summary p.p2{
+.summary p:last-child{
 	float:right;
 	font-size:0.8em;
 	width:20%;

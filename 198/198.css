@@ -94,7 +94,7 @@ header h2 span {
 	text-transform: uppercase;
 	}
 
-.summary .p2{
+.summary p:last-child{
 	float: left;
 	padding-left: 20px;
 	position: absolute;
@@ -248,7 +248,7 @@ footer a, footer a:visited {
 	background-image: none;
 	}
 	
-.p5{
+p:nth-child(6){
 	width: 340px;
 	float: right;
 	position: relative;

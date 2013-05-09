@@ -17,11 +17,11 @@ header {background-image:url(header.jpg); width:699px; height:347px;}
 header h1, h2 {display:none;}
 
 .summary {position:relative;}
-.summary p.p1 {display:none;}
-.summary p.p2 {position:absolute; left:600px; top:-65px; width: 130px;}
-.summary p.p2 a:link {color: #606060; text-decoration:underline; font-weight:bold;}
-.summary p.p2 a:visited {color:#787878;}
-.summary p.p2 a:hover {color:#949494;}
+.summary p:first-child {display:none;}
+.summary p:last-child {position:absolute; left:600px; top:-65px; width: 130px;}
+.summary p:last-child a:link {color: #606060; text-decoration:underline; font-weight:bold;}
+.summary p:last-child a:visited {color:#787878;}
+.summary p:last-child a:hover {color:#949494;}
 
 .preamble {width:765px; background:url(preamble_bg.gif) bottom; padding-bottom:15px; line-height:22px; text-align:justify;}
 .preamble h3 span {display:none; } 
@@ -48,7 +48,7 @@ header h1, h2 {display:none;}
 .requirements {background: url(req_btrflys.gif) top left no-repeat;}
 .requirements h3 span {display:none;} 
 .requirements h3 {position:relative; background-image:url(req_hdr.gif); width:543px; height:36px;}
-.requirements .p5 {margin-bottom:0; padding-bottom:14px;}
+.requirements p:nth-child(6) {margin-bottom:0; padding-bottom:14px;}
 
 footer {position:relative; font-size: 14px; text-align:center;background:url(footer_bg.gif) no-repeat; width:543px; height:35px; padding-top:63px;}
 footer a:link {color: #c20000; font-weight:bolder; text-decoration:none; border:0;}

@@ -47,7 +47,7 @@ header h2 span       { display:none; }
 .supporting a:active  { color: #30c; }
 .explanation h3           { margin: 0 0 0 20px; padding: 0; width: 280px; height: 40px; background: transparent url(iezentext1.gif) no-repeat bottom left; }
 .explanation h3 span      { display: none; }
-.explanation p.p1         { font: bold 12px/15px arial, sans-serif;  }
+.explanation p:nth-child(2)         { font: bold 12px/15px arial, sans-serif;  }
 .participation h3         { margin: 0 0 0 20px; width: 290px; height: 25px; background: transparent url(iezentext2.gif) no-repeat left top; }
 .participation h3 span    { display: none; }
 .benefits h3              { margin: 0 0 0 20px; width: 290px; height: 25px; background: transparent url(iezentext3.gif) no-repeat left top; }
@@ -116,7 +116,7 @@ body[id=css-zen-garden] .supporting a:hover,
 body[id=css-zen-garden] .supporting a:active  { color: #30c; }
 body[id=css-zen-garden] .explanation h3           { float: left; margin: 0; padding: 0 0 5px 0; width: 300px; height: 25px; background: transparent url(zentext1.png) no-repeat left top; }
 body[id=css-zen-garden] .explanation h3 span      { display: none; }
-body[id=css-zen-garden] .explanation p.p1         { font: bold 12px/15px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif;  }
+body[id=css-zen-garden] .explanation p:nth-child(2)         { font: bold 12px/15px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif;  }
 body[id=css-zen-garden] .participation h3         { float: left; margin: 0; width: 300px; height: 25px; background: transparent url(zentext2.png) no-repeat top left; }
 body[id=css-zen-garden] .participation h3 span    { display: none; }
 body[id=css-zen-garden] .benefits h3              { float: left; margin: 0; width: 300px; height: 25px; background: transparent url(zentext3.png) no-repeat top left; }

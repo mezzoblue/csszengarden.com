@@ -117,7 +117,7 @@ header h2 span {
 	font-size: 110%;
 }
 
-.summary .p1{
+.summary p:first-child{
 	position: relative;
 	padding: 29px 20px 0 20px;
 	background-color: #AF0000;
@@ -126,7 +126,7 @@ header h2 span {
 	background-repeat: no-repeat;
 }
 
-.summary .p2{
+.summary p:last-child{
 	position: relative;
 	padding: 0 20px 25px 20px;
 	background: #AF0000 url("qsp2.gif") no-repeat bottom left ;
@@ -165,7 +165,7 @@ header h2 span {
 	width: 650px;
 }
 
-.requirements .p5{
+.requirements p:nth-child(6){
 	font-size: 80%;
 	margin: 10px;
 }

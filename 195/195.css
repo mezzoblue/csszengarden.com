@@ -41,7 +41,7 @@ body {
 }
 
 header span,
-.summary .p1,
+.summary p:first-child,
 .preamble h3 span,
 .explanation h3 span,
 .participation h3 span,
@@ -80,7 +80,7 @@ p {
 	margin-bottom: 10px;
 }
 
-.summary .p2 {
+.summary p:last-child {
 	padding-top: 220px;
 	margin-left: 430px;
 	font: normal 0.9em/0.9em Arial, Tahoma, Georgia, sans-serif;

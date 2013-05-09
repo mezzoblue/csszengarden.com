@@ -178,7 +178,7 @@ header h2 span {
 	color: #fffdfa;
 }
 
-.summary p.p1 { 
+.summary p:first-child { 
 
 	text-align: left;
 	top: 0px;
@@ -198,7 +198,7 @@ header h2 span {
 	margin-bottom: 20px;
 }
 
-.summary p.p2 {
+.summary p:last-child {
 	width: 230px;
 	font-size: 10px;
 	position: absolute;

@@ -40,11 +40,11 @@ html>p {
 /* MORE NONSENSE JUST FOR IE <SHAKES HEAD /> */
 * html p span { position: relative; top: -1px; }
 
-p.p1 { background: url(p1.gif) no-repeat; }
-p.p2 { background: url(p2.gif) no-repeat; }
-p.p3 { background: url(p3.gif) no-repeat; }
-p.p4 { background: url(p4.gif) no-repeat; }
-p.p5 { background: url(p5.gif) no-repeat; }
+p:nth-child(2) { background: url(p1.gif) no-repeat; }
+p:nth-child(3) { background: url(p2.gif) no-repeat; }
+p:nth-child(4) { background: url(p3.gif) no-repeat; }
+p:nth-child(5) { background: url(p4.gif) no-repeat; }
+p:nth-child(6) { background: url(p5.gif) no-repeat; }
 
 a,
 a:visited	{
@@ -118,8 +118,8 @@ header h2 span,
 	}
 .summary a:hover { color: #A2A200; border-bottom: 2px solid #C7C600; }
 .summary		{ margin-top: 144px; width: 608px; }
-.summary p.p1	{ background: url(p1_on_yellow.gif) no-repeat; }
-.summary p.p2 	{ background: url(p2_on_yellow.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
+.summary p:first-child	{ background: url(p1_on_yellow.gif) no-repeat; }
+.summary p:last-child 	{ background: url(p2_on_yellow.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
 
 .preamble,
 .explanation,
@@ -140,9 +140,9 @@ footer { position: relative; }
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
 * html*.preamble h3 { left: 53px; }
 /* GOTTA WAKE UP IE5 MAC! */
-.preamble p.p1 { background: url(p1_cropped.gif) no-repeat; }
-.preamble p.p2 { background: url(p2_cropped.gif) no-repeat; }
-.preamble p.p3 { background: url(p3_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
+.preamble p:nth-child(2) { background: url(p1_cropped.gif) no-repeat; }
+.preamble p:nth-child(3) { background: url(p2_cropped.gif) no-repeat; }
+.preamble p:nth-child(4) { background: url(p3_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
 
 .explanation h3 {
 	position: absolute;
@@ -156,8 +156,8 @@ footer { position: relative; }
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
 * html*.explanation h3 { left: 54px; }
 /* GOTTA WAKE UP IE5 MAC! */
-.explanation p.p1 { background: url(p1_unlabeled.gif) no-repeat; }
-.explanation p.p2 { padding-bottom: 0px; margin-bottom: 16px; }
+.explanation p:nth-child(2) { background: url(p1_unlabeled.gif) no-repeat; }
+.explanation p:nth-child(3) { padding-bottom: 0px; margin-bottom: 16px; }
 
 .participation h3 {
 	position: absolute;
@@ -171,7 +171,7 @@ footer { position: relative; }
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
 * html*.participation h3 { left: 51px; }
 /* GOTTA WAKE UP IE5 MAC! */
-.participation p.p4 { padding-bottom: 0px; margin-bottom: 16px; }
+.participation p:nth-child(5) { padding-bottom: 0px; margin-bottom: 16px; }
 
 .benefits h3 {
 	position: absolute;
@@ -185,7 +185,7 @@ footer { position: relative; }
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
 * html*.benefits h3 { left: 53px; }
 /* GOTTA WAKE UP IE5 MAC! */
-.benefits p.p1 { padding-bottom: 0px; margin-bottom: 16px; }
+.benefits p:nth-child(2) { padding-bottom: 0px; margin-bottom: 16px; }
 
 .requirements h3 {
 	position: absolute;
@@ -199,8 +199,8 @@ footer { position: relative; }
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
 * html*.requirements h3 { left: 54px; }
 /* GOTTA WAKE UP IE5 MAC! */
-.requirements p.p4 { background: url(p4_on_blue.gif) no-repeat; }	
-.requirements p.p5 { background: url(p5_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }	
+.requirements p:nth-child(5) { background: url(p4_on_blue.gif) no-repeat; }	
+.requirements p:nth-child(6) { background: url(p5_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }	
 
 .sidebar {
 	position: absolute;

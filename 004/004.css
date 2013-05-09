@@ -85,7 +85,7 @@ header h2 span {
 	display: none;
 	}
 
-.summary .p1 {
+.summary p:first-child {
 	font: 11px tahoma, verdana, sans-serif;
 	line-height: 18px;
 	color: #7799AC;
@@ -96,18 +96,18 @@ header h2 span {
 	right: 10px;
 	width: 150px;
 	}
-.summary .p2 {
+.summary p:last-child {
 	font: 10px tahoma, verdana, sans-serif;
 	color: #7799AC;
 	position: absolute;
 	top: 32px;
 	right: 5px;
 	}
-.summary .p2 a:link, .summary .p2 a:visited {
+.summary p:last-child a:link, .summary p:last-child a:visited {
 	color: #7799AC;
 	text-decoration: underline;
 	}
-.summary .p2 a:active, .summary .p2 a:hover {
+.summary p:last-child a:active, .summary p:last-child a:hover {
 	color: #8AF44F;
 	}
 

@@ -81,7 +81,7 @@ header h2 {
 header h2 span {
 	display: none;
 	}
-.summary p.p1 {
+.summary p:first-child {
 	width: 320px;
 	height: 92px;
 	position: absolute;
@@ -93,10 +93,10 @@ header h2 span {
 	font-family: arial;
 	background:  url(bg_redbox.gif) no-repeat;
 	}
-.summary p.p1 span{
+.summary p:first-child span{
 	display: none;
 }
-.summary p.p2{
+.summary p:last-child{
 	display: block;
 	position: absolute;
 	top: 53px;
@@ -127,7 +127,7 @@ header h2 span {
 	padding: 0 0 0 3px;
 	width: 270px;
 }
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	margin-top: 10px;
 }
 .supporting {

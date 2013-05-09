@@ -80,7 +80,7 @@ header h2 span {
 	display:none;
 	}
 
-.summary p.p1 {
+.summary p:first-child {
 	position: absolute;
 	top: 30px;
 	left: 410px;
@@ -90,7 +90,7 @@ header h2 span {
 	text-transform: lowercase;
 	color: #869152;
 }
-.summary p.p2 {
+.summary p:last-child {
 	position: absolute;
 	top: 850px;
 	left: 0;

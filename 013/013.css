@@ -106,7 +106,7 @@ header h2 span {
 	width: 160px;
 }
 /* over-clarified to fix IE5/Win */
-.summary p, .summary .p1, .summary .p2 {
+.summary p, .summary p:first-child, .summary p:last-child {
 	font: italic 13pt/18pt garamond, serif;
 	text-align: left;
 	color: #A29D66;
@@ -234,7 +234,7 @@ footer a:hover {
 
 
 /* extra bits on the last paragraph in each text block */
-.preamble .p3, .explanation .p2, .participation .p3, .benefits .p1, .requirements .p4 {
+.preamble p:nth-child(4), .explanation p:nth-child(3), .participation p:nth-child(4), .benefits p:nth-child(2), .requirements p:nth-child(5) {
 	background: transparent url(filler.gif) bottom center no-repeat;
 	padding-bottom: 25px;
 }

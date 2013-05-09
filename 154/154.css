@@ -30,8 +30,8 @@ abbr {font-weight:bold;}
 	header h2 span { display:none;}
 
 	.summary { position:absolute; left:530px; top: 730px; width:150px; color: #f4f0e6;}
-	.summary p.p1 {display:none;}
-	.summary p.p2 {}
+	.summary p:first-child {display:none;}
+	.summary p:last-child {}
 	.summary a{ color: #98B974; text-decoration:underline;}
 	.summary a:hover{ color: #f4f0e6; text-decoration:none;}
 

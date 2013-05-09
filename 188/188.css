@@ -87,11 +87,11 @@ header h1 , header h2 , header span	{
 			}
 
 
-.summary  p.p1	{
+.summary  p:nth-child(2)	{
 	display: none;
 	}
 
-.summary  p.p2 {
+.summary  p:nth-child(3) {
 	margin: 10px;
 	margin-top: 30px;
 	color: #FF6600;
@@ -115,11 +115,11 @@ header h1 , header h2 , header span	{
 			height: 75px;
 			}
 
-p.p1	{
+p:nth-child(2)	{
 		color: #666666;
 		}
 		
-p.p1, p.p2, p.p3	{
+p:nth-child(2), p:nth-child(3), p:nth-child(4)	{
 		margin: 0px;
 		padding: 0px;
 		margin-top: 8px;
@@ -302,7 +302,7 @@ p.p1, p.p2, p.p3	{
 			padding: 0px;
 			}
 
-.requirements p.p5	{
+.requirements p:nth-child(6)	{
 		font-variant:small-caps;
 		font-size: 9px;
 		border-bottom: 2px dotted #FFCC00;

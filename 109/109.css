@@ -33,7 +33,7 @@ header h1, header h2 { margin: 0; padding: 0; display: none; }
 .summary { position: absolute; bottom: 0; right: 0; z-index: 2; width: 170px; padding: 0 6px 5px; margin: 0; }
 .summary a { color: #377774; }
 .summary p { font-size: 90%; text-align: left; color: #377774; margin: 0; }
-.summary p.p1 { margin: 0; padding: 0; display: none; }
+.summary p:first-child { margin: 0; padding: 0; display: none; }
 
 .preamble { background: url(preamblebg.gif) repeat-y; position: absolute; top: 330px; right: 0; z-index: 2; width: 190px; font-size: 90%; color: #FFF; text-align: left; border-bottom: 15px solid #FFF; line-height: 14px; }
 .preamble p { margin: 0 17px 15px 15px; }

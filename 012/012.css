@@ -96,7 +96,7 @@ header { position: relative; }
 	letter-spacing: 0.08em;
 	text-align: left;
 }
-.preamble p.p3 { padding-bottom: 0px; }
+.preamble p:nth-child(4) { padding-bottom: 0px; }
 div.preamble h3 {
 	width: 400px;
 	margin: 0px;
@@ -190,13 +190,13 @@ with a semi-transparent overlay on it.   Oh... I can't wait for true PNG surrpor
 	color: #A3A3A3;
 	font: bolder small-caps 1.1em/1em "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
-.summary p.p1 {
+.summary p:first-child {
 	margin-top: 20px;
 	border: 1px solid #23282C;
 	padding: 10px;
 	color: #FFAE00;
 }
-.summary p.p2 {
+.summary p:last-child {
 	color: #999999;
 	font-weight: normal;
 	text-align: center;

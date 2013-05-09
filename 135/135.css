@@ -160,7 +160,7 @@ header h2
 	display: none;
 	}
 
-.summary p.p2
+.summary p:last-child
 	{
 	text-indent: 0;
 	font: 10px/16px tahoma, verdana, sans-serif;
@@ -171,19 +171,19 @@ header h2
 	border-top: 1px solid #923b09;
 	}
 	
-.summary p.p2 a
+.summary p:last-child a
 	{
 	color: #efece3;
 	border: none;
 	font-weight: bold;
 	}
 	
-.summary p.p2 a:hover
+.summary p:last-child a:hover
 	{
 	color: #ec9;
 	}
 
-.summary p.p1
+.summary p:first-child
 	{
 	display: none;
 	}

@@ -113,7 +113,7 @@ div.summary {
 
 /* Have the summary displayed in a single line */
 
-div.summary p.p2, div.summary p.p1 {
+div.summary p:last-child, div.summary p:first-child {
 	display: inline;
 	margin: 0;
 }

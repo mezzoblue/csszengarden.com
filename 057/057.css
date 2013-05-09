@@ -97,8 +97,8 @@ p a:hover, footer a:hover { color: #A51A0A; border-style: none; }
 footer>a { border-style: none !important; }
 
 .preamble { margin-bottom: 2em; }
-.preamble p.p2 { background: url(head_enlightenment.gif) no-repeat; padding-top: 2.4em; }
-div[class="preamble"]>p.p2 { background: url(head_enlightenment.png) no-repeat !important; }
+.preamble p:nth-child(3) { background: url(head_enlightenment.gif) no-repeat; padding-top: 2.4em; }
+div[class="preamble"]>p:nth-child(3) { background: url(head_enlightenment.png) no-repeat !important; }
 
 .explanation,
 .participation,
@@ -107,7 +107,7 @@ div[class="preamble"]>p.p2 { background: url(head_enlightenment.png) no-repeat !
 
 
 @media tty { /* Mid pass to square away some IE 5 PC hinkyness. */
-	i{content:"\";/*" "*/}} .explanation p.p1,.participation p.p1,.benefits p.p1,.requirements p.p1 { padding-top: 1.8em; } /*";}
+	i{content:"\";/*" "*/}} .explanation p:nth-child(2),.participation p:nth-child(2),.benefits p:nth-child(2),.requirements p:nth-child(2) { padding-top: 1.8em; } /*";}
  	}/* */
  	
 .explanation 	{ background: url(head_explanation.gif) no-repeat; }

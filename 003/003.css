@@ -96,7 +96,7 @@ html>body .summary {
 	margin-top:-50px; 
 	top: 0;
 	}
-.summary .p1 {
+.summary p:first-child {
 	font-size: 1px;
 	color: white;
 	background: transparent url(panel1-2.jpg) no-repeat top left;
@@ -107,10 +107,10 @@ html>body .summary {
 	voice-family:inherit;
 	height: 258px; 
 	}
-.summary .p1 span {
+.summary p:first-child span {
 	display: none;
 	}
-.summary .p2 {
+.summary p:last-child {
 	color: #7593A7;
 	background: transparent url(panel3.jpg) no-repeat 0 0;
 	padding: 90px 45px 0px 45px;
@@ -122,15 +122,15 @@ html>body .summary {
 	width: 124px;
 	height: 178px;
 	}
-.summary .p2 span {
+.summary p:last-child span {
 	letter-spacing: -1px;
 	line-height: 26px;
 	display: block;
 	}
-.summary .p2 a:link, .summary .p2 a:visited {
+.summary p:last-child a:link, .summary p:last-child a:visited {
 	color: #7593A7;
 	}
-.summary .p2 a:hover {
+.summary p:last-child a:hover {
 	color: #85ABC5;
 	}
 

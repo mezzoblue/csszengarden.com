@@ -130,7 +130,7 @@ header {
 	display: none;
 }	
  
-.preamble .p3 {
+.preamble p:nth-child(4) {
 background: url("preamb-bg.jpg") 42% 100%  no-repeat;
 padding-bottom: 85px;
 }
@@ -143,7 +143,7 @@ padding-bottom: 85px;
 	line-height: 100%;
 }
 
-.preamble p.p1:first-letter {
+.preamble p:nth-child(2):first-letter {
 margin-left: -7px;
 color: rgb(245, 203,144);
 }
@@ -166,11 +166,11 @@ header h1, h2 {
 	display: none;
 }
 
-.summary p.p1 {
+.summary p:first-child {
 	display: none
 }
 
-.summary p.p2 {
+.summary p:last-child {
 	display: block;
 	position: relative;
 	top: 120px;
@@ -200,7 +200,7 @@ header h1, h2 {
 	margin-right: auto;		
 }
 
-.supporting .p1:first-letter { 
+.supporting p:nth-child(2):first-letter { 
 margin-left: -7px;
 color: rgb(245, 203,144);
 display: none;
@@ -376,7 +376,7 @@ color: #7D775C;
 	color: navy;
 	}
 
-.requirements .p5
+.requirements p:nth-child(6)
 {
 	text-align: right;
 	font-style: italic;

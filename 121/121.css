@@ -132,11 +132,11 @@ header h1 {
 	top: 620px;
 }
 
-.summary p.p1 span{
+.summary p:first-child span{
 	display: none;
 }
 
-.summary p.p2 {
+.summary p:last-child {
 	padding: 0 0 8px 0;
 	text-transform: uppercase;
 	font-weight: bold;

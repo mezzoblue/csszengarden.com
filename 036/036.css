@@ -85,13 +85,13 @@ header h1 span,header h2,header h2 span {
 	border-top:1px solid #ABBC47;
 }
 
-.summary p.p1 {
+.summary p:first-child {
 	font: bold 11px/14px arial,verdana, sans serif;
 	color:#fff; 
 	padding:100px 30px 2px 30px;
 }
 
-.summary p.p2{
+.summary p:last-child{
 	position:absolute;
 	left:0;
 	top:230px;
@@ -113,11 +113,11 @@ footer{
 	text-align:right;
 }
 
-.summary p.p2 a, footer a{
+.summary p:last-child a, footer a{
 	color:#fff;
 }
 
-.summary p.p2 a:hover, footer a:hover{
+.summary p:last-child a:hover, footer a:hover{
 	color:#230;
 	background-color:#fff;
 	text-decoration:none;
@@ -152,7 +152,7 @@ footer{
 .preamble h3 span{
 	display:none
 }
-.preamble p.p1{
+.preamble p:nth-child(2){
 	width: 270px;
 }
 
@@ -183,11 +183,11 @@ p{
 	padding-right: 8px;
 }
 
-.p1{
+p:nth-child(2){
 	margin-top:26px;
 }
 
-.summary .p1{
+.summary p:first-child{
 	margin-top:0;
 }
 

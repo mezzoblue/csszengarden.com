@@ -167,7 +167,7 @@ header,
 	margin-bottom:10px;
 }
 
-.participation .p4
+.participation p:nth-child(5)
 {
 	border:2px solid #DDD;
 	padding-left:4px;
@@ -175,7 +175,7 @@ header,
 	margin-top:30px;
 }
 
-.participation .p4:first-letter
+.participation p:nth-child(5):first-letter
 {
 	text-transform:capitalize;
 }
@@ -195,7 +195,7 @@ header,
 	padding-bottom:45px;
 }
 
-.requirements .p5
+.requirements p:nth-child(6)
 {
 	margin-top:20px;
 	text-align:right;
@@ -211,8 +211,8 @@ footer
 	width:100%;
 }
 
-.summary .p1,
-.summary .p2
+.summary p:first-child,
+.summary p:last-child
 {
 letter-spacing:0px;
 }

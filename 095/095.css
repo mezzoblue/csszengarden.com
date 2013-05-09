@@ -96,11 +96,11 @@ header h2 {
   width: 280px;
 }
 
-.summary p.p1 { 
+.summary p:first-child { 
   display: none;
 }
 
-.summary p.p2 { 
+.summary p:last-child { 
   padding: 78px 0 0 15px;
   font-size: 10px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;

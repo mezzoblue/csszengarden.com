@@ -87,7 +87,7 @@ header {
 	border: 0;
 	}
 
-.summary p.p1 {
+.summary p:first-child {
 	position: absolute;
 	top: 293px;
 	left:640px;
@@ -101,7 +101,7 @@ header {
 	line-height: 1.2;
 	}
 
-.summary p.p2 {
+.summary p:last-child {
 	position: absolute;
 	top: 72px;
 	left: 0px;

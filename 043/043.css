@@ -222,7 +222,7 @@ header {
 		letter-spacing: 0.1em;
 	}
 
-	.summary p.p2 {
+	.summary p:last-child {
 		position: absolute;
 
 		top: 255px;
