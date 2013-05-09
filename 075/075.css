@@ -115,20 +115,20 @@ h1 span, h2 span, h3 span {
 	}
 
 /* the 3 Paragraphs margin */	
-.preamble p.p1, .preamble p.p2, .preamble p.p3  {
+.preamble p:nth-child(2), .preamble p:nth-child(3), .preamble p:nth-child(4)  {
 	position: absolute;
 	right: 10px;
 	}
 
 /* "Stairs texte effect */	
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	width: 370px;
 }
-.preamble p.p2 {
+.preamble p:nth-child(3) {
 	width: 470px;
 	margin-top: 60px;
 }
-.preamble p.p3 {
+.preamble p:nth-child(4) {
 	width: 520px;
 	margin-top: 120px;
 }

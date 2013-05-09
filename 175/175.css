@@ -80,7 +80,7 @@ h2
     {
     padding-top: 85px;
     }
-.summary .p2
+.summary p:last-child
     {
     font-size: 12px;
     position: absolute;
@@ -88,7 +88,7 @@ h2
     right: 20px;
     margin: 0;
     }
-.page-wrapper .intro .summary .p1
+.page-wrapper .intro .summary p:first-child
     {
     font-size: 11px;
     height: 171px;
@@ -98,7 +98,7 @@ h2
     color: #fff;
     font: 12px/150% Trebuchet MS;
     }
-.page-wrapper .intro .summary .p1  span
+.page-wrapper .intro .summary p:first-child  span
     {
     padding: 30px 530px 0 30px;
     display: block;

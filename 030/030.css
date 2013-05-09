@@ -64,7 +64,7 @@ header h1 span,
 header h2 span {
 	display:none
 }
-.summary p.p1:first-line {
+.summary p:first-child:first-line {
 	text-transform: uppercase;
 }
 .summary {
@@ -80,7 +80,7 @@ header h2 span {
 	margin-right: 80px;
 	margin-left: 300px;
 }	
-.supporting p.p5{
+.supporting p:nth-child(6){
 	background: url(line.jpg) no-repeat center bottom;
 	margin-right: -80px;
 	margin-left: -300px;

@@ -79,11 +79,11 @@ h1, h2, h3 span, .sidebar h3.select span, .sidebar h3.archives span, .sidebar h3
 	text-decoration: underline;
 }
 
-.summary p.p1 {
+.summary p:first-child {
 	display: none;
 }
 
-.summary p.p2 {
+.summary p:last-child {
 	font-size: 8pt;
 	text-align: right;
 	margin: 5px;

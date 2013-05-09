@@ -91,14 +91,14 @@ header h2 {
 header h2 span {
 	display: none;
 	}
-.summary p.p1 {
+.summary p:first-child {
 	display:none;
 	}
-.summary p.p1 span{
+.summary p:first-child span{
 	display: none;
 }
 
-.summary p.p2{
+.summary p:last-child{
 	display: block;
 	position: absolute;
 	border: 1px solid #ffffff;
@@ -113,15 +113,15 @@ header h2 span {
 	clear: both;
 }
 
-.summary p.p2 a:link, a:active{
+.summary p:last-child a:link, a:active{
 	color:#33eeff;
 }
 
-.summary p.p2 a:hover{
+.summary p:last-child a:hover{
 	text-decoration: underline;
 }
 
-.summary p.p2 a:visited{
+.summary p:last-child a:visited{
 	color:#33eeff;
 	text-decoration: line-through;
 }
@@ -153,7 +153,7 @@ header h2 span {
 	font-weight:bold;
 	width: 270px;
 }
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	margin-top: 10px;
 }
 .supporting {

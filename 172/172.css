@@ -78,15 +78,15 @@ h1 span, h2 span, h3.select span, h3.archives span, h3.resources span, .preamble
 	margin: 0;
 	padding: 0;
 	}
-.preamble .p1 {
+.preamble p:nth-child(2) {
 	margin: 0;	
 	padding: 25px 10px 10px 10px;
 	}
-.preamble .p2 {
+.preamble p:nth-child(3) {
 	margin: 0;	
 	padding: 0px 10px 10px 10px;
 	}
-.preamble .p3 {
+.preamble p:nth-child(4) {
 	margin: 0;	
 	padding: 0px 10px 10px 10px;
 	}
@@ -127,35 +127,35 @@ h1 span, h2 span, h3.select span, h3.archives span, h3.resources span, .preamble
 	background: url(images/BG_h3req.gif) no-repeat top center;
 	}
 	
-.explanation .p1 {
+.explanation p:nth-child(2) {
 	margin: 0;
 	padding: 5px 10px 0 10px;
 	}
-.explanation .p2 {
+.explanation p:nth-child(3) {
 	padding: 0 10px 10px 10px;
 	}
 
-.participation .p1 {
+.participation p:nth-child(2) {
 	margin: 0;
 	padding: 5px 10px 0 10px;
 	}
-.participation .p2 {
+.participation p:nth-child(3) {
 	padding: 0 10px 0 10px;
 	}
-.participation .p3 {
+.participation p:nth-child(4) {
 	padding: 0 10px 10px 10px;
 	}
 
-.benefits .p1 {
+.benefits p:nth-child(2) {
 	margin: 0;
 	padding: 5px 10px 20px 10px;
 	}
 
-.requirements .p1 {
+.requirements p:nth-child(2) {
 	margin: 0;
 	padding: 5px 10px 0 10px;
 	}
-.requirements .p2, .requirements .p3, .requirements .p4, .requirements .p5 {
+.requirements p:nth-child(3), .requirements p:nth-child(4), .requirements p:nth-child(5), .requirements p:nth-child(6) {
 	padding: 0 10px 0 10px;
 	}
 

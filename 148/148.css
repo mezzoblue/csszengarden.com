@@ -130,11 +130,11 @@ header h2 {
 
 /* --- quickSummary --- */	
 
-.summary p.p1 {
+.summary p:first-child {
 	display: none;
 	}
 
-.summary p.p2 {
+.summary p:last-child {
 	font-size: 11px;
 	color: #ccc; 
 	position: absolute;
@@ -142,14 +142,14 @@ header h2 {
 	left: 2px;	
 	}
 
-.summary p.p2 a:link, 
-.summary p.p2 a:visited { 
+.summary p:last-child a:link, 
+.summary p:last-child a:visited { 
 	text-decoration: underline; 
 	color: #ccc;
 	}
 
-.summary p.p2 a:hover, 
-.summary p.p2 a:active { 
+.summary p:last-child a:hover, 
+.summary p:last-child a:active { 
 	text-decoration: none; 
 	color: #ccc;
 	}
@@ -184,17 +184,17 @@ header h2 {
 	color: #444444;	
 	}
 
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	padding: 10px 85px 10px 86px; 
 	margin: -100px 0px 0px 0px;	
 	}
 
-.preamble p.p2 {
+.preamble p:nth-child(3) {
 	padding: 0px 85px 20px 86px; 
 	margin: 0px;	
 	}
 
-.preamble p.p3 {   
+.preamble p:nth-child(4) {   
 	background: url(images/preamble_img.jpg) no-repeat bottom;
 	padding: 0px 85px 60px 280px;  
 	margin: 0px;	
@@ -240,12 +240,12 @@ header h2 {
 	color: #444444;	
 	}
 
-.explanation p.p1 {
+.explanation p:nth-child(2) {
 	padding: 10px 115px 10px 106px; 
   	margin: 0px;  	
 	}
 
-.explanation p.p2 {
+.explanation p:nth-child(3) {
 	background: url(images/explanation_img.jpg) no-repeat bottom;
 	padding: 0px 115px 50px 106px;
   	margin: 0px;	
@@ -281,17 +281,17 @@ header h2 {
 	color: #444444;		
 	}
 
-.participation p.p1 {
+.participation p:nth-child(2) {
 	padding: 10px 115px 10px 106px;
   	margin: 0px;   	
 	}
 
-.participation p.p2 {
+.participation p:nth-child(3) {
 	padding: 0px 115px 10px 106px;
  	margin: 0px;    	
 	}
 
-.participation p.p3 {
+.participation p:nth-child(4) {
 	background: url(images/participation_img.jpg) no-repeat bottom;
 	padding: 0px 160px 20px 161px;	 
 	}
@@ -326,7 +326,7 @@ header h2 {
 	color: #444444;		
 	}
 	
-.benefits p.p1 {
+.benefits p:nth-child(2) {
 	padding: 10px 145px 0px 146px;
 	margin: 0px;  	
 	}
@@ -363,7 +363,7 @@ header h2 {
 	color: #444444;	
 	}
 
-.requirements p.p1 {
+.requirements p:nth-child(2) {
 	background: url(images/requirements_img.jpg) no-repeat top;
 	padding: 100px 105px 10px 106px;
   	margin: 0px; 	

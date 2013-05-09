@@ -151,10 +151,10 @@ header h2 span {
 
 /*  p  _______________________________________________________________________________*/
 
-.summary .p1 {
+.summary p:first-child {
 	display:		none;
 }
-.summary .p2 {
+.summary p:last-child {
 	margin-right: 	200px;
 	color: 			#382A07;
 	text-align: 	right;
@@ -166,10 +166,10 @@ header h2 span {
 	background: 	url(p.gif);
 } 
 
-.requirements .p4{
+.requirements p:nth-child(5){
 	margin-bottom: 40px;
 }
-.requirements .p5{
+.requirements p:nth-child(6){
 	margin-bottom: 110px;
 	text-align:		center;
 }

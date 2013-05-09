@@ -134,7 +134,7 @@ header{
 	height: 356px;
 }
 
-header h1 span,header h2 span,.summary .p1 span{
+header h1 span,header h2 span,.summary p:first-child span{
 	display: none;
 }
 

@@ -66,16 +66,16 @@ header h2 {
 	padding-top: 50px;
 	}
 
-.summary p.p1 {
+.summary p:first-child {
 	background: transparent url(summary.gif) no-repeat;
 	width: 356px;
 	height: 49px;
 	margin: 0px 0px 6px 0px;
 	}
-.summary p.p1 span, header h2 span, header h1 span 
+.summary p:first-child span, header h2 span, header h1 span 
 { display: none; }
 
-.summary p.p2 { width: 355px; display: block; }
+.summary p:last-child { width: 355px; display: block; }
 
 
 

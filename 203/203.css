@@ -124,7 +124,7 @@ header{
 	padding:0;
 }
 	
-.summary .p2{
+.summary p:last-child{
 	padding:0;
 	margin:0 0 0.9em 0;
 	width:396px;
@@ -132,12 +132,12 @@ header{
 	background:url(pics/download.gif) no-repeat top left;
 }
 	
-.summary .p2 span{
+.summary p:last-child span{
 	visibility:hidden;
 	white-space:nowrap;
 	}
 
-.summary .p2 span a{
+.summary p:last-child span a{
 	visibility:visible;
 	text-indent:-9000px;
 	display:block;
@@ -207,6 +207,6 @@ footer{
 .sidebar h3 span,
 header h1,
 header h2,
-.summary p.p1 span{
+.summary p:first-child span{
 	display:none;
 	}

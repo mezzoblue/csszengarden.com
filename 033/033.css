@@ -120,7 +120,7 @@ padding: 20px 30px 0px 0px;
 text-align: justify;
 }
 
-.preamble p.p3	{
+.preamble p:nth-child(4)	{
 padding-bottom: 20px;
 }
 
@@ -133,9 +133,9 @@ vertical-align: baseline;
 }
 
 
-.preamble p.p1	{margin-left: 200px;}
-.preamble p.p2	{margin-left: 180px;}
-.preamble p.p3	{margin-left: 80px;}
+.preamble p:nth-child(2)	{margin-left: 200px;}
+.preamble p:nth-child(3)	{margin-left: 180px;}
+.preamble p:nth-child(4)	{margin-left: 80px;}
 
 .supporting	{
 float: left;
@@ -179,9 +179,9 @@ color: #000;
 }
 .explanation h3	{visibility: hidden;}
 .explanation h3 span	{}
-.explanation p.p1	{padding-top: 30px;}
+.explanation p:nth-child(2)	{padding-top: 30px;}
 
-.requirements p.p5	{
+.requirements p:nth-child(6)	{
 text-align: right; 
 padding-bottom: 0; 
 margin-bottom: -180px;

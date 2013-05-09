@@ -237,7 +237,7 @@ footer {
 	padding: 4px 4px 4px 10px;
 	}
 	
-.summary .p1 { 
+.summary p:first-child { 
 	color: #fff ! important;
 	font-size: 10px ! important;
 	line-height: 14px;
@@ -248,7 +248,7 @@ footer {
 	padding: 0px 0px 10px 0px;
 	}
 	
-.summary .p2 { 
+.summary p:last-child { 
 	color: #fff ! important;
 	font-size: 10px ! important;
 	line-height: 14px;

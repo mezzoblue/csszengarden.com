@@ -117,7 +117,7 @@ header {
 	line-height: 2em;
 }
 
-.summary  p.p2{	
+.summary  p:nth-child(3){	
 	padding-top: 10px;
 }
 

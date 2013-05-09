@@ -47,13 +47,13 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 .page-wrapper .intro header h1, .page-wrapper .intro header h2 { display: none; }
 
 .page-wrapper .intro .summary { margin: 0 20px; padding: 0 0 10px 0; }
-.page-wrapper .intro .summary p.p1 {
+.page-wrapper .intro .summary p:first-child {
 	height: 75px;
 	margin: 0;
 	padding: 0;
 	background: url(demo.gif) top left no-repeat; }
-.page-wrapper .intro .summary p.p1 span { display: none; }
-.page-wrapper .intro .summary p.p2 {
+.page-wrapper .intro .summary p:first-child span { display: none; }
+.page-wrapper .intro .summary p:last-child {
 	margin: 10 0 0 0;
 	padding: 0;
 	font-size: 0.7em;
@@ -93,11 +93,11 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 .page-wrapper .supporting .benefits h3 { background: url(textBoxHeadBenefits.gif) top left no-repeat; }
 .page-wrapper .supporting .requirements h3 { background: url(textBoxHeadRequir.gif) top left no-repeat; }
 .page-wrapper .supporting p { margin: 0; padding: 0 10px 10px 15px; font-size: 0.8em; }
-.page-wrapper .supporting p.p1 { margin-top: -35px; padding-right: 75px; }
-.page-wrapper .supporting .explanation p.p2,
-.page-wrapper .supporting .participation p.p4,
-.page-wrapper .supporting .benefits p.p1,
-.page-wrapper .supporting .requirements p.p5 {
+.page-wrapper .supporting p:nth-child(2) { margin-top: -35px; padding-right: 75px; }
+.page-wrapper .supporting .explanation p:nth-child(3),
+.page-wrapper .supporting .participation p:nth-child(5),
+.page-wrapper .supporting .benefits p:nth-child(2),
+.page-wrapper .supporting .requirements p:nth-child(6) {
 	padding-bottom: 25px;
 	background: url(textBoxBottom.gif) bottom left no-repeat; }
 

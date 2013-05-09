@@ -96,7 +96,7 @@ header span{
 	padding:240px 100px 0 205px;
 }
 
-.preamble p.p1{
+.preamble p:nth-child(2){
 	margin-top: 20px;
 }
 

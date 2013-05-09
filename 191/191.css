@@ -83,11 +83,11 @@ position:absolute;
 top:41px;
 padding:0 0 0 380px
 }
-.summary .p1{
+.summary p:first-child{
 margin:10px 81px 0 0;
 font-size:120%
 }
-.summary .p2{
+.summary p:last-child{
 margin:0;
 background:url("bookmark.jpg") no-repeat;
 position:absolute;
@@ -96,16 +96,16 @@ left:620px;
 width:81px;
 height:131px
 }
-.summary .p2 span{
+.summary p:last-child span{
 display:block;
 padding:20px 10px;
 color:#fff;
 font:11px/18px "Trebuchet MS",Arial,Helvetica,sans-serif
 }
-.summary .p2 a{
+.summary p:last-child a{
 color:#fff
 }
-.summary .p2 a:hover{
+.summary p:last-child a:hover{
 text-decoration:none;
 color:#ccc
 }

@@ -71,11 +71,11 @@ header h1 span, h2 span {
 }
 
 /*Hide quicksummary Text*/
-.summary .p1 span{
+.summary p:first-child span{
 	display: none;
 }
 
-.summary .p2 {
+.summary p:last-child {
 	text-transform: uppercase;
 	font-size: 0.8em;
 	background-image: url(quickbg.gif);

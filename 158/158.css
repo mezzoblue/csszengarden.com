@@ -134,14 +134,14 @@ header {
  background: url(lselectSpan.gif);
  margin: -15px 0 0 0;
 }
-.summary .p2 {
+.summary p:last-child {
  position: absolute;
  top: 190px;
  width: 280px;
  text-align: right; 
  margin-left: 360px; 
 }
-.summary .p1 {
+.summary p:first-child {
  position: absolute;
  top: 100px;
  width: 158px;
@@ -178,6 +178,6 @@ li {
 li:hover { background: #DCD5B8; }
 
 /* --// the lone class --// */
-.p5 { clear: both; }
+p:nth-child(6) { clear: both; }
 
 /* the end... doh doh doh */

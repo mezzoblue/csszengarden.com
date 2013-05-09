@@ -126,35 +126,35 @@
                 font-weight: normal;
             }
 
-            .summary .p1 {
-                background: #fff url('demo.p1.gif') 0% 0% no-repeat;
+            .summary p:first-child {
+                background: #fff url('demop:nth-child(2).gif') 0% 0% no-repeat;
                 /* padding-bottom: 60px; */
                 height: 176px;
                 padding: 0px 0px 0px 0px;
                 margin: 0px;
             }
             
-            .summary .p1 span {
+            .summary p:first-child span {
                 display: none;
             }
             
-            .summary .p2 {
+            .summary p:last-child {
                 position: relative;
                 bottom: 0px;
                 text-align: right;
                 padding-bottom: 15px;
             }
             
-            .summary>.p2 {
+            .summary>p:nth-child(3) {
                 padding-bottom: 0px;
             }
             
-            .summary .p2 span {
+            .summary p:last-child span {
                 visibility: hidden;
                 font-size: 0px;
             }
             
-            .summary .p2 span a {
+            .summary p:last-child span a {
                 margin-left: 75px;
                 font-size: 10pt;
                 visibility: visible;
@@ -169,7 +169,7 @@
                 text-transform: capitalize;
             }
 
-            .summary .p2 span a:hover {
+            .summary p:last-child span a:hover {
                 background: transparent url('file2.gif') 100% 50% no-repeat;
                 color: #819bb2;
             }
@@ -225,12 +225,12 @@
                 background: #fff url('h3.explanation.gif') 100% 100% no-repeat;
             }
 
-            .explanation p.p1 {
+            .explanation p:nth-child(2) {
                 width: 45%;
                 float: left;
             }
             
-            .explanation p.p2 {
+            .explanation p:nth-child(3) {
                 width: 45%;
                 float: right;
             }
@@ -250,17 +250,17 @@
                 /* border-top: solid 1px #ccc; */
             }
 
-            .participation p.p2 {
+            .participation p:nth-child(3) {
                 width: 45%;
                 float: left;
             }
             
-            .participation p.p3 {
+            .participation p:nth-child(4) {
                 width: 45%;
                 float: right;
             }
 
-            .participation p.p4 {
+            .participation p:nth-child(5) {
                 clear: both;
             }
 
@@ -293,17 +293,17 @@
                 /* border-top: solid 1px #ccc; */
             }
 
-            .requirements p.p2 {
+            .requirements p:nth-child(3) {
                 width: 45%;
                 float: left;
             }
             
-            .requirements p.p3, .requirements p.p4 {
+            .requirements p:nth-child(4), .requirements p:nth-child(5) {
                 width: 45%;
                 float: right;
             }
             
-            .requirements p.p5 {
+            .requirements p:nth-child(6) {
                 clear: both;
             }
 

@@ -45,7 +45,7 @@ header {
  margin: 0 0 12px 0;
 }
 .summary { position: relative; }
-.summary .p2 {
+.summary p:last-child {
  position: absolute;
  margin-top: -70px;
  left: 615px;
@@ -71,7 +71,7 @@ footer {
  height: 43px;
  width: 204px;
 }
-.p1,.p2,.p3,.p4,.p5 { padding-left: 8px; }
+p:nth-child(2),p:nth-child(3),p:nth-child(4),p:nth-child(5),p:nth-child(6) { padding-left: 8px; }
 /* --// headers // --*/
 .preamble h3,.explanation h3, .participation h3, .benefits h3, .requirements h3 { 
  height: 60px; 
@@ -144,7 +144,7 @@ footer a:hover {
  border-bottom: 1px solid #683A33;
 }
 /* --// no display // -- */
-.summary .p1, .extra1, .extra2, .extra3, .extra4, .extra5, .extra6, header h1,h2 { display : none; }
+.summary p:first-child, .extra1, .extra2, .extra3, .extra4, .extra5, .extra6, header h1,h2 { display : none; }
 
 /* --// lists --// */
 ul,li {
@@ -165,5 +165,5 @@ li {
  /*border-bottom: 1px solid #A68858;*/
 }
 /* --// hover effects //-- */
-.p1:hover,.p2:hover,.p3:hover,.p4:hover,.p5:hover { border-left: 2px solid #B0915F; padding-left: 6px; }
-.summary .p2:hover { border: 0; padding: 0; }
+p:nth-child(2):hover,p:nth-child(3):hover,p:nth-child(4):hover,p:nth-child(5):hover,p:nth-child(6):hover { border-left: 2px solid #B0915F; padding-left: 6px; }
+.summary p:last-child:hover { border: 0; padding: 0; }

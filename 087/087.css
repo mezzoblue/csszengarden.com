@@ -132,7 +132,7 @@ header {
 	padding: 0;
              }
 
-.summary p.p2 {
+.summary p:last-child {
              padding: 0 0 0 50px;             
              }
 
@@ -188,7 +188,7 @@ header {
 	padding: 0 0 15px 0;
 	}
 
-.preamble p.p1, .preamble p.p2 {	
+.preamble p:nth-child(2), .preamble p:nth-child(3) {	
              width: 235px;     	
 	}
 

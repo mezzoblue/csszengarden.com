@@ -104,11 +104,11 @@ padding:0 85px 10px 17px;
 display:block;
 }
 
-.requirements .p5 {
+.requirements p:nth-child(6) {
 padding:0 85px 10px 17px;
 }
 
-.requirements .p5 span {
+.requirements p:nth-child(6) span {
 display:inline;
 padding:0;
 }
@@ -129,12 +129,12 @@ text-decoration:none;
 text-decoration:underline;
 }
 
-.summary .p1 span {
+.summary p:first-child span {
 padding-top:14px;
 background:url(quicksummary_top.gif) top no-repeat;
 }
 
-.summary .p2 span {
+.summary p:last-child span {
 padding-bottom:20px;
 background:url(right_bottom.gif) bottom no-repeat;
 }
@@ -200,7 +200,7 @@ background:url(left_bg.gif) repeat-y;
 .zen-resources h3 {background:url(title_resources.gif) no-repeat;}
 
 /* bottom image */
-.preamble .p3 span, .explanation .p2 span, .participation .p3 span, .benefits .p1 span, .requirements .p5{
+.preamble p:nth-child(4) span, .explanation p:nth-child(3) span, .participation p:nth-child(4) span, .benefits p:nth-child(2) span, .requirements p:nth-child(6){
 padding-bottom:20px;
 background:url(right_bottom.gif) bottom no-repeat;
 }

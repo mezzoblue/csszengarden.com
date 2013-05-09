@@ -48,8 +48,8 @@ a abbr, a abbr { color:inherit }
 	background: white url("header.jpg") top left no-repeat;
 	}
 header { display:none }
-.summary .p1 { display:none }
-.summary .p2 {
+.summary p:first-child { display:none }
+.summary p:last-child {
 	position:absolute; top: 195px; left: 474px; z-index:10;
 	width:296px; margin:0;
 	font-size:70%;
@@ -57,11 +57,11 @@ header { display:none }
 	text-align:center;
 	color:white;
 	}
-.summary .p2 a {
+.summary p:last-child a {
 	white-space: nowrap;
 	color: #FFF5D9;
 	}
-.summary .p2 a:hover { color: #01228D; }
+.summary p:last-child a:hover { color: #01228D; }
 
 .preamble, .explanation, .participation, .benefits, .requirements {
 	padding: 0 1em 1px 2em;

@@ -44,7 +44,7 @@ header h1 {
 	margin: 0;
 }
 
-header h1 span, header h2, .summary p.p1 {
+header h1 span, header h2, .summary p:first-child {
 	display: none;
 }
 
@@ -112,7 +112,7 @@ footer a:hover {
 	text-align: justify;
 }
 
-.summary p.p2 {
+.summary p:last-child {
 	background: url(05.gif) no-repeat right top;
 	padding: 0 40px 0 0;
 	margin: -20px 0 0 0;

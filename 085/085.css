@@ -24,7 +24,7 @@ p {
 	text-align: left;
 }
 
-p.p5 { 
+p:nth-child(6) { 
 	font-size: 9px;
 	padding-top: 15px;
 }
@@ -83,8 +83,8 @@ header {
 	left: 199px;
 	padding: 14px 14px 0 14px;
 }
-.summary p.p1 { display: none }
-.summary p.p2 { 
+.summary p:first-child { display: none }
+.summary p:last-child { 
 	font-size: 9px;
 }
 

@@ -100,7 +100,7 @@ header h2 {
 	padding: 8px 70px 0px 70px;
 	margin: 0;	
 }
-.preamble .p1 {
+.preamble p:nth-child(2) {
 	background-image: url(RoadToEnlightmentBG_1.gif);
 	background-repeat: no-repeat;
 	background-position: right top;
@@ -108,7 +108,7 @@ header h2 {
 	
 }
 
-.preamble .p3 {
+.preamble p:nth-child(4) {
 	padding-bottom: 20px;
 }
 .summary {
@@ -244,7 +244,7 @@ header h2 {
 	background-repeat: no-repeat;
 }
 
-.p5 {
+p:nth-child(6) {
 	padding-top: 30px;
 	font-size: 10px;
 }

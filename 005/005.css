@@ -86,14 +86,14 @@ header h2 span {
 	}
 
 
-.summary .p1 {
+.summary p:first-child {
 	font: 400 18px/16px 'arial black', sans-serif;
 	text-align: right;
 	width: 340px;
 	float: left;
 	margin: 40px 20px 20px 0px;
 	}
-.summary .p2 {
+.summary p:last-child {
 	font: 9px verdana, sans-serif;
 	text-align: left;
 	line-height: 24px;
@@ -124,17 +124,17 @@ header h2 span {
 .explanation h3 {
 	font: bold 18px courier, monospace;
 	}
-.explanation .p1 {
+.explanation p:nth-child(2) {
 	font: 18px courier, monospace;
 	line-height: 5ex;
 	}
-.explanation .p2 {
+.explanation p:nth-child(3) {
 	font: 11px/16px courier, monospace;
 	width: 220px;
 	float: left;
 	margin-right: 10px;
 	}
-.explanation .p3 {
+.explanation p:nth-child(4) {
 	font: 14px/14px courier, monospace;
 	margin-top: 30px;
 	}
@@ -149,17 +149,17 @@ header h2 span {
 .participation h3 span {
 	display: none;
 	}
-.participation .p1:first-line {
+.participation p:nth-child(2):first-line {
 	font: 16px 'arial black', sans-serif;
 	}
-.participation .p2 {
+.participation p:nth-child(3) {
 	line-height: 16px;
 	text-align: right;
 	float: left;
 	width: 200px;
 	margin: 0px 5px 15px 0px;
 	}
-.participation .p3 {
+.participation p:nth-child(4) {
 	font-family: arial, sans-serif;
 	}
 
@@ -180,13 +180,13 @@ header h2 span {
 	clear: left;
 	float: right;
 	}
-.requirements .p1 {
+.requirements p:nth-child(2) {
 	font: bold 11px/16px trebuchet ms, sans-serif;
 	float: left;
 	width: 300px;
 	margin-right: 10px;
 	}
-.requirements .p3 {
+.requirements p:nth-child(4) {
 	font: 12px/11px arial, sans-serif;
 	}
 
