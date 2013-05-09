@@ -32,6 +32,8 @@
 	- use :first-child, :last-child and :nth-child to get at non-classed elements
 	- go responsive; test your layout at multiple screen sizes.
 	- use the Kellum Method for image replacement if needed. http://goo.gl/GXxdI
+	- don't rely on the spans being there. They won't be soon.
+	- don't rely on the extra divs at the bottom. Use ::before and ::after instead.
 
 -->
 
