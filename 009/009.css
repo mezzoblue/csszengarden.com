@@ -62,14 +62,16 @@ header {
 		margin-left: 40px;
 		width: 240px; 
 		height: 220px; 
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 
-	header h1 span {
-		display:none
-		}
-
-	header h2 span {
-		display:none;
+	header h2 {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 		
 .summary {
@@ -98,10 +100,10 @@ header {
 		background: transparent url(preamble.png) no-repeat; 
 		width: 460px; 
 		height: 70px;
-		}
 
-	.preamble h3 span {
-		display: none;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 		
 	.preamble a:link {
@@ -130,10 +132,10 @@ header {
 		width: 460px; 
 		height: 50px;
 		margin-bottom: 20px;
-		}
-
-	.explanation h3 span {
-		display: none;
+		
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 		
 	.explanation p {
@@ -149,10 +151,10 @@ header {
 		width: 460px; 
 		height: 50px;
 		margin-bottom: 20px;
-		}
 
-	.participation h3 span {
-		display: none;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 		
 	.participation p {
@@ -168,10 +170,10 @@ header {
 		width: 460px; 
 		height: 50px;
 		margin-bottom: 20px;
-		}
 
-	.benefits h3 span {
-		display: none;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 		
 	.benefits p {
@@ -187,10 +189,10 @@ header {
 		width: 460px; 
 		height: 50px;
 		margin-bottom: 20px;
-		}
 
-	.requirements h3 span {
-		display: none;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 		
 	.requirements p {
@@ -230,19 +232,10 @@ footer {
 		padding-bottom: 20px;
 		}
 
-	.sidebar h3.select span {
-		display:none
-		}
-
-	.sidebar h3.favorites { 
-		background: transparent url(favorites.png) no-repeat top left; 
-		width: 240px; 
-		height: 50px;
-		margin-bottom: 10px;
-		}
-
-	.sidebar h3.favorites span {
-		display:none
+	.sidebar h3.select {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 
 	.sidebar h3.archives { 
@@ -250,10 +243,10 @@ footer {
 		width: 240px; 
 		height: 50px;
 		margin-bottom: 10px;
-		}
-	
-	.sidebar h3.archives span {
-		display:none
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 
 	.sidebar h3.resources { 
@@ -261,12 +254,12 @@ footer {
 		width: 250px; 
 		height: 50px;
 		margin-bottom: 10px;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 	
-	.sidebar h3.resources span {
-		display:none
-		}
-
 
 	.sidebar ul {
 		margin: 0px;

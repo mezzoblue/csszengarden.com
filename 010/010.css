@@ -75,12 +75,9 @@ header
 		background: url(top.gif) no-repeat top left;
 	}
 
-/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-header h1, header h2 span
+header h1
 	{ 
-		margin: 0;
-		padding: 0;
-		display: none;
+		display: none;	
 	}
 	
 header h2 
@@ -93,6 +90,10 @@ header h2
 		background: url(tagline.gif) no-repeat top left;
 		width: 528px;
 		height: 74px;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 
 /* ---( quick summary)---------------------------- */
