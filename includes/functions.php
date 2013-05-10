@@ -67,7 +67,7 @@
 	if ($loadCSS) {
 		$currentDesign = $loadCSS;
 	} else {
-		$currentDesign = "001/001.css";
+		$currentDesign = "/001/001.css";
 	}
 
 

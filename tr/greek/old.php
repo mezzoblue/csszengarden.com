@@ -1,6 +1,6 @@
 <?php
 
-include 'masterlist.php';
+include '../../includes/masterlist.php';
 
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -17,7 +17,7 @@ include 'masterlist.php';
 	<!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
 	<script type="text/javascript"></script>
 	
-	<style type="text/css" media="all" title="currentStyle">
+	<style type="text/css" title="currentStyle">
 		@import "<?php echo $loadCSS; ?>";
 	</style>
 	<link rel="Shortcut Icon" type="image/x-icon" href="http://www.csszengarden.com/favicon.ico" />	
@@ -37,7 +37,7 @@ include 'masterlist.php';
 
 -->
 
-<body onload="window.defaultStatus='css Zen Garden: The Beauty in CSS Design';" id="css-zen-garden">
+<body id="css-zen-garden">
 
 <div id="container">
 	<div id="intro">
@@ -48,7 +48,7 @@ include 'masterlist.php';
 
 		<div id="quickSummary">
 			<p class="p1"><span>Ρυπαίνοντας ένα σκοτεινό και καταθλιπτικό δρόμο, κείτονται τα κατάλοιπα των browser&#8211;specific tags, μη συμβατών <acronym title="Document Object Model">DOM</acronym>s, και της ελλειπής <acronym title="Cascading Style Sheets">υποστήριξης CSS</acronym>.</span></p>
-			<p class="p2"><span>Κατεβάστε το <a title="Right click to save this file to your hard drive." href="http://www.mezzoblue.com/zengarden/zengarden-sample.html">html αρχείο</a> και το<a title="Right click to save this file to your hard drive." href="http://www.mezzoblue.com/zengarden/zengarden-sample.css">css file</a></span></p>
+			<p class="p2"><span>Κατεβάστε το <a title="Right click to save this file to your hard drive." href="/zengarden-sample.html">html αρχείο</a> και το<a title="Right click to save this file to your hard drive." href="/zengarden-sample.css">css file</a></span></p>
 		</div>
 
 		<div id="preamble">
@@ -70,8 +70,8 @@ include 'masterlist.php';
 			<h3><span>Συμμετοχή</span></h3>
 			<p class="p1"><span>Οι γραφίστες απλά ευχαριστούν. Εσύ τροποποιείς αυτή τη σελίδα, άρα απαραίτητο πρόσον είναι η πολύ καλή γνώση <acronym title="Cascading Style Sheets">CSS</acronym> , αλλά τα ήδη υπάρχοντα designs έχουν αρκετά σχόλια στον κώδικα έτσι ωστε ακόμη και οι αρχαριοι στην <acronym title="Cascading Style Sheets">CSS</acronym> να τα χρησιμοποιήσουν ως σημεία εκκίνησης. Παρακαλώ δείτε τον <a title="A listing of CSS-related resources" href="http://www.mezzoblue.com/zengarden/resources/"><acronym title="Cascading Style Sheets">CSS</acronym> Resource Guide</a> για advanced tutorials και <acronym title="Cascading Style Sheets">CSS</acronym> tips .</span></p>
 			<p class="p2"><span>Μπορείτε να τροποποιήσετε το style sheet με όποιο τρόπο θέλετε, αλλά όχι την HTML. Μπορεί να σας φανεί δύσκολο στην αρχή αν δεν έχετε δουλέψει με αυτό τον τρόπο στο παρελθόν, αλλά ακολουθήστε τα links της λίστας για να μάθετε περισσότερα, και χρησιμοποιήστε τα sample files ώς οδηγό.</span></p>
-			<p class="p3"><span>Κατεβάστε το <a title="Right click to save this file to your hard drive." href="http://www.mezzoblue.com/zengarden/zengarden-sample.html">html αρχείο</a> και <a title="Right click to save this file to your hard drive." href="http://www.mezzoblue.com/zengarden/zengarden-sample.css">css αρχείο</a> για να δουλέψετε το αντίγραφο στον Η/Υ σας. Όταν τελειώσετε το αριστούργημά σας (και παρακαλώ, μή στείλετε μισοτελειωμένη δουλειά) &quot;ανεβάστε&quot; το .css αρχείο στον web server σας. <a title="Use the contact form to send us your CSS file" href="http://www.mezzoblue.com/zengarden/submit/">Στείλτε μας ενα link</a> στο αρχείο και αν επιλέξουμε να το χρησιμοποιήσουμε, θα σας στείλουμε τις συνδεόμενες εικόνες. Τα τελικά designs θα τοποθετηθούν στον server μας.</span></p>
-			<p class="p4"><span>update: Ψάχνω για μεταφραστές. Αν έχετε πολύ καλη γνώση της αγγλικής και άλλης ξένης γλώσσας, είναι και αυτός ένας τρόπος για να συμμετάσχετε στο project. Παρακαλώ <a href="http://www.mezzoblue.com/contact/">επικοινωνήστε μαζί μου</a> για λεπτομέρειες. Greek translation by <a href="http://www.grafistas.gr/heat">Akis Apostoliadis</a>.</span></p>
+			<p class="p3"><span>Κατεβάστε το <a title="Right click to save this file to your hard drive." href="/zengarden-sample.html">html αρχείο</a> και <a title="Right click to save this file to your hard drive." href="/zengarden-sample.css">css αρχείο</a> για να δουλέψετε το αντίγραφο στον Η/Υ σας. Όταν τελειώσετε το αριστούργημά σας (και παρακαλώ, μή στείλετε μισοτελειωμένη δουλειά) &quot;ανεβάστε&quot; το .css αρχείο στον web server σας. <a title="Use the contact form to send us your CSS file" href="http://www.mezzoblue.com/zengarden/submit/">Στείλτε μας ενα link</a> στο αρχείο και αν επιλέξουμε να το χρησιμοποιήσουμε, θα σας στείλουμε τις συνδεόμενες εικόνες. Τα τελικά designs θα τοποθετηθούν στον server μας.</span></p>
+			<p class="p4"><span>update: Ψάχνω για μεταφραστές. Αν έχετε πολύ καλη γνώση της αγγλικής και άλλης ξένης γλώσσας, είναι και αυτός ένας τρόπος για να συμμετάσχετε στο project. Παρακαλώ <a href="http://www.mezzoblue.com/contact/">επικοινωνήστε μαζί μου</a> για λεπτομέρειες. Greek translation by <a href="mailto:heat@hol.gr">Akis Apostoliadis</a>.</span></p>
 		</div>
 
 		<div id="benefits">
@@ -90,7 +90,7 @@ include 'masterlist.php';
 		<div id="footer">
 			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s XHTML">xhtml</a> &nbsp; 
 			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS">css</a> &nbsp; 
-			<a href="http://creativecommons.org/licenses/sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">cc</a> &nbsp;
+			<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">cc</a> &nbsp;
 			<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL=http%3A%2F%2Fwww.mezzoblue.com%2Fzengarden%2F&amp;output=Submit&amp;gl=sec508&amp;test=" title="Check the accessibility of this site according to U.S. Section 508">508</a> &nbsp;
 			<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL=http%3A%2F%2Fwww.mezzoblue.com%2Fzengarden%2F&amp;output=Submit&amp;gl=wcag1-aaa&amp;test=" title="Check the accessibility of this site according to WAI Content Accessibility Guidelines 1">aaa</a>
 		</div>
@@ -106,9 +106,10 @@ include 'masterlist.php';
 					$c = 0;
 					for ($a = ($listStart + 1); $a <= $listEnd; $a++) {
 						$b = $listEnd - $c;
+						$d = $letterarray[$c];
 						$tempLink = linkMe($filename[$b]);
 						echo "\t\t\t\t\t";
-						echo "<li><a href=\"${tempLink}&amp;page=${thisPage}\">${styleName[$b]}</a> by <a href=\"${styleURL[$b]}\" class=\"c\">${styleCreator[$b]}</a>&nbsp;</li>";
+						echo "<li><a href=\"?cssfile=/${tempLink}/${tempLink}.css&amp;page=${thisPage}\" title=\"AccessKey: ${d}\" accesskey=\"${d}\">${styleName[$b]}</a> by <a href=\"${styleURL[$b]}\" class=\"c\">${styleCreator[$b]}</a></li>";
 						echo "\n";
 						$c = $c + 1;
 					}
@@ -160,16 +161,6 @@ include 'masterlist.php';
 <!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
 <div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div>
 <div id="extraDiv4"><span></span></div><div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
-
-
-<!-- Sorry about this one. I have no server stats, so it's my concession to vanity -->
-<script type="text/javascript">
-<!--//
-document.write('<img src="http://www.hotstats.gr/cgi-bin/hotstats/easystat?acct=mezzoblue');
-document.write('&ref=' + escape(document.referrer) + '" border="0" alt="">');
-//-->
-</script>
-
 
 </body>
 </html>
