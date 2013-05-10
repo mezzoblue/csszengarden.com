@@ -102,7 +102,10 @@
 
 	$foot = array(
 		"comment" => "
-Ces divs/spans suppl&eacute;mentaires peuvent &ecirc;tre utilis&eacute;es pour ajoutter des images suppl&eacute;mentaires.		",
+	Ces div et span superflus ont été fournis initialement comme fourre-tout pour ajouter des images supplémentaires.
+	Actuellement nous avons le support complet de ::before et ::after, privilégiez plutôt leur utilisation.
+	Ces balises sont conservées uniquement pour la compatibilité des anciennes conceptions. Elles pourraient disparaître un jour.
+		",
 	);
 
 
