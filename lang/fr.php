@@ -25,8 +25,10 @@
 	$intro = array(
 		"h1" => "Jardin Zen css",
 		"h2" => 'La beaut&eacute; de la conception <abbr title="Cascading Style Sheets">CSS</abbr>',
+
 		"summary-p1" => 'Une demonstration de ce qu\'on peut accomplir lorsqu\'on utilise les <abbr title="Cascading Style Sheets">CSS</abbr> pour la conception web.  S&eacute;lectionez n\'importe quelle feuille de style list&eacute;e pour charger le r&eacute;sultat sur cette page.',
 		"summary-p2" => 'T&eacute;l&eacute;chargez les fichiers d\'exemple <a href="/zengarden-sample.html" title="Clique-droit pour sauver ce document sur votre disque dur.">html</a> et <a href="/zengarden-sample.css" title="Clique-droit pour sauver ce document sur votre disque dur.">css</a>',
+
 		"preamble-h3" => 'Le chemin vers l\'&eacute;dification',
 		"preamble-p1" => 'Les reliques pass&eacute;es des s&eacute;lecteurs sp&eacute;cifique aux navigateurs, des <abbr title="Document Object Model">DOM</abbr>s incompatibles, et du manque de support des <abbr title="Cascading Style Sheets">CSS</abbr> encombrent un long chemin sombre et morne.',
 		"preamble-p2" => 'Aujourd\'hui, nous devons nous clarifier l\'esprit et nous d&eacute;barassez des pratiques pass&eacute;es.  La r&eacute;v&eacute;lation de la v&eacute;ritable nature du Web est maintenant possible, gr&acirc;ce aux efforts infatigables des gens du <abbr title="World Wide Web Consortium">W3C</abbr>, du <abbr title="Web Standards Project">WaSP</abbr> et des cr&eacute;ateurs des principaux navigateurs.',
@@ -54,7 +56,7 @@
 		"requirements-p5" => 'Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. Now available: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.',
 	);
 
-	// if you decide to localize any of these, keep them <4 characters if possible
+	// if you decide to localize any of these, keep the link text <4 characters if possible
 	// some older designs assume the longest one in the group was 'XHTML'
 	$footer = array(
 		"zen-validate-html-title" => "V&eacute;rifiez la validit&eacute; HTML de ce site.",
