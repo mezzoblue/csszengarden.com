@@ -6,18 +6,22 @@
 	// of the site.
 
 	$head = array(
-		"title" => "Jardin Zen css: La beaut&eacute; de la conception CSS",
-		"description" => "A demonstration of what can be accomplished visually through CSS-based design.",
+		"title" => "Jardin Zen CSS : La beaut&eacute; de la conception CSS",
+		"description" => "Une d&eacute;monstration de ce qui peut &ecirc;tre r&eacute;alis&eacute; visuellement via la conception bas&eacute;e sur CSS.",
 
 		// if you'd like translation credit, place it somewhere in this comment
 		"comment" => "
+	Afficher la source est une fonctionnalité, pas un bug. Merci pour votre curisoité
+	et votre intérêt en y contribuant !
 
-	Ce document xhtml est comment&eacute; pour donner au concepteur le maximum de 
-	flexibilit&eacute;.  Il y a plus de classes et de marqueur que n&eacute;c&eacute;ssaire dans 
-	une vraie situation il y en aurait bien moins.
+	Quelques astuces de conception pour le nouveau Jardin Zen CSS amélioré :
 
-	Cependant, je crois que nous pouvons tous accepter that malgr&eacute; cela, nous sommes 
-	mieux plac&eacute;s que si nous avions utilis&eacute;s des tables.
+	- utilisez des classes pour la mise en forme. N'utilisez pas d'id.
+	- utilisez :first-child, :last-child et :nth-child pour cibler les éléments sans classe
+	- soyez \"responsive\"; testez votre mise en forme sur plusieurs tailles d'écran.
+	- utilisez si besoin la méthode Kellum pour les remplacements d'image. http://goo.gl/GXxdI
+	- ne comptez pas sur les spans ici présents. Ils ne le seront bientôt plus.
+	- ne comptez pas sur les div supplémentaires en bas. Utilisez plutôt ::before et ::after.
 
 		",
 	);
