@@ -9,7 +9,7 @@
 	}
 
 	// generate the list of designs in the site navigation
-	function getDesignList($start, $count, $list) {
+	function getDesignList($start, $count, $list, $i18nBy) {
 
 		// flush return value
 		$return = "";
@@ -27,7 +27,7 @@
 			ob_start();
 ?>
 					<li>
-						<a href="<?php echo $designURL; ?>" class="design-name"><?php echo $designName; ?></a> by
+						<a href="<?php echo $designURL; ?>" class="design-name"><?php echo $designName; ?></a> <?php echo $i18nBy; ?>
 						<a href="<?php echo $designerURL; ?>" class="designer-name"><?php echo $designerName; ?></a>
 					</li>
 <?php
