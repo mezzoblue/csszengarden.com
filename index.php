@@ -115,6 +115,8 @@
 
 			<div class="design-archives" id="design-archives">
 				<h3 class="archives"><span>Archives:</span></h3>
+				<nav role="navigation">
+
 				<ul>
 <?php
 	if ($listStart > $numDesigns) {
@@ -143,10 +145,13 @@
 						</a>
 					</li>
 				</ul>
+				
+				</nav>
 			</div>
 
 			<div class="zen-resources" id="zen-resources">
 				<h3 class="resources"><span>Resources:</span></h3>
+				<nav role="navigation">
 				<ul>
 					<li class="view-css">
 						<a href="<?php echo $currentDesign ?>" title="View the source CSS file of the currently-viewed design.">
@@ -174,6 +179,7 @@
 						</a>
 					</li>
 				</ul>
+				</nav>
 			</div>
 		</div>
 	</aside>
