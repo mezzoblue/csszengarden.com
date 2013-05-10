@@ -70,11 +70,11 @@
 		</div>
 
 		<footer>
-			<a href="http://validator.w3.org/check/referer" title="<?php echo $main["zen-validate-html-title"]; ?>" class="zen-validate-html"><?php echo $footer["zen-validate-html-text"]; ?></a>
-			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="<?php echo $main["zen-validate-css-title"]; ?>" class="zen-validate-css"><?php echo $footer["zen-validate-css-text"]; ?></a>
-			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="<?php echo $main["zen-license-title"]; ?>" class="zen-license"><?php echo $footer["zen-license-text"]; ?></a>
-			<a href="http://mezzoblue.com/zengarden/faq/#aaa" title="<?php echo $main["zen-accessibility-title"]; ?>" class="zen-accessibility"><?php echo $footer["zen-accessibility-text"]; ?></a>
-			<a href="https://github.com/mezzoblue/csszengarden.com" title="<?php echo $main["zen-github-title"]; ?>" class="zen-github"><?php echo $footer["zen-github-text"]; ?></a>
+			<a href="http://validator.w3.org/check/referer" title="<?php echo $footer["zen-validate-html-title"]; ?>" class="zen-validate-html"><?php echo $footer["zen-validate-html-text"]; ?></a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="<?php echo $footer["zen-validate-css-title"]; ?>" class="zen-validate-css"><?php echo $footer["zen-validate-css-text"]; ?></a>
+			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="<?php echo $footer["zen-license-title"]; ?>" class="zen-license"><?php echo $footer["zen-license-text"]; ?></a>
+			<a href="http://mezzoblue.com/zengarden/faq/#aaa" title="<?php echo $footer["zen-accessibility-title"]; ?>" class="zen-accessibility"><?php echo $footer["zen-accessibility-text"]; ?></a>
+			<a href="https://github.com/mezzoblue/csszengarden.com" title="<?php echo $footer["zen-github-title"]; ?>" class="zen-github"><?php echo $footer["zen-github-text"]; ?></a>
 		</footer>
 
 	</div>
