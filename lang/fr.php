@@ -77,25 +77,25 @@
 
 
 	$sidebar = array(
-		"design-selection-h3" => "Choisissez une conception:",
+		"design-selection-h3" => "Choisissez une conception :",
 		"design-selection-by" => "par",
 
-		"design-archives-h3" => "Archives:",
+		"design-archives-h3" => "Archives :",
 		"design-archives-next" => "Conceptions suivantes",
-		"design-archives-previous" => "Conceptions avant",
-		"design-archives-viewall-title" => "View every submission to the Zen Garden.",
+		"design-archives-previous" => "Conceptions pr&eacute;c&eacute;dentes",
+		"design-archives-viewall-title" => "Voir toutes les propositions soumises au Jardin Zen CSS.",
 		"design-archives-viewall-text" => "Voir toutes les conceptions",
 
-		"design-resources-h3" => "Ressources:",
-		"view-css-title" => 'View the source CSS file of the currently-viewed design.',
-		"view-css-text" => 'Voir le <abbr title="Cascading Style Sheets">CSS</abbr> pour cette conception',
-		"css-resources-title" => 'Links to great sites with information on using CSS.',
-		"css-resources-text" => 'Ressources <abbr title="Cascading Style Sheets">CSS</abbr>',
-		"zen-faq-title" => 'Une liste de Questions Souvent Demand&eacute;es au sujet du Jardin Zen css',
-		"zen-faq-text" => '<abbr title="Questions Souvent Demand&eacute;es, ou Frequently Asked Questions en Anglais">FAQ</abbr>',
-		"zen-submit-title" => 'Send in your own CSS file.',
-		"zen-submit-text" => 'Soummettez une conception',
-		"zen-translations-title" => 'Voir les traductions pour cette page.',
+		"design-resources-h3" => "Ressources :",
+		"view-css-title" => 'Voir le fichier CSS source de la conception en cours.',
+		"view-css-text" => 'Voir le <abbr lang="en" title="Cascading Style Sheets">CSS</abbr> de cette conception',
+		"css-resources-title" => 'Liens vers de bons sites avec des informations sur l\'utilisation de CSS.',
+		"css-resources-text" => 'Ressources <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>',
+		"zen-faq-title" => 'Une liste de questions souvent pos&eacute;es au sujet du Jardin Zen CSS.',
+		"zen-faq-text" => '<abbr title="Foire Aux Questions">FAQ</abbr>',
+		"zen-submit-title" => 'Envoyez votre propre fichier CSS.',
+		"zen-submit-text" => 'Soummettre une conception',
+		"zen-translations-title" => 'Voir les traductions de cette page.',
 		"zen-translations-text" => 'Traductions',
 	);
 
