@@ -1,7 +1,5 @@
 <?php
 
-	include($SERVER_ROOT . 'includes/masterlist.php');
-
 	// shorthand alias for `htmlspecialchars` with the needed settings
 	function hsc($string) {
 		// avoid using `ENT_HTML5` for PHP 5.3 support
@@ -58,7 +56,9 @@
 	// check the query string to see if:
 	//	 - a specific design has been requested with cssfile
 	//	 - a specific page value been assigned for the navigation
-	$loadCSS = $_GET["cssfile"];
+	if (!$loadCSS) {
+		$loadCSS = $_GET["cssfile"];
+	}
 	$thisPage = intval($_GET["page"]);
 
 

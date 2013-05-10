@@ -4,6 +4,8 @@
 	$head = array(
 		"title" => "CSS Zen Garden: The Beauty in CSS Design",
 		"description" => "A demonstration of what can be accomplished visually through CSS-based design.",
+
+		// if you'd like translation credit, place it somewhere in this comment
 		"comment" => "
 
 	View source is a feature, not a bug. Thanks for your curiosity and
