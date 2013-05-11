@@ -63,15 +63,15 @@
 	// if you decide to localize any of these, keep the link text <4 characters if possible
 	// some older designs assume the longest one in the group was 'XHTML'
 	$footer = array(
-		"zen-validate-html-title" => "V&eacute;rifiez la validit&eacute; HTML de ce site.",
+		"zen-validate-html-title" => "V&eacute;rifier la validit&eacute; HTML de ce site",
 		"zen-validate-html-text" => "HTML",
-		"zen-validate-css-title" => "V&eacute;rifiez la validit&eacute; CSS de ce site.",
+		"zen-validate-css-title" => "V&eacute;rifier la validit&eacute; CSS de ce site",
 		"zen-validate-css-text" => "CSS",
-		"zen-license-title" => "Voir les details de la license de ce site, courteoisie de Creative Commons.",
+		"zen-license-title" => "Voir la license Creative Commons de ce site : Attribution - Pas d'utilisation commerciale - Partage dans les m&ecirc;mes conditions",
 		"zen-license-text" => "CC",
-		"zen-accessibility-title" => "V&eacute;rifiez l\'accessibilit&eacute; de ce site",
+		"zen-accessibility-title" => "En savoir plus sur l'accessibilit&eacute; de ce site",
 		"zen-accessibility-text" => "A11y", // a-ccessibilit-y, the middle part is 11 characters. get it?
-		"zen-github-title" => "Fork this site on Github",
+		"zen-github-title" => "Participer &agrave; ce projet sur Github",
 		"zen-github-text" => "GH",
 	);
 
