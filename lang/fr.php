@@ -27,16 +27,16 @@
 	);
 
 	$intro = array(
-		"h1" => "Jardin Zen css",
-		"h2" => 'La beaut&eacute; de la conception <abbr title="Cascading Style Sheets">CSS</abbr>',
+		"h1" => "Jardin Zen CSS",
+		"h2" => 'La beaut&eacute; de la conception <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>',
 
-		"summary-p1" => 'Une demonstration de ce qu\'on peut accomplir lorsqu\'on utilise les <abbr title="Cascading Style Sheets">CSS</abbr> pour la conception web.  S&eacute;lectionez n\'importe quelle feuille de style list&eacute;e pour charger le r&eacute;sultat sur cette page.',
-		"summary-p2" => 'T&eacute;l&eacute;chargez les fichiers d\'exemple <a href="/zengarden-sample.html" title="Clique-droit pour sauver ce document sur votre disque dur.">html</a> et <a href="/zengarden-sample.css" title="Clique-droit pour sauver ce document sur votre disque dur.">css</a>',
+		"summary-p1" => 'Une d&eacute;monstration de ce qui peut &ecirc;tre r&eacute;alis&eacute; via la conception bas&eacute;e sur <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>. S&eacute;lectionnez n\'importe quelle feuille de style de la liste pour l\'utiliser sur cette page.',
+		"summary-p2" => 'T&eacute;l&eacute;chargez les exemples <a href="/zengarden-sample.html" title="Le code HTML de la source de cette page, ne doit pas &ecirc;tre modifi&eacute;.">fichier HTML</a> et <a href="/zengarden-sample.css" title="Le code CSS d\'exemple de cette page, le fichier que vous pouvez modifier.">fichier CSS</a>',
 
-		"preamble-h3" => 'Le chemin vers l\'&eacute;dification',
-		"preamble-p1" => 'Les reliques pass&eacute;es des s&eacute;lecteurs sp&eacute;cifique aux navigateurs, des <abbr title="Document Object Model">DOM</abbr>s incompatibles, et du manque de support des <abbr title="Cascading Style Sheets">CSS</abbr> encombrent un long chemin sombre et morne.',
-		"preamble-p2" => 'Aujourd\'hui, nous devons nous clarifier l\'esprit et nous d&eacute;barassez des pratiques pass&eacute;es.  La r&eacute;v&eacute;lation de la v&eacute;ritable nature du Web est maintenant possible, gr&acirc;ce aux efforts infatigables des gens du <abbr title="World Wide Web Consortium">W3C</abbr>, du <abbr title="Web Standards Project">WaSP</abbr> et des cr&eacute;ateurs des principaux navigateurs.',
-		"preamble-p3" => 'Le Jardin Zen css vous invite &agrave; vous relaxer et &agrave; m&eacute;diter sur les le&ccedil;ons importantes des ma&icirc;tres.  Commencez &agrave; voir clairement.  Apprenez &agrave; utiliser ces techniques (bient&ocirc;t consacr&eacute;es par l\'usage) de mani&egrave;re neuve et revigorante.  Ne faites qu\'Un avec le Web.',
+		"preamble-h3" => 'Le chemin vers l\'&eacute;veil',
+		"preamble-p1" => 'Les reliques dues aux balises sp&eacute;cifiques aux navigateurs, aux <abbr lang="en" title="Document Object Model">DOM</abbr>s incompatibles, au support corrompu de <abbr title="Cascading Style Sheets">CSS</abbr> et aux navigateurs abandonn&eacute;s jonchent un chemin sombre et lugubre.',
+		"preamble-p2" => 'Aujourd\'hui, nous devons nous purifier de l\'esprit du pass&eacute;. La v&eacute;ritable nature du web a &eacute;t&eacute; r&eacute;v&eacute;l&eacute;e gr&acirc;ce aux efforts continus des gens du <abbr lang="en" title="World Wide Web Consortium">W3C</abbr>, du <abbr lang="en" title="Web Standards Project">WaSP</abbr> et des cr&eacute;ateurs des principaux navigateurs.',
+		"preamble-p3" => 'Le Jardin Zen CSS vous invite &agrave; vous relaxer et m&eacute;diter sur les importantes le&ccedil;ons des ma&icirc;tres. Commencez &agrave; voir clairement. Apprenez &agrave; utiliser ces techniques consacr&eacute;es dans une nouveau mouvement stimulant. Ne faites qu\'un avec le web.',
 	);
 
 	$main = array(
