@@ -36,7 +36,7 @@ html>p {
 	width: 271px; /* Be nice to Opera */
 	}
 @media ScReEn { /* HIDE THIS NONSENSE FROM SAFARI */
-	p { position: relative; top: -1px; padding-bottom: 2px; }
+	p { position: relative; top: -1px; }
 	} 
 /* MORE NONSENSE JUST FOR IE <SHAKES HEAD /> */
 * html p { position: relative; top: -1px; }
@@ -225,20 +225,21 @@ footer { position: relative; }
 .sidebar a:visited { color: #5E5F61; border: none; }
 .sidebar a:hover	{ color: #C1C3C5; }
 
-.design-selection li,
+.design-selection li { margin-top: 8px; }
 
 .design-selection li a,
-.design-selection li a:visited,
+.design-selection li a:visited { display: block; }
 
 .design-selection li a.designer-name,
-.design-selection li a.designer-name:visited,
-.design-selection li a.designer-name:hover,
+.design-selection li a.designer-name:visited { color: #717375; display: inline; }
+.design-selection li a.designer-name:hover { color: #C1C3C5; }
 
 .design-selection h3.select {
 	background: url(select_a_design.gif) no-repeat;
 	width: 112px;
 	height: 44px;
 	}
+
 .design-selection ul { margin-top: -1px; }
 @media ScReEn { /* HIDE THIS NONSENSE FROM SAFARI */
 	.design-selection ul { margin-top: -2px; }
