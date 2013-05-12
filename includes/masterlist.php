@@ -294,7 +294,7 @@ $designList = array(
 			"049",
 			"Buddha",
 			"Daniel Leroux",
-			"#",
+			"http://www.danleroux.com/",
 	),
 	array(
 			"050",
