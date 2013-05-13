@@ -74,8 +74,10 @@ abbr {
 header {
 	height: 350px;
 }
-header span {
-	display: none;
+h1, h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /* Content */
@@ -132,9 +134,10 @@ footer a:hover, footer a:active {
 	width: 198px;
 	height: 18px;
 	margin-top: 20px;
-}
-.sidebar h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /* left header images */
