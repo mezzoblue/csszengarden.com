@@ -75,8 +75,14 @@ abbr {
 	}
 
 /* Hide titles : css Zen Garden, The Beauty of CSS Design, The Road to Enlightenment */	
-h1 span, h2 span, h3 span {
+h1, h2 {
 	display: none;
+}
+h3 {
+	margin: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /* Photo Container */
@@ -113,6 +119,9 @@ h1 span, h2 span, h3 span {
 	padding-top: 35px;
 	margin-top: 245px;
 	}
+.preamble h3 {
+	display: none;
+}
 
 /* the 3 Paragraphs margin */	
 .preamble p:nth-child(2), .preamble p:nth-child(3), .preamble p:nth-child(4)  {
@@ -156,7 +165,7 @@ h1 span, h2 span, h3 span {
 	font-style: italic;
 	}
 
-/* Interval for gif tiltes */	
+/* Interval for gif titles */	
 .explanation h3, .participation h3, .benefits h3, .requirements h3 {
 	height: 22px;
 	}
