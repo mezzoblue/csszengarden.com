@@ -84,10 +84,10 @@ header h1
 	background: transparent url(top.gif) no-repeat top left;
 	width: 655px; 
 	height: 206px; 
-}
-header h1 span
-{
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 header h2
 { 
@@ -114,10 +114,10 @@ header h2
 	margin: 10px 0px 5px 0px; 
 	width: 388px; 
 	height: 44px; 
-}
-.preamble h3 span 
-{
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .supporting 
@@ -136,10 +136,10 @@ header h2
 	margin: 10px 0px 5px 0px; 
 	width: 388px; 
 	height: 44px; 
-}
-.explanation h3 span 
-{
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .participation
@@ -153,10 +153,10 @@ header h2
 	margin: 10px 0px 5px 0px; 
 	width: 388px; 
 	height: 44px; 
-}
-.participation h3 span 
-{
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .benefits
@@ -170,10 +170,10 @@ header h2
 	margin: 10px 0px 5px 0px; 
 	width: 388px; 
 	height: 44px; 
-}
-.benefits h3 span 
-{
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .requirements
@@ -187,10 +187,10 @@ header h2
 	margin: 10px 0px 5px 0px; 
 	width: 388px; 
 	height: 44px; 
-}
-.requirements h3 span 
-{
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 footer
@@ -257,37 +257,24 @@ footer a:link, footer a:visited
 	margin: 2px 0px 0px 0px; 
 	width:182px; 
 	height: 30px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.sidebar h3.select span 
-{
-	display:none
-}
-#lfavorites
-{
-	padding-top: 10px;
-}
-.sidebar h3.favorites 
-{ 
-	background: transparent url(h4.gif) no-repeat top left; 
-	margin: 0px; 
-	width:182px; 
-	height: 30px; 
-}
-.sidebar h3.favorites span 
-{
-	display:none
-}
+
 .sidebar h3.archives 
 { 
 	background: transparent url(h5.gif) no-repeat top left; 
 	margin: 0px; 
 	width:182px; 
 	height: 30px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.sidebar h3.archives span 
-{
-	display:none
-}
+
 .design-archives
 {
 	padding-top: 10px;
@@ -298,10 +285,10 @@ footer a:link, footer a:visited
 	margin: 0px; 
 	width:182px; 
 	height: 30px; 
-}
-.sidebar h3.resources span 
-{
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .zen-resources
 {

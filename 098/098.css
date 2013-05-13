@@ -216,10 +216,6 @@ footer a {
 	z-index: 0;
 }
 
-.extra1 span {
-	display: none;
-}
-
 .extra2 {
 	position: absolute;
 	top: 583px;
@@ -228,10 +224,6 @@ footer a {
 	width: 832px;
 	height: 1265px;
 	z-index: 0;
-}
-
-.extra2 span {
-	display: none;
 }
 
 .extra3, .extra4, .extra5, .extra6 {

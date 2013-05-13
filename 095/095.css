@@ -66,9 +66,11 @@ header h1 {
   background: url(zen_logo.gif) no-repeat;
 }
 
-header h2 span,
-header h1 span { 
-  display: none;
+header h2,
+header h1 { 
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 header h2 { 
