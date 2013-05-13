@@ -54,13 +54,16 @@ header {
   }
 
 header h1 {
+  width: 100%;
   height:260px;
   background:url("csszengarden_logo.gif") no-repeat left bottom;
   z-index:15;
 }
 
-header h1 span, h2 span {
-  display:none;
+header h1, h2 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .summary {
@@ -101,8 +104,10 @@ header h1 span, h2 span {
   background:url("header_preamble.gif") no-repeat left top;
 }
 
-.preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
-  display:none;
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .supporting {
@@ -232,8 +237,10 @@ footer a {
   background:url("header_favorites.gif") no-repeat 40px 0;
 }
 
-.design-selection h3 span, #lfavorites h3 span {
-  display:none;
+.design-selection h3 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .design-archives h3 {
@@ -252,8 +259,10 @@ footer a {
   text-align:center;
 }
 
-.design-archives h3 span, .zen-resources h3 span {
-  display:none;
+.design-archives h3, .zen-resources h3 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .design-archives a, .zen-resources a {
@@ -279,7 +288,8 @@ footer a {
   height:0px;
 }
 
-.extra2 span{
+.extra2::after {
+  content: " ";
   position:absolute;
   bottom:20px;
   right:10%;
@@ -305,7 +315,8 @@ footer a {
   height:0px;
 }
 
- .extra4 span {
+ .extra4::after {
+  content: " ";
   position:absolute;
   bottom:200px;
   right:0px;
