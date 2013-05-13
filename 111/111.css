@@ -75,9 +75,10 @@ header h1 {
 	width: 778px;
 	z-index: 5;
 	position: absolute;
-	}
-header h1 span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 { 
 	margin-top: 58px; 
@@ -85,9 +86,10 @@ header h2 {
 	width: 200px; 
 	height: 18px; 
 	float: right;
-	}
-header h2 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .summary {
@@ -125,12 +127,11 @@ header h2 span {
 	top: 0px;
 	background-image:  url("praeamble_h1.gif");
 	background-repeat: no-repeat;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.preamble h3 span {
-	margin: 0;
-	padding: 0;
-	display: none;
-	}
 .explanation
 	{
 	margin: 0;
@@ -152,12 +153,11 @@ header h2 span {
 	width: 277px;
 	left: 0px;
 	top: 0px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.explanation h3 span {
-	margin: 0;
-	padding: 0;
-	display: none;
-}
 .participation
 	{
 	margin: 0;
@@ -180,12 +180,11 @@ header h2 span {
 	width: 328px;
 	left: 0px;
 	top: 0px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.participation h3 span {
-	margin: 0;
-	padding: 0;
-	display: none;
-}
 .benefits
 	{
 	margin: 0;
@@ -207,13 +206,11 @@ header h2 span {
 	width: 254px;
 	left: 0px;
 	top: 0px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.benefits h3 span {
-	margin: 0;
-	padding: 0;
-	display: none;
-	border: 1px solid red;
-}
 .requirements
 	{
 	margin: 0;
@@ -235,12 +232,11 @@ header h2 span {
 	width: 410px;
 	left: 0px;
 	top: 0px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.requirements h3 span {
-	margin: 0;
-	padding: 0;
-	display: none;
-}
 
 .sidebar {
 	padding: 0px 0px 3px 0px;
