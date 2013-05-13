@@ -78,9 +78,9 @@ header h1 {
 
 	margin-top:0px;
 
-	}
-header h1 span {
-	display:none
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 { 
 	background: transparent url(flwr.gif) no-repeat top left; 
@@ -93,9 +93,10 @@ header h2 {
 	position:absolute;
 	top:163px;
 	left:647px;
-	}
-header h2 span {
-	display:none;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .summary {
@@ -355,7 +356,6 @@ footer a:link, footer a:visited {
 }
 
 
-.design-selection h3 span, .design-archives h3 span, .zen-resources h3 span {display:none;}
 .design-selection h3, .design-archives h3, .zen-resources h3 {display:none;}
 
 .extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {display:none;}
