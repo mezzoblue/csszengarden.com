@@ -68,7 +68,7 @@ abbr
 
 .intro
 {
-	background-image: url("media/masthead.jpg");
+	background-image: url("masthead.jpg");
 	background-repeat: no-repeat;
 	background-position: center top;
 	margin: 0;
@@ -136,7 +136,7 @@ h1, h2 {
 
 .preamble h3
 {
-	background-image: url("media/enlightenment.gif");
+	background-image: url("enlightenment.gif");
 	background-repeat: no-repeat;
 	background-position: right 0;
 	margin: 199px 0 8px;
@@ -148,7 +148,7 @@ h1, h2 {
 
 .participation h3
 {
-	background-image: url("media/participation.gif");
+	background-image: url("participation.gif");
 	background-repeat: no-repeat;
 	background-position: right 0;
 	margin: 8px 0;
@@ -160,7 +160,7 @@ h1, h2 {
 
 .requirements h3
 {
-	background-image: url("media/requirements.gif");
+	background-image: url("requirements.gif");
 	background-repeat: no-repeat;
 	background-position: right 0;
 	margin: 8px 0;
@@ -172,7 +172,7 @@ h1, h2 {
 
 .benefits h3
 {
-	background-image: url("media/benefits.gif");
+	background-image: url("benefits.gif");
 	background-repeat: no-repeat;
 	background-position: right 0;
 	margin: 8px 0;
@@ -184,7 +184,7 @@ h1, h2 {
 
 .explanation h3
 {
-	background-image: url("media/whatabout.gif");
+	background-image: url("whatabout.gif");
 	background-repeat: no-repeat;
 	background-position: right 0;
 	margin: 8px 0;
@@ -212,7 +212,7 @@ p:nth-child(2), p:nth-child(3), p:nth-child(4), p:nth-child(5), p:nth-child(6)
 
 footer
 {
-	background-image: url("media/base.jpg");
+	background-image: url("base.jpg");
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	text-align: center;
@@ -271,7 +271,7 @@ footer a:link, footer a:visited
 
 .sidebar h3.select
 {
-	background-image: url("media/select.gif");
+	background-image: url("select.gif");
 	background-repeat: no-repeat;
 	margin: 0 0 0 0;
 	padding: 0 0 8px;
@@ -286,7 +286,7 @@ footer a:link, footer a:visited
 
 .sidebar h3.archives
 {
-	background-image: url("media/archives.gif");
+	background-image: url("archives.gif");
 	background-repeat: no-repeat;
 	margin: 0 0 0 0;
 	padding: 0 0 8px;
@@ -300,7 +300,7 @@ footer a:link, footer a:visited
 
 .sidebar h3.resources
 {
-	background-image: url("media/resources.gif");
+	background-image: url("resources.gif");
 	background-repeat: no-repeat;
 	margin: 0 0 0 0;
 	padding: 0 0 8px;
