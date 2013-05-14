@@ -26,19 +26,19 @@ abbr {
 }
 
 /*h3 rules*/
-.sidebar h3 span{
+.sidebar h3 {
 	font-size: 16px;
 	background: #A3181E;
-	border-bottom: 2px solid white;
-	color: White;
+	color: white;
 	margin-left: 5px;
+	margin-top: 1em;
 	margin-bottom: 0;
 	padding: 3px;
 	width: 185px;
 	display: block;
 }
 
-.preamble h3 span,.supporting h3 span{
+.preamble h3 ,.supporting h3 {
 	font-family: "Courier New", Courier, monospace;
 	background: url(h3bg.gif) no-repeat 6px 0;
 	color: #A3181E;
@@ -106,7 +106,7 @@ header h1,header h2{
 	color: #A3181E;
 }
 
-.summary p:first-child span{
+.summary p:first-child {
 	display: none;
 }
 
@@ -172,7 +172,7 @@ body > div.preamble,.supporting{
 	{
 	list-style: none;
 	margin: 5px;
-	margin-top: -20px;
+	margin-top: 0;
 	padding: 0px;
 	border-top: 10px solid #CAD2DE;
 	background: #2B497B;
