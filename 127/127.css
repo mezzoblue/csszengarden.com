@@ -67,8 +67,10 @@
 		background-image: url('logo.png');
 		margin: 0 auto;
 	}
-	header h1 span, h2 span {
-		display: none;
+	header h1, h2 {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	.summary {
 		width: 190px;
@@ -98,21 +100,23 @@
 	div > .preamble {
 		margin-top: 0;
 	}
-	.preamble h3 span {
-		display: none;
-	}
 	.preamble h3 {
 		width: 500px;
 		height: 40px;
 		background: url('road_to_enlightenment.png') top left no-repeat;
-	}
-	.explanation h3 span {
-		display: none;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	.explanation h3 {
 		width: 500px;
 		height: 40px;
 		background: url('what_is_this_about.png') top left no-repeat;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	.supporting {
 		margin-top: -10px;
@@ -128,35 +132,38 @@
 	.participation {
 		background: url('bg_participation.png') bottom left no-repeat;
 	}
-	.participation h3 span {
-		display: none;
-	}
 	.participation h3 {
 		width: 500px;
 		height: 40px;
 		background: url('participation.png') top left no-repeat;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	.benefits { 
 		background: url('bg_benefits.png') bottom right no-repeat;
-	}
-	.benefits h3 span {
-		display: none;
 	}
 	.benefits h3 {
 		width: 500px;
 		height: 40px;
 		background: url('benefits.png') top left no-repeat;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	.requirements {
 		background: url('bg_requirements.png') bottom left no-repeat;
-	}
-	.requirements h3 span {
-		display: none;
 	}
 	.requirements h3 {
 		width: 500px;
 		height: 40px;
 		background: url('requirements.png') top left no-repeat;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	footer {
 		text-align: right;
@@ -171,13 +178,14 @@
 		margin-top: -10px;
 	}
 	
-	.design-selection h3 span, .design-archives h3 span, .zen-resources h3 span {
-		display: none;
-	}
 	.design-selection h3, .design-archives h3, .zen-resources h3 {
 		width: 200px;
 		height: 40px;
 		margin: 0;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	.design-selection ul, .design-archives ul, .zen-resources ul {
 		list-style-type: none;
