@@ -99,10 +99,10 @@ div.preamble {
 div.preamble h3 {
 	background: url(headline_preamble.gif) top left no-repeat;
 	height: 85px;
-	}
 
-div.preamble h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 div.preamble p {
@@ -169,10 +169,10 @@ div.requirements h3 {
 
 div.explanation h3, div.participation h3, div.benefits h3, div.requirements h3 {
 	height: 85px;
-	}
 
-div.explanation h3 span, div.participation h3 span, div.benefits h3 span, div.requirements h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 
@@ -251,8 +251,10 @@ div.design-selection h3, div.design-archives h3, div.zen-resources h3 {
 	height: 35px;
 	}
 
-div.zen-resources h3 span, div.design-selection h3 span, div.design-archives h3 span {
-	display: none;
+div.zen-resources h3, div.design-selection h3, div.design-archives h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 
