@@ -95,8 +95,10 @@ h1, h2 {
 	display: none;
 }
 
-h3 span {
-	display: none;
+h3 {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .summary p {
@@ -105,9 +107,9 @@ h3 span {
 
 .summary p:last-child {
 	display: block;
-	width: 156px;
+	width: 145px;
 	margin: 0px;
-	padding: 0px;
+	padding: 0 0 0 5px;
 	position: absolute;
 	top: 470px;
 	left: auto;
@@ -136,13 +138,6 @@ h3 span {
 	font-style: italic;
 	border-bottom:  1px none;
 	text-decoration: none;
-}
-
-.summary span {
-	margin: 0px;
-	padding: 0px;
-	padding-left: 5px;
-	display: block;
 }
 
 .preamble, .explanation, .participation, .benefits, .requirements {

@@ -21,10 +21,16 @@ a:hover, a:active { text-decoration: underline; color: #9685BA;	}
 .intro { background: url(intro.jpg) no-repeat; }
 
 header { position:absolute; width:55px; }
-header h1 { background: transparent url(header.gif) no-repeat; text-indent: -5000px; width: 46px; height: 254px; }
-header h1 span { display:none }
-header h2 { text-indent: -5000px; }
-header h2 span { display:none }
+header h1 { background: transparent url(header.gif) no-repeat; text-indent: -5000px; width: 46px; height: 254px; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+header h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .summary { position:absolute; margin-top:90px;	margin-left:322px; height:90px; width:260px; }
 .summary p { font: 10px arial; text-align:center; color : #FFF; }
@@ -52,11 +58,13 @@ footer a:link, footer a:visited { margin-right: 20px; }
 .sidebar .wrapper { font: 10px verdana, sans-serif; background: transparent url(paper-bg.jpg) top left repeat-y; padding: 10px; width: 130px; text-align:left; }
 
 .sidebar h3.select { background: url(select.jpg) no-repeat; margin: 10px 0px 5px 0px; width: 177px; height: 40px; }
-.sidebar h3.select span { display:none }
 .sidebar h3.archives { background: transparent url(archives.jpg) no-repeat; margin: 25px 0px 5px 0px; width:177px; height: 40px; }
-.sidebar h3.archives span { display:none }
 .sidebar h3.resources { background: transparent url(resources.jpg) no-repeat; margin: 25px 0px 5px 0px; width:177px; height: 40px; }
-.sidebar h3.resources span { display:none }
+.sidebar h3 {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .sidebar ul { margin: 0px;	padding: 0px; }
 .sidebar li { list-style-type: none; border:1px #761C1C none; width:170px; padding-left:7px; }

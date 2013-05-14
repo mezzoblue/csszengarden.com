@@ -32,9 +32,11 @@ abbr
     border: none;
     }
 
-.preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span, .zen-resources h3.resources span, .design-archives h3.archives span, .design-selection h3.select
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .zen-resources h3.resources, .design-archives h3.archives, .design-selection h3.select
     {
-    display:none;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     }
 
 .page-wrapper
@@ -65,10 +67,10 @@ h1
     height: 25px;
     overflow: hidden;
     margin: 0;
-    }
-h1 span
-    {
-    display: none;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     }
 h2
     {
@@ -91,18 +93,12 @@ h2
 .page-wrapper .intro .summary p:first-child
     {
     font-size: 11px;
-    height: 171px;
     background: url("background.jpg") no-repeat;
     margin: 0;
-    width: 724px;
-    color: #fff;
-    font: 12px/150% Trebuchet MS;
-    }
-.page-wrapper .intro .summary p:first-child  span
-    {
+    width: 164px;
+    height: 141px;
     padding: 30px 530px 0 30px;
-    display: block;
-    margin: 0;
+    color: #fff;
     font: 12px/150% Trebuchet MS;
     }
 
