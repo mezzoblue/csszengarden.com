@@ -155,11 +155,7 @@ header h2 {
 	color: #000000;
 	padding-top: 6px;
 	display: none;
-}
-
-header h2 span {
 	border-top: 1px dotted #000000;
-	padding-top: 3px;
 }
 
 .page-wrapper {
