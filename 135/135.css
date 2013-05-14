@@ -67,12 +67,10 @@ h3
 	width: 420px;
 	height: 20px;
 	margin: 1.2em 0 0.8em 0;
-	}
-	
-h3 span
-	{
-	display: none;
-	visibility: hidden;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 p

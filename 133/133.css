@@ -68,9 +68,11 @@ header {
 	width:405px;
 	height:120px;
 	background:#555040 url(style/quick_summary_p1.jpg) no-repeat top left;
-}
 
-.summary p:first-child span { display:none; }
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .summary p:last-child {
 	position:absolute;
@@ -80,12 +82,12 @@ header {
 	height:120px;
 	background:transparent url(style/button_html.gif) no-repeat top left;
 	overflow:hidden;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-.summary p:last-child span {
-	visibility:hidden;
-	white-space:nowrap;
-}
 
 .summary p:last-child a {
 	width:230px;
@@ -169,12 +171,14 @@ footer a:hover {
 .benefits h3 { 			background:transparent url(style/title_benefits.gif) no-repeat top left; }
 .requirements h3 { 		background:transparent url(style/title_requirements.gif) no-repeat top left; }
 
-.preamble h3 span,
-.explanation h3 span,
-.participation h3 span,
-.benefits h3 span,
-.requirements h3 span {
-	display:none;
+.preamble h3,
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .design-selection li a, #lfavorites li a {display: block; margin-left:-10px; font-weight:bold;}
