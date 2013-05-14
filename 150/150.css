@@ -85,10 +85,11 @@ header
 }
 
 
-/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-
-
-header h1 span, header h2 span { display: none; }
+h1, h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .summary
 {
@@ -98,20 +99,17 @@ header h1 span, header h2 span { display: none; }
 	position: absolute;
 }
 
-.summary p:first-child span
-{
+.summary p:first-child {
 	display: none;
-	margin: 0;
-	padding: 0;
 }
 
-.summary p:last-child span
+.summary p:last-child
 {
 	color: #699fc8;
 	font-size: 10px;
 	text-align: left;
-	margin: 0 0px;
-	padding: 0;
+	margin: 0;
+	padding: 0 0 0 12px;
 	position: absolute;
 	top: 150px;
 	float: left;
@@ -205,11 +203,11 @@ p:nth-child(2), p:nth-child(3), p:nth-child(4), p:nth-child(5), p:nth-child(6)
 	float: left;
 }
 
-.preamble h3 span, .participation h3 span, .explanation h3 span, .benefits h3 span, .requirements h3 span
+.preamble h3, .participation h3, .explanation h3, .benefits h3, .requirements h3
 {
-	display: none;
-	margin: 0;
-	padding: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 footer
@@ -279,21 +277,12 @@ footer a:link, footer a:visited
 	padding: 0 0 8px;
 	width: 210px;
 	height: 35px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-.sidebar h3.select span { display: none; }
-
-.sidebar h3.favorites
-{
-	background-image: url("media/favourites.gif");
-	background-repeat: no-repeat;
-	margin: 0 0 0 0;
-	padding: 0 0 8px;
-	width: 210px;
-	height: 35px;
-}
-
-.sidebar h3.favorites span { display: none; }
 
 .sidebar h3.archives
 {
@@ -303,9 +292,11 @@ footer a:link, footer a:visited
 	padding: 0 0 8px;
 	width: 210px;
 	height: 35px;
-}
 
-.sidebar h3.archives span { display: none; }
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .sidebar h3.resources
 {
@@ -315,9 +306,11 @@ footer a:link, footer a:visited
 	padding: 0 0 8px;
 	width: 210px;
 	height: 35px;
-}
 
-.sidebar h3.resources span { display: none; }
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .sidebar .design-selection li a:link
 {

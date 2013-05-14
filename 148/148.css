@@ -162,10 +162,10 @@ header h2 {
   	margin: 0px;
 	width: 560px;
   	height: 147px;  	
-	}
 
-.preamble h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .preamble {
@@ -217,11 +217,11 @@ header h2 {
  	margin: 0px;
 	width: 560px;
   	height: 153px;
-	}
 
-.explanation h3 span {
-	display: none;
-	} 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
 
 .explanation {
 	background: url(images/explanation_bg.jpg) no-repeat top; 
@@ -258,11 +258,12 @@ header h2 {
   	padding: 0px;  	 
   	margin: 0px; 
 	height: 155px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
-.participation h3 span {
-	display: none;
-	} 
 
 .participation {
 	background: url(images/participation_bg.jpg) repeat-y; 
@@ -303,11 +304,11 @@ header h2 {
 	padding: 0px;  	
   	margin: 0px;
   	height: 147px;  	
-	}
 
-.benefits h3 span {
-	display: none;
-	} 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
 
 .benefits {
 	background: url(images/benefits_bg.jpg) repeat-y; 
@@ -338,11 +339,12 @@ header h2 {
 	padding: 0px;  	
   	margin: 0px;
   	height: 230px;  	
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
-.requirements h3 span {
-	display: none;
-	} 
 
 .requirements {
 	background: url(images/requirements.jpg) no-repeat bottom;
@@ -397,8 +399,10 @@ footer a {
 	width: 190px;	
 	}
    
-.sidebar h3 span {
-	display: none;
+.sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .sidebar .design-selection h3 {	

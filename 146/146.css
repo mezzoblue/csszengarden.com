@@ -35,7 +35,6 @@ footer a {text-decoration:none; text-align:right; text-transform:uppercase; colo
 .sidebar {background: transparent url("final.gif") no-repeat top left; z-index:1; position: absolute; height:1650px; top: 244px; right: 0px; left: -10px; width: 778px; font-size:12px;}
 .sidebar .wrapper {font: 10px tahoma, verdana, sans-serif; width: 130px;}
 .sidebar h3.select {width: 97px; height: 16px;}
-.sidebar h3.favorites span {display:none;}
 .sidebar h3.archives {width:57px; height: 14px; text-decoration:none;}
 .sidebar li a:link {color: #FACD56; text-decoration:none; font-weight:bolder;}
 .sidebar li a:visited {color: #000; text-decoration:none;}
@@ -50,22 +49,28 @@ footer a {text-decoration:none; text-align:right; text-transform:uppercase; colo
 /* end of navagation */
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
 header h1 {background-image:url("title.gif"); background-repeat:no-repeat; height:245px;}
-.sidebar h3.select span {display:none;}
-.sidebar h3.archives span {display:none;}
-.sidebar h3.resources span {display:none;}
-header h1 span {display:none;}
-header h2 span {display:none;}
+h3.select, h3.archives, h3.resources {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;	
+}
+header h1, header h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;	
+}
 .summary p:first-child{width: 202px;}
 .summary p:last-child{width: 118px;}
 .summary p:last-child a:visited {color:#FFFFFF;}
-.preamble h3 span {display:none;}
-.explanation h3 span {display:none;}
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;	
+}
 .explanation h3 {background-image:url("what.gif"); background-repeat:no-repeat; height:20px; padding-top:10px;}
-.participation h3 span {display:none;}
 .participation h3 {background-image:url("part.gif"); background-repeat:no-repeat; height:27px;}
-.benefits h3 span {display:none;}
+
 .benefits h3 {background-image:url("benefits.gif"); background-repeat:no-repeat; height:27px;}
-.requirements h3 span {display:none;}
 .requirements h3 {background-image:url("require.gif"); background-repeat:no-repeat; height:27px;}
 .summary p:first-child {display:none;}
 .extra1 {background-image:url("background2.gif"); height:1617px; float:right; width:345px; z-index:0; background-repeat:no-repeat; margin-top:10px;}
