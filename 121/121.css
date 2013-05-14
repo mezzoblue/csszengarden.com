@@ -132,8 +132,10 @@ header h1 {
 	top: 620px;
 }
 
-.summary p:first-child span{
-	display: none;
+.summary p:first-child {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .summary p:last-child {
