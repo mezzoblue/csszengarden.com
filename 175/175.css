@@ -32,12 +32,15 @@ abbr
     border: none;
     }
 
-.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .zen-resources h3.resources, .design-archives h3.archives, .design-selection h3.select
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .zen-resources h3.resources, .design-archives h3.archives
     {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     }
+.design-selection h3.select {
+    display: none;
+}
 
 .page-wrapper
     {
