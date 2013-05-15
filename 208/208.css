@@ -19,7 +19,7 @@ background-image:url(body_bg.gif);
 text-align:center;
 }
 
-h1,h2,h3 span {
+h1,h2 {
 display:none;
 }
 
@@ -27,6 +27,9 @@ h3 {
 height:39px;
 margin:0;
 padding:0;
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 
 p {margin:0;padding:0;}
@@ -94,23 +97,16 @@ width:207px;
 margin:0 0 2px 0;
 }
 
-.summary p span, .explanation p span, .benefits p span {
+.summary p, .explanation p, .benefits p {
 padding:0 15px 10px 77px;
-display:block;
 }
 
-.preamble p span, .participation p span, .requirements p span {
+.preamble p, .participation p, .requirements p {
 padding:0 85px 10px 17px;
-display:block;
 }
 
 .requirements p:nth-child(6) {
 padding:0 85px 10px 17px;
-}
-
-.requirements p:nth-child(6) span {
-display:inline;
-padding:0;
 }
 
 .sidebar li {
@@ -127,16 +123,6 @@ text-decoration:none;
 
 .sidebar li a:hover {
 text-decoration:underline;
-}
-
-.summary p:first-child span {
-padding-top:14px;
-background:url(quicksummary_top.gif) top no-repeat;
-}
-
-.summary p:last-child span {
-padding-bottom:20px;
-background:url(right_bottom.gif) bottom no-repeat;
 }
 
 .design-selection li a {
@@ -172,6 +158,16 @@ color:#777777;
 
 /* ///////////// background image ////////////// */
 
+.summary p:first-child {
+padding-top:14px;
+position: relative;
+background:url(quicksummary_top.gif) top no-repeat;
+}
+
+.summary p:last-child {
+padding-bottom:20px;
+}
+
 /* right image */
 .summary p, .explanation p , .benefits p {
 background:url(right_bg.gif) right repeat-y;
@@ -200,8 +196,29 @@ background:url(left_bg.gif) repeat-y;
 .zen-resources h3 {background:url(title_resources.gif) no-repeat;}
 
 /* bottom image */
-.preamble p:nth-child(4) span, .explanation p:nth-child(3) span, .participation p:nth-child(4) span, .benefits p:nth-child(2) span, .requirements p:nth-child(6){
-padding-bottom:20px;
+.summary p:last-child, .preamble p:nth-child(4), .explanation p:nth-child(3), .participation p:nth-child(4), .benefits p:nth-child(2), .requirements p:nth-child(6) {
+position: relative;
+padding-bottom: 20px;
+}
+
+.summary p:first-child:before {
+content: ' ';
+display: block;
+position: absolute;
+top: 20px;
+bottom: 0;
+right: 0;
+width:20px;
+background:url(right_bg.gif) right repeat-y;
+}
+.summary p:last-child:after, .preamble p:nth-child(4):after, .explanation p:nth-child(3):after, .participation p:nth-child(4):after, .benefits p:nth-child(2):after, .requirements p:nth-child(6):after {
+content: ' ';
+display: block;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+height:20px;
 background:url(right_bottom.gif) bottom no-repeat;
 }
 
