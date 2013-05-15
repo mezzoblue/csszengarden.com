@@ -30,10 +30,10 @@ h3 {
 	border-right: 4px solid #818343;
 	border-bottom: 1px solid #818343;
 	height: 25px;
-}
 
-h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 div.preamble p:nth-child(4) {
@@ -75,10 +75,10 @@ header h1 {
 	width: 500px;
 	height: 46px;
 	float: left;
-}
 
-header h1 span {
-	visibility: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 header h2 {
@@ -89,10 +89,10 @@ header h2 {
 	width: 348px;
 	height: 39px;
 	float: right;
-}
 
-header h2 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 div.summary {
@@ -224,15 +224,6 @@ div.requirements h3 {
 	height: 25px;
 	
 }
-
-span.iL {
-	display: block;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-bottom: 10px;
-	line-height: 2;
-}
-
 .sidebar ul {
 	list-style: none;
 }
