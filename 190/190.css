@@ -202,9 +202,15 @@ footer {
     padding: 5px 0 5px 15px;
     }
 
-header h1 span,header h2 span,.summary p:first-child {
+.summary p:first-child {
 	display: none;
 	}
+
+header h1, header h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .summary p:last-child {
 	text-align: left;
