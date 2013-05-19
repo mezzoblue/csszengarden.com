@@ -24,8 +24,12 @@
 			// kick in output buffering
 			ob_start();
 
-			// pull in the partial template for design listings
-			include($SERVER_ROOT . "tmpl-design-link.php");
+			// pull in the correct partial template for design listings
+			if (isset($legacyMode)) {
+				include($SERVER_ROOT . "tmpl-design-link-legacy.php");
+			} else {
+				include($SERVER_ROOT . "tmpl-design-link.php");
+			}
 
 			// dump and close buffering
 			$buffer = ob_get_contents();
