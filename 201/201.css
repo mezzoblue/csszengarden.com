@@ -162,11 +162,7 @@ footer {
 
 /* --- FORMATTING HEADINGS --------------------- */
 
-h1 span {
-	display: none;
-}
-
-h2 span {
+h1, h2 {
 	display: none;
 }
 
@@ -174,40 +170,40 @@ h2 span {
 	background-image: url('heading-about.gif');
 	width: 250px;
 	height: 100px;
-}
 
-.explanation h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .participation h3 {
 	background-image: url('heading-participation.gif');
 	width: 250px;
 	height: 50px;
-}
 
-.participation h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .benefits h3 {
 	background-image: url('heading-benefits.gif');
 	width: 250px;
 	height: 60px;
-}
 
-.benefits h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .requirements h3 {
 	background-image: url('heading-requirements.gif');
 	width: 250px;
 	height: 50px;
-}
 
-.requirements h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .design-selection h3 {
@@ -264,18 +260,13 @@ p {
 	position: absolute;
 	top: 720px;
 	left: 250px;
-	width: 500px;
-	height: 35px;
+	width: 420px;
+	height: 30px;
 	font-size: .9em;
 	background-color: #ffffff;
 	color: #471c47;
 	text-align: center;
-	padding: 0;
-	}
-
-.requirements p:nth-child(6) span {
-	position: relative;
-	top: 10px;
+	padding: 5px 40px 0 40px;
 	}
 
 footer {
