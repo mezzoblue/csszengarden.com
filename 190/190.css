@@ -148,16 +148,16 @@ footer {
 	}
 
 .explanation h3 {
-	margin-top: 20px;
+	margin-top: 15px;
 	}
 
 .sidebar h3 {
 	font-size: 11px;
-	padding: 3px 3px 3px 14px;
+	padding: 3px 3px 3px 14.5px;
 	color: #E98523;
 	margin-bottom: 10px;
 	margin-top: 20px;
-	background: url(flower2.gif) no-repeat 0 30%;
+	background: url(flower2.gif) no-repeat 1px 50%;
 	}
 
 .design-selection ul, .design-archives ul, .zen-resources ul {
