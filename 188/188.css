@@ -69,10 +69,8 @@ body {
 	margin-top: 250px;
 	}
 	
-header h1 , header h2 , header span	{
+header h1, header h2	{
 	display: none;
-	height: 5px;
-	background-color: #00CCCC;
 	}
 
 .summary	{
