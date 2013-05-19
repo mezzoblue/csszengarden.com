@@ -1,5 +1,7 @@
 <?php
 
+	// import URLs
+	include($SERVER_ROOT . "../../includes/urls.php");
 
 	// import language file
 	include($SERVER_ROOT . "../../lang/en.php");

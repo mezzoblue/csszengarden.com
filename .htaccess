@@ -17,4 +17,5 @@ deny from env=BadReferrer
 	
 
 # to-do:
-# redirect /zengarden-sample.css to /examples/style.css
+# 1) redirect /zengarden-sample.css to /examples/style.css
+# 2) force download of html/css file
