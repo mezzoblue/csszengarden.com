@@ -44,12 +44,12 @@ abbr {
 	
 	.intro header h1, .intro header h2 {
 		margin: 0px;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
-		
-		.intro header h1 span, .intro header h2 span {
-			display: none;
-			}
-			
+					
 			
 .intro .summary {
 	background: transparent url(images/txt_quicksummary.gif) no-repeat left top;
@@ -89,11 +89,12 @@ abbr {
 		background: transparent url(images/txt_sowhatisthisabout.gif) no-repeat left top;
 		height: 25px;
 		margin: 0px 0px -9px 27px;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 		
-		.intro .preamble h3 span {
-			display: none;
-			}
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -118,11 +119,11 @@ abbr {
 	.supporting h3 {
 		height: 25px;
 		margin: 0px 0px -9px 27px;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
-		
-		.supporting h3 span {
-			display: none;
-			}
 
 		.supporting .explanation h3 {background: transparent url(images/txt_participation.gif) no-repeat left top;}
 		.supporting .participation h3 {background: transparent url(images/txt_benefits.gif) no-repeat left top;}
@@ -167,12 +168,12 @@ abbr {
 			background: transparent url(images/txt_designs.gif) no-repeat left top;
 			margin: 0px 0px -17px 0px;
 			width: 168px; height: 79px;
+
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 			} 
 			
-			.sidebar .design-selection h3 span {
-				display: none;
-				}
-		
 		.sidebar .design-selection ul {
 			list-style-type: none;
 			margin: 0px 0px 0px 20px; padding: 0px;
@@ -193,12 +194,12 @@ abbr {
 		background: transparent url(images/txt_archives.gif) no-repeat left top;		
 		margin: 0px 0px -17px 0px;
 		width: 168px; height: 79px;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		} 
 		
-		.sidebar .design-archives h3 span {
-			display: none;
-			}
-	
 	.sidebar .design-archives ul {
 		list-style-type: none;
 		margin: 0px 0px 0px 20px; padding: 0px;		
@@ -223,12 +224,12 @@ abbr {
 			background: transparent url(images/txt_resources.gif) no-repeat left top;
 			margin: 0px 0px -17px 0px;
 			width: 168px; height: 79px;
+
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 			} 
 			
-			.sidebar .zen-resources h3 span {
-				display: none;
-				}
-	
 	.sidebar .zen-resources ul {
 		list-style-type: none;
 		margin: 0px 0px 0px 20px; padding: 0px;

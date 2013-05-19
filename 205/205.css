@@ -26,6 +26,10 @@ p {
 	line-height: 2em;
 }
 
+header {
+	display: none;
+}
+
 h3 { 	
 	font-size: .7em;
 	font-weight: bold;		
@@ -89,12 +93,14 @@ a:focus  {
 	padding-bottom: 20pt;	
 }
 
-header, 
-header h1,
-header h2,
-.summary p:first-child,
-.sidebar .wrapper h3 span {
+.summary p:first-child {
 	display: none;
+}
+
+.sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .summary p:last-child {

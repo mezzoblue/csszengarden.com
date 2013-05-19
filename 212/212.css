@@ -1,4 +1,4 @@
-/* css Zen Garden submission 212 - 'Make Õem Proud!', by Michael McAghon and Scotty Reifsnyder, http://skybased.com/ */
+/* css Zen Garden submission 212 - 'Make 'em Proud!', by Michael McAghon and Scotty Reifsnyder, http://skybased.com/ */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 /* All associated graphics copyright 2007, Michael McAghon and Scotty Reifsnyder */
 
@@ -79,8 +79,7 @@ p {
 	clear: both;
 }
 
-abbr, abbr { cursor: help; }
-span.accesskey { border-bottom: 1px dotted #fff; }
+abbr { cursor: help; }
 
 :link, :visited { font-weight: bold; text-decoration: none; color: #1e0c00; }
 a:active { color: #f00; }

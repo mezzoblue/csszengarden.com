@@ -214,14 +214,10 @@ header {
 		}
 
 
-.preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
-	display: inline;
-	height: 0;
-	left: -1000px;
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+	text-indent: 100%;
+	white-space: nowrap;
 	overflow: hidden;
-	position: absolute;
-	top: -1000px;
-	width: 0;
 }
 
 
@@ -324,14 +320,10 @@ header {
 }
 
 
-.resources span, .archives span, .select span {
-	display: inline;
-	height: 0;
-	left: -1000px;
+.resources, .archives, .select {
+	text-indent: 100%;
+	white-space: nowrap;
 	overflow: hidden;
-	position: absolute;
-	top: -1000px;
-	width: 0;
 }
 
 

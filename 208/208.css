@@ -19,14 +19,18 @@ background-image:url(body_bg.gif);
 text-align:center;
 }
 
-h1,h2,h3 span {
+h1,h2 {
 display:none;
 }
 
 h3 {
-height:39px;
+height:38px;
 margin:0;
 padding:0;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 
 p {margin:0;padding:0;}
@@ -63,7 +67,7 @@ text-align:left;
 
 header {
 width:772px;
-height:179px;
+height:178px;
 background:url(top.jpg);
 }
 
@@ -94,23 +98,21 @@ width:207px;
 margin:0 0 2px 0;
 }
 
-.summary p span, .explanation p span, .benefits p span {
+.summary p {
+	padding: 0 15px 0 77px;	
+}
+.explanation p, .benefits p {
 padding:0 15px 10px 77px;
 display:block;
 }
 
-.preamble p span, .participation p span, .requirements p span {
+.preamble p, .participation p, .requirements p {
 padding:0 85px 10px 17px;
 display:block;
 }
 
 .requirements p:nth-child(6) {
 padding:0 85px 10px 17px;
-}
-
-.requirements p:nth-child(6) span {
-display:inline;
-padding:0;
 }
 
 .sidebar li {
@@ -129,14 +131,18 @@ text-decoration:none;
 text-decoration:underline;
 }
 
-.summary p:first-child span {
+.summary p:first-child {
 padding-top:14px;
-background:url(quicksummary_top.gif) top no-repeat;
+background:
+	url(quicksummary_top.gif) top no-repeat,
+	url(right_bg.gif) right repeat-y;
 }
 
-.summary p:last-child span {
+.summary p:last-child {
 padding-bottom:20px;
-background:url(right_bottom.gif) bottom no-repeat;
+background:
+	url(right_bottom.gif) bottom no-repeat,
+	url(right_bg.gif) right repeat-y;
 }
 
 .design-selection li a {
@@ -188,6 +194,9 @@ background:url(left_bg.gif) repeat-y;
 .benefits {background-image:url(img_benefits.jpg);background-position:left bottom;}
 .requirements {background-image:url(img_requirements.jpg);background-position:right bottom;}
 
+.preamble p:last-child, .main p:last-child {
+	padding-bottom: 25px;
+}
 
 /* h3 image */
 .preamble h3 {background:url(title_preamble.gif) no-repeat;}
@@ -200,9 +209,13 @@ background:url(left_bg.gif) repeat-y;
 .zen-resources h3 {background:url(title_resources.gif) no-repeat;}
 
 /* bottom image */
-.preamble p:nth-child(4) span, .explanation p:nth-child(3) span, .participation p:nth-child(4) span, .benefits p:nth-child(2) span, .requirements p:nth-child(6){
-padding-bottom:20px;
+.preamble::after, .explanation::after, .participation::after, .benefits::after, .requirements::after {
+display: block;
+content: "";
 background:url(right_bottom.gif) bottom no-repeat;
+width: 100%;
+height: 20px;
+margin-top: -20px;
 }
 
 .design-selection ul, .design-archives ul, .zen-resources ul{
