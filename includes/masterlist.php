@@ -234,7 +234,7 @@ $designList = array(
 			"039",
 			"Erratic Blue",
 			"Ian Main",
-			"#",
+			"http://ianmain.com/",
 	),
 	array(
 			"040",

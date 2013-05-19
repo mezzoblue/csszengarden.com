@@ -1,6 +1,6 @@
 <?php
 
-include 'masterlist.php';
+include '../../includes/masterlist.php';
 $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m");
 
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -18,8 +18,9 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 	<!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
 	<script type="text/javascript"></script>
 	
-	<style type="text/css" media="all" title="currentStyle">
+	<style type="text/css" title="currentStyle">
 		@import "<?php echo $loadCSS; ?>";
+
 	</style>
 	<link rel="Shortcut Icon" type="image/x-icon" href="http://www.csszengarden.com/favicon.ico" />	
 </head>
@@ -34,7 +35,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 	
 -->
 
-<body onload="window.defaultStatus='Сад css-Дзен: Красота в CSS-дизайне';" id="css-zen-garden">
+<body id="css-zen-garden">
 
 <div id="container">
 	<div id="intro">
@@ -45,7 +46,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 
 		<div id="quickSummary">
 			<p class="p1"><span>Демонстрация того, что может быть достигнуто визуально посредством дизайна на основе <acronym title="Cascading Style Sheets">CSS</acronym>. Выберите любой style sheet из списка, чтобы загрузить его в эту страницу.</span></p>
-			<p class="p2"><span>Скачайте пример файла с <a href="zengarden-sample.html" title="Исходный HTML-код этой страницы, оставьте неизменным.">html</a> и с <a href="zengarden-sample.css" title="Пример CSS для этой страницы, модифицируйте его.">css</a></span></p>
+			<p class="p2"><span>Скачайте пример файла с <a href="/zengarden-sample.html" title="Исходный HTML-код этой страницы, оставьте неизменным.">html</a> и с <a href="/zengarden-sample.css" title="Пример CSS для этой страницы, модифицируйте его.">css</a></span></p>
 		</div>
 
 		<div id="preamble">
@@ -67,7 +68,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 			<h3><span>Участие</span></h3>
 			<p class="p1"><span>Пожалуйста, только графические дизайнеры. Вы правите эту страницу, так что требуются существенные навыки в <acronym title="Cascading Style Sheets">CSS</acronym>. Тем не менее, файлы примеров достаточно хорошо откомментированы, так что даже новички в <acronym title="Cascading Style Sheets">CSS</acronym> смогут использовать их в качестве отправной точки. Пожалуйста, обратите внимание на <a href="http://www.mezzoblue.com/zengarden/resources/" title="Список материалов о CSS">Путеводитель по материалам о <acronym title="Cascading Style Sheets">CSS</acronym></a> для продвинутых пособий и подсказок по работе с <acronym title="Cascading Style Sheets">CSS</acronym>.</span></p>
 			<p class="p2"><span>Вы можете менять style sheet каким угодно способом, но не трогайте <acronym title="HyperText Markup Language">HTML</acronym>. Это может показаться устрашающим, поначалу, если вы никогда так раньше не работали, но пройдитесь по перечисленным выше ссылкам, чтобы узнать больше, и пользуйтесь файлами примеров.</span></p>
-			<p class="p3"><span>Скачайте примеры файлов с <a href="zengarden-sample.html" title="Исходный HTML-код этой страницы, оставьте неизменным.">html</a> и с <a href="zengarden-sample.css" title="Пример CSS для этой страницы, модифицируйте его.">css</a>, для работы с ними локально. Когда вы закончите свой шедевр (и пожалуйста, не присылайте незаконченные работы), закачайте свой .css файл на доступный вам веб-сервер. <a href="http://www.mezzoblue.com/zengarden/submit/" title="Используйте бланк для контактов для отсылки нам вашего CSS файла">Пришлите нам ссылку</a> на файл, и если мы решим его использовать, мы выкачаем связанные с ним картинки. Финальные работы будут размещены на нашем сервере.</span></p>
+			<p class="p3"><span>Скачайте примеры файлов с <a href="/zengarden-sample.html" title="Исходный HTML-код этой страницы, оставьте неизменным.">html</a> и с <a href="/zengarden-sample.css" title="Пример CSS для этой страницы, модифицируйте его.">css</a>, для работы с ними локально. Когда вы закончите свой шедевр (и пожалуйста, не присылайте незаконченные работы), закачайте свой .css файл на доступный вам веб-сервер. <a href="http://www.mezzoblue.com/zengarden/submit/" title="Используйте бланк для контактов для отсылки нам вашего CSS файла">Пришлите нам ссылку</a> на файл, и если мы решим его использовать, мы выкачаем связанные с ним картинки. Финальные работы будут размещены на нашем сервере.</span></p>
 			<p class="p4"><span>Дополнение: требуются переводчики. Если вы свободно говорите по-английски и на каком-то другом языке, то это ещё один способ поучаствовать в проекте. Пожалуйста, <a href="http://www.mezzoblue.com/contact/" title="Пришлите мне письмо с указанием языков, на которых вы свободно говорите..">свяжитесь со мной</a> насчёт деталей. Переведено <a href="http://mbravo.spb.ru/blog/">Михаилом Браво</a></span></p>
 		</div>
 
@@ -82,13 +83,13 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 			<p class="p2"><span>К сожалению, при дизайне таким образом недостатки в различных реализациях <acronym title="Cascading Style Sheets">CSS</acronym> проявляются особенно сильно. Разные браузеры показывают по-разному, иногда даже полностью валидный <acronym title="Cascading Style Sheets">CSS</acronym>, и это приводит к безумным случаям - когда починка одного ломает другое. Обратитесь к странице <a href="http://www.mezzoblue.com/zengarden/resources/" title="Список материалов по CSS">Ресурсы</a> за информацией о некоторых возможных исправлениях. Полное соответствие браузеров всё ещё, в чём-то, просто мечта, и мы не ожидаем от вас попиксельно-безупречного кода для каждой платформы. Но протестируйте всё на наибольшем их количестве. Если ваш дизайн не работает хотя бы в IE5+/Win и Mozilla (используемых более чем 90% населения), скорее всего мы его не примем.</span></p>
 			<p class="p3"><span>Мы просим, чтобы вы присылали оригинальные графические работы. Пожалуйста, уважайте копирайт. Пожалуйста, сведите сомнительные материалы к минимуму: показанная со вкусом нагота приемлема, явная порнография будет отвергнута.</span></p>
 			<p class="p4"><span>Это обучающее упражнение, а также демонстрация. Вы сохраняете полный копирайт на вашу графику, но мы просим вас выпустить ваш <acronym title="Cascading Style Sheets">CSS</acronym> под лицензией Creative Commons, аналогичной <a href="http://creativecommons.org/licenses/sa/1.0/" title="Просмотреть лицензионную информацию Сада css-Дзен.">нашей на этом сайте</a>, чтобы другие могли учиться на ваших работах.</span></p>
-			<p class="p5"><span>Каналы благосклонно предоставлены <a href="http://www.dreamfirestudios.com/">DreamFire Studios</a></span></p>
+			<p class="p5"><span>Каналы благосклонно предоставлены <a href="http://www.mediatemple.net/" lang="en">mediatemple</a></span></p>
 		</div>
 
 		<div id="footer">
 			<a href="http://validator.w3.org/check/referer" title="Проверить валидность XHTML этого сайта">xhtml</a> &nbsp; 
 			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Проверить валидность CSS этого сайта">css</a> &nbsp; 
-			<a href="http://creativecommons.org/licenses/sa/1.0/" title="Посмотреть подробности лицензирования этого сайта, благодаря Creative Commons.">cc</a> &nbsp;
+			<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" title="Посмотреть подробности лицензирования этого сайта, благодаря Creative Commons.">cc</a> &nbsp;
 			<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL=http%3A%2F%2Fwww.mezzoblue.com%2Fzengarden%2F&amp;output=Submit&amp;gl=sec508&amp;test=" title="Проверить доступнсть этого сайта в соответствии с U.S. Section 508">508</a> &nbsp;
 			<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL=http%3A%2F%2Fwww.mezzoblue.com%2Fzengarden%2F&amp;output=Submit&amp;gl=wcag1-aaa&amp;test=" title="Проверить доступность этого сайта в соответствии с WAI Content Accessibility Guidelines 1">aaa</a>
 		</div>
@@ -114,7 +115,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 						$d = $letterarray[$c];
 						$tempLink = linkMe($filename[$b]);
 						echo "\t\t\t\t\t";
-						echo "<li><a href=\"${tempLink}&amp;page=${thisPage}\" title=\"AccessKey: ${d}\" accesskey=\"${d}\">${styleName[$b]}</a> by <a href=\"${styleURL[$b]}\" class=\"c\">${styleCreator[$b]}</a></li>";
+						echo "<li><a href=\"?cssfile=/${tempLink}/${tempLink}.css&amp;page=${thisPage}\" title=\"AccessKey: ${d}\" accesskey=\"${d}\">${styleName[$b]}</a> by <a href=\"${styleURL[$b]}\" class=\"c\">${styleCreator[$b]}</a></li>";
 						echo "\n";
 						$c = $c + 1;
 					}
@@ -122,17 +123,6 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 				</ul>
 			</div>
 
-			<!--
-				Это не будет показываться, пока архивы не начнут наполняться. Но планируйте вперёд.
-				Если вы существенно настроите h3 'выберите дизайн', то здесь тоже нужно будет настраивать.
-			<div id="lfavorites">
-				<h3 class="favorites"><span>Предпочтения:</span></h3>
-				<ul>
-					<li><a href="#">filename</a> by <a href="" class="c">submitter</a>&nbsp;</li>
-					<li><a href="#">filename</a> by <a href="" class="c">submitter</a>&nbsp;</li>
-				</ul>
-			</div>
-			-->
 
 			<div id="larchives">
 				<h3 class="archives"><span>Архивы:</span></h3>
@@ -165,7 +155,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 ?>
 					<li><a href="http://www.mezzoblue.com/zengarden/resources/" title="Ссылки на отличные сайты с информацией об использовании CSS. AccessKey: r" accesskey="r"><acronym title="Cascading Style Sheets">CSS</acronym>-ресурсы</a></li>
 					<li><a href="http://www.mezzoblue.com/zengarden/faq/" title="Список часто задаваемых вопросов про Сад css-Дзен. AccessKey: q" accesskey="q"><acronym title="Часто Задаваемые Вопросы">ЧАВО</acronym></a>&nbsp;</li>
-					<li><a href="http://www.mezzoblue.com/zengarden/submit/" title="Присылайте свой CSS файл. AccessKey: s" accesskey="s"><span class="accesskey">Прислать дизайн</a></li>
+					<li><a href="http://www.mezzoblue.com/zengarden/submit/" title="Присылайте свой CSS файл. AccessKey: s" accesskey="s">Прислать дизайн</a></li>
 					<li><a href="http://www.mezzoblue.com/zengarden/translations/" title="Посмотреть переведённые версии этой страницы. AccessKey: t" accesskey="t">Переводы</a></li>
 				</ul>
 			</div>
@@ -182,14 +172,6 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 <div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div>
 <div id="extraDiv4"><span></span></div><div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
 
-
-<!-- Извините за это. У меня нет серверной статистики, так что это моя уступка тщеславию -->
-<script type="text/javascript">
-<!--//
-document.write('<img src="http://www.hotstats.gr/cgi-bin/hotstats/easystat?acct=mezzoblue');
-document.write('&ref=' + escape(document.referrer) + '" border="0" alt="">');
-//-->
-</script>
 
 
 

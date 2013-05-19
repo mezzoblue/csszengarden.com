@@ -17,7 +17,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 	<!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
 	<script type="text/javascript"></script>
 	
-	<style type="text/css" media="all" title="currentStyle">
+	<style type="text/css" title="currentStyle">
 		@import "<?php echo $loadCSS; ?>";
 	</style>
 	<link rel="Shortcut Icon" type="image/x-icon" href="http://www.csszengarden.com/favicon.ico" />	
@@ -35,7 +35,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 
 -->
 
-<body onload="window.defaultStatus='css Zen Garden: De schoonheid van ontwerpen met CSS';" id="css-zen-garden">
+<body id="css-zen-garden">
 
 <div id="container"> 	
 	<div id="intro"> 		
@@ -46,7 +46,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 
 		<div id="quickSummary"> 			
 			<p class="p1"><span>Een demonstratie van hetgeen men visueel kan bereiken met CSS gebaseerde ontwerpen. Kies &eacute;&eacute;n van de style sheets (ontwerpen) uit de lijst om te gebruiken in deze pagina.</span></p>
-			<p class="p2"><span>Download een voorbeeld <a href="zengarden-sample.html" title="De html mag van dit bestand niet aangepast worden">html bestand</a> en <a href="zengarden-sample.css" title="Het css voorbeeld bestand, deze mag aangepast worden.">css bestand</a></span></p>
+			<p class="p2"><span>Download een voorbeeld <a href="/zengarden-sample.html" title="De html mag van dit bestand niet aangepast worden">html bestand</a> en <a href="/zengarden-sample.css" title="Het css voorbeeld bestand, deze mag aangepast worden.">css bestand</a></span></p>
 		</div>
 
 		<div id="preamble">
@@ -68,8 +68,8 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 			<h3><span>Deelname</span></h3>
 			<p class="p1"><span>Bij voorkeur alleen grafische ontwerpers. U past deze pagina aan, dus goede vaardigheden op het gebied van <acronym title="Cascading Style Sheets">CSS</acronym> zijn noodzakelijk. Echter de voorbeeld bestanden zijn zodanige becommentarieert dat zelfs beginnende CSS-ers ze kunnen gebruiken als startpunt. Zie ook de <a href="http://www.mezzoblue.com/zengarden/resources.asp" title="Een lijst met CSS gerelateerde bronnen"><acronym title="Cascading Style Sheets">CSS</acronym> Bronnen</a> voor geavanceerde handleidingen en tips voor het werken met CSS.</span></p>
 			<p class="p2"><span>U mag de style sheet wijzigen zoals u wilt, echter de HTML niet! Dit komt misschien wat vreemd over als u nog nooit op deze wijze gewerkt heeft, maar volg de links op deze pagina om meer te leren en gebruik de voorbeeld bestanden als een richtlijn.</span></p>
-			<p class="p3"><span>Download het voorbeeld <a href="zengarden-sample.html" title="De html mag van dit bestand niet aangepast worden">html bestand</a> en <a href="zengarden-sample.css" title="Het css voorbeeld bestand, deze mag aangepast worden.">css bestand</a> om er lokaal eraan te kunnen werken. Op het moment dat u uw meesterwerk klaar heeft (en alstublieft stuur geen half afgemaakt werk) kunt u uw .css bestand&nbsp; uploaden naar een web server waar u toegang tot heeft. Stuur ons het adres van uw bestand en als we besluiten om het te gaan gebruiken zullen we de  bijbehorende plaatjes er bij downloaden. Uiteindelijk zullen toegezonden aanmeldingen op onze server geplaatst worden.</span></p>
-			<p class="p4"><span>NB: Ik ben op zoek naar vertalers. Als u vloeiend Engels spreekt en daarnaast een andere taal, dan kunt u op deze wijze deelnemen aan dit project. Neem <a href="http://www.mezzoblue.com/contact/" title="Stuur mij een email (in het Engels) met de talen die u vloeiend spreekt">contact op met mij</a> voor de details..Voor op- en aanmerkingen betreffende deze Nederlandse vertaling kunt u contact opnemen met <a href="mailto:bwijers@bdisfunctional.net?subject=CSS Zengarden">Björn Wijers</a></span></p>
+			<p class="p3"><span>Download het voorbeeld <a href="/zengarden-sample.html" title="De html mag van dit bestand niet aangepast worden">html bestand</a> en <a href="/zengarden-sample.css" title="Het css voorbeeld bestand, deze mag aangepast worden.">css bestand</a> om er lokaal eraan te kunnen werken. Op het moment dat u uw meesterwerk klaar heeft (en alstublieft stuur geen half afgemaakt werk) kunt u uw .css bestand&nbsp; uploaden naar een web server waar u toegang tot heeft. Stuur ons het adres van uw bestand en als we besluiten om het te gaan gebruiken zullen we de  bijbehorende plaatjes er bij downloaden. Uiteindelijk zullen toegezonden aanmeldingen op onze server geplaatst worden.</span></p>
+			<p class="p4"><span>NB: Ik ben op zoek naar vertalers. Als u vloeiend Engels spreekt en daarnaast een andere taal, dan kunt u op deze wijze deelnemen aan dit project. Neem <a href="http://www.mezzoblue.com/contact/" title="Stuur mij een email (in het Engels) met de talen die u vloeiend spreekt">contact op met mij</a> voor de details..Voor op- en aanmerkingen betreffende deze Nederlandse vertaling kunt u contact opnemen met <a href="http://www.bdisfunctional.net/">Björn Wijers</a></span></p>
 		</div>
 		
 		<div id="benefits"> 			
@@ -82,15 +82,15 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 			<p class="p2"><span>Helaas, belicht het ontwerpen van web sites op deze wijze de gaten in de diverse implementaties van CSS. Verschillende browsers vertonen, zelfs volledig valide CSS </span><span>op verschillende wijzen. Dit wordt soms gek makend waarbij een oplossing voor de ene browser tot problemen leidt bij een andere browser. Bekijk de <a href="http://www.mezzoblue.com/zengarden/resources.asp" title="Een lijst met CSS gerelateerde bronnen">Bronnen</a> pagina voor informatie over de verschillende oplossingen. Volledige browser compatibiliteit is soms een wensdroom en we verwachten dan ook niet dat u met pixel-perfecte code komt voor elk platform. Maar test in zoveel mogelijk browsers als u kunt. Als uw ontwerp niet werkt in minimaal Internet Explorer 5+/Win en Mozilla (in gebruik door 90% van de bevolking) dan heeft u grote kans dat we uw ontwerp niet accepteren.</span></p>
 			<p class="p3"><span>We vragen u om alleen ontwerpen die door u zelf zijn gemaakt op te sturen. Houd hierbij alstublieft rekening met de auteursrechten. Beperk mogelijk bezwaarlijk materiaal tot een minimum; smaakvol bloot is geen probleem, harde porno wel.</span></p>
 			<p class="p4"><span>Dit is een oefening alsmede een demonstratie. U behoudt uw auteursrecht over de beeldmaterialen, maar we vragen u om uw CSS vrij te geven onder een "Creative Commons" licentie identiek aan de degene van deze site, zodat anderen van uw werk kunnen leren.</span></p>
-			<p class="p5"><span>Bandbreedte is gedoneerd door <a href="http://www.dreamfirestudios.com/">DreamFire Studios</a></span></p>
+			<p class="p5"><span>Bandbreedte is gedoneerd door <a href="http://www.mediatemple.net/">mediatemple</a></span></p>
 		</div>
 
 		<div id="footer">
 			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s XHTML">xhtml</a> &nbsp; 
 			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS">css</a> &nbsp; 
-			<a href="http://creativecommons.org/licenses/sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">cc</a> &nbsp;
-			<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL=http%3A%2F%2Fwww.mezzoblue.com%2Fzengarden%2F&amp;output=Submit&amp;gl=sec508&amp;test=" title="Check the accessibility of this site according to U.S. Section 508">508</a> &nbsp;
-			<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL=http%3A%2F%2Fwww.mezzoblue.com%2Fzengarden%2F&amp;output=Submit&amp;gl=wcag1-aaa&amp;test=" title="Check the accessibility of this site according to WAI Content Accessibility Guidelines 1">aaa</a>
+			<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">cc</a> &nbsp;
+			<a href="http://www.mezzoblue.com/zengarden/faq/#s508" title="Check the accessibility of this site according to U.S. Section 508">508</a> &nbsp;
+			<a href="http://www.mezzoblue.com/zengarden/faq/#aaa" title="Check the accessibility of this site according to WAI Content Accessibility Guidelines 1">aaa</a>
 		</div>
 
 	</div>
@@ -112,7 +112,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 						$d = $letterarray[$c];
 						$tempLink = linkMe($filename[$b]);
 						echo "\t\t\t\t\t";
-						echo "<li><a href=\"${tempLink}&amp;page=${thisPage}\" title=\"AccessKey: ${d}\" accesskey=\"${d}\">${styleName[$b]}</a> by <a href=\"${styleURL[$b]}\" class=\"c\">${styleCreator[$b]}</a></li>";
+						echo "<li><a href=\"?cssfile=/${tempLink}/${tempLink}.css&amp;page=${thisPage}\" title=\"AccessKey: ${d}\" accesskey=\"${d}\">${styleName[$b]}</a> by <a href=\"${styleURL[$b]}\" class=\"c\">${styleCreator[$b]}</a></li>";
 						echo "\n";
 						$c = $c + 1;
 					}
@@ -180,16 +180,6 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 <!-- Zorg ervoor dat u dus uw werk in deze browser test-->
 <div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div>
 <div id="extraDiv4"><span></span></div><div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
-
-
-<!-- Sorry about this one. I have no server stats, so it's my concession to vanity -->
-<script type="text/javascript">
-<!--//
-document.write('<img src="http://www.hotstats.gr/cgi-bin/hotstats/easystat?acct=mezzoblue');
-document.write('&ref=' + escape(document.referrer) + '" border="0" alt="">');
-//-->
-</script>
-
 
 </body>
 </html>

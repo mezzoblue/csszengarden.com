@@ -17,7 +17,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 	<!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
 	<script type="text/javascript"></script>
 	
-	<style type="text/css" media="all" title="currentStyle">
+	<style type="text/css" title="currentStyle">
 		@import "<?php echo $loadCSS; ?>";
 	</style>
 	<link rel="Shortcut Icon" type="image/x-icon" href="http://www.csszengarden.com/favicon.ico" />	
@@ -37,7 +37,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 
 -->
 
-<body onload="window.defaultStatus='css Zen Garden: The Beauty in CSS Design';" id="css-zen-garden">
+<body id="css-zen-garden">
 
 <div id="container">
 	<div id="intro">
@@ -50,8 +50,8 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
       <p class="p1">En demonstration af mulighederne i CSS baseret design. V&aelig;lg 
         en af de forskellige layouts fra listen for at loade den p&aring; siden.</p>
 			
-      <p class="p2"><span>Download den orignale <a href="../../dokumenter/css/zengarden-sample.html" title="This page's source HTML code, not to be modified.">html 
-        fil</a> og <a href="../../dokumenter/css/zengarden-sample.css" title="This page's sample CSS, the file you may modify.">css 
+      <p class="p2"><span>Download den orignale <a href="/zengarden-sample.html" title="This page's source HTML code, not to be modified.">html 
+        fil</a> og <a href="/zengarden-sample.css" title="This page's sample CSS, the file you may modify.">css 
         fil</a></span></p>
 		</div>
 
@@ -110,8 +110,8 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
         p&aring; denne m&aring;de f&oslash;r, men kig gennem linksene for at l&aelig;re 
         mere, og kig filerne igennnem for at f&aring; gode ideer.</span></p>
 			
-      <p class="p3"><span>Download <a href="../../dokumenter/css/zengarden-sample.html" title="This page's source HTML code, not to be modified.">html 
-        filen</a> og <a href="../../dokumenter/css/zengarden-sample.css" title="This page's sample CSS, the file you may modify.">css 
+      <p class="p3"><span>Download <a href="/zengarden-sample.html" title="This page's source HTML code, not to be modified.">html 
+        filen</a> og <a href="/zengarden-sample.css" title="This page's sample CSS, the file you may modify.">css 
         filen</a> og begynd p&aring; en kopi der gemmes lokalt. N&aring;r dit 
         mesterv&aelig;rk er f&aelig;rdigt (v&aelig;r venlig ikke at aflevere halv-f&aelig;rdige 
         sider) upload .css filen p&aring; en valgfri server under din kontrol. 
@@ -167,15 +167,14 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
         licens, som vist <a href="http://creativecommons.org/licenses/sa/1.0/" title="View the Zen Garden's license information.">p&aring; 
         denne side</a> s&aring; andre kan l&aelig;re fra dit arbejde.</span></p>
 			
-      <p class="p5"><span>Hosting er elskv&aelig;rdigt doneret af <a href="http://www.dreamfirestudios.com/">DreamFire 
-        Studios</a></span></p>
+      <p class="p5"><span>Hosting er elskv&aelig;rdigt doneret af <a href="http://www.mediatemple.net/">mediatemple</a></span></p>
 		</div>
 		<div id="footer">
 			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s XHTML">xhtml</a> &nbsp; 
 			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS">css</a> &nbsp; 
-			<a href="http://creativecommons.org/licenses/sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">cc</a> &nbsp;
-			<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL=http%3A%2F%2Fwww.mezzoblue.com%2Fzengarden%2F&amp;output=Submit&amp;gl=sec508&amp;test=" title="Check the accessibility of this site according to U.S. Section 508">508</a> &nbsp;
-			<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL=http%3A%2F%2Fwww.mezzoblue.com%2Fzengarden%2F&amp;output=Submit&amp;gl=wcag1-aaa&amp;test=" title="Check the accessibility of this site according to WAI Content Accessibility Guidelines 1">aaa</a>
+			<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">cc</a> &nbsp;
+			<a href="http://www.mezzoblue.com/zengarden/faq/#s508" title="Check the accessibility of this site according to U.S. Section 508">508</a> &nbsp;
+			<a href="http://www.mezzoblue.com/zengarden/faq/#aaa" title="Check the accessibility of this site according to WAI Content Accessibility Guidelines 1">aaa</a>
 		</div>
 
 	</div>
@@ -193,7 +192,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 						$d = $letterarray[$c];
 						$tempLink = linkMe($filename[$b]);
 						echo "\t\t\t\t\t";
-						echo "<li><a href=\"${tempLink}&amp;page=${thisPage}\" title=\"AccessKey: ${d}\" accesskey=\"${d}\">${styleName[$b]}</a> by <a href=\"${styleURL[$b]}\" class=\"c\">${styleCreator[$b]}</a></li>";
+						echo "<li><a href=\"?cssfile=/${tempLink}/${tempLink}.css&amp;page=${thisPage}\" title=\"AccessKey: ${d}\" accesskey=\"${d}\">${styleName[$b]}</a> by <a href=\"${styleURL[$b]}\" class=\"c\">${styleCreator[$b]}</a></li>";
 						echo "\n";
 						$c = $c + 1;
 					}
@@ -245,15 +244,6 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 <!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
 <div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div>
 <div id="extraDiv4"><span></span></div><div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
-
-
-<!-- Sorry about this one. I have no server stats, so it's my concession to vanity -->
-<script type="text/javascript">
-<!--//
-document.write('<img src="http://www.hotstats.gr/cgi-bin/hotstats/easystat?acct=mezzoblue');
-document.write('&ref=' + escape(document.referrer) + '" border="0" alt="">');
-//-->
-</script>
 
 
 </body>

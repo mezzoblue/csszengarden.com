@@ -27,8 +27,10 @@
 	$intro = array(
 		"h1" => "CSS Zen Garden",
 		"h2" => 'The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design',
+
 		"summary-p1" => 'A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.',
 		"summary-p2" => 'Download the sample <a href="/zengarden-sample.html" title="This page\'s source HTML code, not to be modified.">html file</a> and <a href="/zengarden-sample.css" title="This page\'s sample CSS, the file you may modify.">css file</a>',
+
 		"preamble-h3" => 'The Road to Enlightenment',
 		"preamble-p1" => 'Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr title="Document Object Model">DOM</abbr>s, broken <abbr title="Cascading Style Sheets">CSS</abbr> support, and abandoned browsers.',
 		"preamble-p2" => 'We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr title="Web Standards Project">WaSP</abbr>, and the major browser creators.',
@@ -57,7 +59,7 @@
 		"requirements-p5" => 'By <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. See also: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.',
 	);
 
-	// if you decide to localize any of these, keep them <4 characters if possible
+	// if you decide to localize any of these, keep the link text <4 characters if possible
 	// some older designs assume the longest one in the group was 'XHTML'
 	$footer = array(
 		"zen-validate-html-title" => "Check the validity of this site&#8217;s HTML",

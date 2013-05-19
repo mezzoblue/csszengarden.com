@@ -1,4 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+<?php
+
+$loadCSS = "/001/001-jp.css";
+include '../../includes/masterlist.php';
+$letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m");
+
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" >
 <head>
@@ -39,7 +45,7 @@
 
 		<div id="quickSummary">
 			<p class="p1"><span><acronym title="カスケーディング・スタイルシート">CSS</acronym> を使ったデザインで視覚的にどんなことができるかの例です。リストからスタイルシートを選択してこのページに適用してみてください。</span></p>
-			<p class="p2"><span><a href="zengarden-sample.html" title="このページの HTML ソースコード、改変不可">html文書</a>と<a href="zengarden-sample.css" title="このページのサンプル CSS、改変可">サンプルcss文書</a>をダウンロード。</span></p>
+			<p class="p2"><span><a href="/zengarden-sample.html" title="このページの HTML ソースコード、改変不可">html文書</a>と<a href="/zengarden-sample.css" title="このページのサンプル CSS、改変可">サンプルcss文書</a>をダウンロード。</span></p>
 		</div>
 
 		<div id="preamble">
@@ -65,7 +71,7 @@
 このページをいじくっているんだから、<acronym title="カスケーディング・スタイルシート">CSS</acronym> は使いこなせないとダメだけど、デザイン例はわかりやすくコメントが入れてあるから <acronym title="カスケーディング・スタイルシート">CSS</acronym> 初心者でもここから始められるようになっています。<acronym title="カスケーディング・スタイルシート">CSS</acronym> に関しての上級テクニックチュートリアルとかコツについては <a href="http://www.mezzoblue.com/zengarden/resources/" title="CSS 関係のリンク集"><acronym title="カスケーディング・スタイルシート">CSS</acronym> 関連情報ガイド</a>をぜひ見てみてください。</span></p>
 			<p class="p2"><span>スタイルシートはどれだけいじってもかまわないけど、<acronym title="ハイパーテキスト・マークアップ言語">HTML</acronym> は触らないで欲しい。これってやったことのない人は初めは手強いと思うかもしれない。でも、紹介しているリンクを参考に、知らないことをどんどん学んで、サンプルを生かして色々試してみてください。</span></p>
 			<p class="p3"><span>サンプル <a href="zengarden-sample.html" title="このページの HTML ソースコード、改変不可">html 文書</a> と <a href="zengarden-sample.css" title="このページのサンプル CSS、改変可">css 文書</a> をダウンロードして、コピーを作って遊んでみてください。傑作が完成したら、（お願い：未完成なものは提出しないでね。）.css 文書を自分のサーバーにアップロードします。そうしたらそのファイルへの<a href="http://www.mezzoblue.com/zengarden/submit/" title="コンタクト・フォームを使って css 文書を送ってください。">リンクを送ってください</a>。もしそのデザインが選ばれたら、関連の画像に検索をかけます。最終的には私たちのサーバーへ置かせてもらいます。</span></p>
-			<p class="p4"><span>アップデート：翻訳してくれる人を募集しています。英語とその他の言語に流暢なあなた、翻訳することもこのプロジェクトに参加するひとつの方法です。詳しくは（英語で）<a href="http://www.mezzoblue.com/contact/" title="どの言語に翻訳できるか、メールで知らせてください。">メールをください</a> 。<br />日本語訳：<a href="http://www.myudesign.com/contact/" title="翻訳者、清水麻遊のサイトへ">清水麻遊（まゆう）</a><br />Japanese Translation by <a href="http://www.myudesign.com" title="Go to the translator's site">Mayu Shimizu</a></span></p>
+			<p class="p4"><span>アップデート：翻訳してくれる人を募集しています。英語とその他の言語に流暢なあなた、翻訳することもこのプロジェクトに参加するひとつの方法です。詳しくは（英語で）<a href="http://www.mezzoblue.com/contact/" title="どの言語に翻訳できるか、メールで知らせてください。">メールをください</a> 。日本語訳：<a href="http://www.myudesign.com/contact/" title="翻訳者、清水麻遊のサイトへ">清水麻遊（まゆう）</a> Japanese Translation by <a href="http://www.myudesign.com" title="Go to the translator's site">Mayu Shimizu</a></span></p>
 		</div>
 
 		<div id="benefits">
@@ -85,7 +91,7 @@
 			<p class="p4"><span>ここは実演の場であるとともに学習の場、練習するための場所でもあります。
 			提出された画像の著作権はすべてあなたに属しますが、<acronym title="カスケーディング・スタイルシート">CSS</acronym> の著作権は他の人があなたの作品から学ぶことができるように、Creative Commons のライセンスの元に放棄することをお願いしています。
 <a href="http://creativecommons.org/licenses/sa/1.0/" title="Zen Garden の著作権情報を見る。">Zen Garden の著作権</a>もこれに基づいています。 </span></p>
-			<p class="p5"><span>バンドウィズは <a href="http://www.dreamfirestudios.com/">DreamFire Studios</a>からありがたくいただいています。</span></p>
+			<p class="p5"><span>バンドウィズは <a href="http://www.mediatemple.net/" lang="en">mediatemple</a>からありがたくいただいています。</span></p>
 		</div>
 
 		<div id="footer">
@@ -93,7 +99,7 @@
 			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="このサイトの CSS のスタンダード準拠度をチェック">css</a> &nbsp; 
 			<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" title="Creative Commons に基づくこのサイトの著作権の詳細を見る">cc</a> &nbsp;
 			<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL=http%3A%2F%2Fwww.mezzoblue.com%2Fzengarden%2F&amp;output=Submit&amp;gl=sec508&amp;test=" title="このサイトの U.S. セクション508に従ったアクセシビリティ度をチェック">508</a> &nbsp;
-			<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL=http%3A%2F%2Fwww.mezzoblue.com%2Fzengarden%2F&amp;output=Submit&amp;gl=wcag1-aaa&amp;test=" title="このサイトの  WAI コンテントガイドライン1に従ったアクセシビリティ度をチェック">aaa</a>
+			<a href="http://www.mezzoblue.com/zengarden/faq/#aaa" title="このサイトの  WAI コンテントガイドライン1に従ったアクセシビリティ度をチェック">aaa</a>
 		</div>
 
 	</div>
@@ -116,24 +122,14 @@
 						$d = $letterarray[$c];
 						$tempLink = linkMe($filename[$b]);
 						echo "\t\t\t\t\t";
-						echo "<li><a href=\"${tempLink}&amp;page=${thisPage}\" title=\"アクセスキー： ${d}\" accesskey=\"${d}\">${styleName[$b]}</a> by <a href=\"${styleURL[$b]}\" class=\"c\">${styleCreator[$b]}</a></li>";
+						echo "<li><a href=\"?cssfile=/${tempLink}/${tempLink}.css&amp;page=${thisPage}\" title=\"アクセスキー： ${d}\" accesskey=\"${d}\">${styleName[$b]}</a> by <a href=\"${styleURL[$b]}\" class=\"c\">${styleCreator[$b]}</a></li>";
 						echo "\n";
 						$c = $c + 1;
 					}
+
 ?>
 				</ul>
 			</div>
-
-			<!--
-				これはアーカイブがいっぱいになるまでは表示されない。もし「デザインを選択」の h3 を大幅にカスタマイズした人は、これもあわせて変えること。 
-			<div id="lfavorites">
-				<h3 class="favorites"><span>アーカイブ：</span></h3>
-				<ul>
-					<li><a href="#">ファイル名</a> by <a href="" class="c">デザイナーの名前</a>&nbsp;</li>
-					<li><a href="#">ファイル名</a> by <a href="" class="c">デザイナーの名前</a>&nbsp;</li>
-				</ul>
-			</div>
-			-->			
 
 			<div id="larchives">
 				<h3 class="archives"><span>Archives:</span></h3>

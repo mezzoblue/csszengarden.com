@@ -17,7 +17,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 	<!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
 	<script type="text/javascript"></script>
 	
-	<style type="text/css" media="all" title="currentStyle">
+	<style type="text/css" title="currentStyle">
 		@import "<?php echo $loadCSS; ?>";
 	</style>
 	<link rel="Shortcut Icon" type="image/x-icon" href="http://www.csszengarden.com/favicon.ico" />	
@@ -37,7 +37,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 
 -->
 
-<body onload="window.defaultStatus='css Zen Garden: The Beauty in CSS Design';" id="css-zen-garden">
+<body id="css-zen-garden">
 
 <div id="container">
 	<div id="intro">
@@ -49,7 +49,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 		<div id="quickSummary">
 			<p class="p1">CSS  를 기반으로 하는 디자인의 시각 표현입니다.
 			  아래의 스타일 리스트 중 하나를 선택해서 보실 수 있읍니다. </p>
-			<p class="p2"><span><a href="zengarden-sample.html" title="This page's source HTML code, not to be modified.">html file</a> 과 <a href="zengarden-sample.css" title="This page's sample CSS, the file you may modify.">css file </a> 을 다운로드 하십시요.</span></p>
+			<p class="p2"><span><a href="/zengarden-sample.html" title="This page's source HTML code, not to be modified.">html file</a> 과 <a href="/zengarden-sample.css" title="This page's sample CSS, the file you may modify.">css file </a> 을 다운로드 하십시요.</span></p>
 		</div>
 
 		<div id="preamble">
@@ -79,8 +79,8 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 			    시작점으로써 사용할 수 있을만큼 잘 설명되어져 있다.CSS 와 함께 일할 수 있는 진보된 지도와 팁이 <a href="http://www.mezzoblue.com/zengarden/resources.asp" title="A listing of CSS-related resources"><acronym title="Cascading Style Sheets">CSS</acronym> Resource Guide</a>에 나와 있다. </span></p>
 			<p class="p2"><span>당신은 마음대로 스타일 시트를 수정할 수 있다. 그러나 HTML은 아니다.  이런식으로 일한 적이 없다면, 처음에는  어려움을 느낄지 모르나,
 			    더 배우기 위해서는 아래 리스트의 링크들을 따르고 예시 파일들을 가이드로 이용하라.</span></p>
-			<p class="p3"><span>샘플<a href="zengarden-sample.html" title="This page's source HTML code, not to be modified.">html file</a> 과<a href="zengarden-sample.css" title="This page's sample CSS, the file you may modify.">css file</a> 을 다운로드 해서 작업하라. 일단 당신의 완성작이 만들어지면 당신의.css 파일을 웹 서버에 업로드 하라. (미완성 작품은 제출 불가능)			    <a href="http://www.mezzoblue.com/zengarden/sendfile.asp" title="Use the contact form to send us your CSS file">Send us a link</a> 에 파일을 보내고 만일 우리가 사용하기로 선택하면, 관련된 이미지를 사용할 것이다. 최종 제출은 우리 서버에 배치될 것이다. </span></p>
-			<p class="p4"><span>업데이트: 우리는 번역가를 찾고 있다. 만일 영어와 다른 언어에도 능숙하다면, 이또한 우리에게 참가할 수 있는 방법이다. 자세한 사항은 <a href="http://www.mezzoblue.com/contact/" title="Send me an e-mail mentioning which languages you are fluent in.">contact me</a> 로.</span></p>
+			<p class="p3"><span>샘플<a href="/zengarden-sample.html" title="This page's source HTML code, not to be modified.">html file</a> 과<a href="/zengarden-sample.css" title="This page's sample CSS, the file you may modify.">css file</a> 을 다운로드 해서 작업하라. 일단 당신의 완성작이 만들어지면 당신의.css 파일을 웹 서버에 업로드 하라. (미완성 작품은 제출 불가능)			    <a href="http://www.mezzoblue.com/zengarden/sendfile.asp" title="Use the contact form to send us your CSS file">Send us a link</a> 에 파일을 보내고 만일 우리가 사용하기로 선택하면, 관련된 이미지를 사용할 것이다. 최종 제출은 우리 서버에 배치될 것이다. </span></p>
+			<p class="p4"><span>업데이트: 우리는 번역가를 찾고 있다. 만일 영어와 다른 언어에도 능숙하다면, 이또한 우리에게 참가할 수 있는 방법이다. 자세한 사항은 <a href="http://www.mezzoblue.com/contact/" title="Send me an e-mail mentioning which languages you are fluent in.">contact me</a> 로. This translation by <a href="http://www.sozoweb.com/">Sohyun Westin</a>.</span></p>
 	  </div>
 
 		<div id="benefits">
@@ -104,13 +104,13 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 			    제지한다.</span></p>
 			<p class="p4"><span>이는 실연임과 동시에 배우는 과정의 연습이기도 하다. 당신은 당신의 그래프에 모든 저작권을 보유할 수 있으나, 다른 이들도 당신의 작업을
 			    통해 배울 수 있도록 하기 위해. <a href="http://creativecommons.org/licenses/sa/1.0/" title="View the Zen Garden's license information.">one on this site</a> 과 동일한 공동 자격하의 당신의 CSS를 개방하도록 한다.</span></p>
-			<p class="p5"><span><a href="http://www.dreamfirestudios.com/">DreamFire Studios</a> 제공</span></p>
+			<p class="p5"><span><a href="http://www.mediatemple.net/" lang="en">mediatemple</a> 제공</span></p>
 	  </div>
 
 		<div id="footer">
 			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s XHTML">xhtml</a> &nbsp; 
 			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS">css</a> &nbsp; 
-			<a href="http://creativecommons.org/licenses/sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">cc</a> &nbsp;
+			<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons.">cc</a> &nbsp;
 			<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL=http%3A%2F%2Fwww.mezzoblue.com%2Fzengarden%2F&amp;output=Submit&amp;gl=sec508&amp;test=" title="Check the accessibility of this site according to U.S. Section 508">508</a> &nbsp;
 			<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL=http%3A%2F%2Fwww.mezzoblue.com%2Fzengarden%2F&amp;output=Submit&amp;gl=wcag1-aaa&amp;test=" title="Check the accessibility of this site according to WAI Content Accessibility Guidelines 1">aaa</a>
 		</div>
@@ -130,7 +130,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 						$d = $letterarray[$c];
 						$tempLink = linkMe($filename[$b]);
 						echo "\t\t\t\t\t";
-						echo "<li><a href=\"${tempLink}&amp;page=${thisPage}\" title=\"AccessKey: ${d}\" accesskey=\"${d}\">${styleName[$b]}</a> by <a href=\"${styleURL[$b]}\" class=\"c\">${styleCreator[$b]}</a></li>";
+						echo "<li><a href=\"?cssfile=/${tempLink}/${tempLink}.css&amp;page=${thisPage}\" title=\"AccessKey: ${d}\" accesskey=\"${d}\">${styleName[$b]}</a> by <a href=\"${styleURL[$b]}\" class=\"c\">${styleCreator[$b]}</a></li>";
 						echo "\n";
 						$c = $c + 1;
 					}
@@ -182,16 +182,6 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 <!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
 <div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div>
 <div id="extraDiv4"><span></span></div><div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
-
-
-<!-- Sorry about this one. I have no server stats, so it's my concession to vanity -->
-<script type="text/javascript">
-<!--//
-document.write('<img src="http://www.hotstats.gr/cgi-bin/hotstats/easystat?acct=mezzoblue');
-document.write('&ref=' + escape(document.referrer) + '" border="0" alt="">');
-//-->
-</script>
-
 
 </body>
 </html>
