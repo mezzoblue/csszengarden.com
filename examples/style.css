@@ -41,39 +41,41 @@ a:visited {
 	text-decoration: none; 
 	color: #D4CDDC;
 	}
-a:hover, a:active { 
+a:hover, a:focus, a:active { 
 	text-decoration: underline; 
 	color: #9685BA;
 	}
-acronym {
+abbr {
 	border-bottom: none;
 	}
 
 
 /* specific divs */
-#container { 
+.page-wrapper { 
 	background: url(zen-bg.jpg) no-repeat top left; 
 	padding: 0 175px 0 110px;  
 	margin: 0; 
 	position: relative;
 	}
 
-#intro { 
+.intro { 
 	min-width: 470px;
+	width: 100%;
 	}
 
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-#pageHeader h1 { 
-	background: transparent url(h1.gif) no-repeat top left; 
-	margin-top: 10px; 
-	width: 219px; 
-	height: 87px; 
+header h1 { 
+	background: transparent url(h1.gif) no-repeat top left;
+	margin-top: 10px;
+	display: block;
+	width: 219px;
+	height: 87px;
 	float: left;
 	}
-#pageHeader h1 span {
+header h1 span {
 	display:none
 	}
-#pageHeader h2 { 
+header h2 { 
 	background: transparent url(h2.gif) no-repeat top left; 
 	margin-top: 58px; 
 	margin-bottom: 40px; 
@@ -81,112 +83,113 @@ acronym {
 	height: 18px; 
 	float: right;
 	}
-#pageHeader h2 span {
+header h2 span {
 	display:none
 	}
-#pageHeader {
+header {
 	padding-top: 20px;
+	height: 87px;
 }
 
-#quickSummary {
-	clear:both; 
+.summary {
+	clear: both; 
 	margin: 20px 20px 20px 10px; 
 	width: 160px; 
 	float: left;
 	}
-#quickSummary p {
-	font: italic 10pt/22pt georgia; 
-	text-align:center;
+.summary p {
+	font: italic 1.1em/2.2 georgia; 
+	text-align: center;
 	}
 
-#preamble {
+.preamble {
 	clear: right; 
 	padding: 0px 10px 0 10px;
 	}
-#supportingText {	
+.supporting {	
 	padding-left: 10px; 
 	margin-bottom: 40px;
 	}
 
-#footer { 
+footer { 
 	text-align: center; 
 	}
-#footer a:link, #footer a:visited { 
+footer a:link, footer a:visited { 
 	margin-right: 20px; 
 	}
 
-#linkList {
+.sidebar {
 	margin-left: 600px; 
 	position: absolute; 
 	top: 0; 
 	right: 0;
 	}
-#linkList2 { 
+.sidebar .wrapper { 
 	font: 10px verdana, sans-serif; 
 	background: transparent url(paper-bg.jpg) top left repeat-y; 
 	padding: 10px; 
 	margin-top: 150px; 
 	width: 130px; 
 	}
-#linkList h3.select { 
+.sidebar h3.select { 
 	background: transparent url(h3.gif) no-repeat top left; 
 	margin: 10px 0 5px 0; 
 	width: 97px; 
 	height: 16px; 
 	}
-#linkList h3.select span {
+.sidebar h3.select span {
 	display:none
 	}
-#linkList h3.favorites { 
+.sidebar h3.favorites { 
 	background: transparent url(h4.gif) no-repeat top left; 
 	margin: 25px 0 5px 0; 
 	width: 60px; 
 	height: 18px; 
 	}
-#linkList h3.favorites span {
+.sidebar h3.favorites span {
 	display:none
 	}
-#linkList h3.archives { 
+.sidebar h3.archives { 
 	background: transparent url(h5.gif) no-repeat top left; 
 	margin: 25px 0 5px 0; 
 	width:57px; 
 	height: 14px; 
 	}
-#linkList h3.archives span {
+.sidebar h3.archives span {
 	display:none
 	}
-#linkList h3.resources { 
+.sidebar h3.resources { 
 	background: transparent url(h6.gif) no-repeat top left; 
 	margin: 25px 0 5px 0; 
 	width:63px; 
 	height: 10px; 
 	}
-#linkList h3.resources span {
+.sidebar h3.resources span {
 	display:none
 	}
 
 
-#linkList ul {
+.sidebar ul {
 	margin: 0;
 	padding: 0;
 	}
-#linkList li {
-	line-height: 2.5ex; 
+.sidebar li {
+	line-height: 1.3em; 
 	background: transparent url(cr1.gif) no-repeat top center; 
 	display: block; 
 	padding-top: 5px; 
 	margin-bottom: 5px;
 	list-style-type: none;
 	}
-#linkList li a:link {
+.sidebar li a:link {
 	color: #988F5E;
 	}
-#linkList li a:visited {
+.sidebar li a:visited {
 	color: #B3AE94;
 	}
 
 
-#extraDiv1 {
+.extra1 {
 	background: transparent url(cr2.gif) top left no-repeat; 
 	position: absolute; 
 	top: 40px; 

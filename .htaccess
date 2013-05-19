@@ -10,3 +10,11 @@ deny from env=BadReferrer
 <FilesMatch "^.*submissions\.json$">
   SetHandler php-script
 </FilesMatch>
+
+<FilesMatch "^.*index\.html$">
+  SetHandler php-script
+</FilesMatch>
+	
+
+# to-do:
+# redirect /zengarden-sample.css to /examples/style.css
