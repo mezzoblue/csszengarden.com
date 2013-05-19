@@ -41,17 +41,11 @@ h3 {
 	padding-bottom: 0px;
 	}
 
-.supporting h3 span,.preamble h3 span {
-	padding-bottom: 4px;
+.supporting h3,.preamble h3 {
 	background: url(flower3.gif) no-repeat 0 0;
 	padding-left: 24px;
 	}
 
-.sidebar h3 span {
-	padding-bottom: 4px;
-	background: url(flower2.gif) no-repeat 0 30%;
-	padding-left: 14px;
-	}
 
 a:link { 
 	font-weight: bold; 
@@ -153,16 +147,17 @@ footer {
 	padding-top: 0px;
 	}
 
-.explanation h3 span {
+.explanation h3 {
 	margin-top: 20px;
 	}
 
 .sidebar h3 {
 	font-size: 11px;
-	padding: 3px 3px 3px 1px;
+	padding: 3px 3px 3px 14px;
 	color: #E98523;
 	margin-bottom: 10px;
 	margin-top: 20px;
+	background: url(flower2.gif) no-repeat 0 30%;
 	}
 
 .design-selection ul, .design-archives ul, .zen-resources ul {
