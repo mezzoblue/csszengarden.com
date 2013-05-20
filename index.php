@@ -11,5 +11,4 @@
 	// import common functions & the design list
 	include($SERVER_ROOT . "includes/tmpl.php");
 
-
 ?>
