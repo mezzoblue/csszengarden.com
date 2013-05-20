@@ -13,7 +13,7 @@ against master.
 If that makes no sense, just use the traditional submission form here: 
 http://www.mezzoblue.com/zengarden/submit/
 
-# Running a local copy
+## Running a local copy
 
 Here's an incomplete list of steps for getting a localhost version of this repo up and running. (You're on your own if you're on Windows, most of the actions are relevant but I have no idea what extra steps you'll need to run to make it work.)
 
