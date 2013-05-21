@@ -181,7 +181,7 @@ header h2 {
         }
 
 .supporting h3, .preamble h3 {
-          text-indent: 100%;
+          text-indent: 200%;
           white-space: nowrap;
           overflow: hidden;
           }

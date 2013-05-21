@@ -1,6 +1,6 @@
-/* css Zen Garden submission 083 - 'Springtime', by BoŽr Attila */
+/* css Zen Garden submission 083 - 'Springtime', by Boër Attila */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-/* All associated graphics copyright 2004, BoŽr Attila */
+/* All associated graphics copyright 2004, Boër Attila */
 /* Added: March 4th, 2004 */
 
 /* IMPORTANT */
@@ -210,9 +210,9 @@ display:none
 
 
 	float:right;	
+	width:410px;
 	padding-top:50px;
 	padding-bottom:30px;
-	width:580px;
 
 }
 .requirements {
@@ -220,10 +220,9 @@ display:none
 
 
 	float:right;
+	width:410px;
 	padding-top:50px;
 	padding-bottom:30px;
-
-	width:580px;
 
 }
 

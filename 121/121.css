@@ -133,9 +133,7 @@ header h1 {
 }
 
 .summary p:first-child {
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+	display: none;
 }
 
 .summary p:last-child {
