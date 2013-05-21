@@ -50,7 +50,13 @@ a:hover, a:active {
 	color: #384A5F;
 }
 
-h1, h2, h3 span {display:none}
+h1, h2 {display:none}
+h3 {
+	margin: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;	
+}
 
 
 /* specific divs */
@@ -130,13 +136,10 @@ footer a:link, footer a:visited {
 }
 .sidebar h3.archives {
 	background: transparent url(archives.gif) top left no-repeat;
-	margin-top: 15px; 
 }
 .sidebar h3.resources {
 	background: transparent url(resources.gif) top left no-repeat;
-	margin-top: 15px; 
 }
-.sidebar h3.select span, .sidebar h3.archives span, .sidebar h3.resources span { display:none }
 
 .sidebar ul {
 	margin: 0px;

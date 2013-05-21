@@ -112,41 +112,46 @@ header h1 {
 	background: 	transparent url(csszen.jpg) no-repeat top left;
 	width: 			580px;
 	height: 		40px;
-}
-header h1 span {
-	display:		none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 header h2 {
 	background: 	transparent url(beauty.jpg) no-repeat top left;
 	width: 			580px;
 	height: 		169px;
-}
-header h2 span {
-	display:		none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .sidebar h3.select {
 	background: 	transparent url(styles.jpg) no-repeat top left;
 	height: 		39px;
 	margin: 		0;
-}
-.sidebar h3.select span {
-	display:		none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .sidebar h3.archives {
 	background: 	transparent url(archives.jpg) no-repeat top left;
 	height: 		39px;
 	margin: 		0;
-}
-.sidebar h3.archives span {
-	display:		none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .sidebar h3.resources {
 	background: 	transparent url(resources.jpg) no-repeat top left; 
 	height: 		39px;
 	margin: 		0;
-}
-.sidebar h3.resources span {
-	display:		none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /*  p  _______________________________________________________________________________*/

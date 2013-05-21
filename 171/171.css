@@ -51,9 +51,10 @@ header h1 {
 	width: 332px; 
 	height: 40px; 
 	top:60px;
-	}
-header h1 span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 header h2 { 
@@ -63,9 +64,10 @@ header h2 {
 	width: 80px; 
 	height: 25px; 
 	top:98px;
-	}
-header h2 span {
-	display: none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 h3	{
@@ -145,9 +147,10 @@ p:nth-child(6)	{
 	margin: 0 0 0 -35px;
 	width: 395px;
 	height: 41px; 
-	}
-.preamble h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 /*	This little guy here ensures that if you want to make the text 100% in mozilla, you will still see the design &*/
@@ -168,9 +171,10 @@ p:nth-child(6)	{
 	margin: 0 0 0 -30px;
 	width: 145px; 
 	height: 41px; 
-	}
-.explanation h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .participation {
@@ -183,9 +187,10 @@ p:nth-child(6)	{
 	margin: 0 0 0 -35px;
 	width: 250px; 
 	height: 41px; 
-	}
-.participation h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .benefits {
@@ -198,9 +203,10 @@ p:nth-child(6)	{
 	margin: 0 0 0 -35px;
 	width: 250px; 
 	height: 41px; 
-	}
-.benefits h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .requirements {
@@ -213,9 +219,10 @@ p:nth-child(6)	{
 	margin: 0 0 0 -35px;
 	width: 250px; 
 	height: 41px; 
-	}
-.requirements h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 footer	{

@@ -48,10 +48,9 @@ abbr{
 }
 p{
  line-height:150%;
-}
-p span{
  display:block;
  padding:0 22px 22px 22px;
+ width: 203px;
 }
 .intro{
  float:left;
@@ -79,10 +78,10 @@ header *{
  margin-top:800px;
  background-image:url(z-e.gif);
  background-position:0 0;
-}
-.preamble p span{
  color:#966;
- text-align:center;
+}
+.preamble p {
+ text-align:center;	
 }
 .preamble p:nth-child(4){
  padding-bottom:30px;
@@ -127,8 +126,6 @@ p{
  text-align:center;
  background-color:#fff;
  height:250px;
-}
-.requirements p:nth-child(6) span{
  margin-right:30px;
 }
 .requirements p:nth-child(6) a{

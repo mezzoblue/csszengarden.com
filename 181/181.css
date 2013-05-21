@@ -208,8 +208,10 @@ footer a:hover {
 	padding: 0;
 }
 
-.sidebar div.design-selection h3 span, .sidebar div.design-archives h3 span, .sidebar div.zen-resources h3 span {
-	display: none;
+.sidebar div.design-selection h3, .sidebar div.design-archives h3, .sidebar div.zen-resources h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .sidebar div.design-selection h3 {	

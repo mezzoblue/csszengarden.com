@@ -39,10 +39,10 @@ header h1 {
 	width: 306px;
 	height: 36px;
 	margin: 0;
-}
 
-header h1 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 header h2 {
@@ -51,10 +51,10 @@ header h2 {
 	width: 306px;
 	height: 24px;
 	margin: 0px;
-}
 
-header h2 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 header {
@@ -91,10 +91,10 @@ header {
 	display: inline;
 	float: left;
 	background-image: url(theroad.jpg);
-}
 
-.preamble h3 span {
-	display:  none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .preamble p {
@@ -120,10 +120,10 @@ header {
 	display: inline;
 	float: left;
 	background-image: url(whatabout.jpg);
-}
 
-.explanation h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .explanation p {
@@ -148,10 +148,10 @@ header {
 	display: inline;
 	float: right;
 	background-image: url(benefits.jpg);
-}
 
-.benefits h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .benefits p {
@@ -178,10 +178,10 @@ header {
 	float: left;
 	background-image: url(participate.jpg);
 	background-repeat: no-repeat;
-}
 
-.participation h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .participation p {
@@ -208,10 +208,10 @@ header {
 	float: left;
 	background-image: url(requirements.jpg);
 	background-repeat: no-repeat;
-}
 
-.requirements h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .requirements p {

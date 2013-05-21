@@ -73,23 +73,25 @@ footer a:hover { text-decoration: underline; }
 
 .supporting .requirements p:nth-child(6) a { color: #ff0705; }
 
-.extra1 { position: absolute; top: 367px; left: 45px; width: 161px; height: 411px; background: url(herLegs.gif) no-repeat 0 0; }
+.extra1 { position: absolute; z-index: 4; top: 367px; left: 45px; width: 161px; height: 411px; background: url(herLegs.gif) no-repeat 0 0; }
 
 .extra2, .extra3, .extra4, .extra5, .extra6 { display: none; }
 
 /* h3 image replacements and icons */
 
-h3 { background-repeat: no-repeat; background-position: 0 15px; }
-
-h3 span { display: block; text-indent: -9999px; }
+h3 { background-repeat: no-repeat; background-position: 0 15px; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .preamble h3 { background-image: url(h3road.gif); }
 
 .preamble { background: url(road.gif) no-repeat 216px 0; }
 
-.explanation h3 { position: relative; background-image: url(h3about.gif); }
+.explanation h3 { position: relative; background-image: url(h3about.gif);  overflow: visible; }
 
-.explanation h3 span { position: absolute; left: -46px; top: 0; width: 46px; height: 38px; background: url(about.gif) no-repeat 0 0;  }
+.explanation h3::before { content: " "; display: block; position: absolute; left: -46px; top: 0; width: 46px; height: 38px; background: url(about.gif) no-repeat 0 0; z-index: 5; }
 
 .participation h3 { background-image: url(h3part.gif); }
 

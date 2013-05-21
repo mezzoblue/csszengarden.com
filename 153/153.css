@@ -58,11 +58,10 @@ header {
 	background:url(logo.jpg) no-repeat;
 	z-index:1;
 	}
-h1 span, h2 span, .preamble h3 span, .supporting .explanation h3 span, .supporting .participation h3 span, .supporting .benefits h3 span, .supporting .requirements h3 span, header span, h3.select span, h3.archives span, h3.resources span {
-	visibility:hidden;
-	}
-h1 span, h2 span {
-	position:absolute;
+h1, h2, .preamble h3, .supporting .explanation h3, .supporting .participation h3, .supporting .benefits h3, .supporting .requirements h3, h3.select, h3.archives, h3.resources {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .summary {
 	margin:0 0 50px 0;

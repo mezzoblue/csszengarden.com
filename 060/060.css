@@ -79,11 +79,12 @@ header h1 {
 	margin-bottom: 0px; 
 	width: 780px; 
 	height: 255px; 
-	}
-header h1 span {	
-	display: none;
 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
+
 header h2 { 
 	background: url(zengardentitle.gif) no-repeat top left; 
 	margin-top: -74px; 
@@ -91,9 +92,9 @@ header h2 {
 	width: 393px; 
 	height: 45px; 
 
-	}
-header h2 span {
-	display:none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .summary {
@@ -174,8 +175,6 @@ footer a:link,  footer a:visited {
 	}
 .sidebar h3.select { 
 	height: 30px;
-	}
-.sidebar h3.select span {
 	font: 16px arial, verdana, sans-serif;
 	letter-spacing: 1px;
 	font-weight: bolder;
@@ -184,24 +183,18 @@ footer a:link,  footer a:visited {
 }
 .sidebar h3.favorites { 
 	height: 30px; 
-	}
-.sidebar h3.favorites span {
 	font-style: normal;
 	text-decoration : underline;
 	color: #CCD8F8;
 	}
 .sidebar h3.archives { 
 	height: 30px; 
-	}
-.sidebar h3.archives span {
 	font-style: normal;
 	text-decoration : underline;
 	color: #CCD8F8;
 	}
 .sidebar h3.resources { 
 	height: 30px; 
-	}
-.sidebar h3.resources span {
 	font-style: normal;
 	text-decoration : underline;
 	color: #CCD8F8;

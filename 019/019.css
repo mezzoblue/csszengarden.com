@@ -57,13 +57,13 @@ header h1 {
 	width: 2300px; 
 	height: 85px;
 	margin-top: 70px;
-	}
-	
-header h1 span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
-header h2 span {
+header h2 {
 	display:none;
 	}
 
@@ -94,10 +94,10 @@ header h2 span {
 	background: transparent url(the_road.jpg) no-repeat top left;  
 	width: 300px; 
 	height: 25px;
-	}
-	
-.preamble h3 span {
-	display: none;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .supporting {
@@ -115,10 +115,10 @@ header h2 span {
 	background: transparent url(so_what.jpg) no-repeat top left;  
 	width: 300px; 
 	height: 25px;
-	}
-	
-.explanation h3 span {
-	display: none;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .participation {
@@ -135,10 +135,10 @@ header h2 span {
 	background: transparent url(participation.jpg) no-repeat top left;  
 	width: 300px; 
 	height: 25px;
-	}
-	
-.participation h3 span {
-	display: none;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .benefits {
@@ -155,10 +155,10 @@ header h2 span {
 	background: transparent url(benefits.jpg) no-repeat top left; 
 	width: 300px;
 	height: 25px;
-	}
-	
-.benefits h3 span {
-	display: none;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .requirements {
@@ -174,10 +174,10 @@ header h2 span {
 	background: transparent url(requirements.jpg) no-repeat top left; 
 	width: 300px;
 	height: 25px;
-	}
-	
-.requirements h3 span {
-	display: none;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .requirements p {
@@ -215,37 +215,30 @@ footer a:link, footer a:visited {
 	background: transparent url(select.jpg) no-repeat top left;  
 	width: 200px; 
 	height: 25px;
-	}
-	
-.sidebar h3.select span {
-	display:none
-	}
-.sidebar h3.favorites { 
-	background: transparent url(favorites.jpg) no-repeat top left; 
-	margin-top: 15px; 
-	width: 200px; 
-	height: 25px; 
-	}
-.sidebar h3.favorites span {
-	display:none
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.archives { 
 	background: transparent url(archives.jpg) no-repeat top left;
 	margin-top: 15px;
 	width: 200px; 
 	height: 25px; 
-	}
-.sidebar h3.archives span {
-	display:none
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.resources { 
 	background: transparent url(resources.jpg) no-repeat top left; 
 	margin-top: 15px; 
 	width: 200px; 
 	height: 25px; 
-	}
-.sidebar h3.resources span {
-	display:none
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 

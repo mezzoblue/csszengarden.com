@@ -177,6 +177,12 @@ li {
 }
 li:hover { background: #DCD5B8; }
 
+.design-selection li {
+	width: 175px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 /* --// the lone class --// */
 p:nth-child(6) { clear: both; }
 

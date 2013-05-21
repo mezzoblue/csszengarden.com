@@ -48,8 +48,11 @@ header h1 {
 	margin-bottom: 12px;
 	background: url(to_header_01.jpg) no-repeat;
 	height: 186px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-header h1 span { display: none; }
 
 /* Above: That's just for dumping the text allowing the backround image in it's containing element to show through*/
 
@@ -61,8 +64,11 @@ header h2 {
 	top: 2px;
 	right: 5px;
 	cursor: text; /* just goofing off */
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-header h2 span { display: none; }
 header { position: relative; }
 .summary {
 	margin: 0px;
@@ -97,7 +103,7 @@ header { position: relative; }
 	text-align: left;
 }
 .preamble p:nth-child(4) { padding-bottom: 0px; }
-div.preamble h3 {
+.preamble h3 {
 	width: 400px;
 	margin: 0px;
 	padding: 0px 0px 0px 34px;
@@ -162,7 +168,7 @@ div.preamble h3 {
 }
 .supporting a:hover { border-bottom: 2px dashed #FFAE00; color: #CCCCCC; }
 .supporting a:active { border-bottom: 2px dashed #333333; background: #5A6269; }
-.supporting div.requirements {
+.supporting .requirements {
 	margin-bottom: 0px;
 	background: #61605F url(bandwidthkiller-alpha.jpg) no-repeat center bottom;
 }
@@ -230,11 +236,13 @@ with a semi-transparent overlay on it.   Oh... I can't wait for true PNG surrpor
 	z-index: 1;
 	left: -2px;
 	height: 23px;
-}
-.sidebar h3 span { margin: 0px; padding: 0px 0px 0px 34px; }
-/*.sidebar span { margin: 0px; padding: 0px; display: block; }*/
 
-div.design-selection a.designer-name {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.design-selection a.designer-name {
 	margin: 0px 0px -15px; /* seemed to have to do that because of the extra &nbsp; in each li item */
 	padding: 0px 15px 0px 0px;
 	display: inline;
@@ -252,19 +260,19 @@ div.design-selection a.designer-name {
  use the background-position to offset it in different divs for the illusion 
  of more than one file without the bandwith loss*/
  
-div.design-selection {
+.design-selection {
 	background: url(to_leftcol_02.jpg) repeat-y -50px -60px;
 	color: #999999;
 }
-div.zen-resources {
+.design-selection h3 {
+	text-indent: 34px;
+}
+.zen-resources {
 	background: url(to_leftcol_02.jpg) no-repeat -5px -20px;
 	text-align: left;
 }
-div.design-archives {
+.design-archives {
 	background: url(to_leftcol_02.jpg) no-repeat -40px -220px;
-}
-div#lfavorites {
-	background: url(to_leftcol_02.jpg) no-repeat -60px -20px;
 }
 /* Bahaaa!  Somebody switched the menus to an unordered list structure, 
 good bye spans! I have to jump back a few 
@@ -287,20 +295,20 @@ steps here and do the lists, I'll try to reorder the css later to make increment
 	background: url(ani2.gif) no-repeat left center;
 	color: #EBEBEB;
 }
-div.design-selection a.designer-name:hover {
+.design-selection a.designer-name:hover {
 	background: none;
 	color: #CCCCCC;
 	font-style: italic;
 	text-decoration: none;
 }
-.sidebar div.zen-resources a {
+.sidebar .zen-resources a {
 	margin: 0px 0px -10px;
 	padding: 0px;
 	display: inline;
 	background: url(none);
 	text-transform: capitalize;
 }
-.sidebar div.zen-resources ul { margin: 0px; padding-left: 15px; text-align: left; }
+.sidebar .zen-resources ul { margin: 0px; padding-left: 15px; text-align: left; }
 /* Stupid IE5, almost made it without a hack, but don't have time figure 
 out how to get rid of extra pixels from the border or even if I can without 
 resorting to a hack.  By the way, this is called the SBMH short for Simple

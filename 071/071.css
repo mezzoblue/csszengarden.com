@@ -36,9 +36,10 @@ header h1 {
 	background: transparent url(logo.gif) left top no-repeat;
 	width: 375px;
 	height: 270px;
-}
-header h1 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 header h2 {
 	padding: 0;
@@ -144,7 +145,12 @@ header h2 {
 	width: 260px;
 	height: 44px;
 }
-header h2 span, .preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span, .sidebar h3 {
+header h2, .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.sidebar h3 {
 	display: none;
 }
 .sidebar ul {

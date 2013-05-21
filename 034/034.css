@@ -51,8 +51,12 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 	height: 75px;
 	margin: 0;
 	padding: 0;
-	background: url(demo.gif) top left no-repeat; }
-.page-wrapper .intro .summary p:first-child span { display: none; }
+	background: url(demo.gif) top left no-repeat;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .page-wrapper .intro .summary p:last-child {
 	margin: 10 0 0 0;
 	padding: 0;
@@ -69,8 +73,12 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 	height: 15px;
 	margin: 0;
 	padding: 0;
-	background: url(road.gif) top left no-repeat; }
-.page-wrapper .intro .preamble h3 span { display: none; }
+	background: url(road.gif) top left no-repeat;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .page-wrapper .intro .preamble p {
 	margin: 0;
 	padding: 5px 10px;
@@ -86,8 +94,13 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 	margin: 0 10px 15px 10px;
 	padding: 0;
 	background: url(textBoxBg.gif) bottom left repeat-y; }
-.page-wrapper .supporting h3 { height: 65px; margin: 0; padding: 0; }
-.page-wrapper .supporting h3 span { display: none; }
+.page-wrapper .supporting h3 {
+	height: 65px; margin: 0; padding: 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .page-wrapper .supporting .explanation h3 { background: url(textBoxHeadExplain.gif) top left no-repeat; }
 .page-wrapper .supporting .participation h3 { background: url(textBoxHeadPart.gif) top left no-repeat; }
 .page-wrapper .supporting .benefits h3 { background: url(textBoxHeadBenefits.gif) top left no-repeat; }
@@ -123,7 +136,11 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 	margin: 0;
 	padding: 5px 0 0 0;
 	background: url(linkTile.gif) top right repeat-y; }
-.page-wrapper .sidebar .wrapper div h3 span { display: none; }
+.page-wrapper .sidebar .wrapper div h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .page-wrapper .sidebar .wrapper .design-selection a { display: block; width: 100%; }
 .page-wrapper .sidebar .wrapper .design-selection a.designer-name { display: inline; width: auto; }

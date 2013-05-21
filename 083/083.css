@@ -1,6 +1,6 @@
-/* css Zen Garden submission 083 - 'Springtime', by BoŽr Attila */
+/* css Zen Garden submission 083 - 'Springtime', by Boër Attila */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-/* All associated graphics copyright 2004, BoŽr Attila */
+/* All associated graphics copyright 2004, Boër Attila */
 /* Added: March 4th, 2004 */
 
 /* IMPORTANT */
@@ -78,9 +78,9 @@ header h1 {
 
 	margin-top:0px;
 
-	}
-header h1 span {
-	display:none
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 { 
 	background: transparent url(flwr.gif) no-repeat top left; 
@@ -93,9 +93,10 @@ header h2 {
 	position:absolute;
 	top:163px;
 	left:647px;
-	}
-header h2 span {
-	display:none;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .summary {
@@ -209,9 +210,9 @@ display:none
 
 
 	float:right;	
+	width:410px;
 	padding-top:50px;
 	padding-bottom:30px;
-	width:580px;
 
 }
 .requirements {
@@ -219,10 +220,9 @@ display:none
 
 
 	float:right;
+	width:410px;
 	padding-top:50px;
 	padding-bottom:30px;
-
-	width:580px;
 
 }
 
@@ -355,7 +355,6 @@ footer a:link, footer a:visited {
 }
 
 
-.design-selection h3 span, .design-archives h3 span, .zen-resources h3 span {display:none;}
 .design-selection h3, .design-archives h3, .zen-resources h3 {display:none;}
 
 .extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {display:none;}

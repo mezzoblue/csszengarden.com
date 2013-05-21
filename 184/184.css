@@ -198,8 +198,10 @@ margin:0;
 padding:0;
 }
 
-header span,.preamble h3 span,.explanation h3 span,.participation h3 span,.benefits h3 span,.requirements h3 span,.design-selection h3 span,.design-archives h3 span,.zen-resources h3 span,.extra3,.extra4,.extra5,.extra6 {
-display:none;
+h1, h2, .preamble h3,.explanation h3,.participation h3,.benefits h3,.requirements h3,.design-selection h3,.design-archives h3,.zen-resources h3 {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .participation h3 {

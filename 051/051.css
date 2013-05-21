@@ -112,9 +112,10 @@ header h1 {
 	color:#000000;  
 	width: 250px; 
 	height: 80px; 
-	}
-header h1 span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 { 
 	background: transparent url("design.gif") no-repeat top left;
@@ -124,9 +125,10 @@ header h2 {
 	position:absolute;
 	left:35px;
 	top:82px;
-	}
-header h2 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .summary {
@@ -167,10 +169,11 @@ html>body .summary p {
 	color:#000000; 
 	width: 250px; 
 	height: 25px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.preamble h3 span {
-	display:none;
-	}	
 		
 .supporting {
 	padding:5px 5px 5px 5px; 
@@ -183,9 +186,10 @@ html>body .summary p {
 	color:#000000;
 	width: 250px; 
 	height: 25px; 
-	}
-.explanation h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .participation h3 { 
@@ -194,9 +198,10 @@ html>body .summary p {
 	color:#000000;
 	width: 250px; 
 	height: 25px; 
-	}
-.participation h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .benefits h3 { 
@@ -205,9 +210,10 @@ html>body .summary p {
 	color:#000000; 
 	width: 250px; 
 	height: 25px; 
-	}
-.benefits h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .requirements h3 { 
@@ -216,21 +222,11 @@ html>body .summary p {
 	color:#000000;
 	width: 250px; 
 	height: 25px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.requirements h3 span {
-	display:none;
-	}
-	
-#favorites h3 { 
-	background: transparent url("favorites.gif") no-repeat top left; 
-	text-align:center;
-	color:#000000;
-	width: 250px; 
-	height: 25px; 
-	}
-#favorites h3 span {
-	display:none;
-	}	
 				
 footer { 
 	text-align: center;
@@ -279,19 +275,10 @@ html>body .sidebar .wrapper
 	margin: 10px 0px 5px 0px; 
 	width: 100px; 
 	height: 20px; 
-	}
-.sidebar h3.select span {
-	display:none
-	}
-.sidebar h3.favorites { 
-	background: transparent url(favorites.gif) no-repeat top left;
-	color:#000000; 
-	margin: 25px 0px 5px 0px; 
-	width: 100px; 
-	height: 20px; 
-	}
-.sidebar h3.favorites span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.archives { 
 	background: transparent url(archives.gif) no-repeat top left;
@@ -299,9 +286,10 @@ html>body .sidebar .wrapper
 	margin: 25px 0px 5px 0px; 
 	width:100px; 
 	height: 20px; 
-	}
-.sidebar h3.archives span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.resources { 
 	background: transparent url(resources.gif) no-repeat top left;
@@ -309,9 +297,10 @@ html>body .sidebar .wrapper
 	margin: 25px 0px 5px 0px; 
 	width:100px; 
 	height: 20px; 
-	}
-.sidebar h3.resources span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .sidebar ul {

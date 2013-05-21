@@ -56,6 +56,7 @@ abbr {
 
 /* structure */
 .page-wrapper {
+	position: relative;
 	background-color: #000;
 	width: 770px;
 	text-align: left;
@@ -68,8 +69,10 @@ abbr {
 	
 	
 /* header */
-h1 span, h2 span {
-	display: none;
+h1, h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 h1 {
 	width: 770px;
@@ -139,10 +142,11 @@ h2 {
 .sidebar h3 {
 	padding-left: 0;
 	background-image: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.sidebar h3 span {
-	display: none;
-}
 .sidebar a, .sidebar a:link {
 	color: #AF4F0A;
 	font-weight: bold;
@@ -228,8 +232,10 @@ footer {
 	left: 0;
 	text-align: center;
 	width: 100%;
+	height: 123px;
 	}
-.extra1 span {
+.extra1::after {
+	content: " ";
 	width: 400px;
 	height: 123px;
 	background: transparent url(granville.jpg) top left no-repeat;
@@ -237,44 +243,35 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 	padding-right: 370px;
-	width: 770px;
-	voice-family: "\"}\""; 
-	voice-family:inherit;
-	width: 400px;
 	}
-html>body .extra1 span {
-	width: 400px;
-}
 .extra2 {
 	position: absolute;
 	top: 41px;
 	left: 0;
 	text-align: center;
 	width: 100%;
+	height: 70px;
 	}
-.extra2 span {
+.extra2::after {
+	content: " ";
 	height: 70px;
 	background: transparent url(falsecreek.jpg) top right no-repeat;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 402px;
-	width: 769px;
-	voice-family: "\"}\""; 
-	voice-family:inherit;
 	width: 367px;
 	}
-html>body .extra2 span {
-	width: 367px;
-} 
 .extra3 {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
+	height: 38px;
 	text-align: center;
 }
-.extra3 span {
+.extra3::after {
+	content: " ";
 	text-align: left;
 	width: 770px;
 	height: 38px;
@@ -291,7 +288,8 @@ html>body .extra2 span {
 	text-align: center;
 }
 /* IE doesn't support PNG transparency. No soup for you. */
-html>body .extra4 span {
+html>body .extra4::after {
+	content: " ";
 	width: 790px;
 	height: 94px;
 	background: transparent url(seal.png) top right no-repeat;

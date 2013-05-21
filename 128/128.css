@@ -84,10 +84,6 @@ abbr {
 	border-bottom: 1px dotted #666;
 	}
 
-.accesskey {
-	text-decoration: underline;
-	}
-
 /* Container Styles */
 
 .page-wrapper {
@@ -120,21 +116,22 @@ header h1, header h2 {
 	border-top: 1px solid #fff;
 	background: #147;
 	}
-
 .summary p:first-child {
 	position: absolute;
 	left: -999em;
 	}
 
 .summary p:last-child {
-	width: 248px !important;
-	width /**/: 276px;
-	height: 28px !important;
-	height /**/: 39px;
+	width: 141px !important;
+	width /**/: 168px;
+	height: 33px !important;
+	height /**/: 44px;
 	color: #6cf;
 	margin: 0;
-	padding: 11px 0 0 27px;
+	padding: 6px 107px 0 27px;
 	border-right: 1px solid #fff;
+	font-size: 11px;
+	line-height: 1.2;
 	}
 
 .summary a:link, .summary a:visited {

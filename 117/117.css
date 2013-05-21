@@ -66,24 +66,26 @@ header h1  {
 	display:     block;
 	margin:      0;
 	width:       300px;
-	height:      276px }
+	height:      276px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
  
- 
-header h1 span { 
- display:none 
- }
   
 header h2  {
 	background: url(h2.gif) no-repeat left top;
 	margin:      0;
 	width:       300px;
-	height:      72px }
- 
- 
-header h2 span { 
- display:none; 
- } 
+	height:      72px;
 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+ 
+ 
 .summary { 
  position: absolute; 
  top: 365px; 
@@ -125,12 +127,13 @@ header h2 span {
 	background: url(roadtoenlightenment.gif) no-repeat left top;
 	margin:      0 0 15px;
 	width:       202px;
-	height:      19px }
+	height:      19px;
 
-  
-.preamble h3 span { 
- display:none; 
- } 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 
 .preamble p { 
  color: #50591b; 
@@ -176,13 +179,13 @@ header h2 span {
 	background: url(sowhat.gif) repeat-y left top;
 	margin:      0 0 15px;
 	width:       173px;
-	height:      19px }
- 
- 
-.explanation h3 span { 
- display:none; 
- } 
+	height:      19px;
 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+ 
 .participation  {
 	background: url(partic-bg.gif) repeat-y left top;
 	display:     block;
@@ -195,12 +198,12 @@ header h2 span {
 	background: url(participation.gif) no-repeat left top;
 	margin:      0 0 15px;
 	width:       99px;
-	height:      18px }
- 
-  
-.participation h3 span { 
- display:none; 
- } 
+	height:      18px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .benefits  {
 	background: url(partic-bg.gif) repeat-y left top;
@@ -214,12 +217,13 @@ header h2 span {
 	background: url(benefits.gif) no-repeat left top;
 	margin:      0 0 15px;
 	width:       99px;
-	height:      18px }
+	height:      18px;
 
- 
-.benefits h3 span { 
- display:none; 
- } 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 
 .requirements  {
 	background: url(requi-bg.gif) no-repeat left bottom;
@@ -233,12 +237,13 @@ header h2 span {
 	background: url(requirements.gif) no-repeat left top;
 	margin:      0 0 15px;
 	width:       99px;
-	height:      18px }
+	height:      18px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
   
- 
-.requirements h3 span { 
- display:none; 
- } 
 
 footer { 
  background: transparent; 
@@ -282,45 +287,23 @@ footer a:hover {
 	background: url(select.gif) no-repeat left top;
 	margin:      0;
 	width:       141px;
-	height:      65px }
- 
+	height:      65px;
 
-.sidebar h3.select span { 
- display:none 
- } 
- 
-.sidebar h3.favorites { 
- background: transparent url(../zengarden-media/h4.gif) no-repeat top left; 
- margin: 25px 0px 5px 0px; 
- width: 60px; 
- height: 18px; 
- } 
- 
-.sidebar h3.favorites span { 
- display:none 
- } 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .sidebar h3.archives  {
 	background: url(archives.gif) no-repeat left top;
 	margin:      0;
 	width:       141px;
-	height:      68px }
+	height:      68px;
 
-  
-.sidebar h3.archives span { 
- display:none 
- } 
-
-.sidebar h3.favorites  {
-	background: url(favorites.gif) no-repeat left top;
-	margin:      0;
-	width:       141px;
-	height:      68px }
-
-  
-.sidebar h3.archives span { 
- display:none 
- } 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .zen-resources  {
 	background:    url(nav-bottom.gif) no-repeat left bottom;
@@ -332,12 +315,13 @@ footer a:hover {
 	background: url(resources.gif) no-repeat left top;
 	margin:      0;
 	width:       141px;
-	height:      68px }
+	height:      68px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
  
- 
-.sidebar h3.resources span { 
- display:none 
- } 
 
 .sidebar ul { 
  margin: 0px; 

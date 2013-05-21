@@ -72,8 +72,12 @@ header h2 {
 	height: 49px;
 	margin: 0px 0px 6px 0px;
 	}
-.summary p:first-child span, header h2 span, header h1 span 
-{ display: none; }
+.summary p:first-child, header h2, header h1 
+{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    }
 
 .summary p:last-child { width: 355px; display: block; }
 
@@ -186,15 +190,19 @@ header h2 {
 	background: transparent url(h3_resources.gif) no-repeat; 
 	}
 
-.preamble h3 span, 
-.explanation h3 span,
-.participation h3 span,
-.benefits h3 span,
-.requirements h3 span,
-.sidebar h3.select span,
-.sidebar h3.archives span,
-.sidebar h3.resources span
-{ display: none; }
+.preamble h3, 
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3,
+.sidebar h3.select,
+.sidebar h3.archives,
+.sidebar h3.resources
+{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    }
 
 
 /*------ footer ---------------------------------------------------------------------*/
@@ -213,7 +221,7 @@ footer a:link, footer a:visited {
 /*------ main images -----------------------------------------------------------------*/
 
 
-.extra1, .extra2, .extra3, .extra3 span, .extra4, .extra5, .extra6, .extra6 span
+.extra1, .extra2, .extra3, .extra3:before, .extra4, .extra5, .extra6, .extra6:before
 { position: absolute;  }
 
 
@@ -242,7 +250,9 @@ footer a:link, footer a:visited {
 	height: 123px;
 	}
 
-.extra3 span { 
+.extra3:before {
+    content: ' ';
+    display: block; 
 	background: url(fish_bottom.gif) no-repeat; 
 	z-index: 3;
 	top: 1000px;
@@ -277,7 +287,9 @@ footer a:link, footer a:visited {
 	background: url(seafloor_bg.jpg) repeat-x left bottom;
 	}
 
-.extra6 span {
+.extra6:before {
+    content: ' ';
+    display: block; 
 	z-index: 2;
 	top: 0px;
 	left: 0px;

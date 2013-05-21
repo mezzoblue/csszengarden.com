@@ -87,7 +87,7 @@ html>body .page-wrapper {
 	width: 712px; /* ie5win fudge ends */
 	}
 
-header h1{
+header h1 {
 	left: 209px;
 	width: 712px;
 	height: 163px;
@@ -95,14 +95,16 @@ header h1{
 	/* border-bottom: 3px solid #CCEDFF; Added to bevel lower edge. Layer orders were failing causing this to break. */
 	margin-top: 0;
 	margin-bottom: 25px;
-	}
-	
-header h1 span, header h2 span, .extra1, .extra3, .extra4, .extra5, .extra6 { 
-	margin: 0;
-	padding: 0;
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
+header h2 {
+	display: none;
+}
+	
 /* Extra Divs - OverView, Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* An overview title for quickSummary. Great idea but couldn't get to work. 
 	It would have sat at the top of the right column. Oh well, next time maybe! */
@@ -187,8 +189,10 @@ header h1 span, header h2 span, .extra1, .extra3, .extra4, .extra5, .extra6 {
 	}
 
 
-.sidebar h3.select span, .sidebar h3.archives span, .sidebar h3.resources span {
-	display:none
+.sidebar h3.select, .sidebar h3.archives, .sidebar h3.resources {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .sidebar ul {

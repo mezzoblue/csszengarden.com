@@ -58,8 +58,10 @@ abbr {
 	}
 
 /* hidden */
-h1 span, h2 span, h3.select span, h3.archives span, h3.resources span, .preamble h3 span, .supporting h3 span {
-	visibility: hidden;
+h1, h2, h3.select, h3.archives, h3.resources, .preamble h3, .supporting h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 	
@@ -194,9 +196,10 @@ footer a:hover {
 	width: 145px;
 	height: 26px;
 	margin: 0;
-	}
-.sidebar h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 /* h3 text-replacing images */
