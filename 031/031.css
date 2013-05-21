@@ -38,16 +38,16 @@ body
 /* hidden text
 --------------------------------- */
 
-h1, h2, h3 {
+h1, h3 {
 	margin: 0;
 	background-repeat: no-repeat;
 	background-position: left top;
-}
-
-h1, h2, h3 {
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
+}
+h2 {
+	display: none;
 }
 
 /* header and summary
