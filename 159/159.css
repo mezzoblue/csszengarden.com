@@ -259,10 +259,12 @@ footer a:hover, footer a:visited {
 /* ********************************
 	Hidden
 ******************************** */
-header h1 span, header h2 span, .summary p:first-child span,
-.preamble h3 span, .explanation h3 span, .participation h3 span, 
-.benefits h3 span, .requirements h3 span, .sidebar h3 span {
-	display:none;
+h1, h2, .summary p:first-child,
+.preamble h3, .explanation h3, .participation h3, 
+.benefits h3, .requirements h3, .sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 

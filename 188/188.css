@@ -1,4 +1,4 @@
-/* css Zen Garden submission 188 - 'Organica Creativa', by Eduardo Cesario, http://www.criaturacreativa.designer-nameom.ar/ */
+/* css Zen Garden submission 188 - 'Organica Creativa', by Eduardo Cesario, http://www.criaturacreativa.com.ar/ */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 /* All associated graphics copyright 2005, Eduardo Cesario */
 /* Added: November 10th, 2005 */
@@ -15,7 +15,7 @@
 /* css Zen Garden "Organica Creativa", by Eduardo Cesario, La Criatura Creativa.
 
 	All images, photos and vector art present on this design, are copyrighted by Eduardo Cesario,
-	La Criatura Creativa. To see more of my work, you can go to http://www.criaturacreativa.designer-nameom.ar
+	La Criatura Creativa. To see more of my work, you can go to http://www.criaturacreativa.com.ar
 	
 */
 
@@ -69,10 +69,8 @@ body {
 	margin-top: 250px;
 	}
 	
-header h1 , header h2 , header span	{
+header h1, header h2	{
 	display: none;
-	height: 5px;
-	background-color: #00CCCC;
 	}
 
 .summary	{
@@ -105,8 +103,10 @@ header h1 , header h2 , header span	{
 	width: 320px;
 	}
 	
-.intro h3 span, .supporting h3 span	{
-		display: none;
+.intro h3, .supporting h3 {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 
 .intro h3	{
@@ -192,8 +192,10 @@ p:nth-child(2), p:nth-child(3), p:nth-child(4)	{
 		color:#CCCCCC;
 			}
 
-.design-selection h3 span, .design-archives h3 span, .zen-resources h3 span	{
-		display: none;
+.design-selection h3 , .design-archives h3, .zen-resources h3	{
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 		}
 		
 .design-selection h3, .design-archives h3, .zen-resources h3	{

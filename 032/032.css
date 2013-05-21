@@ -10,7 +10,12 @@
 
 /* hide this stuff */
 
-header h1 span, header h2 span, header, .summary p:first-child, .preamble h3 span, .explanation h3, .participation h3, .benefits h3, .requirements h3, .design-selection h3, .design-archives h3, .zen-resources h3  {display: none}
+header h1, header h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+header, .summary p:first-child, .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .design-selection h3, .design-archives h3, .zen-resources h3 {display: none;}
 
 /* show this stuff */
 

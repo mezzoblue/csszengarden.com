@@ -43,7 +43,11 @@ h1, h2, h3 {
   background-repeat:no-repeat;
   background-position:left top;
   }
-h1 span, h2 span, h3 span, .summary p:first-child span {display:none;}
+h1, h2, h3, .summary p:first-child {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  }
 
   
 /* header and summary

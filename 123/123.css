@@ -264,7 +264,7 @@ h1, h2 { display: none; }
 	right: 38px;
 }
 
-.sidebar h3.select span
+.sidebar h3.select
 {
 	color: #feffff;
 	font-size: 12px;
@@ -275,9 +275,14 @@ h1, h2 { display: none; }
 	display: block;
 	padding-top: 40px;
 	padding-left: 70px;
+	height: 28px;
 }
 
-.sidebar h3.archives span, .sidebar h3.resources span { display: none; }
+.sidebar h3.archives, .sidebar h3.resources {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .sidebar ul
 {

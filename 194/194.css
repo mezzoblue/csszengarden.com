@@ -51,8 +51,8 @@ a:active {
 /* ~~~ Text Properties ~~~ */
 
 p { 
-	font: 100% Georgia, Palatino, Times, Times New Roman, serif; 
-	line-height: 17px;
+	font: 115% Georgia, Palatino, Times, Times New Roman, serif; 
+	line-height: 1.5;
 	margin-top: 0px; 
 	text-align: justify;
 	padding-left: 14px;
@@ -114,17 +114,11 @@ header {
 	position: absolute;
 	top: 1500px;
 	display: block;
-	width: 126px;
-	height: 420px;
-	z-index: 5;
-	}
-
-.summary p:last-child span {
-	display: block;
-	position: relative;
-	top: 80px;
-	left: 90px;
 	width: 100px;
+	height: 340px;
+	padding: 80px 35px 0 105px;
+	z-index: 5;
+
 	text-align: center;
 	}
 

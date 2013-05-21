@@ -72,8 +72,11 @@ header { display:none }
 	margin: 1.5em 0 1em 0; padding:0;
 	height: 30px;
 	background: url("ttls.gif") 0 0 no-repeat;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.intro h3 span, .supporting h3 span { display:none }
 
 .preamble h3 { margin-top:0; }
 .explanation h3 { background-position: 0 -50px; }
@@ -123,8 +126,11 @@ footer a:hover { color:white; background: #01228D; }
 	margin: 3em 0 1em 27px; padding:0;
 	height: 20px;
 	background: url("ttls2.gif") 0 0 no-repeat;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.sidebar h3 span { display:none }
 .design-selection h3 { margin-top:0; }
 .design-archives h3 { background-position: 0 -50px; }
 .zen-resources h3 { background-position: 0 -100px; }

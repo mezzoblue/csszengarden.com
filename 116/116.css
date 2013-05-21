@@ -43,6 +43,7 @@ a:hover{
 
 h3{
 	color: #af0000;
+	background-color: #fff;
 	font-size: 120%;
 	margin-top: 30px;
 	margin-bottom: 0;
@@ -51,10 +52,6 @@ h3{
 	background-image: url("bullet.gif");
 	background-repeat: no-repeat;
 	background-position: 0 1px;
-}
-
-h3 span{
-	background-color: #fff;
 }
 
 p{
@@ -86,11 +83,9 @@ header h1{
 	height: 91px;
 	background-image: url("header1.gif");
 	margin-bottom: 0;
-}
-header h1 span {
-	display: block;
-	width: 0;
-	height: 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
 	overflow: hidden;
 }
 
@@ -100,12 +95,9 @@ header h2{
 	background-image: url("header2.gif");
 	margin-top: -22px;
 	margin-bottom: 25px;
-}
 
-header h2 span {
-	display: block;
-	width: 0;
-	height: 0;
+	text-indent: 100%;
+	white-space: nowrap;
 	overflow: hidden;
 }
 
@@ -202,10 +194,6 @@ footer{
 	background-image: url("header3.gif");
 	background-repeat: repeat-x;
 	background-position: bottom;
-}
-
-.sidebar h3 span{
-	background: transparent;
 }
 
 .sidebar ul {

@@ -39,9 +39,15 @@ a:hover, a:active {
 
 /* Hiding elements we don't want to see */
 
-h1, h2, h3 span, .sidebar h3.select span, .sidebar h3.archives span, .sidebar h3.resources span, .extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {
+h1, h2, .extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {
 	display: none;
 }
+h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;	
+}
+
 
 /* Specific Divs */
 
@@ -99,6 +105,9 @@ h1, h2, h3 span, .sidebar h3.select span, .sidebar h3.archives span, .sidebar h3
 .preamble { 
 	background:url(preamble.jpg) no-repeat left top;
 	padding:74px 10px 5px 10px;		
+}
+.preamble h3, .supporting h3 {
+	display: none;
 }
 
 .explanation { 

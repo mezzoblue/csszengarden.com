@@ -31,42 +31,70 @@ abbr {text-decoration:underline;border:0px;}
 
 /* STUFF CONTAINED WITHIN THE INTRO DIV */
 header {padding-top:0px;}
-header h1 {width:355px;height:100px;}
-header h1 span {display:none;}
-header h2 {width:355px;height:120px;}
-header h2 span {display:none;}
+header h1 {width:355px;height:100px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+header h2 {width:355px;height:120px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .summary {margin-left:100px;text-align:right;margin-right:10px;margin-top:5px;}
 .summary p {text-align:right;}
 .preamble {padding:10px;padding-top:0px;margin:0px;clear:left;}
-.preamble h3 {background:url(enlightenment.gif) top left no-repeat;width:278px;height:36px;}
-.preamble h3 span {display:none;}
+.preamble h3 {background:url(enlightenment.gif) top left no-repeat;width:278px;height:36px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 
-/* STUFF CONTAINED WITHIN THE STUPPORTING TEXT DIV */
+/* STUFF CONTAINED WITHIN THE SUPPORTING TEXT DIV */
 .explanation {padding:10px;}
-.explanation h3 {background:url(about.gif) top left no-repeat;width:278px;height:36px;margin-top:5px;}
-.explanation h3 span {display:none;}
+.explanation h3 {background:url(about.gif) top left no-repeat;width:278px;height:36px;margin-top:5px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .participation {padding:10px;}
-.participation h3 {background:url(participation.gif) top left no-repeat;width:278px;height:36px;margin-top:5px;}
-.participation h3 span {display:none;}
+.participation h3 {background:url(participation.gif) top left no-repeat;width:278px;height:36px;margin-top:5px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .benefits {padding:10px;}
-.benefits h3 {background:url(benefits.gif) top left no-repeat;width:278px;height:36px;margin-top:5px;}
-.benefits h3 span {display:none;}
+.benefits h3 {background:url(benefits.gif) top left no-repeat;width:278px;height:36px;margin-top:5px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .requirements {padding:10px;}
-.requirements h3 {background:url(requirements.gif) top left no-repeat;width:278px;height:36px;margin-top:5px;}
-.requirements h3 span {display:none;}
+.requirements h3 {background:url(requirements.gif) top left no-repeat;width:278px;height:36px;margin-top:5px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 footer {text-align:right;text-transform:uppercase;font-size:0.8em;line-height:1em;border-top:5px solid #000000;margin:0px;padding:10px;}
 
 
 /* STUFF CONTAINED WITHIN THE LINKLIST DIV */
-.sidebar h3.select {background:url(h3.gif) no-repeat bottom left;width:139px;height:39px;}
-.sidebar h3.select span {display:none}
-.sidebar h3.favorites {background:url(h4.gif) no-repeat bottom left;width:139px;height:39px;}
-.sidebar h3.favorites span {display:none}
-.sidebar h3.archives {background:url(h5.gif) no-repeat bottom left;width:139px;height:39px;}
-.sidebar h3.archives span {display:none}
-.sidebar h3.resources {background:url(h6.gif) no-repeat bottom left;width:139px;height:39px;}
-.sidebar h3.resources span {display:none}
+.sidebar h3.select {background:url(h3.gif) no-repeat bottom left;width:139px;height:39px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.sidebar h3.archives {background:url(h5.gif) no-repeat bottom left;width:139px;height:39px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.sidebar h3.resources {background:url(h6.gif) no-repeat bottom left;width:139px;height:39px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .sidebar ul {margin:0px;padding:0px;}
 .sidebar li {list-style-type:none;display:block;padding:1px;margin:0px;}
 .sidebar li a {color:#000000;}

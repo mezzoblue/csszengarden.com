@@ -73,9 +73,10 @@ header h1 {
 	width: 192px;
 	height: 70px;
 	margin: 0px 0px 0px 448px;;
-}
-header h1 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 header h2 {
 	background: transparent url(beauty.gif) top left no-repeat;
@@ -84,9 +85,10 @@ header h2 {
 	margin: 0px 90px 0px 477px;
 	position: relative;
 	top: -17px;
-}
-header h2 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .preamble {
@@ -184,9 +186,10 @@ header h2 span {
 	margin-right: auto;
 	margin-left: 0px;
 	margin-top: 25px;
-}
-.sidebar h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .sidebar h3.select {
 	width: 113px;
@@ -246,7 +249,8 @@ footer a:hover {
 	left: 0px;
 	width: 100%;	
 }
-.extra1 span {
+.extra1::before {
+	content: " ";
 	display: block;
 	width: 600px;
 	height: 82px;
