@@ -57,7 +57,7 @@ header {
 	margin-top: 40px;
 	}
 	
-	header h1 { 
+	h1 { 
 		background: transparent url(pageheader-bg.png) no-repeat; 
 		margin-left: 40px;
 		width: 240px; 
@@ -68,10 +68,8 @@ header {
 		overflow: hidden;
 		}
 
-	header h2 {
-		text-indent: 100%;
-		white-space: nowrap;
-		overflow: hidden;
+	h2 {
+		display: none;
 		}
 		
 .summary {
@@ -233,7 +231,7 @@ footer {
 		}
 
 	.sidebar h3.select {
-		text-indent: 100%;
+		text-indent: 200%;
 		white-space: nowrap;
 		overflow: hidden;
 		}
@@ -244,7 +242,7 @@ footer {
 		height: 50px;
 		margin-bottom: 10px;
 
-		text-indent: 100%;
+		text-indent: 200%;
 		white-space: nowrap;
 		overflow: hidden;
 		}
@@ -255,7 +253,7 @@ footer {
 		height: 50px;
 		margin-bottom: 10px;
 
-		text-indent: 100%;
+		text-indent: 200%;
 		white-space: nowrap;
 		overflow: hidden;
 		}
