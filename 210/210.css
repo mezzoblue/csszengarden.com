@@ -42,9 +42,7 @@ li { text-decoration: none; list-style-type: none; display: block; color: #fff; 
 header { margin-bottom: 20px; float: left;	}
 
 
-/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-
-header h1 { 
+h1 { 
 	background: transparent url(h1.gif) no-repeat top left;  
 	width: 355px; 
 	height: 29px; 
@@ -52,7 +50,7 @@ header h1 {
 	margin: 0px;
 	}
 
-header h2 { 
+h2 { 
 	background: transparent url(h2.gif) no-repeat top left; 
 	width: 167px; 
 	height: 12px; 
@@ -72,7 +70,7 @@ header h2 {
 	height: 49px;
 	margin: 0px 0px 6px 0px;
 	}
-.summary p:first-child, header h2, header h1 {
+.summary p:first-child, h2, h1 {
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -196,7 +194,7 @@ header h2 {
 .requirements h3,
 .sidebar h3.select,
 .sidebar h3.archives,
-.sidebar h3.h3_resources {
+.sidebar h3.resources {
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;

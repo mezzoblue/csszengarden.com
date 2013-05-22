@@ -1,22 +1,11 @@
-/* css Zen Garden default style - 'Tranquille' by Dave Shea - http://www.mezzoblue.com/ */
+/* css Zen Garden style - 'Buddha' by Daniel Leroux - http://www.danleroux.com/ */
 /* css released under Zen Garden License - http://www.mezzoblue.com/zengarden/license/  */
-/* All associated graphics copyright 2003, Dave Shea */
+/* All associated graphics copyright 2003, Daniel Leroux */
 
 
 /* IMPORTANT */
 /* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
 /* Please view the Zen Garden License for more information. http://www.mezzoblue.com/zengarden/license/ */
-
-
-/* The Zen Garden default was the first I put together, and almost didn't make the cut. I briefly flirted with using
-    'Salmon Cream Cheese' as the main style for the Garden, but switched back to this one before launch.
-
-    All graphics in this design were illustrated by me in Photoshop. Google Image Search provided inspiration for
-    some of the elements. I did a bit of research on Kanji to come up with the characters on the top left. Anyone who
-    can read that will most likely tell you it makes no sense, but the best I could do was putting together the
-    characters for 'beginning' 'complete' and 'skill' to roughly say something like 'we're breaking fresh ground.'
-
-    It's a stretch. */
 
 
 /* basic elements */
@@ -80,9 +69,10 @@
 		margin: 0px;
 		width: 760px;
 		height: 43px;
-	}
-	header h1 span {
-		display:none
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	header h2 {
 		background: transparent url(sub.gif) no-repeat top right;
@@ -90,9 +80,10 @@
 		height: 42px;
 		margin: 0px;
 		padding:0px;
-	}
-	header h2 span {
-		display:none
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	.summary p:first-child{
 		margin:0px;
@@ -144,8 +135,10 @@
 		background: transparent url(reqh3.gif) no-repeat top left;
 	}
 	
-	.preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span, .design-selection h3 span, #lfavorites h3 span, .design-archives h3 span, .zen-resources h3 span{
-		display:none;
+	.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .design-selection h3, .design-archives h3, .zen-resources h3 {
+		text-indent: 200%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	.preamble p:nth-child(4), .explanation p:nth-child(3), .participation p:nth-child(5), .benefits p:nth-child(2), .requirements p:nth-child(6) {
 		padding-bottom: 20px;

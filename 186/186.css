@@ -70,8 +70,10 @@ header {
 	margin-top:24px;
 	color:#999;
 	}
-h3 span {
-	display:none;
+h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .preamble h3 {
 	width:260px;

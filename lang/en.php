@@ -11,13 +11,21 @@
 	View source is a feature, not a bug. Thanks for your curiosity and
 	interest in participating!
 
-	A few tips on designing for the new and improved csszengarden:
+	Here are the submission guielines for the new and improved csszengarden.com:
 
-	- use classes for styling. don't use ids.
-	- use :first-child, :last-child and :nth-child to get at non-classed elements
+	- CSS3? Of course! Prefix for ALL browsers where necessary.
 	- go responsive; test your layout at multiple screen sizes.
-	- use the Kellum Method for image replacement if needed. http://goo.gl/GXxdI
-	- don't rely on the spans being there. They won't be soon.
+	- your browser testing baseline: IE9+, recent Chrome/Firefox/Safari, and iOS/Android
+	- Graceful degradation is acceptable, and in fact highly encouraged.
+	- use classes for styling. Don't use ids.
+	- web fonts are cool, just make sure you have a license to share the files
+
+	And a few tips on building your CSS file:
+
+	- use :first-child, :last-child and :nth-child to get at non-classed elements
+	- use ::before and ::after to create pseudo-elements for extra styling
+	- use multiple background images to apply as many as you need to any element
+	- use the Kellum Method for image replacement, if still needed. http://goo.gl/GXxdI
 	- don't rely on the extra divs at the bottom. Use ::before and ::after instead.
 
 		",
@@ -56,7 +64,7 @@
 		"requirements-p2" => 'Luckily, designing this way shows how well various browsers have implemented <abbr title="Cascading Style Sheets">CSS</abbr> by now. When sticking to the guidelines you should see fairly consistent results across most modern browsers. Due to the sheer number of user agents on the web these days &#8212; especially when you factor in mobile &#8212; pixel-perfect layouts may not be possible across every platform. That&#8217;s okay, but do test in as many as you can. Your design should work in at least IE9+ and the latest Chrome, Firefox, iOS and Android browsers (run by over 90% of the population).',
 		"requirements-p3" => 'We ask that you submit original artwork. Please respect copyright laws. Please keep objectionable material to a minimum, and try to incorporate unique and interesting visual themes to your work. We&#8217;re well past the point of needing another garden-related design.',
 		"requirements-p4" => 'This is a learning exercise as well as a demonstration. You retain full copyright on your graphics (with limited exceptions, see <a href="http://www.mezzoblue.com/zengarden/submit/guidelines/">submission guidelines</a>), but we ask you release your <abbr title="Cascading Style Sheets">CSS</abbr> under a Creative Commons license identical to the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Zen Garden\'s license information.">one on this site</a> so that others may learn from your work.',
-		"requirements-p5" => 'Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. Now available: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.',
+		"requirements-p5" => 'By <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. See also: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.',
 	);
 
 	// if you decide to localize any of these, keep the link text <4 characters if possible

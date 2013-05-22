@@ -12,7 +12,7 @@
 
 
 /* CSS Document */
-#css-zen-garden{
+body {
 		font-family:Georgia, Garamond, serif;
 		font-size:12px;
 		color:#000001;
@@ -21,16 +21,16 @@
 		background-position:top left;
 		background-repeat:repeat-x;		
 		}
-#css-zen-garden H1	{
+h1	{
 	margin:0px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
-#css-zen-garden H1	SPAN	{
-			display:none;
-			}	
-			
-#css-zen-garden H2		{
-			margin:50px 0px 0px 0px;
+h2		{
+			margin:30px 0px 0px 0px;
 			padding:25px 0px 0px 0px;
 			height:75px;
 			text-align:center;
@@ -38,7 +38,7 @@
 			
 			}
 			
-#css-zen-garden H3	{
+h3	{
 	color:#4A0000;
 	padding:30px 0px 0px 42px;
 	margin:10px 0px 0px 0px;
@@ -46,22 +46,22 @@
 	font-size:16px;
 	text-transform:uppercase;
 	}			
-#css-zen-garden H3:first-letter	{font-size:2px;}	
-#css-zen-garden P	{
+h3:first-letter	{font-size:2px;}	
+p	{
 	margin:0px;
 	}		
-#css-zen-garden A	{
+a	{
 	color:#960000;	
 	text-decoration:none;
 	font-weight:bold;
 	}			
-#css-zen-garden A:HOVER	{
+a:hover	{
 	text-decoration:underline;
 	}		
 	
 	
 	
-#css-zen-garden abbr	{
+abbr	{
 		text-decoration:overline;		
 		color:#9A7339;
 		}	
@@ -146,6 +146,10 @@
 				margin:0px 0px 0px 10px;
 				padding:0px;
 				text-align:center;
+
+				text-indent: 100%;
+				white-space: nowrap;
+				overflow: hidden;
 				}			
 	
 .sidebar	.select	{
@@ -164,7 +168,6 @@
 				width:100px;
 				height:40px;
 				}											
-.sidebar H3 SPAN	{display:none;}				
 				
 .sidebar	A	{
 				color:#9C5600;				
@@ -190,8 +193,7 @@
 .zen-resources	{
 	background:URL("menu_droite_fd_bottom.jpg") bottom left no-repeat;
 	margin:0 0 0 0;
-	height:200px;
-	
+	padding: 0 0 20px 0;	
 	}
 
 .requirements	{

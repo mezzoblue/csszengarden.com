@@ -27,8 +27,10 @@ a 		{
 		text-decoration: none;
 }
 
-h3 span 	{
-		display:none;
+h3 	{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 a:hover		{
@@ -52,9 +54,8 @@ header	{
 	 	margin-top:	390px;
 		position:	relative;
 }
-
-header span {
-		display:none;
+header h1, header h2 {
+	display: none;
 }
 
 .summary p:first-child {	
@@ -157,10 +158,10 @@ footer a:hover {
 		margin-top:	25px;
 		height:		45px;
 		left:		-10px;
-}
 
-.participation h3 span {
-		display:	none;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 }
 
 .participation p:nth-child(2) {
@@ -225,8 +226,9 @@ footer a:hover {
 
 .design-selection ul 	{
 		list-style:	none;
-		margin-left:	18px;
-		margin-top:	50px;
+		padding-left: 19px;
+		margin-left: 0;
+		margin-top:	10px;
 }
 
 .design-selection ul li 	{
@@ -256,6 +258,7 @@ footer a:hover {
 
 .design-archives ul, .zen-resources ul {
 		list-style:	none;
-		margin-left:	26px;
-		margin-top:	46px;
+		padding-left: 34px;
+		margin-left: 0;
+		margin-top:	10px;
 }

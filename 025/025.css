@@ -74,9 +74,10 @@ header h1 {
 	width: 396px;
 	height: 171px;
 	background: transparent url(cr-tl.jpg) top right no-repeat;
-}
-header h1 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 header h2 {
 	padding: 0px;
@@ -87,9 +88,10 @@ header h2 {
 	width: 350px;
 	height: 171px;
 	background: transparent url(cr-tr.gif) top right no-repeat;
-}
-header h2 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .summary p:first-child {
@@ -100,9 +102,10 @@ header h2 span {
 	top: 171px;
 	right: 0px;
 	margin: 0px;
-}
-.summary p:first-child span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .summary p:last-child {
 	position: absolute;
@@ -156,8 +159,10 @@ header h2 span {
 	height: 10px;
 	background: transparent url(h_requirements.gif) top left no-repeat;
 }
-.explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
-	display: none;
+.explanation h3, .participation h3, .benefits h3, .requirements h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 footer {
@@ -221,9 +226,10 @@ footer a:hover {
 	margin: 0px 10px 8px 0px;
 	position: relative;
 	left: -20px;
-}
-.design-selection h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .design-selection li {
 	font: normal 10px arial, sans-serif;
@@ -291,9 +297,10 @@ footer a:hover {
 	float: right;
 	background: transparent url(cr-br.png) top right no-repeat;
 	margin: 0px;
-}
-.zen-resources h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .zen-resources ul {
 	padding: 37px 0px 0px 25px;
@@ -331,7 +338,9 @@ footer a:hover {
 	left: 156px;
 	background: transparent url(ani1.gif) top left no-repeat;
 }
-.extra3 span {
+.extra3::after {
+	content: " ";
+	display: block;
 	width: 61px;
 	height: 51px;
 	position: absolute;
@@ -352,7 +361,9 @@ footer a:hover {
 	position: relative;
 	top: -21px;
 }
-.extra5 span {
+.extra5::after {
+	content: " ";
+	display: block;
 	float: right;
 	width: 209px;
 	height: 2px;

@@ -92,9 +92,10 @@ header h1, header h2 {
 }
 .preamble h3 {
 	display:none;
-}
-.preamble h3 span {
-	visibility:hidden;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .preamble p:nth-child(2) {
 	padding-left:30px;
@@ -118,9 +119,10 @@ header h1, header h2 {
 	margin:0;
 	background:no-repeat center;
 	height:25px;	
-}
-.supporting h3 span {
-	visibility:hidden;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .explanation {
 	padding-left:35px;

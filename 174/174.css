@@ -74,10 +74,9 @@ header h1,h2 {
 	height:75px;
 	background:#FFF url(quickSummary_main.gif) no-repeat 251px 0;
 	
-}
-
-.summary p:first-child span{ 
-	display:none; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .summary p:last-child{
@@ -87,11 +86,10 @@ header h1,h2 {
 	width:250px;
 	height:75px;
 	background:url(quickSummary_button.gif) no-repeat top left;
-}
 
-.summary p:last-child span{
-	visibility:hidden;
-	white-space:nowrap;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .summary p:last-child a {

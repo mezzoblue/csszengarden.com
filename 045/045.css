@@ -65,13 +65,7 @@ a:hover, a:active {
 	float: left;
 }
 
-header h1 span {
-	display:none
-}
-
-header h2 span {
-	display:none
-}
+header h1, header h2 { display: none; }
 
 .summary {
 	width: 210px;
@@ -96,9 +90,10 @@ header h2 span {
 	width: 210px;
 	height: 19px;
 	margin-left: 5px;
-}
-.preamble h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .preamble p {
@@ -120,10 +115,10 @@ header h2 span {
 	background: transparent url(what_hdr.gif) top left no-repeat;
 	height: 11px;
 	text-align: left;
-}
 
-.explanation h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .supporting p {
@@ -155,28 +150,28 @@ header h2 span {
 .participation h3 {
 	background: transparent url(part_hdr.gif) top left no-repeat;
 	height: 11px;
-}
 
-.participation h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .benefits h3 {
 	background: transparent url(ben_hdr.gif) top left no-repeat;
 	height: 11px;
-}
 
-.benefits h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .requirements h3 {
 	background: transparent url(req_hdr.gif) top left no-repeat;
 	height: 13px;
-}
 
-.requirements h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 footer { 
@@ -203,37 +198,28 @@ footer a:link, footer a:visited {
 .design-selection h3 {
 	background: transparent url(sel_des.gif) top left no-repeat;
 	height: 21px;
-}
 
-.design-selection h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .design-archives h3 {
 	background: transparent url(archives.gif) top left no-repeat;
 	height: 18px;
-}
 
-.design-archives h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .zen-resources h3 {
 	background: transparent url(resource.gif) top left no-repeat;
 	height: 11px;
-}
 
-.zen-resources h3 span {
-	display: none;
-}
-
-#lfavorites h3 {
-	background: transparent url(favorites.gif) top left no-repeat;
-	height: 21px;
-}
-
-#lfavorites h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .sidebar li {

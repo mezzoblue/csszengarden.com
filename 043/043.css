@@ -165,29 +165,6 @@ html>body .extra3 {
 	height: 478px;
 }
 
-	.extra3 span {
-		position: absolute;
-
-		top: 0px;
-		left: 0px;
-		right: 0px;
-
-		margin-bottom: 471px;
-
-		color: #fff;
-
-		background: #38332F url(back-top2-span.gif) top left repeat-x;
-
-		height: 7px;
-		voice-family: "\"}\"";
-		voice-family:inherit;
-		height:7px;
-	}
-
-	html>body .extra3 span {
-		height: 7px;
-	}
-
 header {
 	position: absolute;
 	top: 33px;
@@ -284,9 +261,11 @@ header {
 		border-bottom: 1px solid #5F705E;
 
 		background: transparent url(header-enlighten.gif) no-repeat top left;
-	}
 
-	.intro h3 span {display: none;}
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
 
 /******************************************************************* supportingtext section */
 .supporting {
@@ -334,9 +313,11 @@ header {
 		margin-right: 0px;
 
 		border-bottom: 1px solid #5F705E;
-	}
 
-	.supporting h3 span {display: none;}
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
 
 	.explanation h3 {
 		background: transparent url(header-sowhat.gif) no-repeat top left;
@@ -447,18 +428,11 @@ html>body .sidebar {
 		height: 14px;
 
 		background: transparent url(header-select.gif) no-repeat top left;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
-		.sidebar h3.select span {display:none;}
-
-	h3.favorites {
-		text-align: left;
-
-		width: 100%;
-		height: 14px;
-
-		background: transparent url(header-favorites.gif) no-repeat top left;
-	}
-		.sidebar h3.favorites span {display:none;}
 
 	h3.archives {
 		text-align: left;
@@ -467,8 +441,11 @@ html>body .sidebar {
 		height: 14px;
 
 		background: transparent url(header-archives.gif) no-repeat top left;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
-		.sidebar h3.archives span {display:none;}
 
 		.design-archives ul>li {
 			margin-bottom: 0px;
@@ -517,8 +494,11 @@ html>body .sidebar {
 		height: 14px;
 
 		background: transparent url(header-resources.gif) no-repeat top left;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
-		.sidebar h3.resources span {display:none;}
 
 	.sidebar ul {
 		margin-top: 0px;

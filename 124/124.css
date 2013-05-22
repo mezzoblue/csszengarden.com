@@ -79,9 +79,10 @@ header h1 {
 	margin-bottom: 16px;
 	width: 192px; 
 	height: 22px;
-	}
-header h1 span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 { 
 	background: transparent url(h2.gif) no-repeat top left; 
@@ -90,9 +91,10 @@ header h2 {
 	margin-top: 0px;
 	width: 372px; 
 	height: 33px; 
-	}
-header h2 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 /* CONTENT */
@@ -154,36 +156,30 @@ header h2 span {
 	margin: 0px 0px 0px 0px; 
 	width: 150px; 
 	height: 36px;
-	}
-.sidebar h3.select span {
-	display:none
-	}
-.sidebar h3.favorites { 
-	background: transparent url(h3_favorites.gif) no-repeat top left; 
-	margin: 25px 0px 0px 0px;
-	width: 150px; 
-	height: 36px; 	
-	}
-.sidebar h3.favorites span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.archives { 
 	background: transparent url(h3_archives.gif) no-repeat top left; 
 	margin: 25px 0px 0px 0px; 
 	width: 150px; 
 	height: 36px;
-	}
-.sidebar h3.archives span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.resources { 
 	background: transparent url(h3_resources.gif) no-repeat top left; 
 	margin: 25px 0px 0px 0px;
 	width: 150px; 
 	height: 36px; 
-	}
-.sidebar h3.resources span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .sidebar ul {
@@ -229,9 +225,10 @@ footer a:link, footer a:visited {
 h3 { 
 	text-align: left;
 	margin-bottom: 0px; 
-	}
-h3 span { 
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .preamble h3 { 

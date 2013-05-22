@@ -39,7 +39,11 @@ html>body .sidebar { width: 192px; }
 	.design-selection a.designer-name:hover { text-decoration: underline; color: #f00; }
 	h3.select { margin: 0; padding: 0; background: url(select-a-design.jpg) no-repeat; position: absolute; width: 399px; height: 225px; left: 0px; top: -130px; }
 	h3.archives { margin: 0; padding: 0; position: relative; width: 209px; height: 68px; background: url(archives.gif) no-repeat; }
-	h3 span { display: none; }
+	h3 {
+		text-indent: 250%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
 	
 	/* "Archives" Styles */
 	.design-archives li, .zen-resources li { border-bottom: 1px solid #ddd; margin-bottom: 7px; }

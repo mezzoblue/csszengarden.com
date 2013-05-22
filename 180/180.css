@@ -247,15 +247,6 @@ footer a:hover, footer a:active {
 
 /* OTHER STYLES */
 
-h1 span {
-  margin: 0;
-  padding: 0;
+h1, h2 {
   display: none;
-  }
-
-h2 span {
-  margin: 0;
-  padding: 0;
-  display: none;
-  }
-
+}
