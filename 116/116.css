@@ -43,6 +43,7 @@ a:hover{
 
 h3{
 	color: #af0000;
+	background-color: #fff;
 	font-size: 120%;
 	margin-top: 30px;
 	margin-bottom: 0;
@@ -51,10 +52,6 @@ h3{
 	background-image: url("bullet.gif");
 	background-repeat: no-repeat;
 	background-position: 0 1px;
-}
-
-h3 span{
-	background-color: #fff;
 }
 
 p{
@@ -86,11 +83,9 @@ header h1{
 	height: 91px;
 	background-image: url("header1.gif");
 	margin-bottom: 0;
-}
-header h1 span {
-	display: block;
-	width: 0;
-	height: 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
 	overflow: hidden;
 }
 
@@ -100,12 +95,9 @@ header h2{
 	background-image: url("header2.gif");
 	margin-top: -22px;
 	margin-bottom: 25px;
-}
 
-header h2 span {
-	display: block;
-	width: 0;
-	height: 0;
+	text-indent: 100%;
+	white-space: nowrap;
 	overflow: hidden;
 }
 
@@ -117,7 +109,7 @@ header h2 span {
 	font-size: 110%;
 }
 
-.summary .p1{
+.summary p:first-child{
 	position: relative;
 	padding: 29px 20px 0 20px;
 	background-color: #AF0000;
@@ -126,7 +118,7 @@ header h2 span {
 	background-repeat: no-repeat;
 }
 
-.summary .p2{
+.summary p:last-child{
 	position: relative;
 	padding: 0 20px 25px 20px;
 	background: #AF0000 url("qsp2.gif") no-repeat bottom left ;
@@ -165,7 +157,7 @@ header h2 span {
 	width: 650px;
 }
 
-.requirements .p5{
+.requirements p:nth-child(6){
 	font-size: 80%;
 	margin: 10px;
 }
@@ -202,10 +194,6 @@ footer{
 	background-image: url("header3.gif");
 	background-repeat: repeat-x;
 	background-position: bottom;
-}
-
-.sidebar h3 span{
-	background: transparent;
 }
 
 .sidebar ul {

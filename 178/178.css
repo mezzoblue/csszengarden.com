@@ -54,55 +54,59 @@ h3{
 }
 
 /* Start layout rules */
-.preamble h3 span{
-	display: none;
-}
-
 .preamble h3{
 	background: url(01.gif);
 	width: 380px;
 	height: 72px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /* Images replacement group */
-.explanation h3 span{
-	display: none;
-}
-
 .explanation h3{
 	background: url(02.gif);
 	width: 380px;
 	height: 60px;
-}
 
-.participation h3 span{
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .participation h3{
 	background: url(03.gif);
 	width: 380px;
 	height: 60px;
-}
 
-.benefits h3 span{
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .benefits h3{
 	background: url(04.gif);
 	width: 380px;
 	height: 60px;
-}
 
-.requirements h3 span{
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .requirements h3{
 	background: url(05.gif);
 	width: 380px;
 	height: 60px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /* Container */
@@ -134,7 +138,12 @@ header{
 	height: 356px;
 }
 
-header h1 span,header h2 span,.summary .p1 span{
+h1, h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.summary p:first-child {
 	display: none;
 }
 

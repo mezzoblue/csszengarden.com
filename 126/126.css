@@ -34,7 +34,7 @@ header {
 	left:296px;
 	width:246px;
 	height:118px;}
-.summary p.p2 {
+.summary p:last-child {
 	position:absolute;
 	top:-28px;
 	left:324px;
@@ -48,7 +48,7 @@ header {
 	position:relative;
 	/*\*/left:185px;
 	margin-left:0;/**/}
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	position:absolute;
 	top:35px;
 	left:-170px;
@@ -74,9 +74,9 @@ body {background:url(masthead.jpg) repeat-x;}
 .intro {background:url(logo-on-sunburst.jpg) no-repeat;}
 header {background:url(PoorRichard.jpg) no-repeat;}
 .summary {background:url(quickSummary.gif) no-repeat;}
-.summary p.p2 {background:url(serial.gif) no-repeat;}
+.summary p:last-child {background:url(serial.gif) no-repeat;}
 .preamble h3 {background:url(preamble-h3.gif) no-repeat;}
-.preamble p.p1 {background:url(preamble-p1.gif) no-repeat;}
+.preamble p:nth-child(2) {background:url(preamble-p1.gif) no-repeat;}
 .explanation h3 {background:url(explanation-h3.gif) no-repeat;}
 .participation h3 {background:url(participation-h3.gif) no-repeat;}
 .benefits h3 {background:url(benefits-h3.gif) no-repeat;}
@@ -96,8 +96,12 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, dl, dt, dd {
 	padding:0;
 	list-style-type:none;}
 h3 {overflow:hidden;}
-h3 span, .preamble p.p1 span  {visibility:hidden;}
-h1, h2, .summary p.p1{
+h3, .preamble p:nth-child(2)  {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+h1, h2, .summary p:first-child{
 	position:absolute;
 	top:-500px;}
 p {
@@ -113,7 +117,7 @@ a:hover {
 a:visited {
 	text-decoration:underline;
 	color:#6C7A70;}
-.summary p.p2 {
+.summary p:last-child {
 	line-height:normal;
 	text-indent:0;
 	text-align:left;
@@ -125,7 +129,7 @@ a:visited {
 	voice-family:inherit;
 	font-size:12px;}
 .supporting p {margin:5px 0;}
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	height:0;
 	padding-top:200px;
 	width:155px;}

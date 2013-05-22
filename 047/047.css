@@ -60,7 +60,11 @@ a:hover {
 }
 
 /* top left corner image of big grey stripe */
-.extra1 span{
+.extra2 {
+	position: absolute;
+	z-index: 1;
+	top: 30px;
+	left: 10px;
 	display: block;
 	background: url(corner.gif) no-repeat left top;
 	width: 360px;
@@ -100,12 +104,12 @@ header {
 	height: 19px;
 	width: 216px;
 	margin: 0 0 8px 0;	
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
-.preamble h3 span {
-	display: none;	
-	}
-
 .summary  {
 	position: absolute;
 	left: 52px;
@@ -117,7 +121,7 @@ header {
 	line-height: 2em;
 }
 
-.summary  p.p2{	
+.summary  p:nth-child(3){	
 	padding-top: 10px;
 }
 
@@ -136,11 +140,14 @@ header {
 .supporting h3 {
 	font-size: 13px;
 	color: #7fbb09;
-	border-bottom: 1px solid #ccc;
-	margin: 1.6em 0 0.8em 0;
-}
-.supporting h3 span {
 	border-bottom: 5px solid #ccc;
+	margin: 1.6em 0 0 0;
+	display: inline-block;
+}
+.supporting h3 + p {
+	border-top: 1px solid #ccc;
+	padding-top: 1em;
+	margin-top: -0.4em;
 }
 
 footer {

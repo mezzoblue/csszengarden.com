@@ -42,9 +42,13 @@ header h1 {
 	width: 750px;
 	height: 404px;
 	margin: 0;
+
+	text-indent: 300%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-header h1 span, header h2, .summary p.p1 {
+header h2, .summary p:first-child {
 	display: none;
 }
 
@@ -55,8 +59,10 @@ header h1 span, header h2, .summary p.p1 {
 	margin: 0;
 }
 
-.preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
-	display: none;
+h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .explanation h3 {
@@ -112,7 +118,7 @@ footer a:hover {
 	text-align: justify;
 }
 
-.summary p.p2 {
+.summary p:last-child {
 	background: url(05.gif) no-repeat right top;
 	padding: 0 40px 0 0;
 	margin: -20px 0 0 0;
@@ -182,20 +188,12 @@ footer a:hover {
 	margin: 0;
 }
 
-.zen-resources h3 span {
-	display: none;
-}
-
 .design-archives h3 {
 	padding: 0;
 	background: url(listh2.gif) no-repeat left bottom;
 	width: 208px;
 	height: 50px;
 	margin: 0;
-}
-
-.design-archives h3 span {
-	display: none;
 }
 
 .design-selection h3 {
@@ -205,8 +203,10 @@ footer a:hover {
 	margin: 0;
 }
 
-.design-selection h3 span {
-	display: none;
+.zen-resources h3, .design-archives h3, .design-selection h3 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .design-selection a.designer-name {

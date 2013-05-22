@@ -72,11 +72,11 @@ ul {
 
 /* CLASS STYLES */
 
-.p1 {
+p:nth-child(2) {
   text-indent: 33px;
   }
 
-.p5 {
+p:nth-child(6) {
   margin-top: 15px;
   width: 300px;
   text-align: left;
@@ -247,15 +247,6 @@ footer a:hover, footer a:active {
 
 /* OTHER STYLES */
 
-h1 span {
-  margin: 0;
-  padding: 0;
+h1, h2 {
   display: none;
-  }
-
-h2 span {
-  margin: 0;
-  padding: 0;
-  display: none;
-  }
-
+}

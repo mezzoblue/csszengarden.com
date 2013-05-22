@@ -90,14 +90,17 @@ a:focus  {
 }
 
 header, 
-header h1,
-header h2,
-.summary .p1,
-.sidebar .wrapper h3 span {
+.summary p:first-child {
 	display: none;
 }
 
-.summary .p2 {
+.sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.summary p:last-child {
 	background: transparent url(images/nav_dl.gif) top left no-repeat;
 	display: block;	
 	font-size: .6em;
@@ -111,8 +114,8 @@ header h2,
 	z-index: 20;
 }
 
-.summary .p2 a:link,
-.summary .p2 a:visited {	
+.summary p:last-child a:link,
+.summary p:last-child a:visited {	
 	background: transparent;
 	color: #E6E3DE;
 	text-decoration: none; 
@@ -177,9 +180,9 @@ header h2,
 	font-weight: normal;
 }
 
-.summary .p2 a:hover,
-.summary .p2 a:active,
-.summary .p2 a:focus, 
+.summary p:last-child a:hover,
+.summary p:last-child a:active,
+.summary p:last-child a:focus, 
 .sidebar .wrapper a:hover, 
 .sidebar .wrapper a:active, 
 .sidebar .wrapper a:focus,

@@ -62,10 +62,11 @@ height:71px;
 width:268px;
 position:relative;
 top:50px;
-left:71px
-}
-header h1 span{
-display:none
+left:71px;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 header h2{
 background:url("thebeauty.jpg") no-repeat;
@@ -73,39 +74,38 @@ height:20px;
 width:299px;
 position:relative;
 top:55px;
-left:57px
-}
-header h2 span{
-display:none
+left:57px;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 .summary{
 position:absolute;
 top:41px;
 padding:0 0 0 380px
 }
-.summary .p1{
+.summary p:first-child{
 margin:10px 81px 0 0;
 font-size:120%
 }
-.summary .p2{
+.summary p:last-child{
 margin:0;
 background:url("bookmark.jpg") no-repeat;
 position:absolute;
 top:-25px;
 left:620px;
-width:81px;
-height:131px
-}
-.summary .p2 span{
+width:61px;
+height:91px;
 display:block;
 padding:20px 10px;
 color:#fff;
 font:11px/18px "Trebuchet MS",Arial,Helvetica,sans-serif
 }
-.summary .p2 a{
+.summary p:last-child a{
 color:#fff
 }
-.summary .p2 a:hover{
+.summary p:last-child a:hover{
 text-decoration:none;
 color:#ccc
 }
@@ -119,10 +119,11 @@ background:url("roadto.png") no-repeat;
 position:relative;
 left:120px;
 height:44px;
-width:212px
-}
-.preamble h3 span{
-display:none
+width:212px;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 .preamble p{
 text-align:left;
@@ -144,10 +145,11 @@ background:url("sowhat.png") no-repeat;
 position:relative;
 left:380px;
 height:45px;
-width:176px
-}
-.explanation h3 span{
-display:none
+width:176px;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 .explanation p{
 text-align:right;
@@ -164,10 +166,11 @@ background:url("participation.png") no-repeat;
 position:relative;
 left:180px;
 height:45px;
-width:157px
-}
-.participation h3 span{
-display:none
+width:157px;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 .participation p{
 text-align:left;
@@ -183,10 +186,11 @@ background:url("benefits.png") no-repeat;
 position:relative;
 left:380px;
 height:47px;
-width:150px
-}
-.benefits h3 span{
-display:none
+width:150px;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 .benefits p{
 text-align:right;
@@ -199,10 +203,11 @@ background:url("requirements.png") no-repeat;
 position:relative;
 left:180px;
 height:46px;
-width:150px
-}
-.requirements h3 span{
-display:none
+width:150px;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 .requirements p{
 text-align:left;
@@ -238,20 +243,22 @@ height:29px;
 background:url("select.png") no-repeat;
 position:relative;
 left:8px;
-top:8px
-}
-.sidebar h3.select span{
-display:none
+top:8px;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 .sidebar h3.archives{
 width:74px;
 height:25px;
 background:url("archives.png") no-repeat;
 position:relative;
-left:8px
-}
-.sidebar h3.archives span{
-display:none
+left:8px;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 .sidebar ul{
 margin:10px 5px 10px 40px;
@@ -280,8 +287,9 @@ margin:30px	20px 50px 25px
 .zen-resources h3.resources{
 width:85px;
 height:22px;
-background:url("resources.png") no-repeat
-}
-.zen-resources h3.resources span{
-display:none
+background:url("resources.png") no-repeat;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }

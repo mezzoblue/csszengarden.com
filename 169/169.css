@@ -81,13 +81,13 @@ header {
 	padding: 0px;
 }
 
-.p1 {
+p:nth-child(2) {
 	text-indent: 0px;
 	padding: 0px;
 	margin: 0px;
 }
 
-.p2, .p3, .p4, .p5 {
+p:nth-child(3), p:nth-child(4), p:nth-child(5), p:nth-child(6) {
 	text-indent: 22px;
 }
 
@@ -95,19 +95,21 @@ h1, h2 {
 	display: none;
 }
 
-h3 span {
-	display: none;
+h3 {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .summary p {
 	display: none;
 }
 
-.summary p.p2 {
+.summary p:last-child {
 	display: block;
-	width: 156px;
+	width: 145px;
 	margin: 0px;
-	padding: 0px;
+	padding: 0 0 0 5px;
 	position: absolute;
 	top: 470px;
 	left: auto;
@@ -136,13 +138,6 @@ h3 span {
 	font-style: italic;
 	border-bottom:  1px none;
 	text-decoration: none;
-}
-
-.summary span {
-	margin: 0px;
-	padding: 0px;
-	padding-left: 5px;
-	display: block;
 }
 
 .preamble, .explanation, .participation, .benefits, .requirements {
@@ -338,7 +333,7 @@ footer a:hover {
 	text-transform: uppercase;
 }
 
-.requirements p.p5 {
+.requirements p:nth-child(6) {
 	position: relative;
 	bottom: -35px;
 	width: 589px;
@@ -349,12 +344,12 @@ footer a:hover {
 	padding: 0px;
 }
 
-.requirements p.p5 a {
+.requirements p:nth-child(6) a {
 	color: #5d5144;
 	text-decoration: none;
 }
 
-.requirements p.p5 a:hover {
+.requirements p:nth-child(6) a:hover {
 	color: #B82A09;
 	text-decoration: none;
 }

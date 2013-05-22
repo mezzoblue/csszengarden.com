@@ -65,9 +65,10 @@ header h1 {
 	width: 257px; 
 	height: 18px; 
 	background: transparent url(hd_zengarden.gif) no-repeat 0 0;
-	}
-header h1 span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 { 
 	padding: 0;  
@@ -75,12 +76,13 @@ header h2 {
 	width: 289px; 
 	height: 70px; 
 	background: transparent url(hd_beauty.gif) no-repeat 0 0;
-	}
-header h2 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
-.summary p.p1 {
+.summary p:first-child {
 	position: absolute;
 	top: 30px;
 	left: 410px;
@@ -90,7 +92,7 @@ header h2 span {
 	text-transform: lowercase;
 	color: #869152;
 }
-.summary p.p2 {
+.summary p:last-child {
 	position: absolute;
 	top: 850px;
 	left: 0;
@@ -113,9 +115,10 @@ header h2 span {
 	background: url(hd_enlighten.gif) no-repeat 0 0;
 	width: 301px;
 	height: 23px;
-}
-.preamble h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .supporting {
@@ -129,9 +132,10 @@ header h2 span {
 	background: url(hd_about.gif) no-repeat 0 0;
 	width: 302px;
 	height: 19px;
-}
-.explanation h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .participation {
 	margin-top: 20px;
@@ -142,9 +146,10 @@ header h2 span {
 	background: transparent url(hd_participation.gif) no-repeat 0 0;
 	width: 140px;
 	height: 23px;
-}
-.participation h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .benefits {
 	margin-top: 20px;
@@ -155,9 +160,10 @@ header h2 span {
 	background: transparent url(hd_benefits.gif) no-repeat 0 0;
 	width: 106px;
 	height: 24px;
-}
-.benefits h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .requirements {
 	margin-top: 20px;
@@ -167,9 +173,10 @@ header h2 span {
 	background: transparent url(hd_requirements.gif) no-repeat 0 0;
 	width: 155px;
 	height: 23px;
-}
-.requirements h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 footer {
@@ -270,19 +277,10 @@ end linklist WITH #lfavorites */
 	width: 96px;
 	height: 12px; 
 	border: 0;
-}
-.sidebar h3.select span {
-	display:none
-}
-.sidebar h3.favorites { 
-	background: url(hd_favorites.gif);
-	margin: 0; 
-	width: 58px;
-	height: 10px; 
-	border: 0;
-}
-.sidebar h3.favorites span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .sidebar h3.archives { 
 	background: url(hd_archives.gif);
@@ -290,9 +288,10 @@ end linklist WITH #lfavorites */
 	width: 53px; 
 	height: 10px;
 	border: 0;
-}
-.sidebar h3.archives span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .sidebar h3.resources { 
 	background: url(hd_resources.gif);
@@ -300,9 +299,10 @@ end linklist WITH #lfavorites */
 	width: 66px;
 	border: 0;
 	height: 10px; 
-}
-.sidebar h3.resources span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .sidebar ul {
 	margin: 0px;

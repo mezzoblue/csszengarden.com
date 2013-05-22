@@ -26,7 +26,7 @@ p {
 	margin-right:5px;
 	}
 
-.p1, .p2 { 
+p:nth-child(2), p:nth-child(3) { 
 	background-image: url(separator.gif);
 	background-position: left bottom; 
  	background-repeat:no-repeat;
@@ -34,12 +34,12 @@ p {
 	margin-left:10px;
 	}
 	
-.p3 { 
+p:nth-child(4) { 
 	padding-bottom:12px;
 	margin-left:10px;
 	}
 
-.p4 {
+p:nth-child(5) {
 	background-image: url(separator.gif);
 	background-position: left bottom; 
 	background-repeat:no-repeat;
@@ -205,7 +205,7 @@ p:first-letter {
 	padding-top:10px;
 	}
 
-header h1, header h1 span, header h2, header h2 span  { 
+header h1, header h2 { 
 		display:none
 		}
 
@@ -234,9 +234,6 @@ header h1, header h1 span, header h2, header h2 span  {
 	
 .sidebar h3.select { 
 	text-align: center;
-	}
-	
-.sidebar h3.select span {
 	font: 12px/18px Verdana, Arial, Helvetica, sans-serif; 
 	font-weight:bold;
 	letter-spacing:0.03em;
@@ -244,7 +241,7 @@ header h1, header h1 span, header h2, header h2 span  {
 	height: 20px;
 	}
 
-.sidebar h3.favorites, .sidebar h3.favorites span { 
+.sidebar h3.favorites { 
 	display:none;
 	}
 		
@@ -299,7 +296,9 @@ header h1, header h1 span, header h2, header h2 span  {
 			
 .sidebar h3.archives, .sidebar h3.resources { 
 	font: 12px Verdana, Arial, Helvetica, sans-serif; 
+	font-weight:bold;
 	letter-spacing:0.03em;
+	padding-top: 40px;
 	margin: 15px 0px 5px 0px; 
 	height: 60px;
 	width: 140px;
@@ -307,14 +306,6 @@ header h1, header h1 span, header h2, header h2 span  {
 	text-align: center;
 	}
 	
-.sidebar h3.archives span, .sidebar h3.resources span {
-	letter-spacing:0.03em;
-	font: 12px Verdana, Arial, Helvetica, sans-serif; 
-	font-weight:bold;
-	text-align: center;
-	width:140px;
-	margin-top:40px;
-	}
 		
 
 .sidebar ul {

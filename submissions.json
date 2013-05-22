@@ -1,18 +1,26 @@
 <?php
 
-  include($SERVER_ROOT . "includes/masterlist.php");
-  header('Content-Type: application/json; charset=utf-8');
+  include($SERVER_ROOT . 'includes/masterlist.php');
+  $callback = isset($_GET['callback']) ? preg_replace('/[^a-z0-9$_]/si', '', $_GET['callback']) : false;
+  header('Content-Type: ' . ($callback ? 'application/javascript' : 'application/json') . ';charset=utf-8');
 
   function jsonify($entry) {
     return array(
-      "submission" => $entry[0],
-      "title" => $entry[1],
-      "author" => $entry[2],
-      "website" => $entry[3]
+      'submission' => $entry[0],
+      'title' => $entry[1],
+      'author' => $entry[2],
+      'website' => $entry[3]
     );
   }
 
-  $jsonDesignList = array_map("jsonify",$designList);
-  print json_encode($jsonDesignList);
+  $jsonDesignList = array_map('jsonify', $designList);
+
+  if ($callback) {
+    echo $callback . '(';
+  }
+  echo json_encode($jsonDesignList);
+  if ($callback) {
+    echo ')';
+  }
 
 ?>

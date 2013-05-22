@@ -70,9 +70,13 @@ header h1 {
 	width: 355px; 
 	height: 201px; 
 	float: left;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-header h1 span,header h2,header h2 span {
+header h2 {
 	display:none;
 }
 
@@ -85,13 +89,13 @@ header h1 span,header h2,header h2 span {
 	border-top:1px solid #ABBC47;
 }
 
-.summary p.p1 {
+.summary p:first-child {
 	font: bold 11px/14px arial,verdana, sans serif;
 	color:#fff; 
 	padding:100px 30px 2px 30px;
 }
 
-.summary p.p2{
+.summary p:last-child{
 	position:absolute;
 	left:0;
 	top:230px;
@@ -113,11 +117,11 @@ footer{
 	text-align:right;
 }
 
-.summary p.p2 a, footer a{
+.summary p:last-child a, footer a{
 	color:#fff;
 }
 
-.summary p.p2 a:hover, footer a:hover{
+.summary p:last-child a:hover, footer a:hover{
 	color:#230;
 	background-color:#fff;
 	text-decoration:none;
@@ -148,11 +152,12 @@ footer{
 	width: 270px; 
 	height: 36px;
 	border-bottom:1px solid #ddd;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.preamble h3 span{
-	display:none
-}
-.preamble p.p1{
+.preamble p:nth-child(2){
 	width: 270px;
 }
 
@@ -183,11 +188,11 @@ p{
 	padding-right: 8px;
 }
 
-.p1{
+p:nth-child(2){
 	margin-top:26px;
 }
 
-.summary .p1{
+.summary p:first-child{
 	margin-top:0;
 }
 
@@ -211,9 +216,10 @@ p{
 	min-width: 200px; 
 	height: 36px;
 	border-bottom:1px solid #ddd;
-}
-.explanation h3 span, .benefits h3 span, .participation h3 span, .requirements h3 span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /* and finally we place the list of links */
@@ -232,7 +238,8 @@ p{
 }
 
 .sidebar .wrapper{
-	padding:0;
+	padding: 0;
+	overflow: hidden;
 }
 
 /* use images for headers */
@@ -252,9 +259,10 @@ h3.select, h3.archives, h3.resources {
 	min-width: 200px; 
 	height: 36px;
 	border-bottom:1px solid #ddd;
-}
-h3.select span, h3.archives span, h3.resources span{
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /* put some style on the lists */

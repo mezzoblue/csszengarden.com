@@ -44,44 +44,39 @@ header{
 
 	color: white;	
 	padding-bottom: 10px;
-	background-image:url(panel_azul_bajo.gif);
-	background-repeat:no-repeat;
-	background-position:bottom;
 }
-.summary p.p1{
-	background-image:url(panel_naranja_medio.gif);
-	width: 161px;
-	min-height: 86px;
+.summary p:first-child{
+	width: 116px;
+	padding: 9px 10px 15px 35px;
 	margin-bottom: 0px;
-	padding-bottom: 0px;
+	background-image:
+		url(panel_naranja_top.gif),
+		url(panel_naranja_medio.gif);
+	background-repeat: 
+		no-repeat,
+		repeat;
+	background-position:
+		0 0,
+		0 0;
 }
-.summary p.p1 span{
-	background-image:url(panel_naranja_top.gif);
-	background-position:top;
-	background-repeat:no-repeat;
-}
-.summary p.p1 span, .summary p.p2 span{
-	margin: 0px;
-	padding-left: 35px;
-	padding-top: 9px;
-	padding-right: 10px;
-	display: block;
-}
-.summary p.p2{
+.summary p:last-child{
 	margin-top: 0px;
-	padding-top: 0px;
 	margin-bottom: 0px;
-	padding-bottom: 0px;
-	background-image:url(panel_azul_medio.gif);
-	width: 161px;
-	min-height: 39px;
-}
-.summary p.p2 span{	
-	padding-top: 24px;
-	background-image:url(panel_naranja_bottom.gif);
-	background-repeat:no-repeat;
-	background-position:top;
+	width: 116px;
+	padding: 26px 10px 	9px 35px;
 	min-height: 24px;
+	background-image:
+		url(panel_naranja_bottom.gif),
+		url(panel_azul_bajo.gif),
+		url(panel_azul_medio.gif);		
+	background-repeat:
+		no-repeat,
+		no-repeat,
+		repeat;
+	background-position:
+		left top,
+		left bottom,
+		0 0;	
 }
 .summary a{
 	color: white;
@@ -91,7 +86,7 @@ header{
 	left: 565px;
 	/*top:600px;*/
 	/*top: 56.5em; /* top for fonts @ 10px */
-	top: 60.6em; /* top for fonts @ 11px */
+	top: 61em; /* top for fonts @ 11px */
 	float:right;
 	width: 159px;
 	background-image:url(panel3_top.gif);
@@ -155,9 +150,12 @@ header h2{	display: none; }
 	margin: 0;
 	padding: 0;
 	width: 558px;
-	height: 38px;
+	height: 37px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.preamble h3 span, .supporting h3 span{ display: none; }
 
 .preamble{
 	margin-top: 6px;

@@ -38,10 +38,15 @@ h1 {
 	height: 272px;
 	padding: 0;
 }
-h1 span, h2, .summary p, h3 span, p, p.p1 span{
+h1, h3, p:nth-child(2) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;	
+}
+h2, .summary p, p {
 	display: none;
 }
-h1, h3, p.p1 {
+h1, h3, p:nth-child(2) {
 	margin:0 auto 8px auto;
 	display: block;
 }
@@ -67,7 +72,7 @@ h3 {
 	width: 289px;
 	height: 41px;
 }
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	background: url(preamble.gif) no-repeat;
 	width: 343px;
 	height: 182px;
@@ -77,7 +82,7 @@ h3 {
 	width: 247px;
 	height: 41px;
 }
-.explanation p.p1 {
+.explanation p:nth-child(2) {
 	background: url(explanation.gif) no-repeat;
 	width: 342px;
 	height: 212px;
@@ -87,7 +92,7 @@ h3 {
 	width: 171px;
 	height: 41px;
 }
-.participation p.p1 {
+.participation p:nth-child(2) {
 	background: url(participation.gif) no-repeat;
 	width: 342px;
 	height: 256px;
@@ -97,7 +102,7 @@ h3 {
 	width: 130px;
 	height: 41px;
 }
-.benefits p.p1 {
+.benefits p:nth-child(2) {
 	background: url(benefits.gif) no-repeat;
 	width: 342px;
 	height: 83px;
@@ -107,12 +112,12 @@ h3 {
 	width: 174px;
 	height: 41px;
 }
-.requirements p.p1 {
+.requirements p:nth-child(2) {
 	background: url(requirements.gif) no-repeat;
 	width: 342px;
 	height: 313px;
 }
-.requirements p.p4 {
+.requirements p:nth-child(5) {
 	display: block;
 	background: url(requirementsend.gif) no-repeat;
 	width: 367px;
@@ -126,8 +131,10 @@ h3 {
 	text-align: center;
 
 }
-.requirements p.p4 span,.requirements p.p5 span {
-	display: none;
+.requirements p:nth-child(5), .requirements p:nth-child(6) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 footer {
 	background-color:#4178E6;

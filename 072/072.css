@@ -65,11 +65,11 @@ h1, h2 {
 	border-width: 0 0 3px 3px;
 	}
 
-.summary .p2 {
+.summary p:last-child {
 	padding-bottom: 10px;
 	border-bottom: 3px double rgb(200,200,200);
 	}
-*>.summary .p2 {
+*>.summary p:last-child {
 	padding-bottom: 0;
 	border-bottom: 0;
 	}

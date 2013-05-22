@@ -47,13 +47,17 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 .page-wrapper .intro header h1, .page-wrapper .intro header h2 { display: none; }
 
 .page-wrapper .intro .summary { margin: 0 20px; padding: 0 0 10px 0; }
-.page-wrapper .intro .summary p.p1 {
+.page-wrapper .intro .summary p:first-child {
 	height: 75px;
 	margin: 0;
 	padding: 0;
-	background: url(demo.gif) top left no-repeat; }
-.page-wrapper .intro .summary p.p1 span { display: none; }
-.page-wrapper .intro .summary p.p2 {
+	background: url(demo.gif) top left no-repeat;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.page-wrapper .intro .summary p:last-child {
 	margin: 10 0 0 0;
 	padding: 0;
 	font-size: 0.7em;
@@ -69,8 +73,12 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 	height: 15px;
 	margin: 0;
 	padding: 0;
-	background: url(road.gif) top left no-repeat; }
-.page-wrapper .intro .preamble h3 span { display: none; }
+	background: url(road.gif) top left no-repeat;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .page-wrapper .intro .preamble p {
 	margin: 0;
 	padding: 5px 10px;
@@ -86,18 +94,23 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 	margin: 0 10px 15px 10px;
 	padding: 0;
 	background: url(textBoxBg.gif) bottom left repeat-y; }
-.page-wrapper .supporting h3 { height: 65px; margin: 0; padding: 0; }
-.page-wrapper .supporting h3 span { display: none; }
+.page-wrapper .supporting h3 {
+	height: 65px; margin: 0; padding: 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .page-wrapper .supporting .explanation h3 { background: url(textBoxHeadExplain.gif) top left no-repeat; }
 .page-wrapper .supporting .participation h3 { background: url(textBoxHeadPart.gif) top left no-repeat; }
 .page-wrapper .supporting .benefits h3 { background: url(textBoxHeadBenefits.gif) top left no-repeat; }
 .page-wrapper .supporting .requirements h3 { background: url(textBoxHeadRequir.gif) top left no-repeat; }
 .page-wrapper .supporting p { margin: 0; padding: 0 10px 10px 15px; font-size: 0.8em; }
-.page-wrapper .supporting p.p1 { margin-top: -35px; padding-right: 75px; }
-.page-wrapper .supporting .explanation p.p2,
-.page-wrapper .supporting .participation p.p4,
-.page-wrapper .supporting .benefits p.p1,
-.page-wrapper .supporting .requirements p.p5 {
+.page-wrapper .supporting p:nth-child(2) { margin-top: -35px; padding-right: 75px; }
+.page-wrapper .supporting .explanation p:nth-child(3),
+.page-wrapper .supporting .participation p:nth-child(5),
+.page-wrapper .supporting .benefits p:nth-child(2),
+.page-wrapper .supporting .requirements p:nth-child(6) {
 	padding-bottom: 25px;
 	background: url(textBoxBottom.gif) bottom left no-repeat; }
 
@@ -123,7 +136,11 @@ a abbr { cursor: help; border-bottom: 1px dotted #fc3; }
 	margin: 0;
 	padding: 5px 0 0 0;
 	background: url(linkTile.gif) top right repeat-y; }
-.page-wrapper .sidebar .wrapper div h3 span { display: none; }
+.page-wrapper .sidebar .wrapper div h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .page-wrapper .sidebar .wrapper .design-selection a { display: block; width: 100%; }
 .page-wrapper .sidebar .wrapper .design-selection a.designer-name { display: inline; width: auto; }

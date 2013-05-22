@@ -66,16 +66,19 @@ a:hover {
 }
 
 /*Hide the textual logo*/
-header h1 span, h2 span {
-	display: none;
+header h1, h2 {
+	margin: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /*Hide quicksummary Text*/
-.summary .p1 span{
+.summary p:first-child {
 	display: none;
 }
 
-.summary .p2 {
+.summary p:last-child {
 	text-transform: uppercase;
 	font-size: 0.8em;
 	background-image: url(quickbg.gif);
@@ -91,24 +94,10 @@ header {
 }
 
 /*Hide for image replacement*/
-.preamble h3 span {
-	display: none;
-}
-
-.explanation h3 span {
-	display: none;
-}
-
-.participation h3 span {
-	display: none;
-}
-
-.benefits h3 span {
-	display: none;
-}
-
-.requirements h3 span {
-	display: none;
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /*End ir*/
@@ -156,8 +145,11 @@ header {
 }
 
 /*Hide text conten*/
-.design-selection .select span {
-	display: none;
+.design-selection .select {
+	width: 100%;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /*2°*/
@@ -167,8 +159,11 @@ header {
 	height: 30px;
 }
 
-.design-archives .archives span {
-	display: none;
+.design-archives .archives {
+	width: 100%;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /*3°*/
@@ -179,8 +174,11 @@ header {
 	margin-left: 15px;
 }
 
-.zen-resources .resources span {
-	display: none;
+.zen-resources .resources {
+	width: 100%;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /*End°*/

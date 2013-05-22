@@ -22,7 +22,7 @@ body a {
 	text-decoration:none;
 	font-weight:bold;
 }
-span {
+p {
 	font: 12px Comic Sans MS, Verdana, sans serif;
 	text-align:center;
 	line-height:100%;
@@ -72,7 +72,7 @@ header {
 	height:491px;
 	background:url(P1PANEL1.jpg) no-repeat black;
 }
-.summary p.p1 span {
+.summary p:first-child {
 	position: absolute;
 	left: 71px;
 	top: 28px;
@@ -80,60 +80,52 @@ header {
 	height: 80px;
 	font-size: 16px;
 }
-.summary p.p2 span {
+.summary p:last-child {
 	position:absolute;
 	left:551px;
 	top:0;
 	font: 9px Arial, Helvetica, sans serif;
 }
-.summary p.p2 span:before {
-	content:"® "
+.summary p:last-child::before {
+	content:"\00A9 "
 }
-.preamble p.p1{
+.preamble p:nth-child(2){
 	position:absolute;
 	left:5px;
 	top:506px;
-	width:366px;
-	height:428px;
+
+	width: 127px;
+	height: 398px;
+
+	padding: 30px 22px 0 217px;
+
 	background:url(P1PANEL2.jpg) no-repeat black;
 }
-.preamble p.p1 span {
-	position: absolute;
-	left: 217px;
-	top: 30px;
-	width: 127px;
-	height: 92px;
-}
-.preamble p.p2{
+
+.preamble p:nth-child(3){
 	position:absolute;
 	left:384px;
 	top:507px;
-	width:370px;
-	height:429px;
+
+	width:160px;
+	height:417px;
+
+	padding: 12px 192px 0 18px;
+
 	background:url(P1PANEL3.jpg) no-repeat black;
 }
-.preamble p.p2 span {
-	position: absolute;
-	left: 18px;
-	top: 12px;
-	width: 160px;
-	height: 104px;
-}
-.preamble p.p3{
+
+.preamble p:nth-child(4){
 	position:absolute;
 	left:4px;
 	top:941px;
-	width:751px;
-	height:421px;
+
+	width:348px;
+	height:417px;
+
+	padding: 5px 398px 0 5px;
+
 	background:url(P1PANEL45.jpg) no-repeat black;
-}
-.preamble p.p3 span {
-	position: absolute;
-	left: 5px;
-	top: 5px;
-	width: 348px;
-	height: 56px;
-	text-align:left;
 }
 
 /*================================================================================
@@ -156,35 +148,28 @@ header {
 	margin-top:100px;
 	background:#EEEACD;
 }
-.explanation p.p1 {
+.explanation p:nth-child(2) {
 	position:absolute;
 	left:3px;
 	top:1px;
-	width:459px;
-	height:509px;
+
+	width:256px;
+	height:500px;
+	padding: 9px 6px 0 197px;
+
 	background:url(P2PANEL1.jpg) no-repeat black;
 }
-.explanation p.p1 span {
-	position: absolute;
-	left: 197px;
-	top: 3px;
-	width: 256px;
-	height: 116px;
-}
-.explanation p.p2 {
+
+.explanation p:nth-child(3) {
 	position:absolute;
 	left:462px;
 	top:12px;
-	width:295px;
-	height:491px;
+
+	width:267px;
+	height:480px;
+	padding: 11px 13px 0 12px;
+
 	background:url(P2PANEL2.jpg) no-repeat black;
-}
-.explanation p.p2 span {
-	position: absolute;
-	left: 10px;
-	top: 7px;
-	width: 272px;
-	height: 128px;
 }
 .participation {
 	position:relative;
@@ -204,9 +189,10 @@ header {
 	background:url(P2PANEL34.jpg) no-repeat black;
 	margin:0;
 	padding:0;
-}
-.participation h3 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .participation p {
 	position:relative;
@@ -218,10 +204,10 @@ header {
 	margin-bottom:0;
 	padding:0;
 }
-.participation p.p1 {
+.participation p:nth-child(2) {
 	margin:0;
 }
-.participation p span {
+.participation p {
 	font: 10px Arial, Helvetica, sans serif;
 	text-align:left;
 	line-height:100%;
@@ -254,19 +240,15 @@ header {
 	background:url(P3PANEL1.jpg) no-repeat black;
 	margin-top:112px;
 }
-.benefits p.p1 {
+.benefits p:nth-child(2) {
 	position:absolute;
 	left:53px;
 	top:418px;
 	width:298px;
 	height:80px;
-	line-height:20%;
 	text-align:center;
 	margin:0;
-}
-.benefits p.p1 span {
 	line-height:100%;
-	text-align:center;
 }
 
 .requirements {
@@ -278,26 +260,30 @@ header {
 	width:440px;
 	height:508px;
 }
+.requirements p {
+	text-align: left;
+}
 .requirements h3 {
 	display:inline;
 	float:right;
 	background:url(sparky.gif) no-repeat;
 	width:190px;
 	height:190px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.requirements h3 span {
-	display:none;
+.requirements p:nth-child(2) {
 }
-.requirements p.p1 {
-}
-.requirements span {
+.requirements p {
 	font: 9pt Arial, Helvetica, sans serif;
 	line-height:140%;
 }
-.requirements p.p1 span {
+.requirements p:nth-child(2) {
 	font-style:italic;
 }
-.requirements > p.p5 {
+.requirements > p:nth-child(6) {
 	display:none; /*this line is shown in the footer for MOSe browsers*/
 }
 /*=========================
@@ -312,7 +298,7 @@ header {
 	left:470px;
 	padding-bottom:25px;
 }
-.sidebar a span {
+.sidebar a {
 	font: 10px Arial Black, Helvetica, Arial, sans serif;
 	text-transform:uppercase;
 	line-height:100%;
@@ -421,6 +407,7 @@ li + li + li + li + li + li + li + li, .design-archives li + li + li {
 footer {
 	padding-top:3px;
 	font:9px Arial, Helvetica, sans serif;
+	text-align: center;
 	display:block;
 	position:relative;
 	height:60px;
@@ -428,10 +415,10 @@ footer {
 }
 /* ah, the foibles of interspersing content with design. But, you know, these are unrealistic restrictions in the real world... */
 footer:before {
-	content:"Approved by the Comics Code of America. Bandwidth graciously donated by DreamFire Studios.";
-}
-footer:after {
-	content:". All images used in this Zen Garden are based on freely available images in the public domain. These images and the accompanying CSS are hereby returned to the public domain, as per the Creative Commons Public Domain Dedication (http://creativecommons.org/licenses/publicdomain/). Build on the past, and free your creativity. Fight for fair and reasonable copyright laws.";
+	display: block;
+	padding-top: 10px;
+	text-align: center;
+	content:"Approved by the Comics Code of America. Bandwidth graciously donated by Media Temple. All images used in this Zen Garden are based on freely available images in the public domain. These images and the accompanying CSS are hereby returned to the public domain, as per the Creative Commons Public Domain Dedication (http://creativecommons.org/licenses/publicdomain/). Build on the past, and free your creativity. Fight for fair and reasonable copyright laws.";
 }
 .extra4 {
 	position:absolute;

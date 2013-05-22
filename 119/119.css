@@ -135,13 +135,11 @@ header h1 {
 
 	float: left;
 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
-header h1 span {
-
-	display:none;
-	background: none;
-}
 
 header h2 { 
 
@@ -157,12 +155,9 @@ header h2 {
 
 	float: right;
 
-	}
-
-header h2 span {
-
-	display:none;
-
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 
@@ -178,7 +173,7 @@ header h2 span {
 	color: #fffdfa;
 }
 
-.summary p.p1 { 
+.summary p:first-child { 
 
 	text-align: left;
 	top: 0px;
@@ -198,7 +193,7 @@ header h2 span {
 	margin-bottom: 20px;
 }
 
-.summary p.p2 {
+.summary p:last-child {
 	width: 230px;
 	font-size: 10px;
 	position: absolute;
@@ -282,26 +277,11 @@ width:230px;
 	margin-right: 0px;
 	margin-left: 0px;
 	height: 100px;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-
-.sidebar h3.select span {
-
-	display:none
-
-	}
-
-.sidebar h3.favorites { 
-
-	background: transparent url(favorites.jpg) 5px -3px  no-repeat;
-	margin: 10px 0px 0px 0px;
-	width:230px; height: 45px;
-}
-
-.sidebar h3.favorites span {
-
-	display:none
-
-	}
 
 .sidebar h3.archives { 
 
@@ -309,13 +289,10 @@ width:230px;
 
 	height: 50px;
 	width:230px; margin: 10px 0px -8px 0px;
-}
 
-.sidebar h3.archives span {
-
-	display:none;
-	background: none;
-	visibility: hidden;
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .sidebar h3.resources { 
@@ -326,13 +303,12 @@ width:230px;
 
 	height: 30px; 
 
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
-.sidebar h3.resources span {
-
-	display:none
-
-	}
 
 
 

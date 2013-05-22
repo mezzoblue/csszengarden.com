@@ -17,7 +17,7 @@ body {
 	
 /* relative font size */
 body, body div, body p, body th,
-body td, body li, body dd, body span {
+body td, body li, body dd {
 	font-size: small;
 	voice-family: "\"}\"";
 	voice-family: inherit;
@@ -27,9 +27,8 @@ html>body, html>body div, html>body p, html>body th,
 html>body td, html>body li, html>body dd {
 	font-size: medium; }
 
-p { line-height: 80%; margin: 5px 0 10px 0; text-align: justify; } 
-	 
-p span { font-size: 70%; }
+p { line-height: 80%; margin: 5px 0 10px 0; text-align: justify; font-size: 70%; }
+html>body p { font-size: 70%; line-height: 1.2; }
 
 a:link { 
 	font-weight: bold; color: #FFD200; }
@@ -63,10 +62,10 @@ header h1, header h2 {
 
 .summary {
 	width: 140px; position: absolute; top: 270px; left: 298px; }
-.summary p.p1 {
+.summary p:first-child {
 	text-indent: -9000px; width: 1px; height: 1px;
 	position: absolute; left: -10px; }
-.summary p.p2 {
+.summary p:last-child {
 	font-weight: bold; }
 
 	 
@@ -146,7 +145,7 @@ div.design-archives ul li, div.zen-resources ul li {
 	margin-bottom: 3px;
 	padding: 2px; background: #63939C; font-size: 10px;
 	font-family: Tahoma, sans-serif; font-weight: normal; }
-div.design-archives span, div.zen-resources span { font-size: 10px; }
+div.design-archives, div.zen-resources { font-size: 10px; }
 div.design-archives ul li a, div.zen-resources ul li a {
 	text-decoration: none; color: #fff; font-weight: normal; }
 div.design-archives ul li a:hover, div.zen-resources ul li a:hover {

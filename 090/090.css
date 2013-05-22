@@ -81,8 +81,11 @@ html>body .preamble {
 	 width:auto;
 	 margin:0;
 	 padding:0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.preamble h3 span {display:none;}
 .preamble p {
      color:#2E3C55;
 	 line-height:16px;
@@ -152,7 +155,11 @@ html>body .preamble {
      background:url(req_h3_bg.gif) no-repeat top left;
 	 height:51px;
 }
-.explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {display:none;}
+.explanation h3, .participation h3, .benefits h3, .requirements h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .supporting a:link, .supporting a:active, .supporting a:visited {
      color:#4f5e77;
 }

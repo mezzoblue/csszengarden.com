@@ -25,14 +25,14 @@ body {
 	margin-left: -390px;
 	width: 780px;
 	clear: both;
-	background: #F5E783 url(images/linklist_back.jpg) repeat-y 100% 0;
+	background: #F5E783 url(linklist_back.jpg) repeat-y 100% 0;
 	border-left: solid 1px #fff;
 	border-right: solid 1px #fff;
 }
 .page-wrapper .intro header {
 	width: 780px;
 	height: 311px;
-	background: url(images/pageheader_p1.jpg) no-repeat 0 0;
+	background: url(pageheader_p1.jpg) no-repeat 0 0;
 }
 .page-wrapper .intro header h1 {
 	display: block;
@@ -40,7 +40,7 @@ body {
 	padding: 0;
 	height: 311px;
 	text-indent: -2000px;
-	background: url(images/pageheader_p2.jpg) no-repeat bottom;
+	background: url(pageheader_p2.jpg) no-repeat bottom;
 }
 .page-wrapper .intro header h2 { display: none; }
 
@@ -65,7 +65,7 @@ footer a {
 	color: #fff;
 }
 footer a:hover {
-	background: url(images/littlearrow.gif) no-repeat top center;
+	background: url(littlearrow.gif) no-repeat top center;
 }
 
 .page-wrapper .sidebar {
@@ -73,7 +73,7 @@ footer a:hover {
 	top: 180px;
 	right: 0;
 	width: 260px;
-	background: url(images/linklist_bevel.jpg) no-repeat 0 0;
+	background: url(linklist_bevel.jpg) no-repeat 0 0;
 }
 .page-wrapper .sidebar .wrapper {
 	padding: 18px 35px 0 23px;
@@ -86,9 +86,9 @@ footer a:hover {
 	height: 19px;
 	text-indent: -2000px;
 }
-.page-wrapper .sidebar h3.select { background: url(images/t_selectadesign.jpg) no-repeat; }
-.page-wrapper .sidebar h3.archives { background: url(images/t_archives.jpg) no-repeat; }
-.page-wrapper .sidebar h3.resources { background: url(images/t_resources.jpg) no-repeat; }
+.page-wrapper .sidebar h3.select { background: url(t_selectadesign.jpg) no-repeat; }
+.page-wrapper .sidebar h3.archives { background: url(t_archives.jpg) no-repeat; }
+.page-wrapper .sidebar h3.resources { background: url(t_resources.jpg) no-repeat; }
 
 .page-wrapper .sidebar ul {
 	margin: 10px 0 20px 20px;
@@ -98,7 +98,7 @@ footer a:hover {
 .page-wrapper .sidebar ul li {
 	margin: 0 0 9px 0;
 	padding: 0 0 0 12px;
-	background: url(images/bluearrow.gif) no-repeat 0 3px;
+	background: url(bluearrow.gif) no-repeat 0 3px;
 	font-size: 10px;
 	color: #fff;
 }
@@ -152,7 +152,7 @@ footer a:hover {
 	text-indent: -2000px;
 	width: 299px;
 	height: 43px;
-	background: url(images/t_theroadtoenlightenment.jpg) no-repeat;
+	background: url(t_theroadtoenlightenment.jpg) no-repeat;
 }
 
 .page-wrapper .preamble p, .page-wrapper .supporting p {
@@ -173,7 +173,7 @@ footer a:hover {
 	text-indent: -2000px;
 	width: 187px;
 	height: 16px;
-	background: url(images/t_sowhatisthisabout.jpg) no-repeat;
+	background: url(t_sowhatisthisabout.jpg) no-repeat;
 }
 .page-wrapper .supporting .participation h3 {
 	margin: 40px 0 6px 42px;
@@ -181,7 +181,7 @@ footer a:hover {
 	text-indent: -2000px;
 	width: 125px;
 	height: 20px;
-	background: url(images/t_participation.jpg) no-repeat;
+	background: url(t_participation.jpg) no-repeat;
 }
 .page-wrapper .supporting .benefits h3 {
 	margin: 40px 0 10px 42px;
@@ -189,7 +189,7 @@ footer a:hover {
 	text-indent: -2000px;
 	width: 125px;
 	height: 16px;
-	background: url(images/t_benefits.jpg) no-repeat;
+	background: url(t_benefits.jpg) no-repeat;
 }
 .page-wrapper .supporting .requirements h3 {
 	margin: 40px 0 6px 42px;
@@ -197,10 +197,10 @@ footer a:hover {
 	text-indent: -2000px;
 	width: 125px;
 	height: 20px;
-	background: url(images/t_requirements.jpg) no-repeat;
+	background: url(t_requirements.jpg) no-repeat;
 }
 
-.page-wrapper .supporting .requirements p.p5 {
+.page-wrapper .supporting .requirements p:nth-child(6) {
 	margin: 40px 0 40px 42px;
 	font-size: 11px;
 	font-style: italic;

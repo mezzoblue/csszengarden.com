@@ -71,17 +71,19 @@ header h1 {
 	height: 176px;
 	margin: 70px 0 0 0;
 	padding: 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }	
-header h1 span {
-	display:none
-	}
 header h2 { 
 	padding: 0; margin: 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-header h2 span {
-	display: none;
-	}
-.summary p.p1 {
+.summary p:first-child {
 	width: 320px;
 	height: 92px;
 	position: absolute;
@@ -92,11 +94,12 @@ header h2 span {
 	color: #FFF; 
 	font-family: arial;
 	background:  url(bg_redbox.gif) no-repeat;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.summary p.p1 span{
-	display: none;
-}
-.summary p.p2{
+.summary p:last-child{
 	display: block;
 	position: absolute;
 	top: 53px;
@@ -118,16 +121,17 @@ header h2 span {
 	height: 47px;
 	margin: 0; padding: 0;
 	border-top: 1px solid white;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }	
-.preamble h3 span {
-	display: none;
-}
 .preamble p {
 	font: italic normal 12px/19px georgia, 'Times New Roman', times, serif; 
 	padding: 0 0 0 3px;
 	width: 270px;
 }
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	margin-top: 10px;
 }
 .supporting {
@@ -146,37 +150,41 @@ header h2 span {
 	width: 469px;
 	height: 32px;
 	margin: 0; padding: 0;
-}
-.explanation h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .participation h3 {
 	background: url(hdr_participation.jpg) no-repeat;
 	width: 469px;
 	height: 32px;
 	margin: 0; padding: 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.participation h3 span {
-	display: none;
-}	
 .benefits h3 {
 	background: url(hdr_benefits.jpg) no-repeat;
 	width: 469px;
 	height: 32px;
 	margin: 0; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.benefits h3 span {
-	display: none;
-}	
 .requirements h3 {
 	background: url(hdr_requirements.jpg) no-repeat;
 	width: 469px;
 	height: 32px;
 	margin: 0; padding: 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.requirements h3 span {
-	display: none;
-}		
 footer { 
 	background: #A2C1B9;
 	border-top: 1px solid white;
@@ -206,12 +214,11 @@ a.designer-name {
 	border-bottom: 1px solid #fff;
 	margin-top: 20px;
 }
-.design-selection h3 span, .design-archives h3 span, .zen-resources h3 span {
+.design-selection h3, .design-archives h3, .zen-resources h3 {
 	display: none;
 }
 .sidebar {
 	margin-top: 50px;
-	clear: both;
 }
 .sidebar .wrapper  ul {
 	padding: 20px 10px 10px 10px;

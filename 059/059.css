@@ -116,11 +116,11 @@ div.summary p{
 margin: 0px 0px 10px 0px;
 }
 
-div.summary p.p1{
+div.summary p:first-child{
 font-weight:bold;
 }
 
-div.summary p.p2{
+div.summary p:last-child{
 text-transform:lowercase;
 margin-bottom:0px;
 padding-bottom:10px;

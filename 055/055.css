@@ -69,17 +69,17 @@ div.summary {
 	height: 169px;
 }
 
-div.summary p.p1 {
+div.summary p:first-child {
 	background: url("quickSum.gif") no-repeat top left;
 	width: 159px;
 	height: 139px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-div.summary p.p1 span {
-	display: none;
-}
-
-div.summary p.p2 {
+div.summary p:last-child {
 	position: absolute;
 	top: 165px;
 	font-size: 10px;    
@@ -107,10 +107,10 @@ div.preamble h3 {
 	padding: 0;
 	height: 26px;
 	background: url(road.gif) no-repeat top left;
-}
 
-div.preamble h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 div.preamble p {
@@ -134,10 +134,10 @@ div.preamble p {
 	padding: 0;
 	width: 409px;
 	height: 26px;
-}
 
-.supporting h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 div.explanation h3 {
@@ -178,11 +178,11 @@ div.requirements h3 {
 	padding: 0;
 	width: 182px;
 	height: 26px;
-}
 
-.sidebar h3 span {
-	display: none;
-} 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 div.design-selection h3 {
 	margin-top: 0px;

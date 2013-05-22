@@ -66,7 +66,7 @@ header h1,h2 {
 	padding:0;
 }
 
-.summary .p1{
+.summary p:first-child{
 	position:absolute;
 	top:0;
 	left:0;
@@ -74,27 +74,25 @@ header h1,h2 {
 	height:75px;
 	background:#FFF url(quickSummary_main.gif) no-repeat 251px 0;
 	
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-.summary .p1 span{ 
-	display:none; 
-}
-
-.summary .p2{
+.summary p:last-child{
 	position:absolute;
 	top:0;
 	left:0;
 	width:250px;
 	height:75px;
 	background:url(quickSummary_button.gif) no-repeat top left;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-.summary .p2 span{
-	visibility:hidden;
-	white-space:nowrap;
-}
-
-.summary .p2 a {
+.summary p:last-child a {
 	width:250px;
 	height:37px;
 	float:right;
@@ -119,7 +117,7 @@ header h1,h2 {
 	padding:0;
 }
 
-.preamble .p1{
+.preamble p:nth-child(2){
 	margin:0;
 	padding:31px 15px 0px 15px;
 }
@@ -128,7 +126,7 @@ header h1,h2 {
 	width:524px;
 }
 
-.explanation .p1, .participation .p1, .requirements .p1{
+.explanation p:nth-child(2), .participation p:nth-child(2), .requirements p:nth-child(2){
 	margin:0;
 	padding:41px 15px 0px 15px;
 }
@@ -143,12 +141,12 @@ header h1,h2 {
 	display:none;
 }
 
-.preamble .p3, .explanation .p2, .participation .p3, .requirements .p5{
+.preamble p:nth-child(4), .explanation p:nth-child(3), .participation p:nth-child(4), .requirements p:nth-child(6){
 	margin:0;
 	padding:10px 15px 7px 15px;
 }
 
-.benefits .p1{
+.benefits p:nth-child(2){
 	margin:0;
 	padding:41px 15px 7px 15px;
 }

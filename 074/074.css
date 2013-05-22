@@ -83,24 +83,16 @@ header {
 	}
 
 header h1 { 
-	margin: 0px;
+	margin: 0 0 21px 0;
 	padding: 0px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-	
-header h1 span {
-	display:none
-	}
-	
+
 header h2 { 
-	
-	width: 340px;
-	height: 40px;
-	padding: 0px;
-	border: 0px solid #000000;
-	margin: 0px;
-	}
-header h2 span {
-	display:none;
+	display: none;
 	}
 
 .summary {

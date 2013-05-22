@@ -72,9 +72,10 @@ header h1 {
 	height: 61px;
 	float: left;
 	margin: 1px 0px 0px 3px;
-	}
-header h1 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 {
 	background: transparent url(/002/h2.gif) no-repeat top left;
@@ -82,9 +83,10 @@ header h2 {
 	height: 28px;
 	float: right;
 	margin: 22px 15px 0px 0px;
-	}
-header h2 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 /* sets up our floating area on the right. Kind of a hack, since there's a physical separation between
@@ -95,7 +97,7 @@ header h2 span {
 .preamble {
 	padding: 0px 40px 0px 40px;
 	}
-.preamble .p3 {
+.preamble p:nth-child(4) {
 	margin-bottom: 0px;
 	}
 .supporting {
@@ -112,7 +114,7 @@ header h2 span {
 	padding-top: 47px;
 	}
 
-.summary .p1 {
+.summary p:first-child {
 	width: 430px;
 	height: 195px;
 	background: transparent url(/002/splash.jpg) top left no-repeat;
@@ -120,11 +122,12 @@ header h2 span {
 	position: absolute;
 	top: 93px;
 	left: 244px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.summary .p1 span {
-	display: none;
-	}
-.summary .p2 {
+.summary p:last-child {
 	font-size: 9px;
 	line-height: 22px;
 	text-align: left;
@@ -136,7 +139,7 @@ header h2 span {
 	margin: 0px 10px 0px 40px;
 	height: 140px;
 	}
-.summary .p2 a:link {	
+.summary p:last-child a:link {	
 	color: #B27F66;
 	}
 
@@ -165,28 +168,41 @@ footer a:hover {
 	padding: 40px 0px 10px 0px;
 	width: 200px;
 	}
-.sidebar .wrapper h3 span {
-	display: none;
-	}
 .sidebar .wrapper h3.select {
 	background: transparent url(/002/h3.gif) no-repeat top left;
 	width: 195px;
 	height: 21px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar .wrapper h3.favorites{
 	background: transparent url(/002/h4.gif) no-repeat top left;
 	width: 195px;
 	height: 21px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar .wrapper h3.archives{
 	background: transparent url(/002/h5.gif) no-repeat top left;
 	width: 195px;
 	height: 21px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar .wrapper h3.resources{
 	background: transparent url(/002/h6.gif) no-repeat top left;
 	width: 195px;
 	height: 21px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar .iL, .sidebar li {
 	font-size:	10px;

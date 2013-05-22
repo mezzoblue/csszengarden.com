@@ -82,10 +82,10 @@ header h1 {
 	height: 83px;
 	margin: 20px 0 0;
 	background-image: url(csszengarden.jpg);
-}
 
-header h1 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 header h2 {
@@ -95,10 +95,10 @@ header h2 {
 	background-position: right;
 	background-repeat: no-repeat;
 	margin-top: -10px;
-}
 
-header h2 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 div.summary {
@@ -113,7 +113,7 @@ div.summary {
 
 /* Have the summary displayed in a single line */
 
-div.summary p.p2, div.summary p.p1 {
+div.summary p:last-child, div.summary p:first-child {
 	display: inline;
 	margin: 0;
 }
@@ -159,10 +159,10 @@ div.preamble h3 {
 	height: 25px;
 	background-image: url(theroad.jpg);
 	margin: 0 0 0.5em;
-}
 
-div.preamble h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 div.preamble p {
@@ -185,10 +185,10 @@ div.explanation h3 {
 	height: 25px;
 	background-image: url(sowhatisthisabout.jpg);
 	margin: 0 0 0.5em;
-}
 
-div.explanation h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 div.explanation p {
@@ -208,10 +208,10 @@ div.participation h3 {
 	height: 25px;
 	background-image: url(participation.jpg);
 	margin: 0 0 0.5em;
-}
 
-div.participation h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 div.participation p {
@@ -231,10 +231,10 @@ div.benefits h3 {
 	height: 25px;
 	background-image: url(benefits.jpg);
 	margin: 0 0 0.5em;
-}
 
-div.benefits h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 div.benefits p {
@@ -254,10 +254,10 @@ div.requirements h3 {
 	height: 25px;
 	background-image: url(requirements.jpg);
 	margin: 0 0 0.5em;
-}
 
-div.requirements h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 div.requirements p {
@@ -321,10 +321,10 @@ div.design-selection h3 {
 	height: 200px;
 	background-image: url(selectadesign.jpg);
 	background-repeat: no-repeat;
-}
 
-div.design-selection h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 div.design-archives {
@@ -340,10 +340,10 @@ div.design-archives h3 {
 	height: 81px;
 	background-image: url(archives.jpg);
 	background-repeat: no-repeat;
-}
 
-div.design-archives h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 div.zen-resources {
@@ -359,10 +359,10 @@ div.zen-resources h3 {
 	height: 95px;
 	background-image: url(ressources.jpg);
 	background-repeat: no-repeat;
-}
 
-div.zen-resources h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /* ...and the footer

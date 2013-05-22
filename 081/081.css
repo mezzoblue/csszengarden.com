@@ -107,7 +107,7 @@ header h1,h2{
 	background: transparent url(quicksumbg.gif) no-repeat;
 	}
 
-.summary p.p1 {
+.summary p:first-child {
 	position: relative;
 	padding: 0px;
 	margin: 0px;
@@ -118,12 +118,12 @@ header h1,h2{
 	line-height: 1.2;
 	}
 
-.summary p.p1:first-letter {
+.summary p:first-child:first-letter {
 	font: bold 18px Verdana, Arial, sans-serif;
 	color: #2F3F56;
 	}
 
-.summary p.p2 {
+.summary p:last-child {
 	position: relative;
 	padding: 0;
 	margin: 10px 0 0 0;
@@ -133,7 +133,7 @@ header h1,h2{
 	color: #FFFFFF;
 	}
 
-.summary p.p2:first-letter {
+.summary p:last-child:first-letter {
 	font: bold 18px Verdana, Arial, sans-serif;
 	color: #2F3F56;
 	}
@@ -160,10 +160,10 @@ header h1,h2{
 	padding:0px;
 	margin: 20px 0px 0px 15px;	
 	display: block;
-	}
 
-.preamble h3 span {
-	display:none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .preamble p {
@@ -227,10 +227,10 @@ header h1,h2{
 	padding:0;
 	margin: 20px 0px 0px 15px;
 	display: block;
-	}
 
-.explanation h3 span{
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .participation {
@@ -265,10 +265,10 @@ header h1,h2{
 	padding:0px;
 	margin: 20px 0px 0px 15px;
 	display: block;
-	}
 
-.participation h3 span{
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .benefits {
@@ -292,10 +292,10 @@ header h1,h2{
 	padding: 0;
 	margin: 20px 0px 0px 15px;
 	display: block;
-	}
 
-.benefits h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .benefits p {
@@ -331,10 +331,10 @@ header h1,h2{
 	padding: 0;
 	margin: 20px 0px 0px 15px;
 	display:block;
-	}
 
-.requirements h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .requirements p {
@@ -461,10 +461,6 @@ footer a {
 	margin: 20px 0 0 40px;
 	}
 
-#lfavorites h3 {
-	background: transparent url(archives.gif) no-repeat;
-	}
-
 .zen-resources h3 {
 	background: transparent url(resources.gif) no-repeat;
 	width: 340px;
@@ -473,8 +469,10 @@ footer a {
 	margin: 20px 0 0 40px;	
 	}
 
-.zen-resources h3 span, .design-archives h3 span, .design-selection h3 span {
-	display: none;
+.zen-resources h3, .design-archives h3, .design-selection h3 {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 

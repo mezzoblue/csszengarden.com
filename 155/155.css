@@ -38,9 +38,10 @@ a:hover{
 h3{
 	margin:0;
 	padding:0;	
-}
-h3 span{
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 abbr{ 
 	border-bottom:1px dotted;
@@ -74,21 +75,22 @@ header h1{
 	text-indent:-2000px;
 }
 header h2,
-.summary .p1{
+.summary p:first-child{
 	display:none;
 }
-.summary .p2{
+.summary p:last-child{
 	margin:0 0 0 16px;
 	padding-left:343px;
 	font-size:6px;
 	height:82px;
 	background:url(quicksummary_back.gif) no-repeat;
 	white-space:no-wrap;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.summary .p2 span{
-	visibility:hidden;
-}
-.summary .p2 a{
+.summary p:last-child a{
 	width:36px;
 	height:20px;
 	float:left;
@@ -97,7 +99,7 @@ header h2,
 	margin:-7px 17px 0 0;
 	padding:0;
 }
-.summary .p2 a:hover{
+.summary p:last-child a:hover{
 	background:none;
 }
 .preamble{

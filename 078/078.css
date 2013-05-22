@@ -87,14 +87,14 @@ header {
 	background: url(introbg.jpg) repeat-y 99px;
 	}
 	
-	.summary p.p1  {
+	.summary p:first-child  {
 	position: relative;
 	left: 210px;
 	width: 530px;
 	margin: 0;
 	}
 	
-	.summary p.p2  {
+	.summary p:last-child  {
 	position: relative;
 	left: 210px;
 	width: 345px;
@@ -113,10 +113,10 @@ header {
 	width: 758px;
 	height: 25px;
 	background: transparent url(header_explanation.png) no-repeat;
-	}
-	
-	.supporting h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 	.supporting p {
@@ -140,10 +140,10 @@ header {
 	width: 750px;
 	height: 25px;
 	background: transparent url(header_enlightenment.gif) no-repeat;
-	}
-	
-	.preamble h3 span {
-	display: none;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 	.preamble p {
@@ -167,12 +167,12 @@ header {
 	width: 758px;
 	height: 25px;
 	background: transparent url(header_sowhatisthisabout.gif) no-repeat;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-	
-	.explanation h3 span {
-	display: none;
-	}
-	
+		
 	.explanation p {
 	padding: 3px;
 	position: relative;
@@ -194,10 +194,10 @@ header {
 	width: 758px;
 	height: 25px;
 	background: transparent url(header_participation.gif) no-repeat;
-	}
-	
-	.participation h3 span {
-	display: none;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 	.participation p {
@@ -221,10 +221,10 @@ header {
 	width: 758px;
 	height: 25px;
 	background: transparent url(header_benefits.gif) no-repeat;
-	}
-	
-	.benefits h3 span {
-	display: none;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 	.benefits p {
@@ -248,12 +248,12 @@ header {
 	width: 758px;
 	height: 25px;
 	background: transparent url(header_requirements.gif) no-repeat;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-	
-	.requirements h3 span {
-	display: none;
-	}
-	
+		
 	.requirements p {
 	padding: 3px;
 	position: relative;
@@ -276,10 +276,12 @@ header {
 	width: 198px;
 	height: 25px;
 	background: transparent url(selectdesign.jpg) no-repeat;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-	
-	.design-selection h3 span { display: none; }
-	
+
 	.design-selection li {
 	font-size: 10px;
 	padding: 0px 0px 5px 20px;
@@ -302,9 +304,11 @@ header {
 	width: 198px;
 	height: 25px;
 	background: transparent url(archives.jpg) no-repeat;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-	
-	.design-archives h3 span { display: none; }
 	
 	.design-archives li {
 	padding: 0px 0px 2px 20px;
@@ -317,9 +321,11 @@ header {
 	width: 198px;
 	height: 25px;
 	background: transparent url(resources.jpg) no-repeat;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-	
-	.zen-resources h3 span { display: none; }
 	
 	.zen-resources li {
 	padding: 0px 0px 2px 20px;

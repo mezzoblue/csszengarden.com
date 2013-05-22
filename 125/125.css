@@ -39,7 +39,11 @@ html>body .sidebar { width: 192px; }
 	.design-selection a.designer-name:hover { text-decoration: underline; color: #f00; }
 	h3.select { margin: 0; padding: 0; background: url(select-a-design.jpg) no-repeat; position: absolute; width: 399px; height: 225px; left: 0px; top: -130px; }
 	h3.archives { margin: 0; padding: 0; position: relative; width: 209px; height: 68px; background: url(archives.gif) no-repeat; }
-	h3 span { display: none; }
+	h3 {
+		text-indent: 250%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
 	
 	/* "Archives" Styles */
 	.design-archives li, .zen-resources li { border-bottom: 1px solid #ddd; margin-bottom: 7px; }
@@ -70,15 +74,15 @@ html>body .sidebar { width: 192px; }
 	
 	/* Requirements */
 	.requirements p { width: 640px; }
-	.requirements p.p1, .requirements p.p2, .requirements p.p3, .requirements p.p4 { background-repeat: no-repeat; padding-left: 90px; }
-	.requirements p.p1 { background-image: url(1.gif); }
-	.requirements p.p2 { background-image: url(2.gif); }
-	.requirements p.p3 { background-image: url(3.gif); }
-	.requirements p.p4 { background-image: url(4.gif); }
+	.requirements p:nth-child(2), .requirements p:nth-child(3), .requirements p:nth-child(4), .requirements p:nth-child(5) { background-repeat: no-repeat; padding-left: 90px; }
+	.requirements p:nth-child(2) { background-image: url(1.gif); }
+	.requirements p:nth-child(3) { background-image: url(2.gif); }
+	.requirements p:nth-child(4) { background-image: url(3.gif); }
+	.requirements p:nth-child(5) { background-image: url(4.gif); }
 
 /* Footer */
-.requirements p.p5, footer { color: #aaa; text-align: center; width: 770px; }
-.requirements p.p5 { border-top: 1px solid #ccc; padding: 15px 0 0 0; margin: 100px 0 0 0; }
+.requirements p:nth-child(6), footer { color: #aaa; text-align: center; width: 770px; }
+.requirements p:nth-child(6) { border-top: 1px solid #ccc; padding: 15px 0 0 0; margin: 100px 0 0 0; }
 footer { margin: 0 0 30px 0; }
-.requirements p.p5 a, footer a { color: #aaa; }
+.requirements p:nth-child(6) a, footer a { color: #aaa; }
 

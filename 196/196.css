@@ -41,9 +41,6 @@ abbr, abbr {
 	overflow:auto;
 	z-index:100;
 	}
-.page-wrapper h3 span {
-	display:none;
-	}
 .intro {
 	position:relative;
 	padding-bottom:14px;
@@ -61,10 +58,15 @@ header h1,
 header h2 {
 	display:none;
 	}
-.summary p.p1 {
+h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;	
+}
+.summary p:first-child {
 	display:none;
 	}
-.summary p.p2 {
+.summary p:last-child {
 	font:normal 12px/12px Georgia,"Times New Roman",Times, serif;
 	color:#a8a781;
 	position:absolute;
@@ -73,7 +75,7 @@ header h2 {
 	background:url(download.gif) no-repeat left center;
 	text-indent:14px;
 	}
-.summary p.p2 a {
+.summary p:last-child a {
 	display:inline;
 	position:relative;
 	}

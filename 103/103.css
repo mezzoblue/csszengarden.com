@@ -22,10 +22,12 @@ margin:0;
 padding:0;
 }
 
-h3 span, h2 span, h1 span{
-display:none;
+h1, h2, h3 {
 margin:0;
 padding:0;
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 
 h3, h2, h1, p{
@@ -88,14 +90,14 @@ margin:20px 105px 20px 30px;
 padding:0;
 }
 
-.supporting .p1{
+.supporting p:nth-child(2){
 padding:0;
 margin-top:-40px;
 }
 
-* html .supporting.p1 {margin-top:0px;}
+* html .supportingp:nth-child(2) {margin-top:0px;}
 
-.supporting .p5{
+.supporting p:nth-child(6){
 margin-bottom:10px;
 font:11px/14px  arial, sans-serif;
 font-style:italic;
@@ -155,7 +157,7 @@ font:.7em/1.2em  arial, sans-serif;
 font-style:italic;
 }
 
-.summary .p2{
+.summary p:last-child{
 color:#E4CF9D;
 line-height:10px;
 line-height:30px;
@@ -194,7 +196,7 @@ background:url(preamb_title.gif) bottom left no-repeat;
 color:#E4CF9D;
 }
 
-.explanation .p1{
+.explanation p:nth-child(2){
 text-indent:10px;
 margin-top:-90px;
 }

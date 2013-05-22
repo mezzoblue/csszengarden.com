@@ -18,7 +18,11 @@ h1, h2, h3, h4 { margin: 0em; overflow: hidden; padding: 0em }
 h1 { background: #9296A2 url(h1_v2.jpg) no-repeat; height: 430px }
 h2 { background: #9296A2 url(h2.gif) no-repeat; height: 360px; margin-left: -62px; position: absolute; top: 0px; width: 60px }
 * > h2 { position: fixed }
-h3 span { margin-left: -2000px }
+h3 {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 p { color: #9296A2; margin: 0em; padding: 0em 0em 1em 0em }
 p:hover { color: #E7E7F1 }
 p * { color: #9296A2 }
@@ -28,8 +32,11 @@ ul li { list-style: square; margin: 0em 0em 0em 2em; padding: 0em }
 ul li a { font-weight: normal }
 .page-wrapper { background: #373B46 url(container.jpg) bottom no-repeat; border: 2px solid #000; border-width: 0px 2px; color: #E7E7F1; margin-left: -321px; padding-bottom: 500px; position: absolute; left: 50%; width: 642px }
 header { background-color: #373B46 }
-header h1 span { margin-left: -2000px }
-header h2 span { margin-left: -2000px }
+header h1, header h2 {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .summary { margin-top: -10px }
 .summary, .preamble { margin-left: 290px; text-align: justify; width: 270px }
 .preamble h3 { background: #373B46 url(h3_preamble.gif) no-repeat; height: 60px; width: 330px }

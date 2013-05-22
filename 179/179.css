@@ -83,7 +83,7 @@ div.summary {
 	color: #9E2E2F; 
 	}
 
-div.summary p.p1 {
+div.summary p:first-child {
 	display: none;
 	}
 
@@ -99,21 +99,21 @@ div.preamble {
 div.preamble h3 {
 	background: url(headline_preamble.gif) top left no-repeat;
 	height: 85px;
-	}
 
-div.preamble h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 div.preamble p {
 	padding: 0 10px 10px 20px;
 	}
 
-div.preamble p.p1 {
+div.preamble p:nth-child(2) {
 	margin-top: -25px;
 	}
 
-div.preamble p.p3 {
+div.preamble p:nth-child(4) {
 	background: url(content_boxes_bottom_preamble.gif) bottom left no-repeat;
 	padding-bottom: 65px;
 	/* for IE5 */
@@ -139,11 +139,11 @@ div.explanation p, div.participation p, div.benefits p, div.requirements p {
 	padding: 0 10px 10px 20px;
 	}
 
-div.explanation p.p1, div.participation p.p1, div.benefits p.p1, div.requirements p.p1 {
+div.explanation p:nth-child(2), div.participation p:nth-child(2), div.benefits p:nth-child(2), div.requirements p:nth-child(2) {
 	margin-top: -25px;
 	}
 
-div.explanation p.p2, div.participation p.p3, div.benefits p.p1, div.requirements p.p5 {
+div.explanation p:nth-child(3), div.participation p:nth-child(4), div.benefits p:nth-child(2), div.requirements p:nth-child(6) {
 	background: url(content_boxes_bottom.gif) bottom left no-repeat;
 	padding-bottom: 65px;
 	/* for IE5 */
@@ -169,10 +169,10 @@ div.requirements h3 {
 
 div.explanation h3, div.participation h3, div.benefits h3, div.requirements h3 {
 	height: 85px;
-	}
 
-div.explanation h3 span, div.participation h3 span, div.benefits h3 span, div.requirements h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 
@@ -251,8 +251,10 @@ div.design-selection h3, div.design-archives h3, div.zen-resources h3 {
 	height: 35px;
 	}
 
-div.zen-resources h3 span, div.design-selection h3 span, div.design-archives h3 span {
-	display: none;
+div.zen-resources h3, div.design-selection h3, div.design-archives h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 

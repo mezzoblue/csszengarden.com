@@ -34,11 +34,9 @@ h3 {
 	height: 23px;
 	margin-top: 14px;
 	margin-bottom: -5px;
-}
-
-h3 span {
 	border-bottom: 1px dotted #000000;
 	padding-bottom: 3px;
+	display: inline-block;
 }
 
 p {
@@ -96,19 +94,21 @@ a:link, a:visited, a:hover, a:active {
 
 .sidebar h3 {
 	font: bold 12px Georgia, "Times New Roman", Times, serif;
-	padding: 0;
+	border: none;
 	text-align: center;
 	text-transform: lowercase;
 	color: #FFFFFF;
+	background-color: #000000;
 	background-image: none;
 	height: auto;
-}
-
-.sidebar h3 span {
-	background-color: #000000;
-	padding: 4px 20px 4px 20px;
 	position: relative;
-	top: -7px;
+	top: -20px;
+	left: 30px;
+	padding: 4px 20px 4px 20px;
+	margin-bottom: -30px;
+}
+.sidebar ul {
+	margin-top: 0;
 }
 
 .design-selection, .design-archives, .zen-resources {
@@ -155,11 +155,7 @@ header h2 {
 	color: #000000;
 	padding-top: 6px;
 	display: none;
-}
-
-header h2 span {
 	border-top: 1px dotted #000000;
-	padding-top: 3px;
 }
 
 .page-wrapper {

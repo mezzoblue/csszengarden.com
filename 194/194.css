@@ -51,8 +51,8 @@ a:active {
 /* ~~~ Text Properties ~~~ */
 
 p { 
-	font: 100% Georgia, Palatino, Times, Times New Roman, serif; 
-	line-height: 17px;
+	font: 115% Georgia, Palatino, Times, Times New Roman, serif; 
+	line-height: 1.5;
 	margin-top: 0px; 
 	text-align: justify;
 	padding-left: 14px;
@@ -60,7 +60,7 @@ p {
 	padding-right: 100px;
 	}
 
-.p5 {
+p:nth-child(6) {
 	padding-bottom: 40px;
 	}
 
@@ -98,7 +98,7 @@ header {
 	text-indent: -1000em;
 	}
 
-.summary .p1 {
+.summary p:first-child {
 	background: url(summary.jpg) no-repeat; 
 	left: 80px;
 	position: relative;
@@ -107,24 +107,18 @@ header {
 	text-indent: -1000em;
 	}
 
-.summary .p2 {
+.summary p:last-child {
 	background: url(download.jpg) top right no-repeat; 
 	font: 100% Georgia, Times, Times New Roman, serif; 
 	line-height: 20px;
 	position: absolute;
 	top: 1500px;
 	display: block;
-	width: 126px;
-	height: 420px;
-	z-index: 5;
-	}
-
-.summary .p2 span {
-	display: block;
-	position: relative;
-	top: 80px;
-	left: 90px;
 	width: 100px;
+	height: 340px;
+	padding: 80px 35px 0 105px;
+	z-index: 5;
+
 	text-align: center;
 	}
 

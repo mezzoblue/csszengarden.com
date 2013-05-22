@@ -47,14 +47,14 @@ header h1 {
 }
 header h2 {display:none;}
 .summary p {font-size:11px;margin:0;padding:0;}
-.summary p.p1 {
+.summary p:first-child {
 	float:left;
 	width:380px;
 	height:178px;
 	background:url(r3_zc_summary.gif) no-repeat top left;
 	text-indent:-5000px;
 }
-.summary p.p2 {
+.summary p:last-child {
 	float:left;
 	width:190px;
 	padding:102px 0 50px 9px;
@@ -69,8 +69,8 @@ header h2 {display:none;}
 	height:76px;
 	/* end box model to fix main nav in IE 5.5 */
 }
-.summary p.p2 a:link, .summary p.p2 a:visited, .summary p.p2 a:active {color:#E6B788;}
-.summary p.p2 a:hover {color:#F4D3B3;}
+.summary p:last-child a:link, .summary p:last-child a:visited, .summary p:last-child a:active {color:#E6B788;}
+.summary p:last-child a:hover {color:#F4D3B3;}
 .preamble {
 	clear:both;
 	width:570px;

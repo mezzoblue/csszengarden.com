@@ -42,8 +42,12 @@ abbr{cursor:help}
 header{ 
 	background:url(head.jpg) center no-repeat;
 	height:365px}
-header h1 span{display:none}
-header h2 span{ /*misused for the googbye-grafic*/
+header h1 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+header h2 { /*misused for the goodbye-grafic*/
 	color:#3C6FAC;
 	position:absolute;
 	bottom:0px;
@@ -62,12 +66,12 @@ header h2 span{ /*misused for the googbye-grafic*/
 	color:#C5E1FF;
 	font-style:italic;
 	padding:0}
-.summary p.p1{
+.summary p:first-child{
 	font-size:1em;
 	margin:30px 10px;
 	width:70%;
 	float:left}
-.summary p.p2{
+.summary p:last-child{
 	float:right;
 	font-size:0.8em;
 	width:20%;
@@ -81,15 +85,23 @@ header h2 span{ /*misused for the googbye-grafic*/
 	height:55px;
 	background:#98AE6D url(preamble.jpg) no-repeat;
 	border-top:1px solid #BDCCA3;
-	border-bottom:1px solid #386496}
-.preamble h3 span{display:none}
+	border-bottom:1px solid #386496;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .supporting{background:#79A6D4}
 .supporting h3{ 
 	height:55px;
 	border-top:1px solid #BDCCA3;
-	border-bottom:1px solid #386496}
-.supporting h3 span {display:none}
+	border-bottom:1px solid #386496;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .explanation h3{background: #98AE6D url(about.jpg) no-repeat}
 .participation h3{background: #98AE6D  url(participation.jpg) no-repeat}
 .benefits h3{background: #98AE6D  url(benefits.jpg) no-repeat}
@@ -120,8 +132,11 @@ footer a:hover{color:white}
 	voice-family:"\"}\"";
 	voice-family:inherit;
 	width: 199px}
-.dummy{margin: 0}
-.sidebar h3 span{display:none}
+.sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .sidebar h3.select{background:transparent url(select.jpg)}
 .sidebar h3.favorites{background:transparent url(favorites.jpg)}
 .sidebar h3.archives{background:transparent url(archives.jpg)}
