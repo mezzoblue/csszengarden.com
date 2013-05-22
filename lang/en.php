@@ -37,7 +37,7 @@
 		"h2" => 'The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design',
 
 		"summary-p1" => 'A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.',
-		"summary-p2" => 'Download the example <a href="' . $zenUrls["intro-example-html"] . '" title="This page\'s source HTML code, not to be modified.">html file</a> and <a href="' . $zenUrls["example-css"] . '" title="This page\'s sample CSS, the file you may modify.">css file</a>',
+		"summary-p2" => 'Download the example <a href="' . $zenUrls["example-html"] . '" title="This page\'s source HTML code, not to be modified.">html file</a> and <a href="' . $zenUrls["example-css"] . '" title="This page\'s sample CSS, the file you may modify.">css file</a>',
 
 		"preamble-h3" => 'The Road to Enlightenment',
 		"preamble-p1" => 'Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr title="Document Object Model">DOM</abbr>s, broken <abbr title="Cascading Style Sheets">CSS</abbr> support, and abandoned browsers.',
