@@ -1,0 +1,20 @@
+/* imports and font faces */
+
+@font-face {
+  font-family:'NeuropolX';
+  src:url('neuropol.ttf');
+}
+
+body {
+  background:#000;
+  color:#fff;
+  font-family:Courier;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family:'NeuropolX';
+}
+
+header {
+  
+}
