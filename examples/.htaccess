@@ -1,0 +1,11 @@
+# allow index.html to be executed as PHP
+AddType application/x-httpd-php .html
+
+
+# force download of files in /examples/
+# (probably a better way to do this)
+<FilesMatch "\.(css|html)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>
+
