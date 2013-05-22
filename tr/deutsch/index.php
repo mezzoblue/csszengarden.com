@@ -3,6 +3,9 @@
 	// set translated CSS file
 	$loadCSS = "/001/001-de.css";
 
+	// import URLs
+	include($SERVER_ROOT . "../../includes/urls.php");
+
 	// import language file
 	include($SERVER_ROOT . "../../lang/de.php");
 
