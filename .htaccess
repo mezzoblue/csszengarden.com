@@ -17,3 +17,9 @@ deny from env=BadReferrer
 
 # permanent redirect of old file
 RedirectMatch 301 ^/zengarden-sample\.css$ /examples/style.css
+
+
+# remove trailing .php from /examples/index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /examples/index.php?/$1 [L]

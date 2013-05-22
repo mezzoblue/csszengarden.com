@@ -4,7 +4,7 @@
 $zenUrls = array(
 
 	// the example files, used in multiple places
-	"example-html" => "/examples/index.html",
+	"example-html" => "/examples/index",
 	"example-css" => "/examples/style.css",
 	
 
