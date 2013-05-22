@@ -23,12 +23,10 @@
 
 			// kick in output buffering
 			ob_start();
-?>
-					<li>
-						<a href="<?php echo $designURL; ?>" class="design-name"><?php echo $designName; ?></a> <?php echo $i18nBy; ?>
-						<a href="<?php echo $designerURL; ?>" class="designer-name"><?php echo $designerName; ?></a>
-					</li>
-<?php
+
+			// pull in the partial template for design listings
+			include($SERVER_ROOT . "tmpl-design-link.php");
+
 			// dump and close buffering
 			$buffer = ob_get_contents();
 			ob_end_clean();

@@ -5,7 +5,7 @@
 	<title><?php echo $head["title"]; ?></title>
 
 	<link rel="stylesheet" media="screen" href="<?php echo $currentDesign; ?>?v=8may2013">
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo $zenUrls["zen-rss"]; ?>">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Dave Shea">
@@ -70,11 +70,11 @@
 		</div>
 
 		<footer>
-			<a href="http://validator.w3.org/check/referer" title="<?php echo $footer["zen-validate-html-title"]; ?>" class="zen-validate-html"><?php echo $footer["zen-validate-html-text"]; ?></a>
-			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="<?php echo $footer["zen-validate-css-title"]; ?>" class="zen-validate-css"><?php echo $footer["zen-validate-css-text"]; ?></a>
-			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="<?php echo $footer["zen-license-title"]; ?>" class="zen-license"><?php echo $footer["zen-license-text"]; ?></a>
-			<a href="http://mezzoblue.com/zengarden/faq/#aaa" title="<?php echo $footer["zen-accessibility-title"]; ?>" class="zen-accessibility"><?php echo $footer["zen-accessibility-text"]; ?></a>
-			<a href="https://github.com/mezzoblue/csszengarden.com" title="<?php echo $footer["zen-github-title"]; ?>" class="zen-github"><?php echo $footer["zen-github-text"]; ?></a>
+			<a href="<?php echo $zenUrls["zen-validate-html"]; ?>" title="<?php echo $footer["zen-validate-html-title"]; ?>" class="zen-validate-html"><?php echo $footer["zen-validate-html-text"]; ?></a>
+			<a href="<?php echo $zenUrls["zen-validate-css"]; ?>" title="<?php echo $footer["zen-validate-css-title"]; ?>" class="zen-validate-css"><?php echo $footer["zen-validate-css-text"]; ?></a>
+			<a href="<?php echo $zenUrls["zen-license"]; ?>" title="<?php echo $footer["zen-license-title"]; ?>" class="zen-license"><?php echo $footer["zen-license-text"]; ?></a>
+			<a href="<?php echo $zenUrls["zen-accessibility"]; ?>" title="<?php echo $footer["zen-accessibility-title"]; ?>" class="zen-accessibility"><?php echo $footer["zen-accessibility-text"]; ?></a>
+			<a href="<?php echo $zenUrls["zen-github"]; ?>" title="<?php echo $footer["zen-github-title"]; ?>" class="zen-github"><?php echo $footer["zen-github-text"]; ?></a>
 		</footer>
 
 	</div>
@@ -120,7 +120,7 @@
 	}
 ?>
 						<li class="viewall">
-							<a href="http://www.mezzoblue.com/zengarden/alldesigns/" title="<?php echo $sidebar["design-archives-viewall-title"]; ?>">
+							<a href="<?php echo $zenUrls["zen-view-all"]; ?>" title="<?php echo $sidebar["design-archives-viewall-title"]; ?>">
 								<?php echo $sidebar["design-archives-viewall-text"]; ?>
 							</a>
 						</li>
@@ -137,22 +137,22 @@
 						</a>
 					</li>
 					<li class="css-resources">
-						<a href="http://www.mezzoblue.com/zengarden/resources/" title="<?php echo $sidebar["css-resources-title"]; ?>">
+						<a href="<?php echo $zenUrls["zen-resources"]; ?>" title="<?php echo $sidebar["css-resources-title"]; ?>">
 							<?php echo $sidebar["css-resources-text"]; ?>
 						</a>
 					</li>
 					<li class="zen-faq">
-						<a href="http://www.mezzoblue.com/zengarden/faq/" title="<?php echo $sidebar["zen-faq-title"]; ?>">
+						<a href="<?php echo $zenUrls["zen-faq"]; ?>" title="<?php echo $sidebar["zen-faq-title"]; ?>">
 							<?php echo $sidebar["zen-faq-text"]; ?>
 						</a>
 					</li>
 					<li class="zen-submit">
-						<a href="http://www.mezzoblue.com/zengarden/submit/" title="<?php echo $sidebar["zen-submit-title"]; ?>">
+						<a href="<?php echo $zenUrls["zen-submit"]; ?>" title="<?php echo $sidebar["zen-submit-title"]; ?>">
 							<?php echo $sidebar["zen-submit-text"]; ?>
 						</a>
 					</li>
 					<li class="zen-translations">
-						<a href="http://www.mezzoblue.com/zengarden/translations/" title="<?php echo $sidebar["zen-translations-title"]; ?>">
+						<a href="<?php echo $zenUrls["zen-translations"]; ?>" title="<?php echo $sidebar["zen-translations-title"]; ?>">
 							<?php echo $sidebar["zen-translations-text"]; ?>
 						</a>
 					</li>

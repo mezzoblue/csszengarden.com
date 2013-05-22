@@ -1,0 +1,8 @@
+# allow index.html to be executed as PHP
+AddType application/x-httpd-php .html
+
+# force download of css file in /examples/
+<Files *.css>
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</Files>
