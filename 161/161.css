@@ -48,7 +48,11 @@ header {
 	height: 155px;
 }
 
-header span { display: none; }
+h1, h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 
 /*__________Quick summary__________*/

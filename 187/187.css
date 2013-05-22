@@ -31,8 +31,14 @@ a {
 a:hover {
 	color: #FBBA04;	
 }
-h1, h2, h3 span {
+h1, h2 {
 	display: none;
+}
+
+h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /*------------------------------------------------------

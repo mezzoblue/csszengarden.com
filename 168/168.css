@@ -38,7 +38,12 @@ h1 {
 	height: 272px;
 	padding: 0;
 }
-h1 span, h2, .summary p, h3 span, p, p:nth-child(2) span{
+h1, h3, p:nth-child(2) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;	
+}
+h2, .summary p, p {
 	display: none;
 }
 h1, h3, p:nth-child(2) {
@@ -126,8 +131,10 @@ h3 {
 	text-align: center;
 
 }
-.requirements p:nth-child(5) span,.requirements p:nth-child(6) span {
-	display: none;
+.requirements p:nth-child(5), .requirements p:nth-child(6) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 footer {
 	background-color:#4178E6;

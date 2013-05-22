@@ -209,11 +209,16 @@ ul li{ list-style:none; }
 	
 /* hidden stuff */
 
-header h1,h2,
-h3 span,
+h1,h2,
 .extra1,
 .extra2,
 .extra3,
 .extra4,
 .extra5,
 .extra6 { display:none; }
+
+h3 {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+}

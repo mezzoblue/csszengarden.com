@@ -30,7 +30,7 @@ a:hover {
 a:active, a:focus {
     color: #566047;
 }  
-p:nth-child(6) span a {
+p:nth-child(6) a {
     font-weight: bold;
 }
 p {
@@ -55,8 +55,10 @@ header {
     background: #8C9777 url(page_header_bg.jpg) center top no-repeat;
     height: 300px;
 }
-header h1 span, header h2 span {
-    display: none;
+h1, h2 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .summary p:first-child {
 	position: absolute;
@@ -66,16 +68,15 @@ header h1 span, header h2 span {
     color: #FBFBE5;
     width: 475px;
 }
-.summary p:last-child span {
+.summary p:last-child {
 	position: absolute;
 	color: #566047;
-	font-size: 100%;
 	text-align: left;
 	top: 245px;
     left: 530px;
 }
 .preamble {
-    margin: -40px 50px 20px 265px;
+    margin: -30px 50px 20px 265px;
     padding: 20px 20px 10px;
     border: 3px solid #8C9777;
     background: #FBFBE5;
@@ -85,16 +86,19 @@ header h1 span, header h2 span {
     height: 32px;
     background: transparent url(h3_preamble.gif) left top no-repeat;
     border-bottom: 1px solid #7D8965;
-}
-.preamble h3 span {
-    display: none;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .supporting {
     margin-left: 230px;
     padding: 0 0 35px 35px;
 }
-.supporting h3 span {
-    display: none;
+.supporting h3 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .explanation, .participation, .benefits, .requirements {
     padding-right: 50px;
@@ -142,14 +146,15 @@ footer {
     left: 64px;
     width: 138px;
 }
-.sidebar h3 span {
-    display: none;
-}
 .sidebar h3 {
     margin-top: 25px;
     width: 138px;
     height: 30px;
     border-bottom: 1px solid #7D8965; 
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 h3.select {
     margin-bottom: 5px;

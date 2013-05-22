@@ -69,9 +69,10 @@ header h1 {
 	position: absolute;
 	top: 20px;
 	left: 305px;
-	}
-header h1 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 {
 	background: transparent url(h2.gif) no-repeat top left;
@@ -80,9 +81,10 @@ header h2 {
 	position: absolute;
 	top: 150px;
 	left: 216px;
-	}
-header h2 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 
@@ -145,9 +147,10 @@ header h2 span {
 	height: 66px;
 	margin: 0px;
 	float: left;
-	}
-.participation h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .participation p:nth-child(2):first-line {
 	font: 16px 'arial black', sans-serif;
@@ -169,9 +172,10 @@ header h2 span {
 	height: 26px;
 	margin: 0px;
 	float: left;
-	}
-.benefits h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 

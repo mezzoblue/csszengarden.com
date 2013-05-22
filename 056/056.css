@@ -116,8 +116,10 @@ header h2 {
 	width: 510px;
 	}
 
-.preamble h3 span, .supporting h3 span, .explanation h3 span {
-	display: none;
+.preamble h3, .supporting h3, .explanation h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .explanation {
@@ -211,8 +213,10 @@ header h2 {
 	height: 20px;
 	}
 
-.design-selection h3 span, #lfavorites  h3 span, .design-archives  h3 span, .zen-resources  h3 span {
-	display: none;
+.design-selection h3, .design-archives h3, .zen-resources h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 #lfavorites  h3 {

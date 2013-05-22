@@ -29,7 +29,9 @@ div[class="extra2"] { top: 712px !important; }
 
 /* Coffee graphic */
 .extra3 { display: block !important; position: relative; margin-left: 496px; height: 0; z-index: 0; }
-.extra3 span {
+.extra3::after {
+	content: "";
+	display: block;
 	position: absolute;
 	bottom: -33px;
 	width: 100%;
@@ -39,19 +41,22 @@ div[class="extra2"] { top: 712px !important; }
 
 /* Small logo */
 div[class="extra4"] { display: block !important; position: relative; margin-left: 64px; width: 168px; height: 0; z-index: 3; }
-div[class="extra4"]>span {
+div[class="extra4"]::after {
+	content: "";
+	display: block;
 	position: absolute;
 	bottom: -33px;
 	width: 100%;
 	height: 98px;
 	background: url(logo_small.gif) no-repeat;
 	}
-/* div[class="extra4"] span:active { background: url(logo_small_over.gif) no-repeat; } */
 
 
 /* Photo Credit */
 div[class="extra5"] { display: block !important; position: relative; margin-left: 4px; height: 0; z-index: 0; }
-div[class="extra5"]>span {
+div[class="extra5"]::after {
+	content: "";
+	display: block;
 	position: absolute;
 	bottom: -33px;
 	width: 100%;
@@ -204,7 +209,7 @@ div[class="design-selection"] li:hover,
 div[class="zen-resources"] li:hover { background: url(bg_menu_over.png) no-repeat !important; }
 
 div[class="design-archives"] { position: absolute; top: 400px !important; left: 100px !important; background: url(well_design_archives.gif) 5px 0px no-repeat; width: 164px !important; height: 44px; z-index: 100; }
-div[class="design-archives"]>ul, div[class="design-archives"]>ul>li { margin: 0; padding: 0; list-style: none; background: url(o.gif) no-repeat !important; }
+div[class="design-archives"]>nav>ul, div[class="design-archives"]>nav>ul>li { margin: 0; padding: 0; list-style: none; background: url(o.gif) no-repeat !important; }
 div[class="design-archives"] .next a { background: url(button_next.gif) no-repeat; position: absolute; top: 14px; left: 50px; width: 45px; height: 0px; padding-top: 21px; overflow: hidden; z-index: 1; }
 div[class="design-archives"] .previous a { background: url(button_prev.gif) no-repeat; position: absolute; top: 14px; left: 7px; width: 44px; height: 0px; padding-top: 21px; overflow: hidden; z-index: 2; }
 div[class="design-archives"] .viewall a { background: url(button_view_all.gif) no-repeat; position: absolute; top: 14px; left: 99px; width: 53px; height: 0px; padding-top: 21px; overflow: hidden; }

@@ -39,7 +39,7 @@ header {
 	background-repeat:no-repeat;
 	height:181px;
 	}
-header h1, header h2 span {
+header h1 {
 	display:none;
 	}
 header h2 {
@@ -51,6 +51,10 @@ header h2 {
 	top:-10px;
 	left:690px;
 	margin:0;padding:0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .summary {
@@ -97,7 +101,11 @@ header h2 {
 	}
 .preamble h3 { border-top-width:0px; }
 	
-.preamble h3 span, .supporting h3 span { display: none; }
+.preamble h3, .supporting h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 	
 .preamble h3 		{ background-image:url("enlightenment.gif"); }
 .explanation h3 	{ background-image:url("whatabout.gif"); }
@@ -167,7 +175,11 @@ footer a:hover {
 	background-repeat:no-repeat;
 	height:46px;	
 	}
-.sidebar h3 span { display:none; }
+.sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .sidebar h3.select { background-image:url("select.gif"); }
 .sidebar h3.archives { background-image:url("archives.gif"); }
 .sidebar h3.resources { background-image:url("resources.gif"); }

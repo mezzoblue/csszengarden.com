@@ -380,9 +380,10 @@ footer a:hover, footer a:active {
 	width: 250px; 
 	height: 32px; 
 	float: left;
-	}
-.explanation h3 span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .participation h3 { 
@@ -391,10 +392,10 @@ footer a:hover, footer a:active {
 	width: 250px; 
 	height: 32px; 
 	float: left;
-	}
 
-.participation h3 span {
-	display:none
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .benefits h3 { 
@@ -403,10 +404,10 @@ footer a:hover, footer a:active {
 	width: 120px; 
 	height: 32px; 
 	float: left;
-	}
 
-.benefits h3 span {
-	display:none
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .requirements h3 { 
@@ -415,10 +416,10 @@ footer a:hover, footer a:active {
 	width: 470px; 
 	height: 32px; 
 	float: left;
-	}
 
-.requirements h3 span {
-	display:none
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .preamble h3 { 
@@ -427,10 +428,10 @@ footer a:hover, footer a:active {
 	width: 140px; 
 	height: 32px; 
 	float: left;
-	}
 
-.preamble h3 span {
-	display:none
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 header h1 { 
@@ -439,10 +440,10 @@ header h1 {
 	width: 600px; 
 	height: 180px; 
 	float: left;
-	}
 
-header h1 span {
-	display:none
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 header h2 { 
@@ -451,10 +452,10 @@ header h2 {
 	width: 321px;
 	height: 194px;
 	float: left;
-	}
 
-header h2 span {
-	display:none
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .extra1 {

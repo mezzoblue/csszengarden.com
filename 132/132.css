@@ -20,9 +20,10 @@ h3 {
 	margin-left: 22px;
 	margin-top: 20px;
 	border-bottom: 1px dashed #000;
-}
-h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 p {
 	font: normal 13px Arial, Helvetica, sans-serif;
@@ -85,9 +86,10 @@ header {
 }
 header h1, h2 {
 	margin-top: 0;
-}
-header h1 span, h2 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .summary {
 	width: 200px;
@@ -97,12 +99,8 @@ header h1 span, h2 span {
 	background: url(summary_bg.gif) 0 0 no-repeat;
 	float: left;
 }
-.summary p:first-child span {
-	display: none;
-}
 .summary p:first-child {
-	margin: 0;
-	padding: 0;
+	display: none;
 }
 .summary p:last-child {
 	margin: 0;

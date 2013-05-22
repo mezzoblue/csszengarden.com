@@ -76,14 +76,6 @@ a:active {
 	text-decoration: none;
 	}
 
-/*********************
-     ACCESSYPOO
-*********************/
-
-span.accesskey {
-	font-weight: bold;
-	text-decoration: underline;
-	}
 
 /**************************
      DO THE DIV - LAYOUT
@@ -131,10 +123,10 @@ body {
 				margin: 0;
 				background: transparent url(header.jpg) no-repeat; /*thanks to dubstastic for brushes*/
 				height: 126px;
-				}
-				
-			header h1 span {        /*get the text out of the way*/
-				display: none;
+
+				text-indent: 100%;
+				white-space: nowrap;
+				overflow: hidden;
 				}
 				
 			header h2 {       /*this text will be integrated into the pictoral header*/
@@ -174,10 +166,10 @@ body {
 			margin: 0;
 			padding: 0;
 			height: 86px;
-			}
-			
-		.preamble h3 span {
-			display: none; /*get text out of the way*/
+
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 			}
 			
 		.preamble p {
@@ -242,8 +234,10 @@ body {
 			background: transparent url(title_about.jpg) no-repeat;
 			}
 			
-		.explanation h3 span, .participation h3 span, .requirements h3 span, .benefits h3 span {
-			display: none; /*for some reason the negative margin didn't work here, so we will use this*/
+		.explanation h3, .participation h3, .requirements h3, .benefits h3 {
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 			}	
 		
 		.explanation p, .participation p, .benefits p, .requirements p {
@@ -339,7 +333,7 @@ body {
 		
 		.sidebar .wrapper {
 			position: absolute;
-			top: 65px;
+			top: 67px;
 			left: 750px;
 			z-index: 2000;
 			height: 150px;
@@ -395,7 +389,7 @@ body {
 			border-bottom: 1px solid #887;
 			}
 			
-			.design-selection, #lfavorites, .design-archives, .zen-resources {
+			.design-selection, .design-archives, .zen-resources {
 				float: left;
 				}
 			
@@ -406,19 +400,22 @@ body {
 				height: 150px;
 				}
 			
-			.design-selection h3 span, #lfavorites h3 span, .design-archives h3 span, .zen-resources h3 span {
+			.design-selection h3, .design-archives h3, .zen-resources h3 {
 				padding: 5px;
 				position: relative;
-				margin-bottom: 60px;
-				top: -60px;
+				margin-bottom: 10px;
 				color: #776;
 				font-size: .5em;
 				background: transparent url(drop_ieBack.gif) no-repeat right;
 				border: 1px solid #776;
 				padding-right: 25px;
+
+				text-indent: 100%;
+				white-space: nowrap;
+				overflow: hidden;
 				}
 			
-			.design-selection ul, #lfavorites ul, .design-archives ul, .zen-resources ul {
+			.design-selection ul, .design-archives ul, .zen-resources ul {
 				float: left;
 				position: relative;
 				top: -45px;
@@ -431,19 +428,21 @@ body {
 			html > body .design-selection h3 {
 				background: transparent url(drop_lselect.png) no-repeat;
 				height: 36px;
-				width: 153px;
+				width: 123px;
 				padding-top: 0;
 				float: none;
-				}
-				
-			html > body .design-selection h3 span {
-				display: none;
+
+				text-indent: 100%;
+				white-space: nowrap;
+				overflow: hidden;
+
+				border: none;
 				}
 				
 			html > body .design-selection ul {
 				display: none;
 				position: relative;
-				top: 0;
+				top: -5px;
 				left: 0;
 				}
 				
@@ -452,7 +451,7 @@ body {
 				display: block;
 				background: url(drop_background.png) repeat;
 				border: 1px solid #776;
-				margin: 5px;
+				margin: 0 5px;
 				padding: 5px;
 				width: 128px;
 				list-style-type: none;
@@ -474,64 +473,26 @@ body {
 				
 				
 		
-				
-			html > body #lfavorites h3 {
-				background: transparent url(drop_favorites.png) no-repeat;
-				height: 36px;
-				width: 153px;
-				padding-top: 0;
-				float: none;
-				}
-				
-			html > body #lfavorites h3 span {
-				display: none;
-				}
-				
-			html > body #lfavorites ul {
-				display: none;
-				position: relative;
-				top: 0;
-				left: 0;
-				}
-				
-			html > body #lfavorites:hover ul {
-				float: none;
-				display: block;
-				background: url(drop_background.png) repeat;
-				border: 1px solid #776;
-				margin: 5px;
-				padding: 5px;
-				width: 128px;
-				list-style-type: none;
-				}		
-				
-			html > body #lfavorites li {
-				float: none;
-				}
-				
-			#lfavorites ul {
-				list-style-type: none;
-				display: block;
-				}
-				
 		
 				
 			html > body .design-archives h3 {
 				background: transparent url(drop_archives.png) no-repeat;
 				height: 36px;
-				width: 153px;
+				width: 123px;
 				padding-top: 0;
 				float: none;
-				}
-				
-			html > body .design-archives h3 span {
-				display: none;
+
+				text-indent: 100%;
+				white-space: nowrap;
+				overflow: hidden;
+
+				border: none;
 				}
 				
 			html > body .design-archives ul {
 				display: none;
 				position: relative;
-				top: 0;
+				top: -5px;
 				left: 0;
 				}
 				
@@ -561,15 +522,17 @@ body {
 			html > body .zen-resources h3 {
 				background: transparent url(drop_resources.png) no-repeat;
 				height: 36px;
-				width: 153px;
+				width: 123px;
 				padding-top: 0;
 				float: none;
+
+				text-indent: 100%;
+				white-space: nowrap;
+				overflow: hidden;
+
+				border: none;
 				}
 				
-			html > body .zen-resources h3 span {
-				display: none;
-				}
-			
 			.zen-resources ul {
 				display: block;
 				}
@@ -577,7 +540,7 @@ body {
 			html > body .zen-resources ul {
 				display: none;
 				position: relative;
-				top: 0;
+				top: -5px;
 				left: 0;
 				}
 				
@@ -621,9 +584,6 @@ html>body div.extra1 {
 	display: none;
 	}
 	
-/*html > body .extra1 span {
-	display: none;
-	}
 	
 /*
 thank you very much. try the filet.*/

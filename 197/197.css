@@ -1,4 +1,4 @@
-/* css Zen Garden submission 197 - 'Floral Touch', by Jadas Jimmy, http://www.jahmasta.designer-nameom/ */
+/* css Zen Garden submission 197 - 'Floral Touch', by Jadas Jimmy, http://www.jahmasta.com/ */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 /* All associated graphics copyright 2006, Jadas Jimmy */
 /* Added: December 4th, 2006 */
@@ -81,17 +81,16 @@ header {
 	}
 
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-header h1 { 
+h1 { 
 	margin-top: 10px; 
 	width: 219px; 
 	height: 87px; 
 	float: left;
 	}
-header h1 span {
-	display:none
-	}
-header h2 span {
-	display:none;
+h1, h2, h3 {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .summary {
@@ -162,11 +161,10 @@ footer a:link, footer a:visited {
 	width: 179px; 
 	height: 41px; 
 	}
-.sidebar h3.select span {
-	display:none
-	}
-.sidebar h3.favorites span {
-	display:none
+.sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.archives { 
 	background: url(m2.gif) no-repeat top left; 
@@ -174,17 +172,11 @@ footer a:link, footer a:visited {
 	width: 179px; 
 	height: 41px; 
 	}
-.sidebar h3.archives span {
-	display:none
-	}
 .sidebar h3.resources { 
 	background: url(m3.gif) no-repeat top left; 
 	margin: 0px 0px 0px 0px; 
 	width: 179px; 
 	height: 41px; 
-	}
-.sidebar h3.resources span {
-	display:none
 	}
 
 .zen-resources {
@@ -241,13 +233,6 @@ p:nth-child(3){
 	color: #DB008C;
 	padding: 30px 10px 0px 10px;}
 
-header h1 span,
-header h2 span,
-.preamble h3 span,
-.explanation h3 span,
-.participation h3 span,
-.benefits h3 span,
-.requirements h3 span,
 .summary p:first-child
 {display: none;}
 
@@ -319,17 +304,16 @@ p:nth-child(4) {padding: 0px 0px 0px 21px;}
 p:nth-child(5) {padding: 0px 0px 0px 21px;}
 p:nth-child(6) {padding: 0px 0px 0px 21px;}
 
-.requirements p:nth-child(6) span{
+.requirements p:nth-child(6) {
     font: bold 15px arial;
 	text-align: center;
 	color: #DB008C;
-	padding: 35px 0px 0px 0px;
 	background-image: url(footer1.gif);
 	background-repeat: no-repeat;
 	background-position: 0px top;
 	display: block;
-	width: 691px;
-	height: 50px;
-	margin: 0px 0px 0px -30px;
-	padding: 35px 0px 0px 0px;
+	width: 531px;
+	height: 60px;
+	margin: 0px 0px 0px -10px;
+	padding: 25px 80px 0px 80px;
 	}

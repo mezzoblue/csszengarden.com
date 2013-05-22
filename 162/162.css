@@ -124,11 +124,11 @@ header {
 	background: url("preamb-title.jpg") top center no-repeat;
 	margin-left: auto;
 	margin-right: auto;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-	
-.preamble	h3 span {
-	display: none;
-}	
  
 .preamble p:nth-child(4) {
 background: url("preamb-bg.jpg") 42% 100%  no-repeat;
@@ -248,37 +248,40 @@ background: transparent url("w2.jpg") 25px 18px no-repeat;
 	width: 167px;
 	height: 22px;
 	background: url("what-title.jpg") top left no-repeat;
-}
 
-.explanation h3 span{
-display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .participation h3 {
 	width: 90px;
 	height: 23px;
 	background: url("part-title.jpg") top left no-repeat;
-}
-.participation h3 span{
-display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .benefits h3 {
 	width: 53px;
 	height: 18px;
 	background: url("ben-title.jpg") top left no-repeat;
-}
-.benefits h3 span{
-display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .requirements h3 {
 	width: 90px;
 	height: 23px;
 	background: url("req-title.jpg") top left no-repeat;
-}
-.requirements h3 span{
-display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 			
@@ -323,10 +326,10 @@ color: #7D775C;
 	width: 180px;
 	height: 23px;
 	background: url("sel-title.jpg") top right no-repeat;
-}
 
-.sidebar h3.select span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 	
 .sidebar h3.archives { 
@@ -334,10 +337,10 @@ color: #7D775C;
 	width: 180px;
 	height: 23px;
 	background: url("arch-title.jpg") top right no-repeat;
-}
 
-.sidebar h3.archives span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .sidebar h3.resources { 
@@ -345,10 +348,11 @@ color: #7D775C;
 	width: 180px;
 	height: 23px;
 	background: url("res-title.jpg") top right no-repeat;
-		}
-.sidebar h3.resources span {
-	display: none;
-	}
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .sidebar ul {
 	margin: 0px;

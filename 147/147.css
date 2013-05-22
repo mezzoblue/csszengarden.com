@@ -25,41 +25,58 @@ abbr {font-weight:bold;}
 	header { display: none; }
 
 	header h1 { background: transparent url(h1.gif) no-repeat top left; margin-top: 10px; width: 219px; height: 87px; float: left;}
-	header h1 span {display:none}
 	header h2 { background: transparent url(h2.gif) no-repeat top left; margin-top: 58px; margin-bottom: 40px; width: 200px; height: 18px; float: right;}
-	header h2 span { display:none;}
+	header h1, header h2 {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;		
+	}
 
 	.summary { position:absolute; left:530px; top: 730px; width:150px; color: #f4f0e6;}
 	.summary p:first-child {display:none;}
-	.summary p:last-child {}
 	.summary a{ color: #98B974; text-decoration:underline;}
 	.summary a:hover{ color: #f4f0e6; text-decoration:none;}
 
 	.preamble {	clear: right; padding: 10px 10px 0 65px; width:260px;}
-	.preamble h3 { display:block; width:100%; height:23px; background: url(title0.gif) no-repeat;}
-	.preamble h3 span {display:none;}
+	.preamble h3 { display:block; width:100%; height:23px; background: url(title0.gif) no-repeat;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
 	.preamble p {margin:5px 0 0 0; padding:0; color: #6F715C; font-style:italic;}
 	
 	.supporting { clear: right; padding: 20px 10px 0 0; margin:0; width:490px; background:url(dotedLine.gif) 10px 10px no-repeat;}
 	
 		.explanation {margin:0; padding: 0 0 0 65px; width:260px;}
-		.explanation h3 { display:block; width:100%; height:23px; background: url(title1.gif) no-repeat; margin:0;}
-		.explanation h3 span {display:none;}
+		.explanation h3 { display:block; width:100%; height:23px; background: url(title1.gif) no-repeat; margin:0;
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
 		.explanation p {margin:5px 0 0 0; padding:0; color: #53553F;}
 		
 		.participation {margin:10px 0 0 0; padding: 0 0 0 65px; width:260px;}
-		.participation h3 { display:block; width:100%; height:23px; background: url(title2.gif) no-repeat; margin:0;}
-		.participation h3 span {display:none;}
+		.participation h3 { display:block; width:100%; height:23px; background: url(title2.gif) no-repeat; margin:0;
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
 		.participation p {margin:5px 0 0 0; padding:0; color: #53553F;}
 		
 		.benefits {margin:10px 0 0 0; padding: 0 0 0 65px; width:260px;}
-		.benefits h3 { display:block; width:100%; height:23px; background: url(title1.gif) no-repeat; margin:0;}
-		.benefits h3 span {display:none;}
+		.benefits h3 { display:block; width:100%; height:23px; background: url(title1.gif) no-repeat; margin:0;
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
 		.benefits p {margin:5px 0 0 0; padding:0; color: #53553F;}
 		
 		.requirements {margin:10px 0 0 0; padding: 0 200px 0 65px; width:266px; background: url(bgBottom0.gif) right bottom no-repeat;}
-		.requirements h3 { display:block; width:100%; height:23px; background: url(title1.gif) no-repeat; margin:0;}
-		.requirements h3 span {display:none;}
+		.requirements h3 { display:block; width:100%; height:23px; background: url(title1.gif) no-repeat; margin:0;
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
 		.requirements p {margin:5px 0 0 0; padding:0; color: #53553F;}
 
 		footer { padding: 20px 0 30px 45px; width:510px; background: url(bgBottom1.gif) 0px 0px no-repeat;}
@@ -68,12 +85,21 @@ abbr {font-weight:bold;}
 
 	.sidebar {	position: absolute; top: 170px; right: 0px; color:#4C4E39;}
 	.sidebar .wrapper { font: 10px Tahoma, Verdana, Arial, sans-serif; width: 220px;}
-	.sidebar h3.select { background:url(subTitle0.gif) no-repeat; margin: 10px 0px 5px 0px; width: 160px; height: 23px; }
-	.sidebar h3.select span {display:none;}
-	.sidebar h3.archives { background: transparent url(subTitle1.gif) no-repeat; margin: 10px 0px 5px 0px; width: 160px; height: 23px; }
-	.sidebar h3.archives span {display:none;}
-	.sidebar h3.resources { background: transparent url(subTitle2.gif) no-repeat; margin: 10px 0px 5px 0px; width: 160px; height: 23px; }
-	.sidebar h3.resources span {display:none;}
+	.sidebar h3.select { background:url(subTitle0.gif) no-repeat; margin: 10px 0px 5px 0px; width: 160px; height: 23px; 
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	.sidebar h3.archives { background: transparent url(subTitle1.gif) no-repeat; margin: 10px 0px 5px 0px; width: 160px; height: 23px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	.sidebar h3.resources { background: transparent url(subTitle2.gif) no-repeat; margin: 10px 0px 5px 0px; width: 160px; height: 23px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
 	
 	.sidebar p, .sidebar li{ font: x-small/1.6em tahoma, verdana, sans-serif; text-indent: 0;}
 	

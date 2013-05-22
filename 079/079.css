@@ -12,9 +12,16 @@
 
 body {background:#a2c4a3 url(flower_bg.jpg) repeat-x;font-family:"Trebuchet MS", Arial, Geneva, sans-serif;font-size:70%;color:#030;}
 header {position:absolute;left:20px;top:39px;width:222px;height:63px;background:url(cssZenGarden.gif) no-repeat;}
-header span {margin-left:-1000px;}
-.summary p:first-child {position:absolute;left:0;top:114px;width:750px;height:16px;background:url(an_example.gif) no-repeat;}
-.summary p:first-child span {margin-left:-1000em;}
+h1, h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.summary p:first-child {position:absolute;left:0;top:114px;width:750px;height:16px;background:url(an_example.gif) no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .summary p:last-child {position:absolute;left:116px;top:528px;width:88px;height:42px;font-weight:bold;}
 .preamble {position:absolute;left:20px;top:145px;width:222px;height:298px;overflow:auto;}
 h3 {background:transparent;font:italic normal 1.4em "Times New Roman",Times,serif;margin:0;border-bottom:1px solid #a2c4a3;color:#603;}

@@ -60,9 +60,9 @@ a:hover, a:active {
 	background: url(top.jpg) no-repeat center top;
 	padding-top: 186px;
 }
-header h1 span,
-header h2 span {
-	display:none
+header h1,
+header h2 {
+	display: none;
 }
 .summary p:first-child:first-line {
 	text-transform: uppercase;
@@ -124,11 +124,6 @@ footer a:link, footer a:visited {
 	text-transform: lowercase;
 	margin-top: 0px;
 }
-linkList h3.favorites { 
-	margin-top: 30px;
- 	background: url(b2.jpg) no-repeat center top;
-	padding-top: 110px;
-}
 .sidebar h3.archives { 
 	margin-top: 30px;
 	background: url(b3.jpg) no-repeat center top;
@@ -172,15 +167,15 @@ linkList h3.favorites {
 h3:first-letter {
 	font-size: 16px;
 }
-.sidebar h3 :before {
+.sidebar h3::before {
 content: "(";
 }
-.sidebar h3 :after {
+.sidebar h3::after {
 content: ")";
 }
-footer a:before {
+footer a::before {
 content: "{ ";
 }
-footer a:after {
+footer a::after {
 content: " }";
 }
