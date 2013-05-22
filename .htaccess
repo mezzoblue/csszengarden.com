@@ -1,21 +1,19 @@
 RewriteEngine On
 Options +FollowSymlinks
 
+
 # dude built a design browser. Cool.
 # dude ran ads on it. Not as.
 SetEnvIfNoCase Referer ".*coret.org$" BadReferrer
 order deny,allow
 deny from env=BadReferrer
 
+
+# allow submissions.json to be executed as php
 <FilesMatch "^.*submissions\.json$">
   SetHandler php-script
 </FilesMatch>
 
-<FilesMatch "^.*index\.html$">
-  SetHandler php-script
-</FilesMatch>
-	
 
-# to-do:
-# 1) redirect /zengarden-sample.css to /examples/style.css
-# 2) force download of html/css file
+# permanent redirect of old file
+RedirectMatch 301 ^/zengarden-sample\.css$ /examples/style.css
