@@ -1,0 +1,227 @@
+/* css Zen Garden submission 092 - 'Port of Call', by Jessica Dunn, http://vcdesignconcept.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Jessica Dunn */
+/* Added: April 9th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+
+/* basic elements */
+body { 
+	font: 12px georgia; 
+	color: #231C1C; 
+	background: url(2.jpg) repeat-y #3D3131; 
+	margin: 0 0 0 0;
+	padding: 0 0 0 6px;
+	}
+
+p { 
+	font: 12px/1.5 arial, times new roman, helvetica;  
+	text-align: justify;
+	}
+
+h3 { 
+	font: bold italic 12pt times new roman; 
+	letter-spacing: 1px; 
+	color: #000;
+	}
+
+a:link, a:visited { 
+	font-weight: normal; 
+	text-decoration: none; 
+	color: #FFFFD6;
+	}
+
+a:hover, a:active { 
+	border-bottom:1px dotted #FFFFD6;
+	border-top:1px dotted #FFFFD6;
+	color: #CF700B;
+	}
+
+#container { 
+	width: 760px;
+	}
+
+#intro { 
+	min-width: 0px;
+	}
+
+#pageHeader h1 { 
+	background: transparent url(top-n.jpg) no-repeat; 
+	height: 284px;
+	width: 504px;
+	top: 0px;
+	margin: 0 0 0 0;
+	}
+
+#pageHeader h1 span {
+	display:none
+	}
+
+#pageHeader h2 { 
+	background: transparent url(top-n2.jpg) no-repeat; 
+	height: 229px;
+	width: 504px;  
+	margin: 0 0 0 0;
+	top: 0px; 
+	}
+
+#pageHeader h2 span {
+	display:none;
+	}
+
+#quickSummary {
+	background: transparent url(flr.jpg) center bottom no-repeat;
+	clear:both; 
+	width: 288px;
+	left: 408px;
+	margin: 40px 0 0 120px;
+	padding:0 70px 65px 120px; 
+	}
+
+#quickSummary p {
+	font: italic 10pt/22pt georgia; 
+	text-align:center;
+	padding:0 70px 0 30px;
+	}
+
+#preamble {
+	margin: 0 0 0 -60px;
+	position: absolute;
+	top: 30px;
+	left: 520px;
+	width: 260px;
+	z-index: 2;
+	color: #DBD7C5;
+	padding: 0 0 0 0;
+}
+
+#preamble p {
+	font-size: 11px;
+	line-height: 15px;
+}
+
+#preamble h3 {
+	display:none;
+	}
+
+#supportingText {
+	position: absolute;
+	top: 525px;
+	left: 40px;
+	margin-left: 4px;
+	float: left;
+	width: 200px;
+	}
+
+#participation {
+	margin:20px 20px 20px 4px;
+	width: 400px;
+	}
+
+#benefits, #requirements {
+	left: 40px;
+	width: 400px;
+	margin:20px 20px 20px 4px;
+	}
+
+#footer { 
+	position: absolute;
+	left: 4px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 10px;
+	width: 388px;
+	text-align: center;
+	}
+
+#linkList {
+	background: repeat-y transparent; 
+	margin: 0 0 0 0;
+	padding:10px 0 0 0;
+	color: #AF610F;
+	position: absolute;
+	top:27em;
+	left:510px;
+	width: 170px;
+	}
+
+#linkList h3.select, #linkList h3.select span { 
+	display: none;
+	}
+
+#linkList h3.archives, #linkList h3.resources { 
+	padding: 10px 25px 8px 55px;
+	margin: 0;
+	color: #DDD1C5;
+	letter-spacing: 2px;
+	}
+
+
+#lresources, #larchives, #lselect {             
+	margin: 0 0 0 0;
+    padding: 0;      
+	}      
+              
+#linkList a:link, #linkList a:visited {
+	color: #F3B530;
+    }
+
+#lselect li {
+	font: 9pt/16pt arial, new times roman;
+	color: #DBD7C5;	
+      margin:0;
+      padding:0 0 8px 0;
+	list-style: none;
+	border-top: 1px dotted #000;
+
+	}
+
+#lselect li a:link, #lselect li a:visited {
+	color: #FEBD33;
+	font: 9pt/16pt arial, new times roman;
+    }
+
+#linkList li {
+	background: transparent;
+	padding: 0 0 5px 5px;
+	line-height: 3.5ex; 
+	list-style-type: none;
+	font: 9pt/16pt arial, new times roman;
+	border-top: 1px dotted #000;
+	}
+
+#linkList li a.c:link, #linkList li a.c:visited {
+      color: #FEBD33;
+      }
+
+#linkList li a:hover {
+	color: #FFFFD6;
+	border-bottom:1px dotted #978D8C;
+	border-top:1px dotted #978D8C;
+	}
+
+#linkList #larchives li , #linkList #lresources li , #linkList #lfavorites li {
+	background: transparent;
+	margin: 0 0 0 0;
+	padding: 0 0 5px 2px;
+	line-height: 3.5ex; 
+	}
+
+#linkList ul {
+	width: 145px;
+	margin: 0 0 0 10px;
+	font: 9pt arial, times new roman, helvetica;  
+	}
+
+#extraDiv1 {
+	background: transparent url(taba2c.jpg) top left no-repeat; 
+	position: absolute; 
+	top: 0px; 
+	left:510px;
+	right: 0px; 
+	width: 259px; 
+	height: 284px;
+	}

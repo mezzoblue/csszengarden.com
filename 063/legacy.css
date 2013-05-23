@@ -1,0 +1,310 @@
+/* css Zen Garden submission 063 - 'Elastic Lawn' by Patrick Griffiths, http://htmldog.com/ptg/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Patrick Griffiths */
+/* Added: December 5th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+body {
+	font-family: arial, Helvetica, sans-serif;
+	font-size: 77%; /* initially set to percentage so that ems work without producing miniscule text in IE */
+	text-align: center; /* needed to center the container in IE5.x because it doesn't like 'margin: 0 auto' */
+	color: #dfd;
+	background: #1b890e url(grass.jpg); /* defines the colour as well as the background image so that an average colour is shown while the image loads */
+	padding: 0 0 6em 0;
+	margin: 0;
+}
+
+#container {
+	width: 48em;
+	text-align: left; /* resets the text alignment */
+	margin: 0 auto; /* centers the container */
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+p span {
+	display: block;
+	padding: 0 4em 1em 4em;
+}
+
+a {
+	color: #fe6;
+	background: url(underline1light.gif) bottom repeat-x;
+	text-decoration: none;
+}
+
+a:hover { background-image: url(underline2light.gif); }
+
+acronym { border: 0; }
+
+
+
+
+
+/*------------Hidden elements------------*/
+
+h1 span, h2, #intro h3 span, #supportingText h3 span, #linkList h3.xselect {
+	/* The equivalent of 'display: none' but leaves the elements readable by some screen readers */
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0,0,0,0);/* because 'height: 0' doesn't have any fun in IE5.5 */
+	height: 0;/* because clip doesn't have any fun in IE6 */
+}
+
+
+
+
+
+/*------------Main heading and Quick Summary------------*/
+
+#intro #pageHeader { padding: 0; }
+
+h1 {
+	position: relative;
+	top: 19px;
+	left: -24px;
+	height: 8em;
+	font-size: 1em;
+	background: url(logo.gif) bottom left no-repeat;
+	padding: 0;
+	margin: 0;
+}
+
+#quickSummary {
+	height: 8.1em; /* ensures that the linkList top fits directly below */
+	background: #fc3 url(yellowdiagonal.gif);
+}
+
+#quickSummary p span {
+	color: #030;
+	margin: 0;
+}
+
+#quickSummary .p1 span {
+	font-weight: bold;
+	background: url(curve.gif) top right no-repeat;
+	padding: 2.2em 15em 1em 3em;
+}
+
+#quickSummary .p2 span {
+	position: absolute;
+	top: 10.3em;
+	left: 50%;
+	width: 22em;
+	text-align: center;
+	padding: 0 0 0 11em;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 11em;
+}
+html>#quickSummary .p2 { width: 11em; }
+
+#quickSummary a {
+	color: #070;
+	background-image: url(underline1dark.gif);
+}
+
+#quickSummary a:hover {	background-image: url(underline2dark.gif); }
+
+
+
+
+
+/*------------Preamble, Supprting Text and Footer------------*/
+
+#preamble, #supportingText {
+	width: 32em;
+	background: #0d4407 url(grassdark.jpg);
+	margin-left: 16em;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	margin: 0 0 0 auto;
+}
+html>#preamble, html>#supportingText { margin: 0 0 0 auto; }
+
+#benefits p {
+	/* because otherwise IE 6 goes crazy */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	position: relative;
+	top: -1.5em;
+	margin: 1.5em 0 -1.5em 0;
+}
+#benefits>p {
+	top: 0;
+	margin: 0;
+}
+
+#preamble , #supportingText div { padding: 0 0 2.5em 0; }
+
+#explanation, #benefits {
+	color: #030;
+	background: #fc3 url(yellowdiagonal.gif);
+	margin: 0 2em;
+}
+
+#preamble .p1, #participation .p1, #requirements .p1 {
+	position: relative;
+	top: -15px;
+	background: url(corner_yelongreen_br.gif) top right no-repeat;
+	margin: 0 2em -15px 2em;
+}
+
+#preamble .p1 {
+	margin: 0 0 -15px 0;
+}
+
+#participation .p1 span, #requirements .p1 span {
+	display: block;
+	background: url(corner_yelongreen_bl.gif) top left no-repeat;
+	padding-top: 4em;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+#preamble .p1 span {
+	display: block;
+	padding-top: 4em;
+}
+
+#explanation .p1, #benefits .p1 {
+	background: url(corner_yelongreen_tl.gif) top left no-repeat;
+}
+
+#explanation .p1 span, #benefits .p1 span {
+	display: block;
+	background: url(corner_yelongreen_tr.gif) top right no-repeat;
+	padding-top: 3em;
+}
+
+#intro h3, #supportingText h3 {
+	position: relative;
+	top: -13px;
+	height: 13px;
+	background: url(enlightenment.gif) bottom center no-repeat;
+	padding: 0;
+	margin: 0 0 -13px 0;
+}
+
+#explanation h3 { background-image: url(about.gif); }
+#participation h3 { background-image: url(participation.gif); }
+#benefits h3 { background-image: url(benefits.gif); }
+#requirements h3 { background-image: url(requirements.gif); }
+
+#footer {
+	text-align: center;
+	background: url(corner_grassdarkongrass_bl.gif) bottom left no-repeat;
+	padding: 4em 0;
+}
+
+#extraDiv1 {
+	position: relative;
+	top: -15px;
+	width: 48em;
+	height: 15px;
+	background: url(corner_grassdarkongrass_br.gif) bottom right no-repeat;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+/*------------Link List------------*/
+
+#linkList {
+	position: absolute;
+	top: 16.1em;
+	width: 16em;
+	margin: 0;
+}
+
+#linkList2 {
+	background: #5b460b url(grassbrown.jpg);
+	padding: 0;
+}
+
+#linkList h3 {
+	font-family: "Trebuchet MS", arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fc3;
+	margin: 0;
+}
+
+#linkList h3.select {
+	position: relative;
+	top: -15px;
+	width: 13.3333em;
+	background: url(corner_yelonbrown_bl.gif) top left no-repeat;
+	padding: 0;
+	margin-bottom: -15px;
+}
+
+h3.select span {
+	display: block;
+	position: relative;
+	left: 15px;
+	background: url(twirl.gif) top right no-repeat;
+	padding-right: 15px;
+	padding-top: 2.5em;
+	margin-left: -15px;
+}
+
+#linkList a {
+	color: #efe;
+	background-image: url(underline1yellow.gif);
+}
+
+#linkList a:hover {
+	background-image: url(underline2yellow.gif);
+}
+
+ul {
+	list-style: none;
+	padding: 1em 1.5em;
+	margin: 0;
+}
+
+li {
+	padding-left: 1.5em;
+	margin-bottom: 1em;
+}
+
+li/* */ {
+	background: url(bullet.gif) left no-repeat;
+}
+
+#lselect ul a {
+	display: block;
+	font-family: "Trebuchet MS", arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+#lselect ul a.c {
+	display: inline;
+	font-family: arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+#lresources {
+	position: relative;
+	top: 15px;
+	background: url(curvebl2.gif) bottom right no-repeat;
+	padding-bottom: 15px;
+	margin-top: -15px;
+}
+
+#lresources ul {
+	background: url(curvebl.gif) bottom left no-repeat;
+}

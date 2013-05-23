@@ -1,0 +1,241 @@
+/* css Zen Garden submission 089 - 'Dark Industrial', by Ray Henry, http://www.reh3.com */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Ray Henry */
+/* Added: March 29th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+/* This file based on 'GearWorx99' by Ray Henry */
+/* http://www.reh3.com/ */
+
+
+/* basic elements */
+body {
+	margin:0;
+	padding:0;
+	background:#273340 url(main_bg.jpg) no-repeat bottom fixed;
+	text-align:center;
+	width:100%;
+	height:100%;
+	font-family:verdana, arial, "sans-serif";
+}
+h1, h2, h3, h4, h5 {
+	padding:0;
+	margin:0;
+}
+ul {
+	margin:0;
+	padding:0;
+}
+acronym {
+	cursor:help;
+}
+acronym:hover {
+	border-bottom:2px solid #919AA4;
+}
+/* structural elements */
+#container {
+	background:url(container_bg.gif) repeat-y;
+	position:relative;
+	margin:0 auto;
+	padding:0 3px;
+	width:600px;
+	text-align:left;
+	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	width:594px;
+}
+#intro {
+	padding:0;
+}
+#pageHeader {
+	background:url(intro_bg.jpg) no-repeat top left;
+	height:132px;
+}
+#pageHeader:hover {
+	background-position: 0 -132px;
+}
+#supportingText {
+	position:relative;
+	left:0;
+	width:359px;
+}
+#linkList {
+	position:absolute; 
+	top:169px;
+	right:2px;
+	margin:0 0 0 359px;
+	background:url(linkList_bg.gif) no-repeat top right;
+}
+
+/* intro */
+#pageHeader h1, #pageHeader h2, #quickSummary p.p1 {display:none;}
+#preamble {
+	position:relative;
+	left:0;
+	width:304px;
+	padding:0 45px 0 0;
+	margin:0;
+	font-size:11px;
+}
+#preamble h3 {
+	background:url(preamble_title.gif) no-repeat top left;
+	margin:10px 0 0 0;
+	text-indent:-5000px;
+	height:22px;
+}
+#preamble p {
+	color:#919AA4;
+	margin:10px 0 15px 10px;
+	padding:0;
+	line-height:14px;
+}
+#quickSummary {
+	position:absolute;
+	top:132px;
+	right:2px;
+	background:url(quickSum_bg.gif) no-repeat top right;
+	width:292px;
+	height:47px;
+	font-size:11px;
+	color:#92A0AB;
+	text-align:right;
+	padding:0;
+	margin:0;
+}
+#quickSummary p {
+	margin:10px 20px 0 0;
+}
+#quickSummary a:link, #quickSummary a:active, #quickSummary a:visited {
+	color:#92A0AB;
+	text-decoration:none;
+	border-bottom:2px solid #506067;
+}
+#quickSummary a:hover {
+	color:#b4c2cd;
+	text-decoration:none;
+	border-bottom:2px solid #708089;
+}
+
+/* supportingText */
+#supportingText p {
+	color:#919AA4;
+	margin:10px 0 15px 10px;
+	padding:0;
+	line-height:14px;
+	font-size:11px;
+}
+#supportingText h3 {
+	margin:10px 0 0 0;
+	text-indent:-5000px;
+	height:22px;
+}
+#explanation, #participation, #benefits, #requirements {
+	padding:0 45px 0 0;
+}
+#explanation h3 {
+	background:url(explain_title.gif) no-repeat top left;
+}
+#participation h3 {
+	background:url(part_title.gif) no-repeat top left;
+}
+#benefits h3 {
+	background:url(benefits_title.gif) no-repeat top left;
+}
+#requirements h3 {
+	background:url(req_title.gif) no-repeat top left;
+}
+#supportingText a:link, #supportingText a:active, #supportingText a:visited {
+	color:#919AA4;
+	font-weight:bold;
+}
+#supportingText a:hover {
+	color:#b3bcc6;
+}
+#explanation:hover, #participation:hover, #benefits:hover, #requirements:hover, #preamble:hover {
+	background:url(contentHover_bg.gif) no-repeat 0 20px;
+}
+#footer {
+	text-align:center;
+	border-top:1px solid #68717A;
+	padding:10px;
+	background:#101C28;
+	margin:0 2px 0 0;
+	font-size:10px;
+	font-weight:normal;
+}
+#footer a:link, #footer a:active, #footer a:visited {
+	color:#5D6772;
+}
+#footer a:hover {
+	color:#919AA4;
+}
+
+/* linkList */
+#linkList ul {
+	list-style:none;
+}
+#lselect {
+	margin:10px 0 0 0;
+	font-size:10px;
+}
+#lselect li {
+	padding:7px 0 7px 15px;
+	color:#909FB1;
+}
+#lselect a:link, #lselect a:active, #lselect a:visited {
+	color:#909FB1;
+	font-weight:bold;
+}
+#lselect a:hover {
+	color:#f50;
+}
+#lselect a.c {
+	font-weight:normal;
+	text-decoration:none;
+}
+#lselect h3 {
+	background:url(selectDesign_title.gif) no-repeat top left;
+	height:38px;
+	text-indent:-5000px;
+	width:237px;
+}
+#larchives h3 {
+	background:url(larchives_title.gif) no-repeat top left;
+	height:29px;
+	text-indent:-5000px;
+	width:237px;
+	margin:10px 0 0 0;
+}
+#larchives li {
+	padding:7px 0 7px 15px;
+	color:#909FB1;
+	font-size:10px;
+}
+#larchives a:link, #larchives a:active, #larchives a:visited {
+	color:#909FB1;
+}
+#larchives a:hover {
+	color:#f50;
+}
+#lresources h3 {
+	background:url(lresources_title.gif) no-repeat top left;
+	height:29px;
+	text-indent:-5000px;
+	width:237px;
+	margin:10px 0 0 0;
+}
+#lresources li {
+	padding:7px 0 7px 15px;
+	color:#909FB1;
+	font-size:10px;
+}
+#lresources a:link, #lresources a:active, #lresources a:visited {
+	color:#909FB1;
+}
+#lresources a:hover {
+	color:#f50;
+}

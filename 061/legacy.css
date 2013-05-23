@@ -1,0 +1,241 @@
+/* css Zen Garden submission 061 - 'Sky' by Stefan Petre, http://www.eyecon.ro/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Stefan Petre */
+/* Added: November 14th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+body {
+	font: 10px Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-position : center;
+	background-image : url(page_fill.jpg) ;
+	background-repeat : repeat-y;
+}
+
+a:link { 
+	color: #00f;
+	}
+a:visited { 
+	color: #99f;
+	}
+a:hover, a:active { 
+text-decoration: none;
+	}
+
+acronym	{
+	border-bottom: 1px dotted #eee;
+	cursor : help;
+}
+	
+#container {
+	width: 700px;
+	margin: 0px auto;
+	text-align : left;
+	background-image : url(right_fill.jpg);
+	background-repeat : repeat-y;
+	clear : both;
+	background-color : #ff;
+}
+
+#intro {
+	width: 700px;
+	height: 246px;
+	overflow: hidden;
+	background-image : url(header_intro.jpg);
+	background-position : bottom;
+	background-repeat : no-repeat;
+	text-align : right;
+	color : #fff;
+	clear : both;
+}
+#pageHeader {
+	width: 700px;
+	height : 36px;
+	overflow : hidden;
+	background-image : url(header_title.jpg);
+}
+
+
+#pageHeader h1 {
+	display : none;
+}
+
+#pageHeader h2 {
+	display : none;
+}
+
+#quickSummary {
+	float: right;
+	width: 400px;
+	margin : 0px 3px;
+	height: 40px;
+	overflow: auto;
+}
+
+#quickSummary p {
+	margin: 0px;
+}
+	
+#quickSummary a{
+	color: #eee;
+}
+
+#preamble {
+	float: left;
+	width: 400px;
+	margin : 0px 3px;
+	text-align : left;
+	height: 142px;
+	overflow: auto;
+}
+	
+#preamble p {
+	margin: 0px;
+}
+	
+#preamble h3{
+	margin: 8px 0px;
+	font-size: 18px;
+}
+#supportingText {
+	width : 440px;
+	text-align : left;
+	float : right;
+}
+
+#linkList {
+	background-image : url(right_fill.jpg);
+	width : 250px;
+	text-align : left;
+	background-position : left;
+	min-height : 1140px;
+	padding-bottom: 20px;
+}
+
+#linkList2 {
+	background-image : url(right_start.jpg);
+	background-position : top;
+	background-repeat : no-repeat;
+	padding-top: 20px;
+}
+
+
+#lselect h3{
+	background-image : url(label_select.jpg);
+	background-repeat : no-repeat;
+	margin : 4px 0px 4px 20px;
+	height : 16px;
+}
+
+#lfavorites h3{
+	background-image : url(label_favorites.jpg);
+	background-repeat : no-repeat;
+	margin : 4px 0px 4px 20px;
+	height : 16px;
+}
+
+#larchives h3{
+	background-image : url(label_archives.jpg);
+	background-repeat : no-repeat;
+	margin : 4px 0px 4px 20px;
+	height : 16px;
+}
+
+#lresources h3{
+	background-image : url(label_resources.jpg);
+	background-repeat : no-repeat;
+	margin : 4px 0px 4px 20px;
+	height : 16px;
+}
+
+
+#linkList2 h3  span{
+	display : none;
+}
+
+#linkList2 ul{
+	list-style-type : none;
+	margin-bottom: 30px;
+}
+
+#linkList2 li{
+	margin: 4px;
+}
+
+#lselect a{
+	display : block;
+	color: #ffd;
+	font-size: 13px;
+}
+#linkList2 a{
+	color: #ffd;
+	font-size: 13px;
+}
+
+#linkList2 a.c{
+	display : inline;
+	font-size: 11px;
+	color: #ddd;
+}
+
+#explanation h3{
+	background-image : url(label_about.jpg);
+}
+
+#participation h3{
+	background-image : url(label_participation.jpg);
+}
+
+#benefits h3{
+	background-image : url(label_benefits.jpg);
+}
+#requirements h3{
+	background-image : url(label_requirements.jpg);
+}
+
+#supportingText h3 span{
+	display : none;
+}
+#supportingText h3 {
+	margin: 0px;
+	background-repeat : no-repeat;
+	height : 37px;
+	width : 237px;
+	background-position : left;
+}
+
+#supportingText  p{
+	margin: 10px 6px 6px 70px;
+	text-align : justify;
+}
+
+#extraDiv1{
+	clear: both;
+}
+
+#explanation,
+#participation ,
+#benefits,
+#requirements
+{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	background-image : url(paragraf_back.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+#footer {
+	text-align: center;
+}
+
+#footer a:link, #footer a:visited { 
+	margin-right: 20px; 
+}

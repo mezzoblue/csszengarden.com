@@ -1,0 +1,301 @@
+/* css Zen Garden submission 064 - 'Night Drive' by Dave Shea, http://www.mezzoblue.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Dave Shea */
+/* Added: December 6th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+html {
+	margin: 0;
+	padding: 0;
+	}
+
+body {
+	color: #A05B00;
+	background: #000 url(bg1.gif) repeat;
+	text-align: center;
+	font: 11px/18px helvetica, arial, sans-serif;
+	text-transform: lowercase;
+	margin: 0;
+	padding: 0;
+	}
+a:link {
+	color: #FFC000;
+	text-decoration: none;
+	}
+a:visited {
+	color: #D79900;
+	text-decoration: underline;
+	}
+a:hover {
+	color: #FF0;
+	text-decoration: underline;
+	}
+	
+p {
+	padding: 0 0 0.3em 14px;
+	}	
+h3 {
+	font-size: 12px;
+	color: #CA7400;
+	margin-bottom: 0;
+	padding-left: 14px;
+	background: transparent url(w1.gif) 0 2px no-repeat;
+	}
+h3 + p {
+	margin-top: 0;
+	}
+acronym {
+	font-style: normal;
+	border-bottom: none;
+	}
+
+/* structure */
+#container {
+	background-color: #000;
+	width: 770px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: double 3px #332511;
+	border-right: double 3px #332511;
+	}
+	
+	
+	
+/* header */
+h1 span, h2 span {
+	display: none;
+	}
+h1 {
+	width: 770px;
+	height: 166px;
+	margin: 0;
+	background: #000 url(bg2.gif) top left no-repeat;
+	}
+h2 {
+	width: 244px;
+	height: 42px;
+	background: #000 url(h1.gif) top left no-repeat;
+	position: absolute;
+	top: 120px;
+	margin: 0;
+	margin-left: 495px;
+	}
+	
+
+/* content */
+#quickSummary, #preamble, #supportingText {
+	margin: 0 0 0 400px;
+	padding: 1px 0; /*1px 10px 1px 10px;*/
+	background: transparent url(bg4.gif) top left repeat-y;
+	width: 342px;
+	}
+#quickSummary h3, #preamble h3, #supportingText h3 {
+	margin: 0 10px;
+}
+#quickSummary p, #preamble p, #supportingText p {
+	margin: 0 0 10px 10px;
+}
+	
+#quickSummary {
+	border-top: solid 1px #332511;
+	padding-top: 10px;
+	}
+
+	
+/* sidebar */
+#linkList {
+	position: absolute;
+	top: 166px;
+	width: 400px;
+	height: 633px;
+	color: #132F5B; /*#742500;*/
+	background: transparent url(bg3.gif) top left repeat-x;
+	border-top: solid 1px #332511;
+	line-height: 12px;
+	padding-top: 20px;
+	}
+#linkList ul {
+	margin: 0;
+	padding: 0;
+	}
+#linkList li {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 0.5em;
+	}
+#lselect li {
+	padding: 3px 3px 3px 16px;
+	background: transparent url(w2.gif) 3px 3px no-repeat;
+}
+#lselect li a:link, #lselect li a:visited {
+	display: block;
+}
+#linkList h3 {
+	padding-left: 0;
+	background-image: none;
+	}
+#linkList h3 span {
+	display: none;
+}
+#linkList a, #linkList a:link {
+	color: #AF4F0A;
+	font-weight: bold;
+}
+#linkList li a.c:link, #linkList li a.c:visited {
+	color: #742500;
+	font-weight: normal;
+	display: inline;
+	text-decoration: none;
+}
+#linkList a.c:hover {
+	text-decoration: underline;
+}
+
+#linkList h3.select {
+	width: 160px;
+	height: 12px;
+	background: transparent url(h-select.gif) top left no-repeat;
+	margin-bottom: 0.5em;
+}
+#linkList h3.archives {
+	width: 180px;
+	height: 12px;
+	background: transparent url(h-archives.gif) top left no-repeat;
+	margin-bottom: 0.5em;
+}
+#linkList h3.resources {
+	width: 180px;
+	height: 12px;
+	background: transparent url(h-resources.gif) top left no-repeat;
+	margin-bottom: 0.5em;
+}
+
+
+#lselect {
+	width: 160px;
+	float: left;
+	padding-left: 50px;
+}
+
+/* CSS MOSe hovers */
+* > #lselect li {
+	margin-top: -7px;
+	padding: 5px 5px 5px 18px;
+	background-position: 5px 5px;
+	margin-right: 10px;
+	border: solid 1px transparent;
+}
+#lselect li:hover {
+	background: #2A1812;
+	border-color: #452310;
+}
+#lselect li:hover a {
+	color: #FF9D14;
+}
+#lselect li:hover a.c {
+	color: #E84900;
+}
+
+
+#larchives {
+	padding-top: 1px;
+}
+#larchives, #lresources {
+	padding-left: 200px;
+}
+
+#footer {
+	text-align: right;
+	padding: 5px 10px 100px 15px;
+	background: url(skyline.jpg) bottom left repeat-x;
+	position: relative;
+	left: 3px;
+	width: 342px;
+	margin: 0;
+}
+
+	
+/* extra bits */
+#extraDiv1 {
+	position: absolute;
+	top: 41px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	}
+#extraDiv1 span {
+	width: 400px;
+	height: 123px;
+	background: transparent url(granville.jpg) top left no-repeat;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 370px;
+	width: 770px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 400px;
+	}
+html>body #extraDiv1 span {
+	width: 400px;
+}
+#extraDiv2 {
+	position: absolute;
+	top: 41px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	}
+#extraDiv2 span {
+	height: 70px;
+	background: transparent url(falsecreek.jpg) top right no-repeat;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 402px;
+	width: 769px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 367px;
+	}
+html>body #extraDiv2 span {
+	width: 367px;
+} 
+#extraDiv3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+#extraDiv3 span {
+	text-align: left;
+	width: 770px;
+	height: 38px;
+	background: transparent url(bg5.gif) top left repeat-x;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#extraDiv4 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+/* IE doesn't support PNG transparency. No soup for you. */
+html>body #extraDiv4 span {
+	width: 790px;
+	height: 94px;
+	background: transparent url(seal.png) top right no-repeat;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
