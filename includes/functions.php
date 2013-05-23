@@ -9,6 +9,8 @@
 	// generate the list of designs in the site navigation
 	function getDesignList($start, $count, $list, $i18nBy) {
 
+		global $legacyMode;
+
 		// flush return value
 		$return = "";
 

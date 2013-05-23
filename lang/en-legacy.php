@@ -7,7 +7,6 @@
 
 		// if you'd like translation credit, place it somewhere in this comment
 		"comment" => "
-
 	This xhtml document is marked up to provide the designer with the maximum possible flexibility.
 	There are more classes and extraneous tags than needed, and in a real world situation, it's more
 	likely that it would be much leaner.
@@ -20,7 +19,7 @@
 
 
 	$intro = array(
-		"h1" => "CSS Zen Garden",
+		"h1" => "css Zen Garden",
 		"h2" => 'The Beauty of <acronym title="Cascading Style Sheets">CSS</acronym> Design',
 
 		"summary-p1" => 'A demonstration of what can be accomplished visually through <acronym title="Cascading Style Sheets">CSS</acronym>-based design. Select any style sheet from the list to load it into this page.',
@@ -74,20 +73,20 @@
 		"design-archives-h3" => "Archives:",
 		"design-archives-next" => "Next Designs",
 		"design-archives-previous" => "Previous Designs",
-		"design-archives-viewall-title" => "View every submission to the Zen Garden.",
-		"design-archives-viewall-text" => "View All Designs",
+		"design-archives-viewall-title" => "View every submission to the Zen Garden. AccessKey: w",
+		"design-archives-viewall-text" => "Vie<span class=\"accesskey\">w</span> All Designs",
 
 		"design-resources-h3" => "Resources:",
-		"view-css-title" => 'View the source CSS file of the currently-viewed design.',
-		"view-css-text" => 'View This Design&#8217;s <acronym title="Cascading Style Sheets">CSS</acronym>',
-		"css-resources-title" => 'Links to great sites with information on using CSS.',
-		"css-resources-text" => '<acronym title="Cascading Style Sheets">CSS</acronym> Resources',
-		"zen-faq-title" => 'A list of Frequently Asked Questions about the Zen Garden.',
-		"zen-faq-text" => '<acronym title="Frequently Asked Questions">FAQ</acronym>',
-		"zen-submit-title" => 'Send in your own CSS file.',
-		"zen-submit-text" => 'Submit a Design',
-		"zen-translations-title" => 'View translated versions of this page.',
-		"zen-translations-text" => 'Translations',
+		"view-css-title" => 'View the source CSS file of the currently-viewed design. AccessKey: v',
+		"view-css-text" => '<span class="accesskey">V</span>iew This Design&#8217;s <acronym title="Cascading Style Sheets">CSS</acronym>',
+		"css-resources-title" => 'Links to great sites with information on using CSS. AccessKey: r',
+		"css-resources-text" => '<acronym title="Cascading Style Sheets">CSS</acronym> <span class="accesskey">R</span>esources',
+		"zen-faq-title" => 'A list of Frequently Asked Questions about the Zen Garden. AccessKey: q',
+		"zen-faq-text" => '<acronym title="Frequently Asked Questions">FA<span class="accesskey">Q</span></acronym>',
+		"zen-submit-title" => 'Send in your own CSS file. AccessKey: s',
+		"zen-submit-text" => '<span class="accesskey">S</span>ubmit a Design',
+		"zen-translations-title" => 'View translated versions of this page. AccessKey: t',
+		"zen-translations-text" => '<span class="accesskey">T</span>ranslations',
 	);
 
 	$foot = array(

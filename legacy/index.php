@@ -1,5 +1,7 @@
 <?php
 
+	$legacyMode = true;
+
 	// import URLs
 	include($SERVER_ROOT . "../includes/urls.php");
 

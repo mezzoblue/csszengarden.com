@@ -24,6 +24,7 @@
 <?php echo $head["comment"]; ?>
 
 -->
+
 <body id="css-zen-garden">
 
 <div id="container">
@@ -92,25 +93,22 @@
 		<!-- If you're wondering about the extra &nbsp; at the end of the link, it's a hack to meet WCAG 1 Accessibility. -->
 		<!-- I don't like having to do it, but this is a visual exercise. It's a compromise. -->
 			<div id="lselect">
-				<!-- list of links begins here. There will be no more than 8 links per page -->
 				<h3 class="select"><span><?php echo $sidebar["design-selection-h3"]; ?></span></h3>
+				<!-- list of links begins here. There will be no more than 8 links per page -->
 				<ul>
 <?php
-		echo getDesignList($listStart, $numDesigns, $designList, $sidebar["design-selection-by"]);
+echo getDesignList($listStart, $numDesigns, $designList, $sidebar["design-selection-by"]);
 ?>
 				</ul>
 			</div>
 
 			<div id="larchives">
-				<h3 class="archives"><span><span><?php echo $sidebar["design-archives-h3"]; ?></span></span></h3>
-
+				<h3 class="archives"><span><?php echo $sidebar["design-archives-h3"]; ?></span></h3>
 				<ul>
 <?php
 	if ($listStart > $numDesigns) {
 ?>
-
-					<li><a href="?cssfile=<?php echo $currentDesign ?>&amp;page=<?php echo $thisPage + 1 ?>" title="View next set of designs. AccessKey: n" accesskey="n"><span class="accesskey">n</span>ext designs &raquo;</a>&nbsp;</a></li>
-
+					<li><a href="?cssfile=<?php echo $currentDesign ?>&amp;page=<?php echo $thisPage + 1 ?>" title="View next set of designs. AccessKey: n" accesskey="n"><span class="accesskey">n</span>ext designs &raquo;</a></li>
 <?php
 	}
 
@@ -122,42 +120,18 @@
 <?php
 	}
 ?>
-					<li class="viewall">
-						<a href="<?php echo $zenUrls["zen-view-all"]; ?>" title="<?php echo $sidebar["design-archives-viewall-title"]; ?>">
-							<?php echo $sidebar["design-archives-viewall-text"]; ?>
-						</a>
-					</li>
+					<li><a href="<?php echo $zenUrls["zen-view-all"]; ?>" title="<?php echo $sidebar["design-archives-viewall-title"]; ?>" accesskey="w"><?php echo $sidebar["design-archives-viewall-text"]; ?></a></li>
 				</ul>
 			</div>
 
-			<div class="zen-resources" id="zen-resources">
+			<div id="lresources">
 				<h3 class="resources"><span><?php echo $sidebar["design-resources-h3"]; ?>:</span></h3>
 				<ul>
-					<li class="view-css">
-						<a href="<?php echo $currentDesign ?>" title="<?php echo $sidebar["view-css-title"]; ?>">
-							<?php echo $sidebar["view-css-text"]; ?>
-						</a>
-					</li>
-					<li class="css-resources">
-						<a href="<?php echo $zenUrls["zen-resources"]; ?>" title="<?php echo $sidebar["css-resources-title"]; ?>">
-							<?php echo $sidebar["css-resources-text"]; ?>
-						</a>
-					</li>
-					<li class="zen-faq">
-						<a href="<?php echo $zenUrls["zen-faq"]; ?>" title="<?php echo $sidebar["zen-faq-title"]; ?>">
-							<?php echo $sidebar["zen-faq-text"]; ?>
-						</a>
-					</li>
-					<li class="zen-submit">
-						<a href="<?php echo $zenUrls["zen-submit"]; ?>" title="<?php echo $sidebar["zen-submit-title"]; ?>">
-							<?php echo $sidebar["zen-submit-text"]; ?>
-						</a>
-					</li>
-					<li class="zen-translations">
-						<a href="<?php echo $zenUrls["zen-translations"]; ?>" title="<?php echo $sidebar["zen-translations-title"]; ?>">
-							<?php echo $sidebar["zen-translations-text"]; ?>
-						</a>
-					</li>
+					<li><a href="http://www.csszengarden.com<?php echo $currentDesign ?>" title="<?php echo $sidebar["view-css-title"]; ?>" accesskey="v"><?php echo $sidebar["view-css-text"]; ?></a></li>
+					<li><a href="<?php echo $zenUrls["zen-resources"]; ?>" title="<?php echo $sidebar["css-resources-title"]; ?>" accesskey="r"><?php echo $sidebar["css-resources-text"]; ?></a></li>
+					<li><a href="<?php echo $zenUrls["zen-faq"]; ?>" title="<?php echo $sidebar["zen-faq-title"]; ?>" accesskey="q"><?php echo $sidebar["zen-faq-text"]; ?></a></li>
+					<li><a href="<?php echo $zenUrls["zen-submit"]; ?>" title="<?php echo $sidebar["zen-submit-title"]; ?>" accesskey="s"><?php echo $sidebar["zen-submit-text"]; ?></a></li>
+					<li><a href="<?php echo $zenUrls["zen-translations"]; ?>" title="<?php echo $sidebar["zen-translations-title"]; ?>" accesskey="t"><?php echo $sidebar["zen-translations-text"]; ?></a></li>
 				</ul>
 			</div>
 		</div>
