@@ -166,8 +166,7 @@
 
 </div>
 
-<!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
-<!-- Add a background image to each and use width and height to control sizing, place with absolute positioning -->
+<?php echo $foot["comment"]; ?>
 <div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div>
 <div id="extraDiv4"><span></span></div><div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
 

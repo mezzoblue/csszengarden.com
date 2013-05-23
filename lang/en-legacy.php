@@ -67,13 +67,33 @@
 		"zen-github-text" => "GH",
 	);
 
+	$sidebar = array(
+		"design-selection-h3" => "Select a Design:",
+		"design-selection-by" => "by",
+
+		"design-archives-h3" => "Archives:",
+		"design-archives-next" => "Next Designs",
+		"design-archives-previous" => "Previous Designs",
+		"design-archives-viewall-title" => "View every submission to the Zen Garden.",
+		"design-archives-viewall-text" => "View All Designs",
+
+		"design-resources-h3" => "Resources:",
+		"view-css-title" => 'View the source CSS file of the currently-viewed design.',
+		"view-css-text" => 'View This Design&#8217;s <acronym title="Cascading Style Sheets">CSS</acronym>',
+		"css-resources-title" => 'Links to great sites with information on using CSS.',
+		"css-resources-text" => '<acronym title="Cascading Style Sheets">CSS</acronym> Resources',
+		"zen-faq-title" => 'A list of Frequently Asked Questions about the Zen Garden.',
+		"zen-faq-text" => '<acronym title="Frequently Asked Questions">FAQ</acronym>',
+		"zen-submit-title" => 'Send in your own CSS file.',
+		"zen-submit-text" => 'Submit a Design',
+		"zen-translations-title" => 'View translated versions of this page.',
+		"zen-translations-text" => 'Translations',
+	);
 
 	$foot = array(
-		"comment" => "
-	These superfluous divs/spans were originally provided as catch-alls to add extra imagery.
-	These days we have full ::before and ::after support, favour using those instead.
-	These only remain for historical design compatibility. They might go away one day.
-		",
+		"comment" => "<!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+<!-- Add a background image to each and use width and height to control sizing, place with absolute positioning -->
+",
 	);
 
 

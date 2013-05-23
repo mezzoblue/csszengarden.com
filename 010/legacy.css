@@ -1,0 +1,234 @@
+/* css Zen Garden submission 010 - 'A Garden Apart' by Dan Cederholm, http://www.simplebits.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Dan Cederholm */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+body 
+	{ 
+		font-family: trebuchet ms, verdana, sans-serif;
+		font-size: 12px;
+		line-height: 1.5em; 
+		color: #333; 
+		background: #cccc99;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+p 
+	{ 
+		margin-top: 0px; 
+	}
+	
+h3 
+	{ 
+		font: bold 140% trebuchet ms;
+		letter-spacing: -1px; 
+		margin-bottom: 0; 
+		color: #c96;
+	}
+	
+a:link 
+	{ 
+		text-decoration: none;
+		border-bottom: 1px dotted #369; 
+		color: #369;
+	}
+	
+a:visited 
+	{ 
+		text-decoration: none;
+		border-bottom: 1px dotted #369; 
+		color: #369;
+	}
+	
+a:hover, a:active 
+	{ 
+		text-decoration: none;
+		border-bottom: 1px solid #036; 
+		color: #036;
+	}
+
+/* ---( specific divs )----------------------------- */
+
+#container 
+	{
+		position: relative;
+		background: #FFFBDF url(fade.gif) no-repeat 0 92px;
+		margin: 0 auto 10px auto;
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+		border-bottom: 1px solid #000;
+		text-align: left;
+ 		width: 800px;
+	}
+
+#pageHeader
+	{
+		height: 92px;
+		background: url(top.gif) no-repeat top left;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1, #pageHeader h2 span
+	{ 
+		margin: 0;
+		padding: 0;
+		display: none;
+	}
+	
+#pageHeader h2 
+	{ 
+		position: absolute;
+		top: 110px;
+		left: 20px;
+		padding: 0;
+		margin: 0;
+		background: url(tagline.gif) no-repeat top left;
+		width: 528px;
+		height: 74px;
+	}
+
+/* ---( quick summary)---------------------------- */
+
+#quickSummary 
+	{
+		position: absolute;
+		top: 92px;
+		right: 0;
+		left: auto;
+		z-index: 2;
+		width: 298px; 
+  		voice-family: "\"}\""; 
+  		voice-family:inherit;
+ 		width: 300px;
+	}
+
+html>body #quickSummary
+	{
+  		width: 300px;
+	} 
+
+#quickSummary p 
+	{
+		margin: 15px 15px 15px 15px; 
+		font-style: italic;
+		font-size: 140%; 
+		font-family: "trebuchet ms";
+		font-weight: bold;
+		line-height: 1.5em;
+		color: #444;
+	}
+
+#quickSummary p.p2 
+	{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 100%;
+		margin-top: 0;
+	}
+
+#preamble 
+	{
+		margin: 104px 340px 0px 20px;
+	}
+	
+#supportingText 
+	{
+		padding-left: 20px; 
+		margin: 0 350px 40px 0;
+	}
+
+#footer 
+	{ 
+		border-top: 1px dotted #CDC4AC;
+		padding-top: 6px;
+		text-align: center;
+	}
+	
+#footer a:link, #footer a:visited 
+	{ 
+		margin-right: 6px;
+	}
+
+/* ---( right side nav)----------------------------- */
+
+#linkList 
+	{
+		position: absolute; 
+		top: 92px; 
+		right: 0;
+		left: auto;
+		width: 300px;
+		padding: 0;
+		border-left: 1px solid #CDC4AC;
+		border-bottom: 1px solid #CDC4AC;
+		background: #E5E0D4 url(zen.gif) no-repeat;
+		z-index: 1;
+	}
+	
+#linkList2 
+	{ 
+		margin: 190px 15px 15px 15px; 
+	}
+
+#linkList h3
+	{
+		color: #635F57;
+		font-family: trebuchet ms;
+		font-size: 120%;
+		margin: 0 0 6px 0;
+		padding: 0;
+	}	
+	
+#linkList ul
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+#linkList li
+	{
+		display: block; 
+		margin-bottom: 2px;
+		padding-left: 14px;
+		background: url(arrow.gif) no-repeat 0 5px;
+		list-style-type: none;
+	}
+	
+#linkList li a:link
+	{ 
+		color: #c96;
+		border-bottom: none;
+	}
+	
+#linkList li a:visited
+	{
+		color: #c96;
+		border-bottom: none;
+	}
+	
+#linkList li a:hover
+	{
+		color: #963;
+	}
+
+
+
+
+#lselect
+	{
+		padding: 12px 0 12px 0;
+		border-top: 1px dashed #CDC4AC;
+		border-bottom: 1px dashed #CDC4AC;
+	}
+	
+#lresources
+	{
+		margin-top: 12px;
+	}
