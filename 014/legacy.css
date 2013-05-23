@@ -1,0 +1,298 @@
+/* css Zen Garden submission 014 - 'Samuraai' by Minz Meyer, http://www.minzweb.de/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Minz Meyer */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+body {
+	background-image: url(background_body.jpg);
+	background-color: #000;
+	color: #D8E0BC;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 10px;
+	padding: 0;
+	font: 12px/1.5 Verdana, sans-serif;
+}
+
+/* Basic styles */
+
+h3 {
+	background-color: #B1AD72;
+	color: inherit;
+	margin-top: 0;
+	border-right: 4px solid #818343;
+	border-bottom: 1px solid #818343;
+	height: 25px;
+}
+
+h3 span {
+	display: none;
+}
+
+div#preamble p.p3 {
+	padding-bottom: 15px;
+}
+
+/* Main div styling */
+div#container {
+	background-color: #2F2F13;
+	color: inherit;
+	background-image: url(container_background.jpg);
+	background-position: right;
+	background-repeat: repeat-y;
+	border-left: 1px solid #8F8C4E;
+	border-bottom: 1px solid #8F8C4E;
+}
+
+div#intro {
+	position: relative;
+	overflow: hidden;
+}
+
+div#pageHeader {
+	background-color: #000;
+	color: inherit;
+	background-image: url(umbrella.jpg);
+	background-repeat: no-repeat;
+	border-top: 1px solid #8F8C4E;
+	border-bottom: 1px solid #8F8C4E;
+	border-right: 1px solid #8F8C4E;
+	height: 50px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+div#pageHeader h1 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 500px;
+	height: 46px;
+	float: left;
+}
+
+div#pageHeader h1 span {
+	visibility: hidden;
+}
+
+div#pageHeader h2 {
+	background-image: url(beauty_background.gif);
+	background-repeat: no-repeat;
+	margin-top: 5px;
+	margin-left: 0px;
+	width: 348px;
+	height: 39px;
+	float: right;
+}
+
+div#pageHeader h2 span {
+	display: none;
+}
+
+div#quickSummary {
+	position: relative;
+	float:left;
+	width: 150px;
+	margin-top: -10px;
+	padding: 8px;
+	background-color: transparent;
+	color: inherit;
+}
+
+div#quickSummary p {
+	margin-top: 0px;
+	font: italic 14px Verdana, sans-serif;
+	text-align: center;
+}
+
+div#quickSummary p.p2 {
+	font: italic 11px Verdana, sans-serif;
+}
+
+div#preamble {
+	border-bottom: 1px solid #8F8C4E;
+	margin-top: -16px;
+	margin-right: 222px;
+	background-image: url(background-preamble.jpg);
+	background-repeat: no-repeat;
+	background-color: #000;
+	color: inherit;
+	
+}
+div#preamble h3 {
+	background-image: url(preamble_h3_background.jpg);
+	background-repeat: no-repeat; 
+	margin-top: 0px;
+	margin-left: 170px;
+}
+
+div#preamble p {
+	padding-right: 30px;
+	margin-left: 200px;
+	color: inherit;
+	background-color: transparent;
+	font: 14px/1.6 Verdana, sans-serif;
+	text-align: justify;
+	width: auto;
+}
+
+div#supportingText {
+	margin-top: 0px;
+}
+
+div#explanation, div#participation, div#benefits, div#requirements {
+	margin-right: 222px;
+	margin-bottom: 30px;
+}
+
+
+div#supportingText p {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div#explanation h3 {
+	background-image: url(explanation_h3_background.jpg);
+	background-repeat: no-repeat;
+}
+
+div#participation h3 {
+	background-image: url(participation_h3_background.jpg);
+	background-repeat: no-repeat;
+}
+
+div#benefits h3 {
+	background-image: url(benefits_h3_background.jpg);
+	background-repeat: no-repeat;
+}
+
+div#requirements h3 {
+	background-image: url(requirements_h3_background.jpg);
+	background-repeat: no-repeat;
+}
+
+
+div#linkList {
+	position: absolute;
+	top: 62px;
+	right: 50px;
+	width: 220px;
+	background-color: transparent;
+	color: inherit;
+	font: 10px/1.5 Verdana, sans-serif;
+}
+
+div#linkList h3.select {
+	background-color: #2F2F13;
+	background-image: url(select_h3_background.jpg);
+	background-repeat: no-repeat;	
+	color: inherit;
+	margin-top: 0;
+	border-right: 4px solid #818343;
+	border-bottom: 1px solid #818343;
+	height: 25px;
+	
+}
+
+div#linkList h3.resources {
+	background-image: url(resource_h3_background.jpg);
+	background-repeat: no-repeat;
+}
+
+div#linkList h3.archives {
+	background-image: url(archives_h3_background.jpg);
+	background-repeat: no-repeat;
+}
+
+div#linkList h3.favorites {
+	background-image: url(favorites_h3_background.jpg);
+	background-repeat: no-repeat;
+}
+
+div#linkList h3 {
+	background-color: #2F2F13;
+	color: inherit;
+	margin-top: 20px;
+	border-right: 4px solid #818343;
+	border-bottom: 1px solid #818343;
+	height: 25px;
+	
+}
+
+span.iL {
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 10px;
+	line-height: 2;
+}
+
+div#linkList ul {
+	list-style: none;
+}
+
+div#linkList li {
+	margin-left: -15px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
+
+a:link {
+	color: #9BB574;
+	background-color: transparent;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 2px;
+	border-bottom: 1px solid;
+	line-height: 1.5;
+}
+
+a:visited {
+	color: #C6D2B3;
+	background-color: transparent;
+	text-decoration: line-through;
+	font-weight: bold;
+	padding: 2px;
+	border-bottom: 1px solid;
+	line-height: 1.5;
+}
+
+a:hover, a:focus {
+	color: #D8E2C7;
+	background-color: #828330;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 2px;
+	border-bottom: 1px solid;
+	line-height: 1.5;
+}
+
+div#footer {
+	clear: both;
+	background-color: #000;
+	color: inherit;
+	background-image: url(umbrella2.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	border-top: 1px solid #8F8C4E;
+	border-right: 1px solid #8F8C4E;
+	height: 50px;
+	padding-left: 30px;
+   vertical-align: bottom;
+	overflow: hidden;
+}
+
+div#supportingText div#footer a {
+	line-height: 40px;
+}
+
+acronym {
+	border-bottom: none;
+	cursor: help;
+}

@@ -1,0 +1,218 @@
+/* css Zen Garden submission 011 - 'meliorism' by Brett J. Gilbert - www.paragraphic.co.uk */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* 'tree' graphic adapted from 'Bending Tree' by Robert Priseman, used with permission */
+/* All other graphics copyright 2003, Brett J. Gilbert */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/*----------------------------------------*
+**  Global
+**----------------------------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #000;
+  background: #f1f8f3 url(gradSky.jpg) repeat-x;
+  }
+div,p,h1,h2,h3,ul,li {
+  margin: 0;
+  padding: 0;
+  }
+h1 span,h2 span,h3 span {
+  display: none;
+  }
+
+/*----------------------------------------*
+**  Layout
+**----------------------------------------*/
+
+#container {
+  position: relative;
+  width: 760px;
+  margin: 0 auto;
+  text-align: left;
+  }
+#intro {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 310px;
+  }
+#supportingText {
+  width: 690px;
+  }
+#linkList {
+  position: absolute;
+  top: 40px;
+  left: 585px;
+  width: 235px;
+  }
+
+/*----------------------------------------*
+**  Links
+**----------------------------------------*/
+
+a:link,
+a:visited { color: #49f; background-color: transparent; text-decoration: none; }
+a:hover   { color: #f00; background-color: transparent; text-decoration: none; }
+
+#quickSummary p.p2 a:link,
+#quickSummary p.p2 a:visited { color: #348633; background-color: transparent; }
+#quickSummary p.p2 a:hover   { color: #f00; background-color: transparent; }
+
+#footer a:link,
+#footer a:visited { color: #348633; background-color: transparent; }
+#footer a:hover   { color: #f00; background-color: transparent; }
+
+#linkList a.c:link,
+#linkList a.c:visited { color: #fa5; background-color: transparent; }
+#linkList a.c:hover   { color: #f00; background-color: transparent; }
+
+/*----------------------------------------*
+**  #intro
+**----------------------------------------*/
+
+#intro {
+  font: italic 11px/150% Georgia, Times, "Times New Roman", serif;
+  color: #888;
+  background-color: transparent;
+  }
+#pageHeader h1 {
+  margin-left: 4px; 
+  background: transparent url(introGarden.gif) no-repeat 0 0;
+  width: 115px; 
+  height: 12px; 
+  }
+#pageHeader h2 {
+  margin-top: 80px; 
+  background: transparent url(introBeauty.gif) no-repeat 0 0; 
+  width: 195px; 
+  height: 73px; 
+  }
+#quickSummary p.p1 {
+  margin: 5px 0 55px 4px;
+  color: #fa0;
+  background-color: transparent;
+  line-height: 160%;
+  }
+#quickSummary p.p2 {
+  margin: 0 150px 0 4px;
+  padding: 5px 25px 5px 10px;
+  background: transparent url(gradGreen.jpg) repeat-y;
+  border-left: 1px solid #a7d9a8;
+  color: #888;
+  line-height: 130%;
+  }
+#preamble {
+  margin-left: 4px;
+  padding: 20px 0 0 15px;
+  border-left: 1px solid #a7d9a8;
+  }
+#preamble h3 {
+  background: transparent url(introEnlightenment.gif) no-repeat 0 0; 
+  width: 138px; 
+  height: 37px; 
+  }
+#preamble p {
+  margin: 10px 140px 0 0;
+  }
+
+/*----------------------------------------*
+**  #supportingText
+**----------------------------------------*/
+
+#supportingText {
+  padding: 430px 0 40px 0;
+  font: 13px/140% Georgia, Times, "Times New Roman", serif;
+  color: #888;
+  background: transparent url(textBack.jpg) no-repeat 0 40px;
+  }
+#supportingText p {
+  margin: 0 125px 10px 221px;
+  }
+#supportingText h3 {
+  margin: 25px 0 6px 220px;
+  width: 206px; 
+  height: 21px; 
+  }
+#explanation h3   { background: transparent url(textAbout.gif)         no-repeat 0 0; margin-top: 0; }
+#participation h3 { background: transparent url(textParticipation.gif) no-repeat 0 0; }
+#benefits h3      { background: transparent url(textBenefits.gif)      no-repeat 0 0; }
+
+/*----------------------------------------*
+**  #supportingText > #requirements
+**----------------------------------------*/
+
+#requirements {
+  margin: 30px 0 0 221px;
+  padding: 0 0 15px 0;
+  border-left: 1px solid #a7d9a8;
+  font: italic 11px/150% Georgia, Times, "Times New Roman", serif;
+  color: #888;
+  background-color: transparent;
+  }
+#requirements h3 {
+  margin: 0 0 13px 0;
+  background: transparent url(textRequirements.jpg) no-repeat 0 0;
+  width: 175px;
+  height: 25px;
+  }
+#requirements p {
+  margin: 9px 0 0 15px;
+  }
+
+/*----------------------------------------*
+**  #supportingText > #footer
+**----------------------------------------*/
+
+#footer {
+  margin: 0 0 0 221px;
+  padding: 4px 0 5px 15px;
+  background: transparent url(gradGreen.jpg) repeat-y; 
+  border-left: 1px solid #a7d9a8;
+  font: italic 11px/140% Georgia, Times, "Times New Roman", serif;
+  }
+
+/*----------------------------------------*
+**  #linkList
+**----------------------------------------*/
+
+#linkList {
+  border-left: 1px solid #8bf;
+  font: italic 11px/130% Georgia, Times, "Times New Roman", serif;
+  color: #999;
+  background: transparent url(linksBack.jpg) no-repeat;
+  }
+#lselect h3 {
+  background: transparent url(linksSelect.gif) no-repeat 0 0; 
+  margin: 240px 0 10px 14px; 
+  width: 118px; 
+  height: 73px; 
+  }
+div#lselect {
+  margin-bottom: 50px;
+  }
+#linkList ul {
+  margin-left: 15px;
+  }
+#linkList li {
+  list-style-type: none;
+  margin-top: 5px;
+  }
+#lresources h3,
+#lfavorites h3,
+#larchives h3 {
+  margin: 25px 0 8px 0; 
+  width: 175px; 
+  height: 25px; 
+  }
+#lresources h3 { background: transparent url(linksResources.jpg) no-repeat 0 0; }
+#lfavorites h3 { background: transparent url(linksFavorites.jpg) no-repeat 0 0; }
+#larchives h3  { background: transparent url(linksArchives.jpg)  no-repeat 0 0; }

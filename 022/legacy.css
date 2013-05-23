@@ -1,0 +1,324 @@
+/* css Zen Garden submission 022 - 'viridity' by Laura MacArthur - http://www.tunnel-vision.org/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Laura MacArthur */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* based once upon a time on the css Zen Garden default style v1.01 Dave Shea*/
+/* basic stuff */
+html>body, html>body td, html>body th {
+	font-size: small;
+}
+body { 
+	font: 10px/16px Arial, Helvetica, sans-serif; 
+	color: #330033; 
+	background: #669999 url(z_bgrnd.gif) repeat-x 0px 1px; 
+	margin: 0px; 
+	}
+/*rinse and repeat*/
+div, p, th, td, li, dd, dl, dt    {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+	font: 10px/18px Arial, Helvetica, sans-serif;
+	margin-right: 15px;
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-right: 15px;
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	letter-spacing: 1px;
+	text-align: justify;
+	}
+h3 {
+	color: #336666;
+	background-color: transparent;
+	font: bold 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	letter-spacing: 4px;
+	text-transform: lowercase;
+	}
+a:link {
+	color: #CCFFFF;
+	background-color: transparent;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	}
+a:visited {
+	color: #003333;
+	background-color: #669999;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	}
+a:hover, a:active {
+	color: #006666;
+	background-color: #CCFFFF;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	}
+/* specific divs */
+/*outermost div*/
+#container {
+	position: absolute;
+	margin-top: 0px;
+	top: 0px;
+	left: 0px;
+	width: 75%;
+	height: auto;
+	z-index: 2;
+	padding-left: 130px;
+	}
+/* where the logos are */
+#pageHeader {
+	width: 575px;
+	height: 65px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding-top: 31px;
+	}
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+/*and this trick totally rocks*/
+#pageHeader h1 {
+	background: transparent url(zh1_combo.gif) no-repeat 0px 0px;
+	width: 575px;
+	height: 65px;
+	float: left;
+	top: 0px;
+	margin-top: 0px;
+	}
+#pageHeader h1 span {
+	display:none;
+	}
+#pageHeader h2 span {
+	display:none;
+	}
+#preamble h3 {
+	background: #CCFFFF url(h3_preamble.gif) no-repeat left top;
+	color: #003333;
+	margin-top:0px;
+	margin-bottom:0px;
+	height: 25px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #003333;
+}
+#preamble h3 span{
+	display:none;
+	}
+#explanation h3 {
+	background: #CCFFFF url(h3_support1.gif) no-repeat left top;
+	color: #003333;
+	margin-top:0px;
+	margin-bottom:0px;
+	height: 25px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #003333;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #003333;
+	}
+#explanation h3 span{
+	display:none;
+	}
+#participation h3 {
+	background: #CCFFFF url(h3_support2.gif) no-repeat left top;
+	color: #003333;
+	margin-top:0px;
+	margin-bottom:0px;
+	height: 25px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #003333;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #003333;
+	}
+#participation h3 span{
+	display:none;
+	}
+#benefits h3 {
+	background: #CCFFFF url(h3_support3.gif) no-repeat left top;
+	color: #003333;
+	margin-top:0px;
+	margin-bottom:0px;
+	height: 25px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #003333;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #003333;
+	}
+#benefits h3 span{
+	display:none;
+	}
+#requirements h3 {
+	background: #CCFFFF url(h3_support4.gif) no-repeat left top;
+	color: #003333;
+	margin-top:0px;
+	margin-bottom:0px;
+	height: 25px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #003333;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #003333;
+	}
+#requirements h3 span{
+	display:none;
+	}
+/* blurb */
+#quickSummary {
+	color: #CCCCCC;
+	background-color: transparent;
+	width: 75%;
+	height: auto;
+	display: block;
+	padding-top: 125px;
+	}
+#quickSummary p {
+	font: italic normal 10px/16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:left;
+	padding-top: 5px;
+	}
+/* written intro - first paragraph */
+#preamble {
+	color: #333333;
+	background-color: #99CCCC;
+	width: 70%;
+	clear: right;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #003333;
+	}
+#preamble a:link {
+	color: #CCFFFF;
+	background-color: #669999;
+}
+#preamble a:hover, a:active {
+	color: #006666;
+	background-color: #CCFFFF;
+	}
+/* the rest */
+#supportingText {
+	color: #333333;
+	background-color: #99CCCC;
+	width: 70%;
+	clear: right;
+	height: auto;
+	border: 1px solid #003333;
+	background-image: url(z_twig.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	}
+#supportingText a:link {
+	color: #CCFFFF;
+	background-color: #669999;
+}
+#supportingText a:hover, a:active {
+	color: #006666;
+	background-color: #CCFFFF;
+	}
+#footer {
+	color: #CCCCCC;
+	background-color: #006666;
+	text-align: center;
+	border: 1px solid #003333;
+	background-image: url(z_trim.png);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+	height: 32px;
+	}
+/* link-tastic */
+#linkList {
+	position: absolute;
+	top: 114px;
+	left: 0px;
+	z-index: auto;
+	}
+#linkList2 {
+	color: #333333;
+	background-color: transparent;
+	font: 10px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width: 130px;
+	height: auto;
+	padding: 0px 0px 10px;
+	margin-top: 0px;
+	text-align: right;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #003333;
+	}
+#linkList h3.select {
+	background: transparent url(zh3_select.gif) no-repeat 0px 0px;
+	margin: 0px 0px 5px;
+	width: 130px;
+	height: 100px;
+	}
+#linkList h3.select span {
+	display:none;
+	}
+#linkList h3.favorites { 
+	background: transparent url(zh3_favs.gif) no-repeat left top; 
+	margin: 25px 0px 5px; 
+	width: 130px; 
+	height: 50px; 
+	}
+#linkList h3.favorites span {
+	display:none;
+	}
+#linkList h3.archives {
+	background: transparent url(zh3_arch.gif) no-repeat left top;
+	margin: 25px 0px 5px;
+	width:130px;
+	height: 50px;
+	}
+#linkList h3.archives span {
+	display:none;
+	}
+#linkList h3.resources { 
+	background: transparent url(zh3_res.gif) no-repeat left top; 
+	margin: 25px 0px 5px; 
+	width:130px; 
+	height: 50px; 
+	}
+#linkList h3.resources span {
+	display:none;
+	}
+#linkList ul {
+	margin: 0px 5px;
+	padding: 0px 5px;
+	}
+#linkList li {
+	line-height: 2.5ex; 
+	list-style-type: none; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	}
+/* leaf */
+#extraDiv1 {
+	background-image: url(z_cont.gif);
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 1;
+	left: 315px;
+	top: 114px;
+	height: 299px;
+	width: 330px;
+}
