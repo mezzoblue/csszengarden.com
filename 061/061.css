@@ -134,13 +134,6 @@ header h2 {
 	height : 16px;
 }
 
-#lfavorites h3{
-	background-image : url(label_favorites.jpg);
-	background-repeat : no-repeat;
-	margin : 4px 0px 4px 20px;
-	height : 16px;
-}
-
 .design-archives h3{
 	background-image : url(label_archives.jpg);
 	background-repeat : no-repeat;
@@ -156,8 +149,10 @@ header h2 {
 }
 
 
-.sidebar .wrapper h3  span{
-	display : none;
+.sidebar .wrapper h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .sidebar .wrapper ul{
@@ -200,15 +195,16 @@ header h2 {
 	background-image : url(label_requirements.jpg);
 }
 
-.supporting h3 span{
-	display : none;
-}
 .supporting h3 {
 	margin: 0px;
 	background-repeat : no-repeat;
 	height : 37px;
 	width : 237px;
 	background-position : left;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .supporting  p{

@@ -43,11 +43,11 @@ height:550px;
 width:350px;
 }
 
-h1 span, h3 span, .extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {
-display:none;
+h1, .extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {
+	display: none;
 }
 
-.explanation h3 span, .preamble h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
+.explanation h3, .preamble h3, .participation h3, .benefits h3, .requirements h3 {
 display:block;
 font-family:Century Gothic, AvantGarde, Verdana, Arial, sans-serif;
 font-weight:normal;
@@ -64,21 +64,21 @@ letter-spacing:0.4em;
 padding-left:3em;
 }
 
-div.summary {
+.summary {
 margin-left:0.8em;
 }
 
-div.summary a, footer a, p a {
+.summary a, footer a, p a {
 color:#c9380b;
 text-decoration:none;
 font-weight:bold;
 }
 
-div.summary a:hover, p a:hover, footer a:hover {
+.summary a:hover, p a:hover, footer a:hover {
 text-decoration:underline;
 }
 
-footer, div.zen-resources {
+.sidebar, .zen-resources {
 background-image:url("fond_bande_milieu.gif");
 background-repeat:repeat-y;
 width:255px;
@@ -88,7 +88,13 @@ top:0px;
 left:375px;
 }
 
-div.zen-resources {
+.sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.zen-resources {
 background-image:url("fond_bande_droite.gif");
 width:298px;
 left:3200px;
@@ -108,7 +114,7 @@ width:298px;
 height:138px;
 }
 
-div.design-selection ul, div.design-archives ul, div.zen-resources ul {
+.design-selection ul, .design-archives ul, .zen-resources ul {
 color:#000;
 font-size:0.9em;
 margin:0px;
@@ -117,11 +123,11 @@ width:90%;
 padding-left:35px;
 }
 
-div.zen-resources ul {
+.zen-resources ul {
 padding-left:50px;
 }
 
-div.design-selection li, div.design-archives li, div.zen-resources li {
+.design-selection li, .design-archives li, .zen-resources li {
 background-image: url("puce_blanche.gif");
 background-repeat: no-repeat;
 background-position: left center;
@@ -132,18 +138,18 @@ width: 90%;
 font-size:0.8em;
 }
 
-div.design-selection a, div.design-archives a, div.zen-resources a {
+.design-selection a, .design-archives a, .zen-resources a {
 color:#666;
 text-decoration:none;
 font-weight:bold;
 }
 
-div.design-selection a.designer-name {
+.design-selection a.designer-name {
 color:#fff;
 font-weight:normal;
 }
 
-div.design-selection a:hover, div.design-archives a:hover, div.zen-resources a:hover {
+.design-selection a:hover, .design-archives a:hover, .zen-resources a:hover {
 text-decoration:underline;
 }
 
@@ -155,7 +161,7 @@ width:255px;
 height:100px;
 }
 
-div.preamble, div.explanation, div.participation, div.benefits, div.requirements {
+.preamble, .explanation, .participation, .benefits, .requirements {
 position:absolute;
 background-repeat:no-repeat;
 top:0px;
@@ -163,45 +169,45 @@ font-size:75%;
 height:550px;
 }
 
-div.preamble {
+.preamble {
 left:628px;
 background-image:url("theroad.jpg");
 width:379px;
 }
 
-div.preamble h3, div.requirements h3, div.participation h3 {
+.preamble h3, .requirements h3, .participation h3 {
 padding-top:280px;
 }
 
-div.preamble p, div.requirements p, div.participation p, div.explanation p, div.benefits p, div.preamble h3, div.requirements h3, div.participation h3, div.explanation h3, div.benefits h3, div.requirements p, div.requirements h3 {
+.preamble p, .requirements p, .participation p, .explanation p, .benefits p, .preamble h3, .requirements h3, .participation h3, .explanation h3, .benefits h3, .requirements p, .requirements h3 {
 padding-left:8px;
 padding-right:8px;
 text-align:justify;
 }
 
-div.explanation {
+.explanation {
 left:1007px;
 background-image:url("sowhat.jpg");
 width:398px;
 }
 
-div.explanation h3, div.benefits h3 {
+.explanation h3, .benefits h3 {
 padding-top:15px;
 }
 
-div.participation {
+.participation {
 left:1405px;
 background-image:url("participation.jpg");
 width:656px;
 }
 
-div.benefits {
+.benefits {
 left:2061px;
 background-image:url("benefits.jpg");
 width:390px;
 }
 
-div.requirements {
+.requirements {
 left:2451px;
 width:1050px;
 }

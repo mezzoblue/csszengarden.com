@@ -26,10 +26,6 @@ p {
 	line-height: 2em;
 }
 
-header {
-	display: none;
-}
-
 h3 { 	
 	font-size: .7em;
 	font-weight: bold;		
@@ -93,6 +89,7 @@ a:focus  {
 	padding-bottom: 20pt;	
 }
 
+header, 
 .summary p:first-child {
 	display: none;
 }

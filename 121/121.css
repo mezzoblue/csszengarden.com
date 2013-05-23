@@ -132,7 +132,7 @@ header h1 {
 	top: 620px;
 }
 
-.summary p:first-child span{
+.summary p:first-child {
 	display: none;
 }
 

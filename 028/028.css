@@ -75,16 +75,7 @@ a:hover, a:active {
 header { 
 	display: none;
 }
-	header h1 { 
-		display: none;
-	}
-	header h1 span {
-		display: none;
-	}
-	header h2 { 
-		display: none;
-	}
-	header h2 span {
+	header h1, header h2 { 
 		display: none;
 	}
 		
@@ -222,34 +213,29 @@ footer {
 	.sidebar h3.select { 
 		background: transparent url(linkhead-select.jpg) no-repeat top left; 
 		margin: 0px 0px 0px 0px; width: 150px; height: 21px;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
-		.sidebar h3.select span {
-			display: none;
-		}
-		
-	.sidebar h3.favorites { 
-		background: transparent url(linkhead-favorites.jpg) no-repeat top left; 
-		margin: 10px 0px 0px 0px; width: 150px; height: 21px;
-	}
-		.sidebar h3.favorites span {
-			display: none;
-		}
 		
 	.sidebar h3.archives { 
 		background: transparent url(linkhead-archives.jpg) no-repeat top left; 
 		margin: 10px 0px 0px 0px; width: 150px; height: 21px;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
-		.sidebar h3.archives span {
-			display: none;
-		}
 		
 	.sidebar h3.resources { 
 		background: transparent url(linkhead-resources.jpg) no-repeat top left; 
 		margin: 10px 0px 0px 0px; width: 150px; height: 21px;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
-		.sidebar h3.resources span {
-			display: none;
-		}
 		
 	.sidebar ul {
 		margin-top: 0px;

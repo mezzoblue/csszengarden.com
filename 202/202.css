@@ -78,23 +78,26 @@ p
 {
 	text-align:center;
 }
-header h1 span,
-header h2 span
-{
-	display:none;
-}
-header h1
+h1
 {
 	width:450px;
 	height:258px;
 	background:url('titre.png') no-repeat 50% 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-header h2
+h2
 {
 	margin-top:-20px;
 	width:450px;
 	height:37px;
 	background:url('sous-titre.png') no-repeat 90% 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .summary
 {
@@ -334,8 +337,7 @@ footer
 }
 .extra1
 {
-	position:fixed !important;
-	position:absolute;
+	position:fixed;
 	top:0;
 	left:0;
 	width:100%;
@@ -345,8 +347,9 @@ footer
 	max-height:230px;
 	z-index:2;
 }
-.extra1 span
+.extra1::after
 {
+	content: " ";
 	display:block;
 	position:absolute;
 	bottom:-198px;

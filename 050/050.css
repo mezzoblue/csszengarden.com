@@ -8,14 +8,16 @@
 /* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
 /* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
 /* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
-/* elements */
+
+
+/* elements */
 body {
 color: #000;
 background: #545D64;
 font: 90% Verdana, Arial, Helvetica, sans-serif;
 text-align: center;
 }
-body, html, h1, h2, h3, p, ul, li, div, span {
+body, html, h1, h2, h3, p, ul, li, div {
 margin: 0;
 padding: 0;
 }
@@ -175,7 +177,7 @@ padding: 10px 20px 20px 80px;
 margin-top: -2px;
 }
 
-.participation h3 span {
+.participation h3 {
 display: none;
 }
 .participation p {
@@ -404,9 +406,6 @@ color: #fff;
 background: transparent url(archives3.gif) top left no-repeat;
 }
 .design-archives h3 {
-display: none;
-}
-.design-archives h3 span {
 display: none;
 }
 .design-archives ul {

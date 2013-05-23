@@ -14,5 +14,4 @@
 	// import the HTML template
 	include($SERVER_ROOT . "includes/tmpl.php");
 
-
 ?>

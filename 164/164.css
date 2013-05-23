@@ -87,80 +87,80 @@ footer {
 	background-image: url(title1.gif);
 	width: 389px;
 	height: 46px;
-}
 
-.preamble h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .explanation h3 {
 	background-image: url(title2.gif);
 	width: 389px;
 	height: 46px;
-}
 
-.explanation h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .participation h3 {
 	background-image: url(title3.gif);
 	width: 389px;
 	height: 46px;
-}
 
-.participation h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .benefits h3 {
 	background-image: url(title4.gif);
 	width: 389px;
 	height: 46px;
-}
 
-.benefits h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .requirements h3 {
 	background-image: url(title5.gif);
 	width: 389px;
 	height: 46px;
-}
 
-.requirements h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 h3.select {
 	background-image: url(designs.gif);
 	width: 192px;
 	height: 45px;
-}
 
-h3.select span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 h3.archives {
 	background-image: url(archives.gif);
 	width: 192px;
 	height: 45px;
-}
 
-h3.archives span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 h3.resources {
 	background-image: url(resources.gif);
 	width: 192px;
 	height: 45px;
-}
 
-h3.resources span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 

@@ -59,7 +59,8 @@ ul {
 /* specific divs */
 .page-wrapper {
 	width: 762px;
-	padding: 0;  
+	padding: 427px 0 0 0; 
+	position: relative;
 	margin: auto;
 	text-align: left;
 	background: url(pageheader.gif) no-repeat top left; 
@@ -69,8 +70,12 @@ ul {
 	vertical-align: bottom;
 	}
 header { 
+	position: absolute;
+	top: 0;
+	left: 0;
 	padding: 0; 
 	margin: 0;
+	width: 100%;
 	height: 425px;
 	border: 1px solid white;
 	}
@@ -80,23 +85,22 @@ header h1 {
 	height: 430px;
 	margin: 0px 0px 0px 0px;
 	padding: 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }	
 
-header h1 span {
-	display:none
-	}
 header h2 { 
 	padding: 0; margin: 0;
-	}
-header h2 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .summary p:first-child {
 	display:none;
 	}
-.summary p:first-child span{
-	display: none;
-}
 
 .summary p:last-child{
 	display: block;
@@ -139,11 +143,12 @@ header h2 span {
 	margin: 0; 
 	padding: 0;
 	border-top: 1px solid #ffffff;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-.preamble h3 span {
-	display: none;
-}
 .preamble p {
 	font-family:Arial, Helvetica, sans-serif;
 	padding: 5px;
@@ -174,9 +179,10 @@ header h2 span {
 	height: 40px;
 	margin: 0; 
 	padding: 0;
-}
-.explanation h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .participation h3 {
 	background: url(participation.gif) no-repeat;
@@ -184,30 +190,33 @@ header h2 span {
 	height: 40px;
 	margin: 0; 
 	padding: 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.participation h3 span {
-	display: none;
-}	
 .benefits h3 {
 	background:  url(benefits.gif) no-repeat;
 	width: 469px;
 	height: 40px;
 	margin: 0;
 	padding: 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.benefits h3 span {
-	display: none;
-}	
 .requirements h3 {
 	background:  url(requirements.gif) no-repeat;
 	width: 469px;
 	height: 40px;
 	margin: 0; 
 	padding: 0;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.requirements h3 span {
-	display: none;
-}		
 
 footer {
 	background: #155970;
@@ -318,13 +327,16 @@ a.designer-name {
 	text-transform:uppercase;
 }
 
-.design-selection h3 span, .design-archives h3 span, .zen-resources h3 span {
-	display: none;
+.design-selection h3, .design-archives h3, .zen-resources h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
 }
 
 .sidebar {
 	position: absolute;
-	top: 48em;
+	top: 68em;
 }
 .sidebar .wrapper  ul {
 	padding: 20px 10px 10px 10px;

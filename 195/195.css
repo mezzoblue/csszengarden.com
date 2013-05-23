@@ -40,16 +40,21 @@ body {
 	padding-bottom: 70px;
 }
 
-header span,
+header,
+.preamble h3,
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3,
+.design-selection h3,
+.design-archives h3,
+.zen-resources h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 .summary p:first-child,
-.preamble h3 span,
-.explanation h3 span,
-.participation h3 span,
-.benefits h3 span,
-.requirements h3 span,
-.design-selection h3 span,
-.design-archives h3 span,
-.zen-resources h3 span,
 .extra3,
 .extra4,
 .extra5,
@@ -81,7 +86,7 @@ p {
 }
 
 .summary p:last-child {
-	padding-top: 220px;
+	padding-top: 189px;
 	margin-left: 430px;
 	font: normal 0.9em/0.9em Arial, Tahoma, Georgia, sans-serif;
 	letter-spacing: -1px;

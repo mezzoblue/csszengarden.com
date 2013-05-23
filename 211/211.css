@@ -145,6 +145,12 @@ display:none;
 	overflow: hidden;
 }
 
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+}
+
 p {
 color: #999999;
 font-size:11px;

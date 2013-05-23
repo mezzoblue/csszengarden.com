@@ -38,9 +38,12 @@ h3 {
 	font-family: Arial, sans-serif; font-size: 18px;color: #6E66A2;
 	font-style: italic;
 }
-h1 span, h2 span{
+h1, h2 {
 	display: none;
 	
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
    }
 .page-wrapper { 
 	position: absolute;

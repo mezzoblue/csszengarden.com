@@ -61,12 +61,11 @@ p
 h1
 {
 	padding:20px;
-	padding-top:90px;
-}
+	padding-top:70px;
 
-h1 span
-{
-	display:none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 h2

@@ -55,10 +55,10 @@ header h1 {
 	width: 504px;
 	top: 0px;
 	margin: 0 0 0 0;
-	}
 
-header h1 span {
-	display:none
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 header h2 { 
@@ -67,10 +67,10 @@ header h2 {
 	width: 504px;  
 	margin: 0 0 0 0;
 	top: 0px; 
-	}
 
-header h2 span {
-	display:none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .summary {
@@ -148,7 +148,7 @@ footer {
 	width: 170px;
 	}
 
-.sidebar h3.select, .sidebar h3.select span { 
+.sidebar h3.select { 
 	display: none;
 	}
 

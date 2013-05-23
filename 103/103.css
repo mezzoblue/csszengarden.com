@@ -22,10 +22,12 @@ margin:0;
 padding:0;
 }
 
-h3 span, h2 span, h1 span{
-display:none;
+h1, h2, h3 {
 margin:0;
 padding:0;
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 
 h3, h2, h1, p{

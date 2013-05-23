@@ -55,11 +55,11 @@ header {
 	width: 0;
 }
 
-		header h1{
+		h1{
 			font: bold 154%/25px Arial, Helvetica, sans-serif;
 		}
 		
-		header h2{
+		h2{
 			font: bold 90%/25px Arial, Helvetica, sans-serif;
 		}
 
@@ -215,9 +215,9 @@ header {
 
 
 .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+    text-indent: 105%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 

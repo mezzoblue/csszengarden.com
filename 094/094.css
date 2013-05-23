@@ -15,12 +15,17 @@ body {
 	background: url(bg_blue1.gif) repeat-y left;
 	margin: 0px;
 	border: 0px;
-margin-top: 0em;
-margin-left: 0em;
-margin-bottom: 0em;
-margin-right: 0em;
-padding: 0em;
+	margin-top: 0em;
+	margin-left: 0em;
+	margin-bottom: 0em;
+	margin-right: 0em;
+	padding: 0em;
 }
+p {
+	line-height: 1.5454;
+	font-size: 11px;
+}
+
 .page-wrapper {
 	background: url(bg.jpg) no-repeat scroll left top;
 	margin: 0px;
@@ -38,33 +43,32 @@ padding: 0em;
     margin-top: 85px; 
 	margin-left: 172px; 
 	}
-header { 
-	}
-/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+
+
 header h1 {
 	background: url(csszengarden.gif) no-repeat left top;
 	width: 620px; 
 	height: 103px; 
-	}
-header h1 span {
-	display:none
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 {
 	background: url(thebeauty.gif) no-repeat left top;
 	width: 263px; 
 	height: 13px; 
-	}
-header h2 span {
-	display:none
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .summary {
 	width: 300px;
 	padding-bottom: 20px;
 	padding-left: 10px;
 	}
-.summary p span {
-	line-height: 17px;
-	font-size: 11px;
+.summary p {
 	color: #FFFFFF;
 	}
 .preamble {
@@ -82,20 +86,16 @@ header h2 span {
 	position: static;
 	margin: 0px;
 	padding: 0px 0px 3px;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.preamble  h3 span {
-	display:none;
-	padding: 0px;
-	margin: 0px;
-	width: 252px;
-	}
-.preamble  p span {
+.preamble p {
 	position: relative;
 	left: 27px;
 	margin: 0px 0px 5px;
 	padding: 0px;
-	line-height: 17px;
-	font-size: 11px;
 	}
 .explanation {
 	color: #666666;
@@ -111,20 +111,16 @@ header h2 span {
 	position: static;
 	margin: 0px;
 	padding: 0px 0px 3px;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.explanation h3 span {
-	display:none;
-	padding: 0px;
-	margin: 0px;
-	width: 252px;
-	}
-.explanation p span {
+.explanation p {
 	position: relative;
 	left: 197px;
-	margin: 0px;
+	margin: 0 0 5px;
 	padding: 0px;
-	line-height: 17px;
-	font-size: 11px;
 	right: 732px;
 	}
 a:link {
@@ -166,20 +162,16 @@ p {
 	position: static;
 	margin: 0px;
 	padding: 0px 0px 3px;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.participation h3 span {
-	display:none;
-	padding: 0px;
-	margin: 0px;
-	width: 252px;
-	}
-.participation p span {
+.participation p {
 	position: relative;
 	left: 200px;
-	margin: 0px;
+	margin: 0 0 5px;
 	padding: 0px;
-	line-height: 17px;
-	font-size: 11px;
 	right: 745px;
 	}
 .participation a:link, .participation a:visited {
@@ -199,20 +191,16 @@ p {
 	position: static;
 	margin: 0px;
 	padding: 0px 0px 3px;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.benefits h3 span {
-	display:none;
-	padding: 0px;
-	margin: 0px;
-	width: 252px;
-	}
-.benefits p span {
+.benefits p {
 	position: relative;
 	left: 200px;
-	margin: 0px;
+	margin: 0 0 5px;
 	padding: 0px;
-	line-height: 17px;
-	font-size: 11px;
 	right: 745px;
 	}
 .requirements  {
@@ -229,20 +217,16 @@ p {
 	position: static;
 	margin: 0px;
 	padding: 0px 0px 3px;
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.requirements h3 span {
-	display:none;
-	padding: 0px;
-	margin: 0px;
-	width: 252px;
-	}
-.requirements p span {
+.requirements p {
 	position: relative;
 	left: 200px;
-	margin: 0px;
+	margin: 0 0 5px;
 	padding: 0px;
-	line-height: 17px;
-	font-size: 11px;
 	right: 745px;
 	}
 .requirements a:link, .requirements a:visited {
@@ -319,25 +303,28 @@ footer a:link, footer a:visited {
 	margin: 0px 0px 5px 7px; 
 	width: 95px; 
 	height: 7px; 
-	}
-.sidebar h3.select span {
-	display:none
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.archives { 
 	background: transparent url(archives.gif) no-repeat top left; 
 	margin: 30px 0px 5px 7px; 
 	width: 95px; 
 	height: 7px; 
-	}
-.sidebar h3.archives span {
-	display:none
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.resources { 
 	background: transparent url(resources.gif) no-repeat top left; 
 	margin: 30px 0px 5px 7px; 
 	width: 95px; 
 	height: 7px; 
-	}
-.sidebar h3.resources span {
-	display:none
+
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 	}

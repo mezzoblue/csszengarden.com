@@ -56,9 +56,10 @@ h1 {
 	width: 303px;
 	height: 198px;
 	background: url(h1.jpg) no-repeat transparent;
-}
-h1 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 h2 {
 	margin: 0 0 9px 0;
@@ -66,9 +67,10 @@ h2 {
 	width: 303px;
 	height: 37px;
 	background: url(h2.gif) no-repeat transparent;
-}
-h2 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .preamble h3 {
@@ -77,9 +79,10 @@ h2 span {
 	width: 303px;
 	height: 36px;
 	background: url(the_road.jpg) no-repeat transparent;
-}
-.preamble h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .supporting {
@@ -95,8 +98,10 @@ h2 span {
 	margin: 0;
 	padding: 0 40px 10px 0px;
 }
-.supporting h3 span {
-	display: none;
+.supporting h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .participation h3 {
@@ -125,8 +130,10 @@ h2 span {
 	margin: 10px 40px 5px 0;
 	padding: 10px 0 0;
 }
-.preamble h3 span {
-	display: none;
+.preamble h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 
@@ -138,9 +145,10 @@ h2 span {
 	padding: 0;
 	height: 36px;
 	background: url(so_what.jpg) no-repeat transparent;
-}
-.explanation h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 
@@ -170,8 +178,10 @@ h2 span {
 	background: url(resources.jpg) no-repeat transparent;
 	height: 26px;
 }
-.sidebar h3 span {
-	display: none;
+.sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 

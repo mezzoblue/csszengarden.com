@@ -47,15 +47,17 @@ header h1 {
 	background-repeat:no-repeat;
 	background-position:top right;
 	color:#000;
-	}
-header h1 span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 { 
 	display:none;
-	}
-header h2 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .summary {
 	display:block;
@@ -95,21 +97,22 @@ display:none;
 	clear:both;
 	}
 
-.supporting h3 span{
-	display:none;	
-	}
 .supporting p {
 	padding:5px 10px;
 	line-height:150%;
 	}
 .explanation h3{
-	Float:left;
+	float:left;
 	background-image:url(about.gif);
 	width:46px;
 	height:234px;
 	padding:0;
 	margin:0 10px 0px 0px;
 	border-right:1px solid white;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .explanation p{
 		margin:0px 0px 0px 43px;
@@ -125,13 +128,17 @@ display:none;
 	height:auto;
 	}
 .participation h3{
-	Float:right;
+	float:right;
 	background-image:url(participation.gif);
 	width:46px;
 	height:234px;
 	padding:0;
 	margin:0 0px 0px 10px;
 	border-left:1px solid white;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .supporting .participation {
 	margin:20px 200px 0 10px;
@@ -146,19 +153,23 @@ display:none;
 	height:auto;
 	}
 .benefits h3{
-	Float:left;
+	float:left;
 	background-image:url(benefits.gif);
 	width:46px;
 	height:133px;
 	padding:0;
 	margin:0 10px 0px 0px;
 	border-right:1px solid white;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .benefits p{
 		margin:0px 0px 0px 43px;
 		}
 .supporting .benefits {
-margin:20px 10px 0 200px;
+	margin:20px 10px 0 200px;
 	min-height:133px;
 	height:133px;
 	background:url(benefits_back.gif) no-repeat 100% 100%;
@@ -167,13 +178,17 @@ margin:20px 10px 0 200px;
 	height:auto;
 	}
 .requirements h3{
-	Float:right;
+	float:right;
 	background-image:url(Requirements.gif);
 	width:46px;
 	height:234px;
 	padding:0;
 	margin:0 0px 0px 10px;
 	border-left:1px solid white;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .requirements p{
 		margin:0px 43px 0px 0px;
@@ -207,36 +222,30 @@ footer a:link, footer a:visited {
 	background-image:url(select.gif);
 	margin:0px;
 	padding:0px;
-	}
-.sidebar h3.select span {
-	display:none
-	}
-.sidebar h3.favorites { 
-	height:53px;
-	background-image:url(favorites.gif);
-	margin:0px;
-	padding:0px;
-	}
-.sidebar h3.favorites span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.archives { 
 	height:53px;
 	background-image:url(archives.gif);
 	margin:0px;
 	padding:0px;
-	}
-.sidebar h3.archives span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.resources { 
 	height:53px;
 	background-image:url(resources.gif);
 	margin:0px;
 	padding:0px;
-	}
-.sidebar h3.resources span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 

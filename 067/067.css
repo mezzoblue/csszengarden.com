@@ -59,7 +59,11 @@ h2 {
 	background:#f4f5f0 url(intro_bg_b.jpg) no-repeat top left;
 	height:106px;
 }
-h1 span, h2 span {display:none;}
+h1, h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 /* specific divs */
 .page-wrapper { 

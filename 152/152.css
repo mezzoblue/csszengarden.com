@@ -12,7 +12,7 @@
 
 
 body#css-zen-garden {
-background: url(images/trama.gif);
+background: url(trama.gif);
 margin: 0;
 padding: 0;
 font-size: 70%;
@@ -38,7 +38,7 @@ cursor: help;
 /*POSITIONING======================================*/
 .page-wrapper {
 position: relative;
-background: #2E0154 url(images/background.gif) no-repeat top center;
+background: #2E0154 url(background.gif) no-repeat top center;
 border-left: 5px solid #CD9FF3;
 border-right: 5px solid #CD9FF3;
 margin: 0 auto;
@@ -46,7 +46,7 @@ width: 720px;
 }
 .intro {
 width: 100%;
-background: transparent url(images/girl.gif) no-repeat;
+background: transparent url(girl.gif) no-repeat;
 }
 
 header {
@@ -58,34 +58,34 @@ margin-top: 237px;
 margin-left: 270px;
 width: 425px;
 height: 166px;
-background: transparent url(images/quicksum.gif) no-repeat;
+background: transparent url(quicksum.gif) no-repeat;
 }	
 .preamble {
 margin-left: 75px;
 margin-right: 280px;
-background: transparent url(images/back_flowers.gif) no-repeat 0 0;
+background: transparent url(back_flowers.gif) no-repeat 0 0;
 }
 
 .supporting {
 margin-left: 75px;
 margin-right: 275px;
 }
-.explanation { background: transparent url(images/back_flowers.gif) no-repeat 100% 100%; }
-.participation { background: transparent url(images/back_flowers.gif) no-repeat 100% 0%; }
-.benefits { background: transparent url(images/back_flowers.gif) no-repeat 0% 0%; }
-.requirements { background: transparent url(images/back_flowers.gif) no-repeat 100% 0%; }
+.explanation { background: transparent url(back_flowers.gif) no-repeat 100% 100%; }
+.participation { background: transparent url(back_flowers.gif) no-repeat 100% 0%; }
+.benefits { background: transparent url(back_flowers.gif) no-repeat 0% 0%; }
+.requirements { background: transparent url(back_flowers.gif) no-repeat 100% 0%; }
 .sidebar {
 position: absolute;
 top: 515px;
 left: 480px;
 width: 225px;
-background: transparent url(images/back_list.gif) repeat-y;
+background: transparent url(back_list.gif) repeat-y;
 }
 footer {
 padding: 25px 0;
 text-align: center;
 text-transform: uppercase;
-background: transparent url(images/footer.gif) no-repeat 50% 50%;
+background: transparent url(footer.gif) no-repeat 50% 50%;
 }
 
 /*HEADERS======================================*/
@@ -98,7 +98,7 @@ position: relative;
 left: -20px;
 display: block;
 height: 57px;
-background: transparent url(images/title_the_road.gif) no-repeat;
+background: transparent url(title_the_road.gif) no-repeat;
 text-indent: -1500px;
 }
 .supporting h3 {
@@ -108,18 +108,18 @@ display: block;
 height: 58px;
 text-indent: -1500px; 
 }
-.explanation h3 {background: transparent url(images/title_so_what.gif) no-repeat;}
-.participation h3 {background: transparent url(images/title_participation.gif) no-repeat;}
-.benefits h3 {background: transparent url(images/title_benfits.gif) no-repeat;}
-.requirements h3 {background: transparent url(images/title_requirements.gif) no-repeat;}
+.explanation h3 {background: transparent url(title_so_what.gif) no-repeat;}
+.participation h3 {background: transparent url(title_participation.gif) no-repeat;}
+.benefits h3 {background: transparent url(title_benfits.gif) no-repeat;}
+.requirements h3 {background: transparent url(title_requirements.gif) no-repeat;}
 .sidebar .wrapper h3 {
 display: block;
 height: 35px;
 margin: 0px 30px;
 text-indent: -1500px;}
-.design-selection h3 {background: transparent url(images/title_select.gif) no-repeat;}
-.design-archives h3 {background: transparent url(images/title_archives.gif) no-repeat;}
-.zen-resources h3 {background: transparent url(images/title_resources.gif) no-repeat;}
+.design-selection h3 {background: transparent url(title_select.gif) no-repeat;}
+.design-archives h3 {background: transparent url(title_archives.gif) no-repeat;}
+.zen-resources h3 {background: transparent url(title_resources.gif) no-repeat;}
 
 /*LISTS======================================*/
 .sidebar ul {
@@ -138,7 +138,7 @@ padding-left: 20px;
 .design-selection ul li a {
 margin-left: -25px;
 padding-left: 25px;
-background: transparent url(images/bullet_flower.gif) no-repeat 0 50%;
+background: transparent url(bullet_flower.gif) no-repeat 0 50%;
 line-height: 25px;
 text-decoration: none;
 display: block;
@@ -147,7 +147,7 @@ text-transform: uppercase;
 }
 .design-selection ul li a:hover { 
 color: #F286FF;
-background-image: url(images/bullet_flower_on.gif);
+background-image: url(bullet_flower_on.gif);
 }
 .design-selection ul li a.designer-name {
 margin-left: 0;
@@ -161,18 +161,18 @@ color: #B198C5;
 }
 .design-selection ul li a.designer-name:hover { 
 color: #F286FF;
-background: transparent url(images/bullet_stah.gif) no-repeat 100% 50%;
+background: transparent url(bullet_stah.gif) no-repeat 100% 50%;
 }
 .design-selection ul li a.designer-name:hover { color: #F286FF; }
 
 .design-archives ul li a, .zen-resources ul li a {
 display:block;	
 padding-left: 25px;
-background: transparent url(images/bullet_oval.gif) no-repeat 0 50%;
+background: transparent url(bullet_oval.gif) no-repeat 0 50%;
 line-height: 25px;
 text-decoration: none;
 }
-.design-archives ul li a:hover, .zen-resources ul li a:hover { background-image: url(images/bullet_oval_on.gif); }
+.design-archives ul li a:hover, .zen-resources ul li a:hover { background-image: url(bullet_oval_on.gif); }
 
 /*VARIOUS======================================*/
 .summary p:first-child { display: none; }

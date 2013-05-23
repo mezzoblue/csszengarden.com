@@ -75,19 +75,20 @@
 
             header h1 {
                 height: 130px;
-            }
-
-            header h1 span {
-            	font-size: 1.5em;
-            	background-color: transparent;
-            	text-decoration: none;
-            	text-transform: lowercase;
-            	display: none;
-            	font-weight: normal;
-            	position: absolute;
-            	right: 20px;
-            	bottom: 3px;
+                font-size: 1.5em;
+                background-color: transparent;
+                text-decoration: none;
+                text-transform: lowercase;
+                display: none;
+                font-weight: normal;
+                position: absolute;
+                right: 20px;
+                bottom: 3px;
                 color: #fff;
+
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
             }
 
             header h2 {
@@ -97,10 +98,10 @@
                 height: 115px;
                 width: 400px;
                 background: transparent url('top.title.gif') 0px 0px no-repeat;
-            }
 
-            header h2 span {
-                display: none;
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
             }
 
         /* ---[ End Page Header ]-------------------- */
@@ -127,39 +128,40 @@
             }
 
             .summary p:first-child {
-                background: #fff url('demop:nth-child(2).gif') 0% 0% no-repeat;
+                background: #fff url('demo.p1.gif') 0% 0% no-repeat;
                 /* padding-bottom: 60px; */
                 height: 176px;
                 padding: 0px 0px 0px 0px;
                 margin: 0px;
-            }
-            
-            .summary p:first-child span {
-                display: none;
+
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
             }
             
             .summary p:last-child {
                 position: relative;
                 bottom: 0px;
                 text-align: right;
-                padding-bottom: 15px;
+                padding-bottom: 40px;
+
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
             }
             
             .summary>p:nth-child(3) {
                 padding-bottom: 0px;
             }
-            
-            .summary p:last-child span {
-                visibility: hidden;
-                font-size: 0px;
-            }
-            
-            .summary p:last-child span a {
+                        
+            .summary p:last-child a {
+                display: block;
+                visibility: visible;
+                position: absolute;
+                right: 10px;
                 margin-left: 75px;
                 font-size: 10pt;
-                visibility: visible;
-                display: block;
-                position: relative;
+                text-indent: 0;
                 left: 0px;
                 background: none;
                 background: transparent url('file.gif') 100% 50% no-repeat;
@@ -169,7 +171,14 @@
                 text-transform: capitalize;
             }
 
-            .summary p:last-child span a:hover {
+            .summary p:last-child a:first-child {
+                top: 0;
+            }
+            .summary p:last-child a:last-child {
+                top: 30px;
+            }
+
+            .summary p:last-child a:hover {
                 background: transparent url('file2.gif') 100% 50% no-repeat;
                 color: #819bb2;
             }
@@ -208,10 +217,10 @@
             padding-top: 30px;
             height: 25px;
             border-bottom: solid 1px #819bb2;
-        }
 
-        .supporting h3 span {
-            display: none;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
         }
         
         /* ---[ Explanation ]------------------------ */
@@ -352,10 +361,10 @@
             margin-top: 5px;
             margin-bottom: 10px;
             height: 30px;
-        }
-        
-        .sidebar h3 span {
-            display: none;
+
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
         }
 
         /* ---[ Link List 2 ]------------------------ */

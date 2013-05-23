@@ -1,4 +1,4 @@
-/* css Zen Garden submission 138 - 'DJ Style', by Masanori Kawachi, http://www.804case.com/ */
+/* css Zen Garden submission 138 - 'Cube Garden', by Masanori Kawachi, http://www.804case.com/ */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 /* All associated graphics copyright 2004, Masanori Kawachi */
 /* Added: Nov. 29th, 2004 */
@@ -18,8 +18,12 @@ a { color: #336633; }
 abbr { background-color: #FFF7D2; }
 
 .extra1 { position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 51px; background: url(images/header_bg.gif) left top repeat-x; }
-header h1 { position: absolute; left: 0px; top: 0px; z-index: 2; width: 237px; height: 176px; margin: 0px; padding: 0px; background: url(images/logo.gif) left top no-repeat; }
-header h1 span,header h2 { position: absolute; left: -9999px; }
+header h1 { position: absolute; left: 0px; top: 0px; z-index: 2; width: 237px; height: 176px; margin: 0px; padding: 0px; background: url(images/logo.gif) left top no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+header h2 { position: absolute; left: -9999px; }
 
 .page-wrapper { background: url(images/rightside_top.gif) 0px 0px no-repeat; width: 510px; margin: 51px 0px 0px 237px; padding-top: 24px; }
 

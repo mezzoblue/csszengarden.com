@@ -38,9 +38,10 @@ a:hover{
 h3{
 	margin:0;
 	padding:0;	
-}
-h3 span{
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 abbr{ 
 	border-bottom:1px dotted;
@@ -84,9 +85,10 @@ header h2,
 	height:82px;
 	background:url(quicksummary_back.gif) no-repeat;
 	white-space:no-wrap;
-}
-.summary p:last-child span{
-	visibility:hidden;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .summary p:last-child a{
 	width:36px;

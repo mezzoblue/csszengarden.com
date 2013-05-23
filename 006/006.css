@@ -60,15 +60,16 @@ header {
 
 /* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
 header h1 { 
-background: transparent; 
+	background: transparent; 
 	margin-top: -180px; 
 	width: 500px; 
 	height: 87px; 
 	float: left;
 	color:#fff;
-	}
-header h1 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 { 
 	background: transparent url(tag.gif) no-repeat top left; 
@@ -77,9 +78,10 @@ header h2 {
 	margin-left:-190px;
 	height: 100px; 
 	float: right;
-	}
-header h2 span {
-	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .summary {
@@ -141,36 +143,30 @@ footer a:link, footer a:visited {
 	width: 130px; 
 	height: 25px; 
 	margin-left:-8px;
-	}
-.sidebar h3.select span {
-	display:none
-	}
-.sidebar h3.favorites { 
-	background: transparent url(favorites.gif) top left no-repeat;  
-	width: 130px; 
-	height: 25px; 
-	margin-left:-8px;
-	}
-.sidebar h3.favorites span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.archives { 
 	background: transparent url(archives.gif) top left no-repeat;  
 	width: 130px; 
 	height: 25px; 
 	margin-left:-8px;
-	}
-.sidebar h3.archives span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.resources { 
 	background: transparent url(resources.gif) top left no-repeat;  
 	width: 130px; 
 	height: 25px; 
 	margin-left:-8px;
-	}
-.sidebar h3.resources span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .sidebar ul {
