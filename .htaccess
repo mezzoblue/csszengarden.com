@@ -1,3 +1,7 @@
+#
+# Canonical Server Name: http://zen/
+#
+
 RewriteEngine On
 Options +FollowSymlinks
 
@@ -20,6 +24,40 @@ RedirectMatch 301 ^/zengarden-sample\.css$ /examples/style.css
 
 
 # remove trailing .php from /examples/index.php
+## COMMENTING OUT FOR THE MOMENT - JC
+## RewriteCond %{REQUEST_FILENAME} !-f
+## RewriteCond %{REQUEST_FILENAME} !-d
+## RewriteRule ^(.*)$ /examples/index.php?/$1 [L]
+
+#
+#
+# New Rewrite Testing Work
+#
+#
+
+# RewriteRule ^\?cssfile=/([0-9]+)/([0-9]+).css http://zen/$1/ [R=301,L]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)?$ zen.php?cssfile=/$1/$1.css [L,QSA]
+
+# Below rules derived from http://www.webmasterworld.com/apache/4229371-1-30.htm
+
+# Externally redirect to add missing trailing slash to URLs with no filetype
+RewriteCond $1 !(\.[a-z0-9]{1,5}|/)$ [NC]
+RewriteCond $1 (..*)$ [NC] # so's we don't add a slash onto nothing and end up w/ '//'
+RewriteRule ^(.*)$ http://zen/$1/ [R=301,L]
+
+# Externally redirect non-blank non-canonical hostname request to canonical hostname
+# (if not already done by the above rule)
+RewriteCond %{HTTP_HOST} !^(zen)?$
+RewriteRule ^(.*)$ http://zen/$1 [R=301,L]
+
+# Rewrite all requests which do not resolve to existing files to the CMS script, except
+# for image, css, and JS file requests, none of which need to be handled by the CMS,
+# and requests for index.php itself (to avoid a wasteful second-pass exists check).
+RewriteCond $1 !(^index\.php|\.(gif|jpe?g|png|css|js))$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /examples/index.php?/$1 [L]
+
+RewriteRule ^([^/]*)(\/page(.*))?/ zen.php?cssfile=/$1/$1.css&page=$3 [L]

@@ -68,7 +68,9 @@
 		$currentDesign = "/001/001.css";
 	}
 
-
+    // prepend w/ designs folder
+    // Need to move all directories so they don't actually exist - right?
+    $currentDesign = '/designs'.$currentDesign;
 
 
 
