@@ -16,7 +16,7 @@
 		for ($i = $start - 1; $i >= ($start - $count); $i--) {
 
 			$id = $list[$i][0];
-			$designURL = "?cssfile=/$id/$id.css";
+			$designURL = "/$id/";
 			$designName = hsc($list[$i][1]);
 			$designerName = hsc($list[$i][2]);
 			$designerURL = hsc($list[$i][3]);
@@ -55,20 +55,21 @@
 	//	 - a specific design has been requested with cssfile
 	//	 - a specific page value been assigned for the navigation
 	if (!$loadCSS) {
-		$loadCSS = $_GET["cssfile"];
+		$loadCSS = $_GET["css"];
 	}
-	$thisPage = intval($_GET["page"]);
+	$thisPage = intval($_GET["pg"]);
 
 
-	// if cssfile is not empty, assign it as the design to load
+	// if $_GET['css'] is not empty, assign it as the design to load
 	// if it is, assign 001
 	if ($loadCSS) {
 		$currentDesign = $loadCSS;
 	} else {
-		$currentDesign = "/001/001.css";
+		$currentDesign = "001";
 	}
 
-
+    // Prep Stylesheet URL
+    $currentStyleSheet = "/$currentDesign/$currentDesign.css";
 
 
 

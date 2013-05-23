@@ -1,3 +1,7 @@
+#
+# Canonical Server Name: http://zen/
+#
+
 RewriteEngine On
 Options +FollowSymlinks
 
@@ -18,8 +22,52 @@ deny from env=BadReferrer
 # permanent redirect of old file
 RedirectMatch 301 ^/zengarden-sample\.css$ /examples/style.css
 
-
 # remove trailing .php from /examples/index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /examples/index.php?/$1 [L]
+## COMMENTING OUT FOR THE MOMENT - JC
+## RewriteCond %{REQUEST_FILENAME} !-f
+## RewriteCond %{REQUEST_FILENAME} !-d
+## RewriteRule ^(.*)$ /examples/index.php?/$1 [L]
+
+# Nice Rewriting
+# Below rules derived from http://www.webmasterworld.com/apache/4229371-1-30.htm
+
+## Note:
+## The next two rules handle the special case which is cssfile=001, the basic.
+
+# Rewrite requests to cssfile=001 which have page
+RewriteCond %{QUERY_STRING} ^cssfile\=\/001\/001\.css&page\=([0-9+])
+RewriteRule ^(.*)$ http://zen/page%1/? [R=301]
+
+# Rewrite requests to just cssfile=001
+RewriteCond %{QUERY_STRING} ^cssfile\=\/001\/001\.css
+RewriteRule ^(.*)$ http://zen/? [R=301]
+
+# Rewrite all requests which have both cssfile and page
+RewriteCond %{QUERY_STRING} ^cssfile\=\/([0-9]+)\/[0-9]+\.css&page\=([0-9+])
+RewriteRule ^(.*)$ http://zen/%1/page%2/? [R=301]
+
+# Rewrite all requests which have just cssfile
+RewriteCond %{QUERY_STRING} ^cssfile\=\/([0-9]+)\/[0-9]+\.css
+RewriteRule ^(.*)$ http://zen/%1/? [R=301]
+
+# Externally redirect to add missing trailing slash to URLs with no filetype
+RewriteCond $1 !(\.[a-z0-9]{1,5}|/)$ [NC]
+RewriteCond $1 (..*)$ [NC] # so's we don't add a slash onto nothing and end up w/ '//'
+RewriteRule ^(.*)$ http://zen/$1/ [R=301,L]
+
+# Externally redirect non-blank non-canonical hostname request to canonical hostname
+# (if not already done by the above rule)
+RewriteCond %{HTTP_HOST} !^(zen)?$
+RewriteRule ^(.*)$ http://zen/$1 [R=301,L]
+
+# Rewrite all requests which do not resolve to existing files to the CMS script, except
+# for image, css, and JS file requests, none of which need to be handled by the CMS,
+# and requests for index.php itself (to avoid a wasteful second-pass exists check).
+RewriteCond $1 !(^index\.php|\.(gif|jpe?g|png|css|js))$
+
+# Send traffic to index.php w/ appropriate variables
+# we have to rename these to avoid creating an infinite loop
+RewriteRule ^([0-9]+)(\/page(.*))?\/$ index.php?css=$1&pg=$3 [L]
+
+# Can't forget the base level design!
+RewriteRule ^(page(.*))?\/$ index.php?css=001&pg=$2 [L]

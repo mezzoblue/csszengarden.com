@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title><?php echo $head["title"]; ?></title>
 
-	<link rel="stylesheet" media="screen" href="<?php echo $currentDesign; ?>?v=8may2013">
+	<link rel="stylesheet" media="screen" href="<?php echo $currentStyleSheet; ?>?v=8may2013">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo $zenUrls["zen-rss"]; ?>">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -99,10 +99,12 @@
 				<nav role="navigation">
 					<ul>
 <?php
+
+    $currentDesignSlug = ($currentDesign == '001') ? '' : "/$currentDesign"; // don't want to link to '/001'
 	if ($listStart > $numDesigns) {
 ?>
 						<li class="next">
-							<a href="?cssfile=<?php echo $currentDesign ?>&amp;page=<?php echo $thisPage + 1 ?>">
+							<a href="<?php echo $currentDesignSlug ?>/page<?php echo $thisPage + 1 ?>/">
 								<?php echo $sidebar["design-archives-next"]; ?> <span class="indicator">&rsaquo;
 							</a>
 						</li>
@@ -110,9 +112,15 @@
 	}
 
 	if ($thisPage > 0) {
+        if($thisPage > 1) {
+            $prev = $thisPage - 1;
+            $prevPage = "page$prev/";
+        } else {
+            $prevPage = ''; // don't create '/page0/' urls
+        }
 ?>
 						<li class="previous">
-							<a href="?cssfile=<?php echo $currentDesign ?>&amp;page=<?php echo $thisPage - 1 ?>">
+							<a href="<?php echo $currentDesignSlug ?>/<?php echo $prevPage ?>">
 								<span class="indicator">&lsaquo; <?php echo $sidebar["design-archives-previous"]; ?>
 							</a>
 						</li>
