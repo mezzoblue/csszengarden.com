@@ -1,0 +1,186 @@
+/* css Zen Garden submission 030 - 'Entomology' by Jon Hicks,  http://exp.hicksdesign.co.uk/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Jon Hicks */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+
+/* basic elements */
+
+body {
+	background: #B61E3D url(bkgd.jpg);
+	font: 12px/16px Georgia, "Times New Roman", Times, serif;
+	color: #390404;
+	margin: 0px;
+}	
+p { 
+	margin-top: -0.8em;
+} 
+p+p {
+	text-indent: 15px;
+}
+
+h3 {
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	margin-top: 2em;
+}	
+	
+a:link,
+a:visited {
+	font-style: italic;
+	text-decoration: none;
+	color: #039;
+}
+a:visited { 
+	font-style: normal;
+}
+a:hover, a:active {
+	background: #ffe699;
+}
+
+
+/* main text divs */
+#container {
+	background: #ffc url(mid.jpg) repeat-y center;
+	position: absolute;
+	left: 50%;
+	width: 760px;
+	margin-left: -380px;
+}
+#intro {
+	margin: 0px;
+	background: url(top.jpg) no-repeat center top;
+	padding-top: 186px;
+}
+#pageHeader h1 span,
+#pageHeader h2 span {
+	display:none
+}
+#quickSummary p.p1:first-line {
+	text-transform: uppercase;
+}
+#quickSummary {
+	margin-top: 30px;
+}		
+#quickSummary p {
+	font-size: 13px;
+	line-height: 22px;
+}	
+#quickSummary,	
+#preamble,	
+#supportingText {
+	margin-right: 80px;
+	margin-left: 300px;
+}	
+#supportingText p.p5{
+	background: url(line.jpg) no-repeat center bottom;
+	margin-right: -80px;
+	margin-left: -300px;
+	margin-top: 30px;
+	height: 30px;
+	text-align: center;
+}		
+#footer {
+	background: url(bot.jpg) no-repeat center bottom;
+	margin-right: -80px;
+	margin-left: -300px;
+	height: 110px;
+	text-align: center;
+}
+#footer a:link, #footer a:visited {
+	font-size: 15px;
+	color: #390404;
+}
+
+
+/* sidelinks styles */
+#linkList {
+ 	background: url(b5.jpg) no-repeat center bottom;
+ 	padding-bottom: 150px;
+	width: 195px;
+	position: absolute;
+	left: 90px;
+	top: 200px;
+	border-right: 1px dotted #930;
+}	
+#linkList h3 {
+	text-align: center;
+	font-style: italic;
+	text-transform: lowercase;
+	letter-spacing: 0.1em;
+}	
+#linkList h3.select {
+	background: url(b1.jpg) no-repeat center top;
+	padding-top: 110px;
+	font-style: italic;
+	text-transform: lowercase;
+	margin-top: 0px;
+}
+linkList h3.favorites { 
+	margin-top: 30px;
+ 	background: url(b2.jpg) no-repeat center top;
+	padding-top: 110px;
+}
+#linkList h3.archives { 
+	margin-top: 30px;
+	background: url(b3.jpg) no-repeat center top;
+	padding-top: 110px;
+}
+#linkList h3.resources { 
+	margin-top: 30px;
+	background: url(b4.jpg) no-repeat center top;
+	padding-top: 105px;
+}
+#linkList ul {
+	margin: -0.5em 0 0 0;
+	padding: 0px;
+	list-style-type: none;
+	text-align: center;
+}
+#linkList li {
+ 	background: url(listline.gif) no-repeat center bottom;
+ 	padding-bottom: 15px;
+}
+#linkList #lselect a {
+	display: block;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}	
+#linkList #lselect a.c{
+	display: inline;
+	margin-bottom: -1em;
+	font-style: italic;
+	text-transform: none;
+	letter-spacing: 0em;
+}	
+#linkList #lselect li{
+	font-style: italic;
+}		
+
+
+/* CSS 2 pseudo elements - not essential but nice in browsers that support it */
+
+h3:first-letter {
+	font-size: 16px;
+}
+#linkList h3 :before {
+content: "(";
+}
+#linkList h3 :after {
+content: ")";
+}
+#footer a:before {
+content: "{ ";
+}
+#footer a:after {
+content: " }";
+}

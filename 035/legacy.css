@@ -1,0 +1,509 @@
+/* css Zen Garden submission 035 - 'Release One' by Didier Hilhorst,  http://www.nundroo.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2003, Didier Hilhorst */
+/* Added in 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+/* Overall Definitions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+body {
+	background: #d8d8d8 url(bg.gif) repeat-y top left;
+	font-family: 'Lucida Grande','Lucida Sans Unicode',arial,verdana,sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #666;
+	}
+
+
+/* Layout Definitions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#container {
+	background: transparent url(bg_rel-one.gif) no-repeat bottom right;
+	margin: 0;
+	padding: 0;
+	}
+
+#intro {
+	background: transparent url(bg_pattern.gif) repeat top left;
+	margin: 0;
+	padding: 0;
+	border-bottom: 2px solid #fff
+	}
+
+#supportingText {
+	background: transparent url(bg_left.gif) repeat-y top left;
+	margin: 0;
+	padding: 0;
+	}
+
+#pageHeader {
+	background: #9bec37 url(bg_header.gif) repeat-y top left;
+	color: #666;
+	height: 180px;
+	margin: 0;
+	border-bottom: 2px solid #fff;
+	}
+
+#pageHeader h1 {
+	display: none;
+	}
+
+#pageHeader h2 {
+	display: none;
+	}
+
+#quickSummary {
+	height: 166px;
+	width: 735px;
+	background: #100b0a url(bg_sub_header.jpg) no-repeat top right;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	margin: 0;
+	}
+
+#quickSummary p.p1 {
+	padding: 14px;
+	margin: 0;
+	width: 188px;  /* False value for IE4-5.x/Win */	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 160px;	 /* Actual value for conformant browsers */	
+	}
+
+html>#quickSummary p.p1 {
+	width: 160px; /* Be nice to Opera */
+	}
+
+#quickSummary p.p2 {
+	padding: 0px 14px 14px 14px;
+	margin: 0;
+	width: 158px;  /* False value for IE4-5.x/Win */	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 130px;	 /* Actual value for conformant browsers */	
+	}
+
+html>#quickSummary p.p2 {
+	width: 130px; /* Be nice to Opera */
+	}
+
+#preamble {
+	margin-left: 233px;
+	background: #f90 url(bg_preamble.gif) no-repeat top right;
+	color: #fff;
+	border-right: 2px solid #fff;
+	padding-bottom: 16px;
+	width: 502px;  /* False value for IE4-5.x/Win */	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 500px;	 /* Actual value for conformant browsers */	
+	}
+
+html>#preamble {
+	width: 500px; /* Be nice to Opera */
+	}
+
+#explanation, #participation, #benefits {
+	margin-left: 233px;
+	border: 1px solid #bbb;
+	background: #f5f5f5;
+	color: #666;
+	margin-bottom: 2px;
+	width: 500px;  /* False value for IE4-5.x/Win */	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 498px;	 /* Actual value for conformant browsers */	
+	}
+
+html>#explanation, #participation, #benefits {
+	width: 498px; /* Be nice to Opera */
+	}
+
+#requirements {
+	margin-left: 233px;
+	border: 1px solid #bbb;
+	background: #f5f5f5;
+	color: #666;
+	margin-bottom: 0;
+	padding-bottom: 16px;
+	width: 500px;  /* False value for IE4-5.x/Win */	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 498px;	 /* Actual value for conformant browsers */	
+	}
+
+html>#requirements {
+	width: 498px; /* Be nice to Opera */
+	}
+
+#footer {
+	border-top: 2px solid #fff;
+	background: #9bec37 url(bg_footer.gif) no-repeat top left;
+	color: #fff;
+	padding: 14px 0 8px 252px;
+	height: 36px;  /* False value for IE4-5.x/Win */	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	height: 12px; /* Actual value for conformant browsers (IE6 needs a height value to display the background correctly. Don't even start...) */	
+	}
+
+html>#footer {
+	height: 12px; /* Be nice to Opera */
+	}
+
+#linkList {
+	position: absolute;
+	background: #b5b5b5;
+	color: #666;
+	top: 350px;
+	padding: 12px;
+	border-right: 2px solid #fff;
+	width: 231px;  /* False value for IE4-5.x/Win */	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 207px;	 /* Actual value for conformant browsers */	
+	}
+
+html>#linkList {
+	width: 207px; /* Be nice to Opera */
+	}
+
+#larchives, #lfavorites, #lresources {
+	background: #dfdfdf;
+	color: #666;
+	border: 2px solid #fff;
+	padding: 12px;
+	margin: 0 0 12px 0;
+	}
+
+#lselect {
+	background: #dfdfdf url(bg_lselect.gif) no-repeat top right;
+	color: #666;
+	border: 2px solid #fff;
+	padding: 12px;
+	margin: 0 0 12px 0;
+	}
+
+
+/* Text Definitions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+p {
+	font-size: 11px;
+	text-align: justify;
+	}
+
+
+#preamble p, #quickSummary p.p2 {
+	line-height: 1.5;
+	color: #fff;
+	background: transparent;
+	}
+
+#preamble p {
+	font-size: 10px;
+	width: 250px;
+	text-align: justify;
+	}
+
+#preamble p.p1 {
+	margin: 16px 18px 10px 18px;
+	}
+
+#preamble p.p2 {
+	margin: 0 18px 10px 18px;
+}
+
+#preamble p.p3 {
+	padding: 0;
+	margin: 0 18px 0 18px;
+	}
+
+
+/* First Paragraphs */
+
+#explanation p.p1, #participation p.p1, #requirements p.p1 {
+	padding: 0;
+	margin: 16px 18px 12px 18px;
+	}
+
+
+/* Intermediate Paragraphs */
+
+#participation p.p2, #participation p.p3, #requirements p.p2, #requirements p.p3, #requirements p.p4 {
+	padding: 0;
+	margin: 12px 18px 12px 18px;
+	}
+
+
+/* Last Paragraphs */
+
+#explanation p.p2, #participation p.p4 {
+	padding: 0;
+	margin: 0px 18px 16px 18px;
+	}
+
+#requirements p.p5 {
+	margin: 0px 18px 0px 18px;
+	padding: 0;
+	}
+
+
+/* One Paragraph */
+
+#benefits p.p1 {
+	margin: 16px 18px 16px 18px;
+	}
+
+
+#supportingText p {
+	line-height: 1.5;
+	}
+
+#quickSummary p.p1 {
+	font-size: 9px;
+	background: transparent;
+	color: #999;
+	text-align: left;
+	}
+
+#quickSummary p.p2 {
+	font-size: 9px;
+	color: #999;
+	text-align: left;
+	}
+
+#footer {
+	font-size: 9px;
+	font-family: 'Arial', Helvetica, sans-serif; /* Looks slightly better  */
+	}
+
+/* Lists Definitions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#linkList ul {
+	font-size: 10px;
+	list-style:none;
+	margin: 0;
+	padding: 0;
+	}
+
+#linkList ul li {
+	background:   url(bullet_gen.gif) no-repeat 2px 3px;
+	margin: 0;
+	padding: 0 0 5px 15px;
+	line-height: 12px;
+	color: #999;
+	}
+
+#linkList #lselect li {
+	background:   url(bullet_design.gif) no-repeat 2px 3px;
+	font-size: 9px;
+	}
+
+#linkList #lfavorites li {
+	background:   url(bullet_fav.gif) no-repeat;
+	font-size: 9px;
+	}
+
+#linkList #lselect a:link, #linkList #lselect a:visited, #linkList #lfavorites a:link, #linkList #lfavorites a:visited {
+	display: block;
+	}
+
+#linkList #lselect a.c:link, #linkList #lselect a.c:visited, #linkList #lfavorites a.c:link, #linkList #lfavorites a.c:visited {
+	display:inline;
+	}
+
+#larchives li, #lresources li {
+	text-transform: lowercase;
+	}
+
+
+/* Links Definitions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+a, a:link, a:visited {
+	background: transparent;
+	color: #333;
+	text-decoration: underline;
+	}
+
+a:hover {
+	background: transparent;
+	color: #333;
+	text-decoration: none;
+	}
+
+#quickSummary a, #quickSummary a:link, #quickSummary a:visited {
+	background: transparent url(download.gif) no-repeat 0 4px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-left: 8px;
+	}
+
+#quickSummary a:hover {
+	text-decoration: underline;
+	}
+
+#linkList a, #linkList a:link, #linkList a:visited {
+	background: transparent;
+	color: #444;
+	text-decoration: none;
+	}
+
+#linkList a:hover {
+	background: transparent;
+	color: #333;
+	text-decoration: underline;
+	}
+
+#linkList a.c, #linkList a.c:link, #linkList a.c:visited {
+	background: transparent;
+	color: #666;
+	text-decoration: none;
+	}
+
+#linkList a.c:hover {
+	background: transparent;
+	color: #333;
+	text-decoration: underline;
+	}
+
+#linkList #lselect a {
+	font-size: 10px;
+	}
+
+#linkList #lselect a.c {
+	font-size: 9px;
+	text-transform: lowercase;
+	}
+
+#footer a, #footer a:link, #footer a:visited {
+	background: transparent url(arrow_footer.gif) no-repeat 0 2px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-left: 8px;
+	}
+
+#footer a:hover {
+	text-decoration: underline;
+	}
+
+
+/* Headings Definitions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+h3 {
+	margin-bottom: 0px;
+	}
+
+h3 span {
+	display: none;
+	}
+
+#linkList h3 {
+	width: 150px;
+	height: 20px;
+	margin-top: 20px;
+	}
+
+#preamble h3 {
+	background: transparent url(title_road.gif) no-repeat top left;
+	width: 500px;
+	height: 34px;
+	border-bottom: 2px solid #fff;
+	margin: 0;
+	height: 36px;  /* False value for IE4-5.x/Win */	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	height: 34px; /* Actual value for conformant browsers */	
+	}
+
+html>#preamble h3 {
+	height: 34px; /* Be nice to Opera */
+	}
+
+#explanation h3, #participation h3, #benefits h3, #requirements h3 {
+	width: 498px;
+	height: 30px;
+	margin: 0;
+	}
+
+#explanation h3 {
+	background: transparent url(title_about.gif) no-repeat top left;
+	}
+
+#participation h3 {
+	background: transparent url(title_partici.gif) no-repeat top left;
+	}
+
+#benefits h3 {
+	background: transparent url(title_benef.gif) no-repeat top left;
+	}
+
+#requirements h3 {
+	background: transparent url(title_req.gif) no-repeat top left;
+	}
+
+#lselect h3, #lfavorites h3, #larchives h3, #lresources h3 {
+	height: 28px;
+	width: 100%;
+	margin: 0;
+	}
+
+#lselect h3 {
+	background: transparent url(bg_select_des.gif) no-repeat top left;
+	}
+
+#lfavorites h3 {
+	background: transparent url(bg_select_fav.gif) no-repeat top left;
+	}
+
+#larchives h3 {
+	background: transparent url(bg_select_arc.gif) no-repeat top left;
+	}
+
+#lresources h3 {
+	background: transparent url(bg_select_res.gif) no-repeat top left;
+	}
+
+
+/* Other Definitions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+acronym {
+	cursor: help;
+	}
+
+#preamble acronym {
+	border-bottom: 1px dotted #ffe0b3;
+}
+
+#lresources acronym {
+	border-bottom: 1px dotted #999;
+}
+
+#supportingText acronym {
+	background: transparent url(acro.gif) no-repeat center right;
+	padding-right: 11px;
+	margin-right: 1px;
+	cursor: help;
+	border: 0;
+	}
+
+#participation a acronym {
+	background: transparent;
+	padding: 0;
+	margin: 0;
+}
+
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+	display: none; /* I was tempted at times though... */
+	}
+
+img {
+	display: none;
+	}

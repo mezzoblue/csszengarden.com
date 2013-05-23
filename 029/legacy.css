@@ -1,0 +1,288 @@
+/* css Zen Garden submission 029 - 'Backyard' by Ray Henry, http://www.reh3.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2003, Ray Henry */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+
+/* basic elements */
+body { 
+	background: #fff url(main_bg.gif) repeat-x top left; 
+	margin: 0; 
+	padding: 0;
+	text-align:left;
+	height:100%;
+	width:100%;
+}
+
+p { 
+	margin-top: 0px; 
+	text-align: left;
+}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: #616157;
+}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: #616157;
+}
+
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #811610;
+}
+
+/* specific divs */
+#container { 
+	background:transparent; 
+	padding: 0px;  
+	margin: 0px; 
+	width:770px;
+}
+
+#intro {
+	background: transparent url(quicksum_bg.gif) no-repeat top left;
+	width:770px;
+	margin-top:28px;
+	margin-bottom:0;
+}
+
+#pageHeader { 
+	margin: 0;
+	padding:0;
+	width:770px;
+	height:72px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;	
+	margin-bottom:22px;
+}
+
+#pageHeader h1 { 
+	background: transparent url(intro_bg.jpg) no-repeat top left; 
+	margin-top: 0; 
+	width: 403px; 
+	height: 72px; 
+	float: left;
+}
+
+#pageHeader h2 { 
+	background: transparent url(intro_bg2.jpg) no-repeat top left; 
+	margin: 0; 
+	width: 367px; 
+	height: 72px; 
+	float: right;
+}
+
+#pageHeader h1 span, #pageHeader h2 span {
+	display:none
+}
+
+#quickSummary {
+	background:transparent;
+	float:left;
+	clear:both;
+	padding-top:10px;
+	padding: 10px; 
+	border-top:1px dashed #999;
+	width: 200px; 
+	font-family:georgia, serif;
+	font-size: 12px;
+	line-height:30px;
+	color:#616157;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	margin-top:-1.8em;
+	width:180px;
+}
+	
+#quickSummary p.p1:first-letter {
+	padding-right:5px;
+	font-size: 300%; 
+	color:#811610;
+}
+
+ #preamble p.p1:first-letter {
+	padding-right:5px;
+	font-size: 300%; 
+	color:#811610;
+}
+	
+#quickSummary p.p2 {
+	line-height:18px;
+	font-family:verdana, arial, sans serif;
+	font-size:11px;
+}
+
+#preamble {
+	background:transparent;
+	clear:both;
+	padding: 10px; 
+	width: 200px; 
+	font-family:georgia, serif;
+	font-size: 12px;
+	line-height:30px;
+	color:#616157;
+	z-index:5;
+	voice-family: "\"}\""; 
+  	voice-family:inherit;
+	width:180px;
+}
+	
+#preamble h3{
+	line-height:16px;
+	font-size:15px;
+	padding-bottom:10px;
+	padding-top:10px;
+	border-top:1px solid #811610;
+	border-bottom:1px solid #811610;
+}
+	
+#supportingText {
+	background:#F7F7F2;
+	position:absolute;
+	top:100px;
+	padding: 10px;
+	margin-left:200px;
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-bottom:1px solid #999;
+	border-right:1px solid #999;
+	width:366px;
+	height:auto;
+	font-family:georgia, serif;
+	font-size:13px;	
+	line-height:19px;
+	color:#616157;	
+	voice-family: "\"}\""; 
+  	voice-family:inherit;
+  	margin-left:200px;
+	width:344px;	
+	top:100px;
+}
+
+#explanation h3, #participation h3, #benefits h3, #requirements h3 {
+	margin-bottom:10px;
+	width:300px;
+	height:15px;
+	border-bottom:1px dashed #999;
+}
+
+#explanation h3 {
+	background: transparent url(sup_h3_a.gif) no-repeat;
+}	
+
+#participation h3 {
+	background: transparent url(sup_h3_b.gif) no-repeat;
+}	
+
+#benefits h3 {
+	background: transparent url(sup_h3_c.gif) no-repeat;
+}	
+
+#requirements h3 {
+	background: transparent url(sup_h3_d.gif) no-repeat;
+}	
+
+#supportingText h3 span{
+	display:none;
+}
+	
+#footer { 
+	text-align: center; 
+	border-top:1px solid #CBCBC2;
+	font-family:verdana, arial, sans serif;
+	font-size:10px;
+}
+
+#footer a:link, #footer a:visited { 
+	margin: 5px;
+	font-weight: normal; 
+}
+
+#linkList {
+	background: url(linklist_bg.gif) no-repeat top left;
+	margin-left: 566px; 
+	position: absolute; 
+	top: 100px; 
+	height:100%;
+	voice-family: "\"}\""; 
+  	voice-family:inherit;
+	margin-left:566px;
+}
+	
+#linkList2 { 
+	font: 10px verdana, sans-serif; 
+	padding: 10px; 
+	width: 204px; 
+}
+
+#linkList h3.select, #linkList h3.archives, #linkList h3.resources{
+	width:180px; 
+	height: 20px; 
+}
+	
+#linkList h3.select { 
+	background: transparent url(linklist_a.gif) no-repeat top left; 
+	margin: 25px 0px 5px 0px; 
+}
+
+#linkList h3.archives { 
+	background: transparent url(linklist_b.gif) no-repeat bottom left; 
+	margin: 25px 0px 10px 0px;
+	border-top:1px dashed #ccc;
+	padding-top:5px; 
+}
+
+#linkList h3.resources { 
+	background: transparent url(linklist_c.gif) no-repeat bottom left; 
+	margin: 25px 0px 10px 0px;
+	border-top:1px dashed #ccc;
+	padding-top:5px;  
+}
+
+#linkList h3.select span, #linkList h3.archives span, #linkList h3.resources span {
+	display:none
+}
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	color:#555;
+}
+
+#linkList li {
+	list-style-type: none;
+	background: transparent; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+}
+
+#linkList li a:link { 
+	color: #555;
+}
+
+#linkList li a:visited {
+	color: #555;
+}
+
+#linkList li a:hover, #linkList li a:active {
+	color:#811610;
+}	
+
+a.c:link, a.c:visited, a.c:hover, a.c:active {
+	font-weight:normal;
+}
+
+#extraDiv1, #extraDiv2 {
+	display:none;
+}

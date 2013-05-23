@@ -1,0 +1,336 @@
+/* css Zen Garden submission 036 - 'White Lily' by Jens Kristensen, http://j-k.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Jens Kristensen */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+
+/* basic elements */
+/*---------------------------------------------------*/
+
+body, html, div {
+	margin: 0;
+	padding: 0;
+}
+
+
+body { 
+	font: 8pt/16pt verdana, geneva, arial, sans serif; 
+	color: #000; 
+	background: #fff url(lbg.gif) repeat-y;
+
+}
+
+/* specific divs */
+
+/* container keeps it all together */
+/*---------------------------------------------------*/
+
+#container{
+	border-top:1px solid #230;
+	border-right: 1px solid #230;
+	width:760px;
+	margin: 0px; 
+	padding: 0px; 
+	background: transparent url(topbg.gif) repeat-x;
+
+}
+
+/* intro div and its content */
+/*---------------------------------------------------*/
+
+#intro { 
+	margin:0;
+	padding:0;
+	margin-top:20px;
+	width:760px;
+	background: transparent url(lsh.gif) no-repeat 687px 231px;
+}
+
+#pageHeader { 
+	position:absolute;
+	left:0;
+	width: 355px; 
+	height:201px
+
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 { 
+	background: transparent url(centerpiece.jpg) no-repeat; 
+	margin-top: 0px;
+	width: 355px; 
+	height: 201px; 
+	float: left;
+}
+
+#pageHeader h1 span,#pageHeader h2,#pageHeader h2 span {
+	display:none;
+}
+
+#quickSummary{
+	margin: 0 0 0 355px;
+	width:332px;
+	height: 200px;
+	background: #ABBC47 url(quicksumbg.gif);
+	border-right:1px solid #ABBC47;
+	border-top:1px solid #ABBC47;
+}
+
+#quickSummary p.p1 {
+	font: bold 11px/14px arial,verdana, sans serif;
+	color:#fff; 
+	padding:100px 30px 2px 30px;
+}
+
+#quickSummary p.p2{
+	position:absolute;
+	left:0;
+	top:230px;
+	font: 10px verdana, arial, sans serif; 
+	color:#fff;
+	margin:0 30px;
+}
+
+/* visually footer is moved up to be with the intro stuff */
+
+#footer{
+	position:absolute;
+	left:0;
+	top:230px;
+	font: 10px verdana, arial, sans serif; 
+	color:#fff;
+	margin:0 30px 0 400px;
+	width:340px;
+	text-align:right;
+}
+
+#quickSummary p.p2 a, #footer a{
+	color:#fff;
+}
+
+#quickSummary p.p2 a:hover, #footer a:hover{
+	color:#230;
+	background-color:#fff;
+	text-decoration:none;
+}
+
+/* visually we now move into the main area of the page
+/*---------------------------------------------------*/
+
+#preamble{
+	padding:50px 30px 30px 30px;
+	margin:30px 0 0 355px;
+	border-width:0 0 1px 1px;
+	border-color:#fff #ddd;
+	border-style:solid;
+	text-align:left;
+	background: transparent url(endsection.gif) no-repeat bottom center;
+
+	width:343px;
+}
+
+#preamble p, #explanation p, #benefits p, #participation p, #requirements p{
+	text-align:justify;
+}
+
+#preamble h3{
+	background: transparent url(h3preamble.gif) no-repeat bottom left; 
+	margin: 0px;
+	width: 270px; 
+	height: 36px;
+	border-bottom:1px solid #ddd;
+}
+#preamble h3 span{
+	display:none
+}
+#preamble p.p1{
+	width: 270px;
+}
+
+
+#supportingText{
+	border-width:0 0 1px 1px;
+	border-color:#fff #ddd;
+	border-style:solid;
+	margin:0px 0px 0px 355px;
+	padding:50px 30px 0 30px;
+	width:405px;	
+	voice-family: "\"}\"";   
+	voice-family: inherit;
+	width:343px;
+	
+
+}
+
+#explanation, #benefits, #participation, #requirements {
+	padding:0 0 20px 0;
+	margin-bottom:20px;
+	text-align:left;
+	background: transparent url(endsection.gif) no-repeat bottom center;
+}
+
+p{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.p1{
+	margin-top:26px;
+}
+
+#quickSummary .p1{
+	margin-top:0;
+}
+
+/* use images to display headers */
+
+#explanation h3{
+	background: transparent url(h3explanation.gif) no-repeat bottom left; 
+}
+#benefits h3{
+	background: transparent url(h3benefits.gif) no-repeat bottom left; 
+}
+#participation h3{
+	background: transparent url(h3participation.gif) no-repeat bottom left; 
+}
+#requirements h3{
+	background: transparent url(h3requirements.gif) no-repeat bottom left; 
+}
+	
+#explanation h3, #benefits h3, #participation h3, #requirements h3 {
+	margin: 0px;
+	min-width: 200px; 
+	height: 36px;
+	border-bottom:1px solid #ddd;
+}
+#explanation h3 span, #benefits h3 span, #participation h3 span, #requirements h3 span {
+	display:none
+}
+
+/* and finally we place the list of links */
+/*---------------------------------------------------*/
+
+#linkList{
+	position:absolute;
+	left:0px;
+	top:252px;
+	width:355px;
+	padding:50px 30px 0 130px;
+	background: transparent url(lsh.gif) no-repeat top left;
+	voice-family: "\"}\"";   
+	voice-family: inherit;
+	width:195px;
+}
+
+#linkList2{
+	padding:0;
+}
+
+/* use images for headers */
+
+h3.select{
+	background: transparent url(h3select.gif) no-repeat bottom left; 
+}
+h3.archives{
+	background: transparent url(h3archives.gif) no-repeat bottom left; 
+}
+h3.resources{
+	background: transparent url(h3resources.gif) no-repeat bottom left; 
+}
+
+h3.select, h3.archives, h3.resources {
+	margin: 0px;
+	min-width: 200px; 
+	height: 36px;
+	border-bottom:1px solid #ddd;
+}
+h3.select span, h3.archives span, h3.resources span{
+	display:none
+}
+
+/* put some style on the lists */
+
+/* first the list of designs */
+#lselect ul {
+	margin: 10px 0 0 0;
+	padding: 10px;
+}
+
+#lselect li {
+	line-height: 2.5ex; 
+	list-style-type: none;
+	display: block; 
+	padding: 5px 0px 5px 25px; 
+	margin: 5px 0;
+	border-bottom:1px solid #eee;
+	background: transparent url(bullet.gif) no-repeat 0px 7px;
+}
+
+#lselect li a{
+	white-space:nowrap;
+	display:block;
+	font-weight:bold;
+}
+
+#lselect li a.c{
+	text-decoration:none;
+	display:inline;
+	font-weight:normal;
+}
+
+#lselect li a.c:hover{
+	text-decoration:underline;
+}
+
+/* then the lists of general info etc */
+
+#larchives ul, #lresources ul {
+	margin: 10px 0 0 0;
+	padding: 10px;
+}
+
+#larchives li, #lresources li { 
+	list-style-type: none;
+	display: block; 
+	padding: 0px; 
+	padding: 0px 0px 0px 25px;
+	margin: 0;
+	background: transparent url(bullet2.gif) no-repeat 2px 7px;
+}
+
+/* some generic stuff */
+/*---------------------------------------------------*/
+
+a {
+	color:#230;
+}
+
+a:visited {
+	color:#672;
+}
+
+a:hover {
+	color:#ABBC47;
+}
+
+/* and finally we use one of the extra divs available */
+/*---------------------------------------------------*/
+
+#extraDiv1{
+	width:3px;
+	height:18px;
+	position:absolute;
+	left:354px;
+	top:252px;
+	background: transparent url(ltop.gif) no-repeat;
+}
+
