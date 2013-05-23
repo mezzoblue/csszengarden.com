@@ -1,0 +1,225 @@
+/* css Zen Garden submission 003 - 'Stormweather' by Dave Shea - http://www.mezzoblue.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Dave Shea */
+/* Added: May 7th, 2003 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* Credit to Phillipe Wittenbergh at http://www.l-c-n.com/ for Mac testing */
+
+/* The photos in this design come from my digital library. All were taken in Vancouver, BC. The car is on the
+    Granville St. Bridge, the leaves are West 6th Ave, and the snow/tree is West 10th Ave. Guess which
+    part of town I live in...
+
+    I'm still rather fond of this design. I'm glad Phillipe was able to iron out the various CSS bugs */
+
+
+/* basic elements */
+body {
+	font: 11px/15px georgia, serif;
+	text-align: center;
+	color: #fff;
+	background: #748A9B url(bg2.gif) 0 0 repeat-y;
+	margin: 0px;
+	}
+p {
+	/*font: 11px/15px georgia, serif;*/
+	text-align: justify;
+	margin-top: 0;
+	}
+h3 {
+	font: bold 14px georgia, serif;
+	text-transform: lowercase;
+	margin-bottom: 0;
+	}
+acronym { 
+	border-bottom: dotted 1px #fff; 
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: #A7D3F6;
+	}
+a:visited {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #D1E9FC;
+	}
+a:active, a:hover {
+	text-decoration: underline;
+	color: #fff;
+	}
+
+
+/* specific divs */
+
+#container {
+	background: #849AA9 url(bg1.gif) top left repeat-y;
+	text-align: left;
+	width: 750px; margin: 0px auto;
+	position: relative;
+	} 
+#supportingText {
+	/*position: relative; top: -120px;*/
+	padding: 0px 40px 0px 0;
+	/*clear:right;*/
+	float:right;
+	width:430px;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 {
+	background: transparent url(h1.jpg) no-repeat top left;
+	width: 750px;
+	height: 152px;
+	margin: 0px;
+	}
+#pageHeader h1 span {
+	display: none;
+	}
+#pageHeader h2 span {
+	display: none;
+	}
+
+#quickSummary { 
+	width: 685px; 
+	margin: 0px auto; 
+	position: relative; 
+	top: -50px;
+	}
+html>body #quickSummary {
+	margin-top:-50px; 
+	top: 0;
+	}
+#quickSummary .p1 {
+	font-size: 1px;
+	color: white;
+	background: transparent url(panel1-2.jpg) no-repeat top left;
+	width: 449px; 
+	padding: 10px 0px 0px 5px; float: left; 
+	height: 268px; 
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	height: 258px; 
+	}
+#quickSummary .p1 span {
+	display: none;
+	}
+#quickSummary .p2 {
+	color: #7593A7;
+	background: transparent url(panel3.jpg) no-repeat 0 0;
+	padding: 90px 45px 0px 45px;
+	float: right; 
+	width: 214px;
+	height: 338px; 
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 124px;
+	height: 178px;
+	}
+#quickSummary .p2 span {
+	letter-spacing: -1px;
+	line-height: 26px;
+	display: block;
+	}
+#quickSummary .p2 a:link, #quickSummary .p2 a:visited {
+	color: #7593A7;
+	}
+#quickSummary .p2 a:hover {
+	color: #85ABC5;
+	}
+
+#preamble { 
+	/*position: relative; top: -120px; */
+	padding: 0px 0px 70px 33px; 
+	margin: 0px 0 20px 0px; 
+	width: 210px;
+	float: left;
+	background: transparent url(tag.gif) 50% 100% no-repeat;
+	}
+#preamble h2 { 
+	font: bold 14px georgia, serif; 
+	margin-top: 0px;
+	padding: 0px;
+	}
+#preamble p {
+	font: italic 12px/20px georgia, serif;
+	}
+
+#footer {
+	text-align: right;
+	clear: both;
+	}
+#footer a {
+	font-weight: normal;
+	text-decoration: none;
+	margin-right: 10px;
+	border: solid 1px #859BAA;
+	padding: 6px;
+	}
+#footer a:hover {
+	color: #7E868D;
+	background-color: #fff;
+	border-right: solid 1px #6F818D;
+	border-bottom: solid 1px #6F818D;
+	}
+
+#lselect {
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	padding-left: 350px;
+	margin: 0px auto;
+	width: 730px;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 380px;
+	}
+#linkList h3 {
+	display: inline;
+	margin-right: 5px;
+	}
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+#linkList li {
+	font-size: 10px;
+	margin-right: 5px;
+	list-style-type: none;
+	display: inline;
+	}
+#linkList li a {
+	font-weight: normal;
+	}
+
+#lselect h3 {
+	font: bold 11px georgia;
+	letter-spacing: -1px;
+	}
+#lselect li {
+	font: 11px/12px georgia;
+	letter-spacing: -1px;
+	color: #758C9B;
+	}
+#lselect li a:link, #lselect li a:visited {
+	font-weight: normal;
+	color: #fff;
+	text-decoration: none;
+	}
+#lselect li a:hover {
+	color: #D1E9FC;
+	text-decoration: underline;
+	}
+
+#lresources, #larchives, #lfavorites {
+	padding: 0px 40px 0px 266px;
+	clear: both;
+	/*position: relative; top: -20px;*/
+	}
