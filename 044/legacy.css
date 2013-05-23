@@ -1,0 +1,313 @@
+/* css Zen Garden submission 044 - 'si6' by Shaun Inman,  http://www.shauninman.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Shaun Inman */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* Lomo Credit: http://andreas.lunde.info/	 | 09.05.03 :: 09.09.03 */
+/* Via: http://sxc.hu/ */ 
+body { 
+	background: url(bg_top.jpg) no-repeat #FFF; 
+	margin: 0px;
+	
+	font: 9px/16px Geneva,Arial,Tahoma,sans-serif;
+	color: #97999C;
+	}
+p {	
+	position: relative;
+	top: 0px;
+	text-align: justify;
+	
+	margin: 0px 0px 0px 35px;
+	padding: 0px 0px 16px 302px;
+	
+	width: 573px;  /* False value for IE4-5.x/Win */
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 271px;	 /* Actual value for conformant browsers */	
+	}
+html>p {
+	width: 271px; /* Be nice to Opera */
+	}
+@media ScReEn { /* HIDE THIS NONSENSE FROM SAFARI */
+	p span { position: relative; top: -1px; padding-bottom: 2px; }
+	} 
+/* MORE NONSENSE JUST FOR IE <SHAKES HEAD /> */
+* html p span { position: relative; top: -1px; }
+
+p.p1 { background: url(p1.gif) no-repeat; }
+p.p2 { background: url(p2.gif) no-repeat; }
+p.p3 { background: url(p3.gif) no-repeat; }
+p.p4 { background: url(p4.gif) no-repeat; }
+p.p5 { background: url(p5.gif) no-repeat; }
+
+a,
+a:visited	{
+	color: #717375;
+	text-decoration: none;
+	border-bottom: 2px solid #FFFC00;
+	}
+a:hover	{
+	color: #A1A3A5;
+	text-decoration: none;
+	border-bottom: 2px solid #FFFE66;
+	}
+
+h3 {
+	margin: 0px;
+	padding: 0px;
+	}
+	
+acronym {
+	font-style: normal;
+	text-decoration: none;
+	border-width: 0px;
+	}
+#container {
+	width: 744px;
+	}
+
+#pageHeader { z-index: 5000; }
+#pageHeader h1 {
+	position: absolute;
+	top: 84px;
+	left: 88px;
+	
+	background: url(css_zen_garden.gif) no-repeat;
+	width: 205px;
+	height: 35px;
+	
+	padding: 0px;
+	margin: 0px;
+	}
+#pageHeader h2 {
+	position: absolute;
+	top: 132px;
+	left: 91px;
+	
+	background: url(beauty_of.gif) no-repeat;
+	width: 149px;
+	height: 23px;
+	
+	padding: 0px;
+	margin: 0px;
+	}
+#pageHeader h1 span,
+#pageHeader h2 span,
+#preamble h3 span,
+#explanation h3 span,
+#participation h3 span,
+#benefits h3 span,
+#requirements h3 span,
+#lselect h3 span,
+#lfavorites h3 span,
+#larchives h3 span,
+#lresources h3 span	{ display: none; }
+
+#quickSummary p { color: #828200; }
+#quickSummary a,
+#quickSummary a:visited {
+	color: #626200;
+	text-decoration: none;
+	border-bottom: 2px solid #979600;
+	}
+#quickSummary a:hover { color: #A2A200; border-bottom: 2px solid #C7C600; }
+#quickSummary		{ margin-top: 144px; width: 608px; }
+#quickSummary p.p1	{ background: url(p1_on_yellow.gif) no-repeat; }
+#quickSummary p.p2 	{ background: url(p2_on_yellow.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
+
+#preamble,
+#explanation,
+#participation,
+#benefits,
+#requirements,
+#footer { position: relative; }
+
+#preamble h3 {
+	position: absolute;
+	top: -11px;
+	left: 88px;
+	
+	background: url(the_road.gif) no-repeat;
+	width: 169px;
+	height: 22px;
+	}
+/* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
+* html*#preamble h3 { left: 53px; }
+/* GOTTA WAKE UP IE5 MAC! */
+#preamble p.p1 { background: url(p1_cropped.gif) no-repeat; }
+#preamble p.p2 { background: url(p2_cropped.gif) no-repeat; }
+#preamble p.p3 { background: url(p3_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
+
+#explanation h3 {
+	position: absolute;
+	top: -12px;
+	left: 89px;
+	
+	background: url(so_what.gif) no-repeat;
+	width: 131px;
+	height: 23px;
+	}
+/* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
+* html*#explanation h3 { left: 54px; }
+/* GOTTA WAKE UP IE5 MAC! */
+#explanation p.p1 { background: url(p1_unlabeled.gif) no-repeat; }
+#explanation p.p2 { padding-bottom: 0px; margin-bottom: 16px; }
+
+#participation h3 {
+	position: absolute;
+	top: -11px;
+	left: 86px;
+	
+	background: url(participation.gif) no-repeat;
+	width: 131px;
+	height: 22px;
+	}
+/* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
+* html*#participation h3 { left: 51px; }
+/* GOTTA WAKE UP IE5 MAC! */
+#participation p.p4 { padding-bottom: 0px; margin-bottom: 16px; }
+
+#benefits h3 {
+	position: absolute;
+	top: -11px;
+	left: 88px;
+	
+	background: url(benefits.gif) no-repeat;
+	width: 131px;
+	height: 22px;
+	}
+/* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
+* html*#benefits h3 { left: 53px; }
+/* GOTTA WAKE UP IE5 MAC! */
+#benefits p.p1 { padding-bottom: 0px; margin-bottom: 16px; }
+
+#requirements h3 {
+	position: absolute;
+	top: -11px;
+	left: 89px;
+	
+	background: url(requirements.gif) no-repeat;
+	width: 131px;
+	height: 22px;
+	}
+/* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
+* html*#requirements h3 { left: 54px; }
+/* GOTTA WAKE UP IE5 MAC! */
+#requirements p.p4 { background: url(p4_on_blue.gif) no-repeat; }	
+#requirements p.p5 { background: url(p5_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }	
+
+#linkList {
+	position: absolute;
+	top: 63px;
+	left: 626px;
+	width: 116px;
+	}
+#linkList ul,
+#linkList li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	line-height: 12px;
+	}
+#linkList a,
+#linkList a:visited { color: #5E5F61; border: none; }
+#linkList a:hover	{ color: #C1C3C5; }
+
+#lselect li,
+#lfavorites li		{ margin-top: 8px; }
+
+#lselect li a,
+#lselect li a:visited,
+#lfavorites li a,
+#lfavorites li a:visited	{ display: block; }
+
+#lselect li a.c,
+#lselect li a.c:visited,
+#lfavorites li a.c,
+#lfavorites li a.c:visited	{ color: #717375; display: inline; }
+#lselect li a.c:hover,
+#lfavorites li a.c:hover	{ color: #C1C3C5; }
+
+#lselect h3.select {
+	background: url(select_a_design.gif) no-repeat;
+	width: 112px;
+	height: 44px;
+	}
+#lselect ul { margin-top: -1px; }
+@media ScReEn { /* HIDE THIS NONSENSE FROM SAFARI */
+	#lselect ul { margin-top: -2px; }
+	}  
+/* MORE NONSENSE JUST FOR IE <SHAKES HEAD /> */
+* html #lselect ul { margin-top: -2px; }
+
+#lfavorites h3.favorites {
+	background: url(favorites.gif) no-repeat;
+	width: 112px;
+	height: 44px;
+	margin-top: 6px;
+	}
+#lfavorites ul { margin-top: -2px; }
+
+#larchives h3.archives {
+	background: url(archives.gif) no-repeat;
+	width: 112px;
+	height: 44px;
+	margin-top: 5px;
+	}
+#larchives ul { margin-top: 6px; }
+
+#lresources h3.resources {
+	background: url(resources.gif) no-repeat;
+	width: 112px;
+	height: 44px;
+	margin-top: 10px;
+	}
+#lresources ul { margin-top: 6px; }
+
+#footer {	
+	display: block;
+	text-align: right;
+	
+	padding: 9px 430px 0px 0px;
+	margin: 0px 0px 36px 35px;
+	
+	width: 688px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 258px;
+	}
+html>#footer { width: 258px; }
+#footer a	{ padding-bottom: 9px; }
+@media ScReEn { /* HIDE THIS NONSENSE FROM SAFARI */
+	#footer a { position: relative; top: -1px; }
+	}  
+/* MORE NONSENSE JUST FOR IE <SHAKES HEAD /> */
+* html #footer a { position: relative; top: -1px; }
+
+#footer,#requirements { z-index: 2; }
+#extraDiv1 {
+	position: relative;
+	height: 1px;
+	z-index: 1;
+	}
+#extraDiv1 span {
+	position: absolute;
+	bottom: -33px;
+	left: 0px;
+	background: url(bg_bottom.jpg) no-repeat;
+	width: 100%;
+	height: 508px;
+	}
+#extraDiv2,
+#extraDiv3,
+#extraDiv4,
+#extraDiv5,
+#extraDiv6 { display: none; }
+
+/* * { border: 1px solid #DDD; } */

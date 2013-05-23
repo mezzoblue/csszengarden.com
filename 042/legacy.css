@@ -1,0 +1,496 @@
+/* css Zen Garden submission 042 - 'Stone Washed' by Andrew Hayward, http://www.mooncalf.me.uk/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Andrew Hayward */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+
+/* ---[ General Stuff ]------------------------------ */
+
+    body {
+    	margin: 0px;
+        padding: 0px;
+    	background: #e6e6dc url('outer_shadow.gif') 0px 0px repeat-x;
+    	color: #999;
+    	font-family: tahoma, arial, helvetica, sans-serif;
+    }
+
+    h1, h2, h3, h4 {
+    	margin: 0;
+    	padding: 0;
+    }
+
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: justify;
+        font-size: 0.8em;
+    }
+    
+    a:link, a:visited {
+        color: #567b9b;
+        text-decoration: none;
+    }
+
+    a:hover, a:active {
+        background: #ddeeff;
+    }
+
+/* ---[ End General Stuff ]-------------------------- */
+
+/* ---[ Container ]---------------------------------- */
+
+    #container {
+        background: transparent url('side.gif') 100% 0px repeat-y;
+    }
+
+    /* ---[ Intro ]---------------------------------- */
+
+        #intro {
+            margin: 100px 275px 0px 100px;
+            background: #fff url('inner_shadow.gif') 0px 0px repeat-x;
+            padding: 30px 10px 10px 10px;
+            border-left: solid 1px #ccc;
+        }
+
+        /* ---[ Page Header ]------------------------ */
+
+            #pageHeader {
+            	color: #fff;
+            	height: 100px;
+            	width: 100%;
+            	top: 0px;
+            	left: 0px;
+            	right: 0px;
+            	position: absolute;
+                background: transparent url('top.gif') 0px 0px repeat-x;
+                z-index: 10;
+            }
+
+            #pageHeader h1 {
+                height: 130px;
+            }
+
+            #pageHeader h1 span {
+            	font-size: 1.5em;
+            	background-color: transparent;
+            	text-decoration: none;
+            	text-transform: lowercase;
+            	display: none;
+            	font-weight: normal;
+            	position: absolute;
+            	right: 20px;
+            	bottom: 3px;
+                color: #fff;
+            }
+
+            #pageHeader h2 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 115px;
+                width: 400px;
+                background: transparent url('top.title.gif') 0px 0px no-repeat;
+            }
+
+            #pageHeader h2 span {
+                display: none;
+            }
+
+        /* ---[ End Page Header ]-------------------- */
+
+        /* ---[ Quick Summary ]---------------------- */
+
+            #quickSummary {
+                width: 270px;
+                float: left;
+                border-top: solid 1px #ddd;
+                border-right: solid 1px #ddd;
+                /* border-bottom: solid 1px #999; */
+                border-left: solid 1px #ddd;
+                background: #e5e5e5 url('demo.bg.gif') 100% 100% no-repeat;
+                margin: 0px 15px 10px 0px;
+                padding: 0px 0px 3px 0px;
+                font-size: 1em;
+            }
+
+            #quickSummary p, #quickSummary p:first-letter {
+                text-align: center;
+                color: #666;
+                font-weight: normal;
+            }
+
+            #quickSummary .p1 {
+                background: #fff url('demo.p1.gif') 0% 0% no-repeat;
+                /* padding-bottom: 60px; */
+                height: 176px;
+                padding: 0px 0px 0px 0px;
+                margin: 0px;
+            }
+            
+            #quickSummary .p1 span {
+                display: none;
+            }
+            
+            #quickSummary .p2 {
+                position: relative;
+                bottom: 0px;
+                text-align: right;
+                padding-bottom: 15px;
+            }
+            
+            #quickSummary>.p2 {
+                padding-bottom: 0px;
+            }
+            
+            #quickSummary .p2 span {
+                visibility: hidden;
+                font-size: 0px;
+            }
+            
+            #quickSummary .p2 span a {
+                margin-left: 75px;
+                font-size: 10pt;
+                visibility: visible;
+                display: block;
+                position: relative;
+                left: 0px;
+                background: none;
+                background: transparent url('file.gif') 100% 50% no-repeat;
+                padding-right: 18px;
+                color: #aaa;
+                font-variant: small-caps;
+                text-transform: capitalize;
+            }
+
+            #quickSummary .p2 span a:hover {
+                background: transparent url('file2.gif') 100% 50% no-repeat;
+                color: #819bb2;
+            }
+        /* ---[ End Quick Summary ]------------------ */
+
+        /* ---[ Preamble ]--------------------------- */
+
+            #preamble h3 {
+                display: none;
+            }
+            
+            #preamble p {
+                font-size: 0.9em;
+                color: #819bb2;
+                padding-left: 300px;
+            }
+
+        /* ---[ End Preamble ]----------------------- */
+
+    /* ---[ End Intro ]------------------------------ */
+
+    /* ---[ Supporting Text ]------------------------ */
+
+        #supportingText {
+            margin: 0px 275px 0px 100px;
+            background: #fff;
+            padding: 10px 0px 10px 0px;
+            border-left: solid 1px #ccc;
+        }
+        
+        #supportingText div {
+            clear: both;
+        }
+        
+        #supportingText h3 {
+            padding-top: 30px;
+            height: 25px;
+            border-bottom: solid 1px #819bb2;
+        }
+
+        #supportingText h3 span {
+            display: none;
+        }
+        
+        /* ---[ Explanation ]------------------------ */
+        
+            #explanation {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        
+            #explanation h3 {
+                background: #fff url('h3.explanation.gif') 100% 100% no-repeat;
+            }
+
+            #explanation p.p1 {
+                width: 45%;
+                float: left;
+            }
+            
+            #explanation p.p2 {
+                width: 45%;
+                float: right;
+            }
+
+        /* ---[ End Explanation ]-------------------- */
+
+        /* ---[ Participation ]---------------------- */
+        
+            #participation {
+                background: #fff url('stone.circle.jpg') 50% 100% no-repeat;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            #participation h3 {
+                background: #fff url('h3.participation.gif') 100% 100% no-repeat;
+                /* border-top: solid 1px #ccc; */
+            }
+
+            #participation p.p2 {
+                width: 45%;
+                float: left;
+            }
+            
+            #participation p.p3 {
+                width: 45%;
+                float: right;
+            }
+
+            #participation p.p4 {
+                clear: both;
+            }
+
+        /* ---[ End Participation ]------------------ */
+
+        /* ---[ Benefits ]--------------------------- */
+        
+            #benefits {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            #benefits h3 {
+                background: #fff url('h3.benefits.gif') 100% 100% no-repeat;
+                /* border-top: solid 1px #ccc; */
+            }
+
+        /* ---[ End Benefits ]----------------------- */
+
+        /* ---[ Requirements ]----------------------- */
+        
+            #requirements {
+                background: #fff url('bamboo.leaf.jpg') 100% 100% no-repeat;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            #requirements h3 {
+                background: #fff url('h3.requirements.gif') 100% 100% no-repeat;
+                /* border-top: solid 1px #ccc; */
+            }
+
+            #requirements p.p2 {
+                width: 45%;
+                float: left;
+            }
+            
+            #requirements p.p3, #requirements p.p4 {
+                width: 45%;
+                float: right;
+            }
+            
+            #requirements p.p5 {
+                clear: both;
+            }
+
+        /* ---[ End Requirements ]------------------- */
+
+        /* ---[ Footer ]----------------------------- */
+
+            #footer {
+                margin-top: 15px;
+                padding-top: 40px;
+                padding-bottom: 20px;
+                font-size: 0.8em;
+                clear: both;
+                text-align: center;
+                background: #fff url('bamboo2.gif') 10px 0px repeat-x;
+            }
+            
+            #footer a:link, #footer a:visited {
+                text-decoration: none;
+                color: #999;
+            }
+            
+            #footer a:hover, #footer a:active {
+                background: none;
+                text-decoration: underline;
+            }
+            
+        /* ---[ End Footer ]------------------------- */
+
+    /* ---[ End Supporting Text ]-------------------- */
+
+    /* ---[ Link List ]------------------------------ */
+
+        #linkList {
+            z-index: 2;
+            background: transparent url('pawn.jpg') 50% 100% no-repeat;
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            float: right;
+            width: 175px;
+        }
+
+        #linkList h3 {
+            border: none;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            height: 30px;
+        }
+        
+        #linkList h3 span {
+            display: none;
+        }
+
+        /* ---[ Link List 2 ]------------------------ */
+
+            #linkList2 {
+                padding-top: 20px;
+                color: #666;
+            }
+
+            #linkList2 a:link, #linkList2 a:visited {
+                color: #819bb2;
+                text-decoration: none;
+            }
+
+            #linkList2 a:hover, #linkList2 a:active {
+                background: none;
+                text-decoration: underline;
+            }
+
+            #linkList2 div {
+                font-size: 0.7em;
+                padding: 8px 8px 10px 8px;
+                background: transparent url('sidesplit.gif') 0px 100% repeat-x;
+            }
+
+            #linkList2 ul {
+                list-style-type: none;
+                margin: 0px;
+                padding-left: 15px;
+            }
+
+            #linkList2 ul li {
+                /* background: url('bullet.gif') 0px 3px no-repeat; */
+                list-style-image: url('bullet.gif');
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 10px 0px;
+            }
+            
+            /* ---[ L Select ]----------------------- */
+            
+                #lselect h3 {
+                    background: #e5e5e5 url('h3.side.select.gif') 50% 0% no-repeat;
+                }
+            
+                #lselect a {
+                    display: block;
+                }
+                
+                #lselect a.c {
+                    display: inline;
+                }
+            
+            /* ---[ End L Select ]------------------- */
+            
+            /* ---[ L Favorites ]-------------------- */
+
+                #lfavorites h3 {
+                    background: #e5e5e5  url('h3.side.favourites.gif') 50% 0% no-repeat;
+                }
+            
+                #lfavorites a {
+                    display: block;
+                }
+                
+                #lfavorites a.c {
+                    display: inline;
+                }
+            
+            /* ---[ End L Favorites ]---------------- */
+
+            /* ---[ L Archives ]--------------------- */
+
+                #larchives h3 {
+                    background: #e5e5e5 url('h3.side.archives.gif') 50% 0% no-repeat;
+                }
+            
+            /* ---[ End L Archives ]----------------- */
+
+            /* ---[ L Resources ]-------------------- */
+            
+                #lresources {
+                    margin-bottom: 150px;
+                }
+            
+                #lresources h3 {
+                    background: #e5e5e5 url('h3.side.resources.gif') 50% 0% no-repeat;
+                }
+            
+            /* ---[ End L Resources ]---------------- */
+
+        /* ---[ End Link List 2 ]-------------------- */
+
+    /* ---[ End Link List ]-------------------------- */
+
+/* ---[ End Container ]------------------------------ */
+
+/* ---[ Extra Div 1 ]-------------------------------- */
+
+    #extraDiv1 {
+       position: absolute;
+       top: 0px;
+       right: 0px;
+       width: 275px;
+       height: 130px;
+       background: transparent url('top.rip.gif') 0% 100% no-repeat;
+       z-index: 20;
+    }
+
+/* ---[ End Extra Div 1 ]---------------------------- */
+
+/* ---[ Extra Div 2 ]-------------------------------- */
+
+    #extraDiv2 {
+       position: absolute;
+       top: 125px;
+       left: 105px;
+       width: 30px;
+       height: 30px;
+       background: transparent url('corner1.gif') 0% 0% no-repeat;
+       z-index: 20;
+    }
+
+/* ---[ End Extra Div 2 ]---------------------------- */
+
+/* ---[ Extra Div 3 ]-------------------------------- */
+
+    #extraDiv3 {
+       position: absolute;
+       top: 125px;
+       left: 359px;
+       width: 30px;
+       height: 30px;
+       background: transparent url('corner2.gif') 0% 100% no-repeat;
+       z-index: 20;
+    }
+
+/* ---[ End Extra Div 3 ]---------------------------- */
+

@@ -1,0 +1,271 @@
+/* css Zen Garden submission 057 - 'This is Cereal' by Shaun Inman, http://www.shauninman.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Shaun Inman */
+/* Added: November 4th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* Photography © Bradley Mason http://www.sxc.hu/browse.phtml?f=profile&l=bradleym */
+
+#extraDiv3,
+#extraDiv4,
+#extraDiv5,
+#extraDiv6 { display: none; }
+
+/* Warning message styles for browsers that don't support CSS attribute selectors... */
+#extraDiv1 { position: absolute; top: 112px; left: 292px; width: 340px; height: 166px; background: url(txt_upgrade.gif) no-repeat; z-index: 10; }
+#container { padding: 296px 0 0 294px; z-index: 99; }
+/* Clear the warning styles for those that do... */
+div[id="extraDiv1"] { display: none; }
+div[id="container"] { padding: 226px 0 0 294px !important; }
+
+/* Spoon graphic and pull-quote */
+#extraDiv2 { position: absolute; top: 1200px; left: 0px; width: 229px; height: 580px; background: url(spoon_flake.png) no-repeat; z-index: 0; }
+div[id="extraDiv2"] { top: 712px !important; }
+
+/* Coffee graphic */
+#extraDiv3 { display: block !important; position: relative; margin-left: 496px; height: 0; z-index: 0; }
+#extraDiv3 span {
+	position: absolute;
+	bottom: -33px;
+	width: 100%;
+	height: 596px;
+	background: url(coffee.jpg) no-repeat;
+	}
+
+/* Small logo */
+div[id="extraDiv4"] { display: block !important; position: relative; margin-left: 64px; width: 168px; height: 0; z-index: 3; }
+div[id="extraDiv4"]>span {
+	position: absolute;
+	bottom: -33px;
+	width: 100%;
+	height: 98px;
+	background: url(logo_small.gif) no-repeat;
+	}
+/* div[id="extraDiv4"] span:active { background: url(logo_small_over.gif) no-repeat; } */
+
+
+/* Photo Credit */
+div[id="extraDiv5"] { display: block !important; position: relative; margin-left: 4px; height: 0; z-index: 0; }
+div[id="extraDiv5"]>span {
+	position: absolute;
+	bottom: -33px;
+	width: 100%;
+	height: 336px;
+	background: url(txt_credit.gif) no-repeat;
+	}
+
+/* Quality text and SI logo */
+div[id="extraDiv6"] {
+	display: block !important;
+	position: absolute;
+	top: 476px;
+	left: 103px;
+	width: 146px;
+	height: 77px;
+	background: url(txt_quality.gif) no-repeat;
+	z-index: 0;
+	}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url(bg_header.jpg) no-repeat #FFF;
+	}
+
+#quickSummary,
+#preamble,
+#supportingText { width: 336px; z-index: 1; }
+
+p {
+	text-align: justify; 
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 11px; 
+	line-height: 17px; 
+	margin-top: 0; 
+	color: #707070;
+	}
+p acronym { font-style: italic; }
+acronym { border-style: none; }
+
+p a, #footer a { color: #866F5B; text-decoration: none;  border-bottom: 1px dotted #866F5B; }
+p a:hover, #footer a:hover { color: #A51A0A; border-style: none; }
+div[id="footer"]>a { border-style: none !important; }
+
+#preamble { margin-bottom: 2em; }
+#preamble p.p2 { background: url(head_enlightenment.gif) no-repeat; padding-top: 2.4em; }
+div[id="preamble"]>p.p2 { background: url(head_enlightenment.png) no-repeat !important; }
+
+#explanation,
+#participation,
+#benefits,
+#requirements { padding-top: 1.8em; margin-bottom: 2em; }
+
+
+@media tty { /* Mid pass to square away some IE 5 PC hinkyness. */
+	i{content:"\";/*" "*/}} #explanation p.p1,#participation p.p1,#benefits p.p1,#requirements p.p1 { padding-top: 1.8em; } /*";}
+ 	}/* */
+ 	
+#explanation 	{ background: url(head_explanation.gif) no-repeat; }
+#participation 	{ background: url(head_participation.gif) no-repeat; }
+#benefits 		{ background: url(head_benefits.gif) no-repeat; }
+#requirements 	{ position: relative; background: url(head_requirements.gif) no-repeat; z-index: 1; }
+
+#quickSummary { margin-bottom: 2em; }
+div[id="quickSummary"] { margin-bottom: 0 !important; }
+#quickSummary>p[class="p1"] { position: absolute; top: 230px; left: 108px; background: url(txt_demo.jpg) no-repeat; width: 143px; height: 0; padding-top: 57px; overflow: hidden; }
+#quickSummary>p[class="p2"] { position: absolute; top: 328px; left: 105px; background: url(txt_download.gif) 5px 5px; background-repeat: no-repeat; width: 107px; height: 29px; z-index: 15; margin: 0; color: #FFF; font-size: 1px; padding-top: 36px; }
+#quickSummary>p[class="p2"] a[href="zengarden-sample.html"] { position: absolute; top: 17px; left: 5px; width: 35px; height: 0px; padding-top:9px; overflow: hidden; }
+#quickSummary>p[class="p2"] a[href="zengarden-sample.html"]:hover { background: url(button_html_over.gif) no-repeat; }
+#quickSummary>p[class="p2"] a[href="zengarden-sample.css"] { position: absolute; top: 17px; left: 63px; width: 31px; height: 0px; padding-top:9px; overflow: hidden; }
+#quickSummary>p[class="p2"] a[href="zengarden-sample.css"]:hover { background: url(button_css_over.gif) no-repeat; }
+div[id="quickSummary"] a { border-style: none; }
+/**/
+
+/**/
+#lselect 	{ position: absolute; top: 324px; left: 105px; }
+#lresources { position: absolute; top: 714px; left: 105px; }
+#larchives	{ position: absolute; top: 902px; left: 105px; }
+#lfavorites { position: absolute; top: 1030px; left: 105px; }
+
+/**/
+div[id="lselect"] 	 { top: 292px !important; left: 105px !important; background: url(button_select_design.gif) no-repeat; width: 149px; height: 37px; z-index: 300; }
+div[id="lresources"] { top: 358px !important; left: 105px !important; background: url(button_resources.gif) no-repeat; width: 149px; height: 37px; z-index: 200; }
+div[id="lfavorites"] { top: 443px !important; left: 105px !important; background: url(button_favorites.gif) no-repeat; width: 149px; height: 37px; z-index: 150; }
+/**/
+
+#lselect h3,
+#lresources h3,
+#larchives h3,
+#lfavorites h3 { 
+	position: absolute; top: -28px; left: 0px; 
+	background: url(bg_menu_thin_top.gif) no-repeat; 
+	width: 149px; height: 28px; line-height: 28px;
+	padding-top: 5px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0 18px;
+	color: #333;
+	font-family: "Lucida Grande","Lucida Sans Unicode",geneva,arial,verdana,sans-serif; font-size: 9px;
+	}
+/**/
+div[id="lselect"]>h3,
+div[id="lresources"]>h3,
+div[id="larchives"]>h3,
+div[id="lfavorites"]>h3 { top: -1000px !important; left: -1000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+
+#lselect:hover h3,
+#lresources:hover h3,
+#lfavorites:hover h3 { position: absolute; top: 5px !important; left: 5px !important; background: url(bg_menu_top.png) no-repeat; width: 203px !important; height: 0px !important; padding-top: 5px; margin: 0; }
+/**/
+
+#lselect ul,
+#lresources ul,
+#larchives ul,
+#lfavorites ul {
+	background: url(bg_menu_thin.gif) left bottom no-repeat;
+	margin: 0;
+	padding: 0 0 5px;
+	list-style: none;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 149px;
+	}
+
+/**/
+div[id="lselect"]>ul,
+div[id="lresources"]>ul,
+div[id="lfavorites"]>ul { position: absolute; top: -1000px; left: -1000px; width: 203px !important; background: url(bg_menu.png) left bottom no-repeat !important; }
+
+#lselect:hover ul,
+#lresources:hover ul,
+#lfavorites:hover ul { position: absolute; top: 10px; left: 5px; }
+/**/
+
+
+#lselect li,
+#lresources li,
+#larchives li,
+#lfavorites li {
+	font-size: 9px; 
+	color: #8B8C8C; 
+	background: url(bg_menu_separator_thin.gif) no-repeat;
+	padding: 8px 18px;
+	}
+
+@media tty { /* Mid pass to square away some IE 5 PC hinkyness. */
+	i{content:"\";/*" "*/}} #lselect li,#lresources li,#larchives li,#lfavorites li { width: 149px; padding: 6px 18px; } /*";}
+ 	}/* */
+
+/**/
+div[id="lselect"]>ul>li,
+div[id="lresources"]>ul>li,
+div[id="lfavorites"]>ul>li { background: url(bg_menu_separator.png) no-repeat !important; }
+
+
+div[id="lselect"]>ul>li:first-child,
+div[id="lresources"]>ul>li:first-child ,
+div[id="lfavorites"]>ul>li:first-child { padding-top: 5px; background: url(o.gif) no-repeat !important; }
+#lselect li:hover,
+#lresources li:hover,
+#lfavorites li:hover { background: url(bg_menu_over.png) no-repeat !important; }
+
+div[id="larchives"] { position: absolute; top: 400px !important; left: 100px !important; background: url(well_design_archives.gif) 5px 0px no-repeat; width: 164px !important; height: 44px; z-index: 100; }
+div[id="larchives"]>ul, div[id="larchives"]>ul>li { margin: 0; padding: 0; list-style: none; background: url(o.gif) no-repeat !important; }
+#larchives a[accesskey="n"] { background: url(button_next.gif) no-repeat; position: absolute; top: 14px; left: 50px; width: 45px; height: 0px; padding-top: 21px; overflow: hidden; z-index: 1; }
+#larchives a[accesskey="p"] { background: url(button_prev.gif) no-repeat; position: absolute; top: 14px; left: 7px; width: 44px; height: 0px; padding-top: 21px; overflow: hidden; z-index: 2; }
+#larchives a[accesskey="w"] { background: url(button_view_all.gif) no-repeat; position: absolute; top: 14px; left: 99px; width: 53px; height: 0px; padding-top: 21px; overflow: hidden; }
+#larchives a[accesskey="n"]:hover { background: url(button_next_over.gif) no-repeat; }
+#larchives a[accesskey="p"]:hover { background: url(button_prev_over.gif) no-repeat; }
+#larchives a[accesskey="w"]:hover { background: url(button_view_all_over.gif) no-repeat; }
+
+/**/
+
+#lselect a,
+#lfavorites a { display: block; }
+#lselect a.c,
+#lfavorites a.c { display:inline; font-size: 9px; text-transform: lowercase; }
+
+#linkList { font-family: "Lucida Grande","Lucida Sans Unicode",geneva,arial,verdana,sans-serif; font-size: 9px; }
+#linkList a,
+#linkList a:link,
+#linkList a:visited { font-size: 10px; color: #444; text-decoration: none; }
+#linkList a:hover { color: #A51A0A; }
+
+#linkList a.c,
+#linkList a.c:link,
+#linkList a.c:visited { color: #8B8C8C;}
+#linkList a.c:hover { color: #A51A0A; }
+/**/
+
+
+#footer { font-family: geneva,arial,verdana,sans-serif; font-size: 9px; }
+#footer a { color: #866F5B; text-decoration: none; }
+#footer a:hover { color: #A51A0A; }
+
+/**/
+div[id="footer"] { position: relative; top: -5px; left: -5px; width: 327px; height: 48px; background: url(txt_footer.gif) 5px 5px no-repeat; z-index: 1; }
+/* xhtml */
+#footer a[href="http://validator.w3.org/check/referer"] { position: absolute; top: 17px; left: 105px; width: 33px; height: 0px; padding-top:9px; overflow: hidden; }
+#footer a[href="http://validator.w3.org/check/referer"]:hover { background: url(button_xhtml_over.gif) no-repeat; }
+/* css */
+#footer a[href="http://jigsaw.w3.org/css-validator/check/referer"] { position: absolute; top: 17px; left: 145px; width: 18px; height: 0px; padding-top:9px; overflow: hidden; }
+#footer a[href="http://jigsaw.w3.org/css-validator/check/referer"]:hover { background: url(button_css_footer_over.gif) no-repeat; }
+/* cc */
+#footer a[href="http://creativecommons.org/licenses/sa/1.0/"] { position: absolute; top: 17px; left: 170px; width: 13px; height: 0px; padding-top:9px; overflow: hidden; }
+#footer a[href="http://creativecommons.org/licenses/sa/1.0/"]:hover { background: url(button_cc_over.gif) no-repeat; }
+/* 508 */
+#footer a[title="Check the accessibility of this site according to U.S. Section 508"] { position: absolute; top: 17px; left: 189px; width: 15px; height: 0px; padding-top:9px; overflow: hidden; }
+#footer a[title="Check the accessibility of this site according to U.S. Section 508"]:hover { background: url(button_508_over.gif) no-repeat; }
+/* aaa */
+#footer a[title="Check the accessibility of this site according to WAI Content Accessibility Guidelines 1"] { position: absolute; top: 17px; left: 228px; width: 20px; height: 0px; padding-top:9px; overflow: hidden; }
+#footer a[title="Check the accessibility of this site according to WAI Content Accessibility Guidelines 1"]:hover { background: url(button_aaa_over.gif) no-repeat; }
+
+/* Move this junk out of the way */
+#pageHeader,
+#preamble h3,
+#supportingText h3 { position: absolute; top: -1000px; left: -1000px; width: 1px; height: 1px; overflow: hidden; }

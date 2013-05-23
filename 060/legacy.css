@@ -1,0 +1,252 @@
+/* css Zen Garden submission 060 - 'Extreme Limits' by Richard Chatfield, http://www.engagecommerce.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Richard Chatfield */
+/* Added: November 14th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* basic elements */
+body {
+	font: 11px arial, verdana, sans-serif;
+	color: #fff;
+	background: #000 url(contentbg.jpg) repeat-y;
+	margin: 0px;
+}
+p { 
+	font: 11pxt/16pt arial, verdana, sans-serif ;
+	margin-top: 0px; 
+	text-align: justify;
+	}
+h3 {
+	font: italic 16px arial, verdana, sans-serif;
+	letter-spacing: 1px;
+	margin: 15px 0px 0px 0px;
+	color: #FFFF00;
+	font-weight: bolder;
+}
+
+	h5 {
+	font: italic 14px sans-serif, arial, verdana;
+	letter-spacing: 1px;
+	margin: 15px 0px 0px 10px;
+	color: #fff;
+	font-weight: bolder;
+}
+	
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #FFFF00;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #FFFF00;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #FFFF00;
+	}
+
+
+/* specific divs */
+#container { 
+	padding: 0px 0px 0px 0px;  
+	margin: 0px 0px 0px 0px; 
+	width: 780px;
+
+	}
+
+#intro { 
+
+
+
+	}
+
+#pageHeader { 
+	margin-top: 0px; 
+    margin-bottom: 0px;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 { 
+	background: url(topbg.jpg) no-repeat top left; 
+	margin-top: 0px;
+	margin-bottom: 0px; 
+	width: 780px; 
+	height: 255px; 
+	}
+#pageHeader h1 span {	
+	display: none;
+
+	}
+#pageHeader h2 { 
+	background: url(zengardentitle.gif) no-repeat top left; 
+	margin-top: -74px; 
+	margin-left: 254px; 
+	width: 393px; 
+	height: 45px; 
+
+	}
+#pageHeader h2 span {
+	display:none;
+	}
+
+#quickSummary {
+	clear:both; 
+	margin: -78px 0px 0px 5px; 
+	width: 160px; 
+
+	}
+#quickSummary p {
+    width: 240px;
+	font: 10px; 
+	text-align:center;
+	line-height: 12px;
+	}
+
+#preamble {
+    background: url(road2enlinghtenbg.jpg) no-repeat;
+	margin: 18px 5px 5px 3px;
+	width: 249px;
+	height: 500px;
+	float: left;
+
+	}
+
+#preamble h3 {
+	margin: 20px 10px 0px 15px;
+	width: 200px;
+}
+	
+#preamble p {
+	margin: 10px 10px 0px 15px;
+	width: 210px;
+}
+
+
+	
+#supportingText {
+	margin: 25px 145px 0px 255px;
+	text-align: left;
+	width: 370px;
+}
+
+#explanation p.p1 {
+	margin-right:  140px;
+	text-align: left;	
+}
+#explanation p.p2 {
+	margin-right: 20px;
+	text-align: left;
+}
+
+
+
+
+#footer { 
+	position: absolute;
+	top: 162px;
+	left: 275px;
+	width: 345px;	
+	clear: both;
+	}
+#footer a:link,  #footer a:visited { 
+	margin: 0px 40px 0px 0px; 
+	}
+
+#linkList {
+    background: url(road2enlinghtenbg.jpg) no-repeat;
+	position: absolute; 
+	top: 580px; 
+	text-align: left; 
+	margin: 18px 5px 5px 5px;
+	width: 249px;
+	padding: 5px 0px 0px 10px; 	
+	}
+#linkList2 { 
+	font: 10px  verdana;
+	width: 226px; 
+	}
+#linkList h3.select { 
+	height: 30px;
+	}
+#linkList h3.select span {
+	font: 16px arial, verdana, sans-serif;
+	letter-spacing: 1px;
+	font-weight: bolder;
+	color: #CCD8F8;
+	text-decoration: underline;	
+}
+#linkList h3.favorites { 
+	height: 30px; 
+	}
+#linkList h3.favorites span {
+	font-style: normal;
+	text-decoration : underline;
+	color: #CCD8F8;
+	}
+#linkList h3.archives { 
+	height: 30px; 
+	}
+#linkList h3.archives span {
+	font-style: normal;
+	text-decoration : underline;
+	color: #CCD8F8;
+	}
+#linkList h3.resources { 
+	height: 30px; 
+	}
+#linkList h3.resources span {
+	font-style: normal;
+	text-decoration : underline;
+	color: #CCD8F8;
+	}
+
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+#linkList li {
+	list-style-type: none;
+	background: transparent url(cr1.gif) no-repeat top center; 
+	display: block; 
+	margin-bottom: 2px;
+	}
+#linkList li a:link { 
+	color: #10184A;
+	}
+#linkList li a:hover { 
+	color: #FFFF00;
+	}
+#linkList li a:visited {
+	color: #10184A;
+	}
+	
+
+
+#extraDiv1 { 
+	position: absolute; 
+	top: 10px;
+	left: 490px;
+	background: url(guyflying.gif) no-repeat;
+	width: 285px;
+	height: 483px;
+	}
+	
+#extraDiv2 { 
+	position: absolute; 
+	top: 1000px;
+	left: 0px;
+	background: url(flyerdude.jpg) no-repeat;
+	width: 255px;
+	height: 339px;
+	}
+	
+
+	

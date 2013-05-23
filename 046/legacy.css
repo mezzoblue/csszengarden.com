@@ -1,0 +1,265 @@
+/* css Zen Garden submission 046 - 'sub:lime' by Andy Budd, http://www.andybudd.com/blog/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Andy Budd */
+/* Added: September 29th, 2003 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+/* CSS Document */
+
+
+body{
+	background: #e3dfdc;
+	margin: 0px;
+	padding: 0px;
+	font: 72%/1.6em Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+a:link {
+	color: #5a6635;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #5a6635;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2b351c;
+}
+
+
+#container {
+  position: relative;
+	width: 715px;
+	margin: 0 auto;
+	background: #FFFFFF url(container.gif) repeat-y;
+	padding-right: 25px;
+	padding-left: 25px;
+	text-align: left;
+	voice-family: "\"}\""; 
+  voice-family:inherit;
+	width: 665px;
+}
+
+html>body #container {
+	width: 665px;
+} 
+
+/* page header stuff */
+
+#pageHeader {
+	margin-bottom: 5px;
+}
+
+#pageHeader h1 {
+	width: 665px;
+	height: 38px;
+	background: url(logo.gif) no-repeat;
+	margin: 0px;
+	padding: 0px;
+}
+
+#pageHeader span {
+  display: none;
+}
+
+#pageHeader h2 {
+  display: none;
+}
+
+/* quickSummary stuff */
+
+#quickSummary {
+	background: url(limes.gif) no-repeat;
+	width: 665px;
+}
+
+#quickSummary .p1 {
+	background: url(callout.gif) no-repeat right;
+	height: 160px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#quickSummary .p1 span {
+  display: none;
+}
+
+
+#quickSummary .p2 {
+	height: 27px;
+	background: #97a25e;
+	margin: 5px 0 5px 0;
+	padding: 5px 0 0 10px;
+	vertical-align: bottom;
+	voice-family: "\"}\""; 
+  voice-family:inherit;
+	height: 22px;
+}
+
+html>body #quickSummary .p2 {
+	height: 22px;
+} 
+
+/* preamble stuff */
+
+#preamble {
+	margin: 0 0 0 225px;
+	background: #a5b77a;
+	padding: 15px;
+}
+
+#preamble h3 {
+	background: url(enlightenment.gif) no-repeat;
+  height: 19px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#preamble h3 span{
+  display: none;
+}
+
+
+/* supportingText stuff */
+
+#supportingText {
+	margin: 0 0 0 225px;
+	background: #a5b77a;
+	padding: 0 15px 1px 15px;
+	/* this is wierd. Origionally this div had no bottom padding.
+	When I positioned the footer absolutly, a gap of about 8px appeared
+	at the bottom of the page where the bg image of container wasn't getting displayed.
+	Adding a nominal amount of bottom padding (1px) to supportingText
+	fixed this problem. However I have no idea why the problem exhibited in the first place
+	or why this fixed it. */
+}
+
+#explanation h3 {
+	background: url(about.gif) no-repeat;
+  height: 19px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#participation h3 {
+	background: url(participation.gif) no-repeat;
+  height: 15px;
+}
+
+#benefits h3 {
+	background: url(benefits.gif) no-repeat;
+  height: 18px;
+}
+
+#requirements h3 {
+	background: url(requirements.gif) no-repeat;
+  height: 15px;
+}
+
+#supportingText h3 span{
+  display: none;
+}
+
+#footer /*#requirements .p5*/ {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 213px;
+	right: 35px;
+	text-align: right;
+}
+
+/* bit of a nasty use of an extraDiv and a bg image
+to produce the bottom yellow bar */
+#extraDiv1 {
+	height: 40px;
+	width: 715px;
+	margin: 0 auto;
+	background: #FFFFFF url(bandwidth.gif);
+	text-align: left;
+}
+
+/* bit of a hack topositiuon the bandwidth text */
+#requirements .p5 {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	bottom: -30px;
+	left: 35px;
+	text-align: left;
+	z-index: 10;
+}
+
+/* linkList stuff */
+
+#linkList {
+	width: 220px;
+	position: absolute;
+	top: 240px;
+	left: 25px;
+	background: #c5d19b;
+}
+
+#linkList2 {
+	padding: 15px 10px 10px 10px;
+}
+
+#linkList h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+#linkList h3 span {
+  display: none;
+}
+
+#linkList ul {
+	margin: 12px 0 15px 15px;
+	padding: 0px;
+}
+
+
+#linkList li {
+	list-style: none;
+	margin: 0;
+	padding: 0px;
+}
+
+#lselect li  {
+	margin: 0 0 10px 0;
+}
+
+#lselect li a {
+  display: block;
+}
+
+#lselect li .c {
+  display: inline;
+}
+
+#lselect h3 {
+	background: url(select.gif) no-repeat;
+  height: 22px;
+}
+
+#larchives h3 {
+	background: url(archive.gif) no-repeat;
+  height: 15px;
+}
+
+#lresources h3 {
+	background: url(resources.gif) no-repeat;
+  height: 14px;
+}
+
+
+
