@@ -1,0 +1,338 @@
+/* css Zen Garden submission 194 - 'Dark Rose', by Rose Fu, http://www.rosefu.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Rose Fu */
+/* Added: February 15th, 2006 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* ~~~ General Properties ~~~ */
+
+* {
+	padding: 0;
+	margin: 0;
+	}
+
+body { 
+	color: #64645A; 
+	background: #A09B7D url(bg.jpg) repeat; 
+	font: normal 70% Georgia, Palatino, Times, Times New Roman, serif; 
+	color: #666;
+	}
+
+a:link {
+	text-decoration: none;
+	border-bottom: 1px solid #BEB9AA;
+	color: #968C5A;
+	}
+
+a:visited {
+	text-decoration: none;
+	border-bottom: 1px solid #BEB9AA;
+	color: #B3AE94;
+	}
+
+a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid #AAA08C;
+	color: #AA7846;
+	}
+
+a:active {
+	text-decoration: none;
+	border-bottom: 1px solid #AAA08C;
+	color: #8C7846;
+	}
+
+/* ~~~ Text Properties ~~~ */
+
+p { 
+	font: 100% Georgia, Palatino, Times, Times New Roman, serif; 
+	line-height: 17px;
+	margin-top: 0px; 
+	text-align: justify;
+	padding-left: 14px;
+	padding-bottom: 10px;
+	padding-right: 100px;
+	}
+
+.p5 {
+	padding-bottom: 40px;
+	}
+
+h3 { 
+	text-indent: -1000em;
+	}
+
+acronym {
+	font-style: italic;
+	border: 0px;
+	cursor: help;
+	}
+
+/* ~~~ Div Properties ~~~ */
+
+#container { 
+	background: url(back.jpg) center center repeat-y; 
+	width: 750px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+#intro { 
+	display: block;
+	}
+
+#pageHeader { 
+	background: url(header.jpg) no-repeat; 
+	position: relative;
+	width: 660px;
+	height: 175px;
+	top: 0px;
+	left: 80px;
+	text-indent: -1000em;
+	}
+
+#quickSummary .p1 {
+	background: url(summary.jpg) no-repeat; 
+	left: 80px;
+	position: relative;
+	width: 660px;
+	height: 155px;
+	text-indent: -1000em;
+	}
+
+#quickSummary .p2 {
+	background: url(download.jpg) top right no-repeat; 
+	font: 100% Georgia, Times, Times New Roman, serif; 
+	line-height: 20px;
+	position: absolute;
+	top: 1500px;
+	display: block;
+	width: 126px;
+	height: 420px;
+	z-index: 5;
+	}
+
+#quickSummary .p2 span {
+	display: block;
+	position: relative;
+	top: 80px;
+	left: 90px;
+	width: 100px;
+	text-align: center;
+	}
+
+#preamble {
+	background: url(preamble.jpg) no-repeat; 
+	position: relative;
+	top: -10px;
+	left: 240px;
+	width: 500px;
+	height: 540px;
+	}
+
+#supportingText {
+	background: url(paper.jpg) repeat-y; 
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 92px;
+	margin-top: -270px;
+	width: 500px;
+	height: auto;
+	padding-left: 150px;
+	}
+
+/* ~~~ Header Properties ~~~ */
+
+#preamble h3 {
+	background: url(preamble.gif) no-repeat; 
+	position: relative;
+	width: 306px;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	}
+
+#explanation h3 {
+	background: url(explanation.gif) no-repeat; 
+	position: relative;
+	width: 250px;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	}
+
+#participation h3 {
+	background: url(participation.gif) no-repeat; 
+	position: relative;
+	width: 164px;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	}
+
+#benefits h3 {
+	background: url(benefits.gif) no-repeat; 
+	position: relative;
+	width: 100px;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	}
+
+#requirements h3 {
+	background: url(requirements.gif) no-repeat; 
+	position: relative;
+	width: 157px;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	}
+
+/* ~~~ List Properties ~~~ */
+
+#linkList {
+	position: absolute;
+	top: 330px;
+	}
+
+#linkList ul {
+	margin-top: 35px;
+	list-style-type: none;
+	}
+
+#linkList ul li {
+	list-style-image: url(button.gif);
+	font-size: 90%;
+	width: 120px;
+	margin-left: 15px;
+	margin-top: 5px;
+	}
+
+#linkList ul li a {
+	display: block;
+	font-size: 110%;
+	width: 120px;
+	border: 0px;
+	line-height: 15px;
+	}
+
+#linkList ul li a:hover {
+	text-decoration: underline;
+	}
+
+#lselect {
+	background: url(lselect.jpg) no-repeat; 
+	width: 210px;
+	height: 540px;
+	padding-left: 25px;
+	position: relative;
+	left: 30px;
+	}
+
+#lselect h3.select {
+	background: url(select.gif) no-repeat; 
+	display: block;
+	width: 106px;
+	height: 31px;
+	position: relative;
+	top: 25px;
+	left: 15px;
+	}
+
+#lselect li a.c {
+	font: 100% Georgia, Times, Times New Roman, serif; 
+	text-transform: none;
+	display: inline;
+	color: #64645A;
+	}
+
+#lselect ul li a:hover.c {
+	color: #8C7846;
+	text-decoration: underline;
+	}
+
+#larchives {
+	background: url(archives.jpg) no-repeat; 
+	width: 210px;
+	height: 200px;
+	position: relative;
+	left: 30px;
+	padding-left: 45px;
+	padding-top: 35px;
+	}
+
+#larchives ul li a {
+	font: 110% Georgia, Times, Times New Roman, serif; 
+	line-height: 17px;
+	}
+
+#larchives h3.archives {
+	background: url(archives.gif) no-repeat; 
+	display: block;
+	width: 145px;
+	height: 145px;
+	position: absolute;
+	top: -100px;
+	left: 20px;
+	text-indent: -1000em;
+	}
+
+#larchives h3.resources {
+	background: url(resources.gif) no-repeat; 
+	display: block;
+	width: 69px;
+	height: 31px;
+	position: relative;
+	top: 25px;
+	left: 30px;
+	}
+
+#lresources {
+	background: url(resources.jpg) no-repeat; 
+	width: 210px;
+	height: 470px;
+	position: relative;
+	left: 30px;
+	padding-left: 45px;
+	}
+
+#lresources ul li a {
+	font: 110% Georgia, Times, Times New Roman, serif; 
+	line-height: 17px;
+	}
+
+#lresources h3.resources {
+	background: url(resources.gif) no-repeat; 
+	display: block;
+	width: 69px;
+	height: 31px;
+	position: relative;
+	top: 25px;
+	left: 30px;
+	}
+
+/* ~~~ Misc Properties ~~~ */
+
+#footer { 
+	display: block;
+	background: url(footer.jpg) no-repeat; 
+	width: 400px;
+	height: 45px;
+	font: 11px Verdana, Tahoma, Arial, Helvetica, sans-serif; 
+	line-height: 45px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	}
+
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+	display: none;
+	}

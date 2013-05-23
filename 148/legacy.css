@@ -1,0 +1,485 @@
+/* css Zen Garden submission 148 - 'Museum', by Samuel Marin, http://www.info.fundp.ac.be/~sma/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Samuel Marin */
+/* Added: Jan. 31st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. 
+*/
+
+
+
+
+/*
+Tested and 100% compatible with:
+================================
+Windows browsers: Internet Explorer 5.5/6, Netscape 6/7.1/7.2, Mozilla 1.7.3, Firefox 1.0 Previous Release/1.0, Opera 7.54
+Mac browsers (Mac OS X):  Internet Explorer 5.2.3, Safari 1.2.3, Firefox 1.0
+Unix browsers: Mozilla 1.4.1/1.7b/1.7.3 (Linux), Firefox 0.9.3 (Linux), Galeon 1.3.10 (Linux), Opera 7.54 Final (Linux), Epiphany 1.4.4 (Linux), Mozilla 1.4 (Solaris)
+
+(Very) minor issues with:
+=========================
+Internet Explorer 5 (Windows)
+Konqueror 3.1.4-6 (Linux)
+
+Graphics:
+=========
+The graphics are my own illustrations using Adobe Photoshop and Illustrator (some inspirations from google search images).
+
+Photos: 
+=======
+The photos are from "http://www.sxc.hu/":
+The tree and the enlighted path by Christopher Bruno (vxdigital) -> http://www.cbruno.com/
+The water lily by King Ayo (kingayo) -> http://www.kingayo.com (kingayo@wanadoo.fr)
+The Butterfly by Dirk De Kegel (Magos) -> Dirk.De.Kegel@pandora.be
+The flower by Troy Nulus (nulus) -> nulus@mail.com
+The ladybug by Michal Zajac (babinicz) -> miczajac@poczta.onet.pl
+The fledglings by Rob Waterhouse (Rob_W) -> robw349@hotmail.com
+
+Font:
+=====
+One of the font of the header and the titles of the linklist come from "http://www.dafont.com" and is free:
+MK British Writing by Manfred Klein -> cybapee@joice.net
+
+References:
+===========
+For information, here is the main references I used:
+
+* CSS The Definitive Guide (Eric Meyer)
+* More Eric Meyer on CSS (Eric Meyer)
+* And a lot of CSS from the Zen Garden website
+
+Thanks:
+=======
+Thanks to Charlotte Dereppe for her invaluable advices.
+
+*/
+
+/* ==============
+   basic elements 
+   ============== */
+   
+body {
+	background: #444444;
+	padding: 0px;
+	margin: 0px;
+  	font: 13px Georgia, Serif; 
+	color: #7f7f7f;	 
+	text-align: center; 
+	}
+
+p {
+	padding: 0px;
+	margin: 0px;	
+	}
+
+a:link,
+a:visited { 
+	text-decoration: underline; 
+	color: #706F6A;
+	}
+
+a:hover, 
+a:active { 
+	text-decoration: none; 
+	color: #555555;
+	}
+
+/* =============
+   specific divs
+   ============= */
+
+/* --- container --- */
+
+#container {
+	background: #5d5d5d;
+	position: relative;
+	padding: 0px;
+	margin: 0px auto;
+	width: 760px;
+	text-align: left;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	}
+
+/* --- intro --- */
+
+#intro {
+	background: url(intro_bg.jpg) repeat-y left;
+	padding: 0px;
+	margin: 0px;
+	width: 760px;	
+	}
+
+/* --- pageHeader --- */
+
+#pageHeader {
+	background: url(header_bg.jpg) no-repeat;
+	padding: 0px;
+	margin: 0px;
+	width: 760px;
+	height: 400px;
+	}
+
+#pageHeader h1, 
+#pageHeader h2 {
+	display: none;
+	}
+
+/* --- quickSummary --- */	
+
+#quickSummary p.p1 {
+	display: none;
+	}
+
+#quickSummary p.p2 {
+	font-size: 11px;
+	color: #ccc; 
+	position: absolute;
+	top: 0px;
+	left: 2px;	
+	}
+
+#quickSummary p.p2 a:link, 
+#quickSummary p.p2 a:visited { 
+	text-decoration: underline; 
+	color: #ccc;
+	}
+
+#quickSummary p.p2 a:hover, 
+#quickSummary p.p2 a:active { 
+	text-decoration: none; 
+	color: #ccc;
+	}
+
+/* --- preamble --- */
+
+#preamble h3 {
+	background: url(preamble.jpg) no-repeat; 
+	padding: 0px;
+  	margin: 0px;
+	width: 560px;
+  	height: 147px;  	
+	}
+
+#preamble h3 span {
+	display: none;
+	}
+
+#preamble {
+	background: url(preamble_bg.jpg) no-repeat top;
+	padding: 0px;
+	width: 560px; 
+	}
+
+#preamble p {
+	text-indent: 2em;
+	}
+
+#preamble p:first-letter {
+	font-size: 180%;
+	font-weight: bold;
+	color: #444444;	
+	}
+
+#preamble p.p1 {
+	padding: 10px 85px 10px 86px; 
+	margin: -100px 0px 0px 0px;	
+	}
+
+#preamble p.p2 {
+	padding: 0px 85px 20px 86px; 
+	margin: 0px;	
+	}
+
+#preamble p.p3 {   
+	background: url(preamble_img.jpg) no-repeat bottom;
+	padding: 0px 85px 60px 280px;  
+	margin: 0px;	
+	}
+
+/* --- supporting text --- */ 
+ 
+#supportingText {
+	background: url(st_bg.jpg) repeat-y;
+	position: relative;
+	padding: 0px;	
+	width: 560px;   	
+	}
+
+/* --- explanation --- */
+
+#explanation h3 {
+	background: url(trans_prea_expl.jpg) no-repeat; 
+	padding: 0px;
+ 	margin: 0px;
+	width: 560px;
+  	height: 153px;
+	}
+
+#explanation h3 span {
+	display: none;
+	} 
+
+#explanation {
+	background: url(explanation_bg.jpg) no-repeat top; 
+	padding: 0px;
+  	margin: 0px;
+	width: 560px; 
+	}
+
+#explanation p {
+	text-indent: 2em;
+	}
+
+#explanation p:first-letter {
+	font-size: 180%;
+	font-weight: bold;
+	color: #444444;	
+	}
+
+#explanation p.p1 {
+	padding: 10px 115px 10px 106px; 
+  	margin: 0px;  	
+	}
+
+#explanation p.p2 {
+	background: url(explanation_img.jpg) no-repeat bottom;
+	padding: 0px 115px 50px 106px;
+  	margin: 0px;	
+	}
+
+/* --- participation --- */
+
+#participation h3 {
+	background:url(trans_expl_part.jpg) no-repeat;
+  	padding: 0px;  	 
+  	margin: 0px; 
+	height: 155px;
+	}
+
+#participation h3 span {
+	display: none;
+	} 
+
+#participation {
+	background: url(participation_bg.jpg) repeat-y; 
+	padding: 0px;
+  	margin: 0px;
+	width: 560px;
+  	}
+	
+#participation p {
+	text-indent: 2em;
+	}
+	
+#participation p:first-letter {
+	font-size: 180%;
+	font-weight: bold;
+	color: #444444;		
+	}
+
+#participation p.p1 {
+	padding: 10px 115px 10px 106px;
+  	margin: 0px;   	
+	}
+
+#participation p.p2 {
+	padding: 0px 115px 10px 106px;
+ 	margin: 0px;    	
+	}
+
+#participation p.p3 {
+	background: url(participation_img.jpg) no-repeat bottom;
+	padding: 0px 160px 20px 161px;	 
+	}
+
+/* --- benefits --- */
+
+#benefits h3 {
+	background: url(trans_part_bene.jpg) no-repeat;
+	padding: 0px;  	
+  	margin: 0px;
+  	height: 147px;  	
+	}
+
+#benefits h3 span {
+	display: none;
+	} 
+
+#benefits {
+	background: url(benefits_bg.jpg) repeat-y; 
+	padding: 0px;
+  	margin: 0px;
+	width: 560px; 
+	}
+
+#benefits p {
+	text-indent: 2em;
+	}
+	
+#benefits p:first-letter {
+	font-size: 180%;
+	font-weight: bold;
+	color: #444444;		
+	}
+	
+#benefits p.p1 {
+	padding: 10px 145px 0px 146px;
+	margin: 0px;  	
+	}
+
+/* --- requirements --- */
+
+#requirements h3 {
+	background: url(trans_bene_requ.jpg) no-repeat; 
+	padding: 0px;  	
+  	margin: 0px;
+  	height: 230px;  	
+	}
+
+#requirements h3 span {
+	display: none;
+	} 
+
+#requirements {
+	background: url(requirements.jpg) no-repeat bottom;
+	padding: 0px 0px 105px;
+  	margin: 0px;
+	width: 560px; 
+  	}
+
+#requirements p {
+	padding: 0px 105px 10px 106px;
+  	margin: 0px; 
+	text-indent: 2em;	
+	}
+	
+#requirements p:first-letter {
+	font-size: 180%;
+	font-weight: bold;
+	color: #444444;	
+	}
+
+#requirements p.p1 {
+	background: url(requirements_img.jpg) no-repeat top;
+	padding: 100px 105px 10px 106px;
+  	margin: 0px; 	
+	}
+
+/* --- footer --- */
+
+#footer {
+	background: url(footer_bg.jpg) repeat-y;
+	font: 11px Georgia, Serif;
+	padding-top: 2px;
+   	padding-left: 3px;
+  	margin: 0px;
+ 	width: 560px;
+ 	height: 35px;  	
+	}
+  
+#footer a {
+	font-weight: bold;
+    padding: 0px;        
+	}
+  
+/* --- linkList --- */
+  
+#linkList {
+  	position: absolute;	
+	top: 400px;
+	left: 570px;
+	padding: 0px;
+	margin: 0px;	
+	width: 190px;	
+	}
+   
+#linkList h3 span {
+	display: none;
+	}
+	
+#linkList #lselect h3 {	
+ 	background: url(header_lselect.jpg) no-repeat;
+	padding: 0px 5px 0px 5px;
+	margin: 0px;
+	height: 70px;
+	}
+
+#linkList #larchives h3 {
+	background: url(header_larchives.jpg) no-repeat;
+	padding: 0px 5px 0px 5px;
+	margin: 0px; 
+	height: 70px;	
+	}
+
+#linkList #lresources h3 {
+	background: url(header_lresources.jpg) no-repeat;
+	padding: 0px 5px 0px 5px;
+	margin: 0px; 
+	height: 70px;	
+	}
+	
+#linkList ul {
+	background: url(linklist_bg.jpg) repeat-y;
+	padding: 0px 25px;
+	margin: 0px;	
+	}
+	
+#linkList li {
+	display: block;
+	list-style-type: none;
+	font: 10px Georgia, Serif;
+	line-height: 14px;
+	font-weight: normal; 
+	color: #D4D2D2;
+	text-align: left; 
+	padding: 3px 2px 10px 2px;
+	margin: 0px;
+	border-bottom: 1px dotted #ccc;
+	}
+	
+#linkList li a:link,
+#linkList li a:visited, 
+#linkList li a:visited:hover,
+#linkList li a:hover, 
+#linkList li a:active {
+	font-style: normal;
+	padding-right: 5px;
+	}
+	
+.c { 
+	font-weight: normal ! important;
+	color: #D4D2D2 ! important;
+	padding: 0px 14px 0px 0px;
+	margin: 0px;	
+	}
+
+#linkList li a {
+	display: block;
+	font-weight: bold;
+	color: #fff;	
+	}
+	
+#linkList li a.c {
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+	}
+
+#larchives,
+#lselect {
+	background: #fff url(linklist_footer.jpg) no-repeat bottom;
+   	padding: 0px 0px 127px 0px;
+	margin: 0px 0px 10px 0px;
+	width: 190px; 
+	}
+
+#lresources {
+	background: #fff url(linklist_footer_guard.jpg) no-repeat bottom;
+	padding: 0px 0px 127px 0px;
+	margin: 0px 0px 10px 0px;
+	width: 190px;
+	}

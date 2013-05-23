@@ -1,0 +1,242 @@
+/* css Zen Garden submission 196 - 'Elegance in Simplicity', by Mani Sheriar, http://www.manisheriar.com/blog/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Mani Sheriar */
+/* Added: December 1st, 2006 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+* {
+	margin:0;
+	padding:0;
+	}
+body {
+	background:#fff;
+	padding:0 0 20px 0;
+	}
+a {
+	color:#8fb34f;
+	font-weight:bold;
+	text-decoration:none;
+	}
+a:hover {
+	border:1px solid #d7d6b7;
+	border-right:none;
+	border-left:none;
+	}
+abbr, acronym {
+	cursor:help;
+	}
+#container {
+	position:relative;
+	width:781px;
+	left:50%;
+	margin-left:-390px;
+	background:#fff url(bg.gif) repeat-y center;
+	overflow:auto;
+	z-index:100;
+	}
+#container h3 span {
+	display:none;
+	}
+#intro {
+	position:relative;
+	padding-bottom:14px;
+	height:auto !important;
+	height:1%;
+	}
+#pageHeader {
+	position:relative;
+	width:781px;
+	height:245px;
+	margin:0 auto;
+	background:url(header.jpg) no-repeat right;
+	}
+#pageHeader h1,
+#pageHeader h2 {
+	display:none;
+	}
+#quickSummary p.p1 {
+	display:none;
+	}
+#quickSummary p.p2 {
+	font:normal 12px/12px Georgia,"Times New Roman",Times, serif;
+	color:#a8a781;
+	position:absolute;
+	bottom:0px;
+	left:58px;
+	background:url(download.gif) no-repeat left center;
+	text-indent:14px;
+	}
+#quickSummary p.p2 a {
+	display:inline;
+	position:relative;
+	}
+#preamble {	
+	width:440px;
+	margin-left:42px;
+	font:normal 12px/18px Georgia,"Times New Roman",Times, serif;
+	font-style:italic;
+	color:#a8a781;
+	margin-top:19px;
+	}
+#preamble h3 {
+	width:302px;
+	height:14px;
+	background:url(enlightenment.gif);
+	}
+#preamble p {
+	margin:18px 0 18px 17px;
+	letter-spacing:0.03em;
+	text-align:justify;
+	}
+#supportingText {
+	width:430px;
+	font:normal 11px/16px "Lucida Grande","Lucida Sans","Lucida Sans Unicode",Lucida,Arial,Helvetica,sans-serif;
+	color:#a1a07b;
+	margin:55px 0 0 59px;
+	padding-bottom:26px !important;
+	padding-bottom:0;
+	text-align:justify;
+	}
+#explanation h3 {
+	width:424px;
+	height:18px;
+	background:url(about.gif);
+	}
+#participation h3 {
+	width:424px;
+	height:22px;
+	background:url(participation.gif);
+	margin:25px 0 -5px 0;
+	}
+#benefits h3 {
+	width:424px;
+	height:22px;
+	background:url(benefits.gif);
+	margin:25px 0 -5px 0;
+	}
+#requirements h3 {
+	width:424px;
+	height:22px;
+	background:url(requirements.gif);
+	margin:25px 0 -5px 0;
+	}
+#supportingText p {
+	margin:16px 0;
+	}
+#requirements {
+	margin-bottom:37px;
+	}
+#footer {
+	display:inline;
+	float:right;
+	background:url(check.gif) no-repeat left center;
+	padding-left:18px;
+	margin-bottom:-26px;
+	}
+#extraDiv1 {
+	position:relative;
+	left:50%;
+	margin-left:-390px;
+	background:url(bottom.gif);
+	width:781px;
+	height:42px;
+	}
+#linkList {
+	width:196px;
+	position:absolute;
+	top:284px;
+	right:59px;
+	}
+#linkList h3.select {
+	width:196px;
+	height:34px;
+	background:url(select.gif);
+	}
+#linkList h3.archives {
+	width:196px;
+	height:25px;
+	background:url(archives.gif);
+	}
+#linkList h3.resources {
+	width:196px;
+	height:12px;
+	background:url(resources.gif);
+	margin-top:30px;
+	}
+#linkList ul {
+	list-style-image:url(blt_sm.gif);
+	margin:5px 0 20px 23px;
+	font:normal 11px/16px "Lucida Grande","Lucida Sans","Lucida Sans Unicode",Lucida,Arial,Helvetica,sans-serif;
+	color:#bcbb93;
+	}
+#linkList ul li {
+	margin-bottom:8px;
+	}
+#linkList ul a {
+	color:#a9a867;
+	font-weight:normal;
+	font-style:italic;
+	font-size:12px;
+	text-transform:lowercase;
+	}
+#linkList ul a:hover {
+	color:#b2d378;
+	border:none;
+	}
+#linkList #lselect ul {
+	list-style-image:url(blt_lrg.gif);
+	margin:5px 0 20px 23px;
+	font:normal 11px/16px "Lucida Grande","Lucida Sans","Lucida Sans Unicode",Lucida,Arial,Helvetica,sans-serif;
+	color:#bcbb93;
+	}
+#linkList #lselect ul a {
+	display:block;
+	color:#a9a867;
+	font-weight:normal;
+	font-style:italic;
+	font-size:12px;
+	text-transform:none;
+	line-height:14px;
+	}
+#linkList #lselect ul a.c {
+	display:inline;
+	font-style:normal;
+	font-size:11px;
+	color:#bcbb93;
+	letter-spacing:0;
+	text-transform:lowercase;
+	}
+#linkList #lselect ul a:hover {
+	color:#b2d378;
+	border:none;
+	}
+#linkList #larchives ul,
+#linkList #lresources ul {
+	margin:10px 0 20px 24px;
+	}
+#extraDiv2 {
+	width:49%;
+	position:absolute;
+	top:0;
+	left:0;
+	height:127px;
+	background:url(topLeft_bg.gif) repeat-x;
+	z-index:10;
+	}
+#extraDiv3 {
+	width:49%;
+	position:absolute;
+	top:0;
+	right:0;
+	height:141px;
+	background:url(topRight_bg.gif) repeat-x;
+	z-index:10;
+	}
+	

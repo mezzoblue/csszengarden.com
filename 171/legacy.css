@@ -1,0 +1,236 @@
+/* css Zen Garden submission 171 - 'Shaolin Yokobue', by Javier Cabrera, http://www.emaginacion.com.ar/hacks/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Javier Cabrera */
+/* Added: July 9th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* Coded and designed by Javier Cabrera (emaginacion) http://www.emaginacion.com.ar/geek (blog). */
+
+body { 
+	font: 8pt/12pt georgia, sans-serif; 
+	color: #c0c0c0; 
+	margin: 0px; 
+	}
+
+#container { 
+	top:0;
+	position: absolute;
+	padding: 0px;  
+	left: 50%;
+	margin-left: -277px;
+	width: 595px;
+	background: transparent url(zen-bg.gif) no-repeat;
+	background-position: 0 40px;
+	}
+p {	margin:10px 0 0 0; 	}
+
+a:link { 
+	text-decoration: none; 
+	color: #fff;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: #d4cddc;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #fff;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 { 
+	background: transparent url(h1.gif) no-repeat; 
+	margin:0 0 0 97px;
+	position:absolute;
+	width: 332px; 
+	height: 40px; 
+	top:60px;
+	}
+#pageHeader h1 span {
+	display:none
+	}
+
+#pageHeader h2 { 
+	position: absolute;
+	background: transparent url(h2.gif) no-repeat; 
+	margin: 0 0 0 355px;
+	width: 80px; 
+	height: 25px; 
+	top:98px;
+	}
+#pageHeader h2 span {
+	display: none
+	}
+
+h3	{
+	margin: 0 0 0 30px;
+	font-weight: bold;
+	font: 13pt Georgia, sans-serif;
+	font-style:italic;
+	padding: 0;
+	}
+
+/* Sidebar */
+#linkList {
+	position:absolute;
+	top: 920px;
+	left: 390px;
+	height:500px;
+	font: 8pt/11pt arial, sans-serif; 
+	}
+#linkList ul {
+	list-style-type: none;
+	margin-top:5px;
+	}
+#linkList h3 {
+	color:#fff;
+	}
+#linkList2 {
+	margin-top:55px;
+	}
+
+#lselect a:link.c, #lselect a:visited.c {
+ 	display: inline;
+	}
+#lselect a {
+ 	display: block;
+	}
+
+#lresources {
+	background: transparent url(rockbottom.gif) no-repeat; 
+	height:250px;
+	width:190px;
+	background-position:28px 0;
+	}
+
+/* Content */
+.p1	{
+	margin-top:1px;
+	padding-top:30px;
+	}
+.p5	{
+	text-align:center;
+	color:#FFE1A4;
+	font: 8pt/12pt Arial, sans-serif; 
+	margin:47px 0 0 0;
+	width:215px;
+	}
+
+#quickSummary {
+	font: 10pt/15pt "Trebuchet MS", sans-serif; 
+	margin:400px 0 0 135px;
+	padding-bottom:8px;
+	color: #fff;
+	width: 250px;
+	text-align: left;
+	border-bottom:1px solid #353535;
+	}
+#quickSummary :first-letter {
+	font: 1.5em/15pt "Georgia", sans-serif;
+	}
+
+#preamble {
+	margin: 20px 0 0 148px;
+	width: 230px;
+	}
+#preamble h3 {
+	position:absolute;
+	background: transparent url(titulo1.gif) no-repeat; 
+	margin: 0 0 0 -35px;
+	width: 395px;
+	height: 41px; 
+	}
+#preamble h3 span {
+	display:none;
+	}
+
+/*	This little guy here ensures that if you want to make the text 100% in mozilla, you will still see the design &*/
+#supportingText { 
+	width:314px;
+	margin-left:100px;
+	background: transparent url(back.gif) repeat-y;
+	background-position:-78px 0;
+	}
+
+#explanation {
+	margin: 20px 0 0 47px;
+	width: 230px;
+	}
+#explanation h3 {
+	position:absolute;
+	background: transparent url(titulo2.gif) no-repeat; 
+	margin: 0 0 0 -30px;
+	width: 145px; 
+	height: 41px; 
+	}
+#explanation h3 span {
+	display:none;
+	}
+
+#participation {
+	margin: 20px 0 0 47px;
+	width: 230px;
+	}
+#participation h3 {
+	position:absolute;
+	background: transparent url(titulo3.gif) no-repeat; 
+	margin: 0 0 0 -35px;
+	width: 250px; 
+	height: 41px; 
+	}
+#participation h3 span {
+	display:none;
+	}
+
+#benefits {
+	margin: 20px 0 0 47px;
+	width: 230px;
+	}
+#benefits h3 {
+	position:absolute;
+	background: transparent url(titulo4.gif) no-repeat; 
+	margin: 0 0 0 -35px;
+	width: 250px; 
+	height: 41px; 
+	}
+#benefits h3 span {
+	display:none;
+	}
+
+#requirements {
+	margin: 20px 0 0 47px;
+	width: 230px;
+	}
+#requirements h3 {
+	position:absolute;
+	background: transparent url(titulo5.gif) no-repeat; 
+	margin: 0 0 0 -35px;
+	width: 250px; 
+	height: 41px; 
+	}
+#requirements h3 span {
+	display:none;
+	}
+
+#footer	{
+	color:#000;
+	height:60px;
+	position:absolute;
+	margin:0 0 0 -15px;
+	background: transparent url(bottom.gif) no-repeat; 
+	width:345px;
+	padding:40px 0 30px 134px;
+	}
+#footer a:link, #footer a:active{
+	color:#c0c0c0;
+	}
+#footer a:hover {
+	color:#fff;
+	text-decoration:underline;
+	}

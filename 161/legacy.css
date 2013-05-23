@@ -1,0 +1,147 @@
+/* css Zen Garden submission 161 - 'Zenfandel', by Nicholas Rougeux, http://www.c82.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Nicholas Rougeux */
+/* Added: Apr. 15th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/*
+	Zenfandel design by Nicholas Rougeux
+	[ www.c82.net ]
+	
+	All photography originated from free stock for commercial and personal use from the good folks at Stock Exchange.
+	[ www.sxc.hu ]
+*/
+
+/*__________Clean slate__________*/
+body, h1, h2, h3, li, p, ul { font-size: 1em; margin: 0; padding: 0; }
+
+
+/*__________Basics__________*/
+a, a:link, a:visited, a:hover, a:active { color: #ada364; }
+a:hover { text-decoration: none; }
+acronym { border: 0; color: #780101; cursor: help; }
+.accesskey { text-decoration: underline; }
+
+body {
+	background: url(bgMain.gif) repeat-y;
+	color: #0f330d;
+	font-family: "Lucida Grande", Georgia, "Times New Roman", Times, serif;
+	font-size: 0.8em;
+	padding-bottom: 20px;
+}
+
+h3 { color: #8f9947; font-style: italic; font-size: 1.7em; font-weight: normal; margin-bottom: 0.5em; }
+#container { position: relative; z-index: 99; }
+p { line-height: 1.5em; margin-bottom: 1em; }
+
+
+/*__________Header__________*/
+#pageHeader {
+	background: #fff url(header.jpg) no-repeat left top;
+	border-bottom: 1px solid #acb7a6;
+	height: 155px;
+}
+
+#pageHeader span { display: none; }
+
+
+/*__________Quick summary__________*/
+#quickSummary { font-size: 0.85em; font-style: italic; line-height: 1.4em; }
+#quickSummary .p2 { text-align: right; }
+
+
+/*__________Preamble__________*/
+#preamble, #quickSummary {
+	margin-left: 219px;
+	margin-top: 10px;
+	padding-left: 150px;
+	/* Make IE play nice with others */
+	width: 530px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 380px;
+}
+
+html>body #quickSummary, html>body #preamble { width: 380px; }
+
+
+/*__________Supporting text__________*/
+#supportingText { background: url(bottle.gif) no-repeat right bottom; margin-left: 230px; width: 530px; z-index: 100; }
+
+#preamble .p3, #explanation, #participation, #benefits, #requirements {
+	background: url(curlSmall.gif) no-repeat bottom;
+	margin-bottom: 1em;
+	padding-bottom: 37px;
+}
+
+#requirements { margin-right: 160px; }
+
+
+/*__________Side__________*/
+#linkList {
+	color: #fff;
+	font-family: Arial, Tahoma, Geneva, Helvetica, Verdana, sans-serif;
+	font-size: 0.85em;
+	font-weight: bold;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 156px;
+	width: 220px;
+}
+
+#linkList a, #linkList h3 { font-family: Georgia, "Times New Roman", Times, serif; }
+#lselect a { display: block; }
+#lselect a.c { display: inline; }
+
+#linkList a { color: #fff; font-size: 1.1em; font-style: italic; font-weight: normal; text-decoration: none; }
+#linkList a:hover { text-decoration: underline; }
+
+#linkList a.c {
+	color: #fffbe2;
+	font-family: Arial, Tahoma, Geneva, Helvetica, Verdana, sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: bold;
+}
+
+#linkList acronym { color: #f6f1c0; }
+
+#linkList h3 {
+	color: #ccc180;
+	font-size: 1.4em;
+	font-style: normal;
+	padding-top: 0.5em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#linkList li { background: url(bullet.gif) no-repeat 0 0.3em; padding-left: 15px; }
+#linkList ul { list-style: none; padding: 0 10px 0.8em 10px; }
+#lselect { background: #44410d url(curlBig.gif) no-repeat bottom; padding-bottom: 40px; }
+#lselect li { padding-bottom: 0.8em; }
+#larchives, #lresources { border-top: 3px double #8e7253; }
+#larchives li, #lresources li { margin-bottom: 0.2em; }
+
+
+/*__________Footer__________*/
+#footer { font-size: 0.85em; font-style: italic; text-align: right; }
+
+
+/*__________Extras__________*/
+/* Extra div used for grapes image so the entire image is not clipped when text is resized */
+#extraDiv1 {
+	background: transparent url(grapes.gif) no-repeat left top;
+	height: 351px;
+	left: 220px;
+	position: absolute;
+	top: 156px;
+	width: 147px;
+	z-index: 1;
+}

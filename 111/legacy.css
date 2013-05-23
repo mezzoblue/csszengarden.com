@@ -1,0 +1,382 @@
+/* css Zen Garden submission 111 - 'Gruener Entwurf', by Hannah F. Liesong, http://www.liesong.de/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Hannah F. Liesong */
+/* Added: July 29th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+
+/* basic elements */
+body {
+	margin: 0px;
+	padding: 7% 0px 7% 0px;
+	background-color: #143A1F;
+	}
+p {
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	text-align: justify;
+	color: #1F1F1F;
+	margin: 0px 13px 0px 13px;
+	}
+acronym
+	{
+	font-style: italic;
+	font-weight: normal;
+	border: 0;
+	cursor: help;
+	}
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	border: 1px dotted #61A681;
+	color: #0E9B7D;
+	}
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	border: 1px dotted #61A681;
+	color: #0E8368;
+}
+a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	border: 1px dotted #690;
+	background-color: #669900;
+	color: #FCFE85;
+	}
+
+
+/* specific divs */
+#container {
+	padding: 0px 0px 1px 0px;
+	margin: 0px;
+	height: 510px;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+	position: relative;
+	left: 0px;
+	background: #254634 url("baeume.jpg") no-repeat;
+	width: 2000px;
+	}
+
+
+
+#pageHeader h1 {
+	background:  url("head1.gif") no-repeat left top;
+	margin-top: 0px;
+	float: none;
+	padding: 0px;
+	height: 101px;
+	width: 778px;
+	z-index: 5;
+	position: absolute;
+	}
+#pageHeader h1 span {
+	display:none
+	}
+#pageHeader h2 { 
+	margin-top: 58px; 
+	margin-bottom: 40px; 
+	width: 200px; 
+	height: 18px; 
+	float: right;
+	}
+#pageHeader h2 span {
+	display:none;
+	}
+
+#quickSummary {
+	margin: 0px;
+	height: 56px;
+	width: 419px;
+	background:  url("quicksummary.gif") no-repeat;
+	z-index: 10;
+	position: absolute;
+	padding: 0px;
+	left: 53px;
+	top: 83px;
+	}
+#quickSummary p {
+	display: none;
+	}
+
+#preamble {
+	background:  url("praeamble_bg.jpg") no-repeat;
+	position: absolute;
+	left: 53px;
+	top: 139px;
+	width: 419px;
+	height: 300px;
+	overflow: auto;
+	}
+#preamble h3
+{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 61px;
+	width: 419px;
+	left: 0px;
+	top: 0px;
+	background-image:  url("praeamble_h1.gif");
+	background-repeat: no-repeat;
+}
+#preamble h3 span {
+	margin: 0;
+	padding: 0;
+	display: none;
+	}
+#explanation
+	{
+	margin: 0;
+	padding: 0;
+	background:  url("explanation_bg.jpg") repeat-x;
+	position: absolute;
+	left: 473px;
+	top: 139px;
+	width: 297px;
+	height: 300px;
+	overflow: auto;
+	}
+#explanation h3 {
+	margin: 0;
+	padding: 0;
+	background:  url("explanation_h.gif") no-repeat;
+	position: relative;
+	height: 61px;
+	width: 277px;
+	left: 0px;
+	top: 0px;
+	}
+#explanation h3 span {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+#participation
+	{
+	margin: 0;
+	padding: 0;
+	background:  url("participation_bg.gif");
+	position: absolute;
+	left: 771px;
+	top: 139px;
+	width: 348px;
+	height: 300px;
+	overflow: auto;
+	background-repeat: repeat;
+	}
+#participation h3 {
+	margin: 0;
+	padding: 0;
+	background:  url("participation_h.gif") no-repeat;
+	position: relative;
+	height: 61px;
+	width: 328px;
+	left: 0px;
+	top: 0px;
+	}
+#participation h3 span {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+#benefits
+	{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 1120px;
+	top: 139px;
+	width: 254px;
+	height: 300px;
+	overflow: auto;
+	background-color: #D5E3B8;
+	}
+#benefits h3 {
+	margin: 0;
+	padding: 0;
+	background:  url("benefits_h.gif") no-repeat;
+	position: relative;
+	height: 61px;
+	width: 254px;
+	left: 0px;
+	top: 0px;
+	}
+#benefits h3 span {
+	margin: 0;
+	padding: 0;
+	display: none;
+	border: 1px solid red;
+}
+#requirements
+	{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 1375px;
+	top: 139px;
+	width: 600px;
+	height: 300px;
+	overflow: auto;
+	background-color: #E1EBCC;
+	}
+#requirements h3 {
+	margin: 0;
+	padding: 0;
+	background:  url("requirements_h.gif") no-repeat;
+	position: relative;
+	height: 61px;
+	width: 410px;
+	left: 0px;
+	top: 0px;
+	}
+#requirements h3 span {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+#linkList {
+	padding: 0px 0px 3px 0px;
+	margin: 1px;
+	visibility: visible;
+	z-index: 0;
+	position: absolute;
+	left: 53px;
+	top: 440px;
+	right: 0;
+	background-image:  url("select_bg.gif");
+	width: 1946px;
+	}
+#lselect
+	{
+	}
+#linkList h3.select {
+	margin: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #C1AD79;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	left: 25px;
+	top: 0px;
+	float: left;
+	width: 140px;
+	}
+#linkList ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	left: 0px;
+	top: 0px;
+	color: #DBFE72;
+}
+#linkList li {
+	list-style-type: none;
+	float: left;
+	margin: 0px 3px 0px 3px;
+	padding: 0px;
+	border-bottom: 1px solid #BCFD69;
+	margin: 0px 3px 0px 3px;
+	}
+#linkList li a:link {
+	color: #DBFE72;
+	font-weight: bold;
+	text-decoration: none;
+	border: 0;
+	cursor: move;
+	}
+#linkList li a:visited {
+	color: #DBE272;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: move;
+	border: 0;
+	}
+#linkList li a:hover {
+	color: #254632;
+	background-color: #DBFE72;
+	font-weight: bold;
+	text-decoration: none;
+	border:0;
+	}
+#larchives {
+	clear:left;
+}
+h3.archives {
+	margin: 3px 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #C1AD79;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	left: 25px;
+	top: 0px;
+	float: left;
+	width: 140px;
+	}
+#lresources {
+	clear:left;
+	}
+h3.resources {
+	margin: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #C1AD79;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	left: 25px;
+	top: 0px;
+	float: left;
+	width: 140px;
+	}
+#footer {
+	width: 1946px;
+	position: absolute;
+	left: 0px;
+	top: 490px;
+	margin: 0;
+	padding: 0px 0px 0px 53px;
+	border-top: 1px solid #669900;
+	border-bottom: 1px solid #669900;
+	}
+#footer a:link, #footer a:visited {
+	font-size: 9px;
+	color: #254634;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+#footer a:hover
+	{
+	color: #DBFE72;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: underline;
+	}
+
+#footer a:before
+	{
+	content: "[";
+	}
+#footer a:after
+	{content: "]";
+	}

@@ -1,0 +1,162 @@
+/* css Zen Garden submission 170 - 'Love is in the Air', by Nele Goetz, http://www.april-design.de/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Nele Goetz */
+/* Added: May. 31st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/* basic elements */
+
+* {margin: 0; padding: 0}
+
+body {
+	background:#3C6FAC url(back.gif) repeat-x;
+	font-size:100.01%;
+	font-family:"trebuchet ms", verdana, sans-serif;
+	color:#2C5079}
+
+p {padding:10px 30px 10px 20px; font-size:0.9em; line-height:1.6}
+
+a{text-decoration:none}
+a:link{color:#E5FBBB}
+a:visited{color:#B8DBFF}
+a:hover, a:active{color:white}
+
+acronym{cursor:help}
+
+/* specific divs */
+#container{position:relative; min-width:744px}
+
+#intro{
+	height:1%;
+	border-right:1px solid #2B4D70;
+	border-left:1px solid #2B4D70;
+	margin:0 240px 0 0;
+	background:url(back_top.gif)}
+#pageHeader{ 
+	background:url(head.jpg) center no-repeat;
+	height:365px}
+#pageHeader h1 span{display:none}
+#pageHeader h2 span{ /*misused for the googbye-grafic*/
+	color:#3C6FAC;
+	position:absolute;
+	bottom:0px;
+	right:128px;
+	width:112px;
+	height:69px;
+	background:url(bye.gif);
+	font-size:0px;
+	line-height:0px}
+#supportingText{
+	border-right:1px solid #2B4D70;
+	border-left:1px solid #2B4D70;
+	margin:0 240px 0 0}
+#quickSummary{text-align:center}
+#quickSummary p{
+	color:#C5E1FF;
+	font-style:italic;
+	padding:0}
+#quickSummary p.p1{
+	font-size:1em;
+	margin:30px 10px;
+	width:70%;
+	float:left}
+#quickSummary p.p2{
+	float:right;
+	font-size:0.8em;
+	width:20%;
+	margin:3em 10px 0 0;
+	text-align:right}
+#quickSummary a:link, #quickSummary a:visited{text-decoration:underline; color:#C5E1FF}
+#quickSummary a:hover, #quickSummary a:active{text-decoration:underline; color:white}
+
+#preamble{background:#79A6D4; clear:both}
+#preamble h3{
+	height:55px;
+	background:#98AE6D url(preamble.jpg) no-repeat;
+	border-top:1px solid #BDCCA3;
+	border-bottom:1px solid #386496}
+#preamble h3 span{display:none}
+
+#supportingText{background:#79A6D4}
+#supportingText h3{ 
+	height:55px;
+	border-top:1px solid #BDCCA3;
+	border-bottom:1px solid #386496}
+#supportingText h3 span {display:none}
+#explanation h3{background: #98AE6D url(about.jpg) no-repeat}
+#participation h3{background: #98AE6D  url(participation.jpg) no-repeat}
+#benefits h3{background: #98AE6D  url(benefits.jpg) no-repeat}
+#requirements h3{background: #98AE6D  url(requirements.jpg) no-repeat}
+
+#footer {
+	text-align:left;
+	background:#DE5608;
+	padding:10px 20px;
+	border-top:1px solid #EFAE89}
+#footer a{
+	color:#F4A21F;
+	font-size:0.8em}
+#footer a:visited{color:#992D2A}
+#footer a:hover{color:white}
+
+#linkList{
+	font:0.8em/1.6 "trebuchet ms", verdana, sans-serif; 
+	position:absolute;
+	right:0px;
+	top:0px}
+#linkList2{width:201px}
+#linkList h3{  
+	width:201px; 
+	height:53px;
+	border-right:1px solid #3D82AD;
+	border-left:1px solid #3D82AD;
+	voice-family:"\"}\"";
+	voice-family:inherit;
+	width: 199px}
+.dummy{margin: 0}
+#linkList h3 span{display:none}
+#linkList h3.select{background:transparent url(select.jpg)}
+#linkList h3.favorites{background:transparent url(favorites.jpg)}
+#linkList h3.archives{background:transparent url(archives.jpg)}
+#linkList h3.resources{background:transparent url(resources.jpg)}
+#linkList ul{
+	background:#B7D1ED;
+	border-right:1px solid #3D82AD;
+	border-left:1px solid #3D82AD}
+#lresources ul{
+	padding:0 0 41px 0; 
+	background:#B7D1ED url(attent.jpg) no-repeat left bottom}
+#linkList li{
+	list-style-type:none;
+	display:block; 
+	border-bottom:1px solid #3D82AD;
+	color:#3D82AD;
+	padding:7px 0 7px 10px}
+#linkList li a{
+	font-weight:bold;
+	display:block;
+	color:white;
+	background:url(heart.gif) no-repeat 0px 55%;
+	padding:0 0 0 15px}
+#linkList li a:hover{color:#3D82AD; background:url(heart2.gif) no-repeat 0px 55%}
+#linkList li a:visited{font-weight:normal}
+#linkList li a.c{
+	letter-spacing:0.2em;
+	color:#3D82AD;
+	font-size:0.81em;
+	font-weight:normal;
+	display:inline;
+	text-transform:uppercase;
+	background:none;
+	padding:0 0 0 5px}
+#linkList li a.c:hover{font-weight:bold; background:none}
+
+/*This one is dedicated to my little son Jelrik ♥ */ 
+

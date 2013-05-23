@@ -1,0 +1,226 @@
+/* css Zen Garden submission 153 - 'Moss', by Mani Sheriar, http://www.manisheriar.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Mani Sheriar */
+/* Added: Mar. 7th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* CSS Document */
+
+* {
+	padding:0;
+	margin:0;
+	border:0;
+	}
+* html #content {
+	margin-bottom:-600px;
+	} /*IE */
+body {
+	background:#2B411B url(bg2.gif) repeat;
+	padding-bottom:600px;
+	}
+abbr, acronym {
+	font-style:italic;
+	cursor:help;
+	}
+a {
+	color:#A7D277;
+	text-decoration:underline;
+	}
+a:hover {
+	color:#28411C;
+	background-color:#8DBB5A;
+	text-decoration:none;
+	}
+#container {
+	position:relative;
+	width:818px;
+	padding:125px 0 0 18px;
+	background:url(bg.jpg) repeat-y;
+	margin:0 0 -1200px 0;
+	}
+#intro, #supportingText {
+	position:relative;
+	width:500px;
+	backgroun-color:#2B411B
+	}
+#pageHeader {
+	position:absolute;
+	top:-125px;
+	left:-18px;
+	width:813px;
+	height:201px;
+	background:url(logo.jpg) no-repeat;
+	z-index:1;
+	}
+h1 span, h2 span, #preamble h3 span, #supportingText #explanation h3 span, #supportingText #participation h3 span, #supportingText #benefits h3 span, #supportingText #requirements h3 span, #pageheader span, h3.select span, h3.archives span, h3.resources span {
+	visibility:hidden;
+	}
+h1 span, h2 span {
+	position:absolute;
+	}
+#quickSummary {
+	margin:0 0 50px 0;
+	}
+#quickSummary p.p1 {
+	position:relative;
+	font:normal 15px/17px Georgia, "Times New Roman", Times, serif;
+	color:#C9E2AB;
+	z-index:2;
+	}
+#quickSummary p.p2 {
+	position:absolute;
+	top:-100px;
+	left:568px;
+	width: 141px;
+	font:normal 13px/16px Georgia, "Times New Roman", Times, serif;
+	color:#C9E1AA;
+	z-index:3;
+	}
+#quickSummary p.p2 a:hover {
+	color:#69913E;
+	background-color:#C9E1AA;
+	text-decoration:none;
+	}
+#preamble p, #supportingText p {
+	font:normal 13px/16px Verdana, Arial, Helvetica, sans-serif;
+	color:#A3C979;
+	margin:12px 0;
+	}
+#preamble h3 {
+	width:227px;
+	height:36px;
+	background:url(enlightenment.gif) no-repeat;
+	margin:30px 0 -10px -2px;
+	}
+#explanation h3 {
+	width:233px;
+	height:36px;
+	background:url(about.gif) no-repeat;
+	margin:30px 0 -10px -2px;
+	}
+#preamble p.p3 {
+	margin:12px 0 0 0;
+	}
+#participation h3 {
+	width:114px;
+	height:36px;
+	background:url(participation.gif) no-repeat;
+	margin-top:30px;
+	margin-bottom:-10px;
+	}
+#benefits h3 {
+	width:114px;
+	height:36px;
+	background:url(benefits.gif) no-repeat;
+	margin-top:30px;
+	margin-bottom:-10px;
+	}
+#requirements h3 {
+	width:150px;
+	height:36px;
+	background:url(requirements.gif) no-repeat;
+	margin-top:30px;
+	margin-bottom:-10px;
+	}
+#linkList {
+	position:absolute;
+	width:174px;
+	top: 100px;
+	left: 572px;
+	font:normal 10px/12px Verdana, Arial, Helvetica, sans-serif;
+	color:#69913E;
+	z-index:4;
+	}
+#linkList #lselect li {
+	margin-bottom:8px;
+	}
+#linkList a {
+	font:bold 12px/12px Georgia, "Times New Roman", Times, serif;
+	color:#E7F9D3;
+	display:block;
+	background-color:#B1D48A;
+	text-decoration:none;
+	margin:0 0 1px 0;
+	}
+#linkList a:hover {
+	color:#436023;
+	}
+#linkList #lselect a.c, #linkList #larchives a, #linkList #lresources a {
+	font:normal 10px/12px Verdana, Arial, Helvetica, sans-serif;
+	color:#69913E;
+	display:inline;
+	text-decoration:underline;
+	}
+#linkList #lselect a.c:hover, #linkList #larchives a:hover, #linkList #lresources a:hover {
+	color:#C9E1AA;
+	background-color:#66992D;
+	text-decoration:none;
+	}
+#linkList h3 {
+	margin:25px 0 0 0;
+	height:54px;
+	}
+#linkList ul {
+	margin:-25px 0 0 20px;
+	list-style-type:none;
+	list-style-image:url(bullet.gif);
+	}
+#linkList ul li {
+	margin:0 0 4px 0;
+	}
+h3.select, h3.archives, h3.resources {
+	background-repeat:no-repeat;
+	}
+h3.select {
+	background-image:url(design.gif);
+	width:124px;
+	}
+h3.archives {
+	background-image:url(archives.gif);
+	width:81px;
+	}
+h3.resources {
+	background-image:url(resources.gif);
+	width:84px;
+	}
+#footer {
+	position:relative;
+	left:-18px;
+	background:url(footer.jpg) no-repeat bottom left;
+	width:615px;
+	height:47px;
+	padding:60px 220px 0 0;
+	text-align:center;
+	}
+#footer a {
+	color:#C9E1AA;
+	}
+#footer a:hover {
+	color:#69913E;
+	background-color:#C9E1AA;
+	}
+#extraDiv1 {
+	position:relative;
+	top:600px;
+	left:561px;
+	height:600px;
+	width:454px;
+	background:url(tree.jpg) no-repeat bottom left;
+	z-index:5;
+	}
+#extraDiv2 {
+	position:relative;
+	top:0;
+	left:561px;
+	height:600px;
+	width:454px;
+	background:url(treeBg.gif) no-repeat bottom left;
+	margin-bottom:-600px;
+	z-index:6;
+	}

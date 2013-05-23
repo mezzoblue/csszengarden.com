@@ -1,0 +1,243 @@
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* CSS Zen Garden Top Level Styles || William Duffy || www.wdart.co.uk || 01 March 2006
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body {	
+	color: #AB9F82;
+	font: 9pt/13pt georgia, sans-serif;
+	margin: 0px; padding: 0px;	
+	background: black url(images/background_body.jpg) no-repeat center top;
+	}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+acronym {
+	border-bottom: 1px dotted #AB9F82;
+	cursor: help;
+	font-weight: bold;
+	}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Container Styles
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#container {
+	margin: 0px auto 0px auto;
+	position: relative;
+	width: 750px;
+	}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Intro Styles
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#intro #pageHeader {
+	background: transparent url(images/background_pageheader.jpg) no-repeat 17px 22px;
+	width: 464px; height: 446px;
+	}
+	
+	#intro #pageHeader h1, #intro #pageHeader h2 {
+		margin: 0px;
+		}
+		
+		#intro #pageHeader h1 span, #intro #pageHeader h2 span {
+			display: none;
+			}
+			
+			
+#intro #quickSummary {
+	background: transparent url(images/txt_quicksummary.gif) no-repeat left top;
+	color: #D9D0B7;
+	position: absolute; top: 186px; left: 336px;
+	width: 172px; height: 160px;
+	}
+	
+	#intro #quickSummary .p1 {
+		display: none;
+		}
+
+	#intro #quickSummary .p2 {
+		background: transparent url(images/bullet_download.gif) no-repeat 0px 4px;		
+		color: #E8D6A3;
+		padding: 0px 0px 0px 12px;
+		position: absolute; top: 1110px; left: 203px; z-index: 100;
+		width: 150px;
+		}
+		
+		#intro #quickSummary .p2 a {color: #DEC35A; text-decoration: underline;}
+		#intro #quickSummary .p2 a:visited {color: #DEC35A;}
+		#intro #quickSummary .p2 a:hover {color: #E8D6A3;}
+
+
+#intro #preamble {
+	background: transparent url(images/breakrule.gif) no-repeat center bottom;
+	padding: 25px 0px 37px 0px;
+	width: 464px;
+	}
+
+	#intro #preamble .p1, #intro #preamble .p2, #intro #preamble .p3, #intro #preamble .p4, #intro #preamble .p5 {
+		padding: 0px 0px 0px 49px;
+		}
+
+	#intro #preamble h3 {
+		background: transparent url(images/txt_sowhatisthisabout.gif) no-repeat left top;
+		height: 25px;
+		margin: 0px 0px -9px 27px;
+		}
+		
+		#intro #preamble h3 span {
+			display: none;
+			}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* supportingText Styles
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#supportingText #explanation, #supportingText #participation, #supportingText #benefits, #supportingText #requirements {
+	background: transparent url(images/breakrule.gif) no-repeat center bottom;
+	padding: 25px 0px 37px 0px;
+	width: 464px;
+	}
+
+	#supportingText .p1, #supportingText .p2, #supportingText .p3, #supportingText .p4, #supportingText .p5 {
+		padding: 0px 0px 0px 49px;
+		} 
+		
+		#supportingText a {color: #D2C9BB;}
+		#supportingText a:visited {color: #D2C9BB;}
+		#supportingText a:hover {color: #D34E1A;}
+	
+	#supportingText h3 {
+		height: 25px;
+		margin: 0px 0px -9px 27px;
+		}
+		
+		#supportingText h3 span {
+			display: none;
+			}
+
+		#supportingText #explanation h3 {background: transparent url(images/txt_participation.gif) no-repeat left top;}
+		#supportingText #participation h3 {background: transparent url(images/txt_benefits.gif) no-repeat left top;}
+		#supportingText #benefits h3 {background: transparent url(images/txt_participation.gif) no-repeat left top;}
+		#supportingText #requirements h3 {background: transparent url(images/txt_requirements.gif) no-repeat left top;}
+
+#supportingText #footer {
+	background: transparent url(images/background_footer.jpg) no-repeat right bottom;
+	height: 20px;
+	padding: 152px 0px 0px 0px;
+	text-align: right;
+	}
+	
+	#supportingText #footer a {color: #CCAD50; font-weight: bold; text-decoration: none;}
+	#supportingText #footer a:visited {color: #CCAD50;}
+	#supportingText #footer a:hover {color: #D2C9BB;}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* linkList Styles
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#linkList {
+	color: #E8D6A3;
+	position: absolute;	top: 75px; left: 516px;
+	width: 205px;
+	}
+
+	#linkList a {color: #E8D6A3; text-decoration: none;}
+	#linkList a:visited {color: #E8D6A3;}
+	#linkList a:hover {color: #DEC35A; text-decoration: underline;}
+
+
+	/* Begin lselect styles */
+	#linkList #lselect {
+		font-style: italic;
+		}
+	
+		#linkList #lselect h3 {
+			background: transparent url(images/txt_designs.gif) no-repeat left top;
+			margin: 0px 0px -17px 0px;
+			width: 168px; height: 79px;
+			} 
+			
+			#linkList #lselect h3 span {
+				display: none;
+				}
+		
+		#linkList #lselect ul {
+			list-style-type: none;
+			margin: 0px 0px 0px 20px; padding: 0px;
+			}
+			
+			#linkList #lselect ul li {
+				background: transparent url(images/bullet_designs.gif) no-repeat left 4px;
+				padding: 0px 0px 12px 14px;
+				}
+	
+		#linkList #lselect a {display: block; font-style: normal; font-weight: bold;}
+		#linkList #lselect a.c {display: inline; font-weight: normal;}
+	/* End lselect styles */
+	
+	
+	/* Begin larchives styles */
+	#linkList #larchives h3 {
+		background: transparent url(images/txt_archives.gif) no-repeat left top;		
+		margin: 0px 0px -17px 0px;
+		width: 168px; height: 79px;
+		} 
+		
+		#linkList #larchives h3 span {
+			display: none;
+			}
+	
+	#linkList #larchives ul {
+		list-style-type: none;
+		margin: 0px 0px 0px 20px; padding: 0px;		
+		}
+		
+		#linkList #larchives ul li {
+			background: transparent url(images/bullet_designs.gif) no-repeat left 4px;
+			padding: 0px 0px 0px 14px;
+			}
+	/* End larchives styles */
+	
+	
+	/* Begin lresources styles */
+	#linkList #lresources {
+		background: transparent url(images/background_lresources.jpg) no-repeat left top;		
+		padding: 117px 0px 0px 38px;
+		position: absolute; top: 950px; left: -37px;
+		width: 233px; height: 422px;
+		}
+		
+		#linkList #lresources h3 {
+			background: transparent url(images/txt_resources.gif) no-repeat left top;
+			margin: 0px 0px -17px 0px;
+			width: 168px; height: 79px;
+			} 
+			
+			#linkList #lresources h3 span {
+				display: none;
+				}
+	
+	#linkList #lresources ul {
+		list-style-type: none;
+		margin: 0px 0px 0px 20px; padding: 0px;
+		}
+		
+		#linkList #lresources ul li {
+			background: transparent url(images/bullet_resources.gif) no-repeat left 5px;
+			padding: 0px 0px 0px 14px;
+			}
+	/* End lresources styles */
+	
+	

@@ -1,0 +1,315 @@
+/* css Zen Garden submission 166 - 'Obsequience', by Pierce Gleeson, http://www.piercegleeson.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Pierce Gleeson */
+/* Added: May. 31st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
+
+body { 
+	font: 75%/160% verdana; 
+	color: #333; 
+	background: #333 url(equaliser.jpg) repeat top left; 
+	margin: 0; 
+	text-align:right;
+	padding-top:0px;
+	font-family: "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Verdana, sans-serif; 
+
+}
+
+#container { 
+ 
+	padding: 0;  
+	margin: 30px 30px 0 auto;
+	width:720px;
+	text-align:left;
+	background:transparent url(back.jpg) top left repeat-y;
+	overflow:auto;
+
+}
+
+#extraDiv1{
+	padding: 0;  
+	margin: 0 30px 30px auto; 
+	width:720px;
+	height:75px;
+	background:transparent url(useless.jpg) top left repeat;
+	overflow:auto;
+}
+
+#linkList{
+	background:transparent url(linkback.gif) repeat-y top left;
+	margin:0 0 0 70px;
+	float:left;
+	width: 120px;
+	position:absolute;
+
+	
+  top: 299px !important;   /* Good Browsers */
+  top: 269px;		   /* IE 5 */
+  top/**/:/**/299px;	   /* IE 6 */
+}
+
+
+#linkList2{
+	background:transparent url(linkbottom.jpg) no-repeat bottom left;
+	padding:0 2px 20px 2px;
+}
+
+#lselect h3, #larchives h3, #lresources h3, #lfavorites h3{
+	margin:10px 0 0 0;
+	text-indent: -15000px;
+	height: 28px;
+	overflow: hidden;
+}
+
+#lselect h3{ background: transparent url(select.gif) no-repeat left top; height:50px; margin:0px;}
+#larchives h3{ background: transparent url(archives.gif) no-repeat left top;}
+#lfavorites h3{ background: transparent url(favourites.gif) no-repeat left top;}
+#lresources h3{ background: transparent url(resources.gif) no-repeat left top;}
+
+
+
+#quickSummary{
+	padding:0;
+	margin:0 10px 0 250px !important;
+	margin:0 5px 0 250px;
+	float:right;
+	width:250px;
+	clear:right;
+	background:#fff;
+	color:#666;
+}
+
+#quickSummary p{
+	margin:5px 5px 5px 5px;
+	height:100%;
+}
+
+#quickSummary p.p1{
+	text-indent:-15000px;
+	overflow:hidden;
+	height:1px;
+	margin:0;
+}
+
+
+#pageHeader{
+	background: url(header.jpg) no-repeat top left;
+	padding:0;
+	margin:0;
+	text-indent: -15000px;
+	height: 290px;
+	overflow: hidden;
+}
+
+
+#supportingText{
+	padding:0;
+	margin:0 10px 0 0 !important;
+	margin:0 5px 0 0; 
+	
+}
+
+
+#preamble{
+	padding:0;
+	margin:0 0 20px 205px !important;
+	margin:0 0 20px 102px;
+	float:left;
+	width:230px;
+	clear:left;
+	background: url(preambleback.jpg) repeat-y top left;
+ 	
+}
+
+
+#explanation{
+
+	background:transparent;
+	margin:0 0 10px 20px !important;
+	margin:0 0 10px 457px;
+	padding-bottom:10px; 
+	width: 250px;
+	clear:right;
+	float:right !important;
+	float:none;
+	overflow:auto;
+}
+
+
+#participation{
+	background:transparent;
+	margin:0 0 40px 20px !important;
+	margin:0 0 40px 205px;
+	float:right !important;
+	float:none;
+	width: 505px;
+	clear:right;
+	overflow:auto;
+	background: transparent url(participationback.jpg) repeat-y top left;
+
+}
+
+#benefits, #requirements{
+	background:transparent;
+	margin: 40px 0 0 70px;
+	clear:both;
+	overflow:auto;
+	width:640px;
+	background: transparent url(benback.jpg) repeat-y top left;
+	position:relative;
+
+}
+
+#footer{
+	text-align:center;
+	padding:40px 0 10px 0;
+	background: transparent url(footback.jpg) top left no-repeat;
+	margin:0 0 0 460px;
+	width: 250px;
+	float:right !important;
+	float:none;
+	overflow:auto;
+	border-bottom:2px solid #fff;
+}
+
+
+
+#preamble h3, #explanation h3, #participation h3, #benefits h3, #requirements h3{
+	padding:0;
+	margin:0 0 10px 0;
+	text-indent: -15000px;
+	height: 40px;
+	overflow: hidden;
+}
+
+#preamble h3{ background: transparent url(road.jpg) no-repeat left top;}
+#explanation h3{ background: transparent url(what.jpg) no-repeat left top;}
+#participation h3{ background: transparent url(participation.jpg) no-repeat left top;}
+#benefits h3{ background: transparent url(benefits.jpg) no-repeat left top;}
+#requirements h3{ background: transparent url(requirements.jpg) no-repeat left top;}
+
+
+#preamble p, #explanation p, #participation p, #benefits p, #requirements p{
+	margin:10px 15px;
+	text-align:justify;
+}
+
+#participation p{
+	margin:10px 15px 10px 25px;
+}
+
+#participation h3, #benefits h3, #requirements h3{
+	margin:0;
+	height: 50px;
+
+}
+
+#participation p.p3{
+	background:transparent url(participationbottom.jpg) no-repeat bottom left;
+	margin:0;
+	padding:10px 15px 30px 25px;
+}
+
+#benefits p,#requirements p{
+	margin:10px 15px 10px 25px;
+}
+
+#benefits p.p1,#requirements p.p5{
+	background:transparent url(benbottom.jpg) no-repeat bottom left;
+	margin:0;
+	padding:10px 15px 30px 25px;
+}
+
+
+#preamble p{
+	margin:10px 20px 10px 20px;
+}
+
+#preamble p.p3{
+	background:transparent url(preamblebottom.jpg) no-repeat bottom left;
+	margin:0;
+	padding:10px 25px 30px 25px;
+}
+
+#preamble h3{
+	margin:0 0 20px 0;
+	height:50px;
+}
+
+
+
+
+a, a:link, a:visited  {
+	background-color:transparent;
+	color:#996;
+	text-decoration:none;
+		font-weight:bold;
+}
+
+a:visited  {
+	background-color:transparent;
+	color:#600;
+}
+
+a:hover {text-decoration:underline; color:#600;}
+
+
+
+#linkList ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: .9em;
+	letter-spacing:1px;
+}
+
+#linkList ul li {
+	padding: 5px 10px 5px 5px;
+	margin: 0;
+}
+
+#linkList ul li:hover {
+	background: #cc9;
+	color: #333;
+}
+
+#linkList ul li:hover a{
+	background: #cc9;
+	color: #333;
+}
+
+#linkList #lselect {
+	color: #333;
+}
+
+#linkList ul li a {
+	display: inline;
+	color: #363;
+	font-weight:normal;
+}
+
+#linkList #lselect ul li a {
+	display: block;
+}
+
+#linkList #lselect ul li a.c, #linkList ul li a.c {
+	display: inline;
+	font-size: .8em;
+	color: #363;
+	color: #600;
+	text-transform: none;	
+	font-weight:normal;
+}
+

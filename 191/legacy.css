@@ -1,0 +1,287 @@
+/* css Zen Garden submission 191 - 'The Diary', by Alexander Shabuniewicz, http://eye.loveline.ru/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Alexander Shabuniewicz */
+/* Added: February 15th, 2006 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+body{
+font:11px/20px Georgia,"Times New Roman",Times,serif;
+color:#666;
+background:#00496C;
+margin:0;
+padding:0
+}
+h1,h2,h3{
+margin:0;
+padding:0
+}
+a{
+color:#191970
+}
+a:hover{
+color:#B22222
+}
+a:visited{
+color:#696969
+}
+a acronym{
+border:none
+}
+acronym{
+cursor:help
+}
+/* main */
+#container{
+background:url("cover_bot.png") no-repeat left bottom;
+left:50%;
+position:absolute;
+width:770px;
+margin:10px 0 20px -385px;
+padding-bottom:120px
+}
+/* intro */
+#intro{
+padding:0 30px;
+background:url("cover.png") repeat-y;
+padding-bottom:1px
+}
+#pageHeader{
+margin:0 -30px;
+background:url("cover_top.png") no-repeat
+}
+#pageHeader h1{
+background:url("csszengarden.jpg") no-repeat;
+height:71px;
+width:268px;
+position:relative;
+top:50px;
+left:71px
+}
+#pageHeader h1 span{
+display:none
+}
+#pageHeader h2{
+background:url("thebeauty.jpg") no-repeat;
+height:20px;
+width:299px;
+position:relative;
+top:55px;
+left:57px
+}
+#pageHeader h2 span{
+display:none
+}
+#quickSummary{
+position:absolute;
+top:41px;
+padding:0 0 0 380px
+}
+#quickSummary .p1{
+margin:10px 81px 0 0;
+font-size:120%
+}
+#quickSummary .p2{
+margin:0;
+background:url("bookmark.jpg") no-repeat;
+position:absolute;
+top:-25px;
+left:620px;
+width:81px;
+height:131px
+}
+#quickSummary .p2 span{
+display:block;
+padding:20px 10px;
+color:#fff;
+font:11px/18px "Trebuchet MS",Arial,Helvetica,sans-serif
+}
+#quickSummary .p2 a{
+color:#fff
+}
+#quickSummary .p2 a:hover{
+text-decoration:none;
+color:#ccc
+}
+#preamble{
+padding-top:120px;
+background:url("img_1.jpg") 10px 170px no-repeat;
+height:1%
+}
+#preamble h3{
+background:url("roadto.png") no-repeat;
+position:relative;
+left:120px;
+height:44px;
+width:212px
+}
+#preamble h3 span{
+display:none
+}
+#preamble p{
+text-align:left;
+margin-top:-44px;
+font-style:italic;
+padding:0 10px 35px 380px
+}
+/* main content */
+#supportingText{
+background:url("cover.png") repeat-y;
+padding:0 30px
+}
+#explanation{
+height:1%;
+background:url("img_2.jpg") 370px 50% no-repeat
+}
+#explanation h3{
+background:url("sowhat.png") no-repeat;
+position:relative;
+left:380px;
+height:45px;
+width:176px
+}
+#explanation h3 span{
+display:none
+}
+#explanation p{
+text-align:right;
+margin-top:-45px;
+font-style:italic;
+padding:0 380px 35px 10px
+}
+#participation{
+height:1%;
+background:url("img_3.jpg") 5px 50% no-repeat
+}
+#participation h3{
+background:url("participation.png") no-repeat;
+position:relative;
+left:180px;
+height:45px;
+width:157px
+}
+#participation h3 span{
+display:none
+}
+#participation p{
+text-align:left;
+margin-top:-45px;
+font-style:italic;
+padding:0 10px 35px 380px
+}
+#benefits{
+background:url("img_4.png") 380px 50% no-repeat
+}
+#benefits h3{
+background:url("benefits.png") no-repeat;
+position:relative;
+left:380px;
+height:47px;
+width:150px
+}
+#benefits h3 span{
+display:none
+}
+#benefits p{
+text-align:right;
+margin-top:-47px;
+font-style:italic;
+padding:0 380px 35px 10px
+}
+#requirements h3{
+background:url("requirements.png") no-repeat;
+position:relative;
+left:180px;
+height:46px;
+width:150px
+}
+#requirements h3 span{
+display:none
+}
+#requirements p{
+text-align:left;
+margin-top:-46px;
+font-style:italic;
+padding:0 10px 35px 380px
+}
+#footer{
+padding-left:380px;
+text-align:center
+}
+#footer a{
+color:#666;
+text-decoration:none;
+border:1px solid #fffcf1;
+padding:5px
+}
+#footer a:hover{
+border:1px solid #ccc
+}
+/* notes */
+#linkList{
+font-size:120%;
+font-style:italic;
+position:absolute;
+width:300px;
+bottom:70px;
+left:80px
+}
+#linkList h3.select{
+width:142px;
+height:29px;
+background:url("select.png") no-repeat;
+position:relative;
+left:8px;
+top:8px
+}
+#linkList h3.select span{
+display:none
+}
+#linkList h3.archives{
+width:74px;
+height:25px;
+background:url("archives.png") no-repeat;
+position:relative;
+left:8px
+}
+#linkList h3.archives span{
+display:none
+}
+#linkList ul{
+margin:10px 5px 10px 40px;
+padding:0 5px
+}
+#linkList ul li{
+list-style-type:none;
+list-style-image:none
+}
+#lselect ul li{
+list-style:outside url("bull.png")
+}
+#linkList ul li a{
+text-decoration:none
+}
+#lresources{
+font:16px/22px "Trebuchet MS",Arial,Helvetica,sans-serif;
+display:block;
+background:url("notes.jpg") no-repeat;
+padding:20px 15px;
+width:252px
+}
+#lresources ul{
+margin:30px	20px 50px 25px
+}
+#lresources h3.resources{
+width:85px;
+height:22px;
+background:url("resources.png") no-repeat
+}
+#lresources h3.resources span{
+display:none
+}

@@ -1,0 +1,372 @@
+/* css Zen Garden submission 117 - 'Brushwood', by Katrin Zieger, http://www.teamwerk.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Katrin Zieger */
+/* Added: Sept. 2nd, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* basic elements */ 
+
+body { 
+ font: normal 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+ color: #f8f698; 
+ background: #7e8b4e; 
+ margin: 0px; 
+ padding: 0; 
+ } 
+
+p { 
+ font: normal 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+ text-align: left; 
+ } 
+
+a:link { 
+ font-weight: bold; 
+ text-decoration: underline; 
+ color: #F8f698; 
+ } 
+ 
+a:visited { 
+ font-weight: bold; 
+ text-decoration: underline; 
+ color: #e9c482; 
+ }
+  
+a:hover, a:active { 
+ text-decoration: none; 
+ color: #F8f698; 
+ } 
+
+
+/* specific divs */ 
+
+#container { 
+ width: 98%; 
+ padding: 0px 0px 20px 0px; 
+ margin: 0px; 
+ } 
+
+#pageHeader { 
+ position: absolute; 
+ top: 0; 
+ left: 0; 
+ margin: 0 0 20px 0; 
+ z-index: 1; 
+ } 
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */ 
+
+#pageHeader h1  {
+	background: url(h1.gif) no-repeat left top;
+	display:     block;
+	margin:      0;
+	width:       300px;
+	height:      276px }
+ 
+ 
+#pageHeader h1 span { 
+ display:none 
+ }
+  
+#pageHeader h2  {
+	background: url(h2.gif) no-repeat left top;
+	margin:      0;
+	width:       300px;
+	height:      72px }
+ 
+ 
+#pageHeader h2 span { 
+ display:none; 
+ } 
+
+#quickSummary { 
+ position: absolute; 
+ top: 365px; 
+ left: 30px; 
+ z-index: 2; 
+ background: transparent; 
+ margin-right: 12px; 
+ width: 300px; 
+ padding: 0; 
+ }
+  
+#quickSummary p { 
+ font-weight: bold; 
+ font-size: 12px; 
+ line-height: 180%; 
+ text-align:right; 
+ width: 250px; 
+ } 
+
+#quickSummary a:link { 
+ color: #f8f698; 
+ text-decoration: underline; 
+ } 
+
+#quickSummary a:hover { 
+ text-decoration: none; 
+ } 
+
+#preamble  {
+	background: url(bg-preamble.gif) no-repeat left top;
+	margin:      0 0 0 295px;
+	padding:     105px 35px 25px 37px;
+	position:    relative;
+	z-index:     5;
+	width:       303px }
+ 
+ 
+#preamble h3  {
+	background: url(roadtoenlightenment.gif) no-repeat left top;
+	margin:      0 0 15px;
+	width:       202px;
+	height:      19px }
+
+  
+#preamble h3 span { 
+ display:none; 
+ } 
+
+#preamble p { 
+ color: #50591b; 
+ width: 303px; 
+ margin-bottom:0; 
+ line-height: 165%; 
+ } 
+
+#supportingText { 
+ position: relative; 
+ margin: 0 0 0 295px; 
+ width: 374px; 
+ z-index: 6; 
+ } 
+
+#supportingText p { 
+ color: #50591b; 
+ width: 303px; 
+ line-height: 165%; 
+ } 
+
+#supportingText a, a:link { 
+ color: #50591b; 
+ font-style: italic; 
+ font-weight: bold; 
+ text-decoration: underline; 
+ } 
+
+#supportingText a:hover { 
+ color: #55310e; 
+ text-decoration: underline; 
+ } 
+
+#explanation  {
+	background: url(explaination-bg.gif) repeat-y left top;
+	display:     block;
+	padding:     0 35px 25px 37px;
+	position:    relative;
+	width:       303px }
+ 
+
+#explanation h3  {
+	background: url(sowhat.gif) repeat-y left top;
+	margin:      0 0 15px;
+	width:       173px;
+	height:      19px }
+ 
+ 
+#explanation h3 span { 
+ display:none; 
+ } 
+
+#participation  {
+	background: url(partic-bg.gif) repeat-y left top;
+	display:     block;
+	padding:     0 35px 25px 37px;
+	position:    relative;
+	width:       303px }
+ 
+
+#participation h3  {
+	background: url(participation.gif) no-repeat left top;
+	margin:      0 0 15px;
+	width:       99px;
+	height:      18px }
+ 
+  
+#participation h3 span { 
+ display:none; 
+ } 
+
+#benefits  {
+	background: url(partic-bg.gif) repeat-y left top;
+	display:     block;
+	padding:     0 35px 25px 37px;
+	position:    relative;
+	width:       303px }
+ 
+
+#benefits h3  {
+	background: url(benefits.gif) no-repeat left top;
+	margin:      0 0 15px;
+	width:       99px;
+	height:      18px }
+
+ 
+#benefits h3 span { 
+ display:none; 
+ } 
+
+#requirements  {
+	background: url(requi-bg.gif) no-repeat left bottom;
+	display:     block;
+	padding:     0 35px 30px 37px;
+	position:    relative;
+	width:       303px }
+ 
+
+#requirements h3  {
+	background: url(requirements.gif) no-repeat left top;
+	margin:      0 0 15px;
+	width:       99px;
+	height:      18px }
+  
+ 
+#requirements h3 span { 
+ display:none; 
+ } 
+
+#footer { 
+ background: transparent; 
+ width: 303px; 
+ margin: 25px 0 25px 0px; 
+ padding: 0 0 0 35px; 
+ text-align: center; 
+ } 
+
+#footer a:link { 
+ margin: 0 10px 0 10px; 
+ color: #F8f698; 
+ font-weight: bold; 
+ font-style: normal; 
+ text-decoration: underline; 
+ } 
+
+#footer a:hover { 
+ text-decoration: none; 
+ color: #F8f698; 
+ } 
+
+
+/* start navbar */ 
+
+#linkList { 
+ margin: 0; 
+ position: absolute; 
+ top: 297px; 
+ left: 664px; 
+ z-index: 3; 
+ } 
+ 
+#linkList2  {
+	background: url(select-list.gif) repeat-y left top;
+	padding:     0;
+	width:       141px }
+ 
+
+#linkList h3.select  {
+	background: url(select.gif) no-repeat left top;
+	margin:      0;
+	width:       141px;
+	height:      65px }
+ 
+
+#linkList h3.select span { 
+ display:none 
+ } 
+ 
+#linkList h3.favorites { 
+ background: transparent url(../zengarden-media/h4.gif) no-repeat top left; 
+ margin: 25px 0px 5px 0px; 
+ width: 60px; 
+ height: 18px; 
+ } 
+ 
+#linkList h3.favorites span { 
+ display:none 
+ } 
+
+#linkList h3.archives  {
+	background: url(archives.gif) no-repeat left top;
+	margin:      0;
+	width:       141px;
+	height:      68px }
+
+  
+#linkList h3.archives span { 
+ display:none 
+ } 
+
+#linkList h3.favorites  {
+	background: url(favorites.gif) no-repeat left top;
+	margin:      0;
+	width:       141px;
+	height:      68px }
+
+  
+#linkList h3.archives span { 
+ display:none 
+ } 
+
+#lresources  {
+	background:    url(nav-bottom.gif) no-repeat left bottom;
+	padding-bottom: 15px;
+	z-index:        4 }
+ 
+
+#linkList h3.resources  {
+	background: url(resources.gif) no-repeat left top;
+	margin:      0;
+	width:       141px;
+	height:      68px }
+ 
+ 
+#linkList h3.resources span { 
+ display:none 
+ } 
+
+#linkList ul { 
+ margin: 0px; 
+ padding: 12px 20px 20px 20px; 
+ }
+ 
+#linkList li { 
+ line-height: 2.5ex; 
+ list-style-type: none; 
+ display: block; 
+ padding-top: 5px; 
+ } 
+ 
+#linkList li a:link { 
+ color: #F8f698; 
+ font-weight: bold; 
+ font-style: normal; 
+ text-decoration: underline; 
+ } 
+ 
+#linkList li a:hover { 
+ text-decoration: none 
+ } 
+
+/* end navbar */
+
+
+/* extra divs */
+
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+ display:none
+ }

@@ -1,0 +1,235 @@
+/* css Zen Garden submission 175 - 'Business Style', by Gunta Klavina, http://www.klavina.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Gunta Klavina */
+/* Added: July 9th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+body
+    {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font: 13px Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+    background: #E2EBED;
+    text-align: center;
+    }
+a
+    {
+    color: #307082;
+    }
+a:hover
+    {
+    color: #D60808;
+    }
+acronym
+    {
+    border: none;
+    }
+
+#preamble h3 span, #explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span, #lresources h3.resources span, #larchives h3.archives span, #lselect h3.select
+    {
+    display:none;
+    }
+
+#container
+    {
+    margin: 0 auto;
+    width: 724px;
+    position: relative;
+    background: #fff;
+    padding: 0 10px 0 10px;
+    text-align: left;
+    }
+* html #container
+    {
+    width: 744px;
+    w\idth: 724px;
+    }
+
+#pageHeader
+    {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    }
+h1
+    {
+    background: url("logo.gif");
+    width: 156px;
+    height: 25px;
+    overflow: hidden;
+    margin: 0;
+    }
+h1 span
+    {
+    display: none;
+    }
+h2
+    {
+    font-size: 12px;
+    margin: 0;
+    }
+
+#quickSummary
+    {
+    padding-top: 85px;
+    }
+#quickSummary .p2
+    {
+    font-size: 12px;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    margin: 0;
+    }
+#container #intro #quickSummary .p1
+    {
+    font-size: 11px;
+    height: 171px;
+    background: url("background.jpg") no-repeat;
+    margin: 0;
+    width: 724px;
+    color: #fff;
+    font: 12px/150% Trebuchet MS;
+    }
+#container #intro #quickSummary .p1  span
+    {
+    padding: 30px 530px 0 30px;
+    display: block;
+    margin: 0;
+    font: 12px/150% Trebuchet MS;
+    }
+
+#preamble, #supportingText
+    {
+    margin: 0 20px 0 243px;
+    }
+#supportingText p, #preamble p
+    {
+    line-height: 150%;
+    margin: 10px 0 10px 0;
+    }
+ #preamble h3, #explanation h3, #participation h3, #benefits h3, #requirements h3
+    {
+    width: 200px;
+    height: 24px;
+    margin: 40px 0 10px 0;
+    }
+#preamble h3
+    {
+    background: url("heading01.gif") no-repeat;
+    }
+#explanation h3
+    {
+    background: url("heading02.gif") no-repeat;
+    }
+#participation h3
+    {
+    background: url("heading03.gif") no-repeat;
+    }
+#benefits h3
+    {
+    background: url("heading04.gif") no-repeat;
+    }
+#requirements h3
+    {
+    background: url("heading05.gif") no-repeat;
+    }
+#requirements
+    {
+    margin-bottom: 40px;
+    }
+
+#linkList
+    {
+    position: absolute;
+    top: 295px;
+    left: 0;
+    width: 210px;
+    }
+#lselect ul, #larchives ul, #lresources ul
+    {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 40px;
+    }
+#lselect ul li a
+    {
+    text-decoration: underline;
+    display: block;
+    font-size: 13px;
+    }
+#lselect ul li.c, #lselect ul li a.c
+    {
+    display: inline;
+    font-size: 12px;
+    color: #333;
+    }
+#lselect ul li a.c
+    {
+    text-decoration: none;
+    }
+#lselect ul li a.c:hover
+    {
+    color: #D60808;
+    }
+#lselect ul li
+    {
+    font-size: 12px;
+    border-bottom: 1px solid #E6EEF0;
+    }
+#linkList #larchives ul li
+    {
+    font-size: 13px;
+    border-bottom: 1px solid #E6EEF0;
+    display: block;
+    padding: 5px 0;
+    }
+#linkList #lresources ul li
+    {
+    font-size: 13px;
+    border-bottom: 1px solid #E6EEF0;
+    display: block;
+    padding: 5px 0;
+    }
+#lresources h3.resources
+    {
+    background: url("resources.gif") no-repeat;
+    width: 69px;
+    height: 15px;
+    margin: 30px 0 5px 40px;
+    }
+#larchives h3.archives
+    {
+    background: url("archives.gif") no-repeat;
+    width: 69px;
+    height: 15px;
+    margin: 30px 0 5px 40px;
+    }
+
+#footer
+    {
+    background: url("footer.gif") no-repeat;
+    color: #fff;
+    height: 48px;
+    text-align: right;
+    padding: 0 10px 0 0;
+    line-height: 26px;
+    font-size: 11px;
+    }
+#footer a
+    {
+    color: #fff;
+    text-decoration: none;
+    }
+#footer a:hover
+    {
+    text-decoration: underline;
+    }
+

@@ -1,0 +1,343 @@
+/* css Zen Garden submission 118 - 'Some Leafs', by Michael Tupy, http://www.t-2.at/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Michael Tupy */
+/* Added: Sept. 2nd, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+
+
+/* css zen garden - "some leafs" - michael tupy - t2 graphic design - http://www.t-2.at/ */
+
+/* this is a basic theme - works with nearly all browsers */
+/* all the text is visible and easy to change */
+/* the css code is overcoded and long - so its easier for css starters */
+
+/* tested with: */
+/* on mac osx: safari 1.2.2, camino 0.8b, mozilla 1.7, firefox 0.9, omniweb 4.5, ie 5.2.3, */
+/* on mac os9: ns 7.0.2, ie 5.1.6, */
+/* on win98:  ie 6.0.2800, ns 7.0.1, moz 1.6, firefox 0.9, opera 7.03, */
+
+
+/* ie5 win - grrr - start */
+body { 
+	font: small serif;
+  margin: 0px; 
+	padding: 0px; 
+	line-height: 14px;
+	color: #000;
+	font-size: x-small;
+	voice-family: "\"}\""; 
+	voice-family: inherit;
+	font-size: small;
+	text-align: center; }
+/* ie5 win - grrr - end */
+ 
+/* opera - grrr - start */
+html>body {
+	font-size: small;
+	}
+/* opera - grrr - end */
+
+
+/* start of the real css */
+
+/* basic elements */
+body { 
+	color: #444; 
+	background-color: #edf6e3;
+ 	background-image: url(700_28.jpg);
+	background-position: top center;
+	background-repeat: repeat-y;
+	font-size: 11px; 
+	line-height: 14px;
+	font-family: Cochin, Georgia, "New Century Schoolbook", "Bitstream Vera Serif", "Times New Roman", times, serif; 
+	text-align: left;
+  margin: 0px; 
+	padding: 0px;
+	}
+p {
+	font-size: 11px; 
+	line-height: 14px;
+	font-family: Cochin, Georgia, "New Century Schoolbook", "Bitstream Vera Serif", "Times New Roman", times, serif; 
+	text-align: left; 
+	margin: 0px; 
+	padding: 0px;
+	}
+h1, h2, h3 {
+	font-size: 11px; 
+	line-height: 14px;
+	font-weight: bold; 
+	font-family: Cochin, Georgia, "New Century Schoolbook", "Bitstream Vera Serif", "Times New Roman", times, serif; 
+	text-align: left; 
+	margin: 0px; 
+	padding: 0px;
+	}
+	
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #6faf30;
+	}
+a:visited, 
+a:visited:hover { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #7fc937;
+	}
+a:hover, 
+a:active { 
+	text-decoration: underline; 
+	color: #4f711f;
+	}
+acronym { 
+	font-weight: normal; 
+	font-style: normal;
+	border: 0;
+	}
+
+/* major divs */
+#container { 
+	width: 700px; 
+	position: relative;   
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	}
+
+#intro {
+ 	width: 450px;
+	margin: 0px 0px 0px 0px; 
+	padding: 0px 0px 0px 0px;
+	}
+	
+#supportingText {
+ 	width: 450px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 10px 0px 10px;
+	}
+	
+#linkList {
+  position: absolute;
+  top: 255px;
+  left: 0px;
+ 	width: 220px;
+	margin: 0px 0px 0px 482px;
+	padding: 0px 0px 0px 0px;
+	}
+
+/* minor divs */
+#pageHeader {
+ 	width: 700px;
+ 	height: 20px; /* strange but ie6 needs this */
+ 	background-image: url(blatt02aa.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	border-top: 0px;    
+	border-right: 1px solid #aaa;    
+	border-bottom: 1px solid #aaa;    
+	border-left: 1px solid #aaa;    
+	margin: 0px 0px 0px 0px; 
+	padding: 224px 0px 0px 0px;
+	}
+	
+#pageHeader h1 {
+ 	width: 600px;
+	color: #fff;
+	font-size: 24px; 
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: -30px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+	}
+	
+#pageHeader h2 {
+ 	width: 600px;
+	color: #fff;
+	font-size: 11px; 
+	line-height: 16px;
+	font-weight: normal;
+	padding: 0px 0px 0px 3px;
+	text-transform: uppercase;
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 10px 4px;
+	}
+		
+#quickSummary {
+ 	width: 450px;
+ 	background-image: url(stone_24.gif);
+	background-position: top center;
+	background-repeat: repeat;
+	background-color: #284C00;
+	border: 1px solid #aaa;    
+	margin: 10px 0px 10px 0px;
+	padding: 10px 10px 10px 10px;
+	}
+
+#preamble {
+ 	width: 450px;
+	border: 1px solid #aaa;    
+ 	background-image: url(leaf_09d.gif);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 10px 20px 10px;
+	}
+	
+#explanation,
+#participation,
+#benefits,
+#requirements {
+ 	width: 450px;
+	border: 1px solid #aaa;    
+ 	background-image: url(leaf_09d.gif);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-color: #fff;	
+	margin: 10px -10px 0px -10px;
+	padding: 10px 10px 20px 10px;
+	}
+	
+#footer {
+ 	width: 450px;
+	border: 1px solid #aaa;    
+ 	background-image: url(stone_19.gif);
+	background-position: center center;
+	background-repeat: repeat;
+	background-color: #284C00;	
+	margin: 10px -10px 20px -10px;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	}
+	
+#explanation p,
+#participation p,
+#benefits p,
+#requirements p,
+#preamble p {
+	padding-bottom: 8px;
+	text-align: justify;
+	}
+
+#preamble h3,
+#supportingText h3 {
+	color: #284C00;
+	background-color: #ddd;
+ 	background-image: url(stone_21.gif);
+	background-position: bottom center;
+	background-repeat: repeat;
+	font-size: 11px; 
+	line-height: 16px;
+	text-transform: uppercase;
+	margin: -10px -10px 4px -10px;
+	padding: 4px 4px 4px 10px;
+	}
+	
+#quickSummary .p1 { 
+	color: #fff ! important;
+	font-size: 10px ! important;
+	line-height: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+	margin: 0px 50px 0px 0px;
+	padding: 0px 0px 10px 0px;
+	}
+	
+#quickSummary .p2 { 
+	color: #fff ! important;
+	font-size: 10px ! important;
+	line-height: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: left; 
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	}
+	
+#linkList ul {
+	border-top: 1px dotted #ccc;
+	margin: 5px 5px 0px 5px; 
+	padding: 0px 0px 0px 0px;
+	}
+	
+#linkList li {
+	display: block;
+	list-style-type: none;
+	color: #6c9e2d;
+	background-color: #f8f8f8;
+	font-size: 11px; 
+	line-height: 14px;
+	font-weight: normal; 
+	font-style: italic;
+	font-family: Cochin, Georgia, "New Century Schoolbook", "Bitstream Vera Serif", "Times New Roman", times, serif; 
+	text-align: left; 
+	border-bottom: 1px dotted #ccc;
+	margin: 0px 0px 0px 0px; 
+	padding: 3px 5px 3px 5px;
+	}
+	
+#linkList li a:link,
+#linkList li a:visited, 
+#linkList li a:visited:hover,
+#linkList li a:hover, 
+#linkList li a:active {
+	font-style: normal;
+	padding-right: 5px;
+	}
+	
+.c { 
+	color: #6c9e2d ! important;
+	font-weight: normal ! important;
+	font-style: italic ! important;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 14px 0px 0px;
+	}
+
+#linkList h3 {
+	color: #7fc937;
+	background-color: #ddd;
+ 	background-image: url(stone_24.gif);
+	background-position: center right;
+	background-repeat: repeat-x;
+	font-size: 11px; 
+	line-height: 16px;
+	font-weight: bold; 
+	font-family: Cochin, Georgia, "New Century Schoolbook", "Bitstream Vera Serif", "Times New Roman", times, serif; 
+	text-transform: uppercase;
+	text-align: left; 
+	border-bottom: 1px solid #aaa;
+	margin: 0px 0px 0px 0px; 
+	padding: 3px 5px 3px 5px;
+	}
+	
+#lselect,
+#lfavorites,
+#larchives,
+#lresources {
+	background-image: url(leaf_09a.gif);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	border: 1px solid #aaa;    
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 30px 0px;
+	}
+	
+/* hovers */
+	
+#preamble:hover {
+ 	background-image: url(leaf_09f.gif);
+	}
+	
+#linkList li:hover {
+	background-color: #fefefe;
+	}
+	
+#lresources:hover {
+	background-image: url(leaf_09b.gif);
+	}

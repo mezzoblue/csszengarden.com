@@ -1,0 +1,187 @@
+/* css Zen Garden submission 154 - 'Butterfly Effect', by Alen Grakalic, http://www.pixelpusher.biz/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Alen Grakalic */
+/* Added: Mar. 7th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/* 
+	css by Alen Grakalic of Pixelpusher.biz
+	Thanks for taking the time to go through my code. 
+	Central photo was taken by me. It is a fountain in my home town Rijeka, Croatia.
+	I made several photo calendars and it inspired me to make this Css Zen Garden entry
+	that I call "November".
+	
+*/
+
+body {
+	background: #2F3027 url(back.jpg) no-repeat;
+	font:0.7em Tahoma, Arial, Verdana, sans-serif;
+	color:#666;
+	margin:0;
+	padding:0;
+}
+a{
+	color:#BD8100;
+	text-decoration:none;
+}
+a:hover{
+	background:#BD8100;
+	color:#FFF;
+}
+h3{
+	margin:0;
+	padding:0;	
+}
+h3 span{
+	display:none;
+}
+acronym{ 
+	border-bottom:1px dotted;
+}
+.accesskey{
+	text-decoration:underline;
+}
+ul{
+	margin: 0;
+	padding:10px 0px 10px 10px;
+	list-style: none;
+}
+
+li{
+	padding-right: 12px;
+	padding-bottom: 0.6em;
+	background:url(li_bullet.gif) no-repeat 100% 2px;
+}
+#container {
+	margin:0;
+	padding:0;
+}
+/* Intro */
+#intro{
+	width:467px;
+}
+#pageHeader h1{
+	margin:0 0 0 16px;
+	height:367px;
+	background:url(page_header.gif) no-repeat;
+	text-indent:-2000px;
+}
+#pageHeader h2,
+#quickSummary .p1{
+	display:none;
+}
+#quickSummary .p2{
+	margin:0 0 0 16px;
+	padding-left:343px;
+	font-size:6px;
+	height:82px;
+	background:url(quicksummary_back.gif) no-repeat;
+	white-space:no-wrap;
+}
+#quickSummary .p2 span{
+	visibility:hidden;
+}
+#quickSummary .p2 a{
+	width:36px;
+	height:20px;
+	float:left;
+	visibility:visible;
+	text-indent:-2000px;
+	margin:-7px 17px 0 0;
+	padding:0;
+}
+#quickSummary .p2 a:hover{
+	background:none;
+}
+#preamble{
+	margin:0 0 0 16px;
+	padding:0;
+	background:url(txt_back.gif) repeat-y;	
+}
+#preamble h3{
+	height:69px;
+	background:url(theroad_back.gif) no-repeat;	
+}
+#preamble p{
+	line-height:1.4em;
+	padding:19px 19px 5px 19px;
+	margin:0;
+}
+/* Supporting Text */
+#supportingText{
+	width:467px;
+	background:url(txt_back.gif) repeat-y 16px;
+}
+#supportingText p{
+	font-size:11px;
+	line-height:1.4em;
+	padding:19px 19px 5px 19px;
+	margin:0;
+}
+#supportingText h3{
+	margin:0;
+	padding:0;
+	height:107px;
+}
+#explanation, 
+#participation, 
+#benefits,
+#requirements{
+	margin:0 0 0 16px;	
+}
+#explanation h3{
+	background:url(explanation_back.gif) no-repeat;
+}
+#participation h3{
+	background:url(participation_back.gif) no-repeat;
+}
+#benefits h3{
+	background:url(benefits_back.gif) no-repeat;
+}
+#requirements h3{
+	background:url(requirements_back.gif) no-repeat;
+}
+#footer{
+	margin:0 0 0 16px;
+	padding-top:58px;
+	padding-bottom:20px;
+	background:url(footer_back.gif) no-repeat;
+	text-align:center;
+}
+#footer a{
+	margin:3px;
+	padding:2px 5px;
+	font-weight:bold;	
+}
+/* Link List */
+#linkList {
+	position:absolute;
+	top:64px;
+	left:467px;
+	width:226px;
+	background:url(linklist_back.gif) no-repeat;
+	padding-top:62px;
+	text-align:right;
+}
+#linkList acronym{ 
+	border:none;
+}
+.select{
+	background:url(select_back.gif) no-repeat 100% 0;	
+	height:30px;
+}
+.archives{
+	background:url(archives_back.gif) no-repeat 100% 0;	
+	height:27px;
+}
+.resources{
+	background:url(resources_back.gif) no-repeat 100% 0;	
+	height:27px;
+}
