@@ -5,16 +5,244 @@
   src:url('neuropol.ttf');
 }
 
+/* 
+ *  Theme Colors : Took an orange I really liked from 
+ *  Halo 4: Forward Unto Dawn and Deus Ex: Human Revolution 
+ *  (you know the orange I'm talking about, it's thematic as hell)
+ *  and then fed it into http://kuler.adobe.com to get ideas. These
+ *  are the "complementary" colors of that base, adjusted a few degrees.
+*/
+
+/* 
+ *  main orange: #e6b53c  -- hsla(43, 77%, 57%, 1.0)
+ *  primary blue : #093299 -- hsla(223, 89%, 32%, 1.0)
+ *  secondary blue: #3C6BE6 -- hsla(224, 84%, 58%, 1.0) 
+ *  dark brown: #997419 -- hsla(43, 72%, 35%, 1.0) 
+ *  pale khaki : #FFD05C -- hsla(43, 100%, 68%, 1.0)
+*/
+
+
+/* General styles (by tag name) */
+
 body {
-  background:#000;
+  background:#000 url(images/big_carbon.png);
   color:#fff;
   font-family:Courier;
+  z-index:10;
+  margin:20px 0px 40px 0px;
 }
 
 h1, h2, h3, h4, h5 {
   font-family:'NeuropolX';
+  font-weight:normal;
 }
 
-header {
-  
+a {
+  color:hsla(43,77%,57%,1);
+  text-decoration:none;
+}
+
+a:hover {
+  color:hsla(43,100%,68%,1);
+  transition:color .2s linear;
+}
+
+abbr {
+  text-decoration:none;
+  border-bottom:1px dashed #e6b53c;
+  cursor:help;
+  position:relative;
+}
+
+/* 
+    Typically, you'd suppress the title attributes of these with javascript,
+    and replace the title attr with something else you can get at, preferably
+    something with less collision like a data- prefixed attribute. But since
+    this is an exercise in CSS, I simply moved the tooltip so it doesn't get
+    over-laid by the default browser tooltip.
+*/
+
+abbr::after {
+  color:#fff;
+  content:attr(title);
+  border:solid 1px hsla(43,100%,68%,1);
+  padding:2px;
+  border-radius:5px;
+  box-shadow:0px 0px 10px #000;
+  font-size:12px;
+  font-family:'NeuropolX';
+  text-align:center;
+  background:rgba(0,0,0,.8);
+  background-image:linear-gradient(hsla(43,77%,57%,0) 0%,hsla(43,77%,57%,.7) 100%);
+  position:absolute;
+  width:200px;
+  bottom:120%;
+  left:-100%;
+  opacity:0;
+  z-index:120;
+}
+
+abbr:hover::after {
+  opacity:1;
+  transition:opacity .3s ease-in;
+}
+
+/* Specific containers (by class and nested specificity) */
+
+.page-wrapper {
+  width:980px;
+  margin:0px auto;
+  position:relative;
+}
+
+.intro header {
+  box-shadow:0px 0px 20px hsla(43, 77%, 57%, 1.0), 0px 0px 90px hsla(43,77%,57%,0.8), 0px 0px 120px hsla(43,77%,57%,0.3);
+  width:500px;
+  margin:0px auto;
+  padding:1px 5px;
+  text-align:center;
+  border-radius:10px;
+  position:relative;
+  background:hsla(43,77%,57%,.2);
+  border:solid 2px hsla(43,100%,68%,1);
+  background-image:linear-gradient(hsla(43,77%,57%,0) 0%,hsla(43,77%,57%,.7) 100%);
+}
+
+.intro header::after {
+  content:'';
+  width:506px;
+  height:100%;
+  position:absolute;
+  top:2px;
+  left:2px;
+  border-radius:5px;
+  background-image:linear-gradient(rgba(255,255,255,.7) 0%,rgba(255,255,255,0) 100%);
+  pointer-events:none;
+}
+
+.intro header::before {
+  background:#fff;
+  width:20px;
+  height:20px;
+}
+
+.intro header h1 {
+  font-size:38px;
+  margin:0px;
+  text-shadow:0px 0px 10px #000;
+}
+.intro header h2 {
+  font-size:18px;
+  margin;0px;
+  text-shadow:0px 0px 10px #000;
+}
+
+.summary, .preamble, .main {
+  margin:20px 0px;
+}
+
+.sidebar {
+  position:fixed;
+  width:100%;
+  height:32px;
+  right:0px;
+  bottom:0px;
+  background:rgba(0,0,0,1);
+  transition:height .1s linear,background .1s linear;
+  font-size:10px;
+  box-shadow:0px 0px 2px hsla(43,77%,57%,0.8);
+  z-index:100;
+}
+
+.sidebar:hover {
+  height:250px;
+  background:rgba(0,0,0,.95);
+  transition:height .2s ease-in,background .2s ease-in,box-shadow .2s ease-in;
+  box-shadow:0px 0px 30px hsla(43,77%,57%,0.8);
+}
+
+.sidebar::before {
+  content:"?";
+  font-size:18px;
+  width:20px;
+  height:20px;
+  margin:5px auto;
+  display:block;
+  border:solid 1px #fff;
+  text-align:center;
+  background:#000;
+  border-radius:10px;
+}
+
+.sidebar:hover::before {
+  opacity:0;
+  transition:opacity .2s ease-in,height .2s ease-in;
+  height:0px;
+}
+
+.sidebar .design-selection, .sidebar .design-archives, .zen-resources {
+  width:200px;
+  display:inline-block;
+  vertical-align:top;
+  text-align:left;
+}
+
+.sidebar .design-archives {
+  text-align:center;
+}
+
+.sidebar .design-archives li {
+  list-style-type:none;
+}
+
+.sidebar .wrapper {
+  width:100%;
+  overflow:hidden;
+  text-align:center;
+}
+
+.sidebar h3 {
+  margin-top:0px;
+  text-align:center;
+}
+
+.sidebar ul {
+  margin:10px;
+  padding:0px;
+}
+
+.sidebar ul li {
+  list-style-type:square;
+  margin:4px 0px;
+}
+
+footer {
+  text-align:right;
+}
+
+@media only screen and (max-device-width: 800px) {
+  body {
+    font-size:7px;
+  }
+  .sidebar {
+    font-size:6px;
+  }
+  .sidebar h3 {
+    font-size:8px;
+  }
+  .intro header h1 {
+    font-size:16px;
+  }
+  .intro header h2 {
+    font-size:10px;
+  }
+  .page-wrapper {
+    width:100%;
+  }
+  .intro header {
+    width:200px;
+  }
+  .intro header::after {
+    width:206px;
+  }
 }
