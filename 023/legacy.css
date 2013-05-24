@@ -1,0 +1,324 @@
+/* css Zen Garden submission 023 - 'fleur de l'avant-garde' by Michael Switzer, http://propagandabydesign.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Michael Switzer */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+body { 
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+	vertical-align: top;
+	overflow: visible;
+	background: #fff url(bg.gif) repeat-x;
+	font: x-small Verdana,sans-serif;
+	color: #333;
+	}
+
+
+
+p, h3 {
+	margin: 0;
+	padding: 0 0px 5px 0;
+	}
+
+ul {
+	margin: 0;
+	padding: 2px 0 5px 0;
+	}
+
+acronym {
+	border-bottom: 1px dashed #4C83AE;
+	}
+
+a acronym {
+	border-bottom: 0;
+	}
+
+a:link {
+	font-weight: 900;
+	color: #4C83AE;
+	text-decoration: none;
+	}
+
+a:visited {
+	font-weight: 900;
+	color: #999;
+	text-decoration: none;
+	}
+
+a:hover,
+a:active {
+	font-weight: 900;
+	color: #9B3F17;
+	}
+
+#container {
+	position: relative;
+	top: 0;
+	margin: 0 auto;
+	text-align: left;
+	border-left: 1px dashed #666;
+	border-right: 1px dashed #666;
+	background: #FFF url(mainbg.jpg)  no-repeat; 	
+	width: 770px;
+	height: 720px;
+	padding: 0;
+	display: block;
+	}
+
+/* page intro and subsections */
+#pageHeader {
+	position: absolute;
+	top: 30px;
+	left: 520px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 245px;
+	height: 30px;
+	background: transparent url(logo.gif) no-repeat;
+	border: 0;
+	}
+
+#quickSummary p.p1 {
+	position: absolute;
+	top: 293px;
+	left:640px;
+	width: 122px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-align: right;
+	font: italic 14px/12px Garamond, Times, serif;
+	color: #9B3F17;
+	line-height: 1.2;
+	}
+
+#quickSummary p.p2 {
+	position: absolute;
+	top: 72px;
+	left: 0px;
+	width:760px;
+	text-align: right;
+	font: 9px Verdana, sans-serif;
+	color: #999999;
+	z-index: 2;
+	}
+
+#preamble {
+	position: absolute;
+	top: 97px;
+	left: 230px;
+	width: 540px;
+	height: 173px;
+	padding: 0;
+	margin: 0 10 0 0;
+	display: block;
+	overflow: auto;
+	}
+
+#preamble h3 {
+	background: transparent url(roadtoenlightenment.gif) no-repeat top left;
+	width: 257px;
+	height: 27px;
+	margin: 5px 0px 0px 5px;
+	}
+	
+#preamble p {
+	margin: -2px 88px 7px 18px;
+	font: 11px/7px Tahoma,sans-serif;
+	line-height: 1.2;
+	color: #fff;
+	}
+
+/* main text and subsections */
+#supportingText {
+	position: absolute;
+	top: 290px;
+	left: 180px;
+	width: 440px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	}
+
+#supportingText p {
+	font: x-small Verdana,sans-serif;
+	color: #333;
+	text-align: justify;
+	}
+
+#explanation {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 440px;
+	}
+
+#explanation h3 {
+	width: 258px;
+	height: 21px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: transparent url(sowhatisthisabout.gif) no-repeat;
+	}
+
+#participation {
+	float: left;
+	width: 210px;
+	padding: 0;
+	margin: 10px 0;
+	}
+
+#participation h3 {
+	width: 210px;
+	height: 21px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: transparent url(participation.gif) no-repeat;
+	}
+
+#benefits {
+	float: right;
+	width: 210px;
+	padding: 0;
+	margin: 10px 0;	
+	}
+
+#benefits h3 {
+	width: 210px;
+	height: 21px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: transparent url(benefits_old.gif) no-repeat;
+	}
+
+#requirements {
+	float: right;
+	width: 210px;
+	padding:0;
+	margin: 10px 0;
+	}
+
+#requirements h3 {
+	width: 210px;
+	height: 21px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: transparent url(requirements.gif) no-repeat;
+	}
+
+#footer {
+	width: 210px;
+	display: block;
+	text-align: right;
+	}
+	
+#footer a {
+	display: block;
+	font: 9px Verdana, sans-serif;
+	font-weight: 900;
+	}
+
+/* links and subsections */
+#linkList {
+	position: absolute;
+	top: 321px;
+	left: 6px;
+	width: 150px;
+	height: 66%;
+}
+
+#linkList div {
+	padding-bottom: 10px;
+	}
+ 
+#linkList ul {
+	margin-left: 5px;
+	list-style: none;
+	color: #fff;
+	}
+	
+#linkList ul li a {
+	display: block;
+	}
+	
+#linkList ul li a:link {
+	font-weight: 900;
+	color: #4C83AE;
+	}
+
+#linkList ul li a:visited {
+	font-weight: 900;
+	color: #999999;
+	}
+
+#linkList ul li a:hover,
+#linkList ul li a:active {
+	font-weight: 900;
+	color: #9B3F17;
+	}
+	
+#linkList ul li a.c {
+	display: inline;
+	}
+	
+#linkList ul li a.c:link {
+	font-weight: 500;
+	color: #4C83AE;
+	}
+
+#linkList ul li a.c:visited {
+	font-weight: 500;
+	color: #999;
+	}
+
+#linkList ul li a.c:hover,
+#linkList ul li a.c:active {
+	font-weight: 500;
+	color: #9B3F17;
+	}
+
+#lselect h3 {
+	width: 139px;
+	height: 19px;
+	background: transparent url(selectdesign.gif) no-repeat;
+	}
+	
+#larchives h3 {
+	width: 75px;
+	height: 16px;
+	background: transparent url(archives.gif) no-repeat;
+	}
+
+#lfavorites h3 {
+	width: 89px;
+	height: 19px;
+	background: transparent url(favorites.gif) no-repeat;
+	}
+
+#lresources h3 {
+	width: 91px;
+	height: 19px;
+	background: transparent url(resources.gif) no-repeat;
+	}
+
+#pageHeader h1,
+#pageHeader h2,
+#preamble h3 span,
+#supportingText h3 span,
+#linkList h3 span {
+	display: none;
+	}

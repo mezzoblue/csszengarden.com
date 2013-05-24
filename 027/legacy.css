@@ -1,0 +1,221 @@
+/* css Zen Garden submission 027 - 'Gothica' by Patrick H. Lauke aka redux - http://redux.deviantart.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Patrick H. Lauke */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+/* Based on the "Gothica" CSS design example for the SitePoint CSS design contest */
+
+/* decorative icons/patterns adapted from http://www.squidfingers.com/ */
+
+
+
+/* basic stuff */
+
+
+body {
+	font: 0.65em/1.3em Verdana, Arial, Helvetica, sans-serif ;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	background: #eee url(background.png) fixed;
+	color: #000;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+h3 {
+	width: 100%; /* needed for IE5+ */
+	font-family: Times, serif;
+	font-size: 100%;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	word-spacing: 0.3em;
+	border-bottom: #888 1px solid;
+}
+
+html > body h3 {
+	/* redefinition of the border to dotted,
+	hidden from IE - because the dashed line
+	that IE uses instead of dots looks a bit
+	too crude in my opinion */
+	border-bottom: #000 1px dotted;
+}
+
+acronym {
+	/* in this case, I can live with IE's dashed line */
+	border-bottom: #000 1px dotted;
+}
+
+a, a:link { color: #900; background: transparent; text-decoration: none; }
+a:visited { color: #933; background: transparent }
+a:hover { color: #966; background: transparent }
+a:active { color: #988; background: transparent }
+
+/* let's start with the whole page container */
+
+#container {
+	position: relative;
+	margin: 10px auto;
+	width: 750px;
+	padding: 5px;
+	text-align: left;
+	background: #f5f5f5 url(pattern.png) no-repeat center;
+	border: #000 1px solid;
+	color: inherit;
+}
+
+/* and now the specific divs */
+
+#pageHeader {
+	padding: 5px;
+	height: 160px;
+	margin: 5px;
+	border: #000 solid 1px;
+	text-align: left;
+	background: #fff url(tophead.png) no-repeat top left;
+	color: inherit;
+}
+
+#pageHeader h1, #pageHeader h2 {
+	display: none;
+}
+
+
+#quickSummary {
+	border: 1px #000 dotted;
+	background: #fff;
+	color: inherit;
+	font-size: 0.85em;
+}
+
+#quickSummary, #preamble, #supportingText {
+	text-align: left;
+	margin: 1em 170px 1em 25px;
+	padding: 5px;
+}
+
+#quickSummary a, #preamble a, #supportingText a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#explanation {
+	/* a little inelegant, but gets the job done */
+	margin-top: -3em;
+}
+
+#linkList {
+	position: absolute;
+	top: 180px;
+	right: 0;
+	padding: 25px 5px 5px 5px;
+	margin: 0;
+	width: 150px;
+	background: url(spikes.png) no-repeat center top;
+}
+
+#lselect ul, #lresources ul, #larchives ul {
+	margin: 0 0 0.5em 0;
+	padding: 0;
+}
+
+#lselect ul li, #lresources ul li, #larchives ul li{
+	list-style-type: none;
+	border: #000 1px solid;
+	padding: 2px;
+	margin: 2px;
+	text-align: left;
+	background: #fff;
+	color: inherit;
+}
+
+/* there seems to be an issue in Opera with the hover on the lselect...
+any clues to a solution would be appreciated ;) */
+
+#lselect ul li:hover, #lresources ul li:hover, #larchives ul li:hover {
+	background: #900;
+	color: #fff;
+}
+
+#lselect ul li:hover a, #lresources ul li:hover a, #larchives ul li:hover a {
+	background: inherit;
+	color: #eee;
+}
+
+#lselect ul a:hover, #lresources ul a:hover, #larchives ul a:hover {
+	/* this style is there to make up for IE's inability to apply
+	:hover pseudo to an li. of course, it won't look the same as having the whole
+	li turn red, but it should be an acceptable compromise */
+	background: #900;
+	color: #eee;
+}
+
+#lresources, #larchives {
+	padding: 25px 5px 5px 5px;
+	background: url(spikes.png) no-repeat center top;
+}
+
+
+
+#footer {
+	margin: 0;
+	padding: 5px;
+	/* again, I can live with IE's dashed line */
+	border: 1px #000 dotted;
+	background: #fff;
+	color: inherit;
+	text-align: center;
+}
+
+#footer a {
+	margin-right: 20px;
+	padding-left: 18px;
+	background: url(bullet.png) no-repeat left center;
+}
+
+
+
+/* and now for the big caps for each paragraph in supportingText
+this is again hidden from IE, as it tends to crash otherwise and
+I really can't be bothered to work around its flaws...consider it
+icing on the cake for non-IE users */
+
+body > div#supportingText p:first-letter {
+	font: 2em Times, Helvetica, serif;
+	float: left;
+	text-transform: uppercase;
+	margin: 0 3px 3px 0;
+	padding: 0; 
+}
+
+/* 	the following two rules may be just a minor detail, but i think it's worth it.
+they add a little download icon in front of the sample CSS and HTML download links.
+the first one works in all 5+ browsers, whereas the second one is only for CSS2 compliant
+ones. also, use of the |= selector may be "unorthodox", but it was the best I could come up
+with since the two download links in the "participation" div are not especially marked up
+with a class, AND there are other links in that div ("CSS Resource Guide", "Send us a link" and "contact me") that
+do not need the little icon...hence the rule could not be applied to "#participation a" */
+
+#quickSummary a {
+	padding-left: 15px;
+	background: url(download.png) no-repeat left center;
+}
+
+#participation a[href|=zengarden] { 
+	/* CSS2-compliant only */
+	padding-left: 15px;
+	background: url(download.png) no-repeat left center;
+}
+
+/* no need for extras...they're just not displayed */
+
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+	display: none;
+}

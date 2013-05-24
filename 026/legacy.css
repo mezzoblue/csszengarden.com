@@ -1,0 +1,228 @@
+/* css Zen Garden submission 026 - 'Zunflower' by Radu Darvas - http://www.cssgatto.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Radu Darvas */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+body { 
+	font: 12px/16px arial, helvetica, verdana, sans-serif; 
+	color: #555; 
+	background: url(bg_left.gif) repeat-y #fff;
+	margin: 0; 
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #655;
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: #e60;
+}
+acronym {
+	border: 0 none;
+}
+
+#container {
+	margin: 0;
+	padding: 0;
+}
+
+#quickSummary p, #preamble p {
+	margin: 0;
+	padding: 8px 30px 4px 18px;
+}
+#quickSummary .p1 {
+	font-weight: bold;
+	color: #777;
+}
+
+#intro {
+	margin: 0;
+	padding: 0;
+	width: 303px;
+}	
+h1 {
+	margin: 0;
+	padding: 0;
+	width: 303px;
+	height: 198px;
+	background: url(h1.jpg) no-repeat transparent;
+}
+h1 span {
+	display: none;
+}
+h2 {
+	margin: 0 0 9px 0;
+	padding: 0;
+	width: 303px;
+	height: 37px;
+	background: url(h2.gif) no-repeat transparent;
+}
+h2 span {
+	display: none;
+}
+
+#preamble h3 {
+	margin: 5px 0 0;
+	padding: 0;
+	width: 303px;
+	height: 36px;
+	background: url(the_road.jpg) no-repeat transparent;
+}
+#preamble h3 span {
+	display: none;
+}
+
+#supportingText {
+	position: absolute;
+	top: 70px;
+	left: 303px;
+	width: 320px;
+	margin: 0;
+	padding: 0;
+	background: url(support_bg.gif) repeat-y top right transparent;
+}
+#supportingText h3, #supportingText p {
+	margin: 0;
+	padding: 0 40px 10px 0px;
+}
+#supportingText h3 span {
+	display: none;
+}
+
+#participation h3 {
+	margin: 0 40px 5px 0px;
+	padding: 0;
+	height: 34px;
+	background: url(parti.gif) no-repeat transparent;
+	border-bottom: 1px solid #ccc;
+}
+#benefits h3 {
+	margin: 0 40px 5px 0px;
+	padding: 0;
+	height: 34px;
+	background: url(bene.gif) no-repeat transparent;
+	border-bottom: 1px solid #ccc;
+}
+#requirements h3 {
+	margin: 0 40px 5px 0px;
+	padding: 0;
+	height: 34px;
+	background: url(req.gif) no-repeat transparent;
+	border-bottom: 1px solid #ccc;
+}
+#requirements p.p5 {
+	border-top: 1px solid #ccc;
+	margin: 10px 40px 5px 0;
+	padding: 10px 0 0;
+}
+#preamble h3 span {
+	display: none;
+}
+
+
+#explanation {
+	background: url(so_what_bg.gif) no-repeat top right transparent;
+}
+#explanation h3 {
+	margin: 0 15px 20px 0;
+	padding: 0;
+	height: 36px;
+	background: url(so_what.jpg) no-repeat transparent;
+}
+#explanation h3 span {
+	display: none;
+}
+
+
+#linkList {
+	position: absolute;
+	top: 130px;
+	left: 608px;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+}
+#linkList h3.select {
+	margin: 0;
+	padding: 0;
+	background: url(select.jpg) no-repeat transparent;
+	height: 26px;
+}
+#linkList h3.archives {
+	margin: 0;
+	padding: 0;
+	background: url(archives.jpg) no-repeat transparent;
+	height: 26px;
+}
+#linkList h3.resources {
+	margin: 0;
+	padding: 0;
+	background: url(resources.jpg) no-repeat transparent;
+	height: 26px;
+}
+#linkList h3 span {
+	display: none;
+}
+
+
+
+#linkList #lselect a {
+	text-decoration: underline;
+	color: #766;
+	display: block;
+}
+#linkList #lselect a:visited {
+	text-decoration: underline;
+	color: #aaa;
+}
+#linkList #lselect a:hover {
+	text-decoration: underline;
+	color: #e60;
+}
+#linkList #lselect a.c {
+	display: inline;
+	text-decoration: none;
+	color: #888;
+}
+#linkList #lselect a.c:visited {
+	text-decoration: none;
+	color: #999;
+}
+#linkList #lselect a.c:hover {
+	text-decoration: none;
+	color: #e60;
+}
+
+
+
+#footer {
+	position: relative;
+	margin: 25px 15px 0 -14px;
+	padding: 3px 0 0 20px;
+	background: url(foot.jpg) no-repeat;
+	height: 23px;
+}
+#footer a {
+	color: #fff;
+	vertical-align: middle;
+}
+
+ul {
+	margin: 7px 0 7px 20px;
+	padding: 0;
+}
+li {
+	margin: 0 0 5px;
+	padding: 0;
+	list-style-type: none;
+}

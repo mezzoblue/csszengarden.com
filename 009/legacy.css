@@ -1,0 +1,327 @@
+/* css Zen Garden submission 009 - 'Dead or Alive' by Michael Pick, http://www.mikepick.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Michael Pick */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* basic elements */
+body {
+	color: #000;
+	background: #fff url(body-bg.png);
+	margin: 0px auto;
+	}
+
+p {
+	font: 12px/15px georgia, serif;
+	text-align: justify;
+	margin-top: 0;
+	}
+	
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #000;
+	}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #333;
+	}
+
+a:hover, a:active { 
+	text-decoration: underline; 
+	}
+	
+/* specific divs */
+
+#container { 
+	background: url(frill-bg.png) repeat-x;
+	border-right: 1px solid #333;
+	width: 800px;
+	margin: 0px;
+	}
+	
+#intro { 
+	min-width: 470px;
+	}
+
+#pageHeader { 
+	width: 280px;
+	float: left;
+	margin-top: 40px;
+	}
+	
+	#pageHeader h1 { 
+		background: transparent url(pageheader-bg.png) no-repeat; 
+		margin-left: 40px;
+		width: 240px; 
+		height: 220px; 
+		}
+
+	#pageHeader h1 span {
+		display:none
+		}
+
+	#pageHeader h2 span {
+		display:none;
+		}
+		
+#quickSummary {
+	clear:both;
+	width: 280px; 
+	float: left;
+	margin-bottom: 20px;
+	}
+	
+	#quickSummary p {
+		font-family: georgia, times, serif;
+		font-size: 10px;
+		text-transform: uppercase; 
+		text-align:center;
+		padding-left: 60px;
+		padding-right: 20px;
+		}
+		
+#preamble {
+	margin-left: 280px;
+	width: 460px;
+	padding-top: 90px;
+	}
+	
+	#preamble h3 {
+		background: transparent url(preamble.png) no-repeat; 
+		width: 460px; 
+		height: 70px;
+		}
+
+	#preamble h3 span {
+		display: none;
+		}
+		
+	#preamble a:link {
+		color: #600;
+		}
+		
+	#preamble p {
+		line-height: 150%;
+		}
+		
+#supportingText {
+	margin-left: 0px;
+	}
+	
+	#supportingText a:link {
+		color: #600;
+		}
+	
+#explanation {
+	margin-left: 280px;
+	width: 460px;
+	}
+	
+	#explanation h3 {
+		background: transparent url(sowhat.png) no-repeat; 
+		width: 460px; 
+		height: 50px;
+		margin-bottom: 20px;
+		}
+
+	#explanation h3 span {
+		display: none;
+		}
+		
+	#explanation p {
+		line-height: 150%;
+		}
+	
+#participation {
+	width: 460px;
+	}
+	
+	#participation h3 {
+		background: transparent url(participation.png) no-repeat; 
+		width: 460px; 
+		height: 50px;
+		margin-bottom: 20px;
+		}
+
+	#participation h3 span {
+		display: none;
+		}
+		
+	#participation p {
+		line-height: 150%;
+		}
+	
+#benefits {
+	width: 460px;
+	}
+	
+	#benefits h3 {
+		background: transparent url(benefits.png) no-repeat; 
+		width: 460px; 
+		height: 50px;
+		margin-bottom: 20px;
+		}
+
+	#benefits h3 span {
+		display: none;
+		}
+		
+	#benefits p {
+		line-height: 140%;
+		}
+	
+#requirements {
+	width: 460px;
+	}
+	
+	#requirements h3 {
+		background: transparent url(requirements.png) no-repeat; 
+		width: 460px; 
+		height: 50px;
+		margin-bottom: 20px;
+		}
+
+	#requirements h3 span {
+		display: none;
+		}
+		
+	#requirements p {
+		line-height: 140%;
+		}
+		
+#footer {
+	margin-top: 40px;
+	background: transparent url(footer.png) repeat-x;
+	height: 58px;
+	width: 800px;
+	text-align: center;
+	margin-left: -280px;
+	}
+		
+#linkList {
+	position: absolute; 
+	top: 28em;
+	left: 40px;
+	width: 240px;
+	}
+	
+#linkList2 { 
+	font: 10px georgia, times, serif;
+	text-transform: uppercase;
+	}
+	
+	#linkList h3.select { 
+		background: transparent url(select.png) no-repeat top left; 
+		margin: 10px 0px 5px 0px; 
+		width: 240px; 
+		height: 50px;
+		margin-bottom: 10px;
+		}
+		
+	#lselect {
+		padding-bottom: 20px;
+		}
+
+	#linkList h3.select span {
+		display:none
+		}
+
+	#linkList h3.favorites { 
+		background: transparent url(favorites.png) no-repeat top left; 
+		width: 240px; 
+		height: 50px;
+		margin-bottom: 10px;
+		}
+
+	#linkList h3.favorites span {
+		display:none
+		}
+
+	#linkList h3.archives { 
+		background: transparent url(archives.png) no-repeat top left; 
+		width: 240px; 
+		height: 50px;
+		margin-bottom: 10px;
+		}
+	
+	#linkList h3.archives span {
+		display:none
+		}
+
+	#linkList h3.resources { 
+		background: transparent url(resources.png) no-repeat top left; 
+		width: 250px; 
+		height: 50px;
+		margin-bottom: 10px;
+		}
+	
+	#linkList h3.resources span {
+		display:none
+		}
+
+
+	#linkList ul {
+		margin: 0px;
+		padding: 0px;
+		}
+
+	#linkList li {
+		line-height: 2.5ex; 
+		display: block;
+		text-align: center;
+		padding-top: 5px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 5px;
+		list-style-type: none;
+		}
+	
+	#linkList li a:link { 
+		color: #000;
+		}
+	
+	#linkList li a:visited {
+		color: #333;
+		}
+			
+#extraDiv1 { 
+	background: transparent url(certified.png) top left no-repeat; 
+	position: absolute; 
+	top: 160px; 
+	left: 0px; 
+	width: 100px; 
+	height: 110px;
+	z-index: 0;
+	}
+	
+/* hidden from IE 5 mac */
+	
+@media all {
+	#explanation {
+		margin-left: 280px;
+		}
+		
+	#participation {
+		margin-left: 280px;
+		}
+		
+	#benefits {
+		margin-left: 280px;
+		}
+		
+	#requirements {
+		margin-left: 280px;
+		}
+		
+	#footer {
+		margin-left: 0px;
+	}
+}

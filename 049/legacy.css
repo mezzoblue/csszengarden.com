@@ -1,0 +1,249 @@
+/* css Zen Garden default style - 'Tranquille' by Dave Shea - http://www.mezzoblue.com/ */
+/* css released under Zen Garden License - http://www.mezzoblue.com/zengarden/license/  */
+/* All associated graphics copyright 2003, Dave Shea */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* Please view the Zen Garden License for more information. http://www.mezzoblue.com/zengarden/license/ */
+
+
+/* The Zen Garden default was the first I put together, and almost didn't make the cut. I briefly flirted with using
+    'Salmon Cream Cheese' as the main style for the Garden, but switched back to this one before launch.
+
+    All graphics in this design were illustrated by me in Photoshop. Google Image Search provided inspiration for
+    some of the elements. I did a bit of research on Kanji to come up with the characters on the top left. Anyone who
+    can read that will most likely tell you it makes no sense, but the best I could do was putting together the
+    characters for 'beginning' 'complete' and 'skill' to roughly say something like 'we're breaking fresh ground.'
+
+    It's a stretch. */
+
+
+/* basic elements */
+
+	html {
+		margin: 0px;
+		padding: 0px;
+	}
+	body {
+		font: 11px/14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+		color: #999;
+		margin: 0px;
+		padding: 0px;
+		text-align: left;
+		background: #fff url(bg.gif) repeat-y;
+	}
+	p {
+		font: 11px/14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+		margin: 0px;
+		margin-top: 10px;
+		padding:0px;
+	}
+	a:link {
+		font-weight: bold;
+		text-decoration: none;
+		color: #FFCC00;
+	}
+	a:visited {
+		font-weight: bold;
+		text-decoration: none;
+		color: #666;
+	}
+	a:hover, a:active {
+		text-decoration: none;
+		color: #666;
+	}
+	acronym {
+		border-bottom: none;
+	}
+	/* specific divs */
+	#container {
+		padding: 0px;
+		margin: 0px;
+	}
+	#intro{
+		width: 760px;
+		position:absolute;
+		top:0px;
+		left:0px;
+	}
+	#intro{
+		width: 760px;
+	}
+	#pageHeader {
+		background: transparent url(headerbg2.gif) no-repeat top left;
+		height: 83px;
+	}
+
+	#pageHeader h1 {
+		background: transparent url(title.gif) no-repeat top left;
+		margin: 0px;
+		width: 760px;
+		height: 43px;
+	}
+	#pageHeader h1 span {
+		display:none
+	}
+	#pageHeader h2 {
+		background: transparent url(sub.gif) no-repeat top right;
+		width: 760px;
+		height: 42px;
+		margin: 0px;
+		padding:0px;
+	}
+	#pageHeader h2 span {
+		display:none
+	}
+	#quickSummary p.p1{
+		margin:0px;
+		margin-left: 199px;
+		padding: 20px;
+		text-align:justify;
+		background: transparent url(hordot.gif) repeat-x bottom;
+	}
+	#quickSummary p.p2{
+		margin:0px;
+		margin-left: 199px;
+		padding: 20px;
+		width: 520px;
+		background: transparent url(hordot.gif) repeat-x bottom;
+	}
+	#preamble{
+		margin-left: 199px;
+		padding-left: 20px ;
+		padding-right: 20px;
+		padding-bottom: 4px;
+		width: 520px;
+		background:transparent url(hordot.gif) repeat-x bottom;
+	}
+	#supportingText {
+		position: absolute;
+		top:390px;
+		left: 199px;
+		width: 560px;
+		padding-bottom: 20px;
+	}
+	#preamble h3, #explanation h3, #participation h3, #benefits h3, #requirements h3{
+		margin:20px 0px 10px 0px;
+		width:200px;
+		height:19px;
+	}
+	#preamble h3{
+		background: transparent url(preh3.gif) no-repeat top left;
+	}
+	#explanation h3{
+		background: transparent url(exph3.gif) no-repeat top left;
+	}
+	#participation h3{
+		background: transparent url(parth3.gif) no-repeat top left;
+	}
+	#benefits h3, #requirements h3{
+		background: transparent url(benh3.gif) no-repeat top left;
+	}
+	#requirements h3{
+		background: transparent url(reqh3.gif) no-repeat top left;
+	}
+	
+	#preamble h3 span, #explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span, #lselect h3 span, #lfavorites h3 span, #larchives h3 span, #lresources h3 span{
+		display:none;
+	}
+	#preamble p.p3, #explanation p.p2, #participation p.p4, #benefits p.p1, #requirements p.p5 {
+		padding-bottom: 20px;
+		margin:0px;
+	}
+	#preamble, #explanation, #participation, #benefits, #requirements {
+		padding-left: 20px ;
+		padding-right: 20px;
+		padding-bottom: 4px;
+		background:transparent url(hordot.gif) repeat-x bottom;
+	}
+	#linkList{
+		position: absolute;
+		top:260px;
+		left: 0px;
+		padding:0px;
+		margin:0px;
+		width: 180px;
+	}
+	#lselect h3{
+		padding:0px;
+		margin:0px;
+		width:199px;
+		height:21px;
+	}
+	#lfavorites h3, #larchives h3, #lresources h3{
+		padding:0px;
+		margin:0px;
+		width:199px;
+		height:21px;
+	}
+	#lselect h3{
+		background: transparent url(select.gif) no-repeat top left;
+	}
+	#lfavorites h3{
+		background: transparent url(fav.gif) no-repeat top left;
+	}
+	#larchives h3{
+		background: transparent url(arc.gif) no-repeat top left;
+	}
+	#lresources h3{
+		background: transparent url(res.gif) no-repeat top left;
+	}
+	#lselect ul, #lfavorites ul, #larchives ul, #lresources ul{
+		margin: 0;
+		padding: 0;
+		margin-top:20px;
+		margin-bottom: 20px;
+		list-style-type: none;
+	}
+	
+	#lselect li, #lfavorites li, #larchives li, #lresources li
+	{
+		padding-left: 12px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#lselect a, #lfavorites a
+	{
+		background: transparent url(bul2.gif) no-repeat 0px 2px;
+		padding-left:18px;
+		display:block;
+	}
+	#lselect a:hover, #lfavorites a:hover
+	{
+		background: transparent url(bul1.gif) no-repeat 0px 2px;
+		padding-left:18px;
+		display:block;
+	}
+	#lselect a.c, #lfavorites a.c
+	{
+		font: 11px/14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+		color: #999;
+		font-weight: normal;
+		text-decoration:none;
+		background: transparent;
+		padding-left:0px;
+		display:inline;
+		}
+	#lselect a.c:hover, #lfavorites a.c:hover
+	{
+		background: transparent;
+		padding-left:0px;
+		display:inline;
+	}
+	#footer{
+		width: 520px;
+		padding-left: 20px ;
+		padding-right: 20px;
+		padding-bottom: 4px;
+		background: #efefef url(hordot.gif) repeat-x bottom;;
+	}
+	#extraDiv1{
+		width:196px; 
+		height:177px;
+		top: 63px;
+		left:1px;
+		position:absolute;
+		background: transparent url(buda.jpg) no-repeat;
+	}
+	

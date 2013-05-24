@@ -1,0 +1,212 @@
+/* css Zen Garden submission - 'Tiny Blue', by Timo Virtanen, http://www.timovirtanen.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Timo Virtanen */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+body{
+	text-align:center;
+	margin:0;
+	padding:0;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:0.75em;
+	color:#fff;
+	background:#fff url(pics/background.gif) repeat-y top center;
+	}
+	
+h1, h2, h3{
+	font-size:1.4em;
+	text-align:center;
+	margin:0;
+	padding:0;
+	}
+	
+p{
+	margin:0.9em 0 0.9em 0;
+	padding:0;
+	line-height:1.2em;
+	}
+	
+#container{
+	width:396px;
+	position:absolute;
+	left:50%;
+	margin-left:-198px;
+	}
+	
+* html #container{ /*IE FIX*/
+	margin-left:-197px;
+	}
+	
+#container h3{
+	padding:6px 0;
+	background:url(pics/header_bg.gif) top left repeat;
+	}
+	
+#supportingText, #preamble, #linkList{
+	padding:0 30px;
+	text-align:justify;
+	}
+	
+#preamble h3{
+	margin-top:1.4em;
+	}
+	
+ul{
+	padding:0;
+	margin:0;
+	}
+	
+ul li{
+	list-style:none;
+	padding-left:1em;
+	border-bottom:1px #365779 solid;
+	height:1.6em;
+	}
+	
+ul li a:link, ul li a:visited, ul li acronym{
+	color:#ffa94d;
+	font-weight:normal;
+	text-decoration:none;
+	}
+	
+ul li acronym{
+	border-bottom:1px dotted #ffa94d;
+	}
+	
+ul li a:hover, ul li a:active, ul li a:hover acronym{
+	color:#fff;
+	text-decoration:underline;
+	}
+	
+ul li a.c:link, ul li a.c:visited{
+	color:#bcd0e5;
+	font-style:italic;
+	}
+	
+ul li a.c:hover, ul li a.c:active{
+	color:#fff;
+	}
+	
+ul li:hover{
+	background:url(pics/list_over.gif) top left repeat-x;
+	}
+	
+acronym{
+	color:#bcd0e5;
+	border-bottom:1px dotted #bcd0e5;
+	cursor:help;
+	}
+	
+a:link, a:visited{
+	color:#fff;
+	font-weight:bold;
+	text-decoration:underline;
+	}
+	
+a:hover, a:active{
+	color:#bcd0e5;
+	text-decoration:none;
+	}
+	
+#pageHeader{
+	width:396px;
+	height:319px;
+	background:url(pics/header.jpg) no-repeat top left;
+	}
+	
+#quickSummary{
+	margin:-0.9em 0 0 0;
+	padding:0;
+}
+	
+#quickSummary .p2{
+	padding:0;
+	margin:0 0 0.9em 0;
+	width:396px;
+	height:25px;
+	background:url(pics/download.gif) no-repeat top left;
+}
+	
+#quickSummary .p2 span{
+	visibility:hidden;
+	white-space:nowrap;
+	}
+
+#quickSummary .p2 span a{
+	visibility:visible;
+	text-indent:-9000px;
+	display:block;
+	margin-top:-1.1em;
+	height:25px;
+	float:left;
+	width:198px;
+	overflow:hidden;
+	}
+	
+#linkList{
+	background:#fff url(pics/background2.gif) repeat-y top center;
+	padding-top:0.5em;
+	}
+
+#lselect h3, #larchives h3, #lresources h3{
+	width:336px;
+	height:21px;
+	margin-top:1em;
+	}
+	
+#lselect h3{
+	background:url(pics/header_design.gif) no-repeat top left;
+	}
+	
+#larchives h3{
+	background:url(pics/header_archives.gif) no-repeat top left;
+	}
+	
+#lresources h3{
+	background:url(pics/header_resources.gif) no-repeat top left;
+	}
+	
+#lresources ul{
+	padding-bottom:8em;
+	}
+	
+#footer{
+	text-align:center;
+	position:absolute;
+	margin-top:43em;
+	margin-left:-30px;
+	padding:6px 0;
+	padding-bottom:1em;
+	width:396px;
+	height:72px;
+	text-transform:uppercase;
+	background:url(pics/footer.gif) bottom left no-repeat;
+	}
+	
+#extraDiv1{
+	position:fixed;
+	top:0;
+	width:37px;
+	height:433px;
+	left:50%;
+	margin-left:-235px;
+	background:url(pics/the_beauty.gif) no-repeat top left;
+	}
+	
+* html #extraDiv1{
+	position:absolute;
+	}
+	
+/*hidden*/
+
+#linkList h3 span,
+#pageHeader h1,
+#pageHeader h2,
+#quickSummary p.p1 span{
+	display:none;
+	}

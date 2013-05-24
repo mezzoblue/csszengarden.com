@@ -1,0 +1,203 @@
+/* css Zen Garden submission 186 - 'Floral Simplicity', by Mani Sheriar, http://www.manisheriar.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Mani Sheriar */
+/* Added: November 10th, 2005 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+* {
+	margin:0;
+	padding:0;
+	}
+body {
+	background:#cadeb9 url(zenGarden.gif) no-repeat top left;
+	background-attachment:fixed;
+	padding:14px 20px 0 73px;
+	margin:0;
+	}
+p {
+	margin:12px 0;
+	}
+#container {
+	position:absolute;
+	width:700px;
+	margin:0;
+	padding:0;
+	background:transparent url(lines.gif) repeat-y top left;
+	}
+#intro {
+	position:relative;
+	text-align:left;
+	background:transparent url(pink.jpg) no-repeat top left;
+	width:335px;
+	font:normal 13px/18px arial;
+	color:#333;
+	padding:150px 75px 0 75px;
+	}
+#pageHeader {
+	display:none;
+	}
+#quickSummary {
+	}
+#quickSummary p.p1 {
+	color:#7CAF6B;
+	font-style:italic;
+	font-size:14px;
+	padding-top:0 !important;
+	padding-top:12px;
+	}
+#quickSummary p.p2 {
+	padding-left:20px;
+	background:transparent url(download.gif) no-repeat top left;
+	color:#C99AAD;
+	}
+#quickSummary p.p2 a {
+	color:#C99AAD;
+	}
+#quickSummary p.p2 a:hover {
+	color:#fff;
+	text-decoration:none;
+	background-color:#E2C0CE;
+	}
+#preamble {
+	margin-top:24px;
+	color:#999;
+	}
+h3 span {
+	display:none;
+	}
+#preamble h3 {
+	width:260px;
+	height:16px;
+	background:url(enlightenment.gif) no-repeat;
+	}
+#supportingText {
+	position:relative;
+	font:normal 13px/18px arial;
+	color:#999;
+	width:335px;
+	margin-left:75px;
+	z-index:200;
+	}
+#supportingText h3 {
+	margin-top:24px;
+	}
+#supportingText a {
+	color:#98A892;
+	}
+#supportingText a:hover {
+	text-decoration:none;
+	color:#fff;
+	background-color:#ADC8A2;
+	}	
+#explanation h3 {
+	width:202px;
+	height:16px;
+	background:url(about.gif) no-repeat;
+	}
+#participation h3 {
+	width:202px;
+	height:16px;
+	background:url(participation.gif) no-repeat;
+	}
+#benefits h3 {
+	width:202px;
+	height:16px;
+	background:url(benefits.gif) no-repeat;
+	}
+#requirements h3 {
+	width:230px;
+	height:16px;
+	background:url(requirements.gif) no-repeat;
+	}
+#requirements {
+	padding-bottom:1px;
+	}
+#footer {
+	position:absolute;
+	background:url(footerBg.gif) no-repeat top center;
+	width:485px;
+	height:48px;
+	margin-left:-150px;
+	padding-left:150px;
+	padding-top:27px;
+	padding-bottom:0;
+	margin-bottom:0;
+	z-index:300;
+	text-indent:-150px;
+	text-align:center;
+	font-size:11px;
+	}
+#linkList {
+	position:absolute;
+	top:0;
+	width:200px;
+	left:500px;
+	font:normal 11px/15px arial;
+	color:#999;
+	background:#fff url(lines2.gif) repeat-y top center;
+	color:#666;
+	float:left;
+	}
+#linkList2 {
+	background:transparent url(orange.jpg) no-repeat top left;
+	padding:50px 25px 0 25px;
+	width:150px;
+	}
+h3.select {
+	width:115px;
+	height:18px;
+	background:url(select.gif) no-repeat;
+	}
+h3.archives {
+	width:115px;
+	height:18px;
+	background:url(archives.gif) no-repeat;
+	}
+h3.resources {
+	width:115px;
+	height:18px;
+	background:url(resources.gif) no-repeat;
+	}
+#linkList a {
+	color:#98A892;
+	}
+#linkList a:hover {
+	color:#fff;
+	background-color:#ADC8A2;
+	text-decoration:none;
+	}
+#lselect a {
+	display:block;
+	}
+#lselect a.c {
+	display:inline;
+	color:#999;
+	}
+#lselect a.c:hover {
+	color:#C99AAD;
+	background:none;
+	}
+ul {
+	margin:4px 0 16px 18px;
+	}
+li {
+	margin:4px 0;
+	list-style-image:url(bullet.gif);
+	}
+#lresources {
+	margin:0 -25px;
+	padding:0 25px 15px 25px;
+	background:url(linkListBottom.gif) no-repeat bottom center;
+	}
+#lresources ul {
+	margin-bottom:0;
+	padding-bottom:14px;
+	}

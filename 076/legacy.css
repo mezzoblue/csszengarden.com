@@ -1,0 +1,319 @@
+/* css Zen Garden submission 076 - 'Lotus' by Chika */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Chika */
+/* Added: February 3rd, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+
+
+/* basic elements */
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+	font-size: 12px;
+	line-height: 133%;
+	color: #333333;
+	font-family: arial, helvetica, sans-serif;
+	text-align: center;
+}
+
+a {
+	color: #996699;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+/* frame */
+#container {
+	background: transparent url(body_bg.gif) repeat-y top left;
+	margin: 0px auto;
+	padding: 0px;
+	width: 752px;
+	text-align: left;
+}
+
+/* header */
+#pageHeader {
+	margin: 0px 12px;
+	padding: 107px 0px 0px 0px;
+}
+
+#pageHeader h1 {
+	position: relative;
+	background: transparent url(title.gif) no-repeat top left;
+	margin: 0px;
+	padding: 0px;
+	width: 728px;
+	height: 37px;
+	z-index: 2;
+}
+
+#pageHeader h1 span {
+	display: none;
+}
+
+#pageHeader h2 {
+	position: absolute;
+	background: transparent url(catch.gif) no-repeat top left;
+	margin: 5px 0px 0px 9px;
+	padding: 0px;
+	width: 162px;
+	height: 17px;
+	z-index: 2;
+}
+
+#pageHeader h2 span {
+	display: none;
+}
+
+#quickSummary {
+	position: relative;
+	margin: 6px 0px 0px 428px;
+	width: 300px;
+	height: 97px;
+	z-index: 2;
+}
+
+#quickSummary p  {
+	margin: 0px;
+	padding: 0px;
+	font-size: 11px;
+	line-height: 125%;
+}
+
+/* contents */
+#preamble {
+	position: relative;
+	margin: 0px 0px 25px 262px;
+	padding: 0px;
+	width: 466px;
+	z-index: 1;
+}
+
+#supportingText {
+	background: transparent url(footer_bg.gif) no-repeat bottom left;
+	margin: 0px 12px;
+	padding: 0px;
+}
+
+#explanation, #participation, #benefits, #requirements {
+	position: relative;
+	margin: 0px 0px 0px 250px;
+	padding: 0px 0px 20px 0px;
+	width: 466px;
+	z-index: 1;
+}
+
+#participation, #requirements {
+	padding: 0px 0px 10px 0px;
+}
+
+#benefits {
+	padding: 10px 0px 30px 0px;
+}
+
+#explanation {
+	background: transparent url(contents_txt_bg_02.gif) no-repeat center center;
+}
+
+#participation {
+	background: transparent url(contents_txt_bg_03.gif) no-repeat center center;
+}
+
+#benefits {
+	background: transparent url(contents_txt_bg_04.gif) no-repeat center center;
+}
+
+#requirements {
+	background: transparent url(contents_txt_bg_05.gif) no-repeat center center;
+}
+
+#preamble h3, #explanation h3, #participation h3, #benefits h3, #requirements h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+#preamble h3 {
+	background: transparent url(head_preamble.gif) no-repeat top left;
+	width: 202px;
+	height: 35px;
+}
+
+#explanation h3 {
+	background: transparent url(head_explanation.gif) no-repeat top left;
+	width: 173px;
+	height: 35px;
+}
+
+#participation h3 {
+	background: transparent url(head_participation.gif) no-repeat top left;
+	width: 95px;
+	height: 35px;
+}
+
+#benefits h3 {
+	background: transparent url(head_benefits.gif) no-repeat top left;
+	width: 65px;
+	height: 35px;
+}
+
+#requirements h3 {
+	position: relative;
+	background: transparent url(head_requirements.gif) no-repeat top left;
+	width: 106px;
+	height: 35px;
+	bottom:10px;
+}
+
+#preamble h3 span, #explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span {
+	display: none;
+}
+
+#preamble p, #explanation p, #participation p, #benefits p, #requirements p {
+	margin: 0px;
+	padding: 4px 0px;
+}
+
+#requirements p {
+	position: relative;
+	bottom:10px;
+}
+
+#footer {
+	margin: 0px 0px 0px 250px;
+	padding: 0px 0px 26px 0px;
+	width: 466px;
+	text-align: right;
+}
+
+#footer a {
+	color: #666666;
+	text-decoration: underline;
+}
+
+/* link */
+#linkList {
+	background: transparent url(link_bg.gif) no-repeat top left;
+	position: absolute;
+	margin: 0px 0px 0px 20px;
+	top: 247px;
+	width: 242px;
+	z-index: 1;
+}
+
+#linkList2 {
+	padding: 0px 0px 8px 0px;
+	background: transparent url(link_footer_bg.gif) no-repeat bottom left;
+}
+
+#linkList ul {
+	margin: 0px 6px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#linkList li {
+	margin: 0px;
+	padding: 1px 0px;
+}
+
+#lselect , #larchives , #lresources {
+	margin: 9px 0px 0px 7px;
+	padding: 0px 0px 12px 0px;
+	width: 219px;
+}
+
+#lselect , #larchives {
+	background: transparent url(link_line.gif) no-repeat bottom left;
+}
+
+#lselect h3, #larchives h3, #lresources h3 {
+	margin: 0px 0px 1px 0px;
+	padding: 0px;
+}
+
+#lselect h3 {
+	background: transparent url(head_select.gif) no-repeat top left;
+	width: 219px;
+	height: 21px;
+}
+
+#larchives h3 {
+	background: transparent url(head_archives.gif) no-repeat top left;
+	width: 219px;
+	height: 21px;
+}
+
+#lresources h3 {
+	background: transparent url(head_resources.gif) no-repeat top left;
+	width: 219px;
+	height: 21px;
+}
+
+#lselect h3 span, #larchives h3 span, #lresources h3 span {
+	display: none;
+}
+
+#lselect a {
+	font-size: 11px;
+	font-weight: bold;
+	color: #336666;
+}
+
+#lselect a.c {
+	font-weight: normal;
+	color: #996699;
+}
+
+#larchives a , #lresources a {
+	color: #333333;
+}
+
+/* images */
+#extraDiv1 {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	text-align: center;
+	width: 100%;
+	z-index: 0;
+}
+
+#extraDiv1 span {
+	background: transparent url(header_bg.jpg) no-repeat top left;
+	margin: 0px auto;
+	padding: 0px;
+	width: 728px;
+	height: 207px;
+	display: block;
+}
+
+#extraDiv2 {
+	position: absolute;
+	top: 227px;
+	left: 0px;
+	text-align: center;
+	width: 100%;
+	z-index: 0;
+}
+
+#extraDiv2 span {
+	background: transparent url(contents_bg.gif) no-repeat top left;
+	margin: 0px auto;
+	padding: 0px;
+	width: 728px;
+	height: 273px;
+	display: block;
+}
+
+#sampleextraDiv3, #sampleextraDiv4, #sampleextraDiv5, #sampleextraDiv6 {
+	display: none;
+}

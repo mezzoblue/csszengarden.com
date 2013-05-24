@@ -1,0 +1,232 @@
+/* css Zen Garden submission 192 - 'LuGoZee', by Viallon Pierre-Antoine, http://www.accxs.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Viallon Pierre-Antoine */
+/* Added: February 15th, 2006 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* CSS Document */
+#css-zen-garden{
+		font-family:Georgia, Garamond, serif;
+		font-size:12px;
+		color:#000001;
+		background-color:#000000;
+		background-image:url(mur_fond.jpg);
+		background-position:top left;
+		background-repeat:repeat-x;		
+		}
+#css-zen-garden H1	{
+	margin:0px;
+	}
+	
+#css-zen-garden H1	SPAN	{
+			display:none;
+			}	
+			
+#css-zen-garden H2		{
+			margin:50px 0px 0px 0px;
+			padding:25px 0px 0px 0px;
+			height:75px;
+			text-align:center;
+			font-size:16px;
+			
+			}
+			
+#css-zen-garden H3	{
+	color:#4A0000;
+	padding:30px 0px 0px 42px;
+	margin:10px 0px 0px 0px;
+	height:53px;
+	font-size:16px;
+	text-transform:uppercase;
+	}			
+#css-zen-garden H3:first-letter	{font-size:2px;}	
+#css-zen-garden P	{
+	margin:0px;
+	}		
+#css-zen-garden A	{
+	color:#960000;	
+	text-decoration:none;
+	font-weight:bold;
+	}			
+#css-zen-garden A:HOVER	{
+	text-decoration:underline;
+	}		
+	
+	
+	
+#css-zen-garden acronym	{
+		text-decoration:overline;		
+		color:#9A7339;
+		}	
+	
+#container	{
+			position:absolute;
+			top:0px;
+			left:215px;
+			width:600px;
+			background:url(fond-centre.jpg);
+			background-position:top left;
+			background-repeat:repeat-y;
+			z-index:10;
+			}
+
+#intro	{	
+		background:url(H1.jpg);
+		background-position:top left;
+		background-repeat:no-repeat;
+		width:550px;
+		border-top:1px solid black;
+		margin:0px;
+	}
+	
+#quickSummary	{			
+			width:350px;
+			padding:0px 0px 0px 50px;
+			text-align:center;
+			margin-top:-25px;
+			}		
+			
+#explanation, #benefits	{
+			padding:0px 0px 0px 15px;
+			width:385px;
+			margin-top:15px;
+			}		
+
+#preamble	{
+			padding:0px 0px 0px 15px;
+			width:385px;
+			margin:15px 0 0 15px;
+	}
+					
+#supportingText	{
+				padding:0px 15px 0px 15px;
+					}		
+#benefits, #participation	{
+				width:500px;
+				padding:0px 0px 0px 15px;	
+}					
+#preamble	 H3	{
+				background-image:url(T.gif);
+				background-repeat:no-repeat;
+				background-position:top left;
+				}			
+					
+#explanation	H3	{
+				background-image:url(S.gif);
+				background-repeat:no-repeat;
+				background-position:top left;				
+				}							
+#participation	H3	{
+				background-image:url(P.gif);
+				background-repeat:no-repeat;
+				background-position:top left;				
+				}		
+#benefits	H3	{
+				background-image:url(B.gif);
+				background-repeat:no-repeat;
+				background-position:top left;				
+				}										
+				
+#linkList	{position:absolute;
+			top:0px;
+			left:463px;			
+			z-index:15;
+			background:url("menu_droite_fd_center.jpg") top left repeat-y;
+			width:230px;
+			font-family:"Courier New", Courier, serif;
+			}	
+#linkList	H3	{
+				margin:0px 0px 0px 10px;
+				padding:0px;
+				text-align:center;
+				}			
+	
+#linkList	.select	{
+				background:url(select_design.gif) top right no-repeat;
+				width:100px;
+				height:65px;
+				margin-top:90px;
+					}				
+#linkList	.archives	{
+				background:url(archives.gif) top center no-repeat;
+				width:100px;
+				height:65px;
+				}			
+#linkList	.resources{
+				background:url(resources.gif) top center no-repeat;
+				width:100px;
+				height:40px;
+				}											
+#linkList H3 SPAN	{display:none;}				
+				
+#linkList	A	{
+				color:#9C5600;				
+				text-decoration:none;}		
+				
+#linkList	A:HOVER	{				
+					color:#FF8D00;
+					}
+				
+#linkList	UL	{margin:-5px 42px 0 25px;
+				list-style-image:url(clou.gif);
+				padding:0;
+				}				
+#linkList	UL	LI	{margin:-5px 0 0 0; padding-top:0}			
+#linkList2	{		
+			background:URL("menu_droite_fd_top.jpg") top left no-repeat;			
+			width:210px;
+			border-top:1px solid black;
+			margin:0 0px 0px 0px;
+			color:#FFFFFF;
+			}	
+
+#lresources	{
+	background:URL("menu_droite_fd_bottom.jpg") bottom left no-repeat;
+	margin:0 0 0 0;
+	height:200px;
+	
+	}
+
+#requirements	{
+				background:url(author.jpg) bottom left no-repeat;
+				width:420px; 
+				padding:0px 70px 125px 70px;
+				margin:0px 0px 0px -15px;
+				}
+				
+#requirements	H3	{
+				background:url(R.gif) top left no-repeat;
+				}
+								
+#footer	A{color:#D6AE73}
+
+#footer	{
+		margin-top:-100px;
+		text-align:center;
+		height:75px;
+		}
+
+#extraDiv1	{
+			background:url(bella.jpg) top left no-repeat;
+			width:119px;
+			height:600px;
+			position:absolute;
+			left:90px;
+			top:0px;
+			}
+#extraDiv2	{
+			background:url(candel.jpg) top left no-repeat;
+			width:126px;
+			height:600px;
+			position:absolute;
+			top:0px;
+			left:775px;
+			z-index:2;
+			}

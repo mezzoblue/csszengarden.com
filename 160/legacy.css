@@ -1,0 +1,90 @@
+/* css Zen Garden submission 160 - 'Daruma', by Stuart Cruickshank, http://www.stuartandpetra.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Stuart Cruickshank */
+/* Added: Apr. 15th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+body {background:#dcdcdc url(grad_top.jpg) repeat-x; font:12px "Trebuchet MS", verdana, arial, sans-serif; color:#606060;}
+
+#container {width:765px; margin:0 auto;}
+
+#pageHeader {background-image:url(header.jpg); width:699px; height:347px;}
+#pageHeader h1, h2 {display:none;}
+
+#quickSummary {position:relative;}
+#quickSummary p.p1 {display:none;}
+#quickSummary p.p2 {position:absolute; left:600px; top:-65px; width: 130px;}
+#quickSummary p.p2 a:link {color: #606060; text-decoration:underline; font-weight:bold;}
+#quickSummary p.p2 a:visited {color:#787878;}
+#quickSummary p.p2 a:hover {color:#949494;}
+
+#preamble {width:765px; background:url(preamble_bg.gif) bottom; padding-bottom:15px; line-height:22px; text-align:justify;}
+#preamble h3 span {display:none; } 
+#preamble h3 {position:relative; background-image:url(preamble_hdr.gif); width:765px; height:35px;}
+#preamble p {padding: 7px 20px;}
+
+#supportingText {float:left; width:543px; background-image:url(body_bg.gif); line-height:22px; text-align:justify;}
+#supportingText p {padding: 7px 20px;}
+#supportingText a:link {color:#df0000; text-decoration:none; font-weight:bold; border-bottom:1px solid #930000;}
+#supportingText a:visited {color:#df0000; text-decoration:none; border:0;}
+#supportingText a:hover{border-bottom: 1px solid #df0000;}
+
+#explanation {background:url(so_what_btrflys.gif) bottom left no-repeat;}
+#explanation h3 span {display:none;} 
+#explanation h3 {position:relative; background-image:url(so_what_hdr.gif); width:543px; height:28px;}
+
+#participation {background: url(participation_btrflys.gif) bottom left no-repeat;}
+#participation h3 span {display:none;} 
+#participation h3 {position:relative; background-image:url(participation_hdr.gif); width:543px; height:37px;}
+
+#benefits h3 span {display:none;} 
+#benefits h3 {position:relative; background-image:url(benefits_hdr.gif); width:543px; height:35px;}
+
+#requirements {background: url(req_btrflys.gif) top left no-repeat;}
+#requirements h3 span {display:none;} 
+#requirements h3 {position:relative; background-image:url(req_hdr.gif); width:543px; height:36px;}
+#requirements .p5 {margin-bottom:0; padding-bottom:14px;}
+
+#footer {position:relative; font-size: 14px; text-align:center;background:url(footer_bg.gif) no-repeat; width:543px; height:35px; padding-top:63px;}
+#footer a:link {color: #c20000; font-weight:bolder; text-decoration:none; border:0;}
+#footer a:visited {color:#c20000; font-weight:bolder;}
+#footer a:hover {color:#f33; border:0;}
+
+#linkList {float:right; width:195px; color:#d70000; background-image:url(linklist_bg.gif); font-size:11px;}
+#linkList ul {list-style-type:none;}
+
+#lselect a:link {display:block;color: #d70000; text-decoration:none; font-weight:bolder; border-bottom:1px solid #ddd;}
+#lselect a:visited {display:block; color:#c66; text-decoration:none; border-bottom:1px solid #b1b1b1;}
+#lselect a:hover {color: #f70000;}
+#lselect a:link.c {display:inline; color:#5d5d5d; text-decoration:none; font-style:italic; margin-left:5px; border:0;}
+#lselect a:visited.c {display:inline; color:#787878; font-weight:normal; text-decoration:none; border:0;}
+#lselect a:hover.c{color:#949494;}
+
+#linkList2 li {padding: 0 20px;}
+#linkList2 {background:url(resources_btm_2.gif) bottom no-repeat; padding-bottom: 10px; padding-bottom: 119px;}
+
+#lselect h3 {position:relative; background-image: url(select_design_hdr.gif); width:195px; height:60px;}
+#lselect h3 span {display:none;}
+#lselect ul {padding-top:8px;}
+#lselect li {padding-bottom:10px;}
+
+#larchives h3 {position:relative; background-image: url(archives_hdr.gif); width:195px; height:30px;}
+#larchives h3 span {display:none;}
+
+#lresources h3 {position:relative; background: url(resources_hdr.gif) no-repeat; width:195px; height:30px;}
+#lresources h3 span {display:none;}
+
+#larchives ul, #lresources ul {padding-top:8px;}
+#larchives ul li, #lresources ul li {padding-bottom:8px;}
+
+#larchives a:link, #lresources a:link {color:#606060; text-decoration:none; font-weight:bolder;}
+#larchives a:visited, #lresources a:visited {color:#787878;text-decoration:none;}
+#larchives a:hover, #lresources a:hover {color:#949494; font-style:italic;}
+
+* {margin:0; padding:0;}
+acronym {border-bottom: 1px dotted #606060; cursor:help;}

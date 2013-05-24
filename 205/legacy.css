@@ -1,0 +1,216 @@
+/* css Zen Garden submission - 'spring360', by Rene Hornig, http://www.medialab360.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Rene Hornig */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* basic elements */
+* {
+	margin: 0;
+	padding: 0;	
+}
+
+body { 
+	background: #DFDBD3 url(images/bg.gif) top left repeat-x;
+	color: #4C4C4C;
+	font-family: Verdana,Arial,Helvetica,sans-serif; 	 	
+}
+
+p { 	
+	font-size: .8em;
+	line-height: 2em;
+}
+
+h3 { 	
+	font-size: .7em;
+	font-weight: bold;		
+	line-height: 1.3em;
+	padding-top: 2.5em;	
+}
+
+acronym, 
+abbr {
+	background: transparent url(images/abbr.gif) bottom left repeat-x;
+	border: 0 none;
+	cursor: help;
+	font-style: italic;
+}
+
+a:link, 
+a:visited {
+	background: #EBF3CE;
+	color: #5D7403;
+	text-decoration: none;
+}
+
+a:hover, 
+a:active, 
+a:focus  {
+	background: #B2CF42;
+	color: #FFF;
+}
+
+
+#container { 
+	background: transparent url(images/contbg.gif) top left repeat-y;
+	width: 700px;		
+}
+
+#intro, 
+#supportingText {
+	padding: 0 69px 0 86px;
+	width: 545px;	
+}
+
+#intro {	
+	background: transparent url(images/logo.gif) top left no-repeat;
+	padding-top: 230px;	
+}
+
+#preamble h3,
+#preamble p,
+#supportingText h3,
+#supportingText p {
+	padding-left: 10px;
+	padding-right: 40px;
+}
+
+#preamble,
+#explanation,
+#participation,
+#benefits,
+#requirements {
+	border-bottom: 1px solid #E4E1DB;
+	padding-bottom: 20pt;	
+}
+
+#pageHeader, 
+#pageHeader h1,
+#pageHeader h2,
+#quickSummary .p1,
+#linkList2 h3 span {
+	display: none;
+}
+
+#quickSummary .p2 {
+	background: transparent url(images/nav_dl.gif) top left no-repeat;
+	display: block;	
+	font-size: .6em;
+	font-weight: bold;
+	left: 661px;
+	line-height: 1.4em;
+	padding: 40px 40px 0 30px;
+	position: absolute; 	 	
+	top: 160px;	
+	width: 141px;
+	z-index: 20;
+}
+
+#quickSummary .p2 a:link,
+#quickSummary .p2 a:visited {	
+	background: transparent;
+	color: #E6E3DE;
+	text-decoration: none; 
+}
+
+#linkList {	
+	background: transparent url(images/navbg.gif) top left repeat-y;
+	left: 661px; 	
+	padding-top: 10em;
+	position: absolute;
+	top: 130px;	
+	width: 285px;
+	z-index: 10;
+}
+
+#linkList2 { 
+	background: transparent url(images/navbtmbg.gif) bottom left no-repeat;
+	font: .6em/1.4em verdana, sans-serif; 				
+	padding-bottom: 160px;
+}
+
+#linkList2 h3 {
+	background: transparent top left no-repeat;
+	display: block;	
+	height: 26px;
+	padding: 0 0 10px 0;
+	width: 285px;	
+}
+
+#linkList2 .select {
+	background-image: url(images/nav_des.gif);
+}
+
+#linkList2 .archives {
+	background-image: url(images/nav_arch.gif);
+}
+
+#linkList2 .resources {
+	background-image: url(images/nav_res.gif);
+}
+
+#linkList2 ul {
+	list-style-type: none;
+	padding: 0 75px 25px 15px;	
+}
+
+#linkList2 li {
+	color: #E6E3DE;	
+	padding: 6px 10px;	
+}
+
+#linkList2 a:link,
+#linkList2 a:visited {
+	background: transparent;
+	color: #4C4C4C;
+	font-weight: bold;
+}
+
+#linkList2 a.c:link,
+#linkList2 a.c:visited {
+	color: #E6E3DE;
+	font-weight: normal;
+}
+
+#quickSummary .p2 a:hover,
+#quickSummary .p2 a:active,
+#quickSummary .p2 a:focus, 
+#linkList2 a:hover, 
+#linkList2 a:active, 
+#linkList2 a:focus,
+#linkList2 a.c:hover, 
+#linkList2 a.c:active, 
+#linkList2 a.c:focus {	
+	background: #B2CF42;
+	color: #FFF;
+	text-decoration: none; 
+}
+
+
+#lselect li {	
+	background: transparent url(images/navico.gif) 3pt 5pt no-repeat;
+	border-bottom: 1px solid #CFCCC4;	
+	padding: 7px 10px 7px 25px;
+}
+
+#footer { 	
+	font-size: .7em;
+	line-height: 1.5em;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+#footer a:link,
+#footer a:visited,
+#footer a:hover,
+#footer a:active,
+#footer a:focus {
+	background: transparent;
+	color: #857E70;
+}

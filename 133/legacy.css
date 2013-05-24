@@ -1,0 +1,238 @@
+/* css Zen Garden submission 133 - 'Ordered Zen', by Steve Smith, http://www.orderedlist.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Steve Smith */
+/* Added: Oct. 21st, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+/* CSS Document */
+a:link {
+	color:#8297A7;
+	text-decoration:underline;
+}
+
+a:visited {
+	color:#A082A7;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+body {
+	font:x-small/1.4 Tahoma, Verdana, Helvetica, Arial, sans-serif;
+	background:#FFF url(style/bg.gif) repeat top left;
+	color:#555040;
+	margin:0;
+	padding:0;
+}
+
+#container {
+	margin:0 0 0 45px;
+	background:#FFF url(style/bg_container.gif) repeat-y top left;
+	width: 640px !important; 
+	width /**/:650px; /* IE5/Win */
+	padding:0 5px;
+	border-bottom:5px solid #FFF;
+	position:relative;
+	font-size:110%;
+}
+
+#pageHeader {
+	width:640px;
+	height:75px;
+	background:#FFF url(style/page_header.jpg) no-repeat top left;
+}
+
+#quickSummary {
+	height:125px;
+	width:640px;
+	background-color:#FFF;
+	position:relative;
+}
+
+#quickSummary p {
+	margin:0;
+	padding:0;
+}
+
+#quickSummary .p1 {
+	position:absolute;
+	top:0;
+	left:0;
+	width:405px;
+	height:120px;
+	background:#555040 url(style/quick_summary_p1.jpg) no-repeat top left;
+}
+
+#quickSummary .p1 span { display:none; }
+
+#quickSummary .p2 {
+	position:absolute;
+	top:0;
+	left:410px;
+	width:230px;
+	height:120px;
+	background:transparent url(style/button_html.gif) no-repeat top left;
+	overflow:hidden;
+}
+
+#quickSummary .p2 span {
+	visibility:hidden;
+	white-space:nowrap;
+}
+
+#quickSummary .p2 a {
+	width:230px;
+	height:60px;
+	float:right;
+	visibility:visible;
+	text-indent:-9000px;
+	overflow:hidden;
+	margin-top:-1.4em;
+	margin-bottom:1.4em;
+}
+
+#pageHeader h1, #pageHeader h2 {
+	display:none;
+}
+
+#preamble {
+	margin-right:235px;
+	padding:5px;
+	background:#E9E6D9;
+}
+
+#preamble h3 {
+	margin:0 0 5px;
+	padding:0;
+	width:238px;
+	height:24px;
+	text-indent:-9000px;
+	overflow:hidden;
+	background:transparent url(style/title_the_road.gif) no-repeat top left;
+}
+
+#preamble p {
+	margin:0 10px 10px;
+	padding:0;
+}
+
+#preamble p.p3 {
+	margin:0 10px 5px;
+}
+
+#supportingText {
+	margin-right:235px;
+	padding:5px;
+}
+
+#linkList {
+	position:absolute;
+	top:200px;
+	left:415px;
+	width:230px;
+}
+
+#footer {
+	margin:0 -240px -5px -5px;
+	border-top:5px solid #FFF;
+	background-color:#555040;
+	padding:10px;
+	text-transform:uppercase;	
+}
+
+#footer a {
+	color:#FFF;
+	text-decoration:underline;
+}
+
+#footer a:hover {
+	color:#D2DBE2;
+	text-decoration:none;
+}
+
+#explanation h3, #participation h3, #benefits h3, #requirements h3 {
+	margin:10px 0 5px;
+	padding:0;
+	width:238px;
+	height:24px;
+}
+
+#explanation h3 { 		background:transparent url(style/title_so_what.gif) no-repeat top left; }
+#participation h3 { 	background:transparent url(style/title_participation.gif) no-repeat top left; }
+#benefits h3 { 			background:transparent url(style/title_benefits.gif) no-repeat top left; }
+#requirements h3 { 		background:transparent url(style/title_requirements.gif) no-repeat top left; }
+
+#preamble h3 span,
+#explanation h3 span,
+#participation h3 span,
+#benefits h3 span,
+#requirements h3 span {
+	display:none;
+}
+
+#lselect li a, #lfavorites li a {display: block; margin-left:-10px; font-weight:bold;}
+#linkList li a.c, #lfavorites li a.c {float:none; display:inline; margin-left:0; font-weight:normal; font-size:100%;}
+
+#supportingText p {
+	margin:0 10px 10px;
+	padding:0;
+}
+
+#linkList ul {
+	width:210px;
+	margin:0 0 10px 15px;
+	padding:0;
+}
+
+#linkList li {
+	padding: 0 0 0 20px;
+	margin:0 0 5px;
+	list-style-type:none;
+	white-space:nowrap;
+	background: transparent url(style/bullet_normal.gif) no-repeat 0 1px;
+}
+
+#lselect ul, #lfavorites ul {
+	width:210px;
+	margin:0 0 10px 15px;
+	padding:0;
+}
+
+#lselect li, #lfavorites li {
+	padding: 0 0 0 25px;
+	margin:0 0 5px;
+	list-style-type:none;
+	clear:left;
+	white-space:nowrap;
+	background: transparent url(style/bullet_styles.gif) no-repeat 0 3px;
+}
+
+#linkList h3 {
+	margin:0 0 10px;
+	background:#6E6855 url(style/link_list_h3.gif) repeat-y top left;
+	padding:5px 5px 5px 15px;
+	font-weight:bold;
+	color:#E9E6D9;
+	font-size:100%;
+}
+
+acronym {
+	border-bottom:1px dotted #555040;
+	cursor:help;
+}
+
+a acronym {
+	border-bottom:1px dotted #8297A7;
+}
+
+#lfavorites, #larchives, #lresources {
+	border-top:5px solid #FFF;
+}
+

@@ -1,0 +1,309 @@
+/* css Zen Garden submission 093 - 'South of the Border', by Rob Shields, http://www.dotcat.org/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Rob Shields */
+/* Added: April 9th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+
+/* basic elements */
+body 
+{
+	font: 83%/150%;
+	color: #fff; 
+	background: #EDEDED url(background.gif) repeat-y fixed bottom center; 
+	margin: 0px;
+	padding: 0px;
+}
+p 
+{ 
+	font: 83%/150% georgia, palatino, serif;
+	margin-top: 0px; 
+	text-align: justify;
+}
+h3 
+{ 
+	font: italic normal 83%/150%;
+	letter-spacing: 1px; 
+	margin-bottom: 0px; 
+	color: #E79900;
+	font-weight: bold;
+}
+body, p, h3
+{
+	font-family: "Trebuchet MS", "Bitstream Vera Sans", verdana, lucida, arial, helvetica, sans-serif
+}
+a:link, a:visited 
+{ 
+	text-decoration: none; 
+	color: #97ABC3;
+}
+a:hover, a:active 
+{ 
+	text-decoration: underline; 
+	color: #97ABC3;
+}
+
+
+/* specific divs */
+
+#container 
+{
+	position: relative;
+	background: url(bg-central.gif) repeat top left;
+	margin: 0px auto 0px auto;
+	width: 655px;
+}
+#intro 
+{
+	margin:0px;
+}
+#quickSummary
+{
+	padding-top: 2px;
+	border-bottom: 1px dashed #8095AF;
+	font-style: italic;
+}
+#quickSummary, #preamble
+{
+	margin: 0px 200px 0px 68px;
+}
+#pageHeader
+{ 
+	/*display:none;*/
+	margin: 0px;
+}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1
+{ 
+	margin: 0px 0px 0px 0px;
+	background: transparent url(top.gif) no-repeat top left;
+	width: 655px; 
+	height: 206px; 
+}
+#pageHeader h1 span
+{
+	display: none;
+}
+#pageHeader h2
+{ 
+	display: none;
+}
+
+#quickSummary
+{
+	margin-top: 10px;
+}
+#quickSummary p
+{
+	
+}
+
+#preamble
+{
+	border-bottom: 1px dashed #8095AF;
+}
+
+#preamble h3 
+{ 
+	background: transparent url(ch1.gif) no-repeat top left; 
+	margin: 10px 0px 5px 0px; 
+	width: 388px; 
+	height: 44px; 
+}
+#preamble h3 span 
+{
+	display:none
+}
+
+#supportingText 
+{
+	margin:0px 200px 0px 68px;
+}
+
+#explanation
+{
+	border-bottom: 1px dashed #8095AF;
+}
+
+#explanation h3 
+{ 
+	background: transparent url(ch2.gif) no-repeat top left; 
+	margin: 10px 0px 5px 0px; 
+	width: 388px; 
+	height: 44px; 
+}
+#explanation h3 span 
+{
+	display:none
+}
+
+#participation
+{
+	border-bottom: 1px dashed #8095AF;
+}
+
+#participation h3 
+{ 
+	background: transparent url(ch3.gif) no-repeat top left; 
+	margin: 10px 0px 5px 0px; 
+	width: 388px; 
+	height: 44px; 
+}
+#participation h3 span 
+{
+	display:none
+}
+
+#benefits
+{
+	border-bottom: 1px dashed #8095AF;
+}
+
+#benefits h3 
+{ 
+	background: transparent url(ch4.gif) no-repeat top left; 
+	margin: 10px 0px 5px 0px; 
+	width: 388px; 
+	height: 44px; 
+}
+#benefits h3 span 
+{
+	display:none
+}
+
+#requirements
+{
+	margin-bottom: -80px;
+}
+
+#requirements h3 
+{ 
+	background: transparent url(ch5.gif) no-repeat top left; 
+	margin: 10px 0px 5px 0px; 
+	width: 388px; 
+	height: 44px; 
+}
+#requirements h3 span 
+{
+	display:none
+}
+
+#footer
+{ 
+	text-align: center; 
+	background: transparent url(bottom.gif) no-repeat top left;
+	height: 37px;
+	margin: 0px -200px 0px -68px;
+	padding-top: 88px;
+}
+#footer a:link, #footer a:visited
+{ 
+	margin-right: 20px; 
+}
+
+#linkList
+{
+	position: absolute; 
+	top: 207px; 
+	right: 6px;
+	width: 181px;
+}
+#linkList ul 
+{
+	margin: 0px;
+	padding: 0px;
+}
+#linkList li 
+{
+	list-style-type: none;
+	background: transparent url(li-bg.gif) repeat top center;
+	padding:8px 6px 8px 6px;
+	margin:0px;
+	border-top: 1px solid #5D4831;	
+	border-bottom: 1px solid #221609;
+	display: block;
+}
+#linkList li a 
+{ 
+	color: #9E866B;
+}
+#linkList2 
+{ 
+	font-size: 70%; 
+	color: #846645;
+}
+#lselect ul li a, #lfavorites ul li a
+{
+	color: #97ABC3;
+	font-size: 120%;
+	display: block;
+	width: auto;
+	padding: 0px;
+}
+#lselect ul li a.c, #lfavorites ul li a.c
+{
+	font-size: 100%;
+	display:inline;
+	color: #9E866B;
+}
+#linkList h3.select 
+{ 
+	background: transparent url(h3.gif) no-repeat top left; 
+	margin: 2px 0px 0px 0px; 
+	width:182px; 
+	height: 30px;
+}
+#linkList h3.select span 
+{
+	display:none
+}
+#lfavorites
+{
+	padding-top: 10px;
+}
+#linkList h3.favorites 
+{ 
+	background: transparent url(h4.gif) no-repeat top left; 
+	margin: 0px; 
+	width:182px; 
+	height: 30px; 
+}
+#linkList h3.favorites span 
+{
+	display:none
+}
+#linkList h3.archives 
+{ 
+	background: transparent url(h5.gif) no-repeat top left; 
+	margin: 0px; 
+	width:182px; 
+	height: 30px; 
+}
+#linkList h3.archives span 
+{
+	display:none
+}
+#larchives
+{
+	padding-top: 10px;
+}
+#linkList h3.resources 
+{ 
+	background: transparent url(h6.gif) no-repeat top left; 
+	margin: 0px; 
+	width:182px; 
+	height: 30px; 
+}
+#linkList h3.resources span 
+{
+	display:none
+}
+#lresources
+{
+	padding-top: 10px;
+}

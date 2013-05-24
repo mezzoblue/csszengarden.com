@@ -1,0 +1,348 @@
+/* css Zen Garden submission 078 - 'Muto Verde' by Alex Taylor , http://www.alextaylor.org */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics and photos copyright 2004, Alex Taylor */
+/* Added: February 15th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* HTML */
+body {
+	margin: 0 auto;
+	padding: 0;
+	font: 12px Arial,Sans-Serif;
+	text-align: center;
+	background: url(bg.jpg);
+  	voice-family: "\"}\""; voice-family:inherit;
+	}
+	
+h1, h2, h3 {
+	margin: 0;
+	}
+
+ul {
+	margin: 0px;
+	}
+	
+	li {
+	/*list-style: square outside url(semicolon_bullet.jpg);*/
+	margin: 3px 0px 6px -20px;
+	}
+
+p {
+	line-height: 1.3;
+	}
+	
+a:link {
+	color: #003300;
+}
+
+a:active{
+	color: #003300;
+}
+
+a:visited {
+	color: #003300;
+}
+
+a:hover {
+	color: #336633;
+}
+	
+/* CLASSES */
+
+
+/* IDs */
+#container {
+	position: relative;
+	width: 760px;
+	margin: 0 auto;
+	text-align: left;
+	}
+	
+#intro {
+	margin: 0;
+	}
+
+#pageHeader {
+	font: normal 12px Georgia,Serif;
+	height: 135px;
+	margin: 0;
+	background: transparent url(csszen_header.jpg) no-repeat top right;
+	}
+	
+	#pageHeader h1, h2 {
+	margin: 0;
+	display: none;
+	}
+	
+#quickSummary {
+	font: italic 12px Georgia,Serif;
+	padding: 3px;
+	margin: 0;
+	background: url(introbg.jpg) repeat-y 99px;
+	}
+	
+	#quickSummary p.p1  {
+	position: relative;
+	left: 210px;
+	width: 530px;
+	margin: 0;
+	}
+	
+	#quickSummary p.p2  {
+	position: relative;
+	left: 210px;
+	width: 345px;
+	padding: 4px 0px 0px 0px;
+	margin: 0;
+	}
+
+#supportingText {
+	position: relative;
+	width: 410px;
+	height: auto;
+	/*background: url(introbg.jpg) repeat-y 99px;*/
+	}
+	
+	#supportingText h3 {
+	width: 758px;
+	height: 25px;
+	background: transparent url(header_explanation.png) no-repeat;
+	}
+	
+	#supportingText h3 span {
+	display: none;
+	}
+	
+	#supportingText p {
+	padding: 3px;
+	position: relative;
+	left: 210px;
+	width: 345px;
+	margin: 0;	
+	}
+	
+#preamble {
+	position: relative;
+	width: 410px;
+	height: auto;
+	background: url(roadbg.jpg) repeat-y 227px;
+/*	background-repeat: repeat-y;*/
+	text-align: justify;
+	}
+	
+	#preamble h3 {
+	width: 750px;
+	height: 25px;
+	background: transparent url(header_enlightenment.gif) no-repeat;
+	}
+	
+	#preamble h3 span {
+	display: none;
+	}
+	
+	#preamble p {
+	padding: 3px;
+	position: relative;
+	left: 335px;
+	width: 410px;
+	margin: 0;	
+	}
+
+#explanation {
+	position: relative;
+	width: 410px;
+	height: auto;
+	background: url(explanationbg.jpg) repeat-y 227px;
+	background-repeat: repeat-y;	
+	text-align: justify;
+	}
+	
+	#explanation h3 {
+	width: 758px;
+	height: 25px;
+	background: transparent url(header_sowhatisthisabout.gif) no-repeat;
+	}
+	
+	#explanation h3 span {
+	display: none;
+	}
+	
+	#explanation p {
+	padding: 3px;
+	position: relative;
+	left: 335px;
+	width: 410px;
+	margin: 0;	
+	}
+
+#participation {
+	position: relative;
+	width: 410px;
+	height: auto;
+	background: url(dockbg.jpg) repeat-y 227px;
+	background-repeat: repeat-y;
+	text-align: justify;
+	}
+	
+	#participation h3 {
+	width: 758px;
+	height: 25px;
+	background: transparent url(header_participation.gif) no-repeat;
+	}
+	
+	#participation h3 span {
+	display: none;
+	}
+	
+	#participation p {
+	padding: 3px;
+	position: relative;
+	left: 335px;
+	width: 410px;
+	margin: 0;	
+	}
+	
+#benefits {
+	position: relative;
+	width: 410px;
+	height: auto;
+	background: url(benefitsbg.jpg) repeat-y 227px;
+	background-repeat: repeat-y;
+	text-align: justify;
+	}
+	
+	#benefits h3 {
+	width: 758px;
+	height: 25px;
+	background: transparent url(header_benefits.gif) no-repeat;
+	}
+	
+	#benefits h3 span {
+	display: none;
+	}
+	
+	#benefits p {
+	padding: 3px;
+	position: relative;
+	left: 335px;
+	width: 410px;
+	margin: 0;	
+	}
+	
+#requirements {
+	position: relative;
+	width: 410px;
+	height: auto;
+	background: url(lockbg.jpg) repeat-y 227px;
+	background-repeat: repeat-y;
+	text-align: justify;
+	}
+	
+	#requirements h3 {
+	width: 758px;
+	height: 25px;
+	background: transparent url(header_requirements.gif) no-repeat;
+	}
+	
+	#requirements h3 span {
+	display: none;
+	}
+	
+	#requirements p {
+	padding: 3px;
+	position: relative;
+	left: 335px;
+	width: 410px;
+	margin: 0;	
+	}
+
+#linkList {
+	text-align: right;
+	
+	position: absolute;
+	top: 196px;
+	left: -10px;
+	width: 220px;
+	}
+	
+#lselect h3 {
+	margin: 8px 20px;
+	width: 198px;
+	height: 25px;
+	background: transparent url(selectdesign.jpg) no-repeat;
+	}
+	
+	#lselect h3 span { display: none; }
+	
+	#lselect li {
+	font-size: 10px;
+	padding: 0px 0px 5px 20px;
+	list-style: none;
+	/*background: url(semicolon_bullet.jpg) no-repeat 0px 50%;*/
+	background-repeat: no-repeat;
+	}
+	
+	#lselect a {
+	font-size: 12px;
+	}
+	
+	#lselect a.c, #lselect a:link.c , #lselect a:visited.c{
+	font-size: 10px;
+	font-weight: normal;
+	}
+	
+#larchives h3 {
+	margin: 8px 20px;
+	width: 198px;
+	height: 25px;
+	background: transparent url(archives.jpg) no-repeat;
+	}
+	
+	#larchives h3 span { display: none; }
+	
+	#larchives li {
+	padding: 0px 0px 2px 20px;
+	list-style: none;
+	/*background: url(arrow_bullet.jpg) no-repeat 2px 0%;*/
+	}
+	
+#lresources h3 {
+	margin: 8px 20px;
+	width: 198px;
+	height: 25px;
+	background: transparent url(resources.jpg) no-repeat;
+	}
+	
+	#lresources h3 span { display: none; }
+	
+	#lresources li {
+	padding: 0px 0px 2px 20px;
+	list-style: none;
+	/*background: url(arrow_bullet.jpg) no-repeat 2px 0%;*/
+	}
+	
+/*Thanks to Douglas Bowman of stopdesign.com for this
+little trick with the links*/
+#linkList #lselect a:link, #linkList #lselect a:visited {display:block;}
+
+#linkList #lselect a.c:link, #linkList #lselect a.c:visited {
+display:inline;}
+
+#footer {
+	position: relative;
+	width: 758px;
+	height: 50px;
+	padding: 4px 40px 0px 0px;
+	text-align: right;
+	background: transparent url(header_footer.gif) no-repeat;
+}
+
+	#footer a {
+	font-weight: bold;
+	}

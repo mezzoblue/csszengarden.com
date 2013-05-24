@@ -1,0 +1,291 @@
+/* css Zen Garden submission 097 - 'No Frontiers!', by Michal Mokrzycki, http://hyperreal.info/bhang/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Michal Mokrzycki */
+/* Added: April 9th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* basics */
+
+body { 
+	font: small "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #676767; 
+	margin: 0px;
+	padding: 0px;
+	background: #fbfbf2 url(page_back.gif) repeat-x fixed; }
+	
+/* text styles */
+	
+p { 
+	font: 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 0px; 
+	text-align: justify; }
+	
+acronym {
+	font-weight: bold;
+	color: #e18700;
+	text-transform: uppercase; }
+	
+#quickSummary acronym {
+	color: #ffff99;
+	font-weight: bold; }
+	
+h3 { 
+	letter-spacing: 1px; 
+	margin-bottom: 0px; }
+	
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #909528; }
+	
+a:visited { 
+	font-weight: normal; 
+	text-decoration: none;
+	color: #909528; }
+	
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #646729; }
+
+
+/* structure, specific texts */
+#container { 
+	padding: 0px;  
+	margin: 0px;
+	background: transparent url(body_back.png) no-repeat top left; }
+
+#pageHeader {
+	position: absolute;
+	left: 0px;
+	top: 190px;
+	width: 291px;
+	height: 159px;
+	background: transparent url(green_top.gif) no-repeat top left;
+	z-index: 3; }
+
+#pageHeader h1 {
+	position: absolute;
+	top: 59px;
+	background-color: #bbbf58;
+	border-right: 2px solid #fff;
+	width: 289px;
+	height: 150px;
+	margin: 0;
+	padding: 0; }
+	
+#pageHeader h1 span {
+	display: none; }
+	
+#pageHeader h2 {
+	position: absolute;
+	top: 118px;
+	background: transparent url(green_bottom.gif) no-repeat bottom left;
+	width: 291px;
+	height: 135px;
+	margin: 0;
+	padding: 0; }
+	
+#pageHeader h2 span {
+	display: none; }
+
+#quickSummary {
+	position: absolute;
+	top: 270px;
+	left: 20px;
+	width: 245px;
+	line-height: 2;
+	z-index: 3; }
+	
+#quickSummary p {
+	color: #fff;
+	font-size: 11px;
+	line-height: 1.5;
+	font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+#preamble {
+	position: absolute;
+	width: 291px;
+	top: 455px;
+	margin: 0;
+	z-index: 3; }
+	
+#preamble h3 {
+	background: transparent url(enlightment.gif) no-repeat top left;
+	width: 291px;
+	height: 37px;
+	margin-bottom: 10px;
+	padding: 0; }
+
+#preamble h3 span {
+	display: none; }
+	
+#preamble p {
+	color: #7A7D55;
+	font-size: 11px;
+	line-height: 1.5;
+	padding: 0 20px 10px 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif; }
+	
+#preamble p.p3 {
+	padding-bottom: 300px;
+	background: transparent url(leftback.gif) 17px 110px no-repeat; }
+	
+#supportingText {
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	position: relative;
+	top: 0;
+	margin: 0 170px 0px 300px;
+	background: #fff url(content_back.gif) repeat-x;
+	min-width: 315px;
+	z-index: 2; }
+
+#explanation {
+	background: transparent url(zengarden.gif) no-repeat top right;
+	padding-top: 185px; }
+	
+#explanation h3 {	
+	position: relative;
+	top: 15px;
+	width: 305px;
+	height: 41px;
+	background: transparent url(heading_1.gif) no-repeat top left;
+	margin-top: 0;
+	margin-bottom: 10px; }
+
+#explanation h3 span {
+	display: none; }
+	
+#explanation p, #participation p, #benefits p, #requirements p {
+	margin-left: 11px;
+	margin-right: 20px;
+	padding: 10px; }
+	
+#participation h3 {
+	position: relative;
+	top: 15px;
+	width: 177px;
+	height: 28px;
+	background: transparent url(heading_2.gif) no-repeat top left;
+	margin-top: 0;
+	margin-bottom: 10px; }
+
+#participation h3 span {
+	display: none; }
+	
+#benefits h3 {
+	position: relative;
+	top: 15px;
+	width: 120px;
+	height: 24px;
+	background: transparent url(heading_3.gif) no-repeat top left;
+	margin-top: 0;
+	margin-bottom: 10px; }
+
+#benefits h3 span {
+	display: none; }
+	
+#requirements h3 {
+	position: relative;
+	top: 15px;
+	width: 193px;
+	height: 28px;
+	background: transparent url(heading_4.gif) no-repeat top left;
+	margin-top: 0;
+	margin-bottom: 10px; }
+
+#requirements h3 span {
+	display: none; }
+	 
+#footer { 
+	text-align: center;
+	padding-bottom: 30px;
+	background-color: #fff; }
+	
+#footer a:link, a:visited { 
+	font-size: 11px; }
+	
+#footer a:hover, a:active {
+	background-color: #909528;
+	color: #fff; }
+
+#linkList {
+	position: absolute; 
+	top: 0px; 
+	right: 0px;
+	margin-left: 630px;
+	z-index: 1; }
+
+#linkList2 {
+	background: transparent url(pickup_top.gif) 10px 0 no-repeat;
+	font: 10px verdana, sans-serif; 
+	padding-top: 60px;
+	width: 170px; }
+
+#linkList h3.select span {
+	display: none; }
+
+#linkList h3.favorites { 
+	background: transparent url(favorites_back.gif) no-repeat top left; 
+	margin: 20px 0px 5px 8px; 
+	width: 79px; 
+	height: 20px; }
+
+#linkList h3.favorites span {
+	display: none; }
+
+#linkList h3.archives { 
+	background: transparent url(archives_back.gif) no-repeat top left; 
+	margin: 20px 0px 5px 8px; 
+	width: 76px; 
+	height: 20px; }
+	
+#linkList h3.archives span {
+	display: none; }
+	
+#linkList h3.resources { 
+	background: transparent url(resources_back.gif) no-repeat top left; 
+	margin: 20px 0px 5px 8px; 
+	width: 89px; 
+	height: 20px; }
+	
+#linkList h3.resources span {
+	display: none; }
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px; }
+	
+#linkList li {
+	line-height: 1.1; 
+	list-style-type: none;
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 2px;
+	margin-left: 10px;
+	padding-left: 15px;
+	padding-bottom: 5px; }
+	
+#lselect li {
+	background: transparent url(link_dot.gif) 0 7px no-repeat; }
+	
+#larchives li, #lfavorites li {
+	background: transparent url(link_dot2.gif) 0 7px no-repeat; }
+	
+#lresources li {
+	background: transparent url(link_dot3.gif) 0 7px no-repeat; }
+	
+#linkList li a:link, a:visited {
+	font-size: 9px;
+	font-weight: bold;
+	font-family: verdana, sans-serif;
+	color: #706A47; }
+	
+#linkList li a:hover, a:active { 
+	background-color: #909528;
+	color: #fff; }

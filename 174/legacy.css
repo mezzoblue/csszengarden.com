@@ -1,0 +1,231 @@
+/* css Zen Garden submission 174 - 'Simple', by Shawn Chin, http://www.shawnchin.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Shawn Chin */
+/* Added: July 9th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+body {
+	text-align:center;
+	padding:0;
+	margin:1px 0 0;
+	font:normal 11px Arial, Helvetica, Sans-serif;
+	color:#666;
+
+}
+
+a {
+	color:#777;
+}
+
+a:hover {
+	color:#A77749;
+}
+
+#container {
+	text-align:left;
+	background:#FFF url(container_bg.gif) repeat-y top left;
+	width:700px;	
+	margin:auto;
+	position:relative;
+	padding:0;
+}
+
+#pageHeader {
+	width:700px;
+	height:80px;
+	background:#666 url(main_title.gif) no-repeat;
+	margin:0;
+	padding:0;
+}
+
+#pageHeader h1,h2 {
+	padding:0;
+	margin:0;
+	display:none;
+	
+}
+
+#quickSummary{
+	margin:0;
+	padding:0;
+	position:relative;	
+	border-top:#FFF 1px solid;
+	width:700px;
+	height:75px;	
+	background:#FFF;
+}
+
+#quickSummary p{
+	margin:0;
+	padding:0;
+}
+
+#quickSummary .p1{
+	position:absolute;
+	top:0;
+	left:0;
+	width:700px;
+	height:75px;
+	background:#FFF url(quickSummary_main.gif) no-repeat 251px 0;
+	
+}
+
+#quickSummary .p1 span{ 
+	display:none; 
+}
+
+#quickSummary .p2{
+	position:absolute;
+	top:0;
+	left:0;
+	width:250px;
+	height:75px;
+	background:url(quickSummary_button.gif) no-repeat top left;
+}
+
+#quickSummary .p2 span{
+	visibility:hidden;
+	white-space:nowrap;
+}
+
+#quickSummary .p2 a {
+	width:250px;
+	height:37px;
+	float:right;
+	visibility:visible;
+	text-indent:-9000px;
+	overflow:hidden;
+	margin-top:-1.3em;
+	margin-bottom:1.4em;
+}
+#preamble {
+	position:relative;
+	border-top:#fff 1px solid;
+	margin:0;
+	padding:0;
+	width:524px;
+	background:#CCC url(preamble_top.gif) no-repeat top left;
+}
+
+#preamble h3{
+	display:none;
+	margin:0;
+	padding:0;
+}
+
+#preamble .p1{
+	margin:0;
+	padding:31px 15px 0px 15px;
+}
+
+#supportingText{
+	width:524px;
+}
+
+#explanation .p1, #participation .p1, #requirements .p1{
+	margin:0;
+	padding:41px 15px 0px 15px;
+}
+
+#preamble p, #explanation p, #participation p, #benefits p, #requirements p{
+	margin:0;
+	padding:10px 15px 0px 15px;
+}
+
+
+#explanation h3, #participation h3, #benefits h3, #requirements h3, #lselect h3, #larchives h3, #lresources h3{
+	display:none;
+}
+
+#preamble .p3, #explanation .p2, #participation .p3, #requirements .p5{
+	margin:0;
+	padding:10px 15px 7px 15px;
+}
+
+#benefits .p1{
+	margin:0;
+	padding:41px 15px 7px 15px;
+}
+
+#explanation{
+	background:#CCC url(explanation_top.gif) no-repeat top left;
+}
+
+#participation{
+	background:#CCC url(participation_top.gif) no-repeat top left;
+}
+
+#benefits{
+	background:#CCC url(benefits_top.gif) no-repeat top left;
+}
+
+#requirements{
+	background:#CCC url(requirements_top.gif) no-repeat top left;
+}
+
+#footer{	
+	background:#FD9453 url(footer_top.gif) no-repeat top left;
+	padding-top:17px;
+	padding-left:15px;
+	
+}
+
+#linkList {
+	position:absolute;
+	top:156px;
+	left:525px;
+	width:175px;
+	background:#FD9453;
+	border-top:#fff 1px solid;
+	color:#fff;
+}
+
+#linkList a, #footer a{	
+	color:#FFF;
+	text-decoration:none;
+}
+
+#linkList a:hover, #footer a:hover{
+	color:#FCD2B8;
+}
+
+#lselect{
+	background:#FD9453 url(lselect_top.gif) no-repeat top left;
+	padding:29px 0 0 0;
+}
+
+#larchives{
+	background:#FD9453 url(larchives_top.gif) no-repeat top left;
+	padding:39px 0 0 0;
+}
+
+#lresources{
+	background:#FD9453 url(lresources_top.gif) no-repeat top left;
+	padding:39px 0 0 0;	
+}
+
+#lselect ul, #larchives ul, #lresources ul{
+	margin:0;
+	padding:0 15px 5px 15px;
+}
+
+#lselect li, #larchives li, #lresources li{	
+	padding: 0 0 5px 15px;
+	margin:0;
+	list-style-type:none;
+	background:transparent url(bullet2.gif) no-repeat 0 4px;
+}
+
+#extraDiv1{
+	margin:auto;
+	width:700px;
+	height:9px;
+	background:#fff url(extradiv1_bg.gif) no-repeat top left;
+}
+

@@ -1,0 +1,370 @@
+/* css Zen Garden submission 115 - 'Burnt Offering', by Jonny Blair, http://www.jonnyblair.co.uk/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Jonny Blair */
+/* Added: July 29th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+
+
+body {
+   margin: 0;
+   padding: 0;
+   background: #000 url(drops/main_bg2.jpg) no-repeat bottom fixed;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   font-family: "verdana", "arial", sans-serif;
+   color: #333;
+}
+a:link {
+   color: #860d01;
+   text-decoration: none;
+}
+a:hover {
+   color: #870b01; 
+   text-decoration: underline;
+}
+a:visited {
+   color: #666;
+   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+   padding: 10px;
+   border: 0px solid orange;
+}
+ul {
+   margin: 0;
+   padding: 0;
+}
+acronym {
+   cursor: help;
+}
+acronym:hover {
+   border-bottom: 1px solid #870b01;
+}
+
+#container {
+   border: 1px solid #000;
+   border-right: none;
+   border-bottom: 0px solid #860d01;
+   border-top: 0px solid #860d01;
+   background-color: transparent;
+   position: relative;
+   margin: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 0px;
+   width: 760px;
+   text-align:left;
+   voice-family: "\"}\""; 
+   voice-family: inherit;
+   width: 754px;
+}
+#intro {
+   padding: 0;
+}
+#pageHeader {
+   background: url(drops/main_title.jpg) no-repeat top left;
+   height: 145px;
+   border-bottom: 3px solid #860d01;
+}
+#supportingText {
+   position: relative;
+   left: 0;
+   width: 523px;
+   color: #777;
+}
+#linkList {
+   position: absolute; 
+   top: 148px;
+   right: 0px;
+   margin: 0 0 0 515px;
+   background-color: #000;
+   border-left: 1px solid #000;
+   border-bottom: 0px solid #000;
+   border-right: 1px solid #000;
+   border-top: 0px;
+}
+
+#pageHeader h1 {
+   border: 1px solid red;
+   font-size: x-small;
+   margin: 0px;
+   padding: 0px;
+   display: none;
+}
+#pageHeader h2 {
+   border: 1px solid red;
+   font-size: x-small;
+   margin: 0px;
+   padding: 0px;
+   display: none;
+}
+#quickSummary p.p1 {
+   border: 1px solid red;
+}
+
+#preamble {
+   position:relative;
+   left: 0;
+   padding: 0px;
+   width: 522px; 
+   font-size: x-small;
+   display: block;
+   border-bottom: 1px solid #000;
+   border-right: 0px solid #000;
+   background-color: #860d01;
+   color: #fff;
+   min-height: 254px;
+}
+#preamble h3 {
+   background: url(headers/preamble_title.jpg) no-repeat top left;
+   margin: 0px;
+   text-indent: -2000px;
+   height: 38px;
+   border-bottom: 1px solid #000;
+   padding: 0px;
+}
+#preamble p {
+   margin: 10px;
+   text-align: justify;
+   margin-right: 20px;
+   padding: 0;
+   line-height: 1.6em;
+}
+#quickSummary {
+   display: none;
+}
+#quickSummary p {
+   margin: 10px;
+   text-align: justify;
+   padding: 0;
+   line-height: 1.6em;
+}
+#quickSummary p.p1{
+   display: none;
+}
+#quickSummary a:link, #quickSummary a:active, #quickSummary a:visited {
+   text-decoration: none;
+   border-bottom: 2px solid #506067;
+}
+#quickSummary a:hover {
+   text-decoration: none;
+   border-bottom: 2px solid #708089;
+}
+
+#supportingText p {
+   margin: 10px; 
+   margin-left: 100px;
+   margin-right: 20px;
+   padding: 0;
+   line-height: 1.6em;
+   font-size: x-small;
+   text-align: justify;
+}
+#supportingText h3 {
+   margin: 0px;
+   text-indent: -2000px;
+   height: 22px;
+}
+#explanation, #participation, #benefits {
+   padding: 0px;
+   padding-bottom: 20px;
+   margin: 0px;
+   border-right: 1px solid #000;
+   border-bottom: 1px solid #ccc;
+   width: 522px;
+   background-color: #fff;
+}
+#requirements {
+   border-bottom: 0px;
+   padding-bottom: 10px;
+   border-right: 1px solid #000;
+   width: 522px;
+   background-color: #fff;
+}
+
+#explanation h3 {
+   background: url(headers/explain_title.jpg) no-repeat top left;
+}
+#participation h3 {
+   background: url(headers/participation_title.jpg) no-repeat top left;
+}
+#benefits h3 {
+   background: url(headers/benefits_title.jpg) no-repeat top left;
+}
+#requirements h3 {
+   background: url(headers/req_title.jpg) no-repeat top left;
+}
+#supportingText a:link, #supportingText a:active, #supportingText a:visited {
+   font-weight: bold;
+}
+#supportingText a:hover {
+}
+#explanation:hover, #participation:hover, #benefits:hover, #requirements:hover {
+   color: #000;
+   background-image: url(drops/jb.gif);
+   background-repeat: no-repeat;
+   background-position: bottom right;
+}
+#preamble:hover {
+   background: #4a0201 url(drops/red_drop.jpg) no-repeat 0 38px;
+   color: #fff;
+}
+
+#footer {
+   margin: 0px;
+   width: 522px;
+   height: 6em;
+   line-height: 6em;
+   font-size: x-small;
+   text-align: center;
+   background-color: #000;
+   margin-top: 0px;
+   border-top: 5px solid #ccc;
+   border-right: 1px solid #000;
+   border-bottom: 5px solid #860d01; 
+}
+
+#footer a:link, #footer a:active, #footer a:visited {
+   color: #fff;
+}
+#footer a:hover {
+}
+
+#linkList ul {
+   list-style: none;
+   width: 230px;
+   margin: 0px;
+   padding: 0px;
+   right: 0px;
+   border-bottom: 0px solid #000;
+}
+#lselect {
+   margin: 0px;
+   font-size: 7pt;
+   width: 230px;
+}
+#lselect li {
+   padding: 12px 15px 12px 15px;
+   border-bottom: 1px solid #000;
+   height: 52px;
+   line-height: 1.4em;
+   background-color: #860d01;
+   color: #c63;
+}
+#lselect li:hover {
+   background-color: #4a0201;
+   background-image: url(drops/li_hi.gif);
+   background-repeat: no-repeat;
+   background-position: top right;
+   color: #fff;
+}
+#lselect a:link, #lselect a:active, #lselect a:visited {
+   font-weight: bold;
+   color: #c63;
+}
+#lselect a:hover {
+   background-color: #4a0201;
+   color: #fff;
+}
+#lselect a.c {
+   font-weight:normal;
+   text-decoration:none;
+}
+#lselect h3 {
+   background: url(headers/select_title.jpg) no-repeat top left;
+   margin: 0px;
+   text-indent: -2000px;
+   height: 38px;
+   border-bottom: 1px solid #000;
+   padding: 0px;
+}
+#larchives {
+   border-right: 0px solid #000;
+   border-bottom: 0px solid #000;
+   background-color: transparent;
+   width: 230px;
+}
+#larchives h3 {
+   background:url(headers/larchives_title.jpg) no-repeat top left;
+   margin: 0px;
+   text-indent: -2000px;
+   height: 38px;
+   border-bottom: 1px solid #000;
+   padding: 0px;
+}
+#larchives ul {
+   background-color: #fff;
+}
+#larchives li {
+   padding: 12px 0 7px 15px;
+   height: 25px;
+   line-height: 1.2em;
+   background-color: #fff;
+   color: #c63;
+   border-bottom: 1px solid #000;
+   font-size: 7pt;
+}
+#larchives a:link, #larchives a:active, #larchives a:visited {
+   color: #c63;
+   font-weight: bold;
+}
+#larchives li:hover {
+   background-color: #4a0201;
+   background-image: url(drops/li_hi.gif);
+   background-repeat: no-repeat;
+   background-position: top right;
+   color: #fff;
+}
+#larchives a:hover {
+   background-color: #4a0201;
+   color: #fff;
+}
+#lresources {
+   border-right: 0px solid #000;
+   border-bottom: 0px solid #000;
+   background-color: #fff;
+   width: 230px;
+   background-position: bottom right;
+   background-repeat: no-repeat;
+}
+#lresources h3 {
+   background:url(headers/lresources_title.jpg) no-repeat top left;
+   margin: 0px;
+   text-indent: -2000px;
+   height: 38px;
+   border-bottom: 1px solid #000;
+   padding: 0px;
+}
+#lresources li {
+   padding: 12px 0 7px 15px;
+   height: 25px;
+   line-height: 1.2em;
+   background-color: #fff;
+   color: #c63;
+   font-size: 7pt;
+   border-bottom: 1px solid #000;
+}
+#lresources li:hover {
+   background-color: #4a0201;
+   background-image: url(drops/li_hi.gif);
+   background-repeat: no-repeat;
+   background-position: top right;
+   color: #fff;
+}
+#lresources a:link, #lresources a:active, #lresources a:visited {
+   color: #c63;
+   font-weight: bold;
+}
+#lresources a:hover {
+   background-color: #4a0201;
+   color: #fff;
+}

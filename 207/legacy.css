@@ -1,0 +1,183 @@
+/* css Zen Garden submission - 'Kyoto Forest', by John Politowski, http://rpmdesignfactory.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2007, John Politowski */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* basic elements */
+
+html {
+	margin: 0;
+	padding: 0;
+}
+	
+body {
+	font-family:Arial, Helvetica, sans-serif;	
+	line-height:18px;
+	font-size:12px;
+	color: #06185c; 
+	background: #e6fad6 url(body_bg.jpg) no-repeat top center; 
+	margin: 0; 
+	padding: 0;
+}
+
+body a:link, a:active, a:visited{
+	text-decoration:none;
+	color:#720a0b;
+}
+
+body a:hover{
+	text-decoration:underline;
+}
+
+p{
+	margin: 10px;
+	padding: 0;
+}
+
+h3 {
+	display:none;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+li {
+	background: url(bullet.gif) left center no-repeat;
+	padding-left: 7px;
+	margin-bottom: 5px;
+}
+
+acronym {
+	border-bottom: none;
+}
+
+/* content div's */
+
+#container { 
+	margin: auto;
+	width:892px;
+    background:url(content_bg_top.jpg) no-repeat top center;
+	position:relative;
+}
+
+#intro{
+	width:892px;
+	height:451px;
+}
+
+#pageHeader {
+	background:url(header_what_about.gif) no-repeat top center;
+	height:34px;
+	overflow:hidden;
+	position:absolute;
+	top:462px;
+	left:205px;
+	width:587px;
+}
+
+#pageHeader span{
+	display:none;
+}
+
+#quickSummary {
+	display:none;
+}
+
+#preamble{
+	padding:240px 100px 0 205px;
+}
+
+#preamble p.p1{
+	margin-top: 20px;
+}
+
+#supportingText{
+	background-image:url(content_tile.jpg);
+	height:100%;
+}
+
+#explanation {
+	padding:50px 100px 30px 205px;
+	background:url(content_bg_bottom.jpg) top no-repeat;
+	height:100%;
+}
+
+#participation {
+	margin:20px 100px 30px 205px;
+	padding-top:40px;
+	background: url(header_participation.gif) no-repeat top center;
+	height:100%;
+}
+
+#benefits {
+	margin:65px 100px 30px 205px;
+	padding-top:40px;
+	background: url(header_benefits.gif) no-repeat top center;
+	height:100%;
+}
+
+#requirements{
+	margin:65px 100px 30px 205px;
+	padding:40px 0 15px 0;
+	background: url(header_requirements.gif) no-repeat top center;
+	border-bottom:1px solid #720a0b;
+	height:100%;
+}
+
+#footer{
+	padding:10px;
+	text-align:center;
+}
+
+/* link list and extra div's */
+
+#linkList {
+	position:absolute;
+	width:150px;
+	top:603px;
+	z-index:5;
+	color: #666666;
+	font-size:10px;
+	left: 25px;
+	height:550px;
+	line-height:13px;
+}
+
+#linkList a:link, a:active, a:visited {
+	color:#113c05;
+	text-decoration:none;
+}
+
+#linkList a:hover{
+	text-decoration: underline;
+}
+
+#lselect{
+	background:url(header_select_design.gif) top left no-repeat;
+	margin: 5px 0 0 0;
+	padding: 20px 0 0 0;
+	width:150px;
+}
+
+#larchives{
+	background:url(header_archives.gif) top left no-repeat;
+	margin: 10px 0 0 0;
+	padding: 30px 0 0 0;
+	width:150px;
+}
+
+#lresources{
+	background:url(header_resources.gif) top left no-repeat;
+	margin: 15px 0 0 0;
+	padding: 30px 0 0 0;
+	width:150px;
+}

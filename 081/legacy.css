@@ -1,0 +1,490 @@
+/* css Zen Garden submission 081 - 'seashore', by Christine Kirchmeier, http://www.sightdesign.de/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Christine Kirchmeier */
+/* Added: February 15th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/* Tag Definitions */
+
+body { 
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: left;
+	
+	background: #FFFFFF url(bg.gif);
+	background-attachment:fixed;
+	font: 11px Verdana, Arial,sans-serif;
+	color: #233A54;
+	
+	}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	}
+
+acronym {
+	border-bottom: 1px dotted #4C83AE;
+	}
+
+a acronym {
+	border: 0;
+	}
+
+a:link {
+	font-weight: 900;
+	color: #4C83AE;
+	text-decoration: none;
+	}
+
+a:visited {
+	font-weight: 900;
+	color: #999999;
+	text-decoration: none;
+	}
+
+a:hover,a:active {
+	font-weight: 900;
+	color: #9B3F17;
+	}
+
+/* ID Definitions */
+
+#container {
+	position: relative;
+	top: 0;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+	border-left: 4px solid #FFFFFF;
+	border-right: 4px solid #FFFFFF;
+	border-bottom: 4px solid #000000;
+	background-color: #EBEBEB;
+	width: 750px;	
+	}
+
+/************** INTRO *************************/
+
+#intro {
+	background:#EBB692 url(summarybg.gif) repeat-x;
+	width:749px;
+	}
+
+#pageHeader {
+	position: absolute;
+	margin: 0;
+	padding: 0px;
+	top: 0px;
+	left: 0px;
+	display: block;
+	width: 366px;
+	height: 474px;
+	background: transparent url(csszengarden.jpg) no-repeat;
+	border-right: 1px dashed #000000;
+	}
+
+#pageHeader h1,h2{
+	display:none;
+	}
+
+#quickSummary {
+	position: relative;
+	top: 8px;
+	left:378px;
+	width: 364px;
+	height:140px;
+	margin: 0;
+	padding: 30px;
+	overflow: auto;
+	background: transparent url(quicksumbg.gif) no-repeat;
+	}
+
+#quickSummary p.p1 {
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	width: 300px;
+	text-align: left;
+	font: 11px Verdana, Arial, serif;
+	color: #FFFFFF;
+	line-height: 1.2;
+	}
+
+#quickSummary p.p1:first-letter {
+	font: bold 18px Verdana, Arial, sans-serif;
+	color: #2F3F56;
+	}
+
+#quickSummary p.p2 {
+	position: relative;
+	padding: 0;
+	margin: 10px 0 0 0;
+	width: 300px;
+	text-align: left;
+	font: 11px Verdana,Arial, sans-serif;
+	color: #FFFFFF;
+	}
+
+#quickSummary p.p2:first-letter {
+	font: bold 18px Verdana, Arial, sans-serif;
+	color: #2F3F56;
+	}
+
+#preamble {
+	position: absolute;
+	top: 152px;
+	left: 367px;
+	width: 382px;	
+	height:300px;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	display: block;
+	overflow: auto;
+	background: transparent url(divbg.gif) repeat-x;
+	color: #233A54;
+	}	
+	
+
+#preamble h3 {
+	background: transparent url(roadtoenlightenment.gif) no-repeat;
+	width: 340px;
+	height: 29px;
+	padding:0px;
+	margin: 20px 0px 0px 15px;	
+	display: block;
+	}
+
+#preamble h3 span {
+	display:none;
+	}
+	
+#preamble p {
+	position: relative;
+	top: 0;
+	left: 15px;
+	width: 340px;
+	font: 11px/7px Verdana, Arial, sans-serif;
+	line-height: 1.2;
+	color: #233A54;
+	text-align: justify;	
+	margin:15px 0 0 0;
+	}
+
+/************** MAIN ************/
+#supportingText {
+	position: relative;
+	top: 258px;
+	left: 366px;
+	width: 383px;
+	margin: 0;
+	padding: 0;	
+	padding-bottom:260px; /* opera fix */	
+}
+
+#supportingText p {
+	font: x-small Verdana, Arial, sans-serif;
+	color: #333333;
+	text-align: justify;
+	}
+
+#explanation {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 382px;
+	padding: 0 0 20px 0;
+	margin: 0;
+	display: block;
+	overflow: auto;
+	background: #EBEBEB url(divbg.gif) repeat-x;
+	color: #233A54;
+	border-left:1px dashed #000000;
+	}
+
+#explanation p {
+	position: relative;
+	top: 0;
+	left: 15px;
+	width: 340px;
+	font: 11px/7px Verdana, Arial, sans-serif;
+	line-height: 1.2;
+	color: #233A54;
+	margin:15px 0 0 0;
+}
+
+#explanation h3 {
+	background: transparent url(sowhat.gif) no-repeat;
+	width: 340px;
+	height: 29px;
+	padding:0;
+	margin: 20px 0px 0px 15px;
+	display: block;
+	}
+
+#explanation h3 span{
+	display: none;
+	}
+
+#participation {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 382px;
+	padding: 0 0 20px 0;
+	margin: 0;
+	display: block;
+	overflow: auto;
+	background: #EBEBEB url(divbg.gif) repeat-x;
+	color: #233A54;
+	border-left:1px dashed #000000;
+	}
+
+#participation p {
+	position: relative;
+	top: 0;
+	left: 15px;
+	width: 340px;
+	font: 11px/7px Verdana, Arial, sans-serif;
+	line-height: 1.2;
+	color: #233A54;
+	margin:15px 0 0 0;
+}
+
+#participation h3 {
+	background: transparent url(participation.gif) no-repeat;
+	width: 340px;
+	height: 29px;
+	padding:0px;
+	margin: 20px 0px 0px 15px;
+	display: block;
+	}
+
+#participation h3 span{
+	display: none;
+	}
+
+#benefits {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 382px;
+	padding: 0 0 20px 0;
+	margin: 0;
+	display: block;
+	overflow: auto;
+	background: #EBEBEB url(divbg.gif) repeat-x;
+	color: #233A54;
+	border-left:1px dashed #000000;
+	}
+
+#benefits h3 {
+	background: transparent url(benefits.gif) no-repeat;
+	width: 340px;
+	height: 29px;
+	padding: 0;
+	margin: 20px 0px 0px 15px;
+	display: block;
+	}
+
+#benefits h3 span {
+	display: none;
+	}
+
+#benefits p {
+	position: relative;
+	top: 0;
+	left: 15px;
+	width: 340px;
+	font: 11px/7px Verdana, Arial, sans-serif;
+	line-height: 1.2;
+	color: #233A54;
+	margin:15px 0 0 0;
+}
+
+#requirements {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 382px;
+	padding: 0 0 0 0;
+	height: 520px;
+	margin:0;	
+	display: block;
+	overflow: auto;
+	background: #EBEBEB url(divbg.gif) repeat-x;	
+	color: #233A54;
+	border-left:1px dashed #000000;
+	}
+
+#requirements h3 {
+	background: transparent url(requirements.gif) no-repeat;
+	width: 340px;
+	height: 29px;
+	padding: 0;
+	margin: 20px 0px 0px 15px;
+	display:block;
+	}
+
+#requirements h3 span {
+	display: none;
+	}
+
+#requirements p {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 15px;
+	width: 340px;
+	font: 11px/7px Verdana, Arial, sans-serif;
+	line-height: 1.2;
+	color: #233A54;
+	margin:15px 0 0 0;
+}
+
+#footer {
+	position: absolute;
+	left: -360px;
+	top: 550px;
+	text-align: left;
+	width: 350px;
+	border-top: 1px dashed #FFF;
+	border-bottom: 1px dashed #FFF;
+	padding: 2px;
+	text-align: center;
+	}
+	
+#footer a {
+	font: 9px Verdana, sans-serif;
+	font-weight: 900;
+	color: #72AAD1;
+	}
+
+/***************** Links and Subsections ********************/
+#linkList {
+	position: absolute;
+	top: 260px;
+	left: 40px;
+	width: 240px;
+	height: 66%;
+}
+
+#linkList div {
+	padding-bottom: 10px;
+	}
+ 
+#linkList ul {
+	margin: 0 0 0 50px;
+	list-style-type: none;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	padding: 3px;
+	}
+
+#linkList ul li {
+	background: transparent url(listbg1.jpg);
+	border: 1px solid #FFFFFF;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	padding: 2px;
+	width: 176px;
+	}
+
+#linkList ul li:hover {
+	background: transparent url(listbg2.jpg);
+	border: 1px solid #FFFFFF;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	padding: 2px;
+	width: 176px;	
+	}
+	
+#linkList ul li a:link {
+	font-weight: 900;
+	color: #FFFFFF;
+	}
+
+#linkList ul li a:visited {
+	font-weight: 900;
+	color: #FFFFFF;
+	}
+
+#linkList ul li a:hover,
+#linkList ul li a:active {
+	font-weight: 900;
+	color: #9B3F17;
+	}
+	
+#linkList ul li a.c {
+	display: block;
+	margin-bottom: -1px;
+	}
+	
+#linkList ul li a.c:link {
+	font-weight: 900;
+	color: #4C83AE;
+	}
+
+#linkList ul li a.c:visited {
+	font-weight: 900;
+	color: #4C83AE;
+	}
+
+#linkList ul li a.c:hover,
+#linkList ul li a.c:active {
+	font-weight: 900;
+	color: #9B3F17;
+	}
+
+#lselect h3 {
+	background: transparent url(select.gif) no-repeat;
+	width: 340px;
+	height: 40px;
+	padding:0;
+	margin: 20px 0 0 40px;
+	display: block;
+	}
+	
+#larchives h3 {
+	background: transparent url(archives.gif) no-repeat;
+	width: 340px;
+	height: 40px;
+	padding: 0;
+	margin: 20px 0 0 40px;
+	}
+
+#lfavorites h3 {
+	background: transparent url(archives.gif) no-repeat;
+	}
+
+#lresources h3 {
+	background: transparent url(resources.gif) no-repeat;
+	width: 340px;
+	height: 40px;
+	padding: 0;
+	margin: 20px 0 0 40px;	
+	}
+
+#lresources h3 span, #larchives h3 span, #lselect h3 span {
+	display: none;
+}
+
+
+#extraDiv1 {
+	position: relative;
+	width: 300px;
+	height: 89px;
+	margin: 0 auto;
+	left: 0;
+	top: 0;
+	background: transparent url(sub.gif) no-repeat;
+	text-align: center;
+}

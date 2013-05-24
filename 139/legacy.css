@@ -1,0 +1,163 @@
+/* css Zen Garden submission 139 - 'Neat & Tidy', by Oli Dale, http://www.designerstalk.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Oli Dale */
+/* Added: Nov. 29th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+body{
+	background-image: url(main_bg.jpg);
+	background-position: center;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-color: #000000;
+	margin:0px;
+	padding:0px;
+	color:#ffffff;
+	font-family: Georgia,"Times New Roman", Times, serif;
+	font-size: 11px;
+	text-align: center;
+}
+h1{display: none;}
+h2{display: none;}
+h3{display: none;}
+a{color:#B00707;text-decoration: underline;}
+a:visited{color:#B00707;text-decoration: underline;}
+a:hover {color:#D6BD15; text-decoration: none;}
+a:active {color:#D6BD15; text-decoration: none;}
+
+acronym { border: none; cursor: help; 
+font-style: italic;}
+
+#container{
+	width:600px;
+	position: relative;
+	text-align: justify;
+	padding:0px;
+	margin: 0 auto;
+	height:1641px;
+
+}
+
+#preamble{
+		background-image: url(quicksumary_header.gif);
+	background-repeat: no-repeat;
+	position: absolute; top: 165px; left: 5px;
+	padding-top:35px;
+	width:375px;
+}
+#preamble h3{
+	display:none;
+}
+
+#explanation{
+background-image: url(explanation_header.gif);
+background-repeat: no-repeat;
+	position: absolute; top: 390px; left: 5px;
+	width:375px;
+	padding-top:35px;
+	
+}
+#explanation h3{display: none;}
+
+#participation{
+	background-image: url(participation_header.gif);
+background-repeat: no-repeat;
+	position: absolute; top: 665px; left: 5px;
+	width:375px;
+	padding-top:35px;
+}
+
+#participation h3{display: none;}
+
+#benefits{
+	background-image: url(benefits_header.gif);
+background-repeat: no-repeat;
+	position: absolute; top: 980px; left: 5px;
+	width:375px;
+	padding-top:35px;
+}
+#benefits h3{display: none;}
+
+#requirements{
+	background-image: url(requirements_header.gif);
+background-repeat: no-repeat;
+	position: absolute; top: 1115px; left: 5px;
+	width:375px;
+	padding-top:35px;
+}
+
+#requirements h3{display: none;}
+
+#footer{
+	position: absolute; top: 1590px; left: 5px;
+	width:375px;
+}
+
+
+
+#intro{
+	width:375px;
+}
+
+#pageHeader{
+background-image: url(logo.gif);
+background-repeat: no-repeat;
+width:279px;
+height:170px;
+
+}
+
+#lselect{
+text-align: left;
+	position: absolute; top:950px; right: 0px;
+width:189px;
+background-image: url(selecter_header.gif);
+	background-repeat: no-repeat;
+	padding-top:35px;
+}
+
+
+#quickSummary{
+width:185px;
+	position: absolute; top: 540px; right: 0px;
+	background-image: url(select_header.gif);
+	background-repeat: no-repeat;
+	padding-top:35px;
+}
+
+#larchives{
+	position: absolute; top: 850px; right: 0px;
+	width:185px;
+	padding-top:10px;
+	background-image: url(archives_header.gif);
+	background-repeat: no-repeat;
+	padding-top:35px;
+}
+
+
+
+#lresources{
+	position: absolute; top: 720px; right: 0px;
+	width:185px;
+	padding-top:0px;
+			background-image: url(resources_header.gif);
+	background-repeat: no-repeat;
+	padding-top:35px;
+}
+
+
+
+li{list-style-type: none;}
+ul{padding-top:0px;
+padding-left:0px;
+padding-right:0px;
+padding:0px;
+margin:0px;
+}
+

@@ -1,0 +1,202 @@
+/* css Zen Garden submission 006 - 'Wicked Grove' by D. Keith Robinson, http://www.7nights.com/asterisk/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, D. Keith Robinson */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* basic elements */
+body { 
+	font: 10pt/14pt "Trebuchet MS", sans-serif; 
+	color: #000033; 
+	background: #69f;
+	margin: 0px; 
+	}
+p { 
+	font: 10pt/16pt "Trebuchet MS", sans-serif; 
+	margin-top: 0px; 
+	text-align: justify;
+	}
+h3 {
+	font: bold normal 12pt "Trebuchet MS", sans-serif;
+	letter-spacing: 3px;
+	margin-bottom: 2px;
+	color: #333333;
+	text-align: left;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #FF6600;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #CC0000;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #FF6600;
+	}
+
+
+/* specific divs */
+#container { 
+	background: #9cf url(trees.jpg) no-repeat left top; 
+	padding: 200px 0px 0px 0px;  
+	margin: 0px auto; 
+	width:800px;
+	border-left: 2px dashed #fff;
+	border-right: 2px dashed #fff;
+	}
+
+#pageHeader { 
+	margin-bottom: 10px;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 { 
+background: transparent; 
+	margin-top: -180px; 
+	width: 500px; 
+	height: 87px; 
+	float: left;
+	color:#fff;
+	}
+#pageHeader h1 span {
+	display:none;
+	}
+#pageHeader h2 { 
+	background: transparent url(tag.gif) no-repeat top left; 
+	width: 300px; 
+	margin-top:-60px;
+	margin-left:-190px;
+	height: 100px; 
+	float: right;
+	}
+#pageHeader h2 span {
+	display:none;
+	}
+
+#quickSummary {
+	width: 130px;
+	float: left;
+	padding:5px;
+	margin-right:15px;
+	background:#0099FF;
+	
+	}
+#quickSummary p {
+	font: bold 8pt/12pt verdana, sans-serif; 
+	text-align:right;
+	color:#fff;
+	}
+	
+#quickSummary a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #003;
+	}
+#quickSummary a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #006;
+	}
+#quickSummary a:hover, #quickSummary a:active { 
+	text-decoration: underline; 
+	color: #FF6600;
+	}
+	
+#preamble, #supporting text, #explanation, #participation, #benefits, #requirements {
+	padding: 0px 170px 0px 30px;
+}
+
+#footer { 
+	text-align: center; 
+	}
+#footer a:link, #footer a:visited { 
+	margin-right: 20px; 
+	}
+
+#linkList {
+    background: transparent url(menu.gif) top left no-repeat; 
+	position: absolute;
+	top: 0px;
+	padding: 15px; 
+	margin-top: 200px; 
+	margin-left: 650px;
+	width: 130px; 
+	}
+	
+#linkList2 { 
+	font: 10px verdana, sans-serif;
+	padding-top:35px; 
+	}
+#linkList h3.select { 
+	background: transparent url(select.gif) top left no-repeat;  
+	width: 130px; 
+	height: 25px; 
+	margin-left:-8px;
+	}
+#linkList h3.select span {
+	display:none
+	}
+#linkList h3.favorites { 
+	background: transparent url(favorites.gif) top left no-repeat;  
+	width: 130px; 
+	height: 25px; 
+	margin-left:-8px;
+	}
+#linkList h3.favorites span {
+	display:none
+	}
+#linkList h3.archives { 
+	background: transparent url(archives.gif) top left no-repeat;  
+	width: 130px; 
+	height: 25px; 
+	margin-left:-8px;
+	}
+#linkList h3.archives span {
+	display:none
+	}
+#linkList h3.resources { 
+	background: transparent url(resources.gif) top left no-repeat;  
+	width: 130px; 
+	height: 25px; 
+	margin-left:-8px;
+	}
+#linkList h3.resources span {
+	display:none
+	}
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+#linkList li {
+	line-height: 2.5ex; 
+	background: transparent; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+#linkList li a:link { 
+	color: #FF3300;
+	}
+#linkList li a:visited {
+	color: #FF0000;
+	}
+
+#extraDiv1 { 
+	background: transparent;
+	position: absolute; 
+	top: 40px; 
+	right: 0px; 
+	width: 148px; 
+	height: 110px; 
+	}
