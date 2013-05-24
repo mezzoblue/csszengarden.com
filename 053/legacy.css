@@ -1,0 +1,272 @@
+/* css Zen Garden submission 053 - 'untitled' by Ray Henry, http://www.reh3.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Ray Henry */
+/* Added: October 29th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+/* basic elements */
+body { 
+	font-family:verdana, arial, sans serif; 
+	color:#65625B; 
+	background:#fff url(main2_bg.gif); 
+	margin:0; 
+	padding:0;
+}
+#container {
+	width:auto;
+	margin:22px 0 0 0;
+	padding:7px 0 0 0;
+	height:471px;
+}
+acronym {
+	cursor: help;	
+}
+
+/*-- intro section --*/
+#intro {
+	background:#fff url(intro_bg.jpg) no-repeat top left;
+	width:339px;
+	height:471px;
+	padding:0 0 0 201px;
+	margin:0;
+}
+#pageHeader {
+	background:#fff url(pageHead_bg.gif) no-repeat top left;
+	width:302px;
+	height:51px;
+	margin:0;
+	padding:0;
+	border-bottom:1px dotted #c8c8c8;
+}
+#quickSummary, #preamble {
+	font-size:11px;
+	margin:0 0 0 100px;
+	width:202px;
+}
+#quickSummary p, #preamble p {
+	margin-bottom:10px;
+	line-height:16px;
+}
+#preamble h3 {
+	background:#fff url(preamble_h3_bg.gif) no-repeat top left;
+	width:142px;
+	height:13px;
+	margin-top:20px;
+}
+
+/*-- supportingText section --*/
+#supportingText {
+	background:transparent;
+	font-size:11px;
+	width:auto;
+}
+#explanation {
+	position:absolute;
+	top:80px;
+	left:520px;
+	clear:both;
+	background:#fff url(graySec_bg.gif) repeat-x top left;
+	width:344px;
+	margin:0;
+	padding:10px 0 0 0;
+	height:410px;
+}
+#explanation h3 {
+	background:#F4F4F3 url(explan_h3_bg.gif) no-repeat top left;
+	width:137px;
+	height:13px;
+	margin:30px 10px 10px 10px;
+}
+#explanation p {
+	margin:10px;
+	line-height:16px;
+}
+
+/*-- participation section --*/
+#participation {
+	position:absolute;
+	top:80px;
+	left:868px;
+	background:#fff url(explan_bg.gif) no-repeat top left;
+	width:344px;
+	margin:0;
+	padding:10px 0 0 3px;
+	height:410px;
+}
+#participation h3 {
+	background:#fff url(part_h3_bg.gif) no-repeat top left;
+	width:73px;
+	height:13px;
+	margin:30px 10px 10px 10px;
+}
+#participation p {
+	margin:10px;
+	line-height:16px;
+}
+
+/*-- benefits section --*/
+#benefits {
+	position:absolute;
+	top:80px;
+	left:1216px;
+	background:#fff url(graySec_bg.gif) repeat-x top left;
+	width:344px;
+	margin:0;
+	padding:10px 0 0 3px;
+	height:410px;
+}
+#benefits h3 {
+	background:#F4F4F3 url(ben_h3_bg.gif) no-repeat top left;
+	width:45px;
+	height:13px;
+	margin:30px 10px 10px 10px;
+}
+#benefits p {
+	margin:10px;
+	line-height:16px;
+}
+
+/*-- requirements section --*/
+#requirements {
+	position:absolute;
+	top:80px;
+	left:1564px;
+	background:#fff url(explan_bg.gif) repeat-x top left;
+	width:560px;
+	margin:0;
+	padding:10px 0 0 3px;
+	height:410px;
+}
+#requirements h3 {
+	background:#fff url(req_h3_bg.gif) no-repeat top left;
+	width:73px;
+	height:13px;
+	margin:30px 10px 10px 10px;
+}
+#requirements p {
+	margin:10px;
+	line-height:16px;
+}
+
+/*-- footer section --*/
+#footer {
+	position:absolute;
+	top:80px;
+	left:2546px;
+	background:#fff url(graySec_bg.gif) repeat-x top left;
+	width:40px;
+	padding:45px 0 0 10px;
+	height:375px;
+	margin:0px 50px 0 0;
+	line-height:20px;
+}
+
+/*-- lselect section --*/
+#lselect {
+	position:absolute;
+	background:#fff url(lselect_arrow_bg.gif) no-repeat top left;
+	top:30px;
+	left:520px;
+	height:51px;
+	width:2100px;
+	margin:0;
+	padding:0;
+	border-left:1px dotted #c8c8c8;
+	border-bottom:1px dotted #c8c8c8;
+	font-size:11px;
+}
+#lselect h3 {
+	background:#fff url(lselect_bg.gif) no-repeat top left;
+	width:83px;
+	height:13px;
+	margin:10px 10px 9px 10px;
+}
+#lselect ul {
+	margin:0 0 0 80px;
+	padding:0;
+}
+#lselect li {
+	font-size:10px;
+	margin-right:8px;
+	padding:6px;
+	display: inline;
+	list-style-type: none;
+	border-left:1px solid #ccc;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+#lselect a:link, #lselect a:visited, #lselect a:active {
+	font-size:10px;
+	color:#65625B;
+}
+#lselect li:hover{
+	background: #f5f5f5 url(tab_bg.gif) repeat-x top left;
+	color:#434039;
+}
+
+/*-- larchives section --*/
+#larchives {
+	position:absolute;
+	top:80px;
+	left:2131px;
+	background:#F4F4F3 url(explan_bg.gif) repeat-x top left;
+	width:200px;
+	margin:0;
+	padding:10px 0 0 3px;
+	height:410px;
+}
+#larchives h3 {
+	background:#F4F4F3 url(arch_h3_bg.gif) no-repeat top left;
+	width:49px;
+	height:13px;
+	margin:30px 10px 10px 10px;
+}
+#larchives ul {
+	list-style-type: none;
+	font-size:11px;
+	margin:0 0 0 20px;
+	padding:0;
+	line-height:20px;
+}
+
+/*-- larchives section --*/
+#lresources {
+	position:absolute;
+	top:80px;
+	left:2338px;
+	background:#fff url(explan_bg.gif) repeat-x top left;
+	width:200px;
+	margin:0;
+	padding:10px 0 0 3px;
+	height:410px;
+}
+#lresources h3 {
+	background:#fff url(res_h3_bg.gif) no-repeat top left;
+	width:60px;
+	height:13px;
+	margin:30px 10px 10px 10px;
+}
+#lresources ul {
+	list-style-type: none;
+	font-size:11px;
+	margin:0 0 0 20px;
+	padding:0;
+	line-height:20px;
+}
+
+/*-- LINKS --*/
+#quickSummary a:link, #quickSummary a:visited, #quickSummary a:active, #supportingText a:link, #supportingText a:visited, #supportingText a:active, #larchives a:link, #larchives a:visited, #larchives a:active, #lresources a:link, #lresources a:visited, #lresources a:active {
+	color:#65625B;
+}
+#quickSummary a:hover, #supportingText a:hover, #larchives a:hover, #lresources a:hover{
+	color:#434039;
+}
+
+/*-- hidden --*/
+#pageHeader h1, #pageHeader h2, #preamble h3 span, #preamble p.p3, #participation p.p4, #explanation h3 span, #participation h3 span, #benefits h3 span, #supportingText h3 span, #lselect h3 span, #larchives h3 span, #lresources h3 span, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+	display:none;
+}

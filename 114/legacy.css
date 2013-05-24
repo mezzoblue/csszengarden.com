@@ -1,0 +1,223 @@
+/* css Zen Garden submission 114 - 'Salvage Yard', by Justin Peters, http://www.vatoweb.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Justin Peters */
+/* Added: July 29th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+
+/* basic elements */
+body { 
+	font: 12px/17px tahoma, arial; 
+	color: #000; 
+	background: #DAE8BD url(bg_lines.gif) no-repeat top; 
+	margin: auto auto; 
+	padding: 0;
+	text-align: center;
+	}
+p { 
+	font: 12px/17px tahoma, arial, sans-serif; 
+	margin: 0 0 17px 0; 
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #027D87;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #858686;
+	}
+a.c:visited { 
+	font-weight: normal; 
+	text-decoration: none; 
+	color: #858686;
+	}	
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #000505;
+	}
+ul {
+	list-style-type: none;
+	margin: 0; padding: 0;
+}
+
+
+/* specific divs */
+#container { 
+	width: 762px;
+	padding: 0;  
+	margin: auto;
+	text-align: left;
+	}
+#intro { 
+	vertical-align: bottom;
+	}
+#pageHeader { 
+	padding: 0; 
+	margin: 0;
+	height: 246px;
+	border: 1px solid white;
+	}
+#pageHeader h1 {
+	background:  url(title_hdr.jpg) no-repeat top left; 
+	width: 760px;
+	height: 176px;
+	margin: 70px 0 0 0;
+	padding: 0;
+}	
+#pageHeader h1 span {
+	display:none
+	}
+#pageHeader h2 { 
+	padding: 0; margin: 0;
+	}
+#pageHeader h2 span {
+	display: none;
+	}
+#quickSummary p.p1 {
+	width: 320px;
+	height: 92px;
+	position: absolute;
+	top: 1px;
+	margin-left: 470px;
+	padding: 0;
+	font-size: 11px;
+	color: #FFF; 
+	font-family: arial;
+	background:  url(bg_redbox.gif) no-repeat;
+	}
+#quickSummary p.p1 span{
+	display: none;
+}
+#quickSummary p.p2{
+	display: block;
+	position: absolute;
+	top: 53px;
+	padding: 0 0 0 7px;
+	font-size: 11px;
+	text-align: right; 
+	color: #490909;
+	font-family: arial;
+	clear: both;
+}
+#preamble {
+	padding: 0; margin: -3px 0 0 0;
+	width: 291px;
+	float: left;
+	}
+#preamble h3 {
+	background: url(hdr_enlightenment.gif) no-repeat;
+	width: 291px;
+	height: 47px;
+	margin: 0; padding: 0;
+	border-top: 1px solid white;
+}	
+#preamble h3 span {
+	display: none;
+}
+#preamble p {
+	font: italic normal 12px/19px georgia, 'Times New Roman', times, serif; 
+	padding: 0 0 0 3px;
+	width: 270px;
+}
+#preamble p.p1 {
+	margin-top: 10px;
+}
+#supportingText {
+	padding: 0; 
+	margin: -3px 0 40px 0;
+	background: #D6E6B6;
+	border: 1px solid white;;
+	width: 469px;
+	float: right;
+	}
+#supportingText p {
+	margin: 9px 17px 17px 24px;
+}	
+#explanation h3 {
+	background: url(hdr_about.gif) no-repeat;
+	width: 469px;
+	height: 32px;
+	margin: 0; padding: 0;
+}
+#explanation h3 span {
+	display: none;
+}
+#participation h3 {
+	background: url(hdr_participation.jpg) no-repeat;
+	width: 469px;
+	height: 32px;
+	margin: 0; padding: 0;
+}
+#participation h3 span {
+	display: none;
+}	
+#benefits h3 {
+	background: url(hdr_benefits.jpg) no-repeat;
+	width: 469px;
+	height: 32px;
+	margin: 0; 
+}
+#benefits h3 span {
+	display: none;
+}	
+#requirements h3 {
+	background: url(hdr_requirements.jpg) no-repeat;
+	width: 469px;
+	height: 32px;
+	margin: 0; padding: 0;
+}
+#requirements h3 span {
+	display: none;
+}		
+#footer { 
+	background: #A2C1B9;
+	border-top: 1px solid white;
+	padding: 0 0 2px 24px;
+	}
+a.c {
+	font-weight: normal;
+}
+#lselect, #larchives, #lresources {
+	width: 256px;
+	clear: left;
+	padding: 0;
+	margin: 0;
+}
+#lselect {
+	background: url(hdr_select.gif) no-repeat;
+	border-bottom: 1px solid #fff;
+	margin-top: 20px;
+}
+#larchives {
+	background: url(hdr_archives.gif) no-repeat;
+	border-bottom: 1px solid #fff;
+	margin-top: 20px;
+}
+#lresources {
+	background: url(hdr_resources.gif) no-repeat;
+	border-bottom: 1px solid #fff;
+	margin-top: 20px;
+}
+#lselect h3 span, #larchives h3 span, #lresources h3 span {
+	display: none;
+}
+#linklist {
+	margin-top: 50px;
+	clear: both;
+}
+#linkList #linkList2  ul {
+	padding: 20px 10px 10px 10px;
+	display:block;
+}
+#linklist li {
+	margin: 2px 0;
+}
+

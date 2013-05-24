@@ -1,0 +1,329 @@
+/* css Zen Garden submission 188 - 'Organica Creativa', by Eduardo Cesario, http://www.criaturacreativa.com.ar/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Eduardo Cesario */
+/* Added: November 10th, 2005 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/* css Zen Garden "Organica Creativa", by Eduardo Cesario, La Criatura Creativa.
+
+	All images, photos and vector art present on this design, are copyrighted by Eduardo Cesario,
+	La Criatura Creativa. To see more of my work, you can go to http://www.criaturacreativa.com.ar
+	
+*/
+
+
+a:link {
+	text-decoration: none;
+}
+
+#participation a:link {
+	color: #FF0000;
+	}
+
+#requirements a:link {
+	color: #009999;
+	}
+
+a:visited {
+	text-decoration: none;
+	color: #666666;
+	}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+
+body { 
+	background-color: #99CC00;
+	background-image:  url("bg_body.gif");
+	background-repeat:no-repeat;
+	margin: 0px; 
+	margin-left:122px;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	color: #999999;
+	font-weight: bold;
+	}
+	
+#container	{
+	position:absolute;
+	margin-top:0px;
+	width: 658px;
+	background-image: url("bg_container.gif");
+	background-repeat:	repeat-y;
+	background-position:left;
+	}
+
+#intro	{
+	margin-top: 250px;
+	}
+	
+#pageHeader h1 , #pageHeader h2 , #pageHeader span	{
+	display: none;
+	height: 5px;
+	background-color: #00CCCC;
+	}
+
+#quickSummary	{
+	position: absolute;
+	top: 1330px;
+	left: 415px;
+	width: 230px;
+	height: 111px;
+	background-image:  url("sidebar_part_4.gif");
+	background-repeat:	no-repeat;
+	margin: 5px;
+			}
+
+
+#quickSummary  p.p1	{
+	display: none;
+	}
+
+#quickSummary  p.p2 {
+	margin: 10px;
+	margin-top: 30px;
+	color: #FF6600;
+		}
+#quickSummary a		{
+	color: #CC0000;
+	}
+		
+#intro, #supportingText, #linkList {
+	padding: 25px;
+	width: 320px;
+	}
+	
+#intro h3 span, #supportingText h3 span	{
+		display: none;
+		}
+
+#intro h3	{
+			background:  url("title1.jpg");
+			width: 313px;
+			height: 75px;
+			}
+
+p.p1	{
+		color: #666666;
+		}
+		
+p.p1, p.p2, p.p3	{
+		margin: 0px;
+		padding: 0px;
+		margin-top: 8px;
+		}
+		
+#explanation h3	{
+			background:  url("title2.jpg");
+			width: 313px;
+			height: 75px;
+			margin: 0px;
+			padding: 0px;
+			}
+	
+#participation h3	{
+			background:  url("title3.jpg");
+			width: 313px;
+			height: 75px;
+			}
+			
+#benefits h3	{
+			background:  url("title4.jpg");
+			width: 313px;
+			height: 75px;
+			}
+			
+#requirements h3	{
+			background:  url("title5.jpg");
+			width: 313px;
+			height: 75px;
+			}
+			
+#extraDiv1	{
+		background-image: url("header.gif");
+		background-repeat: no-repeat;
+		background-position:top;
+		position: absolute;
+		top: 0px;
+		left: 122px;
+		width: 658px;
+		height: 259px;
+		}
+
+#extraDiv2	{
+		background: transparent url("photo_csspill.jpg") top left no-repeat;
+		position: absolute;
+		top: 191px;
+		left: 485px;
+		width: 295px;
+		height: 339px;
+		}
+
+#linkList	{
+	position: absolute;
+	top: 530px;
+	left: 363px;
+	width: 295px;
+	height: 755px;
+	z-index: 1;
+		}
+		
+#linkList2	{
+		margin-top: 70px;
+		margin-left: 26px;
+				}
+
+#lselect	{
+		width: 230px;
+		height: 384px;
+		background-image: url("sidebar_part_1.gif");
+		color:#CCCCCC;
+			}
+
+#lselect h3 span, #larchives h3 span, #lresources h3 span	{
+		display: none;
+		}
+		
+#lselect h3, #larchives h3, #lresources h3	{
+		width: 229px;
+		height: 50px;
+		}
+		
+#lselect h3	{
+			background:  url("sidetitle_01.gif");
+			width: 229px;
+			height: 40px;
+			top: 0px;
+			margin: 0px;
+			padding: 0px;
+			}
+		
+#lselect ul, #larchives ul, #lresources ul	{
+	margin-top: 5px;
+		}
+
+#lselect li {
+	border-bottom: 1px dotted #FFFFFF;
+	width: 170px;
+	margin-bottom: 8px;
+	list-style-position: outside;
+	list-style-image:  url("bullet_01.jpg");
+}
+
+#lselect .c {
+	text-transform: capitalize;
+}
+
+#lselect a {
+	display: block;
+	font-weight: bold;
+	color:#FFFFFF;
+}
+
+#lselect a:hover {
+	display: block;
+	font-weight: bold;
+	color: #3399FF;
+	background-color:#FFFFFF;
+}
+
+#lselect a.c {
+	color: #FFCC00;
+	display: inline;
+	font-weight: bold;
+}
+
+#lselect a.c:hover {
+	color: #FFCC00;
+	display: inline;
+	font-weight: bold;
+	background-color:#3399FF;
+}
+
+
+#larchives a, #lresources a {
+	/*display: block;*/
+	font-weight: bold;
+	color:#FFFFFF;
+}
+
+#larchives li, #lresources li {
+	width: 170px;
+	list-style-position: outside;
+}
+
+#lresources li {
+	list-style-image:  url("bullet_02.jpg");
+}
+
+#larchives li {
+	list-style-image:  url("bullet_03.jpg");
+}
+
+#larchives	{
+		width: 230px;
+		height: 169px;
+		background-image: url("sidebar_part_2.gif");
+					}
+
+#larchives h3	{
+			background:  url("sidetitle_02.gif");
+			width: 229px;
+			height: 40px;
+			top: 0px;
+			margin: 0px;
+			padding: 0px;
+			}
+			
+#lresources	{
+			width: 230px;
+			height: 156px;
+			background-image: url("sidebar_part_3.gif");
+			}
+
+#lresources h3	{
+			background:  url("sidetitle_03.gif");
+			width: 229px;
+			height: 40px;
+			top: 0px;
+			margin: 0px;
+			padding: 0px;
+			}
+
+#requirements p.p5	{
+		font-variant:small-caps;
+		font-size: 9px;
+		border-bottom: 2px dotted #FFCC00;
+		text-align: center;
+		width: 470px;
+					}
+
+#footer		{
+			background:  url("footer.jpg");
+			background-repeat:no-repeat;
+			width: 470px;
+			height: 46px;
+			text-align:center;
+			margin-top:10px;
+			padding: 10px;
+			}
+
+#footer	a	{
+			color: #FF9900;
+				}
+				
+acronym		{
+			font-style:italic;
+			}

@@ -1,0 +1,269 @@
+/* css Zen Garden submission 187 - 'Wilderness', by Aadesh Mistry, http://www.idizyn.com/blog/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Aadesh Mistry */
+/* Added: November 10th, 2005 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+
+/*------------------------------------------------------
+G L O B A L  E L E M E N T S
+------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: url(background.gif);
+}
+a {
+	color: #E0B53D;	
+}
+a:hover {
+	color: #FBBA04;	
+}
+h1, h2, h3 span {
+	display: none;
+}
+
+/*------------------------------------------------------
+C O N T A I N E R
+------------------------------------------------------*/
+
+#container {
+	position: relative;
+	margin: 0 auto 0 auto;
+	padding: 0 50px 0 50px;
+	width: 640px !important;
+	width /**/: 750px;
+	background: url(background_container.gif) repeat-y;
+	font-family: "Trebuchet MS", Arial, Verdana, sans-serif;
+	font-size: .75em;
+	color: #BBB5A2;
+}
+#pageHeader {
+	width: 670px;
+	height: 150px;
+	background: url(page_header.jpg) no-repeat;
+}
+#intro {
+	width: 460px;
+}
+#quickSummary {
+	margin: -10px 0 0 30px;
+}
+#quickSummary .p1 {
+	display: none;
+}
+#preamble {
+	margin: 20px 0 30px 0;
+	padding: 0 0 0 30px;
+	width: 420px !important;
+	width /**/: 460px;
+}
+#preamble h3{
+	margin: 0;
+	padding: 0;
+	width: 265px;
+	height: 20px;
+	background: url(h_preamble.gif) no-repeat;
+}
+#preamble .p1 {
+	padding: 0;
+	margin: 5px 0 0 0;
+}
+
+/*------------------------------------------------------
+S U P P O R T I N G   T E X T 
+------------------------------------------------------*/
+
+#supportingText {
+	width: 460px;
+}
+#supportingText {
+	padding: 30px;
+	padding-bottom: 0;
+	width: 408px !important;
+	width /**/: 468px;
+	background: url(background_supportingtext.gif) repeat-y;
+	/*background: url(i_supportingtext_header.gif) no-repeat;*/
+	color: #BDC1BC;
+}
+#explanation {
+	margin: -30px -30px 0 -30px ; 
+	padding: 30px 30px 0 30px;
+	background: url(i_supportingtext_header.gif) no-repeat;
+}
+#explanation h3 {
+	width: 369px;
+	height: 25px;
+	background: url(h_sowhat.gif) no-repeat;
+}
+#participation h3 {
+	width: 396px;
+	height: 25px;
+	background: url(h_participation.gif) no-repeat;
+}
+#benefits h3 {
+	width: 396px;
+	height: 25px;
+	background: url(h_benefits.gif) no-repeat;
+}
+#requirements h3 {
+	width: 396px;
+	height: 25px;
+	background: url(h_requirements.gif) no-repeat;
+}
+#explanation,#participation,#benefits,#requirements {
+	margin-bottom: 30px;
+}
+.p1,.p2,.p3,.p4,.p5 {
+	margin-top: 10px;
+}
+.p5 {
+	padding: 10px;
+	background: #0B1C07;
+}
+
+/*------------------------------------------------------
+F O O T E R 
+------------------------------------------------------*/
+
+#footer {
+	margin: 0 -30px; 
+	padding: 40px 30px 10px 30px;
+	height: 20px !important;
+	height /**/: 70px;
+	background: #000000 url(background_footer.gif) no-repeat;
+}
+#footer a{
+	color: #FFFFFF;
+}
+
+/*------------------------------------------------------
+L E F T   C O L U M N 
+------------------------------------------------------*/
+
+#linkList {
+	position: absolute;
+	top: 160px;
+	left: 530px;
+	width: 177px;
+}
+#linkList2 {
+	color: #C13003;
+}
+
+/*------------------------------------------------------
+S E L E C T   A   D E S I G N
+------------------------------------------------------*/
+
+.select {
+	margin-top: 20px;
+	padding-bottom: 5px;
+	width: 177px;
+	height: 31px;
+	background: url(h_selectadesign.gif) no-repeat;
+}
+#lselect ul {
+	width: 150px;
+	list-style-type: none;
+}
+#lselect ul li {
+	width: 150px;
+	padding: 5px 0 5px 25px;
+	display: block;
+	background: url(bullets.gif) 14px 7px no-repeat;
+	border-bottom: 1px solid #311D00;
+}
+#lselect ul li a{
+	display: block;
+	font-weight: bold;
+	color: #D07B02;
+	text-decoration: none;
+	line-height: 12px;
+}
+#lselect ul li a:hover{
+	color: #FAA123;
+}
+#lselect ul li a.c {
+	color: #C13003;
+	display: inline;
+	font-weight: bold;
+}
+#lselect ul li a.c:hover {
+	color: #C13003;
+	text-decoration: underline;
+}
+
+/*------------------------------------------------------
+A R C H I V E S
+------------------------------------------------------*/
+
+.archives {
+	margin-top: 20px;
+	padding-bottom: 5px;
+	width: 177px;
+	height: 31px;
+	background: url(h_archives.gif) no-repeat;
+}
+#larchives ul {
+	width: 150px;
+	list-style-type: none;
+}
+#larchives ul li {
+	width: 150px;
+	padding: 3px 0 3px 25px;
+	border-bottom: 1px solid #311D00;
+}
+#larchives ul li a{
+	font-weight: bold;
+	color: #D07B02;
+	text-decoration: none;
+	line-height: 12px;
+}
+#larchives ul li a:hover{
+	color: #FAA123;
+}
+
+/*------------------------------------------------------
+R E S O U R C E S
+------------------------------------------------------*/
+
+.resources {
+	margin-top: 20px;
+	padding-bottom: 5px;
+	width: 177px;
+	height: 31px;
+	background: url(h_resources.gif) no-repeat;
+}
+#lresources ul {
+	width: 150px;
+	list-style-type: none;
+}
+#lresources ul li {
+	width: 150px;
+	padding: 3px 0 3px 25px;
+	background: url(bullets.gif) 14px 8px no-repeat;
+	border-bottom: 1px solid #311D00;
+}
+#lresources ul li a{
+	font-weight: bold;
+	color: #D07B02;
+	text-decoration: none;
+	line-height: 12px;
+}
+#lresources ul li a:hover{
+	color: #FAA123;
+}
+
+

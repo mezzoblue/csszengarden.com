@@ -1,0 +1,322 @@
+/* css Zen Garden submission 074 - 'Egyptian Dawn' by James Abbott - http://www.ja-consultancy.co.uk/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2003, James Abbott */
+/* Added: January 18th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+/* basic elements */
+body { 
+	font-size: 8pt;
+	font-family: verdana, sans-serif;
+	font-style: italic; 
+	color: #6B441A;
+	background: #BB8855 url(border.jpg) no-repeat top left;
+	margin: 0px; 
+	}
+p { 
+	margin-top: 0px; 
+	}
+a:link { 
+	text-decoration: none; 
+	color: #995522;
+	font-weight: bold;
+	}
+a:visited {  
+	text-decoration: none; 
+	color: #995522;
+	font-weight: bold;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #995522;
+	font-weight: bold;
+	}
+
+
+/* specific divs */
+#container { 
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	height: 1900px;
+	width: 1000px;
+	border: 0px solid #000000;
+	padding: 0px 0px 10px 0px;
+	margin: 0px;
+	background: url(container_bg.jpg) no-repeat top left;
+	}
+
+#intro { 
+	position: relative;
+	top: 130px;
+	min-width: 400px;
+	border: 0px solid #000000;
+	width: 750px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	}
+
+#intro h3 {
+	font-size: 10pt;
+	font-family: verdana, sans-serif;
+	color: #FFFB88;
+	padding: 0px;
+	margin: 10px 0px 10px 0px;
+	border: 0px solid #000000;
+	display: none;
+	
+}		
+	
+#pageHeader { 
+	position: relative;
+	left: 100px;
+	top: 25px;
+	padding: 0px;
+	border: 0px solid #000000;
+	margin: 0px;
+	}
+
+#pageHeader h1 { 
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#pageHeader h1 span {
+	display:none
+	}
+	
+#pageHeader h2 { 
+	
+	width: 340px;
+	height: 40px;
+	padding: 0px;
+	border: 0px solid #000000;
+	margin: 0px;
+	}
+#pageHeader h2 span {
+	display:none;
+	}
+
+#quickSummary {
+	position: relative;
+	top: 0px;
+	left: 105px;
+	width: 300px; 
+	border: 0px solid #000000;
+	padding: 5px 5px 5px 5px;
+	font-size: 8pt;
+	font-family: verdana, sans-serif;
+	font-weight: bold;
+	font-style: italic; 
+	color: #8D663C;
+	margin: 0px;
+	}
+	
+#preamble {
+	background: url(preamble.gif) no-repeat top left;
+	padding: 25px 5px 15px 5px;
+	position: relative;
+	top: 20px;
+	left: 105px;
+	width: 370px;
+	margin: 0px 0px 0px 0px;
+	border: 0px solid #000000;
+	}
+	
+#supportingText {
+	position: relative;
+	min-width: 350px;
+	top: 160px;
+	border: 0px solid #000000;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#supportingText h3 {
+	font-size: 10pt;
+	font-family: verdana, sans-serif;
+	color: #FFFB88;
+	padding: 0px;
+	margin: 10px 0px 10px 0px;
+	display: none;
+}	
+
+#footer { 
+	position: relative;
+	top: 20px;
+	left: 100px;
+	width: 370px;
+	border: 0px solid #000000;
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+	}
+	
+	
+#explanation {
+	background: url(explanation.gif) no-repeat top left;
+	padding: 25px 5px 15px 5px;
+	margin: 0px 0px 0px 0px;
+	position: relative;
+	top: 0px;
+	left: 105px;
+	width: 370px;
+	border: 0px solid #000000;
+}
+	
+#participation {
+	background: url(participation.gif) no-repeat top left;
+	padding: 25px 5px 15px 5px;
+	position: relative;
+	top: 10px;
+	left: 105px;
+	width: 370px;
+	margin: 0px 0px 0px 0px;
+	border: 0px solid #000000;
+}	
+	
+#benefits {
+	background: url(benefits.gif) no-repeat top left;
+	padding: 25px 5px 15px 5px;
+	position: relative;
+	top: 20px;
+	left: 105px;
+	width: 370px;
+	margin: 0px 0px 0px 0px;
+	border: 0px solid #000000;
+}	
+	
+#requirements {
+	background: url(requirements.gif) no-repeat top left;
+	padding: 25px 5px 15px 5px;
+	position: relative;
+	top: 30px;
+	left: 105px;
+	width: 370px;
+	margin: 0px 0px 0px 0px;
+	border: 0px solid #000000;
+}		
+
+#footer a:link, #footer a:visited { 
+	margin-right: 20px;
+	color: #6B441A; 
+	}
+
+#linkList {
+	position: absolute; 
+	top: 420px; 
+	left: 515px;
+	border: 0px solid #000000;
+	width: 180px;
+	margin: 0px;
+	padding: 0px;
+	background: url(listheader.gif) no-repeat top center;
+	}
+	
+#linkList2 { 
+	position: relative;
+	font-size: 7pt;
+	font-family: verdana, sans-serif;
+	padding: 100px 20px 20px 20px; 
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	width: 140px;
+	height: 750px;
+	border: 0px solid #AA7744;
+	}
+		
+			
+#lselect {
+	border: 0px solid #000000;
+	padding: 5px 5px 5px 5px;
+	margin: 5px;
+}	
+
+#lselect h3 {
+	font-size: 9pt;
+	font-family: verdana, sans-serif;
+	color: #6B441A;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+#lfavorites{
+	border: 0px solid #000000;
+	padding: 5px 5px 5px 5px;
+	margin: 5px;
+}	
+
+#lfavorites h3 {
+	font-size: 9pt;
+	font-family: verdana, sans-serif;
+	color: #6B441A;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#larchives {
+	border: 0px solid #000000;
+	padding: 5px 5px 5px 5px;
+	margin: 5px;
+}
+#larchives h3 {
+	font-size: 9pt;
+	font-family: verdana, sans-serif;
+	color: #6B441A;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+		
+#lresources {
+	border: 0px solid #000000;
+	padding: 5px 5px 5px 5px;
+	margin: 5px;
+}		
+#lresources h3 {
+	font-size: 9pt;
+	font-family: verdana, sans-serif;
+	color: #6B441A;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#linkList li {
+	line-height: 2.5ex; 
+	list-style-type: none;
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	}
+	
+#linkList li a:link { 
+		font-size: 9pt;
+		font-family: verdana, sans-serif;
+		color: #995522;
+		font-weight: bold;
+	}
+	
+#linkList li a:visited {
+		font-size: 8pt;
+		font-family: verdana, sans-serif;
+		color: #995522;
+		font-weight: bold;
+	}
+	

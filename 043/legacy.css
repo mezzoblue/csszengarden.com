@@ -1,0 +1,557 @@
+/* css Zen Garden submission 043 - 'Burning' by Kevin & Ethel Davis, http://etheldavisgallery.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Kevin & Ethel Davis */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without both the designer's and artist's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* CSS by Kevin Davis */
+/* For more work by the author, see http://alazanto.org */
+
+/* Artwork by Ethel Davis */
+/* For more work by the artist, see http://etheldavisgallery.com */
+
+/* have a great day! :) */
+
+
+
+
+/******************************************************************* primary elements */
+body {
+	background: #444 url(body.gif) top left repeat-y;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	color: #fff;
+}
+
+/******************************************************************* primary hyperlink styling */
+#supportingText a:link {
+	font-weight: normal;
+	text-decoration: none;
+	background: transparent;
+	color: #D1E8CC;
+	border-bottom: 1px solid #D1E8CC;
+}
+
+#supportingText a:visited {
+	font-weight: normal;
+	text-decoration: none;
+	background: transparent;
+	color: #BBD9BA;
+	border-bottom: 1px solid #BBD9BA;
+}
+
+#supportingText a:hover, a:active {
+	text-decoration: none;
+	background: transparent;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+/***********************************************/
+
+#linkList a:link {
+	font-weight: normal;
+	text-decoration: none;
+	background: transparent;
+	color: #bcf;
+}
+
+#linkList a:visited {
+	font-weight: normal;
+	text-decoration: none;
+	background: transparent;
+	color: #bde;
+}
+
+#linkList a:hover, a:active {
+	text-decoration: underline;
+	background: transparent;
+	color: #fff;
+}
+
+/***********************************************/
+
+#intro #quickSummary a:link {
+	font-weight: normal;
+	text-decoration: none;
+	background: transparent;
+	color: #ccc;
+	border-bottom: 1px solid #555;
+}
+
+#intro #quickSummary a:visited {
+	font-weight: normal;
+	text-decoration: none;
+	background: transparent;
+	color: #ccc;
+	border-bottom: 1px solid #555;
+}
+
+#intro #quickSummary a:hover, a:active {
+	text-decoration: none;
+	background: transparent;
+	color: #fff;
+	border-bottom: 1px solid #555;
+}
+
+/******************************************************************* body content */
+#container {
+	margin-top: 33px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+
+	padding: 1px;
+
+	background: transparent url(container-back.gif) top left no-repeat;
+
+	width: 751px;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:750px;
+}
+
+html>body #container {
+	width: 750px;
+}
+
+#extraDiv1 {
+	position: absolute;
+
+	height: 33px;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+
+	background: transparent url(top-bar.gif) top left repeat-x;
+}
+
+#extraDiv2 {
+	position: relative;
+
+	height: 33px;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+
+	background: transparent url(bottom-bar.gif) top left repeat-x;
+}
+
+#extraDiv3 {
+	position: absolute;
+
+	top: 33px;
+	left: 750px;
+	right: 0px;
+
+	color: #fff;
+
+	background: #38332F url(back-top2.gif) top left repeat-y;
+	border-bottom: 2px solid #29281C;
+
+	height: 480px;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	height:478px;
+}
+
+html>body #extraDiv3 {
+	height: 478px;
+}
+
+	#extraDiv3 span {
+		position: absolute;
+
+		top: 0px;
+		left: 0px;
+		right: 0px;
+
+		margin-bottom: 471px;
+
+		color: #fff;
+
+		background: #38332F url(back-top2-span.gif) top left repeat-x;
+
+		height: 7px;
+		voice-family: "\"}\"";
+		voice-family:inherit;
+		height:7px;
+	}
+
+	html>body #extraDiv3 span {
+		height: 7px;
+	}
+
+#pageHeader {
+	position: absolute;
+	top: 33px;
+	left: 0px;
+
+	width: 0px;
+	hegith: 0px;
+
+	margin: 0px;
+	padding: 0px;
+
+	overflow: hidden;
+	text-indent: -100em;
+}
+
+
+/******************************************************************* intro section */
+#intro {
+	margin-top: 243px;
+	margin-left: 58px;
+	margin-right: 242px;
+	margin-bottom: 0px;
+
+	padding: 15px;
+
+	border-bottom: 1px solid #394A38;
+}
+
+	#intro acronym, #linkList acronym {
+		cursor: help;
+		border: 0px;
+		letter-spacing: 0.1em;
+	}
+
+	#quickSummary p.p2 {
+		position: absolute;
+
+		top: 255px;
+		left: 5px;
+
+		margin: 0px;
+
+		width: 240px;
+
+		padding-top: 0px;
+		padding-left: 0px;
+		padding-bottom: 0px;
+		padding-right: 0px;
+
+		border: 0px solid #333;
+
+		font-family: "Verdana", serif;
+		font-size: 9px;
+		font-weight: normal;
+
+		text-align: right;
+
+		color: #bbb; background: transparent;
+	}
+
+	#intro p {
+		margin-top: 0px;
+		margin-bottom: 8px;
+
+		font-family: "Times", "Times New Roman", Serif;
+		font-size: 14px;
+		font-weight: normal;
+
+		word-spacing: 0.05em;
+		letter-spacing: 0.05em;
+
+		line-height: 1.4em;
+
+		text-align: left;
+
+		color: #fff; background: transparent;
+	}
+
+	/* Thanks Mike! http://phark.typepad.com */
+
+	#intro h3 {
+		width: 100%;
+		height: 30px;
+
+		margin-top: 10px;
+		margin-left: -2px;
+		margin-bottom: 5px;
+		margin-right: 0px;
+
+		padding: 0px;
+
+		color: #fff;
+
+		border-bottom: 1px solid #5F705E;
+
+		background: transparent url(header-enlighten.gif) no-repeat top left;
+	}
+
+	#intro h3 span {display: none;}
+
+/******************************************************************* supportingtext section */
+#supportingText {
+	margin-top: 0px;
+	margin-left: 58px;
+	margin-right: 242px;
+
+	padding: 15px;
+}
+
+	#supportingText acronym {
+		cursor: help;
+		background: transparent url(acronym.gif) top left no-repeat;
+		padding-left: 15px;
+		border-bottom: 0px dotted #fff;
+	}
+
+	#supportingText p {
+		margin-top: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 8px;
+
+		font-family: "Times", "Times New Roman", Serif;
+		font-size: 14px;
+		font-weight: normal;
+
+		word-spacing: 0.05em;
+		letter-spacing: 0.05em;
+
+		line-height: 1.4em;
+
+		text-align: left;
+
+		color: #fff; background: transparent;
+	}
+
+	#supportingText h3 {
+		width: 100%;
+		height: 30px;
+
+		margin-top: 10px;
+		margin-left: -2px;
+		margin-bottom: 5px;
+		margin-right: 0px;
+
+		border-bottom: 1px solid #5F705E;
+	}
+
+	#supportingText h3 span {display: none;}
+
+	#explanation h3 {
+		background: transparent url(header-sowhat.gif) no-repeat top left;
+	}
+
+	#participation h3 {
+		background: transparent url(header-participation.gif) no-repeat top left;
+	}
+
+	#benefits h3 {
+		background: transparent url(header-benefits.gif) no-repeat top left;
+	}
+
+	#requirements h3 {
+		background: transparent url(header-requirements.gif) no-repeat top left;
+	}
+
+/******************************************************************* footer section */
+#footer {
+	margin-top: 30px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+
+	padding: 6px;
+
+	font-family: "Verdana", serif;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: italic;
+
+	color: #fff;
+
+	text-align: center;
+
+	background-color: #697A68;
+	border: 1px solid #899A88;
+}
+	#footer a:link, #footer a:visited {
+		margin-left: 5px;
+		margin-right: 5px;
+
+		padding-left: 5px;
+		padding-right: 5px;
+
+		border-bottom: 0px;
+
+		border-left: 1px solid #899A88;
+		border-right: 1px solid #899A88;
+	}
+
+/******************************************************************* link list */
+
+#linkList {
+	position: absolute;
+
+	top: 0px;
+	left: 0px;
+
+	margin-top: 276px;
+	margin-left: 509px;
+
+	padding-top: 251px;
+	padding-left: 20px;
+	padding-right: 0px;
+
+	text-align: left;
+
+	background: transparent url(linklist-back.gif) top left no-repeat;
+
+    width: 242px;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:222px;
+}
+
+html>body #linkList {
+  width: 222px;
+}
+
+#lselect, #lfavorites, #larchives, #lresources {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+
+	padding: 4px;
+
+	border: double #878BA6;
+	/*background-color: #4A5269;*/
+}
+
+	#linkList h3 {
+		font-family: "Verdana", serif;
+		font-size: 10px;
+		font-weight: normal;
+
+		margin: 0px;
+		padding: 0px;
+
+		border-bottom: 1px solid #878BA6;
+	}
+
+	h3.select {
+		text-align: left;
+
+		width: 100%;
+		height: 14px;
+
+		background: transparent url(header-select.gif) no-repeat top left;
+	}
+		#linkList h3.select span {display:none;}
+
+	h3.favorites {
+		text-align: left;
+
+		width: 100%;
+		height: 14px;
+
+		background: transparent url(header-favorites.gif) no-repeat top left;
+	}
+		#linkList h3.favorites span {display:none;}
+
+	h3.archives {
+		text-align: left;
+
+		width: 100%;
+		height: 14px;
+
+		background: transparent url(header-archives.gif) no-repeat top left;
+	}
+		#linkList h3.archives span {display:none;}
+
+		#larchives ul>li {
+			margin-bottom: 0px;
+			margin-left: -10px;
+			text-align: left;
+
+			padding-left: 9px;
+			padding-bottom: 0px;
+
+			border-left: 1px solid #878BA6;
+			border-right: 1px solid #878BA6;
+			border-bottom: 0px solid #878BA6;
+		}
+
+		#larchives ul>li+li {
+			margin-bottom: 0px;
+			margin-left: -10px;
+			text-align: left;
+
+			padding-left: 9px;
+			padding-bottom: 5px;
+
+			border-left: 1px solid #878BA6;
+			border-right: 1px solid #878BA6;
+			border-bottom: 1px solid #878BA6;
+		}
+
+		#larchives ul>li+li+li {
+			margin-top: 5px;
+			margin-bottom: 0px;
+			margin-left: 0px;
+			text-align: left;
+
+			padding-left: 0px;
+			padding-bottom: 0px;
+
+			border-left: 0px;
+			border-right: 0px;
+			border-bottom: 0px;
+		}
+
+	h3.resources {
+		text-align: left;
+
+		width: 100%;
+		height: 14px;
+
+		background: transparent url(header-resources.gif) no-repeat top left;
+	}
+		#linkList h3.resources span {display:none;}
+
+	#linkList ul {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		margin-left: 10px;
+		margin-right: 0px;
+		padding: 0px;
+	}
+		#linkList li {
+			font-family: "Verdana", serif;
+			font-size: 11px;
+			font-weight: normal;
+
+			color: #fff; background: transparent;
+
+			line-height: 13px;
+
+			list-style-type: none;
+			display: block;
+
+			padding-top: 4px;
+			margin-bottom: 2px;
+		}
+
+		#larchives li {
+			padding-top: 4px;
+			margin-bottom: 0px;
+		}
+
+		#lselect li, #lfavorites li {
+			background: url(docbullet.gif) no-repeat 0px 7px;
+			padding-left: 11px;
+		}
+
+			#lselect a, #lfavorites a { display:block; text-transform:lowercase; }
+			#lselect a.c, #lfavorites a.c {display:inline; text-transform: none; }

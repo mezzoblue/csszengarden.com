@@ -1,0 +1,205 @@
+/* css Zen Garden submission 132 - 'Bonsai', by Martin Plazotta, http://martin.plazotta.at/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Martin Plazotta */
+/* Added: Oct. 21st, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+
+h3 {
+	margin-left: 22px;
+	margin-top: 20px;
+	border-bottom: 1px dashed #000;
+}
+h3 span {
+	display: none;
+}
+p {
+	font: normal 13px Arial, Helvetica, sans-serif;
+	color: #000;
+	padding-left: 22px;
+	padding-right: 10px;
+}
+a {
+	font: normal 13px Arial, Helvetica, sans-serif;
+	color: #050;
+	text-decoration: underline;
+}
+a:visited {
+	color: #003399;
+	text-decoration: underline;
+}
+a:hover {
+	color:#00CC00;
+	text-decoration: underline;
+}
+acronym {
+	font-weight: bold;
+	color: #000;
+	border-bottom:1px dashed #000;
+	cursor: help;
+}
+acronym:hover {
+	color: #050;
+}
+li {
+	padding-left: 5px;
+	margin-left: 10px;
+	padding-bottom: 1em;
+	font: normal 13px Arial, Helvetica, sans-serif;
+	list-style-image: url(listimage.gif);
+}
+
+#container {
+	width: 675px;
+	margin: 0;
+	padding: 0;
+	background: url(container_bg.gif) 0 0 no-repeat;
+	text-align: left;
+	float: right;
+}
+
+#intro {
+	width: 500px;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+#pageHeader {
+	width: 300px;
+	height: 195px;
+	margin: 0;
+	padding: 0;
+	background: url(header.gif) 0 0 no-repeat;
+	float: right;
+}
+#pageHeader h1, h2 {
+	margin-top: 0;
+}
+#pageHeader h1 span, h2 span {
+	display: none;
+}
+#quickSummary {
+	width: 200px;
+	height: 500px;
+	margin: 0;
+	padding: 0;
+	background: url(summary_bg.gif) 0 0 no-repeat;
+	float: left;
+}
+#quickSummary .p1 span {
+	display: none;
+}
+#quickSummary .p1 {
+	margin: 0;
+	padding: 0;
+}
+#quickSummary .p2 {
+	margin: 0;
+	padding: 290px 20px 0 50px;
+	text-align: right;
+}
+#preamble {
+	width: 300px;
+	height: 345px;
+	margin: 0;
+	padding: 0;
+	background: url(intro_bg.gif) 0 0 no-repeat #C5F7A5;
+	float: right;
+}
+#preamble h3 {
+	height: 24px;
+	background: url(road.gif) 0 0 no-repeat;
+	margin-top: 38px;
+}
+
+#supportingText {
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	background: #C5F7A5;
+	float: right;
+}
+#explanation h3 {
+	height: 24px;
+	background: url(about.gif) 0 0 no-repeat;
+}
+#participation h3 {
+	height: 24px;
+	background: url(participation.gif) 0 0 no-repeat;
+}
+#benefits h3 {
+	height: 24px;
+	background: url(benefits.gif) 0 0 no-repeat;
+}
+#requirements h3 {
+	height: 24px;
+	background: url(requirements.gif) 0 0 no-repeat;
+}
+#footer {
+	width: 279px;
+	height: 30px;
+	padding-top: 8px;
+	padding-right: 20px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	background: url(footer.gif) 0 0 no-repeat;
+	float: right;
+	text-align: right;
+	/* Tantek's Hack */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 259px;
+	height: 22px;
+}
+#footer a {
+	font: normal 13px Arial, Helvetica, sans-serif;
+	color: #00CC00;
+	text-decoration: none;
+}
+#footer a:hover {
+	color:#050;
+	text-decoration: none;
+}
+
+#linkList {
+	position: absolute;
+	top: 418px;
+	width: 200px;
+	margin-left:175px;
+	padding: 0;
+	background: url(link_bg.gif) 0 100% no-repeat #A5DBA5;
+}
+#lselect h3 {
+	height: 24px;
+	background: url(select.gif) 0 0 no-repeat;
+}
+#lselect li {
+	padding-bottom: 0.25em;
+}
+#lselect a.c {
+	font: normal 11px Arial, Helvetica, sans-serif;
+	display: block;
+}
+#lfavorites h3 {
+	height: 24px;
+	background: url(favorites.gif) 0 0 no-repeat;
+}
+#larchives h3 {
+	height: 24px;
+	background: url(archives.gif) 0 0 no-repeat;
+}
+#lresources h3 {
+	height: 24px;
+	background: url(resources.gif) 0 0 no-repeat;
+}

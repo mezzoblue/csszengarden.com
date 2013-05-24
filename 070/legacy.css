@@ -1,0 +1,257 @@
+/* css Zen Garden submission 070 - 'CS(S) Monk' by Cedric Savarese - http://www.4213miles.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Cedric Savarese */
+/* Added: January 2nd, 2003 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* basic elements */
+body {
+	color: #000000;
+	background: #fff url(BGTile.jpg) repeat left top;
+	margin: 0;
+	padding: 0;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	font-size: small;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+	}
+
+
+a:link {
+	padding: 0 0 1px 0;	
+	text-decoration: none;
+	color: #CC3300;
+	background-image: url(underline.gif);
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	}
+a:visited { 
+	text-decoration: none; 
+	color: #666666;
+	padding: 0 0 2px 0;
+	background-image: url(underline.gif);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	}
+a:hover, a:active { 
+	text-decoration: none; 
+	color: #FF0000;
+	background-image: none;
+	}
+acronym {
+	border-bottom: none;
+	}
+
+/* specific divs */
+#container {
+	background: url(ContentBG.gif) repeat-y left top;
+	margin:0px auto;
+	text-align:left;
+	width: 780px;
+	padding: 0px;
+	border-bottom: 1px solid #000;
+	}
+#intro {
+	position: relative;
+}
+#pageHeader {	
+	background-image: url(CSZenLogo.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 444px;
+	z-index:99;
+}
+
+
+#pageHeader h1 {
+	display: none;
+}
+#pageHeader h2 {
+	display: none;
+}
+#preamble {
+	background-image: url(RoadToEnlightmentBG_2.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 405px;
+	position: absolute;
+	left: 410px;
+	top: 15px;
+	
+	margin: 0;
+	padding: 0;
+	font-size: x-small;
+	font-style: italic;
+	letter-spacing: 2px;
+}
+#preamble h3 {
+	display: none;
+}
+#preamble p {
+	padding: 8px 70px 0px 70px;
+	margin: 0;	
+}
+#preamble .p1 {
+	background-image: url(RoadToEnlightmentBG_1.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	padding-top: 10px;
+	
+}
+
+#preamble .p3 {
+	padding-bottom: 20px;
+}
+#quickSummary {
+	position: absolute;
+	font-size: x-small;
+	left: 38px;
+	top: 515px;
+	width: 250px;
+	z-index: 5;
+	text-align: right;
+	letter-spacing: 2px;
+}
+ 
+#explanation { 
+    background-image: url(SoWhatIsThisAbout.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	margin: 40px 0px 0px 30px ;
+}
+#explanation h3 {
+	display: none;
+}
+#explanation p {
+	margin: 0px 50px 0px 280px ;
+}
+
+#participation { 
+    background-image: url(Participation.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	margin: 20px 0px 0px 150px ;
+}
+#participation h3 {
+	display: none;
+}
+#participation p {
+	margin: 0px 50px 0px 160px ;
+}
+
+#benefits { 
+    background-image: url(Benefits.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	margin: 40px 0px 0px 195px ;
+}
+#benefits h3 {
+	display: none;
+}
+#benefits p {
+	margin: 0px 50px 0px 115px ;
+}
+
+#requirements { 
+    background-image: url(Requirements.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	margin: 40px 0px 0px 140px ;
+}
+#requirements h3 {
+	display: none;
+}
+#requirements p {
+	margin: 0px 50px 0px 170px ;
+}
+#linkList {
+	margin: 40px auto;
+	padding: 0px;
+	background-image: url(NavBG.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	width: 729px;
+	font-size: xx-small;
+}
+
+#linkList2 {
+	background-image: url(NavBG_top.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 729px;
+	padding: 5px 0px;
+}
+#linkList ul {
+	display: block;
+	padding: 0px 60px 0px 120px;
+	margin: 0;	 
+	line-height: 20px;
+	}	
+#linkList li {	
+	display: inline;
+	list-style-image: none;	
+}
+#linkList li:after {content:url(Bullet.gif); }
+
+#lselect { 
+    background-image: url(SelectADesign.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+	margin: 0 0 0 20px;		
+}
+#lselect h3 {
+	display: none;
+}
+#larchives { 
+    background-image: url(Archive.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	margin: 10px 0 10px 20px;	 
+	padding: 8px 0;	
+}
+#larchives h3 {
+	display: none;
+}
+	
+#lresources { 
+    background-image: url(Resources.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	margin:  10px 0 10px 20px;	 	
+	padding: 8px 0;
+}
+#lresources h3 {
+	display: none;
+}
+#extraDiv1 {	
+	position: relative; 
+	top: -225px;
+	left: -360px;
+	margin: 0 auto;
+	width: 96px;
+	height: 206px;
+	background-image: url(Dragon.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.p5 {
+	padding-top: 30px;
+	font-size: 10px;
+}
+
+#footer {
+	padding-left: 160px;
+	font-size: x-small;
+	margin-top: -13px;
+	
+}

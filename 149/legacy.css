@@ -1,0 +1,226 @@
+/* css Zen Garden submission 149 - 'Uncultivated', by Mario Carboni, http://www.mariocarboni.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Mario Carboni */
+/* Added: Jan. 31st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/*  general _______________________________________________________________________________*/
+* {
+	padding: 		0;
+	margin: 		0;
+}
+body { 
+	font: 			11px/1.3em Arial,Helvetica,sans-serif; 
+	text-align: 	center;
+	background: 	#bebcad;
+	}
+p { 
+	text-align: 	justify;
+	padding: 		5px 30px 15px 30px;
+	color: 			#786A47;
+	line-height: 	1.5em;
+	}
+a{
+	text-decoration: none;
+	background: 	transparent url(dotlink.gif) repeat-x left bottom;
+}
+a:link ,a:visited {
+	color: 			#5785A4;
+}
+a:hover {
+	color: 			#1D8FDB;
+}
+acronym {
+	background: 	transparent url(dot.gif) repeat-x left bottom;
+	cursor: 		help;
+}
+h3 {
+	font: 			normal 10px/12px Arial,Helvetica,sans-serif;
+	text-transform: uppercase;
+	margin: 		20px 0 0 30px;
+	color: 			#574D33;
+}
+ul {
+	list-style: 	none; 
+	margin: 		10px 20px 30px 10px;
+}
+li {
+	padding-left: 	1px;
+	margin: 		10px 0 0 8px;
+	display: 		block;
+	list-style: 	none;
+	background:		transparent url(dot.gif) repeat-x 0 100%;
+}
+
+
+/* grid _______________________________________________________________________________*/
+#container { 
+	margin: 		0 auto;
+	text-align: 	left;
+	width: 			580px;
+	background: 	url(container.gif) repeat-y center top;
+	position: 		relative;
+	}
+#quickSummary {
+	background: 	transparent url(quicksummary.gif) no-repeat top left;
+	height: 		178px;
+}
+#preamble,#supportingText {
+	padding-right:  200px;
+}
+#supportingText {
+	background: 	transparent url(foot2.jpg) no-repeat 0 100%;
+}
+#lresources {
+	padding-bottom: 220px;
+	background: 	transparent url(flowers.jpg) no-repeat 0 100%;
+}
+#footer {
+	height: 		34px;
+	line-height: 	34px;
+	text-align: 	center;
+	padding-bottom: 14px;
+}
+#linkList {
+	position: 		absolute;
+	top: 			210px;
+	right: 			0;
+	width: 			210px;
+}
+#extraDiv1 {
+	position: 		absolute;
+	top: 			0;
+	left: 			0;
+	background: 	transparent url(uncultivated.gif) no-repeat;
+	width:			43px;
+	height:			297px;
+}
+#extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+	display: 		none;
+}
+
+/* headers _______________________________________________________________________________*/
+
+#pageHeader h1 { 
+	background: 	transparent url(csszen.jpg) no-repeat top left;
+	width: 			580px;
+	height: 		40px;
+}
+#pageHeader h1 span {
+	display:		none
+}
+#pageHeader h2 {
+	background: 	transparent url(beauty.jpg) no-repeat top left;
+	width: 			580px;
+	height: 		169px;
+}
+#pageHeader h2 span {
+	display:		none;
+}
+#linkList h3.select {
+	background: 	transparent url(styles.jpg) no-repeat top left;
+	height: 		39px;
+	margin: 		0;
+}
+#linkList h3.select span {
+	display:		none;
+}
+#linkList h3.archives {
+	background: 	transparent url(archives.jpg) no-repeat top left;
+	height: 		39px;
+	margin: 		0;
+}
+#linkList h3.archives span {
+	display:		none;
+}
+#linkList h3.resources {
+	background: 	transparent url(resources.jpg) no-repeat top left; 
+	height: 		39px;
+	margin: 		0;
+}
+#linkList h3.resources span {
+	display:		none;
+}
+
+/*  p  _______________________________________________________________________________*/
+
+#quickSummary .p1 {
+	display:		none;
+}
+#quickSummary .p2 {
+	margin-right: 	200px;
+	color: 			#382A07;
+	text-align: 	right;
+	padding-top: 	150px;
+}
+
+#preamble p, #supportingText p{
+	margin: 		0 10px;
+	background: 	url(p.gif);
+} 
+
+#requirements .p4{
+	margin-bottom: 40px;
+}
+#requirements .p5{
+	margin-bottom: 110px;
+	text-align:		center;
+}
+
+/*  links  _______________________________________________________________________________*/
+
+#footer a{
+	text-decoration: underline;
+}
+#footer a:link, #footer a:visited {
+	color: 			#c6c6c6;
+}
+#footer a:hover {
+	color: 			#fff;
+}
+
+#linkList li a {
+	display: 		block;
+	font-weight: 	bold;
+	color: 			#E5D9BC;
+	text-decoration:none;
+	margin-left: 	-5px;
+	padding-left: 	19px;
+	padding-bottom: 4px;
+	background: 	url(dot2.gif) no-repeat 0 1px;
+}
+#linkList li a:hover {
+	color: 			#7ECDFF;
+	background: 	transparent url(dot2on.gif) no-repeat 0 1px;
+}
+#linkList li a.c {
+	display: 		inline;
+	padding: 		0;
+	margin: 		0;
+	background: 	none;
+	color: 			#595339;
+	font-weight: 	normal;
+}
+#linkList li a.c:hover {
+	color: 			#7ECDFF;
+}
+#linkList #larchives li,#linkList #lresources li,#linkList #lfavorites li {
+	padding: 		2px 0 0 7px;
+}
+#linkList #larchives li a,#linkList #lresources li a,#linkList #lfavorites li a	{
+	background: 	transparent url(dot2.gif) no-repeat 0 1px;
+	display: 		block;
+	padding-left: 	19px;
+	padding-bottom: 5px;
+	margin: 		0 0 0 -11px;
+}
+#linkList #larchives li a:hover,#linkList #lresources li a:hover,#linkList #lfavorites li a:hover {
+	background: 	transparent url(dot2on.gif) no-repeat 0 1px;
+}

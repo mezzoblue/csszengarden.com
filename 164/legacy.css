@@ -1,0 +1,210 @@
+/* css Zen Garden submission 164 - 'Chien', by Alex Miller, http://www.pixul.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Alex Miller */
+/* Added: Apr. 15th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* You may notice this CSS file has no IE hacks. This is because I think hacks are messy, and I don't care if my page screws up for some people. It's their fault for using Internet Explorer in the first place. If everyone didn't include hacks, more people would not use IE! */
+
+body {
+	background-image: url(background.gif);
+	font-family: verdana, arial, serif;
+	font-size: 11px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	line-height: 16px;
+	color: #333;
+}
+
+#container {
+	width: 633px;
+	margin: auto;
+	border-top: 1px solid #000;
+	background-image: url(containerbackground.gif);
+	text-align: left;
+	padding: 0 0 0 29px;
+	position: relative;
+	top: -1px;
+}
+
+#pageHeader {
+	background-image: url(top.gif);
+	width: 605px;
+	height: 332px;
+	margin-top: 0;
+	}
+
+#pageHeader h1, h2 {
+	display: none;
+	}
+	
+#preamble, #supportingText {
+	margin: 0 0 0 8px;
+	width: 389px;
+}
+
+#preamble h3, #supportingText h3 {
+ 	margin-top: 0;
+	}
+	
+#preamble p, #supportingText p, #quickSummary p {
+	margin: 10px 15px 10px 15px;
+}
+
+#quickSummary, #linkList {
+	position: absolute;
+	left: 435px;
+	width: 192px;
+	}	
+	
+#quickSummary {
+	top: 332px;
+	background: url(summary.gif) no-repeat;
+	padding-top: 46px;
+	color: #000;
+}
+
+#linkList {
+	top: 526px;
+}
+
+
+#footer {
+	text-align: center;
+	width: 100%;
+	padding-bottom: 10px;
+	}
+	
+
+#preamble h3 {
+	background-image: url(title1.gif);
+	width: 389px;
+	height: 46px;
+}
+
+#preamble h3 span {
+	display: none;
+}
+
+#explanation h3 {
+	background-image: url(title2.gif);
+	width: 389px;
+	height: 46px;
+}
+
+#explanation h3 span {
+	display: none;
+}
+
+#participation h3 {
+	background-image: url(title3.gif);
+	width: 389px;
+	height: 46px;
+}
+
+#participation h3 span {
+	display: none;
+}
+
+#benefits h3 {
+	background-image: url(title4.gif);
+	width: 389px;
+	height: 46px;
+}
+
+#benefits h3 span {
+	display: none;
+}
+
+#requirements h3 {
+	background-image: url(title5.gif);
+	width: 389px;
+	height: 46px;
+}
+
+#requirements h3 span {
+	display: none;
+}
+
+h3.select {
+	background-image: url(designs.gif);
+	width: 192px;
+	height: 45px;
+}
+
+h3.select span {
+	display: none;
+}
+
+h3.archives {
+	background-image: url(archives.gif);
+	width: 192px;
+	height: 45px;
+}
+
+h3.archives span {
+	display: none;
+}
+
+h3.resources {
+	background-image: url(resources.gif);
+	width: 192px;
+	height: 45px;
+}
+
+h3.resources span {
+	display: none;
+}
+
+
+li {
+ 	padding: 0 0 6px 0;
+ 	text-transform: capitalize;
+}
+
+#lselect a:link.c, #lselect a:visited.c {
+ 	display: inline;
+ }
+
+#lselect a {
+ 	display: block;
+ }
+
+#lselect ul li {
+ 	list-style-image: url(paperfolded.gif);
+}
+
+#larchives ul li, #lresources ul li {
+ 	list-style-image: url(paper.gif);
+}
+
+a:LINK {
+	text-decoration: none;
+	color: #CC0000;
+	}
+	
+a:VISITED {
+	text-decoration: none;
+	color: #CC6666;
+	}
+	
+a:HOVER {
+	text-decoration: underline;
+	color: #CC0000;
+	}
+	
+#footer {
+	border-top: 1px solid #999;
+	padding: 6px 0 6px 0;
+	background-color: #FFF;
+}
+#footer a {
+	font-weight: bold;
+	}

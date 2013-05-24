@@ -1,0 +1,399 @@
+/* css Zen Garden submission 103 - 'Odyssey', by Terrence Conley, http://www.liquidarch.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Terrence Conley */
+/* Added: May 3rd, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* Inspired by Homer's Odyssey*/
+/* All original artwork copyright 2004, Terrence Conley */
+
+
+/*B A S I C  T A G  R U L E S */
+
+body { 
+color: #000; 
+background:url(ody-bg3.jpg) repeat-y #000 fixed;
+margin:0; 
+padding:0;
+}
+
+h3 span, h2 span, h1 span{
+display:none;
+margin:0;
+padding:0;
+}
+
+h3, h2, h1, p{
+margin:0;
+padding:0;
+}
+
+a:link, a:visited {  
+text-decoration: none; 
+color: #C29E47;
+}
+
+a:hover, a:active { 
+text-decoration: underline; 
+color: #FFEAC8;
+}
+
+acronym{
+margin:0;
+cursor:help;	
+}
+
+
+ul{
+list-style:none;
+margin:0;
+padding:0 0 10px 0;
+}
+
+/* M A C R O  R U L E S */
+
+#container { 
+position: relative;
+margin-bottom: 0px;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+#intro { 
+position:relative;
+width:auto;
+margin-bottom:0px;	
+margin-left:35px;
+background:url(intro-bg.gif) top left repeat-x transparent; 
+}
+
+
+
+#supportingText{
+width:424px;
+margin-left:33px;
+text-align:center;
+font:.8em/1.5em arial,sans-serif;
+}
+
+#supportingText p{
+text-align:left;
+margin:20px 105px 20px 30px;
+padding:0;
+}
+
+#supportingText .p1{
+padding:0;
+margin-top:-40px;
+}
+
+* html #supportingText.p1 {margin-top:0px;}
+
+#supportingText .p5{
+margin-bottom:10px;
+font:11px/14px  arial, sans-serif;
+font-style:italic;
+}
+
+#linkList{
+background:transparent;
+position:absolute;
+left:405px;
+right:0px;
+top:98px;
+height:320px;
+color:#73552A;
+font-size:.6em;
+font-family:arial, sans-serif;
+overflow:hidden;
+background:url(list-bg.gif) bottom right repeat-y;
+}
+
+* html #linkList {left:375px; right:36px}
+
+#linkList2{
+height:100%;
+background:url(blend.gif) repeat-y;
+padding:12px 25px 5px 15px;
+}
+
+/* M I C R O  R U L E S */
+
+#pageHeader{
+height:98px;
+background:url(title2.gif) -2px 0px no-repeat;
+margin-left:0px;
+}
+
+#pageHeader h1, #pageHeader h2{
+display:none;
+}
+
+
+#quickSummary{
+position:absolute;
+left:425px;
+top:425px;
+text-align:left;
+width:18em;
+height:95px;
+color:#AF9874;
+padding:0px 10px;
+}
+
+* html #quickSummary{top:435px;}
+
+
+#quickSummary p{
+font:.7em/1.2em  arial, sans-serif;
+font-style:italic;
+}
+
+#quickSummary .p2{
+color:#E4CF9D;
+line-height:10px;
+line-height:30px;
+}
+
+#preamble{
+height:450px;
+width:424px;
+font:12px/15px  arial, georgia, serif;
+font-style:italic;
+position:relative;
+color:#AF9874;
+background:url(preamb2.gif) -2px 231px no-repeat;
+text-align:left;
+overflow:hidden;
+
+}
+
+#preamble p{
+margin-top:4px;
+margin-left:20px;
+width:310px;
+text-indent:10px;
+}
+
+#preamble h3{
+color:#E4CF9D;
+height:20px;
+padding-top:20px;
+margin:0px;
+margin-left:20px;
+background:url(preamb_title.gif) bottom left no-repeat;
+}
+
+#preamble acronym, #quickSummary acronym{
+color:#E4CF9D;
+}
+
+#explanation .p1{
+text-indent:10px;
+margin-top:-90px;
+}
+
+
+#explanation{
+color:#E4CF9D;
+padding:0;
+margin-bottom:-30px;	
+}
+
+
+
+#explanation h3{
+margin:0;
+background:url(hd-explain.gif) 0 0 no-repeat transparent;
+height:134px;
+}
+
+#participation{
+margin-bottom:-30px;
+margin-top:2em;
+color:#E4CF9D;
+padding:0;	
+}
+
+#participation h3{
+background:url(hd-partic.gif) 0 0 no-repeat transparent;
+height:134px;	
+}
+
+
+#benefits{
+margin-bottom:-30px;
+margin-top:2em;
+color:#E4CF9D;
+padding:0;
+}
+
+#benefits h3{
+background:url(hd-benefits.gif) 0 0 no-repeat transparent;
+height:134px;		
+}
+
+
+#requirements{
+margin-top:2em;
+color:#E4CF9D;
+padding:0;
+}
+
+#requirements h3{
+background:url(hd-require.gif) 0 0 no-repeat transparent;
+height:134px;
+}
+
+#footer{
+background:url(footer.gif) top  left no-repeat black;
+height:56px;
+text-align:left;
+padding-left:30px;
+}
+
+
+#footer a:link, #footer a:visited {
+color: #C29E47;
+text-transform:uppercase;
+font:11px/54px  arial, serif;
+}
+
+#footer a:hover{
+text-decoration: none; 
+color: #FFEAC8;
+text-transform:uppercase;
+}
+	
+/* T H E   L I S T S */
+
+
+#lselect h3, #larchives h3, #lfavorites h3, #lresources h3 {
+color:#E4CF9D;
+padding-left:12px;
+}
+
+#lselect h3{
+background:url(select.gif) 0 0 no-repeat;
+height:17px;
+}	
+
+* html #lselect h3 {height:17px;}
+
+#larchives h3{
+background:url(archives.gif) 0 0 no-repeat;
+height:17px;	
+}
+
+* html #larchives h3 {height:17px;}
+
+#lfavorites h3{
+background:url(favorites.gif) 0 0 no-repeat;
+height:17px;
+	
+}
+
+* html #lfavorites h3 {height:17px;}
+
+
+#lresources h3{
+background:url(resources.gif) 0 0 no-repeat;
+height:17px;
+	
+}
+
+* html #lresources h3 {height:17px;}
+
+#lselect, #lfavorites{
+float:left;
+margin-right:0px;
+width:18em;
+}
+
+#larchives{
+float:left;
+margin-right:0px;
+width:14em;
+}
+#lresources{
+float:left;
+margin-right:0px;
+width:16em;
+}
+
+#lselect h3, #larchives h3, #lresources h3, #lfavorites h3{
+margin:0 0 4px 0;
+}
+
+#lselect li, #lfavorites li{
+padding-bottom:6px;
+padding-left:25px;
+background:url(bullet.gif) 14px .4em no-repeat;
+}
+
+#lselect li a, #lfavorites li a{
+display:inline;
+}
+
+#larchives li, #lresources li{
+padding-bottom:2px
+}
+
+#lselect a:link, #lselect a:visited, #lfavorites a:link, #lfavorites a:visited{
+font-family:georgia,"times new roman", serif;
+font-size:120%;
+padding-bottom:2px;
+color:#E4CF9D;
+
+
+text-transform:capitalize;
+}
+
+#lselect a:hover, #lfavorites a:hover{
+font-family:georgia,"times new roman", serif;
+font-size:120%;
+color:#C29E47;
+padding-bottom:2px;
+text-transform:capitalize;
+text-decoration:none;
+}
+#lselect a.c:link, #lselect a.c:visited, #lfavorites a.c:link, #lfavorites a.c:visited{
+background:transparent;
+font-size:100%;
+color:#AF9874;
+padding:0;
+display:inline;
+}
+
+#lselect a.c:hover, #lfavorites a.c:hover{
+background:transparent;
+font-size:100%;
+color:#C29E47;
+display:inline;
+padding:0;
+}
+
+#larchives a,#lresources a{
+font-family:georgia,"times new roman", serif;
+color:#E4CF9D;
+text-transform:capitalize;;
+font-size:100%;
+padding:0 0 10px 30px;
+}
+
+#larchives a:hover,#lresources a:hover{
+color:#C29E47;
+}
+
+
+
+
+/* E X T R A  D I V S */
+
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {display:none}	

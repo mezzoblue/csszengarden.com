@@ -1,0 +1,389 @@
+/* css Zen Garden submission 150 - 'By The Pier', by Peter Ong, http://peter.rock.per.sg/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Peter Ong */
+/* Added: Jan. 31st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* basic elements */
+
+body
+{
+	color: #fc3;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 17px;
+	background-color: #000;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+a:link
+{
+	color: #cf6;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: #007f00;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover, a:active
+{
+	color: #f60;
+	text-decoration: none;
+	border-bottom: 1px dotted #005e00;
+}
+
+
+
+/* specific divs */
+#container
+{
+	background-color: #0c3379;
+	text-align: left;
+	margin: 8px auto;
+	padding: 0;
+	width: 640px;
+}
+
+acronym
+{
+	color: #ffff67;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: none;
+	border-width: 0;
+}
+
+#intro
+{
+	background-image: url("masthead.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin: 0;
+	padding: 0;
+	width: 640px;
+	height: 445px;
+}
+
+#pageHeader
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+
+
+#pageHeader h1 span, #pageHeader h2 span { display: none; }
+
+#quickSummary
+{
+	width: 300px;
+	margin: 0 0 0;
+	padding: 154px 0 0;
+	position: absolute;
+}
+
+#quickSummary .p1 span
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+#quickSummary .p2 span
+{
+	color: #699fc8;
+	font-size: 10px;
+	text-align: left;
+	margin: 0 0px;
+	padding: 0;
+	position: absolute;
+	top: 150px;
+	float: left;
+}
+
+#preamble
+{
+	margin: 0;
+	padding: 233px 0 10px 0;
+	width: 375px;
+	float: right;
+}
+
+#supportingText { clear: right; }
+
+#explanation, #participation, #benefits, #requirements
+{
+	background-color: #0c3379;
+	padding-bottom: 10px;
+	width: 375px;
+	float: right;
+	clear: both;
+}
+
+#preamble h3
+{
+	background-image: url("enlightenment.gif");
+	background-repeat: no-repeat;
+	background-position: right 0;
+	margin: 199px 0 8px;
+	padding: 0;
+	width: 375px;
+	height: 35px;
+	float: right;
+}
+
+#participation h3
+{
+	background-image: url("participation.gif");
+	background-repeat: no-repeat;
+	background-position: right 0;
+	margin: 8px 0;
+	padding: 0;
+	width: 375px;
+	height: 35px;
+	float: right;
+}
+
+#requirements h3
+{
+	background-image: url("requirements.gif");
+	background-repeat: no-repeat;
+	background-position: right 0;
+	margin: 8px 0;
+	padding: 0;
+	width: 375px;
+	height: 35px;
+	float: right;
+}
+
+#benefits h3
+{
+	background-image: url("benefits.gif");
+	background-repeat: no-repeat;
+	background-position: right 0;
+	margin: 8px 0;
+	padding: 0;
+	width: 375px;
+	height: 35px;
+	float: right;
+}
+
+#explanation h3
+{
+	background-image: url("whatabout.gif");
+	background-repeat: no-repeat;
+	background-position: right 0;
+	margin: 8px 0;
+	padding: 0;
+	width: 375px;
+	height: 35px;
+	float: right;
+}
+
+.p1, .p2, .p3, .p4, .p5
+{
+	text-align: left;
+	margin: 0;
+	padding: 0 0 8px 15px;
+	width: 320px;
+	float: left;
+}
+
+#preamble h3 span, #participation h3 span, #explanation h3 span, #benefits h3 span, #requirements h3 span
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+#footer
+{
+	background-image: url("base.jpg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	width: 640px;
+	clear: both;
+}
+
+#footer a:link, #footer a:visited
+{
+	font-weight: bold;
+	margin-top: 0;
+	padding-bottom: 50px;
+}
+
+#linkList
+{
+	background-color: #0c3379;
+	position: absolute;
+	top: 440px;
+	width: 210px;
+}
+
+#lselect
+{
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+#lselect h3
+{
+	margin: 0 0 0 40px;
+	padding: 0;
+}
+
+#linkList ul li
+{
+	font-size: 10px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 5px;
+}
+
+#linkList ul
+{
+	text-align: right;
+	list-style-type: none;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 18px;
+	padding: 0;
+}
+
+#linkList h3.select
+{
+	background-image: url("select.gif");
+	background-repeat: no-repeat;
+	margin: 0 0 0 0;
+	padding: 0 0 8px;
+	width: 210px;
+	height: 35px;
+}
+
+#linkList h3.select span { display: none; }
+
+#linkList h3.favorites
+{
+	background-image: url("favourites.gif");
+	background-repeat: no-repeat;
+	margin: 0 0 0 0;
+	padding: 0 0 8px;
+	width: 210px;
+	height: 35px;
+}
+
+#linkList h3.favorites span { display: none; }
+
+#linkList h3.archives
+{
+	background-image: url("archives.gif");
+	background-repeat: no-repeat;
+	margin: 0 0 0 0;
+	padding: 0 0 8px;
+	width: 210px;
+	height: 35px;
+}
+
+#linkList h3.archives span { display: none; }
+
+#linkList h3.resources
+{
+	background-image: url("resources.gif");
+	background-repeat: no-repeat;
+	margin: 0 0 0 0;
+	padding: 0 0 8px;
+	width: 210px;
+	height: 35px;
+}
+
+#linkList h3.resources span { display: none; }
+
+#linkList #lselect li a:link
+{
+
+	font-size: 10px;
+	color: #cf6;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding: 2px 4px;
+}
+
+#linkList #lselect li a:hover
+{
+
+	font-size: 10px;
+	color: #f60;
+	text-decoration: none;
+	display: block;
+	padding: 2px 4px;
+	border-width: 0;
+}
+
+#linkList  #lselectli a:visited
+{
+
+	font-size: 10px;
+	color: #5bbb11;
+	text-decoration: none;
+	display: block;
+	padding: 2px 4px;
+}
+
+#linkList #lselect ul li a.c
+{
+
+	font-size: 10px;
+	color: #fff;
+	font-style: italic;
+	text-decoration: none;
+	text-transform: none;
+	display: inline;
+	padding: 2px 4px;
+}
+
+#linkList li a:link
+{
+	color: #cf6;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 2px 4px;
+}
+
+#linkList li a:hover
+{
+	color: #f60;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 2px 4px;
+	border-width: 0;
+}
+
+#linkList li a:visited
+{
+	color: #5bbb11;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 2px 4px;
+}

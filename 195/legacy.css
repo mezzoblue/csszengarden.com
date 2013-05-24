@@ -1,0 +1,258 @@
+/* css Zen Garden submission 195 - 'Dazzling Beauty', by Deny Sri Supriyono, http://blog.denysri.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Deny Sri Supriyono */
+/* Added: February 15th, 2006 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: transparent url(htmlbg.jpg) repeat-x;
+}
+
+body {
+	margin: 0;
+	padding: 0; 
+	font: normal 0.7em/1.4em Tahoma, Verdana, Arial, Georgia, sans-serif; 
+	color: #7c7c7c;
+	text-align: center;
+	background: transparent url(bodybg.jpg) no-repeat center top;
+}
+
+#container {
+	margin: 0px auto;
+	padding: 0;
+	width: 696px;
+	border: none;
+	text-align: left;
+	background-image: url(footerbg.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 70px;
+}
+
+#pageHeader span,
+#quickSummary .p1,
+#preamble h3 span,
+#explanation h3 span,
+#participation h3 span,
+#benefits h3 span,
+#requirements h3 span,
+#lselect h3 span,
+#larchives h3 span,
+#lresources h3 span,
+#extradiv3,
+#extraDiv4,
+#extraDiv5,
+#extraDiv6 {
+	display:none;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: #D7661C;
+	border-bottom: 1px dotted #ccc;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #94AB36;
+	border-bottom: 1px solid #ccc;
+}
+
+acronym {
+	text-decoration: none;
+	color: #D7661C;
+	border-bottom: 1px dotted #ccc;
+	cursor: help;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+#quickSummary .p2 {
+	padding-top: 220px;
+	margin-left: 430px;
+	font: normal 0.9em/0.9em Arial, Tahoma, Georgia, sans-serif;
+	letter-spacing: -1px;
+	color: #C3A176;
+	text-transform: uppercase;
+	width: 220px;
+}
+
+#linkList{
+	position: absolute;
+	left:auto; 
+	right:auto; 
+	top: 385px;
+	margin-left: 410px;
+	width: 196px;
+	background-image: url(bgsidebar.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: 30px;
+}
+
+#linkList2{
+	padding: 0;
+	margin: 0;
+	background-image: url(extraflower.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	padding-bottom: 250px;
+}
+
+#linkList ul {
+	text-align: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#linkList ul li{
+	margin: 0;
+	padding: 3px 0 3px 10px;
+	border-bottom: 1px solid #ECEFD7;
+}
+
+#linkList ul li a, #linkList ul li a:visited {
+	border-bottom: none;
+}
+
+#linkList ul li a:hover {
+	color: #94AB36;
+}
+
+#lselect {
+	font-size: 0.9em; 
+}
+
+#lselect ul li {
+	background: transparent url(ikonli.jpg) no-repeat 0% 25%;
+	padding: 3px 0 3px 25px;
+}
+
+#lselect a {
+	display: block;
+	font-size: 1.1em;
+	color: #789B51;
+}
+
+#lselect a.c {
+	display:inline;
+	line-height:5px;
+	margin:0;
+	padding:0;
+	font: normal 1.0em/0.9em Verdana, Arial, Tahoma, sans-serif;
+	color: #B9B9B9;
+	letter-spacing: -1px;
+}
+
+#preamble, #explanation, #participation, #benefits, #requirements{
+	top: 150px;
+	position: relative;
+	left: 63px;
+	color: #B0A77E;
+	width: 340px;
+	padding-bottom: 29px;
+	text-align: justify;
+}
+
+#preamble h3 {
+	background-image: url(theroadto.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 340px;
+	height: 38px;
+}
+
+#explanation h3 {
+	background-image: url(sowhatgitulowh.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 340px;
+	height: 38px;
+}
+
+#participation h3 {
+	background-image: url(participation.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 340px;
+	height: 38px;
+}
+
+#benefits h3 {
+	background-image: url(benefits.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 340px;
+	height: 38px;
+}
+
+#requirements h3 {
+	background-image: url(requirements.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 340px;
+	height: 38px;
+}
+
+#lselect, #larchives {
+	margin-bottom: 20px;
+}
+
+#lselect h3 {
+	background-image: url(selectadesign.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 196px;
+	height: 40px;
+}
+
+#larchives h3 {
+	background-image: url(archives.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 196px;
+	height: 40px;
+}
+
+#lresources h3 {
+	background-image: url(resources.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 196px;
+	height: 40px;
+}
+
+#footer{
+	text-align: left;
+	padding-left: 63px;
+	padding-top: 140px;
+}
+
+#footer a, #footer a:visited {
+	padding: 5px;
+	border: 1px solid #f4f4f4;
+	background-color: #fff;
+}
+
+#footer a:hover {
+	padding: 5px;
+	border: 1px solid #993300;
+	background-color: #D94904;
+	color: #fff;
+}
+
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 { display:none }

@@ -1,0 +1,242 @@
+/* css Zen Garden submission 069 - 'Bonsai Sky' by Mike Davidson - http://www.mdavidson.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Mike Davidson */
+/* Added: December 23rd, 2003 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+body {
+	color: #000;
+	background-color: #fff;
+	background-image: url(bg_garden2.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+	font: normal 11px "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+}		
+
+acronym {
+	border: 0;
+}
+
+h3 {
+	font: bold 16px Georgia, "Times New Roman", Times, serif;
+	color: #003300;
+	background-image: url(bonsai.gif);
+	background-repeat: no-repeat;
+	padding-left: 28px;
+	height: 23px;
+	margin-top: 14px;
+	margin-bottom: -5px;
+}
+
+h3 span {
+	border-bottom: 1px dotted #000000;
+	padding-bottom: 3px;
+}
+
+p {
+	line-height: 165%;
+}
+
+ul {
+	list-style: none;
+	padding: 0 0 0 13px;
+	margin: 10px 0 0 0;
+}
+
+li {
+	line-height: 16px;
+	padding-bottom: 8px;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #003300;
+	font-weight: bold;
+}
+
+#linkList a:link, #linkList a:visited {
+	color: #FFFFFF;
+	font-size: 12px;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	text-shadow: 0 0 3px #000000;
+	font-weight: bold;
+	display: block;
+}
+
+#linkList a:hover, #linkList a:active {
+	color: #FFFFFF;
+	font-size: 12px;
+	font-style: normal;
+	text-decoration: underline;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	text-shadow: 0 0 3px #000000;
+	font-weight: bold;
+}
+
+#linkList {
+	position: absolute;
+	width: 200px;
+	top: 300px;
+	right: 7%;
+	color: #FFFFFF;
+	font-style: italic;
+	font-size: 9px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-shadow: 0 0 3px #000000;
+}
+
+#linkList h3 {
+	font: bold 12px Georgia, "Times New Roman", Times, serif;
+	padding: 0;
+	text-align: center;
+	text-transform: lowercase;
+	color: #FFFFFF;
+	background-image: none;
+	height: auto;
+}
+
+#linkList h3 span {
+	background-color: #000000;
+	padding: 4px 20px 4px 20px;
+	position: relative;
+	top: -7px;
+}
+
+#lselect, #larchives, #lresources {
+	background-image: url(bg_black.gif);
+	margin-bottom: 25px;
+	padding-bottom: 3px;
+}
+
+#quickSummary {
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	width: 380px;
+	border-left: 1px dotted #000000;
+	padding-left: 8px;
+}
+
+#pageHeader {
+	top: 29px;
+	position: absolute;
+	height: 116px;
+	text-align: center;
+	width: 92%;
+	background-image: url(header.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#pageHeader h1 {
+	font: normal 85px Georgia, "Times New Roman", Times, serif;
+	text-shadow: 0 0 7px #000000;
+	text-transform: lowercase;
+	margin: 0;
+	padding: 0;
+	color: #111133;
+	display: none;
+}
+
+#pageHeader h2 {
+	font: bold 12px Georgia, "Times New Roman", Times, serif;
+	text-transform: lowercase;
+	position: relative;
+	left: -143px;
+	top: -20px;
+	color: #000000;
+	padding-top: 6px;
+	display: none;
+}
+
+#pageHeader h2 span {
+	border-top: 1px dotted #000000;
+	padding-top: 3px;
+}
+
+#container {
+	width: 92%;
+	margin-left: 40px;
+	padding-bottom: 40px;
+}
+
+#intro {
+	padding-top: 162px;
+}
+
+#explanation, #participation, #benefits, #requirements, #preamble {
+	width: 53%;
+}
+
+#lselect a:link.c , #lselect a:visited.c {
+	color:#EBE2A8;
+	text-decoration: none;
+	display: inline;
+}
+
+#lselect a:hover.c, #lselect a:active.c {
+	text-decoration: underline;
+	display: inline;
+}
+
+#extraDiv1 {
+	background-image: url(platform.png);
+	position: fixed;
+	top: 270px;
+	right: 85px;
+	width: 85px;
+	height: 184px;
+	margin: -85px;
+}
+
+#extraDiv2 {
+	background-image: url(edge_bottom_black.gif);
+	background-repeat: repeat-x;
+	position: fixed;
+	bottom: 0;
+	left: 100%;
+	width: 100%;
+	height: 20px;
+	margin-left: -100%;
+}
+
+#extraDiv3 {
+	background-image: url(edge_top_black.gif);
+	background-repeat: repeat-x;
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 20px;
+	margin-left: -100%;
+}
+
+#extraDiv4 {
+	background-image: url(edge_left_black.gif);
+	background-repeat: repeat-y;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 100%;
+	margin: 0;
+}
+
+#extraDiv5 {
+	background-image: url(edge_right_black.gif);
+	background-repeat: repeat-y;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 20px;
+	height: 100%;
+	margin: 0;
+}

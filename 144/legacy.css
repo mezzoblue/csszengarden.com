@@ -1,0 +1,188 @@
+/* css Zen Garden submission 144 - 'Verdure' by Lim Yuan Qing, http://yuanqing.blogspot.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2004, Lim Yuan Qing */
+/* Photography copyright Lynne Lancaster, http://sxc.hu/browse.phtml?f=profile&l=weirdvis */
+/* Added: Dec. 16th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+
+
+
+
+/* ---------- misc ---------- */
+
+* {
+ padding: 0;
+ margin: 0;
+ }
+body	{
+ background: #f2f2f2;
+ color: #777;
+ font: 11px/1.4em Arial, Tahoma, Verdana, sans-serif;
+ text-align: center;
+ }
+acronym {
+ cursor: help;
+ }
+
+/* ---------- div ---------- */
+
+#container {
+ padding: 0 2px;
+ width: 500px !important;
+ width /**/: 504px;
+ margin: 0 auto;
+ background: #fff url(container.gif) repeat-y;
+ text-align: left;
+ position: relative;
+ }
+#quickSummary, #preamble, #supportingText div {
+ padding: 5px 20px;
+ width: 330px !important;
+ width /**/: 370px;
+ }
+#quickSummary {
+ padding: 15px 20px;
+ background: url(line.gif) no-repeat 50% 100%;
+ }
+#preamble {
+ padding-top: 15px;
+ }
+#supportingText #requirements {
+ padding-bottom: 12px;
+ }
+#supportingText #footer {
+ padding: 12px 20px;
+ background: url(line.gif) no-repeat 50% 0;
+ text-align: center;
+ }
+#linkList {
+ position: absolute;
+ top: 287px;
+ left: 372px;
+ font-size: 10px;
+ line-height: 1.2em;
+ }
+
+/* ---------- h1, h2, h3 ---------- */
+
+h1, h2, h3 {
+ font-weight: normal;
+ font-size: 1.0em;
+ line-height: 1.0em;
+ text-indent: -2000em;
+ display: block;
+ }
+h1 {
+ width: 500px;
+ height: 80px;
+ background: #fff url(h1.gif) no-repeat 0 100%;
+ }
+h2 {
+ width: 500px;
+ height: 206px;
+ background: #b6c77b url(h2.jpg) no-repeat;
+ }
+#preamble h3, #supportingText h3 {
+ width: 231px;
+ height: 27px;
+ background-repeat: no-repeat;
+ }
+#preamble h3 { background-image: url(h3_01.gif); }
+#explanation h3 { background-image: url(h3_02.gif); }
+#participation h3 { background-image: url(h3_03.gif); }
+#benefits h3 { background-image: url(h3_04.gif); }
+#requirements h3 { background-image: url(h3_05.gif); }
+
+#linkList h3 {
+ width: 130px;
+ height: 34px;
+ background-repeat: no-repeat;
+ background-color: #f2f4d8;
+ }
+.select {background-image: url(h3_06.gif); }
+.archives {background-image: url(h3_07.gif); }
+.resources {background-image: url(h3_08.gif); }
+
+/* ---------- p ---------- */
+
+p {
+ padding-top: 5px;
+ }
+.p1 {
+ padding-top: 2px;
+ }
+
+/* ---------- ul, li ---------- */
+
+ul, li {
+ list-style: none;
+ }
+ul {
+ border-top: 1px solid #ddd;
+ }
+li {
+ text-transform: lowercase;
+ border-bottom: 1px solid #ddd;
+ }
+#lselect li {
+ padding: 5px 7px 5px 24px;
+ background: url(bullet1.gif) no-repeat;
+ }
+#lselect li:hover {
+ background: #e6e9cd url(hover.gif) no-repeat;
+ }
+#larchives li, #lresources li {
+ background: url(bullet2.gif) no-repeat;
+ padding: 5px 0;
+}
+div>#larchives li, div>#lresources li {
+ padding: 0;
+ height: 23px;
+ background: url(bullet2.gif) no-repeat;
+}
+
+/* ---------- a ---------- */
+
+a {
+ text-decoration: none;
+ }
+#intro a, #supportingText a {
+ font-weight: bold;
+ color: #9ead6c;
+ }
+#footer a, #linkList a {
+ color: #777;
+ }
+#lselect a {
+ display: block;
+ color: #9ead6c;
+ }
+#lselect a.c {
+ display: inline;
+ color: #777;
+ }
+#larchives a, #lresources a {
+ padding: 0 7px 0 22px;
+}
+div>#larchives a, div>#lresources a {
+ padding: 5px 7px 5px 22px;
+ height: 13px !important;
+ height /**/: 23px;
+ display: block;
+ }
+#footer a:hover, #footer a:active, #linkList a:hover, #linkList a:active, #lselect a.c:hover, #lselect a.c:active {
+ color: #222;
+ }
+#intro a:hover, #intro a:active, #supportingText a:hover, #supportingText a:active, #lselect a:hover, #lselect a:active {
+ color: #85925C;
+ }
+div>#larchives a:hover, div>#larchives a:active, div>#lresources a:hover, div>#lresources a:active {
+ background: #e6e9cd url(hover.gif) no-repeat -130px 0;
+ }

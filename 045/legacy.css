@@ -1,0 +1,252 @@
+/* css Zen Garden submission 045 - 'I Dream in Colour' by Jeff Bilen - http://www.scribblersclub.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Jeff Bilen */
+/* Added: September 26th, 2003 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* basic elements */
+
+body {
+	background: #ffffff url(bottom_right.jpg) bottom right no-repeat;
+	font: 8pt/11pt "Times New Roman", serif, georgia; 
+	color: #555753; 
+	margin: 0px;
+	padding: 0px; 
+}
+
+p { 
+	font: 8pt/11pt "Times New Roman", serif, georgia; 
+	margin-top: 0px; 
+	text-align: left;
+	margin-left: 10px;
+}
+
+acronym {
+	border: none;
+}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #333333;
+}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #555555;
+}
+
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #555555;
+}
+
+/* specific divs */
+
+#container {
+	background: transparent url(top_left.jpg) top left no-repeat; 
+	padding: 0px;  
+	margin: 0px;
+	width: 760px;
+	padding-bottom: 100px; 
+}
+
+#intro {
+	background: transparent url(intro_back.jpg) top left no-repeat;
+	margin-top: 133px;
+	width: 253px;
+	float: left;
+}
+
+#pageHeader h1 span {
+	display:none
+}
+
+#pageHeader h2 span {
+	display:none
+}
+
+#quickSummary {
+	width: 210px;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+#quickSummary p {
+	font: bold italic 8pt/11pt "Times New Roman", serif, georgia;
+	color: #000000;
+	text-align: center;
+}
+
+#preamble {
+	width: 210px;
+	margin-left: 15px;
+	margin-top: 25px;
+}
+
+#preamble h3 {
+	background: transparent url(en_hdr.gif) top center no-repeat;
+	width: 210px;
+	height: 19px;
+	margin-left: 5px;
+}
+#preamble h3 span {
+	display: none;
+}
+
+#preamble p {
+	padding-left: 5px;
+	font: 8pt/14pt "Times New Roman", serif, georgia;
+}
+
+#supportingText {
+	background: transparent url(main_back.jpg) top left no-repeat;
+	position: relative;
+	margin-left: 258px;
+	top: 58px;
+	width: 376px;
+	padding-left: 25px;
+	padding-top: 25px;
+}
+
+#explanation h3 {
+	background: transparent url(what_hdr.gif) top left no-repeat;
+	height: 11px;
+	text-align: left;
+}
+
+#explanation h3 span {
+	display: none;
+}
+
+#supportingText p {
+	width: 315px;
+	text-align: left;
+}
+
+#explanation h3 {
+	background: transparent url(what_hdr.gif) top left no-repeat;
+	height: 11px;
+}
+
+#explanation {
+	padding-bottom: 10px;
+}
+
+#participation {
+	padding-bottom: 10px;
+}
+
+#benefits {
+	padding-bottom: 10px;
+}
+
+#requirements {
+	padding-bottom: 10px;
+}
+
+#participation h3 {
+	background: transparent url(part_hdr.gif) top left no-repeat;
+	height: 11px;
+}
+
+#participation h3 span {
+	display: none;
+}
+
+#benefits h3 {
+	background: transparent url(ben_hdr.gif) top left no-repeat;
+	height: 11px;
+}
+
+#benefits h3 span {
+	display: none;
+}
+
+#requirements h3 {
+	background: transparent url(req_hdr.gif) top left no-repeat;
+	height: 13px;
+}
+
+#requirements h3 span {
+	display: none;
+}
+
+#footer { 
+	text-align: center;
+	border-top: 1px solid #cccccc; 
+}
+
+#footer a:link, #footer a:visited { 
+	margin-right: 20px; 
+}
+
+#linkList {
+	margin-left: 645px;
+	width: 125px;
+	position: absolute;
+	top: 110px;
+}
+
+#linkList ul {
+	margin-left: 10px;
+	padding: 0px;
+}
+
+#lselect h3 {
+	background: transparent url(sel_des.gif) top left no-repeat;
+	height: 21px;
+}
+
+#lselect h3 span {
+	display: none;
+}
+
+#larchives h3 {
+	background: transparent url(archives.gif) top left no-repeat;
+	height: 18px;
+}
+
+#larchives h3 span {
+	display: none;
+}
+
+#lresources h3 {
+	background: transparent url(resource.gif) top left no-repeat;
+	height: 11px;
+}
+
+#lresources h3 span {
+	display: none;
+}
+
+#lfavorites h3 {
+	background: transparent url(favorites.gif) top left no-repeat;
+	height: 21px;
+}
+
+#lfavorites h3 span {
+	display: none;
+}
+
+#linkList li {
+	line-height: 2.5ex; 
+	list-style-type: none;
+	padding-top: 5px; 
+	margin-bottom: 5px;
+}
+
+#linkList li a:link { 
+	color: #555555;
+}
+
+#linkList li a:visited {
+	color: #777777;
+}

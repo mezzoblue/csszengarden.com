@@ -1,0 +1,391 @@
+/* css Zen Garden submission 016 - 'The Garden Beneath' by Minz Meyer - www.minzweb.de */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Minz Meyer */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+body {
+	background-image: url(deepblue.jpg);
+	background-position: top right;
+	background-color: #172E52;
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	padding: 0px;
+	color: #88A3C9;
+	font: 0.8em/1.6 Tahoma, sans-serif;
+	letter-spacing: 0.1em;
+}
+
+#container {
+	background-color: transparent;
+	background-position: bottom left;
+	background-image: url(manta.jpg);
+	background-repeat: no-repeat;
+	width: 99%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#pageHeader h1 {
+	background-image: url(zengarden.gif);
+	background-repeat: no-repeat;
+	width: 306px;
+	height: 36px;
+	margin: 0;
+}
+
+#pageHeader h1 span {
+	display: none;
+}
+
+#pageHeader h2 {
+	background-image: url(thebeauty.gif);
+	background-repeat: no-repeat;
+	width: 306px;
+	height: 24px;
+	margin: 0px;
+}
+
+#pageHeader h2 span {
+	display: none;
+}
+
+#pageHeader {
+	position: absolute;
+	right: 28px;
+	top: 195px;
+	width: 306px;
+}
+
+#extraDiv3 {
+	position: absolute;
+	right: 30px;
+	top: 280px;
+	background-image: url(preamble.gif);
+	background-repeat: no-repeat;
+	height: 156px;
+	width: 300px;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+
+#preamble {
+	margin-right: 420px;
+	margin-left: 25px;
+	padding: 5px;
+	border-top: 1px solid;
+	border-right: 1px solid;
+}
+
+#preamble h3 {
+	width: 190px;
+	height: 190px;
+	margin-top: 0;
+	display: inline;
+	float: left;
+	background-image: url(theroad.jpg);
+}
+
+#preamble h3 span {
+	display:  none;
+}
+
+#preamble p {
+	margin-left: 25px;
+	margin-right: 15px;
+	font-style: italic;
+	text-align: justify;
+}
+
+#explanation {
+	margin-left: 10px;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	margin-right: 370px;
+	padding: 5px;
+	border-top: 1px solid;
+	border-left: 1px solid;
+}
+
+#explanation h3 {
+	width: 150px;
+	height: 140px;
+	display: inline;
+	float: left;
+	background-image: url(whatabout.jpg);
+}
+
+#explanation h3 span {
+	display: none;
+}
+
+#explanation p {
+	margin-left: 25px;
+	margin-right: 15px;
+	text-align: justify;
+}
+
+#benefits {
+	margin-left: 150px;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	margin-right: 340px;
+	padding: 5px;
+	border-top: 1px solid;
+	border-left: 1px solid;
+}
+
+#benefits h3 {
+	width: 150px;
+	height: 150px;
+	display: inline;
+	float: right;
+	background-image: url(benefits.jpg);
+}
+
+#benefits h3 span {
+	display: none;
+}
+
+#benefits p {
+	margin-left: 15px;
+	margin-right: 25px;
+	text-align: justify;
+}
+
+#participation {
+	margin-top: 30px;
+	margin-bottom: 110px;
+	margin-left: 50px;
+	margin-right: 335px;
+	padding: 5px;
+	border-top: 1px solid;
+	border-right: 1px solid;
+}
+
+#participation h3 {
+	width: 160px;
+	height: 155px;
+	margin-top: 15px;
+	display: inline;
+	float: left;
+	background-image: url(participate.jpg);
+	background-repeat: no-repeat;
+}
+
+#participation h3 span {
+	display: none;
+}
+
+#participation p {
+	margin-left: 25px;
+	margin-right: 15px;
+	text-align: justify;
+}
+
+#requirements {
+	margin-top: 30px;
+	margin-bottom: 100px;
+	margin-left: 130px;
+	margin-right: 150px;
+	padding: 5px;
+	border-top: 1px solid;
+	border-right: 1px solid;
+}
+
+#requirements h3 {
+	margin-top: 15px;
+	width: 160px;
+	height: 160px;
+	display: inline;
+	float: left;
+	background-image: url(requirements.jpg);
+	background-repeat: no-repeat;
+}
+
+#requirements h3 span {
+	display: none;
+}
+
+#requirements p {
+	margin-left: 25px;
+	margin-right: 15px;
+	text-align: justify;
+}
+
+#supportingText {
+	margin-top: 100px;
+
+}
+
+#linkList {
+	position: absolute;
+	color: #425162;
+	background-color: transparent;
+	top: 437px;
+	right: 30px;
+	width: 300px;
+	height: 450px;
+	background-image: url(navigation.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	
+}
+
+#linkList2 {
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-right: 25px;
+	width: 260px;
+	height: 350px;
+	overflow: auto;
+	font: 11px "Courier New", monospace;
+	color: #95A5BB;
+	background-color: transparent;
+}
+
+h3.select {
+	font: bold 12px "Courier New", monospace;
+	border: 1px solid;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #1D2139;
+	background-color: #555764;
+}
+
+h3.archives {
+	font: bold 12px "Courier New", monospace;
+	border: 1px solid;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #1D2139;
+	background-color: #555764;
+}
+
+h3.resources {
+	font: bold 12px "Courier New", monospace;
+	border: 1px solid;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #1D2139;
+	background-color: #555764;
+}
+
+#linkList ul {
+	list-style: none;
+	margin-top: 0;
+}
+
+li {
+	margin-left: -15px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+}
+
+li:hover {
+	margin-left: -15px;
+	margin-right: 15px;
+	background-color: #555764;
+	color: #1D2139;
+}
+
+a:link {
+	color: #C6B768;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #867833;
+	background-color: transparent;
+	text-decoration: line-through;
+}
+
+a:hover, a:focus {
+	color: #EBD678;
+	background-color: transparent; 
+	text-decoration: underline;
+}
+
+#extraDiv1 {
+	position: absolute;
+	background-image: url(validation.gif);
+	background-repeat: no-repeat;
+	top: 887px;
+	right: 30px;
+	width: 300px;
+	height: 100px;
+	z-index: 1;
+}
+
+* html #footer {
+	width: 260px;
+	w\idth: 228px;
+}
+#footer {
+	font: 11px "Courier New", monospace;
+	position: absolute;
+	top: 922px;
+	right: 50px;
+	z-index: 2;
+	padding: 8px 15px;
+	height: 20px;
+	overflow: auto;
+	width: 228px;
+}
+
+#extraDiv2 {
+	position: absolute;
+	background-image: url(download.gif);
+	background-repeat: no-repeat;
+	top: 987px;
+	right: 30px;
+	width: 300px;
+	height: 100px;
+	z-index: 1;
+}
+* html #quickSummary {
+	width: 260px;
+	w\idth: 228px;
+}
+#quickSummary {
+	width: 228px;
+	position: absolute;
+	top: 1022px;
+	right: 50px;
+	z-index: 2;
+	padding: 0 15px;
+	height: 40px;
+	overflow: auto;
+}
+
+
+#quickSummary p.p1  {
+	display: none;
+}
+
+#quickSummary p.p2 {
+	margin-top: 4px;
+	color: #95A5BB;
+	background-color: transparent;
+	font: 11px "Courier New", monospace;
+}

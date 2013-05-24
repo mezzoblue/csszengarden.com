@@ -1,0 +1,209 @@
+/* css Zen Garden submission 002 - 'Salmon Cream Cheese' by Dave Shea - http://www.mezzoblue.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Dave Shea */
+/* Added: May 7th, 2003 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* If you're familiar with the life cycle of salmon, you'll know that at the end of their lives they fight their way upstream to
+    the rivers where they were born, to spawn and then die. Growing up close to one of these so-called 'salmon runs', I
+    once had a class field trip to the river for the afternoon to learn about the process. The funny thing about a bunch of
+    dead salmon is that they stink. Quite bad. The second worst memory of that day was the smell of the fish.
+
+    The worst memory of the day was opening my lunch to find my considerate mother had packed bagels. With, as you
+    have guessed by now, salmon cream cheese. I rarely hear the word 'salmon' anymore without the 'cream cheese'
+    playing in my head as an afterthought. Hence, this style is Salmon Cream Cheese. */
+
+
+/* basic elements */
+body {
+	font: 11px/14px verdana, sans-serif;
+	color: #AD7C77;
+	background: #FFD7C4 url(/002/bg1.gif) top left repeat-x;
+	padding: 65px 0px 0px 224px;
+	margin: 0px;
+	}
+p {
+	font: 11px/14px verdana, sans-serif;
+	text-align: justify;
+	margin-top: 0px;
+	}
+h3 {
+	font: bold 16px 'arial narrow', sans-serif;
+	text-transform: lowercase;
+	margin-bottom: 0px;
+	}
+acronym {
+	border-bottom: dotted 1px #B27F66;
+	}
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: #E98376;
+	}
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #AD7C77;
+	}
+a:active, a:hover {
+	text-decoration: underline;
+	}
+
+
+/* specific divs */
+
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 770px;
+	}
+#pageHeader h1 {
+	background: transparent url(/002/h1.gif) no-repeat top left;
+	width: 258px;
+	height: 61px;
+	float: left;
+	margin: 1px 0px 0px 3px;
+	}
+#pageHeader h1 span {
+	display: none;
+	}
+#pageHeader h2 {
+	background: transparent url(/002/h2.gif) no-repeat top left;
+	width: 206px;
+	height: 28px;
+	float: right;
+	margin: 22px 15px 0px 0px;
+	}
+#pageHeader h2 span {
+	display: none;
+	}
+
+/* sets up our floating area on the right. Kind of a hack, since there's a physical separation between
+	two divs, filled in by tricky margins and compensated for with tricky padding, but it seems to hold up okay. */
+#intro {
+	background: #FFC5A9 url(/002/bg2.gif) top left repeat-x;
+	}
+#preamble {
+	padding: 0px 40px 0px 40px;
+	}
+#preamble .p3 {
+	margin-bottom: 0px;
+	}
+#supportingText {
+	background-color: #FFC5A9;
+	margin: 0px;
+	padding: 0px 40px 0px 40px;
+	}
+#supportingText #explanation h3 {
+	margin-top: 0px;
+	padding-top: 20px;
+	}
+
+#quickSummary {
+	padding-top: 47px;
+	}
+
+#quickSummary .p1 {
+	width: 430px;
+	height: 195px;
+	background: transparent url(/002/splash.jpg) top left no-repeat;
+	padding: 182px 0px 0px 10px;
+	position: absolute;
+	top: 93px;
+	left: 244px;
+	}
+#quickSummary .p1 span {
+	display: none;
+	}
+#quickSummary .p2 {
+	font-size: 9px;
+	line-height: 22px;
+	text-align: left;
+	color: #B27F66;
+	background-color: #FFD7C4;
+	display: block;
+	border: solid 1px #FFBEA1;
+	padding: 40px 15px 0px 419px;
+	margin: 0px 10px 0px 40px;
+	height: 140px;
+	}
+#quickSummary .p2 a:link {	
+	color: #B27F66;
+	}
+
+#footer {
+	text-align: right;
+	border-top: solid 1px #FFCDB5;
+	padding-top: 10px;
+	}
+#footer a:link, #footer a:visited {
+	padding: 2px 6px 2px 6px;
+	}
+#footer a:hover {
+	background-color: #FFD7BF;
+	text-decoration: none;
+	}
+
+
+#linkList {
+	background: transparent url(/002/cr1.gif) bottom right no-repeat;
+	padding-bottom: 76px;
+	position: absolute;
+	top: 65px;
+	left: 0px;
+	}
+#linkList2 {
+	padding: 40px 0px 10px 0px;
+	width: 200px;
+	}
+#linkList2 h3 span {
+	display: none;
+	}
+#linkList2 h3.select {
+	background: transparent url(/002/h3.gif) no-repeat top left;
+	width: 195px;
+	height: 21px;
+	}
+#linkList2 h3.favorites{
+	background: transparent url(/002/h4.gif) no-repeat top left;
+	width: 195px;
+	height: 21px;
+	}
+#linkList2 h3.archives{
+	background: transparent url(/002/h5.gif) no-repeat top left;
+	width: 195px;
+	height: 21px;
+	}
+#linkList2 h3.resources{
+	background: transparent url(/002/h6.gif) no-repeat top left;
+	width: 195px;
+	height: 21px;
+	}
+#linkList .iL, #linkList li {
+	font-size:	10px;
+	line-height: 2.5ex;
+	display: block;
+	padding: 2px 0px 0px 25px;
+	margin-bottom: 5px;
+	}
+#linkList #lresources li {
+	margin-bottom: 0px;
+	}
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+
+#linkList li {
+	list-style-type: none;
+	}

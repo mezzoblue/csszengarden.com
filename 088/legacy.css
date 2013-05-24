@@ -1,0 +1,629 @@
+/* css Zen Garden submission 088 - 'Tulipe', by Eric Sheperd, http://www.arkitrave.com/log */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Eric Sheperd */
+/* Added: March 29th, 2004 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+
+
+
+/*********************
+     TYPOGRAPHY
+*********************/
+
+body {
+	font-family: tahoma, arial, helvetica, sans-serif;
+	font-size: x-small;
+  	voice-family: "\"}\"";
+  	voice-family: inherit;
+  	font-size: small;
+	}
+	html>body {
+  		font-size: small;
+		}
+
+
+	
+#quickSummary {
+	color: #665;
+	font-weight: bold;
+	font-size: .8em;
+	}
+
+#quickSummary p {
+	padding: 0 15px;
+	}
+	
+acronym {
+	cursor: help;
+	}
+
+/*********************
+        LINKS
+*********************/
+
+a {
+	white-space: nowrap;
+	}
+
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	border: 1px solid #f2f4ee;
+	color: #776;
+	padding: 0 1px;
+	}
+	
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #998;
+	}
+	
+a:hover {
+	background: url(link_background.gif) no-repeat;
+	border: 1px solid #776;
+	padding: 0 1px;
+	}
+	
+a:active {
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+/*********************
+     ACCESSYPOO
+*********************/
+
+span.accesskey {
+	font-weight: bold;
+	text-decoration: underline;
+	}
+
+/**************************
+     DO THE DIV - LAYOUT
+**************************/
+
+/*basics*/
+
+body {
+	background: #F2F4EE url(background.gif) repeat fixed; /*thanks to squidfingers for the background image*/
+	margin: 0;
+	padding: 0;
+	}
+	
+#container {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	}
+	
+/*intro stuff*/	
+	
+	#intro {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		z-index: 1000;
+		}
+	
+		#pageHeader {
+			position: relative;
+			top: 0;
+			left: 0;
+			margin: 0;
+			padding: 0;
+			background: #fff url(headerBack.jpg) repeat-x top left; /*this is the horizontal line bk*/
+			height: 126px;
+			width: 2100px;
+			}
+			
+			#pageHeader h1 {       /*contains the zen text and flowery images*/
+				margin: 0;
+				background: transparent url(header.jpg) no-repeat; /*thanks to dubstastic for brushes*/
+				height: 126px;
+				}
+				
+			#pageHeader h1 span {        /*get the text out of the way*/
+				display: none;
+				}
+				
+			#pageHeader h2 {       /*this text will be integrated into the pictoral header*/
+				display: none;
+				}
+				
+		#quickSummary {           /*runs along left side, includes flower and below*/
+			position: absolute;
+			top: 126px;
+			left: 0;
+			background: transparent url(flower.jpg) no-repeat top left; /*photo (c)2004 Eric Shepherd*/
+			width: 352px;
+			padding-top: 301px;
+			z-index: 500;
+			}
+							
+							/*graphic backgrounds are applied to head, paragraphs, and last paragraph*/
+		#preamble {               /*first of boxes, but different in document tree so separate css*/
+			position: absolute;
+			background: #f2f4ee;
+			z-index: 1000;
+			width: 257px;    /*all text boxes are 257px*/
+			top: 126px;
+			left: 370px;
+			padding: 0;
+			border: solid #998;    /*only for IE, overridden later*/
+			border-width: 0px 1px 1px 1px; /*no top border*/
+			}
+			
+		html>head:first-child+body #preamble {         /*gets out of the way for IE and opera 6*/
+			background: transparent url(sectionBack_head.png) no-repeat top right; /*TOP bk w.drop shadow*/
+			border: 0;  /*need to override border in place*/
+			}
+			
+		#preamble h3 {
+			background: transparent url(title_preamble.jpg) no-repeat;  /*text with faded flower gradient*/
+			margin: 0;
+			padding: 0;
+			height: 86px;
+			}
+			
+		#preamble h3 span {
+			display: none; /*get text out of the way*/
+			}
+			
+		#preamble p {
+			margin: 0;
+			padding: 5px 20px; /*cant put background here or IE will see it*/
+			}
+			
+		html>head:first-child+body #preamble p {     /*only seen by smart browsers that can do png transp*/
+			background: transparent url(sectionBack_main.png) repeat-y;  /*thin repeated background*/
+			}
+			
+		#preamble p.p3 {
+			margin: 0;
+			padding: 5px 20px 25px 20px;
+			}
+			
+		html>head:first-child+body #preamble p.p3 {    /*selects last paragraph*/
+			background: transparent url(sectionBack_foot.png) no-repeat bottom right;  /*footer background*/
+			}
+		
+/*next four text boxes are under #supportingtext div*/	
+					
+	#supportingText {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		background: #fff url(bodyBack.jpg) repeat-x;  /*use it to get the faded pattern background positioned - again thanks to squidfingers for pattern*/
+		height: 301px;
+		width: 2100px; /*same width as header*/
+		}
+		
+		#explanation, #participation, #benefits, #requirements {
+			border: solid #998; /*border only for IE, will be overridden*/
+			border-width: 0 1px 1px 1px;
+			background: #f2f4ee;
+			position: absolute;
+			z-index: 1000;
+			width: 257px;
+			top: 0;
+			padding: 0;
+			}
+		
+		html>head:first-child+body #explanation, html>head:first-child+body #participation, 
+		html>head:first-child+body #benefits, html>head:first-child+body #requirements {
+			background: transparent url(sectionBack_head.png) no-repeat top right; /*override IE values*/
+			border: 0;
+			}
+			
+		#explanation {
+			left: 680px;
+			}		
+		
+		#explanation h3, #participation h3, #benefits h3, #requirements h3 {
+			margin: 0;
+			padding: 0;
+			height: 86px; /*headers need defined height because of image replacement*/
+			}
+		
+		#explanation h3 {
+			background: transparent url(title_about.jpg) no-repeat;
+			}
+			
+		#explanation h3 span, #participation h3 span, #requirements h3 span, #benefits h3 span {
+			display: none; /*for some reason the negative margin didn't work here, so we will use this*/
+			}	
+		
+		#explanation p, #participation p, #benefits p, #requirements p {
+			margin: 0;
+			padding: 5px 20px; /*need to apply to the p elements because of background image reqts*/
+			}
+			
+		html>head:first-child+body #explanation p, html>head:first-child+body #participation p, 
+		html>head:first-child+body #benefits p, html>head:first-child+body #requirements p {
+			background: transparent url(sectionBack_main.png) repeat-y; /*middle background*/
+			}
+			
+		#explanation p.p2, #participation p.p4, #benefits p.p1, #requirements p.p5 {
+			margin: 0;
+			padding: 5px 20px 25px 20px;
+			}
+			
+		html>head:first-child+body #explanation p.p2, html>head:first-child+body #participation p.p4,
+		html>head:first-child+body #benefits p.p1, html>head:first-child+body #requirements p.p5 {
+			background: transparent url(sectionBack_foot.png) no-repeat bottom right; /*last p gets bottom*/
+			}
+			
+		#participation {   /*see above for comments*/
+			left: 980px;
+			}
+			
+		#participation h3 {
+			background: transparent url(title_participation.jpg) no-repeat;
+			}
+			
+		#benefits {
+			left: 1280px;
+			}
+			
+		#benefits h3 {
+			background: transparent url(title_benefits.jpg) no-repeat;
+			}
+			
+		#requirements {
+			left: 1580px;
+			}
+				
+		#requirements h3 {
+			background: transparent url(title_requirements.jpg) no-repeat;
+			}
+		
+		
+			
+			
+			
+/*footer stuff - footer will be on the side, floated, and consist of buttons for MOSE, boxes for IE*/			
+			
+		#footer {
+			position: absolute;
+			background: transparent;
+			z-index: 5000;
+			width: 43px; /*make sure floats go to next line*/
+			top: 0px;
+			left: 1880px;
+			padding: 0;
+			margin-top: 5px;
+			}
+			
+		div#footer a {
+			display: block; /*for text positioning and link activation*/
+			background: url(link_background.gif) no-repeat; /*standard link bk for all just for IE*/
+			border: 1px solid #998;
+			font-weight: normal;
+			text-align: center;
+			}
+			
+		html>head:first-child+body div#footer a { /*buttons only for MOSE*/
+			border: 0;
+			padding-top: 15px; 
+			background: url(footer_back.png) no-repeat;
+			height: 26px;
+			}
+			
+		html>head:first-child+body div#footer a:hover { /*i'm lazy, i just used 2 images instead of pixy method*/
+			background: url(footer_back_hover.png) no-repeat;
+			border: 0;
+			}
+	
+/*****************************
+	link list...here we go...
+*****************************/
+			
+	#linkList a:link, #linkList a:visited, #linkList a:hover, #linkList a:active {
+		border: 0;
+		padding: 0;
+		margin: 0;
+		}
+		
+		#linkList2 {
+			position: absolute;
+			top: 65px;
+			left: 750px;
+			z-index: 2000;
+			height: 150px;
+			margin: 0;
+			padding: 0;
+			width: 1350px;
+			}
+			
+		#linkList2 a {
+			border: 0;
+			}
+			
+		#linkList2 #lselect li > a:first-child {
+			display: block;
+			}
+			
+		#linkList2 ul > li:last-child {
+			border-bottom: 0;
+			}
+		
+			
+		#linkList2 {
+			list-style-type: none;
+			font-size: .7em;
+			}	
+			
+		#linkList2 a {
+			white-space: normal;
+			}
+			
+		#linkList2 a:first-child {
+			font-size: 1.3em;
+			}
+			
+		#linkList2 li:hover {
+			background: url(link_background.gif) no-repeat;
+			}
+			
+		#linkList2 li a:hover {
+			text-decoration: underline;
+			border: 0;
+			background: transparent;
+			}
+		
+		#linkList2 li {
+			padding: 0 3px;
+			border: 0;
+			}
+		
+		html > body #linkList2 li {
+			margin: 0;
+			padding: 3px;
+			border-bottom: 1px solid #887;
+			}
+			
+			#lselect, #lfavorites, #larchives, #lresources {
+				float: left;
+				}
+			
+			#lselect h3, #lfavorites h3, #larchives h3, #lresources h3 {
+				padding-top: 25px;
+				float: left;
+				display: block;
+				height: 150px;
+				}
+			
+			#lselect h3 span, #lfavorites h3 span, #larchives h3 span, #lresources h3 span {
+				padding: 5px;
+				position: relative;
+				margin-bottom: 60px;
+				top: -60px;
+				color: #776;
+				font-size: .5em;
+				background: transparent url(drop_ieBack.gif) no-repeat right;
+				border: 1px solid #776;
+				padding-right: 25px;
+				}
+			
+			#lselect ul, #lfavorites ul, #larchives ul, #lresources ul {
+				float: left;
+				position: relative;
+				top: -45px;
+				z-index: 3000;
+				left: -15px;
+				}
+				
+			
+			
+			html > body #lselect h3 {
+				background: transparent url(drop_lselect.png) no-repeat;
+				height: 36px;
+				width: 153px;
+				padding-top: 0;
+				float: none;
+				}
+				
+			html > body #lselect h3 span {
+				display: none;
+				}
+				
+			html > body #lselect ul {
+				display: none;
+				position: relative;
+				top: 0;
+				left: 0;
+				}
+				
+			html > body #lselect:hover ul {
+				float: none;
+				display: block;
+				background: url(drop_background.png) repeat;
+				border: 1px solid #776;
+				margin: 5px;
+				padding: 5px;
+				width: 128px;
+				list-style-type: none;
+				}
+				
+			html > body #lselect li {
+				float: none;
+				}
+				
+			#lselect ul {
+				list-style-type: none;
+				display: block;
+				}	
+				
+			
+			
+			
+				
+				
+				
+		
+				
+			html > body #lfavorites h3 {
+				background: transparent url(drop_favorites.png) no-repeat;
+				height: 36px;
+				width: 153px;
+				padding-top: 0;
+				float: none;
+				}
+				
+			html > body #lfavorites h3 span {
+				display: none;
+				}
+				
+			html > body #lfavorites ul {
+				display: none;
+				position: relative;
+				top: 0;
+				left: 0;
+				}
+				
+			html > body #lfavorites:hover ul {
+				float: none;
+				display: block;
+				background: url(drop_background.png) repeat;
+				border: 1px solid #776;
+				margin: 5px;
+				padding: 5px;
+				width: 128px;
+				list-style-type: none;
+				}		
+				
+			html > body #lfavorites li {
+				float: none;
+				}
+				
+			#lfavorites ul {
+				list-style-type: none;
+				display: block;
+				}
+				
+		
+				
+			html > body #larchives h3 {
+				background: transparent url(drop_archives.png) no-repeat;
+				height: 36px;
+				width: 153px;
+				padding-top: 0;
+				float: none;
+				}
+				
+			html > body #larchives h3 span {
+				display: none;
+				}
+				
+			html > body #larchives ul {
+				display: none;
+				position: relative;
+				top: 0;
+				left: 0;
+				}
+				
+			html > body #larchives:hover ul {
+				float: none;
+				display: block;
+				background: url(drop_background.png) repeat;
+				border: 1px solid #776;
+				margin: 5px;
+				padding: 5px;
+				width: 128px;
+				list-style-type: none;
+				}
+				
+			html > body #larchives li {
+				float: none;
+				display: block;
+				}
+				
+			#larchives ul {
+				list-style-type: none;
+				}
+				
+				
+			
+				
+			html > body #lresources h3 {
+				background: transparent url(drop_resources.png) no-repeat;
+				height: 36px;
+				width: 153px;
+				padding-top: 0;
+				float: none;
+				}
+				
+			html > body #lresources h3 span {
+				display: none;
+				}
+			
+			#lresources ul {
+				display: block;
+				}
+				
+			html > body #lresources ul {
+				display: none;
+				position: relative;
+				top: 0;
+				left: 0;
+				}
+				
+			html > body #lresources:hover ul {
+				float: none;
+				display: block;
+				background: url(drop_background.png) repeat;
+				border: 1px solid #776;
+				margin: 5px;
+				padding: 5px;
+				width: 128px;
+				list-style-type: none;
+				}
+			
+			html > body #lresources li {
+				float: none;
+				}
+				
+			#lresources ul {
+				list-style-type: none;
+				}
+				
+
+
+
+
+#extraDiv1 {
+	display: block;
+	background: url(noStandards.gif) fixed no-repeat;
+	position: absolute;
+	top: 542px;
+	left: 22px;
+	width: 330px;
+	height: 100px;
+	}
+	
+#extraDiv2 {
+	}	
+	
+html>body div#extraDiv1 {
+	display: none;
+	}
+	
+/*html > body #extraDiv1 span {
+	display: none;
+	}
+	
+/*
+thank you very much. try the filet.*/

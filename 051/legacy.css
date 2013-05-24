@@ -1,0 +1,444 @@
+/* css Zen Garden submission 051 - 'Commercial Drive' by Wendy Foster, http://www.transgression.ca/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Wendy Foster */
+/* Added: October 29th, 2003 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+/* Support the Open Source Initiative - http://www.opensource.org/ */
+
+
+
+/* basic elements */
+	
+body { 
+    background: #79000E url("girl.jpg") no-repeat fixed top left;
+	font: 10px verdana, sans-serif; 
+	color: #000000; 
+	margin: 0px 0px 0px 0px; 
+	}
+
+p { 
+	font: 10px verdana, sans-serif;
+	margin-top: 0px; 
+	text-align: justify;
+	
+	}
+	
+/* font resizing hack.  Allows for an absolute value to be specified in the main p tag, as well as resolves resizing and rendering issues  cross-browser.  For a detailed explanation see:  Mark Pilgrim's "Relative Font Sizing HOWTO : http://diveintoaccessibility.org/examples/fontsize.html */
+
+/*/*/a{}
+body,
+body p {
+  font-size: x-small;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: small;
+}
+html>body,
+html>body p {
+  font-size: small;
+}  
+/* */
+	
+h3 { 
+	font: 10px verdana, sans-serif; 
+	letter-spacing: 1px; 
+	margin-bottom: 0px;
+	background: none; 
+	color: #7D775C;
+	}
+	
+a:link { 
+	font-weight: bold; 
+	text-decoration: none;
+	background:none; 
+	color: #79000e;
+	cursor: help;
+	}
+a:visited {
+	font-weight: bold; 
+	text-decoration: none; 
+	background: none;
+	color: #7099A6;
+	cursor: help;
+	}
+	
+a:active  { 
+    font-weight:bold;
+	text-decoration: none;
+	background: none;
+	color: #5f3a79;
+	cursor: help;
+	}
+		
+a:hover  { 
+    font-weight: bold;
+	text-decoration: none; 
+	border: 1px solid #000000;
+	background: #c2c4c6;
+	color:#003058;
+	cursor: help;
+	}
+	
+/* specific divs */
+#container {
+	background: #CED41E;
+	color: #000000;
+	padding: 5px 5px 5px 5px;
+	margin: 0px;
+	width:300px;
+	position:absolute;
+	top:0px;
+	left:493px;
+	border-right: 5px solid #000000;
+	border-left: 5px solid #000000;
+	}
+	
+#intro { 
+	min-width: 300px;
+	}
+#pageHeader { 
+	margin-bottom: 20px;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 { 
+	background: transparent url("garden.gif") no-repeat top left;
+	color:#000000;  
+	width: 250px; 
+	height: 80px; 
+	}
+#pageHeader h1 span {
+	display:none
+	}
+#pageHeader h2 { 
+	background: transparent url("design.gif") no-repeat top left;
+	color:#000000; 
+	width: 250px; 
+	height: 25px; 
+	position:absolute;
+	left:35px;
+	top:82px;
+	}
+#pageHeader h2 span {
+	display:none;
+	}
+	
+#quickSummary {
+	clear:both; 
+	margin: 20px 20px 10px 10px; 
+	padding:20px 5px 5px 5px;
+	width: 250px; 
+	background: #d6d894 url("summarybg.gif");
+	color: #000000;
+	border-right: 5px solid #000000;
+	border-left: 5px solid #000000;
+	border-bottom: 5px solid #000000;
+	}
+#quickSummary p {
+	font: 10px verdana, sans-serif; 
+	text-align:center;
+	}
+
+/*/*/a{}
+body #quickSummary p {
+  font-size: x-small;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: small;
+}
+html>body #quickSummary,
+html>body #quickSummary p {
+  font-size: small;
+}  
+/* */
+
+#preamble {
+	padding:5px 5px 5px 5px;
+	}
+#preamble h3 { 
+	background: transparent url("enlightenment.gif") no-repeat top left;
+	text-align:center;
+	color:#000000; 
+	width: 250px; 
+	height: 25px; 
+	}
+#preamble h3 span {
+	display:none;
+	}	
+		
+#supportingText {
+	padding:5px 5px 5px 5px; 
+	margin-bottom: 20px;
+	}
+
+#explanation h3 { 
+	background: transparent url("about.gif") no-repeat top left; 
+	text-align:center;
+	color:#000000;
+	width: 250px; 
+	height: 25px; 
+	}
+#explanation h3 span {
+	display:none;
+	}
+	
+#participation h3 { 
+	background: transparent url("participation.gif") no-repeat top left; 
+	text-align:center;
+	color:#000000;
+	width: 250px; 
+	height: 25px; 
+	}
+#participation h3 span {
+	display:none;
+	}
+	
+#benefits h3 { 
+	background: transparent url("benefits.gif") no-repeat top left;
+	text-align:center;
+	color:#000000; 
+	width: 250px; 
+	height: 25px; 
+	}
+#benefits h3 span {
+	display:none;
+	}
+	
+#requirements h3 { 
+	background: transparent url("requirements.gif") no-repeat top left; 
+	text-align:center;
+	color:#000000;
+	width: 250px; 
+	height: 25px; 
+	}
+#requirements h3 span {
+	display:none;
+	}
+	
+#favorites h3 { 
+	background: transparent url("favorites.gif") no-repeat top left; 
+	text-align:center;
+	color:#000000;
+	width: 250px; 
+	height: 25px; 
+	}
+#favorites h3 span {
+	display:none;
+	}	
+				
+#footer { 
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	border-left: 5px solid #000000;
+	border-right: 5px solid #000000;
+	border-bottom: 5px solid #000000;
+	background:#D9DE4B url("footerbg.gif");
+	color:#000000;
+	}
+#footer a:link, #footer a:visited { 
+	margin-right: 20px; 
+	}
+
+#linkList2 { 
+	background:#CED41E url("linklistbg.gif");
+	color:#000000;
+	font: 10px verdana, sans-serif; 
+	padding: 5px 5px 5px 5px; 
+	border-top: 5px solid #000000;
+	border-bottom: 5px solid #000000;
+	position:absolute;
+	top:27px;
+	left:-230px;
+	height:125px;
+	width:220px;  
+	overflow:auto;
+	}
+	
+/*/*/a{}
+body #linkList2 {
+  font-size: x-small;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: small;
+}
+html>body #linkList2
+ {
+  font-size: small;
+}  
+/* */	
+	
+#linkList h3.select { 
+	background: transparent url(select.gif) no-repeat top left;
+	color:#000000; 
+	margin: 10px 0px 5px 0px; 
+	width: 100px; 
+	height: 20px; 
+	}
+#linkList h3.select span {
+	display:none
+	}
+#linkList h3.favorites { 
+	background: transparent url(favorites.gif) no-repeat top left;
+	color:#000000; 
+	margin: 25px 0px 5px 0px; 
+	width: 100px; 
+	height: 20px; 
+	}
+#linkList h3.favorites span {
+	display:none
+	}
+#linkList h3.archives { 
+	background: transparent url(archives.gif) no-repeat top left;
+	color:#000000; 
+	margin: 25px 0px 5px 0px; 
+	width:100px; 
+	height: 20px; 
+	}
+#linkList h3.archives span {
+	display:none
+	}
+#linkList h3.resources { 
+	background: transparent url(resources.gif) no-repeat top left;
+	color:#000000; 
+	margin: 25px 0px 5px 0px; 
+	width:100px; 
+	height: 20px; 
+	}
+#linkList h3.resources span {
+	display:none
+	}
+
+#linkList ul {
+    font:10px verdana, sans-serif; 
+	margin: 0px;
+	padding-left: 15px;
+	list-style-type: circle;
+	list-style-image: url("bullet.gif");
+	}
+	
+/*/*/a{}
+body #linkList ul {
+  font-size: x-small;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: small;
+}
+html>body #linkList ul
+ {
+  font-size: small;
+}  
+/* */	
+	
+#linkList li {
+    font: 10px verdana, sans-serif; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	}
+	
+/*/*/a{}
+body #linkList li {
+  font-size: x-small;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: small;
+}
+html>body #linkList li
+ {
+  font-size: small;
+}  
+/* */	
+	
+#linkList li a:link {
+    font: 10px verdana, sans-serif;
+	font-weight:bold;
+    background:none; 
+	color: #79000e;
+	text-decoration:none;
+	cursor: help;
+	}
+	
+/*/*/a{}
+body #linkList li a:link{
+  font-size: x-small;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: small;
+}
+html>body #linkList li a:link
+ {
+  font-size: small;
+}  
+/* */		
+	
+#linkList li a:visited {
+    font: 10px verdana, sans-serif;
+	font-weight:bold;
+    background:none;
+	color: #7099A6;
+	text-decoration:none;
+	cursor: help;
+	}
+	
+/*/*/a{}
+body #linkList li a:visited{
+  font-size: x-small;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: small;
+}
+html>body #linkList li a:visited
+ {
+  font-size: small;
+}  
+/* */	
+	
+#linkList li a:active {
+    font: 10px verdana, sans-serif;
+	font-weight:bold;
+    background:none;
+	color: #5f3a79;
+	text-decoration:none;
+	cursor: help;
+	}
+	
+/*/*/a{}
+body #linkList li a:active{
+  font-size: x-small;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: small;
+}
+html>body #linkList li a:active
+ {
+  font-size: small;
+}  
+/* */	
+			
+#linkList li a:hover {
+    font: 10px verdana, sans-serif;
+	font-weight:bold;
+    border: 1px solid #000000;
+	background: #c2c4c6;
+	color:#003058;
+	text-decoration:none;
+	cursor: help;
+	}	
+
+/*/*/a{}
+body #linkList li a:hover{
+  font-size: x-small;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: small;
+}
+html>body #linkList li a:hover
+ {
+  font-size: small;
+}  
+/* */				

@@ -1,0 +1,256 @@
+/* css Zen Garden submission 082 - 'Miracle Cure' by Joseph Pearson, http://www.make-believe.org */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* Some associated graphics and photos copyright 2004, Joseph Pearson */
+/* Added: February 15th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/*======================================================================== 
+   CSS Stylesheet -  Miracle Cure.
+   
+   A MIRACLE CURE? This Zen Garden is based on old, turn of the century
+   swap cards for advertising health potions. Everything from hair
+   restoratives to laudanum. I got the idea when I stumbled across a
+   hobbyist's collection at: http://www.antiquebottles.com/rl/tc/
+========================================================================*/
+
+
+
+/*=====================
+    basic elements 
+=====================*/
+body { 
+	font: 10.5pt Palatino, Georgia, Times New Roman, serif;
+	color:#554;
+	line-height:1.2em;
+	font-weight:500;
+	text-align:left;
+	margin:0;
+	padding:0;
+	background-color:white;
+}
+p { 
+	padding:0;
+	margin:0;
+	padding-bottom:0.4em;
+	text-indent:1em;
+	text-align:center;
+}
+h3 {
+	margin:0;
+	text-align:center;
+}
+a:link, a:visited, a:hover, a:active { 
+	font-style:italic;
+	color:black;
+	font-weight:300;
+	text-decoration:none;
+}
+acronym{
+	text-decoration:none;
+	border-bottom:none;
+	font-weight:bold;
+	cursor:help;
+}
+/*===================
+    body elements
+===================*/
+#container { 
+	position:absolute;
+	width:790px;
+	left:50%;
+	margin-left:-395px;
+}
+#pageHeader { 
+	background:url(banner.jpg) no-repeat top center;
+	width:278px;
+	height:185px;
+}
+#pageHeader h1, #pageHeader h2 { 
+	display:none;
+}
+#quickSummary {
+	background:url(bg_header.gif) repeat-y;
+	height:20px;
+}
+#quickSummary p{
+	display:none;
+}
+#preamble {
+	width:600px;
+	background:url(bg_repeater.gif) repeat-y;
+	padding:25px 45px 0px 35px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width:520px;
+}
+#preamble h3 {
+	display:none;
+}
+#preamble h3 span {
+	visibility:hidden;
+}
+#preamble p.p1 {
+	padding-left:30px;
+	padding-right:30px;
+	line-height:1.2em;
+	font-style:italic;
+	font-size:14pt;
+	font-family: Monotype Corsiva, Palatino, Georgia, Times New Roman, serif;
+}
+#preamble p.p2 {
+	background:url(preamble.gif) no-repeat top center;
+	padding-top:150px;
+}
+#supportingText{
+	width:600px;
+	background:url(bg_repeater.gif) repeat-y;
+}
+#supportingText h3 { 
+	text-align:center;
+	padding:0;
+	margin:0;
+	background:no-repeat center;
+	height:25px;	
+}
+#supportingText h3 span {
+	visibility:hidden;
+}
+#explanation {
+	padding-left:35px;
+	padding-right:45px;
+}
+#explanation h3 {
+	background-image:url(explanation.gif);
+}
+#participation {
+	padding-left:35px;
+	padding-right:45px;
+}
+#participation h3 {
+	background-image:url(participation.gif);
+}
+#benefits {
+	padding-left:35px;
+	padding-right:45px;
+}
+#benefits h3 {
+	background-image:url(benefits.gif);
+}
+#requirements {
+	padding-left:35px;
+	padding-right:45px;
+}
+#requirements h3 {
+	background-image:url(requirements.gif);
+}
+#footer { 
+	width:600px;
+	background:url(bg_footer.gif) no-repeat bottom;
+	padding-top:12px;
+	padding-bottom:70px;
+	text-align:center;
+}
+#footer a:link, #footer a:visited { 
+	font-weight:500;
+	font-size:8pt;
+}
+/*=========================
+     linkList elements
+=========================*/
+#linkList {
+	position:absolute;
+	top:300px;
+	left:597px;
+	width:180px;
+	background-image:url(linklist_repeater.gif);
+}
+#linkList h3 {
+	padding:10px 0 3px;
+	color:#333;
+	font-weight:500;
+	font-size:10pt;
+	font-style:italic;
+}
+#linkList2 {
+	font-size: 8pt;
+}
+#linkList ul {
+	margin:0;
+	padding:0;
+	text-align:left;
+	line-height:1em;
+}
+#linkList li {
+	margin:0;
+	font-style:italic;
+}
+#linkList li a:link { 
+	color:black;
+	font-style:normal;
+}
+#linkList li a:visited {
+	color:gray;
+	font-style:normal;
+}
+#linkList li a:hover, #linkList li a:active {
+	color:#B8860B;
+}
+#lselect h3 {
+	padding-top:55px;
+	background:url(linklist_top.gif) no-repeat top center;
+}
+#lselect li {
+	padding:5px 8px 5px 10px;
+	margin:0;
+	list-style:none;
+	text-align:left;
+	line-height:1.2em;
+}
+#lselect a, #lselect a:link, #lselect a:visited {
+	padding-left:16px;
+	background:url(listimg.gif) no-repeat center left;
+}
+#lselect a:hover, #lselect a:active {
+	background-image:url(listimg_hvr.gif);
+}
+#lselect a:link.c, #lselect a:visited.c, #lselect a:hover.c, #lselect a:active.c {
+	padding:0;
+	background-image:none;
+}
+#lresources{
+	padding-bottom:55px;
+	background:url(linklist_base.gif) no-repeat bottom center;
+}
+#lresources li, #larchives li {
+	text-align:center;
+	margin-left:0;
+	list-style:none;
+}
+/*=======================
+     Extra elements
+=======================*/
+#extraDiv1 { 
+	position:absolute;
+	font-size:10pt;
+	top:0;
+	left:50%;
+	background:url(deco3.jpg) no-repeat;
+	width:400px;
+	height:160px;
+}
+#extraDiv2 { 
+	position:absolute;
+	top:62em;
+	left:50%;
+	margin-left:161px;
+	background:url(deco2.gif) no-repeat;
+	width:175px;
+	height:236px;
+}

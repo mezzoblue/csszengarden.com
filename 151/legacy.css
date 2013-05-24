@@ -1,0 +1,277 @@
+/* css Zen Garden submission 151 - 'Contempo Finery', by Ro London, http://www.intersmash.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Ro London */
+/* Added: Jan. 31st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+*{
+ margin:0;
+ padding:0;
+ background-repeat:no-repeat;
+}
+body{
+ font-family:arial,helvetica,sans-serif;
+ color:#888;
+ background-color:white;
+ font-size:small;
+ margin-top:100px;
+ text-align:center;
+ background-image:url(z-background2.gif);
+ background-repeat:repeat-y;
+ background-position:center top;
+}
+div, p, h2, h1{
+ text-align:left;
+ width:247px;
+}
+h3{
+ width:200px;
+ padding:0px;
+ color:white;
+ font-size:1px;
+ height:60px;
+ text-indent:-1000px;
+}
+acronym{
+ cursor: help;
+}
+#container{
+ width:500px;
+ margin-left:auto;
+ margin-right:auto;
+}
+p{
+ line-height:150%;
+}
+p span{
+ display:block;
+ padding:0 22px 22px 22px;
+}
+#intro{
+ float:left;
+}
+#supportingText{
+ float:left;
+ width:250px;
+}
+#pageHeader{
+ height:240px;
+ background-image:url(z-header2.gif);
+ background-position:0 0;
+}
+#pageHeader *{
+ display:none;
+}
+#quickSummary{
+ height:470px;
+ background-image:url(z-d.gif);
+}
+#quickSummary * {
+ display:none;
+}
+#preamble{
+ margin-top:800px;
+ background-image:url(z-e.gif);
+ background-position:0 0;
+}
+#preamble p span{
+ color:#966;
+ text-align:center;
+}
+#preamble .p3{
+ padding-bottom:30px;
+}
+#preamble h3{
+ padding:20px;
+ height:115px;
+}
+#explanation h3{
+ background-image:url(z-h1.gif);
+ background-position:7px 12px;
+ margin-left:4px;
+}
+#participation, #explanation, #benefits, #requirements{
+ background-image:url(zbg.gif);
+}
+#participation h3{
+ background-image:url(z-h2.gif);
+ background-position:7px 12px;
+ margin-left:4px;
+}
+#benefits h3{
+ background-image:url(z-h3.gif);
+ background-position:7px 12px;
+ margin-left:4px;
+}
+p{
+ background-image:url(zbg.gif);
+ background-position:0 -50px;
+}
+#requirements .p5{
+ background-image:none;
+}
+#requirements .p5{
+ padding-top:50px;
+ background-image:url(z-leaf3.gif);
+ background-position:right center;
+ margin-top:0px;
+ margin-bottom:100px;
+ font-size:x-small;
+ color:#ccc;
+ text-align:center;
+ background-color:#fff;
+ height:250px;
+}
+#requirements .p5 span{
+ margin-right:30px;
+}
+#requirements .p5 a{
+ color:#aaa;
+ text-decoration:none;
+ font-style:italic;
+}
+#requirements h3{
+ background-image:url(z-h4.gif);
+ background-position:7px 12px;
+ margin-left:4px;
+}
+#requirements .p4, #benefits .p1, #participation .p3, #explanation .p2, #preamble .p3 {
+ background-image:url(zbg.gif);
+ background-position:center bottom;
+}
+#linkList{
+ clear:both;
+ position:absolute;
+ top:811px;
+ left:50%;
+ z-index:5;
+ margin-left:-258px;
+ * margin-left:-250px;
+ width:247px;
+ background-image:url(zbg.gif);
+ background-position:0 -401px;
+ height:799px;
+ overflow:hidden;
+ padding-bottom:0px;
+ *padding-bottom:0;
+}
+head+body #linkList{
+ margin-left:-250px;
+ padding-bottom:0;
+}
+#linkList h3{
+ height:60px;
+ width:247px;
+ background-position:0 0;
+}
+.select{
+ background-image:url(z-s3.gif);
+}
+.archives{
+ background-image:url(z-s4.gif);
+ margin-top:30px;
+}
+.resources{
+ background-image:url(z-s5.gif);
+ margin-top:30px;
+}
+#lselect{
+ background-image:url(zbg.gif);
+}
+li, ul{
+ list-style-type:none;
+}
+a{
+ color:#366;
+}
+a:hover{
+ background-color:#eee;
+}
+li{
+ display:block;
+ width:247px;
+ min-height:20px;
+ * height:20px;
+ margin-bottom:9px;
+ * margin-bottom:0;
+ background-image:url(zbg.gif);
+ background-position:0 -40px;
+}
+li a{
+ margin-left:2px;
+ border-right:2px solid #fff;
+ border-left:2px solid #fff;
+ display:block;
+ width:239px;
+ height:100%;
+ font-size:x-small;
+ text-transform:uppercase;
+ text-decoration:none;
+ color:#699;
+ text-align:center;
+ padding: 2px 0 2px 0;
+}
+li a:hover{
+ background-color:#f3f3f3;
+ border-right:2px solid #f3f3f3;
+ border-left:2px solid #f3f3f3;
+}
+li .c{
+ display:none;
+}
+#footer{
+ position:absolute;
+ top:0px;
+ left:50%;
+ overflow:hidden;
+ height:24px;
+ width:240px;
+ background-color:#ededed;
+ text-align:center;
+ background-image:url(z-cr.gif);
+ background-position:bottom right;
+ line-height:15px;
+}
+#footer a{
+ color:#999;
+ text-decoration:none;
+ font-size:x-small;
+ text-transform:uppercase;
+}
+#footer a:hover{
+ color:#333;
+}
+#extraDiv2{
+ width:35px;
+ height:24px;
+ position:absolute;
+ left:50%;
+ margin-left:-24px;
+ top:0px;
+ background-image:url(z-cl.gif);
+ background-position:bottom left;
+}
+#extraDiv1{
+ width:102px;
+ height:235px;
+ position:absolute;
+ left:50%;
+ margin-left:-351px;
+ top:520px;
+ background-image:url(z-leaf2.gif);
+}
+#lselect li{
+ text-align:center;
+ * text-align:left;
+ font-size:1px;
+ color:white;
+}
+a:visited{
+ color:#7E84A1;
+}

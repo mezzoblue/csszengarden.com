@@ -1,0 +1,309 @@
+/* css Zen Garden submission 012 - 'TechnOhm' by Joshua Ambrutis - http://www.visualcss.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Joshua Ambrutis */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* I've tried to keep the CSS in the sequence which I built it in... just to give another perspective 
+of how others tackle this, you'll see in some spots I'll define an elements main box just to get it 
+in the right place etc.. then refine it with specifics later in the stylesheet.  I'm not saying this is right, 
+just the way I usually go about it.   There are also comments thrown in here and there to hopefully
+explain some of the strangeness */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: url(to_pageback.gif) repeat fixed;
+	color: #CCCCCC;
+	font: 76% Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+div, p, ul, li, h1, h2, h3, h4, h5, h6 { margin: 0px; padding: 0px; }
+/* Why do I do that?  ...hmm.. since switching from Tables to CSS, I've learned it is easier 
+for MY feeble brain to lay out the design first with just colored boxes THEN paint it in photoshop, this just helps me 
+to get the layout of the elements first.  Then I refine theses values with more specifics through 
+IDs and Classes when the graphics call for it, in my case the barebones basic layout comes 
+first with designs in my head BEFORE I open PhotoShop... but that's just me */
+
+h1, h2, h3, h4, h5, h6 { color: #FFAE00; }
+#container {
+	margin: 0px auto 60px;
+	width: 760px;
+	border-top: 0px solid #000000;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+	border-left: 2px solid #000000;
+	padding: 0px 0px 150px;
+	background: #404040 url(bandwidthkiller.jpg) no-repeat center bottom;
+	text-align: left;
+	position: relative;
+}
+#pageHeader h1 {
+	margin-bottom: 12px;
+	background: url(to_header_01.jpg) no-repeat;
+	height: 186px;
+}
+#pageHeader h1 span { display: none; }
+
+/* Above: That's just for dumping the text allowing the backround image in it's containing element to show through*/
+
+#pageHeader h2 {
+	width: 261px;
+	background: url(to_beauty.gif) no-repeat;
+	position: absolute;
+	height: 17px;
+	top: 2px;
+	right: 5px;
+	cursor: text; /* just goofing off */
+}
+#pageHeader h2 span { display: none; }
+#pageHeader { position: relative; }
+#quickSummary {
+	margin: 0px;
+	border: 0px none;
+	padding: 0px;
+	width: 220px;
+	background: url(to_sumarytop_02.jpg) no-repeat;
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	height: 266px;
+}
+#preamble {
+	margin: 10px 0px 30px 235px;
+	width: 510px;
+	border: 2px solid #000000;
+	padding: 10px 0px;
+	background: #60676F url(zen-image.jpg) repeat center top;
+	text-align: center;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+}
+#preamble p {
+	padding: 0px 0px 1.3em;
+	margin: 0px auto;
+	width: 320px;
+	color: #F2F2F2;
+	font: bold 1.2em/1em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	letter-spacing: 0.08em;
+	text-align: left;
+}
+#preamble p.p3 { padding-bottom: 0px; }
+div#preamble h3 {
+	width: 400px;
+	margin: 0px;
+	padding: 0px 0px 0px 34px;
+	background: url(to_h3back_04.gif) no-repeat left top;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+	position: absolute;
+	top: -24px;
+	z-index: 1;
+	left: -3px;
+	height: 23px;
+}
+#supportingText {
+	margin: 0px 0px 0px 235px;
+	width: 510px;
+	padding: 0px;
+	position: relative;
+}
+#linkList {
+	margin: 7em 10px 0px 12px;
+	padding: 0px;
+	width: 200px;
+	background: url(ani2.gif) no-repeat;  /* this is just here as a preloader for the nav mouseover to kill the delay when it's first hit.. it can't be seen in this position because of an overlaying background image*/
+	position: absolute;
+	left: 0px;
+	top: 360px;
+	z-index: 2;
+}
+#supportingText p { padding: 5px 12px 1em; }
+#supportingText div {
+	border: 1px solid #000000;
+	padding: 0px;
+	margin: 22px 0px 40px;
+	width: 510px;
+	background: #61605F;
+	position: relative;
+	z-index: 2;
+}
+#supportingText h3 {
+	width: 400px;
+	margin: 0px;
+	padding: 0px 0px 0px 34px;
+	background: url(to_h3back_04.gif) no-repeat left top;
+	font-size: 16px;
+	line-height: 24px;
+	position: absolute;
+	top: -24px;
+	z-index: 1;
+	height: 23px;
+	left: -2px;
+}
+#intro a {
+	color: #FFCC00;
+	font-weight: bold;
+	text-decoration: none;
+}
+#supportingText a {
+	color: #FFAE00;
+	font-weight: bold;
+	text-decoration: none;
+}
+#supportingText a:hover { border-bottom: 2px dashed #FFAE00; color: #CCCCCC; }
+#supportingText a:active { border-bottom: 2px dashed #333333; background: #5A6269; }
+div#supportingText div#requirements {
+	margin-bottom: 0px;
+	background: #61605F url(bandwidthkiller-alpha.jpg) no-repeat center bottom;
+}
+/* the background image above is what gives the transparency effect, 
+it's just a carefully cut out chunk of the #container divs background image
+with a semi-transparent overlay on it.   Oh... I can't wait for true PNG surrport*/
+
+div#supportingText div#footer {
+	width: 200px;
+	border-top: 0px none #000000;
+	border-right: 0px none #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 0px none #000000;
+	padding-top: 36px;
+	padding-bottom: 12px;
+	margin: 0px;
+	background: transparent url(to_footerback_07.gif) no-repeat left top;
+	text-align: center;
+	position: relative;
+	left: -220px;
+	top: -64px;
+}
+#quickSummary p {
+	margin: 0px 20px 10px 25px;
+	color: #A3A3A3;
+	font: bolder small-caps 1.1em/1em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#quickSummary p.p1 {
+	margin-top: 20px;
+	border: 1px solid #23282C;
+	padding: 10px;
+	color: #FFAE00;
+}
+#quickSummary p.p2 {
+	color: #999999;
+	font-weight: normal;
+	text-align: center;
+}
+#quickSummary p a {
+	color: #CCCCCC;
+	font-weight: normal;
+	text-decoration: none;
+}
+#lselect, #lfavorites, #larchives, #lresources {
+	border: 1px solid #000000;
+	padding: 0px;
+	margin: 0px 0px 60px;
+	background: #60676F;
+	font-size: .9em;
+	position: relative;
+}
+#linkList h3 {
+	width: 200px;
+	border-top: 0px #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 0px #000000;
+	border-left: 0px #000000;
+	margin: 0px;
+	padding: 0px;
+	background: url(to_h3back_04.gif) no-repeat left top;
+	font-size: 16px;
+	line-height: 24px;
+	position: absolute;
+	top: -24px;
+	z-index: 1;
+	left: -2px;
+	height: 23px;
+}
+#linkList h3 span { margin: 0px; padding: 0px 0px 0px 34px; }
+/*#linkList span { margin: 0px; padding: 0px; display: block; }*/
+
+div#lselect a.c {
+	margin: 0px 0px -15px; /* seemed to have to do that because of the extra &nbsp; in each li item */
+	padding: 0px 15px 0px 0px;
+	display: inline;
+	background-image: none;
+	color: #FFCC00;
+	font-weight: normal;
+	font-variant: normal;
+	font-size: 1em;
+	text-decoration: none;
+	text-transform: capitalize;
+	text-align: center;
+}
+/* The following 4 divs all use the same background file...
+ it's larger than it needs to be to allow the text to resize PLUS you can 
+ use the background-position to offset it in different divs for the illusion 
+ of more than one file without the bandwith loss*/
+ 
+div#lselect {
+	background: url(to_leftcol_02.jpg) repeat-y -50px -60px;
+	color: #999999;
+}
+div#lresources {
+	background: url(to_leftcol_02.jpg) no-repeat -5px -20px;
+	text-align: left;
+}
+div#larchives {
+	background: url(to_leftcol_02.jpg) no-repeat -40px -220px;
+}
+div#lfavorites {
+	background: url(to_leftcol_02.jpg) no-repeat -60px -20px;
+}
+/* Bahaaa!  Somebody switched the menus to an unordered list structure, 
+good bye spans! I have to jump back a few 
+steps here and do the lists, I'll try to reorder the css later to make incremental sense */
+#linkList ul { list-style: none; text-align: center; }
+#linkList li { margin: 0px; padding: 6px 0px; }
+#linkList a {
+	padding-left: 32px;
+	margin-left: 6px;
+	display: block;
+	background: url(ani1.gif) no-repeat left center;
+	color: #BBBBBB;
+	font-weight: bold;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: left;
+}
+#linkList a:hover {
+	background: url(ani2.gif) no-repeat left center;
+	color: #EBEBEB;
+}
+div#lselect a.c:hover {
+	background: none;
+	color: #CCCCCC;
+	font-style: italic;
+	text-decoration: none;
+}
+div#linkList div#lresources a {
+	margin: 0px 0px -10px;
+	padding: 0px;
+	display: inline;
+	background: url(none);
+	text-transform: capitalize;
+}
+div#linkList div#lresources ul { margin: 0px; padding-left: 15px; text-align: left; }
+/* Stupid IE5, almost made it without a hack, but don't have time figure 
+out how to get rid of extra pixels from the border or even if I can without 
+resorting to a hack.  By the way, this is called the SBMH short for Simple
+Box Model Hack, just Google it for more info if you need*/
+#linkList h3 { \left: -1px; lef\t: -2px; \width: 201px; w\idth: 200px; }
+

@@ -1,0 +1,151 @@
+/* css Zen Garden submission 136 - 'The Final Ending', by Ray Henry, http://www.reh3.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Ray Henry */
+/* Added: Oct. 29th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/* The Final Ending */
+/* CSS Zen Garden Halloween Submission */
+/* Author: Ray Henry */
+/* www.reh3.com */
+
+* {margin:0;padding:0;}
+body {background:#000 url(r3_zen666_bg.jpg) no-repeat top left;}
+
+/* 
+Basic Positioning 
+***********************************************************************************/
+#container {
+	width:770px;
+	position:relative;
+}
+#pageHeader {width:770px;height:215px;}
+#quickSummary, #preamble, #supportingText {
+	float:left;
+	width:423px;
+}
+#linkList {
+	margin:0 0 0 493px;
+}
+* html #linkList {margin:-380px 0 0 493px;} /* for IE 5+ PC */
+/* 
+#intro 
+***********************************************************************************/
+#pageHeader {
+	background:url(r3_zen666_banner_bg.jpg) no-repeat top left;
+}
+#pageHeader h1 {
+	margin:0 0 0 291px;
+	background:url(r3_zen666_logo.jpg) no-repeat top left;
+	width:479px;
+	height:215px;
+	text-indent:-5000px;
+}
+#pageHeader h2 {display:none;}
+#quickSummary {
+	background:url(r3_zen666_qs_bg.jpg) no-repeat top left;
+	height:120px;
+	padding:28px 35px 0 35px;
+}
+#preamble {padding:0 35px 0 35px;}
+#quickSummary p, #preamble p {
+	font-size:11px;
+	font-family:verdana;
+	color:#555;
+	margin:12px 0;
+}
+#preamble p {line-height:16px;}
+#quickSummary a:link, #quickSummary a:active, #quickSummary a:visited {color:#555;}
+#quickSummary a:hover {color:#900;}
+#preamble h3 {
+	background:url(r3_zen666_road_bg.jpg) no-repeat top left;
+	margin:0 0 0 -35px;
+	width:399px;
+	height:37px;
+	text-indent:-5000px;
+}
+/* 
+#supportingText 
+***********************************************************************************/
+#supportingText {padding:0 35px 0 35px;}
+#supportingText p {
+	font-size:11px;
+	font-family:verdana;
+	color:#555;
+	margin:12px 0;
+	line-height:16px;
+}
+#supportingText a:link, #supportingText a:active, #supportingText a:visited {color:#555;}
+#supportingText a:hover {color:#900;}
+#explanation h3, #participation h3, #benefits h3, #requirements h3 {
+	margin:20px 0 0 -35px;
+	width:399px;
+	height:37px;
+	text-indent:-5000px;
+}
+#explanation h3 {background:url(r3_zen666_about_bg.jpg) no-repeat top left;}
+#participation h3 {background:url(r3_zen666_part_bg.jpg) no-repeat top left;}
+#benefits h3 {background:url(r3_zen666_ben_bg.jpg) no-repeat top left;}
+#requirements h3 {background:url(r3_zen666_req_bg.jpg) no-repeat top left;}
+#footer {
+	background:url(r3_zen666_footer_bg.jpg) no-repeat top left;
+	height:60px;
+	margin:0 -35px 0 -35px;
+	padding:240px 0 0 0;
+	text-align:center;
+}
+#supportingText #footer a:link, #supportingText #footer a:active, #supportingText #footer a:visited {
+	margin:0 10px;
+	color:#900;
+}
+#supportingText #footer a:hover {color:#555;}
+/* 
+#linkList
+***********************************************************************************/
+#linkList {
+	background:url(r3_zen666_lickList_bg.jpg) no-repeat top left;
+	padding:1px 0 0 7px;
+	font-size:10px;
+	font-family:verdana;
+	color:#444;
+}
+#linkList ul {
+	margin:0 0 10px 0;
+	list-style:none;
+	width:131px;
+}
+#linkList ul li {
+	padding:5px 8px;
+	border-bottom:1px dashed #333;
+}
+#lselect h3, #larchives h3, #lresources h3 {
+	margin:0;
+	width:131px;
+	height:35px;
+	text-indent:-5000px;
+}
+#lselect h3 {background:url(r3_zen666_lselect_bg.jpg) no-repeat top left;}
+#larchives h3 {background:url(r3_zen666_larchive_bg.jpg) no-repeat top left;}
+#lresources h3 {background:url(r3_zen666_lres_bg.jpg) no-repeat top left;}
+#linkList a:link, #linkList a:active, #linkList a:visited {color:#444;}
+#linkList a:hover {color:#900;}
+/*
+#extraDiv1
+***********************************************************************************/
+#extraDiv1 {
+	position:fixed;
+	bottom:0;
+	left:540px;
+	background:url(r3_zen666_tombstone.png) no-repeat top left;
+	width:227px;
+	height:267px;
+}
+* html #extraDiv1 {display:none;} /* For IE 5+ PC */
+#extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {display:none;}

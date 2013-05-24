@@ -1,0 +1,183 @@
+/* css Zen Garden submission 158 - 'a Simple Sunset', by Rob Soule, http://www.couchfort.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Rob Soule */
+/* Added: Mar. 7th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* 
+    'a Simple Sunset'
+    design by rob soule
+    www.couchfort.net 
+*/
+
+/* --// basic elements --// */
+body { 
+ font: 11px georgia,times,serif; 
+ color: #F0E9CE; 
+ background: #F0E9CE url(mainBg.gif) repeat-x top; 
+ margin: 0;
+ text-align: center;	 
+}
+acronym {
+ cursor: help;
+ border-bottom: 1px dotted #F0E9CE;
+}
+/* --// links --// */
+a { 
+ color: #F0AC4A;
+ text-decoration: none; 
+}
+a:hover,a:active { text-decoration: underline; }
+a acronym { border: 0; }
+li a {
+ display: block;
+ color: #2B0101;
+ font-weight: bold;
+ font-size: 11px;
+ text-transform: none;
+ padding: 2px 0 3px 0;
+}
+li a.c {
+ font-size: 9px;
+ font-weight: normal;
+ display: inline;
+ padding: 0;
+ text-transform: uppercase;
+}
+#larchives li a, #lresources li a {
+ display: inline;
+ font-weight: normal;
+ font-size: 9px;
+ line-height: 15px;
+ margin: 0;
+ text-transform: uppercase;
+}
+li a:hover, li a:hover.c { color: #5E1919; }
+#footer a {
+ color: #B6B2A3;
+ margin: 0 5px;
+ border: 1px solid #CBC7B5;
+ text-decoration: none;
+ padding: 2px 3px;
+}
+#footer a:hover {
+ background: #CBC7B5;
+ color: #2B0101;
+}
+/* --// id selectors --// */
+#container { 
+ margin: 0 auto;
+ text-align: left; 
+ background: url(contBg.gif) repeat-y center;
+ width: 672px;	
+}
+#intro,#supportingText {
+ line-height: 19px;
+}
+#pageHeader { 
+ height: 287px;
+ background: url(top.jpg) no-repeat;
+}
+#quickSummary {
+ background: url(preBg.gif) no-repeat center top;
+ height: 87px;
+ font-size: 9px;
+ text-transform: uppercase; 
+}
+#preamble {
+ width: 380px;
+ margin-top: -95px; 
+ padding: 0 0 0 260px;
+ font-style: italic;	
+}
+#supportingText {
+ width: 380px;
+ padding: 0 0 0 260px;
+}
+#linkList {
+ position: absolute;
+ top: 325px;
+ padding-left: 45px;
+ color: #2B0101;
+}
+#lselect,#larchives,#lresources {
+ background: url(lselectBttm.gif) no-repeat bottom;
+ padding-bottom: 12px;
+ margin-top: 15px;  
+}
+
+/* --// layout ...booya --// */
+#preamble h3,#explanation h3, #participation h3, #benefits h3, #requirements h3{
+ text-indent: -5000px;
+ height: 37px;
+}
+#lselect h3, #lresources h3, #larchives h3 {
+ height: 23px;
+ width: 189px;
+ margin: 0;
+ text-indent: -5000px; 
+} 
+#preamble h3 { background: url(h3Road.gif) no-repeat right; }
+#explanation h3 { background: url(h3AllAbout.gif) no-repeat right; }
+#participation h3 { background: url(h3Part.gif) no-repeat right; }
+#benefits h3 { background: url(h3Benefits.gif) no-repeat right; }
+#requirements h3 { background: url(h3Require.gif) no-repeat right; }
+#lresources h3 { background: url(lresourcesSpan.gif); }
+#larchives h3 { background: url(larchivesSpan.gif); }
+#lselect h3{
+ background: url(lselectSpan.gif);
+ margin: -15px 0 0 0;
+}
+#quickSummary .p2 {
+ position: absolute;
+ top: 190px;
+ width: 280px;
+ text-align: right; 
+ margin-left: 360px; 
+}
+#quickSummary .p1 {
+ position: absolute;
+ top: 100px;
+ width: 158px;
+ margin-left: 482px;
+ text-align: right;
+ line-height: 14px; 
+}
+#footer {
+ display: block;
+ width: 625px;
+ margin-left: -235px;
+ text-align: center;
+ padding: 15px 0 25px 0;
+ font: 10px verdana,arial,serif;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ background: #DCD5B8 url(footerBg.gif) repeat-x bottom; 
+}
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv1, #extraDiv5, #pageHeader h1,h2 { display : none; }
+
+/* --// lists --// */
+ul,li {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+li {
+ background: #F0E9CE;
+ padding: 5px 7px;
+ border-bottom: 1px solid #DCD5B8; 
+ text-transform: uppercase; 
+ font-size: 9px;
+}
+li:hover { background: #DCD5B8; }
+
+/* --// the lone class --// */
+.p5 { clear: both; }
+
+/* the end... doh doh doh */

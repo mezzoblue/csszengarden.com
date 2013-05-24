@@ -1,0 +1,260 @@
+/* css Zen Garden submission 105 - 'Austrian's Dark Side', by Rene Grassegger, http://www.grassegger.at/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Rene Grassegger */
+/* Added: May 31st, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+body {
+	font: 12px/16pt "Courier New",monospace !important;
+	color: #fff;
+	background: #000 url(body_bg2.jpg) no-repeat bottom right;
+}
+
+html, body, p, h1, h2, h3, div, ul {
+	margin: 0;
+	padding: 0;
+}
+
+acronym {
+	cursor: help;
+	color: #900;
+	border-bottom: 1px dotted #900;
+}
+
+acronym:hover {
+	border-bottom: 3px solid #f00;
+	font-size: 1.5em;
+	color: #f00;	
+	font-weight: bold;
+}
+
+h1, h2, h3 {
+	display: none;
+}
+
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: #f00;
+}
+
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #f00;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	color: #f00;
+}
+
+/* specific divs */
+#container {
+	background: url(csszengarden_bg.jpg) no-repeat top left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#quickSummary {
+	position: absolute;
+	top: 20px;
+	left: 350px;
+	background: url(starttext_bg.jpg) no-repeat;
+	clear: both;
+	margin: 0;
+	width: 350px;
+	float: left;
+}
+
+#quickSummary .p1 {
+	font: 12px "Courier New" !important;
+	color: #000;
+	padding: 23px 10px 0 30px;
+	height: 95px;
+}
+
+#quickSummary .p2 {
+	position: absolute;
+	top: -20px;
+	left: 35px;
+	color: #fff;
+}
+
+#preamble {
+	position: absolute;
+	top: 155px;
+	left: 280px;
+	background: url(roadtoenlightment.jpg) no-repeat;
+	height: 416px;
+	width: 466px;
+	margin: 0;
+	padding: 0;
+}
+
+	
+#preamble p {
+	font: 12px "Courier New" !important;
+	color: #000;
+	margin: 0 0 0px 0;
+	padding: 20px 45px 0px 150px;
+}
+
+#preamble .p1 {
+	margin-top: 35px;
+}
+
+#explanation {
+	position: absolute;
+	top: 582px;
+	left: 268px;
+	background: url(sowhatisitabout_bg.jpg) no-repeat;
+	height: 465px;
+	width: 476px;
+	margin: 0;
+	padding: 0;
+}
+
+#explanation p {
+	font: 12px "Courier New" !important;
+	color: #000;
+	margin: 40px 0 -35px 0;
+	padding: 20px 45px 0px 150px;
+}
+
+#participation {
+	position: absolute;
+	top: 1042px;
+	left: 268px;
+	background: url(partcipation_bg.jpg) no-repeat;
+	width: 484px;
+	height: 532px;
+	margin: 0;
+	padding: 0;
+}
+
+#participation p {
+	font: 12px "Courier New" !important;
+	color: #000;
+	margin: 40px 0 -35px 0;
+	padding: 20px 45px 0px 150px;
+}
+
+#benefits {
+	position: absolute;
+	top: 1582px;
+	left: 168px;
+	background: url(benefits_bg.jpg) no-repeat;
+	width: 586px;
+	height: 192px;
+	margin: 0;
+	padding: 0;
+}
+
+#benefits p {
+	font: 12px "Courier New" !important;
+	color: #000;
+	margin: 40px 0 -35px 0;
+	padding: 10px 45px 0px 180px;
+}
+
+#requirements {
+	position: absolute;
+	top: 1802px;
+	left: 68px;
+	background: url(requirements_bg.jpg) no-repeat;
+	width: 677px;
+	height: 586px;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+#requirements p {
+	font: 12px "Courier New" !important;
+	color: #000;
+	margin: 40px 0 -35px 0;
+	padding: 10px 45px 0px 180px;
+}
+
+#footer {
+	text-align: center;
+}
+
+#footer a:link, #footer a:visited {
+	margin-right: 20px;
+}
+
+#footer {
+	position: absolute;
+	top: 2700px;
+	left: 30%;
+}
+
+#linkList {
+	background: url(sidebar_bg2.jpg) no-repeat top center;
+	position: relative;
+	top: 349px;
+	left: 15px;
+	margin: 0;
+	padding: 0;
+	height: 950px;
+	width: 211px;
+	color: #000;
+}
+
+#linkList a {
+	font-weight: normal;
+}
+
+#linkList2 {
+	font: 11px "Courier New", Courier, monospace;
+	position: absolute;
+	top: 105px;
+	left: 25px;
+}
+
+#lselect {
+	width: 162px;
+	background: url(archives_bg.gif) no-repeat bottom center;
+	padding-bottom: 100px;
+}
+
+#larchives {
+background: url(resourcen_bg.gif) no-repeat bottom right;
+	padding-bottom: 100px;
+	width: 142px;
+	text-align: center;
+}
+
+#lresources {
+	width: 160px;
+	text-align: center;
+}
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#linkList li {
+	line-height: 2.5ex;
+	list-style-type: none;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+
+#linkList li a:link {
+	color: #ea0000;
+}
+
+#linkList li a:visited {
+	color: #ea0000;
+}
+

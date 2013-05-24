@@ -1,0 +1,429 @@
+/* css Zen Garden submission 119 - 'Pleasant Day', by Kyle Jones, http://www.justkyle.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Kyle Jones */
+/* Added: Sept. 2nd, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+html {
+	background: #89b6f9;
+}
+
+body { 
+
+	font: 8pt georgia; 
+
+	color: #172104; 
+
+	background: #89b6f9 none repeat-y; 
+
+	margin: 0px;
+	position: relative;
+	width: 650px;
+	top: 0px;
+	left: auto;
+	right: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#container p { 
+
+	font: 8pt/14pt georgia; 
+
+	margin-top: 0px; 
+
+	text-align: justify;
+	padding-right: 5px;
+	text-indent: 10px;
+	background: none no-repeat bottom;
+}
+
+#container h3 { 
+
+	font: 600 18pt "trebuchet ms"; 
+
+	color: #ffffff;
+	background: no-repeat url(flower3.jpg) transparent 400px -8px;
+	text-decoration: none;
+	text-align: left;
+	margin: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	letter-spacing: .5px;
+	height: 40px;
+	text-indent: 5px;
+}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #dfce3b;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #2262a4;
+
+	}
+
+a:hover, a:active { 
+
+	text-decoration: none; 
+
+	color: #ffffff;
+	background: #668fd1;
+}
+
+
+
+
+
+/* specific divs */
+
+#container { 
+
+	background: url(repeater.jpg) repeat-y top left;
+	padding: 0px 0px 0px 0px;
+	position: absolute;
+	right: auto;
+	left: auto;
+	width: 680px;
+}
+
+
+
+#intro { 
+
+	min-width: 470px;
+	position: relative;
+}
+
+#pageHeader { 
+
+	margin-bottom: 20px;
+	background: url(head2.jpg) no-repeat 21px;
+	height: 300px;
+}
+
+
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+
+#pageHeader h1 { 
+
+	background: transparent none no-repeat top left; 
+
+	margin-top: 10px; 
+
+	width: 219px; 
+
+	height: 87px; 
+
+	float: left;
+
+	}
+
+#pageHeader h1 span {
+
+	display:none;
+	background: none;
+}
+
+#pageHeader h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+	}
+
+#pageHeader h2 span {
+
+	display:none;
+
+	}
+
+
+
+#quickSummary { 
+
+	margin: 0px 20px 20px 10px;
+	width: 650px;
+	font-size: 10px;
+	position: absolute;
+	top: 0px;
+	text-align: left;
+	color: #fffdfa;
+}
+
+#quickSummary p.p1 { 
+
+	text-align: left;
+	top: 0px;
+	font: italic 10px/11px georgia;
+	width: 360px;
+	padding-left: 10px;
+	padding-top: 4px;
+	background: transparent;
+	margin-left: 10px;
+	margin-right: 0px;
+	border-bottom-style: none;
+	border-style: none;
+}
+
+#requirements, #benefits, #participation, #supportingText, #preamble {
+	background: none no-repeat;
+	margin-bottom: 20px;
+}
+
+#quickSummary p.p2 {
+	width: 230px;
+	font-size: 10px;
+	position: absolute;
+	top: 4px;
+	
+	display: block;
+	border-style: none;
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	line-height: 11px;
+	border-width: 1px;
+	text-align: center;
+	right: -2px;
+}
+
+
+
+#preamble {
+
+	clear: right;
+	padding: 0px 190px 0px 30px;
+}
+
+#supportingText {
+
+	padding-left: 30px; 
+
+	margin-bottom: 40px;
+	padding-right: 190px;
+}
+
+
+
+#footer { 
+
+	text-align: center;
+	background: no-repeat none -50px 0px transparent;
+	height: 10px;
+	bottom: 0px;
+	padding-bottom: 0px;
+	width: 500px;
+	font-size: 1.5em;
+	padding-left: 0px;
+	margin: 50px 60px 0px 0px;
+}
+
+
+
+#linkList { 
+
+	position: absolute; 
+
+	left: 498px;
+	padding-bottom: 10px;
+	width: 0px;
+	margin-top: 95px;
+	top: 0px;
+}
+
+#linkList2 { 
+
+	background: transparent; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px;
+	font-family: verdana, sans-serif;
+}
+
+#linkList h3.select { 
+
+width:230px;
+
+	background: transparent no-repeat url(designs.jpg) 8px 50px;
+	text-align: center;
+	border-bottom-style: none;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
+	height: 100px;
+}
+
+#linkList h3.select span {
+
+	display:none
+
+	}
+
+#linkList h3.favorites { 
+
+	background: transparent url(favorites.jpg) 5px -3px  no-repeat;
+	margin: 10px 0px 0px 0px;
+	width:230px; height: 45px;
+}
+
+#linkList h3.favorites span {
+
+	display:none
+
+	}
+
+#linkList h3.archives { 
+
+	background: transparent url(archives.jpg) no-repeat 5px -4px; 
+
+	height: 50px;
+	width:230px; margin: 10px 0px -8px 0px;
+}
+
+#linkList h3.archives span {
+
+	display:none;
+	background: none;
+	visibility: hidden;
+}
+
+#linkList h3.resources { 
+
+	background: transparent url(resources.jpg) no-repeat -6px -5px; 
+
+	margin: 0px 0px 5px 0px; width:220px;
+
+	height: 30px; 
+
+	}
+
+#linkList h3.resources span {
+
+	display:none
+
+	}
+
+
+
+
+
+#linkList ul {
+
+	margin: 0px;
+
+	padding: 0px;
+}
+
+#linkList li, #linkList2 li {
+
+	background: #628f13 url(h1.jpg) repeat-x top center; 
+
+	display: block;
+	border-bottom: 2px #4f740e dotted;
+	padding: 10px 0px 8px 5px;
+	width: 128px;
+	line-height: 1.8ex;
+	border-top: 2px dotted #4f740e;
+	margin-top: 0px;
+	margin-bottom: 8px;
+	color: #172104;
+	text-align: left;
+}
+
+#linkList li:hover, #linkList2 li:hover  {
+
+	background: #668fd1 url(h1.jpg) repeat-x top center; 
+
+	display: block;
+	border-bottom: 2px #5475ab dotted;
+	padding: 10px 0px 8px 5px;
+	width: 128px;
+	line-height: 1.8ex;
+	border-top: 2px dotted #5475ab;
+	margin-top: 0px;
+	margin-bottom: 8px;
+	color: #345082;
+}
+
+
+#linkList li a:link { 
+
+	color: #dfce3b;
+	text-decoration: none;
+}
+
+
+#linkList li a:link:hover { 
+
+	color: #fff4ee;
+	text-decoration: none;
+}
+
+#linkList li a:visited {
+
+	color: #2262a4;
+	text-decoration: none;
+}
+
+#linkList li .c {
+	display: block;
+	color: #000000;
+	text-align: right;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+	
+
+
+
+
+
+#extraDiv1 { 
+
+	background: transparent; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0px; 
+
+	width: 148px; 
+
+	height: 110px; 
+
+	}
