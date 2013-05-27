@@ -168,8 +168,8 @@
 <?php echo $foot["comment"]; ?>
 
 -->
-<div class="extra1"></div><div class="extra2"></div><div class="extra3"></div>
-<div class="extra4"></div><div class="extra5"></div><div class="extra6"></div>
+<div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
+<div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
 
 </body>
 </html>
