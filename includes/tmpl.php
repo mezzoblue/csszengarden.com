@@ -66,7 +66,7 @@
 			<p><?php echo $main["requirements-p2"]; ?></p>
 			<p><?php echo $main["requirements-p3"]; ?></p>
 			<p><?php echo $main["requirements-p4"]; ?></p>
-			<p><?php echo $main["requirements-p5"]; ?></p>
+			<p role="contentinfo"><?php echo $main["requirements-p5"]; ?></p>
 		</div>
 
 		<footer>
