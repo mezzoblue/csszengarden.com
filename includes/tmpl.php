@@ -28,12 +28,12 @@
 			<h2><?php echo $intro["h2"]; ?></h2>
 		</header>
 
-		<div class="summary" id="zen-summary">
+		<div class="summary" id="zen-summary" role="article">
 			<p><?php echo $intro["summary-p1"]; ?></p>
 			<p><?php echo $intro["summary-p2"]; ?></p>
 		</div>
 
-		<div class="preamble" id="zen-preamble">
+		<div class="preamble" id="zen-preamble" role="article">
 			<h3><?php echo $intro["preamble-h3"]; ?></h3>
 			<p><?php echo $intro["preamble-p1"]; ?></p>
 			<p><?php echo $intro["preamble-p2"]; ?></p>
@@ -42,25 +42,25 @@
 	</section>
 
 	<div class="main supporting" id="zen-supporting" role="main">
-		<div class="explanation" id="zen-explanation">
+		<div class="explanation" id="zen-explanation" role="article">
 			<h3><?php echo $main["explanation-h3"]; ?></h3>
 			<p><?php echo $main["explanation-p1"]; ?></p>
 			<p><?php echo $main["explanation-p2"]; ?></p>
 		</div>
 
-		<div class="participation" id="zen-participation">
+		<div class="participation" id="zen-participation" role="article">
 			<h3><?php echo $main["participation-h3"]; ?></h3>
 			<p><?php echo $main["participation-p1"]; ?></p>
 			<p><?php echo $main["participation-p2"]; ?></p>
 			<p><?php echo $main["participation-p3"]; ?></p>
 		</div>
 
-		<div class="benefits" id="zen-benefits">
+		<div class="benefits" id="zen-benefits" role="article">
 			<h3><?php echo $main["benefits-h3"]; ?></h3>
 			<p><?php echo $main["benefits-p1"]; ?></p>
 		</div>
 
-		<div class="requirements" id="zen-requirements">
+		<div class="requirements" id="zen-requirements" role="article">
 			<h3><?php echo $main["requirements-h3"]; ?></h3>
 			<p><?php echo $main["requirements-p1"]; ?></p>
 			<p><?php echo $main["requirements-p2"]; ?></p>
