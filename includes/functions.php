@@ -67,9 +67,16 @@
 
 
 	// if cssfile is not empty, assign it as the design to load
-	// if it is, assign 001
 	if ($loadCSS) {
-		$currentDesign = $loadCSS;
+
+		// allowing a no-CSS view of the site
+		if ($loadCSS == "none") {
+			$currentDesign = null;
+		} else {
+			$currentDesign = $loadCSS;
+		}
+
+	// if it is empty, assign 001
 	} else {
 		$currentDesign = "/001/001.css";
 	}
