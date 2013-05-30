@@ -129,7 +129,7 @@
 			</div>
 
 			<div class="zen-resources" id="zen-resources">
-				<h3 class="resources"><?php echo $sidebar["design-resources-h3"]; ?>:</h3>
+				<h3 class="resources"><?php echo $sidebar["design-resources-h3"]; ?></h3>
 				<ul>
 					<li class="view-css">
 						<a href="<?php echo $currentDesign ?>" title="<?php echo $sidebar["view-css-title"]; ?>">
