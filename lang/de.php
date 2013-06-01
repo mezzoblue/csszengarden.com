@@ -1,5 +1,6 @@
 <?php
 
+	$lang = 'de';
 
 	$head = array(
 		"title" => "css Zen Garden: Die Sch&ouml;nheit der CSS-Gestaltung",
