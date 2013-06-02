@@ -1,6 +1,6 @@
 <?php
 
-	$lang = 'en';
+	$lang = "en";
 
 	$head = array(
 		"title" => "CSS Zen Garden: The Beauty in CSS Design",

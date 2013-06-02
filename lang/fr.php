@@ -1,6 +1,6 @@
 <?php
 
-	$lang = 'fr';
+	$lang = "fr";
 
 	$head = array(
 		"title" => "Jardin Zen CSS : La beaut&eacute; de la conception CSS",
