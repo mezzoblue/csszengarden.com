@@ -101,4 +101,12 @@
 
 	}
 
+
+
+	// set default language to English if not otherwise specified
+	if (!isset($lang)) {
+		$lang = "en";
+	}
+
+
 ?>
