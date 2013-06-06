@@ -16,7 +16,7 @@
 		for ($i = $start - 1; $i >= ($start - $count); $i--) {
 
 			$id = $list[$i][0];
-			$designURL = "?css=/$id/$id.css";
+			$designURL = "/$id/";
 			$designName = hsc($list[$i][1]);
 			$designerName = hsc($list[$i][2]);
 			$designerURL = hsc($list[$i][3]);
@@ -60,17 +60,16 @@
 	$thisPage = intval($_GET["pg"]);
 
 
-	// if cssfile is not empty, assign it as the design to load
+	// if $_GET['css'] is not empty, assign it as the design to load
 	// if it is, assign 001
 	if ($loadCSS) {
 		$currentDesign = $loadCSS;
 	} else {
-		$currentDesign = "/001/001.css";
+		$currentDesign = "001";
 	}
 
-    // prepend w/ designs folder
-    // Need to move all directories so they don't actually exist - right?
-    $currentDesign = '/designs'.$currentDesign;
+    // Prep Stylesheet URL
+    $currentStyleSheet = "/$currentDesign/$currentDesign.css";
 
 
 
