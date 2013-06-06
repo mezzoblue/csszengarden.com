@@ -22,7 +22,6 @@ deny from env=BadReferrer
 # permanent redirect of old file
 RedirectMatch 301 ^/zengarden-sample\.css$ /examples/style.css
 
-
 # remove trailing .php from /examples/index.php
 ## COMMENTING OUT FOR THE MOMENT - JC
 ## RewriteCond %{REQUEST_FILENAME} !-f
@@ -35,13 +34,17 @@ RedirectMatch 301 ^/zengarden-sample\.css$ /examples/style.css
 #
 #
 
-# RewriteRule ^\?cssfile=/([0-9]+)/([0-9]+).css http://zen/$1/ [R=301,L]
-
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteRule ^(.*)?$ zen.php?cssfile=/$1/$1.css [L,QSA]
-
 # Below rules derived from http://www.webmasterworld.com/apache/4229371-1-30.htm
+RewriteCond %{QUERY_STRING} ^cssfile\=\/([0-9]+)\/[0-9]+\.css&page\=([0-9+])
+RewriteRule ^(.*)$ http://zen/%1/page%2/? [R=301]
+
+# works for single query cssfile
+RewriteCond %{QUERY_STRING} ^cssfile\=\/([0-9]+)\/[0-9]+\.css
+RewriteRule ^(.*)$ http://zen/%1/? [R=301]
+
+# 
+
+
 
 # Externally redirect to add missing trailing slash to URLs with no filetype
 RewriteCond $1 !(\.[a-z0-9]{1,5}|/)$ [NC]
@@ -60,4 +63,9 @@ RewriteCond $1 !(^index\.php|\.(gif|jpe?g|png|css|js))$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-RewriteRule ^([^/]*)(\/page(.*))?/ zen.php?cssfile=/$1/$1.css&page=$3 [L]
+# Make simpler URLs canonical
+# working on it ---RewriteRule ^\?cssfile=\/(\d+)\/\d+\.css(\&page=(\d+))?$ http://google.com [R=301]
+# RewriteRule ^\?cssfile=\/([0-9]{1,4})\/[0-9]{1,4}\.css$ http://local/ [R=301,QSA]
+
+# Send traffic to index.php w/ appropriate variables
+RewriteRule ^([\d]*)(\/page(.*))?/ zen.php?css=/$1/$1.css&pg=$3 [L]
