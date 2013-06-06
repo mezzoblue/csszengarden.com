@@ -110,7 +110,12 @@
 	}
 
 	if ($thisPage > 0) {
-	    $prevPage = ($thisPage > 1) ? 'page' . $thisPage - 1 . '/' : '';
+        if($thisPage > 1) {
+            $prev = $thisPage - 1;
+            $prevPage = "page$prev/";
+        } else {
+            $prevPage = ''; // don't create '/page0/' urls
+        }
 ?>
 						<li class="previous">
 							<a href="/<?php echo $currentDesign ?>/<?php echo $prevPage ?>">
