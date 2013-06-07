@@ -1,0 +1,337 @@
+/* css Zen Garden submission 107 - 'Defiance', by Angelo Paralos, http://www.ehlydesign.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Angelo Paralos */
+/* Added: June 21st, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+
+/* BASE Elements */
+
+a {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	font-weight:bold;
+	color:#000000;
+}
+
+a:active {
+	text-decoration:line-through;
+}
+
+a:visited {
+	text-decoration:line-through;
+}
+
+a:hover {
+	text-decoration:line-through;
+}
+
+acronym {
+}
+
+body {
+	background:#000000 url("screwoff.gif") no-repeat top left;
+}
+
+div {
+}
+
+h1 {
+	margin:0px;
+	padding:0px;
+}
+
+h2 {
+	margin:0px;
+	padding:0px;
+}
+
+h3 {
+	margin:0px;
+	padding:0px;
+}
+
+head {
+}
+
+html {
+}
+
+li {
+}
+
+link {
+}
+
+meta {
+}
+
+p {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	color:#000000;
+	font-weight:bold;
+	padding:0px;
+	margin:0px 0px 10px 0px;
+}
+
+script {
+}
+
+span {
+}
+
+style {
+}
+
+title {
+}
+
+ul {
+}
+
+/* ID Elements */
+
+#css-zen-garden {
+	padding:0px;
+	margin:0px;
+}
+
+#container {
+	width:760px;
+	height:3000px;
+	padding:0px;
+	margin:0px;
+}
+
+#intro {
+}
+
+#intro h1 span {
+	display:none;
+}
+
+#intro h2 span {
+	display:none;
+}
+
+#pageHeader {
+}
+
+#quickSummary p.p1 {
+	width:115px;
+	position:absolute;
+	left:15px;
+	top:588px;
+	color:#FFFFFF;
+}
+
+#quickSummary p.p2 {
+	position:absolute;
+	left:5px;
+	top:2985px;
+	color:#FFFFFF;
+}
+
+#quickSummary a:link {
+	color:#FFFFFF;
+}
+
+#quickSummary a:active {
+	color:#FF0000;
+	text-decoration:line-through;
+}
+
+#quickSummary a:visited {
+	color:#FF0000;
+	text-decoration:line-through;
+}
+
+#quickSummary a:hover {
+	color:#FF0000;
+	text-decoration:line-through;
+}
+
+#preamble {
+	width:195px;
+	position:absolute;
+	left:215px;
+	top:700px;
+}
+
+#preamble p.p1{
+	position:absolute;
+	left:-50px;
+}
+
+#preamble p.p2{
+	position:absolute;
+	top:55px;
+	left:-30px;
+}
+
+#preamble p.p3{
+	position:absolute;
+	top:120px;
+	left:20px;
+}
+
+
+#preamble h3 span {
+	display:none;
+}
+
+#supportingText {
+}
+
+#explanation h3 span {
+	display:none;
+}
+
+#explanation {
+	width:455px;
+	position:absolute;
+	top:1190px;
+	left:265px;
+}
+
+#participation h3 span {
+	display:none;
+}
+
+#participation {
+	width:100px;
+	position:absolute;
+	top:1412px;
+	left:23px;
+}
+
+#benefits h3 span {
+	display:none;
+}
+
+#benefits {
+	width:577px;
+	position:absolute;
+	top:1932px;
+	left:155px;
+}
+
+#requirements h3 span {
+	display:none;
+}
+
+#requirements {
+	width:520px;
+	position:absolute;
+	top:2408px;
+	left:197px;
+	text-align:right;
+}
+
+#requirements p.p5{
+	width:520px;
+	position:absolute;
+	top:550px;
+	left:-100px;
+	text-align:right;
+	color:#FFFFFF;
+}
+
+#requirements p.p5 a {
+	color:#FFFFFF;
+}
+
+#requirements p.p5 a:active {
+	color:#FF0000;
+	text-decoration:line-through;
+}
+
+#requirements p.p5 a:visited {
+	color:#FF0000;
+	text-decoration:line-through;
+}
+
+#requirements p.p5 a:hover {
+	color:#FF0000;
+	text-decoration:line-through;
+}
+
+#footer {
+	position:absolute;
+	top:2985px;
+	left:600px;
+}
+
+#footer a {
+	color:#FF0000;
+	text-decoration:none;
+}
+
+#footer a:active {
+	text-decoration:line-through;
+}
+
+#footer a:visited {
+	text-decoration:line-through;
+}
+
+#footer a:hover {
+	text-decoration:line-through;
+}
+
+#linkList {
+	position:absolute;
+	top:710px;
+	left:0px;
+	color:#FF0000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	font-weight:bold;
+}
+
+#linkList h3 {
+	margin:0px;
+	padding:0px;
+	color:#FF0000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	font-weight:bold;
+}
+
+#linkList ul {
+	margin:0px;
+	padding:0px;
+}
+
+#linkList li {
+	margin:0px 0px 0px 5px;
+	padding:0px;
+	list-style-type:none;
+	line-height:9px;
+}
+
+#linkList a {
+	display:block;
+	margin:0px;
+	padding:0px;
+	color:#FF0000;
+	text-decoration:none;
+
+}
+
+#linkList a:active {
+	text-decoration:line-through;
+}
+
+#linkList a:visited {
+	text-decoration:line-through;
+}
+
+#linkList a:hover {
+	text-decoration:line-through;
+}

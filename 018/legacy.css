@@ -1,0 +1,175 @@
+/* css Zen Garden submission 018 - 'Wrapped in Burlap' by John Simons, http://www.royalbarrel.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  John Simons*/
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* Top-level stuff
+------------------------------*/
+body {
+	margin:10px 0 0 0; 
+	padding:0;
+	font-family:verdana;
+	font-size:85%;
+	background-color:#fff;
+	}
+p {
+	margin-top:0;
+	}
+#container {
+	width:745px;
+	margin-left:30px;
+	position:relative;
+	background-color:#F7F0E9;
+	}
+	
+/* Intro section
+------------------------------*/
+#intro {
+	position:relative;
+	background-color:white;
+	}
+#pageHeader {
+	background-image:url("title.gif");
+	background-repeat:no-repeat;
+	height:181px;
+	}
+#pageHeader h1, #pageHeader h2 span {
+	display:none;
+	}
+#pageHeader h2 {
+	width:75px;
+	height:84px;
+	background-image:url("small_tree.gif");
+	background-repeat:no-repeat;
+	position:absolute;
+	top:-10px;
+	left:690px;
+	margin:0;padding:0;
+	}
+	
+#quickSummary {
+	text-align:right;
+	position:absolute;
+	top:75px;
+	left:500px;
+	width:245px;
+	font-size:100%;
+	font-style:italic;
+	font-family:times new roman, serif;	
+	}
+#quickSummary p {
+	margin-bottom:0px;
+	}
+#quickSummary a {
+	color:#C52E00;
+	}
+	
+/* Left-hand column
+------------------------*/
+#supportingText, #preamble {
+	width:505px;
+	background-image:url("burlap.jpg");
+	color:white;
+	line-height:140%;
+	}
+
+#supportingText p, #preamble p {
+	margin:0;
+	padding:4px 10px 10px 10px;
+	}
+#supportingText a, #preamble a {
+	color:#FFAF7F;
+	}
+
+#preamble h3, #supportingText h3 { 
+	height:44px; 
+	margin:0; 
+	padding:0;
+	border-top:1px solid #F7F0E9;
+	border-bottom:1px solid #F7F0E9;
+	border-left:1px solid #735B5A;
+	}
+#preamble h3 { border-top-width:0px; }
+	
+#preamble h3 span, #supportingText h3 span { display: none; }
+	
+#preamble h3 		{ background-image:url("enlightenment.gif"); }
+#explanation h3 	{ background-image:url("whatabout.gif"); }
+#participation h3 	{ background-image:url("participation.gif"); }
+#benefits h3 		{ background-image:url("benefits.gif"); }
+#requirements h3 	{ background-image:url("requirements.gif"); }
+
+/* Footer
+-----------------------------*/
+#footer {
+	text-align:center;
+	background:#F7F0E9 url("footer_bg.jpg");
+	padding:8px 0px;
+	font-size:120%;
+	font-weight:bold;
+	}
+#footer a {
+	color:#583C3B;
+	text-decoration:none;
+	}
+#footer a:hover {
+	color:#D17B00;
+	}
+	
+	
+/* Link List	
+------------------------------------*/
+#linkList {
+	position:absolute;
+	top:181px;
+	left:505px;
+	width:240px;
+	background-image:url("right_bg.jpg");
+	background-repeat:no-repeat;
+	color:#774747;
+	border-top:1px solid #E0D5CA;
+	font-weight:bold;
+	padding-bottom:200px;
+	line-height:140%;
+	}
+#linkList ul {
+	padding-left:30px;
+	margin-left:0px;
+	}
+#linkList li {
+	margin-bottom:15px;
+	}
+#linkList a {
+	color:#686057; 
+	text-decoration:none;
+	}
+#linkList a:hover {
+	text-decoration:underline;
+	}
+#linkList a:visited {
+	color:#999189;
+	}
+
+/* To get a linebreak between title and author */
+#linkList #lselect a { display:block; }
+#linkList #lselect a:hover {color:#C52E00; }
+#linkList #lselect a.c { display:inline; }
+#linkList #lselect a.c:hover {color:#686057; }
+
+#linkList h3 { 
+	margin:0; padding:0; 
+	background-repeat:no-repeat;
+	height:46px;	
+	}
+#linkList h3 span { display:none; }
+#linkList h3.select { background-image:url("select.gif"); }
+#linkList h3.archives { background-image:url("archives.gif"); }
+#linkList h3.resources { background-image:url("resources.gif"); }
+
+

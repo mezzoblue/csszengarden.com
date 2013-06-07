@@ -1,0 +1,316 @@
+/* css Zen Garden submission 065 - 'New Groove' by Martin Neumann, http://www.rushmedia.de/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Martin Neumann */
+/* Added: December 14th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* ----- General styles ----- */
+
+body {
+  margin:0 0 10px 0;
+  padding:0;
+  background:#EFF4F4 url("stripes_bg.jpg") repeat-y 750px 0px;
+  color:#000000;
+  font-size:76%;
+  line-height:1.3em;
+  text-decoration:none;
+  font-family:"Trebuchet MS",Verdana,Sans-Serif;
+  text-align:justify;
+  }
+
+acronym {
+  border:none;
+}
+
+h1, h2, h3 {
+  margin:0;
+}
+
+a, a:visited, a:active, a:visited {
+  font-weight:bold;
+  text-decoration:none;
+  color:#4A3D7C;
+}
+
+a:hover {
+  color:#D84E7B;
+}
+
+
+/* ----- Structural elements ----- */
+
+#pageHeader {
+  position:relative;
+  margin:0;
+  padding:0;
+  width:100%;
+  height:260px;
+  background:url("arrow.gif") repeat-x 25px 217px;
+  }
+
+#pageHeader h1 {
+  height:260px;
+  background:url("csszengarden_logo.gif") no-repeat left bottom;
+  z-index:15;
+}
+
+#pageHeader h1 span, h2 span {
+  display:none;
+}
+
+#quickSummary {
+  position:absolute;
+  top:165px;
+  left:380px;
+  width:300px;
+  font-family:Arial,Sans-Serif;
+  font-size:1.1em;
+  z-index:10; 
+}
+
+#quickSummary .p1 {
+  display:none;
+}
+
+#quickSummary p {
+  margin:0;
+}
+
+#preamble {
+  position:relative;
+  float:left;
+  padding-bottom:10px;
+  top:70px;
+  left:15px;
+  width:250px;
+  background:#E4EDDE url("bottom_preamble.gif") no-repeat left bottom;
+}
+
+#preamble p {
+  margin:0;
+  padding:5px 20px;
+}
+
+#preamble h3 {
+  height:70px;
+  background:url("header_preamble.gif") no-repeat left top;
+}
+
+#preamble h3 span, #explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span {
+  display:none;
+}
+
+#supportingText {
+  position:relative;
+  top:20px;
+  text-align:left;
+  margin:0 0 30px 290px;
+  padding-bottom:5px;
+  width:430px;
+  background:#D5D8E7 url("bottom_supportingText.gif") no-repeat left bottom;
+  z-index:1;
+}
+
+#supportingText p {
+  margin:0;
+  padding:5px 10px;
+}
+
+#supportingText a {
+  font-style:italic;
+}
+
+#explanation h3 {
+  height:80px;
+  background:url("header_supportingText.gif") no-repeat left top;
+}
+
+#explanation p {
+  margin-top:-5px;
+}
+
+#participation h3 {
+  height:19px;
+  margin:15px 0 10px 0;
+  background:url("header_participation.gif") no-repeat 30px 0px;
+}
+
+#benefits h3 {
+  height:16px;
+  margin:15px 0 10px 0;
+  background:url("header_benefits.gif") no-repeat 30px 0px;
+}
+
+#requirements h3 {
+  height:19px;
+  margin:15px 0 10px 0;
+  background:url("header_requirements.gif") no-repeat 30px 0px;
+}
+
+#footer {
+  text-align:center;
+  margin:10px;
+  background:url("grad_line.gif") no-repeat bottom center;
+}
+
+#footer a {
+  font-style:normal;
+}
+
+/* ----- Linklists ----- */
+
+#linkList {
+  position:absolute;
+  top:60em;
+  left:15px;
+  width:250px;
+  padding-bottom:20px;
+  background:#E4EDDE url("bottom_preamble.gif") no-repeat left bottom;
+}
+
+#linkList ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+#lselect li, #lfavorites li {
+  padding:0;
+  margin:0 10px;
+  text-align:right;
+
+  background:url("lselect_seperator.gif") no-repeat bottom center;
+}
+
+#lselect a, #lfavorites a {
+  margin-top:2px;
+  padding:1px 0 0 27px;
+  font-style:normal;
+  font-size:1.1em;
+  font-weight:bold;
+  display:block;
+  text-align:left;
+
+  height:17px;
+  margin-top:1px;
+}
+
+#lselect a:hover, #lfavorites a:hover {
+  background:#D8EDCA url("lselect_hover.gif") no-repeat left top;
+}
+
+#lselect a.c, #lfavorites a.c {
+  padding:0;
+  margin-right:15px;
+
+  color:#6150A4;
+  font-style:italic;
+  font-size:1em;
+  font-weight:normal;
+  display:inline;
+}
+
+#lselect a.c:hover, #lfavorites a.c:hover {
+  color:#D84E7B;
+  background:none;
+}
+
+#lselect h3 {
+  height:50px;
+  margin-bottom:10px;
+  background:url("header_select.gif") no-repeat left top;
+}
+
+#lfavorites h3 {
+  height:15px;
+  margin:20px 0 15px 0;
+  background:url("header_favorites.gif") no-repeat 40px 0;
+}
+
+#lselect h3 span, #lfavorites h3 span {
+  display:none;
+}
+
+#larchives h3 {
+  height:15px;
+  margin:30px 0 10px 0;
+  background:url("header_archives.gif") no-repeat 50px 0;
+}
+
+#lresources h3 {
+  height:15px;
+  margin:30px 0 10px 0;
+  background:url("header_resources.gif") no-repeat 30px 0;
+}
+
+#larchives li, #lresources li {
+  text-align:center;
+}
+
+#larchives h3 span, #lresources h3 span {
+  display:none;
+}
+
+#larchives a, #lresources a {
+  font-size:1.1em;
+  line-height:1.5em;
+}
+
+/* ----- Extra images ----- */
+
+#extraDiv1 {
+  position:absolute;
+  top:220px;
+  left:320px;
+  width:446px;
+  height:23px;
+  background:url("new_groove.gif") no-repeat left top;
+  z-index:10;
+}
+
+#extraDiv2 {
+  position:relative;
+  display:block;
+  height:0px;
+}
+
+#extraDiv2 span{
+  position:absolute;
+  bottom:20px;
+  right:10%;
+  width:253px;
+  height:404px;
+  background:url("listening.gif") no-repeat;
+  z-index:0;
+}
+
+ #extraDiv3 {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:716px;
+  height:193px;
+  background:url("lounge_bg.jpg") no-repeat left top;
+  z-index:0;
+} 
+
+#extraDiv4 {
+  position:relative;
+  display:block;
+  height:0px;
+}
+
+ #extraDiv4 span {
+  position:absolute;
+  bottom:200px;
+  right:0px;
+  width:54px;
+  height:552px;
+  background:url("garden_lounge_vert.gif") no-repeat left top;
+  z-index:0;
+}

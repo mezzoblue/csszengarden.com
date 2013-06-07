@@ -1,0 +1,322 @@
+/* css Zen Garden submission 059 - 'Dune Temple' by Greg Reimer, http://www.drpeterjones.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Greg Reimer */
+/* Added: November 9th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+
+/*
+For overview, the method of this sheet 
+is to superimpose textual elements on 
+top of fancy background graphics via 
+CSS positioning. No FIR was used in the 
+making of this sheet. 
+*/
+
+body{
+margin:0px;
+padding:0px;
+background:#d18f00 url(decosides.gif) no-repeat 50% 0%;
+color:#946500;
+font-family:arial,helvetica,sans-serif;
+font-size:12px;
+text-align:center; /* so the container div centers itself in IE5/win */
+}
+a:link{
+color:#EFD396;
+text-decoration:none;
+}
+a:visited{
+color:#EFD396;
+text-decoration:none;
+}
+a:hover{
+color:#EFD396;
+text-decoration:underline;
+}
+a:active{
+color:#EFD396;
+text-decoration:none;
+}
+
+acronym{
+border:none;
+cursor:help;
+font-family:georgia,serif;
+}
+
+div#container{
+width:732px;
+margin:auto; /* ignored by IE5/win */
+background:url(main_top.png) no-repeat 0% 0%;
+position:relative;
+}
+
+div#pageHeader{
+text-align:center;
+margin-bottom:156px;
+height:13px;
+}
+
+div#pageHeader h1,div#pageHeader h2{
+text-transform:lowercase;
+margin:0px;
+font-family:arial,helvetica,sans-serif; /* being verbose because font shorthand caused IE5/win to botch */
+font-size:10px;
+font-weight:normal;
+letter-spacing:8px;
+display:inline;
+}
+
+div#pageHeader h1:after{
+content:":"; /* ignored by IE */
+}
+
+div#quickSummary,div#preamble,div#explanation,div#participation,div#benefits,div#requirements,div#footer{
+color:#CFA343;
+padding:0px 325px 0px 27px;
+text-align:justify;
+}
+
+div#container p,div#container h3{
+margin:10px 0px;
+}
+
+div#container div#intro h3,div#container div#supportingText h3{
+color:#EFD396;
+font:bold 12px verdana,sans-serif;
+}
+
+div#container div#intro h3{
+padding:2px 5px 3px 5px;
+background:url(headerbg.png) no-repeat right top;
+}
+
+html>body div#container div#supportingText h3{ /* IE/win bug workaround */
+padding:2px 5px 3px 5px;
+background:url(headerbg.png) no-repeat right top;
+}
+
+div#quickSummary{
+margin:0px 325px 0px 27px;
+padding:0px 38px;
+text-align:center;
+color:#E8B74B;
+background:url(sides.png) no-repeat 50% 0%;
+min-height:82px;
+}
+
+div#quickSummary p{
+margin: 0px 0px 10px 0px;
+}
+
+div#quickSummary p.p1{
+font-weight:bold;
+}
+
+div#quickSummary p.p2{
+text-transform:lowercase;
+margin-bottom:0px;
+padding-bottom:10px;
+}
+
+div#quickSummary p:before{
+content:"::: ";
+font-family:verdana,sans-serif;
+color:#B68F3B;
+font-weight:bold;
+}
+
+div#quickSummary p:after{
+content:" :::";
+font-family:verdana,sans-serif;
+color:#B68F3B;
+font-weight:bold;
+}
+
+div#preamble{
+padding:0px;
+margin:0px 310px 0px 27px;
+height:259px;
+overflow:auto;
+voice-family: "\"}\"";
+voice-family: inherit;
+margin-right:325px;
+}
+
+html>body div#preamble{
+margin-right:325px;
+}
+
+div#supportingText{
+background:url(main_middle.png) repeat-y;
+}
+
+div#footer{
+padding-top:50px;
+padding-bottom:320px;
+background:#d18f00 url(main_bottom.png) no-repeat;
+text-align:center;
+}
+
+div#footer a{font:bold 12px verdana,sans-serif;}
+div#footer a:after,div#footer a:before{color:#b68f3b;content:":";}
+
+div#lselect{
+position:absolute;
+left: 424px;
+top: 155px;
+width:293px;
+}
+
+div#lselect h3{
+position:absolute;
+left:70px;
+top:12px;
+color:#7A5300;
+background:transparent;
+font-size:14px;
+height:14px;
+margin:0px;
+}
+
+div#lselect ul{
+list-style:none;
+padding: 0px 0px 71px 0px;
+margin: 59px 0px 0px 0px;
+background:url(list_bottom.png) no-repeat 100% 100%;
+voice-family: "\"}\"";
+voice-family: inherit;
+padding-bottom:74px;
+}
+
+html>body div#lselect ul{
+padding-bottom:74px;
+}
+
+div#lselect ul li{
+text-align:right;
+background:url(listitem.png) no-repeat 100% 0%;
+color:#fc0;
+font:normal 9px arial,helvetica,sans-serif;
+display:block;
+height:25px;
+padding: 6px 5px 5px 5px;
+margin-top:2px;
+voice-family: "\"}\"";
+voice-family: inherit;
+height:14px;
+padding: 6px 5px 5px 5px;
+margin-top:5px;
+}
+html>body div#lselect ul li{
+height:14px;
+padding: 6px 5px 5px 5px;
+margin-top:5px;
+}
+
+div#lselect ul a:link{
+color:#EFD396;
+text-decoration:underline;
+}
+div#lselect ul a:visited{
+color:#C89D40;
+text-decoration:underline;
+}
+div#lselect ul a:hover{
+color:#EFD396;
+text-decoration:none;
+}
+div#lselect ul a:active{
+color:#ff0;
+text-decoration:underline;
+}
+
+div#larchives{
+text-align:left;
+position:absolute;
+left:438px;
+top:534px;
+width:279px;
+}
+
+div#lresources{
+text-align:left;
+position:absolute;
+left:438px;
+top:658px;
+width:279px;
+}
+
+div#lfavorites{
+text-align:left;
+position:absolute;
+left:438px;
+top:843px;
+width:279px;
+z-index:100;
+}
+
+div#larchives h3,div#lresources h3,div#lfavorites h3{
+margin:0px;
+text-align:right;
+padding:0px 7px 17px 0px;
+background:url(list_top.png) no-repeat 100% 100%;
+color:#cfa343;
+font-size:14px;
+}
+
+div#larchives ul,div#lresources ul,div#lfavorites ul{
+list-style:none;
+padding:0px;
+margin:0px;
+padding-bottom:8px;
+background:url(list_bottom2.png) no-repeat 100% 100%;
+}
+
+div#larchives li,div#lresources li,div#lfavorites li{
+display:block;
+text-align:right;
+background:url(listitem.png) no-repeat 100% 0%;
+padding: 5px 9px 5px 5px;
+margin-bottom:2px;
+color:#fc0;
+font:bold 11px arial,helvetica,sans-serif;
+voice-family: "\"}\"";
+voice-family: inherit;
+margin:0px 0px 5px 0px;
+}
+
+html>body div#larchives li,html>body div#lresources li,html>body div#lfavorites li{
+height:15px;
+margin-bottom:5px;
+margin-top:0px;
+}
+
+div#larchives ul a:link,div#lresources ul a:link,div#lfavorites ul a:link{
+color:#EFD396;
+text-decoration:underline;
+}
+div#larchives ul a:visited,div#lresources ul a:visited,div#lfavorites ul a:visited{
+color:#C89D40;
+text-decoration:underline;
+}
+div#larchives ul a:hover,div#lresources ul a:hover,div#lfavorites ul a:hover{
+color:#EFD396;
+text-decoration:none;
+}
+div#larchives ul a:active,div#lresources ul a:active,div#lfavorites ul a:active{
+color:#ff0;
+text-decoration:underline;
+}
+
+div#lfavorites ul{
+padding-bottom:69px;
+background:url(list_bottom.png) no-repeat 100% 100%;
+}

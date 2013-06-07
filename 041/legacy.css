@@ -1,0 +1,214 @@
+/* css Zen Garden submission 041 - 'door to my garden' by Patrick Lauke, http://redux.deviantart.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Patrick Lauke */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+
+/* general stuff */
+
+
+
+body {
+	font: 0.7em/1.2em Times, serif ;
+	background: #000 url(background.png) -30px 0px no-repeat fixed;
+	color: #999;
+	padding: 0 0 0 470px;
+	margin: 0;
+}
+
+* { 
+	text-transform: lowercase; /* could apply this to the body, but IE seems to ignore it there */
+	padding:0;
+	margin:0;
+}
+
+p {
+	margin: 1em 0 0 0;
+	padding: 0 0 1em 0;
+}
+
+
+p.p1:first-line {
+	font-weight: bold;
+}
+
+
+p.p2, p.p3, p.p4 {
+	/* originally used p + p, but IE doesn't play ball with that...so this is a rather ugly kludge */
+	text-indent: 1em;
+	margin-top: -0.8em;
+}
+
+
+h3 {
+	font-size: 1.2em;
+}
+
+ul {
+	list-style: none url(dot.png);
+	padding: 1em 0 0 0;
+	margin-left: 3em
+}
+
+li {
+	margin-bottom: 0.3em;
+}
+
+a {
+	color: #eee;
+	background: transparent;
+	text-decoration: none;
+}
+
+acronym {
+	/* override Mozilla and co.'s standard dotted line under acronyms for a better look
+	(at the detriment of accessibility, unfortunately) */
+	border: none;
+}
+
+
+/* more specific rules */
+
+#container {
+	background: #000 url(bottom_corner.png) no-repeat bottom right;
+	color: inherit;
+	width: 300px;
+}
+
+#pageHeader {
+	background: url(header.png) no-repeat top left;
+	width: 300px;
+	height: 170px;
+}
+
+#pageHeader span {
+	display: none;
+}
+
+#preamble, #supportingText div {
+	padding: 0 35px 0 35px;
+	text-align: justify;
+}
+
+
+/* admittedly graphics intensive, but each of the following divs has its own distincitve
+bracket (left or right) with its own different texture of dirt */
+
+#preamble {
+	background: url(bracket-l1.png) no-repeat top left;
+}
+
+#participation {
+	background: url(bracket-l2.png) no-repeat top left;
+}
+
+#requirements {
+	background: url(bracket-l3.png) no-repeat top left;
+}
+
+#benefits {
+	background: url(bracket-r1.png) no-repeat top right;
+}
+
+#explanation {
+	background: url(bracket-r2.png) no-repeat top right;
+}
+
+
+/* old-style borders for the window-frame look of the menu */
+
+#linkList {
+	position: absolute;
+	top: 145px;
+	left: 215px;
+	background: url(menu-top.png) no-repeat top right;
+	width: 248px;
+	height: 50px;
+}
+
+#linkList2 {
+	margin-top: 30px;
+	background: url(menu-body.png) #000;
+	color: inherit;
+}
+
+#lselect, #larchives, #lresources {
+	padding: 0 15px 0 15px;
+}
+
+
+#linkList2>#lselect {
+	/* slight kludge ? sure...but it adds nice eye candy. hidden from IE through the child selector,
+	and we make up for it later with extraDiv1 */
+	background: url(flower.png) no-repeat top left;
+	margin-left: -65px;
+	padding-left: 80px;
+	min-height: 150px;
+}
+
+#lresources {
+	background: url(menu-bottom.png) no-repeat bottom right;
+	padding-bottom: 2.5em;
+}
+
+
+/* static version of what was originally a flyout menu...but didn't work in Netscape 7 */
+
+#container>#linkList {
+	background: url(menu-top.png) no-repeat top right;
+}
+
+#linkList #linkList2{
+	visibility: visible;
+}
+
+
+/*just to tidy up the bottom end a bit */
+
+#container {
+	padding-bottom: 50px;
+	margin-bottom: -2em;
+}
+
+
+/* a bit of useless visual whimsy...*/
+
+p:hover {
+	color: #aaa;
+	background: transparent;
+}
+
+p:hover a {
+	color: #fff;
+	background: transparent;
+}
+
+/* and now...the extras */
+
+#extraDiv1 {
+	/* this one makes up for the screwy handling of the flower background on #lselect in IE */
+	position: absolute;
+	top: 165px;
+	left: 142px;
+	background: url(flower.png) no-repeat top left;
+	width: 115px;
+	height: 150px;
+}
+
+body>#extraDiv1 {
+	/* and this reverses the previous rule for those browsers (i.e. non IE ones) that already showed
+	the flower background correctly as it was applied to #lselect */
+	display: none;
+}
+
+
+#extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+	display: none;
+}

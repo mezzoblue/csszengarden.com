@@ -31,7 +31,7 @@ $zenUrls = array(
 
 
 	// bottom of the page links
-	"zen-credits-author" => "http://www.mezzoblue.com/",
+	"zen-credits-creator" => "http://www.mezzoblue.com/",
 	"zen-credits-hosting" => "http://www.mediatemple.net/",
 	"zen-credits-book" => "http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/",
 

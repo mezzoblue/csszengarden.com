@@ -1,0 +1,216 @@
+/* css Zen Garden submission 139 - 'The Hall', by Michael Simmons, http://www.thoughtanomalies.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Michael Simmons */
+/* Added: Nov. 29th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+body {
+	margin: 0;
+	background: #444;
+	font-family: arial, verdana, sans-serif;
+}
+#container {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	right: auto;
+	bottom: auto;
+	margin-left: -390px;
+	width: 780px;
+	clear: both;
+	background: #F5E783 url(linklist_back.jpg) repeat-y 100% 0;
+	border-left: solid 1px #fff;
+	border-right: solid 1px #fff;
+}
+#container #intro #pageHeader {
+	width: 780px;
+	height: 311px;
+	background: url(pageheader_p1.jpg) no-repeat 0 0;
+}
+#container #intro #pageHeader h1 {
+	display: block;
+	margin: 0;
+	padding: 0;
+	height: 311px;
+	text-indent: -2000px;
+	background: url(pageheader_p2.jpg) no-repeat bottom;
+}
+#container #intro #pageHeader h2 { display: none; }
+
+#container #intro, #container #supportingText {
+	width: 469px;
+}
+
+#footer {
+	position: absolute;
+	top: 140px;
+	right: 0;
+	width: 260px;
+	text-align: center;
+}
+#footer a {
+	padding: 9px 0 0 0;
+	font-family: "Din-Medium", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 10px;
+	color: #fff;
+}
+#footer a:hover {
+	background: url(littlearrow.gif) no-repeat top center;
+}
+
+#container #linkList {
+	position: absolute;
+	top: 180px;
+	right: 0;
+	width: 260px;
+	background: url(linklist_bevel.jpg) no-repeat 0 0;
+}
+#container #linkList2 {
+	padding: 18px 35px 0 23px;
+}
+
+#container #linkList h3 {
+	margin: 10px 0 0 10px;
+	padding: 0;
+	width: 180px;
+	height: 19px;
+	text-indent: -2000px;
+}
+#container #linkList h3.select { background: url(t_selectadesign.jpg) no-repeat; }
+#container #linkList h3.archives { background: url(t_archives.jpg) no-repeat; }
+#container #linkList h3.resources { background: url(t_resources.jpg) no-repeat; }
+
+#container #linkList ul {
+	margin: 10px 0 20px 20px;
+	padding: 0;
+	list-style: none;
+}
+#container #linkList ul li {
+	margin: 0 0 9px 0;
+	padding: 0 0 0 12px;
+	background: url(bluearrow.gif) no-repeat 0 3px;
+	font-size: 10px;
+	color: #fff;
+}
+
+#container #linkList ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	color: #426279;
+}
+#container #linkList ul li a:hover { color: #21313C; }
+#container #linkList #lselect ul li a { display: block; }
+#container #linkList #lselect ul li a.c {
+	display: inline;
+	text-transform: none;
+	text-decoration: underline;
+	color: #fff;
+	font-weight: normal;
+	font-size: 10px;
+}
+#container #linkList #lselect ul li a.c:hover { text-decoration: none; }
+
+#container #quickSummary {
+	position: relative;
+	top: -40px;
+	padding: 0;
+	margin: 0 0 0 42px;
+	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Arial, sans-serif;
+}
+#container #quickSummary p {
+	margin: 0 0 10px 0;
+	font-style: italic;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #D65200;
+}
+#container #quickSummary p a {
+	text-decoration: none;
+	color: #9E3E02;
+	border-bottom: dotted 1px #9E3E02;
+}
+#container #quickSummary p a:hover {
+	border-bottom: none;
+}
+
+#container #preamble h3 {
+	margin: 0 0 0 42px;
+	padding: 0;
+	text-indent: -2000px;
+	width: 299px;
+	height: 43px;
+	background: url(t_theroadtoenlightenment.jpg) no-repeat;
+}
+
+#container #preamble p, #container #supportingText p {
+	margin: 0 0 13px 42px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #444;
+}
+
+#container #supportingText p acronym {
+	border-bottom: dotted 1px #444;
+	cursor: help;
+}
+
+#container #supportingText #explanation h3 {
+	margin: 40px 0 10px 42px;
+	padding: 0;
+	text-indent: -2000px;
+	width: 187px;
+	height: 16px;
+	background: url(t_sowhatisthisabout.jpg) no-repeat;
+}
+#container #supportingText #participation h3 {
+	margin: 40px 0 6px 42px;
+	padding: 0;
+	text-indent: -2000px;
+	width: 125px;
+	height: 20px;
+	background: url(t_participation.jpg) no-repeat;
+}
+#container #supportingText #benefits h3 {
+	margin: 40px 0 10px 42px;
+	padding: 0;
+	text-indent: -2000px;
+	width: 125px;
+	height: 16px;
+	background: url(t_benefits.jpg) no-repeat;
+}
+#container #supportingText #requirements h3 {
+	margin: 40px 0 6px 42px;
+	padding: 0;
+	text-indent: -2000px;
+	width: 125px;
+	height: 20px;
+	background: url(t_requirements.jpg) no-repeat;
+}
+
+#container #supportingText #requirements p.p5 {
+	margin: 40px 0 40px 42px;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#container #preamble p a, #container #supportingText p a {
+	text-decoration: none;
+	color: #9E3E02;
+	border-bottom: dotted 1px #9E3E02;
+}
+#container #preamble p a:hover, #container #supportingText p a:hover {
+	border-bottom: none;
+}

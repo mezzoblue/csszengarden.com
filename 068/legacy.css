@@ -1,0 +1,389 @@
+/* css Zen Garden submission 068 - 'Ballade' by Charlotte Lambert, http://charlotte.flibuste.net/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Charlotte Lambert */
+/* Added: December 14th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+/* basic elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: geneva, arial, helvetica, sans-serif;
+	color: #000;
+        background: #000;
+	height: 100%;
+	text-align: center;
+	}
+
+
+html {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	}
+
+a:link {
+	color: #e5a250;
+	text-decoration: none;
+	}
+
+a:visited {
+	color: #b2906d;
+	text-decoration: none;
+	}
+
+a:hover, a:active {
+	color:#99d0dd;
+        text-decoration: none;
+	}
+
+acronym { 
+	cursor: help;
+	}
+
+a acronym { 
+	cursor: help; 
+	}
+
+p {
+    font-size: 80%;
+}
+
+#container {
+	position: relative;
+	width: 800px;
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	background: #fff url(fond.jpg) top left repeat-y;
+        border: 0px;      
+	}
+html>body #container {
+	width: 800px; /* ie5win fudge ends */
+	}
+
+/* __________CHAPEAU__________ */
+
+/*==CHAPEAU--pageHeader==*/
+
+#pageHeader {
+              margin-bottom: 5px;
+              text-align: right;
+              }
+
+#pageHeader h1 {
+	width: 800px;
+	height: 216px;
+	background: transparent url(zen.jpg) top right no-repeat;
+	margin: 0px;
+	padding: 0px;
+                 }
+
+#pageHeader span, #pageHeader h2 {
+                                   display: none;
+                                   }
+
+/*==CHAPEAU--quickSummary==*/
+
+#quickSummary {
+                background: transparent;
+                color: #fff;
+                text-align: center;
+                margin: 20px 80px 40px 295px;
+                }
+
+#quickSummary a, #quickSummary a:visited {
+                                           color: #99d0dd;
+                                           }
+
+#quickSummary a:hover, #quickSummary a:active {
+                                                color: #e5a250;
+                                                } 
+
+
+/*_________________TEXTE____________*/
+
+/*==TEXTE--chapitres==*/
+
+#preamble {
+            margin: 0 29px 0 235px;
+            background: #fff url(fond1.jpg) repeat-y;
+            padding: 0px;
+            width: 536px;
+            padding-bottom: 30px;
+            }
+
+#explanation, #benefits, #requirements, #participation {
+	margin: 0px 29px 0px 235px;
+	padding: 0px;
+        border: 0px;
+        width: 536px;
+        }
+
+#explanation {
+               background:  #FFF url(fond2.jpg)  top left repeat-y;
+               }
+
+
+#participation {
+                 background:  #fff url(fond3.jpg) top left repeat-y;
+                 }
+
+
+#benefits {
+             background:  #fff url(fond4.jpg) top left repeat-y;
+            padding-bottom: 40px;
+
+             }
+
+
+#requirements {
+                background:  #fff url(fond5.jpg) top left repeat-y;
+                padding-bottom: 20px;
+                }
+
+
+
+/*==TEXTE--p==*/
+
+#explanation p, #participation p, #benefits p, #requirements p, #preamble p{
+        text-align: justify;
+        }       
+
+#preamble p, #participation p, #requirements p{
+             margin: 5px 120px 0px 20px;
+       
+              }
+
+
+#explanation p, #benefits p{
+             margin: 5px 20px 0px 120px;
+         
+              }
+
+/*==TEXTE--h3==*/
+
+#preamble h3, #explanation h3, #participation h3, #benefits h3, #requirements h3 {
+	margin: 0px;
+        border: 0px;
+        width: 536px;
+        }
+
+#supportingText h3 span, #preamble h3 span {
+          display: none;
+          }
+
+#preamble h3 {
+               background: url(road.jpg) top left no-repeat;
+               height: 106px;
+               }
+
+
+#explanation h3 {
+               background: url(about.jpg) top left no-repeat;
+               height: 168px;
+               }
+
+
+#participation h3 {
+                    background: url(particip.jpg) top left no-repeat;
+                    height: 154px;
+                    width: 565px;
+                    }
+
+#benefits h3 {
+               background: url(benef.jpg) top left no-repeat;
+               height: 171px;
+               }
+
+#requirements h3 {
+                   background: url(req.jpg) top left no-repeat;
+                   height: 125px;
+                   }
+
+/*_____________PIED__________________*/
+
+#footer{
+         margin: 0 29px 0 235px;
+         padding: 0px;
+         background: transparent url(fin.jpg) top left no-repeat;
+         width: 536px;
+         height: 223px;
+         text-decoration: underline;
+         color: #fff;
+         }
+
+#footer a  {
+             position: relative;
+             top: 120px;
+             left: 40px;
+             padding: 0px;
+             color: #99d0dd;
+             }
+
+#footer a:hover, #footer a:active {
+                                    color: #e5a250;
+                                    text-decoration: none;
+                                    }
+
+#extraDiv1 {
+             height: 119px;
+             width: 800px;
+             margin: 0 auto 30px auto;
+             background: #b2906d url(bas.jpg) no-repeat top left;
+             text-align: left;
+             }
+
+
+/*__________________MENU__________________*/
+
+#linkList {
+	 position: absolute;
+            top: 0;
+            left: 0;
+            width: 215px;
+            margin: 0px;
+            padding: 150px 0px  0px  0px;
+            background: url(chat.jpg) top left no-repeat;
+            font-size: 80%;
+            color: #e5a250;
+            }
+
+
+
+/*==MENU--h3==*/
+
+#linkList h3 {  
+               margin:  40px 0px 20px 0px; 
+               width: 185px; 
+               height: 76px; 
+               }
+#linkList h3 span {
+                    display:none;
+                    }
+
+#linkList h3.select{ 
+                     background: transparent url(select.jpg) no-repeat top left; 
+                     }
+
+#linkList h3.archives { 
+                     background: transparent url(archiv.jpg) no-repeat top left; 
+                     }
+
+#linkList h3.resources { 
+                     background: transparent url(resou.jpg) no-repeat top left; 
+                     }
+
+/*==MENU--liste==*/
+
+#linkList ul {
+               margin: 0px 30px 0px 20px;
+               padding: 7px 2px 5px 2px;
+               background: #000;
+               border: 2px solid #b2906d;
+               }
+
+#linkList li {
+               list-style: none;
+               margin: 0px;
+               padding: 0px;
+               }
+
+#linkList a {
+              color: #e5a250;
+              text-decoration: none;
+              font-size: small;
+              }
+
+div#linkList a:hover {
+                       color: #99d0dd;
+                       }
+
+
+/*==MENU--select==*/
+
+#lselect li  {
+               margin: 0 0 10px 0;
+               }
+
+#lselect li a {
+                display: block;
+                }
+
+#lselect li .c {
+                 display: inline;
+                 }
+/*------------------------------------------------------*/
+#lselect a  {                                
+              text-transform:uppercase;
+              margin: 0px;
+              padding-left: 30px;
+              border: 0px;
+              background: transparent;
+              color: #b2906d;
+              }
+
+#lselect a:hover {               
+                   background: url(puce.jpg)  no-repeat 0px -3px;
+                   color: #99d0dd;                    
+                   }
+
+#lselect a:visited {               
+                     color: #964;                    
+                     }
+/*---------------------------------------------------*/
+#lselect a.c {                                
+               text-transform:none;
+               margin: 0px;
+               padding-left: 10px;
+               border: 0px;
+               background: transparent;
+               color: #e5a250;
+               }
+
+#lselect a.c:hover {               
+                     background: transparent;
+                     color: #99d0dd;                    
+                     }
+
+
+/*==MENU--archives==*/
+
+#larchives li, #lresources li  {
+                                 margin: 0 0 15px 0;
+                                 }
+
+ #larchives a, #larchives a:visited  { 
+                                       margin: 0px;
+                                       padding: 10px 0px 0px 20px;    
+                                       border: 0px; 
+                                       background: transparent; 
+                                       }
+
+#larchives a:hover {
+                     background: url(puceherbe.jpg) no-repeat 0 4px;
+                     }
+
+
+/*==MENU--ressources--a==*/
+
+#lresources a, #lresources a:visited { 
+                                       margin: 0px;
+                                       padding: 5px 0px 5px 20px;
+                                       border: 0px;
+                                       background: transparent;                                       
+                                       }		
+
+#lresources a:hover	{                            
+                          background: url(puceparenth.jpg) center left no-repeat;
+                          }
+
+
+

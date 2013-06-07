@@ -1,0 +1,268 @@
+/* css Zen Garden submission 128 - 'Dragen', by Matthew Buchanan, http://www.cactuslab.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Matthew Buchanan */
+/* Added: Oct. 21st, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/*
+	Makes use of Alternate Box Model Hacks as described by Edwardson Tan:
+	http://www.info.com.ph/~etan/w3pantheon/style/abmh.html
+
+	Makes use of Phark Revisited image replacement as described by Dave Shea:
+	http://www.mezzoblue.com/tests/revised-image-replacement/
+
+	Tested and 100% compatible with:
+	Internet Explorer 5.01+ (Win)
+	Firefox 0.9.3 (Win)
+	Opera 7.5.3 (Win)
+	Safari 1.2.3 (Mac)
+	Netscape 7.1 (Mac)
+
+	Very minor issue found with:
+	Internet Explorer 5.2.3 (Mac)
+
+	Toy Dragon image by Maartje van Caspel, via iStockPhoto.com
+	http://www.vancaspelenvdr.nl/portfolio/
+	http://www.istockphoto.com/user_view.php?id=127925
+*/	
+
+/* Document Styles */
+
+body {
+	background: #ccc;
+	font: normal 10px/16px "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, Arial, sans-serif;
+	color: #666;
+	margin: 15px;
+	text-align: center; /* For IE */
+	}
+
+p {
+	margin: 0 0 5px 0;
+	}
+
+p.p1 {
+	font-size: 13px;
+	line-height: 20px;
+	}
+
+h3 {
+	color: #18d;
+	font-size: 10px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 30px 0 2px 0;
+	}
+
+a:link, a:visited {
+	color: #9c0;
+	text-decoration: none;
+	}
+
+a:hover, a:active {
+	color: #fff;
+	background: #9c0;
+	}
+
+ul {
+	margin: 0;
+	padding: 0 23px 10px 27px;
+	list-style: none;
+	line-height: 1.2em;
+	}
+
+li {
+	padding-bottom: 7px;
+	}
+
+acronym {
+	font-style: normal;
+	border-bottom: 1px dotted #666;
+	}
+
+.accesskey {
+	text-decoration: underline;
+	}
+
+/* Container Styles */
+
+#container {
+	position: relative;
+	width: 720px !important;
+	width /**/: 750px;
+	background: #fff url(container_bg.gif) repeat-y;
+	border: 15px solid #fff;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left; /* For IE, see above */
+	}
+
+/* Intro Styles */
+
+#pageHeader {
+	width: 720px;
+	height: 220px;
+	background: #18d url(title.jpg) no-repeat;
+	}
+
+#pageHeader h1, #pageHeader h2 {
+	text-indent: -999em;
+	margin: 0;
+	}
+
+#quickSummary {
+	width: 720px;
+	height: 39px;
+	border-top: 1px solid #fff;
+	background: #147;
+	}
+
+#quickSummary p.p1 {
+	position: absolute;
+	left: -999em;
+	}
+
+#quickSummary p.p2 {
+	width: 248px !important;
+	width /**/: 276px;
+	height: 28px !important;
+	height /**/: 39px;
+	color: #6cf;
+	margin: 0;
+	padding: 11px 0 0 27px;
+	border-right: 1px solid #fff;
+	}
+
+#quickSummary a:link, #quickSummary a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	}
+
+#quickSummary a:hover, #quickSummary a:active {
+	text-decoration: underline;
+	background: transparent;
+	}
+
+/* Supporting Text Styles */
+
+#preamble, #explanation, #participation, #benefits, #requirements {
+	margin: 0 50px 0 320px;
+	}
+
+#footer {
+	width: 708px !important;
+	width /**/: 720px;
+	height: 24px !important;
+	height /**/: 30px;
+	background: #18d;
+	margin-top: 15px;
+	padding: 6px 12px 0 0;
+	border-top: 1px solid #fff;
+	text-align: right;
+	}
+
+#footer a:link, #footer a:visited {
+	text-transform: uppercase;
+	color: #fff;
+	}
+
+#footer a:hover, #footer a:active {
+	color: #18d;
+	background: #fff;
+	}
+
+/* Link List Styles */
+
+#linkList {
+	position: absolute;
+	top: 260px;
+	left: 0px;
+	width: 275px;
+	border-bottom: 1px solid #fff;
+	}
+
+#linkList h3 {
+	text-indent: -1100px;
+	height: 45px;
+	margin: 0;
+	}
+
+#linkList a:link, #linkList a:visited {
+	font-size: 11px;
+	color: #fff;
+	}
+
+#linkList a:hover, #linkList a:active {
+	background: #fff;
+	}
+
+#linkList a.c {
+	font-size: 10px;
+	}
+
+#linkList acronym {
+	border-bottom: none;
+	}
+
+#lselect, #lfavorites {
+	border-top: 1px solid #fff;
+	background: #18d;
+	}
+
+#lselect h3 {
+	background: url(select.gif);
+	}
+
+#lfavorites h3 {
+	background: url(favourites.gif);
+	}
+
+#lselect li, #lfavorites li {
+	color: #6cf;
+	background: url(select_bg.gif) repeat-x left bottom;
+	}
+
+#lselect a:hover, #lselect a:active, #lfavorites a:hover, #lfavorites a:active {
+	color: #18d;
+	}
+
+#larchives {
+	border-top: 1px solid #fff;
+	background: #9c0;
+	}
+
+#larchives h3 {
+	background: url(archives.gif);
+	}
+
+#larchives li {
+	color: #cf3;
+	background: url(archives_bg.gif) repeat-x left bottom;
+	}
+
+#larchives a:hover, #larchives a:active {
+	color: #9c0;
+	}
+
+#lresources {
+	border-top: 1px solid #fff;
+	background: #d8c;
+	}
+
+#lresources h3 {
+	background: url(resources.gif);
+	}
+
+#lresources li {
+	color: #fcc;
+	background: url(resources_bg.gif) repeat-x left bottom;
+	}
+
+#lresources a:hover, #lresources a:active {
+	color: #d8c;
+	}

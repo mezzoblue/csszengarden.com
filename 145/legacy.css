@@ -1,0 +1,255 @@
+/* css Zen Garden submission 145 - 'Paravion', by Emiliano Pennisi, http://www.peamarte.it/01/metro.html */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Emiliano Pennisi */
+/* Added: Dec. 16th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+body{
+	font-family: "Book Antiqua",Georgia,"MS Sans Serif", Geneva, sans-serif;
+	background: #A3181E url(bg_body.gif) fixed repeat-x;
+	margin: 0;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+acronym {
+	color: #A3181E;
+	font-weight: bold;
+}
+
+/*h3 rules*/
+div#linkList h3 span{
+	font-size: 16px;
+	background: #A3181E;
+	border-bottom: 2px solid white;
+	color: White;
+	margin-left: 5px;
+	margin-bottom: 0;
+	padding: 3px;
+	width: 185px;
+	display: block;
+}
+
+#preamble h3 span,#supportingText h3 span{
+	font-family: "Courier New", Courier, monospace;
+	background: url(h3bg.gif) no-repeat 6px 0;
+	color: #A3181E;
+	font-size: 20px;
+	letter-spacing: -1px;
+	padding-left: 35px;
+}
+
+div#linkList h3{
+	font-family: "Book Antiqua",Times, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+/*link*/
+#preamble a, #supportingText a,#linkList a{
+	color: #2B497B;
+	font-weight: bold;
+}
+
+#preamble a:hover,#supportingText a:hover{
+	background: #2B497B;
+	color: White;
+	text-decoration: none;
+}
+
+/*Style for linkList acronym*/
+div#linkList acronym {
+	background: #A3181E;
+	color: White;
+}
+
+/*child selector only for compliant mode*/
+body>div#container{
+	height: auto;
+	min-height: 100%;
+}
+
+/*container*/
+div#container{
+	position: relative;
+	height: 100%;
+	background: url(bg_container.gif);
+	margin-left: auto;
+	margin-right: auto;
+	border-right: 3px solid white;
+	border-left: 3px solid white;
+	border-bottom: 20px solid white;
+	width: 650px;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+#pageHeader {
+	background: url(head.gif) no-repeat;
+	height: 452px;
+	margin: 0 0 30px 0;
+}
+
+#pageHeader h1,#pageHeader h2{
+	display: none;
+}
+
+/*Hide quicksummary*/
+#quickSummary .p2 a{
+	color: #A3181E;
+}
+
+#quickSummary p.p1 span{
+	display: none;
+}
+
+#quickSummary p.p2 {
+	font-size: 0.9em;
+	line-height: 12px;
+	position: absolute;
+	top: 275px;
+	left: 235px;
+	padding: 0 0 8px 0;
+	width: 200px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-top: 1px dashed #000;
+	padding-top: 2px;
+}
+#preamble,#supportingText{
+	position: relative;
+	margin-left: 250px;
+	margin-top: -30px;
+	width: 400px;
+}
+
+/*child selector only for compliant mode*/
+div#preamble,div#supportingText{
+	background: url(st_bg.gif);
+}
+
+div#preamble,#supportingText{
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 370px; /*Start Tantek Box Model Hack*/
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 350px;
+}
+
+/*child selector only for compliant mode*/
+body > div#preamble,#supportingText{
+	width: 350px;
+}
+
+/**************************Navigation**********************************/
+#linkList{
+	font-family: Georgia,"MS Sans Serif", Geneva, sans-serif;
+	background: url(linklist_bg.jpg);
+	padding: 10px;
+	width: 220px;
+	position: absolute;
+	top: 450px;
+	margin-left: 15px; /*Start Tantek Box Model Hack*/
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 200px;
+}
+
+#linkList li
+	{
+	color: #fff;
+}
+
+#linkList ul
+	{
+	list-style: none;
+	margin: 5px;
+	margin-top: -20px;
+	padding: 0px;
+	border-top: 10px solid #CAD2DE;
+	background: #2B497B;
+}
+
+#linkList li
+	{
+	color: #000;
+	border-bottom: 1px dotted #fff;
+	padding: 0.2em 10px;
+	line-height: 15px;
+}
+
+#linkList li:hover
+	{
+	background: #A3181E;
+}
+
+#container > #linkList ul li a:hover{
+	color: White;
+}
+
+#linkList ul li a:hover{
+	color: #A3181E;
+}
+
+	
+#linkList li a
+	{
+	font-size: 10px;
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#linkList li a:hover
+	{
+	color: #fff;
+}
+
+#linkList li a.c:hover
+	{
+	color: #fff;
+}
+
+#lselect ul li{
+	color: White;
+}
+
+#lselect ul li a.c{
+	font-weight: bold;
+	display: inline;
+	color: White;
+	text-transform: none;
+}
+
+/*Start Footer rules*/
+#footer {
+	font-family: Georgia,"MS Sans Serif", Geneva, sans-serif;
+	margin: 0  -5px -5px;
+	border-top: 5px solid #FFF;
+	background-color: #A3181E;
+	padding: 10px;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+#footer a{
+	font-size: 9px;
+	color: #fff;
+	font-weight: bold;
+	padding: 3px;
+	text-decoration: none;
+	border-right: 1px solid white;
+	padding: 0 5px 0 0;
+}
+
+/*End of code*/

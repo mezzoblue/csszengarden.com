@@ -1,0 +1,343 @@
+/* css Zen Garden submission 094 - 'Deco', by Marc Trudel, http://www.marctrudel.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Marc Trudel */
+/* Added: April 9th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+body {
+	font: 10pt/16pt verdana;
+	color: #333333;
+	background: url(bg_blue1.gif) repeat-y left;
+	margin: 0px;
+	border: 0px;
+margin-top: 0em;
+margin-left: 0em;
+margin-bottom: 0em;
+margin-right: 0em;
+padding: 0em;
+}
+#container {
+	background: url(bg.jpg) no-repeat scroll left top;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	height: 497px;
+	width: 788px;
+	visibility: inherit;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+#intro {
+    margin-top: 85px; 
+	margin-left: 172px; 
+	}
+#pageHeader { 
+	}
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 {
+	background: url(csszengarden.gif) no-repeat left top;
+	width: 620px; 
+	height: 103px; 
+	}
+#pageHeader h1 span {
+	display:none
+	}
+#pageHeader h2 {
+	background: url(thebeauty.gif) no-repeat left top;
+	width: 263px; 
+	height: 13px; 
+	}
+#pageHeader h2 span {
+	display:none
+	}
+#quickSummary {
+	width: 300px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	}
+#quickSummary p span {
+	line-height: 17px;
+	font-size: 11px;
+	color: #FFFFFF;
+	}
+#preamble {
+	color: #666666;
+	margin: 0px;
+	width: 490px;
+	bottom: 0px;
+	}
+#preamble  h3 {
+	background: url(h1.gif) no-repeat left top;
+	border: 0px;
+	height: 39px;
+	width: 537px;
+	visibility: visible;
+	position: static;
+	margin: 0px;
+	padding: 0px 0px 3px;
+	}
+#preamble  h3 span {
+	display:none;
+	padding: 0px;
+	margin: 0px;
+	width: 252px;
+	}
+#preamble  p span {
+	position: relative;
+	left: 27px;
+	margin: 0px 0px 5px;
+	padding: 0px;
+	line-height: 17px;
+	font-size: 11px;
+	}
+#explanation {
+	color: #666666;
+	margin: 0px;
+	width: 490px;
+	}
+#explanation  h3 {
+	background: url(h2.gif) no-repeat 172px 5px;
+	border: 0px;
+	height: 55px;
+	width: 709px;
+	visibility: visible;
+	position: static;
+	margin: 0px;
+	padding: 0px 0px 3px;
+	}
+#explanation h3 span {
+	display:none;
+	padding: 0px;
+	margin: 0px;
+	width: 252px;
+	}
+#explanation p span {
+	position: relative;
+	left: 197px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 17px;
+	font-size: 11px;
+	right: 732px;
+	}
+a:link {
+	font-weight: bold;
+	color: #99CCFF;
+	text-decoration: none;
+	}
+a:visited {
+	font-weight: bold;
+	color: #99CCFF;
+	text-decoration: none;
+	}
+a:hover {
+	font-weight: bold;
+	color: #99CCFF;
+	text-decoration: underline;
+	}
+a:active {
+	font-weight: bold;
+	color: #99CCFF;
+	}
+p {
+	font-size: 8pt;
+	line-height: 14pt;
+	margin: 0px;
+	padding: 3px 0px;
+	}
+#participation  {
+	color: #666666;
+	margin: 0px;
+	width: 490px;
+	}
+#participation h3 {
+	background: url(h3.gif) no-repeat 172px 5px;
+	border: 0px;
+	height: 55px;
+	width: 709px;
+	visibility: visible;
+	position: static;
+	margin: 0px;
+	padding: 0px 0px 3px;
+	}
+#participation h3 span {
+	display:none;
+	padding: 0px;
+	margin: 0px;
+	width: 252px;
+	}
+#participation p span {
+	position: relative;
+	left: 200px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 17px;
+	font-size: 11px;
+	right: 745px;
+	}
+#participation a:link, #participation a:visited {
+	color: #316DBD;
+	}
+#benefits {
+	color: #666666;
+	margin: 0px;
+	width: 490px;
+	}
+#benefits h3 {
+	background: url(h4.gif) no-repeat 172px 5px;
+	border: 0px;
+	height: 55px;
+	width: 709px;
+	visibility: visible;
+	position: static;
+	margin: 0px;
+	padding: 0px 0px 3px;
+	}
+#benefits h3 span {
+	display:none;
+	padding: 0px;
+	margin: 0px;
+	width: 252px;
+	}
+#benefits p span {
+	position: relative;
+	left: 200px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 17px;
+	font-size: 11px;
+	right: 745px;
+	}
+#requirements  {
+	color: #666666;
+	margin: 0px;
+	width: 490px;
+	}
+#requirements h3 {
+	background: url(h5.gif) no-repeat 172px 5px;
+	border: 0px;
+	height: 55px;
+	width: 709px;
+	visibility: visible;
+	position: static;
+	margin: 0px;
+	padding: 0px 0px 3px;
+	}
+#requirements h3 span {
+	display:none;
+	padding: 0px;
+	margin: 0px;
+	width: 252px;
+	}
+#requirements p span {
+	position: relative;
+	left: 200px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 17px;
+	font-size: 11px;
+	right: 745px;
+	}
+#requirements a:link, #requirements a:visited {
+	color: #316DBD;
+	}
+#footer {
+	position: relative;
+	left: 200px;
+	margin: 0px;
+	padding: 10px 10px 10px 0px;
+	line-height: 15px;
+	font-size: 9px;
+	right: 745px;
+	}
+#footer a:link, #footer a:visited {
+	color: #316DBD;
+	}
+#linkList {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 0px;
+	padding: 0px;
+	width: 0px;
+	margin: 0px;
+	}
+#linkList2 {
+	font: 10px verdana, sans-serif;
+	padding: 0px;
+	margin-top: 340px; 
+	width: 133px;
+	height: 0px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	position: absolute;
+	}
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(lightblue.gif);
+	background-repeat: repeat-y;
+	}
+#linkList li {
+	line-height: 2.5ex;
+	list-style-type: none;
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #C5D2E6;
+	border-right-color: #C5D2E6;
+	border-bottom-color: #C5D2E6;
+	border-left-color: #C5D2E6;
+	padding-left: 15px;
+	padding-bottom: 5px;
+	padding-right: 12px;
+	color: #99CCFF;
+	}
+#linkList li a:link {
+	color: #FFFFFF;
+	font-weight: bold;
+	background-position: 5px;
+	}
+#linkList li a:visited {
+	color: #99CCFF;
+	font-weight: bold;
+	}
+#linkList h3.select { 
+	background: transparent url(selectdesign.gif) no-repeat top left; 
+	margin: 0px 0px 5px 7px; 
+	width: 95px; 
+	height: 7px; 
+	}
+#linkList h3.select span {
+	display:none
+	}
+#linkList h3.archives { 
+	background: transparent url(archives.gif) no-repeat top left; 
+	margin: 30px 0px 5px 7px; 
+	width: 95px; 
+	height: 7px; 
+	}
+#linkList h3.archives span {
+	display:none
+	}
+#linkList h3.resources { 
+	background: transparent url(resources.gif) no-repeat top left; 
+	margin: 30px 0px 5px 7px; 
+	width: 95px; 
+	height: 7px; 
+	}
+#linkList h3.resources span {
+	display:none
+	}

@@ -1,0 +1,263 @@
+/* css Zen Garden submission 179 - 'Vin Rouge', by Thorsten Bopp, http://www.bopp-medien.de/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Thorsten Bopp */
+/* Added: September 1st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+
+/* tested with IE5+/Win, Mozilla, IE5/Mac, Safari, Opera8/Win */
+
+/* colors
+wine red:    #9E2E2F
+dark brown:  #541D1D
+light yellow:#F7F5D9
+link:        #EA907F
+*/
+
+
+body {
+	background: #371212 url(background.gif) top repeat-x;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #F7F5D9;
+	font-size: 0.75em;
+	line-height: 1.6em;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	}
+
+
+/*  fonts ------------------------------------------------------------------------- */
+
+a:link {color: #EA907F;text-decoration: none;} 
+a:visited {color: #EA907F;text-decoration: none;} 
+a:hover {color: #F7F5D9;text-decoration: underline;}
+
+p, h1, h2, h3 {margin: 0; padding: 0;}
+
+abbr, acronym {
+	text-decoration: none;
+	border-bottom: 1px dotted #F7F5D9;
+	cursor: help;
+	}
+
+
+/*  container ------------------------------------------------------------------- */
+
+div#container {
+	background: #000000 url(background_header.gif) top center no-repeat;
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: -50px;
+	padding: 0;
+	text-align: left;
+	}
+
+
+/*  intro ------------------------------------------------------------------- */
+
+div#intro {
+	width: 580px;
+	margin: 0;
+	padding: 0;
+	}
+
+div#pageHeader {
+	display: none;
+	}
+
+div#quickSummary {
+	width: 260px;
+	height: 20px;
+	padding: 220px 0 0 0;
+	margin: 0 0 30px 310px;
+	color: #9E2E2F; 
+	}
+
+div#quickSummary p.p1 {
+	display: none;
+	}
+
+
+/*  preamble ------------------------------------------------------------------- */
+
+div#preamble {
+	background: url(content_boxes_middle_preamble.gif) repeat-y;
+	width: 375px;
+	margin-left: 205px;
+	}
+
+div#preamble h3 {
+	background: url(headline_preamble.gif) top left no-repeat;
+	height: 85px;
+	}
+
+div#preamble h3 span {
+	display: none;
+	}
+
+div#preamble p {
+	padding: 0 10px 10px 20px;
+	}
+
+div#preamble p.p1 {
+	margin-top: -25px;
+	}
+
+div#preamble p.p3 {
+	background: url(content_boxes_bottom_preamble.gif) bottom left no-repeat;
+	padding-bottom: 65px;
+	/* for IE5 */
+	margin-bottom: 0px;
+	}
+
+
+/*  supportingText ------------------------------------------------------------------- */
+
+div#supportingText {
+	width: 580px;
+	margin: 0 0 50px 0;
+	padding: 0;
+	}
+
+div#explanation, div#participation, div#benefits, div#requirements {
+	background: url(content_boxes_middle.gif) repeat-y;
+	width: 550px;
+	margin-left: 30px;
+	}
+
+div#explanation p, div#participation p, div#benefits p, div#requirements p {
+	padding: 0 10px 10px 20px;
+	}
+
+div#explanation p.p1, div#participation p.p1, div#benefits p.p1, div#requirements p.p1 {
+	margin-top: -25px;
+	}
+
+div#explanation p.p2, div#participation p.p3, div#benefits p.p1, div#requirements p.p5 {
+	background: url(content_boxes_bottom.gif) bottom left no-repeat;
+	padding-bottom: 65px;
+	/* for IE5 */
+	margin-bottom: 0px;
+	}
+
+
+div#explanation h3 {
+	background: url(headline_explanation.gif) top left no-repeat;
+	}
+
+div#participation h3 {
+	background: url(headline_participation.gif) top left no-repeat;
+	}
+
+div#benefits h3 {
+	background: url(headline_benefits.gif) top left no-repeat;
+	}
+
+div#requirements h3 {
+	background: url(headline_requirements.gif) top left no-repeat;
+	}
+
+div#explanation h3, div#participation h3, div#benefits h3, div#requirements h3 {
+	height: 85px;
+	}
+
+div#explanation h3 span, div#participation h3 span, div#benefits h3 span, div#requirements h3 span {
+	display: none;
+	}
+
+
+/*  footer ------------------------------------------------------------------- */
+
+div#footer {
+	width: 425px;
+	height: 40px;
+	margin-left: 155px;
+	text-align: right;
+	font-size: 0.9em;
+	padding-top: 20px;
+	}
+div#footer a:link {color: #9E2E2F;}
+div#footer a:visited {color: #9E2E2F;}
+div#footer a:hover {color: #F7F5D9;}
+
+
+/*  linkList ------------------------------------------------------------------- */
+
+div#linkList {
+	position: absolute; left:auto; right:auto; top:290px;
+	width: 155px;
+	margin-left: 595px;
+	padding: 0;
+	font-size: 0.9em;
+	line-height: 1.6em;
+	color: #9E2E2F;
+	}
+
+ul {
+	list-style: none;
+	background: url(marginal_boxes_bottom.gif) bottom left no-repeat;
+	margin: 5px 0 0 0;
+	padding: 0 0 45px 0;
+	}
+
+li {
+	margin-left: 0;
+	padding: 0 10px 5px 15px;
+	}
+
+div#lselect li {
+	background: url(li_element.gif) bottom center no-repeat;
+	padding: 0 10px 25px 15px;
+	}
+
+div#lselect a {
+	display: block;
+	font-weight: bold;
+	}
+
+div#lselect a.c {
+	display: inline;
+	font-weight: normal;
+	}
+
+div#lselect, div#larchives, div#lresources {
+	background: url(marginal_boxes_middle.gif) repeat-y;
+	width: 155px;
+	}
+
+div#lselect h3 {
+	background: url(headline_select.gif) top left no-repeat;
+	}
+
+div#larchives h3 {
+	background: url(headline_archives.gif) top left no-repeat;
+	}
+
+div#lresources h3 {
+	background: url(headline_resources.gif) top left no-repeat;
+	}
+
+div#lselect h3, div#larchives h3, div#lresources h3 {
+	height: 35px;
+	}
+
+div#lresources h3 span, div#lselect h3 span, div#larchives h3 span {
+	display: none;
+	}
+
+
+/*  extraDivs ------------------------------------------------------------------- */
+
+div#extraDiv1, div#extraDiv2, div#extraDiv3, div#extraDiv4, div#extraDiv5, div#extraDiv6 {
+	display: none;
+	}

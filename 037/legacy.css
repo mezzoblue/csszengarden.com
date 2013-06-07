@@ -1,0 +1,400 @@
+/* css Zen Garden submission 037 - 'pret-a-porter' by Minz Meyer - www.minzweb.de */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All other graphics copyright 2003, Minz Meyer */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* Well, though I know that web is not print, I wanted to try a visual concept that I designed for a printed brochure and
+see what happens when brought to screen. According to the printed object, which is heavily landscape format, I had to
+try the horizontal scrolling. (-- Didn't reinvent the wheel, Mike Pick already did this with his "What lies Beneath" design.)
+All in all I wanted to give it a look of a modern lifestyle and fashion magazine.
+The Photograph was shot by Thomas Moeller */
+
+
+body {
+	width: 2048px;
+	margin: 0;
+	padding: 0;
+	color: #888398;
+	background-color: #fff;
+	background-image: url(bg_body.jpg);
+	background-position: right;
+	background-repeat: repeat-y;
+	font: 11px/1.5 Arial, Verdana, sans-serif;
+	
+}
+
+/* Different behaviour of the lady. Just a compromise for IE */
+
+div#extraDiv2 {
+	background-image: url(bg_face_ie.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 600px;
+	width: 265px;
+}
+
+/* And now the cool stuff, hiding from IE with child-selectors */
+
+body#css-zen-garden>div#extraDiv2 {
+	background-image: url(bg_face.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 594px;
+	width: 205px;
+	z-index: 2;
+} 
+
+/* Using Geckos capability of PNG transparency to create the smooth scrolling border,
+when the screen is scrolled and the content vanishes to the left */
+
+body#css-zen-garden>div#extraDiv3 {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	z-index: 1;
+	background-image: url(bg_white.png);
+	width: 225px;
+}
+
+/* The Header, using the "old":)) FIR-method */
+
+div#pageHeader {
+	position: relative;
+	left: 220px;
+	width: 1828px;
+}
+
+div#pageHeader h1 {
+	width: 493px;
+	height: 83px;
+	margin: 20px 0 0;
+	background-image: url(csszengarden.jpg);
+}
+
+div#pageHeader h1 span {
+	display: none;
+}
+
+div#pageHeader h2 {
+	width: 1826px;
+	height: 27px;
+	background-image: url(thebeautyofcssdesign.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	margin-top: -10px;
+}
+
+div#pageHeader h2 span {
+	display: none;
+}
+
+div#quickSummary {
+	position: absolute;
+	width: 1300px;
+	left: 228px;
+	top: 98px;
+	letter-spacing: 0.1em;
+	color: #A5A3B5;
+	background-color: transparent;
+}
+
+/* Have the summary displayed in a single line */
+
+div#quickSummary p.p2, div#quickSummary p.p1 {
+	display: inline;
+	margin: 0;
+}
+
+div#extraDiv1 { /*adding a border */
+	position: absolute;
+	left: 225px; 
+	top: 90px;
+	height: 1px;
+	width: 1823px;
+	background-color: #A5A3B5;
+	color: inherit;
+}
+
+
+/* The main content. All positioned absolutely
+-----------------------------------------------
+ The text-links */
+
+a:link, a:visited {
+	color: #A52A2A;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* The Preamble */
+
+div#preamble {
+	position: absolute;
+	left: 375px;
+	top: 160px;
+	width: 200px;
+	text-align: justify;
+}
+
+div#preamble h3 {
+	width: 200px;
+	height: 25px;
+	background-image: url(theroad.jpg);
+	margin: 0 0 0.5em;
+}
+
+div#preamble h3 span {
+	display: none;
+}
+
+div#preamble p {
+	margin: 0 0.5em 0.5em;
+}
+
+/* Supporting Text
+--------------------------------------*/
+
+div#explanation {
+	position: absolute;
+	left: 625px;
+	top: 160px;
+	width: 200px;
+	text-align: justify;
+}
+
+div#explanation h3 {
+	width: 200px;
+	height: 25px;
+	background-image: url(sowhatisthisabout.jpg);
+	margin: 0 0 0.5em;
+}
+
+div#explanation h3 span {
+	display: none;
+}
+
+div#explanation p {
+	margin: 0 0.5em 0.5em;
+}
+
+div#participation {
+	position: absolute;
+	left: 875px;
+	top: 160px;
+	width: 200px;
+	text-align: justify;
+}
+
+div#participation h3 {
+	width: 200px;
+	height: 25px;
+	background-image: url(participation.jpg);
+	margin: 0 0 0.5em;
+}
+
+div#participation h3 span {
+	display: none;
+}
+
+div#participation p {
+	margin: 0 0.5em 0.5em;
+}
+
+div#benefits {
+	position: absolute;
+	left: 1125px;
+	top: 160px;
+	width: 200px;
+	text-align: justify;
+}
+
+div#benefits h3 {
+	width: 200px;
+	height: 25px;
+	background-image: url(benefits.jpg);
+	margin: 0 0 0.5em;
+}
+
+div#benefits h3 span {
+	display: none;
+}
+
+div#benefits p {
+	margin: 0 0.5em 0.5em;
+}
+
+div#requirements {
+	position: absolute;
+	left: 1375px;
+	top: 160px;
+	width: 400px;
+	text-align: justify;
+}
+
+div#requirements h3 {
+	width: 400px;
+	height: 25px;
+	background-image: url(requirements.jpg);
+	margin: 0 0 0.5em;
+}
+
+div#requirements h3 span {
+	display: none;
+}
+
+div#requirements p {
+	margin: 0 0.5em 0.5em;
+}
+
+/* The Navigation
+---------------------------------------*/
+
+ div#linkList {
+	position: absolute;
+	left: 1828px;
+	top: 160px;
+	width: 220px;
+	background-color: transparent;
+	color: inherit;
+	background-image: url(bg_linklist.jpg);
+	background-repeat: repeat-y;
+	text-transform: lowercase;
+}
+
+
+div#linkList div#lselect li a:link, div#linkList div#lselect li a:visited {
+	display: block;
+	margin-left: -10px;
+	padding-left: 26px;
+	color: #8B879E;
+	background-color: transparent;
+	border-top: 1px solid #C6C6D2;
+	background-image: url(linklistlink.jpg);
+	background-repeat: no-repeat;
+}
+
+div#linkList li a:link, div#linkList div#lselect li a.c:link, div#linkList li a:visited, div#linkList div#lselect li a.c:visited {
+	display: inline;
+	background-image: none;
+	color: #A52A2A;
+	background-color: transparent;
+	padding-left: 0;
+	margin-left: 0;
+	border: none;
+}
+
+
+div#linkList ul {
+	list-style: none;
+	margin: 0 0 0 25px;
+	padding-left: 0;
+}
+
+div#linkList li {
+	padding-left: 10px;
+}
+
+
+
+div#lselect h3 {
+	float:left;
+	margin-top: 0;
+	width: 25px;
+	height: 200px;
+	background-image: url(selectadesign.jpg);
+	background-repeat: no-repeat;
+}
+
+div#lselect h3 span {
+	display: none;
+}
+
+div#larchives {
+	clear:left;
+	margin-top: 0;
+	border-top: 10px solid #D9D6E7; 
+}
+
+div#larchives h3 {
+	float:left;
+	margin-top: 0;
+	width: 25px;
+	height: 81px;
+	background-image: url(archives.jpg);
+	background-repeat: no-repeat;
+}
+
+div#larchives h3 span {
+	display: none;
+}
+
+div#lresources {
+	clear:left;
+	margin-top: 0;
+	border-top: 10px solid #D9D6E7; 
+}
+
+div#lresources h3 {
+	float:left;
+	margin-top: 0;
+	width: 25px;
+	height: 95px;
+	background-image: url(ressources.jpg);
+	background-repeat: no-repeat;
+}
+
+div#lresources h3 span {
+	display: none;
+}
+
+/* ...and the footer
+--------------------------------------*/
+div#footer {
+	position: absolute;
+	left: 1828px;
+	top: 3px;
+	width: 220px;
+	height: 20px;
+	text-align: center;
+	word-spacing: 0.1em;
+	overflow: hidden;
+}
+
+div#footer a:link, div#footer a:visited {
+	color: #B2AFC0;
+	background-color: transparent;
+}
+
+
+
+/* and extra artwork */
+
+div#extraDiv4 {
+	position: absolute;
+	left: 1828px;
+	top: 20px;
+	width: 214px;
+	height: 65px;
+	color: inherit;
+	background-color: #D9D6E7;
+	background-image: url(transition.jpg);
+	background-repeat: no-repeat;
+}

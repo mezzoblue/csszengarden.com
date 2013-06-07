@@ -1,0 +1,361 @@
+/* css Zen Garden submission 083 - 'Springtime', by Boér Attila */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Boér Attila */
+/* Added: March 4th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* basic elements */
+body { 
+	font: 8pt/16pt georgia; 
+	color: #555753; 
+	background: #F5F7EC url(bg.jpg); 
+	margin: 0px; 
+	text-align: center;
+	background-repeat: repeat-x;
+	}
+p { 
+	font: 8pt/14pt verdana; 
+	margin-top: 0px; 
+	text-align: left;
+	}
+h3 { 
+	font: italic normal 12pt georgia; 
+	letter-spacing: 1px; 
+	margin-bottom: 10px; 
+	color: #7D775C;
+	text-align: left;
+	}
+a:link { 
+	font: 11px verdana; 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: #8F9E28;
+	}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: #C0C0C0;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #B8C271;
+	}
+
+
+/* specific divs */
+#container { 
+	background: url(footbg.jpg) no-repeat bottom left; 
+
+	width:650px;
+	padding-bottom:80px;
+	position:relative;
+	margin: 0 auto;
+
+
+	}
+
+#intro { 
+	min-width: 470px;
+	}
+#pageHeader { 
+	margin-bottom: 20px;
+
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 { 
+	background: url(head.gif) no-repeat top left; 
+	width: 678px; 
+	height: 213px; 
+
+
+	margin-top:0px;
+
+	}
+#pageHeader h1 span {
+	display:none
+	}
+#pageHeader h2 { 
+	background: transparent url(flwr.gif) no-repeat top left; 
+
+	width: 84px; 
+	height: 261px; 
+	float: right;
+	margin-top:0px;
+
+	position:absolute;
+	top:163px;
+	left:647px;
+	}
+#pageHeader h2 span {
+	display:none;
+	}
+
+#quickSummary {
+	background: transparent url(green.gif) no-repeat top left; 
+	clear:both; 
+	overflow:auto;
+
+	width: 147px;
+	height:201px;
+
+	padding-top:10px;
+	padding-left:15px;
+	padding-right:15px;
+
+	position:absolute;
+	top:213px;
+	left:0px;
+
+	}
+#quickSummary p {
+	font: 8pt/12pt verdana;
+	color:#EFF2E5;
+	text-align:left;
+
+	}
+
+#quickSummary a {
+	font:  bold 8pt/12pt verdana;
+	color:#EFF2E5;
+	text-align:left;
+	text-decoration:underline;
+	}
+
+#quickSummary a:hover {
+	font:  bold 8pt/12pt verdana;
+	color:#EFF2E5;
+	text-align:left;
+	text-decoration:none;
+	}
+
+
+#preamble {
+
+	padding-right:40px;
+	padding-top:20px;
+	padding-left:30px;
+	overflow:auto;
+	background: transparent url(whitebg.gif) no-repeat 0 0 !important; 
+
+	position:absolute;
+	top:72px;
+	left:177px;
+	height:333px;
+	width:400px;
+
+	}
+
+#preamble h3 {
+	background: transparent url(pretext.gif) no-repeat top left;
+	font: 0pt/14pt verdana;
+	color:#FFFFFF;
+	text-align:right;
+	height:40px; 
+}
+
+
+#explanation h3, #benefits h3, #participation h3, #requirements h3 {
+
+display:none	
+}
+
+
+
+#supportingText {
+	background: transparent url(whitebg2.gif) repeat-y top left; 
+
+	float:left;
+	padding-left: 10px; 
+	padding-right: 30px; 
+	padding-top:230px;
+	padding-bottom:0px;
+	margin-bottom: 0px;
+	width:607px;
+	}
+
+
+
+#explanation {
+	background: transparent url(whatistext.gif) no-repeat top left; 
+
+	float:right;
+	width:410px;
+	padding-top:50px;
+	padding-bottom:30px;
+
+}
+
+#participation {
+	background: transparent url(parttext.gif) no-repeat top left; 
+
+
+	float:right;
+	width:410px;
+	padding-top:50px;
+	padding-bottom:30px;
+
+}
+
+#benefits {
+	background: transparent url(beneftxt.gif) no-repeat top left; 
+
+
+	float:right;	
+	padding-top:50px;
+	padding-bottom:30px;
+	width:580px;
+
+}
+#requirements {
+	background: transparent url(reqtext.gif) no-repeat top left; 
+
+
+	float:right;
+	padding-top:50px;
+	padding-bottom:30px;
+
+	width:580px;
+
+}
+
+
+#footer { 
+
+	background: transparent url(notext.gif) no-repeat top left; 	
+
+	left:0px;
+	text-align: center; 
+
+	padding-top:30px;
+	padding-bottom:0px;
+
+	
+
+	float:right;
+	width:580px;
+
+	}
+#footer a:link, #footer a:visited { 
+	margin-left: 20px; 
+	}
+
+
+
+
+#linkList {
+	background: transparent url(greenbg.gif) repeat-y top left; 
+
+	float:left;
+	position: absolute;
+	top: 424px;
+	left: 0px;
+	margin: 0px;
+	width: 178px;
+	text-align:left;
+	padding: 0px;
+	}
+#linkList2 { 
+	background: transparent url(fade.gif) no-repeat bottom left; 
+
+	font: 10px verdana, sans-serif; 
+	margin:0px;
+	padding: 0px; 
+
+	padding-bottom:100px;
+	width: 178px; 
+	float:left;
+	}
+
+
+#linkList li {
+
+	list-style-type: none;
+	background:#C1C99A;
+
+	padding: 8px; 
+	margin-bottom: 1px;
+	margin-left:-39px;
+
+	width:160px;
+
+	}
+
+#linkList li:hover {
+	background: #A6AE72;
+
+}
+
+
+#linkList li a { 
+
+	display:block;
+	color:#6E7746;
+	font: bold 11px verdana;
+	text-decoration:underline;
+
+	}
+
+#linkList li a:hover { 
+
+	display:block;
+	color:#8F9E28;
+	font: bold 11px verdana;
+	text-decoration:underline;
+
+
+	}
+
+
+#linkList li a.c { 
+
+	display:inline;
+	color:#FFFFFF;
+	font: 11px verdana;
+	}
+
+#linkList li a.c:hover { 
+
+	display:inline;
+	color:#6E7746;
+	font: 11px verdana;
+	}
+
+
+#lselect {
+	background: transparent url(seltxt.gif) no-repeat top left; 
+	padding-top:30px;
+	padding-bottom:0px;
+	margin-bottom:-10px;
+	float:left;
+}
+
+
+#larchives {
+	background: transparent url(archtxt.gif) no-repeat top left; 
+	padding-top:30px;
+	padding-bottom:0px;
+	margin-bottom:-10px;
+	float:left;
+}
+
+#lresources {
+	background: transparent url(restxt.gif) no-repeat top left; 
+	padding-top:30px;
+	padding-bottom:0px;
+	margin-bottom:-10px;
+	float:left;
+}
+
+
+#lselect h3 span, #larchives h3 span, #lresources h3 span {display:none;}
+#lselect h3, #larchives h3, #lresources h3 {display:none;}
+
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {display:none;}

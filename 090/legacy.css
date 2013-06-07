@@ -1,0 +1,279 @@
+/* css Zen Garden submission 090 - 'Untitled', by Ray Henry, http://www.reh3.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Ray Henry */
+/* Added: April 9th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* basic elements */
+body#css-zen-garden {
+     background:#A1B4CD;
+     margin:0;
+     padding:0;
+	 font-family:verdana, arial, sans-serif;
+	 font-size:11px;
+}
+acronym {
+     cursor: help;
+}
+/* Container */
+#container {
+     width:100%;
+	 text-align:left;
+}
+/* Intro Section */
+#intro {
+	 width:100%;
+	 height:276px;
+}
+html>body div#intro {
+     position:fixed;
+	 bottom:0px;
+	 right:0;
+}
+html*#intro {
+     border-bottom:3px solid #fff;
+	 position:fixed;
+	 bottom:-10px;
+}
+/* start IE5Mac Nav hack \*/	
+#intro {
+	 height:286px;
+	 voice-family: "\"}\""; 
+  	 voice-family: inherit;
+  	 height:auto;
+}
+/* end IE5Mac Nav hack */
+#pageHeader {
+     background:url(pageHead_bg.jpg) no-repeat top left;
+	 width:332px;
+	 height:283px;
+	 position:absolute;
+	 right:0;
+	 top:0;
+}
+html>body #pageHeader {
+     position:absolute;
+	 right:0;
+}
+#pageHeader h1, #pageHeader h2 {display:none;}
+#preamble {
+     background:#A1B4CD url(preamble_bg.gif) repeat-y top right;
+	 height:283px;
+	 width:312px;
+	 margin:0;
+	 padding:0;
+	 position:absolute;
+	 left:0;
+	 top:0;
+}
+html>body #preamble {
+     position:absolute;
+	 left:0;
+}
+#preamble h3 {
+     background:url(preamble_h3_bg.gif) no-repeat top left;
+	 height:48px;
+	 width:auto;
+	 margin:0;
+	 padding:0;
+}
+#preamble h3 span {display:none;}
+#preamble p {
+     color:#2E3C55;
+	 line-height:16px;
+     margin:0 10px 10px 10px;
+}
+#quickSummary {
+     background:url(quickSum_bg.gif) repeat-x top right;
+	 border-right:3px solid #fff;			  
+	 margin:0 332px 0 312px;
+	 padding:52px 0 0 0;
+	 height:283px;
+	 voice-family: "\"}\""; 
+  	 voice-family: inherit;
+  	 height:231px;
+}
+#quickSummary p {
+     margin:0 10px 10px 10px;
+	 color:#fff;
+}
+#quickSummary a:link, #quickSummary a:active, #quickSummary a:active {
+     color:#fff;
+}
+#quickSummary a:hover {
+     color:#ddd;
+}
+/* Supporting Text */
+#supportingText {
+     width:100%;
+     float:left;
+	 margin-right:-332px;
+	 margin-top:-3px;
+}
+#supportingText h3 {
+    margin:0;
+	padding:0;
+}
+#supportingText p {
+     margin:10px 10px 0 10px;
+	 line-height:16px;
+	 color:#2E3C55;
+	 max-width:525px;
+}
+#explanation, #participation, #benefits, #requirements {
+     background:#E7F0FF;
+     margin:0 332px 0 0;
+	 border-right:3px solid #fff;
+}
+#participation, #benefits, #requirements {
+     padding-top:15px;
+}
+#requirements {
+     padding-bottom:25px;
+}
+#explanation h3 {
+     background:url(exp_h3_bg.gif) no-repeat top left;
+	 height:51px;
+}
+#participation h3 {
+     background:url(part_h3_bg.gif) no-repeat top left;
+	 height:51px;
+}
+#benefits h3 {
+     background:url(ben_h3_bg.gif) no-repeat top left;
+	 height:51px;
+}
+#requirements h3 {
+     background:url(req_h3_bg.gif) no-repeat top left;
+	 height:51px;
+}
+#explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span {display:none;}
+#supportingText a:link, #supportingText a:active, #supportingText a:visited {
+     color:#4f5e77;
+}
+#supportingText a:hover {
+     color:#0c1a33;
+}
+html>body #requirements {
+     padding-bottom:300px;
+}
+#footer {
+     background:#d6e0ee;
+     margin:0 332px 0 0;
+	 border-right:3px solid #fff;
+	 border-top:3px solid #fff;
+	 border-bottom:3px solid #fff;
+	 padding:15px 0;
+	 text-align:center;
+}
+html>body #footer {
+    background:transparent;
+    position:fixed;
+	right:0;
+	bottom:261px;
+	padding:0;
+	margin:0 160px 0 0;
+	border-right:0;
+	border-top:0;
+	border-bottom:0;
+	text-align:left;
+}
+#footer a:link, #footer a:active, #footer a:visited {
+     color:#1E2E43;
+}
+#footer a:hover {
+     color:#fff;
+}
+/* Link List Section */
+#linkList {
+     background:#CBD6E5;
+	 width:180px;
+	 margin-right:149px;
+	 float:right;
+	 padding-bottom:453px;
+	 border-bottom:3px solid #fff;
+	 border-right:3px solid #fff;
+}
+html>body #linkList {
+     padding-bottom:700px;
+}
+#linkList h3 {
+	 background:#bac5d4;
+	 font-size:12px;
+	 font-family: georgia, serif;
+	 color:#4f5e77;
+}
+h3.select {
+     padding:10px 0 10px 10px;
+	 margin:0 0 5px 0;
+	 border-bottom:1px dotted #4f5e77;
+}
+h3.archives, h3.resources {
+	 border-top:1px dotted #4f5e77;
+	 padding:10px 0 10px 10px;
+	 margin:10px 0 5px 0;
+	 border-bottom:1px dotted #4f5e77;
+}
+#linkList h3:hover {
+    background:#a9b4c3;
+	color:#fff;
+}
+#linkList ul {
+     margin:0 0 0 5px;
+	 padding:0;
+	 list-style-type:none;
+}
+#linkList ul li {
+     padding:5px 0 5px 15px;
+	 color:#6f7f99;
+	 font-size:10px;
+}
+#linkList ul li:hover {
+     background:url(listBullet.gif) no-repeat 5px 10px;
+}
+#linkList ul li a:link, #linkList ul li a:active, #linkList ul li a:visited {
+     display:block;
+	 color:#4f5e77;
+	 font-weight:bold;
+	 font-size:11px;
+}
+#linkList ul li a:hover {
+     color:#fff;
+}
+#linkList ul li a.c {
+     display:inline;
+	 color:#6f7f99;
+	 font-weight:normal;
+	 font-size:10px;
+}
+
+/* Ugly Opera 7 Hacks Section */
+@media all and (min-width: 0px){
+  div#intro {
+     position: absolute;
+     right:0;
+     width:100%;
+     height:283px;
+     top:0;
+     z-index: 0;
+	 border-bottom:3px solid #fff;
+  }
+  div#supportingText {
+     margin-top:280px;
+  }
+  div#footer {
+     position:absolute;
+	 right:0;
+	 top:12px;
+   }
+   div#linkList {
+      margin-top:280px;
+   }
+}
+/* extraDivs */
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {display:none;}

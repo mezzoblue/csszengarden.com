@@ -1,5 +1,6 @@
 <?php
 
+	$lang = "en";
 
 	$head = array(
 		"title" => "CSS Zen Garden: The Beauty in CSS Design",
@@ -64,7 +65,7 @@
 		"requirements-p2" => 'Luckily, designing this way shows how well various browsers have implemented <abbr title="Cascading Style Sheets">CSS</abbr> by now. When sticking to the guidelines you should see fairly consistent results across most modern browsers. Due to the sheer number of user agents on the web these days &#8212; especially when you factor in mobile &#8212; pixel-perfect layouts may not be possible across every platform. That&#8217;s okay, but do test in as many as you can. Your design should work in at least IE9+ and the latest Chrome, Firefox, iOS and Android browsers (run by over 90% of the population).',
 		"requirements-p3" => 'We ask that you submit original artwork. Please respect copyright laws. Please keep objectionable material to a minimum, and try to incorporate unique and interesting visual themes to your work. We&#8217;re well past the point of needing another garden-related design.',
 		"requirements-p4" => 'This is a learning exercise as well as a demonstration. You retain full copyright on your graphics (with limited exceptions, see <a href="' . $zenUrls["zen-guidelines"] . '">submission guidelines</a>), but we ask you release your <abbr title="Cascading Style Sheets">CSS</abbr> under a Creative Commons license identical to the <a href="' . $zenUrls["zen-license"] . '" title="View the Zen Garden\'s license information.">one on this site</a> so that others may learn from your work.',
-		"requirements-p5" => 'Bandwidth graciously donated by <a href="' . $zenUrls["zen-credits-hosting"] . '">mediatemple</a>. Now available: <a href="' . $zenUrls["zen-credits-book"] . '">Zen Garden, the book</a>.',
+		"requirements-p5" => 'By <a href="' . $zenUrls["zen-credits-creator"] . '">Dave Shea</a>. Bandwidth graciously donated by <a href="' . $zenUrls["zen-credits-hosting"] . '">mediatemple</a>. Now available: <a href="' . $zenUrls["zen-credits-book"] . '">Zen Garden, the book</a>.',
 	);
 
 	// if you decide to localize any of these, keep the link text <4 characters if possible

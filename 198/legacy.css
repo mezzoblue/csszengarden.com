@@ -1,0 +1,280 @@
+/* css Zen Garden submission 198 - 'The Original', by Joachim Shotter, http://www.bluejam.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Joachim Shotter */
+/* Added: December 4th, 2006 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+
+
+body { 
+	font: 12px Arial, Helvetica, sans-serif; 
+	color: #CCCCCC; 
+	background: #000000 url(background.jpg) no-repeat center bottom; 
+	margin: 0px; 
+	}
+	
+p {
+	width: 354px;
+	padding-right: 25px;
+	text-align: justify;
+	color: #999999;
+	margin-bottom: 10px;
+	float: right;
+	clear: both;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	}
+	
+a, a:visited {
+	background :url(a_link.jpg) left center;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	height: 15px;
+	padding-right: 2px;
+	padding-left: 2px;
+	}
+	
+acronym{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FF0000;
+	}
+	
+#container {
+	background: url(../zen-bg.jpg) no-repeat top left;
+	width: 770px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	}
+
+#pageHeader {
+	background: url(css_zen.jpg) no-repeat;
+	background-position: left bottom;
+	display: block;
+	height: 459px;
+	width: 770px;
+	margin: 0px;
+	padding: 0px;
+	}
+
+#pageHeader h1, #pageHeader h2 {
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#pageHeader h1 span {
+	display:none;
+	}
+
+#pageHeader h2 span {
+	display: none;
+	}
+
+#quickSummary {
+	top: 175px;
+	width: 770px;
+	position: absolute;
+	font-size: 10px;
+	}
+	
+#quickSummary p {
+	width: 376px;
+	text-transform: uppercase;
+	}
+
+#quickSummary .p2{
+	float: left;
+	padding-left: 20px;
+	position: absolute;
+	top: 300px;
+	}
+
+h3{
+	margin: 0px;
+	padding-bottom: 10px;
+	float: right;
+	}
+	
+h3 span{
+	display: none;
+	}
+
+#preamble h3{
+	background: url(preamble.jpg) no-repeat;
+	width: 434px;
+	height: 155px;
+	}
+
+#supportingText h3{
+	background: url(supportingText.jpg) no-repeat;
+	width: 434px;
+	height: 169px;
+	}
+
+#participation h3{
+	background: url(participation.jpg) no-repeat;
+	width: 434px;
+	height: 129px;
+	}
+	
+#benefits h3{
+	background: url(benefits.jpg) no-repeat;
+	width: 434px;
+	height: 129px;
+	}
+	
+#requirements h3{
+	background: url(requirements.jpg) no-repeat;
+	width: 434px;
+	height: 129px;
+	}
+
+#linkList {
+	background: url(original.jpg) no-repeat;
+	background-position: left bottom;
+	color: #777777;
+	position: absolute;
+	top: 500px;
+	width: 321px;
+	padding-bottom: 431px;
+	}
+	
+#linkList2 {
+	background: url(linkList.jpg) repeat-y;
+	width: 100%;	
+	}
+	
+#lselect ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px 0px 180px 100px;
+	clear: both;
+	}
+
+#lselect li {
+	margin-bottom: 15px;
+	width: 190px;
+	}
+
+#lselect li a, #lselect li a:visited  {
+	color:#999999;
+	background-image: none;
+	font-size: 15px;
+	font-weight: bold;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	}
+
+#lselect li a.c, #lselect li a.c:visited {
+	display: inline;
+	background-image: none;
+	font-size: 10px;
+	color: #CCCCCC;
+	margin: 0px;
+	padding: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FF0000;
+	}	
+
+#larchives li, #lresources li {
+	margin-bottom: 5px;
+	}
+	
+#larchives ul, #lresources ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px 0px 20px 115px;
+	clear: both;
+	}
+	
+#larchives li a, #lresources li a{
+	font-size: 10px;
+	text-transform: uppercase;
+	background-image: none;
+	color: #999999;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FF0000;
+	}
+	
+#lselect li a:hover, #larchives li a:hover, #lresources li a:hover {
+	color: #FFFFFF;
+	}
+
+#linkList h3.select {
+	background: url(selectAdesign.jpg);
+	height: 90px;
+	width: 100%;
+	}
+
+#linkList h3.archives {
+	background: url(archives.jpg);
+	margin-top: 250px;
+	height: 100px;
+	width: 100%;
+	}
+
+#linkList h3.resources { 
+	background: url(resources.jpg);
+	height: 100px;
+	width: 100%;
+	}
+
+#footer {
+	height: 80px;
+	clear: both;
+	padding-left: 305px;
+	padding-top: 150px;
+	font-size: 10px;
+	}
+
+
+#footer a, #footer a:visited {	
+	color: #999999;
+	background-image: none;
+	}
+	
+.p5{
+	width: 340px;
+	float: right;
+	position: relative;
+	top: 150px;
+	font-size: 10px;
+	text-transform: uppercase;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+	left: 90px;
+	}
+
+
+
+
+	
+/* 
+
+a:hover, a:active {}
+#intro {}
+#linkList h3.select span {}
+#linkList h3.favorites {}
+#linkList h3.favorites span {}
+#linkList h3.archives span {}
+#linkList h3.resources span {}
+#lresources{}
+#extraDiv1 {}
+
+*/

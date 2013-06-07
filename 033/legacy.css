@@ -1,0 +1,317 @@
+/* css Zen Garden submission 033 - 'Fleur-de-lys' by Claire Campbell,  http://www.tanfa.co.uk/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Claire Campbell */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+body	{
+font: 100% verdana, helvetica, arial, sans-serif;
+margin: 0; 
+padding: 0;
+background: #f0e7d7;
+color: #000;
+text-align: center;
+min-width: 760px;
+}
+
+p, ul, #footer {font-size: 0.8em;}
+
+h1, h2, h3	{
+font-family: georgia, serif;
+letter-spacing: 0.1cm;
+}
+
+a:link, a:visited, a:active	{
+color: #800000;
+background: transparent;
+font-weight: bold;
+font-size: 0.9em;
+text-decoration: none;
+}
+a:hover	{
+color: #aaab9c;
+background: transparent;
+text-decoration: underline;
+}
+
+#intro	{clear: both;}
+
+#container	{
+width: 760px; 
+background: #f0e7d7 url(bodybg.jpg) repeat-y 0% 0%;
+color: #000;
+padding: 0; 
+margin: 0 auto;
+}
+
+#pageHeader	{
+position: relative;
+float: right;
+width: 230px;
+padding: 0;
+margin: 0;
+margin-left: -3px;
+background: #f0e7d7;
+color: #000;
+}
+
+
+#pageHeader h1	{
+background: #f0e7d7 url(zenhead.jpg) no-repeat 0% 0%;
+color: #800000;
+height: 174px;
+padding: 0;
+margin: 0;
+}
+
+#pageHeader h2	{
+padding: 0;
+margin: 0;
+display: none;
+}
+
+#pageHeader h1 span	{display: none;}
+
+#quickSummary	{
+position: relative;
+width: 230px;
+float: right;
+clear: right;
+background: transparent url(summarybg.gif) no-repeat bottom left;
+color: #000;
+margin: 0;
+padding: 0 0 20px 0;
+}
+
+#quickSummary p	{
+font-family: georgia, serif;
+margin: 0;
+padding: 10px 10px 10px 20px;
+text-align: right;
+}
+
+
+#preamble	{
+width: 530px;
+background: #fff url(lilybg.jpg) no-repeat 0% 0%;
+color: #000;
+margin: 0;
+padding: 50px 0 0 0;
+}
+
+#preamble h3	{
+width: 350px;
+height: 40px;
+padding: 0;
+margin: 0 0 0 170px;
+}
+
+#preamble h3 span	{display: none;}
+
+#preamble p	{
+padding: 0;
+margin: 0;
+padding: 20px 30px 0px 0px;
+text-align: justify;
+}
+
+#preamble p.p3	{
+padding-bottom: 20px;
+}
+
+#preamble p:first-letter 	{
+color: #800000;
+background: transparent;
+font-size: 16px;
+font-weight: bold;
+vertical-align: baseline;
+}
+
+
+#preamble p.p1	{margin-left: 200px;}
+#preamble p.p2	{margin-left: 180px;}
+#preamble p.p3	{margin-left: 80px;}
+
+#supportingText	{
+float: left;
+clear: left;
+text-align: justify;
+background: #fff url(supportbg.gif) no-repeat top right;
+color: #000;
+padding-bottom: 20px;
+padding-top: 23px;
+border-right: 10px solid #800000;
+width: 530px;
+\width: 540px;
+w\idth: 530px;
+}
+
+#supportingText h3	{
+padding: 5px 30px 6px 0;
+margin: 10px 0 0 0;
+border-top: 1px solid #aaab9c;
+font-size: 0.9em;
+text-align: right;
+background: #fff url(suph3bg.jpg) no-repeat bottom right;
+color: #aaab9c;
+}
+
+#supportingText h3 span	{}
+
+#supportingText p	{padding: 15px 20px 0 50px; margin: 0;}
+
+#supportingText p:first-letter	{
+color: #800000;
+background: transparent;
+font-size: 16px;
+font-weight: bold;
+vertical-align: baseline;
+}
+
+#explanation	{
+background: #fff url(sowhatbg.jpg) no-repeat 0% 0%;
+color: #000;
+}
+#explanation h3	{visibility: hidden;}
+#explanation h3 span	{}
+#explanation p.p1	{padding-top: 30px;}
+
+#requirements p.p5	{
+text-align: right; 
+padding-bottom: 0; 
+margin-bottom: -180px;
+}
+
+#linkList	{
+margin: 0;
+padding: 0;
+margin-left: 530px;
+padding: 30px 15px 20px 0px;
+}
+
+#linkList h3	{
+padding: 5px 0 6px 30px;
+margin: 0;
+border-top: 1px solid #aaab9c;
+border-right: 1px solid #aaab9c;
+font-size: 0.9em;
+text-align: right;
+background: #f0e7d7 url(listh3bg.jpg) no-repeat bottom left;
+color: #aaab9c;
+text-align: left;
+}
+
+#linkList ul {
+margin: 0;
+padding: 0 0 10px 0;
+color: #aaab9c;
+background: transparent;
+border-right: 1px solid #aaab9c;
+}
+
+#linkList li {
+list-style-type: none;
+display: block;
+padding: 0; 
+margin: 0;
+padding: 0;
+}
+
+#linkList #lselect li	{padding: 1px 0; margin: 3px 0;}
+
+#linkList #larchives li, #linkList #lresources li	{ 
+padding: 1px 0; 
+margin: 0;
+text-align: right;
+}
+		
+#larchives, #lresources	{
+margin-top: 30px;
+text-align: left;
+}
+		
+#lselect a, #larchives a, #lresources a { 
+display:block; 
+text-transform: lowercase;
+font-family: georgia, serif;
+font-size: 0.9em;
+font-weight: 700;
+padding: 10px 0 3px 0;
+}
+		
+#lselect a	{
+letter-spacing: 0.1em;
+background: #f0e7d7 url(linkbg.jpg) no-repeat 50% 0%;
+color: #800000;
+}
+		
+#larchives a, #lresources a	{
+font-family: verdana, helvetica, arial, sans-serif;
+background: #f0e7d7;
+padding: 3px 30px 3px 0;
+margin: 0;
+background: #f0e7d7 url(link2bg.jpg) no-repeat 100% 50%;
+color: #800000;
+}
+			
+#lselect a.c {
+display:inline; 
+text-transform: none;
+border-width: 0px;
+letter-spacing: 0;
+font-family: verdana, helvetica, sans-serif;
+background: #f0e7d7;
+color: #aaab9c;
+padding: 0;
+}
+			
+#footer	{
+margin: 0;
+padding: 0;
+position: relative;
+top: 0px;
+left: 630px;
+width: 6em;
+text-align: center;
+padding-bottom: 10px;
+}
+
+#footer a	{
+display: block;
+width: 100%;
+background: #f7f2ea url(linkfootbg.jpg) no-repeat 0% 0%;
+color: #aaab9c; 
+padding: 5px 0;
+border-width: 1px;
+border-color: #ffe #aaab9c #ccc #ffe;
+border-style: solid;
+text-decoration: none;
+}
+
+#footer a:hover	{
+color: #800000; 
+background: #f0e7d7 url(linkbg.jpg) no-repeat 0% 0%;
+border-color: #aaab9c #ffe #ffe #ccc;
+}
+
+#extraDiv1	{
+clear:both;
+display: block;
+position: relative;
+z-index: 10;
+padding: 0;
+margin: 0 auto;
+margin-top: -10px;
+background: #fff url(bottombg.jpg) no-repeat 109px 0;
+color: #000;
+height: 17px;
+width: 760px;
+}
+
+#extraDiv span #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6	
+{display: none;}

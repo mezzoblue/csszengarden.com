@@ -1,0 +1,83 @@
+/* css Zen Garden submission 084 - 'Start Listening!', by Liz Lubowitz, http://hiptobeasquare.com */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Liz Lubowitz */
+/* Added: March 4th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* 1950s clip art courtesy of Tack-O-Rama http://anzwers.org/free/tackorama/index.html */
+/* Background tile by Squidfingers http://squidfingers.com/patterns/ */
+/* Fonts used are Cast Iron (source unkown) and Hot Burrito #3 by Dinc Type http://www.girlswhowearglasses.com */
+/* Photoshop brushes by Anti-Brush http://www.jennithepirate.com/brushes/ */
+
+/* BASIC STUFF */
+body {margin:0px;padding:0px;font:0.7em verdana, tahoma, sans-serif;line-height:1.3em;color:#000000;background:#3D5464 url(bg.gif);}
+p {margin:0px;padding-top:2px;padding-bottom:5px;text-align:justify;}
+h3 {font:bold 0.8em verdana, tahoma, sans-serif;text-transform:uppercase;margin:0px;padding:0px;color:#000000;}
+a {color:#000000;font-weight:bold;text-decoration:none;}
+a:hover {color:#D0701A;font-weight:bold;text-decoration:none;text-decoration:none;}
+acronym {text-decoration:underline;border:0px;}
+
+/* DIVS THAT CONTAIN OTHER DIVS */
+#container {z-index:0;position:absolute;left:0px;top:0px;margin:0px;padding:0px;width:725px;background:url(containerbg.gif) repeat-y top left;}
+#intro {width:560px;float:right;}
+#supportingText {width:560px;float:right;}
+#linkList {z-index:1;position:absolute;left:0px;top:320px;width:155px;font-size:0.8em;padding-left:10px;float:left;}
+
+
+/* STUFF CONTAINED WITHIN THE INTRO DIV */
+#pageHeader {padding-top:0px;}
+#pageHeader h1 {width:355px;height:100px;}
+#pageHeader h1 span {display:none;}
+#pageHeader h2 {width:355px;height:120px;}
+#pageHeader h2 span {display:none;}
+#quickSummary {margin-left:100px;text-align:right;margin-right:10px;margin-top:5px;}
+#quickSummary p {text-align:right;}
+#preamble {padding:10px;padding-top:0px;margin:0px;clear:left;}
+#preamble h3 {background:url(enlightenment.gif) top left no-repeat;width:278px;height:36px;}
+#preamble h3 span {display:none;}
+
+
+/* STUFF CONTAINED WITHIN THE STUPPORTING TEXT DIV */
+#explanation {padding:10px;}
+#explanation h3 {background:url(about.gif) top left no-repeat;width:278px;height:36px;margin-top:5px;}
+#explanation h3 span {display:none;}
+#participation {padding:10px;}
+#participation h3 {background:url(participation.gif) top left no-repeat;width:278px;height:36px;margin-top:5px;}
+#participation h3 span {display:none;}
+#benefits {padding:10px;}
+#benefits h3 {background:url(benefits.gif) top left no-repeat;width:278px;height:36px;margin-top:5px;}
+#benefits h3 span {display:none;}
+#requirements {padding:10px;}
+#requirements h3 {background:url(requirements.gif) top left no-repeat;width:278px;height:36px;margin-top:5px;}
+#requirements h3 span {display:none;}
+#footer {text-align:right;text-transform:uppercase;font-size:0.8em;line-height:1em;border-top:5px solid #000000;margin:0px;padding:10px;}
+
+
+/* STUFF CONTAINED WITHIN THE LINKLIST DIV */
+#linkList h3.select {background:url(h3.gif) no-repeat bottom left;width:139px;height:39px;}
+#linkList h3.select span {display:none}
+#linkList h3.favorites {background:url(h4.gif) no-repeat bottom left;width:139px;height:39px;}
+#linkList h3.favorites span {display:none}
+#linkList h3.archives {background:url(h5.gif) no-repeat bottom left;width:139px;height:39px;}
+#linkList h3.archives span {display:none}
+#linkList h3.resources {background:url(h6.gif) no-repeat bottom left;width:139px;height:39px;}
+#linkList h3.resources span {display:none}
+#linkList ul {margin:0px;padding:0px;}
+#linkList li {list-style-type:none;display:block;padding:1px;margin:0px;}
+#linkList li a {color:#000000;}
+#linkList li a:hover {color:#D0701A;}
+#lselect a {display:block;}
+#lselect li a.c {display: inline;}
+#lselect li {margin-bottom:5px;}
+
+/* EXTRA STUFF LIKE IMAGES */
+#extraDiv1 {z-index:1;position:absolute;left:0px;top:0px;width:168px;height:370px;background:url(notlistening1.gif) no-repeat top left;}
+#extraDiv2 {z-index:2;position:absolute;left:168px;top:0px;width:97px;height:312px;background:url(notlistening2.gif) no-repeat top left;}
+#extraDiv3 {z-index:3;position:absolute;left:265px;top:0px;width:100px;height:197px;background:url(notlistening3.gif) no-repeat top left;}
+#extraDiv4 {z-index:4;position:absolute;left:365px;top:0px;width:355px;height:133px;background:url(title1.gif) no-repeat top left;}
+#extraDiv5 {z-index:5;position:absolute;left:365px;top:133px;width:355px;height:118px;background:url(title2.gif) no-repeat top left;}

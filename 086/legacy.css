@@ -1,0 +1,262 @@
+/* css Zen Garden submission 086 - 'RedFrog', by Bernd Willenberg, http://www.willenberg.biz */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Bernd Willenberg */
+/* Added: March 29th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* DISCLAIMER */
+/*This CSS was tested in windows with IE 6.0, Netscape 7.02, Opera 7.11j, Mozilla Firebird 0.7 and Mozilla Firefox 0.8 - it works. */
+
+
+
+/* ------------------------------------------------------------------------------------- */
+/* common */
+
+body {            
+             font: 12px/14px Arial;            
+	color: #612A20;
+             background: #FFCA7F url(bodybg.gif) fixed;             
+	margin: 0; 
+	padding: 0;
+             }
+	
+a:link, a:visited {
+	color: #612A20; 
+             font-weight: bold;
+             text-decoration: none;
+             }
+
+a:hover, a:active {
+	color: #BD5F4E; 
+             text-decoration: underline;
+             }
+
+acronym {
+	font-style: italic; 
+	cursor: help;
+             border-bottom: 0;	
+	}
+
+
+/* ------------------------------------------------------------------------------------- */
+/* content-area */
+
+#container  {              
+	position: absolute;
+             top: 0;
+             left: 50%; 
+	width: 690px;                                      	
+	margin: 0 0 0 -345px;
+             padding: 0;
+             z-index: 1;    		
+	}
+
+#intro {  
+             width: 690px;                     
+             margin: 0;
+             padding: 0;
+             background: url(head.jpg) no-repeat;             
+	}
+
+#supportingText  {                          
+             width: 690px;             
+             margin: 0;
+             padding: 0;
+             background: url(bg.jpg) repeat-y;             		
+	}
+
+#extraDiv1 {
+	position: absolute;
+             top: 0;
+             left: 50%; 
+	width: 690px;
+             height: 1100px;                         	
+	margin: 0 0 0 -345px;
+             padding: 0;
+             background: url(bg.jpg) repeat-y;             
+	}
+
+
+/* ------------------------------------------------------------------------------------- */
+/* hide headlines for image replacement */	
+
+#pageHeader {
+             display: none;             
+             }
+
+
+/* ------------------------------------------------------------------------------------- */
+/* A demonstration of ... */
+	
+#quickSummary {             
+	padding: 0;
+             margin: 0;             
+	}
+
+#quickSummary p.p1 {             
+	display: none;             
+	}
+
+#quickSummary p.p2 {
+             position: absolute;
+             top: 140px;
+             left: 235px;	
+             width: 400px;
+             font: bold 12px Arial;             
+	color: #A25344;             
+             margin: 0;
+             padding: 0;                          
+	}
+
+#quickSummary a:link, #quickSummary a:visited {
+	color: #64352D;             
+             }
+
+#quickSummary a:hover, #quickSummary a:active {
+	color: #64352D;             
+             }
+
+
+/* ------------------------------------------------------------------------------------- */
+/* content */
+
+#preamble, #explanation, #participation, #benefits, #requirements {	
+	width: 690px;
+             margin: 0;
+             padding: 0;                          
+	}
+
+#preamble {
+             padding-top: 220px;
+             }
+
+#requirements {
+             padding-bottom: 100px;
+             background: url(foot.gif) no-repeat bottom left;
+             }
+
+#preamble h3 {
+             font: bold 14px Arial;
+             text-transform: uppercase;
+             letter-spacing: 2px;
+             color: #FFF;             
+             margin: 0 60px 20px 235px;
+             padding: 5px 10px;
+             background: #D4C5C2;                            
+	}
+
+#explanation h3, #participation h3, #benefits h3, #requirements h3 {             
+	font: bold 14px Arial;
+             text-transform: uppercase;
+             letter-spacing: 2px;
+             color: #FFF;             
+             height: 82px;
+             margin: 0;
+             padding: 60px 0 0 235px;
+             background: url(paragraph.gif) no-repeat;                            
+	}
+
+#preamble p, #explanation p, #participation p, #benefits p, #requirements p {	
+	margin: 0;
+             padding: 0 60px 15px 235px;
+	}
+
+#explanation p.p1, #participation p.p1, #benefits p.p1, #requirements p.p1 {	
+	margin-top: -46px;             
+	}
+
+
+/* ------------------------------------------------------------------------------------- */
+/* quicklinks */
+
+#footer { 
+             position: absolute;		
+             top: 198px;
+	left: 50%;
+             width: 185px;
+             font: bold 10px Arial;
+             text-align: center;
+             color: #FFC46F;             	
+	margin: 0 0 0 -345px;
+             padding: 0;	             	
+	}
+
+#footer a:link, #footer a:visited {
+	color: #FFE0B4;             
+             }
+
+#footer a:hover, #footer a:active {
+             color: #FFF;
+             }
+
+
+/* ------------------------------------------------------------------------------------- */
+/* lists */
+
+#linkList {
+             position: absolute;
+	top: 250px;
+	left: 13px;
+             width: 140px;             
+             margin: 0;
+             padding: 0;
+             }
+
+#linkList a:link, #linkList a:visited {
+	color: #FFF2E0;
+             }
+
+#linkList a:hover, #linkList a:active {
+             color: #FFF;
+             }
+
+#lresources, #larchives, #lselect {             	
+             margin: 0 0 25px 0;
+             padding: 0;                          
+	}
+
+#larchives h3, #lresources h3, #lselect h3 {             
+	font: bold 11px Verdana;
+             text-transform: uppercase;
+             text-align: center;                         
+             color: #FFF;
+             margin: 0 0 10px 0;
+             padding: 3px;
+             background: #AF908B;                            
+	}
+
+#larchives ul, #lresources ul, #lselect ul {	
+             margin: 0;
+             padding: 0;             
+	}
+
+#lselect li {
+	font: 12px/14px;	
+	color: #612A20;	
+             margin: 0;
+             padding: 0px 0px 8px 13px;
+	list-style: none;
+	background: url(dot.gif) no-repeat 0px 4px;
+	}
+
+#lselect li a:link, #lselect li a:visited {
+            display: block;
+            }
+
+#linkList li a.c:link, #linkList li a.c:visited {
+            display: inline;
+            }
+
+#larchives li, #lresources li {             
+	font: 12px/14px;
+             color: #612A20;
+             margin: 0 0 5px 0;
+             padding: 0;		
+	list-style: none;
+	}

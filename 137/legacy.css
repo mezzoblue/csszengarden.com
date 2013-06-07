@@ -1,0 +1,336 @@
+/* css Zen Garden submission 137 - 'DJ Style', by Ramon Bispo, http://ilhasol.com/bastidores.asp */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Ramon Bispo */
+/* Added: Nov. 29th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/* ##########################################################################################################
+
+	css Zen Garden style - 'Dj Style' by Ramon Bispo da Silva (Page) 
+	Rio de Janeiro, Brazil | September - November, 2004 | All Rights reserved 
+
+  ########################################################################################################### */
+
+/* basic elements */
+body { 
+	font: 12px/17px tahoma, arial;
+	background: #155970;
+	margin: auto auto; 
+	padding: 0;
+	text-align: center;
+	}
+
+p { 
+	font: 12px/17px tahoma, arial, sans-serif; 
+	margin: 0 0 17px 0; 
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #333399;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #6699FF;
+	}
+a.c:visited { 
+	font-weight: normal; 
+	text-decoration: none; 
+	color: #858686;
+	}	
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #3366CC;
+	}
+ul {
+	list-style-type: none;
+	margin: 0; padding: 0;
+}
+
+
+/* specific divs */
+#container {
+	width: 762px;
+	padding: 0;  
+	margin: auto;
+	text-align: left;
+	background: url(pageheader.gif) no-repeat top left; 
+	}
+
+#intro { 
+	vertical-align: bottom;
+	}
+#pageHeader { 
+	padding: 0; 
+	margin: 0;
+	height: 425px;
+	border: 1px solid white;
+	}
+
+#pageHeader h1 {
+	width: 760px;
+	height: 430px;
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+}	
+
+#pageHeader h1 span {
+	display:none
+	}
+#pageHeader h2 { 
+	padding: 0; margin: 0;
+	}
+#pageHeader h2 span {
+	display: none;
+	}
+#quickSummary p.p1 {
+	display:none;
+	}
+#quickSummary p.p1 span{
+	display: none;
+}
+
+#quickSummary p.p2{
+	display: block;
+	position: absolute;
+	border: 1px solid #ffffff;
+	top: 400px;
+	margin-left: 250px;
+	padding: 0 7px 0 7px;
+	font-size: 10px;
+	text-align: center; 
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+	clear: both;
+}
+
+#quickSummary p.p2 a:link, a:active{
+	color:#33eeff;
+}
+
+#quickSummary p.p2 a:hover{
+	text-decoration: underline;
+}
+
+#quickSummary p.p2 a:visited{
+	color:#33eeff;
+	text-decoration: line-through;
+}
+
+#preamble {
+	width: 291px;
+	float: left;
+	background: url(bg_preamble.gif) no-repeat;
+	}
+
+#preamble h3 {
+	background:  url(header_preamble.gif) no-repeat;
+	width: 291px;
+	height: 50px;
+	margin: 0; 
+	padding: 0;
+	border-top: 1px solid #ffffff;
+}
+
+#preamble h3 span {
+	display: none;
+}
+#preamble p {
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 5px;
+	color: #155970;
+	font-size:12px;
+	text-transform:uppercase;
+	font-weight:bold;
+	width: 270px;
+}
+#preamble p.p1 {
+	margin-top: 10px;
+}
+#supportingText {
+	padding: 0; 
+	margin: -3px 0 40px 0;
+	background: #33ccff;
+	border: 1px solid #ffffff;
+	width: 469px;
+	float: right;
+	}
+#supportingText p {
+	margin: 9px 17px 17px 24px;
+	color: #155970;
+}	
+#explanation h3 {
+	background: url(what_is.gif) no-repeat;
+	width: 469px;
+	height: 40px;
+	margin: 0; 
+	padding: 0;
+}
+#explanation h3 span {
+	display: none;
+}
+#participation h3 {
+	background: url(participation.gif) no-repeat;
+	width: 469px;
+	height: 40px;
+	margin: 0; 
+	padding: 0;
+}
+#participation h3 span {
+	display: none;
+}	
+#benefits h3 {
+	background:  url(benefits.gif) no-repeat;
+	width: 469px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+}
+#benefits h3 span {
+	display: none;
+}	
+#requirements h3 {
+	background:  url(requirements.gif) no-repeat;
+	width: 469px;
+	height: 40px;
+	margin: 0; 
+	padding: 0;
+}
+#requirements h3 span {
+	display: none;
+}		
+
+#footer {
+	background: #155970;
+	border: 1px solid #ffffff;
+	padding: 0 0 2px 24px;
+	font-size: 12px;
+	font-weight:bold;
+	text-align: center; 
+	text-transform:uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#footer a:link, a:active{ 
+	color: #ffffff;
+}
+
+#footer a:hover{ 
+	color: #33eeff;
+	text-decoration:underline;
+}
+
+#footer a:visited{ 
+	color: #ffffff;
+	text-decoration: line-through;
+}
+
+a.c {
+	font-weight: normal;
+}
+#lselect, #larchives, #lresources {
+	width: 278px;
+	clear: left;
+	padding: 0;
+	margin: 0;
+}
+#lselect {
+	background: url(select.gif) no-repeat;
+	border: 1px solid #ffffff;
+	margin-top: 20px;
+	padding: 50px 0 0 5px;
+}
+
+#lselect li a:link, a:active{
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:12px;
+	color:#FFFFFF;
+}
+
+#lselect li a:hover {
+	text-decoration:underline;
+	color: #e9e9e9;
+}
+
+#lselect a:visited {
+	color: #155970;
+	text-decoration:line-through;
+	text-transform:uppercase;
+}
+
+#larchives {
+	background: url(archives.gif) no-repeat;
+	border: 1px solid #ffffff;
+	margin-top: 20px;
+	padding: 50px 0 0 5px;
+}
+
+#larchives li a:link, a:active{
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:12px;
+	color:#FFFFFF;
+}
+
+#larchives li a:hover {
+	text-decoration:underline;
+	color: #e9e9e9;
+}
+
+#larchives a:visited {
+	color: #155970;
+	text-decoration:line-through;
+	text-transform:uppercase;
+}
+
+#lresources {
+	background: url(resources.gif) no-repeat;
+	border: 1px solid #ffffff;
+	margin-top: 20px;
+	padding: 50px 0 0 5px;
+}
+
+#lresources li a:link, a:active{
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:12px;
+	color:#FFFFFF;
+}
+
+#lresources li a:hover {
+	text-decoration:underline;
+	color: #e9e9e9;
+}
+
+#lresources a:visited {
+	color: #155970;
+	text-decoration:line-through;
+	text-transform:uppercase;
+}
+
+#lselect h3 span, #larchives h3 span, #lresources h3 span {
+	display: none;
+}
+
+#linklist {
+	position: absolute;
+	top: 48em;
+}
+#linkList #linkList2  ul {
+	padding: 20px 10px 10px 10px;
+	display:block;
+}
+#linklist li {
+	margin: 2px 0;
+}
+

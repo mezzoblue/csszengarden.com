@@ -1,0 +1,212 @@
+/* css Zen Garden submission - 'Sakura', by Tatsuya Uchida, http://www.re-bloom.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Tatsuya Uchida */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* /////////////// basic elements /////////////// */
+
+body {
+margin:0;
+padding:0;
+font:75%/1.4 verdana,Helvetica,sans-serif;
+background-image:url(body_bg.gif);
+text-align:center;
+}
+
+h1,h2,h3 span {
+display:none;
+}
+
+h3 {
+height:39px;
+margin:0;
+padding:0;
+}
+
+p {margin:0;padding:0;}
+
+acronym {
+border:none;
+}
+
+a {
+color:#D9189F;
+background-color:#ffffff;
+text-decoration:underline;
+}
+
+a:hover, a:hover {
+color:#FC7AD5;
+background-color:#ffffff;
+}
+
+
+/* ////////////// layout ///////////////// */
+
+#container {
+width:772px;
+margin:0 auto;
+padding:0 13px;
+position:relative;
+background:url(bg.gif) repeat-x #dfdfdf;
+border-left:1px solid #ffffff;
+border-right:1px solid #ffffff;
+color:#454545;
+text-align:left;
+}
+
+#pageHeader {
+width:772px;
+height:179px;
+background:url(top.jpg);
+}
+
+#quickSummary, #preamble, #explanation, #participation, #benefits, #requirements {
+width:546px;
+background-color:#ffffff;
+background-repeat:repeat-y;
+margin:0 0 2px 226px;
+color:#454545;
+display:block;padding:0;
+}
+
+#footer {
+width:539px;
+margin:5px 0 0 226px;
+text-align:right;
+padding:3px 14px 43px 0;
+}
+
+#linkList {
+position:absolute;
+top:179px;
+left:20px;
+width:207px;
+}
+
+#lselect, #larchives, #lresources {
+margin:0 0 2px 0;
+}
+
+#quickSummary p span, #explanation p span, #benefits p span {
+padding:0 15px 10px 77px;
+display:block;
+}
+
+#preamble p span, #participation p span, #requirements p span {
+padding:0 85px 10px 17px;
+display:block;
+}
+
+#requirements .p5 {
+padding:0 85px 10px 17px;
+}
+
+#requirements .p5 span {
+display:inline;
+padding:0;
+}
+
+#linkList li {
+list-style:none;
+padding:6px 0 10px 0;
+background:url(line.gif) bottom repeat-x;
+}
+
+#linkList li a {
+padding-left:7px;
+background:url(link.gif) left center no-repeat;
+text-decoration:none;
+}
+
+#linkList li a:hover {
+text-decoration:underline;
+}
+
+#quickSummary .p1 span {
+padding-top:14px;
+background:url(quicksummary_top.gif) top no-repeat;
+}
+
+#quickSummary .p2 span {
+padding-bottom:20px;
+background:url(right_bottom.gif) bottom no-repeat;
+}
+
+#lselect li a {
+display:block;
+font-weight:bold;
+background-position:0 0.6em;
+}
+
+#lselect .c {
+display:inline;
+color:#666666;
+padding:0;
+background:none;
+background-color:#ffffff;
+}
+
+#footer a{
+text-decoration:none;
+color:#888888;
+background-color:#dfdfdf;
+border:1px solid #bdbdbd;
+padding:3px 3px;
+height:100%;
+}
+
+#footer a:hover{
+background-color:#ebebeb;
+color:#777777;
+}
+
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6{display:none;}
+
+
+/* ///////////// background image ////////////// */
+
+/* right image */
+#quickSummary p, #explanation p , #benefits p {
+background:url(right_bg.gif) right repeat-y;
+}
+#lselect, #larchives, #lresources {
+background:url(left_bg.gif) repeat-y;
+}
+
+/* side image */
+#quickSummary {background-image:url(img_quicksummary.jpg);background-position:left bottom;}
+#preamble {background-image:url(img_preamble.jpg);background-position:right bottom;}
+#explanation {background-image:url(img_explanation.jpg);background-position:left bottom;}
+#participation {background-image:url(img_participation.jpg);background-position:right bottom;}
+#benefits {background-image:url(img_benefits.jpg);background-position:left bottom;}
+#requirements {background-image:url(img_requirements.jpg);background-position:right bottom;}
+
+
+/* h3 image */
+#preamble h3 {background:url(title_preamble.gif) no-repeat;}
+#explanation h3 {background:url(title_explanation.gif) no-repeat;}
+#participation h3 {background:url(title_participation.gif) no-repeat;}
+#benefits h3 {background:url(title_benefits.gif) no-repeat;}
+#requirements h3 {background:url(title_requirements.gif) no-repeat;}
+#lselect h3 {background:url(title_select.gif) no-repeat;}
+#larchives h3 {background:url(title_archives.gif) no-repeat;}
+#lresources h3 {background:url(title_resources.gif) no-repeat;}
+
+/* bottom image */
+#preamble .p3 span, #explanation .p2 span, #participation .p3 span, #benefits .p1 span, #requirements .p5{
+padding-bottom:20px;
+background:url(right_bottom.gif) bottom no-repeat;
+}
+
+#lselect ul, #larchives ul, #lresources ul{
+margin:0;
+padding:0 25px 20px 17px;
+background:url(left_bottom.gif) bottom no-repeat;
+}

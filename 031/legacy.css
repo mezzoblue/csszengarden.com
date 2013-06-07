@@ -1,0 +1,257 @@
+/* css Zen Garden submission 031 - 'Hedges' by Kev Mears,  http://www.mearso.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Kev Mears */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+
+/* structure
+--------------------------------- */
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #FFF url("bg_tree.gif") repeat-x left top;
+	color: #888;
+	text-align: center;
+}
+
+
+
+#container
+{
+	position: relative;
+	padding:0;
+	width: 732px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+/* hidden text
+--------------------------------- */
+
+h1, h2, h3
+{
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+h1 span, h2 span,h3 span, #quickSummary p.p span { display: none; }
+
+/* header and summary
+--------------------------------- */
+
+#pageHeader h1
+{
+	height: 200px;
+	background: url("nutitle.gif") no-repeat;
+	padding:0;
+}
+
+#quickSummary p.p1
+{
+	position: absolute;
+	top: 12em;
+	right: 15px;
+	width: 120px;
+	margin: 75px 0 0 580px;
+	font-size: 80%;
+	text-align: right;
+}
+
+#quickSummary p.p2
+{
+	position: absolute;
+	top: 25em;
+	right: 15px;
+	width: 120px;
+	margin: 0;
+	font-size: 93%;
+	text-align: center;
+	padding-bottom: 90px;
+	background: url("barrow.gif") no-repeat bottom;
+	background-repeat: no-repeat;
+}
+
+#quickSummary p.p2 a:link, #quickSummary p.p2 a:visited
+{
+	white-space: nowrap;
+	font: bold 92%/1.3em Verdana,Arial,Sans-serif;
+	text-transform: uppercase;
+}
+
+/* preamble
+--------------------------------- */
+
+#preamble
+{
+	position: relative;
+	left: 195px;
+	padding-bottom: 0px;
+	width: 400px;
+
+}
+
+#preamble h3
+{
+	height: 70px;
+	background-image: url("road.gif");
+}
+
+#preamble p
+{
+	width: 350px;
+}
+
+/* supporting text
+--------------------------------- */
+
+#supportingText
+{
+	position: relative;
+	left: 195px;
+	padding-bottom: 0px;
+	border-bottom: 2px solid #363;
+	width: 400px;
+}
+
+#supportingText p
+{
+	line-height: 1.5em;
+}
+
+#supportingText h3 { height: 70px; }
+
+#explanation h3
+{
+	background-image: url("what.gif");
+}
+
+#participation h3
+{
+	background-image: url("participation.gif");
+}
+
+#benefits h3
+{
+	background-image: url("benefits.gif");
+}
+
+#requirements h3
+{
+	background-image: url("requirements.gif");
+}
+
+/* link list
+--------------------------------- */
+
+#linkList
+{
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 190px;
+}
+
+#linkList h3 { height: 41px; }
+
+#lselect h3
+{
+	background-image: url("select.gif");
+}
+
+#larchives h3
+{
+	background-image: url("archives.gif");
+}
+
+#lresources h3
+{
+	background-image: url("resources.gif");
+}
+
+#linkList ul
+{
+	margin: 1em 0 1em;
+	padding: 0;
+	font-size: 90%;
+	list-style: none;
+	text-align: left;
+}
+
+#larchives li, #lresources li { text-transform: lowercase; }
+
+#linkList ul li
+{
+	margin: 0 0 .5em;
+
+	line-height: 1em;
+}
+
+#linkList li a:link, #linkList li a:visited
+{
+	font-family: Verdana,Arial,Sans-serif;
+	font-size: 90%;
+}
+
+#linkList #lselect a:link, #linkList #lselect a:visited { display: block; }
+
+#linkList #lselect a.c:link, #linkList #lselect a.c:visited
+{
+	display: inline;
+	font-family: Georgia,Serif;
+	font-weight: normal;
+	background-color: transparent;
+	text-transform: lowercase;
+}
+
+/* footer
+--------------------------------- */
+
+#footer
+{
+	background: #D9D98B;
+	color: #fff;
+	padding: 10px 20px;
+	border-top: 1px solid #363;
+	font: 85% Verdana,Arial,Sans-serif;
+	text-align: center;
+}
+
+#footer a:link, #footer a:visited
+{
+	padding: 0 5px;
+	font-weight: normal;
+}
+
+/* links
+--------------------------------- */
+
+a:link, a:visited
+{
+	color: #090;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #663;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+/* misc
+--------------------------------- */
+
+acronym { border-width: 0; }

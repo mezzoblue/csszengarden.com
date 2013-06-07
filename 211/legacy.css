@@ -1,0 +1,265 @@
+/* css Zen Garden submission 211 - 'Orchid Beauty', by Kevin Addison, http://www.kevinaddison.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Kevin Addison */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+
+/* Orchid Beauty Style Sheet */
+/* --------------------------*/
+
+a:link {
+	color: #6D2542;
+	text-decoration: none;
+	}
+a:visited {
+	color: #999999;
+	text-decoration: none;
+	}
+a:hover {
+	color: #999999;
+	text-decoration: underline;
+	}
+a:active {
+	color: #999999;
+	text-decoration: none;
+	} 
+
+body {
+margin:0 0 0 0;
+padding:0 0 0 0;
+}
+
+
+#container {
+width:630px;
+margin: auto;
+padding: 0 0 100px 0;
+background-image:url(rounded.jpg);
+background-repeat: no-repeat;
+background-position:bottom;
+border:0px dotted #999999;
+position:relative;
+}
+
+#pageHeader {
+background: transparent url(header.jpg) no-repeat center top;
+border:0px dotted #999999;
+width:630px;
+height:387px;
+}
+
+#intro {
+width:400px;
+margin:0 0 0 0;
+border:0px dotted #999999;
+}
+
+#quickSummary .p2 {
+border:0px solid #000000;
+margin:-110px 0 95px 288px;
+padding: 0 0 0 15px;
+text-transform: uppercase;
+width:290px;
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:10px;
+font-weight:normal;
+color:#999999;
+background: transparent url(bullet.jpg) no-repeat 0% 28%;
+}
+
+#supportingText {
+width:350px;
+margin:0 0 0 0;
+}
+
+#preamble, #explanation, #participation, #benefits, #requirements {
+border-bottom:0px dotted #999999;
+position:relative;
+width:350px;
+margin:0 0 0 60px;
+}
+
+#requirements {
+margin-bottom:35px;
+}
+
+#preamble h3 {
+background-image: url(title01.jpg);
+background-repeat: no-repeat;
+background-position: left top;
+width:286px;
+height:64px;
+margin-bottom:-5px;
+}
+
+#explanation h3 {
+background-image: url(title02.jpg);
+background-repeat: no-repeat;
+background-position: left top;
+width:286px;
+height:66px;
+margin-bottom:-5px;
+}
+
+#participation h3 {
+background-image: url(title03.jpg);
+background-repeat: no-repeat;
+background-position: left top;
+width:286px;
+height:66px;
+margin-bottom:-5px;
+}
+
+#benefits h3 {
+background-image: url(title04.jpg);
+background-repeat: no-repeat;
+background-position: left top;
+width:286px;
+height:66px;
+margin-bottom:-5px;
+}
+
+#requirements h3 {
+background-image: url(title05.jpg);
+background-repeat: no-repeat;
+background-position: left top;
+width:286px;
+height:66px;
+margin-bottom:-5px;
+}
+
+#pageHeader h1, #pageHeader h2, #quickSummary .p1, #preamble h3 span, #explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span {
+display:none;
+}
+
+p {
+color: #999999;
+font-size:11px;
+font-weight:normal;
+line-height:1.4em;
+font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+#linkList {
+position: absolute;
+left:160px; 
+right:auto; 
+top: 400px;
+padding:0 0 0 0;
+margin-left: 270px;
+width: 180px;
+border:0px dotted #666666;
+background: transparent url(orchid.jpg) no-repeat bottom;
+height:810px;
+}
+
+#linkList ul {
+	text-align: left;
+	list-style: none;
+	margin: 0 0 0 0;
+	padding:0 0 15px 35px;
+	font-size:10px;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	border:0px dotted #666666;
+	width:120px;
+	}
+
+#linkList ul li{
+	margin: 0;
+	padding: 3px 0 3px 0;
+	border-bottom: 1px dotted #999999;
+}
+
+#linkList ul li a, #linkList ul li a:visited {
+	border-bottom: none;
+	outline:0;
+}
+
+#linkList ul li a:hover {
+	color: #999999;
+	text-decoration: underline;
+}
+
+#lselect {
+	font-size: 0.9em;
+}
+
+#lselect ul li {
+	padding: 3px 0 3px 20px;
+	background: transparent url(bullet.jpg) no-repeat 2% 25%;
+	color:#999999;
+}
+
+#lselect a {
+	display: block;
+	font-size: 1.1em;
+	color: #6D2542;
+}
+
+#lselect a.c {
+	display:inline;
+	line-height:5px;
+	margin:0;
+	padding:0;
+	font: normal 1.0em/0.9em Geneva, Arial, Tahoma, sans-serif;
+	color: #999999;
+	letter-spacing: -1px;
+}
+
+#lselect, #larchives {
+	margin-bottom: 5px;
+	border:0px solid #000000;
+}
+
+#larchives ul li a, #lresources ul li a {
+color:#6D2542;
+}
+
+#lselect h3, #larchives h3, #lresources h3 {
+	width: 196px;
+	height: 40px;
+	margin-bottom:-20px;
+	padding:10px 0 0 35px;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	text-transform: uppercase;
+	color:#999999;
+}
+
+#footer{
+	text-align: left;
+	padding:0 0 0 0;
+	margin:0 0 0 60px;
+}
+
+#footer a, #footer a:visited {
+	padding: 5px;
+	border: 1px solid #eeeeee;
+	background-color: #fff;
+	color: #666666;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:10px;
+}
+
+#footer a:hover {
+	padding: 5px;
+	border: 1px solid #eeeeee;
+	background-color: #eeeeee;
+	color: #999999;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	text-decoration: none;
+}
+
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6{
+display:none;
+}

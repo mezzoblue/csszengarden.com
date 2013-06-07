@@ -1,0 +1,243 @@
+/* css Zen Garden submission 163 - 'Like the Sea', by Lars Daum, http://www.redrotate.de/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Lars Daum */
+/* Added: Apr. 15th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #FBFBE5 url(grass.gif) right bottom fixed no-repeat;
+    color: #566047;
+}
+a, a:link, a:visited {
+    color: #566047;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active, a:focus {
+    color: #566047;
+}  
+.p5 span a {
+    font-weight: bold;
+}
+p {
+    margin-bottom: 10px;
+    line-height: 19px;
+    font-size: 70%;
+}
+acronym {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: none;
+}
+#container {
+    position: relative;
+    margin: auto;
+    text-align: left;
+    background: #FBFBE5 url(container_bg.gif) center top repeat-y;
+    width: 760px;
+}
+#pageHeader {
+    text-align: center;
+    background: #8C9777 url(page_header_bg.jpg) center top no-repeat;
+    height: 300px;
+}
+#pageHeader h1 span, #pageHeader h2 span {
+    display: none;
+}
+#quickSummary .p1 {
+	position: absolute;
+    top: 65px;
+    left: 40px;
+    font-weight: bold;
+    color: #FBFBE5;
+    width: 475px;
+}
+#quickSummary .p2 span {
+	position: absolute;
+	color: #566047;
+	font-size: 100%;
+	text-align: left;
+	top: 245px;
+    left: 530px;
+}
+#preamble {
+    margin: -40px 50px 20px 265px;
+    padding: 20px 20px 10px;
+    border: 3px solid #8C9777;
+    background: #FBFBE5;
+}
+#preamble h3 {
+    margin-bottom: 10px;
+    height: 32px;
+    background: transparent url(h3_preamble.gif) left top no-repeat;
+    border-bottom: 1px solid #7D8965;
+}
+#preamble h3 span {
+    display: none;
+}
+#supportingText {
+    margin-left: 230px;
+    padding: 0 0 35px 35px;
+}
+#supportingText h3 span {
+    display: none;
+}
+#explanation, #participation, #benefits, #requirements {
+    padding-right: 50px;
+}
+#explanation h3 {
+    margin-bottom: 10px;
+    height: 32px;
+    background: transparent url(h3_explanation.gif) left top no-repeat;
+    border-bottom: 1px solid #7D8965;
+}
+#participation h3 {
+    margin-bottom: 10px;
+    height: 32px;
+    background: transparent url(h3_participation.gif) left top no-repeat;
+    border-bottom: 1px solid #7D8965;
+}
+#benefits h3 {
+    margin-bottom: 10px;
+    height: 32px;
+    background: transparent url(h3_benefits.gif) left top no-repeat;
+    border-bottom: 1px solid #7D8965;
+}
+#requirements h3 {
+    margin-bottom: 10px;
+    height: 32px;
+    background: transparent url(h3_requirements.gif) left top no-repeat;
+    border-bottom: 1px solid #7D8965;
+}
+#footer {
+    margin: 0 0 -55px -265px;
+    padding: 20px 20px 0 530px;
+    text-align: center;
+    clear: both;
+    font-size: 70%;
+    background: #FBFBE5 url(footer_bg.jpg) center top no-repeat;
+    height: 166px;
+    
+    voice-family: "\"}\"";
+    height: 146px;
+    voice-family: "\"}\"";
+}
+#linkList {
+    position: absolute;
+    top: 275px;
+    left: 64px;
+    width: 138px;
+}
+#linkList h3 span {
+    display: none;
+}
+#linkList h3 {
+    margin-top: 25px;
+    width: 138px;
+    height: 30px;
+    border-bottom: 1px solid #7D8965; 
+}
+h3.select {
+    margin-bottom: 5px;
+    background: transparent url(h3_select.gif) left center no-repeat;
+}
+h3.archives {
+    margin-bottom: 5px;
+    background: transparent url(h3_archives.gif) left center no-repeat;
+}
+h3.resources {
+    margin-bottom: 5px;
+    background: transparent url(h3_resources.gif) left center no-repeat;
+}
+#linkList ul {
+    list-style: none;
+}
+#lselect ul li {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 70%;
+    color: #8C9777;
+    border-bottom: 1px solid #8C9777;
+}
+#linkList a.c, #linkList a.c:link, #linkList a.c:visited, #linkList a.c:hover, #linkList a.c:active, #linkList a.c:focus {
+    display: inline;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    text-decoration: none;
+    color: #8C9777;
+    background-image: none;
+}
+#lselect ul li a, #lselect ul li a:link, #lselect ul li a:visited {
+    display: block;
+    clear: both;
+    padding: 0 0 2px 20px;
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #566047;
+    background: transparent url(lselect_a_bg.gif) left center no-repeat;
+}
+#lselect ul li a:hover {
+    text-decoration: none;
+}
+#lselect ul li a, #lselect ul li a:active, #lselect ul li a:focus {
+    display: block;
+    clear: both;
+    padding: 0 0 2px 20px;
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #566047;
+    background: transparent url(lselect_a_bg.gif) left center no-repeat;
+}
+#larchives ul li {
+    margin-bottom: 5px;
+    font-size: 70%;
+    color: #8C9777;
+}
+#larchives ul li a, #larchives ul li a:link, #larchives ul li a:visited {
+    font-weight: bold;
+    color: #8C9777;
+    text-decoration: underline;
+}
+#larchives ul li a:hover {
+    text-decoration: none;
+}
+#larchives ul li a:active, #larchives ul li a:focus {
+    font-weight: bold;
+    color: #8C9777;
+    text-decoration: underline;
+}
+#lresources ul li {
+    margin-bottom: 5px;
+    font-size: 70%;
+    color: #8C9777;
+}
+#lresources ul li a, #lresources ul li a:link, #lresources ul li a:visited {
+    font-weight: bold;
+    color: #8C9777;
+    text-decoration: underline;
+}
+#lresources ul li a:hover {
+    text-decoration: none;
+}
+#lresources ul li a:active, #lresources ul li a:focus {
+    font-weight: bold;
+    color: #8C9777;
+    text-decoration: underline;
+}

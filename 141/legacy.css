@@ -1,0 +1,158 @@
+/* css Zen Garden submission 141 - 'Golden Cut', by Petr Stanciek, http://www.pixy.cz/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Petr Stanciek */
+/* Added: Dec. 16th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+body {
+	margin:0;
+	padding:0;
+	background: #819EFF url("bkgr1.jpg") 7px 0 repeat;
+	color: #333;
+	font: 100%/1.67 "palatino linotype", palatino, serif;
+	}
+
+a { color: #819EFF; text-decoration:underline; }
+a:visited { color: #8A8D99; }
+a:hover { color: #01228D; }
+
+abbr, acronym {
+	color:#B36D00;
+	font-style:italic;
+	cursor:help;
+	}
+a abbr, a acronym { color:inherit }
+
+#container { 
+	position:relative;
+	width: 770px;
+	margin: 30px auto 2.5em 7px; padding: 0;
+	background: url("strips.jpg") 474px 0 repeat-y;
+	border-left:1px solid #FFD99E;
+	border-bottom:1px solid #819EFF;
+	}
+/*FFDAA0*/
+
+/* INTRO */
+
+#intro {
+	width:474px; 
+	margin: 0; padding:340px 0 0 0;
+	background: white url("header.jpg") top left no-repeat;
+	}
+#pageHeader { display:none }
+#quickSummary .p1 { display:none }
+#quickSummary .p2 {
+	position:absolute; top: 195px; left: 474px; z-index:10;
+	width:296px; margin:0;
+	font-size:70%;
+	line-height: 1.1;
+	text-align:center;
+	color:white;
+	}
+#quickSummary .p2 a {
+	white-space: nowrap;
+	color: #FFF5D9;
+	}
+#quickSummary .p2 a:hover { color: #01228D; }
+
+#preamble, #explanation, #participation, #benefits, #requirements {
+	padding: 0 1em 1px 2em;
+	/* 1px bottom padding due to margin-collpasing bug in Opera */
+	}
+
+#intro h3, #supportingText h3 {
+	margin: 1.5em 0 1em 0; padding:0;
+	height: 30px;
+	background: url("ttls.gif") 0 0 no-repeat;
+	}
+#intro h3 span, #supportingText h3 span { display:none }
+
+#preamble h3 { margin-top:0; }
+#explanation h3 { background-position: 0 -50px; }
+#participation h3 { background-position: 0 -100px; }
+#benefits h3 { background-position: 0 -150px; }
+#requirements h3 { background-position: 0 -200px; }
+
+#intro p, #supportingText p {
+	margin: 0.7em 0;
+	font-size:90%;
+	}
+
+/* TEXT */
+
+#supportingText {
+	width:475px;
+	margin: 0; padding:1px 0 1em 0;
+	background: white;
+	}
+
+#footer {
+	position:absolute; bottom: -1.5em; right: 0;
+	font: 75%/1 sans-serif;
+	white-space:nowrap;
+	}
+#footer a {
+	padding:0.2em 0.3em;
+	background:#819EFF;
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+	}
+#footer a:hover { color:white; background: #01228D; }
+
+/* LINKS */
+
+#linkList {
+	position:absolute; top: -20px; left: 474px;
+	width:296px;
+	padding-top:290px;
+	font-size: 85%;
+	line-height: 1.5;
+	background: url("boy.jpg") 0 0 no-repeat;
+	}
+
+#linkList h3 {
+	margin: 3em 0 1em 27px; padding:0;
+	height: 20px;
+	background: url("ttls2.gif") 0 0 no-repeat;
+	}
+#linkList h3 span { display:none }
+#lselect h3 { margin-top:0; }
+#larchives h3 { background-position: 0 -50px; }
+#lresources h3 { background-position: 0 -100px; }
+
+#linkList ul {
+	list-style-type:none;
+	margin:0; padding:0;
+	}
+#linkList li {
+	list-style-type:none;
+	margin:0.5em 0 0.5em 120px; padding:0;
+	}
+
+#linkList li a {
+	display:block;
+	margin: 0 0 0 -25px; padding: 0 0 0 25px;
+	font-weight:bold;
+	font-size:100%;
+	color:#666;
+	background: url("bull.gif") left center no-repeat;
+	}
+#linkList li a.c {
+	display: inline; margin:0; padding:0;
+	background: transparent;
+	font-size:100%;
+	font-weight:normal;
+	font-style:italic;
+	font-variant:small-caps;
+	color:#819EFF;
+	}
+#linkList li a:hover { color: #01228D; }

@@ -1,0 +1,271 @@
+/* css Zen Garden submission 142 - 'Invasion of the Body Switchers' by Andy Clarke, http://www.stuffandnonsense.co.uk/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Andy Clarke */
+/* Added: Dec. 16th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+* {
+margin : 0;
+padding : 0;
+}
+
+body    {
+font : 75% "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+background : #000 url(body-bg.jpg) repeat-y top center;
+color : #fff;
+font-variant : small-caps;
+text-align : center; /* That Explorer Malarkey */
+}
+
+h1, h2, h3, p, ul {
+padding : 0.5em 0;
+}
+
+/* hx */
+
+div#pageHeader h1 { display : none; }
+div#pageHeader h2 { display : none; }
+
+h3 { padding : 0; text-indent : -3000px; }
+
+div#preamble h3 { 
+width : 195px;
+height : 140px;
+background : url(preamble-h3.gif) no-repeat left bottom; 
+}
+
+div#explanation h3 {
+float : left; 
+width : 210px;
+height : 135px;
+margin-right : 10px;
+background : url(explanation-h3.gif) no-repeat; 
+}
+
+div#participation h3 { 
+float : right;
+width : 230px;
+height : 200px;
+background : url(participation-h3.gif) no-repeat; 
+}
+
+div#requirements h3 { 
+float : left;
+width : 230px;
+height : 180px;
+background : url(requirements-h3.gif) no-repeat; 
+}
+
+div#lselect h3 {
+width : 200px;
+height : 45px;
+background : url(lselect-h3.gif) no-repeat;
+}
+
+div#lresources h3 {
+width : 90px;
+height : 20px; 
+background : url(lresources-h3.gif) no-repeat;
+}
+
+div#larchives h3 {
+width : 90px;
+height : 20px; 
+background : url(larchives-h3.gif) no-repeat;
+}
+
+/* p */
+
+p  {
+font-size : 100%;
+line-height : 110%;
+}
+
+div#quickSummary p.p1 { display : none; }
+
+div#quickSummary p.p2 { 
+float : right; 
+width : 400px; 
+padding-right: 10px;
+text-align : right; 
+}
+
+div#preamble p.p1, div#preamble p.p2 { display : none; }
+
+div#preamble p.p3 {
+width : 220px; 
+font-size : 120%;
+}
+
+div#explanation p.p1 { display : none; }
+
+div#explanation p.p2 { 
+margin-left : 230px;
+line-height : 110%;
+}
+
+div#participation p.p1, div#participation p.p2 { display : none; }
+div#participation p.p3 { margin-right : 240px; }
+div#requirements p.p1, div#requirements p.p2, div#requirements p.p4 { display : none; }
+div#requirements p.p3 { margin-left : 240px; } 
+div#requirements p.p5 { clear : both; margin-left : 240px; }
+
+abbr, acronym {
+text-decoration : none;
+border-bottom : 1px dotted #ccc;
+cursor : help;
+}
+
+.accesskey {
+text-decoration: underline;
+}
+
+/* anchors, yo ho me hearties */
+
+a:link, a:visited {
+color : #fdf4b3;
+text-decoration : none;
+}
+
+div#lselect a:link, div#lselect a:visited { 
+display : block;
+font-variant : small-caps;
+}
+
+div#lselect a:link.c, div#lselect a:visited.c { 
+display : inline;
+font-size : 190%;
+letter-spacing : -1px;
+color : #fff;
+}
+
+div#quickSummary p.p2 a {
+font-size : 160%;
+}
+
+div#footer a:link, div#footer a:visited { 
+padding : 0px 4px;
+font-size : 90%;
+background : #666;
+border : 1px solid #999;
+color : #ccc;
+text-decoration : none;
+}
+
+div#footer a:hover { 
+background : #555;
+color : #ccc;
+text-decoration : none;
+}
+
+a:hover {
+color : #fff;
+text-decoration : underline;
+}
+
+/* ul */
+
+ul {
+list-style-type : disc;
+padding : 0.5em 10px;
+}
+
+div#linkList ul {
+margin-top : 20px;
+padding-left : 10px;
+}
+
+li { 
+list-style-type : none; 
+line-height : 200%;
+}
+
+div#lselect li {
+padding-bottom : 10px;
+font-variant : normal;
+text-align : right;
+line-height : 16px;
+}
+
+/* layout */
+
+div#container {
+position : relative;
+width : 750px;
+margin : 0 auto;
+text-align : left;
+background : url(container-bg.jpg) no-repeat 0 51px;
+border-bottom : 5px solid #fdf4b3;
+}
+
+div#pageHeader {
+width : 750px;
+height : 50px;
+background : url(header-bg.jpg) no-repeat;
+border-bottom : 1px solid #fdf4b3;
+}
+
+div#quickSummary {
+width : 750px;
+}
+
+#preamble {
+margin : 0 50px 0 470px;
+}
+
+#explanation {
+margin : 0 50px 0 380px;
+}
+
+#participation, #benefits, #requirements {
+margin : 40px 50px 0 280px;
+}
+
+div#preamble {
+margin-top : 170px;
+}
+
+div#supportingText {
+margin-top : 140px;
+}
+
+div#explanation, div#participation, div#requirements {
+margin : 40px 40px 0 250px;
+}
+
+div#benefits {
+display : none;
+}
+
+div#footer {
+margin-top : 20px;
+padding : 20px 0;
+background : url(footer-bg.gif) no-repeat top center;
+text-align : center;
+}
+
+div#linkList {
+position : absolute;
+top : 70px;
+left : 0px;
+width : 200px;
+}
+
+div#larchives {
+padding : 60px 0 0 20px;
+}
+
+div#lresources {
+padding : 50px 0 0 20px;
+}
+
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv1, #extraDiv5 {
+display : none;
+}

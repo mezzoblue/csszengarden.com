@@ -1,0 +1,252 @@
+/* css Zen Garden submission 112 - 'Mountain Resort', by Jordi Romkema, http://www.jor-on.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Jordi Romkema */
+/* Added: July 29th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+
+
+/* Basic */
+body { 
+	font: 9pt Arial, Helvetica, sans-serif; 
+	color: #000000; 
+	background: #00004A url(bg.gif) repeat fixed left top;
+	margin: 0px;
+}
+
+p { 
+	font: 9pt Arial, Helvetica, sans-serif; 
+	text-align: left;
+}
+
+a:link, a:visited { 
+	color: #00004A;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:hover, a:active { 
+	color: #C17535;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* Hiding elements we don't want to see */
+
+h1, h2, h3 span, #linkList h3.select span, #linkList h3.archives span, #linkList h3.resources span, #extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+	display: none;
+}
+
+/* Specific Divs */
+
+#container {
+	display: block;
+	position: relative;
+	width: 700px;
+	margin: 0px auto;
+	background: #FFFFFF url(bgend.jpg) no-repeat left bottom;
+	padding-bottom: 20px;
+}
+
+#intro { 
+	background: #FFFFFF url(header.jpg) no-repeat 0 0;
+	padding-top: 471px;
+}
+
+#quickSummary {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 700px;
+	color: #B9E0FF;
+}
+
+#quickSummary a:link, #quickSummary a:visited {
+	color: #B9E0FF;
+	font-weight: bold;
+	text-decoration: underline;
+}
+	
+#quickSummary a:hover, #quickSummary a:active {
+	color: #00004A;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#quickSummary p.p1 {
+	display: none;
+}
+
+#quickSummary p.p2 {
+	font-size: 8pt;
+	text-align: right;
+	margin: 5px;
+}
+
+#preamble, #supportingText  {	
+	width: 410px;
+	text-align: left;
+}
+
+/* Header Images */
+
+#preamble { 
+	background:url(preamble.jpg) no-repeat left top;
+	padding:74px 10px 5px 10px;		
+}
+
+#explanation { 
+	background:url(explanation.jpg) no-repeat left top;
+	padding:44px 10px 0px;
+}
+
+#participation { 
+	background:url(participation.jpg) no-repeat left top;
+	padding:44px 10px 0px;
+}
+
+#benefits { 
+	background:url(benefits.jpg) no-repeat left top;
+	padding:44px 10px 0px;
+}
+
+#requirements { 
+	background:url(requirements.jpg) no-repeat left top;
+	padding:44px 10px 10px 10px;
+}
+
+/* Footer */
+
+#footer {
+	text-align: center;
+	font-size: 8pt;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px;
+}
+
+#footer a:link, #footer a:visited { 
+	margin-right: 15px;
+	color: #C17535;
+}
+
+#footer a:hover { 
+	margin-right: 15px;
+	color: #00004A;
+}
+
+/* Navigation */
+
+#linkList {
+	position: absolute;
+	top: 471px;
+	left: 437px;
+	width: 263px;
+	background-image: url(bglist.gif);
+}
+
+#linkList2 {
+	font: 8pt Arial, Helvetica, sans-serif;
+	color: #C17535;
+	width: 263px;
+	background: url(listend.jpg) no-repeat left bottom;
+}
+
+#linkList h3 { 
+	margin: 0; 
+	width: 263px; 
+	height: 32px; 
+}
+
+/* Navigation Images */
+
+#linkList h3.select {
+	background: url(select.gif) no-repeat left top; 
+	height: 177px;
+}
+
+#linkList h3.archives {
+	background: url(archives.gif) no-repeat left top;
+}
+
+#linkList h3.resources {
+	background: url(resources.gif) no-repeat left top;
+}
+
+#linkList h3.favorites {
+	background: url(favorites.gif) no-repeat left top;
+}	
+
+/* Spacer */
+
+#lresources {
+	padding-bottom: 176px;
+}
+
+/* Navigation Lists */
+
+#linkList ul {
+	margin: 0px 0px 0px 28px;
+	padding: 0px;
+	width: 211px;
+}
+
+#linkList li {
+	display: block;
+	padding: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #D2C598;
+}
+
+#linkList li a { 
+	display: block;
+	color: #5B2C02;
+}
+
+#lselect li a:link, #lselect li a:visited, #lfavorites li a:link, #lfavorites li a:visited {
+	text-transform: uppercase;
+	color: #5B2C02;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#larchives li a:link, #larchives a:visited, #lresources li a:link, #lresources li a:visited {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#linkList li a:hover, #linkList li a:active { 
+	color: #000000;
+}
+
+#linkList li a.c:link, #linkList li a.c:visited {
+	color: #C17535;
+	font-weight: bold;
+	display: inline;
+	text-transform: none;
+}
+
+#linkList li a.c:hover, #linkList li a.c:active {
+	color: #000000;
+}
+
+#linkList li:hover {
+	background: #D2C598;
+	color: #FFFFFF;
+}
+
+#linkList li:hover a.c:link, #linkList li:hover a.c:visited {
+	color: #FFFFFF;
+}
+
+#linkList li:hover a:link, #linkList li:hover a:visited {
+	color: #000000;
+}

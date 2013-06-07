@@ -1,0 +1,385 @@
+/* css Zen Garden submission 096 - 'Japanese Garden', by Masanori Kawachi, http://www.jugglinglife.org/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Masanori Kawachi */
+/* Added: April 9th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+body {
+	width: 670px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	background-image: url(main_bg.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #666666;
+	letter-spacing: 0px
+}
+a:link {color: #996600; text-decoration: none;}
+a:visited {color: #996600; text-decoration: none;}
+a:hover {color: #996600; text-decoration: underline;}
+a:active {color: #996600; text-decoration: none;}
+li {
+	margin: 0px;
+	width: auto;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 12px;
+	background-image: url(pointer.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	font-weight: bold;
+	font-size: 12px;
+}
+#container {
+	margin: 0px;
+	padding: 0px 0px 20px 0px;
+	font-size: 11px;
+	line-height: 1.4;
+	width: 661px;
+	clear: both;
+	background-image: url(rightside_bg.gif);
+	background-repeat: no-repeat;
+	background-position: 322px 0px;
+}
+#pageHeader {
+	background-image: url(logo.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+	height: 83px;
+	width: 322px;
+	float: left;
+}
+#pageHeader h1 {
+	margin: 0px;
+	padding: 0px;
+	display:none
+}
+#pageHeader h2 {
+	margin: 0px;
+	padding: 0px;
+	display:none
+}
+#quickSummary {
+	margin: 10px 0px 0px;
+	padding: 0px 0px 0px 22px;
+	float: left;
+	width: 301px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 301px;
+
+}
+#quickSummary .p1 {
+	margin: 0px;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+}
+#quickSummary .p2 {
+	margin: 0px;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	font-size: 12px;
+	font-weight: bold;
+}
+#preamble {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	width: 661px;
+	clear: both;
+}
+#preamble h3 {
+	display: none;
+}
+#preamble .p1 {
+	margin: 0px 0px 0px 345px;
+	background-image: url(tit_01.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 48px 0px 0px;
+	width: 301px;
+}
+#preamble .p2 {
+	margin: 0px 0px 0px 345px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	width: 301px;
+}
+#preamble .p3 {
+	margin: 0px 0px 0px 345px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	width: 301px;
+}
+#supportingText {
+	margin: 0px;
+	padding: 0px;
+	width: 661px;
+}
+#explanation {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+}
+#explanation h3 {
+	display: none;
+}
+#explanation .p1 {
+	margin: 0px 0px 0px 345px;
+	background-image: url(tit_02.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 48px 0px 0px;
+	width: 301px;
+}
+#explanation .p2 {
+	margin: 0px 0px 0px 345px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	width: 301px;
+}
+#participation {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+}
+#participation h3 {
+	margin: 0px;
+	padding: 0px;
+	display: none;
+}
+#participation .p1 {
+	margin: 0px 0px 0px 345px;
+	background-image: url(tit_03.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 48px 0px 0px;
+	width: 301px;
+}
+#participation .p2 {
+	margin: 0px 0px 0px 345px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	width: 301px;
+}
+#participation .p3 {
+	margin: 0px 0px 0px 345px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	width: 301px;
+}
+#benefits {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	width: 301px;
+}
+#benefits h3 {
+	display: none;
+}
+#benefits .p1 {
+	margin: 0px 0px 0px 345px;
+	background-image: url(tit_04.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 48px 0px 0px;
+	width: 301px;
+}
+#requirements {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	width: 301px;
+}
+#requirements h3 {
+	margin: 0px;
+	padding: 0px;
+	display: none;
+}
+#requirements .p1 {
+	margin: 0px 0px 0px 345px;
+	background-image: url(tit_05.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 48px 0px 0px;
+	width: 301px;
+}
+#requirements .p2 {
+	margin: 0px 0px 0px 345px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	width: 301px;
+}
+#requirements .p3 {
+	margin: 0px 0px 0px 345px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	width: 301px;
+}
+#requirements .p4 {
+	margin: 0px 0px 0px 345px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	width: 301px;
+}
+#requirements .p5 {
+	margin: 0px 0px 0px 345px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	width: 301px;
+}
+
+#linkList {
+	position: absolute;
+	top: 83px;
+	right: 21px;
+	left: 10px;
+	width: 214px;
+	background-image: url(leftside_bg.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#lselect {
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin: 0px;
+}
+#lselect h3 {
+	margin: 0px;
+	padding: 0px;
+	display: none;
+}
+#lselect ul {
+	width: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 30px;
+	padding-bottom: 0px;
+}
+#larchives {
+	background-image: url(stit_02.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 10px 0px 0px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#larchives h3 {
+	margin: 0px;
+	padding: 0px;
+	display: none;
+
+}
+#larchives ul {
+	width: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+#lresources {
+	background-image: url(stit_03.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 10px 0px 0px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#lresources h3 {
+	margin: 0px;
+	padding: 0px;
+	display: none;
+
+}
+#lresources ul {
+	width: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+#footer {
+	margin: 0px 0px 0px 345px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	width: 301px;
+}
+#extraDiv1 {
+	background-image: url(bg_01.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	position: absolute;
+	top: 83px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	height: 208px;
+	width: 10px;
+}
+#extraDiv2 {
+	background-image: url(bg_02.gif);
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	left: 224px;
+	top: 83px;
+	height: 423px;
+	width: 98px;
+}

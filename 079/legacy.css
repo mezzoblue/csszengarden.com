@@ -1,0 +1,31 @@
+/* css Zen Garden submission 079 - 'Green Tea' by Amy Rae Som, http://www.avisualmind.com */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics and photos copyright 2004, Amy Rae Som */
+/* Added: February 15th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+body {background:#a2c4a3 url(flower_bg.jpg) repeat-x;font-family:"Trebuchet MS", Arial, Geneva, sans-serif;font-size:70%;color:#030;}
+#pageHeader {position:absolute;left:20px;top:39px;width:222px;height:63px;background:url(cssZenGarden.gif) no-repeat;}
+#pageHeader span {margin-left:-1000px;}
+#quickSummary .p1 {position:absolute;left:0;top:114px;width:750px;height:16px;background:url(an_example.gif) no-repeat;}
+#quickSummary .p1 span {margin-left:-1000em;}
+#quickSummary .p2 {position:absolute;left:116px;top:528px;width:88px;height:42px;font-weight:bold;}
+#preamble {position:absolute;left:20px;top:145px;width:222px;height:298px;overflow:auto;}
+h3 {background:transparent;font:italic normal 1.4em "Times New Roman",Times,serif;margin:0;border-bottom:1px solid #a2c4a3;color:#603;}
+p {margin:0 0 6px 0; line-height:1.5em;}
+div {margin:0;}
+a {background:transparent;color:#060;}
+#supportingText {position:absolute;left:268px;top:145px;width:63%;height:297px;padding-right:4px;overflow:auto;}
+#linkList {position:absolute;left:268px;top:459px;width:63%;}
+#linkList a {color:#030;}
+#linkList a.c {text-decoration:none;}
+#linkList a.c:hover {text-decoration:underline;}
+#linkList h3 {background:transparent;font-size:1.3em;margin:0.6em 0 0;border-bottom:1px solid #82B084;}
+#linkList ul {margin:0;padding:0.2em 0;}
+#linkList li {list-style-type:none;display:inline;background:url(greenarrow.gif) 0% 50% no-repeat;margin:0;padding:0 0 0 1.3em;}

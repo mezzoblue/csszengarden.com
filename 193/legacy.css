@@ -1,0 +1,178 @@
+/* css Zen Garden submission 193 - 'Leggo My Ego', by Jon Tan, http://www.gr0w.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Jon Tan */
+/* Added: February 15th, 2006 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* 
+css Zen Garden 'Leggo My Ego' By Jon Tan
+
+Knowledge is like Lego: Bits of data. Design is how you present the bits. Wisdom is understanding why.
+
+It's autumn in the Zen Garden. CSS is bedding in to the World Wide Web for the duration. Bits of data are falling through the community on the breeze. The debates still flow beneath the bridge that the ancients built between design and structure but as the sun rises, the message is clear: CSS is beautiful.
+
+I stand on the shoulders of those who came before. There are too many to list here but if you search for mezzoblue, stopdesign, tantek, zeldman, meyerweb, southcot, pwhitrow, joe clark, alistapart, carter and cone or css you will probabaly find most of them. Thank you to them all.
+*/
+
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+
+/* start the fun */
+
+body { 
+margin: 0 0 30px 0;
+padding:0;
+border:0;
+font: 80% tahoma,sans-serif;
+color: #7A745A;
+line-height:1.5em;
+background: #fff url(bg.gif) top center no-repeat;
+text-align:center;
+}
+
+/* layers */
+
+#container{
+position:relative;
+width:750px;
+margin: 270px auto 0 auto;
+background: url(bg_container.gif) bottom left no-repeat;
+}
+
+#supportingText{
+margin: 0 0 0 405px;
+text-align:left;
+}
+
+#preamble{
+position:absolute;
+top:120px;
+left:0;
+width:170px;
+text-align:left;
+}
+
+#linkList{
+position:absolute;
+top:120px;
+left:205px;
+width:200px;
+text-align:left;
+}
+
+#footer{
+height:3.5em;
+background: url(bg_p_p2.gif) right no-repeat;
+margin-top:2em;
+}
+
+/* display:none content */
+
+#intro h2, #quickSummary p.p1{display:none;}
+
+/* headers and paragraphs */
+
+h1, #explanation h3, #preamble h3, #supportingText h3, #linkList h3
+					{margin:0;text-indent: -9999px;}
+
+h1{
+height:120px;
+background: url(bg_h1.gif) no-repeat;
+}
+
+h3					{font-size:150%}
+#explanation h3		{height:6em;background: url(bg_h3_ex.gif) no-repeat;}
+#preamble h3		{height:220px;background: url(bg_h3_preamble.gif) top no-repeat;}
+#participation h3	{height:30px;background: url(bg_h3_participation.gif) no-repeat;}
+#benefits h3		{height:30px;background: url(bg_h3_benefits.gif) no-repeat;}
+#requirements h3	{height:30px;background: url(bg_h3_requirements.gif) no-repeat;}
+h3.select			{height:120px;background: url(bg_h3_select.gif) no-repeat;}
+h3.archives			{height:30px;background: url(bg_h3_archives.gif) no-repeat;}
+h3.resources		{height:30px;background: url(bg_h3_resources.gif) no-repeat;}
+
+p{
+letter-spacing:+0.05em;
+word-spacing:0.1em;
+}
+#quickSummary p.p2 {
+float:right;
+width:70px;
+height:4em;
+margin:75px 0 0 0;
+padding-left:40px;
+text-align:right;
+font: 80% tahoma,sans-serif;
+line-height:1.1em;
+letter-spacing:0;
+word-spacing:0;
+background: url(bg_p_p2.gif) top left no-repeat;
+}
+#benefits p, #preamble p{
+letter-spacing:0;
+font:italic 120% georgia,serif;
+}
+
+/* hyperlinks and lists*/
+
+a{
+color:#d25c3e;
+text-decoration:none;
+border-bottom:1px dotted #d25c3e;
+}
+a:hover{
+color:#0cf;
+text-decoration:none;
+border-bottom:1px solid #ddd1a8;
+}
+
+/*So the IE audience sees somthing visual for acronyms */
+acronym{cursor:help;border-bottom:1px dotted #ccc;}
+
+#lselect a{
+font:normal 100% tahoma,sans-serif;
+text-transform:uppercase;
+display:block;
+text-decoration:none;
+background: #fff0f0;
+padding-left:0.25em;
+margin-left:-0.25em;
+border-bottom:0;
+}
+#lselect a:hover{
+background:#f3efe0;
+}
+
+#lselect a.c{
+font: italic 100% georgia,serif;
+text-transform:none;
+color:#d25c3e;
+display:inline;
+padding-left:0;
+margin-left:0;
+background:none;
+}
+#lselect a.c:hover{
+color:#0cf;
+background:none;
+border-bottom:1px solid #ddd1a8;
+}
+
+#linkList ul{
+list-style:none;
+padding:0;
+margin-right:40px;
+margin-left:0.5em;
+}
+
+#linkList ul li{
+margin: 0.5em 0;
+padding: 0.3em 0;
+font: normal 90% tahoma,serif;
+}

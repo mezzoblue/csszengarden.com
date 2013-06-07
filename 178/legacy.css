@@ -1,0 +1,297 @@
+/* css Zen Garden submission 178 - 'Pinups', by Emiliano Pennisi, http://www.peamarte.it/02/03.html */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Emiliano Pennisi */
+/* Added: July 9th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* css Zen Garden - 'Pinups', by Emiliano Pennisi
+All illustrations and design was made by Emiliano Pennisi, MetroStation Design, for more info visit --> http://www.peamarte.it/02/03.html
+The image of the first list it has been taken give: Stylegala Bullet Madness list 
+************************************************************************************/
+/* General */         
+body{
+	font-family: "Lucida Grande", Georgia, "Times New Roman", Times, serif;
+	font-size: 0.8em;
+	background: #d07b00;
+	text-align: center;
+	margin: 0;
+}
+body>#container{
+	margin-top: -20px;
+}
+
+/* General links */
+a:link,a:visited{
+	color: #000;
+	font-weight: bold;
+}
+
+a:hover{
+	color: #B74213;
+}
+
+/* Paragraphs */
+p{
+	line-height: 1.3em;
+	margin: 15px 0 0 10px;
+}
+
+acronym {
+	color: #B74213;
+	font-weight: bold;
+	font-size: 10px;
+	border-bottom: 1px dashed #B74213;
+}
+
+h3{
+	font-size: 12px;
+}
+
+/* Start layout rules */
+#preamble h3 span{
+	display: none;
+}
+
+#preamble h3{
+	background: url(01.gif);
+	width: 380px;
+	height: 72px;
+}
+
+/* Images replacement group */
+#explanation h3 span{
+	display: none;
+}
+
+#explanation h3{
+	background: url(02.gif);
+	width: 380px;
+	height: 60px;
+}
+
+#participation h3 span{
+	display: none;
+}
+
+#participation h3{
+	background: url(03.gif);
+	width: 380px;
+	height: 60px;
+}
+
+#benefits h3 span{
+	display: none;
+}
+
+#benefits h3{
+	background: url(04.gif);
+	width: 380px;
+	height: 60px;
+}
+
+#requirements h3 span{
+	display: none;
+}
+
+#requirements h3{
+	background: url(05.gif);
+	width: 380px;
+	height: 60px;
+}
+
+/* Container */
+#container{
+	position: relative;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -10px;
+}
+
+#quickSummary {
+	position: absolute;
+	top: 320px;
+	left: 44%;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Child Selector - compliant browser */
+#intro>#pageHeader{
+	width: 700px;
+}
+
+#pageHeader{
+	background: url(head.jpg);
+	width: 690px;
+	height: 356px;
+}
+
+#pageHeader h1 span,#pageHeader h2 span,#quickSummary .p1 span{
+	display: none;
+}
+
+#preamble,#supportingText{
+	text-align: left;
+	padding: 10px;
+}
+
+#preamble{
+	background: #ecca99;
+	width: 408px;
+	margin: -20px 0 0 214px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 388px;
+}
+
+/* Child Selector - compliant browser */
+#intro>#preamble{
+	margin: 0px 0 0 248px;
+}
+
+#supportingText{
+	background: #ecca99;
+	width: 408px;
+	margin: -10px 0 0 214px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 388px;
+}
+
+/* Child Selector - compliant browser */
+#container>#supportingText{
+	background: #ecca99;
+	width: 388px;
+	margin: -10px 0 0 248px;
+}
+
+#larchives li a, #lresources li a {
+	display: inline;
+	font-weight: normal;
+	font-size: 9px;
+	line-height: 15px;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+/* Navigation rules */
+#linkList{
+	position: absolute;
+	top: 350px; /*	bottom: 0;*/
+	left: 46px;
+	font-size: 10px;
+	background: #ecca99;
+	width: 200px;
+	background: #ecca99 url("bottom_linklist.gif") no-repeat left bottom;
+	padding-bottom: 24px;
+}
+
+/* Child Selector - compliant browser */
+#container>#linkList{
+	left: 41px;
+}
+
+#linkList ul{
+	text-align: left;
+	list-style: url(list.png);
+}
+
+#linkList a{
+	text-decoration: none;
+}
+
+#linkList  li {
+	margin: 0 0 5px -10px;
+	border-bottom: 1px solid #ebab6b;
+	background: #ecca99;
+	width: 150px;
+	padding-bottom: 5px;
+}
+
+#lselect li a {
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+#lselect li a:hover{
+	color: #d07b00;
+}
+
+#lselect .c {
+	text-transform: capitalize;
+	font-size: 10px;
+}
+
+#lselect a {
+	display: block;
+	font-weight: bold;
+}
+
+#lselect a.c {
+	display: inline;
+	font-weight: bold;
+	color: #B74213;
+}
+
+#larchives ul li,#lresources ul li{
+	border-bottom: none;
+}
+
+#larchives ul,#lresources ul{
+	list-style: url(star_blt.png);
+}
+
+#larchives ul li,#lresources ul li{
+	margin: 0 0 -5px -10px;
+}
+
+#larchives ul a,#lresources ul a{
+	color: #000;
+	font-weight: bold;
+}
+
+h3.select{
+	color: #ecca99;
+	background: url(bgh3sel.gif);
+	height: 14px;
+	text-align: left;
+	padding: 5px;
+}
+
+h3.archives,h3.resources{
+	color: #ECCA99;
+	background: url(bgh3.gif);
+	height: 14px;
+	text-align: left;
+	padding: 5px;
+	border-bottom: none;
+}
+
+/*Footer*/
+#footer{
+	background: url(footer.gif);
+	line-height: 45px;
+	height: 45px;
+	margin: 30px -10px -10px -10px;
+	padding: 0 10px 0 0;
+	font-weight: bold;
+	text-align: right;
+}
+
+#footer a{
+	text-transform: uppercase;
+	font-size: 9px;
+	color: #EFECDE;
+	text-decoration: none;
+}
+
+/* End code */

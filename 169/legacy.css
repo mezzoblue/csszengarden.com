@@ -1,0 +1,380 @@
+/* css Zen Garden submission 169 - 'Greece Remembrance', by Pierre-Leo Bourbonnais, http://www.kaligrafy.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Pierre-Leo Bourbonnais */
+/* Added: May. 31st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+body {
+	background: #30261d;
+	padding: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	width: 776px;
+	text-align:  center;
+	font: 12px Georgia, Times New Roman, Times, serif;
+	color: #ffffff;
+}
+
+#container {
+	background: repeat-y url(sculptures.jpg);
+	margin: 0px;
+	padding: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:  381px;
+	top: 381px;
+	width: 776px;
+	text-align: justify;
+	color: #362F27;
+	line-height: 19px;
+}
+
+#intro {
+	margin: 0px;
+	padding: 0px;
+	width: 589px;
+	background: repeat-y url(content_bkgd.jpg);
+	margin-left:  94px;
+	border-top: 1px none;
+	border-bottom: 1px none;
+}
+
+#pageHeader {
+	position: absolute;
+	top: 0px;
+	background: no-repeat center url(header.jpg);
+	height: 381px;
+	width: 776px;
+	margin: 0px;
+	padding: 0px;
+	margin-left: -94px;
+	right: auto;
+	left: auto;
+}
+
+
+#supportingText {
+	margin: 0px;
+	padding: 0px;
+	width: 589px;
+	background: repeat-y url(content_bkgd.jpg);
+	margin-left: 94px;
+	border-top: 1px none;
+	border-bottom: 1px none;
+	margin-top: -20px;
+}
+
+#quickSummary {
+	background: no-repeat url(top.jpg);
+	width: 589px;
+	height: 85px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.p1 {
+	text-indent: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.p2, .p3, .p4, .p5 {
+	text-indent: 22px;
+}
+
+h1, h2 {
+	display: none;
+}
+
+h3 span {
+	display: none;
+}
+
+#quickSummary p {
+	display: none;
+}
+
+#quickSummary p.p2 {
+	display: block;
+	width: 156px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 470px;
+	left: auto;
+	right: auto;
+	margin-left: 415px;
+	text-indent: 0px;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 10px;
+	line-height: 16px;
+	height: 50px;
+	font-style: oblique;
+}
+
+#quickSummary a {
+	padding: 0px;
+	margin: 0px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+#quickSummary a:hover {
+	margin: 0px;
+	padding: 0px;
+	color: #ebdccc;
+	font-style: italic;
+	border-bottom:  1px none;
+	text-decoration: none;
+}
+
+#quickSummary span {
+	margin: 0px;
+	padding: 0px;
+	padding-left: 5px;
+	display: block;
+}
+
+#preamble, #explanation, #participation, #benefits, #requirements {
+	margin: 0px;
+	padding: 0px;
+	width: 405px;
+}
+
+#preamble p, #explanation p, #participation p, #benefits p, #requirements p {
+	margin: 0px;
+	padding: 8px;
+	padding-left: 41px;
+	padding-right: 27px;
+}
+
+#preamble h3, #explanation h3, #participation h3, #benefits h3, #requirements h3 {
+	width: 362px;
+	height: 22px;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 5px;
+	margin-left: 38px;
+	margin-top: 20px;
+}
+
+#preamble h3 {
+	margin-top: 5px;
+	background: url(h3_preamble.gif) no-repeat;
+}
+
+#explanation h3 {
+	background: url(h3_explanation.gif) no-repeat;
+}
+
+#participation h3 {
+	background: url(h3_participation.gif) no-repeat;
+}
+
+#benefits h3 {
+	background: url(h3_benefits.gif) no-repeat;
+}
+
+#requirements h3 {
+	background: url(h3_requirements.gif) no-repeat;
+}
+
+#preamble {
+	padding-bottom: 20px;
+}
+
+#linkList {
+	position: absolute;
+	width: 139px;
+	margin: 0px;
+	padding: 0px;
+	top: 510px;
+	left: auto;
+	right:  auto;
+	font-size:  11px;
+	margin-left: 507px;
+	text-indent: 0px;
+	text-align: right;
+}
+
+#linkList h3 {
+	width: 139px;
+	height: 22px;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-top: 20px;
+	padding-right: 2px;
+}
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	margin-left: 0px;
+	width: 139px;
+}
+
+#linkList li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#linkList a {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	color: #B82A09;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#linkList a:hover {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	color: #741600;
+	text-decoration: none;
+}
+
+#lselect h3 {
+	margin-top: 2px;
+	background: url(h3_select.gif) no-repeat;
+}
+
+#larchives h3 {
+	background: url(h3_archives.gif) no-repeat;
+}
+
+#lresources h3 {
+	background: url(h3_resources.gif) no-repeat;
+}
+
+#larchives a, #lresources a {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+	text-decoration: none;
+	text-transform: none;
+}
+
+#larchives a:hover, #lresources a:hover {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+	text-decoration: none;
+	text-transform: none;
+}
+
+#linkList a.c {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+	font-style: italic;
+	color: #754f38;
+	text-decoration: none;
+	text-transform: none;
+}
+
+#linkList a.c:hover {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+	font-style: italic;
+	color: #462f22;
+	text-decoration: none;
+	text-transform: none;
+}
+
+a {
+	color: #B82A09;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #B82A09;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #754f38;
+}
+
+#footer {
+	width: 589px;
+	background: no-repeat url(bot.jpg) #30261d;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: -2px;
+	text-align: center;
+	padding-top: 54px;
+	text-indent: 0px;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	padding-bottom: 17px;
+}
+
+#footer a {
+	color: #362F27;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#footer a:hover {
+	color: #B82A09;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#requirements p.p5 {
+	position: relative;
+	bottom: -35px;
+	width: 589px;
+	text-indent: 0px;
+	text-align: center;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+#requirements p.p5 a {
+	color: #5d5144;
+	text-decoration: none;
+}
+
+#requirements p.p5 a:hover {
+	color: #B82A09;
+	text-decoration: none;
+}
+
+#intro acronym {
+	color: #5d5144;
+	font-style: italic;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+#supportingText acronym {
+	color: #5d5144;
+	font-style: italic;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+#linkList acronym {
+	border-bottom: none;
+	text-decoration: none;
+	font-style: oblique;
+}
