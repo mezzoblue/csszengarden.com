@@ -230,7 +230,7 @@ abbr:hover::after {
   vertical-align:top;
   text-align:left;
   padding:0px;
-  margin:5px;
+  margin:10px 5px;
   border-radius:10px;
   border:solid 2px #093299;
   box-shadow:0px 0px 10px #000;
