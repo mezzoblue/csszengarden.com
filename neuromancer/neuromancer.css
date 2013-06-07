@@ -33,7 +33,6 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  text-shadow:0px 0px 10px #000;
   font-family:'NeuropolX';
   font-weight:normal;
 }
@@ -112,6 +111,7 @@ abbr:hover::after {
   background:hsla(43,77%,57%,.2);
   border:solid 2px hsla(43,100%,68%,1);
   background-image:linear-gradient(hsla(43,77%,57%,0) 0%,hsla(43,77%,57%,.7) 100%);
+  text-shadow:1px 1px #000;
 }
 
 .intro header abbr {
@@ -221,34 +221,47 @@ abbr:hover::after {
 .main {
   float:none;
   overflow:hidden;
+  text-align:center;
 }
 
 .main div {
-  float:left;
+  display:inline-block;
   width:30%;
+  vertical-align:top;
+  text-align:left;
   padding:0px;
-  margin:10px;
+  margin:5px;
   border-radius:10px;
   border:solid 2px #093299;
   box-shadow:0px 0px 10px #000;
   background:rgba(0,0,0,.6);
   position:relative;
-  min-height:500px;
+  height:100%;
+  background-image:linear-gradient(rgba(255,255,255,0) 0%,rgba(255,255,255,.2) 400%);
+  position:relative;
+  top:0px;
 }
 
 .main div:hover {
+  top:-4px;
   background-image:linear-gradient(rgba(255,255,255,0) 0%,rgba(255,255,255,.2) 100%);
-  transition:background-position .2s linear;
+  transition:background-image .2s, box-shadow .2s, top .2s;
+  box-shadow:0px 0px 30px #000;
 }
 
 .main div h3 {
   background: #093299;
-  background-image:linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.6));
+  background-image:linear-gradient(rgba(0,0,0,.0) 0%, rgba(0,0,0,.6) 100%);
   margin:2px;
   border-top-right-radius:5px;
   border-top-left-radius:5px;
   padding:5px;
   text-shadow:1px 1px #000;
+}
+
+.main div:hover h3 {
+  background: #3C6BE6; 
+  background-image:linear-gradient(rgba(0,0,0,.0) 0%, rgba(0,0,0,.6) 100%);
 }
 
 .main div p {
@@ -346,12 +359,12 @@ footer {
   right:40px;
 }
 
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-width: 800px) {
   body {
-    font-size:7px;
+    font-size:10px;
   }
   .sidebar {
-    font-size:6px;
+    font-size:8px;
   }
   .sidebar h3 {
     font-size:8px;
@@ -370,5 +383,18 @@ footer {
   }
   .intro header::after {
     width:206px;
+  }
+  .main div, .main div.requirements {
+    width:90%;
+    margin:20px auto;
+    display:block;
+  }
+  .preamble {
+    font-size:10px;
+    width:80%;
+  }
+  .intro .summary p {
+    font-size:9px;
+    width:80%;
   }
 }
