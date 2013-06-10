@@ -103,7 +103,7 @@
 ?>
 						<li class="next">
 							<a href="?cssfile=<?php echo $currentDesign ?>&amp;page=<?php echo $thisPage + 1 ?>">
-								<?php echo $sidebar["design-archives-next"]; ?> <span class="indicator">&rsaquo;
+								<?php echo $sidebar["design-archives-next"]; ?> <span class="indicator">&rsaquo;</span>
 							</a>
 						</li>
 <?php
@@ -113,7 +113,7 @@
 ?>
 						<li class="previous">
 							<a href="?cssfile=<?php echo $currentDesign ?>&amp;page=<?php echo $thisPage - 1 ?>">
-								<span class="indicator">&lsaquo; <?php echo $sidebar["design-archives-previous"]; ?>
+								<span class="indicator">&lsaquo;</span> <?php echo $sidebar["design-archives-previous"]; ?>
 							</a>
 						</li>
 <?php
