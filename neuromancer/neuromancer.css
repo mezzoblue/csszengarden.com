@@ -1,5 +1,12 @@
 /* imports and font faces */
 
+/*  The Neuropol font is donationware.
+ *  I went ahead and donated to the author (Ray Larabie) for the use in my sites, 
+ *  it's the main font I use on limitedimmunity.com. He is a super nice guy
+ *  and even complimented my comic. Check him out at typodermicfonts.com
+*/
+
+
 @font-face {
   font-family:'NeuropolX';
   src:url('neuropol.ttf');
@@ -8,9 +15,11 @@
 /* 
  *  Theme Colors : Took an orange I really liked from 
  *  Halo 4: Forward Unto Dawn and Deus Ex: Human Revolution 
- *  (you know the orange I'm talking about, it's thematic as hell)
+ *  (if you've seen those, you know the orange I'm talking about)
  *  and then fed it into http://kuler.adobe.com to get ideas. These
  *  are the "complementary" colors of that base, adjusted a few degrees.
+ *  (I used hsla for the color transitions to make sure it went through 
+ *  the right path during translation)
 */
 
 /* 
@@ -64,7 +73,9 @@ abbr:hover {
     and replace the title attr with something else you can get at, preferably
     something with less collision like a data- prefixed attribute. But since
     this is an exercise in CSS, I simply moved the tooltip so it doesn't get
-    over-laid by the default browser tooltip.
+    over-laid by the default browser tooltip. My point was to show that css can
+    be used for even these types of tasks, usually relegated to the native browser
+    methods. 
 */
 
 abbr::after {
@@ -358,6 +369,9 @@ footer {
   bottom:0px;
   right:40px;
 }
+
+/* I was going to come up with a completely different look for mobile but realized that wasn't the point of this exercise. */
+
 
 @media only screen and (max-width: 800px) {
   body {
