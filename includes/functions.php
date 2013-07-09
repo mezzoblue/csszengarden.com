@@ -76,9 +76,9 @@
 			$currentDesign = $loadCSS;
 		}
 
-	// if it is empty, assign 001
+	// if it is empty, assign 214
 	} else {
-		$currentDesign = "/001/001.css";
+		$currentDesign = "/214/214.css";
 	}
 
 
