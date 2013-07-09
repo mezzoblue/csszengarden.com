@@ -1,0 +1,292 @@
+/* css Zen Garden submission 087 - 'Maya', by Bernd Willenberg, http://www.willenberg.biz */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Bernd Willenberg */
+/* Added: March 29th, 2004 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* DISCLAIMER */
+/*This CSS was tested in windows with IE 6.0, Netscape 7.02, Opera 7.11j, Mozilla Firebird 0.7 and Mozilla Firefox 0.8 - it works. */
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
+/* common */
+
+body {	
+             background: #686868 url(bg.gif) repeat-y;  
+             margin: 0; 
+	padding: 0;
+             }
+	
+a:link, a:visited { 
+	color: #FFF; 
+             font-weight: bold;
+             text-decoration: none; 
+	}
+
+a:hover, a:active {             
+	color: #FFB855;
+             text-decoration: underline;   	
+	}
+
+acronym {
+	border-bottom: 0px; 
+	cursor: help;
+	font-weight: bold;
+	}
+
+
+/* ------------------------------------------------------------------------------------- */
+/* content-area */
+
+#container { 
+	position: absolute;
+	top: 0;
+	left: 0;
+             width: 800px;
+         	margin: 0;
+             padding: 0;
+             background: url(bottom.gif) no-repeat bottom right;
+             z-index: 1; 
+	}
+
+#intro {             
+             width:540px;
+             float:right;
+             margin: 162px 0 0 0;
+	padding: 0; 
+             }
+
+#supportingText {             
+             width:540px;
+             float:right;
+             margin: 0;
+	padding: 0; 
+             }
+
+
+/* ------------------------------------------------------------------------------------- */
+/* hide headlines for image replacement */	
+
+#pageHeader {             
+             display: none;                         
+             }
+
+
+/* ------------------------------------------------------------------------------------- */
+/* title: CSS Zengarden - the beauty of ... */
+
+#extraDiv1 {
+	position: absolute;
+             top: 0;
+	left: 265px;
+	width: 499px;
+	height: 158px;
+             margin: 0;
+             padding: 0;             
+	background: url(top.jpg) no-repeat;             	
+	}
+
+
+/* ------------------------------------------------------------------------------------- */
+/* maya-image */
+
+#extraDiv2 {
+	position: absolute;
+             top: 0;
+	left: 0;
+	width: 266px;
+	height: 413px;
+	margin: 0;
+             padding: 0;
+	background: url(left.jpg) no-repeat;             	
+	}
+
+
+/* ------------------------------------------------------------------------------------- */
+/* text-area: A demonstration of ...  */
+	
+#quickSummary {
+             position: absolute;
+             top: 196px;
+             left: 525px;
+	font: 10px/13px Verdana;
+	color: #FFF;
+             text-align: right;
+	width: 180px;
+             margin: 0;             
+             padding: 13px 17px 5px;
+             border-right: 3px solid #F89B17;
+             background-color: #827869;             
+	}
+
+#quickSummary p {
+	margin: 0 0 10px;
+	padding: 0;
+             }
+
+#quickSummary p.p2 {
+             padding: 0 0 0 50px;             
+             }
+
+#quickSummary a:link, #quickSummary a:visited {
+	color: #F89B17;             
+             }
+
+#quickSummary a:hover, #quickSummary a:active {
+	color: #FFF;            
+             }
+
+
+/* ------------------------------------------------------------------------------------- */
+/* content */
+
+#preamble, #explanation, #participation, #benefits, #requirements {
+	font: 11px/14px Verdana;            
+	color: #FFE0B4;
+	width: 470px;
+             margin: 0 0 30px;
+             padding: 0;            
+	}
+
+#preamble {
+             background: url(headline1.gif) no-repeat;
+             }
+
+#explanation {
+             background: url(headline2.gif) no-repeat;                      
+             }
+
+#participation {             
+             background: url(headline3.gif) no-repeat;               	
+             }
+
+#benefits {             
+	background: url(headline4.gif) no-repeat;             
+             }
+
+#requirements {             
+	background: url(headline5.gif) no-repeat;             
+             }
+
+#preamble h3, #explanation h3, #participation h3, #benefits h3, #requirements h3 { 
+             font: bold 10px/10px Verdana;             
+             visibility: hidden;            
+	margin: 0 0 20px 0;
+	padding: 0;                            
+	}
+
+#preamble p, #explanation p, #participation p, #benefits p, #requirements p {	
+	margin: 0;
+	padding: 0 0 15px 0;
+	}
+
+#preamble p.p1, #preamble p.p2 {	
+             width: 235px;     	
+	}
+
+#preamble a:link, #preamble a:visited, #supportingText a:link, #supportingText a:visited {
+	color: #F89B17; 
+             font-weight: normal;
+             }
+
+#preamble a:hover, #preamble a:active, #supportingText a:hover, #supportingText a:active {
+	color: #FFF;             
+             } 
+
+
+/* ------------------------------------------------------------------------------------- */
+/* footer-linklist */
+
+#footer {  
+	font: bold 12px Verdana ;
+	width: 280px;
+             text-align: center;	
+             background: #555655;
+             margin: 70px 0 50px 57px;
+             padding: 2px 10px 2px 10px;             	
+	}
+
+#footer a:link, #footer a:visited {
+	color: #FFE0B4; 
+             font-weight: bold;
+             }
+
+#footer a:hover, #footer a:active {
+	color: #FFF; 
+             text-decoration: none;
+             }
+
+
+/* ------------------------------------------------------------------------------------- */
+/* lists */
+
+#linkList {
+             position: absolute;
+	top: 425px;
+	left: 0;             
+             margin: 0;
+             padding: 0;
+             }
+
+#lselect, #larchives, #lresources  {                      
+	margin: 0 0 30px 60px;
+             padding: 0;                            
+	}
+
+#lselect {                      
+	background: url(subheadl1.gif) no-repeat;                 
+             }
+
+#larchives {	         
+	background: url(subheadl2.gif) no-repeat ;             
+	}
+
+#lresources {	         
+	background: url(subheadl3.gif) no-repeat;             
+	}
+	
+#lselect h3, #larchives h3, #lresources h3  {
+             font: bold 10px/10px Verdana;             
+             visibility: hidden;             
+	margin: 0 0 15px 0;
+             padding: 0;                            
+	}
+
+#lselect ul, #larchives ul, #lresources ul {
+	width: 150px;
+             margin: 0;
+             padding: 0;	
+	}
+
+#lselect li {
+	font: 10px/14px Verdana;	
+	color: #FFE0B4;
+             margin: 0 0 6px 0;
+	padding: 0 0 0 15px;
+	list-style: none;
+	background: url(dot.gif) no-repeat 0 4px;
+	}
+
+#larchives li, #lresources li {
+	font: 10px/14px Verdana;
+             margin: 0 0 6px 0;	
+             padding: 0;
+	color: #FFF;	
+	list-style: none;
+	}
+
+#lselect li a:link, #lselect li a:visited {
+            display: block;
+            }
+
+#linkList li a.c:link, #linkList li a.c:visited {
+            display: inline;
+            }

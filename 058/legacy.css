@@ -1,0 +1,481 @@
+/* css Zen Garden submission 058 - 'Radio Zen' by Marc LA van den Heuvel, http://www.mlavdh.nl/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Marc LA van den Heuvel */
+/* Added: November 9th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+body {
+	font-family: georgia, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background: url(schaal.jpg);
+	background-color: #F8F8EE; 
+	background-repeat: no-repeat; 
+	background-position: top;
+	background-attachment: fixed; 
+	margin: 0px;
+	text-decoration: none;
+	}
+
+acronym {
+	border-bottom: none;
+	}
+
+#intro	{
+	position: absolute;
+	width: 1590px;
+	font-style: italic; 
+	line-height: normal; 
+	font-variant: normal; 
+	text-transform: capitalize; 
+	z-index: 1;
+	}
+
+
+#pageHeader H1	{
+	position: absolute;
+	top: 278px;
+	left: 720px;
+	color: #E8E9CF;
+	font-size: 70px;
+	}
+
+
+#pageHeader H2	{
+	position: absolute;
+	top: 330px;
+	left: 1280px;
+	color: #E8E9CF;
+	font-size: 30px;
+	}
+
+
+
+#quickSummary	{
+	position: absolute;
+	right: 0px;
+	text-align: left;
+	width: 165px;
+	height: 340px;
+	top: 95px;
+	padding-top: 40px;}
+
+#quickSummary P	{
+	margin-top: 3px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	color: #555F44;
+	}
+
+#quickSummary  a:link, #quickSummary  a:visited { 
+	color: #744646; 
+	text-decoration: none;
+	border-bottom: 1px dashed #744646;
+	}
+
+#quickSummary  a:hover, #quickSummary  a:active { 
+	color: #000000; 
+	text-decoration: underline;
+	}
+
+#preamble	{
+	position: absolute;
+	left: 10px;
+	text-align: right; 
+	width: 165px;
+	top: 95px;
+	}
+
+#preamble	 P	{
+	margin-top: 3px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	color: #555F44;
+	}
+
+#preamble h3	{
+	margin: 0px;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555F44;
+	text-decoration: none; 
+	font-style: normal; 
+	font-weight: bold;
+	margin-left: 8px;
+	margin-right: 8px;
+	}
+
+#supportingText	{
+	position: absolute;
+	width: 1230px;
+	padding-left: 185px;
+	padding-top: 95px;
+	text-align: justify;
+	background: url(naald.gif);
+	background-repeat: no-repeat; 
+	background-position: top;
+	z-index: 3;
+	}
+
+#supportingText a:link, #supportingText a:visited { 
+	color: #744646; 
+	text-decoration: none;
+	border-bottom: 1px dashed #744646;
+	}
+
+#supportingText a:hover, #supportingText a:active { 
+	color: #000000; 
+	text-decoration: underline;
+	}
+
+
+#supportingText P	{
+	margin-top: 3px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	color: #353638;
+	}
+
+#supportingText h3	{
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #422222; 
+	text-decoration: none;
+      	font-size: 8pt; 
+	font-style: normal; 
+	font-weight: bold;
+	margin-left: 3px;
+	margin-right: 8px;
+	background: url(klein.jpg);
+	
+	}
+
+
+#explanation	{
+	float: left;
+	width: 290px;
+	}
+
+#participation	{
+	float: left;
+	width: 290px;
+	}
+
+#benefits	{
+	float: left;
+	width: 150px;}
+
+#requirements	{
+	float: left;
+	width: 500px;}
+
+
+#footer	{
+	float: right;
+	padding-right: 50px;
+	top: 0px;
+	}
+
+#footer a:link, #footer a:visited { 
+	color: #E8E9CF;
+	text-decoration: none;
+	border-bottom: 0px dashed #744646;
+	font-size: 12px; 
+	font-style: normal; 
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+#footer a:hover, #footer a:active { 
+	color: #000000; 
+	text-decoration: underline;
+	}
+
+#linkList{
+	position: absolute;
+	padding-top: 480px;
+	text-align: justify;
+	z-index: 1;}
+
+#lselect{
+	position: absolute;
+	width: 1590px;
+	top: 46em;
+	text-align: left;	
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #E8E9CF;
+	}
+
+#lselect ul {
+	margin: 0px;
+	padding: 0px;
+	}
+
+#lselect h3	{
+	margin: 0px;
+	margin-right: 10px;
+	color: #555F44;
+	font-size: 8pt; 
+	float: left;
+	font-weight: bold;
+	}	
+
+#lselect li	{
+	color:#000000;
+	list-style-type: none;
+	float: left;
+	border-left: 4px solid #F8F8EE;
+	padding-left: 5px;
+	padding-right: 5px;
+	}	
+
+#lselect a:link, #lselect a:visited { 
+	color: #744646; 
+	text-decoration: none;
+      	font-size: 8pt; 
+	font-style: normal; 
+	font-weight: bold;
+	}
+
+#lselect a:hover, #lselect a:active { 
+	color: #000000; 
+	text-decoration: underline;
+	}
+
+#lselect a.c, #lselect a:link.c , #lselect a:visited.c{
+	color: #422222;
+	font-weight: normal;
+	}
+
+#lselect a:hover.c, #lselect a:active.c {
+	display: inline;
+	}
+
+#larchives{
+	position: absolute;
+	padding-top: 490px;
+	text-align: justify;
+	}
+
+#larchives{
+	position: absolute;
+	width: 300px;
+	top: 49em;
+	left: 75px;
+	text-align: left;	
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+#larchives ul {
+	margin: 0px;
+	padding: 0px;
+	}
+
+#larchives h3 {
+	margin: 0px;
+	margin-right: 10px;
+	color: #555F44;
+	font-size: 9px; 
+	float: left;
+	font-weight: normal;
+	}	
+
+#larchives li	{
+	color:#555F44;
+	list-style-type: none;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	}	
+
+#larchives a:link, #larchives a:visited { 
+	color: #555F44; 
+	text-decoration: none;
+    font-size: 9px; 
+	font-style: normal; 
+	font-weight: normal;
+	}
+
+#larchives a:hover, #larchives a:active { 
+	color: #000000; 
+	text-decoration: underline;
+	}
+
+#larchives a.c, #larchives a:link.c , #larchivest a:visited.c{
+	color: #006633;
+	}
+
+#larchives a:hover.c, #larchives a:active.c {
+	display: inline;
+	}
+
+
+#lresources{
+	position: absolute;
+	width: 800px;
+	left: 400px;
+	top: 49em;
+	text-align: left;	
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+#lresources ul {
+	margin: 0px;
+	padding: 0px;
+	}
+
+#lresources h3	{
+	margin: 0px;
+	margin-right: 10px;
+	color: #555F44;
+	font-size: 9px; 
+	float: left;
+	font-weight: normal;
+	}	
+
+#lresources li	{
+	color:#555F44;
+	list-style-type: none;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	}	
+
+#lresources a:link, #lresources a:visited { 
+	color: #555F44; 
+	text-decoration: none;
+    font-size: 9px; 
+	font-style: normal; 
+	font-weight: normal;
+	}
+
+#lresources a:hover, #lresources a:active { 
+	color: #000000; 
+	text-decoration: underline;
+	}
+
+#lresources a.c, #lresources a:link.c , #lresources a:visited.c{
+	color: 422222;
+	}
+
+#lresources a:hover.c, #lresources a:active.c {
+	display: inline;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#explanation h3 { 
+	background: transparent url(sowhat.gif) no-repeat top left; 
+	margin-top: 10px; 
+	width: 250px; 
+	height: 32px; 
+	float: left;
+	}
+#explanation h3 span {
+	display:none
+	}
+
+#participation h3 { 
+	background: transparent url(part.gif) no-repeat top left; 
+	margin-top: 10px; 
+	width: 250px; 
+	height: 32px; 
+	float: left;
+	}
+
+#participation h3 span {
+	display:none
+	}
+
+#benefits h3 { 
+	background: transparent url(ben.gif) no-repeat top left; 
+	margin-top: 10px; 
+	width: 120px; 
+	height: 32px; 
+	float: left;
+	}
+
+#benefits h3 span {
+	display:none
+	}
+
+#requirements h3 { 
+	background: transparent url(rec.gif) no-repeat top left; 
+	margin-top: 10px; 
+	width: 470px; 
+	height: 32px; 
+	float: left;
+	}
+
+#requirements h3 span {
+	display:none
+	}
+
+#preamble h3 { 
+	background: transparent url(road.gif) no-repeat top right; 
+	margin-top: 10px; 
+	width: 140px; 
+	height: 32px; 
+	float: left;
+	}
+
+#preamble h3 span {
+	display:none
+	}
+
+#pageHeader h1 { 
+	background: transparent url(zen.gif) no-repeat top right; 
+	margin-top: 10px; 
+	width: 600px; 
+	height: 180px; 
+	float: left;
+	}
+
+#pageHeader h1 span {
+	display:none
+	}
+
+#pageHeader h2 { 
+	background: transparent url(tune.jpg) no-repeat top right; 
+	margin: 0px;
+	width: 321px;
+	height: 194px;
+	float: left;
+	}
+
+#pageHeader h2 span {
+	display:none
+	}
+
+#extraDiv1 {
+	position: absolute;
+	width: 1600px;
+	height: 400px;
+	top: 83px;
+	text-align: justify;
+	background: url(bgrnd.gif);
+	background-position: top;
+	z-index: 0;
+	}
+
+#extraDiv2 {
+	position: absolute;
+	width: 321px;
+	height: 194px;
+	left: 160px;
+	top: 330px;
+	text-align: justify;
+	background: url(radio.jpg);
+	background-position: top;
+	z-index: 0;
+	}

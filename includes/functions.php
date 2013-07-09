@@ -9,6 +9,8 @@
 	// generate the list of designs in the site navigation
 	function getDesignList($start, $count, $list, $i18nBy) {
 
+		global $legacyMode;
+
 		// flush return value
 		$return = "";
 
@@ -24,8 +26,12 @@
 			// kick in output buffering
 			ob_start();
 
-			// pull in the partial template for design listings
-			include($SERVER_ROOT . "tmpl-design-link.php");
+			// pull in the correct partial template for design listings
+			if (isset($legacyMode)) {
+				include($SERVER_ROOT . "tmpl-design-link-legacy.php");
+			} else {
+				include($SERVER_ROOT . "tmpl-design-link.php");
+			}
 
 			// dump and close buffering
 			$buffer = ob_get_contents();
@@ -60,10 +66,22 @@
 	$thisPage = intval($_GET["pg"]);
 
 
+<<<<<<< HEAD
 	// if $_GET['css'] is not empty, assign it as the design to load
 	// if it is, assign 001
+=======
+	// if cssfile is not empty, assign it as the design to load
+>>>>>>> 9eb2fea995c86e43f23c70118c3e18b35959c818
 	if ($loadCSS) {
-		$currentDesign = $loadCSS;
+
+		// allowing a no-CSS view of the site
+		if ($loadCSS == "none") {
+			$currentDesign = null;
+		} else {
+			$currentDesign = $loadCSS;
+		}
+
+	// if it is empty, assign 001
 	} else {
 		$currentDesign = "001";
 	}
@@ -88,5 +106,13 @@
 		$listStart = count($designList);
 
 	}
+
+
+
+	// set default language to English if not otherwise specified
+	if (!isset($lang)) {
+		$lang = "en";
+	}
+
 
 ?>

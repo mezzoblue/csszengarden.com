@@ -1,0 +1,307 @@
+/* css Zen Garden submission 077 - 'Hop' by Guillaume L. */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Guillaume L. */
+/* Added: February 3rd, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+
+	
+a:link { 
+	text-decoration: none; 
+	color: #8B008B;
+	}
+a:visited { 
+	text-decoration: none; 
+	color: #2F4F4F;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #FF1493;
+	}
+acronym {
+	border-bottom: 0px dotted; 
+	cursor:help;
+	font-weight: bold;
+	}
+body { 
+	background: #F2C9FF url(fond.jpg) repeat-x; 
+	margin: 0 0 0 0; 
+	padding: 0 0 0;
+	
+	
+	}
+h3 {
+	font-family: Arial, sans-serif; font-size: 18px;color: #6E66A2;
+	font-style: italic;
+}
+h1 span, h2 span{
+	display: none;
+	
+   }
+#container { 
+	position: absolute;
+	width: 779px;
+	top: 0px;
+	left: 50%;
+	text-align: left;
+	margin-left: -380px;
+	background-image: url(back.jpg);
+	background-repeat: no-repeat;
+	height: 808px;
+	}
+	
+#pageHeader {
+   display: none;
+	}
+#quickSummary { 
+   position: absolute;
+	top: 12px;
+	width: 500px;
+	margin-left: 245px;  
+	margin-right: 0px; 
+	line-height: 10px;margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	
+}
+#quickSummary p {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	text-align: right;
+	color: #585959;
+	font-size: 12px;
+	line-height: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	
+	}
+#preamble {
+	position: absolute;
+	top: 235px;
+	left: 40%;
+	overflow: auto;
+	height: 230px;
+	width: 435px;
+	margin-top: 0px;
+	padding-top: 0px;
+	text-align: justify;
+	}
+#preamble h3 {
+	margin-top: 18px;
+}
+#preamble p.p1 {
+	line-height: 12px;
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #2F4F4F;
+	font-style: italic;
+	margin-bottom: 10px;
+	padding-bottom: 0px;
+   }
+#preamble p.p2 {
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #2F4F4F;
+	font-style: italic;
+	line-height: 12px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+   }
+#preamble p.p3 {
+font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #2F4F4F;
+	font-style: italic;
+	text-align: center;
+	line-height: 12px;margin-top: 0px;
+	
+	
+   }
+
+#supportingText {
+	position: absolute;
+	top: 460px;
+	left: 40%;
+		overflow: auto;
+	height: 270px;
+	width: 450px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+		border: 1px dashed #ECBFF6;
+	}
+
+#explanation , #participation, #benefits, #requirements {
+	
+	width: 425px;
+	font: medium;
+	color: #666666;
+	 margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-right: 0px;
+	}
+
+#explanation p, #participation p, #benefits p, #requirements p {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	line-height: 16px;
+	
+	padding: 10px 10px 10px 10px;
+	text-align: justify;
+	
+	}
+#requirements p {
+	
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	
+}
+#benefits p{
+	
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+#explanation {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 	text-align: left; }
+
+#participation {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding-top: 30px;
+	text-align: right;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+   }
+#benefits {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding-top: 30px;
+	text-align: left;
+   }
+#requirements {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding-top: 30px;
+	
+	margin-bottom: 40px;
+	text-align: right;
+   }
+#lselect {
+	position: absolute;
+	top: 360px;
+	left: 60px;
+	
+   }
+#lselect h3 {
+	font-family: sans-serif;
+	font-size: small;
+	color: #2F4F4F;
+	margin: 0;
+	padding-left: 0px;
+   }
+#lselect ul {
+	width: 200px;
+	display: block;
+	margin-left: 0px;
+	list-style: none;margin-top: 0px;
+	margin-bottom: 0px;padding-left: 0px;
+	}
+#lselect li {
+	font-family: Verdana;
+	font-size: 10px;
+	color: Black;
+	text-align: left;
+	line-height: 12px;
+	margin: 0 20px 3px 5px;
+	padding-left: 0px;
+	}
+#lselect li a:link, #lselect li a:visited ,
+#linkList li a.c:link, #linkList li a.c:visited {display: inline;}
+#larchives {
+	position: absolute;
+	top: 560px;
+	left: 60px;
+	}
+#larchives h3 {
+	font-family: sans-serif;
+	font-size: small;
+	color: #2F4F4F;
+	text-align: justify;
+	margin: 0;
+	padding-left: 0px;
+}
+#larchives ul {
+   width: 220px;
+	display: block;
+	margin-left: 0px;
+	list-style: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	}
+#larchives li {
+	font-family: Verdana;
+	font-size: 10px;
+	color: black;
+	text-align: justify;
+	line-height: 12px;
+	margin: 0 20px 3px 5px;
+	padding-left: 0px;
+	}
+#lresources {
+	position: absolute;
+	top: 620px;
+	left: 60px;
+	}
+#lresources h3 {
+	font-family: sans-serif;
+	font-size: small;
+	color: #2F4F4F;
+	text-align: left;
+	margin: 0;
+	padding-left: 0px;
+	}
+#lresources ul {
+   width: 220px;
+	display: block;
+	margin-left: 0px;
+	list-style: none;margin-top: 0px;
+	margin-bottom: 0px;padding-left: 0px;
+	}
+#lresources li {
+	font-family: Verdana;
+	font-size: 10px;
+	color: Black;
+	text-align: left;
+	line-height: 12px;
+	margin: 0 20px 3px 5px;
+	padding-left: 0px;
+	}
+#footer {
+	width: 240px;
+	text-align: center;
+	font-family: Verdana;
+	font-size: small;
+	font-weight: bolder;
+	margin-left: 100px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background: url(bas-menu.jpg);
+	z-index: 10;
+	padding-top: 210px;
+	}
+#extraDiv1 {
+	display: none;
+   }

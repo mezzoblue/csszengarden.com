@@ -1,0 +1,102 @@
+/* css Zen Garden submission 100 - '15 Petals', by Eric Meyer and Dave Shea, 
+   http://www.meyerweb.com/ and http://www.mezzoblue.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All photos copyright 2004, Eric Meyer */
+/* All other graphics copyright 2004, Dave Shea */
+/* Added: April 14th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* 
+   This design built specifically for 'More Eric Meyer on CSS'.
+   http://more.ericmeyeroncss.com/
+ 
+   Don't miss chapter 10, "Designing in the Garden", which explores step by
+   step the creation of this CSS Zen Garden design.
+*/
+
+body {margin: 0; padding: 0; text-align: center;
+  color: #000; background: #FFF;}
+acronym {border: none;}
+a {text-decoration: none;}
+a:link {color: rgb(179,63,96);}
+a:visited {color: rgb(90,32,48);}
+a:hover {text-decoration: underline;}
+
+#container {width: 647px; margin: 75px auto 0; padding: 0;
+  position: relative; text-align: left;}
+
+#pageHeader {background: url(pageHeader2.jpg) 0 0 no-repeat;
+  height: 157px; width: auto; position: relative; z-index: 10;}
+#pageHeader h1 {background: url(ph-flower.gif) 0 0 no-repeat;
+  height: 330px; width: 250px; position: absolute; z-index: 101;
+  top: -95px; right: -80px; margin: 0;}
+html>body #pageHeader h1 {background-image: url(ph-flower2.png);}
+
+
+#pageHeader h1 span {visibility: hidden; font-size: 1px;}
+#pageHeader h2 {position: absolute; z-index: 102;
+  top: 134px; right: 140px; margin: 0; padding: 0;
+  color: rgb(91,131,104);
+  text-transform: lowercase; letter-spacing: 0.2em;
+  font: bold italic 1.1em/1em Times, serif; text-align: right;}
+#pageHeader acronym {text-transform: uppercase;}
+
+#quickSummary {font: italic 1em/2 Times, "Times New Roman", serif;
+  color: rgb(42,92,42);
+  background: rgb(94%,98%,96%) url(quickSummary.jpg) 0 100% no-repeat;
+  margin: 1px 0; padding: 1em 180px 1.5em 1.5em;}
+#quickSummary p {display: inline;}
+
+#preamble, #supportingText {padding-right: 217px;}
+#preamble {background: url(side.jpg) 100% 100% repeat-y;}
+#supportingText {background: url(side.jpg) 100% 0 repeat-y;}
+ 
+#preamble, #explanation, #participation, #benefits, #requirements {
+  border-left: 1px solid rgb(184,214,194);
+  padding-top: 1px; padding-bottom: 1px;}
+#preamble {border-top: 1px solid rgb(184,214,194); padding-top: 0.5em;}
+#preamble p, #supportingText p {font-size: 90%; line-height: 1.66em;
+   margin: 0 1.5em; padding: 0.5em 0;}
+#preamble h3, #supportingText h3 {letter-spacing: 0.1em;
+  font: italic 1.2em Times, "Times New Roman", serif;
+  color: rgb(107,153,139); margin: 1em 0 0.5em 0.5em;}
+#requirements {border-bottom: 1px solid rgb(184,214,194); padding-bottom: 100px;
+  background: url(main.jpg) 0 100% no-repeat;}
+
+#footer {background: #FFF url(footer.jpg) 0 1px no-repeat;
+  margin: 0 -217px 0 4px; height: 123px;
+  padding: 60px 1em 0 0.5em;}
+html>body #footer {margin-left: 0;}
+#footer a {color: rgb(207,216,214); line-height: 1em;
+  font-size: 1.25em; font-weight: 100;}
+
+#linkList {position: absolute; z-index: 11;
+  width: 216px; top: 157px; right: 0;
+  margin-top: 8.6em;}
+#linkList a {color: rgb(99,131,101);
+  font: italic 1.15em Times, serif;
+  text-transform: lowercase;}
+#linkList ul {margin: 0.5em 1em 0 2em; padding: 0;}
+#linkList li {list-style: none;}
+
+#linkList h3 {margin: 1em 0 0; width: 216px; height: 35px;
+  background: url(resources.gif) 10px 50% no-repeat;}
+#lselect h3 {background-image: url(design-list.gif);}
+#larchives h3 {background-image: url(archives.gif);}
+#linkList h3 span {display: none;}
+
+#lselect li {font-size: 85%; margin-bottom: 1.5em;}
+#lselect li a {display: block;
+  font: bold italic 1.15em Times, serif;
+  letter-spacing: 0.2em; text-transform: lowercase;}
+#lselect li a.c {display: inline;
+  font: bold 1em Times, serif;
+  letter-spacing: 0; text-transform: none;}
+
+#larchives li, #lresources li {margin-bottom: 0.5em;}
+#larchives li a, #lresources li a {color: rgb(126,164,139);}

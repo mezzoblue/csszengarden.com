@@ -1,0 +1,444 @@
+/* css Zen Garden submission 099 - 'Wiggles the Wonderworm', by Joseph Pearson, http://www.make-believe.org/ */
+/* All images used in this Zen Garden are based on freely available images in the public domain. 
+   These images and the accompanying CSS are hereby returned to the public domain, as per the 
+   Creative Commons Public Domain Dedication (http://creativecommons.org/licenses/publicdomain/). 
+   Build on the past, and free your creativity. Fight for fair and reasonable copyright laws."; */
+/* Added: April 14th, 2004 */
+
+
+
+/*========================================================================
+	THINGS OF UNIVERSAL IMPORTANCE
+========================================================================*/
+body {
+	text-align:center;
+	min-width:760px;
+	line-height:100%;
+	background:url(paper.jpg) repeat-y #FFF center top;
+	color: black;
+}
+body a {
+	color:black;
+	text-decoration:none;
+	font-weight:bold;
+}
+span {
+	font: 12px Comic Sans MS, Verdana, sans serif;
+	text-align:center;
+	line-height:100%;
+	margin-top:5px;
+}
+h3 {
+	display:none;
+}
+acronym {
+	font-weight:bold;
+	border:none;
+	cursor:help;
+}
+#container {
+	text-align:left;
+	margin:0 auto;
+	width:760px;
+	position:relative;
+}
+#pageHeader {
+	display:none;
+}
+
+/*==================================================================
+	PAGE 1
+	This page's content is neatly encapsulated by the intro div.
+===================================================================*/
+#intro { /*page container*/
+	position:relative;
+	height:1385px;
+	margin-top:40px;
+}
+#extraDiv1 {
+	position:absolute;
+	height:40px;
+	width:820px;
+	top:0;
+	background:url(paperedge.jpg) no-repeat bottom;
+	left:50%;
+	margin-left:-410px;
+}
+#quickSummary{
+	position:absolute;
+	left:6px;
+	top:9px;
+	width:750px;
+	height:491px;
+	background:url(P1PANEL1.jpg) no-repeat black;
+}
+#quickSummary p.p1 span {
+	position: absolute;
+	left: 71px;
+	top: 28px;
+	width: 328px;
+	height: 80px;
+	font-size: 16px;
+}
+#quickSummary p.p2 span {
+	position:absolute;
+	left:551px;
+	top:0;
+	font: 9px Arial, Helvetica, sans serif;
+}
+#quickSummary p.p2 span:before {
+	content:"® "
+}
+#preamble p.p1{
+	position:absolute;
+	left:5px;
+	top:506px;
+	width:366px;
+	height:428px;
+	background:url(P1PANEL2.jpg) no-repeat black;
+}
+#preamble p.p1 span {
+	position: absolute;
+	left: 217px;
+	top: 30px;
+	width: 127px;
+	height: 92px;
+}
+#preamble p.p2{
+	position:absolute;
+	left:384px;
+	top:507px;
+	width:370px;
+	height:429px;
+	background:url(P1PANEL3.jpg) no-repeat black;
+}
+#preamble p.p2 span {
+	position: absolute;
+	left: 18px;
+	top: 12px;
+	width: 160px;
+	height: 104px;
+}
+#preamble p.p3{
+	position:absolute;
+	left:4px;
+	top:941px;
+	width:751px;
+	height:421px;
+	background:url(P1PANEL45.jpg) no-repeat black;
+}
+#preamble p.p3 span {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 348px;
+	height: 56px;
+	text-align:left;
+}
+
+/*================================================================================
+	PAGE 2
+	This page must be split into two sections: the explanation div (panels 1 to 4)
+	and the participation div (panel 5).
+================================================================================*/
+#extraDiv2 {
+	position:absolute;
+	height:100px;
+	width:820px;
+	top:1420px;
+	background:url(paperedge.jpg) no-repeat bottom;
+	left:50%;
+	margin-left:-410px;
+}
+#explanation {
+	position:relative;
+	height:535px;
+	margin-top:100px;
+	background:#EEEACD;
+}
+#explanation p.p1 {
+	position:absolute;
+	left:3px;
+	top:1px;
+	width:459px;
+	height:509px;
+	background:url(P2PANEL1.jpg) no-repeat black;
+}
+#explanation p.p1 span {
+	position: absolute;
+	left: 197px;
+	top: 3px;
+	width: 256px;
+	height: 116px;
+}
+#explanation p.p2 {
+	position:absolute;
+	left:462px;
+	top:12px;
+	width:295px;
+	height:491px;
+	background:url(P2PANEL2.jpg) no-repeat black;
+}
+#explanation p.p2 span {
+	position: absolute;
+	left: 10px;
+	top: 7px;
+	width: 272px;
+	height: 128px;
+}
+#participation {
+	position:relative;
+	width:760px;
+	height:795px;
+	margin-top:-17px; /*hack: should not be needed*/
+	background:url(P2PANEL5.jpg) no-repeat #EEECD5 19px 343px;
+	z-index:1;
+}
+#participation h3 {
+	display:block;
+	position:absolute;
+	left:4px;
+	top:0px;
+	width:747px;
+	height:343px;
+	background:url(P2PANEL34.jpg) no-repeat black;
+	margin:0;
+	padding:0;
+}
+#participation h3 span {
+	display:none;
+}
+#participation p {
+	position:relative;
+	top:583px;
+	left:437px;
+	width:299px;
+	line-height:20%;
+	margin-top:10px;
+	margin-bottom:0;
+	padding:0;
+}
+#participation p.p1 {
+	margin:0;
+}
+#participation p span {
+	font: 10px Arial, Helvetica, sans serif;
+	text-align:left;
+	line-height:100%;
+	color:#EEECD5;
+	font-weight:bold;
+}
+#participation a {
+	text-decoration:underline;
+	color:#EEECD5;
+}
+
+/*======================================================
+	PAGE 3
+	This page is a logistical nightmare. It must contain
+	the BENEFITS text, the REQUIREMENTS text, the FOOTER
+	text and the LINKLIST lists.
+======================================================*/
+#extraDiv3 {
+	position:absolute;
+	height:100px;
+	width:820px;
+	top:2840px;
+	background:url(paperedge.jpg) no-repeat bottom;
+	left:50%;
+	margin-left:-410px;
+}
+#benefits {
+	position:relative;
+	height:726px;
+	background:url(P3PANEL1.jpg) no-repeat black;
+	margin-top:112px;
+}
+#benefits p.p1 {
+	position:absolute;
+	left:53px;
+	top:418px;
+	width:298px;
+	height:80px;
+	line-height:20%;
+	text-align:center;
+	margin:0;
+}
+#benefits p.p1 span {
+	line-height:100%;
+	text-align:center;
+}
+
+#requirements {
+	position:relative;
+	background:url(dots.gif) black;
+	padding:10px;
+	margin-top:10px;
+	border:2px solid #FCC;
+	width:440px;
+	height:508px;
+}
+#requirements h3 {
+	display:inline;
+	float:right;
+	background:url(sparky.gif) no-repeat;
+	width:190px;
+	height:190px;
+}
+#requirements h3 span {
+	display:none;
+}
+#requirements p.p1 {
+}
+#requirements span {
+	font: 9pt Arial, Helvetica, sans serif;
+	line-height:140%;
+}
+#requirements p.p1 span {
+	font-style:italic;
+}
+#requirements > p.p5 {
+	display:none; /*this line is shown in the footer for MOSe browsers*/
+}
+/*=========================
+	#@%&#!!! LINKLIST.
+==========================*/
+#linkList {
+	font:italic 10px Arial, Helvetica, sans serif;
+	background:#EEECD5;
+	width:280px;
+	position:relative;
+	margin-top:-593px;
+	left:470px;
+	padding-bottom:25px;
+}
+#linkList a span {
+	font: 10px Arial Black, Helvetica, Arial, sans serif;
+	text-transform:uppercase;
+	line-height:100%;
+}
+#linkList ul {
+	margin:0;
+	padding:0;
+	display:block;
+	width:140px;
+	border-bottom:2px dotted #200;
+}
+#linkList li {
+	margin: 0;
+	padding:8px 3px;
+	border: 2px dotted #200;
+	border-bottom:none;
+	list-style: none;
+	font-weight: bold;
+	text-align:right;
+}
+#linkList a {
+	display:block;
+	font:9px Arial Black, Helvetica, Arial, sans serif;
+	text-transform:uppercase;
+	padding-bottom:22px;
+	color:#300;
+}
+#linkList a.c {
+	display:inline;
+	font:italic 10px Arial, Helvetica, sans serif;
+	padding-bottom:0;
+}
+#lselect {
+	position:absolute;
+	left:0;
+	top:0;
+	width:140px;
+	background:#DEF;
+}
+#lselect li {
+	border-right:none;
+}
+#larchives {
+	position:relative;
+	left:140px;
+	top:0;
+	width:140px;
+	background:#FFC;
+}
+#larchives ul {
+	border-bottom:none;
+}
+/* bit of a dodgy hack to get same size list items; IE screws up "height"*/
+#larchives li, #lresources li {
+	padding-bottom:21px;
+}
+#lresources {
+	padding-top:64px;
+	position:relative;
+	left:140px;
+	width:136px;
+	background:url(adcc.gif) no-repeat #FFC 7px 10px;
+	border:2px dotted #200;
+	border-bottom:none;
+}
+#lresources li {
+	border:none;
+	border-top:2px dotted #200;
+}
+#lresources ul {
+	width:136px;
+}
+
+/*================================================================
+	MOSe decorations for linklist. Proudly brought to you
+	by the "Get A Real Browser!" Militant Action Group.
+================================================================*/
+li {
+	background:url(ad1.gif) no-repeat white 5px 10px;
+}
+li + li {
+	background:url(ad2.gif) no-repeat #DFACAC 5px 10px;
+}
+li + li + li {
+	background:url(ad3.gif) no-repeat #A5A5D8 5px 10px;
+}
+li + li + li + li {
+	background:url(ad5.gif) no-repeat #FFC 5px 10px;
+}
+li + li + li + li + li {
+	background:url(ad4.gif) no-repeat white 5px 10px;
+}
+li + li + li + li + li + li, #larchives li {
+	background:url(ad6.gif) no-repeat #DFACAC 5px 24px;
+}
+li + li + li + li + li + li + li, #larchives li + li {
+	background:url(ad7.gif) no-repeat #A5A5D8 5px 10px;
+}
+li + li + li + li + li + li + li + li, #larchives li + li + li {
+	background:url(ad8.gif) no-repeat #FFC 5px 10px;
+}
+
+/*======================
+	Rounding it off
+======================*/
+#footer {
+	padding-top:3px;
+	font:9px Arial, Helvetica, sans serif;
+	display:block;
+	position:relative;
+	height:60px;
+	z-index:1000;
+}
+/* ah, the foibles of interspersing content with design. But, you know, these are unrealistic restrictions in the real world... */
+#footer:before {
+	content:"Approved by the Comics Code of America. Bandwidth graciously donated by DreamFire Studios.";
+}
+#footer:after {
+	content:". All images used in this Zen Garden are based on freely available images in the public domain. These images and the accompanying CSS are hereby returned to the public domain, as per the Creative Commons Public Domain Dedication (http://creativecommons.org/licenses/publicdomain/). Build on the past, and free your creativity. Fight for fair and reasonable copyright laws.";
+}
+#extraDiv4 {
+	position:absolute;
+	height:48px;
+	width:820px;
+	background:url(paperedge.jpg) no-repeat;
+	left:50%;
+	margin-left:-410px;
+	margin-bottom:0px;
+}

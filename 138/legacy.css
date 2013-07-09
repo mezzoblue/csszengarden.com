@@ -1,0 +1,71 @@
+/* css Zen Garden submission 138 - 'DJ Style', by Masanori Kawachi, http://www.804case.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Masanori Kawachi */
+/* Added: Nov. 29th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+body { margin: 0px; padding: 0px; background: url(images/body_bg.gif) left top repeat-y #fff; }
+p { font-size: 10px; !important;font-size: 70%; line-height: 133%; font-family: Arial, Helvetica, sans-serif; color: #666; }
+h1,h2,h3 { margin: 0px; padding: 0px; }
+a { color: #336633; }
+acronym { background-color: #FFF7D2; }
+
+#extraDiv1 { position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 51px; background: url(images/header_bg.gif) left top repeat-x; }
+#pageHeader h1 { position: absolute; left: 0px; top: 0px; z-index: 2; width: 237px; height: 176px; margin: 0px; padding: 0px; background: url(images/logo.gif) left top no-repeat; }
+#pageHeader h1 span,#pageHeader h2 { position: absolute; left: -9999px; }
+
+#container { background: url(images/rightside_top.gif) 0px 0px no-repeat; width: 510px; margin: 51px 0px 0px 237px; padding-top: 24px; }
+
+#quickSummary { margin-left: 34px; padding-left: 30px; width: 425px !important;width /**/:455px; background: url(images/arrow.gif) left top no-repeat; }
+#quickSummary p { margin: 0px 0px 5px 0px; padding: 0px; }
+
+#preamble { margin: 40px 0px 0px 30px; width: 458px; }
+#preamble h3 { width: 458px; height: 0px !important;height /**/:24px; padding-top: 24px; background: url(images/tit_01.gif) left top no-repeat; display: block; overflow: hidden; }
+#preamble p { margin: 5px 0px 5px 20px; padding: 0px; }
+
+#supportingText { margin: 25px 0px 0px 30px; width: 458px; background: url(images/leaf.gif) right top no-repeat; }
+
+#explanation { margin-bottom: 20px; }
+#explanation h3 { width: 458px; height: 0px !important;height /**/:24px; padding: 24px 0px 0px 0px; background: url(images/tit_02.gif) left top no-repeat; display: block; overflow: hidden; }
+#explanation p { margin: 5px 0px 5px 20px; padding: 0px; }
+
+#participation { margin-bottom: 20px; }
+#participation h3 { width: 458px; height: 0px !important;height /**/:24px; padding-top: 24px; background: url(images/tit_03.gif) left top no-repeat; display: block; overflow: hidden; }
+#participation p { margin: 5px 0px 5px 20px; padding: 0px; }
+
+#benefits { margin-bottom: 20px; }
+#benefits h3 { width: 458px; height: 0px !important;height /**/:24px; padding-top: 24px; background: url(images/tit_04.gif) left top no-repeat; display: block; overflow: hidden; }
+#benefits p { margin: 5px 0px 5px 20px; padding: 0px; }
+
+#requirements { margin-bottom: 20px; }
+#requirements h3 { width: 458px; height: 0px !important;height /**/:24px; padding-top: 24px; background: url(images/tit_05.gif) left top no-repeat; display: block; overflow: hidden; }
+#requirements p { margin: 5px 0px 5px 20px; padding: 0px; }
+
+#footer { margin: 0px 0px 20px 20px; font-size: 10px; !important;font-size: 70%; font-family: Arial, Helvetica, sans-serif;  }
+
+#linkList { position: absolute; left: 13px; top: 176px; width: 212px; background: url(images/leftside_bg.gif) left top repeat-x; }
+
+#lselect { width: 212px; background: url(images/list_bg.gif) left top repeat-y; }
+#lselect h3 { background: url(images/select_tit.gif) left top no-repeat; width: 212px; height: 0px !important;height /**/:35px; padding-top: 35px; display: block; overflow: hidden; }
+#lselect ul { margin: 0px; padding: 0px 0px 0px 4px; list-style-type: none; font-size: 10px; !important;font-size: 70%; font-family: Arial, Helvetica, sans-serif; }
+#lselect li { padding: 13px 5px 13px 5px; margin: 0px; width: 196px !important;width /**/:206px; text-align: center; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; border-top-color: #e9e9e9; border-bottom-color: #FFFFFF; display: block; }
+#lselect li:hover { background-color: #fff; }
+
+#larchives { width: 212px; background: url(images/list_bg.gif) left top repeat-y; display: block; }
+#larchives h3 { background: url(images/archives_tit.gif) left top no-repeat; width: 212px; height: 0px !important;height /**/:26px; padding-top: 26px; display: block; overflow: hidden; }
+#larchives ul { margin: 0px; padding: 0px 0px 0px 4px; list-style-type: none; font-size: 10px; !important;font-size: 70%; font-family: Arial, Helvetica, sans-serif; }
+#larchives li { padding: 13px 5px 13px 5px; margin: 0px; width: 196px !important;width /**/:206px; text-align: center; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; border-top-color: #e9e9e9; border-bottom-color: #FFFFFF; display: block; }
+#larchives li:hover { background-color: #fff; }
+
+#lresources { width: 212px; background: url(images/list_bg.gif) left top repeat-y; display: block; }
+#lresources h3 { background: url(images/archives_tit.gif) left top no-repeat; width: 212px; height: 0px !important;height /**/:26px; padding-top: 26px; display: block; overflow: hidden; }
+#lresources ul { margin: 0px; padding: 0px 0px 0px 4px; list-style-type: none; font-size: 10px; !important;font-size: 70%; font-family: Arial, Helvetica, sans-serif; }
+#lresources li { padding: 13px 5px 13px 5px; margin: 0px; width: 196px !important;width /**/:206px; text-align: center; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; border-top-color: #e9e9e9; border-bottom-color: #FFFFFF; display: block; }
+#lresources li:hover { background-color: #fff; }

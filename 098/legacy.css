@@ -1,0 +1,239 @@
+/* css Zen Garden submission 098 - 'Edo and Tokyo', by Daisuke Sato, http://www.coutworks.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Daisuke Sato */
+/* Added: April 14th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* basic elements */
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	line-height: 133%;
+	color: #000000;
+	font-family: arial, helvetica, sans-serif;
+}
+
+a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+/* header */
+#pageHeader {
+	position: absolute;
+	top: 32px;
+	left: 385px;
+	background: transparent url(title.gif) no-repeat top left;
+	width: 356px;
+	height: 53px;
+	z-index: 3;
+}
+
+#pageHeader h1, #pageHeader h2 {
+	display: none;
+}
+
+#quickSummary {
+	position: absolute;
+	top: 102px;
+	left: 444px;
+	width: 296px;
+	z-index: 3;
+}
+
+#quickSummary p  {
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+}
+
+#quickSummary a  {
+	color: #000000;
+	text-decoration: underline;
+}
+
+/* contents */
+#supportingText {
+	position: relative;
+	margin: 0px;
+	padding: 746px 0px 243px 15px;
+	z-index: 1;
+}
+
+#supportingText a {
+	color: #FFFFFF;
+}
+
+#preamble, #explanation, #participation, #benefits, #requirements {
+	margin: 0px 0px 5px 0px;
+	width: 540px;
+	overflow:auto;
+	z-index: 2;
+}
+
+#preamble {
+	position: absolute;
+	top: 583px;
+	left: 15px;
+	height: 158px;
+}
+
+#explanation {
+	height: 183px;
+}
+
+#participation {
+	height: 215px;
+}
+
+#benefits {
+	height: 102px;
+}
+
+#requirements {
+	height: 343px;
+}
+
+#preamble h3, #explanation h3, #participation h3, #benefits h3, #requirements h3 {
+	margin: 11px 0px 0px 15px;
+	padding: 0px;
+	width: 509px;
+	font-size: 12px;
+	line-height: 133%;
+	color: #FFFFFF;
+}
+
+#preamble p, #explanation p, #participation p, #benefits p, #requirements p {
+	margin: 0px  0px  0px 15px;
+	padding: 0px;
+	width: 509px;
+	color: #FFFFFF;
+}
+
+#footer {
+	position: absolute;
+	top: 1126px;
+	left: 570px;
+}
+
+#footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* link */
+#linkList {
+	position: absolute;
+	top: 583px;
+	left: 570px;
+	width: 246px;
+	height: 490px;
+	z-index: 1;
+}
+
+#linkList a {
+	color: #FFFFFF;
+	font-style: normal;
+	text-decoration: none;
+}
+
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#linkList li {
+	margin: 0px 0px 0px 15px;
+	padding: 0px;
+	width: 140px;
+	color: #FFFFFF;
+	font-style: italic;
+}
+
+#lselect, #larchives, #lresources {
+	margin: 0px 0px 5px 0px;
+	width: 170px;
+	overflow:auto;
+	z-index: 2;
+}
+
+#lselect {
+	height: 311px;
+}
+
+#larchives {
+	height: 87px;
+}
+
+#lresources {
+	height: 121px;
+}
+
+
+#lselect h3, #larchives h3, #lresources h3 {
+	margin: 11px 0px 0px 15px;
+	padding: 0px;
+	width: 140px;
+	font-size: 12px;
+	line-height: 125%;
+	color: #FFFFFF;
+}
+
+#lselect a {
+	margin: 0px;
+	padding: 0px;
+	font-style: normal;
+	display: block;
+}
+
+#lselect a.c {
+	font-style: italic;
+	display: inline;
+}
+
+/* images */
+#extraDiv1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: transparent url(header_bg.gif) no-repeat top left;
+	width: 832px;
+	height: 583px;
+	z-index: 0;
+}
+
+#extraDiv1 span {
+	display: none;
+}
+
+#extraDiv2 {
+	position: absolute;
+	top: 583px;
+	left: 0px;
+	background: transparent url(footer_bg.gif) no-repeat top left;
+	width: 832px;
+	height: 1265px;
+	z-index: 0;
+}
+
+#extraDiv2 span {
+	display: none;
+}
+
+#extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+	display: none;
+}

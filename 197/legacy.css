@@ -1,0 +1,335 @@
+/* css Zen Garden submission 197 - 'Floral Touch', by Jadas Jimmy, http://www.jahmasta.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Jadas Jimmy */
+/* Added: December 4th, 2006 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+/* basic elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #919191;
+	background-image: url(back.gif);
+	background-repeat: repeat;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+p {
+	margin-top: 10px;
+	text-align: justify;
+	font-family: arial;
+	font-size: 8pt;
+	line-height: 10pt;
+	}
+h3 { 
+	font: normal 12pt arial; 
+	letter-spacing: 1px; 
+	margin-bottom: 0px; 
+	color: #7D775C;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #74529A;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #993399;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #74529A;
+	}
+acronym {
+	font-weight: bold;
+	border-bottom: 1px dotted #DB008C;
+	}
+
+/* specific divs */
+#container {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 0px;
+	width: 691px;
+	text-align: left;
+	position: relative;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #F1F1F1;
+	background-color: #ffffff;
+	}
+
+#intro { 
+	min-width: 470px;
+	background: url(header.png) no-repeat right top;
+	}
+#pageHeader { 
+	width: 506px;
+	height: 234px;
+	float: left;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 { 
+	margin-top: 10px; 
+	width: 219px; 
+	height: 87px; 
+	float: left;
+	}
+#pageHeader h1 span {
+	display:none
+	}
+#pageHeader h2 span {
+	display:none;
+	}
+
+#quickSummary {
+	background: url(down1.gif) no-repeat left top;
+	margin-top: 165px;
+	margin-right: 6px;
+	width: 179px;
+	height: 117px;
+	float: right;
+	}
+
+#preamble {
+	margin-left: 10px;
+	padding-top: 1px;
+	padding-bottom: 30px;
+	width: 460px;
+	clear: both;
+	padding-right: 0px;
+	padding-left: 0px;
+	}
+
+#supportingText {
+	margin-left: 10px;
+	padding: 0px 0px;
+	width: 460px;
+	position: relative;
+	}
+
+#footer {
+	text-align: center;
+	font: bold 10px arial;
+	padding: 0px;
+	text-transform: uppercase;
+	margin-top: 0px;
+	width: 660px;
+	margin-bottom: 0px;
+	height: 20px;
+	}
+	
+#footer a:link, #footer a:visited { 
+	margin-right: 20px;
+	margin-bottom: 30px; 
+	}
+
+#linkList {
+	background-image: url(menuback.gif);
+	width: 179px;
+	font: 10px verdana #A50069;
+	position: absolute;
+	top: 293px;
+	left: 506px;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 6px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	background-repeat: repeat-y;
+	}
+#linkList2 { 
+	font: 10px verdana; 
+	padding: 0px; 
+	margin-top: 0px; 
+	width: 179px; 
+	}
+#linkList h3.select { 
+	background: url(m1.gif) no-repeat top left; 
+	margin: 0px 0px 0px 0px; 
+	width: 179px; 
+	height: 41px; 
+	}
+#linkList h3.select span {
+	display:none
+	}
+#linkList h3.favorites span {
+	display:none
+	}
+#linkList h3.archives { 
+	background: url(m2.gif) no-repeat top left; 
+	margin: 0px 0px 0px 0px; 
+	width: 179px; 
+	height: 41px; 
+	}
+#linkList h3.archives span {
+	display:none
+	}
+#linkList h3.resources { 
+	background: url(m3.gif) no-repeat top left; 
+	margin: 0px 0px 0px 0px; 
+	width: 179px; 
+	height: 41px; 
+	}
+#linkList h3.resources span {
+	display:none
+	}
+
+#lresources {
+	background-image: url(mfoot.gif);
+	background-repeat: no-repeat;
+	width: 179px;
+	height: 514px;
+	background-position: 0px 200px;
+	}
+
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+#linkList li {
+	border-bottom: 1px solid #F2E1EC;
+	line-height: 15px;
+	list-style-type: none;
+	display: block;
+	padding-left: 20px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	background-image: url(picto.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 0px;
+	}
+#linkList li a:link { 
+	color: #999999;
+	border-bottom: 1px dotted #DB008C;
+	}
+#linkList li a:hover {
+	color: #996699;
+	}
+#linkList li a:visited {
+	color: #919191;
+	}
+--------------------------------------------
+/* Modifications */
+
+
+p.p2{
+	font: bold 11px verdana;
+	text-align: center;
+	color: #DB008C;
+	padding: 30px 10px 0px 10px;}
+
+	
+#quickSummary p.p2{
+	font: bold 11px verdana;
+	text-align: center;
+	color: #DB008C;
+	padding: 30px 10px 0px 10px;}
+
+#pageHeader h1 span,
+#pageHeader h2 span,
+#preamble h3 span,
+#explanation h3 span,
+#participation h3 span,
+#benefits h3 span,
+#requirements h3 span,
+#quickSummary p.p1
+{display: none;}
+
+
+#preamble h3 {
+	text-align: left;
+	color: #919191;
+	font: 11px Arial;
+	width: 479px;
+	height: 40px;
+	padding: 0px 0px 0px 0px;
+	background-image: url(t1.gif);
+	background-repeat: no-repeat;
+	background-position: 0px top;
+}
+
+#explanation h3 {
+	text-align: left;
+	color: #919191;
+	font: 11px Arial;
+	width: 479px;
+	height: 40px;
+	padding: 0px 0px 0px 0px;
+	background-image: url(t2.gif);
+	background-repeat: no-repeat;
+	background-position: 0px top;
+}
+
+#participation h3 {
+	text-align: left;
+	color: #919191;
+	font: 11px Arial;
+	width: 479px;
+	height: 40px;
+	padding: 0px 0px 0px 0px;
+	background-image: url(t3.gif);
+	background-repeat: no-repeat;
+	background-position: 0px top;
+}
+
+#benefits h3 {
+	text-align: left;
+	color: #919191;
+	font: 11px Arial;
+	width: 479px;
+	height: 40px;
+	padding: 0px 0px 0px 0px;
+	background-image: url(t4.gif);
+	background-repeat: no-repeat;
+	background-position: 0px top;
+}
+
+#requirements h3 {
+	text-align: left;
+	color: #919191;
+	font: 11px Arial;
+	width: 479px;
+	height: 40px;
+	padding: 0px 0px 0px 0px;
+	background-image: url(t5.gif);
+	background-repeat: no-repeat;
+	background-position: 0px top;
+}
+
+
+.p1 {padding: 0px 0px 0px 21px;}
+.p2 {padding: 0px 0px 0px 21px;}
+.p3 {padding: 0px 0px 0px 21px;}
+.p4 {padding: 0px 0px 0px 21px;}
+.p5 {padding: 0px 0px 0px 21px;}
+
+#requirements p.p5 span{
+    font: bold 15px arial;
+	text-align: center;
+	color: #DB008C;
+	padding: 35px 0px 0px 0px;
+	background-image: url(footer1.gif);
+	background-repeat: no-repeat;
+	background-position: 0px top;
+	display: block;
+	width: 691px;
+	height: 50px;
+	margin: 0px 0px 0px -30px;
+	padding: 35px 0px 0px 0px;
+	}

@@ -1,0 +1,329 @@
+/* css Zen Garden submission 020 - 'Friendly Beaches' by Sophie G - www.sophie-g.net */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Sophie G */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+body {
+	background-color: #FFF;
+	margin: 0px;
+	padding: 10px;
+	font-family:  Georgia, "Times New Roman", Times, serif;
+	font-size: 90%;
+}p {
+	line-height: 180%;
+	}
+#container {
+	background-color: #EDEEF0;
+	border: 1px solid #DAD5D9;
+	padding: 0px;
+	margin: 0px;
+}
+acronym {
+	border-bottom: 1px #6BA0D2 dashed;
+}
+#pageHeader {
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	background-color: #A4ACB3;
+}
+#pageHeader h1 {
+	height: 190px;
+	margin: 0px;
+	background-image: url(headerh1.jpg);
+	background-repeat: no-repeat;
+}
+#pageHeader h1 span, #pageHeader h2 span {
+	display: none;
+}
+#pageHeader h2 {
+	background-color: #EDEEF0;
+	margin: 0px;
+	height: 24px;
+	padding: 0px 14px 2px 14px;
+	background-image: url(headerh2.gif);
+	background-repeat: no-repeat;
+}
+#pageHeader h2 acronym {
+	color: #FFF;
+	border-bottom: 1px #FFF dashed;
+}
+#quickSummary p.p1 {
+	position: absolute;
+	right: 21px;
+	top: 21px;
+	width: 12em;
+	height: 168px;
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid #0C2953;
+	text-align: center;
+	font-size: 90%;	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	line-height: 110%;	color: #FFF;
+	background-image: url(summary.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 100%; 
+	background-color: #0C2953;	
+}
+#quickSummary p.p1 span {
+	display: block;
+	padding: 3px;
+}
+#preamble {
+	padding: 0px 15em 0px 3em;
+}
+#preamble h3 {
+	margin: 15px 0px 0px 0px;
+	padding: 6px 20px 2px 6px;
+	text-align: left;
+	font-size: 180%;
+	font-variant: small-caps;
+	color: #6BA0D2;
+	background-image: url(bordDroitPreambleh3.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 0px;
+	background-color: #F6F7F7;
+}
+#preamble h3 span {
+	display: block;
+	padding: 20px 0px 15px 48px;
+	background-image: url(preambleShell.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 50%;
+}
+#preamble p {
+	text-align: justify;
+}
+#preamble p.p1, #preamble p.p2 {
+	margin: 0px;
+	padding: 10px 20px 2px 6px;
+	background-image: url(bordDroitPreamble.gif);
+	background-repeat: repeat-y;
+	background-position: 100% 0px;
+	background-color: #F6F7F7;
+}
+#preamble p.p3 {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(bordBasPreamble.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-color: #F6F7F7;
+}
+#preamble p.p1 span, #preamble p.p2 span, #preamble p.p3 span {
+	display: block;
+}
+#preamble p.p3 span {
+	margin: 0px;
+	padding: 10px 20px 20px 6px;
+	background-image: url(bordBasPreambleGauche.gif);
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+}
+#preamble p:first-letter, #preamble p span:first-letter {
+	color: #6BA0D2;
+	font-size: 140%;
+	font-weight: bold;
+	margin: 0px 2px 0px 0px;
+}
+#supportingText {
+	margin: 0px;
+	padding: 10px 16em 0px 1em;
+	font-size: 90%;
+}
+#explanation, #participation, #benefits, #requirements {
+	border: 2px solid #FFF;
+	padding: 0px;
+}
+#explanation {
+	margin: 0px 0px 10px 0px;
+}
+#participation {
+	margin: 0px 0px 10px 0px;
+	float: left;
+	width: 30%;
+}
+#benefits {
+	margin: 0px 0px 10px 32%;
+}
+#requirements {
+	margin: 0px 0px 10px 32%;
+}
+#supportingText h3 {
+	margin: 0px;
+	padding: 5px 30px 1px 2px;
+	text-align: left;
+	font-size: 120%;
+	font-variant: small-caps;
+	color: #6BA0D2;
+	border-bottom: 1px solid #6BA0D2;
+	background-color: #F6F7F7;
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+#explanation h3 {
+	background-image: url(explanationShell.jpg);
+}
+#participation h3 {
+	background-image: url(participationShell.jpg);
+}
+#benefits h3 {
+	background-image: url(benefitsShell.jpg);
+}
+#requirements h3 {
+	background-image: url(requirementsRock.jpg);
+}
+#supportingText p {
+	text-align: justify;
+	margin: 10px 0px 0px 0px;
+	padding: 1px 3px 2px 3px;
+}
+#supportingText p:first-letter, #supportingText p span:first-letter {
+	font-weight: bold;
+}
+#supportingText a:link {
+	color: #0083FF;
+	font-weight: bold;
+}
+#supportingText a:visited {
+	color: #204160;
+	font-weight: bold;
+}
+#supportingText a:hover, #supportingText a:active {
+	color: #8C0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+#linkList, #quickSummary p.p2 {
+	font-size: 90%;
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	position: absolute;
+	right: 21px;
+	width: 12em;
+	border: 1px solid #0C2953;
+	padding: 0px;
+	margin: 0px;
+	background-color: #A4ACB3;
+}
+#quickSummary p.p2 {
+	height: 50px;
+	text-align: center;
+	top: 217px;
+}
+
+#quickSummary p.p2 span {
+	font-size: 90%;
+	display: block;
+	padding: 3px;
+	color: #FFF;
+}
+#linkList {
+	top: 266px;
+}
+#linkList h3 {
+	background-color: #0C2953;
+	color: #FFF;
+	margin: 0px;
+	padding: 30px 1px 1px 1px;
+	background-repeat: no-repeat;
+}
+#linkList h3.select {
+	background-image: url(selecth3.jpg);
+	background-position: 50% 0%;
+}
+#linkList h3.favorites {
+	border-top: 1px solid #0C2953;
+	background-image: url(favoritesh3.jpg);
+	background-position: 40% 100%;
+}
+#linkList h3.archives {
+	border-top: 1px solid #0C2953;
+	background-image: url(archivesh3.jpg);
+	background-position: 40% 100%;
+}
+#linkList h3.resources {
+	border-top: 1px solid #0C2953;
+	background-image: url(resourcesh3.jpg);
+	background-position: 50% 30%;
+}
+#linkList h3:first-letter, #linkList h3 span:first-letter {
+	color: #FFF;
+	font-size: 160%;
+}
+#linkList ul {
+	list-style-type: none;
+	font-size: 90%;
+	color: #FFF;
+	margin: 0px;
+	padding: 0px;
+	background-color: #A4ACB3;
+}
+#linkList li {
+	padding: 3px 2px 3px 2px;
+	margin-bottom: 4px;
+}
+#linkList li:hover {
+	padding: 2px 1px 2px 1px;
+	border: 1px dotted #0C2953;
+	background-color: #6BA0D2;
+}
+#quickSummary p.p2 span a:link {
+	color: #FFF;
+	font-weight: bold;
+}
+#quickSummary p.p2 span a:visited {
+	color: #204160;
+}
+#quickSummary p.p2 span a:hover, #quickSummary p.p2 span a:active {
+	color: #FFD800;
+	font-weight: bold;
+	text-decoration: none;
+}
+#linkList a:link, #linkList a:visited {
+	border-left: 6px solid #FFF;
+	padding-left: 2px;
+	font-weight: bold;
+	color: #FFF;
+}
+#linkList a:visited {
+	color: #204160;
+}
+#linkList a:hover, #linkList a:active {
+	border-left: 6px solid #FFD800;
+	padding-left: 2px;
+	color: #FFD800;
+	text-decoration: none;
+	font-weight: bold;
+}
+#linkList a.c:link, #linkList a.c:visited {
+	border-left: none;
+	padding-left: 0px;
+	font-weight: normal;
+	color: #FFF;
+}
+#linkList a.c:hover, #linkList a.c:active {
+	border-left: none;
+	padding-left: 0px;
+	color: #FFD800;
+	text-decoration: none;
+}
+#linkList acronym {
+	border-bottom: 1px #FFF dashed;
+}
+#footer {
+	clear: both;
+	text-align: right;
+	margin: 0px -16em 0px 0px;
+	padding: 25px 0px 0px 0px;
+	background-repeat: no-repeat;
+	background-image: url(signSoph.gif);
+	background-position: 0% 95%;
+}
+#footer a {
+	font-size: 70%;
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}

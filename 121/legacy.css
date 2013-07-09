@@ -1,0 +1,211 @@
+/* css Zen Garden submission 121 - '60's Lifestyle', by Emiliano Pennisi, http://www.peamarte.it/02/03.html */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Emiliano Pennisi */
+/* Added: Sept. 2nd, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* css Zen Garden - '60 lifestyle', by Emiliano Pennisi, http://www.peamarte.it/02/03.html */
+/* This illustrations and design was made by Emiliano Pennisi, MetroStation Design, for more info visit --> http://www.peamarte.it/02/03.html
+The clipart of the cars is realized by Lens Hanger, for more info visit--> http://www.lenshanger.co.uk/*/
+
+/*****************Page debug*****************Good rule to know the structure of the webpage* NOTE: Only compliant browser no IE*
+div[id]{
+	border: 1px solid #000;
+	background-color: #fff;
+	margin: 20px 10px;
+}
+
+div[id]:before{
+	content: "div#" attr(id);
+	background-color: #cf9;
+	color: #060;
+	display: block;
+}
+
+/*****************End Page debug*****************/
+body {
+	font-family: palatino, georgia, times new roman, serif;
+	font-size: 70%;
+	line-height: 150%;
+	background: #688FBA url(contentBG.gif) bottom left fixed repeat-y;
+	color: #000;
+	margin: 0px;
+}
+
+/*Links and Typography*/
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #416D8E;
+	border-bottom: 1px dotted #e2eff3;
+}
+
+acronym {
+	font-weight: bold;
+	font-style: oblique;
+	cursor: help;
+	border: 0px; /*Only for Mozilla Firefox*/
+}
+
+h3 {
+	color: #416D8E;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 13px;
+	margin-bottom: 15px;
+	border-bottom: 5px solid #416D8E;
+	padding-bottom: 10px;
+	padding-left: 55px;
+}
+
+/*H3 Background*/
+div#linkList h3,div#intro h3{
+	background: url(h3bg_nav.gif) no-repeat 0px -3px;
+	padding-left: 40px;
+}
+
+div#explanation h3{
+	background: url(h3bg.gif) no-repeat 0px -3px;
+}
+
+div#participation h3{
+	background: url(h3bg_part.gif) no-repeat 0px -3px;
+	padding-left: 50px;
+}
+
+div#benefits h3{
+	background: url(h3bg_benef.gif) no-repeat 0px -3px;
+	padding-left: 37px;
+}
+
+div#requirements h3{
+	background: url(h3bg_req.gif) no-repeat 0px -3px;
+	padding-left: 47px;
+}
+
+/*End H3 background*/
+/*Container*/
+#container {
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+/*Header image*/
+div#extraDiv1{
+	background: url(header.gif) no-repeat;
+	width: 100%;
+	height: 648px;
+	margin-left: 15px;
+	margin-top: -20px;
+}
+
+#pageHeader {
+	display: none;
+}
+
+#pageHeader h1 {
+	width: 100%;
+	height: 100%;
+}
+
+#intro {
+	width: 300px;
+	position: absolute;
+	left: 20px;
+	top: 1214px;
+}
+
+#supportingText {
+	width: 450px;
+	position: absolute;
+	left: 330px;
+	top: 620px;
+}
+
+#quickSummary p.p1 span{
+	display: none;
+}
+
+#quickSummary p.p2 {
+	padding: 0 0 8px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+div#explanation,div#participation,div#benefits,div#requirements{
+	width: 400px;
+	margin-left: 25px;
+}
+
+  #footer, #quickSummary, #preamble, #lselect, #lfavorites, #lresources, #larchives {
+	background-color: #CDE0F3;
+	padding: 7px;
+	margin: 15px;
+	border: 5px solid #FFF0F1;
+}
+
+/*Rules for navigation*/
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#linkList{
+	width: 300px;
+	position: absolute;
+	left: 20px;
+	top: 598px;
+}
+
+#linkList li a{
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#linkList li a:hover {
+	color: #416D8E;
+	border: none;
+}
+
+#linkList li {
+	list-style-type: none;
+	display: block;
+	margin: 0 0 0;
+	padding: 1px;
+	border-bottom: 1px dotted #000;
+}
+
+#linkList li a.c {
+	color: #416D8E;
+	font-size: 9px;
+	font-weight: bold;
+	display: inline;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+#linkList li a:hover.c{
+	background-color: White;
+}
+
+/*End nav rules*/
+/*Footer*/
+div#footer{
+	border: 1px solid #416D8E;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*En of code*/
+ 

@@ -1,0 +1,354 @@
+/* css Zen Garden submission 123 - 'Skyroots', by Axel Hebenstreit, http://www.sonnenvogel.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Axel Hebenstreit */
+/* Added: Sept. 13th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* Basic Elements */
+html, body
+{
+	color: white;
+	font: 11px/16px "trebuchet ms", arial, helvetica, sans;
+	background: #3a200a url(bg.gif) repeat-y center top;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+p
+{
+	font: 11px/16px "trebuchet ms", arial, helvetica, sans;
+	text-align: justify;
+	letter-spacing: 1px;
+	margin: 0 0 0;
+	padding: 0 22px 15px;
+}
+
+a
+{
+	color: #59365f;
+	text-decoration: none;
+	background-color: #ffae00;
+}
+
+a acronym
+{
+	color: #59365f;
+	text-decoration: none;
+}
+
+#linkList a acronym
+{
+	color: #ffae00;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #feffff;
+	text-decoration: underline;
+}
+
+acronym
+{
+	color: #ffae00;
+	text-transform: uppercase;
+	cursor: help;
+}
+
+/* specific divs */
+#footer
+{
+	background: transparent url(footer_bg.gif) no-repeat left bottom;
+	padding: 20px 0 60px 22px;
+}
+
+#container
+{
+	background: #411948 url(steine.gif) repeat-y;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	width: 770px;
+}
+
+#lselect
+{
+	background: #55012b url(kasten1_03.gif) no-repeat left bottom;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+#larchives, #lresources
+{
+	background: #b99ab8 url(blume_unten.gif) no-repeat left bottom;
+	margin-top: 26px;
+	padding-bottom: 15px;
+}
+
+/* header graphics */
+#pageHeader
+{
+	background: url(top.jpg) no-repeat 0 0;
+	text-indent: -2000px;
+	margin: 0;
+	padding: 0;
+	height: 366px;
+}
+
+#pageHeader h2
+{
+	line-height: 0;
+	background: #411948 url(headlines_02.gif) no-repeat;
+	text-indent: -2000px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 385px;
+	left: 355px;
+	width: 370px;
+	height: 68px;
+}
+
+#quickSummary
+{
+	background-color: #59365f;
+	text-align: left;
+	margin: 82px 0 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+	left: 355px;
+	width: 370px;
+	height: auto;
+}
+
+* html #pageHeader h2,  * html #quickSummary { left: 155px; }
+
+#quickSummary p
+{
+	font-style: italic;
+	font-weight: bold;
+	padding-right: 22px;
+	padding-left: 22px;
+	width: 323px;
+}
+
+h3
+{
+	text-indent: -2000px;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 { display: none; }
+
+#preamble h3
+{
+	background: url(headlines_03.gif) no-repeat 0 0;
+	margin: 0;
+	padding: 0;
+	width: 370px;
+	height: 48px;
+}
+
+#explanation h3
+{
+	background: url(headlines_04.gif) no-repeat 0 0;
+	margin: 0;
+	padding: 0;
+	width: 370px;
+	height: 48px;
+}
+
+#participation h3
+{
+	background: url(headlines_05.gif) no-repeat 0 0;
+	margin: 0;
+	padding: 0;
+	width: 370px;
+	height: 48px;
+}
+
+#benefits h3
+{
+	background: url(headlines_06.gif) no-repeat 0 0;
+	margin: 0;
+	padding: 0;
+	width: 370px;
+	height: 48px;
+}
+
+#requirements h3
+{
+	background: url(headlines_07.gif) no-repeat 0 0;
+	margin: 0;
+	padding: 0;
+	width: 370px;
+	height: 48px;
+}
+
+#preamble,  #supportingText
+{
+	background-color: #59365f;
+	text-align: left;
+	position: relative;
+	left: 355px;
+	width: 370px;
+}
+
+* html #preamble, * html #supportingText
+{
+	background-color: #59365f;
+	text-align: left;
+	position: relative;
+	left: 155px;
+	width: 370px;
+}
+
+/*linklist
+*/
+
+#linkList
+{
+	position: absolute;
+	top: 366px;
+	left: 82px;
+	width: 229px;
+	overflow: hidden;
+}
+
+#linkList2
+{
+	text-align: left;
+	position: relative;
+	left: 38px;
+	width: 191px;
+}
+
+#linkList h3
+{
+	margin: 0;
+	width: 229px;
+	height: 68px;
+}
+
+#linkList h3.select
+{
+	background: url(kastenlilie.gif) no-repeat left top;
+	position: relative;
+	right: 38px;
+}
+
+#linkList h3.archives
+{
+	background: url(liliarchives_01.gif) no-repeat left top;
+	margin-top: 23px;
+	position: relative;
+	right: 38px;
+}
+
+#linkList h3.resources
+{
+	background: url(liliresourcen_01.gif) no-repeat left top;
+	margin-top: 23px;
+	position: relative;
+	right: 38px;
+}
+
+#linkList h3.select span
+{
+	color: #feffff;
+	font-size: 12px;
+	font-family: "Trebuchet MS", Geneva, Arial, Helvetica, SunSans-Regular, sans-serif;
+	text-transform: uppercase;
+	text-indent: 0;
+	letter-spacing: 1px;
+	display: block;
+	padding-top: 40px;
+	padding-left: 70px;
+}
+
+#linkList h3.archives span, #linkList h3.resources span { display: none; }
+
+#linkList ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#linkList li
+{
+	font-size: 11px;
+	line-height: 11px;
+	background: url(bullet1.gif) no-repeat 0 12px;
+	list-style-type: none;
+	display: block;
+	margin: 0 0 0 14px;
+	padding: 0 0 0 20px;
+	height: auto;
+}
+
+#linkList li a
+{
+	color: #feffff;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 15px;
+	text-decoration: none;
+	background: transparent;
+	display: block;
+	padding: 9px 0 0 0;
+	width: auto;
+}
+
+#linkList li a:hover
+{
+	color: #ffae00;
+	text-decoration: underline;
+}
+
+#linkList li a.c:link, #linkList li a.c:visited
+{
+	color: #ffae00;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 15px;
+	display: inline;
+}
+
+#linkList li a.c:hover
+{
+	color: #feffff;
+	text-decoration: underline;
+}
+
+#linkList #larchives li, #linkList #lresources li
+{
+	background: url(bullet2.gif) no-repeat 0 9px;
+	list-style-type: none;
+	display: block;
+	margin-left: 14px;
+	padding-left: 20px;
+	height: 25px;
+}
+
+#linkList #larchives li a, #linkList #lresources li a
+{
+	color: #411948;
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
+
+#linkList #larchives li a:hover, #linkList #lresources li a:hover { color: #feffff; }
+
+/* extra divs */
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 { display: none; }

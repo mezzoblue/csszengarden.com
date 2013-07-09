@@ -1,0 +1,252 @@
+/* css Zen Garden submission - 'A Walk in the Garden', by Simon Van Hauwermeiren,, http://users.skynet.be/bk316398/temp.html */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Simon Van Hauwermeiren */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+html {
+	background: url(02.gif);
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	background: url(08.jpg) no-repeat 270px 1335px;
+}
+
+p {
+	font-family: Georgia, serif;
+	font-size: 12px;
+	color: #666;
+	margin: 10px 15px 20px 10px;
+	line-height: 16px;
+}
+
+acronym {
+	color: #063;
+	border-bottom: 1px dotted #063;
+	cursor: help;
+}
+
+#pageHeader h1 {
+	background: url(01.jpg) no-repeat left top;
+	width: 750px;
+	height: 404px;
+	margin: 0;
+}
+
+#pageHeader h1 span, #pageHeader h2, #quickSummary p.p1 {
+	display: none;
+}
+
+#preamble h3 {
+	background: url(conh1.gif) no-repeat left top;
+	width: 367px;
+	height: 68px;
+	margin: 0;
+}
+
+#preamble h3 span, #explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span {
+	display: none;
+}
+
+#explanation h3 {
+	background: url(conh2.gif) no-repeat left top;
+	width: 367px;
+	height: 68px;
+	margin: 0;
+}
+
+#participation h3 {
+	background: url(conh3.gif) no-repeat left top;
+	width: 367px;
+	height: 68px;
+	margin: 0;
+}
+
+#benefits h3 {
+	background: url(conh4.gif) no-repeat left top;
+	width: 367px;
+	height: 68px;
+	margin: 0;
+}
+
+#requirements h3 {
+	background: url(conh5.gif) no-repeat left top;
+	width: 367px;
+	height: 68px;
+	margin: 0;
+}
+
+#participation a, #requirements a, #quickSummary a, #footer a {
+	color: #063;
+	text-decoration: underline;
+}
+
+#participation a:hover, #requirements a:hover, #quickSummary a:hover {
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #FFF;
+	text-decoration: none;
+	background: #063;
+}
+
+#supportingText {
+	width: 367px;
+	text-align: justify;
+}
+
+#intro {
+	width: 367px;
+	text-align: justify;
+}
+
+#quickSummary p.p2 {
+	background: url(05.gif) no-repeat right top;
+	padding: 0 40px 0 0;
+	margin: -20px 0 0 0;
+	height: 50px;
+	line-height: 42px;
+	text-align: right;
+	font-style: italic;
+}
+
+#linkList {
+	position: absolute;
+	top: 470px;
+	left: 405px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 10px;
+}
+
+#lselect ul {
+	background: url(03.gif) no-repeat left top;
+	height: 465px;
+	width: 208px;
+	margin: 0;
+	padding: 0;
+}
+
+#lselect li {
+	background: url(04.gif) no-repeat left top;
+	height: 39px;
+	width: 120px;
+	list-style-type: none;
+	padding: 5px 0 0 55px;
+}
+
+#larchives ul {
+	background: url(06.gif) no-repeat left top;
+	width: 208px;
+	height: 113px;
+	margin: 0;
+	padding: 0;
+}
+
+#larchives li {
+	list-style-type: square;
+	padding: 7px 0 0 5px;
+	margin: 0 0 0 35px;
+}
+
+#lresources ul {
+	background: url(07.gif) no-repeat left top;
+	width: 208px;
+	height: 164px;
+	margin: 0;
+	padding: 0;
+}
+
+#lresources li {
+	list-style-type: square;
+	padding: 7px 0 0 5px;
+	margin: 0 0 0 35px;
+}
+
+#lresources h3 {
+	padding: 0;
+	background: url(listh3.gif) no-repeat left bottom;
+	width: 208px;
+	height: 50px;
+	margin: 0;
+}
+
+#lresources h3 span {
+	display: none;
+}
+
+#larchives h3 {
+	padding: 0;
+	background: url(listh2.gif) no-repeat left bottom;
+	width: 208px;
+	height: 50px;
+	margin: 0;
+}
+
+#larchives h3 span {
+	display: none;
+}
+
+#lselect h3 {
+	background: url(listh1.gif) no-repeat left bottom;
+	width: 208px;
+	height: 50px;
+	margin: 0;
+}
+
+#lselect h3 span {
+	display: none;
+}
+
+#lselect a.c {
+	display: inline;
+	color: #333;
+	text-decoration: underline;
+	font-size: 10px;
+}
+
+#lselect a.c:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+#lselect a {
+	font-family: Arial, Verdana, sans-serif;
+	display: block;
+	font-size: 12px;
+	color: #063;
+	text-decoration: underline;
+}
+
+#lselect a:hover, #lresources a:hover, #larchives a:hover {
+	color: #633;
+	text-decoration: none;
+}
+
+#lresources a, #larchives a {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	color: #063;
+	text-decoration: underline;
+}
+
+#footer {
+	clear: both;
+	width: 605px;
+	border-top: 1px solid #666;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 14px;
+	text-align: right;
+	margin: 0 0 15px 0;
+}

@@ -1,0 +1,263 @@
+/* css Zen Garden submission 066 - 'Focus & Shoot' by Colectivo YTW (Julio Beamonte, Beatriz Martinez, Gustavo Gavan, Franck Scipion), http://www.yatienesweb.info/corporativo/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, YTW */
+/* Main Photo - Copyright 2003, Cristobal Lucas Gomez, cristoballucas@hotmail.com, all rights reserved*/
+/* Added: December 14th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* General*/
+
+body {
+	background-image:url(bg.jpg);
+	background-color:#fff;
+	font-family:arial, sans serif;
+	font-size:11px;
+	line-height:15px;
+	color:#fff;
+	margin:0px;
+	}
+
+/* Positioning*/
+
+#container {
+	margin-left:0px;
+	margin-top:0px;
+	padding:0px;
+	width:950px;
+	z-index:1;
+	}
+
+#intro {
+	width:275px;
+	position:absolute;
+	left:45px;
+	top:15px;
+	z-index:2;
+	}
+
+#supportingText {
+	width:5px;
+	position:absolute;
+	left:45px;
+	top:15px;
+	z-index:2;
+	}	
+#participation {
+	width:325px;
+	position:absolute;
+	left:575px;
+	top:820px;
+	z-index:2;
+	}
+#benefits {
+	width:435px;
+	position:absolute;
+	left:0px;
+	top:820px;
+	z-index:2;
+	}
+#footer{
+	width:250px;
+	position:absolute;
+	left:600px;
+	top:360px;
+	z-index:2;
+	}
+	
+#requirements {
+	width:900px;
+	position:absolute;
+	left:0px;
+	top:1250px;
+	z-index:2;
+	}
+
+#linkList2 {
+	width:275px;
+	position:absolute;
+	left:345px;
+	top:87px;
+	z-index:2;
+	}
+#explanation {
+	width:305px;
+	position:absolute;
+	left:600px;
+	top:0px;
+	z-index:2;
+	}
+
+/* Cosmetics */
+
+#extraDiv1 {
+	background-image:url(background.jpg);
+	background-repeat:no-repeat;
+	position:absolute;
+	left:2px;
+	top:2px;
+	width:1000px;
+	height:1515px;
+	z-index:1;
+	}
+
+#explanation, #participation, #requirements, #benefits, #footer, #quickSummary, #preamble, #lselect, #lfavorites, #lresources, #larchives {
+	padding:7px;
+	margin:5px;
+	border-left:1px solid #aaa;
+	border-top:1px solid #aaa;
+	border-right:1px solid #333;
+	border-bottom:1px solid #333;
+	}
+
+#requirements {
+	background-image:url(End_Section.gif);
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	}
+
+#explanation, #participation, #benefits, #quickSummary, #preamble, #lselect, #lfavorites, #lresources, #larchives {
+	background-image:url(End_Section2.gif);
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	}
+
+#pageHeader {
+	display:none;
+	}
+h3 {
+	font-family:arial, sans serif;
+	text-transform: uppercase;
+	color:#fff;
+	font-size:11px;
+	font-weight:bold;
+	margin-top:3px;
+	margin-bottom:3px;
+	border-bottom: #fff 1px solid
+	}
+h3 span {
+	border-bottom: #c00 5px solid
+	}
+
+#explanation h3, #participation h3, #requirements h3, #benefits h3, #quickSummary h3, #preamble h3, #lselect h3, #lfavorites, #lresources h3, #larchives h3 {
+	background-image:url(h3.gif);
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	}
+
+p {
+	margin:6px;
+	}
+
+
+#requirements p.p5 {
+	color:#c00;
+	font-weight:bold;
+	}
+
+acronym {
+	border-bottom: dotted 1px #fff;
+	cursor: help;
+	}
+
+/* Links */
+
+a {
+	color:#e2e2e2;
+	text-decoration:underline;
+	}
+a:link {
+	color:#e2e2e2;
+	text-decoration:underline;
+	}
+a:hover {
+	color:#fff;
+	font-weight:bold;
+	text-decoration:underline;
+	}
+a:visited {
+	color:#e2e2e2;
+	text-decoration:underline;
+	}
+
+#footer a {
+	text-transform: uppercase;
+	color:#fff;
+	text-decoration:underline;
+	background: url(bullet_single.gif) no-repeat 5px 2px;
+	padding-left: 15px;
+	}
+#footer a:link {
+	text-transform: uppercase;
+	color:#fff;
+	text-decoration:underline;
+	background: url(bullet_single.gif) no-repeat 5px 2px;
+	padding-left: 15px;
+	}
+#footer a:hover {
+	text-transform: uppercase;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:underline;
+	}
+#footer a:visited {
+	text-transform: uppercase;
+	color:#c00;
+	text-decoration:underline;
+	}
+
+#lselect a {
+	color:#fff;
+	text-decoration:underline;
+	}
+#lselect a:link {
+	color:#fff;
+	text-decoration:underline;
+	}
+#lselect a:hover {
+	color:#fff;
+	font-weight:bold;
+	text-decoration:underline;
+	}
+#lselect a:visited {
+	color:#e2e2e2;
+	text-decoration:underline;
+	}
+#lselect a.c:hover {
+	color:#c00;
+	background-color:#fff;
+	font-weight:bold;
+	}
+
+/* Lists */
+
+#linkList ul {
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	}
+
+#linkList li {
+	list-style-type: none;
+	}
+
+#linkList #lselect li {
+	background: url(bullet_double.gif) no-repeat 5px 2px;
+	padding-left: 15px;
+}
+
+#lselect li a.c{
+	text-decoration:none;
+	display:inline;
+	font-size:9px;
+	text-transform: uppercase;
+}
+
+#linkList #larchives li, #linkList #lresources li {
+	background: url(arrow.gif) no-repeat 0px 5px;
+	padding-left: 10px;
+	display: inline;
+}

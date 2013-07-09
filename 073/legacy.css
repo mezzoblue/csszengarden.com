@@ -1,0 +1,49 @@
+/* css Zen Garden submission 073 - 'Emmakade' by Alexander Christiaan Jacob (ACJ) - http://acjs.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2003, ACJ */
+/* Added: January 18th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+
+:link, :visited { background-color: transparent; color: #9296A2; font-weight: bold; text-decoration: underline }
+[title] { border-bottom: 1px dotted; cursor: help }
+:link:hover, :visited:hover { background-color: #9296A2; color: #373B46; text-decoration: none }
+body { font: normal 70% Verdana, Georgia, Times, serif }
+body { background: #9296A2 url(a_img.gif) repeat; color: #000000; margin: 0em; padding: 0em }
+h1, h2, h3, h4 { margin: 0em; overflow: hidden; padding: 0em }
+h1 { background: #9296A2 url(h1_v2.jpg) no-repeat; height: 430px }
+h2 { background: #9296A2 url(h2.gif) no-repeat; height: 360px; margin-left: -62px; position: absolute; top: 0px; width: 60px }
+* > h2 { position: fixed }
+h3 span { margin-left: -2000px }
+p { color: #9296A2; margin: 0em; padding: 0em 0em 1em 0em }
+p:hover { color: #E7E7F1 }
+p * { color: #9296A2 }
+p:hover * { color: #E7E7F1 }
+ul { background-color: transparent; color: #9296A2; margin: 0em; padding: 0em; padding-bottom: 20px }
+ul li { list-style: square; margin: 0em 0em 0em 2em; padding: 0em }
+ul li a { font-weight: normal }
+#container { background: #373B46 url(container.jpg) bottom no-repeat; border: 2px solid #000; border-width: 0px 2px; color: #E7E7F1; margin-left: -321px; padding-bottom: 500px; position: absolute; left: 50%; width: 642px }
+#pageHeader { background-color: #373B46 }
+#pageHeader h1 span { margin-left: -2000px }
+#pageHeader h2 span { margin-left: -2000px }
+#quickSummary { margin-top: -10px }
+#quickSummary, #preamble { margin-left: 290px; text-align: justify; width: 270px }
+#preamble h3 { background: #373B46 url(h3_preamble.gif) no-repeat; height: 60px; width: 330px }
+#supportingText { margin-left: 24px; width: 440px }
+p { border-left: 1px dotted #9296A2; margin-left: 10px; padding-left: 10px; text-align: justify }
+#explanation h3 { background: #373B46 url(h3_explanation.gif) no-repeat; height: 60px; width: 330px }
+#participation h3 { background: #373B46 url(h3_participation.gif) no-repeat; height: 60px; width: 330px }
+#benefits h3 { background: #373B46 url(h3_benefits.gif) no-repeat; height: 60px; width: 330px }
+#requirements h3 { background: #373B46 url(h3_requirements.gif) no-repeat; height: 60px; width: 330px }
+#linkList { left: 12px; position: absolute; top: 400px; width: 256px }
+#linkList h3 { height: 30px; width: 200px }
+#linkList h3.select { background: #373B46 url(h3.select.gif) no-repeat }
+#linkList h3.favorites { background: #373B46 url(h3.favorites.gif) no-repeat }
+#linkList h3.archives { background: #373B46 url(h3.archives.gif) no-repeat }
+#linkList h3.resources { background: #373B46 url(h3.resources.gif) no-repeat }
+#footer { bottom: 400px; position: absolute; right: 36px; text-align: right }
+#extraDiv1 { background: #9296A2 url(thingy.gif) no-repeat; bottom: 0px; float: right; height: 36px; position: fixed; right: 0px; width: 36px }

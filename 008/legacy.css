@@ -1,0 +1,113 @@
+/* css Zen Garden submission 008 - 'RPM' by Bruno Cunha, http://www.kaosboy.net/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* Main image from http://www.karborn.com/FinalV6Old/Series/RPM/RPMImages.htm */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+body {
+	background-image:url(bg.jpg);
+	background-color:#fff;
+	font-family:arial, sans serif;
+	font-size:11px;
+	line-height:15px;
+	color:#fff;
+	margin:0px;
+	}
+
+#container {
+	margin-left:0px;
+	margin-top:0px;
+	padding:0px;
+	width:684px;
+	z-index:1;
+	}
+
+#intro {
+	width:275px;
+	position:absolute;
+	left:88px;
+	top:902px;
+	z-index:2;
+	}
+
+#supportingText {
+	width:450px;
+	position:absolute;
+	left:411px;
+	top:535px;
+	z-index:2;
+	}
+#explanation, #participation, #requirements, #benefits, #footer, #quickSummary, #preamble, #lselect, #lfavorites, #lresources, #larchives {
+	padding:7px;
+	margin:5px;
+	border-left:1px solid #aaa;
+	border-top:1px solid #aaa;
+	border-right:1px solid #333;
+	border-bottom:1px solid #333;
+	background-image:url(transparent.gif);
+	}
+
+#linkList2 {
+	width:275px;
+	position:absolute;
+	left:88px;
+	top:1244px;
+	z-index:2;
+	}
+
+#extraDiv1 {
+	background-image:url(tunami2.jpg);
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:684px;
+	height:1515px;
+	z-index:1;
+	}
+#pageHeader {
+	display:none;
+	}
+h3 {
+	font-family:arial, sans serif;
+	color:#fff;
+	font-size:11px;
+	font-weight:bold;
+	margin-top:3px;
+	margin-bottom:0px;
+	}
+p {
+	margin:6px;
+	}
+
+a {
+	color:#e2e2e2;
+	text-decoration:underline;
+	}
+a:link {
+	color:#e2e2e2;
+	text-decoration:underline;
+	}
+a:hover {
+	color:#fff;
+	font-weight:bold;
+	text-decoration:underline;
+	}
+a:visited {
+	color:#e2e2e2;
+	text-decoration:underline;
+	}
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+
+#linkList li {
+	list-style-type: none;
+	display: inline;
+	}

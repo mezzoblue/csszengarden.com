@@ -1,0 +1,179 @@
+/* css Zen Garden submission 126 - 'C-Note', by Brian Williams, http://www.ploughdeep.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Brian Williams */
+/* Added: Sept. 16th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+
+/*Portrait of Benjamin Franklin adapted from the U.S. 100 dollar bill;
+the intaglio for which was originally made by Thomas Hipschen, Master
+Engraver for the U.S. Bureau of Engraving and Printing.*/
+
+/*---------------------------------------
+              GRID
+  ---------------------------------------*/
+body {
+	margin:0;
+	padding:0;}
+.page-wrapper {
+	position:absolute;
+	width:100%;}
+header {
+	width:918px;
+	height:320px;}
+.summary {
+	position:absolute;
+	top:202px;
+	left:296px;
+	width:246px;
+	height:118px;}
+.summary p:last-child {
+	position:absolute;
+	top:-28px;
+	left:324px;
+	width:150px;
+	padding:63px 0 50px 0;
+	z-index:3;}
+.preamble {padding-top:35px;}
+.preamble, .supporting {
+	margin-left:185px; 
+	width:410px;
+	position:relative;
+	/*\*/left:185px;
+	margin-left:0;/**/}
+.preamble p:nth-child(2) {
+	position:absolute;
+	top:35px;
+	left:-170px;
+	float:left;}
+footer {
+	padding:80px 0;
+	text-align:center;}
+.sidebar {
+	position:absolute;
+	top:238px;
+	left:620px;
+	width:480px;
+	z-index:1;}
+.sidebar .wrapper {
+	width:155px;
+	position:relative;
+	top:116px;}
+/*---------------------------------------
+              IMAGES
+  ---------------------------------------*/
+body {background:url(masthead.jpg) repeat-x;}
+.page-wrapper {background:url(sidebody.gif) repeat-y;}
+.intro {background:url(logo-on-sunburst.jpg) no-repeat;}
+header {background:url(PoorRichard.jpg) no-repeat;}
+.summary {background:url(quickSummary.gif) no-repeat;}
+.summary p:last-child {background:url(serial.gif) no-repeat;}
+.preamble h3 {background:url(preamble-h3.gif) no-repeat;}
+.preamble p:nth-child(2) {background:url(preamble-p1.gif) no-repeat;}
+.explanation h3 {background:url(explanation-h3.gif) no-repeat;}
+.participation h3 {background:url(participation-h3.gif) no-repeat;}
+.benefits h3 {background:url(benefits-h3.gif) no-repeat;}
+.requirements h3 {background:url(requirements-h3.gif) no-repeat;}
+.sidebar {background:url(watermark.png) top right no-repeat;}
+.design-selection h3 {background:url(lselect-h3.gif) no-repeat;}
+.design-archives h3 {background:url(larchives-h3.gif) no-repeat;}
+.zen-resources h3 {background:url(lresources-h3.gif) no-repeat;}
+/*---------------------------------------
+              TYPOGRAPHY
+  ---------------------------------------*/
+body {
+	font:76% Arial, Helvetica, sans-serif;
+	color:#6C7A70;}
+h1, h2, h3, h4, h5, h6, p, ol, ul, dl, dt, dd {
+	margin:0;
+	padding:0;
+	list-style-type:none;}
+h3 {overflow:hidden;}
+h3, .preamble p:nth-child(2)  {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+h1, h2, .summary p:first-child{
+	position:absolute;
+	top:-500px;}
+p {
+	line-height:2em;
+	text-indent:1em;
+	text-align:justify;}
+a {
+	text-decoration:underline;
+	color:#728569;}
+a:hover {
+	text-decoration:underline;
+	color:#900 !important;}
+a:visited {
+	text-decoration:underline;
+	color:#6C7A70;}
+.summary p:last-child {
+	line-height:normal;
+	text-indent:0;
+	text-align:left;
+	letter-spacing:1px;
+	text-transform:lowercase;
+	font-variant:small-caps;
+	font-size:10px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:12px;}
+.supporting p {margin:5px 0;}
+.preamble p:nth-child(2) {
+	height:0;
+	padding-top:200px;
+	width:155px;}
+.preamble h3, .supporting h3  {
+	height:20px;
+	margin-bottom:8px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	height:0;
+	padding-top:20px;}
+.explanation h3 {
+	height:0;
+	padding-top:25px;}
+.supporting div {margin-top:20px;}
+.sidebar .wrapper div {margin-top:10px;}
+.sidebar .wrapper ul {
+	margin-top:-110px;
+	/*\*/margin-top:0;/**/}
+.sidebar li {
+	padding:10px 0;
+	color:#909989;
+	letter-spacing:1px;}
+.sidebar .wrapper h3 {
+	height:10px;
+	h\eight:0;
+	padding-top:10px;}
+.design-selection {
+	font-variant:small-caps;
+	text-align:right;}
+.design-selection a {
+	display:block;
+	text-align:left;
+	font:1.1em Georgia, serif;
+	font-variant:normal;}
+.design-selection a.designer-name, .design-archives, .zen-resources, footer  {
+	display:inline;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:lowercase;
+	font-variant:small-caps;
+	text-decoration:none;
+	font-size:.8em;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	font-size:1.0em;}
+.design-archives, .zen-resources, footer {
+	display:block;
+	letter-spacing:0px;}

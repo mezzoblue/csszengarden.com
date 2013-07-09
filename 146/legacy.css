@@ -1,0 +1,71 @@
+/* css Zen Garden submission 146 - 'Urban', by Matt, Kim &amp; Nicole, http://www.learnnewmedia.ca/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Matt, Kim &amp; Nicole */
+/* Added: Dec. 16th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* Originally from Session 3 of the Zen Garden student gallery,
+   http://www.mezzoblue.dev/zengarden/alldesigns/student/  */
+
+
+/* basic elements */
+a:hover, a:active {color: #FFF; background: #ccc;}
+a:visited {color: #559999; text-decoration:none; font-weight:bolder;}
+a:hover {color: #ffffff; background: #ccc;}
+a:link {color: #FACD56; text-decoration:none; font-weight:bolder;}
+p {font: normal 10px/16px Tahoma, Verdana, Arial, sans-serif; text-align: justify; text-decoration:none;}
+#quickSummary p.p2 {position:absolute; z-index:3; text-align:center; left: 158px; top: 244px; width: 216px; height: 20px;}
+h3 {font: normal 10px/16px Tahoma, Verdana, Arial, sans-serif; letter-spacing: 1px; color: #7D775C;}
+/* start of body of text */
+#preamble {top: 330px; height: 207px;}
+#supportingText {top: 540px; height: 1100px;}
+#supportingText, #preamble {text-decoration:none; width:355px;z-index:2; position:absolute; left: 334px;}
+/* end of body of text */
+/* specific divs */
+#css-zen-garden{background-color: #FFF;}
+#container {position: relative; width:765px; margin: 0 auto; text-align: left;}
+#footer a {text-decoration:none; text-align:right; text-transform:uppercase; color: #559999; font-weight:bolder; font-size:12px;}
+/* start of navagation */
+#linkList {background: transparent url("final.gif") no-repeat top left; z-index:1; position: absolute; height:1650px; top: 244px; right: 0px; left: -10px; width: 778px; font-size:12px;}
+#linkList2 {font: 10px tahoma, verdana, sans-serif; width: 130px;}
+#linkList h3.select {width: 97px; height: 16px;}
+#linkList h3.favorites span {display:none;}
+#linkList h3.archives {width:57px; height: 14px; text-decoration:none;}
+#linkList li a:link {color: #FACD56; text-decoration:none; font-weight:bolder;}
+#linkList li a:visited {color: #000; text-decoration:none;}
+#linkList li a:hover {color: #ffffff; background: #ccc;}
+#linkList ul a.c {color: #ccddcb; display: inline; font-weight: normal;}
+#lselect ul a {line-height: 3.5ex; display: block; font-weight: bold;}
+#linkList li {color:#ccddcb; list-style-type: none; z-index:3; text-align:center; list-style-type: none;}
+#lselect {height: 239px; width: 150px; left: 134px; top: 37px;}
+#larchives {height: 35px; width: 168px; text-align:center; left: 125px; top: 534px;}
+#lresources {text-align:center; width: 150px; height: 30px; left: 132px; top: 423px;}
+#lresources, #larchives, #lselect {position:absolute; font-size:10px;}
+/* end of navagation */
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 {background-image:url("title.gif"); background-repeat:no-repeat; height:245px;}
+#linkList h3.select span {display:none;}
+#linkList h3.archives span {display:none;}
+#linkList h3.resources span {display:none;}
+#pageHeader h1 span {display:none;}
+#pageHeader h2 span {display:none;}
+#quickSummary p.p1{width: 202px;}
+#quickSummary p.p2{width: 118px;}
+#quickSummary p.p2 a:visited {color:#FFFFFF;}
+#preamble h3 span {display:none;}
+#explanation h3 span {display:none;}
+#explanation h3 {background-image:url("what.gif"); background-repeat:no-repeat; height:20px; padding-top:10px;}
+#participation h3 span {display:none;}
+#participation h3 {background-image:url("part.gif"); background-repeat:no-repeat; height:27px;}
+#benefits h3 span {display:none;}
+#benefits h3 {background-image:url("benefits.gif"); background-repeat:no-repeat; height:27px;}
+#requirements h3 span {display:none;}
+#requirements h3 {background-image:url("require.gif"); background-repeat:no-repeat; height:27px;}
+#quickSummary p.p1 {display:none;}
+#extraDiv1 {background-image:url("background2.gif"); height:1617px; float:right; width:345px; z-index:0; background-repeat:no-repeat; margin-top:10px;}

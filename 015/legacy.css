@@ -1,0 +1,336 @@
+/* css Zen Garden submission 015 - 'boddhidarma' by Michael Angeles - http://studioid.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Michael Angeles */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* body and type */
+
+html {
+	background: rgb(93, 105, 40) url(bg_boddhidarma2.gif) no-repeat top left; 
+}
+/* basic elements */
+body { 
+	font: 9pt/16pt verdana, helvetica, sans-serif; 
+	color: #ffc; 
+	margin: 0 0 30px 0; 
+	}
+p { 
+	font: 9pt/16pt verdana, helvetica, sans-serif;
+	padding-bottom: 5px; 
+	}
+h3 { 
+	font-size: 16pt; 
+	letter-spacing: 1px; 
+	margin: 0;
+	padding: 0;
+	color: #cc9;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #fe9201;
+	}
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #fe9201;
+	border: none;
+	}
+a:hover, a:active { 
+	color: #fe9201;
+	}
+
+
+/* layout */
+
+#container { 
+	text-align: left;
+	background: url(sig.gif) no-repeat bottom right;
+}
+
+#intro { 
+	min-width: 400px;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 {  
+	margin: 10px 0 0 410px; 
+	padding: 0 0 0 0;
+	width: 257px; 
+	height: 18px; 
+	background: transparent url(hd_zengarden.gif) no-repeat 0 0;
+	}
+#pageHeader h1 span {
+	display:none
+	}
+#pageHeader h2 { 
+	padding: 0;  
+	margin: 210px 0 0 410px; 
+	width: 289px; 
+	height: 70px; 
+	background: transparent url(hd_beauty.gif) no-repeat 0 0;
+	}
+#pageHeader h2 span {
+	display:none;
+	}
+
+#quickSummary p.p1 {
+	position: absolute;
+	top: 30px;
+	left: 410px;
+	margin: 0; 
+	padding: 0 50px 0 0;
+	font: 14pt/18pt verdana, helvetica, sans-serif;
+	text-transform: lowercase;
+	color: #869152;
+}
+#quickSummary p.p2 {
+	position: absolute;
+	top: 850px;
+	left: 0;
+	width: 320px;
+	margin: 0;
+	padding: 15px 20px 15px 20px;
+	text-align: left;
+	font-size: 1.1em;
+	font-weight: bold;
+	background: #677235;
+}
+
+#preamble {
+	margin: 10px 50px 40px 410px; 
+	padding: 20px 0 40px 0;
+	border-top: 1px dotted #869152;
+	background: url(koi.gif) no-repeat bottom center;
+	}
+#preamble h3 {
+	background: url(hd_enlighten.gif) no-repeat 0 0;
+	width: 301px;
+	height: 23px;
+}
+#preamble h3 span {
+	display:none;
+}
+
+#supportingText {
+	margin: 0 50px 0 410px; 
+	}
+#explanation {
+	padding-bottom: 40px;
+	background: url(koi.gif) no-repeat bottom center;
+}
+#explanation h3 {
+	background: url(hd_about.gif) no-repeat 0 0;
+	width: 302px;
+	height: 19px;
+}
+#explanation h3 span {
+	display:none;
+}
+#participation {
+	margin-top: 20px;
+	padding-bottom: 40px;
+	background: url(koi.gif) no-repeat bottom center;
+}
+#participation h3 {
+	background: transparent url(hd_participation.gif) no-repeat 0 0;
+	width: 140px;
+	height: 23px;
+}
+#participation h3 span {
+	display:none;
+}
+#benefits {
+	margin-top: 20px;
+	padding-bottom: 40px;
+	background: url(koi.gif) no-repeat bottom center;
+}
+#benefits h3 {
+	background: transparent url(hd_benefits.gif) no-repeat 0 0;
+	width: 106px;
+	height: 24px;
+}
+#benefits h3 span {
+	display:none;
+}
+#requirements {
+	margin-top: 20px;
+	padding-bottom: 40px;
+}
+#requirements h3 {
+	background: transparent url(hd_requirements.gif) no-repeat 0 0;
+	width: 155px;
+	height: 23px;
+}
+#requirements h3 span {
+	display:none;
+}
+
+#footer {
+	margin-top: 20px;
+}
+#footer a:link, #footer a:visited { 
+	margin-right: 20px; 
+	}
+
+/* navigation / links */
+
+#linkList {
+	position: absolute;
+	top: 940px;
+	left: 0;
+	width: 360px;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	font-size: .9em;
+}
+
+/* linklist WITHOUT favorites */
+/* NOTE: keep this linklist CSS if favorites remains hidden */
+#lselect { 
+	clear: none;
+	float: left;
+	width: 180px;
+	padding: 0 19px 0 20px;
+	margin: 0 0 30px 0;
+	border-right: 1px solid #677235;
+	voice-family: "\"}\"";      
+	voice-family: inherit;
+	width: 140px;
+	}
+html>body #lselect {
+	width: 140px;
+	}
+#larchives { 
+	float: right;
+	width: 180px;
+	padding: 0 0 0 20px;
+	margin: 0 0 30px 0;
+	voice-family: "\"}\"";      
+	voice-family: inherit;
+	width: 160px;
+	}
+html>body #larchives {
+	width: 160px;
+	}
+#lresources { 
+	float: left;
+	width: 170px;
+	padding: 0 0 0 20px;
+	margin: 0 0 30px 0;
+	voice-family: "\"}\"";      
+	voice-family: inherit;
+	width: 160px;
+	}
+html>body #lresources {
+	width: 160px;
+	}
+/* /end linklist WITHOUT favorites */
+
+/* linklist WITH #lfavorites */
+/* NOTE: in case you decide to uncomment #lfavorites div, comment the above  link list CSS and uncomment the below
+#lselect { 
+	float: left;
+	width: 150px;
+	padding: 0 19px 0 20px;
+	margin: 0 0 30px 0;
+	border-right: 1px solid #677235;
+}
+#lfavorites { 
+	float: left;
+	width: 150px;
+	padding: 0 0 0 20px;
+	margin: 0 0 30px 0;
+}
+#larchives { 
+	float: left;
+	width: 150px;
+	padding: 0 19px 0 20px;
+	margin: 0 0 30px 0;
+	border-right: 1px solid #677235;
+}
+#lresources { 
+	float: left;
+	width: 150px;
+	padding: 0 0 0 20px;
+	margin: 0 0 30px 0;
+}
+end linklist WITH #lfavorites */
+
+#linkList h3.select { 
+	background: url(hd_select.gif);
+	margin: 0; 
+	width: 96px;
+	height: 12px; 
+	border: 0;
+}
+#linkList h3.select span {
+	display:none
+}
+#linkList h3.favorites { 
+	background: url(hd_favorites.gif);
+	margin: 0; 
+	width: 58px;
+	height: 10px; 
+	border: 0;
+}
+#linkList h3.favorites span {
+	display:none
+}
+#linkList h3.archives { 
+	background: url(hd_archives.gif);
+	margin: 0; 
+	width: 53px; 
+	height: 10px;
+	border: 0;
+}
+#linkList h3.archives span {
+	display:none
+}
+#linkList h3.resources { 
+	background: url(hd_resources.gif);
+	margin: 0; 
+	width: 66px;
+	border: 0;
+	height: 10px; 
+}
+#linkList h3.resources span {
+	display:none
+}
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+}
+#linkList li {
+	list-style-type: none;
+	display: block; 
+	padding-top: 2px; 
+	margin-bottom: 2px;
+}
+#linkList li a:link {
+	text-decoration: none;
+	border: none;
+}
+#linkList li a:visited {
+	text-decoration: none;
+	border: none;
+}
+
+#linkList li a.c {
+	text-decoration: none;
+	border: none;
+}
+
+/* extra divs */
+#extraDiv1 {
+	margin: 10px 0 0 410px; 
+	background: url(sig.gif) no-repeat bottom right;
+}
+

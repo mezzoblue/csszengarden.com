@@ -1,0 +1,225 @@
+/* css Zen Garden submission 181 - 'Pretty in Pink', by Jordi Romkema, http://www.jor-on.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Jordi Romkema */
+/* Added: September 1st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+html, body {
+	background: url(images/bg.gif) left top repeat-y #F06;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Tahoma, Lucida Sans, Arial, Verdana, Helvetica, sans-serif;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #FFE6F0;
+}
+
+div#pageHeader h1, div#pageHeader h2, div#linkList h3 {
+	display: none;
+}
+
+div#container {
+	display: block;
+}
+
+div#intro {
+	display: block;
+}
+
+@media screen {
+	div#pageHeader, div#quickSummary {
+		position: fixed;
+	}
+		
+	* html div#pageHeader, * html div#quickSummary {
+		position: absolute;
+	}
+}
+
+div#pageHeader {
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 320px;
+	background: url(images/logo.gif) left top no-repeat;
+}
+
+div#quickSummary {
+	left: 0;
+	top: 250px;
+	width: 185px;
+	color: #FFE6F0;
+	font-size: 12px;
+	padding: 5px;
+	padding-right: 10px;
+}
+
+div#quickSummary a {
+	font-weight: bold;
+	color: #FFE6F0;
+}
+
+div#quickSummary a:hover {
+	color: #000;
+}
+
+div#preamble, div#supportingText {
+	margin-left: 463px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-bottom: 0;
+}
+
+div#preamble h3, div#supportingText h3 {
+	display: block;
+	background: url(images/hbg.gif) left top repeat #000;
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+	color: #FFF;
+	font-size: 24px;
+	line-height: 50px;
+	text-transform: lowercase;
+}
+
+div#preamble p, div#supportingText p {
+	font-size: 14px;
+	color: #000;
+	line-height: 1.5em;
+}
+
+div#preamble a, div#supportingText a {
+	color: #000;
+}
+
+div#preamble a:hover, div#supportingText a:hover {
+	color: #FFF;
+}
+
+div#preamble abbr, div#preamble acronym, div#supportingText abbr, div#supportingText acronym {
+	border-bottom: 1px dotted #000;
+}
+
+div#footer {
+	display: block;
+	height: 20px;
+	background: url(images/hbg.gif) left top repeat #000;
+	padding: 3px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+div#footer a {
+	color: #FFF;
+	font-weight: bold;
+}
+
+div#footer a:hover {
+	color: #000;
+}
+
+div#linkList {
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	width: 263px;
+	font-family: Baskerville, Georgia, Garamond, Times New Roman, serif;
+}
+
+div#linkList ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+div#linkList ul {
+	list-style: none;
+}
+
+div#linkList ul li {
+	border-bottom: 1px solid #CCC;
+}
+
+div#linkList ul li a {
+	display: block;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #F06;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+div#linkList ul li a:hover {
+	background-color: #000;
+	color: #FFF;
+}
+
+div#linkList div#lselect ul li {
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 10px;
+}
+
+div#linkList div#lselect ul li a {
+	padding: 0;
+	font-size: 12px;
+}
+
+div#linkList div#lselect ul li a:hover {
+	color: #000;
+	background-color: #FFF;
+}
+
+div#linkList div#lselect ul li a.c {
+	display: inline;
+	text-transform: none;
+	font-size: 10px;
+	color: #000;
+}
+
+div#linkList div#lselect ul li a.c:hover {
+	text-decoration: underline;
+}
+
+div#linkList div#lselect, div#linkList div#larchives, div#linkList div#lresources {
+	display: block;
+	margin-top: 10px;
+}
+
+div#linkList div#lselect h3, div#linkList div#larchives h3, div#linkList div#lresources h3 {
+	display: block;
+	height: 35px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+div#linkList div#lselect h3 span, div#linkList div#larchives h3 span, div#linkList div#lresources h3 span {
+	display: none;
+}
+
+div#linkList div#lselect h3 {	
+	background: url(images/ll_selectadesign.gif) left top no-repeat;
+}
+
+div#linkList div#larchives h3 {
+	background: url(images/ll_archives.gif) left top no-repeat;
+}
+
+div#linkList div#lresources h3 {
+	background: url(images/ll_resources.gif) left top no-repeat;
+}

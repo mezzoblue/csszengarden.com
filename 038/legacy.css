@@ -1,0 +1,168 @@
+/* css Zen Garden submission 038 - 'Creepy Crawly' by Luke Redpath - www.sonicdeath.co.uk */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All other graphics copyright 2003, Luke Redpath */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+/* Define main areas */
+body {
+	margin: 0;
+	padding: 0;
+	background: #97B661 url(body_bground.gif) repeat-y;
+}
+#container {
+	width: 760px;
+	background-color: #6E7F71;
+}
+
+/* Main Headers */
+#pageHeader h1 {
+	width: 760px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+	text-indent: -100em;
+	overflow: hidden;
+	background-image: url(h1_mainheader.jpg);
+}
+#pageHeader h2 {
+	width: 760px;
+	height: 123px;
+	margin: 0;
+	padding: 0;
+	text-indent: -100em;
+	overflow: hidden;
+	background-image: url(h2_mainheader.jpg);
+}
+
+/* Main content */
+#quickSummary {
+	margin-left: 289px;
+	background-image: url(summary_background.jpg);
+	background-repeat: no-repeat;
+}
+#preamble,
+#supportingText {
+	margin-left: 289px;
+}
+#quickSummary p,
+#preamble p,
+#supportingText p {
+	margin: 0 30px 20px 20px;;
+	padding: 0;
+	font-family: Georgia, serif;
+	font-size: 12px;
+	line-height: 1.6;
+	color: #DCEBDF;
+}
+
+/* Paragraph headers */
+#preamble h3 {
+	height: 36px;
+	padding: 0;
+	margin: 0 0 10px 0;
+	text-indent: -100em;
+	overflow: hidden;
+	background: url(headers/preamble.gif) no-repeat;
+}
+#explanation h3 {
+	height: 36px;
+	padding: 0;
+	margin: 0 0 10px 0;
+	text-indent: -100em;
+	overflow: hidden;
+	background: url(headers/explanation.gif) no-repeat;
+}
+#participation h3 {
+	height: 36px;
+	padding: 0;
+	margin: 0 0 10px 0;
+	text-indent: -100em;
+	overflow: hidden;
+	background: url(headers/participation.gif) no-repeat;
+}
+#benefits h3 {
+	height: 36px;
+	padding: 0;
+	margin: 0 0 10px 0;
+	text-indent: -100em;
+	overflow: hidden;
+	background: url(headers/benefits.gif) no-repeat;
+}
+#requirements h3 {
+	height: 36px;
+	padding: 0;
+	margin: 0 0 10px 0;
+	text-indent: -100em;
+	overflow: hidden;
+	background: url(headers/requirements.gif) no-repeat;
+}
+
+/* Links */
+#linkList {
+	position: absolute;
+	top: 273px;
+	left: 0;
+	width: 289px;
+	margin: 0;
+	padding: 0 0 0 32px;
+	background-image: url(linklist_background.jpg);
+	background-repeat: no-repeat;
+}
+#linkList2 {
+	margin-right: 38px;
+}
+#linkList h3 {
+	font-family: Georgia, serif;
+	font-size: 15px;
+	color: #DCEBDF;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+#linkList ul {
+	margin: 0 0 20px 0;
+	padding: 0 32px 0 0;
+	list-style-type: none;
+	font-family: Georgia, serif;
+	font-size: 12px;
+	color: #DCEBDF;
+}
+#linkList li {
+	margin: 0 0 5px 0;
+	padding: 0 0 20px 0;
+	background: url(list_divider.gif) no-repeat;
+	background-position: bottom center;
+	text-align: center;
+}
+#lselect li a {
+	display: block;
+	text-transform: uppercase;
+}
+#lselect li a.c {
+	display: inline;
+	text-transform: none;
+}
+
+/* Link styles */
+a:link {
+	color: #E9EEDD;
+}
+a:hover {
+	color: #FFF;
+}
+a:visited {
+	color: #AAA;
+}
+
+/* Site footer */
+#footer {
+	text-align: right;
+	padding: 40px 20px 20px 0;
+	font-size: 11px;
+}

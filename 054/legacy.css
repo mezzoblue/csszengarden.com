@@ -1,0 +1,395 @@
+/* css Zen Garden submission 054 - 'Gecko's Eye' by Sandra Greco, http://www.magritte.it/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Sandra Greco */
+/* Added: October 29th, 2003 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+body { 
+	color: #fff; 
+	background: #9E9E9E; 
+	margin: 0; 
+	background-image: url(bg.gif);
+	background-position: top left; 
+	background-repeat:no-repeat;
+	}
+
+p { 
+	font: 8pt/15pt Verdana, Arial, Helvetica, sans-serif; 
+	margin-top: 4px; 
+	text-align: left;
+	margin-right:5px;
+	}
+
+.p1, .p2 { 
+	background-image: url(separator.gif);
+	background-position: left bottom; 
+ 	background-repeat:no-repeat;
+	padding-bottom:15px;
+	margin-left:10px;
+	}
+	
+.p3 { 
+	padding-bottom:12px;
+	margin-left:10px;
+	}
+
+.p4 {
+	background-image: url(separator.gif);
+	background-position: left bottom; 
+	background-repeat:no-repeat;
+	padding-bottom:10px;
+	}
+
+h3 {    
+ 	FONT: 11pt times, Verdana, Arial, Helvetica, sans-serif;
+	COLOR: #EEE9E0;
+	text-decoration: none;
+	font-weight:bold;
+	height:10px;
+	line-height:17px;
+	letter-spacing:0.04em;
+	}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: #ffffff;
+	}
+	
+a:visited { 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: #ffffff;
+	}
+	
+a:hover, a:active { 
+	text-decoration: none; 
+	color: #ffffff;
+	}
+
+#container {
+	background-image: url(geco_garden.gif);
+	background-position: 221px 0px; 
+	background-repeat:no-repeat;
+	margin: 0;
+	height:80%;
+	}
+
+#explanation {
+	BACKGROUND:#880622 url(eye.gif) 0 10px no-repeat;
+	width:520px;
+	padding-bottom:35px;
+	border-top: solid 1px #5F0116;
+	border-right: solid 1px #5F0116;
+	}
+
+#participation, #benefits, #requirements {
+	BACKGROUND:#880622 url(eye.gif) 0 10px no-repeat;
+	width:520px;
+	padding-bottom:35px;
+	margin-top:-35px;
+	border-right: solid 1px #5F0116;
+	}
+	
+#explanation p, #participation p, #benefits p, #requirements p {
+	width:490px;
+	margin-left:10px;
+	}
+	
+#explanation h3, #participation h3, #benefits h3, #requirements h3 {
+	margin-left:55px;
+	padding-top:30px;
+	color: #d3f580;
+	}
+		
+#footer {
+	font: 11px Verdana, Arial, Helvetica, sans-serif; 
+	BACKGROUND:#C6C4C4;
+	width:520px;
+	text-align:center;
+	border-right: solid 1px #880622;
+	border-bottom: solid 1px #880622;
+	border-left: solid 1px #880622;
+	padding-bottom: 2px;
+	}
+	
+#footer a:link, #footer a:visited { 
+	margin-right: 10px; 
+	color:#000000;
+	}
+	
+#footer a:hover { 
+	color:#880622;
+	}
+
+#intro { 
+	min-width: 200px;
+	}
+
+
+#extraDiv1 { 
+	background:#9E9E9E url(garden_css.gif) top left no-repeat; 
+	position: absolute; 
+	top: 145px; 
+	left: 520px; 
+	width:251px;
+	height: 152px; 
+	border-bottom: solid 1px #EEE9E0;
+	border-left: solid 1px #EEE9E0;
+	border-top: solid 1px #EEE9E0;
+	}
+	
+#extraDiv2 { 
+	position: absolute;
+	top: 0;
+	left: 195px;
+	background-position: top left; 
+	background-repeat:no-repeat;
+	width:25px;
+	height:220px;
+	}
+		
+#extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 { 
+	display:none;
+	}
+		
+ 
+#quickSummary {
+	position:absolute;
+	top: 0; 
+	left: 520px; 
+	background:#0B4D69 url(sfondo_top.gif) no-repeat top left;
+	font: 8pt/12pt Verdana, Arial, Helvetica, sans-serif;
+	border-right: solid 1px #EEE9E0;
+	border-left: solid 1px #EEE9E0;
+	width:250px;
+	z-index:1
+	}
+	
+
+	
+#quickSummary p {
+	font: 8pt/12pt Verdana, Arial, Helvetica, sans-serif;
+	text-align: left;
+	margin-left:5px;
+	width: 240px;
+	}
+
+p:first-letter {
+	COLOR: #EEE9E0; 
+	font-size: 150%;
+	font-weight: bold;
+	margin: 0px 2px 0px 0px;
+	}
+
+
+#preamble {
+	BACKGROUND:#497c89;
+	width:221px;
+	border-right: solid 1px #EEE9E0;
+	margin-top:0;
+	padding-bottom:1px;
+	padding-top:1px;
+	}
+	
+#preamble h3 {
+	color: #d3f580;
+	padding-bottom:5px;
+	margin-left:10px;
+	padding-top:10px;
+	}
+
+#pageHeader h1, #pageHeader h1 span, #pageHeader h2, #pageHeader h2 span  { 
+		display:none
+		}
+
+ 
+#linkList {
+	margin-left: 250px;
+	margin-top:110px;
+	padding-left:7px; 
+	position: absolute; 
+	top: 40px; 
+	left: 270px;
+	border-left: solid 1px #EEE9E0;
+	border-right: solid 1px #EEE9E0;
+	border-bottom: solid 1px #EEE9E0;
+	padding-bottom:30px;
+	width:200px;
+	}
+	
+#linkList2 { 
+	font: 10px Verdana, Arial, Helvetica, sans-serif; 
+	padding-left:10px; 
+	margin-top: 150px; 
+	width: 165px;
+
+	}
+	
+#linkList h3.select { 
+	text-align: center;
+	}
+	
+#linkList h3.select span {
+	font: 12px/18px Verdana, Arial, Helvetica, sans-serif; 
+	font-weight:bold;
+	letter-spacing:0.03em;
+	margin: 30px 0px 5px 0px; 
+	height: 20px;
+	}
+
+#linkList h3.favorites, #linkList h3.favorites span { 
+	display:none;
+	}
+		
+#larchives li {
+	margin-bottom:5px;
+	margin-top:6px;
+	}
+
+#larchives a {
+	background: url(arrow.gif) no-repeat top left;
+	}
+
+#larchives a:hover, #larchives a:active #larchives a:visited{
+	background-color: #9E9E9E;
+	text-decoration: none;
+	}
+	
+#lresources li {
+	margin-bottom:5px;
+	margin-top:6px;
+	}	
+
+
+#lselect a:link {
+	text-decoration: none;
+	background: url(circle.gif) top left no-repeat;
+	}
+
+#lselect a:hover, #lselect a:active {
+	text-decoration: none;
+	}	
+			
+#lresources a {
+	background-color: #9E9E9E;
+	background: url(arrow.gif) no-repeat top left;
+	}
+
+#lresources a:link {
+	background-color: #9E9E9E;
+	}
+
+#lresources a:hover, #lresources a:active {
+	background-color: #9E9E9E;
+	text-decoration: none;
+	}
+		
+#lresources a:visited{
+	background-color: #9E9E9E;
+	text-decoration: none;
+	background: url(arrow.gif) no-repeat top left;
+	}	
+			
+#linkList h3.archives, #linkList h3.resources { 
+	font: 12px Verdana, Arial, Helvetica, sans-serif; 
+	letter-spacing:0.03em;
+	margin: 15px 0px 5px 0px; 
+	height: 60px;
+	width: 140px;
+	background:url(decoration.gif) no-repeat top center; 
+	text-align: center;
+	}
+	
+#linkList h3.archives span, #linkList h3.resources span {
+	letter-spacing:0.03em;
+	font: 12px Verdana, Arial, Helvetica, sans-serif; 
+	font-weight:bold;
+	text-align: center;
+	width:140px;
+	margin-top:40px;
+	}
+		
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#linkList li {
+	list-style-type: none;
+	}
+	
+	
+#linkList li a:link { 
+	color: #880622;
+	text-decoration: none;
+	padding-right:2px;
+	padding-left:10px;
+	padding-bottom:3px;
+	padding-top:1px;
+	height:18px;
+	}
+	
+#linkList li a:hover { 
+	color: #EEE9E0;
+	text-decoration: none;
+	padding-right:2px;
+	padding-left:10px;
+	padding-bottom:3px;
+	padding-top:1px;
+	}
+
+#linkList li a:visited {
+	color: #880622;
+	text-decoration: none;
+	padding-right:2px;
+	padding-left:10px;
+	padding-bottom:3px;
+	padding-top:1px;
+	}
+	
+#linkList li a:active {
+	color: #880622;
+	text-decoration: none;
+	padding-right:2px;
+	padding-left:10px;
+	padding-bottom:3px;
+	padding-top:1px;
+	}
+	
+#lselect{
+	display: block;
+	font-weight: normal;
+	text-decoration: none;
+	}
+	
+#lselect a.c {
+	font-weight: normal;
+	text-decoration: none;
+	display: block;
+	background: url(arrow1.gif) no-repeat top left;
+		}
+	
+#lselect a:hover.c {
+	display: block;
+	font-weight: normal;
+	color:#EEE9E0;
+	text-decoration: none;
+	}
+
+.c {
+	color: #880622;
+	text-decoration: none;
+	}
+
+.c:hover {
+	color: #880622;
+	text-decoration: underline;
+	}

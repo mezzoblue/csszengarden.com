@@ -1,0 +1,257 @@
+/* css Zen Garden submission 189 - 'Mozart', by Andrew Brundle, http://mr-thomas-dot-com.port5.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Andrew Brundle */
+/* Added: November 10th, 2005 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/*************** Main background, container & logo. *************************/ 
+HTML{		
+margin: 0px;
+padding: 0px;}
+
+BODY{					
+margin: 0px;
+padding: 0px;
+background: #292421 url(bg-mozart.jpg) repeat-y fixed 50% 48%;}
+
+#container{				
+width: 703px;
+position: absolute; left: 50%;
+background: transparent url(bg-bio.gif) no-repeat 0px 50px;
+margin-left: -352px;}                                                         
+
+#pageHeader h1 span{			
+display: none;}
+
+#pageHeader h1{
+width: 533px;
+height: 173px;
+margin: 0px 0px 0px 170px;
+background: url(logo.jpg);}
+
+#pageHeader h2{
+display: none;}			                                                                              
+/*************** End background, container & logo. *************************/ 
+
+
+
+
+
+/*************** Fonts and decoration. *************************/ 
+P{						
+font: 9pt Times, "Times New Roman", Georgia, Verdana, serif;
+color: #cfb35b;
+text-align: left;
+text-indent: 10px;
+padding: 3px 5px 2px 5px;
+margin: 0px;}
+
+#preamble P.p3, #explanation P.p2, #participation P.p3, #benefits P.p1, #requirements P.p5{
+padding-bottom: 5px;
+border-bottom: solid 1px #cfb35b;}
+/*************** End fonts and decoration. *************************/ 
+
+
+
+
+
+/*************** Main links & acronym. *************************/ 
+ACRONYM{
+border: none;}
+
+A:link, A:visited{
+color: #cfb35b;}
+
+A:hover, A:active{				
+color: #000;
+background: #cfb35b;}
+/*************** End main links. *************************/ 
+
+
+
+
+
+/*************** Main content. *************************/ 
+#preamble{	
+width: 360px;
+margin: 0px 0px 25px 172px;
+border-bottom: solid 1px #000;
+background: #000 url(border-1.gif);}
+
+#preamble h3 span{	
+display: none;}
+
+#preamble h3{	
+margin: 0px;
+height: 26px;
+background: url(preamble.gif);}
+
+#supportingText{
+width: 365px;
+margin: 0px 0px 0px 170px;
+padding: 0px 0px 31px 0px;
+background: url(bottom.gif) no-repeat bottom;}
+
+#explanation, #participation, #benefits, #requirements{
+width: 360px;
+margin: 0px 0px 25px 2px;
+border-bottom: solid 1px #000;
+background: #000 url(border-1.gif);}
+
+#explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span{	
+display: none;}	
+
+#explanation h3, #participation h3, #benefits h3, #requirements h3{	
+margin: 0px;
+height: 27px;}
+			
+#explanation h3{	
+background: url(explanation.gif);}	
+
+#participation h3{
+background: url(participation.gif);}	
+
+#benefits h3{				
+background: url(benefits.gif);}	
+
+#requirements h3{		
+background: url(requirements.gif);}	
+/*************** End main content. *************************/ 
+
+
+
+
+
+/*************** Footer division. *************************/ 
+#footer{          
+width: 360px;        
+text-transform: uppercase;
+font-weight: bold;
+text-align: center;
+word-spacing: 2px;
+padding: 5px 0px 0px 0px;
+margin: -10px 0px 0px 2px;
+border-top: solid 1px #cfb35b;
+background: #000 url(border-1.gif);}                               html>body #footer{padding: 8px 0px 0px 0px;}
+						
+#footer a:link, a:visited{
+font-size: 11pt;
+text-decoration: none;
+color: #cfb35b;
+background: #000;
+border: solid 1px #292421;}
+
+#footer a:hover, a:active{
+color: #cfb35b;
+background: #000;}
+/*************** End footer division. *************************/
+
+
+
+
+
+/*************** Download sample CSS & HTML files. *************************/
+#quickSummary{
+width: 169px;
+position: absolute; left: 534px; top: 173px;
+padding: 5px 0px 50px 0px;
+background: #000 url(border-3.gif) repeat-y right;} 
+					
+#quickSummary p.p1{
+display: none}
+						
+#quickSummary p.p2{
+text-align: center;
+text-indent: 0px;
+padding: 0px 0px 10px 0px;
+margin: 0px 13px 0px 10px;
+background: url(divider.gif) no-repeat center bottom;}
+						
+#quickSummary p.p2 a:link, a:visited{
+font-weight: bold;
+text-decoration: none;}
+
+#quickSummary p.p2 a:hover, a:active{
+color: #000;		
+background: #cfb35b;}
+
+#extraDiv1{
+width: 167px;
+height: 1px;
+background: #cfb35b;
+position: absolute; top: 173px; left: 50%;
+margin-left: 182px;}
+/*************** End download sample CSS & HTML files. *************************/
+
+
+
+
+
+/*************** Right column: navigation & graphics. *************************/
+UL{						
+list-style-type: none;
+margin: 0px 3px 0px 0px;
+padding: 0px;
+border-top: double 3px #cfb35b;
+background: url(corners.gif) no-repeat center 3px;}   html>body UL{background: url(corners.gif) no-repeat top;}
+						
+li{			
+padding: 0px 0px 9px 0px;
+margin: 0px 10px 0px 10px;
+background: url(divider.gif) no-repeat center bottom;}                  html>body Li{padding: 5px 0px 9px 0px;}
+
+#linkList{
+position: absolute; top:240px; left: 534px;
+margin: 0px;
+width: 169px;
+padding-bottom: 13px;
+background: #000 url(border-2.gif) no-repeat bottom;}
+
+#linkList2{
+font-size: 9pt;
+color: #cfb35b;
+text-align: center;
+background: url(border-3.gif) repeat-y right;}
+
+#lselect, #larchives, #lresources{
+padding: 0px 0px 20px 0px;}
+
+#lselect h3 span, #larchives h3 span, #lresources h3 span{
+display: none;}
+
+#lselect h3, #larchives h3, #lresources h3{			
+height: 23px;
+margin: 0px;}
+
+#lselect h3{
+background: url(select.gif) no-repeat left;}
+						
+#larchives h3{			
+background: url(archives.gif) no-repeat left;}		
+						
+#lresources h3{			
+background: url(resources.gif) no-repeat left;}
+				
+#linkList li a:link, a:visited{
+font: 9pt "Times New Roman", Times, Georgia, Verdana, serif;	
+color: #cfb35b;   
+font-weight: bold;
+text-decoration: none;
+display: block;}
+
+#lselect li a.c{
+font-weight: normal;
+display: inline;}
+
+#linkList li a:hover, a:active{	
+color: #000;
+background: #cfb35b;}
+/*************** End right column: navigation & graphics. *************************/
+
