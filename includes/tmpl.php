@@ -13,7 +13,7 @@
 	<meta name="robots" content="all">
 
 	<!--[if lt IE 9]>
-	<script src="dist/html5shiv.js"></script>
+	<script src="script/html5shiv.js"></script>
 	<![endif]-->
 </head>
 
