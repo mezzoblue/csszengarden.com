@@ -69,7 +69,7 @@ h1, h2, h3, a, .design-archives a:before, footer:after {
     text-decoration: none;
 }
 
-.supporting p:nth-child(2):first-letter {
+.supporting p:nth-child(2)::first-letter {
 	font-family: 'Ultra', 'Arial Black', serif;
 	font-weight: normal;
 	font-style: normal;
@@ -80,7 +80,7 @@ h1, h2, h3, a, .design-archives a:before, footer:after {
     color: #804;
     text-shadow: 1px 1px 0 rgba(255,255,255,0.4);
 }
-.benefits p:nth-child(2):first-letter, .requirements p:nth-child(2):first-letter {
+.benefits p:nth-child(2)::first-letter, .requirements p:nth-child(2)::first-letter {
     margin-left: -.4em;
 }
 
@@ -600,6 +600,7 @@ div[class^=design] a, div[class^=zen] a {
     position: relative;
     margin: 0;
     padding: 20px;
+    text-align: center;
     border-top: 6em solid #804;
     background: #41071e;
 }
@@ -892,6 +893,18 @@ div[class^=design] a, div[class^=zen] a {
     .supporting footer:before { background-position: -1650px 640px }
 }
 
+    .sidebar .wrapper .zen-resources:after {
+        content: ' ';
+        position: absolute;
+        bottom: -40px;
+        right: 0;
+        left: 0;
+        height: 40px;
+        background: #5b0a2a url('border.png') no-repeat 50% 4px;
+        -webkit-box-shadow: inset 0 -12px 18px -6px rgba(0,0,0,0.4);
+           -moz-box-shadow: inset 0 -12px 18px -6px rgba(0,0,0,0.4);
+                box-shadow: inset 0 -12px 18px -6px rgba(0,0,0,0.4);
+    }
 @media screen and (min-width: 960px) and (min-height: 970px) {
     .sidebar .wrapper .zen-resources {
         border: none;
@@ -903,13 +916,15 @@ div[class^=design] a, div[class^=zen] a {
     }
     .sidebar .wrapper .design-archives:after { display: none }
     .sidebar .wrapper .zen-resources:after {
-        content: ' ';
-        position: absolute;
         bottom: -30px;
         right: 2em;
+        left: auto;
         width: 19.36em;
         height: 30px;
         background: url('border.png') no-repeat 50% bottom;
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none;
     }
     .sidebar .zen-resources h3 {
         background: #771139 url('heart-and-lips.png') no-repeat 80% -460px;
@@ -930,7 +945,12 @@ div[class^=design] a, div[class^=zen] a {
         height: 80px;
     }
 
-    .supporting footer { padding-bottom: 2em }
+    .supporting footer {
+        padding-bottom: 2em;
+        background-image: url('border.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50px;
+    }
     .supporting footer:before { background-position: -1650px bottom }
 }
 
