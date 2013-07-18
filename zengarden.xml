@@ -11,7 +11,19 @@
 <language>en-ca</language>
 <webMaster>dave@example.com</webMaster>
 
-<lastBuildDate>Thurs, 17 Apr 2008 23:10:00 PST</lastBuildDate>
+<lastBuildDate>Thurs, 18 Jul 2013 007:54:00 PST</lastBuildDate>
+
+<item>
+  <title>#215 - 18 Jul 2013</title>
+  <description>'A Robot Named Jimmy' by meltmedia</description>
+  <link>http://www.csszengarden.com/?cssfile=215/215.css</link>
+</item>
+
+<item>
+  <title>#214 - 17 Jul 2013</title>
+  <description>'Verde Moderna' by Dave Shea</description>
+  <link>http://www.csszengarden.com/?cssfile=214/214.css</link>
+</item>
 
 <item>
   <title>#213 - 17 Apr 2008</title>
@@ -41,18 +53,6 @@
   <title>#209 - 21 Nov 2007</title>
   <description>'CSS Co., Ltd.' by Benjamin Klemm</description>
   <link>http://www.csszengarden.com/?cssfile=209/209.css</link>
-</item>
-
-<item>
-  <title>#208 - 21 Nov 2007</title>
-  <description>'Sakura' by Tatsuya Uchida</description>
-  <link>http://www.csszengarden.com/?cssfile=208/208.css</link>
-</item>
-
-<item>
-  <title>#207 - 15 Nov 2007</title>
-  <description>'Kyoto Forest' by John Politowski</description>
-  <link>http://www.csszengarden.com/?cssfile=207/207.css</link>
 </item>
 
 
