@@ -11,6 +11,10 @@
 	<meta name="author" content="Dave Shea">
 	<meta name="description" content="<?php echo $head["description"]; ?>">
 	<meta name="robots" content="all">
+
+	<!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
 </head>
 
 <!--
