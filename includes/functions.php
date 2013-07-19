@@ -49,6 +49,7 @@
 
 	// set defaults
 	$numDesigns = 8; // number of designs to show in the nav
+    $currentDesign = '214'; // What is the current main design?
 
 
 	// check the query string to see if:
@@ -61,11 +62,8 @@
 
 
 	// if $_GET['css'] is not empty, assign it as the design to load
-	// if it is, assign 001
 	if ($loadCSS) {
 		$currentDesign = $loadCSS;
-	} else {
-		$currentDesign = "001";
 	}
 
     // Prep Stylesheet URL

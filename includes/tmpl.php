@@ -99,13 +99,11 @@
 				<nav role="navigation">
 					<ul>
 <?php
-
-    $startDesign = '001'; // which design is the primary one for the site?
-    $currentDesignURL = ($currentDesign == $startDesign) ? '' : "/$currentDesign"; // site's primary design should be un-numbered
 	if ($listStart > $numDesigns) {
+	    $nextPage = $thisPage + 1;
 ?>
 						<li class="next">
-							<a href="<?php echo $currentDesignURL ?>/page<?php echo $thisPage + 1 ?>/">
+							<a href="<?php echo "/$currentDesign/page$nextPage"; ?>">
 								<?php echo $sidebar["design-archives-next"]; ?> <span class="indicator">&rsaquo;
 							</a>
 						</li>
@@ -121,7 +119,7 @@
         }
 ?>
 						<li class="previous">
-							<a href="<?php echo $currentDesignURL ?>/<?php echo $prevPage ?>">
+							<a href="<?php echo "/$currentDesign/$prevPage"; ?>">
 								<span class="indicator">&lsaquo; <?php echo $sidebar["design-archives-previous"]; ?>
 							</a>
 						</li>

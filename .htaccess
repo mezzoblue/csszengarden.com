@@ -41,11 +41,6 @@ RewriteRule ^\/examples\/(.*)$ /examples/index.php?/$1 [L]
 #
 # Helpful mod_rewrite tips @ http://www.webmasterworld.com/apache/4229371-1-30.htm
 
-# SPECIAL CASE: Rewrite requests to cssfile=001
-# Assumes '001' is the basic URL. May wish to change to '214', the new standard?
-RewriteCond %{QUERY_STRING} ^cssfile\=\/001\/001\.css(&(page)\=([0-9]+))?
-RewriteRule ^(.*)$ %2%3/? [R=301]
-
 # Rewrite requests to older URLs, e.g. ?cssfile=/003/003.css&page=5
 RewriteCond %{QUERY_STRING} ^cssfile\=\/([0-9]+)\/[0-9]+\.css(&(page)\=([0-9]+))?
 RewriteRule ^(.*)$ %1/%3%4/? [R=301]
