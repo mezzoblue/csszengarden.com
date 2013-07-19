@@ -817,6 +817,7 @@ aside .wrapper .zen-resources {
   .requirements p:last-child {
     padding: 0 0 20px;
   }
+  aside .wrapper .design-selection,
   aside .wrapper > div {
     border: none;
     float: none;
@@ -824,6 +825,9 @@ aside .wrapper .zen-resources {
     padding: 0;
     text-align: center;
     width: 100%;
+  }
+  aside .wrapper .design-archives {
+    margin-top: 40px;
   }
   aside .wrapper > div h3 {
     margin: 0;
