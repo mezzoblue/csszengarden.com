@@ -21,6 +21,7 @@
 
 body {
 	font-family: Georgia, serif;
+	-webkit-font-smoothing: antialiased;
     line-height: 1.4;
     padding: 0;
     margin: 0;
@@ -33,7 +34,7 @@ body, .preamble h3 {
 abbr { border: none }
 
 h3 {
-    font-size: 1.17em;
+    font-size: 1.188em;
 }
 /* These selection declarations have to be separate.
    No text-shadow: twitter.com/miketaylr/status/12228805301 
@@ -224,11 +225,11 @@ body, .page-wrapper:before, .page-wrapper:after {
     background:         radial-gradient(ellipse at center,  rgba(249,249,249,1) 0%,rgba(250,223,154,0.4) 100%); /* W3C */
 	border-color: rgba(250,223,154,0.3);
 	border-style: solid;
-	-webkit-transition: all 1s ease;
-	   -moz-transition: all 1s ease;
-	    -ms-transition: all 1s ease;
-	     -o-transition: all 1s ease;
-	        transition: all 1s ease;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 
 .intro:after {
@@ -494,7 +495,7 @@ h2 {
 	   -moz-box-shadow: inset 0 0 18px rgba(70,15,35,0.8);
 	        box-shadow: inset 0 0 18px rgba(70,15,35,0.8);
 
-    background-image: url('sketches3.gif');
+    background-image: url('sketches.gif');
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
