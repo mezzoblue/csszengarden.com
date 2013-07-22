@@ -6,17 +6,18 @@
 	by Jeremy Carlson
 	@eyesofjeremy :: http://jeremycarlson.com
 
+    A theme inspired by an enchanted summer evening
+    at the end of a fine Bumbershoot in Seattle.
+    
     css released under Creative Commons License
     http://creativecommons.org/licenses/by-nc-sa/1.0/
-	
-		
+    		
 	=Typography
 	
 	First, let's talk type, colors, that kind of thing.
 	--------------------------------------------------	*/
-/*
-    Ultra & Montserrat: a charming pair.
-*/
+
+/*  Ultra & Montserrat: a charming pair. */
 @import url(http://fonts.googleapis.com/css?family=Ultra|Montserrat:700);
 
 body {
@@ -395,7 +396,7 @@ h2 {
         right: 0;
         left: 580px; /* abut page-wrapper */
         bottom: 0;
-        padding: 0 2em;
+        padding: 0 2em 10px;
         background: url('shading.png') no-repeat right 30px;
     }
 
@@ -405,6 +406,8 @@ h2 {
         margin-left: auto;
     }
     .summary p:last-child {
+        font-family: Georgia, serif;
+        font-style: italic;
         border-color: rgba(255,255,255,0.3);
     }
     .summary, .summary a {
@@ -1030,7 +1033,6 @@ div[class^=design] a, div[class^=zen] a {
     opacity: 1;
 }
 
-
 @media screen and (min-width: 1201px) {
     .sidebar .design-selection nav, .sidebar .design-archives ul, .sidebar .zen-resources ul {
         background-size: 100%; /* if wider than bg image, make those suckers grow! */
@@ -1043,6 +1045,34 @@ div[class^=design] a, div[class^=zen] a {
     }
     .summary p {
         margin-right: 70px;
+    }
+    .page-wrapper {
+        max-width: 520px;
+    }
+    .intro {
+        padding-top: 54px;
+        padding-bottom: 72px;
+    }
+    .preamble h3 {
+        padding-bottom: 72px;
+        margin-bottom: 36px;
+    }
+    .explanation h3, .benefits h3 {
+        padding-left: 40px;
+    }
+    .supporting .participation h3, .supporting .requirements h3, .supporting footer:before {
+        padding-right: 40px;
+    }
+    .supporting footer:after {
+        padding-right: 20px;
+    }
+    .supporting p {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .supporting p:nth-child(2) {
+        padding-top: 3em;
+        background-position: 1.65em 1.7em;
     }
 }
 
