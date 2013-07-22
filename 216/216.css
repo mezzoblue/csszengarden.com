@@ -15,13 +15,12 @@
 	First, let's talk type, colors, that kind of thing.
 	--------------------------------------------------	*/
 /*
-    Ooh, Ultra, you're so sexy!
+    Ultra & Montserrat: a charming pair.
 */
-@import url(http://fonts.googleapis.com/css?family=Ultra);
+@import url(http://fonts.googleapis.com/css?family=Ultra|Montserrat:700);
 
 body {
 	font-family: Georgia, serif;
-	-webkit-font-smoothing: antialiased;
     line-height: 1.4;
     padding: 0;
     margin: 0;
@@ -33,7 +32,7 @@ body, .preamble h3 {
 
 abbr { border: none }
 
-h3 {
+h3, .design-archives a:before {
     font-size: 1.188em;
 }
 /* These selection declarations have to be separate.
@@ -46,10 +45,12 @@ a abbr { border-bottom: none }
 
 a:link, p:hover a abbr { color: #804 }
 .sidebar a:link {
-    color: #402;
+    color: #550028;
 }
-a:visited { color: #935 }
-a:hover, p:hover a:hover abbr, .sidebar a:hover { 
+.sidebar .designer-name:link, a:visited { color: #935 }
+.sidebar .designer-name:visited { color: #b68 }
+
+a:hover, p:hover a:hover abbr, .sidebar a:hover, .sidebar .designer-name:hover { 
     color: #000;
     text-shadow: 2px 2px 0 rgba(255,255,255,0.51);
     }
@@ -63,17 +64,24 @@ p:hover abbr, h3:hover abbr {
     text-shadow: none;
 }
 
-h1, h2, h3, a, .design-archives a:before, footer:after {
+h1, h2, h3, .design-archives a:before, footer a, 
+footer:after, .supporting p:nth-child(2)::first-letter {
 	font-family: 'Ultra', 'Arial Black', serif;
+	-webkit-font-smoothing: antialiased;
 	font-weight: normal;
 	font-style: normal;
+}
+
+a {
+    font-family: 'Montserrat', Verdana, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+    font-style: normal;
+    font-size: .875em;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .supporting p:nth-child(2)::first-letter {
-	font-family: 'Ultra', 'Arial Black', serif;
-	font-weight: normal;
-	font-style: normal;
     font-size: 2.8em;
     line-height: 0.8;
     float: left;
@@ -659,20 +667,71 @@ div[class^=design] a, div[class^=zen] a {
 
 .wrapper li {
     padding: 3px 1em;
-    font-weight: bold;
     font-style: italic;
-    color: #804;
+    color: #c57e88;
     font-size: .75em;
+}
+.wrapper a, footer a {
+    font-size: 1em;
 }
 
 .design-selection li {
-    padding: 3px 1em 3px 4em;
-    text-indent: -3em;
+    padding: 4px 1.5em 4px 1em;
+    clear: left;
+    text-align: right;
 }
 
-.zen-resources li {
-    display: inline-block;
+.design-selection li:hover {
+    background: rgba(255,255,255,0.2);
 }
+
+.design-name {
+    float: left;
+    max-width: 66%;
+    text-align: left;
+    margin: -1px 0 -4px;
+    padding-right: .5em;
+}
+.designer-name {
+    margin-right: -5px;
+}
+
+/* >> The Magnificent CLEARFIX << */
+.zen-resources ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.zen-resources ul { display: inline-block; }
+* html .zen-resources ul { height: 1%; } /* Hides from IE-mac \*/
+.zen-resources ul { display: block; }
+
+.zen-resources li {
+    width: 42%;
+    float: left;
+}
+.zen-resources li:nth-child(2n+1) {
+    float: right;
+    text-align: right;
+}
+.zen-resources li.view-css {
+    float: none;
+    width: auto;
+    position: relative;
+    text-align: center;
+    text-indent: 0;
+    padding-bottom: 9px;
+}
+.view-css:before, .view-css:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: .75em;
+    border-top: 2px solid rgba(136,0,68,0.2);
+    width: 4em;
+}
+.view-css:after { right: 1em }
+
+.zen-resources .view-css a {
+    padding: 1.5em 0;
+}
+
 
 /* Next / Previous / View All */
 
@@ -701,6 +760,7 @@ div[class^=design] a, div[class^=zen] a {
         position: absolute;
         top: 0;
         z-index: 3;
+        font-size: 1em;
     }
 
     .design-archives .next {
@@ -714,6 +774,7 @@ div[class^=design] a, div[class^=zen] a {
     .design-archives .next a, .design-archives .previous a {
         text-indent: 100%;
         white-space: nowrap;
+        text-transform: none;
         overflow: hidden;
         padding-left: 0;
         padding-right: 0;
@@ -722,23 +783,23 @@ div[class^=design] a, div[class^=zen] a {
     .design-archives .next a:before, .design-archives .previous a:before {
         display: block;
         position: absolute;
-        top: 1.5em;
+        top: .8em;
         text-indent: 0;
     }
     .design-archives .next a:before {
         content: 'Next';
-        right: 4em;
+        right: 2.25em;
     }
     .design-archives .previous a:before {
         content: 'Prev.';
-        left: 4em;
+        left: 2.25em;
     }
 
     .design-archives .next a:after, .design-archives .previous a:after {
         display: block;
         content: ' ';
         position: absolute;
-        top: 50%;
+        top: 1.4em;
         left: 8px;
         margin-top: -2px;
         border: 10px solid transparent;
@@ -823,7 +884,7 @@ div[class^=design] a, div[class^=zen] a {
            -moz-box-shadow: none;
                 box-shadow: none;
         padding: .5em 1em .2em;
-        max-width: 14.547em; /* = 19.36/1.17,-2 */
+        max-width: 14.296em; /* = 19.36/1.188,-2 */
         margin: 0 0 0 auto;
     }
     .sidebar .design-selection nav {
@@ -845,7 +906,7 @@ div[class^=design] a, div[class^=zen] a {
     .sidebar .wrapper .design-archives {
         border: none;
         position: fixed;
-        top: 520px;
+        top: 510px;
         right: 0;
         padding: 0 2em;
         left: 580px; /* abut page-wrapper */
@@ -866,7 +927,7 @@ div[class^=design] a, div[class^=zen] a {
            -moz-box-shadow: none;
                 box-shadow: none;
         padding: .5em 1em .2em;
-        max-width: 14.547em; /* = 19.36/1.17,-2 */
+        max-width: 14.296em; /* = 19.36/1.188,-2 */
         margin: 0 0 0 auto;
     }
     .sidebar .design-archives ul {
@@ -910,7 +971,7 @@ div[class^=design] a, div[class^=zen] a {
     .sidebar .wrapper .zen-resources {
         border: none;
         position: fixed;
-        top: 620px;
+        top: 610px;
         right: 0;
         padding: 0 2em;
         left: 580px; /* abut page-wrapper */
@@ -933,7 +994,7 @@ div[class^=design] a, div[class^=zen] a {
            -moz-box-shadow: none;
                 box-shadow: none;
         padding: .5em 1em .2em;
-        max-width: 14.547em; /* = 19.36/1.17,-2 */
+        max-width: 14.296em; /* = 19.36/1.188,-2 */
         margin: 0 0 0 auto;
     }
     .sidebar .zen-resources ul {
@@ -955,12 +1016,14 @@ div[class^=design] a, div[class^=zen] a {
     .supporting footer:before { background-position: -1650px bottom }
 }
 
-.wrapper>div a {
+.design-selection li, .wrapper>div a {
 	-webkit-transition: all 0.2s ease-out;
 	   -moz-transition: all 0.2s ease-out;
 	    -ms-transition: all 0.2s ease-out;
 	     -o-transition: all 0.2s ease-out;
 	        transition: all 0.2s ease-out;
+}
+.wrapper>div a {
     text-shadow: 2px 2px 0 rgba(255,255,255,0.51);
 }
 .wrapper>div a:hover {
