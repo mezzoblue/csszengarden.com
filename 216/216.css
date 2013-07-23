@@ -750,7 +750,7 @@ div[class^=design] a, div[class^=zen] a {
     float: left;
     max-width: 66%;
     text-align: left;
-    margin: -1px 0 -4px;
+    margin: -1px -4px -4px 0;
     padding-right: .5em;
 }
 .designer-name {
