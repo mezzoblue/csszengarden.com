@@ -189,32 +189,6 @@ body, .page-wrapper:before, .page-wrapper:after {
     bottom: 0;
 }
 
-@media screen and (min-width: 1201px) {
-    body, .page-wrapper, .page-wrapper:before, .page-wrapper:after, .intro:after, .supporting div, .supporting footer {
-        background-size: 100%; /* if wider than bg image, make those suckers grow! */
-    }
-}
-@media screen and (min-width: 580px) and (max-width: 960px) {
-    body, .page-wrapper, .page-wrapper:before, .page-wrapper:after, .intro:after, .supporting div, .supporting footer {
-        background-position: 25% top; /* shift image for medium-tight compositions */
-    }
-}
-
-@media screen and (max-device-width: 1024px) {
-    /*
-    Necessary b/c Mobile Safari does not support fixed background positioning
-    http://stackoverflow.com/questions/3011226/using-background-attachmentfixed-in-safari-on-the-ipad
-    */
-    .intro:after {
-        background: none;
-    }
-    .intro, .supporting >div, .supporting footer, .page-wrapper {
-        background: rgba(250,223,154,0.6);
-    }
-}
-@media screen and (max-device-width: 600px) { body, .page-wrapper:before { background-size: 800px } }
-@media screen and (max-device-width: 400px) { body, .page-wrapper:before { background-size: 600px } }
-
 /*	xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
 	=Intro
 	Note: IE<9 ignores styles for HTML5 elements. .intro is one.
@@ -251,8 +225,11 @@ body, .page-wrapper:before, .page-wrapper:after {
     z-index: -1;
 }
 
-.summary, .preamble {
+.summary, .preamble, header[role=banner] {
     text-align: center;
+}
+
+.preamble {
     padding: 0 20px;
 }
 
@@ -262,7 +239,6 @@ header[role=banner] {
     position: relative;
     z-index: 1;
     top: -186px;
-    text-align: center;
 }
 
 .summary {
@@ -270,9 +246,47 @@ header[role=banner] {
 }
 
 .summary p:last-child {
-    padding: .4em 0;
+    padding: .4em .5em;
     border-top: 1px solid rgba(255,255,255,0.6);
     border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+.summary p {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.summary p:first-child {
+    margin-top: 60px;
+    padding: 30px .5em 1em;
+}
+.summary p:first-child:before {
+    content: ' ';
+    height: 60px;
+    width: 70px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -35px;
+    display: block;
+    background: url('heart-and-lips.png') no-repeat 50% top;
+}
+
+.preamble h3 {
+    padding-bottom: 60px;
+    background: url('heart-and-lips.png') no-repeat 50% bottom;
+}
+
+.preamble h3:before, .preamble h3:after {
+    display: block;
+}
+
+.preamble h3:before {
+    content: 'when walking on ';
+}
+.preamble h3:after {
+    content: ' don’t forget to kiss a stranger.';
 }
 
 /* h1 - "CSS Zen Garden" */
@@ -396,19 +410,48 @@ h2 {
         right: 0;
         left: 580px; /* abut page-wrapper */
         bottom: 0;
-        padding: 0 2em 10px;
-        background: url('shading.png') no-repeat right 30px;
+        padding: 0 1.2em 10px;
     }
 
     .summary p {
-        max-width: 22em;
+        max-width: 26.5em;
         margin-right: 0;
         margin-left: auto;
+        font-family: Montserrat;
+        font-size: .75em;
+        text-shadow: 1px 1px 0 rgba(68,0,32,0.2);
+    }
+    .summary p, .summary p:last-child:after {
+        background: rgba(138,0,68,0.3);
+    }
+    .summary p:first-child {
+        -webkit-border-top-left-radius: 50%;
+        -webkit-border-top-right-radius: 50%;
+        -moz-border-radius-topleft: 50%;
+        -moz-border-radius-topright: 50%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+    .summary p:first-child:before {
+        top: -35px;
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+        background: url('heart-and-lips.png') no-repeat 50% top, url('kiss.jpg') no-repeat fixed 50% top;
     }
     .summary p:last-child {
         font-family: Georgia, serif;
         font-style: italic;
         border-color: rgba(255,255,255,0.3);
+    }
+    .summary p:last-child:after {
+        content: ' ';
+        height: 1em;
+        display: block;
+        position: absolute;
+        bottom: -1em;
+        left: 0;
+        right: 0;
     }
     .summary, .summary a {
         color: #fff;
@@ -466,26 +509,41 @@ h2 {
     }
 }
 
-.summary p:first-child {
-    padding-top: 60px;
-    background: url('heart-and-lips.png') no-repeat 50% top;
+/*	xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
+    Background Sizing for main elements
+	--------------------------------------------------	*/
+
+@media screen and (min-width: 1201px) {
+    body, .page-wrapper, .page-wrapper:before, .page-wrapper:after, .intro:after, .supporting div, .supporting footer {
+        background-size: 100%; /* if wider than bg image, make those suckers grow! */
+    }
+    .summary p:first-child:before {
+        background-size: auto, 100%; /* match for keyhole */
+    }
+}
+@media screen and (min-width: 580px) and (max-width: 960px) {
+    body, .page-wrapper, .page-wrapper:before, .page-wrapper:after, .intro:after, .supporting div, .supporting footer {
+        background-position: 25% top; /* shift image for medium-tight compositions */
+    }
+    .summary p:first-child:before {
+        background-position: 50% top, 25% top; /* match for keyhole */
+    }
 }
 
-.preamble h3 {
-    padding-bottom: 60px;
-    background: url('heart-and-lips.png') no-repeat 50% bottom;
+@media screen and (max-device-width: 1024px) {
+    /*
+    Necessary b/c Mobile Safari does not support fixed background positioning
+    http://stackoverflow.com/questions/3011226/using-background-attachmentfixed-in-safari-on-the-ipad
+    */
+    .intro:after {
+        background: none;
+    }
+    .intro, .supporting >div, .supporting footer, .page-wrapper {
+        background: rgba(250,223,154,0.6);
+    }
 }
-
-.preamble h3:before, .preamble h3:after {
-    display: block;
-}
-
-.preamble h3:before {
-    content: 'when walking on ';
-}
-.preamble h3:after {
-    content: ' don’t forget to kiss a stranger.';
-}
+@media screen and (max-device-width: 600px) { body, .page-wrapper:before { background-size: 800px } }
+@media screen and (max-device-width: 400px) { body, .page-wrapper:before { background-size: 600px } }
 
 /*	xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
 	=Supporting Content
