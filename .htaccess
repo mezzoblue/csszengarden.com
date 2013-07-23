@@ -28,7 +28,6 @@ deny from env=BadReferrer
 # permanent redirect of old file
 RedirectMatch 301 ^/zengarden-sample\.css$ /examples/style.css
 
-
 # remove trailing .php from /examples/index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -50,14 +49,15 @@ RewriteCond $1 !(\.[a-z0-9]{1,5}|/)$ [NC]
 RewriteCond $1 (..*)$ [NC] # so's we don't add a slash onto nothing and end up w/ '//'
 RewriteRule ^(.*)$ $1/ [R=301]
 
-# Rewrite all requests which do not resolve to existing files to the CMS script, except
-# for image, css, and JS file requests, none of which need to be handled by the CMS,
-# and requests for index.php itself (to avoid a wasteful second-pass exists check).
-RewriteCond $1 !(^index\.php|\.(gif|jpe?g|png|css|js))$
-
 # Send traffic to index.php w/ appropriate variables
 # we have to rename these to avoid creating an infinite loop
 RewriteRule ^([0-9]+)(\/page(.*))?\/$ index.php?css=$1&pg=$3 [L]
 
 # Special case: no CSS variable
 RewriteRule ^(page(.*))?\/$ index.php?pg=$2 [L]
+
+# Send translated page traffic to appropriate place
+RewriteRule ^tr\/([a-z]+)\/([0-9]+)(\/page(.*))?\/$ index.php?css=$2&pg=$4&lang=$1 [L]
+
+# Send translated page traffic (no CSS variable) to appropriate place
+RewriteRule ^tr\/([a-z]+)(\/page(.*))?\/$ index.php?pg=$3&lang=$1 [L]

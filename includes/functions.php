@@ -11,12 +11,15 @@
 
 		// flush return value
 		$return = "";
+		
+		// check for language URL
+		global $langURL;
 
 		// begin at the already-established start of the list and loop down
 		for ($i = $start - 1; $i >= ($start - $count); $i--) {
 
 			$id = $list[$i][0];
-			$designURL = "/$id/";
+			$designURL = $langURL . "/$id/"; // prepend for translation pages
 			$designName = hsc($list[$i][1]);
 			$designerName = hsc($list[$i][2]);
 			$designerURL = hsc($list[$i][3]);

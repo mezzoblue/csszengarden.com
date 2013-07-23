@@ -103,7 +103,7 @@
 	    $nextPage = $thisPage + 1;
 ?>
 						<li class="next">
-							<a href="<?php echo "/$currentDesign/page$nextPage"; ?>">
+							<a href="<?php echo "$langURL/$currentDesign/page$nextPage"; ?>">
 								<?php echo $sidebar["design-archives-next"]; ?> <span class="indicator">&rsaquo;
 							</a>
 						</li>
@@ -119,7 +119,7 @@
         }
 ?>
 						<li class="previous">
-							<a href="<?php echo "/$currentDesign/$prevPage"; ?>">
+							<a href="<?php echo "$langURL/$currentDesign/$prevPage"; ?>">
 								<span class="indicator">&lsaquo; <?php echo $sidebar["design-archives-previous"]; ?>
 							</a>
 						</li>
@@ -139,7 +139,7 @@
 				<h3 class="resources"><?php echo $sidebar["design-resources-h3"]; ?>:</h3>
 				<ul>
 					<li class="view-css">
-						<a href="<?php echo $currentDesign ?>" title="<?php echo $sidebar["view-css-title"]; ?>">
+						<a href="<?php echo "/$currentDesign/$currentDesign" ?>" title="<?php echo $sidebar["view-css-title"]; ?>">
 							<?php echo $sidebar["view-css-text"]; ?>
 						</a>
 					</li>
