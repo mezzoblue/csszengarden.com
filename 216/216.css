@@ -34,7 +34,7 @@ body, .preamble h3 {
 abbr { border: none }
 
 h3, .design-archives a:before {
-    font-size: 1.188em;
+    font-size: 1.1875em;
 }
 /* These selection declarations have to be separate.
    No text-shadow: twitter.com/miketaylr/status/12228805301 
@@ -868,7 +868,7 @@ div[class^=design] a, div[class^=zen] a {
         position: absolute;
         top: -35px;
         right: 2em;
-        width: 19.36em;
+        width: 310px;
         height: 75px;
         background: url('border.png') no-repeat 50% 0;
     }
@@ -877,7 +877,7 @@ div[class^=design] a, div[class^=zen] a {
         position: absolute;
         bottom: -30px;
         right: 2em;
-        width: 19.36em;
+        width: 310px;
         height: 30px;
         background: url('border.png') no-repeat 50% bottom;
     }
@@ -886,13 +886,13 @@ div[class^=design] a, div[class^=zen] a {
         -webkit-box-shadow: none;
            -moz-box-shadow: none;
                 box-shadow: none;
-        padding: .5em 1em .2em;
-        max-width: 14.296em; /* = 19.36/1.188,-2 */
+        padding: .5em 19px .2em;
+        width: 272px;
         margin: 0 0 0 auto;
     }
     .sidebar .design-selection nav {
         border: none;
-        max-width: 19.36em;
+        max-width: 310px;
         margin: 0 0 0 auto;
     	background: #fceec6 url('kiss_light.jpg') no-repeat fixed 50% top;
     }
@@ -920,7 +920,7 @@ div[class^=design] a, div[class^=zen] a {
         position: absolute;
         bottom: -30px;
         right: 2em;
-        width: 19.36em;
+        width: 310px;
         height: 30px;
         background: url('border.png') no-repeat 50% bottom;
     }
@@ -929,12 +929,12 @@ div[class^=design] a, div[class^=zen] a {
         -webkit-box-shadow: none;
            -moz-box-shadow: none;
                 box-shadow: none;
-        padding: .5em 1em .2em;
-        max-width: 14.296em; /* = 19.36/1.188,-2 */
+        padding: .5em 19px .2em;
+        width: 272px;
         margin: 0 0 0 auto;
     }
     .sidebar .design-archives ul {
-        max-width: 19.36em;
+        max-width: 310px;
         margin: 0 0 0 auto;
     	background: #fceec6 url('kiss_light.jpg') no-repeat fixed 50% top;
     }
@@ -984,7 +984,7 @@ div[class^=design] a, div[class^=zen] a {
         bottom: -30px;
         right: 2em;
         left: auto;
-        width: 19.36em;
+        width: 310px;
         height: 30px;
         background: url('border.png') no-repeat 50% bottom;
         -webkit-box-shadow: none;
@@ -996,13 +996,13 @@ div[class^=design] a, div[class^=zen] a {
         -webkit-box-shadow: none;
            -moz-box-shadow: none;
                 box-shadow: none;
-        padding: .5em 1em .2em;
-        max-width: 14.296em; /* = 19.36/1.188,-2 */
+        padding: .5em 19px .2em;
+        width: 272px;
         margin: 0 0 0 auto;
     }
     .sidebar .zen-resources ul {
         border: none;
-        max-width: 19.36em;
+        max-width: 310px;
         margin: 0 0 0 auto;
     	background: #fceec6 url('kiss_light.jpg') no-repeat fixed 50% top;
     }
