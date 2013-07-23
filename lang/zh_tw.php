@@ -50,19 +50,19 @@
 
 	$main = array(
 		"explanation-h3" => "這是關於什麼？",
-		"explanation-p1" => '顯然平面設計師有必要認真看待<acronym title="Cascading Style Sheets">CSS</acronym>。Zen Garden致力於推廣使用、啟發靈感和鼓勵參與。你可以從瀏覽列表裡的設計著手。只要選擇列表上的任一樣式表，就可以將它載入到這個頁面。<acronym title="HyperText Markup Language">HTML</acronym>程式碼都維持原狀，唯一改變的是使用的<acronym title="Cascading Style Sheets">CSS</acronym>檔案。沒錯，的確如此。',
-		"explanation-p2" => '<acronym title="Cascading Style Sheets">CSS</acronym>具備完整控制超文字文件的能力。不過唯有當你把韁繩交給能從結構中創造美感的人們，用實例展示它的功能時，才能夠鼓舞人心。截至目前為止，網站結構設計師和程式員已經介紹過許多關於良好技巧與駭客手法的範例。平面設計師則還沒有在這個領域建立名聲。是需要改變的時候了。',
+		"explanation-p1" => '顯然平面設計師有必要認真看待<abbr title="Cascading Style Sheets">CSS</abbr>。Zen Garden致力於推廣使用、啟發靈感和鼓勵參與。你可以從瀏覽列表裡的設計著手。只要選擇列表上的任一樣式表，就可以將它載入到這個頁面。<abbr title="HyperText Markup Language">HTML</abbr>程式碼都維持原狀，唯一改變的是使用的<abbr title="Cascading Style Sheets">CSS</abbr>檔案。沒錯，的確如此。',
+		"explanation-p2" => '<abbr title="Cascading Style Sheets">CSS</abbr>具備完整控制超文字文件的能力。不過唯有當你把韁繩交給能從結構中創造美感的人們，用實例展示它的功能時，才能夠鼓舞人心。設計師與工程師等人已經為網頁美學奉獻，但我們仍可以更進一步發展。',
 
 		"participation-h3" => "參與",
-		"participation-p1" => '良好的視覺設計永遠是我們的目標。你必須修改這個頁面，所以得要有良好的<acronym title="Cascading Style Sheets">CSS</acronym>技巧。不過這份範例檔案已經詳盡地加上註解，即使是<acronym title="Cascading Style Sheets">CSS</acronym>初學者也能夠以此為出發點。請參考<a href="' . $zenUrls["zen-resources"] . '" title="CSS相關資源列表"><acronym title="Cascading Style Sheets">CSS</acronym>資源手冊</a>，裡面有相關的進階教學與技巧說明。',
-		"participation-p2" => '你可以用你希望的任何方式修改樣式表，但是別更動<acronym title="HyperText Markup Language">HTML</acronym>檔案。如果你從來都沒有這樣做過，也許會有點心生膽怯。不過你可以參考列表來深入地學習，並且拿範例檔案作為教學指南。',
-		"participation-p3" => '請下載<a href="/zengarden-sample.html" title="這個頁面的HTML程式碼，不該被更動。">html</a>跟<a href="/zengarden-sample.css" title="這個頁面的CSS範例檔，你可以更改它。">css</a>的範例檔案，並且在自己的電腦上修改。在你完成你的傑作後（請別拿半成品投稿），先將<acronym title="Cascading Style Sheets">CSS</acronym>檔案上傳到你的網頁伺服器，再把該檔案以及全部使用到的元素打包的連結<a href="' . $zenUrls["zen-submit"] . '" title="請用聯絡表單給我們你的CSS檔案">寄給我們</a>。如果我們採用你的作品，我們會將其下載並放在我們的伺服器上。',
+		"participation-p1" => '良好的視覺設計永遠是我們的目標。你必須修改這個頁面，所以得要有良好的<abbr title="Cascading Style Sheets">CSS</abbr>技巧。不過這份範例檔案已經詳盡地加上註解，即使是<abbr title="Cascading Style Sheets">CSS</abbr>初學者也能夠以此為出發點。請參考<a href="' . $zenUrls["zen-resources"] . '" title="CSS相關資源列表"><abbr title="Cascading Style Sheets">CSS</abbr>資源手冊</a>，裡面有相關的進階教學與技巧說明。',
+		"participation-p2" => '你可以用你希望的任何方式修改樣式表，但是別更動<abbr title="HyperText Markup Language">HTML</abbr>檔案。如果你從來都沒有這樣做過，也許會有點心生膽怯。不過你可以參考列表來深入地學習，並且拿範例檔案作為教學指南。',
+		"participation-p3" => '請下載<a href="/zengarden-sample.html" title="這個頁面的HTML程式碼，不該被更動。">html</a>跟<a href="/zengarden-sample.css" title="這個頁面的CSS範例檔，你可以更改它。">css</a>的範例檔案，並且在自己的電腦上修改。在你完成你的傑作後（請別拿半成品投稿），先將<abbr title="Cascading Style Sheets">CSS</abbr>檔案上傳到你的網頁伺服器，再把該檔案以及全部使用到的元素打包的連結<a href="' . $zenUrls["zen-submit"] . '" title="請用聯絡表單給我們你的CSS檔案">寄給我們</a>。如果我們採用你的作品，我們會將其下載並放在我們的伺服器上。',
 
 		"benefits-h3" => "益處",
-		"benefits-p1" => '你為什麼要參與這項計畫呢？因為可以展現你的實力、激發創作靈感，並且在展示<acronym title="Cascading Style Sheets">CSS</acronym>的特色有多驚人時，這項計畫可以當作參考用的資源。本網站供給現在的網頁工作者一些創作靈感，給予新手學習的工具，並提供我們所期待的未來技術的展示。',
+		"benefits-p1" => '你為什麼要參與這項計畫呢？因為可以展現你的實力、激發創作靈感，並且在展示<abbr title="Cascading Style Sheets">CSS</abbr>的特色有多驚人時，這項計畫可以當作參考用的資源。本網站供給現在的網頁工作者一些創作靈感，給予新手學習的工具，並提供我們所期待的未來技術的展示。',
 
 		"requirements-h3" => "必要條件",
-		"requirements-p1" => '我們希望你盡可能地使用<abbr title="Cascading Style Sheets, levels 1 and 2">CSS 1 &amp; 2</abbr>。<abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 &amp; 4</abbr>應使用已被廣泛支援的部分，或是提供瀏覽器不支援時的降格樣式。CSS Zen Garden採用的是可行、實用的<acronym title="Cascading Style Sheets">CSS</acronym>語法，而不是些只能被 2% 觀眾瀏覽的超尖端技術。實際上，我們唯一的需求就只是你的<acronym title="Cascading Style Sheets">CSS</acronym>要合乎標準。',
+		"requirements-p1" => '我們希望你盡可能地使用<abbr title="Cascading Style Sheets, levels 1 and 2">CSS 1 &amp; 2</abbr>。<abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 &amp; 4</abbr>應使用已被廣泛支援的部分，或是提供瀏覽器不支援時的降格樣式。CSS Zen Garden採用的是可行、實用的<abbr title="Cascading Style Sheets">CSS</abbr>語法，而不是些只能被 2% 觀眾瀏覽的超尖端技術。實際上，我們唯一的需求就只是你的<abbr title="Cascading Style Sheets">CSS</abbr>要合乎標準。',
 		"requirements-p2" => '幸好，這樣的設計可以展示現今不同的瀏覽器實作<abbr title="Cascading Style Sheets">CSS</abbr>有多完整。若你遵照方針來設計網頁，你應該可以在大多數現代瀏覽器上面看到接近一致的效果。由於現在瀏覽器種類繁多，若您將行動裝置納入考慮更是如此，因此不太可能做出精準的樣式。這點沒關係，但是盡可能的測試不同瀏覽器。你的設計應該至少要在IE9+、最新版本的Chrome與Firefox瀏覽器，以及iOS、Android手機網頁瀏覽器上運作正常（超過
 90% 以上的人們使用）。',
 		"requirements-p3" => '我們要求你提出原創作品。請遵守著作權法規。請盡可能不要使用有爭議的素材，並納入獨特與有趣的視覺題材到您的作品中。我們不太需要另一個跟花園有關的設計。',
@@ -97,9 +97,9 @@
 
 		"design-resources-h3" => "資源：",
 		"view-css-title" => '檢視這一個設計的CSS檔案。',
-		"view-css-text" => '\">檢視這個設計的<acronym title=\"Cascading Style Sheets\">CSS</acronym>',
+		"view-css-text" => '\">檢視這個設計的<abbr title=\"Cascading Style Sheets\">CSS</abbr>',
 		"css-resources-title" => '連結到提供CSS相關資訊的好站台。',
-		"css-resources-text" => '<acronym title="Cascading Style Sheets">CSS</acronym>相關資源',
+		"css-resources-text" => '<abbr title="Cascading Style Sheets">CSS</abbr>相關資源',
 		"zen-faq-title" => '關於Zen Garden的常見問答集。',
 		"zen-faq-text" => '<abbr title="Frequently Asked Questions">FAQ</abbr>',
 		"zen-submit-title" => '投稿你的CSS檔案。',
