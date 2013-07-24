@@ -8,6 +8,7 @@
 
 		// if you'd like translation credit, place it somewhere in this comment
 		"comment" => "
+	Nederlandse vertaling door: Niels Dequeker
 
 	Bekijk Broncode is een kenmerk, geen fout. Bedankt voor uw nieuwsgierigheid en
 	interesse om deel te nemen!
