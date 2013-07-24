@@ -81,33 +81,33 @@
 	);
 
 	$sidebar = array(
-		"design-selection-h3" => "Select a Design:",
-		"design-selection-by" => "by",
+		"design-selection-h3" => "Kies een ontwerp:",
+		"design-selection-by" => "door",
 
-		"design-archives-h3" => "Archives:",
-		"design-archives-next" => "Next Designs",
-		"design-archives-previous" => "Previous Designs",
-		"design-archives-viewall-title" => "View every submission to the Zen Garden.",
-		"design-archives-viewall-text" => "View All Designs",
+		"design-archives-h3" => "Archief:",
+		"design-archives-next" => "Volgende ontwerpen",
+		"design-archives-previous" => "Vorige ontwerpen",
+		"design-archives-viewall-title" => "Bekijk elke inzending aan de Zen Garden.",
+		"design-archives-viewall-text" => "Bekijk alle ontwerpen",
 
-		"design-resources-h3" => "Resources:",
-		"view-css-title" => 'View the source CSS file of the currently-viewed design.',
-		"view-css-text" => 'View This Design&#8217;s <abbr title="Cascading Style Sheets">CSS</abbr>',
-		"css-resources-title" => 'Links to great sites with information on using CSS.',
+		"design-resources-h3" => "Bronnen:",
+		"view-css-title" => 'Bekijk het CSS bestand van dit ontwerp',
+		"view-css-text" => 'Bekijk de <abbr title="Cascading Style Sheets">CSS</abbr> van dit ontwerp',
+		"css-resources-title" => 'Links naar site over het gebruik van CSS.',
 		"css-resources-text" => '<abbr title="Cascading Style Sheets">CSS</abbr> Resources',
-		"zen-faq-title" => 'A list of Frequently Asked Questions about the Zen Garden.',
+		"zen-faq-title" => 'Een lijst met veelgevraagde vragen en antwoorden over de css Zen Garden.',
 		"zen-faq-text" => '<abbr title="Frequently Asked Questions">FAQ</abbr>',
 		"zen-submit-title" => 'Send in your own CSS file.',
-		"zen-submit-text" => 'Submit a Design',
-		"zen-translations-title" => 'View translated versions of this page.',
-		"zen-translations-text" => 'Translations',
+		"zen-submit-text" => 'Stuur een ontwerp',
+		"zen-translations-title" => 'Bekijk vertaalde varianten van deze pagina.',
+		"zen-translations-text" => 'Vertalingen',
 	);
 
 	$foot = array(
 		"comment" => "
-	These superfluous divs/spans were originally provided as catch-alls to add extra imagery.
-	These days we have full ::before and ::after support, favour using those instead.
-	These only remain for historical design compatibility. They might go away one day.
+	Deze extra span/div tags kunnen gebruikt worden om extra beeldmateriaal te gebruiken
+	De dag van vandaag hebben we volledige ondersteuning voor ::before en ::after, gebruik deze bij voorkeur.
+	Deze blijven enkel voor compatibiliteit met eerdere ontwerpen. Deze zullen ooit verdwijnen.
 		",
 	);
 
