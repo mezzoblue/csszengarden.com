@@ -9,7 +9,7 @@
 		// if you'd like translation credit, place it somewhere in this comment
 		"comment" => "
 
-	檢視原始碼是個特色(feature)，而不是錯誤(bug)。感謝你的好奇與樂於參與！
+	檢視原始碼是個特色 (feature)，而不是錯誤 (bug)。感謝你的好奇與樂於參與！
 
 	請參考以下新版 csszengarden.com 的作品投稿方針：
 
@@ -42,7 +42,7 @@
 		"summary-p2" => '下載<a href="' . $zenUrls["example-html"] . '" title="這個頁面的HTML程式碼，不該被更動。">HTML</a>跟<a href="' . $zenUrls["example-css"] . '" title="這個頁面的CSS範例檔，你可以更改它。">CSS</a>的範例檔案。',
 
 		"preamble-h3" => '開悟之路',
-		"preamble-p1" => '各家瀏覽器的專屬標籤、低相容度的<abbr title="Document Object Model">DOM</abbr>，缺乏完整支援的<abbr title="Cascading Style Sheets">CSS</abbr>，以及被遺棄的瀏覽器等遺跡，如今都散落在闇黑而荒涼的道路上。',
+		"preamble-p1" => '各家瀏覽器的專屬標籤、低相容度的<abbr title="Document Object Model">DOM</abbr>、缺乏完整支援的<abbr title="Cascading Style Sheets">CSS</abbr>，以及被遺棄的瀏覽器等遺跡，如今都散落在闇黑而荒涼的道路上。',
 		"preamble-p2" => '今日，我們必須掃除腦海裡的過時技巧。感謝<abbr title="World Wide Web Consortium">W3C</abbr>、<abbr title="Web Standards Project">WaSP</abbr>，以及瀏覽器開發者們的努力不懈，我們終於能達到網站設計技術的開悟境界。',
 		"preamble-p3" => 'CSS Zen Garden邀請您放鬆身心，冥想專家們的重要課題。讓我們以清晰的心靈之眼凝視，並且用嶄新、充滿活力的方式學習這項經得起時間考驗的技術，達到天人合一的境界。',
 	);
@@ -59,7 +59,7 @@
 		"participation-p3" => '請下載<a href="/zengarden-sample.html" title="這個頁面的HTML程式碼，不該被更動。">HTML</a>跟<a href="/zengarden-sample.css" title="這個頁面的CSS範例檔，你可以更改它。">CSS</a>的範例檔案，並且在自己的電腦上修改。在你完成你的傑作後（請別拿半成品投稿），將<abbr title="Cascading Style Sheets">CSS</abbr>檔案上傳到你的網頁伺服器。把該檔案以及全部使用到的素材包成壓縮檔，並<a href="' . $zenUrls["zen-submit"] . '" title="請用聯絡表單給我們你的CSS檔案">寄給我們連結</a>，如果我們採用你的作品，我們會將其下載並放在我們的伺服器上。',
 
 		"benefits-h3" => "益處",
-		"benefits-p1" => '你為什麼要參與這項計畫呢？因為可以展現你的實力、激發創作靈感、並作為展示<abbr title="Cascading Style Sheets">CSS</abbr>驚人效果的參考資源。本網站供給現在的網頁工作者一些靈感，給予入門者學習的工具，並提供我們所期待的未來技術的展示。',
+		"benefits-p1" => '你為什麼要參與這項計畫呢？因為可以展現你的實力、激發創作靈感，並作為展示<abbr title="Cascading Style Sheets">CSS</abbr>驚人效果的參考資源。本網站供給現在的網頁工作者一些靈感，給予入門者學習的工具，並提供我們所期待的未來技術的展示。',
 
 		"requirements-h3" => "必要條件",
 		"requirements-p1" => '我們希望你盡可能地使用<abbr title="Cascading Style Sheets, levels 1 and 2">CSS 1 &amp; 2</abbr>。<abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 &amp; 4</abbr>應使用已被廣泛支援的部分，或是提供瀏覽器不支援時的備援樣式。CSS Zen Garden採用的是可行、實用的<abbr title="Cascading Style Sheets">CSS</abbr>語法，而不是些只能被 2% 觀眾瀏覽的超尖端技術。實際上，我們唯一的需求就只是你的<abbr title="Cascading Style Sheets">CSS</abbr>要合乎標準。',
