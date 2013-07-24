@@ -12,7 +12,7 @@
 	View source is a feature, not a bug. Thanks for your curiosity and
 	interest in participating!
 
-	Here are the submission guielines for the new and improved csszengarden.com:
+	Here are the submission guidelines for the new and improved csszengarden.com:
 
 	- CSS3? Of course! Prefix for ALL browsers where necessary.
 	- go responsive; test your layout at multiple screen sizes.
