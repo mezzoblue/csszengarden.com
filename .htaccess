@@ -5,8 +5,8 @@ RewriteBase /
 # Canonical Host
 # Externally redirect non-blank non-canonical hostname request to canonical hostname
 # ----- Dev Hostname -----
-RewriteCond %{HTTP_HOST} !^(zen)?$
-RewriteRule ^(.*)$ http://zen/$1 [R=301]
+# RewriteCond %{HTTP_HOST} !^(zen)?$
+# RewriteRule ^(.*)$ http://zen/$1 [R=301]
 # ----- Production Hostname -----
 # RewriteCond %{HTTP_HOST} !^(www.csszengarden.com)?$
 # RewriteRule ^(.*)$ http://www.csszengarden.com/$1 [R=301]
