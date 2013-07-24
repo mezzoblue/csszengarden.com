@@ -3,8 +3,8 @@
 	$lang = "nl";
 
 	$head = array(
-		"title" => "CSS Zen Garden: De Schoonheid van CSS Ontwerpen",
-		"description" => "Een voorbeeld of wat visueel kan worden bereikt met behulp van CSS.",
+		"title" => "CSS Zen Garden: de schoonheid van ontwerpen met CSS",
+		"description" => "Een demonstratie van hetgeen men visueel kan bereiken met CSS gebaseerde ontwerpen.",
 
 		// if you'd like translation credit, place it somewhere in this comment
 		"comment" => "
@@ -19,13 +19,12 @@
 	- gebruik classes bij het opmaken, geen ids.
 	- web fonts zijn cool, zorg er voor dat u de juiste licentie hebt om de bronbestanden te mogen delen
 
-	And a few tips on building your CSS file:
-
-	- use :first-child, :last-child and :nth-child to get at non-classed elements
-	- use ::before and ::after to create pseudo-elements for extra styling
-	- use multiple background images to apply as many as you need to any element
-	- use the Kellum Method for image replacement, if still needed. http://goo.gl/GXxdI
-	- don't rely on the extra divs at the bottom. Use ::before and ::after instead.
+	Enkele tips tijdens het aanmaken van uw CSS bestand:
+	- gebruik :first-child, :last-child en :nth-child om elementen zonder class aan te spreken
+	- gebruik ::before en ::after om pseudo-elementen aan te maken voor extra opmaak
+	- gebruik zoveel achtergrond afbeeldingen als u zelf wil
+	- gebruik de Kellum Methode indien nodig voor image replacement. http://goo.gl/GXxdI
+	- voeg geen extra divs toe aan het eind van het document, beter om ::before en ::after te gebruiken.
 
 		",
 	);
@@ -33,37 +32,37 @@
 
 	$intro = array(
 		"h1" => "CSS Zen Garden",
-		"h2" => 'The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design',
+		"h2" => 'De schoonheid van ontwerpen met <abbr title="Cascading Style Sheets">CSS</abbr> Design',
 
-		"summary-p1" => 'A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.',
-		"summary-p2" => 'Download the example <a href="' . $zenUrls["example-html"] . '" title="This page\'s source HTML code, not to be modified.">html file</a> and <a href="' . $zenUrls["example-css"] . '" title="This page\'s sample CSS, the file you may modify.">css file</a>',
+		"summary-p1" => 'Een demonstratie van hetgeen men visueel kan bereiken met <abbr title="Cascading Style Sheets">CSS</abbr> gebaseerde ontwerpen. Kies &eacute;&eacute;n van de style sheets (ontwerpen) uit de lijst om te gebruiken in deze pagina.',
+		"summary-p2" => 'Download een voorbeeld <a href="' . $zenUrls["example-html"] . '" title="Het HTML voorbeeld bestand, deze mag niet aangepast worden.">html bestand</a> en <a href="' . $zenUrls["example-css"] . '" title="Het css voorbeeld bestand, deze mag aangepast worden.">css bestand</a>',
 
-		"preamble-h3" => 'The Road to Enlightenment',
-		"preamble-p1" => 'Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr title="Document Object Model">DOM</abbr>s, broken <abbr title="Cascading Style Sheets">CSS</abbr> support, and abandoned browsers.',
-		"preamble-p2" => 'We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr title="Web Standards Project">WaSP</abbr>, and the major browser creators.',
-		"preamble-p3" => 'The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the time-honored techniques in new and invigorating fashion. Become one with the web.',
+		"preamble-h3" => 'De weg naar verlichting',
+		"preamble-p1" => 'We laten achter ons een duistere weg van overblijfselen van browser specieke tags, incompatibele <abbr title="Document Object Model">DOM</abbr>s, niet werkende <abbr title="Cascading Style Sheets">CSS</abbr> ondersteuning en achtergelaten browsers.',
+		"preamble-p2" => 'Hedentendaage moeten we ons hoofd leeg maken en ontdoen van de technieken uit het verleden.Web Verlichting is mogelijk gemaakt door de onvermoeibare inspanningen van de mensen van de <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr title="Web Standards Project">WaSP</abbr>, en de grote browser producenten.',
+		"preamble-p3" => 'De css Zen Garden nodigt u uit om te relaxen en te mediteren op de belangrijke lessen van de meesters. Begin met het zuiver zien. Leer om nieuwe (binnekort) tijd-winnende technieken op versterkende wijze te gebruiken.Wordt een met het web.',
 	);
 
 
 	$main = array(
-		"explanation-h3" => "So What is This About?",
-		"explanation-p1" => 'There is a continuing need to show the power of <abbr title="Cascading Style Sheets">CSS</abbr>. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet into this very page. The <abbr title="HyperText Markup Language">HTML</abbr> remains the same, the only thing that has changed is the external <abbr title="Cascading Style Sheets">CSS</abbr> file. Yes, really.',
-		"explanation-p2" => '<abbr title="Cascading Style Sheets">CSS</abbr> allows complete and total control over the style of a hypertext document. The only way this can be illustrated in a way that gets people excited is by demonstrating what it can truly be, once the reins are placed in the hands of those able to create beauty from structure. Designers and coders alike have contributed to the beauty of the web; we can always push it further.',
+		"explanation-h3" => "Waar gaat dit over?",
+		"explanation-p1" => 'Er is een duidelijke noodzaak voor het serieus nemen van <abbr title="Cascading Style Sheets">CSS</abbr> door grafische ontwerpers. De Zen Garden richt zich op het enthousiast maken, inspireren en aanmoedigen van het gebruiken van CSS door grafische ontwerpers. Kijk om te beginnen in de lijst met aanwezige ontwerpen. Door te klikken op een ontwerp wordt het ontwerp in deze pagina ingeladen. De <abbr title="HyperText Markup Language">HTML</abbr> blijft hetzelfde, het enige wat verandert is het externe <abbr title="Cascading Style Sheets">CSS</abbr> bestand. Ja, echt waar!',
+		"explanation-p2" => '<abbr title="Cascading Style Sheets">CSS</abbr> stelt ons in staat complete en totale controle uit te oefenen over de opmaak van een hypertext document. De enige wijze waarop dit ge&iuml;llustreerd kan worden ,op een manier dat dit mensen enthousiast maakt, is door middel van een demonstratie van wat css echt betekent in de handen van diegene die schoonheid cre&euml;eren vanuit structuur. Tot op heden, zijn de meeste voorbeelden van mooie trucs en hacks gedemonstreerd door 'structureerders' en programmeurs. Grafische ontwerpers moeten hier echter nog hun stempel drukken. Dit moet dus snel gaan gebeuren.',
 
-		"participation-h3" => "Participation",
-		"participation-p1" => 'Strong visual design has always been our focus. You are modifying this page, so strong <abbr title="Cascading Style Sheets">CSS</abbr> skills are necessary too, but the example files are commented well enough that even <abbr title="Cascading Style Sheets">CSS</abbr> novices can use them as starting points. Please see the <a href="' . $zenUrls["zen-resources"] . '" title="A listing of CSS-related resources"><abbr title="Cascading Style Sheets">CSS</abbr> Resource Guide</a> for advanced tutorials and tips on working with <abbr title="Cascading Style Sheets">CSS</abbr>.',
-		"participation-p2" => 'You may modify the style sheet in any way you wish, but not the <abbr title="HyperText Markup Language">HTML</abbr>. This may seem daunting at first if you&#8217;ve never worked this way before, but follow the listed links to learn more, and use the sample files as a guide.',
-		"participation-p3" => 'Download the sample <a href="/zengarden-sample.html" title="This page\'s source HTML code, not to be modified.">HTML</a> and <a href="/zengarden-sample.css" title="This page\'s sample CSS, the file you may modify.">CSS</a> to work on a copy locally. Once you have completed your masterpiece (and please, don&#8217;t submit half-finished work) upload your <abbr title="Cascading Style Sheets">CSS</abbr> file to a web server under your control. <a href="' . $zenUrls["zen-submit"] . '" title="Use the contact form to send us your CSS file">Send us a link</a> to an archive of that file and all associated assets, and if we choose to use it we will download it and place it on our server.',
+		"participation-h3" => "Deelname",
+		"participation-p1" => 'Bij voorkeur alleen grafische ontwerpers. U past deze pagina aan, dus goede vaardigheden op het gebied van <acronym title="Cascading Style Sheets">CSS</acronym> zijn noodzakelijk. Echter de voorbeeld bestanden zijn zodanige becommentarieert dat zelfs beginnende CSS-ers ze kunnen gebruiken als startpunt. Zie ook de <a href="http://www.mezzoblue.com/zengarden/resources.asp" title="Een lijst met CSS gerelateerde bronnen"><acronym title="Cascading Style Sheets">CSS</acronym> Bronnen</a> voor geavanceerde handleidingen en tips voor het werken met CSS.',
+		"participation-p2" => 'U mag de style sheet wijzigen zoals u wilt, echter de HTML niet! Dit komt misschien wat vreemd over als u nog nooit op deze wijze gewerkt heeft, maar volg de links op deze pagina om meer te leren en gebruik de voorbeeld bestanden als een richtlijn.',
+		"participation-p3" => 'Download het voorbeeld <a href="/zengarden-sample.html" title="De html mag van dit bestand niet aangepast worden">html bestand</a> en <a href="/zengarden-sample.css" title="Het css voorbeeld bestand, deze mag aangepast worden.">css bestand</a> om er lokaal eraan te kunnen werken. Op het moment dat u uw meesterwerk klaar heeft (en alstublieft stuur geen half afgemaakt werk) kunt u uw .css bestand&nbsp; uploaden naar een web server waar u toegang tot heeft. Stuur ons het adres van uw bestand en als we besluiten om het te gaan gebruiken zullen we de  bijbehorende plaatjes er bij downloaden. Uiteindelijk zullen toegezonden aanmeldingen op onze server geplaatst worden.',
 
-		"benefits-h3" => "Benefits",
-		"benefits-p1" => 'Why participate? For recognition, inspiration, and a resource we can all refer to showing people how amazing <abbr title="Cascading Style Sheets">CSS</abbr> really can be. This site serves as equal parts inspiration for those working on the web today, learning tool for those who will be tomorrow, and gallery of future techniques we can all look forward to.',
+		"benefits-h3" => "Voordelen",
+		"benefits-p1" => 'Waarom deelnemen? Voor de (h)erkenning, inspiratie en het meewerken aan een bron waar we allemaal naar kunnen verwijzen om het gebruik van <acronym title="Cascading Style Sheets">CSS</acronym> gebaseerd ontwerpen te promoten. Dit is zeer noodzakelijk, zelfs hedentendaage. Steeds meer grote web sites nemen de stap naar <acronym title="Cascading Style Sheets">CSS</acronym> gebaseerd ontwerp, maar velen hebben dat nog niet gedaan. Ooit zal deze galerij een historische curiositeit zijn, maar die dag is nog niet daar.',
 
-		"requirements-h3" => "Requirements",
-		"requirements-p1" => 'Where possible, we would like to see mostly <abbr title="Cascading Style Sheets, levels 1 and 2">CSS 1 &amp; 2</abbr> usage. <abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 &amp; 4</abbr> should be limited to widely-supported elements only, or strong fallbacks should be provided. The CSS Zen Garden is about functional, practical <abbr title="Cascading Style Sheets">CSS</abbr> and not the latest bleeding-edge tricks viewable by 2% of the browsing public. The only real requirement we have is that your <abbr title="Cascading Style Sheets">CSS</abbr> validates.',
-		"requirements-p2" => 'Luckily, designing this way shows how well various browsers have implemented <abbr title="Cascading Style Sheets">CSS</abbr> by now. When sticking to the guidelines you should see fairly consistent results across most modern browsers. Due to the sheer number of user agents on the web these days &#8212; especially when you factor in mobile &#8212; pixel-perfect layouts may not be possible across every platform. That&#8217;s okay, but do test in as many as you can. Your design should work in at least IE9+ and the latest Chrome, Firefox, iOS and Android browsers (run by over 90% of the population).',
-		"requirements-p3" => 'We ask that you submit original artwork. Please respect copyright laws. Please keep objectionable material to a minimum, and try to incorporate unique and interesting visual themes to your work. We&#8217;re well past the point of needing another garden-related design.',
-		"requirements-p4" => 'This is a learning exercise as well as a demonstration. You retain full copyright on your graphics (with limited exceptions, see <a href="' . $zenUrls["zen-guidelines"] . '">submission guidelines</a>), but we ask you release your <abbr title="Cascading Style Sheets">CSS</abbr> under a Creative Commons license identical to the <a href="' . $zenUrls["zen-license"] . '" title="View the Zen Garden\'s license information.">one on this site</a> so that others may learn from your work.',
-		"requirements-p5" => 'By <a href="' . $zenUrls["zen-credits-creator"] . '">Dave Shea</a>. Bandwidth graciously donated by <a href="' . $zenUrls["zen-credits-hosting"] . '">mediatemple</a>. Now available: <a href="' . $zenUrls["zen-credits-book"] . '">Zen Garden, the book</a>.',
+		"requirements-h3" => "Vereisten",
+		"requirements-p1" => 'We zouden graag zoveel mogelijk <acronym title="Cascading Style Sheets, versie 1 en 2">CSS1 en 2</acronym> willen zien. <acronym title="Cascading Style Sheets, versie 3 en 4">CSS2</acronym> moet beperkt blijven tot breed ondersteunde elementen. De css Zen Garden gaat over functioneel, praktisch CSS en niet over de laatste high-tech mogelijkheden die alleen zichtbaar zijn voor 2% van het surfendepubliek. De enige echte vereiste is dat u uw CSS valideert.',
+		"requirements-p2" => 'Gelukkig, op deze manier ontwerpen toont aan hoe goed de verschillende browsers <abbr title="Cascading Style Sheets">CSS</abbr> op dit moment hebben ge&#239;mplementeerd. Als u zich aan de richtlijnen houd zou het resultaat behoorlijk consistent moeten zijn op de verschillende moderne browsers. Door het grote aantal user agents op het web &#8212; zeker als u ook mobiel mee rekend &#8212; zullen pixel-perfecte ontwerpen niet mogelijk zijn voor elk platform. Dat is geen probleem, maar test wel in zoveel mogelijk verschillende browsers. Uw design zou op zijn minst moeten werken voor IE9+ en de laatste Chrome, Firefox, iOS en Android browsers (gebruikt door meer dan 90% van de bevolking).',
+		"requirements-p3" => 'We vragen u om alleen ontwerpen die door u zelf zijn gemaakt op te sturen. Houd hierbij alstublieft rekening met de auteursrechten. Beperk mogelijk bezwaarlijk materiaal tot een minimum; probeer zo veel mogelijk unieke en interessante ontwerpen te gebruiken voor uw werk. We zijn al een heel eind voorbij het punt dat we een nieuw tuin-gerelateerd ontwerp nodig hebben.',
+		"requirements-p4" => 'Dit is een oefening alsmede een demonstratie. U behoudt uw auteursrecht over de beeldmaterialen, maar we vragen u om uw CSS vrij te geven onder een "Creative Commons" licentie identiek aan de degene van deze site, zodat anderen van uw werk kunnen leren.',
+		"requirements-p5" => 'Door <a href="' . $zenUrls["zen-credits-creator"] . '">Dave Shea</a>. Bandbreedte is gedoneerd door <a href="' . $zenUrls["zen-credits-hosting"] . '">mediatemple</a>. Nu beschikbaar: <a href="' . $zenUrls["zen-credits-book"] . '">Zen Garden, het boek</a>.',
 	);
 
 	// if you decide to localize any of these, keep the link text <4 characters if possible
