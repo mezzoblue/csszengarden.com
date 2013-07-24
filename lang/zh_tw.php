@@ -50,7 +50,7 @@
 
 	$main = array(
 		"explanation-h3" => "這是關於什麼？",
-		"explanation-p1" => '我們有延續展示<abbr title="Cascading Style Sheets">CSS</abbr>力量的需求。Zen Garden致力於推廣使用、啟發靈感和鼓勵參與。你可以從瀏覽列表裡的設計著手。只要選擇列表上的任一樣式表，就可以將它載入到這個頁面。<abbr title="HyperText Markup Language">HTML</abbr>程式碼都維持原狀，唯一改變的是使用的<abbr title="Cascading Style Sheets">CSS</abbr>檔案。沒錯，的確如此。',
+		"explanation-p1" => '我們不斷的需要展示<abbr title="Cascading Style Sheets">CSS</abbr>的力量。Zen Garden致力於推廣使用、啟發靈感和鼓勵參與。你可以從瀏覽列表裡的設計著手。只要選擇列表上的任一樣式表，就可以將它載入到這個頁面。<abbr title="HyperText Markup Language">HTML</abbr>程式碼都維持原狀，唯一改變的是使用的<abbr title="Cascading Style Sheets">CSS</abbr>檔案。沒錯，的確如此。',
 		"explanation-p2" => '<abbr title="Cascading Style Sheets">CSS</abbr>具備完整控制超文字文件的能力。不過唯有當你把韁繩交給能從結構中創造美感的人們，用實例展示它的功能時，才能夠鼓舞人心。設計師與工程師已經共同為網頁之美做出了貢獻，但我們仍可以更進一步。',
 
 		"participation-h3" => "參與",
