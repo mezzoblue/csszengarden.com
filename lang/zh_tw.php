@@ -63,8 +63,7 @@
 
 		"requirements-h3" => "必要條件",
 		"requirements-p1" => '我們希望你盡可能地使用<abbr title="Cascading Style Sheets, levels 1 and 2">CSS 1 &amp; 2</abbr>。<abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 &amp; 4</abbr>應使用已被廣泛支援的部分，或是提供瀏覽器不支援時的備援樣式。CSS Zen Garden採用的是可行、實用的<abbr title="Cascading Style Sheets">CSS</abbr>語法，而不是些只能被 2% 觀眾瀏覽的超尖端技術。實際上，我們唯一的需求就只是你的<abbr title="Cascading Style Sheets">CSS</abbr>要合乎標準。',
-		"requirements-p2" => '幸好，這樣的設計可以展示現今不同的瀏覽器實作<abbr title="Cascading Style Sheets">CSS</abbr>有多完整。若你遵照方針來設計網頁，你應該可以在大多數現代瀏覽器上面看到接近一致的效果。由於現在瀏覽器種類繁多，尤其將行動裝置納入考慮時更是如此，因此不太可能在各平台上做出精準的樣式。這點沒關係，但是盡可能的測試不同瀏覽器。你的設計應該至少要在IE9+，以及最新版本的Chrome、Firefox、iOS、Android瀏覽器上運作正常（超過
-90% 以上的人們使用）。',
+		"requirements-p2" => '幸好，這樣的設計可以展示現今不同的瀏覽器實作<abbr title="Cascading Style Sheets">CSS</abbr>有多完整。若你遵照方針來設計網頁，你應該可以在大多數現代瀏覽器上面看到接近一致的效果。由於現在瀏覽器種類繁多，尤其將行動裝置納入考慮時更是如此，因此不太可能在各平台上做出精準的樣式。這點沒關係，但是盡可能的測試不同瀏覽器。你的設計應該至少要在IE9+，以及最新版本的Chrome、Firefox、iOS、Android瀏覽器上運作正常（超過 90% 以上的人們使用）。',
 		"requirements-p3" => '我們要求你提出原創作品；請遵守著作權法規，盡可能不要使用有爭議的素材，並納入獨特且有趣的視覺題材到你的作品中；我們不太需要另一個跟花園有關的設計。',
 		"requirements-p4" => '這是個示範，也是學習用的練習題。你可以保留圖片的完整著作權（具有有限度的例外，請參考<a href="' . $zenUrls["zen-guidelines"] . '">投稿方針</a>），但我們要求你用<a href="' . $zenUrls["zen-license"] . '" title="檢視Zen Garden的版權聲明。">與本網站相同</a>的創用CC授權釋出你的<abbr title="Cascading Style Sheets">CSS</abbr>作品，讓其他人可以從中學習。',
 		"requirements-p5" => '由<a href="' . $zenUrls["zen-credits-creator"] . '">Dave Shea</a>提供。頻寬由<a href="' . $zenUrls["zen-credits-hosting"] . '">mediatemple</a>慷慨贊助。<a href="' . $zenUrls["zen-credits-book"] . '">Zen Garden之書</a>，現正販售中。',
@@ -97,7 +96,7 @@
 
 		"design-resources-h3" => "資源：",
 		"view-css-title" => '檢視這一個設計的CSS檔案。',
-		"view-css-text" => '\">檢視這個設計的<abbr title=\"Cascading Style Sheets\">CSS</abbr>',
+		"view-css-text" => '檢視這個設計的<abbr title=\"Cascading Style Sheets\">CSS</abbr>',
 		"css-resources-title" => '連結到提供CSS相關資訊的好站台。',
 		"css-resources-text" => '<abbr title="Cascading Style Sheets">CSS</abbr>相關資源',
 		"zen-faq-title" => '關於Zen Garden的常見問答集。',
