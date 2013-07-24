@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang; ?>">
 <head>
 	<meta charset="utf-8">
 	<title><?php echo $head["title"]; ?></title>
 
-	<link rel="stylesheet" media="screen" href="<?php echo $currentStyleSheet; ?>?v=8may2013">
+	<link rel="stylesheet" media="screen" href="<?php echo $currentDesign; ?>?v=8may2013">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo $zenUrls["zen-rss"]; ?>">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Dave Shea">
 	<meta name="description" content="<?php echo $head["description"]; ?>">
 	<meta name="robots" content="all">
+
+	<!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
 </head>
 
 <!--
@@ -28,12 +32,12 @@
 			<h2><?php echo $intro["h2"]; ?></h2>
 		</header>
 
-		<div class="summary" id="zen-summary">
+		<div class="summary" id="zen-summary" role="article">
 			<p><?php echo $intro["summary-p1"]; ?></p>
 			<p><?php echo $intro["summary-p2"]; ?></p>
 		</div>
 
-		<div class="preamble" id="zen-preamble">
+		<div class="preamble" id="zen-preamble" role="article">
 			<h3><?php echo $intro["preamble-h3"]; ?></h3>
 			<p><?php echo $intro["preamble-p1"]; ?></p>
 			<p><?php echo $intro["preamble-p2"]; ?></p>
@@ -42,31 +46,31 @@
 	</section>
 
 	<div class="main supporting" id="zen-supporting" role="main">
-		<div class="explanation" id="zen-explanation">
+		<div class="explanation" id="zen-explanation" role="article">
 			<h3><?php echo $main["explanation-h3"]; ?></h3>
 			<p><?php echo $main["explanation-p1"]; ?></p>
 			<p><?php echo $main["explanation-p2"]; ?></p>
 		</div>
 
-		<div class="participation" id="zen-participation">
+		<div class="participation" id="zen-participation" role="article">
 			<h3><?php echo $main["participation-h3"]; ?></h3>
 			<p><?php echo $main["participation-p1"]; ?></p>
 			<p><?php echo $main["participation-p2"]; ?></p>
 			<p><?php echo $main["participation-p3"]; ?></p>
 		</div>
 
-		<div class="benefits" id="zen-benefits">
+		<div class="benefits" id="zen-benefits" role="article">
 			<h3><?php echo $main["benefits-h3"]; ?></h3>
 			<p><?php echo $main["benefits-p1"]; ?></p>
 		</div>
 
-		<div class="requirements" id="zen-requirements">
+		<div class="requirements" id="zen-requirements" role="article">
 			<h3><?php echo $main["requirements-h3"]; ?></h3>
 			<p><?php echo $main["requirements-p1"]; ?></p>
 			<p><?php echo $main["requirements-p2"]; ?></p>
 			<p><?php echo $main["requirements-p3"]; ?></p>
 			<p><?php echo $main["requirements-p4"]; ?></p>
-			<p><?php echo $main["requirements-p5"]; ?></p>
+			<p role="contentinfo"><?php echo $main["requirements-p5"]; ?></p>
 		</div>
 
 		<footer>
@@ -100,27 +104,20 @@
 					<ul>
 <?php
 	if ($listStart > $numDesigns) {
-	    $nextPage = $thisPage + 1;
 ?>
 						<li class="next">
-							<a href="<?php echo "$langURL/$currentDesign/page$nextPage"; ?>">
-								<?php echo $sidebar["design-archives-next"]; ?> <span class="indicator">&rsaquo;
+							<a href="?cssfile=<?php echo $currentDesign ?>&amp;page=<?php echo $thisPage + 1 ?>">
+								<?php echo $sidebar["design-archives-next"]; ?> <span class="indicator">&rsaquo;</span>
 							</a>
 						</li>
 <?php
 	}
 
 	if ($thisPage > 0) {
-        if($thisPage > 1) {
-            $prev = $thisPage - 1;
-            $prevPage = "page$prev/";
-        } else {
-            $prevPage = ''; // don't create '/page0/' urls
-        }
 ?>
 						<li class="previous">
-							<a href="<?php echo "$langURL/$currentDesign/$prevPage"; ?>">
-								<span class="indicator">&lsaquo; <?php echo $sidebar["design-archives-previous"]; ?>
+							<a href="?cssfile=<?php echo $currentDesign ?>&amp;page=<?php echo $thisPage - 1 ?>">
+								<span class="indicator">&lsaquo;</span> <?php echo $sidebar["design-archives-previous"]; ?>
 							</a>
 						</li>
 <?php
@@ -136,10 +133,10 @@
 			</div>
 
 			<div class="zen-resources" id="zen-resources">
-				<h3 class="resources"><?php echo $sidebar["design-resources-h3"]; ?>:</h3>
+				<h3 class="resources"><?php echo $sidebar["design-resources-h3"]; ?></h3>
 				<ul>
 					<li class="view-css">
-						<a href="<?php echo "/$currentDesign/$currentDesign" ?>" title="<?php echo $sidebar["view-css-title"]; ?>">
+						<a href="<?php echo $currentDesign ?>" title="<?php echo $sidebar["view-css-title"]; ?>">
 							<?php echo $sidebar["view-css-text"]; ?>
 						</a>
 					</li>
@@ -175,8 +172,8 @@
 <?php echo $foot["comment"]; ?>
 
 -->
-<div class="extra1"></div><div class="extra2"></div><div class="extra3"></div>
-<div class="extra4"></div><div class="extra5"></div><div class="extra6"></div>
+<div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
+<div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
 
 </body>
 </html>
