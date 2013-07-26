@@ -1,0 +1,361 @@
+/* css Zen Garden submission 201 - 'Lily Pond', by Rose Thorogood, http://tulips4rose.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Rose Thorogood */
+/* Added: December 11th, 2006 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */   
+
+
+
+
+/* --- LAYOUT ---------------------------------- */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #421d42 url(images/bg.gif);
+	color: #471c47;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 0.7em;
+}
+
+
+#container {
+	width: 750px;
+	height: 1335px;
+}
+
+
+#pageHeader {
+	width: 250px;
+	height: 625px;
+	background: url('bg-pageHeader.gif') no-repeat;
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 350px;
+	left: 250px;
+	z-index: 0;
+}
+
+#quickSummary {
+	margin-top: 0px;
+	margin-left: 0px;
+	position: relative;
+	top: 350px;
+	left: 250px;
+	z-index: 1;
+}
+	#quickSummary p.p1 {
+	display: none;
+	}
+		#quickSummary p.p2 {
+			width: 425px;
+			margin-top: 0px;
+			margin-left: 0px;
+			position: absolute;
+			top: -18px;
+			left: -250px;
+		z-index: 2;
+		}
+
+#preamble {
+	width: 500px;
+	height: 350px;
+	background: #471c47 url('bg-road.gif');
+	margin-top: 0px;
+	position: absolute;
+	top: 0px;
+}
+
+#explanation {
+	width: 250px;
+	height: 490px;
+	background: #a690af url('bg-about.gif');
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 0px;
+	left: 500px;
+}
+
+#participation {
+	width: 250px;
+	height: 485px;
+	background: #a690af url('bg-participation.gif');
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 490px;
+	left: 500px;
+}
+
+#benefits {
+	width: 250px;
+	height: 230px;
+	background: #85a3c2 url('bg-benefits.gif');
+	margin-top: 0px;
+	position: absolute;
+	top: 350px;
+}
+
+#requirements {
+	width: 250px;
+	height: 755px;
+	background: #85a3c2 url('bg-requirements.gif');
+	margin-top: 0px;
+	position: absolute;
+	top: 580px;
+}
+
+#footer {
+	width: 500px;
+	height: 20px;
+	background: #336699 url('bg-footer.gif');
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 1280px;
+	left: 250px;
+}
+
+#linkList {
+	width: 500px;
+	height: 305px;
+	background: #336699 url('bg-select.gif');
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 975px;
+	left: 250px;
+}
+
+#lselect {
+	margin-bottom: 0px;
+	margin-left: 0px;
+	position: absolute;
+	bottom: -5px;
+	left: 10px;
+	width: 300px;
+}
+
+#larchives {
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 30px;
+	left: 290px;
+}
+
+#lresources {
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 180px;
+	left: 290px;
+}
+
+
+/* --- FORMATTING HEADINGS --------------------- */
+
+h1 span {
+	display: none;
+}
+
+h2 span {
+	display: none;
+}
+
+#explanation h3 {
+	background-image: url('heading-about.gif');
+	width: 250px;
+	height: 100px;
+}
+
+#explanation h3 span {
+	display: none;
+}
+
+#participation h3 {
+	background-image: url('heading-participation.gif');
+	width: 250px;
+	height: 50px;
+}
+
+#participation h3 span {
+	display: none;
+}
+
+#benefits h3 {
+	background-image: url('heading-benefits.gif');
+	width: 250px;
+	height: 60px;
+}
+
+#benefits h3 span {
+	display: none;
+}
+
+#requirements h3 {
+	background-image: url('heading-requirements.gif');
+	width: 250px;
+	height: 50px;
+}
+
+#requirements h3 span {
+	display: none;
+}
+
+#lselect h3 {
+	display: none;
+}
+
+#larchives h3 {
+	display: none;
+}
+
+#lresources h3 {
+	display: none;
+}
+
+
+/* --- FORMATTING TEXT ------------------------- */
+
+p {
+	padding: 0 15px 0 15px;
+}
+
+#preamble p.p1 {
+	margin-top: -20px;
+}
+
+#preamble p.p1, #preamble p.p2, #preamble p.p3 {
+	color: #ffffff;
+	font-size: 1.25em;
+	font-style: italic;
+}
+
+#supportingText {
+	background-color: #341256;
+}
+
+#quickSummary p.p1 {
+	display: none;
+	}
+
+#quickSummary p.p2 {
+	color: #ffffff;
+	font-weight: bold;
+	text-align: right;
+	padding: 0;
+}
+
+#benefits, #requirements {
+	color: #072849;
+}
+
+#requirements p.p5 {
+	margin-top: 0px;
+	margin-left: 0px;
+	position: absolute;
+	top: 720px;
+	left: 250px;
+	width: 500px;
+	height: 35px;
+	font-size: .9em;
+	background-color: #ffffff;
+	color: #471c47;
+	text-align: center;
+	padding: 0;
+	}
+
+#requirements p.p5 span {
+	position: relative;
+	top: 10px;
+	}
+
+#footer {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+acronym {
+	font-weight: bold;
+	border-bottom: 1px dotted #ffffff;
+	}
+	
+#quickSummary acronym {
+	font-weight: bold;
+	border-bottom: 1px dotted #339999;
+	}
+	
+
+/* --- FORMATTING NAVIGATION ------------------- */
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #336699;
+	text-decoration: underline;
+}
+
+#quickSummary a {
+	color: #339999;
+	text-decoration: none;
+}
+
+#quickSummary a:hover {
+	color: #336699;
+	text-decoration: underline;
+}
+
+#explanation a:hover, #participation a:hover {
+	color: #770e77;
+}
+
+#requirements p.p5 a {
+	color: #336699;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#requirements p.p5 a:hover {
+	color: #339999;
+	text-decoration: underline;
+}
+
+#footer a {
+	font-weight: bold;
+}
+
+#linkList a, #footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#linkList a:hover, #footer a:hover {
+	background-color: #ffffff;
+	color: #471c47;
+	text-decoration: underline;
+}
+
+#lselect a {
+	font-weight: bold;
+}
+
+#lselect a.c {
+	font-weight: normal;
+}
+
+li {
+	padding-bottom: 3px;
+	list-style: none;
+}
+

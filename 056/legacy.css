@@ -1,0 +1,283 @@
+/* --------- standalone ---------  */
+body {
+	font: 11px/1.3 Tahoma, sans-serif;
+	margin: 0;
+	margin-left: 31px;
+	padding: 0;
+	background: #ddd url(bg.gif) repeat-y left;
+	}
+
+#container {
+	text-align: left;
+	background-color: #eee;
+	padding-bottom: 125px;
+	width: 735px;
+	height: 100%;
+	}
+
+p {
+	padding: 0 10px 0px 10px;
+	}
+
+/* sections */
+
+#intro {
+	text-align: left;
+	height: 223px;
+	padding: 130px 0 0 0;
+	margin: 0;
+	background: #ddd url(top.gif) repeat-x top;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	height: 97px;
+	}
+
+#pageHeader {
+	height: 65px;
+	padding: 0;
+	margin: 0;
+	background: #fff url(mid.gif) no-repeat;
+	}
+
+#pageHeader h1 {
+	display: none;
+	}
+
+#pageHeader h2 {
+	display: none;
+	}
+
+#quickSummary {
+	height: 37px;
+	width: 735px;
+	padding-bottom: 4px;
+	margin: 0;
+	text-align: left;
+	background: #eee url(bottom.gif) no-repeat top;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	height: 28px;
+	}
+
+#quickSummary p {
+	display: none;
+	}
+
+#quickSummary p.p2 {
+	padding-left: 5px;
+	color: #555;
+	font: 9px Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	display: inline;
+	}
+
+#quickSummary p.p2 a, a {
+	color: #777;
+	text-decoration: none;
+	}
+
+#quickSummary p.p2 a:hover, a:hover {
+	color: #36c;
+	}
+
+#preamble {
+	text-align: justify;
+	position: absolute;
+	margin: 0 0 0 0;
+	width: 735px;
+	color: #555;
+	height: 130px;
+	overflow: auto;
+	padding: 0px 0px 0px 234px;
+	background: #ddd url(road.jpg) no-repeat left top;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 501px;
+	}
+
+#preamble h3 {
+	height: 20px;
+	padding: 0;
+	margin: 0;
+	background: #ddd url(1.gif) no-repeat left top;
+	}
+
+#preamble p.p3 {
+	padding: 0 10px 10px 10px;
+	}
+
+#supportingText {
+	position: absolute;
+	margin-top: 139px;
+	width: 510px;
+	color: #555;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 510px;
+	}
+
+#preamble h3 span, #supportingText h3 span, #explanation h3 span {
+	display: none;
+	}
+
+#explanation {
+	text-align: justify;
+	margin: 0 0 0 225px;
+	width: 510px;
+	color: #555;
+	background: #ddd url(r2.jpg) no-repeat left bottom;
+	padding-left: 234px;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 276px;
+	}
+
+#explanation h3 {
+	height: 20px;
+	padding: 0;
+	margin: 0;
+	background: #ddd url(2.gif) no-repeat left top;
+	}
+
+#explanation p.p2 {
+	padding: 0 10px 10px 10px;
+	}
+
+#participation, #benefits, #requirements {
+	text-align: justify;
+	margin: 0 0 0 225px;
+	width: 510px;
+	color: #555;
+	padding: 10px;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 490px;
+	}
+
+#participation h3, #benefits h3, #requirements h3 {
+	display: block;
+	width: 300px;
+	height: 20px;
+	margin-left: 45px;
+	}
+
+#participation h3 {
+	background: transparent url(3.gif) no-repeat;
+	}
+
+#benefits h3 {
+	background: transparent url(4.gif) no-repeat;
+	}
+
+#requirements h3 {
+	background: transparent url(5.gif) no-repeat;
+	}
+
+#requirements, #benefits, #participation {
+	background: #ddd url(corner.gif) no-repeat top left;
+	margin-top: 15px;
+	}
+
+/* sidelink items */
+
+#linkList {
+	width: 225px;
+	position: absolute;
+	background-color: #ddd;
+	font: 10px Tahoma, sans-serif;
+	margin-top: 139px;
+	color: #aaa;
+	border-right: 9px solid #eee;
+	text-align: center;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 216px;
+	}
+
+#lselect, #lfavorites, #larchives {
+	border-bottom: 9px solid #eee;
+	background: #ddd url(backc.gif) no-repeat bottom right;
+	}
+
+#lresources {
+	border-bottom: 9px solid #eee;
+	background: #ddd url(backc.gif) no-repeat bottom right;
+	}
+
+#lselect h3 {
+	background: #ddd url(selectd.gif) no-repeat;
+	padding: 0;
+	margin: 0;
+	height: 20px;
+	}
+
+#lselect h3 span, #lfavorites  h3 span, #larchives  h3 span, #lresources  h3 span {
+	display: none;
+	}
+
+#lfavorites  h3 {
+	background: #ddd url(selectf.gif) no-repeat;
+	padding: 0;
+	margin: 0;
+	height: 20px;
+	}
+
+#larchives  h3 {
+	background: #ddd url(selecta.gif) no-repeat;
+	padding: 0;
+	margin: 0;
+	height: 20px;
+	}
+
+#lresources  h3 {
+	background: #ddd url(selectr.gif) no-repeat;
+	padding: 0;
+	margin: 0;
+	height: 20px;
+	}
+
+#linkList ul {
+	list-style: none;
+	padding: 5px 0 5px 0;
+	margin: 0;
+	}
+
+#linkList li {
+	line-height: 2em;
+	display: block;
+	}
+
+#linkList li a {
+	margin: 0 2px 0 2px;
+	font-weight: bold;
+	padding: 3px;
+	border: 1px solid #ddd;
+	}
+
+#linkList li a:hover {
+	background: #eee url(llist.gif);
+	border: 1px solid #aaa;
+	}
+
+
+
+
+
+
+/* Footer */
+
+#footer {
+	padding: 15px;
+	}
+
+#footer a {
+	margin: 1px;
+	padding: 5px;
+	}
+
+#footer a:hover {
+	background-color: #ddd;
+	}
+
+/* And that's the end, let's do it again! */
+

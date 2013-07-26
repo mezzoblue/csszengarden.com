@@ -1,0 +1,230 @@
+/* css Zen Garden submission 072 - 'Outburst' by Chris Vincent - http://dris.webhop.org/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* Flower illustrations derived from a photograph by Seer of sxc.hu - http://www.sxc.hu/browse.phtml?f=profile&l=seer */
+/* Added: January 3rd, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+
+/* Overall Layout and Formatting */
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	}
+
+#container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0 10px 0 10px;
+	background: url(edgeBorder.gif) top right repeat-y rgb(236,149,3);
+	width: 939px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 919px;
+	}
+
+#pageHeader {
+	text-indent: -10000px;
+	width: 800px;
+	height: 388px;
+	background: url(header.gif) no-repeat;
+	margin: 10px 0 0 0;
+	padding: 0;
+	}
+
+h1, h2 {
+	margin: 0;
+	}
+
+/* Content Layout */
+
+#quickSummary {
+	background: white;
+	padding: 10px 35px 10px 335px;
+	margin: 10px 0 0 0;
+	width: 800px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 430px;
+	}
+*>#quickSummary {
+	float: right;
+	width: 155px;
+	padding: 0 20px 10px 17px;
+	margin: 23px 154px 10px 20px;
+	border: 3px double rgb(200,200,200);
+	border-width: 0 0 3px 3px;
+	}
+
+#quickSummary .p2 {
+	padding-bottom: 10px;
+	border-bottom: 3px double rgb(200,200,200);
+	}
+*>#quickSummary .p2 {
+	padding-bottom: 0;
+	border-bottom: 0;
+	}
+
+#preamble h3, #supportingText h3 {
+	text-indent: -10000px;
+	height: 38px;
+	}
+
+#preamble {
+	background: white;
+	padding: 10px 35px 1px 335px;
+	width: 800px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 430px;
+	}
+*>#preamble {
+	margin-top: 8px;
+	padding-top: 1px;
+	}
+
+#preamble h3 { background: url(theRoadToEnlightenmentWide.gif) no-repeat; }
+*>#preamble h3 { background: url(theRoadToEnlightenmentWide.gif) no-repeat; width: 215px; margin-left: 0; margin-right: 0; clear: left; }
+
+#supportingText {
+	background: white url(3dflower.jpg) bottom left no-repeat;
+	margin-bottom: 10px;
+	padding: 1px 35px 0 335px;
+	width: 800px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 430px;
+	}
+
+#supportingText h3 { margin: 22px 0 10px 0; }
+
+#explanation h3 { background: url(soWhatIsThisAbout.gif) no-repeat; margin-top: 22px; }
+#participation h3 { background: url(participation.gif) no-repeat; }
+#benefits h3 { background: url(benefits.gif) no-repeat; }
+#requirements h3 { background: url(requirements.gif) no-repeat; }
+
+*>#explanation h3 { margin-top: 10px; }
+
+/* Sidebar Layout */
+
+#linkList {
+	position: absolute;
+	left: 10px;
+	top: 408px;
+	width: 325px;
+	padding: 1px 0 0 0;
+	line-height: 14px;
+	}
+
+#linkList h3 {
+	color: rgb(255,210,50);
+	padding: 5px 0 0 65px;
+	margin: 10px 0 0 0;
+	font-size: 9px;
+	font-weight: normal;
+	background: url(windowHead.gif) no-repeat rgb(236,149,3);
+	width: 325px;
+	height: 22px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 260px;
+	height: 17px;
+	}
+*>#linkList h3 {
+	padding-top: 6px;
+	margin-bottom: -1px;
+	}
+
+#lselect:hover h3, #larchives:hover h3, #lresources:hover h3 {
+	background: url(flashingWindowHead.gif) no-repeat;
+	}
+
+#linkList ul {
+	background: url(windowBody.gif) repeat-y;
+	margin: 0;
+	padding: 10px 0 15px 40px;
+	width: 325px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 285px;
+	}
+
+#linkList li {
+	list-style: none;
+	background: url(bullet.gif) no-repeat 0 3px;
+	margin: 5px 20px 5px -16px;
+	padding-left: 0px;
+	width: 200px;
+	text-indent: 16px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	padding-left: 16px;
+	text-indent: 0;
+	margin-left: 0;
+	}
+
+#linkList li:hover {
+	background: url(hoverBullet.gif) no-repeat 0 3px;
+	}
+
+#lselect, #larchives, #lresources {
+	width: 325px;
+	padding-bottom: 11px;
+	background: url(windowFoot.gif) no-repeat bottom;
+	}
+
+#lselect {
+	font-size: 11px;
+	}
+
+#footer {
+	text-align: center;
+	padding: 3px 0;
+	border-top: 3px double rgb(200,200,200);
+	}
+
+/* Link Formatting */
+
+a:link {
+	color: black;
+	text-decoration: none;
+	border-bottom: 2px rgb(247,202,0) solid;
+	}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px rgb(247,202,0) solid;
+	}
+
+a:link:hover { border-bottom-width: 3px; }
+a:visited:hover { border-bottom-width: 2px; }
+a:active { border-bottom-width: 1px; }
+
+#linkList a:link, #linkList a:visited, #linkList a:hover, #linkList a:active {
+	border: none;
+	font-weight: bold;
+	display: block;
+	font-size: 12px;
+	}
+
+#linkList a.c:link, #linkList a.c:visited, #linkList a.c:hover, #linkList a.c:active {
+	font-weight: normal;
+	text-decoration: underline;
+	display: inline;
+	font-size: 11px;
+	}
+
+#larchives a:link, #larchives a:visited, #larchives a:hover, #larchives a:active, #lresources a:link, #lresources a:visited, #lresources a:hover, #lresources a:active {
+	display: inline;
+	font-size: 12px;
+	}

@@ -1,0 +1,201 @@
+/* css Zen Garden submission 185 - 'Manhattan Edition', by TheOm3ga, http://www.theom3ga.tk/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, TheOm3ga */
+/* Added: September 16th, 2005 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #0D0C0D;
+	background-image:url(fondo.gif);
+	background-repeat:repeat-x;
+	background-position:7px 0;
+	color: white;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+#container{
+	width:759px;
+	margin: 0;
+	padding: 0;
+}
+#pageHeader{
+	background-image: url(top.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 759px;
+	height: 432px;
+	margin: 0;
+	padding: 0;
+}
+#quickSummary{
+	position: absolute;
+	top: 437px;
+	left: 565px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+
+	color: white;	
+	padding-bottom: 10px;
+	background-image:url(panel_azul_bajo.gif);
+	background-repeat:no-repeat;
+	background-position:bottom;
+}
+#quickSummary p.p1{
+	background-image:url(panel_naranja_medio.gif);
+	width: 161px;
+	min-height: 86px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+#quickSummary p.p1 span{
+	background-image:url(panel_naranja_top.gif);
+	background-position:top;
+	background-repeat:no-repeat;
+}
+#quickSummary p.p1 span, #quickSummary p.p2 span{
+	margin: 0px;
+	padding-left: 35px;
+	padding-top: 9px;
+	padding-right: 10px;
+	display: block;
+}
+#quickSummary p.p2{
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	background-image:url(panel_azul_medio.gif);
+	width: 161px;
+	min-height: 39px;
+}
+#quickSummary p.p2 span{	
+	padding-top: 24px;
+	background-image:url(panel_naranja_bottom.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	min-height: 24px;
+}
+#quickSummary a{
+	color: white;
+}
+#linkList{
+	position: absolute;
+	left: 565px;
+	/*top:600px;*/
+	/*top: 56.5em; /* top for fonts @ 10px */
+	top: 60.6em; /* top for fonts @ 11px */
+	float:right;
+	width: 159px;
+	background-image:url(panel3_top.gif);
+	background-position:top;
+	background-repeat: no-repeat;
+}
+#linkList2{
+	position:relative;
+	top: 10px;
+	background-image:url(panel3_med.gif);
+}
+#lresources{
+	background-image:url(panel3_bot.gif);
+	background-repeat:no-repeat;
+	background-position:bottom;
+}
+#linkList h3{
+	margin-top: 0;
+	margin-left: 10px;
+	margin-bottom: 0px;
+	padding: 0;
+	font-size: 12px;
+}
+#linkList a{
+	color: white;
+}
+#linkList acronym, #quickSummary acronym{
+	border-bottom-color: white;
+}
+#linkList ul{
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 25px;
+	padding-bottom: 5px;
+	background-image:url(divizor.gif);
+	background-repeat:no-repeat;
+	background-position:bottom center;
+}
+li{
+	margin-bottom: 5px;
+}
+#lresources ul{
+	background-image: none;
+}
+
+#footer{
+	width: 558px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#pageHeader h1{	display: none; }
+#pageHeader h2{	display: none; }
+
+#preamble h3{ background-image:url(theRoadTo.jpg); }
+#explanation h3{ background-image:url(soWhatIs.jpg); }
+#participation h3{ background-image:url(participation.jpg); }
+#benefits h3{ background-image:url(benefits.jpg); }
+#requirements h3{ background-image:url(requirements.jpg); }
+
+#preamble h3, #supportingText h3{
+	margin: 0;
+	padding: 0;
+	width: 558px;
+	height: 38px;
+}
+#preamble h3 span, #supportingText h3 span{ display: none; }
+
+#preamble{
+	margin-top: 6px;
+}
+#preamble, #explanation, #participation, #benefits, #requirements{
+	position: relative;
+	display: block;
+	left: 4px;
+	background-image: url(fondoParagraphBottom.gif);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	width: 558px;
+	padding-bottom: 29px;
+}
+#preamble p, #explanation p, #participation p, #benefits p, #requirements p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 26px;
+	padding-right: 35px; 
+	padding-bottom: 10px;
+	background-image:url(fondoParagraph1.gif);
+	background-repeat:repeat-y;
+}
+a{
+	color: #666666;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover{	
+	text-decoration: underline;
+}
+acronym{
+	font-style:italic;
+	border-bottom: 1px dotted #666666;
+}	 
+#benefits p{
+	padding-bottom: 0px;
+}

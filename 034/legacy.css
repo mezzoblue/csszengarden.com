@@ -1,0 +1,171 @@
+/* css Zen Garden submission 034 - 'zengrounds' by Andrea Piernock,  http://www.snooble.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Andrea Piernock */
+/* Style based on newgrounds.com, adapted with permission */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #222 url(bg_main.gif) top left repeat-x;
+	color: #fff;
+	font-family: Verdana, Helvetica, Arial, sans-serif; }
+
+a { background: transparent; text-decoration: none; }
+a:link { color: #fc3; }
+a:visited { color: #f90; }
+a:active { color: #fff; }
+a:hover { color: #ff3; }
+acronym { cursor: help; border-bottom: 1px dotted #fff; }
+a acronym { cursor: help; border-bottom: 1px dotted #fc3; }
+
+#container {
+	position: relative;
+	top: 0;
+	left: 50%;
+	width: 750px;
+	margin: 0 0 0 -375px;
+	padding: 0;
+	background: #222; }
+
+#container #intro {
+	margin: 0 215px 0 0;
+	padding: 10px 0 0 0;
+	border-right: 10px solid #4E441B; }
+#container #intro #pageHeader {
+	width: 500px;
+	height: 105px;
+	margin: 0 10px;
+	padding: 10px 0 0 0;
+	background: url(csszen.gif) top left no-repeat; }
+#container #intro #pageHeader h1, #container #intro #pageHeader h2 { display: none; }
+
+#container #intro #quickSummary { margin: 0 20px; padding: 0 0 10px 0; }
+#container #intro #quickSummary p.p1 {
+	height: 75px;
+	margin: 0;
+	padding: 0;
+	background: url(demo.gif) top left no-repeat; }
+#container #intro #quickSummary p.p1 span { display: none; }
+#container #intro #quickSummary p.p2 {
+	margin: 10 0 0 0;
+	padding: 0;
+	font-size: 0.7em;
+	font-weight: bold;
+	text-align: center; }
+
+#container #intro #preamble {
+	width: 500px;
+	margin: 0 10px 15px 10px;
+	padding: 0 0 15px 0;
+	background: url(bottomRoad.gif) bottom left no-repeat; }
+#container #intro #preamble h3 {
+	height: 15px;
+	margin: 0;
+	padding: 0;
+	background: url(road.gif) top left no-repeat; }
+#container #intro #preamble h3 span { display: none; }
+#container #intro #preamble p {
+	margin: 0;
+	padding: 5px 10px;
+	background: url(tileRoad.gif) top left repeat-y;
+	font-size: 0.8em; }
+
+#container #supportingText {
+	margin: 0 215px 0 0;
+	padding: 0;
+	border-right: 10px solid #4E441B; }
+#container #supportingText div {
+	width: 500px;
+	margin: 0 10px 15px 10px;
+	padding: 0;
+	background: url(textBoxBg.gif) bottom left repeat-y; }
+#container #supportingText h3 { height: 65px; margin: 0; padding: 0; }
+#container #supportingText h3 span { display: none; }
+#container #supportingText #explanation h3 { background: url(textBoxHeadExplain.gif) top left no-repeat; }
+#container #supportingText #participation h3 { background: url(textBoxHeadPart.gif) top left no-repeat; }
+#container #supportingText #benefits h3 { background: url(textBoxHeadBenefits.gif) top left no-repeat; }
+#container #supportingText #requirements h3 { background: url(textBoxHeadRequir.gif) top left no-repeat; }
+#container #supportingText p { margin: 0; padding: 0 10px 10px 15px; font-size: 0.8em; }
+#container #supportingText p.p1 { margin-top: -35px; padding-right: 75px; }
+#container #supportingText #explanation p.p2,
+#container #supportingText #participation p.p4,
+#container #supportingText #benefits p.p1,
+#container #supportingText #requirements p.p5 {
+	padding-bottom: 25px;
+	background: url(textBoxBottom.gif) bottom left no-repeat; }
+
+#container #supportingText #footer {
+	margin: 0;
+	padding: 0 0 25px 0;
+	background: none;
+	font-size: 0.7em;
+	font-weight: bold;
+	text-align: center; }
+#container #supportingText #footer a {
+	margin: 0;
+	padding: 0 10px;
+	border-left: 5px solid #666;
+	border-right: 5px solid #666; }
+#container #supportingText #footer a:hover { background: #444; color: #fff; }
+
+#container #linkList {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 225px;
+	margin: 0;
+	padding: 5px 0 0 0;
+	background: url(linkTile.gif) top right repeat-y; }
+#container #linkList #linkList2 div h3 span { display: none; }
+
+#container #linkList #linkList2 #lselect a { display: block; width: 100%; }
+#container #linkList #linkList2 #lselect a.c { display: inline; width: auto; }
+
+#container #linkList #linkList2 #lselect {
+	margin: 0 0 10px 0;
+	padding: 0 0 20px 0;
+	background: url(styleBottom.gif) bottom right no-repeat; }
+#container #linkList #linkList2 #lfavorites,
+#container #linkList #linkList2 #larchives,
+#container #linkList #linkList2 #lresources {
+	margin: 0 0 10px 0;
+	padding: 0 0 15px 0;
+	background: url(boxBottom.gif) bottom right no-repeat; }
+#container #linkList #linkList2 #lselect h3.select,
+#container #linkList #linkList2 #lfavorites h3.favorites,
+#container #linkList #linkList2 #larchives h3.archives,
+#container #linkList #linkList2 #lresources h3.resources {
+	height: 40px;
+	margin: 0;
+	padding: 0; }
+#container #linkList #linkList2 #lselect h3.select { background: url(headStyle.gif) top right no-repeat; }
+#container #linkList #linkList2 #lfavorites h3.favorites { background: url(faves.gif) top right no-repeat; }
+#container #linkList #linkList2 #larchives h3.archives { background: url(arcs.gif) top right no-repeat; }
+#container #linkList #linkList2 #lresources h3.resources { background: url(res.gif) top right no-repeat; }
+
+#container #linkList #linkList2 #lselect ul {
+	list-style: none;
+	margin: 0 10px 0 0;
+	padding: 0 10px 5px 80px;
+	background: url(tileStyle.gif) top right repeat-y; }
+#container #linkList #linkList2 #lfavorites ul,
+#container #linkList #linkList2 #larchives ul,
+#container #linkList #linkList2 #lresources ul {
+	list-style: none;
+	margin: 0 10px 0 0;
+	padding: 0 10px 5px 40px;
+	background: url(tile.gif) top right repeat-y; }
+#container #linkList #linkList2 #lselect li,
+#container #linkList #linkList2 #lfavorites li,
+#container #linkList #linkList2 #larchives li,
+#container #linkList #linkList2 #lresources li {
+	margin: 0;
+	padding: 0;
+	font-size: 0.7em; }

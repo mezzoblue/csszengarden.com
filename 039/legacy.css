@@ -1,0 +1,319 @@
+/* css Zen Garden submission 039 - 'Erratic Blue' by Ian Main, http://www.e-lusion.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Ian Main */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+/* Font resizing has been locked down. I didn't want it to come to this but it mangles my layout. */
+
+/* basic elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #000;
+	background: #ebebeb url(bg-grid.gif);
+	height: 100%;
+	text-align: center;
+	}
+
+html {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+p, h3 {
+	margin: 0;
+	padding: 0 0px 5px 0;
+	}
+
+ul {
+	margin: 0;
+	padding: 2px 0 5px 0;
+	}
+
+li { 
+	line-height: 1.6;
+	}
+	
+/* Old-School! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+acronym { 
+	cursor: help;
+	}
+
+a acronym { 
+	cursor: help; 
+	}
+/* End Old-School! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+a:link {
+	font-weight: 900;
+	color: #777;
+	text-decoration: none;
+	}
+
+a:visited {
+	font-weight: 900;
+	color: #999;
+	text-decoration: none;
+	}
+
+a:hover, a:active {
+	font-weight: 900;
+	color: #555;
+	}
+	
+/* Layout */	
+#container {
+	position: relative;
+	width: 712px; 
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;	
+	border: 1px solid #000;
+	border-top: 0px;
+	border-bottom: 0px;
+	text-align: left; 
+	/* Could not get the right column to stretch heigh: 100% of window view. So I cheated and had to
+	create a background image to fake the 100% column. */
+	background: #A1D9FC url(bg-full.gif) repeat-y;
+	}
+html>body #container {
+	width: 712px; /* ie5win fudge ends */
+	}
+
+#pageHeader h1{
+	left: 209px;
+	width: 712px;
+	height: 163px;
+	background: transparent url(intro_bg.jpg) no-repeat;
+	/* border-bottom: 3px solid #CCEDFF; Added to bevel lower edge. Layer orders were failing causing this to break. */
+	margin-top: 0;
+	margin-bottom: 25px;
+	}
+	
+#pageHeader h1 span, #pageHeader h2 span, #extradiv1, #extradiv3, #extradiv4, #extradiv5, #extradiv6 { 
+	margin: 0;
+	padding: 0;
+	display: none;
+	}
+
+/* Extra Divs - OverView, Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* An overview title for quickSummary. Great idea but couldn't get to work. 
+	It would have sat at the top of the right column. Oh well, next time maybe! */
+ 
+/* #extraDiv1 {
+	position: relative;	
+	margin-left: auto;
+	margin-right: auto;
+	background: transparent url(list_4.png) no-repeat;
+	height: 57px;
+	} */
+	
+ #extraDiv2 {
+ 	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -20px;
+	width: 712px;
+	height: 25px;
+	background: transparent url(foot-bg.gif);
+	border-left: 1px solid #000;
+	border-right: 1px solid #000; 
+	} 
+	
+/* Extra Divs Finish Here ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#quickSummary p.p1 {
+	position: relative;
+	margin-left: 465px;
+	width: 235px;
+	font-size: 10px;
+	color: #b9b9b9;
+	line-height: 20px;
+	z-index: 1;
+	padding: 0 5px 5px 5px;
+	}
+
+#quickSummary p.p2 {
+	position: absolute;
+	top: 147px;
+	margin-left: 10px;
+	font-size: 11px;
+	font-family: verdana, sans-serif;
+	color: #777;
+	}
+ /* #linkList2 {
+	left: 0px;
+	background: transparent url(list_4.png) no-repeat;
+	height: 57px;
+	}  */
+	
+#linkList {
+	position: absolute;
+	top: 160px;
+	/*top: 10em; Dave suggested this but if I change the font size through the browser it pulls the whole right coloum up!!*/
+	margin-left: 458px;
+	margin-top: 3px;
+	background: transparent url(bg-side.gif) repeat-y;
+	width: 254px;
+	padding: 10px;
+	}
+
+#linkList h3.select { 
+	background: transparent url(list_1.gif) no-repeat; 
+	margin-top: 130px;
+	height: 57px;
+	margin-left: 5px;
+	}
+
+#linkList h3.archives { 
+	background: transparent url(list_2.gif) no-repeat; 
+	height: 57px;
+	margin-top: 20px;
+	margin-left: 5px;
+	}
+
+#linkList h3.resources { 
+	background: transparent url(list_3.gif) no-repeat; 
+	height: 57px;
+	margin-top: 20px;
+	margin-left: 5px;
+	}
+
+
+#linkList h3.select span, #linkList h3.archives span, #linkList h3.resources span {
+	display:none
+	}
+	
+#linkList ul {
+	margin: 10px;
+	padding: 0px;
+	}
+
+#linkList li {
+	list-style-type: none;
+	background: transparent; 
+	display: block; 
+	font-size: 10px;
+	font-family: verdana, sans-serif;
+	color: #b9b9b9;
+	}
+
+#linkList li a:link, a:visited {
+	color: #b9b9b9;
+	text-decoration: none;
+	}
+
+#linkList li a:hover, #linkList li a:active{ 
+	color: #777;
+	text-decoration: none;
+	}	
+
+a.c:link, a.c:visited, a.c:hover, a.c:active {
+	font-weight: normal;
+	
+	}
+#preamble {
+	padding: 10px; 
+	width: 450px; 
+	margin-top: -110px;
+	font-family: verdana, sans-serif;
+	font-size: 13px;
+	color: #0F7FD0;
+	background: transparent url(text-bg.gif) top left repeat-y;	
+	}
+
+#preamble h3 {
+	margin-top: 10px;
+	font-family: verdana, sans-serif;	
+	margin-bottom: 20px;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	background: #86CDF9;
+	border: 1px solid #5FBEF9;
+	width: 428px; 
+	font-size: 18px;
+	}
+
+#supportingText {
+	padding: 10px; 
+	width: 450px; 
+	font-family: verdana, sans-serif;
+	font-size: 13px;
+	color: #0F7FD0;
+	voice-family: "\"}\""; 
+  	voice-family: inherit;
+	width: 440px;
+	}
+
+#supportingText a:link, #supportingText a:visited {
+	color: #3B92C9;
+	text-decoration: none;
+	}
+
+#supportingText a:hover, #supportingText a:active { 
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+	}
+
+#explanation h3, #participation h3, #benefits h3, #requirements h3 {
+	margin-top: 10px;
+	font-family: verdana, sans-serif;	
+	margin-bottom: 20px;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	background: #86CDF9;
+	border: 1px solid #5FBEF9;
+	width: 428px; 
+	font-size: 18px;
+	}
+
+#requirements {
+	}
+
+#requirements p.p5 {
+	
+	margin-top: 20px;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	background: #86CDF9;
+	border: 1px solid #5FBEF9;
+	}
+
+#footer { 
+	position: absolute;
+	top: 146px;
+	color: #777;
+	font-size: 12px;
+	margin-left: 470px;
+	width: 230px;
+}
+
+#footer a:link, #footer a:visited { 
+	margin: 5px;
+	font-weight: normal; 
+	color: #777;
+	text-decoration: none;
+}
+
+#footer a:hover, #footer a:active { 
+	color: #333;
+	text-decoration: none;
+}
+
+#extraDiv1, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+	display: none;
+	}

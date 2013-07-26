@@ -1,0 +1,153 @@
+/* css Zen Garden submission 131 - 'Type Thing', by Michal Mokrzycki, http://nf.hyperreal.info/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Michal Mokrzycki */
+/* Added: Oct. 21st, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+   
+body { 
+	font-family: Georgia, Palatino Linotype, Times, Times New Roman, serif; 
+	color: #fff; background: #fff url(body_back.gif) top left repeat-y; 
+	margin: 0; padding: 0 0 20px 0; }
+	
+/* relative font size */
+body, body div, body p, body th,
+body td, body li, body dd, body span {
+	font-size: small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: medium; }
+
+html>body, html>body div, html>body p, html>body th,
+html>body td, html>body li, html>body dd {
+	font-size: medium; }
+
+p { line-height: 80%; margin: 5px 0 10px 0; text-align: justify; } 
+	 
+p span { font-size: 70%; }
+
+a:link { 
+	font-weight: bold; color: #FFD200; }
+a:visited { 
+	text-decoration: none; color: #FFD200; }
+a:hover, a:active { 
+	background: #FFD200; text-decoration: none; color: #000; }
+
+#container {
+	width: 473px; margin: 0px; }
+
+#intro { 
+	width: 473px;
+	}
+	
+#container { 
+	width: 473px;
+	background: url(head.gif) top left no-repeat; }
+	
+#pageHeader { 
+	width: 291px; height: 259px;
+	background: url(head_hover.gif) 0 -259px no-repeat; }
+#pageHeader:hover { 
+	background: url(head_hover.gif) 0 0 no-repeat;
+	cursor: move; }
+
+
+/* hide header text */ 
+#pageHeader h1, #pageHeader h2 { 
+	width: 1px; height: 1px; text-indent: -9000px; margin: 0; }
+
+#quickSummary {
+	width: 140px; position: absolute; top: 270px; left: 298px; }
+#quickSummary p.p1 {
+	text-indent: -9000px; width: 1px; height: 1px;
+	position: absolute; left: -10px; }
+#quickSummary p.p2 {
+	font-weight: bold; }
+
+	 
+#preamble {
+	width: 240px; margin-left: 20px; }
+#preamble h3 {
+	width: 237px; height: 17px; margin: 15px 0 0 0;
+	text-indent: -9000px; background: url(preamble_h3.gif) top left no-repeat; }
+#preample p {
+	margin-top: 0; }
+	
+#supportingText {
+	width: 240px; margin-left: 20px; }
+	
+#explanation h3 {
+	width: 235px; height: 15px; margin: 10px 0;
+	text-indent: -9000px; background: url(explanation_h3.gif) top left no-repeat; }
+	
+#participation h3 {
+	width: 239px; height: 103px; margin: 10px 0;
+	text-indent: -9000px; background: url(participation_h3.gif) top left no-repeat; }
+	
+#benefits h3 {
+	width: 234px; height: 14px; margin: 10px 0;
+	text-indent: -9000px; background: url(benefits_h3.gif) top left no-repeat; }
+	
+#requirements h3 {
+	width: 234px; height: 15px; margin: 10px 0;
+	text-indent: -9000px; background: url(requirements_h3.gif) top left no-repeat; }
+	
+div#footer {
+	position: absolute; top: 10px; left: 480px;
+	width: 90px; }
+div#footer a {
+	display: block; margin-bottom: 1px; border-bottom: 1px solid #f2f2f2;
+	text-align: right; float: left; width: 50px; font-size: 10px;
+	font-family: Tahoma, sans-serif; color: #000; clear: left;
+	font-weight: normal; text-decoration: none; line-height: 20px; }
+	
+div#linkList {
+	width: 150px; position: absolute; top: 300px; left: 297px; }
+	
+h3.select {
+	text-indent: -9000px; width: 116px; height: 19px; margin: 20px 0 10px 0;
+	background: url(select_design.gif) top left no-repeat; }
+	
+h3.archives {
+	text-indent: -9000px; width: 63px; height: 13px; margin: 20px 0 10px 0;
+	background: url(archives.gif) top left no-repeat; }
+	
+h3.resources {
+	text-indent: -9000px; width: 75px; height: 13px; margin: 20px 0 10px 0;
+	background: url(resources.gif) top left no-repeat; }
+	
+div#linkList ul {
+	margin: 0; padding: 0; list-style: none; }
+	
+div#lselect ul li {
+	font-size: 70%; margin-bottom: 3px;
+	padding: 2px; background: #63939C;
+	font-weight: normal; }
+div#lselect ul li:hover {
+	background: #58828A; }
+	
+div#lselect ul li a {
+	display: block; text-decoration: none; padding: 5px 5px 5px 0;
+	font-size: 100%; color: #60D4E9;
+	font-family: Tahoma, sans-serif; }
+div#lselect ul li a:hover {
+	color: #fff; background: none; }
+	
+div#lselect ul li a.c {
+	display: inline; font-family: Georgia, serif;
+	padding: 0; border: 0; color: #fff; font-size: 100%; }
+	
+div#larchives ul li, div#lresources ul li {
+	margin-bottom: 3px;
+	padding: 2px; background: #63939C; font-size: 10px;
+	font-family: Tahoma, sans-serif; font-weight: normal; }
+div#larchives span, div#lresources span { font-size: 10px; }
+div#larchives ul li a, div#lresources ul li a {
+	text-decoration: none; color: #fff; font-weight: normal; }
+div#larchives ul li a:hover, div#lresources ul li a:hover {
+	background: none; }

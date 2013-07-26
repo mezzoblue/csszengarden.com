@@ -1,0 +1,185 @@
+/* css Zen Garden submission 152 - 'Subway Dream', by Pablo Caro, http://www.nuevostudio.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Pablo Caro */
+/* Added: Jan. 31st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+body#css-zen-garden {
+background: url(trama.gif);
+margin: 0;
+padding: 0;
+font-size: 70%;
+font-family: 'Lucida Grande','Lucida Sans Unicode',arial,verdana,sans-serif;
+color: #B198C5;
+}
+p {
+line-height: 170%;
+text-indent: 30px;
+}
+a {
+color: #BA76FF;
+text-decoration: none;
+}
+a:hover { color: #F286FF; }
+acronym {
+font-style: normal;
+color: #CCAFE3;
+cursor: help;
+}
+
+
+/*POSITIONING======================================*/
+#container {
+position: relative;
+background: #2E0154 url(background.gif) no-repeat top center;
+border-left: 5px solid #CD9FF3;
+border-right: 5px solid #CD9FF3;
+margin: 0 auto;
+width: 720px;
+}
+#intro {
+width: 100%;
+background: transparent url(girl.gif) no-repeat;
+}
+
+#pageHeader {
+width: 720px;
+height: 55px;
+}
+#quickSummary {
+margin-top: 237px;
+margin-left: 270px;
+width: 425px;
+height: 166px;
+background: transparent url(quicksum.gif) no-repeat;
+}	
+#preamble {
+margin-left: 75px;
+margin-right: 280px;
+background: transparent url(back_flowers.gif) no-repeat 0 0;
+}
+
+#supportingText {
+margin-left: 75px;
+margin-right: 275px;
+}
+#explanation { background: transparent url(back_flowers.gif) no-repeat 100% 100%; }
+#participation { background: transparent url(back_flowers.gif) no-repeat 100% 0%; }
+#benefits { background: transparent url(back_flowers.gif) no-repeat 0% 0%; }
+#requirements { background: transparent url(back_flowers.gif) no-repeat 100% 0%; }
+#linkList {
+position: absolute;
+top: 515px;
+left: 480px;
+width: 225px;
+background: transparent url(back_list.gif) repeat-y;
+}
+#footer {
+padding: 25px 0;
+text-align: center;
+text-transform: uppercase;
+background: transparent url(footer.gif) no-repeat 50% 50%;
+}
+
+/*HEADERS======================================*/
+#pageHeader h1,
+#pageHeader h2 {
+display: none;
+}
+#preamble h3 {
+position: relative;
+left: -20px;
+display: block;
+height: 57px;
+background: transparent url(title_the_road.gif) no-repeat;
+text-indent: -1500px;
+}
+#supportingText h3 {
+position: relative;
+left: -20px;
+display: block;
+height: 58px;
+text-indent: -1500px; 
+}
+#explanation h3 {background: transparent url(title_so_what.gif) no-repeat;}
+#participation h3 {background: transparent url(title_participation.gif) no-repeat;}
+#benefits h3 {background: transparent url(title_benfits.gif) no-repeat;}
+#requirements h3 {background: transparent url(title_requirements.gif) no-repeat;}
+#linkList2 h3 {
+display: block;
+height: 35px;
+margin: 0px 30px;
+text-indent: -1500px;}
+#lselect h3 {background: transparent url(title_select.gif) no-repeat;}
+#larchives h3 {background: transparent url(title_archives.gif) no-repeat;}
+#lresources h3 {background: transparent url(title_resources.gif) no-repeat;}
+
+/*LISTS======================================*/
+#linkList ul {
+margin: 0 10px 0 35px;
+padding-left: 0;
+padding-bottom: 10px;
+list-style-type: none;
+font-family: 'Lucida Grande','Lucida Sans Unicode',arial,verdana,sans-serif;
+font-size: 10px;
+}
+
+#lselect ul li {
+padding-left: 20px;
+}
+
+#lselect ul li a {
+margin-left: -25px;
+padding-left: 25px;
+background: transparent url(bullet_flower.gif) no-repeat 0 50%;
+line-height: 25px;
+text-decoration: none;
+display: block;
+clear: both;
+text-transform: uppercase;
+}
+#lselect ul li a:hover { 
+color: #F286FF;
+background-image: url(bullet_flower_on.gif);
+}
+#lselect ul li a.c {
+margin-left: 0;
+padding-left: 0px;
+padding-right: 12px;
+background-image: none;	
+display: inline;
+clear: none;
+text-transform: none;
+color: #B198C5;
+}
+#lselect ul li a.c:hover { 
+color: #F286FF;
+background: transparent url(bullet_stah.gif) no-repeat 100% 50%;
+}
+#lselect ul li a.c:hover { color: #F286FF; }
+
+#larchives ul li a, #lresources ul li a {
+display:block;	
+padding-left: 25px;
+background: transparent url(bullet_oval.gif) no-repeat 0 50%;
+line-height: 25px;
+text-decoration: none;
+}
+#larchives ul li a:hover, #lresources ul li a:hover { background-image: url(bullet_oval_on.gif); }
+
+/*VARIOUS======================================*/
+#quickSummary p.p1 { display: none; }
+
+#quickSummary p.p2
+{
+text-indent: 4px;
+padding-top: 140px;
+text-transform: uppercase;
+}

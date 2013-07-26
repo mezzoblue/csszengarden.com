@@ -1,0 +1,297 @@
+/* css Zen Garden submission 212 - 'Make Õem Proud!', by Michael McAghon and Scotty Reifsnyder, http://skybased.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2007, Michael McAghon and Scotty Reifsnyder */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* hi, and welcome      */
+/* Make'em Proud!       */
+/* CSS Zen Garden       */
+/* 2007                 */
+
+/* meyer reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+/* end meyer reset */
+
+body#css-zen-garden {
+	font: 62.5%/1.6 Georgia, Times, "Times New Roman", serif;
+	color: #3C1700;
+	position: relative;
+	background: #edefd0 url("bg.jpg") top left repeat;
+	margin-top: 75px;
+}
+
+p {
+	font-size: 1.4em;
+	margin: 0 0 1.6em;
+	padding: 0 24px;
+	clear: both;
+}
+
+abbr, acronym { cursor: help; }
+span.accesskey { border-bottom: 1px dotted #fff; }
+
+:link, :visited { font-weight: bold; text-decoration: none; color: #1e0c00; }
+a:active { color: #f00; }
+a:hover { color: #000; font-weight: bold; text-decoration: underline; }
+a img { border: 0; }
+
+#container {
+	width: 645px;
+	padding: 0 30px 0 180px;
+	float: left;
+	background: url("bg_container.gif") 0 50px repeat-y;
+}
+
+	h1 {
+		position: absolute;
+		z-index: 101;
+		top: -75px;
+		left: 0;
+		width: 179px;
+		height: 152px;
+		text-indent: -10001px;
+		background: url("zen-troop-seal.gif") top left no-repeat;
+	}
+	
+	h2 {
+		margin: 0 0 2.5em -95px;
+		width: 770px;
+		height: 352px;
+		text-indent: -10001px;
+		display: block;
+		background: url("make-em-proud.jpg") top left no-repeat;
+		border-bottom: 4px solid #f7fad9;
+	}
+	
+	h3 {
+		text-align: center;
+		color: #472101;
+		height: 27px;
+		text-indent: -10001px;
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+		margin: 0 0 .8em;
+	}
+	
+	#preamble h3 { background-image: url("h_path-to-achieve.gif"); }
+	#explanation h3 { background-image: url("h_what-is-about.gif"); }
+	#participation h3 { background-image: url("h_participation.gif"); }
+	#benefits h3 { background-image: url("h_merit-benefits.gif"); }
+	#requirements h3 {
+		background-image: url("h_requirements.gif");
+		width: 621px;
+		margin-left: -633px;
+	}
+	
+	#intro #quickSummary {
+		background: #3C1700 url("leader.gif") 54% 15px no-repeat;
+		color: #fff;
+		position: absolute;
+		top: 110px;
+		left: 10px;
+		width: 150px;
+		padding: 125px 0 0;
+	}
+	
+	#intro #quickSummary p.p1 {
+		font-size: 1.2em !important;
+		font-style: italic;
+		padding: 0 11px 0 14px;
+	}
+	
+	#intro #quickSummary p.p2 {
+		background: #2d1100 url("h_get-started.gif") 50% 1.5em no-repeat;
+		padding: 5em 15px 1.6em;
+		margin: 0;
+		font-size: 1.2em !important;
+	}
+	
+	#intro #quickSummary a { color: #fff; }
+
+#linkList {
+	width: 130px;
+	background-color: #3c1700;
+	position: absolute;
+	top: 53.5em;
+	left: 10px;
+	padding: 2.4em 10px .8em;
+	color: #cec5bf;
+}
+
+#linkList a { color: #ebe7e5; }
+
+	#linkList h3 {
+		display: block;
+		margin: 0 0 1.2em;
+	}
+	
+	#linkList ul {
+		margin: 0 0 2.4em;
+		font-size: 1em;
+		text-align: center;
+		line-height: 1.2em;
+	}
+	
+	#linkList ul li {
+		margin-bottom: .8em;
+		text-align: center;
+	}
+	
+	#lselect h3 {
+		background-image: url("h_other-scouts.gif");
+	}
+	
+	#lselect ul li {
+		margin: 0 0 1.2em;
+	}
+
+	#lselect ul li a {
+		background-color: #2d1100;
+		display: block;
+		padding: .5em 5px .6em;
+		font-size: 1.1em;
+		margin-bottom: .3em;
+		color: #fff;
+	}
+	
+	#lselect ul li a.c {
+		background-color: transparent;
+		display: inline;
+		padding: 0;
+		font-size: 1em;
+		margin-bottom: 0;
+		color: #ebe7e5;
+	}
+
+	#larchives h3 {
+		background-image: url("h_archives.gif");
+	}
+
+	#lresources h3 {
+		background-image: url("h_resources.gif");
+	}
+
+#supportingText {
+	padding: .5em 0 0;
+	position: relative;
+}
+
+	#benefits {
+		margin-bottom: 1em;
+	}
+	
+	#requirements {
+		float: right;
+		width: 1px;
+		margin: 145px -1px 0 0;
+		display: inline;
+	}
+	
+	#requirements p {
+		width: 598px;
+		margin-left: -646px;
+	}
+	
+	#footer {
+		float: left;
+		background: url("merit-badges.gif") top left no-repeat;
+		width: 645px;
+		height: 130px;
+		overflow: visible;
+		position:relative;
+		display: inline;
+	}
+	
+	#footer a {
+		text-indent: -10001px;
+		float: right;
+		display: block;
+		width: 114px;
+		height: 114px;
+		margin: 0 7px;
+	}
+
+#extraDiv1 {
+	width: 855px;
+	height: 100px;
+	display: block;
+	float: left;
+	background: url("bg_req.gif") top left no-repeat;
+}
+
+/* don't need'em */
+#extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 { display: none; }
+
+/* IE6 help for repositioning of badges, overall weirdness */
+
+* html #container {
+	float: left;
+	height: 170em;
+}
+
+* html #requirements {
+	height: 1px;
+	width: 1px;
+	position: relative;
+	margin-right: -30px;
+}
+
+* html #requirements p, * html #requirements h3 {
+	position: relative;
+}
+/* end sad IE6 */
+
+/* thanks, */
+/* skybased */

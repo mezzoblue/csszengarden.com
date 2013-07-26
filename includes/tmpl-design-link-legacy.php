@@ -1,0 +1,1 @@
+					<li><a href="<?php echo $designURL; ?>" title="AccessKey: x" accesskey="x"><?php echo $designName; ?></a> <?php echo $i18nBy; ?> <a href="<?php echo $designerURL; ?>" class="c"><?php echo $designerName; ?></a>&nbsp;</li>

@@ -1,0 +1,329 @@
+/* css Zen Garden submission 172 - 'Blackcomb*75', by Bryan Carichner, http://www.carichner.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Bryan Carichner */
+/* Added: July 9th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/*
+----- The Design -----
+blackcomb*75 - Bryan Carichner (http://www.carichner.com)
+
+----- The Photograph -----
+A View of 'Spearhead' taken from across the bowl on the Blackcomb Glacier - Bryan Carichner (Whistler, BC, Canada - February 2004)
+
+*/
+
+   
+/* ----- BASIC ----- */
+html {
+	margin: 0;
+	padding: 0;
+	}
+
+body {	
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font: normal 11px "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	background: #1D0D00 url(images/BG_body.jpg) repeat-y;
+	}
+
+#container {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 900px;
+	height: 964px;
+	background: url(images/BG_blackcomb.jpg) top left no-repeat;  
+	}
+
+a:link, a:visited {
+	color: #3F5671;
+	}
+a:hover {
+	color: #DA8C11;
+	}	
+	
+acronym {
+	font-style: italic;
+	cursor: help;
+	border: none;
+	}
+
+/* hidden */
+h1 span, h2 span, h3.select span, h3.archives span, h3.resources span, #preamble h3 span, #supportingText h3 span {
+	visibility: hidden;
+	}
+	
+	
+/* ----- MAIN CONTENT ----- */
+#preamble {
+	position: absolute;
+	top: 190px;
+	left: 90px;
+	width: 320px;	
+	height: 300px;	
+	text-align: center;
+	color: #1D0D00;
+	background: url(images/BG_preamble.gif) no-repeat top;
+	}
+#preamble h3 {
+	margin: 0;
+	padding: 0;
+	}
+#preamble .p1 {
+	margin: 0;	
+	padding: 25px 10px 10px 10px;
+	}
+#preamble .p2 {
+	margin: 0;	
+	padding: 0px 10px 10px 10px;
+	}
+#preamble .p3 {
+	margin: 0;	
+	padding: 0px 10px 10px 10px;
+	}
+
+#supportingText {
+	position: absolute;
+	top: 425px;
+	left: 90px;
+	width: 318px;	
+	padding: 0px;		
+	margin: 0;
+	text-align: center;
+	color: #1D0D00;
+	background: #FFFFFF;
+	border-left: 1px solid #A4B0C8;
+	border-right: 1px solid #A4B0C8;
+	}
+	
+/* h3 text-replacing images (text hidden above) */
+#explanation h3 {
+	margin: 0;
+	height: 60px;
+	background: url(images/BG_h3exp.gif) no-repeat top center;
+	}
+#participation h3 {
+	margin: 0;
+	height: 60px;
+	background: url(images/BG_h3par.gif) no-repeat top center;
+	}
+#benefits h3 {
+	margin: 0;
+	height: 60px;
+	background: url(images/BG_h3ben.gif) no-repeat top center;
+	}
+#requirements h3 {
+	margin: 0;
+	height: 60px;
+	background: url(images/BG_h3req.gif) no-repeat top center;
+	}
+	
+#explanation .p1 {
+	margin: 0;
+	padding: 5px 10px 0 10px;
+	}
+#explanation .p2 {
+	padding: 0 10px 10px 10px;
+	}
+
+#participation .p1 {
+	margin: 0;
+	padding: 5px 10px 0 10px;
+	}
+#participation .p2 {
+	padding: 0 10px 0 10px;
+	}
+#participation .p3 {
+	padding: 0 10px 10px 10px;
+	}
+
+#benefits .p1 {
+	margin: 0;
+	padding: 5px 10px 20px 10px;
+	}
+
+#requirements .p1 {
+	margin: 0;
+	padding: 5px 10px 0 10px;
+	}
+#requirements .p2, #requirements .p3, #requirements .p4, #requirements .p5 {
+	padding: 0 10px 0 10px;
+	}
+
+	
+#footer {
+	margin: 0;
+	padding-top: 14px;
+	text-align: center;
+	height: 30px;
+	width: 318px;
+	background: url(images/BG_footer.gif) no-repeat bottom center;
+	}
+#footer a:link, #footer a:visited {
+	padding: 0px 3px 1px 3px;
+	color: 	#E2E7EF;
+	border: 1px solid #A4B0C8;
+	text-decoration: none;
+	}
+#footer a:hover {
+	padding: 0px 3px 1px 3px;
+	color: #3F5671;
+	background: #E2E7EF;
+	border: 1px solid #A4B0C8;
+	}
+	
+	
+/* ----- MENUS & PROJECT SUMMARY (positioned over maple leaf scrim) -----*/
+#container #linkList {
+	position: absolute;
+	left: 435px;
+	top: 275px;
+	width: 145px;
+	text-align: left;
+	}
+#linkList h3 {
+	width: 145px;
+	height: 26px;
+	margin: 0;
+	}
+#linkList h3 span {
+	display: none;
+	}
+	
+/* h3 text-replacing images */
+#linkList h3.select {
+	background: url(images/BG_h3select.gif) top left no-repeat;
+	}
+#linkList h3.archives {
+	background: url(images/BG_h3archives.gif) top left no-repeat;
+	}
+#linkList h3.resources {
+	background: url(images/BG_h3resources.gif) top left no-repeat;
+	}
+#linkList h3.favorites {
+	background: url(images/BG_h3favorites.gif) top left no-repeat;
+	}
+	
+#linkList ul {
+	list-style: none;
+	padding: 0 0 6px 0;
+	margin: 0;
+	line-height: 13px;
+	}
+#linkList ul li {
+	padding: 3px 0px 3px 0px;
+	margin: 0;
+	font-size: 10px;
+	border-bottom: dotted 1px #A4B0C8;
+	}
+/* subtle hover effect for friendly browsers */
+#lselect li:hover {
+	border-bottom: dotted 1px #3F5671;
+	}
+
+#linkList #lselect {
+	font-style:italic;
+	color: #A4B0C8;
+	margin-bottom: 8px;
+	}
+#linkList #lselect li {
+	padding-top: 6px;
+	}
+#linkList #lselect a:link, #linkList #lselect a:visited { 
+	display: block;
+	font: bold 11px "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	color: #72141A;
+	text-decoration:none;
+	padding: 0px 0px 2px 15px;
+	background: url(images/BG_li.gif) top left no-repeat;
+	}
+#linkList #lselect a:hover { 
+	font: bold 11px "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	color: #DA8C11;
+	text-decoration: none;
+	padding: 0px 0px 2px 15px;
+	background: url(images/BG_li_hover.gif) top left no-repeat;
+	}
+	
+#linkList #larchives {
+	margin-bottom: 8px;
+	}
+#linkList #larchives a, #linkList #lresources a, #linkList #larchives a:visited, #linkList #lresources a:visited  { 
+	display: inline;
+	font: bold 10px "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	color: #3F5671;
+	text-decoration:none;
+	padding: 0px 0px 2px 14px;
+	background: url(images/BG_li_2.gif) no-repeat left;
+	}
+#linkList #larchives a:hover, #linkList #lresources a:hover  { 
+	display: inline;
+	font: bold 10px "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	color: #DA8C11;
+	text-decoration:none;
+	padding: 0px 0px 2px 14px;
+	background: url(images/BG_li_2_hover.gif) no-repeat left;
+	}
+#linkList #lselect a.c, #linkList #lselect a.c:visited  { 
+	display: inline;
+	margin-bottom: 4px;
+	padding: 0;	
+	font: normal 10px "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	color: #3F5671;
+	border: 0;
+	text-decoration: none;
+	background: none;
+	}
+#linkList #lselect a.c:hover  { 
+	display: inline;
+	padding: 0;
+	font: normal 10px "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	color: #DA8C11;
+	border: 0;
+	text-decoration: none;
+	background: none;
+	}
+
+	
+#quickSummary {
+	position: absolute;
+	top: 505px;
+	left: 630px;
+	width: 130px;
+	margin: 0;
+	padding: 5px 4px 8px 5px;	
+	text-align: left;
+	color: #A4B0C8;
+	font: normal 10px "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	}
+#quickSummary a:link, #quickSummary a:visited {
+	color: #3F5671;
+	text-decoration: none;
+	}
+#quickSummary a:hover {
+	color: #DA8C11;
+	text-decoration: none;
+	}
+
+	
+/* ----- Final Touch ----- */
+#extraDiv1  {
+	position: absolute;
+	top: 1180px;
+	left: 410px;
+	width: 76px;
+	height: 546px;
+	background: transparent url(images/BG_bc.gif) no-repeat;
+	}
+
+
+	

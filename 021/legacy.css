@@ -1,0 +1,383 @@
+/* css Zen Garden submission 021 - 'Calm & Smooth' by Cornelia Lange - http://www.clkm.de/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Cornelia Lange */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* elements */
+body {
+color: #000;
+background: #F1ECE3 url(topbg.gif) repeat-x;
+font: 90% Verdana, Arial, Helvetica, sans-serif;
+}
+body, html, h1, h2, h3, p, ul, li, div {
+margin: 0;
+padding: 0;
+}
+p {
+font-size: .82em;
+line-height: 140%
+}
+a {
+color: #069;
+font-weight: bold;
+text-decoration: none;
+background: transparent;
+}
+a:visited {
+color: #000;
+background: transparent;
+}
+a:hover {
+text-decoration: underline;
+color: #900;
+background: transparent;
+}
+ul, li {
+display: block;
+list-style: none;
+}
+acronym {
+border: 0 none;
+}
+
+/* divs and related classes */
+#pageHeader h1 {
+font: bold 3.2em Arial, Helvetica, sans-serif;
+color: #8ab;
+background: transparent;
+position: absolute;
+top: 340px;
+left: 256px;
+z-index: 5;
+text-transform: lowercase;
+}
+#pageHeader h2 {
+position: absolute;
+left: 20px;
+top: 68px;
+display: block;
+width: 138px;
+height: 88px;
+font: bold 1em Arial, Helvetica, sans-serif;
+color: #449498;
+background: transparent url(cssdesign.gif) top left no-repeat;
+}
+#pageHeader h2 span {
+display: none;
+}
+
+#quickSummary {
+width: 200px;
+margin: 235px 0 20px 15px;
+padding: 20px 0 0 0;
+font-size: 0.92em;
+}
+#quickSummary .p2 {
+padding-top: 10px;
+}
+
+#preamble {	
+margin: 0 0 0 13.5em;
+color: #000;
+background: transparent url(enlightenment.gif) top left no-repeat;
+height: 6em;
+clear: both;
+padding: 5.8em 0 0 4.7em;
+}
+#preamble h3 span {
+display: none;
+}
+#preamble .p1, #preamble .p2, #preamble .p3 {
+display: block;
+float: left;
+}
+#preamble .p1 {
+margin: 10px 20px 15px 0;
+width: 160px;
+}
+#preamble .p2 {
+margin: 10px 20px 15px 0;
+width: 230px;
+}
+#preamble .p3 {
+margin: 10px 15px 15px 0;
+width: 270px;
+}
+#preamble p:first-letter {
+font: bold 1.2em Tahoma, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+color: #900;
+background: transparent;
+}
+
+/* supportingText */
+#supportingText {
+margin: 0 0 0 13.5em;
+clear: both;
+}
+#supportingText .p1, #supportingText .p2, #supportingText .p3, #supportingText .p4, #supportingText .p5 {
+display: block;
+float: left;
+}
+#supportingText p:first-letter {
+font: bold 1.2em Tahoma, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+color: #900;
+background: transparent;
+text-transform: capitalize;
+}
+
+#explanation {
+display: block;
+color: #000;
+background: transparent url(buddha.gif) top left no-repeat;
+height: 4em;
+clear: both;
+padding: 6.5em 0 0 4.7em;
+}
+#explanation h3 span {
+display: none;
+}
+#explanation .p1 {
+width: 320px;
+margin: 10px 20px 15px 0;
+}
+#explanation .p2 {
+width: 360px;
+margin: 10px 20px 15px 0;
+}
+
+#participation {
+display: block;
+height: 4em;
+color: #000;
+background: transparent url(participation.gif) top left no-repeat;
+clear: both;
+padding: 6em 0 0 4.7em;
+}
+#participation h3 span, #benefits h3 span {
+display: none;
+}
+#participation .p1 {
+width: 390px;
+margin: 10px 20px 15px 0;
+}
+#participation .p2 {
+width: 290px;
+margin: 10px 20px 15px 0;
+}
+#participation .p3 {
+width: 390px;
+margin: 10px 20px 15px 0;
+clear: left;
+}
+#participation .p4 {
+width: 290px;
+margin: 10px 20px 15px 0;
+}
+
+#benefits {
+display: block;
+height: 4em;
+margin: 30px 0 0 0;
+color: #000;
+background: transparent url(benefits.gif) top left no-repeat;
+clear: both;
+padding: 6.2em 0 0 4.7em;
+}
+#benefits p {
+width: 460px;
+margin: 10px 20px 15px 0;
+}
+
+#requirements {
+display: block;
+height: 4em;
+margin: 30px 0 0 0;
+color: #000;
+background: transparent url(requirements.gif) top left no-repeat;
+clear: both;
+padding: 7.3em 0 0 4.7em;
+}
+#requirements h3 span {
+display: none;
+}
+#requirements .p1 {
+width: 230px;
+margin: 10px 20px 15px 0;
+}
+#requirements .p2 {
+width: 450px;
+margin: 10px 20px 15px 0;
+}
+#requirements .p3 {
+width: 230px;
+margin: 10px 20px 15px 0;
+clear: left;
+}
+#requirements .p4 {
+width: 450px;
+margin: 10px 20px 15px 0;
+}
+#requirements .p5 {
+width: 450px;
+margin: 10px 20px 15px 0;
+clear: left;
+}
+
+#footer {
+border-top: 1px dashed #999;
+padding-top: 5px;
+margin: 20px 30px 20px 5em;
+clear: both;
+font-size: .82em;
+padding-left: 0.7em;
+}
+#footer a {
+padding: 0 10px 0 15px;
+color: #069;
+background: transparent url(link.gif) left no-repeat;
+}
+#footer a:link, #footer a:visited {
+color: #069;
+background: transparent url(link.gif) left no-repeat;
+}
+#footer a:hover, #footer a:active {
+color: #900;
+background: transparent url(linkhover.gif) left no-repeat;
+}
+
+/* left Menu */
+#linkList {
+font-size:  .82em;
+position: absolute;
+top: 33.6em;
+left: 15px;
+float: left;
+width: 18em;
+}
+#linkList h3 {
+color: #900;
+background: transparent;
+font-size: 1.2em;
+padding: 1em 0 0.4em 0;
+margin: 10px 0 0 0;
+}
+
+#linkList ul {
+margin-top: 0.5em;
+}
+#lselect li {
+display: block;
+height: 2.5em;
+margin-top: 0.5em;
+padding: 0 0 3px 20px;
+background: transparent url(css.gif) 0 3px no-repeat;
+}
+#lselect a {
+display: block;
+}
+#lselect a.c {
+display: inline;
+font-weight: normal;
+}
+#lselect a:hover.c {
+display: inline;
+font-weight: normal;
+}
+
+#larchives li {
+padding: 0 0 10px 0;
+text-transform: lowercase;
+color: #069;
+background: transparent url(linkhover.gif) 0 3px no-repeat; /* preload hoverimage */
+}
+#larchives a {
+padding: 0 0 10px 20px;
+}
+#larchives a:link {
+color: #069;
+background: #F1ECE3 url(link.gif) 0 3px no-repeat;
+}
+#larchives a:visited {
+color: #000;
+background: #F1ECE3 url(link.gif) 0 3px no-repeat;
+}
+#larchives a:hover, #larchives a:active {
+color: #900;
+background: #F1ECE3 url(linkhover.gif) 0 3px no-repeat;
+text-decoration: none;
+}
+
+#lresources li {
+padding: 0 0 10px 0;
+text-transform: lowercase;
+color: #069;
+background: transparent url(linkhover.gif) 0 3px no-repeat;	/* preload hoverimage */
+}
+#lresources a {
+padding: 0 0 10px 20px;
+}
+#lresources a:link {
+color: #069;
+background: #F1ECE3 url(link.gif) 0 3px no-repeat;
+}
+#lresources a:visited {
+color: #000;
+background: #F1ECE3 url(link.gif) 0 3px no-repeat;
+}
+#lresources a:hover, #lresources a:active {
+color: #900;
+background: #F1ECE3 url(linkhover.gif) 0 3px no-repeat;
+text-decoration: none;
+}
+
+
+/* images */
+
+#extraDiv1 {
+position: absolute;
+top: 0;
+left: 150px;
+width: 412px;
+height: 218px;
+color: #000;
+background: transparent url(beauty.gif) top left no-repeat;
+z-index: 5;
+}
+#extraDiv2 {
+position: absolute;
+top: 218px;
+left: 139px;
+width: 582px;
+height: 17px;
+color: #fff;
+background: transparent url(streifen.gif) top left no-repeat;
+}
+#extraDiv3 {
+position: absolute;
+top: 0;
+right: 0;
+width: 199px;
+height: 218px;
+color: #000;
+background: transparent url(graeser.gif) top right no-repeat;
+z-index: 2;
+}
+#extraDiv4 {
+position: absolute;
+top: 235px;
+left: 244px;
+width: 350px;
+height: 175px;
+color: #000;
+background: transparent url(seerosen.gif) top left no-repeat;
+}
+
+
+
+

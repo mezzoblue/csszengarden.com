@@ -1,0 +1,187 @@
+/* css Zen Garden submission 168 - 'Hengarden', by Mr. Khmerang, http://www.khmerang.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Mr. Khmerang */
+/* Added: May. 31st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/* Chicken Should Smile!
+*  Hengarden is made to celebrate the year of the cock,
+*  for general concern about rights of the innocent chickens 
+*  and in fear of Chicken's Revenge (a.k.a the flu, you know what I'm talking about)
+*  but also to 
+*  laugh at the growing use of image replacements in 
+*  css design and especially at zengarden. 
+*/
+
+
+body {
+	background: #fff url(bodybg.gif) 395px 0 repeat-y;
+	margin: 0;
+	padding: 3px;
+	font: 80%/80% Trebuchet MS, Arial, Helvetica, Sans Serif;
+}
+#pageHeader {
+	background: #fff url(pageheaderbg.gif) repeat-x;
+	width: 389px;
+	height: 272px;
+}
+h1 {
+	background: url(pageheader.jpg) 33px 22px no-repeat;
+	width: 389px;
+	height: 272px;
+	padding: 0;
+}
+h1 span, h2, #quickSummary p, h3 span, p, p.p1 span{
+	display: none;
+}
+h1, h3, p.p1 {
+	margin:0 auto 8px auto;
+	display: block;
+}
+h3 {
+	margin-top: 20px;
+}
+#quickSummary {
+	position:absolute;
+	left: 420px;
+	top: 40px;
+	background-image: url(quicksummary.gif);
+	background-repeat:no-repeat;
+	width: 138px;
+	height: 83px;
+}
+#preamble, #supportingText {
+	width: 389px;
+	text-align:center;
+
+}
+#preamble h3 {
+	background: url(preambleH.gif) no-repeat;
+	width: 289px;
+	height: 41px;
+}
+#preamble p.p1 {
+	background: url(preamble.gif) no-repeat;
+	width: 343px;
+	height: 182px;
+}
+#explanation h3 {
+	background: url(explanationH.gif) no-repeat;
+	width: 247px;
+	height: 41px;
+}
+#explanation p.p1 {
+	background: url(explanation.gif) no-repeat;
+	width: 342px;
+	height: 212px;
+}
+#participation h3 {
+	background: url(participationH.gif) no-repeat;
+	width: 171px;
+	height: 41px;
+}
+#participation p.p1 {
+	background: url(participation.gif) no-repeat;
+	width: 342px;
+	height: 256px;
+}
+#benefits h3 {
+	background: url(benefitsH.gif) no-repeat;
+	width: 130px;
+	height: 41px;
+}
+#benefits p.p1 {
+	background: url(benefits.gif) no-repeat;
+	width: 342px;
+	height: 83px;
+}
+#requirements h3 {
+	background: url(requirementsH.gif) no-repeat;
+	width: 174px;
+	height: 41px;
+}
+#requirements p.p1 {
+	background: url(requirements.gif) no-repeat;
+	width: 342px;
+	height: 313px;
+}
+#requirements p.p4 {
+	display: block;
+	background: url(requirementsend.gif) no-repeat;
+	width: 367px;
+	height: 138px;
+	margin-left: 22px;
+	margin-bottom: 60px;
+	text-align: left;
+}
+#supportingText {
+	background: url(footer.gif) right bottom no-repeat;
+	text-align: center;
+
+}
+#requirements p.p4 span,#requirements p.p5 span {
+	display: none;
+}
+#footer {
+	background-color:#4178E6;
+	padding: 5px;
+	font-weight:bold;
+}
+#footer a {
+	color: #fff;
+}
+#linkList {
+	position:absolute;
+	left: 395px;
+	top: 140px;
+	width: 189px;
+}
+#linkList ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#linkList ul li {
+	border-bottom: 1px solid #CBDAF8;
+	padding: 6px 15px;
+	color: #555;
+	text-align:center;
+}
+#linkList ul li:hover {
+	background-color: #CBDAF8;
+}
+
+#linkList ul li a {
+	text-decoration: none;
+}
+#lselect a {
+	color: #4178E6;
+}
+#lresources a {
+	color: #82A839;
+}
+#larchives a {
+	color: #fa0;
+}
+#linkList ul li a:hover {
+	color: #000;
+}
+h3.select, h3.resources {
+	width: 189px;
+	height: 40px;
+	display: block;
+}
+h3.select {
+	background: url(lselectH.gif);
+}
+
+h3.resources {
+	background: url(lresourcesH.gif);
+}

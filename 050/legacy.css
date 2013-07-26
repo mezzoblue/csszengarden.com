@@ -1,0 +1,479 @@
+/* css Zen Garden submission 050 - 'First Summary' by Cornelia Lange, http://www.clkm.de/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Cornelia Lange */
+/* Added: October 17th, 2003 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+/* elements */
+body {
+color: #000;
+background: #545D64;
+font: 90% Verdana, Arial, Helvetica, sans-serif;
+text-align: center;
+}
+body, html, h1, h2, h3, p, ul, li, div, span {
+margin: 0;
+padding: 0;
+}
+a {
+color: #fff;
+font-weight: normal;
+background: transparent;
+}
+a:visited {
+color: #000;
+background: transparent;
+}
+a:hover {
+text-decoration: underline;
+color: #900;
+background: transparent;
+}
+ul, li {
+display: block;
+list-style: none;
+}
+a acronym {
+border: 0 none;
+}
+
+/* divs and related classes */
+
+#container {
+position: relative;
+display: block;
+width: 737px;
+margin: 30px auto 0 auto;
+text-align: left;
+color: #000;
+background: transparent url(zengarden.jpg) top left no-repeat;
+border-left: 1px solid #545D64;
+}
+#intro {
+padding-top: 330px;
+}
+#pageHeader h1 {
+display: none;
+}
+#pageHeader h2 {
+display: none;
+}
+
+#quickSummary {
+position: absolute;
+top: 0;
+left: 560px;
+display: block;
+width: 180px;
+height: 330px;
+color: #000;
+background: transparent;
+}
+#quickSummary p {
+font-size: .78em;
+width: 120px;
+}
+#quickSummary .p1 {
+display: none;
+}
+#quickSummary .p2 {
+position: absolute;
+top: 230px;
+left: -330px;
+display: block;
+width: 90px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#preamble {	
+display: block;
+width: 626px;
+margin-left: 110px;
+color: #fff;
+background: #B5BB7D url(enlightenment_default.gif) 100% 3em no-repeat;
+}
+#preamble h3 {
+display: none;
+}
+#preamble p {
+font-size: 0.8em;
+line-height: 140%;
+width: 440px;
+color: #000;
+background: #B5BB7D;
+}
+#preamble .p1, #preamble .p2, #preamble .p3 {
+width: 290px;
+margin: 0 0 0 110px;
+padding: 10px 20px 5px 20px;
+color: #fff;
+background: #537E53;
+}
+#preamble .p1 {
+padding-top: 4em;
+}
+#preamble .p2 {
+margin-top: -2px;
+}
+#preamble .p3 {
+margin-top: -2px;
+padding-bottom: 20px;
+}
+
+#supportingText {
+display: block;
+width: 736px;
+color: #000;
+background: #B5BB7D url(main_bg.gif);
+border-bottom: 20px solid #B62814;
+}
+#explanation, #participation, #benefits, #requirements {
+margin-left: 110px;
+width: 626px;
+}
+#explanation {
+color: #000;
+background: #FFFFCD url(about.gif) 100% 20px no-repeat;
+}
+#participation {
+color: #000;
+background: #FAC46C url(participation.gif) 100% 20px no-repeat;
+}
+#benefits {
+color: #000;
+background: #FFFFCD url(benefits.gif) 100% 20px no-repeat;
+}
+#requirements {
+color: #000;
+background: #FAC46C url(requirements.gif) 100% 20px no-repeat;
+}
+#explanation p, #benefits p, #requirements p, #participation p {
+width: 440px;
+font-size: 0.8em;
+line-height: 140%;
+}
+
+#explanation h3 {
+display: none;
+}
+#explanation p {
+color: #000;
+background: #FAC46C;
+}
+#explanation .p1 {
+border-top: 4px solid #B52814;
+width: 340px;
+padding: 25px 20px 5px 80px;
+}
+#explanation .p2 {
+width: 340px;
+padding: 10px 20px 20px 80px;
+margin-top: -2px;
+}
+
+#participation h3 span {
+display: none;
+}
+#participation p {
+color: #000;
+background: #B5BB7D;
+}
+#participation .p1 {
+width: 340px;
+padding: 25px 20px 5px 80px;
+}
+#participation .p2 {
+width: 340px;
+padding: 10px 20px 5px 80px;
+margin-top: -2px;
+}
+#participation .p3 {
+width: 340px;
+padding: 10px 20px 5px 80px;
+margin-top: -2px;
+}
+#participation .p4 {
+width: 340px;
+padding: 10px 20px 20px 80px;
+margin-top: -2px;
+}
+
+#benefits h3 {
+display: none;
+}
+#benefits p {
+color: #000;
+background: #FAC46C; 
+}
+#benefits .p1 {
+width: 340px;
+padding: 25px 20px 20px 80px;
+}
+
+#requirements h3 {
+display: none;
+}
+#requirements p {
+color: #000;
+background: #B5BB7D;
+}
+#requirements .p1 {
+width: 340px;
+padding: 25px 20px 5px 80px;
+}
+#requirements .p2 {
+width: 340px;
+padding: 10px 20px 5px 80px;
+margin-top: -2px;
+}
+#requirements .p3 {
+width: 340px;
+padding: 10px 20px 5px 80px;
+margin-top: -2px;
+}
+#requirements .p4 {
+width: 340px;
+padding: 10px 20px 5px 80px;
+margin-top: -2px;
+}
+#requirements .p5 {
+width: 340px;
+padding: 10px 20px 20px 80px;
+margin-top: -2px;
+}
+
+/* The Tan-Hack for IE 5.0 */
+
+* html #preamble .p1, * html #preamble .p2, * html #preamble .p3 {
+width: 330px;
+w\idth: 290px;	
+}
+
+* html #supportingText .p1, * html #supportingText .p2, * html #supportingText .p3, * html #supportingText .p4, * html #supportingText .p5  {
+width: 440px;
+w\idth: 340px;
+}
+
+#footer {
+position: absolute;
+top: 115px;
+left: 115px;
+display: block;
+height: 110px;
+width: 110px;
+margin: 0;
+padding: 0;
+}
+#footer a {
+font: 0.78em Arial, Helvetica, sans-serif;
+}
+#footer a:link, #footer a:visited {
+color: #fff;
+background: transparent;
+}
+#footer a:hover, #footer a:active {
+color: #f60;
+background: transparent;
+}
+
+/* left Menu */
+#linkList2 {
+display: block;
+position: absolute;
+top: 330px;
+left: 0;
+text-align: left;
+}
+
+#lselect {
+position: relative;
+top: 0;
+left: 0;
+color: #000;
+background: #D28B6B;
+width: 110px;
+text-align: center;
+}
+#lselect h3 {
+display: none;
+}
+#lselect ul {
+list-style: none;
+margin: 0;
+padding: 0 0 10px 0;
+}
+#lselect li {
+display: block;
+width: 100px;
+background: transparent;
+margin: 0 5px;
+padding: 5px 0 5px 0;
+font-size: 0.78em;
+}
+#lselect a {
+display: block;
+width: 100px;
+color: #fff;
+background: #D28B6B url(anim.gif) bottom center no-repeat;
+margin: 0 0 5px 0;
+padding-bottom: 10px;
+text-decoration: none;
+}
+#lselect a:link, #lselect a:visited {
+color: #fff;
+background: #D28B6B url(punkte.gif) bottom center no-repeat;
+}
+#lselect a:hover, #lselect a:active {
+color: #fff;
+background: #D28B6B url(anim.gif) bottom center no-repeat;
+text-decoration: underline;
+}
+#lselect a.c, #lselect a:link.c , #lselect a:visited.c{
+color: #000;
+background: transparent;
+display: inline;
+}
+#lselect a:hover.c, #lselect a:active.c {
+display: inline;
+}
+
+#lfavorites {
+position: relative;
+top: 10px;
+left: 0;
+width: 110px;
+color: #000;
+background: #D28B6B url(favorites.gif) top left no-repeat;
+text-align: center;
+}
+#lfavorites h3 {
+display: none;
+}
+#lfavorites ul {
+list-style: none;
+margin: 0;
+padding: 30px 0 10px 0;
+}
+#lfavorites li {
+display: block;
+width: 100px;
+background: transparent;
+margin: 0 5px;
+padding: 5px 0 5px 0;
+font-size: 0.78em;
+}
+#lfavorites a {
+color: #fff;
+background: #D28B6B url(anim.gif) bottom center no-repeat;
+margin: 0 0 5px 0;
+display: block;
+width: 100px;
+padding-bottom: 10px;
+text-decoration: none;
+}
+#lfavorites a:link, #lfavorites a:visited {
+color: #fff;
+background: #D28B6B url(punkte.gif) bottom center no-repeat;
+}
+#lfavorites a:hover, #lfavorites a:active {
+color: #fff;
+background: #D28B6B url(anim.gif) bottom center no-repeat;
+text-decoration: underline;
+}
+#lfavorites a.c, #lfavorites a:link.c , #lfavorites a:visited.c{
+color: #000;
+background: transparent;
+display: inline;
+}
+#lfavorites a:hover.c, #lfavorites a:active.c {
+display: inline;
+}
+
+#larchives {
+position: relative;
+left: 0;
+top: 10px;
+display: block;
+width: 7.65em;
+height: 7.65em;
+color: #fff;
+background: transparent url(archives3.gif) top left no-repeat;
+}
+#larchives h3 {
+display: none;
+}
+#larchives h3 span {
+display: none;
+}
+#larchives ul {
+list-style: none;
+margin: 0;
+padding: 40px 0 0 0;
+}
+#larchives li {
+display: inline;
+font-size: 0.78em;
+padding: 0;
+margin: 0;
+}
+#larchives a {
+display: block;
+color: #fff;
+background: transparent url(point.gif) left no-repeat;
+text-decoration: none;
+padding-left: 10px;
+margin-left: 5px;
+}
+#larchives a .accesskey {
+color: #fff;
+background: transparent;
+}
+
+#lresources {
+position: absolute;
+top: 0;
+left: 110px;
+color: #fff;
+background: #B62814;
+display: block;
+width: 626px;
+height: 1.3em;
+padding: 1px 0;
+}
+#lresources h3 {
+display: none;
+}
+#lresources ul {
+list-style: none;
+margin: 0 0 0 5px;
+padding: 0;
+display: inline;
+}
+#lresources li {
+display: inline;
+font-size: 0.78em;
+}
+#lresources a {
+font-size: 0.80em;
+padding: 0 5px 0 8px;
+color: #fff;
+background: transparent url(pointanim.gif) left no-repeat;
+text-decoration: none;
+}
+#lresources a:link, #lresources a:visited {
+color: #fff;
+background: transparent url(point.gif) left no-repeat;
+}
+#lresources a:hover, #lresources a:active {
+color: #fff;
+background: transparent url(pointanim.gif) left no-repeat;
+}
+
+
+
+
+

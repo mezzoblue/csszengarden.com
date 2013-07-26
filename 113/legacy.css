@@ -1,0 +1,261 @@
+/* css Zen Garden submission 113 - 'Switch On', by Michael Fasani, http://www.michaelfasani.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Michael Fasani */
+/* Added: July 29th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+
+body 		{
+		margin:		0px;
+		padding:	0px;
+		width:		100%;
+		height:		100%;
+		font-family:	verdana, arial;
+		background: 	#000000 url(bg.gif);
+		font-size:	8pt;
+		color:		#FFFFFF;
+}
+
+a 		{
+		color:		#99FF00;
+		text-decoration: none;
+}
+
+h3 span 	{
+		display:none;
+}
+
+a:hover		{
+		color:		#FF6600;
+}
+
+#container	{
+		position:	relative;
+		margin:		10px auto;
+		padding:	10px;
+		width:		600px;
+		text-align:	left;
+		voice-family:	"\"}\""; 
+	  	voice-family:	inherit;
+	  	width:		594px;
+		border: 	10px solid #ffffff;
+		background:	#000000 url(zentop.gif) no-repeat top left;
+}
+
+#pageHeader	{
+	 	margin-top:	390px;
+		position:	relative;
+}
+
+#pageHeader span {
+		display:none;
+}
+
+#quickSummary .p1 {	
+		position:	absolute;
+		width:		586px;
+		padding:	14px;
+		font-size:	8pt;
+		text-transform:	uppercase;
+		background: 	#000000 url(bg2.gif);
+		color:		#99FF00;
+		text-align:	center;
+		top: 		327px;
+		left:		-1px;
+		border: 	1px solid #ffffff;
+}
+
+#quickSummary .p2 {	
+		position:	absolute;
+		font-size:	7.5pt;
+		text-transform:	uppercase;
+		font-family:	Arial;
+		color:		#CCCCCC;
+		top: 		307px;
+		left:		345px;
+		width:		270px;
+}
+
+#quickSummary a {	
+		color:		#FFFFFF;
+		text-decoration: none;
+}
+
+#quickSummary a:hover {	
+		background:	#99FF00;
+		color:		#000000;
+}
+
+#footer     	{
+		position:	absolute;
+		font-size:	7.5pt;
+		text-transform:	uppercase;
+		font-family:	Arial;
+		color:		#FFFFFF;
+		top: 		307px;
+}
+
+#footer a 	{
+		color:		#FFFFFF;
+		text-decoration: none;
+}
+
+#footer a:hover {
+		background:	#99FF00;
+		color:		#000000;
+}
+
+#preamble 	{
+		width:		440px;
+		text-align: 	justify;
+}
+
+#preamble h3 	{
+		position:	relative;
+		background:	transparent url(theroad.gif) no-repeat;
+		margin-top: 	10px;
+		height:		45px;
+		left: 		-10px;
+}
+
+#preamble .p1 	{
+		text-indent:	20px;
+		margin-top:	-28px
+}
+
+#explanation 	{
+		width:		440px;
+		text-align:	justify;
+}
+
+#explanation h3 {
+		position:	relative;
+		background:	transparent url(sowhat.gif) no-repeat;
+		margin-top:	25px;
+		height:		45px;
+		left:		-10px;
+}
+
+#explanation .p1 {
+		text-indent:	20px;
+		margin-top:	-28px
+}
+
+#participation 	{
+		text-align: 	justify;
+}
+
+#participation h3 {
+		position:	relative;
+		background:	transparent url(parti.gif) no-repeat;
+		margin-top:	25px;
+		height:		45px;
+		left:		-10px;
+}
+
+#participation h3 span {
+		display:	none;
+}
+
+#participation .p1 {
+		text-indent:	20px;
+		margin-top:	-28px
+}
+
+#participation .p2 {
+		width:		440px;
+}
+
+#participation .p1{
+		width:		440px;
+}
+
+#benefits 	{
+		text-align:	justify;
+}
+
+#benefits h3 	{
+		position:	relative;
+		background:	transparent url(beni.gif) no-repeat;
+		margin-top:	25px;
+		height:		45px;
+		left:		-10px;
+}
+
+#benefits .p1 	{
+		text-indent:	20px;
+		margin-top:	-28px
+}
+
+#requirements {
+		text-align:	justify;
+}
+
+#requirements h3 {
+		position:	relative;
+		background:	transparent url(reqs.gif) no-repeat;
+		margin-top:	25px;
+		height:		45px;
+		left:		-10px;
+}
+
+#requirements .p1 {
+		text-indent:	20px;
+		margin-top:	-28px
+}
+
+/* Force carriage return before 'by' */
+#lselect li a:link, #lselect li a:visited {display: block;}
+#linkList li a.c:link, #linkList li a.c:visited {display: inline;}
+
+#lselect 	{
+		width:		160px;
+		position:	absolute;
+		top:		395px;
+		left:		457px;
+		background:	transparent url(top-menu.gif) no-repeat;
+		height:		400px;
+}
+
+#lselect ul 	{
+		list-style:	none;
+		margin-left:	18px;
+		margin-top:	50px;
+}
+
+#lselect ul li 	{
+		padding:	0px 0px 0px 16px;
+		background:	url(arrow.gif) no-repeat 6px 2px;
+		margin-bottom:	5px;
+}
+
+#larchives	{
+		width:		160px;
+		position:	absolute;
+		top:		725px;
+		left:		457px;
+		background:	transparent url(mid-menu.gif) no-repeat;
+		height:		200px;
+		text-transform:	capitalize;
+}
+
+#lresources 	{
+		width:		160px;
+		position:	absolute;
+		top:		847px;
+		left:		457px;
+		background:	transparent url(bot-menu.gif) no-repeat;
+		height:		200px;
+}
+
+#larchives ul, #lresources ul {
+		list-style:	none;
+		margin-left:	26px;
+		margin-top:	46px;
+}

@@ -1,0 +1,349 @@
+/* css Zen Garden submission 122 - 'Centerfold', by John Oxton, http://joshuaink.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, John Oxton */
+/* Added: Sept. 13th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/* August 2004 ===========================================================
+Title: Centerfold
+Author: John Oxton
+Web Site: www.joshuaink.com
+Note: Ivy on the sides - in retrospect this idea was probably (not conciously) taken from hicksdesign.co.uk
+========================================================================== */
+
+/* General =============================================================== */
+
+/* Font-sizes are relative to allow scaling in IE tutorial found at www.clagnut.com/blog/348/ */
+body { 
+font:75%  Arial, Helvetica, sans-serif;
+color:#333; 
+background:white url(back.png) repeat-y top center; /* zeldman.com */
+margin:0; 
+text-align:center; /* Positions all content in the center of the viewport */
+}
+
+
+p{ 
+font-size:1em; /* because of body font-size being 75% acutal font size 0.75em */
+line-height:1.4em;
+margin:0.7em 0 0.7em 0;
+padding:0;
+}
+#preamble p,
+#supportingText p{
+background:transparent url(hr.png) no-repeat bottom center;
+margin:0;
+padding:1.4em 0 1.4em 0;
+}
+a{ 
+color:#900;
+}
+/* a:active added for IE a:focus for Mozilla - added to aid accesibility more than visual appearance */
+a:hover,
+a:focus,
+a:active
+{ 
+background:black; 
+color:white;
+border:0;
+text-decoration:none;
+}
+/* Show dotted a:link style only in decent browsers (not IE) - taken from http://www.shauninman.com/mute/project/this_is_cereal.php */
+div[id="container"] a,
+div[id="container"] a:visited{
+text-decoration:none;
+border-bottom:1px dotted #900;
+}
+
+
+
+/* Becuase IE6 doesn't do it by default - IE5 doens't do it at all */
+acronym{
+border-bottom:1px dotted #333;
+cursor:help;
+}
+acronym:hover{
+border-top:1px dotted #333;
+border-bottom:0;
+}
+#lresources acronym{
+border:0;
+}
+
+/* Content =============================================================== */
+
+
+/* Center the site and return the contents to the left hand side */
+#container { 
+width:515px;
+text-align:left;
+padding:0;  
+margin:0 auto; 
+}
+
+/* position content to the right hand side */
+#intro,
+#preamble,
+#supportingText,
+#quickSummary{
+/* width when added with linkList width is 17px short of total site width creating a natural margin in the center */
+width:290px;
+float:right;
+clear:right;
+margin:20px 0 0 0;
+}
+
+/* Replace the whole intro section with a graphic */
+#intro #pageHeader {
+width:290px;
+height:307px;
+background:white url(intro.jpg) no-repeat top center;
+text-indent:-10000px;
+float:right;
+margin:10px 0 0 0;
+padding:0;
+}
+/* Replace p1 quickSummary with a graphic */
+#quickSummary{
+height:180px;
+background: url(quicksum.png) no-repeat bottom center;
+margin:10px 0 0 0;
+padding:0;
+text-indent:-10000px;
+}
+/* recover quickSummary p2 from text-indent and move above the graphic */
+#quickSummary .p2{
+margin:-20px 0 0 0;
+padding:0;
+text-indent:0;
+text-align:center;
+text-transform:uppercase;
+font: 0.8em Georgia, "Times New Roman", Times, serif; /* acutal size 0.6em; */
+background:white;
+/* background colour for text size increase, masks background graphic */
+}
+/* Hide headings from visual display (still visible to screen readers) and replace with images - first read about this at hicksdesign.co.uk */
+h3{
+width:290px;
+height:35px;
+margin:5px 0 5px 0;
+padding:0;
+text-indent:-10000px;
+float:right;
+overflow:hidden;
+}
+#preamble h3{
+background:url(preamble.png) no-repeat center left;
+}
+#explanation h3{
+background:url(explanation.png) no-repeat center left;
+}
+#participation h3{
+background:url(participation.png) no-repeat center left;
+}
+#benefits h3{
+background:url(benefits.png) no-repeat center left;
+}
+#requirements h3{
+background:url(requirements.png) no-repeat center left;
+}
+
+
+/* Navigation ============================================================= */
+
+#linkList{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+margin:0;
+padding:97px 0 0 0;
+width:208px;
+text-align:right;
+float:left;
+/* Only IE5 MAC needs the left float \*/
+float:none;
+/* End IE5 MAC comment hack found at stopdesign.com see also http://www.stopdesign.com/log/2004/07/06/filtering-css.html */
+}
+/* Because the linkList is not floated (except for IE5 MAC), this casued problems with usual image replacement methods, so... */ 
+#linkList h3{ 
+float:none;
+display:none; 
+}
+/* linkList h3 may be hidden from screen readers and printers due to display none */
+@media aural, braille, print{
+#linkList h3{
+display:block;
+}
+}
+#lselect,
+#lfavorites,
+#larchives,
+#lresources
+{
+/* Something shaky going on in IE6 with the background images, border-left stops it shaking */
+border-left:1px solid white;
+padding:75px 0 0 0;
+margin:0 0 40px 0;
+}
+#lselect{
+background:transparent url(designhead.png) no-repeat top left;
+}
+#lfavorites{
+background:transparent url(favoritehead.png) no-repeat top left;
+}
+#larchives{
+background:transparent url(archivehead.png) no-repeat top left;
+}
+#lresources{
+background:transparent url(resourceshead.png) no-repeat top left;
+}
+#linkList ul{
+margin:0;
+padding:0;
+list-style:none;
+}
+#linkList li{
+font-size:0.8em;
+display:block;
+margin:0;
+padding: 0 0 7px 0;
+border-bottom:1px solid #F9F7F6;
+}
+
+/* Link Styles */
+#linkList li a{ 
+display:block;
+padding:4px 10px 4px 5px;
+margin:0 0 5px 0;
+border:0;
+text-transform:uppercase;
+font-weight:bold;
+text-decoration:none;
+color:#93A871;
+}
+/* Background position http://wellstyled.com/css-nopreload-rollovers.html */
+#lselect li a,
+#lfavorites li a{
+background:transparent url(visited.png) no-repeat  -100px;
+}
+#lselect li a:visited,
+#lfavorites li a:visited{
+background-position:0 50% ;
+}
+
+#linkList li a:hover,
+#linkList li a:focus,
+#linkList li a:active{
+padding-right:6px;
+border-right:4px solid #81B4CF;
+color:#81B4CF;
+text-decoration:none;
+}
+	
+#linkList li a.c{
+display:inline;
+padding:0 2px 0 0;
+text-transform:lowercase;
+font-style:italic;
+font-weight:normal;
+margin:0;
+border:0;
+background-position:-100px;
+}
+#linkList li a.c:hover,
+#linkList li a.c:visited,
+#linkList li a.c:active,
+#linkList li a.c:focus{
+padding:0 2px 0 0;
+border:0;
+background-position:-100px;
+}
+
+#larchives  li,
+#lresources li{
+border:0;
+}
+
+#lresources li a,
+#larchives  li a{
+padding-right:6px;
+border:1px solid #F9F7F6;
+border-right:4px solid #D6DECA;
+text-decoration:none;
+background:white;
+}
+#footer{
+height:60px;
+background:transparent url(relax.png) no-repeat top left;
+margin:20px 0 0 0;
+padding:40px 0 0 30px;
+}
+
+#footer a{
+color:#DCE4C2;
+text-decoration:none;
+font-weight:bold;
+border:0;
+}
+#footer a:hover,
+#footer a:focus,
+#footer a:active{
+color:#900;
+text-decoration:none;
+font-weight:bold;
+border-bottom:1px dotted #900;
+background:transparent;
+}
+
+
+/* Print, because we're running out of trees faster than we are bandwidth ================================================ */
+@media print{
+body
+{
+text-align:left;
+color:black;
+}
+
+a{
+color:black;
+text-decoration:none;
+border:0;
+}
+#linkList,
+#footer,
+#quickSummary .p2{
+display:none;
+position:absolute;
+}
+#container{
+width:90%;
+}
+#intro,
+#intro #pageHeader,
+#preamble,
+#supportingText,
+#quickSummary{
+float:none;
+width:90%;
+display:block;
+text-indent:0;
+margin:0;
+padding:0;
+width:auto;
+height:auto;
+}
+h1, h2, h3{
+display:block;
+text-indent:0;
+float:none;
+color:black;
+width:auto;
+height:auto;
+float:none;
+}
+}

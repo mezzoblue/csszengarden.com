@@ -1,0 +1,177 @@
+/* css Zen Garden submission 004 - 'arch4.20' by Dave Shea - http://www.mezzoblue.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Dave Shea */
+/* Added: May 7th, 2003 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* The photo was taken inside the Vancouver Public Library. It has been mentioned the colours have a vaguely
+    MetaFilter-like feel. I suppose they do... Unintentional. */
+
+
+/* basic elements */
+body {
+	font: 11px tahoma, verdana, sans-serif;
+	color: #fff;
+	background: #005D87 url(bg1.gif) top left repeat-x;
+	margin: 0px;
+	}
+p {
+	font: 11px/14px verdana, sans-serif;
+	text-align: justify;
+	margin-top: 0px;
+	}
+h3 {
+	font: bold 13px verdana, sans-serif;
+	margin-bottom: 0px;
+	}
+acronym {
+	border-bottom: dotted 1px #fff;
+	}
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: #8AF44F;
+	}
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #55AB26;
+	}
+a:active, a:hover {
+	color: #8AF44F;
+	text-decoration: underline;
+	}
+
+/* specific divs */
+#preamble {
+	padding: 0px 180px 0px 25px;
+	}
+#supportingText {
+	padding: 0px 180px 0px 25px;
+	}
+
+#pageHeader {
+	width: 100%;
+	height: 217px;
+	background: #fff url(cr1.jpg) top left no-repeat;
+	margin-top: 47px;
+	}
+#pageHeader h1 {
+	background: transparent url(h1.gif) no-repeat top left;
+	width: 296px;
+	height: 46px;
+	position: absolute;
+	top: 185px;
+	right: 10px;
+	}
+#pageHeader h1 span {
+	display: none;
+	}
+#pageHeader h2 {
+	background: transparent url(h2.gif) no-repeat top left;
+	width: 229px;
+	height: 16px;
+	position: absolute;
+	top: 230px;
+	right: 12px;
+	}
+#pageHeader h2 span {
+	display: none;
+	}
+
+#quickSummary .p1 {
+	font: 11px tahoma, verdana, sans-serif;
+	line-height: 18px;
+	color: #7799AC;
+	background-color: #fff;
+	padding: 2px;
+	position: absolute;
+	top: 65px;
+	right: 10px;
+	width: 150px;
+	}
+#quickSummary .p2 {
+	font: 10px tahoma, verdana, sans-serif;
+	color: #7799AC;
+	position: absolute;
+	top: 32px;
+	right: 5px;
+	}
+#quickSummary .p2 a:link, #quickSummary .p2 a:visited {
+	color: #7799AC;
+	text-decoration: underline;
+	}
+#quickSummary .p2 a:active, #quickSummary .p2 a:hover {
+	color: #8AF44F;
+	}
+
+#linkList{
+	font: 11px tahoma, verdana, sans-serif;
+	line-height: 18px;
+	color: #7799AC;
+	position: absolute;
+	top: 285px;
+	right: 0px;
+	width: 150px;
+	}
+#linkList2 h3 span {
+	display: none;
+	}
+#linkList2 h3.select {
+	background: transparent url(h3.gif) no-repeat top left;
+	width: 157px;
+	height: 14px;
+	}
+#linkList2 h3.favorites{
+	background: transparent url(h5.gif) no-repeat top left;
+	width: 157px;
+	height: 14px;
+	}
+#linkList2 h3.archives{
+	background: transparent url(h6.gif) no-repeat top left;
+	width: 157px;
+	height: 14px;
+	}
+#linkList2 h3.resources{
+	background: transparent url(h4.gif) no-repeat top left;
+	width: 157px;
+	height: 14px;
+	}
+#linkList li {
+	font-size: 10px;
+	line-height: 2.5ex;
+	display: block;
+	padding: 2px 10px 0px 0px;
+	margin-bottom: 5px;
+	}
+#linkList #lresources li {
+	margin-bottom: 0px;
+	}
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+
+#linkList li {
+	list-style-type: none;
+	}
+
+
+#footer {
+	text-align: right; border-top: solid 1px #1E5E82;
+	padding-top: 10px;
+	}
+#footer a:link, #footer a:visited {
+	padding: 2px 6px 2px 6px;
+	}
+#footer a:hover {
+	background: transparent url(bg2.gif) top left repeat-x;
+	text-decoration: none;
+	}

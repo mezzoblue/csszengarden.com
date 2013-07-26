@@ -1,0 +1,359 @@
+/* css Zen Garden submission - 'CSS Co., Ltd.', by Benjamin Klemm, http://www.re-bloom.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2007, Benjamin Klemm */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background: #DADADA url(bg_body.gif) left top repeat-x;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#container {
+	margin: 0 auto;
+	width: 776px;
+	position: relative;
+	background: transparent url(bg_container.gif) left top repeat-y;
+	z-index: 1;
+	margin-bottom: 50px;
+	
+}
+
+
+
+/*		Formatierung des Intro Blocks
+-----------------------------------------------------------------------*/
+
+#intro {
+	background: transparent url(bg_intro.jpg) right top no-repeat;
+	position: relative;
+	padding: 1px;
+
+}
+
+
+#pageHeader {
+	display: inline;
+	height: 0;
+	left: -1000px;
+	overflow: hidden;
+	position: absolute;
+	top: -1000px;
+	width: 0;
+}
+
+		#pageHeader h1{
+			font: bold 154%/25px Arial, Helvetica, sans-serif;
+		}
+		
+		#pageHeader h2{
+			font: bold 90%/25px Arial, Helvetica, sans-serif;
+		}
+
+
+#quickSummary {
+	color: #000;
+	font: normal 75%/18px Arial, Helvetica, sans-serif;
+	right: 60px;	
+	position: absolute;
+	top: 25px;
+}
+
+		#quickSummary .p1 {
+			display: inline;
+			height: 0;
+			left: -1000px;
+			overflow: hidden;
+			position: absolute;
+			top: -1000px;
+			width: 0;
+		}
+		
+		#quickSummary a, #quickSummary a:link, #quickSummary a:visited {
+			color: #F29E00;
+			font-weight: bold;
+		}
+		
+		#quickSummary a:hover, #quickSummary a:active, #quickSummary a:focus {
+			text-decoration: none;
+		}
+
+
+#preamble {
+	background: transparent url(bg_preamble.jpg) right top no-repeat;
+	color: #fff;
+	font: normal 80%/18px Arial, Helvetica, sans-serif;
+	padding: 80px 30px 15px 15px;
+	margin-left: 210px;
+	margin-top: 192px;
+	height: 100%;
+}
+
+		#preamble h3 {
+			background: transparent url(hl_roadto.gif) left top no-repeat;
+			height: 37px;
+			margin: 0 0 10px 0;
+			width: 508px;
+		}
+			
+		#preamble acronym {
+			border-bottom:1px dotted #F29E00;
+			color: #F29E00; 
+			font-weight: normal;
+			font-size: 85%;
+		}
+		
+		#preamble p {
+			padding-left: 30px;
+		}
+
+
+
+/*		Formatierung des Content Blocks (supportingText)
+-----------------------------------------------------------------------*/
+
+#supportingText {
+	color: #fff;
+	margin-left: 210px;
+	font: normal 80%/18px Arial, Helvetica, sans-serif;
+	padding: 15px 35px 15px 15px;
+	position: relative;
+	height: 100%;
+}
+
+		#supportingText acronym {
+			border-bottom:1px dotted #F29E00;
+			color: #F29E00; 
+			font-size: 85%;
+			font-weight: normal;
+		}
+
+		#supportingText a, #supportingText a:link, #supportingText a:visited {
+			color: #F29E00; 
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		
+		#supportingText a:hover, #supportingText a:active, #supportingText a:focus {
+			text-decoration: none
+		}
+		
+		#supportingText p {
+			padding-left: 30px;
+		
+		}
+
+
+#explanation {
+	width: 250px;
+	float: left;
+}
+
+		#explanation h3 {
+			background: transparent url(hl_sowhat.gif) left top no-repeat;
+			height: 37px;
+			margin: 0 0 10px 1px;
+			width: 260px;
+		}
+		
+		#explanation .p1 {
+			background: transparent url(cont_img_01.jpg) 30px 0px no-repeat;
+			padding-top: 130px;
+		}
+		
+		
+#participation {
+	margin-left: 265px;
+	margin-top: -23px;
+	width: 240px;
+}
+		
+		#participation h3 {
+			background: transparent url(hl_participation.gif) left top no-repeat;
+			height: 37px;
+			margin: 23px 0 10px 1px;
+			width: 247px;
+		}
+		
+		#participation .p1 {
+			background: transparent url(cont_img_02.jpg) 30px 0px no-repeat;
+			padding-top: 130px;
+		}
+		
+
+#benefits h3 {
+	background: transparent url(hl_benefits.gif) left top no-repeat;
+	height: 37px;
+	margin: 23px 0 10px 1px;
+	width: 508px;
+}
+
+
+#requirements {
+	margin-bottom: 50px;
+}
+		
+		#requirements h3 {
+			background: transparent url(hl_requirements.gif) left top no-repeat;
+			height: 37px;
+			margin: 23px 0 10px 1px;
+			width: 508px;
+		}
+
+
+#preamble h3 span, #explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span {
+	display: inline;
+	height: 0;
+	left: -1000px;
+	overflow: hidden;
+	position: absolute;
+	top: -1000px;
+	width: 0;
+}
+
+
+
+/*		Die Linklisten
+-----------------------------------------------------------------------*/
+ 
+#linkList {
+	background: transparent url(bg_linkList.gif) 0px 2px repeat-y;
+	color: #fff;
+	font-weight: normal;
+	padding: 15px 10px 0 0;
+	position: absolute;
+	top: 193px;
+	width: 221px;
+}
+		
+		#linkList h3 {
+			padding-left: 10px;
+		}
+		
+		#linkList a, #linkList a:link, #linkList a:visited  {
+			color: #000;
+			text-decoration: underline;
+		}
+		
+		#linkList a:hover, #linkList a:active, #linkList a:focus  {
+			text-decoration: none;
+		}
+		
+		#linkList ul li {
+			font-size: 70%;
+			list-style: square;
+			
+		}
+
+
+#lselect {
+	background: transparent url(bg_lselect.gif) left bottom no-repeat;
+	padding-bottom: 25px;
+}
+		
+		.select {
+			background: transparent url(h1_lselect.gif) left top no-repeat;
+			display: block;
+			margin: 0 auto;
+			height: 29px;
+			width: 185px;
+		}
+		
+		#lselect ul li a {
+			display: block;
+			font: bold 110%/19px Arial, Helvetica, sans-serif;
+		}
+		
+		#lselect ul li a.c {
+			color: #fff;
+			display: inline;
+			font: normal 90%/19px Arial, Helvetica, sans-serif;
+		}
+
+
+#larchives {
+	background: transparent url(bg_lselect.gif) left bottom no-repeat;
+	padding: 15px 0 40px 0;
+}
+		
+		
+		.archives {
+			background: transparent url(h1_larchives.gif) left top no-repeat;
+			display: block;
+			margin: 0 auto;
+			height: 29px;
+			width: 185px;
+		}
+
+
+#lresources {
+	background: transparent url(bg_lresources.gif) left bottom no-repeat;
+	padding-bottom: 30px;
+}
+
+		
+		.resources {
+			background: transparent url(h1_lresources.gif) left top no-repeat;
+			display: block;
+			margin: 15px auto;
+			height: 29px;
+			width: 185px;
+		}
+
+
+#larchives ul li a, #lresources ul li a {
+	font-weight: bold;
+}
+
+
+#lresources ul li, #larchives ul li, #lselect ul li {
+	margin: 14px 0 14px 35px;
+}
+
+
+.resources span, .archives span, .select span {
+	display: inline;
+	height: 0;
+	left: -1000px;
+	overflow: hidden;
+	position: absolute;
+	top: -1000px;
+	width: 0;
+}
+
+
+/*		Footer Formatierung
+-----------------------------------------------------------------------*/
+
+#footer {
+	background: transparent url(bg_footer.gif) left top no-repeat;
+	bottom: -27px;
+	left: 25px;
+	height: 54px;
+	line-height: 50px;
+	position: absolute;
+	width: 312px;
+	padding-left: 37px;
+}
+		
+		#footer a, #footer a:link, #footer a:visited {
+			color: #000;
+			padding: 0 6px;
+		}
+		
+		* html #footer {
+			bottom: -28px;
+		}

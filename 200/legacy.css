@@ -1,0 +1,219 @@
+/* css Zen Garden submission 200 - 'Icicle Outback', by Timo Virtanen, http://www.timovirtanen.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Timo Virtanen */
+/* Added: December 6th, 2006 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */   
+   
+
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background:#2baffa url(pics/content_background.jpg) repeat-y top left;
+	font-size:0.8em;
+	color:#fff;
+	font-weight:normal;
+	margin:0;
+	padding:0;
+	}
+	
+/*left column*/
+
+#pageHeader{
+	position:absolute;
+	top:0;
+	left:0;
+	background:#2baffa url(pics/header.jpg) no-repeat top left;
+	height:467px;
+	width:100%;
+	}
+	
+#quickSummary{
+	font-size:0.8em;
+	overflow:hidden;
+	position:absolute;
+	left:590px;
+	top:140px;
+	height:140px;
+	text-align:center;
+	width:230px;
+	z-index:3;
+	}
+	
+#quickSummary a{ text-transform:uppercase; }
+	
+#preamble, #supportingText{
+	position:relative;
+	text-align:justify;
+	width:370px;
+	top:302px;
+	left:150px;
+	z-index:4;
+	}
+	
+#preamble h3, #supportingText h3{ margin-top:40px; }
+	
+* html #preamble{ top:302px; }
+	
+#preamble h3 { background:transparent url(pics/header1.gif) no-repeat center top; height:55px; }
+#explanation h3 { background:transparent url(pics/header2.gif) no-repeat center top; height:55px; }
+#participation h3 { background:transparent url(pics/header3.gif) no-repeat center top; height:55px; }
+#benefits h3 { background:transparent url(pics/header4.gif) no-repeat center top; height:55px; }
+#requirements h3 { background:transparent url(pics/header5.gif) no-repeat center top; height:55px; }
+	
+#supportingText{
+	width:370px;
+	left:150px;
+	margin-top:0;
+	padding-bottom:40px;
+	}
+	
+* html #supportingText{ padding-bottom:240px; }
+
+#footer{
+	text-align:center;
+	background:transparent url(pics/footer.jpg) no-repeat top center;
+	height:55px;
+	padding-top:10px;
+	margin-top:40px;
+	}
+	
+#footer a{ border-bottom:none; }
+	
+/*right column*/
+
+#linkList{
+	position:absolute;
+	top:251px;
+	width:210px;
+	text-align:center;
+	left:602px;
+	font-size:0.85em;
+	background:transparent url(pics/right_list_bg.jpg) repeat-y top left;
+	}
+	
+#linkList h3{ padding:0; margin:0; }
+	
+#lselect h3{ margin-bottom:14px; }
+	
+#lselect a:link, #lselect a:visited{
+	text-transform:uppercase;
+	display:block;
+	font-weight:bold;
+	color:#fff;
+	border-bottom:none;
+	}
+	
+#lselect a:hover, #lselect a:active{
+	color:#a9e0ff;
+	text-decoration:underline;
+	}
+	
+#lselect a:link.c, #lselect a:visited.c{
+	display:inline;
+	text-transform:none;
+	color:#a9e0ff;
+	font-weight:normal;
+	border-bottom:#a9e0ff dotted 1px;
+	text-decoration:none;
+	}
+	
+#lselect a:hover.c, #lselect a:active.c{
+	color:#fff;
+	border-bottom:#fff dotted 1px;
+	}
+	
+#lselect ul{ margin-top:-290px; }
+	
+#lselect ul li + li{
+	background:transparent url(pics/list_background.jpg) no-repeat center top;
+	padding-bottom:5px;
+	padding-top:2px;
+	}
+	
+* html #lselect ul li{ background:transparent url(pics/list_background_ie.jpg) no-repeat center top; }
+	
+#lselect ul li{
+	padding-bottom:5px;
+	padding-top:2px;
+	}
+	
+#larchives ul li, #lresources ul li{
+	padding-bottom:0;
+	padding-top:0;
+	}
+	
+#lselect ul{
+	background:transparent url(pics/design_bottom.jpg) no-repeat left bottom;
+	padding-bottom:30px;
+	padding-right:30px;
+	width:215px;
+	}
+	
+#larchives ul{
+	background:transparent url(pics/archives_bottom.jpg) no-repeat left bottom;
+	margin-top:-28px;
+	padding-bottom:20px;
+	padding-right:40px;
+	width:205px;
+	}
+	
+* html #larchives ul{ padding-bottom:14px; }
+	
+#lresources ul{
+	background:transparent url(pics/resources_bottom.jpg) no-repeat left bottom;
+	padding-bottom:60px;
+	margin-top:-28px;
+	padding-right:40px;
+	width:205px;
+	}
+	
+* html #lresources ul{ padding-bottom:57px; }
+	
+#lselect h3 { background:transparent url(pics/design_header.jpg) no-repeat left top; height:378px; width:245px; }
+#larchives h3 { background:transparent url(pics/archives_header.jpg) no-repeat left top; height:90px; width:245px; }
+#lresources h3 { background:transparent url(pics/resources_header.jpg) no-repeat left top; height:90px; width:245px; }
+
+* html #larchives ul li, * html #lresources ul li{ background:none; }
+	
+/* global typography */
+
+a:link, a:visited{
+	color:#a9e0ff;
+	text-decoration:none;
+	border-bottom:#a9e0ff dotted 1px;
+	}
+
+a:hover, a:active{
+	color:#fff;
+	border-bottom:#fff dotted 1px;
+	}
+	
+abbr, acronym{
+	border-bottom:#fff dotted 1px;
+	cursor:help;
+	}
+	
+/*lists*/
+
+ul{
+	margin:0;
+	padding:0;
+	}
+
+ul li{ list-style:none; }
+	
+/* hidden stuff */
+
+#pageHeader h1,h2,
+h3 span,
+#extraDiv1,
+#extraDiv2,
+#extraDiv3,
+#extraDiv4,
+#extraDiv5,
+#extraDiv6 { display:none; }

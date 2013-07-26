@@ -1,0 +1,90 @@
+/* css Zen Garden submission 147 - 'Attitude', by Stephane Moens */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Stephane Moens */
+/* Added: Dec. 16th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* basic elements */
+body { background: url(bgFull.gif) repeat-x #6F715C; font: normal 11px/16px Tahoma, Verdana, Arial, sans-serif; color: #333; margin: 0px;	}
+h3 { font: italic normal 12pt Tahoma, Verdana, Arial, sans-serif; letter-spacing: 1px; margin-bottom: 0px; color: #7D775C;}
+a:link { font-weight: normal; text-decoration: underline; color: #4F8CC3;}
+a:visited { font-weight: normal; text-decoration: underline; color: #1D3F64;}
+a:hover, a:active { text-decoration:none ; color: #346293;}
+acronym {font-weight:bold;}
+
+/* specific divs */
+#container { position: relative; width: 570px; background: url(bgWoman.gif) no-repeat; margin: 0; padding: 170px 0 0 170px;}
+
+	#intro { min-width: 470px; }
+	#pageHeader { display: none; }
+
+	#pageHeader h1 { background: transparent url(h1.gif) no-repeat top left; margin-top: 10px; width: 219px; height: 87px; float: left;}
+	#pageHeader h1 span {display:none}
+	#pageHeader h2 { background: transparent url(h2.gif) no-repeat top left; margin-top: 58px; margin-bottom: 40px; width: 200px; height: 18px; float: right;}
+	#pageHeader h2 span { display:none;}
+
+	#quickSummary { position:absolute; left:530px; top: 730px; width:150px; color: #f4f0e6;}
+	#quickSummary p.p1 {display:none;}
+	#quickSummary p.p2 {}
+	#quickSummary a{ color: #98B974; text-decoration:underline;}
+	#quickSummary a:hover{ color: #f4f0e6; text-decoration:none;}
+
+	#preamble {	clear: right; padding: 10px 10px 0 65px; width:260px;}
+	#preamble h3 { display:block; width:100%; height:23px; background: url(title0.gif) no-repeat;}
+	#preamble h3 span {display:none;}
+	#preamble p {margin:5px 0 0 0; padding:0; color: #6F715C; font-style:italic;}
+	
+	#supportingText { clear: right; padding: 20px 10px 0 0; margin:0; width:490px; background:url(dotedLine.gif) 10px 10px no-repeat;}
+	
+		#explanation {margin:0; padding: 0 0 0 65px; width:260px;}
+		#explanation h3 { display:block; width:100%; height:23px; background: url(title1.gif) no-repeat; margin:0;}
+		#explanation h3 span {display:none;}
+		#explanation p {margin:5px 0 0 0; padding:0; color: #53553F;}
+		
+		#participation {margin:10px 0 0 0; padding: 0 0 0 65px; width:260px;}
+		#participation h3 { display:block; width:100%; height:23px; background: url(title2.gif) no-repeat; margin:0;}
+		#participation h3 span {display:none;}
+		#participation p {margin:5px 0 0 0; padding:0; color: #53553F;}
+		
+		#benefits {margin:10px 0 0 0; padding: 0 0 0 65px; width:260px;}
+		#benefits h3 { display:block; width:100%; height:23px; background: url(title1.gif) no-repeat; margin:0;}
+		#benefits h3 span {display:none;}
+		#benefits p {margin:5px 0 0 0; padding:0; color: #53553F;}
+		
+		#requirements {margin:10px 0 0 0; padding: 0 200px 0 65px; width:266px; background: url(bgBottom0.gif) right bottom no-repeat;}
+		#requirements h3 { display:block; width:100%; height:23px; background: url(title1.gif) no-repeat; margin:0;}
+		#requirements h3 span {display:none;}
+		#requirements p {margin:5px 0 0 0; padding:0; color: #53553F;}
+
+		#footer { padding: 20px 0 30px 45px; width:510px; background: url(bgBottom1.gif) 0px 0px no-repeat;}
+		#footer a:link, #footer a:visited { color:#fff; margin: 0 0 0 15px; }
+		#footer a:hover { color:#3F753E;}
+
+	#linkList {	position: absolute; top: 170px; right: 0px; color:#4C4E39;}
+	#linkList2 { font: 10px Tahoma, Verdana, Arial, sans-serif; width: 220px;}
+	#linkList h3.select { background:url(subTitle0.gif) no-repeat; margin: 10px 0px 5px 0px; width: 160px; height: 23px; }
+	#linkList h3.select span {display:none;}
+	#linkList h3.archives { background: transparent url(subTitle1.gif) no-repeat; margin: 10px 0px 5px 0px; width: 160px; height: 23px; }
+	#linkList h3.archives span {display:none;}
+	#linkList h3.resources { background: transparent url(subTitle2.gif) no-repeat; margin: 10px 0px 5px 0px; width: 160px; height: 23px; }
+	#linkList h3.resources span {display:none;}
+	
+	#linkList p, #linkList li{ font: x-small/1.6em tahoma, verdana, sans-serif; text-indent: 0;}
+	
+	#linkList ul { list-style: none; margin: 0; padding: 0; }
+	#linkList li { color: #fff; padding: 2px 0 0 17px; }
+	#linkList li a { display: block; border: none; color: #98B974; text-decoration:none; font-weight: bold; margin-left: -12px; padding-left: 12px; background: url(arrow.gif) no-repeat 0 2px;}
+	#linkList li a:hover { color: #f4f0e6; background-position: 0 -48px; text-decoration:underline; }
+	#linkList li a.c { display: inline; padding: 0; margin: 0; background: none; color: #4C4E39; font-weight: normal; }
+	#linkList li a.c:hover { color: #f4f0e6; }
+	#linkList #larchives li,#linkList #lresources li,#linkList #lfavorites li { padding: 2px 0 0 5px; }
+	#linkList #larchives li a,#linkList #lresources li a,#linkList #lfavorites li a	{ background: transparent url(arrow.gif) no-repeat 0 2px; display: inline; padding-left: 17px; margin: 0;}
+	#linkList #larchives li a:hover,#linkList #lresources li a:hover,#linkList #lfavorites li a:hover {	background-position: 0 -48px; }
+		
+	#extraDiv1 { background: transparent url(cr2.gif) top left no-repeat; position: absolute; top: 40px; right: 0px; width: 148px; height: 110px; }

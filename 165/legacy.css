@@ -1,0 +1,169 @@
+/* css Zen Garden submission 165 - 'Red Paper', by Rob Soule, http://www.couchfort.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Rob Soule */
+/* Added: May. 31st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* --// basic elements --// */
+body { 
+ font: 11px/18px verdana,arial,helvetica,sans-serif; 
+ color: #512720; 
+ background: #512720 url(bodyBg.gif) center top repeat-y; 
+ margin: 0;
+ padding: 0;
+ text-align: center;	 
+}
+acronym {
+ cursor: help;
+ border-bottom: 1px dotted #B0915F;
+}
+/* --// layout // */
+#container {
+ width: 765px;
+ background: url(mainBg.gif) repeat-y;
+ margin: 0 auto;
+ padding: 0;
+ text-align: left;
+}
+#pageHeader {
+ width: 765px;
+ height: 343px;
+ background: url(headerBg.jpg) no-repeat;
+}
+#preamble, #supportingText {
+ text-align: left;
+ width: 455px;
+ margin: 0 0 0 43px;
+}
+#preamble p, #supportingText p {
+ margin: 0 0 12px 0;
+}
+#quickSummary { position: relative; }
+#quickSummary .p2 {
+ position: absolute;
+ margin-top: -70px;
+ left: 615px;
+ font: 9px/14px Georgia,Times,Serif;
+ text-transform: uppercase;
+ width: 100px;
+ padding: 0;
+}
+
+#linkList {
+ position: absolute;
+ top: 343px;
+ margin-left: 529px;
+ color: #2B0101;
+ width: 175px; 
+}
+#footer {
+ display: block;
+ padding: 12px 0 0 0;
+ margin: 20px 0 0 120px;
+ text-align: center;
+ background: url(footer.gif) no-repeat;
+ height: 43px;
+ width: 204px;
+}
+.p1,.p2,.p3,.p4,.p5 { padding-left: 8px; }
+/* --// headers // --*/
+#preamble h3,#explanation h3, #participation h3, #benefits h3, #requirements h3 { 
+ height: 60px; 
+ text-indent: -8000px;
+ margin: 0;
+ padding: 0;
+}
+#lselect h3, #lresources h3, #larchives h3 {
+ height: 23px;
+ margin: 0;
+ padding: 0;
+ text-indent: -8000px; 
+}
+#preamble h3 { background: url(hdRoad.gif) no-repeat; }
+#explanation h3 { background: url(hdAbout.gif) no-repeat; }
+#participation h3 { background: url(hdPart.gif) no-repeat; }
+#benefits h3 { background: url(hdBen.gif) no-repeat; }
+#requirements h3 { background: url(hdReq.gif) no-repeat; }
+#lselect h3 { background: url(hdSelect.gif) no-repeat; }
+#larchives h3 { background: url(hdArch.gif) no-repeat; margin-top: 15px;}
+#lresources h3 { background: url(hdResc.gif) no-repeat; margin-top: 15px; }
+/* --// links --// */
+a { 
+ color: #683A33;
+ text-decoration: none;
+ border-bottom: 1px dotted #683A33;
+}
+a:hover,a:active { 
+ border-bottom: 1px solid #512720;
+ background: #C3A680;
+}
+a acronym { border: 0; }
+li a {
+ display: block;
+ font-weight: bold;
+ font-size: 10px;
+ text-transform: uppercase;
+ padding: 0 0 0 10px;
+ background: url(star.gif) no-repeat;
+ border-bottom: 0;
+}
+li a.c {
+ font-size: 9px;
+ font-weight: normal;
+ display: inline;
+ padding: 0;
+ background: none;
+}
+#larchives li a, #lresources li a {
+ display: inline;
+ font-weight: normal;
+ font-size: 9px;
+ margin: 0;
+ text-transform: uppercase;
+}
+#larchives li a { background: none; }
+li a:hover, li a:hover.c { color: #5E1919; border-bottom: 0; }
+li a:hover { background: url(star_over.gif) no-repeat; }
+li a:hover.c { background: none; }
+#footer a {
+ text-decoration: none;
+ border: none;
+ font: 10px georgia,times,serif;
+ padding: 1px;
+ text-transform: uppercase;
+}
+#footer a:hover {
+ background: none;
+ border-top: 1px solid #683A33;
+ border-bottom: 1px solid #683A33;
+}
+/* --// no display // -- */
+#quickSummary .p1, #extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6, #pageHeader h1,h2 { display : none; }
+
+/* --// lists --// */
+ul,li {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ line-height: 15px; 
+}
+#lselect, #lresources, #larchives {
+ padding-bottom: 6px;
+ background: url(liBttmBg.gif) center bottom no-repeat;
+}
+li {
+ padding: 5px 5px 12px 5px;
+ background: url(liBg.gif) center bottom no-repeat;
+ text-transform: uppercase; 
+ font-size: 9px; 
+ /*border-bottom: 1px solid #A68858;*/
+}
+/* --// hover effects //-- */
+.p1:hover,.p2:hover,.p3:hover,.p4:hover,.p5:hover { border-left: 2px solid #B0915F; padding-left: 6px; }
+#quickSummary .p2:hover { border: 0; padding: 0; }

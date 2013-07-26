@@ -1,0 +1,270 @@
+/* css Zen Garden submission 091 - 'webZine', by Cent, http://www.20cent.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Cent */
+/* Added: April 9th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+*
+{
+	margin:0px;
+	padding:0px;
+}
+
+/***********************************/
+
+html,
+body
+{
+	cursor:default;
+	font-family:tahoma;
+	font-size:0.83em;
+	width:100%;
+	background:#FFF url(img-paper.gif) no-repeat center top;
+}
+
+/***********************************/
+
+acronym
+{
+cursor:help;
+border:0px;
+}
+
+a
+{
+	text-decoration:none;
+	white-space:nowrap;
+	padding-bottom:4px;
+	color:#000;
+	background: transparent url(img-line.gif) repeat-x 100% 100%;
+}
+
+h3
+{
+	margin:6px;
+	font-family:courier;
+	font-size:1.2em;
+	margin-top:14px;
+}
+
+p
+{
+	margin:6px;
+	letter-spacing:1px;
+	text-align:justify;
+}
+
+h1
+{
+	padding:20px;
+	padding-top:90px;
+}
+
+h1 span
+{
+	display:none;
+}
+
+h2
+{
+	font-size:1em;
+	letter-spacing:3px;
+	font-family:courier;
+}
+
+ul
+{
+	border:1px solid #BBB;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+	list-style-type:lower-roman;
+}
+
+li
+{
+	margin-left:25px;
+}
+
+/***********************************/
+
+#container
+{
+	position:absolute;
+	left:50%;
+	margin-left:-375px;
+	width:750px;
+}
+
+#pageHeader,
+#quickSummary
+{
+	text-align:center;
+}
+
+#quickSummary
+{
+	margin-top:10em;
+	margin-bottom:-20px;
+	text-align:left;
+	margin-left:6px;
+	color:#666;
+	font-family:courier;
+}
+
+#quickSummary p
+{
+	margin:0px;
+	padding:0px;
+	font-style:italic;
+	display:inline;
+}
+
+#quickSummary a
+{
+	color:#666;
+}
+
+#preamble
+{
+	border-top:3px double #DDD;
+	margin-top:30px;
+	width:100%;
+}
+
+#preamble h3,
+#explanation h3,
+#participation h3,
+#benefits h3,
+#requirements h3
+{
+	border-bottom:1px solid #888;
+}
+
+#benefits
+{
+	background:transparent url(img-bonsai.gif) no-repeat bottom center;
+	padding-bottom:148px;
+}
+
+#explanation
+{
+	float:left;
+	width:31%;
+}
+
+#participation
+{
+	float:left;
+	width:46%;
+	border-left:2px solid #DDD;
+	border-right:2px solid #DDD;
+	margin-bottom:10px;
+}
+
+#participation .p4
+{
+	border:2px solid #DDD;
+	padding-left:4px;
+	padding-right:4px;
+	margin-top:30px;
+}
+
+#participation .p4:first-letter
+{
+	text-transform:capitalize;
+}
+
+#benefits
+{
+	float:left;
+	width:22%;
+}
+
+#requirements
+{
+	clear:both;
+
+	margin-bottom:20px;
+	background:transparent url(img-pen.gif) no-repeat left bottom;
+	padding-bottom:45px;
+}
+
+#requirements .p5
+{
+	margin-top:20px;
+	text-align:right;
+	border-right:1.1em solid #CCC;
+}
+
+#footer
+{
+	text-align:center;
+	font-size:0.9em;
+	position:absolute;
+	top:130px;
+	width:100%;
+}
+
+#quickSummary .p1,
+#quickSummary .p2
+{
+letter-spacing:0px;
+}
+
+#lselect
+{
+	position:absolute;
+	top:30px;
+	left:5px;
+	font-size:0.8em;
+}
+
+#larchives
+{
+	position:absolute;
+	top:30px;
+	right:0px;
+	width:170px;
+	font-size:0.8em;
+}
+
+#lresources
+{
+	position:absolute;
+	top:11em;
+	right:0px;
+	width:170px;
+	font-size:0.8em;
+}
+
+#lselect a,
+#larchives a,
+#lresources a,
+#footer a
+{
+	background:none;
+	color:#555;
+}
+
+#lselect a:hover,
+#larchives a:hover,
+#lresources a:hover,
+#footer a:hover
+{
+	color:#000;
+}
+
+ #footer a:hover
+{
+	text-decoration:none;
+	white-space:nowrap;
+	padding-bottom:4px;
+	color:#000;
+	background: transparent url(img-diagonal.gif) repeat-x 100% 100%;
+}

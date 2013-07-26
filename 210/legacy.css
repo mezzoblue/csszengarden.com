@@ -1,0 +1,292 @@
+/* css Zen Garden submission 210 - 'Oceanscape', by Justin Gray, http://www.pixel-house.com.au/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2007, Justin Gray */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/*------ basic elements -------------------------------------------------------------*/
+
+body { 
+	font-family: Arial, Helvetica, sans-serif;
+	background: #122981 url(gradient_bg.jpg) repeat-x;
+	margin: 0px;
+	}
+
+p { text-align: justify; color: #fff; font-size: 0.70em; line-height: 1.25em; }
+a:link, a:visited { text-decoration: underline; color: #a5bcff;	}
+a:hover, a:active { text-decoration: none; color: #ff9600; }
+li { text-decoration: none; list-style-type: none; display: block; color: #fff; }
+
+
+
+/*------ specific divs --------------------------------------------------------------*/
+
+#container { 
+	width: 536px;
+	padding-left: 20px; 
+	padding-right: 20px; 
+        margin: 200px auto 0px auto; 
+	position: relative;
+	z-index: 6;
+	}
+
+
+#intro { width: 356px; float: left; }
+#pageHeader { margin-bottom: 20px; float: left;	}
+
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+
+#pageHeader h1 { 
+	background: transparent url(h1.gif) no-repeat top left;  
+	width: 355px; 
+	height: 29px; 
+	float: left;
+	margin: 0px;
+	}
+
+#pageHeader h2 { 
+	background: transparent url(h2.gif) no-repeat top left; 
+	width: 167px; 
+	height: 12px; 
+	float: right;
+	margin: 2px 0 0 0;
+	}
+
+#quickSummary {
+	background: transparent url(divider01.jpg) no-repeat;
+	float: left;
+	padding-top: 50px;
+	}
+
+#quickSummary p.p1 {
+	background: transparent url(summary.gif) no-repeat;
+	width: 356px;
+	height: 49px;
+	margin: 0px 0px 6px 0px;
+	}
+#quickSummary p.p1 span, #pageHeader h2 span, #pageHeader h1 span 
+{ display: none; }
+
+#quickSummary p.p2 { width: 355px; display: block; }
+
+
+
+/*-----------------------------------------------------------------------------------*/
+
+#supportingText { width: 356px; float: left; }
+
+#supportingText h3, #intro h3 { 
+	letter-spacing: 1px; 
+        margin: 0px 0px 20px 0px;
+	color: #7D775C;
+	width: 355px;
+	height: 18px;
+	}
+#preamble, #explanation, #participation, #benefits, #requirements 
+{  padding-top: 60px; margin-top: 6px; float: left; }
+
+
+#preamble { background: transparent url(divider02.jpg) no-repeat; }
+#explanation { background: transparent url(divider03.jpg) no-repeat; }
+#participation { background: transparent url(divider04.jpg) no-repeat; }
+#benefits { background: transparent url(divider05.jpg) no-repeat; }
+#requirements { background: transparent url(divider06.jpg) no-repeat; }
+
+
+#linkList {
+	width: 141px;
+	position: absolute;
+	top: 101px;
+	left: 410px;
+	margin: 0px;
+	padding: 0px;
+	}
+
+#linkList2 { 
+	font-size: 0.70em;
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+	padding: 10px; 
+	width: 141px; 
+	}
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+
+#linkList a.c {
+    	display: inline;
+    	color: #ff9600;
+	text-decoration: none;
+	font-weight: normal;
+	text-transform: capitalize;	
+}
+
+#linkList li a { 
+	color: #fff;
+	text-decoration: none;
+	}
+
+#linkList li a:hover {
+	text-decoration: underline;
+	}
+
+#lselect li {
+	line-height: 16px; 
+        padding: 5px 0px;
+	border-bottom: 1px solid #003d90;
+	}
+#lselect li a {
+	font-weight: bold;
+	color: #fff;
+	display: block;
+        text-transform: uppercase;
+        text-decoration: none; 
+	}
+
+#larchives li, #lresources li {
+	line-height: 16px; 
+        padding: 1px 0px;
+	color: #fff;
+	}
+
+
+/*------ Image Replacement for headings----------------------------------------------*/
+
+
+#linkList h3 {
+	width: 141px;
+	height: 20px;
+	display: block;
+	margin: 0px;
+	}
+
+#preamble h3 { background: transparent url(h3_road.gif) no-repeat; }
+#explanation h3 { background: transparent url(h3_about.gif) no-repeat; }
+#participation h3 { background: transparent url(h3_participation.gif) no-repeat; }
+#benefits h3 { background: transparent url(h3_benefits.gif) no-repeat;	}
+#requirements h3 { background: transparent url(h3_requirements.gif) no-repeat; }
+
+
+#linkList h3.select { background: transparent url(h3_select.gif) no-repeat; }
+#linkList h3.archives {
+	margin-top: 22px; 
+	background: transparent url(h3_archives.gif) no-repeat; 
+	}
+#linkList h3.resources {
+	margin-top: 22px; 
+	background: transparent url(h3_resources.gif) no-repeat; 
+	}
+
+#preamble h3 span, 
+#explanation h3 span,
+#participation h3 span,
+#benefits h3 span,
+#requirements h3 span,
+#linkList h3.select span,
+#linkList h3.archives span,
+#linkList h3.resources span
+{ display: none; }
+
+
+/*------ footer ---------------------------------------------------------------------*/
+
+#footer {
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+#footer a:link, #footer a:visited { 
+	margin-right: 6px; 
+	color: #ff9600;
+	}
+
+
+/*------ main images -----------------------------------------------------------------*/
+
+
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv3 span, #extraDiv4, #extraDiv5, #extraDiv6, #extraDiv6 span
+{ position: absolute;  }
+
+
+#extraDiv1 { 
+	background: url(clouds.jpg) repeat-x; 
+	top: 0px;
+	right: 0px; 
+	width: 100%; 
+	height: 104px; 
+	}
+
+#extraDiv2 { 
+	background: url(water_edge.jpg) repeat-x; 
+	top: 104px;
+	right: 0px; 
+	width: 100%; 
+	height: 75px; 
+	}
+
+#extraDiv3 { 
+	background: url(fish01.jpg) no-repeat right top; 
+	z-index: 3;
+	top: 960px;
+	right: 4%;
+	width: 300px; 
+	height: 123px;
+	}
+
+#extraDiv3 span { 
+	background: url(fish_bottom.gif) no-repeat; 
+	z-index: 3;
+	top: 1000px;
+	width: 224px; 
+	height: 108px; 
+	} 
+
+#extraDiv4 { 
+	background: url(sunlight.jpg) no-repeat; 
+	z-index: 3;
+	top: 0px;
+	left: 0px;
+	width: 472px; 
+	height: 481px; 
+	}
+
+#extraDiv5 { 
+	background: url(fish_top.gif) no-repeat; 
+	z-index: 7;
+	top: 220px;
+	left: 20px;
+	width: 180px; 
+	height: 80px; 
+	}
+
+#extraDiv6 {
+	z-index: 2;
+	top: 125em;
+	left: 0px;
+	width: 100%; 
+	height: 426px; 
+	background: url(seafloor_bg.jpg) repeat-x left bottom;
+	}
+
+#extraDiv6 span {
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	width: 633px; 
+	height: 426px; 
+	background: url(seafloor.jpg) no-repeat;
+}
+
+
+
+
+
