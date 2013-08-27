@@ -3,7 +3,7 @@
 	$lang = "ru";
 
 	$head = array(
-		"title" => "Сад CSS-дзена: Красота в CSS-дизайне",
+		"title" => "Сад CSS-дзена: Красота CSS-дизайна",
 		"description" => "Демонстрация визуальных достижений CSS-дизайна",
 
 		// if you'd like translation credit, place it somewhere in this comment
