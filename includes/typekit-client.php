@@ -238,13 +238,4 @@ class Typekit {
 		return NULL;
 	}
 }
-/*
-$token = "b4e2e1e85deb62a3cfffaff5ef5974cc294f85cb";
-$kit = new Typekit();
-
-//$data = $kit->get("ord8twk");
-$data = $kit->create(array("name" => "Example.com", "families" => array(array( "id" => "gkmg" )), "domains" => array("localhost")), $token);
-print_r($data);
-echo $kit->remove($data["kit"]["id"], $token);
- */
 ?>
