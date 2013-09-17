@@ -3,7 +3,7 @@
 	$lang = "en";
 
 	$head = array(
-		"title" => "CSS Zen Garden: The Beauty in CSS Design",
+		"title" => "CSS Zen Garden: The Beauty of CSS Design",
 		"description" => "A demonstration of what can be accomplished visually through CSS-based design.",
 
 		// if you'd like translation credit, place it somewhere in this comment
