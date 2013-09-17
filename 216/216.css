@@ -1,35 +1,52 @@
 
-/*	xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
-	CSS Zen Garden 2013
-	
-	Theme: Fountain Kiss
-	by Jeremy Carlson
-	@eyesofjeremy :: http://jeremycarlson.com
+/*  xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
+    CSS Zen Garden 2013
+    
+    Theme: Fountain Kiss
+    by Jeremy Carlson
+    @eyesofjeremy :: http://jeremycarlson.com
 
     A theme inspired by an enchanted summer evening
     at the end of a fine Bumbershoot in Seattle.
     
+
+             _.===._   
+          .oooooooooo._
+        .oooooooooooooo.  .=oooo=.._
+       .oooooooooooooooo.ooooooooooo:.
+       .oooooooooooooooooooooooooooooo.
+        ooooooooooooooooooooooooooooooo
+        :oooooooooooooooooooooooooooooo
+         ooooooooooooooooooooooooooooo:
+          :oooooooooooooooooooooooooo:
+            ooooooooooooooooooooooo=
+             :oooooooooooooooooo=~
+               ~oooooooooooo=~
+                 ooooooo=~
+                   ~ 
+                
+                   
     css released under Creative Commons License
     http://creativecommons.org/licenses/by-nc-sa/1.0/
-    		
-	=Typography
-	
-	First, let's talk type, colors, that kind of thing.
-	--------------------------------------------------	*/
+            
+    =Typography
+    
+    First, let's talk type, colors, that kind of thing.
+    --------------------------------------------------    */
 
 /*  Ultra & Montserrat: a charming pair. */
 @import url(http://fonts.googleapis.com/css?family=Ultra|Montserrat:700);
 
 body {
-	font-family: Georgia, serif;
+    font-family: Georgia, serif;
     line-height: 1.4;
     padding: 0;
     margin: 0;
-	}
+    }
 
 body, .preamble h3 {
     color: #724;
-	}
+    }
 
 abbr { border: none }
 
@@ -67,15 +84,15 @@ p:hover abbr, h3:hover abbr {
 
 h1, h2, h3, .design-archives a:before, footer a, 
 footer:after, .supporting p:nth-child(2)::first-letter {
-	font-family: 'Ultra', 'Arial Black', serif;
-	-webkit-font-smoothing: antialiased;
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Ultra', 'Arial Black', serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    font-style: normal;
 }
 
 a {
     font-family: 'Montserrat', Verdana, Helvetica, Arial, sans-serif;
-	font-weight: bold;
+    font-weight: bold;
     font-style: normal;
     font-size: .875em;
     text-decoration: none;
@@ -103,7 +120,7 @@ footer a {
     text-transform: lowercase;
 }
 h1, h3 {
-	color: #fff;
+    color: #fff;
 }
 .supporting h3 {
     background-color: #804;
@@ -121,20 +138,20 @@ ul {
 }
 
 .summary p, .preamble {
-	font-size: .875em;
+    font-size: .875em;
 }
 
 header[role=banner] {
     font-size: 30px;
 }
 
-/*	xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
-	=Layout
-	
-	All righty then. Let's roll.
-	
-	First, backgrounds + set up the page wrapper
-	--------------------------------------------------	*/
+/*  xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
+    =Layout
+    
+    All righty then. Let's roll.
+    
+    First, backgrounds + set up the page wrapper
+    --------------------------------------------------    */
 
 body {
     text-align: right;
@@ -149,9 +166,9 @@ body {
     padding: 30px 0 0;
     margin: 0 0 0 auto;
     text-align: left;
-	-webkit-box-shadow: 0 0 24px rgba(0,0,0,0.3);
-	   -moz-box-shadow: 0 0 24px rgba(0,0,0,0.3);
-	        box-shadow: 0 0 24px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 0 24px rgba(0,0,0,0.3);
+       -moz-box-shadow: 0 0 24px rgba(0,0,0,0.3);
+            box-shadow: 0 0 24px rgba(0,0,0,0.3);
 }
 @media screen and (max-width: 580px) { .page-wrapper { z-index: 3 } }
 
@@ -166,16 +183,16 @@ body {
 }
 
 body, .page-wrapper:before, .page-wrapper:after {
-	background: #3c1d08 url('kiss.jpg') no-repeat fixed 50% top;
+    background: #3c1d08 url('kiss.jpg') no-repeat fixed 50% top;
 }
 .page-wrapper, .intro:after, .supporting div, .supporting footer {
-	background: #fceec6 url('kiss_light.jpg') no-repeat fixed 50% top;
+    background: #fceec6 url('kiss_light.jpg') no-repeat fixed 50% top;
 }
 /*  Somewhat torn about these bg images.
     
-    This is not ideal for mobile devices. But serving up a smaller image
-    really requires background-size, and this compromises the design severely
-    on older browsers.
+    The large-sized images are not ideal for mobile devices. 
+    But serving up a smaller image really requires background-size, 
+    and this compromises the design severely on older browsers.
 */
 
 .page-wrapper:before {
@@ -189,16 +206,16 @@ body, .page-wrapper:before, .page-wrapper:after {
     bottom: 0;
 }
 
-/*	xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
-	=Intro
-	Note: IE<9 ignores styles for HTML5 elements. .intro is one.
-	--------------------------------------------------	*/
+/*  xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
+    =Intro
+    Note: IE<9 ignores styles for HTML5 elements. .intro is one.
+    --------------------------------------------------    */
 
 .intro {
-	padding: 96px 0 36px;
-	position: relative;
-	text-align: center;
-	margin: -30px 0 0;
+    padding: 96px 0 36px;
+    position: relative;
+    text-align: center;
+    margin: -30px 0 0;
     background: rgba(250,243,204,0.6);
     background:    -moz-radial-gradient(center, ellipse cover,  rgba(249,249,249,1) 0%, rgba(250,223,154,0.4) 100%); /* FF3.6+ */
     background:        -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(249,249,249,1)), color-stop(100%,rgba(250,223,154,0.4))); /* Chrome,Safari4+ */
@@ -206,13 +223,13 @@ body, .page-wrapper:before, .page-wrapper:after {
     background:      -o-radial-gradient(center, ellipse cover,  rgba(249,249,249,1) 0%,rgba(250,223,154,0.4) 100%); /* Opera 12+ */
     background:     -ms-radial-gradient(center, ellipse cover,  rgba(249,249,249,1) 0%,rgba(250,223,154,0.4) 100%); /* IE10+ */
     background:         radial-gradient(ellipse at center,  rgba(249,249,249,1) 0%,rgba(250,223,154,0.4) 100%); /* W3C */
-	border-color: rgba(250,223,154,0.3);
-	border-style: solid;
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+    border-color: rgba(250,223,154,0.3);
+    border-style: solid;
+    -webkit-transition: all .2s ease;
+       -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
 }
 
 .intro:after {
@@ -298,18 +315,19 @@ h1 {
     font-size: 48px;
     line-height: .8;
     text-align: center;
-	text-transform: uppercase;
+    text-transform: uppercase;
     word-wrap: break-word;
-	text-shadow: 0 0 48px rgba(0,0,0,0.3);
-	-webkit-transition: all 0.2s ease-out;
-	   -moz-transition: all 0.2s ease-out;
-	    -ms-transition: all 0.2s ease-out;
-	     -o-transition: all 0.2s ease-out;
-	        transition: all 0.2s ease-out;
+    text-shadow: 0 0 48px rgba(0,0,0,0.3);
+    -webkit-transition: all 0.2s ease-out;
+       -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+         -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
 }
 @media screen and (min-height: 650px) { h1 { font-size: 60px } }
 @media screen and (min-height: 800px) { h1 { font-size: 72px } }
 @media screen and (min-height: 950px) { h1 { font-size: 96px } }
+@media screen and (min-height: 1200px) { h1 { font-size: 108px } }
 @media screen and (max-width: 480px) {
     .intro {
         z-index: 3;
@@ -354,7 +372,7 @@ h2 {
         color:#fff;
         text-shadow: 0 0 4px rgba(68,0,32,0.6);
         filter: progid:DXImageTransform.Microsoft.Shadow(color='#aa3355',direction=135,strength=1);
-	}
+    }
     h2:before {
         content: 'of';
         position: absolute;
@@ -446,10 +464,10 @@ h2 {
     }
     .summary p:last-child:after {
         content: ' ';
-        height: 1em;
+        height: 11px;
         display: block;
         position: absolute;
-        bottom: -1em;
+        bottom: -12px;
         left: 0;
         right: 0;
     }
@@ -461,8 +479,8 @@ h2 {
 
 @media screen and (min-width: 960px) {
     .intro {
-    	padding: 36px 100px;
-    	margin: 0 -52px 30px;
+        padding: 36px 100px;
+        margin: 0 -52px 30px;
         border-width: 2px; 
    }
    .intro:before {
@@ -509,9 +527,9 @@ h2 {
     }
 }
 
-/*	xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
+/*  xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
     Background Sizing for main elements
-	--------------------------------------------------	*/
+    --------------------------------------------------    */
 
 @media screen and (min-width: 1201px) {
     body, .page-wrapper, .page-wrapper:before, .page-wrapper:after, .intro:after, .supporting div, .supporting footer {
@@ -545,74 +563,90 @@ h2 {
 @media screen and (max-device-width: 600px) { body, .page-wrapper:before { background-size: 800px } }
 @media screen and (max-device-width: 400px) { body, .page-wrapper:before { background-size: 600px } }
 
-/*	xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
-	=Supporting Content
-	
+/*  xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
+    =Supporting Content
+    
     Primarily backgrounds and added content on h3s
     
     Because we want the bgs to show up on scrolling,
     background-position does get a little involved,
     with a fair amount of fine-tuning required.
-	--------------------------------------------------	*/
+    --------------------------------------------------    */
+
+.supporting {
+    position: relative;
+    z-index: 1;
+}
 
 .supporting h3 {
     margin: 0;
     padding: 1em 20px;
 }
 .supporting h3, .supporting footer:before {
-	-webkit-box-shadow: inset 0 0 18px rgba(70,15,35,0.8);
-	   -moz-box-shadow: inset 0 0 18px rgba(70,15,35,0.8);
-	        box-shadow: inset 0 0 18px rgba(70,15,35,0.8);
+    -webkit-box-shadow: inset 0 0 18px rgba(70,15,35,0.8);
+       -moz-box-shadow: inset 0 0 18px rgba(70,15,35,0.8);
+            box-shadow: inset 0 0 18px rgba(70,15,35,0.8);
 
-    background-image: url('sketches.gif');
+    background-image: url('story.gif');
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-.explanation h3 { background-position: 350px 200px }
-.participation h3 { background-position: -100px 200px }
-.benefits h3 { background-position: -550px 250px }
-.requirements h3 { background-position: -1050px 250px }
-.supporting footer:before { background-position: -1650px 300px }
+.explanation h3 { background-position: 300px 200px }
+.participation h3 { background-position: -600px 200px }
+.benefits h3 { background-position: -1200px 250px }
+.requirements h3 { background-position: -2200px 250px }
+.supporting footer:before { background-position: -2900px 300px }
 
-@media screen and (min-width: 960px) {
-    .explanation h3 { background-position: 390px 200px }
-    .participation h3 { background-position: -100px 200px }
-    .benefits h3 { background-position: -550px 250px }
-    .requirements h3 { background-position: -1050px 250px }
+/*  If a wider screen, shift the images 
+    (footer:before gets special SPECIAL treatment, below) */
+@media screen and (min-width: 1360px) {
+    .explanation h3 { background-position: 550px 200px }
+    .participation h3 { background-position: -450px 200px }
+    .benefits h3 { background-position: -950px 250px }
+    .requirements h3 { background-position: -1980px 250px }
 }
 
-@media screen and (min-width: 960px) and (min-height: 800px) {
-    .explanation h3 { background-position: 390px 350px }
-    .participation h3 { background-position: -100px 350px }
-    .benefits h3 { background-position: -550px 350px }
-    .requirements h3 { background-position: -1050px 350px }
+/*  If a taller screen, reveal the images lower */
+@media screen and (min-height: 800px) {
+    .explanation h3 { background-position: 300px 350px }
+    .participation h3 { background-position: -600px 350px }
+    .benefits h3 { background-position: -1200px 350px }
+    .requirements h3 { background-position: -2200px 350px }
+}
+
+/*  If a wider AND taller screen, well... */
+@media screen and (min-width: 1360px) and (min-height: 800px) {
+    .explanation h3 { background-position: 550px 350px }
+    .participation h3 { background-position: -450px 350px }
+    .benefits h3 { background-position: -950px 350px }
+    .requirements h3 { background-position: -1980px 350px }
 }
 
 /* Target smaller screens ... and the iPad, since mobile safari does not support bg attach: fixed */
 @media screen and (max-width: 580px), screen and (max-device-width: 580px),
 screen and (device-width: 768px), screen and (device-width: 1024px) {
     .supporting h3, .supporting footer:before {
-        background-size: 1800px; /* 90% size */
+        background-size: 3375px; /* 90% size */
         background-attachment: scroll;
         min-height: 4em;
     }
-    .explanation h3 { background-position: 300px -30px }
-    .participation h3 { background-position: -150px -30px }
-    .benefits h3 { background-position: -480px 0 }
-    .requirements h3 { background-position: -960px 10px }
-    .supporting footer:before { background-position: -1450px 0 }
+    .explanation h3 { background-position: 200px -10px }
+    .participation h3 { background-position: -620px 0 }
+    .benefits h3 { background-position: -1150px 0 }
+    .requirements h3 { background-position: -2080px 5px }
+    .supporting footer:before { background-position: -2700px -20px }
 }
 
 /* target smallest screen setup */
 @media screen and (max-width: 420px) {
     .supporting h3, .supporting footer:before {
-        background-size: 1500px; /* 75% size */
+        background-size: 2625px; /* 75% size */
     }
-    .explanation h3 { background-position: 200px -20px }
-    .participation h3 { background-position: -150px -10px }
-    .benefits h3 { background-position: -400px 0 }
-    .requirements h3 { background-position: -840px 10px }
-    .supporting footer:before { background-position: -1260px 0 }
+    .explanation h3 { background-position: 120px 10px }
+    .participation h3 { background-position: -500px 20px }
+    .benefits h3 { background-position: -930px 0 }
+    .requirements h3 { background-position: -1600px 10px }
+    .supporting footer:before { background-position: -2100px -15px }
 }
 
 .explanation h3, .benefits h3 {
@@ -697,16 +731,16 @@ div[class^=design] a, div[class^=zen] a {
 }
 
 
-/*	xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
-	=Sidebar Styling
-	
-	We are using borders liberally instead of padding
-	so iOS devices can just have an image shine through.
-	Desktop has background: fixed, but mobile Safari no likey.
-	
-	Again, IE<9 ignores styles for HTML5 elements.
-	.sidebar is one. We will take advantage of that...
-	--------------------------------------------------	*/
+/*  xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
+    =Sidebar Styling
+    
+    We are using borders liberally instead of padding
+    so iOS devices can just have an image shine through.
+    Desktop has background: fixed, but mobile Safari no likey.
+    
+    Again, IE<9 ignores styles for HTML5 elements.
+    .sidebar is one. We will take advantage of that...
+    --------------------------------------------------    */
 
 .sidebar .wrapper div {
     padding: 20px;
@@ -900,17 +934,17 @@ div[class^=design] a, div[class^=zen] a {
 }
 
 .design-selection h3 {
-	-webkit-box-shadow: inset 0 12px 18px -6px rgba(0,0,0,0.4);
-	   -moz-box-shadow: inset 0 12px 18px -6px rgba(0,0,0,0.4);
-	        box-shadow: inset 0 12px 18px -6px rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 0 12px 18px -6px rgba(0,0,0,0.4);
+       -moz-box-shadow: inset 0 12px 18px -6px rgba(0,0,0,0.4);
+            box-shadow: inset 0 12px 18px -6px rgba(0,0,0,0.4);
 }
 
-/*	xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
-	=Responsive Sidebars
-	
-	Depending on screen dimensions, we can place sidebar
-	elements on the right of the screen.
-	--------------------------------------------------	*/
+/*  xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
+    =Responsive Sidebars
+    
+    Depending on screen dimensions, we can place sidebar
+    elements on the right of the screen.
+    --------------------------------------------------    */
 
 @media screen and (min-width: 960px) and (min-height: 700px) {
     .sidebar .wrapper .design-selection {
@@ -952,7 +986,7 @@ div[class^=design] a, div[class^=zen] a {
         border: none;
         max-width: 310px;
         margin: 0 0 0 auto;
-    	background: #fceec6 url('kiss_light.jpg') no-repeat fixed 50% top;
+        background: #fceec6 url('kiss_light.jpg') no-repeat fixed 50% top;
     }
     .sidebar .design-archives h3 {
         -webkit-box-shadow: inset 0 12px 18px -6px rgba(0,0,0,0.4);
@@ -960,9 +994,15 @@ div[class^=design] a, div[class^=zen] a {
                 box-shadow: inset 0 12px 18px -6px rgba(0,0,0,0.4);
     }
 }
-@media screen and (min-width: 960px) and (min-height: 760px) and (max-height: 820px) {
-    .supporting footer:before { background-position: -1650px 360px }
-}
+
+@media screen and (min-width: 960px) and (min-height: 700px) and (max-height: 739px) { .supporting footer:before { background-position: -2900px 180px } }
+@media screen and (min-width: 960px) and (min-height: 740px) and (max-height: 779px) { .supporting footer:before { background-position: -2900px 220px } }
+@media screen and (min-width: 960px) and (min-height: 780px) and (max-height: 819px) { .supporting footer:before { background-position: -2900px 260px } }
+
+@media screen and (min-width: 1360px) and (min-height: 700px) and (max-height: 739px) { .supporting footer:before { background-position: -2730px 180px } }
+@media screen and (min-width: 1360px) and (min-height: 740px) and (max-height: 779px) { .supporting footer:before { background-position: -2730px 220px } }
+@media screen and (min-width: 1360px) and (min-height: 780px) and (max-height: 819px) { .supporting footer:before { background-position: -2730px 260px } }
+
 @media screen and (min-width: 960px) and (min-height: 820px) {
     .sidebar .wrapper .design-archives {
         border: none;
@@ -994,7 +1034,7 @@ div[class^=design] a, div[class^=zen] a {
     .sidebar .design-archives ul {
         max-width: 310px;
         margin: 0 0 0 auto;
-    	background: #fceec6 url('kiss_light.jpg') no-repeat fixed 50% top;
+        background: #fceec6 url('kiss_light.jpg') no-repeat fixed 50% top;
     }
     .sidebar .design-selection nav {
         height: 280px;
@@ -1004,17 +1044,16 @@ div[class^=design] a, div[class^=zen] a {
            -moz-box-shadow: inset 0 12px 18px -6px rgba(0,0,0,0.4);
                 box-shadow: inset 0 12px 18px -6px rgba(0,0,0,0.4);
     }
-    .supporting footer:before { background-position: -1650px 520px }
+    .supporting footer:before { background-position: -2900px 430px }
 }
-@media screen and (min-width: 960px) and (min-height: 860px) and (max-height: 900px) {
-    .supporting footer:before { background-position: -1650px 560px }
-}
-@media screen and (min-width: 960px) and (min-height: 900px) and (max-height: 940px) {
-    .supporting footer:before { background-position: -1650px 600px }
-}
-@media screen and (min-width: 960px) and (min-height: 940px) and (max-height: 970px) {
-    .supporting footer:before { background-position: -1650px 640px }
-}
+@media screen and (min-width: 960px) and (min-height: 860px) and (max-height: 899px) { .supporting footer:before { background-position: -2900px 470px } }
+@media screen and (min-width: 960px) and (min-height: 900px) and (max-height: 939px) { .supporting footer:before { background-position: -2900px 510px } }
+@media screen and (min-width: 960px) and (min-height: 940px) and (max-height: 969px) { .supporting footer:before { background-position: -2900px 550px } }
+
+@media screen and (min-width: 1360px) and (min-height: 820px) { .supporting footer:before { background-position: -2730px 430px } }
+@media screen and (min-width: 1360px) and (min-height: 860px) and (max-height: 899px) { .supporting footer:before { background-position: -2730px 470px } }
+@media screen and (min-width: 1360px) and (min-height: 900px) and (max-height: 939px) { .supporting footer:before { background-position: -2730px 510px } }
+@media screen and (min-width: 1360px) and (min-height: 940px) and (max-height: 969px) { .supporting footer:before { background-position: -2730px 550px } }
 
     .sidebar .wrapper .zen-resources:after {
         content: ' ';
@@ -1028,7 +1067,7 @@ div[class^=design] a, div[class^=zen] a {
            -moz-box-shadow: inset 0 -12px 18px -6px rgba(0,0,0,0.4);
                 box-shadow: inset 0 -12px 18px -6px rgba(0,0,0,0.4);
     }
-@media screen and (min-width: 960px) and (min-height: 970px) {
+@media screen and (min-width: 960px) and (min-height: 960px) {
     .sidebar .wrapper .zen-resources {
         border: none;
         position: fixed;
@@ -1062,7 +1101,7 @@ div[class^=design] a, div[class^=zen] a {
         border: none;
         max-width: 310px;
         margin: 0 0 0 auto;
-    	background: #fceec6 url('kiss_light.jpg') no-repeat fixed 50% top;
+        background: #fceec6 url('kiss_light.jpg') no-repeat fixed 50% top;
     }
     .sidebar .design-archives ul {
         height: 80px;
@@ -1074,15 +1113,16 @@ div[class^=design] a, div[class^=zen] a {
         background-repeat: no-repeat;
         background-position: 50% 50px;
     }
-    .supporting footer:before { background-position: -1650px bottom }
+    .supporting footer:before { background-position: -2900px bottom }
 }
+@media screen and (min-width: 1360px) and (min-height: 960px) { .supporting footer:before { background-position: -2730px bottom } }
 
 .design-selection li, .wrapper>div a {
-	-webkit-transition: all 0.2s ease-out;
-	   -moz-transition: all 0.2s ease-out;
-	    -ms-transition: all 0.2s ease-out;
-	     -o-transition: all 0.2s ease-out;
-	        transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+       -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+         -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
 }
 .wrapper>div a {
     text-shadow: 2px 2px 0 rgba(255,255,255,0.51);
@@ -1095,36 +1135,54 @@ div[class^=design] a, div[class^=zen] a {
     .sidebar .design-selection nav, .sidebar .design-archives ul, .sidebar .zen-resources ul {
         background-size: 100%; /* if wider than bg image, make those suckers grow! */
     }
+.intro {
+    -webkit-transition: none;
+       -moz-transition: none;
+        -ms-transition: none;
+         -o-transition: none;
+            transition: none;
 }
-@media screen and (min-width: 1400px) {
-    header[role=banner], .sidebar .wrapper .design-selection, 
-    .sidebar .wrapper .design-archives, .sidebar .wrapper .zen-resources {
-        right: 70px;
-    }
-    .summary p {
-        margin-right: 70px;
-    }
+}
+@media screen and (min-width: 1360px) {
     .page-wrapper {
-        max-width: 520px;
+        max-width: 660px;
+        margin-left: 160px;
     }
+    .explanation h3, .benefits h3 {
+        padding-left: 40px;
+        padding-right: 70%;
+    }
+    .supporting .participation h3, .supporting .requirements h3, .supporting footer:before {
+        padding-left: 65%;
+        padding-right: 40px;
+    }
+}
+@media screen and (min-width: 1360px) and (max-height: 819px) {
     .intro {
-        padding-top: 54px;
-        padding-bottom: 72px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media screen and (min-width: 1360px) and (min-height: 820px) {
+    .intro {
+        padding: 84px 150px 96px;
+    }
+    .preamble {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+    .preamble h3, .supporting h3 {
+        font-size: 1.3125em;
     }
     .preamble h3 {
         padding-bottom: 72px;
         margin-bottom: 36px;
     }
-    .explanation h3, .benefits h3 {
-        padding-left: 40px;
-    }
-    .supporting .participation h3, .supporting .requirements h3, .supporting footer:before {
-        padding-right: 40px;
-    }
     .supporting footer:after {
         padding-right: 20px;
     }
     .supporting p {
+        line-height: 1.5;
         padding-left: 60px;
         padding-right: 60px;
     }
@@ -1132,6 +1190,53 @@ div[class^=design] a, div[class^=zen] a {
         padding-top: 3em;
         background-position: 1.65em 1.7em;
     }
+}
+@media screen and (min-width: 1360px) {
+    header[role=banner], .summary {
+        right: 50%;
+        margin-right: -672px;
+    }
+    h2 {
+        right: 10px;
+    }
+    #zen-summary p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+ }
+@media screen and (min-width: 1360px) and (min-height: 700px) {
+    .sidebar .wrapper .design-selection {
+        right: 50%;
+        margin-right: -672px;
+    }
+    .sidebar .design-selection h3 {
+        width: 314px;
+    }
+    .sidebar .wrapper .design-selection nav {
+        max-width: 352px;
+    }
+    .sidebar .wrapper .design-selection:before,
+    .sidebar .wrapper .design-selection:after {
+        width: 352px !important;
+    }
+}
+@media screen and (min-width: 1360px) and (min-height: 820px) {
+    .sidebar .wrapper .design-archives {
+        right: 50%;
+        margin-right: -672px;
+    }
+    .sidebar .design-archives h3 {              width: 314px }
+    .sidebar .wrapper .design-archives ul {     max-width: 352px }
+    .sidebar .wrapper .design-archives:after {  width: 352px !important }
+}
+@media screen and (min-width: 1360px) and (min-height: 960px) {
+    .sidebar .wrapper .zen-resources {
+        right: 50%;
+        margin-right: -672px;
+    }
+    .sidebar .zen-resources h3 {              width: 314px }
+    .sidebar .wrapper .zen-resources ul {     max-width: 352px }
+    .sidebar .wrapper .zen-resources:after {  width: 352px !important }
 }
 
 /* -fin- */
