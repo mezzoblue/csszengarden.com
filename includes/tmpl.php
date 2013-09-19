@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title><?php echo $head["title"]; ?></title>
 
-	<link rel="stylesheet" media="screen" href="<?php echo $currentDesign; ?>?v=8may2013">
+	<link rel="stylesheet" media="screen" href="<?php echo $currentStyleSheet; ?>?v=8may2013">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo $zenUrls["zen-rss"]; ?>">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -104,9 +104,10 @@
 					<ul>
 <?php
 	if ($listStart > $numDesigns) {
+	    $nextPage = $thisPage + 1;
 ?>
 						<li class="next">
-							<a href="?cssfile=<?php echo $currentDesign ?>&amp;page=<?php echo $thisPage + 1 ?>">
+							<a href="<?php echo "$langURL/$currentDesign/page$nextPage"; ?>">
 								<?php echo $sidebar["design-archives-next"]; ?> <span class="indicator">&rsaquo;</span>
 							</a>
 						</li>
@@ -114,9 +115,15 @@
 	}
 
 	if ($thisPage > 0) {
+        if($thisPage > 1) {
+            $prev = $thisPage - 1;
+            $prevPage = "page$prev/";
+        } else {
+            $prevPage = ''; // don't create '/page0/' urls
+        }
 ?>
 						<li class="previous">
-							<a href="?cssfile=<?php echo $currentDesign ?>&amp;page=<?php echo $thisPage - 1 ?>">
+							<a href="<?php echo "$langURL/$currentDesign/$prevPage"; ?>">
 								<span class="indicator">&lsaquo;</span> <?php echo $sidebar["design-archives-previous"]; ?>
 							</a>
 						</li>
@@ -136,7 +143,7 @@
 				<h3 class="resources"><?php echo $sidebar["design-resources-h3"]; ?></h3>
 				<ul>
 					<li class="view-css">
-						<a href="<?php echo $currentDesign ?>" title="<?php echo $sidebar["view-css-title"]; ?>">
+						<a href="<?php echo "/$currentDesign/$currentDesign" ?>" title="<?php echo $sidebar["view-css-title"]; ?>">
 							<?php echo $sidebar["view-css-text"]; ?>
 						</a>
 					</li>
