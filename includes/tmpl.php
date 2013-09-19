@@ -12,10 +12,10 @@
 	<meta name="description" content="<?php echo $head["description"]; ?>">
 	<meta name="robots" content="all">
 
-	<?php if ($typekitId) { ?>
+<?php if ($typekitId) { ?>
 	<script src="http://use.typekit.net/<?php echo $typekitId; ?>.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
-	<?php } ?>
+<?php } ?>
 
 	<!--[if lt IE 9]>
 	<script src="script/html5shiv.js"></script>
