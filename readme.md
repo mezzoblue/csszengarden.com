@@ -61,3 +61,12 @@ you'll need to make it work.)
   repo's files live. If you've done it right you'll be able to point your 
   browser to http://localhost/ and should see a fully navigable version of the
   CSS Zen Garden.
+
+## Submitting Designs
+
+There are two ways to submit a new design. If you're reading this, you're
+likely comfortable with issuing a pull request from GitHub -- please feel free
+to do it that way. 
+
+Everyone else can just use this submission form: 
+http://www.mezzoblue.com/zengarden/submit/
