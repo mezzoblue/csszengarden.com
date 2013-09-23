@@ -1,0 +1,229 @@
+/**
+* all and (min-width: 800px)
+*
+* Anything more than 800px.
+*
+* http://www.browserhacks.com/
+*/
+
+@media all and (min-width: 800px\0) {
+
+    body:before {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        z-index: 999;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,.8);
+        color: yellow;
+        content: 'IE10+ is recommended for a better user experience';
+        font-family: Arial, sans-serif;
+    }
+
+    /** $intro */
+
+    .intro:hover ~ .sidebar {
+        background-position: right bottom, right bottom, right bottom;
+    }
+
+    /** $main */
+
+    .main {
+        bottom: 270px;
+        width: 382px;
+        height: 277px;
+        right: 111px;
+        margin-right: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+        .main:hover ~ .sidebar {
+            background-position: right bottom, right bottom, right bottom;
+        }
+
+        .main div[role="article"] {
+            height: auto;
+        }
+
+            .main div[role="article"] h3 {
+                padding: 30px 0 10px 0;
+                font-size: 31px;
+                line-height: 35px;
+            }
+
+            .main div[role="article"],
+            .main div[role="article"] p {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+            }
+
+    footer {
+        position: static;
+        padding: 20px 0;
+        width: 450px;
+        height: 75px;
+        margin: 0 24px;
+    }
+
+    .zen-validate-html,
+    .zen-validate-css,
+    .zen-license,
+    .zen-github,
+    .zen-accessibility {
+        position: static;
+        float: left;
+        width: 65px;
+    }
+    .zen-github {
+        width: 55px;
+    }
+
+    /** $sidebar */
+
+    .sidebar {
+        background-image: url(sidebar21.svg), url(sidebar22.svg), url(sidebar.svg);
+        background-position: right bottom, right bottom, right bottom;
+    }
+
+        .sidebar:hover {
+            background-position: right bottom, right bottom, right bottom;
+        }
+
+    .design-selection li a.designer-name {
+        text-indent: 3px;
+    }
+}
+
+@media all and (min-width: 1367px\0) {
+
+    /** $main */
+
+    .main {
+        bottom: 305px;
+        width: 432px;
+        height: 310px;
+        right: 126px;
+    }
+
+    footer {
+        height: 90px;
+        margin: 0 27px;
+        width: 365px;
+    }
+
+    .zen-validate-html,
+    .zen-validate-css,
+    .zen-license,
+    .zen-github,
+    .zen-accessibility {
+        width: 75px;
+    }
+    .zen-github {
+        width: 65px;
+    }
+}
+
+@media all and (min-width: 1532px\0) {
+
+    /** $main */
+
+    .main {
+        bottom: 338px;
+        width: 480px;
+        height: 346px;
+        right: 140px;
+    }
+
+    footer {
+        height: 105px;
+        margin: 0 25px;
+        width: 416px;
+    }
+
+    .zen-validate-html,
+    .zen-validate-css,
+    .zen-license,
+    .zen-github,
+    .zen-accessibility {
+        width: 85px;
+    }
+    .zen-github {
+        width: 76px;
+    }
+}
+
+@media all and (min-width: 1710px\0) {
+
+    /** $main */
+
+    .main {
+        bottom: 405px;
+        width: 576px;
+        height: 415px;
+        right: 167px;
+    }
+
+    footer {
+        height: 120px;
+        margin: 0 38px;
+        width: 488px;
+    }
+
+    .zen-validate-html,
+    .zen-validate-css,
+    .zen-license,
+    .zen-github,
+    .zen-accessibility {
+        width: 100px;
+    }
+    .zen-github {
+        width: 88px;
+    }
+}
+
+@media all and (max-width: 1366px\0) {
+    .wrapper,
+    .sidebar:hover .wrapper {
+        -ms-transform: translate(-150px, 0) scale(.85);
+        transform: translate(-120px, 0) rotateY(70deg) scale(.85);
+    }
+}
+
+@media all and (max-width: 1175px\0) {
+    .wrapper,
+    .sidebar:hover .wrapper {
+        -ms-transform: translate(-156px, -5%) scale(.8);
+        transform: translate(-120px, 0) rotateY(70deg) scale(.85);
+    }
+}
+
+@media all and (max-width: 1095px\0) {
+    .main {
+        right: 21px;
+    }
+    .wrapper,
+    .sidebar:hover .wrapper {
+        -ms-transform: translate(-162px, -10%) scale(.75);
+        transform: translate(-120px, 0) rotateY(70deg) scale(.85);
+    }
+    .sidebar {
+        width: calc(100% + 90px);
+    }
+}
+
+@media all and (max-width: 900px\0) {
+    .main {
+        right: 11px;
+    }
+    .wrapper,
+    .sidebar:hover .wrapper {
+        -ms-transform: translate(-174px, -10%) scale(.65);
+        transform: translate(-120px, 0) rotateY(70deg) scale(.85);
+    }
+    .sidebar {
+        width: calc(100% + 101px);
+    }
+}

@@ -1,0 +1,59 @@
+/**
+* all and (min-width: 1600px)
+*
+* Anything more than 1600px.
+*/
+
+/** $page-wrapper */
+
+.page-wrapper::before {
+    height: 62px;
+}
+
+.page-wrapper::after {
+    width: 850px;
+    height: 187px;
+}
+
+/** $intro */
+
+header {
+    margin: 0 0 0 -268px;
+    padding-top: 424px;
+    width: 536px;
+    height: 79px;
+}
+
+h1,
+h2 {
+    left: 268px;
+    margin-left: -150px;
+    padding: 10px 5px 0 5px;
+    width: 300px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 34px;
+}
+
+h1 {
+    font-size: 31px;
+}
+
+h2 {
+    padding: 0 5px 5px 5px;
+    height: 32px;
+    border-radius: 0 0 10px 10px;
+}
+
+header:hover h1,
+header:hover h2 {
+    -moz-animation: tree-sign-2 2s 1 ease-out;
+    -o-animation: tree-sign-2 2s 1 ease-out;
+    -webkit-animation: tree-sign-2 2s 1 ease-out;
+    animation: tree-sign-2 2s 1 ease-out;
+}
+
+.intro::before {
+    height: 75px;
+}

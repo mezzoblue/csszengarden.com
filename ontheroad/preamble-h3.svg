@@ -1,0 +1,35 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="820" width="880" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<defs>
+<filter id="filter3776" color-interpolation-filters="sRGB">
+<feFlood result="flood" flood-color="rgb(255,255,255)" flood-opacity="0.20000000000000001"/>
+<feComposite operator="in" result="composite1" in2="SourceGraphic" in="flood"/>
+<feGaussianBlur stdDeviation="2" result="blur"/>
+<feOffset result="offset" dx="0" dy="10"/>
+<feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic"/>
+</filter>
+<filter id="filter3792" color-interpolation-filters="sRGB">
+<feGaussianBlur stdDeviation="4" result="result8"/>
+<feOffset result="result11" dx="0" dy="10"/>
+<feComposite operator="in" in="SourceGraphic" in2="result11" result="result6"/>
+<feFlood flood-color="rgb(253,235,100)" in="result6" flood-opacity="0.80000000000000004" result="result10"/>
+<feBlend result="result12" in="result6" in2="result10" mode="normal"/>
+<feComposite operator="in" in2="SourceGraphic" result="result2"/>
+</filter>
+</defs>
+<metadata>
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<g filter="url(#filter3776)" transform="translate(34.769849,-28.477302)">
+<path filter="url(#filter3776)" fill="#000000" d="M-7.76,733,364,57.46c16.12-27.69,73.82-28.58,89.9,5.8l367.7,670.7c29.61,50,11.42,103.2-37.62,103l-740.8-0.2c-63.63,0.2-82.7-44.84-51-103.8z"/>
+<path filter="url(#filter3792)" fill="#cdab04" d="M389.1,588.2,324.8,310.4c-27.4-109.5,193.3-106.6,162.9-1.4l-63.9,280.5c-5.13,17.95-30.59,18.05-34.64-1.25z"/>
+<path d="m481.1,676c0,29.24-23.1,52.94-51.6,52.94s-51.6-23.7-51.6-52.94,23.1-52.94,51.6-52.94,51.6,23.7,51.6,52.94z" transform="translate(-22.64,24.14)" filter="url(#filter3792)" fill="#cdab04"/>
+<path fill="#cdab04" transform="translate(-23,25.39)" d="m430.5,628.2c0,0.29-0.16,0.53-0.35,0.53s-0.35-0.24-0.35-0.53,0.16-0.53,0.35-0.53,0.35,0.23,0.35,0.53z"/>
+</g>
+</svg>

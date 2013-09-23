@@ -1,0 +1,69 @@
+﻿@font-face {
+  font-family: 'jeanlucweb-Bold';
+    src: url('JeanLuc-Webfonts/jeanlucweb-bold.eot');
+    src: local('☺'), 
+         url("JeanLuc-Webfonts/jeanlucweb-bold.woff") format("woff"),
+         url("JeanLuc-Webfonts/jeanlucweb-bold.otf") format("opentype"), 
+         url("JeanLuc-Webfonts/jeanlucweb-bold#webfontup15foyj") format("svg");
+}
+
+@font-face {
+  font-family: 'jeanlucweb-Thin';
+    src: url('JeanLuc-Webfonts/jeanlucweb-bold.eot');
+    src: local('☺'), 
+         url("JeanLuc-Webfonts/jeanlucweb-thin.woff") format("woff"), 
+         url("JeanLuc-Webfonts/jeanlucweb-thin.otf") format("opentype"), 
+         url("JeanLuc-Webfonts/jeanlucweb-thin#webfontdsa4toug") format("svg");
+}
+
+/*
+  The Jean-Luc typeface was designed and made by Atelier Carvalho Bernau on the occasion of the 80th birthday of Jean-Luc Godard. 
+  It is available free of charge from http://www.carvalho-bernau.com/jlg/
+  Jean-Luc typeface Copyright (c) 2010 Atelier Carvalho Bernau
+*/
+
+@font-face {
+    font-family: 'sf_wasabiregular';
+    src: url('sfwasabi_regular_macroman/SF_Wasabi-webfont.eot');
+    src: url('sfwasabi_regular_macroman/SF_Wasabi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sfwasabi_regular_macroman/SF_Wasabi-webfont.woff') format('woff'),
+         url('sfwasabi_regular_macroman/SF_Wasabi-webfont.ttf') format('truetype'),
+         url('sfwasabi_regular_macroman/SF_Wasabi-webfont.svg#sf_wasabiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kontrapunktlight';
+    src: url('kontrapunkt_light_macroman/Kontrapunkt-Light-webfont.eot');
+    src: url('kontrapunkt_light_macroman/Kontrapunkt-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('kontrapunkt_light_macroman/Kontrapunkt-Light-webfont.woff') format('woff'),
+         url('kontrapunkt_light_macroman/Kontrapunkt-Light-webfont.ttf') format('truetype'),
+         url('kontrapunkt_light_macroman/Kontrapunkt-Light-webfont.svg#kontrapunktlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('opensans_bold_macroman/OpenSans-Bold-webfont.eot');
+    src: url('opensans_bold_macroman/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans_bold_macroman/OpenSans-Bold-webfont.woff') format('woff'),
+         url('opensans_bold_macroman/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('opensans_bold_macroman/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('opensans_extrabold_macroman/OpenSans-ExtraBold-webfont.eot');
+    src: url('opensans_extrabold_macroman/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans_extrabold_macroman/OpenSans-ExtraBold-webfont.woff') format('woff'),
+         url('opensans_extrabold_macroman/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+         url('opensans_extrabold_macroman/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+

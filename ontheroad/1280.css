@@ -1,0 +1,11 @@
+/**
+* all and (min-width: 1280px)
+*
+* Anything more than 1280px.
+*/
+
+/** $intro */
+
+.intro {
+    height: 90px;
+}

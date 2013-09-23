@@ -1,0 +1,84 @@
+/**
+* all and (min-width: 1532px) and (max-width: 1709px)
+*
+* For browsers with less than 1709px, but more than 1532px of horizontal width.
+*/
+
+/** $main */
+
+.main {
+    right: 162px;
+    bottom: 361px;
+}
+
+    .main div[role="article"] {
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: rotateY(0) scale(1.1);
+    }
+
+footer {
+    right: -12px;
+    margin-top: -262px;
+    width: 105px;
+    height: 525px;
+}
+
+.zen-validate-html,
+.zen-validate-css,
+.zen-license,
+.zen-github,
+.zen-accessibility {
+    height: 105px;
+    -moz-background-size: auto 525px;
+    -o-background-size: auto 525px;
+    -webkit-background-size: auto 525px;
+    background-size: auto 525px;
+}
+
+.zen-validate-html {
+    background-position: 0 0;
+}
+
+.zen-validate-css {
+    background-position: 0 -105px;
+}
+
+.zen-github {
+    background-position: 0 -210px;
+}
+
+.zen-accessibility {
+    background-position: 0 -315px;
+}
+
+.zen-license {
+    background-position: 0 -420px;
+}
+
+/** $sidebar */
+
+.sidebar {
+    -moz-background-size: 3548px 3548px, 3548px 3548px, 3548px 3548px;
+    -o-background-size: 3548px 3548px, 3548px 3548px, 3548px 3548px;
+    -webkit-background-size: 3548px 3548px, 3548px 3548px, 3548px 3548px;
+    background-size: 3548px 3548px, 3548px 3548px, 3548px 3548px;
+}
+
+.wrapper {
+    -moz-transform: rotateY(25deg) translate(-77%, -12.5%) scale(0.75);
+    -ms-transform: translate(-80px, 0) scale(1);
+    -o-transform: rotateY(25deg) translate(-77%, -12.5%) scale(0.75);
+    -webkit-transform: rotateY(25deg) translate(-77%, -12.5%) scale(0.75);
+    transform: rotateY(25deg) translate(-77%, -12.5%) scale(0.75);
+}
+
+.sidebar:hover .wrapper {
+    -moz-transform: rotateY(70deg) translate(-10%, 0) scale(1);
+    -ms-transform: translate(-80px, 0) scale(1);
+    -o-transform: rotateY(70deg) translate(-10%, 0) scale(1);
+    -webkit-transform: rotateY(70deg) translate(-10%, 0) scale(1);
+    transform: rotateY(70deg) translate(-10%, 0) scale(1);
+}

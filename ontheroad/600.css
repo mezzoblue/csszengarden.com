@@ -1,0 +1,18 @@
+/**
+* all and (min-width: 600px) and (max-width: 799px)
+*
+* For browsers with less than 799px, but more than 600px of horizontal width.
+*/
+
+/** $intro */
+
+.preamble h3 {
+    font-size: 46px;
+    line-height: 50px;
+}
+
+/** $main */
+
+.main div[role="article"] h3 {
+    font-size: 36px;
+}

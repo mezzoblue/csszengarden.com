@@ -1,0 +1,65 @@
+﻿/**
+*    CSS Zen Garden submission:
+*      ______    __    __        ______   __  __    ______        ______    ______    ______    _____      
+*     /\  __ \  /\ \  /  \      /\__  _\ /\ \/\ \  /\  ___\      /\  __ \  /\  __ \  /\  __ \  /\  __ \    
+*     \ \ \/\ \ \ \ \/ /\ \     \/_/\ \/ \ \  __ \ \ \  __\      \ \ \__>  \ \ \/\ \ \ \ \_\ \ \ \ \/\ \ 
+*      \ \_____\ \ \_ /\_\_\       \ \_\  \ \_\ \_\ \ \_____\     \ \_\ \_\ \ \_____\ \ \_\ \_\ \ \____/ 
+*       \/_____/  \/_/  \/_/        \/_/   \/_/\/_/  \/_____/      \/_/ /_/  \/_____/  \/_/\/_/  \/____/
+*
+*                                                     by Steffen Knoeller, http://www.steffen-knoeller.de   
+*   
+*    CSS released under Creative Commons License:
+*    http://creativecommons.org/licenses/by-nc-sa/1.0/                                                                                                                                                                                                                                                                                           
+*
+*    SVG graphics:
+*    - sidebar11.svg              182 KB
+*    - sidebar12.svg               26 KB
+*    - sidebar.svg                286 KB 
+*    - intro-before.svg             1 KB
+*    - header-1.svg                 2 KB
+*    - header-2.svg                 5 KB
+*    - page-wrapper-before.svg      2 KB
+*    - page-wrapper-after.svg      35 KB
+*    - preamble-h3.svg              3 KB
+*    - preamble-h3-p.svg            2 KB
+*    - footer.svg                   8 KB
+*    - design-selection-li.svg      3 KB
+*
+*    ---------------------------- 555 KB (0.54 MB)
+*
+*    Webfonts:
+*    - Steve Matteson (http://opensans.com/): 
+*      "Open Sans" (http://www.fontsquirrel.com/fonts/open-sans), licensed under the Apache License version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html).
+*    - Atelier Carvalho Bernau (http://www.carvalho-bernau.com/jlg/): 
+*      "Jean-Luc", free of charge
+*      The Jean-Luc typeface was designed and made by Atelier Carvalho Bernau on the occasion of the 80th birthday of Jean-Luc Godard. It is available free of charge from http://www.carvalho-bernau.com/jlg/
+*      Jean-Luc typeface Copyright (c) 2010 Atelier Carvalho Bernau"
+*    - WASABI:
+*      Freeware (http://www.fontsquirrel.com/fonts/SF-Wasabi)
+*    - Bo Linnemann (http://www.kontrapunkt.com/type): 
+*      "Kontrapunkt" - download via http://www.fontsquirrel.com/fonts/Kontrapunkt, licenced under a Creative Commons BY-SA License, http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+@import url("webfonts.css");
+@import url("keyframes.css");
+
+@import url("base.css");
+@import url("320.css")  all and (min-width: 320px) and (max-width: 399px);
+@import url("400.css")  all and (min-width: 400px);
+@import url("600.css")  all and (min-width: 600px) and (max-width: 799px);
+@import url("800.css")  all and (min-width: 800px);
+@import url("1280.css") all and (min-width: 1280px);
+@import url("1367.css") all and (min-width: 1367px);
+@import url("1532.css") all and (min-width: 1532px) and (max-width: 1709px);
+@import url("1600.css") all and (min-width: 1600px);
+@import url("1710.css") all and (min-width: 1710px);
+@import url("1921.css") all and (min-width: 1921px);
+
+@import url("fix1.css") all and (min-width: 800px);
+@import url("fix2.css") all and (min-width: 800px);
+@import url("fix3.css") all and (min-width: 800px);
+
+
+
+
+
