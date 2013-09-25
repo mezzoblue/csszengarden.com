@@ -19,7 +19,10 @@
 	- your browser testing baseline: IE9+, recent Chrome/Firefox/Safari, and iOS/Android
 	- Graceful degradation is acceptable, and in fact highly encouraged.
 	- use classes for styling. Don't use ids.
-	- web fonts are cool, just make sure you have a license to share the files
+	- web fonts are cool, just make sure you have a license to share the files. Hosted 
+	  services that are applied via the CSS file (ie. Google Fonts) will work fine, but
+	  most that require custom HTML won't. TypeKit is supported, see the readme on this
+	  page for usage instructions: https://github.com/mezzoblue/csszengarden.com/
 
 	And a few tips on building your CSS file:
 
