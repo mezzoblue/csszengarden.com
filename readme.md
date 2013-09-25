@@ -22,7 +22,7 @@ submission, first create a TypeKit account and build a custom kit with the
 fonts you want to use. Include the Typekit embed code as usual in your local
 copy of the Zen Garden HTML file for development.
 
-When you are ready to submit your design, you simply need to copy your Typekit
+When you are ready to submit your design, you'll need to copy your Typekit
 Kit ID to your CSS file before you submit. This will ensure that, when your
 submission is approved, Typekit fonts will continue to work and font usage
 won't be charged to your personal account. To do this, copy the Kit ID (found
