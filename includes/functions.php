@@ -8,12 +8,16 @@
 
 	// return the Typekit kit identifier or NULL when not found in the CSS
 	function getTypekitId($cssUrl) {
-		$css = null;
+		$css = false;
 
 		if (preg_match("/^http/", $cssUrl)) {
 			$css = file_get_contents($cssUrl);
 		} else if (preg_match("/\d+\/\d+.css$/", $cssUrl)) {
-			$css = file_get_contents(realpath(__DIR__ . "/.." . $cssUrl));
+			$path = realpath(__DIR__ . "/.." . $cssUrl);
+
+			if (file_exists($path)) {
+				$css = file_get_contents($path);
+			}
 		}
 
 		if ($css !== false && preg_match("/\/\*\s*TYPEKIT_KIT_ID:\s*([0-9a-z]+)\s*\*\//i", $css, $matches)) {
