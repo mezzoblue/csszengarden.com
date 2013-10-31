@@ -6,6 +6,17 @@
 
 /** $intro */
 
-.intro {
-    height: 90px;
+header {
+    top: 50px;
+}
+
+/** $sidebar */
+
+.wrapper {
+    top: 50%;
+    left: 0;
+}
+
+.main div[role="article"] {
+    right: 30px;
 }

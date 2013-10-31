@@ -1,18 +1,33 @@
 /**
-* all and (min-width: 600px) and (max-width: 799px)
+* all and (min-width: 600px)
 *
-* For browsers with less than 799px, but more than 600px of horizontal width.
+* Anything more than 600px.
 */
 
-/** $intro */
-
-.preamble h3 {
-    font-size: 46px;
-    line-height: 50px;
+.page-wrapper::before,
+.page-wrapper::after {
+    -moz-background-size: 560px auto;
+    -o-background-size: 560px auto;
+    -webkit-background-size: 560px auto;
+    background-size: 560px auto;
 }
 
-/** $main */
+.page-wrapper::before {
+    top: -50px;
+    height: 50px;
+}
 
-.main div[role="article"] h3 {
-    font-size: 36px;
+.page-wrapper::after {
+    bottom: -50px;
+    height: 50px;
+}
+
+.page-wrapper {
+    margin: 60px auto 240px auto;
+    padding: 0 70px 15px 73px;
+    width: 440px;
+    -moz-background-size: 560px auto;
+    -o-background-size: 560px auto;
+    -webkit-background-size: 560px auto;
+    background-size: 560px auto;
 }
