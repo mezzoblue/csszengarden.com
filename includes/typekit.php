@@ -1,4 +1,6 @@
 <?php
+# URL: ?submission=XXX?token=xxxxxxxx
+
 header('Content-Type: text/plain');
 
 require("typekit-client.php");
