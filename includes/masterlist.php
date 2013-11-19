@@ -1287,7 +1287,13 @@ $designList = array(
 			"216",
 			"Fountain Kiss",
 			"Jeremy Carlson",
-			"http://jeremycarlson.com",
+			"http://jeremycarlson.com.",
+	),
+	array(
+			"217",
+			"Screen Filler",
+			"Elliot Jay Stocks",
+			"http://elliotjaystocks.com/",
 	),
 
 );
