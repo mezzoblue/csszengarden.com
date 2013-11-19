@@ -43,6 +43,7 @@ function copyKit($submissionId, $token) {
 				"name" => sprintf("submission %s", $submissionId),
 				"domains" => Array("*.csszengarden.com"),
 				"badge" => false,
+				"segmented_css_names" => false,
 				"families" => $kit["kit"]["families"]
 			), $token);
 
