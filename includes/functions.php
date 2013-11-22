@@ -13,7 +13,7 @@
 		if (preg_match("/^http/", $cssUrl)) {
 			$css = file_get_contents($cssUrl);
 		} else if (preg_match("/\d+\/\d+.css$/", $cssUrl)) {
-			$path = realpath(__DIR__ . "/.." . $cssUrl);
+			$path = realpath(__DIR__ . "/../" . $cssUrl);
 
 			if (file_exists($path)) {
 				$css = file_get_contents($path);
