@@ -1,0 +1,414 @@
+/* imports and font faces */
+
+/*  The Neuropol font is donationware.
+ *  I went ahead and donated to the author (Ray Larabie) for the use in my sites, 
+ *  it's the main font I use on limitedimmunity.com. He is a super nice guy
+ *  and even complimented my comic. Check him out at typodermicfonts.com
+*/
+
+
+@font-face {
+  font-family:'NeuropolX';
+  src:url('neuropol.ttf');
+}
+
+/* 
+ *  Theme Colors : Took an orange I really liked from 
+ *  Halo 4: Forward Unto Dawn and Deus Ex: Human Revolution 
+ *  (if you've seen those, you know the orange I'm talking about)
+ *  and then fed it into http://kuler.adobe.com to get ideas. These
+ *  are the "complementary" colors of that base, adjusted a few degrees.
+ *  (I used hsla for the color transitions to make sure it went through 
+ *  the right path during translation)
+*/
+
+/* 
+ *  main orange: #e6b53c  -- hsla(43, 77%, 57%, 1.0)
+ *  primary blue : #093299 -- hsla(223, 89%, 32%, 1.0)
+ *  secondary blue: #3C6BE6 -- hsla(224, 84%, 58%, 1.0) 
+ *  dark brown: #997419 -- hsla(43, 72%, 35%, 1.0) 
+ *  pale khaki : #FFD05C -- hsla(43, 100%, 68%, 1.0)
+*/
+
+
+/* General styles (by tag name) */
+
+body {
+  background:#000 url(images/big_carbon.png) repeat;
+  color:#fff;
+  font-family:Courier;
+  z-index:10;
+  margin:0px 0px 40px 0px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family:'NeuropolX';
+  font-weight:normal;
+}
+
+a {
+  color:hsla(43,77%,57%,1);
+  text-decoration:none;
+}
+
+a:hover {
+  color:hsla(43,100%,68%,1);
+  transition:color .2s linear;
+}
+
+abbr {
+  text-decoration:none;
+  border-bottom:1px dashed #e6b53c;
+  cursor:help;
+  position:relative;
+}
+
+abbr:hover {
+  transition:border .2s linear;
+  border-bottom:3px solid #e6b53c;
+}
+
+/* 
+    Typically, you'd suppress the title attributes of these with javascript,
+    and replace the title attr with something else you can get at, preferably
+    something with less collision like a data- prefixed attribute. But since
+    this is an exercise in CSS, I simply moved the tooltip so it doesn't get
+    over-laid by the default browser tooltip. My point was to show that css can
+    be used for even these types of tasks, usually relegated to the native browser
+    methods. 
+*/
+
+abbr::after {
+  color:#fff;
+  content:attr(title);
+  border:solid 1px hsla(43,100%,68%,1);
+  padding:2px;
+  border-radius:5px;
+  box-shadow:0px 0px 10px #000;
+  font-size:12px;
+  font-family:'NeuropolX';
+  text-align:center;
+  background:rgba(0,0,0,.8);
+  background-image:linear-gradient(hsla(43,77%,57%,0) 0%,hsla(43,77%,57%,.7) 100%);
+  position:absolute;
+  width:200px;
+  bottom:120%;
+  left:-100%;
+  opacity:0;
+  z-index:-1;
+}
+
+abbr:hover::after {
+  opacity:1;
+  transition:opacity .3s ease-in;
+  z-index:100;
+}
+
+/* Specific containers (by class and nested specificity) */
+
+.page-wrapper {
+  padding:20px 0px;
+  position:relative;
+}
+
+.intro header {
+  box-shadow:0px 0px 20px hsla(43, 77%, 57%, 1.0), 0px 0px 90px hsla(43,77%,57%,0.8), 0px 0px 120px hsla(43,77%,57%,0.3);
+  width:500px;
+  margin:0px auto;
+  padding:1px 5px;
+  text-align:center;
+  border-radius:10px;
+  position:relative;
+  background:hsla(43,77%,57%,.2);
+  border:solid 2px hsla(43,100%,68%,1);
+  background-image:linear-gradient(hsla(43,77%,57%,0) 0%,hsla(43,77%,57%,.7) 100%);
+  text-shadow:1px 1px #000;
+}
+
+.intro header abbr {
+  z-index:200;
+}
+
+.intro header::after {
+  content:'';
+  width:506px;
+  height:60%;
+  position:absolute;
+  top:2px;
+  left:2px;
+  border-radius:5px;
+  background-image:linear-gradient(rgba(255,255,255,1) 0%,rgba(255,255,255,0) 80%);
+}
+
+.intro header::before {
+  background:#fff;
+  width:20px;
+  height:20px;
+}
+
+.intro header h1 {
+  font-size:38px;
+  margin:0px;
+}
+.intro header h2 {
+  font-size:18px;
+  margin:0px;
+}
+
+.intro .summary {
+  width:100%;
+  background-color: rgba(0,0,0,.4);
+  background-image:linear-gradient(rgba(255,255,255,.2) 0%,rgba(255,255,255,0) 80%);
+  box-shadow:0px 0px 20px #000;
+  padding:2px 0px;
+  position:relative;
+}
+
+.intro .summary p {
+  width:600px;
+  margin:10px auto;
+  font-size:12px;
+  text-align:center;
+}
+
+.intro .summary p:first-child::after {
+  content:"(links in toolbar at bottom)";
+  font-style:italic;
+}
+
+.summary, .preamble, .main {
+  margin:20px 0px;
+}
+
+.preamble h3 {
+  background:#e6b53c;
+  background-image:linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.6));
+  margin:2px;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+  padding:5px;
+  text-shadow:1px 1px #000;
+}
+
+.preamble {
+  width:500px;
+  font-size:12px;
+  margin:10px auto;
+  background:rgba(0,0,0,.5);
+  border-radius:10px;
+  padding:0px;
+  box-shadow:0px 0px 20px #000;
+  border:solid 3px #e6b53c;
+  position:relative;
+}
+
+.preamble p {
+  margin:10px;
+}
+
+.preamble::after {
+  content:'';
+  border:solid 3px #e6b53c;
+  position:absolute;
+  bottom:-15px;
+  right:-15px;
+  transform:rotate(20deg);
+  -webkit-transform:rotate(20deg);
+  width:30px;
+  height:30px;
+  border-radius:5px;
+  box-shadow:0px 0px 30px #e6b53c,inset 0px 0px 20px #e6b53c;
+  -webkit-transition:-webkit-transform 1s;
+  transition:transform 1s;
+}
+
+.preamble:hover::after {
+  transform:rotate(-80deg);
+  -webkit-transform:rotate(-70deg);
+  transition:transform 1s;
+  -webkit-transition:-webkit-transform 1s;
+}
+
+.main {
+  float:none;
+  overflow:hidden;
+  text-align:center;
+}
+
+.main div {
+  display:inline-block;
+  width:30%;
+  vertical-align:top;
+  text-align:left;
+  padding:0px;
+  margin:10px 5px;
+  border-radius:10px;
+  border:solid 2px #093299;
+  box-shadow:0px 0px 10px #000;
+  background:rgba(0,0,0,.6);
+  position:relative;
+  height:100%;
+  background-image:linear-gradient(rgba(255,255,255,0) 0%,rgba(255,255,255,.2) 400%);
+  position:relative;
+  top:0px;
+}
+
+.main div:hover {
+  top:-4px;
+  background-image:linear-gradient(rgba(255,255,255,0) 0%,rgba(255,255,255,.2) 100%);
+  transition:background-image .2s, box-shadow .2s, top .2s;
+  box-shadow:0px 0px 30px #000;
+}
+
+.main div h3 {
+  background: #093299;
+  background-image:linear-gradient(rgba(0,0,0,.0) 0%, rgba(0,0,0,.6) 100%);
+  margin:2px;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+  padding:5px;
+  text-shadow:1px 1px #000;
+}
+
+.main div:hover h3 {
+  background: #3C6BE6; 
+  background-image:linear-gradient(rgba(0,0,0,.0) 0%, rgba(0,0,0,.6) 100%);
+}
+
+.main div p {
+  margin:10px;
+}
+
+
+.main div.requirements {
+  float:none;
+  clear:both;
+  margin:0px auto;
+  width:96%;
+  min-height:auto;
+}
+
+.sidebar {
+  position:fixed;
+  width:100%;
+  height:32px;
+  right:0px;
+  bottom:0px;
+  background:rgba(0,0,0,1);
+  transition:height .1s linear,background .1s linear;
+  font-size:11px;
+  box-shadow:0px 0px 2px hsla(43,77%,57%,0.8);
+  z-index:100;
+}
+
+.sidebar:hover {
+  height:250px;
+  background:rgba(0,0,0,.95);
+  transition:height .2s ease-in,background .2s ease-in,box-shadow .2s ease-in;
+  box-shadow:0px 0px 30px hsla(43,77%,57%,0.8);
+}
+
+.sidebar::before {
+  content:"?";
+  font-size:18px;
+  width:20px;
+  height:20px;
+  margin:5px auto;
+  display:block;
+  border:solid 1px #fff;
+  text-align:center;
+  background:#000;
+  border-radius:10px;
+}
+
+.sidebar:hover::before {
+  opacity:0;
+  transition:opacity .2s ease-in,height .2s ease-in;
+  height:0px;
+}
+
+.sidebar .design-selection, .sidebar .design-archives, .zen-resources {
+  width:270px;
+  display:inline-block;
+  vertical-align:top;
+  text-align:left;
+}
+
+.sidebar .design-archives {
+  text-align:center;
+  width:200px;
+}
+
+.sidebar .design-archives li {
+  list-style-type:none;
+}
+
+.sidebar .wrapper {
+  width:100%;
+  overflow:hidden;
+  text-align:center;
+}
+
+.sidebar h3 {
+  margin-top:0px;
+  text-align:center;
+}
+
+.sidebar ul {
+  margin:10px;
+  padding:0px;
+}
+
+.sidebar ul li {
+  list-style-type:square;
+  margin:2px 0px;
+}
+
+footer {
+  position:absolute;
+  bottom:0px;
+  right:40px;
+}
+
+/* I was going to come up with a completely different look for mobile but realized that wasn't the point of this exercise. */
+
+
+@media only screen and (max-width: 800px) {
+  body {
+    font-size:10px;
+  }
+  .sidebar {
+    font-size:8px;
+  }
+  .sidebar h3 {
+    font-size:8px;
+  }
+  .intro header h1 {
+    font-size:16px;
+  }
+  .intro header h2 {
+    font-size:10px;
+  }
+  .page-wrapper {
+    width:100%;
+  }
+  .intro header {
+    width:200px;
+  }
+  .intro header::after {
+    width:206px;
+  }
+  .main div, .main div.requirements {
+    width:90%;
+    margin:20px auto;
+    display:block;
+  }
+  .preamble {
+    font-size:10px;
+    width:80%;
+  }
+  .intro .summary p {
+    font-size:9px;
+    width:80%;
+  }
+}
