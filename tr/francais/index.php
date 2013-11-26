@@ -1,8 +1,5 @@
 <?php
 
-	// set translated CSS file
-	$loadCSS = "/001/001-fr.css";
-
 	// import URLs
 	include($SERVER_ROOT . "../../includes/urls.php");
 

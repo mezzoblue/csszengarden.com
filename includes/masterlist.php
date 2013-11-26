@@ -1277,7 +1277,36 @@ $designList = array(
       "Nathan St. Pierre",
       "http://www.nathanstpierre.com",
   ),
-
+	array(
+			"214",
+			"Verde Moderna",
+			"Dave Shea",
+			"http://www.mezzoblue.com/",
+	),
+	array(
+			"215",
+			"A Robot Named Jimmy",
+			"meltmedia",
+			"http://meltmedia.com/",
+	),
+	array(
+			"216",
+			"Fountain Kiss",
+			"Jeremy Carlson",
+			"http://jeremycarlson.com.",
+	),
+	array(
+			"217",
+			"Screen Filler",
+			"Elliot Jay Stocks",
+			"http://elliotjaystocks.com/",
+	),
+	array(
+			"218",
+			"Apothecary",
+			"Trent Walton",
+			"http://trentwalton.com",
+	),
 );
 
 ?>

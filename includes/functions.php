@@ -6,6 +6,27 @@
 		return htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
 	}
 
+	// return the Typekit kit identifier or NULL when not found in the CSS
+	function getTypekitId($cssUrl) {
+		$css = false;
+
+		if (preg_match("/^http/", $cssUrl)) {
+			$css = file_get_contents($cssUrl);
+		} else if (preg_match("/\d+\/\d+.css$/", $cssUrl)) {
+			$path = realpath(__DIR__ . "/../" . $cssUrl);
+
+			if (file_exists($path)) {
+				$css = file_get_contents($path);
+			}
+		}
+
+		if ($css !== false && preg_match("/\/\*\s*TYPEKIT_KIT_ID:\s*([0-9a-z]+)\s*\*\//i", $css, $matches)) {
+			return $matches[1];
+		} else {
+			return null;
+		}
+	}
+
 	// generate the list of designs in the site navigation
 	function getDesignList($start, $count, $list, $i18nBy) {
 
@@ -76,14 +97,15 @@
 			$currentDesign = $loadCSS;
 		}
 
-	// if it is empty, assign 001
+	// if it is empty, assign 214
 	} else {
-		$currentDesign = "/001/001.css";
+		$currentDesign = "/214/214.css";
 	}
 
 
 
 
+	$typekitId = getTypekitId($currentDesign);
 
 	// determine where in the paging we should be
 	if ($thisPage) {
