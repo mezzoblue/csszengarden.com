@@ -4,6 +4,10 @@
 * The base styles apply to all browsers (including older browsers that don’t support media queries). 
 */
 
+@-ms-viewport {
+    width: device-width;
+}
+
 /** reset + basic */
 
 html,
@@ -24,7 +28,6 @@ ul,
 li {
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
 }
 
 ul, li {
@@ -34,7 +37,6 @@ ul, li {
 
 html {
     background: #000;
-    background-attachment: fixed;
 }
 
 body {
@@ -43,31 +45,17 @@ body {
     min-width: 220px;
     border: none;
     color: #fff;
-    font-size: 18px;
-    font-family: 'open_sansbold', sans-serif;
-    line-height: 23px;
-}
-
-h1,
-h2,
-h3 {
-    display: block;
-    text-align: center;
-    font-weight: bold;
+    font: 20px/23px "museo-sans", sans-serif;
 }
 
 p {
     padding: 15px 15px 0 15px;
-    text-align: justify;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+    text-align: center;
 }
 
-abbr {
-    border-bottom-width: 0;
-    font-weight: bold;
+abbr,
+acronym {
+    border-bottom: none;
 }
 
 /** $intro */
@@ -79,10 +67,8 @@ h3 {
     padding: 20px 15px 0 15px;
     color: white;
     text-align: center;
-    font-weight: normal;
-    font-size: 23px;
-    font-family: 'open_sansextrabold', sans-serif;
-    line-height: 23px;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 h1 {
@@ -91,15 +77,19 @@ h1 {
 }
 
 h2 {
-    padding-top: 20px;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 26px;
+    line-height: 26px;
 }
 
-h3 + nav,
-h3 + ul {
-    padding-top: 10px;
+h3 {
+    font-size: 23px;
+    line-height: 23px;
 }
+
+    h3 + nav,
+    h3 + ul {
+        padding-top: 5px;
+    }
 
 a {
     display: inline-block;
@@ -115,10 +105,6 @@ a {
     transition: all 0.5s ease-out;
 }
 
-.summary p + p {
-    text-align: center;
-}
-
 /** $main */
 
 .zen-validate-html,
@@ -131,60 +117,47 @@ a {
 }
 
 .zen-validate-html {
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 footer a {
     border-radius: 0;
-    background-color: transparent;
+    background-color: #000;
     color: #fff;
-    line-height: 18px;
 }
 
     footer a::after {
         display: block;
-        padding: 2px 4px;
+        margin-top: 1px;
+        padding: 1px 2px;
         border-radius: 2px;
         background: white;
         color: #000;
         content: attr(title);
-        font-size: 18px;
-        line-height: 18px;
+        line-height: 21px;
     }
 
 /** $sidebar */
 
-.wrapper li,
-.wrapper h3 {
+.wrapper li {
     display: block;
-}
-
-.design-selection li {
     padding: 10px 15px 0 15px;
-    line-height: 18px;
 }
 
-    .design-selection li a.design-name,
-    .design-archives a,
-    .zen-resources a {
-        padding: 0;
-        border-radius: 0;
-        background-color: transparent;
-        color: #fff;
-        line-height: 18px;
-    }
+.design-selection li a.design-name,
+.design-archives a,
+.zen-resources a {
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+}
 
-    .design-selection li a.designer-name {
-        display: block;
-        overflow: hidden;
-        padding: 2px 4px;
-        border-radius: 2px;
-        line-height: 18px;
-    }
-
-.design-archives ul li,
-.zen-resources ul li {
-    padding: 5px 15px 0 15px;
+.design-selection li a.designer-name {
+    display: block;
+    overflow: hidden;
+    padding: 1px 2px;
+    border-radius: 2px;
 }
 
 .design-archives a,
