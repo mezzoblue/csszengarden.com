@@ -124,7 +124,7 @@ header {
     header::before {
         top: -600px;
         height: 600px;
-        background: url(hook3.svg) no-repeat center bottom, url(layer-top.svg) no-repeat center 559px;
+        background: url(hook3.svg) no-repeat center bottom, url(layer-frame.svg) no-repeat center 559px;
         -moz-background-size: 360px auto, 450px auto;
         -o-background-size: 360px auto, 450px auto;
         -webkit-background-size: 360px auto, 450px auto;
@@ -134,7 +134,7 @@ header {
     header::after {
         bottom: -41px;
         height: 41px;
-        background: transparent url(layer-bottom.svg) no-repeat center bottom;
+        background: transparent url(layer-frame.svg) no-repeat center bottom;
         -moz-background-size: 450px auto;
         -o-background-size: 450px auto;
         -webkit-background-size: 450px auto;
@@ -212,7 +212,7 @@ h2 {
     .preamble::before {
         top: -700px;
         height: 700px;
-        background: url(hook1.svg) no-repeat center -40px, url(layer-top.svg) no-repeat center 655px;
+        background: url(hook1.svg) no-repeat center -40px, url(layer-frame.svg) no-repeat center 655px;
         -moz-background-size: auto auto, 495px auto;
         -o-background-size: auto auto, 495px auto;
         -webkit-background-size: auto auto, 495px auto;
@@ -222,7 +222,7 @@ h2 {
     .preamble::after {
         bottom: -45px;
         height: 45px;
-        background: transparent url(layer-bottom.svg) no-repeat center bottom;
+        background: transparent url(layer-frame.svg) no-repeat center bottom;
         -moz-background-size: 495px auto;
         -o-background-size: 495px auto;
         -webkit-background-size: 495px auto;
@@ -275,7 +275,7 @@ h2 {
     .summary::before {
         top: -700px;
         height: 700px;
-        background: url(hook2.svg) no-repeat center -34px, url(layer-top.svg) no-repeat center 659px;
+        background: url(hook2.svg) no-repeat center -34px, url(layer-frame.svg) no-repeat center 659px;
         -moz-background-size: auto auto, 450px auto;
         -o-background-size: auto auto, 450px auto;
         -webkit-background-size: auto auto, 450px auto;
@@ -285,7 +285,7 @@ h2 {
     .summary::after {
         bottom: -41px;
         height: 41px;
-        background: transparent url(layer-bottom.svg) no-repeat center bottom;
+        background: transparent url(layer-frame.svg) no-repeat center bottom;
         -moz-background-size: 450px auto;
         -o-background-size: 450px auto;
         -webkit-background-size: 450px auto;

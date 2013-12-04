@@ -34,7 +34,7 @@
     .main::before {
         top: -600px;
         height: 600px;
-        background: url(hook3.svg) no-repeat center bottom, url(layer-top.svg) no-repeat center 541px;
+        background: url(hook3.svg) no-repeat center bottom, url(layer-frame.svg) no-repeat center 541px;
         -moz-background-size: 520px auto, 640px auto;
         -o-background-size: 520px auto, 640px auto;
         -webkit-background-size: 520px auto, 640px auto;
@@ -58,7 +58,7 @@
         .main::after {
             bottom: -59px;
             height: 59px;
-            background: transparent url(layer-bottom.svg) no-repeat center bottom;
+            background: transparent url(layer-frame.svg) no-repeat center bottom;
             -moz-background-size: 640px auto;
             -o-background-size: 640px auto;
             -webkit-background-size: 640px auto;

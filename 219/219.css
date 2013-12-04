@@ -23,34 +23,33 @@
 *    - hook2.svg                   12 KB
 *    - hook3.svg                   14 KB
 *    - layer.svg                   24 KB
-*    - layer-bottom.svg            25 KB
+*    - layer-frame.svg             25 KB
 *    - layer-middle.svg            25 KB
-*    - layer-top.svg               25 KB
 *
 *    PNG graphics:
 *    - bg.png                     479 KB
 *
 *    CSS:
-*    - styles.css                   3 KB
-*    - keyframes.css               20 KB
-*    - base.css                     3 KB
-*    - 400.css                      4 KB
-*    - 800.css                      4 KB
-*    - 1367.css                    24 KB
-*    - 1600.css                     1 KB
-*    - fix1.css                     4 KB
-*    - fix2.css                     3 KB
-*    - bg.css                       2 KB
+*    - 219.css                      3 KB
+*    - 219-keyframes.css           20 KB
+*    - 219-base.css                 3 KB
+*    - 219-400.css                  4 KB
+*    - 219-800.css                  4 KB
+*    - 219-1367.css                24 KB
+*    - 219-1600.css                 1 KB
+*    - 219-fix1.css                 3 KB
+*    - 219-fix2.css                 3 KB
+*    - 219-bg.css                   2 KB
 *
-*    ---------------------------- 783 KB (0.76 MB)
+*    ---------------------------- 759 KB (0.74 MB)
 */
 
-@import url("keyframes.css");
-@import url("base.css");
-@import url("400.css") all and (min-width: 400px);
-@import url("800.css") all and (min-width: 800px) and (max-width: 1366px);
-@import url("1367.css") all and (min-width: 1367px);
-@import url("1600.css") all and (min-width: 1600px);
-@import url("fix1.css") all and (min-width: 1367px);
-@import url("fix2.css") all and (min-width: 1367px);
-@import url("bg.css") all and (min-width: 400px);
+@import url("219-keyframes.css");
+@import url("219-base.css");
+@import url("219-400.css") all and (min-width: 400px);
+@import url("219-800.css") all and (min-width: 800px) and (max-width: 1366px);
+@import url("219-1367.css") all and (min-width: 1367px);
+@import url("219-1600.css") all and (min-width: 1600px);
+@import url("219-fix1.css") all and (min-width: 1367px);
+@import url("219-fix2.css") all and (min-width: 1367px);
+@import url("219-bg.css") all and (min-width: 400px);

@@ -92,7 +92,7 @@ body {
     .page-wrapper::before {
         top: -600px;
         height: 600px;
-        background: url(hook3.svg) no-repeat center bottom, url(layer-top.svg) no-repeat center 567px;
+        background: url(hook3.svg) no-repeat center bottom, url(layer-frame.svg) no-repeat center 567px;
         -moz-background-size: 300px auto, 360px auto;
         -o-background-size: 300px auto, 360px auto;
         -webkit-background-size: 300px auto, 360px auto;
@@ -102,7 +102,7 @@ body {
     .page-wrapper::after {
         bottom: -33px;
         height: 33px;
-        background: transparent url(layer-bottom.svg) no-repeat center bottom;
+        background: transparent url(layer-frame.svg) no-repeat center bottom;
         -moz-background-size: 360px auto;
         -o-background-size: 360px auto;
         -webkit-background-size: 360px auto;
