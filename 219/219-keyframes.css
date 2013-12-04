@@ -1,0 +1,1359 @@
+
+@-webkit-keyframes marquee {
+    0% {
+        text-indent: 100%;
+    }
+
+    80% {
+        text-indent: 0;
+    }
+
+    100% {
+        text-indent: -200%;
+    }
+}
+
+@-moz-keyframes marquee {
+    0% {
+        text-indent: 100%;
+    }
+
+    80% {
+        text-indent: 0;
+    }
+
+    100% {
+        text-indent: -200%;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        text-indent: 100%;
+    }
+
+    80% {
+        text-indent: 0;
+    }
+
+    100% {
+        text-indent: -200%;
+    }
+}
+
+@-webkit-keyframes slider-explanation {
+    from {
+        opacity: 1;
+        visibility: visible;
+        top: -500px;
+    }
+
+    1% {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+
+    19% {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+
+    20% {
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+    }
+}
+
+@-moz-keyframes slider-explanation {
+    from {
+        opacity: 1;
+        visibility: visible;
+        top: -500px;
+    }
+
+    1% {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+
+    19% {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+
+    20% {
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+    }
+}
+
+@keyframes slider-explanation {
+    from {
+        opacity: 1;
+        visibility: visible;
+        top: -500px;
+    }
+
+    1% {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+
+    19% {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+
+    20% {
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+    }
+}
+
+@-webkit-keyframes slider-explanation-p2 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    1% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    9% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    10% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes slider-explanation-p2 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    1% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    9% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    10% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slider-explanation-p2 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    1% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    9% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    10% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes slider-explanation-p3 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    9% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    10% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    18% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    19% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes slider-explanation-p3 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    9% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    10% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    18% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    19% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slider-explanation-p3 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    9% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    10% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    18% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    19% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes slider-participation {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    18% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    19% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    46% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    47% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes slider-participation {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    18% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    19% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    46% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    47% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slider-participation {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    18% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    19% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    46% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    47% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes slider-participation-p2 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    18% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    19% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    27% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    28% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes slider-participation-p2 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    18% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    19% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    27% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    28% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slider-participation-p2 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    18% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    19% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    27% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    28% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes slider-participation-p3 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    27% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    28% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    36% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    37% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes slider-participation-p3 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    27% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    28% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    36% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    37% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slider-participation-p3 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    27% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    28% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    36% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    37% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes slider-participation-p4 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    36% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    37% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    45% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    46% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes slider-participation-p4 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    36% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    37% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    45% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    46% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slider-participation-p4 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    36% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    37% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    45% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    46% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes slider-benefits {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    45% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    46% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    55% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    56% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes slider-benefits {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    45% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    46% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    55% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    56% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slider-benefits {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    45% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    46% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    55% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    56% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes slider-requirements {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+    }
+
+    54% {
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+    }
+
+    55% {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+
+    99% {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        top: -355px;
+    }
+}
+
+@-moz-keyframes slider-requirements {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+    }
+
+    54% {
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+    }
+
+    55% {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+
+    99% {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        top: -355px;
+    }
+}
+
+@keyframes slider-requirements {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+    }
+
+    54% {
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+    }
+
+    55% {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+
+    99% {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        top: -355px;
+    }
+}
+
+@-webkit-keyframes slider-requirements-p2 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    54% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    55% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    63% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    64% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes slider-requirements-p2 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    54% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    55% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    63% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    64% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slider-requirements-p2 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    54% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    55% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    63% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    64% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes slider-requirements-p3 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    63% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    64% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    72% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    73% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes slider-requirements-p3 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    63% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    64% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    72% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    73% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slider-requirements-p3 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    63% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    64% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    72% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    73% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes slider-requirements-p4 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    72% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    73% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    81% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    82% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes slider-requirements-p4 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    72% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    73% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    81% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    82% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slider-requirements-p4 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    72% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    73% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    81% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    82% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes slider-requirements-p5 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    81% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    82% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    90% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    91% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes slider-requirements-p5 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    81% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    82% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    90% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    91% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slider-requirements-p5 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    81% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    82% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    90% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    91% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes slider-requirements-p6 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    90% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    91% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    99% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes slider-requirements-p6 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    90% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    91% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    99% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slider-requirements-p6 {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    90% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    91% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    99% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+

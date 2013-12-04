@@ -1,0 +1,119 @@
+/**
+* all and (min-width: 400px)
+*
+* Anything more than 400px.
+*/
+
+html,
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    overflow: hidden;
+    background: #333 url(bg.png) no-repeat right bottom;
+    background-attachment: fixed;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+body {
+    background: url(bg1.svg) no-repeat left top, url(bg2.svg) no-repeat right top;
+    background-color: transparent;
+    background-attachment: fixed, fixed;
+    -moz-background-size: auto 100%, auto 100%;
+    -o-background-size: auto 100%, auto 100%;
+    -webkit-background-size: auto 100%, auto 100%;
+    background-size: auto 100%, auto 100%;
+}
+
+@media all and (min-height: 800px) {
+    body {
+        background: transparent url(bg2.svg) no-repeat right top;
+        background-attachment: fixed;
+        -moz-background-size: auto 75%;
+        -o-background-size: auto 75%;
+        -webkit-background-size: auto 75%;
+        background-size: auto 75%;
+    }
+}
+
+@media all and (min-height: 1366px) {
+    body {
+        -moz-background-size: auto 50%;
+        -o-background-size: auto 50%;
+        -webkit-background-size: auto 50%;
+        background-size: auto 50%;
+    }
+}
+
+@media all and (max-device-width: 600px) {
+    body {
+        background: transparent url(bg2.svg) no-repeat right -1px;
+        background-attachment: fixed;
+        -moz-background-size: auto 75%;
+        -o-background-size: auto 75%;
+        -webkit-background-size: auto 75%;
+        background-size: auto 75%;
+    }
+}
+
+.page-wrapper {
+    position: relative;
+    margin: 120px auto 200px auto;
+    padding: 0 50px 20px 50px;
+    width: 260px;
+    background: url(layer-middle.svg) repeat-y center top;
+    -moz-background-size: 360px auto;
+    -o-background-size: 360px auto;
+    -webkit-background-size: 360px auto;
+    background-size: 360px auto;
+    -moz-transition: margin 1s ease-out;
+    -o-transition: margin 1s ease-out;
+    -webkit-transition: margin 1s ease-out;
+    transition: margin 1s ease-out;
+}
+
+    .page-wrapper::before,
+    .page-wrapper::after {
+        position: absolute;
+        left: 0;
+        width: 360px;
+        content: '';
+    }
+
+    .page-wrapper::before {
+        top: -600px;
+        height: 600px;
+        background: url(hook3.svg) no-repeat center bottom, url(layer-frame.svg) no-repeat center 567px;
+        -moz-background-size: 300px auto, 360px auto;
+        -o-background-size: 300px auto, 360px auto;
+        -webkit-background-size: 300px auto, 360px auto;
+        background-size: 300px auto, 360px auto;
+    }
+
+    .page-wrapper::after {
+        bottom: -33px;
+        height: 33px;
+        background: transparent url(layer-frame.svg) no-repeat center bottom;
+        -moz-background-size: 360px auto;
+        -o-background-size: 360px auto;
+        -webkit-background-size: 360px auto;
+        background-size: 360px auto;
+    }
+
+/** $intro */
+
+h1 {
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}

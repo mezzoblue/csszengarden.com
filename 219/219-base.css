@@ -1,0 +1,167 @@
+/**
+* base
+*
+* The base styles apply to all browsers (including older browsers that don’t support media queries). 
+*/
+
+@-ms-viewport {
+    width: device-width;
+}
+
+/** reset + basic */
+
+html,
+body,
+div,
+section,
+header,
+h1,
+h2,
+h3,
+abbr,
+p,
+a,
+footer,
+aside,
+nav,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    display: block;
+    list-style: none;
+}
+
+html {
+    background: #000;
+}
+
+body {
+    overflow: auto;
+    padding: 0 0 25px 0;
+    min-width: 220px;
+    border: none;
+    color: #fff;
+    font: 20px/23px "museo-sans", sans-serif;
+}
+
+p {
+    padding: 15px 15px 0 15px;
+    text-align: center;
+}
+
+abbr,
+acronym {
+    border-bottom: none;
+}
+
+/** $intro */
+
+h1,
+h2,
+h3 {
+    display: block;
+    padding: 20px 15px 0 15px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 46px;
+    line-height: 46px;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+h3 {
+    font-size: 23px;
+    line-height: 23px;
+}
+
+    h3 + nav,
+    h3 + ul {
+        padding-top: 5px;
+    }
+
+a {
+    display: inline-block;
+    padding: 0 4px;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    line-height: 21px;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+/** $main */
+
+.zen-validate-html,
+.zen-validate-css,
+.zen-license,
+.zen-github,
+.zen-accessibility {
+    display: block;
+    padding: 10px 15px 0 15px;
+}
+
+.zen-validate-html {
+    padding-top: 15px;
+}
+
+footer a {
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+    footer a::after {
+        display: block;
+        margin-top: 1px;
+        padding: 1px 2px;
+        border-radius: 2px;
+        background: white;
+        color: #000;
+        content: attr(title);
+        line-height: 21px;
+    }
+
+/** $sidebar */
+
+.wrapper li {
+    display: block;
+    padding: 10px 15px 0 15px;
+}
+
+.design-selection li a.design-name,
+.design-archives a,
+.zen-resources a {
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+}
+
+.design-selection li a.designer-name {
+    display: block;
+    overflow: hidden;
+    padding: 1px 2px;
+    border-radius: 2px;
+}
+
+.design-archives a,
+.zen-resources a {
+    display: block;
+    text-align: center;
+}

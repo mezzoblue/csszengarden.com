@@ -1,0 +1,89 @@
+/**
+* all and (min-width: 400px)
+*
+* Anything more than 400px.
+*/
+
+html[lang="zh-tw"] body {
+    background-color: rgba(0,30,0,.1);
+}
+
+html[lang="nl"] body {
+    background-color: rgba(0,30,30,.1);
+}
+
+html[lang="fr"] body {
+    background-color: rgba(30,30,0,.1);
+}
+
+html[lang="ru"] body {
+    background-color: rgba(30,0,30,.1);
+}
+
+html[lang="cs"] body {
+    background-color: rgba(30,0,0,.1);
+}
+
+html[lang="da"] body {
+    background-color: rgba(0,15,30,.1);
+}
+
+html[lang="de"] body {
+    background-color: rgba(0,0,30,.1);
+}
+
+html[lang="es"] body {
+    background-color: rgba(15,0,30,.1);
+}
+
+html[lang="fi"] body {
+    background-color: rgba(30,15,30,.1);
+}
+
+html[lang="el"] body {
+    background-color: rgba(30,0,15,.1);
+}
+
+html[lang="in"] body {
+    background-color: rgba(5,15,30,.1);
+}
+
+html[lang="it"] body {
+    background-color: rgba(0,0,15,.1);
+}
+
+html[lang="ja"] body {
+    background-color: rgba(0,15,15,.1);
+}
+
+html[lang="ko"] body {
+    background-color: rgba(30,30,15,.1);
+}
+
+html[lang="hu"] body {
+    background-color: rgba(30,0,0,.1);
+}
+
+html[lang="no"] body {
+    background-color: rgba(0,0,30,.1);
+}
+
+html[lang="pl"] body {
+    background-color: rgba(30,0,30,.1);
+}
+
+html[lang="pt-br"] body {
+    background-color: rgba(15,0,0,.1);
+}
+
+html[lang="ro"] body {
+    background-color: rgba(30,15,0,.1);
+}
+
+html[lang="sv"] body {
+    background-color: rgba(0,15,30,.1);
+}
+
+html[lang="tr"] body {
+    background-color: rgba(30,0,30,.1);
+}
