@@ -1271,12 +1271,6 @@ $designList = array(
 			"Eric Stoltz",
 			"http://www.ericstoltz.com/",
 	),
-	array(
-			"ontheroad",
-			"On the Road",
-			"Steffen Knoeller",
-			"http://steffen-knoeller.de/",
-	),
 
 );
 
