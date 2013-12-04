@@ -63,7 +63,7 @@ header h2 {
 	display: none;
 	}
 
-.summary p.p2 {
+.summary p:last-child {
 	padding-left: 5px;
 	color: #555;
 	font: 9px Verdana, Arial, Sans-Serif;
@@ -71,12 +71,12 @@ header h2 {
 	display: inline;
 	}
 
-.summary p.p2 a, a {
+.summary p:last-child a, a {
 	color: #777;
 	text-decoration: none;
 	}
 
-.summary p.p2 a:hover, a:hover {
+.summary p:last-child a:hover, a:hover {
 	color: #36c;
 	}
 
@@ -102,7 +102,7 @@ header h2 {
 	background: #ddd url(1.gif) no-repeat left top;
 	}
 
-.preamble p.p3 {
+.preamble p:nth-child(4) {
 	padding: 0 10px 10px 10px;
 	}
 
@@ -116,8 +116,10 @@ header h2 {
 	width: 510px;
 	}
 
-.preamble h3 span, .supporting h3 span, .explanation h3 span {
-	display: none;
+.preamble h3, .supporting h3, .explanation h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .explanation {
@@ -139,7 +141,7 @@ header h2 {
 	background: #ddd url(2.gif) no-repeat left top;
 	}
 
-.explanation p.p2 {
+.explanation p:nth-child(3) {
 	padding: 0 10px 10px 10px;
 	}
 
@@ -211,8 +213,10 @@ header h2 {
 	height: 20px;
 	}
 
-.design-selection h3 span, #lfavorites  h3 span, .design-archives  h3 span, .zen-resources  h3 span {
-	display: none;
+.design-selection h3, .design-archives h3, .zen-resources h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 #lfavorites  h3 {

@@ -1,0 +1,86 @@
+/* css Zen Garden submission 109 - 'Pneuma', by Adam Polselli, http://www.adampolselli.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Adam Polselli */
+/* Added: June 21st, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* basic elements -------------------------------------*/
+
+a { font-weight: bold; }
+a:link, a:visited { text-decoration: none; color: #333; }	
+a:hover, a:active { text-decoration: underline; color: #F36; }
+
+acronym { border: none; cursor: help; }
+
+body { background: #414141 url(pagebg.gif) repeat-y top center; font: 69%/1.5em 'Lucida Sans Unicode', 'Lucida Grande', verdana, arial, sans-serif; color: #333; margin: 0; padding: 0; text-align: center; }
+
+p { margin: 0 0 10px; }
+
+/* specific divs --------------------------------------*/
+
+#container { position: relative; background: transparent; margin: 0 auto; text-align: justify; width: 600px; }
+#container h3 { font-size: 110%; font-weight: bold; margin-bottom: 10px; margin-top: 10px; }
+
+#pageHeader { margin: 0; padding-top: 15px; height: 300px; background: #FFF url(header.jpg) no-repeat bottom; border-bottom: 15px solid #FFF; }
+#pageHeader h1, #pageHeader h2 { margin: 0; padding: 0; display: none; }
+
+#quickSummary { position: absolute; bottom: 0; right: 0; z-index: 2; width: 170px; padding: 0 6px 5px; margin: 0; }
+#quickSummary a { color: #377774; }
+#quickSummary p { font-size: 90%; text-align: left; color: #377774; margin: 0; }
+#quickSummary p.p1 { margin: 0; padding: 0; display: none; }
+
+#preamble { background: url(preamblebg.gif) repeat-y; position: absolute; top: 330px; right: 0; z-index: 2; width: 190px; font-size: 90%; color: #FFF; text-align: left; border-bottom: 15px solid #FFF; line-height: 14px; }
+#preamble p { margin: 0 17px 15px 15px; }
+#preamble h3 { height: 58px; margin: 0; padding: 0; background: url(preambleheader.jpg) no-repeat top; }
+#preamble h3 span { margin: 0; padding: 0; display: none; }
+
+#supportingText { margin: 0 205px 0 0; background: #D8FBFC url(suptextbg.gif) repeat-y; }
+#supportingText p { margin: 0 20px 15px 20px; }
+
+#explanation h3 { height: 46px; margin: 0; padding: 0; background: url(explanation.gif) no-repeat top; }
+#explanation h3 span { margin: 0; padding: 0; display: none; }
+
+#participation h3 { height: 37px; margin: 0; padding: 0; background: url(participation.gif) no-repeat top left; }
+#participation h3 span { margin: 0; padding: 0; display: none; }
+
+#benefits h3 { height: 37px; margin: 0; padding: 0; background: url(benefits.gif) no-repeat top left; }
+#benefits h3 span { margin: 0; padding: 0; display: none; }
+
+#requirements h3 { height: 37px; margin: 0; padding: 0; background: url(requirements.gif) no-repeat top left; }
+#requirements h3 span { margin: 0; padding: 0; display: none; }
+
+#footer { background: #999 url(footerbg.gif) repeat-y 0 0; border-top: 15px solid #FFF; padding: 10px 15px 10px 10px; text-align: right; margin: 0; }
+#footer a { margin-left: 20px; color: #CCC; }
+#footer a:hover, #footer a:active { color: #FFF; }
+
+#linkList { background: transparent; padding: 0; margin: 0; width: 190px; position: absolute; top: 704px; right: 0; font-size: 90%; }
+
+#linkList ul { margin: 0; padding: 0; list-style: none; }
+#lselect ul, #larchives ul, #lresources ul { margin-top: -10px; margin-bottom: -10px; }
+#linkList li { display: block; padding: 8px 0 7px 12px; margin: 0; line-height: 160%; border-bottom: 1px solid #FFF; }
+
+#linkList li a { color: #333; font: bold 110% arial, helvectica, sans-serif; }
+#linkList li:hover { background: url(selecthoverbg.gif) 0 0; }
+#linkList li:hover a { color: #FFF; }
+
+#lselect { color: #377774; }
+#lselect li:hover { background: url(selecthoverbg.gif); color: #FFB9CB; }
+#lselect li a { text-transform: uppercase; font: bold 110% arial, helvectica, sans-serif; display: block; margin: 0; padding: 0; }
+#lselect li:hover a { color: #FFF; }
+#lselect li a.c:link, #lselect li a.c:visited {	display: inline; font-weight: normal; text-transform: none; font-size: 100%; color: #377774; }
+#lselect li:hover a.c { color: #FFB9CB; }
+
+h3.select { height: 29px; margin: 0; padding: 0; background: url(select.gif) no-repeat; }
+h3.select span { margin: 0; padding: 0; display: none; }
+
+h3.archives { height: 30px; margin: 0; padding: 0; background: url(archives.gif) no-repeat; }
+h3.archives span { margin: 0; padding: 0; display: none; }
+
+h3.resources { height: 26px; margin: 0; padding: 0; background: url(resources.gif) no-repeat; }
+h3.resources span { margin: 0; padding: 0; display: none; }

@@ -107,7 +107,7 @@ a:active {
 /* --- intro --- */
 
 .intro {
-	background: url(images/intro_bg.jpg) repeat-y left;
+	background: url(intro_bg.jpg) repeat-y left;
 	padding: 0px;
 	margin: 0px;
 	width: 760px;	
@@ -116,7 +116,7 @@ a:active {
 /* --- pageHeader --- */
 
 header {
-	background: url(images/header_bg.jpg) no-repeat;
+	background: url(header_bg.jpg) no-repeat;
 	padding: 0px;
 	margin: 0px;
 	width: 760px;
@@ -130,11 +130,11 @@ header h2 {
 
 /* --- quickSummary --- */	
 
-.summary p.p1 {
+.summary p:first-child {
 	display: none;
 	}
 
-.summary p.p2 {
+.summary p:last-child {
 	font-size: 11px;
 	color: #ccc; 
 	position: absolute;
@@ -142,14 +142,14 @@ header h2 {
 	left: 2px;	
 	}
 
-.summary p.p2 a:link, 
-.summary p.p2 a:visited { 
+.summary p:last-child a:link, 
+.summary p:last-child a:visited { 
 	text-decoration: underline; 
 	color: #ccc;
 	}
 
-.summary p.p2 a:hover, 
-.summary p.p2 a:active { 
+.summary p:last-child a:hover, 
+.summary p:last-child a:active { 
 	text-decoration: none; 
 	color: #ccc;
 	}
@@ -157,19 +157,19 @@ header h2 {
 /* --- preamble --- */
 
 .preamble h3 {
-	background: url(images/preamble.jpg) no-repeat; 
+	background: url(preamble.jpg) no-repeat; 
 	padding: 0px;
   	margin: 0px;
 	width: 560px;
   	height: 147px;  	
-	}
 
-.preamble h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .preamble {
-	background: url(images/preamble_bg.jpg) no-repeat top;
+	background: url(preamble_bg.jpg) no-repeat top;
 	padding: 0px;
 	width: 560px; 
 	}
@@ -184,18 +184,18 @@ header h2 {
 	color: #444444;	
 	}
 
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	padding: 10px 85px 10px 86px; 
 	margin: -100px 0px 0px 0px;	
 	}
 
-.preamble p.p2 {
+.preamble p:nth-child(3) {
 	padding: 0px 85px 20px 86px; 
 	margin: 0px;	
 	}
 
-.preamble p.p3 {   
-	background: url(images/preamble_img.jpg) no-repeat bottom;
+.preamble p:nth-child(4) {   
+	background: url(preamble_img.jpg) no-repeat bottom;
 	padding: 0px 85px 60px 280px;  
 	margin: 0px;	
 	}
@@ -203,7 +203,7 @@ header h2 {
 /* --- supporting text --- */ 
  
 .supporting {
-	background: url(images/st_bg.jpg) repeat-y;
+	background: url(st_bg.jpg) repeat-y;
 	position: relative;
 	padding: 0px;	
 	width: 560px;   	
@@ -212,19 +212,19 @@ header h2 {
 /* --- explanation --- */
 
 .explanation h3 {
-	background: url(images/trans_prea_expl.jpg) no-repeat; 
+	background: url(trans_prea_expl.jpg) no-repeat; 
 	padding: 0px;
  	margin: 0px;
 	width: 560px;
   	height: 153px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
-.explanation h3 span {
-	display: none;
-	} 
-
 .explanation {
-	background: url(images/explanation_bg.jpg) no-repeat top; 
+	background: url(explanation_bg.jpg) no-repeat top; 
 	padding: 0px;
   	margin: 0px;
 	width: 560px; 
@@ -240,13 +240,13 @@ header h2 {
 	color: #444444;	
 	}
 
-.explanation p.p1 {
+.explanation p:nth-child(2) {
 	padding: 10px 115px 10px 106px; 
   	margin: 0px;  	
 	}
 
-.explanation p.p2 {
-	background: url(images/explanation_img.jpg) no-repeat bottom;
+.explanation p:nth-child(3) {
+	background: url(explanation_img.jpg) no-repeat bottom;
 	padding: 0px 115px 50px 106px;
   	margin: 0px;	
 	}
@@ -254,18 +254,19 @@ header h2 {
 /* --- participation --- */
 
 .participation h3 {
-	background:url(images/trans_expl_part.jpg) no-repeat;
+	background:url(trans_expl_part.jpg) no-repeat;
   	padding: 0px;  	 
   	margin: 0px; 
 	height: 155px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
-.participation h3 span {
-	display: none;
-	} 
 
 .participation {
-	background: url(images/participation_bg.jpg) repeat-y; 
+	background: url(participation_bg.jpg) repeat-y; 
 	padding: 0px;
   	margin: 0px;
 	width: 560px;
@@ -281,36 +282,36 @@ header h2 {
 	color: #444444;		
 	}
 
-.participation p.p1 {
+.participation p:nth-child(2) {
 	padding: 10px 115px 10px 106px;
   	margin: 0px;   	
 	}
 
-.participation p.p2 {
+.participation p:nth-child(3) {
 	padding: 0px 115px 10px 106px;
  	margin: 0px;    	
 	}
 
-.participation p.p3 {
-	background: url(images/participation_img.jpg) no-repeat bottom;
+.participation p:nth-child(4) {
+	background: url(participation_img.jpg) no-repeat bottom;
 	padding: 0px 160px 20px 161px;	 
 	}
 
 /* --- benefits --- */
 
 .benefits h3 {
-	background: url(images/trans_part_bene.jpg) no-repeat;
+	background: url(trans_part_bene.jpg) no-repeat;
 	padding: 0px;  	
   	margin: 0px;
   	height: 147px;  	
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
-.benefits h3 span {
-	display: none;
-	} 
-
 .benefits {
-	background: url(images/benefits_bg.jpg) repeat-y; 
+	background: url(benefits_bg.jpg) repeat-y; 
 	padding: 0px;
   	margin: 0px;
 	width: 560px; 
@@ -326,7 +327,7 @@ header h2 {
 	color: #444444;		
 	}
 	
-.benefits p.p1 {
+.benefits p:nth-child(2) {
 	padding: 10px 145px 0px 146px;
 	margin: 0px;  	
 	}
@@ -334,18 +335,19 @@ header h2 {
 /* --- requirements --- */
 
 .requirements h3 {
-	background: url(images/trans_bene_requ.jpg) no-repeat; 
+	background: url(trans_bene_requ.jpg) no-repeat; 
 	padding: 0px;  	
   	margin: 0px;
   	height: 230px;  	
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
-.requirements h3 span {
-	display: none;
-	} 
 
 .requirements {
-	background: url(images/requirements.jpg) no-repeat bottom;
+	background: url(requirements.jpg) no-repeat bottom;
 	padding: 0px 0px 105px;
   	margin: 0px;
 	width: 560px; 
@@ -363,8 +365,8 @@ header h2 {
 	color: #444444;	
 	}
 
-.requirements p.p1 {
-	background: url(images/requirements_img.jpg) no-repeat top;
+.requirements p:nth-child(2) {
+	background: url(requirements_img.jpg) no-repeat top;
 	padding: 100px 105px 10px 106px;
   	margin: 0px; 	
 	}
@@ -372,7 +374,7 @@ header h2 {
 /* --- footer --- */
 
 footer {
-	background: url(images/footer_bg.jpg) repeat-y;
+	background: url(footer_bg.jpg) repeat-y;
 	font: 11px Georgia, Serif;
 	padding-top: 2px;
    	padding-left: 3px;
@@ -397,33 +399,35 @@ footer a {
 	width: 190px;	
 	}
    
-.sidebar h3 span {
-	display: none;
+.sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 	
 .sidebar .design-selection h3 {	
- 	background: url(images/header_lselect.jpg) no-repeat;
+ 	background: url(header_lselect.jpg) no-repeat;
 	padding: 0px 5px 0px 5px;
 	margin: 0px;
 	height: 70px;
 	}
 
 .sidebar .design-archives h3 {
-	background: url(images/header_larchives.jpg) no-repeat;
+	background: url(header_larchives.jpg) no-repeat;
 	padding: 0px 5px 0px 5px;
 	margin: 0px; 
 	height: 70px;	
 	}
 
 .sidebar .zen-resources h3 {
-	background: url(images/header_lresources.jpg) no-repeat;
+	background: url(header_lresources.jpg) no-repeat;
 	padding: 0px 5px 0px 5px;
 	margin: 0px; 
 	height: 70px;	
 	}
 	
 .sidebar ul {
-	background: url(images/linklist_bg.jpg) repeat-y;
+	background: url(linklist_bg.jpg) repeat-y;
 	padding: 0px 25px;
 	margin: 0px;	
 	}
@@ -471,14 +475,14 @@ a.designer-name {
 
 .design-archives,
 .design-selection {
-	background: #fff url(images/linklist_footer.jpg) no-repeat bottom;
+	background: #fff url(linklist_footer.jpg) no-repeat bottom;
    	padding: 0px 0px 127px 0px;
 	margin: 0px 0px 10px 0px;
 	width: 190px; 
 	}
 
 .zen-resources {
-	background: #fff url(images/linklist_footer_guard.jpg) no-repeat bottom;
+	background: #fff url(linklist_footer_guard.jpg) no-repeat bottom;
 	padding: 0px 0px 127px 0px;
 	margin: 0px 0px 10px 0px;
 	width: 190px;

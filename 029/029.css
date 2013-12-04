@@ -82,8 +82,10 @@ header h2 {
 	float: right;
 }
 
-header h1 span, header h2 span {
-	display:none
+header h1, header h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .summary {
@@ -104,19 +106,19 @@ header h1 span, header h2 span {
 	width:180px;
 }
 	
-.summary p.p1:first-letter {
+.summary p:first-child:first-letter {
 	padding-right:5px;
 	font-size: 300%; 
 	color:#811610;
 }
 
- .preamble p.p1:first-letter {
+ .preamble p:nth-child(2):first-letter {
 	padding-right:5px;
 	font-size: 300%; 
 	color:#811610;
 }
 	
-.summary p.p2 {
+.summary p:last-child {
 	line-height:18px;
 	font-family:verdana, arial, sans serif;
 	font-size:11px;
@@ -192,8 +194,10 @@ header h1 span, header h2 span {
 	background: transparent url(sup_h3_d.gif) no-repeat;
 }	
 
-.supporting h3 span{
-	display:none;
+.supporting h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 	
 footer { 
@@ -249,8 +253,10 @@ footer a:link, footer a:visited {
 	padding-top:5px;  
 }
 
-.sidebar h3.select span, .sidebar h3.archives span, .sidebar h3.resources span {
-	display:none
+.sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .sidebar ul {

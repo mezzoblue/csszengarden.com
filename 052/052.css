@@ -163,9 +163,10 @@ abbr {
 		padding:0;
 		
 		background: url(logo.jpg) no-repeat left top;
-	}
-	.intro h1 span {
-		display: none;	
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	.intro h2 {
 		z-index:10;
@@ -180,9 +181,10 @@ abbr {
 		padding:0;
 		
 		background: url(tagline.jpg) no-repeat left top;
-	}
-	.intro h2 span {
-		display: none;	
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	
 		.intro header {
@@ -212,7 +214,7 @@ abbr {
 			padding-right:15px;
 			
 		}
-		.intro div.summary p.p1 {
+		.intro div.summary p:first-child {
 			height:107px;
 			
 			margin-top:26px;
@@ -220,11 +222,12 @@ abbr {
 			padding-bottom:0;
 
 			background: url("a_demonstration_of.gif") no-repeat 100px 22px;
+
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 		}
-		.intro div.summary p.p1 span {
-			display:none;
-		}
-		.intro div.summary p.p2 {
+		.intro div.summary p:last-child {
 			padding-bottom:20px;
 
 			color:#aaa;
@@ -256,9 +259,10 @@ abbr {
 			padding:0;
 			
 			background: url(the_road_to_enlightenment2.gif) no-repeat left top;	
-		}
-		.intro div.preamble h3 span {
-			display:none;
+
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 		.intro div.preamble p {
 			padding-left:15px;
@@ -266,11 +270,11 @@ abbr {
 			margin-left:0px;
 			margin-right:30px;
 		}
-		.intro div.preamble p.p1 {
+		.intro div.preamble p:nth-child(2) {
 			padding-top:65px;
 			margin-top:0;
 		}
-		.intro div.preamble p.p3 {
+		.intro div.preamble p:nth-child(4) {
 			padding-bottom:30px;
 			margin-bottom:0;
 			background: url("blue_bottom.gif") no-repeat bottom left;
@@ -311,9 +315,10 @@ abbr {
 			display:block;
 			
 			background: url(so_what_is_this_about.gif) no-repeat left top;	
-		}
-		.supporting div.explanation h3 span {
-			display:none;
+
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 		
 		.supporting div.participation h3 {
@@ -322,9 +327,10 @@ abbr {
 			margin:0px 0 3px 34px;
 			
 			background: url(participation.gif) no-repeat left top;	
-		}
-		.supporting div.participation h3 span {
-			display:none;
+
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 		
 		.supporting div.benefits h3 {
@@ -333,9 +339,10 @@ abbr {
 			margin:0px 0 6px 34px;
 			
 			background: url(benefits.gif) no-repeat left top;	
-		}
-		.supporting div.benefits h3 span {
-			display:none;
+
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 		
 		.supporting div.requirements h3 {
@@ -344,9 +351,10 @@ abbr {
 			margin:0px 0 3px 34px;
 			
 			background: url(requirements.gif) no-repeat left top;	
-		}
-		.supporting div.requirements h3 span {
-			display:none;
+
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 		
 		.supporting footer {
@@ -385,19 +393,17 @@ abbr {
 			padding:0;
 
 			background: url("select_a_design2.gif") no-repeat top left;
-		}
-		.sidebar div.design-selection h3 span {
-			display:none;
+
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 		.sidebar div.design-selection li {
 			margin-bottom:2px;
 		}
 		
 		.sidebar div.design-archives h3 {
-			margin:0 0 0 0;
-		}
-		.sidebar div.design-archives h3 span {
-			display:none;
+			display: none;
 		}
 		.sidebar div.design-archives a {
 			font-weight:bold;
@@ -411,9 +417,10 @@ abbr {
 			padding:0;
 			
 			background: url("resources2.gif") no-repeat top left;
-		}
-		.sidebar div.zen-resources h3 span {
-			display:none;
+
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 		.sidebar div.zen-resources ul {
 			padding-bottom:20px;

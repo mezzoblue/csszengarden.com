@@ -1,0 +1,261 @@
+/* css Zen Garden submission 124 - 'Teatime', by Michaela Maria Sampl, http://www.freecom.at/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Michaela Maria Sampl, except background image, copyright Squidfingers - http://squidfingers.com/patterns/ */
+/* Added: Sept. 16th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+
+/* BASICS */
+body {  
+	font: 9pt/16pt Georgia, Times New Roman, Times, serif; 
+	color: #010E22; 
+	background: #F5F5E9 url(pattern.gif) repeat; 
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	text-align: center;
+	}
+p { 
+	font: 9pt/16pt Georgia, Times New Roman, Times, serif; 
+	margin-top: 0px; 
+	text-align: left;
+	color: #010E22;
+	}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #A8A439;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #6D7134;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #010E22;
+	}
+	
+
+/* LAYOUT */
+#container { 
+	text-align: left;
+	position: relative;
+	background: #fff url(teacup.jpg) no-repeat top left;
+	margin: 10px auto;
+	border: 10px solid #C7CDD8;
+	padding: 0px;
+	width: 760px; 
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 740px;
+	}
+	html>body #container {
+	width: 740px;
+}
+
+
+#intro { 
+	background: url(leaves_neu.gif) no-repeat top right;
+	margin: 0px;
+		}
+	
+#pageHeader { 
+	padding-top: 65px;
+	margin-left: 230px;
+	}
+
+#pageHeader h1 { 
+	background: transparent url(h1.gif) no-repeat top left; 
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 16px;
+	width: 192px; 
+	height: 22px;
+	}
+#pageHeader h1 span {
+	display:none
+	}
+#pageHeader h2 { 
+	background: transparent url(h2.gif) no-repeat top left; 
+	margin-left: 0px;
+	margin-bottom: 68px;
+	margin-top: 0px;
+	width: 372px; 
+	height: 33px; 
+	}
+#pageHeader h2 span {
+	display:none;
+	}
+	
+/* CONTENT */
+#quickSummary {
+	position: absolute;
+	top: 320px;
+	left: 30px;
+	width: 172px; 
+	
+	}
+#quickSummary p {
+	font: bold 8pt/16pt Georgia, Times New Roman, Times, serif; 
+	text-align:left;
+}
+
+#preamble { 
+	margin: 0px 0px 0px 230px;
+	padding: 0px 10px 0px 10px;
+	width: 450px;
+	border: 1px solid #B2B9C4;
+	border-bottom: 1px solid #F1F2EF;
+	background: #F1F2EF url(leave_piece_1.gif) no-repeat left top;
+	}
+	
+ #supportingText {
+	background: #F1F2EF url(bg.gif) no-repeat center top;
+	border: 1px solid #B2B9C4;
+	border-top: 1px solid #F1F2EF;
+	margin-left: 230px;
+	width: 470px;
+	margin-bottom: 40px;
+	padding-bottom: 10px;
+	} 
+
+#explanation {
+	margin: 0px 10px 0px 10px;
+	width: 450px;
+	}
+	
+#participation, #benefits, #requirements {
+	margin: 15px 10px 0px 10px;
+	width: 450px;
+	}
+	
+/* LINKS */	
+#linkList {
+	position: absolute;
+	top: 520px;
+	left: 30px;
+	}
+#linkList2 { 
+	font: 9px verdana, sans-serif;
+	padding: 0px; 
+	margin-top: 20px; 
+	width: 150px; 
+	}
+#linkList h3.select { 
+	background: transparent url(h3_select.gif) no-repeat top left; 
+	margin: 0px 0px 0px 0px; 
+	width: 150px; 
+	height: 36px;
+	}
+#linkList h3.select span {
+	display:none
+	}
+#linkList h3.favorites { 
+	background: transparent url(h3_favorites.gif) no-repeat top left; 
+	margin: 25px 0px 0px 0px;
+	width: 150px; 
+	height: 36px; 	
+	}
+#linkList h3.favorites span {
+	display:none
+	}
+#linkList h3.archives { 
+	background: transparent url(h3_archives.gif) no-repeat top left; 
+	margin: 25px 0px 0px 0px; 
+	width: 150px; 
+	height: 36px;
+	}
+#linkList h3.archives span {
+	display:none
+	}
+#linkList h3.resources { 
+	background: transparent url(h3_resources.gif) no-repeat top left; 
+	margin: 25px 0px 0px 0px;
+	width: 150px; 
+	height: 36px; 
+	}
+#linkList h3.resources span {
+	display:none;
+	}
+
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+	}
+#linkList li {
+	line-height: 2.5ex; 
+	list-style-type: none;
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	}
+
+#linkList li a:link { 
+	color: #A8A439;
+	font-weight: normal;
+	}
+#linkList li a:visited {
+	color: #010E22;
+	font-weight: normal;
+	}
+#linkList #lselect a.c:link { 
+	color: #383B16;
+	font-weight: normal;
+	 }
+#linkList #lselect a.c:visited { 
+	color: #010E22;
+	font-weight: normal;
+	 }
+	
+/* FOOTER */
+#footer { 
+	position: absolute;
+	top: 10px;
+	right: 50px;
+	
+	}
+#footer a:link, #footer a:visited { 
+	margin-right: 10px; 
+	}	
+
+/* HEADLINES */
+h3 { 
+	text-align: left;
+	margin-bottom: 0px; 
+	}
+h3 span { 
+	display: none;
+	}
+	
+#preamble h3 { 
+	background: transparent url(h3_the_road.gif) no-repeat top left;
+	width: 450px;
+	height: 66px;
+	margin-top: 15px;
+	}
+#supportingText h3 {
+	width: 450px;
+	height: 50px;
+	}
+	
+#explanation h3 { 
+	background: transparent url(h3_a.gif) no-repeat top left;
+	margin-top: 25px;
+	}
+#participation h3 { 
+	background: transparent url(h3_b.gif) no-repeat top left;
+	}
+#benefits h3 { 
+	background: transparent url(h3_c.gif) no-repeat top left;
+	}
+#requirements h3 { 
+	background: transparent url(h3_d.gif) no-repeat top left;
+	}
+	

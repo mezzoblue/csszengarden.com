@@ -50,10 +50,10 @@ header {
 	left: 250px;
 	z-index: 1;
 }
-	.summary p.p1 {
+	.summary p:first-child {
 	display: none;
 	}
-		.summary p.p2 {
+		.summary p:last-child {
 			width: 425px;
 			margin-top: 0px;
 			margin-left: 0px;
@@ -162,11 +162,7 @@ footer {
 
 /* --- FORMATTING HEADINGS --------------------- */
 
-h1 span {
-	display: none;
-}
-
-h2 span {
+h1, h2 {
 	display: none;
 }
 
@@ -174,40 +170,40 @@ h2 span {
 	background-image: url('heading-about.gif');
 	width: 250px;
 	height: 100px;
-}
 
-.explanation h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .participation h3 {
 	background-image: url('heading-participation.gif');
 	width: 250px;
 	height: 50px;
-}
 
-.participation h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .benefits h3 {
 	background-image: url('heading-benefits.gif');
 	width: 250px;
 	height: 60px;
-}
 
-.benefits h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .requirements h3 {
 	background-image: url('heading-requirements.gif');
 	width: 250px;
 	height: 50px;
-}
 
-.requirements h3 span {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .design-selection h3 {
@@ -229,11 +225,11 @@ p {
 	padding: 0 15px 0 15px;
 }
 
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	margin-top: -20px;
 }
 
-.preamble p.p1, .preamble p.p2, .preamble p.p3 {
+.preamble p:nth-child(2), .preamble p:nth-child(3), .preamble p:nth-child(4) {
 	color: #ffffff;
 	font-size: 1.25em;
 	font-style: italic;
@@ -243,11 +239,11 @@ p {
 	background-color: #341256;
 }
 
-.summary p.p1 {
+.summary p:first-child {
 	display: none;
 	}
 
-.summary p.p2 {
+.summary p:last-child {
 	color: #ffffff;
 	font-weight: bold;
 	text-align: right;
@@ -258,24 +254,19 @@ p {
 	color: #072849;
 }
 
-.requirements p.p5 {
+.requirements p:nth-child(6) {
 	margin-top: 0px;
 	margin-left: 0px;
 	position: absolute;
 	top: 720px;
 	left: 250px;
-	width: 500px;
-	height: 35px;
+	width: 420px;
+	height: 30px;
 	font-size: .9em;
 	background-color: #ffffff;
 	color: #471c47;
 	text-align: center;
-	padding: 0;
-	}
-
-.requirements p.p5 span {
-	position: relative;
-	top: 10px;
+	padding: 5px 40px 0 40px;
 	}
 
 footer {
@@ -320,13 +311,13 @@ a:hover {
 	color: #770e77;
 }
 
-.requirements p.p5 a {
+.requirements p:nth-child(6) a {
 	color: #336699;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-.requirements p.p5 a:hover {
+.requirements p:nth-child(6) a:hover {
 	color: #339999;
 	text-decoration: underline;
 }

@@ -28,14 +28,20 @@ a:active                  { color: #fff; }
 html>body .page-wrapper      { width:666px; } 
 .intro                    { margin: 0; padding: 0; width: 660px; height: 80px; background: transparent url(introkop.gif) no-repeat right top; }
 header h1            { margin: 0; padding: 0; width: 660px; height: 80px; background: transparent url(ietitle.gif) no-repeat left top; }
-header h1 span       { display:none; }
-header h2 span       { display:none; }
+header h1, header h2       { 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .summary             { position: absolute; top: 80px; left: 380px;  margin: 0 0 20px 0; padding: 275px 0 0 0; width: 300px; background: transparent url(boxmodel.jpg) no-repeat top left;  }
 .summary p           { margin: 0; padding: 0 0 10px 0; color: #D9BC91; font: bold 12px/15px arial; text-align: left; background: transparent; }
 .preamble                 { position: absolute; top: 80px; left: 20px; display: block; margin: 0; padding: 0 0 0 0; width: 333px; height: 258px; background: #513125 url(iebulb.jpg) no-repeat top left; }
 .preamble p               { margin: 0; padding: 0 20px 8px 20px; color: #fff; font: normal 11px/15px Georgia, serif; }
-.preamble h3              { margin: 0; border-top: 5px solid #3D2117; padding: 0; width: 333px; height: 40px; background: transparent url(ietheroad.gif) no-repeat top center; }
-.preamble h3 span         { display:none; }
+.preamble h3              { margin: 0; border-top: 5px solid #3D2117; padding: 0; width: 333px; height: 40px; background: transparent url(ietheroad.gif) no-repeat top center; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .supporting           { float: left; margin: 245px 0 0 0; border-top: 5px solid #3D2117; padding: 0 0 30px 0; width: 333px; text-align: left; background: #fff; }
 /* commented backslash hack v2 \*/
 .supporting           { float: left; margin: 260px 0 0 0; border-top: 5px solid #3D2117; padding: 0 0 30px 0; width: 333px; text-align: left; background: #fff; }
@@ -45,26 +51,44 @@ header h2 span       { display:none; }
 .supporting a:visited { color: #900; }
 .supporting a:hover, 
 .supporting a:active  { color: #30c; }
-.explanation h3           { margin: 0 0 0 20px; padding: 0; width: 280px; height: 40px; background: transparent url(iezentext1.gif) no-repeat bottom left; }
-.explanation h3 span      { display: none; }
-.explanation p.p1         { font: bold 12px/15px arial, sans-serif;  }
-.participation h3         { margin: 0 0 0 20px; width: 290px; height: 25px; background: transparent url(iezentext2.gif) no-repeat left top; }
-.participation h3 span    { display: none; }
-.benefits h3              { margin: 0 0 0 20px; width: 290px; height: 25px; background: transparent url(iezentext3.gif) no-repeat left top; }
-.benefits h3 span         { display: none; }
-.requirements h3          { margin: 0 0 0 20px; width: 290px; height: 25px; background: transparent url(iezentext4.gif) no-repeat left top; }
-.requirements h3 span     { display: none; }
+.explanation h3           { margin: 0 0 0 20px; padding: 0; width: 280px; height: 40px; background: transparent url(iezentext1.gif) no-repeat bottom left; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.explanation p:nth-child(2)         { font: bold 12px/15px arial, sans-serif;  }
+.participation h3         { margin: 0 0 0 20px; width: 290px; height: 25px; background: transparent url(iezentext2.gif) no-repeat left top; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.benefits h3              { margin: 0 0 0 20px; width: 290px; height: 25px; background: transparent url(iezentext3.gif) no-repeat left top; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.requirements h3          { margin: 0 0 0 20px; width: 290px; height: 25px; background: transparent url(iezentext4.gif) no-repeat left top; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 footer                   { border-top: 1px dotted #444; padding: 15px 0 30px 0; text-align: center; }
 footer a:link,  
 footer a:visited         { font: bold 12px/15px Georgia, serif; color: #600; background: transparent; }
 .sidebar                 { clear: both;   }
 .sidebar .wrapper                { position: absolute; top: 450px; left: 380px; width: 300px;  text-align: left; }
-.design-selection h3.select        { padding: 0 0 0 0; width: 280px; height: 40px; background: transparent url(ienavtext1.gif) no-repeat left top; }
-.design-selection h3 span          { display: none; }
-.design-archives h3.archives    { padding: 0 0 0 0; width: 280px; height: 40px; background: transparent url(ienavtext2.gif) no-repeat left top; }
-.design-archives h3 span        { display: none; }
-.zen-resources h3.resources  { padding: 0 0 0 0; width: 280px; height: 40px; background: transparent url(ienavtext3.gif) no-repeat left top; }
-.zen-resources h3 span       { display: none; }
+.design-selection h3.select        { padding: 0 0 0 0; width: 280px; height: 40px; background: transparent url(ienavtext1.gif) no-repeat left top; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.design-archives h3.archives    { padding: 0 0 0 0; width: 280px; height: 40px; background: transparent url(ienavtext2.gif) no-repeat left top; 
+}
+.zen-resources h3.resources  { padding: 0 0 0 0; width: 280px; height: 40px; background: transparent url(ienavtext3.gif) no-repeat left top; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .design-selection ul               { margin: 0; padding: 0 0 60px 0; }
 .design-archives                { margin: 0; padding: 180px 0 0 0; width: 300px; vertical-align: bottom; background: transparent url(ieboxes.gif) no-repeat right top; }
 .design-archives ul             { margin: 0; padding: 0 0 30px 0; }
@@ -100,14 +124,11 @@ body[id=css-zen-garden] .page-wrapper                { position: relative; margi
 body[id=css-zen-garden] .intro                    { position: absolute; top: 0; left: 0; float: none; margin: 0; width: 100%; height: 350px; background: none; }
 body[id=css-zen-garden] header               { position: absolute; top: -103px; left: 0; margin: 0;}
 body[id=css-zen-garden] header h1            { background: transparent url(zentitle.png) no-repeat top left; margin-top: 20px; width: 470px; height: 90px; float: left; }
-body[id=css-zen-garden] header h1 span       { display: none; }
-body[id=css-zen-garden] header h2 span       { display: none; }
 body[id=css-zen-garden] .summary             { position: absolute; top: 370px; left: 0; padding: 0; width: 100%; height: 100px; background: transparent url(starlogo.png) no-repeat bottom center; }
 body[id=css-zen-garden] .summary p           { margin: 0; padding: 0 0 0 20px; color: #D9BC91; font: normal 11px/14px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif; text-align: left; background: transparent; }
 body[id=css-zen-garden] .preamble                 { position: absolute; top: 30px; left: 20px; display: block; margin: 0; border: 1px dotted #fff; padding: 0;width: 196px; height: 290px; background: transparent url(blk35.png) repeat; overflow: hidden; }
 body[id=css-zen-garden] .preamble p               { margin: 0; padding: 0px 10px 5px 10px; color: #fff; font: normal 10px/13px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif; }
 body[id=css-zen-garden] .preamble h3              { border: 0; width: 196px; height: 40px; background: transparent url(theroad.png) no-repeat top left; }
-body[id=css-zen-garden] .preamble h3 span         { display: none; }
 body[id=css-zen-garden] .supporting           { position: absolute; top: 0; left: 465px; margin: 0; border: 0; padding: 0 20px 30px 20px; width: 325px; height: 320px; text-align: left; background: transparent url(maintext.png) repeat-y left top; overflow: auto; }
 body[id=css-zen-garden] .supporting p         { padding: 0; font: normal 12px/15px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif; }
 body[id=css-zen-garden] .supporting a:link,
@@ -115,14 +136,10 @@ body[id=css-zen-garden] .supporting a:visited { color: #900; }
 body[id=css-zen-garden] .supporting a:hover, 
 body[id=css-zen-garden] .supporting a:active  { color: #30c; }
 body[id=css-zen-garden] .explanation h3           { float: left; margin: 0; padding: 0 0 5px 0; width: 300px; height: 25px; background: transparent url(zentext1.png) no-repeat left top; }
-body[id=css-zen-garden] .explanation h3 span      { display: none; }
-body[id=css-zen-garden] .explanation p.p1         { font: bold 12px/15px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif;  }
+body[id=css-zen-garden] .explanation p:nth-child(2)         { font: bold 12px/15px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif;  }
 body[id=css-zen-garden] .participation h3         { float: left; margin: 0; width: 300px; height: 25px; background: transparent url(zentext2.png) no-repeat top left; }
-body[id=css-zen-garden] .participation h3 span    { display: none; }
 body[id=css-zen-garden] .benefits h3              { float: left; margin: 0; width: 300px; height: 25px; background: transparent url(zentext3.png) no-repeat top left; }
-body[id=css-zen-garden] .benefits h3 span         { display: none; }
 body[id=css-zen-garden] .requirements h3          { float: left; margin: 0; width: 300px; height: 25px; background: transparent url(zentext4.png) no-repeat top left; }
-body[id=css-zen-garden] .requirements h3 span     { display:none; }
 body[id=css-zen-garden] footer                   { border-top: 1px dotted #444; padding: 15px 0 30px 0; text-align: center; }
 body[id=css-zen-garden] footer a:link, 
 body[id=css-zen-garden] footer a:visited         { margin-right: 20px; }
@@ -138,11 +155,8 @@ body[id=css-zen-garden] .zen-resources               { position: absolute; top: 
 body[id=css-zen-garden] .zen-resources ul            { position: absolute; top: -208px; left: 0px; margin: 0; padding: 10px 0 12px 0; width: 135px; height: 328px; background: transparent url(grass.jpg) left top; }
 body[id=css-zen-garden] .zen-resources li            { margin: 0; padding: 0 10px 8px 10px; }
 body[id=css-zen-garden] .design-selection h3.select        { padding: 0 0 0 0; width: 150px; height: 126px; background: transparent url(zentab1.png) no-repeat 135px 0px; }
-body[id=css-zen-garden] .design-selection h3 span          { display: none; }
 body[id=css-zen-garden] .design-archives h3.archives    { padding: 0 0 0 0; width: 150px; height: 72px; background: transparent url(zentab2.png) no-repeat 135px 0px; }
-body[id=css-zen-garden] .design-archives h3 span        { display: none; }
 body[id=css-zen-garden] .zen-resources h3.resources  { padding: 0 0 0 0; width: 150px; height: 92px; background: transparent url(zentab3.png) no-repeat 135px 0px; }
-body[id=css-zen-garden] .zen-resources h3 span       { display: none; }
 body[id=css-zen-garden] .design-selection:hover,
 body[id=css-zen-garden] .design-selection h3:hover         { background: transparent url(zentab1.png) no-repeat 135px -126px; z-index: 300; }
 body[id=css-zen-garden] .design-archives:hover,

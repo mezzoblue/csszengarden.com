@@ -1,0 +1,253 @@
+/* css Zen Garden submission 120 - 'Medioevo', by Emiliano Pennisi, http://www.peamarte.it/01/metro.html */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Emiliano Pennisi */
+/* Added: Sept. 2nd, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* Medioevo - Realized from Emiliano Pennisi - MetroStation Deisgn - http://www.peamarte.it/01/metro.html */
+/*General*/
+body {
+	font-family: Georgia,MS Serif,New York,sans-serif;
+	margin-top: 0px;
+	font-size: 0.8em;
+	color: #fff;
+	background-color: #160605;
+	background-image: url(sfondo.gif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+p,h1,h2,h3 {
+	text-align: justify;
+	width: 325px;
+	margin: 0px 1px 5px;
+}
+
+acronym {
+	font-weight: bold;
+	font-style: oblique;
+	border: 0px; /*Only for Mozilla Firefox*/
+}
+
+/*Links and Typography*/
+a {
+	color: #B69B86;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+	border-bottom: 1px dotted #e2eff3;
+}
+
+/*End Links*/
+/******************************************************/
+/*******************Container**************************/
+/******************************************************/
+#container {
+	background-color: Black;
+	border-top: 0px;
+	border-left: 1px solid #B69B86;
+	border-right: 1px solid #B69B86;
+	border-bottom: 25px solid #B69B86;
+	padding: 10px;
+	width: 513px;
+	margin: 0% 74px 0%;
+}
+
+#quickSummary{
+	margin: 8px 0px 50px;
+}
+
+/*Hide the textual logo*/
+#pageHeader h1 span, h2 span {
+	display: none;
+}
+
+/*Hide quicksummary Text*/
+#quickSummary .p1 span{
+	display: none;
+}
+
+#quickSummary .p2 {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	background-image: url(quickbg.gif);
+	background-repeat: repeat-y;
+	height: 22px;
+}
+
+#pageHeader {
+	margin: 0;
+	height: 200px;
+	width: 513px;
+	background-image: url(logo.jpg);
+}
+
+/*Hide for image replacement*/
+#preamble h3 span {
+	display: none;
+}
+
+#explanation h3 span {
+	display: none;
+}
+
+#participation h3 span {
+	display: none;
+}
+
+#benefits h3 span {
+	display: none;
+}
+
+#requirements h3 span {
+	display: none;
+}
+
+/*End ir*/
+/******************************************************/
+/*Image Replacement*/
+#preamble h3 {
+	background-image: url(01.gif);
+	background-repeat: repeat-y;
+	height: 30px;
+}
+
+#explanation h3 {
+	background-image: url(02.gif);
+	background-repeat: repeat-y;
+	height: 30px;
+}
+
+#participation h3 {
+	background-image: url(03.gif);
+	background-repeat: repeat-y;
+	height: 30px;
+}
+
+#benefits h3 {
+	background-image: url(04.gif);
+	background-repeat: repeat-y;
+	height: 30px;
+}
+
+#requirements h3 {
+	background-image: url(05.gif);
+	background-repeat: repeat-y;
+	height: 30px;
+}
+
+/*End ir*/
+/******************************************************/
+/*List style ( menu )*/
+/*1° Replace with image replacement*/
+.select {
+	background-image: url(select_ds.gif);
+	background-repeat: no-repeat;
+	height: 30px;
+	margin: 3px;
+}
+
+/*Hide text conten*/
+#lselect .select span {
+	display: none;
+}
+
+/*2°*/
+.archives {
+	background-image: url(archives.gif);
+	background-repeat: no-repeat;
+	height: 30px;
+}
+
+#larchives .archives span {
+	display: none;
+}
+
+/*3°*/
+.resources {
+	background-image: url(resources.gif);
+	background-repeat: no-repeat;
+	height: 30px;
+	margin-left: 15px;
+}
+
+#lresources .resources span {
+	display: none;
+}
+
+/*End°*/
+#linkList ul {
+	list-style: none;
+}
+
+#linkList li a {
+	display: block;
+}
+
+#linkList li a:hover {
+	color: #666;
+	border: none;
+}
+
+#linkList li a.c {
+	color: #fff;
+	font-size: 9px;
+	font-weight: normal;
+	display: inline;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+/*Positioning of menu and list to right*/
+#linkList {
+	position: absolute;
+	top: 300px;
+	margin-left: 342px;
+	background: url(menubg.gif) repeat-y;
+	width: 198px;
+}
+
+#linkList li {
+	height: 28px;
+	margin: 0 0 0;
+	padding: 5px;
+	border-bottom: 1px dotted #B69B86;
+}
+
+#linkList2 {
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #B69B86;
+	width: 150px;
+}
+
+#footer {
+	background: url(footerlogo.gif) repeat-y top right; /*No repeat the image logo and  place to left*/
+	margin: 10px 35px 10px;
+	border-bottom: 1px dashed #850E0E;
+	height: 100px;
+}
+
+#footer a {
+	cursor: help;
+	font: 0.8em georgia, helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #850E0E;
+	font-weight: bold;
+}
+
+#footer a:hover {
+	color: #fff;
+	border: 0px;
+	font-weight: bold;
+}
+/*End of CSS*/
+

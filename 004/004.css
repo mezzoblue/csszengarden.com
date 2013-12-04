@@ -69,9 +69,10 @@ header h1 {
 	position: absolute;
 	top: 185px;
 	right: 10px;
-	}
-header h1 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 {
 	background: transparent url(h2.gif) no-repeat top left;
@@ -80,12 +81,13 @@ header h2 {
 	position: absolute;
 	top: 230px;
 	right: 12px;
-	}
-header h2 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
-.summary .p1 {
+.summary p:first-child {
 	font: 11px tahoma, verdana, sans-serif;
 	line-height: 18px;
 	color: #7799AC;
@@ -96,18 +98,18 @@ header h2 span {
 	right: 10px;
 	width: 150px;
 	}
-.summary .p2 {
+.summary p:last-child {
 	font: 10px tahoma, verdana, sans-serif;
 	color: #7799AC;
 	position: absolute;
 	top: 32px;
 	right: 5px;
 	}
-.summary .p2 a:link, .summary .p2 a:visited {
+.summary p:last-child a:link, .summary p:last-child a:visited {
 	color: #7799AC;
 	text-decoration: underline;
 	}
-.summary .p2 a:active, .summary .p2 a:hover {
+.summary p:last-child a:active, .summary p:last-child a:hover {
 	color: #8AF44F;
 	}
 
@@ -120,28 +122,41 @@ header h2 span {
 	right: 0px;
 	width: 150px;
 	}
-.sidebar .wrapper h3 span {
-	display: none;
-	}
 .sidebar .wrapper h3.select {
 	background: transparent url(h3.gif) no-repeat top left;
 	width: 157px;
 	height: 14px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar .wrapper h3.favorites{
 	background: transparent url(h5.gif) no-repeat top left;
 	width: 157px;
 	height: 14px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar .wrapper h3.archives{
 	background: transparent url(h6.gif) no-repeat top left;
 	width: 157px;
 	height: 14px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar .wrapper h3.resources{
 	background: transparent url(h4.gif) no-repeat top left;
 	width: 157px;
 	height: 14px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar li {
 	font-size: 10px;

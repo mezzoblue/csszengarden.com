@@ -1,0 +1,215 @@
+/* css Zen Garden submission 190 - 'Lonely Flower', by Mitja Ribic, http://mitja.impresija.com/mic/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Mitja Ribic */
+/* Added: November 10th, 2005 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* ----- BASICS ELEMENTS ------------------------------------------------------------------------------------------------- */
+body { 
+	font: Tahoma;
+	color: #999999;
+	background-color: #626262; 
+	margin: 0px; 
+	padding: 0px;
+	text-align: center;
+	}
+
+p { 
+	padding: 0px;
+	font: 11px Tahoma; 
+	margin-top: 8px;
+	margin-bottom: 15px;
+	text-align: justify;
+	}
+
+h1,h2,h3 {
+	margin-top: 15px;
+	padding: 0px;
+	}
+
+h3 { 
+	font: bold 11pt Tahoma;
+	margin-bottom: 0px; 
+	color: #6AA14E;
+	padding-bottom: 0px;
+	}
+
+#supportingText h3 span,#preamble h3 span {
+	padding-bottom: 4px;
+	background: url(flower3.gif) no-repeat 0 0;
+	padding-left: 24px;
+	}
+
+#linkList h3 span {
+	padding-bottom: 4px;
+	background: url(flower2.gif) no-repeat 0 30%;
+	padding-left: 14px;
+	}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #7F7F7F;
+	}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: line-through; 
+	color: #7F7F7F;
+	}
+
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #3C9A35;
+	}
+acronym {
+	font-weight: bold;
+	border-bottom: 1px dotted #bbbbbb;
+	}
+
+/* ----- LAYOUT ------------------------------------------------------------------------------------------------------ */
+#container { 
+	background: url(bg_main.gif) repeat-y; 
+	width: 569px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	padding-top: 0px;
+	text-align: left;
+	position: relative;
+	}
+
+		#pageHeader { 
+			background: url(bg_header.jpg) no-repeat right top; 
+			width: 378px;
+			height: 217px;
+			float: left;
+			}
+
+		#quickSummary { 
+			background: url(bg_header2.jpg) no-repeat left top; 
+			width: 180px;
+			height: 217px;
+			float: right;
+			}
+
+		#preamble {
+			margin-left: 31px;
+			padding: 20px;
+			padding-top: 1px;
+			padding-bottom: 30px;
+			width: 306px;
+			clear: both;
+			background: url(bg_divide.gif) no-repeat bottom;
+			}
+
+#supportingText {
+	margin-left: 31px;
+	padding: 0px 20px;
+	width: 306px;
+	position: relative;
+	}
+
+#preamble h3 {
+	margin-top: 20px;
+	}
+
+#linkList {
+	width: 148px;
+	font: 10px Tahoma; 
+	position: absolute;
+	top: 217px;
+	left: 389px;
+	margin: 0px;
+	padding: 0px;
+	}
+
+#footer {
+	text-align: center;
+	font: bold 10px Tahoma;
+	padding: 20px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	border-top: 1px dashed #dddddd; 
+	}
+
+/* ----- OTHER ------------------------------------------------------------------------------------------------- */
+
+#lselect,#larchives,#lresources {
+	padding: 0px 15px 45px 15px;
+	margin: 0px;
+	background: url(bg_divide1.gif) no-repeat bottom center;
+	}
+
+#explanation,#participation,#benefits,#requirements {
+	margin-top: 0px;
+	padding-top: 0px;
+	}
+
+#explanation h3 span {
+	margin-top: 20px;
+	}
+
+#linkList h3 {
+	font-size: 11px;
+	padding: 3px 3px 3px 1px;
+	color: #E98523;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	}
+
+#lselect ul, #larchives ul, #lresources ul {
+	list-style-type: none;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	}
+
+#lselect li, #larchives li, #lresources li {
+	padding: 5px 0px;
+	background: url(bullet.gif) no-repeat 0 50%;
+	}
+
+#lselect li a {
+	display: block;
+	}
+
+#lselect li a.c {
+	display: inline;
+	}
+
+#linkList #lselect ul li {
+    border-bottom: 1px solid #EEEEEE;
+    display: block;
+    padding: 5px 0 5px 15px;
+    }
+
+#linkList #larchives ul li {
+    border-bottom: 1px solid #EEEEEE;
+    display: block;
+    padding: 5px 0 5px 15px;
+    }
+
+#linkList #lresources ul li {
+    border-bottom: 1px solid #EEEEEE;
+    display: block;
+    padding: 5px 0 5px 15px;
+    }
+
+#pageHeader h1 span,#pageHeader h2 span,#quickSummary p.p1 {
+	display: none;
+	}
+
+#quickSummary p.p2 {
+	text-align: left;
+	color: #ffffff;
+	font: 11px Tahoma;
+	width: 120px;
+	padding: 145px 0px 0px 15px;
+	}

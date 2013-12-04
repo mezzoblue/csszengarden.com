@@ -1,0 +1,261 @@
+/* css Zen Garden submission 180 - 'Vertigo', by Antonio Cella, http://www.digitalink.it/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Antonio Cella */
+/* Added: September 1st, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* GENERAL STYLES */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(bck.jpg) no-repeat top left;
+  }
+
+h1, h2{
+  margin: 0;
+  padding: 0;
+  }
+
+h3 {
+  margin: 3px 0 3px 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 500;
+  background: none;
+  }
+
+p {
+  margin: 2px 0;
+  }
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: #000;
+	}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: #000;
+	}
+
+a:hover, a:active { 
+	text-decoration: underline; 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: #333;
+  background: #ccc;
+  }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+
+
+/* MAIN DIV STYLES*/
+
+#container {
+  margin: 0 0 20px 0;
+  padding:0;
+  background: url(bck2.jpg) no-repeat 150px 0;
+  }
+
+/* CLASS STYLES */
+
+.p1 {
+  text-indent: 33px;
+  }
+
+.p5 {
+  margin-top: 15px;
+  width: 300px;
+  text-align: left;
+  }
+
+.select {
+  margin: 3px 0 3px 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 500;
+  background: none;
+  }
+
+/* ID STYLES */
+
+#intro {
+  margin: 0;
+  padding: 0;
+  }
+
+#pageHeader {
+  margin: 0;
+  padding: 0;
+  }
+
+#quickSummary {
+  text-align: justify;
+  padding: 100px 0 0 150px;
+  width: 550px;
+  font-family: "lucida grande", verdana, tahoma, arial;
+  font-size: xx-small;
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  font-size: x-small;
+  width: 400px;
+  }
+
+html>#quickSummary {
+  font-size: x-small;
+  width: 400px;
+  }
+
+#preamble {
+  text-align: justify;
+  padding: 10px 0 0 150px;
+  width: 550px;
+  font-family: "lucida grande", verdana, tahoma, arial;
+  font-size: xx-small;
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  font-size: x-small;
+  width: 400px;
+  }
+
+html>#preable  {
+  font-size: x-small;
+  width: 400px;
+  }
+
+#preamble h3, #explanation h3, #participation h3, #benefits h3, #requirements h3 {
+  margin: 8px 0 3px 0;
+  padding: 3px 0 0 0;
+  font-size: 17px;
+  font-weight: 500;
+  background: url(piuma.gif) no-repeat top left;
+  text-indent: 33px;
+  }
+
+
+#supportingText {
+  text-align: justify;
+  padding: 0 0 0 150px;
+  width: 550px;
+  font-family: "lucida grande", verdana, tahoma, arial;
+  font-size: xx-small;
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  font-size: x-small;
+  width: 400px;
+  }
+
+html>#supportingText  {
+  font-size: x-small;
+  width: 400px;
+  }
+
+#linkList {
+  top: 170px;
+  margin-left: 588px;
+  position: absolute;
+  text-align: right;
+  font-family: "lucida grande", verdana, tahoma, arial;
+  font-size: xx-small;
+  width: 198px;
+  padding: 0 12px;
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  font-size: x-small;
+  width: 174px;
+  }
+
+html>#linkList  {
+  font-size: x-small;
+  width: 174px;
+  }
+
+#linkList a:link {
+  font-weight: normal; 
+	text-decoration: none; 
+	color: #000;
+  }
+
+#linkList a:visited { 
+	font-weight: normal; 
+	text-decoration: none; 
+	color: #000;
+	}
+
+#linkList a:hover, #linkList a:active { 
+	font-weight: normal; 
+	text-decoration: none; 
+	color: #000;
+  }
+
+#larchives, #lresources {
+  margin-top: 10px;
+  }
+
+#extraDiv1 {
+  top: 0;
+  left: 265px;
+  background: url(title2.jpg) no-repeat top left;
+  position: absolute;
+  width: 143px;
+  height: 100px;
+  }
+
+#footer {
+  text-align: center;
+  margin-top: 20px;
+  }
+
+#footer a:link {
+  width: 40px;
+  padding: 20px 15px 0 10px;
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #000;
+  }
+
+#footer a:visited { 
+	width: 40px;
+  padding: 20px 15px 0 10px;
+  font-weight: bold; 
+	text-decoration: none; 
+	color: #000;
+	}
+
+#footer a:hover, #footer a:active { 
+	width: 40px;
+  padding: 20px 15px 2px 10px;
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #333;
+  background: #fff url(svirgolata.gif) no-repeat -2px 10px ;
+  }
+
+
+/* OTHER STYLES */
+
+h1 span {
+  margin: 0;
+  padding: 0;
+  display: none;
+  }
+
+h2 span {
+  margin: 0;
+  padding: 0;
+  display: none;
+  }
+

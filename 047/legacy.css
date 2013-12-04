@@ -1,0 +1,183 @@
+/* css Zen Garden submission 047 - 'dusk' by Jon Hicks,  http://exp.hicksdesign.co.uk/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Jon Hicks */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* basic elements */
+body {
+	background: #fff url(border.gif) repeat-y 20px 0px;
+	margin: 0;
+	padding: 0;
+	font: 10px/1.4em Arial, Helvetica, sans-serif;
+	color: #666;
+	letter-spacing: 0.01em;
+}	
+p { 
+	margin: 0 0 0.5em 0;
+} 
+	
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}	
+
+a,
+a:link 
+a:active {
+	color: #690;
+	text-decoration:none;
+}
+
+a:visited {
+	color: #666;
+}
+
+a:hover {
+	background-color: #690;
+	color: #fff;
+}
+
+
+/* main divs  - in order of appearance */
+/* ------------------------------------------------------------ */
+
+/* big grey stripe */
+#extraDiv1 {
+	background: #666 url(end_block.gif) no-repeat right top;
+	position: absolute;
+	left: 10px;
+	top: 30px;
+	width: 780px;
+	height: 230px;
+	z-index: 1;
+}
+
+/* top left corner image of big grey stripe */
+#extraDiv1 span{
+	display: block;
+	background: url(corner.gif) no-repeat left top;
+	width: 360px;
+	height: 60px;
+}
+
+#container {
+	margin-left: 358px;
+	margin-top: 260px;
+	width: 550px;
+	}
+
+#pageHeader {
+	background: transparent url(logo.gif) no-repeat left top;
+	position: absolute;
+	left: 10px;
+	top: 137px;
+	height: 229px;
+	width: 730px;
+	text-indent: -1000em;
+	z-index: 2;	
+}
+
+#preamble {
+	color: #eee;
+	position: absolute;
+	height: 190px;
+	width: 380px;
+	left: 357px;
+	top: 70px;
+	padding-right: 20px;
+	z-index: 2;
+	overflow: auto;
+}
+#preamble h3 {
+	background: url(road.gif) no-repeat left top;	
+	height: 19px;
+	width: 216px;
+	margin: 0 0 8px 0;	
+	}
+	
+#preamble h3 span {
+	display: none;	
+	}
+
+#quickSummary  {
+	position: absolute;
+	left: 52px;
+	top: 365px;
+	height: 200px;
+	width: 230px;
+	color: #666;
+	z-index: 2;
+	line-height: 2em;
+}
+
+#quickSummary  p.p2{	
+	padding-top: 10px;
+}
+
+
+/* This is the bit that screws up in Opera 6 */
+
+#supportingText { 
+	width: 375px;
+	height: 150px;
+	overflow: auto;
+	padding: 0 20px 30px 5px;
+	z-index: 10;
+	border-left: solid 1px #999;
+}
+
+#supportingText h3 {
+	font-size: 13px;
+	color: #7fbb09;
+	border-bottom: 1px solid #ccc;
+	margin: 1.6em 0 0.8em 0;
+}
+#supportingText h3 span {
+	border-bottom: 5px solid #ccc;
+}
+
+#footer {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+
+/* links lists */
+#linkList {
+	width: 550px;
+}	
+
+#linkList li{
+	padding-left: 2px;
+}
+#linkList h3 {
+	text-indent: -1000em;
+	margin-bottom: 3px;
+	width: 116px;
+	height: 18px;
+}	
+
+/* links titles */
+h3.select {background: url(select.gif) no-repeat left top;}
+h3.archives {background: url(archives.gif) no-repeat left top;}
+h3.favourites {background: url(favourites.gif) no-repeat left top;}
+h3.resources {background: url(resources.gif) no-repeat left top;}
+
+
+
+div#lselect,
+div#lfavorites,
+div#larchives,
+div#lresources {
+	float: left;
+	border-left: solid 1px #999;
+	margin-right: 20px;
+	padding-top: 20px;
+}	

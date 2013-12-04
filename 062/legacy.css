@@ -1,0 +1,163 @@
+/* css Zen Garden submission 062 - 'Gemination' by Egor Kloos, http://www.dutchcelt.nl/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Egor Kloos */
+/* Added: November 14th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+
+/* Internet Explorer */
+
+/* basic elements */
+body                      { margin: 0 0 0 0; text-align: center; background: #600 none; }
+p                         { font: normal 11px/12px arial, sans-serif; }
+ul, li                    { font: bold 11px/19px arial, sans-serif; list-style-type: none; }
+h3                        { margin: 0; padding: 0; font: bold 10px/10px arial, sans-serif;}
+a:link                    { color: #f90; }
+a:visited                 { color: #f90; }
+a:hover, 
+a:active                  { color: #fff; }
+
+/* specific divs */
+#container                { position: relative; margin: 0 auto 0 auto; border-right: 3px solid #fff; border-left: 3px solid #fff; padding: 0 20px 0 20px; width: 706px; background: url(contentback.gif); voice-family: "\"}\""; voice-family:inherit; width: 666px; }
+html>body #container      { width:666px; } 
+#intro                    { margin: 0; padding: 0; width: 660px; height: 80px; background: transparent url(introkop.gif) no-repeat right top; }
+#pageHeader h1            { margin: 0; padding: 0; width: 660px; height: 80px; background: transparent url(ietitle.gif) no-repeat left top; }
+#pageHeader h1 span       { display:none; }
+#pageHeader h2 span       { display:none; }
+#quickSummary             { position: absolute; top: 80px; left: 380px;  margin: 0 0 20px 0; padding: 275px 0 0 0; width: 300px; background: transparent url(boxmodel.jpg) no-repeat top left;  }
+#quickSummary p           { margin: 0; padding: 0 0 10px 0; color: #D9BC91; font: bold 12px/15px arial; text-align: left; background: transparent; }
+#preamble                 { position: absolute; top: 80px; left: 20px; display: block; margin: 0; padding: 0 0 0 0; width: 333px; height: 258px; background: #513125 url(iebulb.jpg) no-repeat top left; }
+#preamble p               { margin: 0; padding: 0 20px 8px 20px; color: #fff; font: normal 11px/15px Georgia, serif; }
+#preamble h3              { margin: 0; border-top: 5px solid #3D2117; padding: 0; width: 333px; height: 40px; background: transparent url(ietheroad.gif) no-repeat top center; }
+#preamble h3 span         { display:none; }
+#supportingText           { float: left; margin: 245px 0 0 0; border-top: 5px solid #3D2117; padding: 0 0 30px 0; width: 333px; text-align: left; background: #fff; }
+/* commented backslash hack v2 \*/
+#supportingText           { float: left; margin: 260px 0 0 0; border-top: 5px solid #3D2117; padding: 0 0 30px 0; width: 333px; text-align: left; background: #fff; }
+/* end hack */ 
+#supportingText p         { clear: right; padding: 0 20px 0 20px; font: normal 12px/15px arial, sans-serif; }
+#supportingText a:link,
+#supportingText a:visited { color: #900; }
+#supportingText a:hover, 
+#supportingText a:active  { color: #30c; }
+#explanation h3           { margin: 0 0 0 20px; padding: 0; width: 280px; height: 40px; background: transparent url(iezentext1.gif) no-repeat bottom left; }
+#explanation h3 span      { display: none; }
+#explanation p.p1         { font: bold 12px/15px arial, sans-serif;  }
+#participation h3         { margin: 0 0 0 20px; width: 290px; height: 25px; background: transparent url(iezentext2.gif) no-repeat left top; }
+#participation h3 span    { display: none; }
+#benefits h3              { margin: 0 0 0 20px; width: 290px; height: 25px; background: transparent url(iezentext3.gif) no-repeat left top; }
+#benefits h3 span         { display: none; }
+#requirements h3          { margin: 0 0 0 20px; width: 290px; height: 25px; background: transparent url(iezentext4.gif) no-repeat left top; }
+#requirements h3 span     { display: none; }
+#footer                   { border-top: 1px dotted #444; padding: 15px 0 30px 0; text-align: center; }
+#footer a:link,  
+#footer a:visited         { font: bold 12px/15px Georgia, serif; color: #600; background: transparent; }
+#linkList                 { clear: both;   }
+#linkList2                { position: absolute; top: 450px; left: 380px; width: 300px;  text-align: left; }
+#lselect h3.select        { padding: 0 0 0 0; width: 280px; height: 40px; background: transparent url(ienavtext1.gif) no-repeat left top; }
+#lselect h3 span          { display: none; }
+#larchives h3.archives    { padding: 0 0 0 0; width: 280px; height: 40px; background: transparent url(ienavtext2.gif) no-repeat left top; }
+#larchives h3 span        { display: none; }
+#lresources h3.resources  { padding: 0 0 0 0; width: 280px; height: 40px; background: transparent url(ienavtext3.gif) no-repeat left top; }
+#lresources h3 span       { display: none; }
+#lselect ul               { margin: 0; padding: 0 0 60px 0; }
+#larchives                { margin: 0; padding: 180px 0 0 0; width: 300px; vertical-align: bottom; background: transparent url(ieboxes.gif) no-repeat right top; }
+#larchives ul             { margin: 0; padding: 0 0 30px 0; }
+#lresources ul            { margin: 0; padding: 0;}
+#lselect li a             { display: inline; }
+#linkList li a:link       { color: #f90; }
+#linkList li a:visited    { color: #f90; }
+#lselect li a.c           { display: inline; }
+#lselect li a.c:link      { color: #fff; }
+#lselect li a.c:visited   { color: #fff; }
+#linkList li a:hover, 
+#linkList li a:active     { color: #6CF; }
+#lselect li a.c:hover, 
+#linkList li a.c:active   { color: #6CF; }
+#extraDiv1                { }
+
+/* Mozilla - Safari - Opera */
+
+/* basic elements */
+/* Background pattern design by Travis Beckham. www.squidfingers.com */ 
+body[id=css-zen-garden]                           { margin: 100px 0 0 0; padding: 0; text-align: center; background: transparent url(squidback.gif); }
+body[id=css-zen-garden] p                         { font: normal 11px/12px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif; }
+body[id=css-zen-garden] ul, 
+body[id=css-zen-garden] li                        { font: bold 9px/10px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif; list-style-type: none; color: #fff; background: transparent; }
+body[id=css-zen-garden] h3                        { margin: 0; padding: 0; font: bold 13px/15px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif; }
+body[id=css-zen-garden] a:link                    { color: #f90; }
+body[id=css-zen-garden] a:visited                 { color: #f90; }
+body[id=css-zen-garden] a:hover, 
+body[id=css-zen-garden] a:active                  { color: #fff; }
+
+/* specific divs */
+body[id=css-zen-garden] #container                { position: relative; margin: 0 0 0 0; border-top: 5px solid #fff; border-right: 0; border-bottom: 5px solid #fff; border-left: 0; padding: 0 0 0 0; width: 100%; height: 350px; background: url(longgarden.gif) repeat-x center right; }
+body[id=css-zen-garden] #intro                    { position: absolute; top: 0; left: 0; float: none; margin: 0; width: 100%; height: 350px; background: none; }
+body[id=css-zen-garden] #pageHeader               { position: absolute; top: -103px; left: 0; margin: 0;}
+body[id=css-zen-garden] #pageHeader h1            { background: transparent url(zentitle.png) no-repeat top left; margin-top: 20px; width: 470px; height: 90px; float: left; }
+body[id=css-zen-garden] #pageHeader h1 span       { display: none; }
+body[id=css-zen-garden] #pageHeader h2 span       { display: none; }
+body[id=css-zen-garden] #quickSummary             { position: absolute; top: 370px; left: 0; padding: 0; width: 100%; height: 100px; background: transparent url(starlogo.png) no-repeat bottom center; }
+body[id=css-zen-garden] #quickSummary p           { margin: 0; padding: 0 0 0 20px; color: #D9BC91; font: normal 11px/14px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif; text-align: left; background: transparent; }
+body[id=css-zen-garden] #preamble                 { position: absolute; top: 30px; left: 20px; display: block; margin: 0; border: 1px dotted #fff; padding: 0;width: 196px; height: 290px; background: transparent url(blk35.png) repeat; overflow: hidden; }
+body[id=css-zen-garden] #preamble p               { margin: 0; padding: 0px 10px 5px 10px; color: #fff; font: normal 10px/13px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif; }
+body[id=css-zen-garden] #preamble h3              { border: 0; width: 196px; height: 40px; background: transparent url(theroad.png) no-repeat top left; }
+body[id=css-zen-garden] #preamble h3 span         { display: none; }
+body[id=css-zen-garden] #supportingText           { position: absolute; top: 0; left: 465px; margin: 0; border: 0; padding: 0 20px 30px 20px; width: 325px; height: 320px; text-align: left; background: transparent url(maintext.png) repeat-y left top; overflow: auto; }
+body[id=css-zen-garden] #supportingText p         { padding: 0; font: normal 12px/15px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif; }
+body[id=css-zen-garden] #supportingText a:link,
+body[id=css-zen-garden] #supportingText a:visited { color: #900; }
+body[id=css-zen-garden] #supportingText a:hover, 
+body[id=css-zen-garden] #supportingText a:active  { color: #30c; }
+body[id=css-zen-garden] #explanation h3           { float: left; margin: 0; padding: 0 0 5px 0; width: 300px; height: 25px; background: transparent url(zentext1.png) no-repeat left top; }
+body[id=css-zen-garden] #explanation h3 span      { display: none; }
+body[id=css-zen-garden] #explanation p.p1         { font: bold 12px/15px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif;  }
+body[id=css-zen-garden] #participation h3         { float: left; margin: 0; width: 300px; height: 25px; background: transparent url(zentext2.png) no-repeat top left; }
+body[id=css-zen-garden] #participation h3 span    { display: none; }
+body[id=css-zen-garden] #benefits h3              { float: left; margin: 0; width: 300px; height: 25px; background: transparent url(zentext3.png) no-repeat top left; }
+body[id=css-zen-garden] #benefits h3 span         { display: none; }
+body[id=css-zen-garden] #requirements h3          { float: left; margin: 0; width: 300px; height: 25px; background: transparent url(zentext4.png) no-repeat top left; }
+body[id=css-zen-garden] #requirements h3 span     { display:none; }
+body[id=css-zen-garden] #footer                   { border-top: 1px dotted #444; padding: 15px 0 30px 0; text-align: center; }
+body[id=css-zen-garden] #footer a:link, 
+body[id=css-zen-garden] #footer a:visited         { margin-right: 20px; }
+body[id=css-zen-garden] #linkList                 { position: absolute; top: 0; left: 830px; width: 150px; height: 350px; text-align: left; overflow: hidden; }
+body[id=css-zen-garden] #linkList2                { position: absolute; top: 0; left: 0px; width: 150px; height: 350px; }
+body[id=css-zen-garden] #lselect                  { position: absolute; top: 0; left: 0; width: 150px; height: 126px; z-index: 300; }
+body[id=css-zen-garden] #lselect ul               { position: absolute; top: 0; left: 0px; margin: 0; padding: 10px 0 12px 0; width: 135px; height: 328px; background: transparent url(grass.jpg) left top; }
+body[id=css-zen-garden] #lselect li               { margin: 0; padding: 0 10px 10px 10px; }
+body[id=css-zen-garden] #larchives                { position: absolute; top: 131px; left: 0; padding: 0; width: 150px; height: 72px; background: none; z-index: 200; }
+body[id=css-zen-garden] #larchives ul             { position: absolute; top: -131px; left: 0px; margin: 0; padding: 10px 0 12px 0; width: 135px; height: 328px; background: transparent url(grass.jpg) left top; }
+body[id=css-zen-garden] #larchives li             { margin: 0; padding: 0 10px 8px 10px; }
+body[id=css-zen-garden] #lresources               { position: absolute; top: 208px; left: 0; height: 92px; z-index: 100; }
+body[id=css-zen-garden] #lresources ul            { position: absolute; top: -208px; left: 0px; margin: 0; padding: 10px 0 12px 0; width: 135px; height: 328px; background: transparent url(grass.jpg) left top; }
+body[id=css-zen-garden] #lresources li            { margin: 0; padding: 0 10px 8px 10px; }
+body[id=css-zen-garden] #lselect h3.select        { padding: 0 0 0 0; width: 150px; height: 126px; background: transparent url(zentab1.png) no-repeat 135px 0px; }
+body[id=css-zen-garden] #lselect h3 span          { display: none; }
+body[id=css-zen-garden] #larchives h3.archives    { padding: 0 0 0 0; width: 150px; height: 72px; background: transparent url(zentab2.png) no-repeat 135px 0px; }
+body[id=css-zen-garden] #larchives h3 span        { display: none; }
+body[id=css-zen-garden] #lresources h3.resources  { padding: 0 0 0 0; width: 150px; height: 92px; background: transparent url(zentab3.png) no-repeat 135px 0px; }
+body[id=css-zen-garden] #lresources h3 span       { display: none; }
+body[id=css-zen-garden] #lselect:hover,
+body[id=css-zen-garden] #lselect h3:hover         { background: transparent url(zentab1.png) no-repeat 135px -126px; z-index: 300; }
+body[id=css-zen-garden] #larchives:hover,
+body[id=css-zen-garden] #larchives h3:hover       { background: transparent url(zentab2.png) no-repeat 135px -72px; z-index: 300; }
+body[id=css-zen-garden] #lresources:hover,
+body[id=css-zen-garden] #lresources h3:hover      { background: transparent url(zentab3.png) no-repeat 135px -92px; z-index: 300; }
+body[id=css-zen-garden] #linkList2 li>a           { font: bold 11px/13px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif;}
+body[id=css-zen-garden] #lselect li>a             { display:block; padding: 0 0 2px 0; font: bold 11px/13px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif;}
+body[id=css-zen-garden] #lselect li>a.c           { display:inline; font: bold 9px/10px "Lucida Grande","Lucida Sans Unicode", helvetica, arial, sans-serif; }
+body[id=css-zen-garden] #lselect li>a.c:link      { color: #fff; }
+body[id=css-zen-garden] #lselect li>a.c:visited   { color: #fff; }
+body[id=css-zen-garden] #lselect li>a.c:hover, 
+body[id=css-zen-garden] #lselect li>a.c:active    { color: #6CF; }
+body[id=css-zen-garden] #linkList li a:link       { color: #f90; }
+body[id=css-zen-garden] #linkList li a:visited    { color: #f90; }
+body[id=css-zen-garden] #linkList li a:hover, 
+body[id=css-zen-garden] #linkList li a:active     { color: #6CF; }
+body[id=css-zen-garden] #extraDiv1                { position: absolute; top: 105px; left: 200px; width: 250px; height: 350px; background: url(intro.png) no-repeat left top; }

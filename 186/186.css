@@ -46,22 +46,22 @@ header {
 	}
 .summary {
 	}
-.summary p.p1 {
+.summary p:first-child {
 	color:#7CAF6B;
 	font-style:italic;
 	font-size:14px;
 	padding-top:0 !important;
 	padding-top:12px;
 	}
-.summary p.p2 {
+.summary p:last-child {
 	padding-left:20px;
 	background:transparent url(download.gif) no-repeat top left;
 	color:#C99AAD;
 	}
-.summary p.p2 a {
+.summary p:last-child a {
 	color:#C99AAD;
 	}
-.summary p.p2 a:hover {
+.summary p:last-child a:hover {
 	color:#fff;
 	text-decoration:none;
 	background-color:#E2C0CE;
@@ -70,8 +70,10 @@ header {
 	margin-top:24px;
 	color:#999;
 	}
-h3 span {
-	display:none;
+h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .preamble h3 {
 	width:260px;

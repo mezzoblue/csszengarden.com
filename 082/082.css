@@ -92,11 +92,12 @@ header h1, header h2 {
 }
 .preamble h3 {
 	display:none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.preamble h3 span {
-	visibility:hidden;
-}
-.preamble p.p1 {
+.preamble p:nth-child(2) {
 	padding-left:30px;
 	padding-right:30px;
 	line-height:1.2em;
@@ -104,7 +105,7 @@ header h1, header h2 {
 	font-size:14pt;
 	font-family: Monotype Corsiva, Palatino, Georgia, Times New Roman, serif;
 }
-.preamble p.p2 {
+.preamble p:nth-child(3) {
 	background:url(preamble.gif) no-repeat top center;
 	padding-top:150px;
 }
@@ -118,9 +119,10 @@ header h1, header h2 {
 	margin:0;
 	background:no-repeat center;
 	height:25px;	
-}
-.supporting h3 span {
-	visibility:hidden;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .explanation {
 	padding-left:35px;

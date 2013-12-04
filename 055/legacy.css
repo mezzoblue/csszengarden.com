@@ -1,0 +1,247 @@
+/* css Zen Garden submission 056 - 'zenlightenment' by Lance Leonard, http://www.solarfrog.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Lance Leonard */
+/* Added: October 29th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+html {
+	text-align: center;
+}
+body {
+	background: #369 url(bg.gif) repeat-x top;
+	margin: 0 auto;
+	padding: 0;
+	color: #fff;
+	font-family: verdana, arial, helvetica, sans-serif;
+	width: 760px;
+	font-size:    x-small;      
+        voice-family: "\"}\"";   
+        voice-family: inherit;   
+        font-size:    small;     
+}
+
+div#container {
+	float: left;
+	margin: 160px auto 0 auto;
+	padding: 0;
+	background: url(bg_container.gif) repeat-y top center;
+	width: 760px;  /* False value for IE4-5.x/Win */	
+	text-align: left;
+}
+
+div#intro {
+	position: relative;
+	background: #369;
+	border: solid 1px #000;
+	margin: 0;
+	padding: 5px;
+	z-index: 1;
+	width: 760px;  /* False value for IE4-5.x/Win */	
+		voice-family: "\"}\""; 
+		voice-family:inherit;
+		width: 748px;	 /* Actual value for conformant browsers */
+}
+
+div#pageHeader {
+	position: absolute;
+	top: -151px;
+	left: 41px;
+	background: url(head.jpg) no-repeat top left;
+	width: 676px;
+	height: 150px;
+}
+
+div#pageHeader h1, div#pageHeader h2 {
+	display: none;
+}
+
+div#quickSummary {
+	float: left;
+	clear: both;
+	margin: 0 0 0 5px;
+	padding: 10px 0 0 0 ;
+	width: 169px;  /* False value for IE4-5.x/Win */
+	height: 169px;
+}
+
+div#quickSummary p.p1 {
+	background: url("quickSum.gif") no-repeat top left;
+	width: 159px;
+	height: 139px;
+}
+
+div#quickSummary p.p1 span {
+	display: none;
+}
+
+div#quickSummary p.p2 {
+	position: absolute;
+	top: 165px;
+	font-size: 10px;    
+	width: 169px;  
+}
+
+div#quickSummary a {
+	color: #fff;
+	font-weight: bold;
+}
+
+div#preamble {
+	margin: 0 0 0 175px;
+	padding: 5px 10px;
+	background: #69c;
+	min-height: 200px;
+	width: 555px;  /* False value for IE4-5.x/Win */
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 545px;	 /* Actual value for conformant browsers */
+}
+
+div#preamble h3 {
+	margin: 0 0 10px 0;
+	padding: 0;
+	height: 26px;
+	background: url(road.gif) no-repeat top left;
+}
+
+div#preamble h3 span {
+	display: none;
+}
+
+div#preamble p {
+	margin: 8px 0 0 0;
+	line-height: 1.5em;
+}
+
+div#supportingText {
+	float: left;
+	margin: 0;
+	padding: 20px 20px 0 66px;
+	background: url(bg_supportingText.gif) no-repeat top left;
+	width: 496px;  /* False value for IE4-5.x/Win */
+		voice-family: "\"}\""; 
+		voice-family:inherit;
+		width: 410px;	 /* Actual value for conformant browsers */
+}
+
+div#supportingText h3 {
+	margin: 25px 0 0 0;
+	padding: 0;
+	width: 409px;
+	height: 26px;
+}
+
+div#supportingText h3 span {
+	display: none;
+}
+
+div#explanation h3 {
+	margin-top: 0;
+	background: url(what.gif) no-repeat top left;
+}
+
+div#participation h3 {
+	background: url(part.gif) no-repeat top left;
+}
+
+div#benefits h3 {
+	background: url(bene.gif) no-repeat top left;
+}
+
+div#requirements h3 {
+	background: url(requ.gif) no-repeat top left;
+}
+
+div#supportingText p {
+	margin: 15px 0 0 0;
+	letter-spacing: .1em;
+	line-height: 1.2em;
+}
+
+div#supportingText a {
+	color: #036;
+}
+
+div#linkList {
+	margin-left: 496px;
+	padding: 20px;
+	background: url(bg_linkList.gif) no-repeat top left;
+}
+
+div#linkList h3 {
+	margin: 25px 0 0 0;
+	padding: 0;
+	width: 182px;
+	height: 26px;
+}
+
+div#linkList h3 span {
+	display: none;
+} 
+
+div#lselect h3 {
+	margin-top: 0px;
+	background: url(selectadesign.gif) no-repeat top left;
+}
+
+div#larchives h3 {
+	background: url(archives.gif) no-repeat top left;
+}
+
+div#lresources h3 {
+	background: url(resources.gif) no-repeat top left;
+}
+
+div#linkList a {
+	color: #369;
+	text-decoration: none;
+	font-size: small;
+	font-weight: normal;
+}
+
+div#linkList a:hover {
+	color: #036;
+}
+
+#linkList ul {
+	margin: 12px 0 15px 15px;
+	padding: 0px;
+}
+
+#linkList li {
+	list-style: none;
+	margin: 0;
+	padding: 0px;
+}
+
+#lselect li  {
+	margin: 0 0 10px 0;
+}
+
+div#lselect li a {
+  display: block;
+}
+
+div#lselect li .c {
+  display: inline;
+}
+
+div#footer {
+	border-top: solid 4px #eee;
+	background: #69c;
+	margin: 20px -22px 0 -22px;
+	padding: 10px 20px;
+	width: 450px;  /* False value for IE4-5.x/Win */
+		voice-family: "\"}\""; 
+		voice-family:inherit;
+		width: 410px;	 /* Actual value for conformant browsers */
+}
+
+div#footer a {
+	color: #fff;
+}

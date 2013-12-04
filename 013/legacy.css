@@ -1,0 +1,256 @@
+/* css Zen Garden submission 013 - 'Coastal Breeze' by Dave Shea, http://www.mezzoblue.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Dave Shea*/
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* These illustrations were done by hand in Photoshop. No photos harmed in the
+    making of this design. They were put together about two years ago for a former
+    portfolio site, and luckily I still had the .PSD on hand. It felt like a good
+    idea to convert this into a Zen Garden design. 
+	
+    It has been said that this particular combination of objects has a west-coast
+    British Columbia feel to it. I'm inclined to agree.
+    */
+
+/* basic elements */
+body { 
+	font: 8pt/16pt georgia, serif; 
+	text-align: center;
+	color: #464128;
+	background: #fff url(coastal2.jpg) bottom center no-repeat; 
+	margin: 0px;
+}
+p { 
+	font: 8pt/16pt georgia, serif; 
+	color: #464128;
+	background-color: transparent;
+	margin-top: 0px; 
+	text-align: right;
+}
+h3 {
+	font: bold 8pt/16pt georgia, serif;
+	text-align: right;
+	margin-bottom: 0px;
+	background: transparent url(futz.gif) center right no-repeat;
+	padding-right: 14px;
+}
+a {
+	color: #464128; 
+	background-color: transparent;
+}
+a:visited {
+	color: #000;
+	background-color: transparent;
+}
+a:hover {
+	color: #A29D66;
+	background-color: transparent;
+}
+acronym {
+	border-bottom: none;
+	}
+
+
+/* specific elements */
+#intro {
+	background: transparent url(coastal.jpg) top left no-repeat; 
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#pageHeader {
+	text-align: right;
+	padding: 70px 60px 0px 0px;
+}
+#pageHeader h1 {
+	background: transparent url(papier.jpg) top left no-repeat;
+	width: 192px;
+	height: 70px;
+	margin: 0px 0px 0px 448px;;
+}
+#pageHeader h1 span {
+	display: none;
+}
+#pageHeader h2 {
+	background: transparent url(beauty.gif) top left no-repeat;
+	width: 83px;
+	height: 14px;
+	margin: 0px 90px 0px 477px;
+	position: relative;
+	top: -17px;
+}
+#pageHeader h2 span {
+	display: none;
+}
+
+#preamble {
+	position: relative;
+	top: -80px;
+	padding-right: 250px;
+	padding-left: 140px;
+
+}
+#quickSummary {
+	float: right;
+	text-align: left;
+	padding-right: 70px;
+	width: 230px;
+	voice-family: "\"}\""; 
+	voice-family: inherit;
+	width: 160px;
+}
+/* over-clarified to fix IE5/Win */
+#quickSummary p, #quickSummary .p1, #quickSummary .p2 {
+	font: italic 13pt/18pt garamond, serif;
+	text-align: left;
+	color: #A29D66;
+	background-color: transparent;
+}
+#supportingText {
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 250px;
+	padding-left: 140px;
+	position: relative;
+	top: -70px;
+	width: 700px;
+	voice-family: "\"}\""; 
+	voice-family: inherit;
+	width: 310px;
+}
+
+
+
+#linkList {
+	font: italic 9pt/14pt garamond, georgia, serif;
+	text-transform: lowercase;
+	text-align: left;
+	color: #A29D66;
+	background-color: transparent;
+	position: absolute;
+	top: 33em; /*380px;*/
+	left: 0px;
+	width: 100%;
+}
+#linkList2 {
+	padding-left: 470px;
+	padding-right: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	voice-family: "\"}\""; 
+	voice-family: inherit;
+	width: 160px;
+}
+#linkList h3 {
+	font: italic 12pt/15pt garamond, georgia, serif;
+	text-transform: capitalize;
+	color: #464128; 
+	background-color: transparent;
+	text-align: left;
+	background-image: none;
+}
+#linkList a {
+	font: italic 11pt/14pt garamond, georgia, serif;
+	color: #A29D66;
+	background-color: transparent;
+	text-decoration: none;
+}
+#linkList a:hover {
+	color: #464128;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+#linkList a.c {
+	font: italic 9pt/14pt garamond, georgia, serif;
+}
+#linkList ul {
+	margin: 0px;
+	padding: 0px;
+}
+#linkList li {
+	text-align: left;
+	list-style-type: none;
+}
+
+#linkList h3 {
+	margin-right: auto;
+	margin-left: 0px;
+	margin-top: 25px;
+}
+#linkList h3 span {
+	display: none;
+}
+#linkList h3.select {
+	width: 113px;
+	height: 19px;
+	background: transparent url(h-select.gif) top left no-repeat;
+}
+#linkList h3.archives {
+	width: 134px;
+	height: 17px;
+	background: transparent url(h-archives.gif) top left no-repeat;
+}
+#linkList h3.favorites {
+	width: 76px;
+	height: 23px;
+	background: transparent url(h-favorites.gif) top left no-repeat;
+	position: relative;
+	left: -10px;
+}
+#linkList h3.resources {
+	width: 125px;
+	height: 13px;
+	background: transparent url(h-resources.gif) top left no-repeat;
+	position: relative;
+	left: -10px;
+}
+
+#footer a {
+	font: italic 11pt/14pt garamond, georgia, serif;
+	color: #A29D66;
+	background-color: transparent;
+	text-decoration: none;
+	padding-left: 15px;
+}
+#footer a:hover {
+	color: #464128;
+	background: transparent url(fleurdelis.gif) center left no-repeat;
+	text-decoration: none;
+	border-bottom: dotted 1px #464128;
+}
+
+.accesskey {
+	font-weight: bold;
+	text-decoration: underline;
+	}
+
+
+/* extra bits on the last paragraph in each text block */
+#preamble .p3, #explanation .p2, #participation .p3, #benefits .p1, #requirements .p4 {
+	background: transparent url(filler.gif) bottom center no-repeat;
+	padding-bottom: 25px;
+}
+
+#extraDiv1 {
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;	
+}
+#extraDiv1 span {
+	display: block;
+	width: 600px;
+	height: 82px;
+	margin-left: auto;
+	margin-right: auto;
+	background: transparent url(fleur.gif) top right no-repeat;
+}

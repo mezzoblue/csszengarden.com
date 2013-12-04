@@ -40,7 +40,7 @@ p{
 	padding: 0;
 }
 
-h3 {
+h1, h2, h3 {
 	display:none;
 }
 
@@ -84,8 +84,10 @@ header {
 	width:587px;
 }
 
-header span{
-	display:none;
+h1, h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;	
 }
 
 .summary {
@@ -96,7 +98,7 @@ header span{
 	padding:240px 100px 0 205px;
 }
 
-.preamble p.p1{
+.preamble p:nth-child(2){
 	margin-top: 20px;
 }
 

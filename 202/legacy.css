@@ -1,0 +1,385 @@
+/* css Zen Garden submission 202 - 'Retro Theater', by Eric Rogé, http://space-sheeps.info/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Eric Rogé */
+/* Added: December 12th, 2006 */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */   
+
+
+a,
+a:visited
+{
+	text-decoration:none;
+	color:#ccc;
+	position:relative;
+}
+a:hover
+{
+	text-decoration:underline;
+}
+div,
+p,
+body,
+ul,
+li,
+h1,
+h2,
+h3
+{
+	display:block;
+	margin:0;
+	padding:0;
+	border:none;
+}
+ul
+{
+	list-style:none;
+}
+h1,
+h2,
+h3{
+	text-transform:uppercase;
+	font-weight:normal;
+}
+acronym
+{
+	border:none;
+}
+body
+{
+	position:relative;
+	background:#000 url('cote.png') repeat-y 50% 0%;
+	text-align:center;
+	z-index:1;
+}
+#container
+{
+	position:relative;
+	width:450px;
+	margin:0 auto;
+	padding:230px 0 350px 0;
+	font-size:0.8em;
+	font-family:arial, sans serif;
+	background-color:#313131;
+	color:#b9b9b9;
+	text-align:left;
+	background-image:url('ecran.gif');
+	z-index:3;
+}
+p
+{
+	font-variant:small-caps;
+}
+#intro
+{
+	text-align:center;
+}
+#pageHeader h1 span,
+#pageHeader h2 span
+{
+	display:none;
+}
+#pageHeader h1
+{
+	width:450px;
+	height:258px;
+	background:url('titre.png') no-repeat 50% 0;
+}
+#pageHeader h2
+{
+	margin-top:-20px;
+	width:450px;
+	height:37px;
+	background:url('sous-titre.png') no-repeat 90% 0;
+}
+#quickSummary
+{
+	width:80%;
+	margin:10em auto 0 auto;
+	text-align:center;
+}
+#quickSummary p
+{
+	display:inline;
+	font-size:125%;
+	line-height:80%;
+}
+#preamble h3
+{
+	margin-top:1.5em;
+	font-size:80%;
+}
+#preamble p
+{
+	width:80%;
+	font-size:95%;
+	line-height:90%;
+	margin:0 auto;
+	margin:0 auto;
+}
+#supportingText
+{
+	float:left;
+	padding:10em 0;
+}
+#supportingText
+{
+	width:100%;
+	margin-top:2em;
+}
+#explanation
+{
+	float:left;
+	width:60%;
+}
+#explanation h3
+{
+	font-size:125%;
+	font-weight:bold;
+	text-align:right;
+	margin:0 5% 0 10%;
+	margin-bottom:-1.1em;
+}
+
+#explanation p
+{
+	line-height:4em;
+	text-align:right;
+	margin:0 5% 0 10%;
+	font-variant:normal;
+	text-transform:capitalize;
+	padding-bottom:4em;
+}
+
+#participation
+{
+	float:right;
+	width:40%;
+}
+
+#participation h3
+{
+	font-size:125%;
+	font-weight:bold;
+	margin:0 10% 0 5%;
+}
+
+#participation p
+{
+	line-height:2em;
+	margin:0 10% 0 5%;
+	font-weight:bold;
+	font-variant:normal;
+	text-transform:uppercase;
+}
+#benefits
+{
+	float:left;
+	clear:left;
+	margin-top:10em;
+	width:24%;
+}
+#benefits h3
+{
+	font-size:125%;
+	font-weight:bold;
+	margin:0 10% 0 5%;
+	text-align:center;
+	margin-bottom:1.2em;
+}
+#benefits p
+{
+	line-height:2em;
+	font-weight:bold;
+	margin:0 20px 0 5%;
+	font-variant:normal;
+	text-transform:uppercase;
+	text-align:center;
+}
+#requirements
+{
+	float:right;
+	margin:10em 0 0 0;
+	width:72%;
+	text-align:center;
+}
+#requirements h3
+{
+	font-size:125%;
+	font-weight:bold;
+	margin-bottom:1.2em;
+}
+#requirements p
+{
+	line-height:2em;
+	font-weight:bold;
+	font-variant:normal;
+	text-transform:uppercase;
+}
+#requirements .p1
+{
+	float:left;
+	/*margin-top:-1em;
+	line-height:4em;*/
+	width:20%;
+	margin-right:3%;
+	text-align:left;
+	text-transform:none;
+}
+#requirements .p2
+{
+	float:left;
+	width:36%;
+}
+#requirements .p3,
+#requirements .p4,
+#requirements .p5
+{
+	float:right;
+	width:35%;
+	text-align:right;
+	margin-right:2%;
+}
+#linkList
+{
+	clear:both;
+}
+#lselect h3,
+#larchives h3,
+#lresources h3
+{
+	padding-top:7em;
+	font-size:125%;
+	font-weight:bold;
+	text-align:center;
+	clear:both;
+}
+#lselect ul
+{
+	margin:0;
+	padding:0;
+}
+#lselect li
+{
+	position:relative;
+	width:90%;
+	margin:.5em auto;
+	padding:0;
+	color:#313131;
+	border-bottom:2px dashed #b9b9b9;
+}
+#lselect a
+{
+	position:relative;
+	top:5px;
+	padding:0 4px 0 0;
+	font-weight:bold;
+	text-transform:uppercase;
+	background:url('ecran.gif');
+}
+#lselect a.c
+{
+	position:absolute;
+	right:-1px;
+	padding:0 0 0 4px;
+}
+#larchives,
+#lresources
+{
+	clear:both;
+}
+#larchives h3,
+#lresources h3
+{
+	padding-top:6em;
+	font-size:125%;
+	font-weight:bold;
+	text-align:center;
+}
+#larchives ul,
+#lresources ul
+{
+	margin:1em 0 0 0;
+	width:100%;
+}
+#lresources ul
+{
+	padding-bottom:200px;
+	background:url('sponsorts.png') no-repeat 50% 100%;
+}
+#larchives li,
+#lresources li
+{
+	text-align:center;
+}
+#larchives a,
+#lresources a
+{
+	visibility:visible;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+#footer
+{
+	position:absolute;
+	clear:both;
+	bottom:300px;
+	left:0;
+	width:100%;
+	text-align:center;
+}
+#extraDiv1
+{
+	position:fixed !important;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:23.2% !important;
+	height:102px;
+	min-height:102px;
+	max-height:230px;
+	z-index:2;
+}
+#extraDiv1 span
+{
+	display:block;
+	position:absolute;
+	bottom:-198px;
+	left:0;
+	width:100%;
+	height:428px;
+	background:url('haut1.png') no-repeat 50% 100%;
+}
+#extraDiv2
+{
+	position:fixed !important;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:23.2% !important;
+	height:102px;
+	min-height:102px;
+	max-height:230px;
+	background:url('haut2.png') no-repeat 50% 100%;
+	z-index:4;
+}
+#extraDiv3
+{
+	position:fixed !important;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:30% !important;
+	height:110px;
+	min-height:110px;
+	max-height:318px;
+	background:url('bas.png') no-repeat 50% 0%;
+	z-index:4;
+}

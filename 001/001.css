@@ -76,7 +76,6 @@ abbr {
 	width: 100%;
 	}
 
-/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
 header h1 { 
 	background: transparent url(h1.gif) no-repeat top left;
 	margin-top: 10px;
@@ -84,9 +83,10 @@ header h1 {
 	width: 219px;
 	height: 87px;
 	float: left;
-	}
-header h1 span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header h2 { 
 	background: transparent url(h2.gif) no-repeat top left; 
@@ -95,9 +95,10 @@ header h2 {
 	width: 200px; 
 	height: 18px; 
 	float: right;
-	}
-header h2 span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 header {
 	padding-top: 20px;
@@ -149,36 +150,30 @@ footer a:link, footer a:visited {
 	margin: 10px 0 5px 0; 
 	width: 97px; 
 	height: 16px; 
-	}
-.sidebar h3.select span {
-	display:none
-	}
-.sidebar h3.favorites { 
-	background: transparent url(h4.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width: 60px; 
-	height: 18px; 
-	}
-.sidebar h3.favorites span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.archives { 
 	background: transparent url(h5.gif) no-repeat top left; 
 	margin: 25px 0 5px 0; 
 	width:57px; 
 	height: 14px; 
-	}
-.sidebar h3.archives span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .sidebar h3.resources { 
 	background: transparent url(h6.gif) no-repeat top left; 
 	margin: 25px 0 5px 0; 
 	width:63px; 
 	height: 10px; 
-	}
-.sidebar h3.resources span {
-	display:none
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 
@@ -209,7 +204,4 @@ footer a:link, footer a:visited {
 	right: 0; 
 	width: 148px; 
 	height: 110px;
-	}
-.accesskey {
-	text-decoration: underline;
 	}

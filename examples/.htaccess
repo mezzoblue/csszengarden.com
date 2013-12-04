@@ -1,0 +1,5 @@
+# force download of css file in /examples/
+<Files *.css>
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</Files>

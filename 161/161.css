@@ -48,12 +48,16 @@ header {
 	height: 155px;
 }
 
-header span { display: none; }
+h1, h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 
 /*__________Quick summary__________*/
 .summary { font-size: 0.85em; font-style: italic; line-height: 1.4em; }
-.summary .p2 { text-align: right; }
+.summary p:last-child { text-align: right; }
 
 
 /*__________Preamble__________*/
@@ -74,7 +78,7 @@ html>body .summary, html>body .preamble { width: 380px; }
 /*__________Supporting text__________*/
 .supporting { background: url(bottle.gif) no-repeat right bottom; margin-left: 230px; width: 530px; z-index: 100; }
 
-.preamble .p3, .explanation, .participation, .benefits, .requirements {
+.preamble p:nth-child(4), .explanation, .participation, .benefits, .requirements {
 	background: url(curlSmall.gif) no-repeat bottom;
 	margin-bottom: 1em;
 	padding-bottom: 37px;

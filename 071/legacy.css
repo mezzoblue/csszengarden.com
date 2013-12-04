@@ -1,0 +1,192 @@
+/* css Zen Garden submission 071 - 'Garden Party' by Bobby van der Sluis, http://www.bobbyvandersluis.com */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2003, Bobby van der Sluis */
+/* Added: January 2nd, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* Page layout: positioning and backgrounds */
+body {
+	margin: 0;
+	border-top: 15px solid #000;
+	border-bottom: 15px solid #000;
+	padding: 0;
+	background: #fff url(background.gif) center top repeat-y;
+	text-align: center;
+}
+#container {
+	position: relative;
+	margin: 0 auto;
+	width: 750px;
+}
+#intro { 
+	background: #00c2ec url(lines.gif) left top repeat-y;
+}
+#pageHeader {
+	padding: 20px 95px 0 395px;
+}
+#pageHeader h1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent url(logo.gif) left top no-repeat;
+	width: 375px;
+	height: 270px;
+}
+#pageHeader h1 span {
+	display: none;
+}
+#pageHeader h2 {
+	padding: 0;
+}
+#quickSummary {
+	padding: 0 95px 0 395px;
+}
+#preamble {
+	background: transparent url(crossing.gif) left bottom no-repeat;
+	padding: 0 95px 230px 395px;
+}
+#supportingText {
+	position: relative;
+	background: #10a2c5 url(lines2.gif) left top repeat-y;
+	width: 750px;
+}
+#explanation {
+	padding: 0 395px 0 95px;
+}
+#participation {
+	padding: 0 395px 180px 95px;
+	background: transparent url(wave.gif) left bottom no-repeat;
+}
+#benefits {
+	position: absolute;
+	top: 0;
+	left: 395px;
+	padding: 0 95px 0 0;
+}
+#requirements {
+	position: absolute;
+	top: 18.5%;
+	left: 395px;
+	padding: 0 95px 0 0;
+}
+#footer {
+	padding: 0 95px 5px 395px;
+	background: transparent url(lines3.gif) left top repeat-y;
+}
+#linkList {
+	position: absolute;
+	top: 270px;
+	left: 0px;
+	margin: 0 95px;
+	width: 260px;
+}
+#larchives {
+	padding: 2em 0 1em 0;
+}
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+	display: none;
+}
+
+/* Content styling: fonts & text replacement */
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+h1, h2, h3, p {
+	margin: 0;
+}
+p {
+	padding: 0 0 1em 0;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: overline;
+}
+#container {
+	text-align: left;
+}
+#pageHeader h2 {
+	background: transparent url(quickSummary.gif) no-repeat top left;
+	width: 260px;
+	height: 44px;
+}
+#preamble h3 {
+	background: transparent url(preamble.gif) no-repeat top left;
+	width: 260px;
+	height: 44px;
+}
+#explanation h3 {
+	background: transparent url(explanation.gif) no-repeat top left;
+	width: 260px;
+	height: 44px;
+}
+#participation h3 {
+	background: transparent url(participation.gif) no-repeat top left;
+	width: 260px;
+	height: 44px;
+}
+#benefits h3 {
+	background: transparent url(benefits.gif) no-repeat top left;
+	width: 260px;
+	height: 44px;
+}
+#requirements h3 {
+	background: transparent url(requirements.gif) no-repeat top left;
+	width: 260px;
+	height: 44px;
+}
+#pageHeader h2 span, #preamble h3 span, #explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span, #linkList h3 {
+	display: none;
+}
+#linkList ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#linkList li {
+	margin: 0;
+}
+#linkList a {
+	display: block;
+	font-size: large;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: x-large;
+}
+html>body #linkList a {
+	font-size: x-large;
+}
+#linkList a.c {
+	display: inline;
+	color: #000;
+	font-size: medium;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: large;
+}
+html>body #linkList a.c {
+	font-size: large;
+}
+#larchives a, #lresources a {
+	display: inline;
+	font-size: small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: medium;
+}
+html>body #larchives a, html>body #lresources a {
+	font-size: medium;
+}
+#lresources li {
+	background: url(bullet.gif) no-repeat 0 0.5em;
+	padding: 0 0 0 12px;
+}

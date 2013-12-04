@@ -1,0 +1,57 @@
+/* css Zen Garden submission 176 - 'Kelmscott', by Bronwen Hodgkinson, http://www.cdevision.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Bronwen Hodgkinson */
+/* Added: July 9th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* basic elements */
+body {font:8pt georgia, serif; color:#333; background:#fff url(bground.gif); margin:0; border:1px solid #000;}
+	
+p {font:8pt georgia, serif; margin:0 0 12px 0; text-align:justify;}
+h3 {font:bold 12pt georgia, serif; margin-bottom:0;}
+acronym {font-weight:bold; border-bottom: none;}
+	
+a:link, a:visited {text-decoration:none; color:#900;}
+a:hover, a:active {text-decoration:underline; color:#c00;}
+
+/* specific divs */
+#container {width:604px; padding:0; margin:80px auto 80px 80px; border:2px solid #333;
+	 position:relative; background:#f8f8f8 url(bottomBorder.gif) 2px 100% no-repeat;}
+	
+#intro {background:url(header.gif) no-repeat; width:600px;}
+	#pageHeader {margin-bottom:0; height:30px;}
+		#pageHeader h1, #pageHeader h2 {margin:17px 0 0 0; padding:0; height:30px;}
+		#pageHeader h1 {background:transparent url(h1.gif) no-repeat; width:223px; float:left;}
+		#pageHeader h2 {background:transparent url(h2.gif) no-repeat; width:377px; float:right;}
+		#pageHeader h1 span, #pageHeader h2 span {display:none}
+	#quickSummary {clear:both; margin:0 0 6px 0; width:600px; height:73px; background:url(summary.gif) 0 0 no-repeat;}
+		#quickSummary p.p1 {display:none;}
+		#quickSummary p.p2 {position:absolute; top:129px; left:430px; padding:0; font-size:8pt; z-index:10; font-weight:bold; width:150px; text-align:left;}			
+	#preamble {padding:210px 0 0 20px; margin:0 188px 0 0; background:url(mainImage.gif) 13px 0 no-repeat; width:392px;}
+		#preamble h3 {background:url(preAmble.gif) -9px 0 no-repeat; height:41px; width:392px; margin:0; padding:0;}
+		#preamble h3 span {display:none;}
+	
+#supportingText {margin:0 8px 50px 20px; width:390px;}
+	#supportingText h3 span {display:none;}
+	#supportingText h3 {height:41px; width:392px;}
+	#explanation h3 {background:url(explanation.gif) -9px 0 no-repeat;}
+	#participation h3 {background:url(participation.gif) -9px 0 no-repeat;}
+	#benefits h3 {background:url(benefits.gif) -9px 0 no-repeat;}
+	#requirements h3 {background:url(requirements.gif) -9px 0 no-repeat;}
+	
+#linkList {width:170px; position:absolute; top:170px; left:422px; background:url(linklistBottom.gif) 0 100% no-repeat; padding-bottom:200px; font:7.5pt georgia, serif; padding-left:7px;} 
+	#linkList h3 span {display:none}
+	#linkList h3 {width:165px; height:15px; margin:0;}
+	#linkList h3.select {background:url(select.gif) no-repeat;}
+	#linkList h3.archives {background:url(archives.gif) no-repeat;}
+	#linkList h3.resources {background:url(resources.gif) no-repeat;}
+	#linkList ul {margin:0 0 17px 0; padding:0;}
+	#linkList li {line-height:1.2em; list-style-type:none; display:block; padding-top:5px; margin-left:0;}
+
+		

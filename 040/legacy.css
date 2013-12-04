@@ -1,0 +1,300 @@
+/* css Zen Garden submission 040 - 'The Question Why' by Diane Clayton, http://www.schisma.net/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003,  Diane Clayton */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+
+/* basic elements 
+---------------------------------------------------------------*/
+body { 
+	background: #030409 url(bg_darkblue.gif) repeat;    /* stupid browser color shifts */
+	color: #030409; 
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	margin: 0; 
+  }
+
+#extraDiv1 {
+	z-index: 0;
+	background: #030409 url(bg_body.jpg) no-repeat top left; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 990px;
+	height: 980px;
+	}
+
+#preamble p, #supportingText p { 	
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+	line-height: 18px;
+	text-align: justify;
+	margin: 0;
+	padding: 0px 20px 10px 20px;
+	}
+#preamble p, #supportingText p {
+	background: #8B95A8 url(bg_lightblue.gif) repeat;	   /* stupid browser color shifts */
+	}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	}
+h3 span {
+	display: none;
+	}
+
+a:link, a:visited { 
+	font-weight: bold;
+	text-decoration: none; 
+	color: #FFFF99;
+	}
+a:hover, a:active { 	
+	text-decoration: underline;
+	}
+
+
+
+/* structuring and main content
+---------------------------------------------------------------*/
+#container {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 975px;
+	margin: 0;
+	}
+
+#intro { 
+	z-index: 1;
+	position: absolute;
+	left: 710px;
+	width: 235px;
+	margin: 0;
+	padding: 0;
+	}
+
+#pageHeader h1 span, #pageHeader h2 span, #quickSummary p.p1 span {
+	display: none;
+	}
+
+#quickSummary {	
+	position: absolute;
+	top: 150px;
+	right: 20px;
+	width: 175px;
+	color: #DBE0E6;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-align: right;
+	}
+#quickSummary p {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+
+#preamble {	
+	background: transparent url(bg_preamble.gif) no-repeat left bottom;
+	position: absolute;
+	top: 327px;
+	left: 0px;
+	width: 235px;
+	padding-bottom: 70px;
+	overflow: hidden;	
+	}
+#preamble h3 {
+	background: transparent url(bg_preambleh3.gif) no-repeat left top;
+	height: 60px;
+	}
+
+#supportingText, #explanation, #participation, #benefits, #requirements {
+	margin: 0;
+	padding: 0;
+	}
+
+#supportingText {
+	z-index: 1;
+	position: absolute;
+	top: 327px;
+	left: 285px;
+	}
+
+#explanation {
+	background: transparent url(bg_explanation.gif) no-repeat left bottom;
+	color: #030409;
+	width: 400px;
+	padding-bottom: 25px;
+	margin-bottom: 10px;
+	}
+#explanation h3 {
+	background: transparent url(bg_explanationh3.gif) no-repeat left top;
+	height: 40px;
+	}
+
+#participation {
+	background: transparent url(bg_participation.gif) no-repeat left bottom;
+	color: #030409;
+	width: 400px;
+	padding-bottom: 30px;
+	margin-bottom: 10px;
+	}
+#participation h3 {
+	background: transparent url(bg_participationh3.gif) no-repeat left top;
+	height: 50px;
+	}
+
+#benefits {
+	background: transparent url(bg_benefits.gif) no-repeat left bottom;
+	color: #030409;
+	width: 400px;
+	padding-bottom: 25px;
+	margin-bottom: 20px;
+	}
+#benefits h3 {
+	background: transparent url(bg_benefitsh3.gif) no-repeat left top;
+	height: 45px;
+	}
+
+#requirements {
+	background: transparent url(bg_requirements.gif) no-repeat left bottom;
+	color: #030409;
+	width: 400px;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	}
+#requirements h3 {
+	background: transparent url(bg_requirementsh3.gif) no-repeat left top;
+	height: 35px;
+	}
+
+#footer {
+	background: transparent url(bg_footer.gif) no-repeat center top;
+	width: 400px;
+	height: 20px;	
+	margin-bottom: 50px;
+	text-align: center;
+	}
+	
+
+/* link list
+---------------------------------------------------------------*/
+#linkList {
+	z-index:1;
+	position: absolute;
+	left: 25px;
+	top: 335px;
+	width: 235px;
+	}
+
+#linkList ul {
+	background: #8B95A8 url(bg_lightblue.gif) repeat;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	}
+#linkList ul li {
+	line-height: 18px;
+	margin: 0;
+	margin-left: 20px;	
+	padding: 0;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	}
+#linkList #lselect ul li, #linkList #lfavorites ul li {
+	background: transparent url(zenbullet.gif) no-repeat top left;
+	}
+#linkList #larchives ul li, #linkList #lresources ul li {
+	background: url(bullet.gif) no-repeat top left;
+	}
+
+#lselect, larchives, #lresources, #lfavorites {
+	padding: 0;
+	margin: 0;
+	}
+
+#lselect {
+	background: transparent url(bg_lselect.gif) no-repeat bottom left;
+	color: #030409;
+	width: 235px;	
+	padding-bottom: 50px;
+	margin-bottom: 10px;
+	}
+#lselect h3 {
+	background: transparent url(bg_lselecth3.gif) no-repeat top left;
+	height:45px;
+	}
+#lselect a:link, #lselect a:visited, #lfavorites a:link, #lfavorites a:visited {
+	display: block;
+	font-size: 13px;
+	letter-spacing: 1px;
+	}
+#lselect a.c:link, #lselect a.c:visited, #lfavorites a.c:link, #lfavorites a.c:visited {
+	display: inline;
+	font-weight: normal;
+	color: #DBE0E6;
+	text-transform: lowercase;
+	padding-left: 3px;
+  }
+
+#larchives {
+	background: transparent url(bg_larchives.gif) no-repeat bottom left;
+	color: #030409;
+	width: 235px;
+	padding-bottom: 20px;
+	margin-bottom: 25px;
+	}
+#larchives h3 {
+	background: transparent url(bg_larchivesh3.gif) no-repeat top left;
+	height: 40px;
+	}
+#larchives li, #lresources li {
+	text-transform: lowercase;
+	}
+#larchives a:link, #larchives a:visited, #lresources a:link, #lresources a:visited {
+	font-size: 13px;
+	letter-spacing: 1px;
+	}
+
+#lresources {
+	background: transparent url(bg_lresources.gif) no-repeat bottom left;
+	color: #030409;
+	width: 235px;
+	padding-bottom: 50px;
+	margin-bottom: 10px;
+	}
+#lresources h3 {
+	background: transparent url(bg_lresourcesh3.gif) no-repeat top left;
+	height: 35px;
+	}
+
+
+/* just in case...
+---------------------------------------------------------------*/
+#lfavorites {
+	background: transparent url(bg_lfavorites.gif) no-repeat bottom left;
+	color: #030409;
+	width: 235px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	}
+#lfavorites h3 {
+	background: transparent url(bg_lfavoritesh3.gif) no-repeat top left;
+	height: 35px;
+	}
+
+
+/* extras
+---------------------------------------------------------------*/
+acronym {
+	border-width:0;
+	}

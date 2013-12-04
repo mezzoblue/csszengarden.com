@@ -1,4 +1,4 @@
-/* css Zen Garden submission 160 - 'Daruma', by Stuart Cruickshank, http://www.stuartandpetra.designer-nameom/ */
+/* css Zen Garden submission 160 - 'Daruma', by Stuart Cruickshank, https://twitter.com/gaijinstu */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 /* All associated graphics copyright 2005, Stuart Cruickshank */
 /* Added: Apr. 15th, 2005 */
@@ -17,15 +17,18 @@ header {background-image:url(header.jpg); width:699px; height:347px;}
 header h1, h2 {display:none;}
 
 .summary {position:relative;}
-.summary p.p1 {display:none;}
-.summary p.p2 {position:absolute; left:600px; top:-65px; width: 130px;}
-.summary p.p2 a:link {color: #606060; text-decoration:underline; font-weight:bold;}
-.summary p.p2 a:visited {color:#787878;}
-.summary p.p2 a:hover {color:#949494;}
+.summary p:first-child {display:none;}
+.summary p:last-child {position:absolute; left:600px; top:-65px; width: 130px;}
+.summary p:last-child a:link {color: #606060; text-decoration:underline; font-weight:bold;}
+.summary p:last-child a:visited {color:#787878;}
+.summary p:last-child a:hover {color:#949494;}
 
 .preamble {width:765px; background:url(preamble_bg.gif) bottom; padding-bottom:15px; line-height:22px; text-align:justify;}
-.preamble h3 span {display:none; } 
-.preamble h3 {position:relative; background-image:url(preamble_hdr.gif); width:765px; height:35px;}
+.preamble h3 {position:relative; background-image:url(preamble_hdr.gif); width:765px; height:35px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .preamble p {padding: 7px 20px;}
 
 .supporting {float:left; width:543px; background-image:url(body_bg.gif); line-height:22px; text-align:justify;}
@@ -35,20 +38,32 @@ header h1, h2 {display:none;}
 .supporting a:hover{border-bottom: 1px solid #df0000;}
 
 .explanation {background:url(so_what_btrflys.gif) bottom left no-repeat;}
-.explanation h3 span {display:none;} 
-.explanation h3 {position:relative; background-image:url(so_what_hdr.gif); width:543px; height:28px;}
+.explanation h3 {position:relative; background-image:url(so_what_hdr.gif); width:543px; height:28px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .participation {background: url(participation_btrflys.gif) bottom left no-repeat;}
-.participation h3 span {display:none;} 
-.participation h3 {position:relative; background-image:url(participation_hdr.gif); width:543px; height:37px;}
+.participation h3 {position:relative; background-image:url(participation_hdr.gif); width:543px; height:37px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
-.benefits h3 span {display:none;} 
-.benefits h3 {position:relative; background-image:url(benefits_hdr.gif); width:543px; height:35px;}
+.benefits h3 {position:relative; background-image:url(benefits_hdr.gif); width:543px; height:35px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .requirements {background: url(req_btrflys.gif) top left no-repeat;}
-.requirements h3 span {display:none;} 
-.requirements h3 {position:relative; background-image:url(req_hdr.gif); width:543px; height:36px;}
-.requirements .p5 {margin-bottom:0; padding-bottom:14px;}
+.requirements h3 {position:relative; background-image:url(req_hdr.gif); width:543px; height:36px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.requirements p:nth-child(6) {margin-bottom:0; padding-bottom:14px;}
 
 footer {position:relative; font-size: 14px; text-align:center;background:url(footer_bg.gif) no-repeat; width:543px; height:35px; padding-top:63px;}
 footer a:link {color: #c20000; font-weight:bolder; text-decoration:none; border:0;}
@@ -68,16 +83,25 @@ footer a:hover {color:#f33; border:0;}
 .sidebar .wrapper li {padding: 0 20px;}
 .sidebar .wrapper {background:url(resources_btm_2.gif) bottom no-repeat; padding-bottom: 10px; padding-bottom: 119px;}
 
-.design-selection h3 {position:relative; background-image: url(select_design_hdr.gif); width:195px; height:60px;}
-.design-selection h3 span {display:none;}
+.design-selection h3 {position:relative; background-image: url(select_design_hdr.gif); width:195px; height:60px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .design-selection ul {padding-top:8px;}
 .design-selection li {padding-bottom:10px;}
 
-.design-archives h3 {position:relative; background-image: url(archives_hdr.gif); width:195px; height:30px;}
-.design-archives h3 span {display:none;}
+.design-archives h3 {position:relative; background-image: url(archives_hdr.gif); width:195px; height:30px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
-.zen-resources h3 {position:relative; background: url(resources_hdr.gif) no-repeat; width:195px; height:30px;}
-.zen-resources h3 span {display:none;}
+.zen-resources h3 {position:relative; background: url(resources_hdr.gif) no-repeat; width:195px; height:30px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .design-archives ul, .zen-resources ul {padding-top:8px;}
 .design-archives ul li, .zen-resources ul li {padding-bottom:8px;}

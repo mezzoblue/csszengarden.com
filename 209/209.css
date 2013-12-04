@@ -55,11 +55,11 @@ header {
 	width: 0;
 }
 
-		header h1{
+		h1{
 			font: bold 154%/25px Arial, Helvetica, sans-serif;
 		}
 		
-		header h2{
+		h2{
 			font: bold 90%/25px Arial, Helvetica, sans-serif;
 		}
 
@@ -72,7 +72,7 @@ header {
 	top: 25px;
 }
 
-		.summary .p1 {
+		.summary p:first-child {
 			display: inline;
 			height: 0;
 			left: -1000px;
@@ -169,7 +169,7 @@ header {
 			width: 260px;
 		}
 		
-		.explanation .p1 {
+		.explanation p:nth-child(2) {
 			background: transparent url(cont_img_01.jpg) 30px 0px no-repeat;
 			padding-top: 130px;
 		}
@@ -188,7 +188,7 @@ header {
 			width: 247px;
 		}
 		
-		.participation .p1 {
+		.participation p:nth-child(2) {
 			background: transparent url(cont_img_02.jpg) 30px 0px no-repeat;
 			padding-top: 130px;
 		}
@@ -214,14 +214,10 @@ header {
 		}
 
 
-.preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
-	display: inline;
-	height: 0;
-	left: -1000px;
-	overflow: hidden;
-	position: absolute;
-	top: -1000px;
-	width: 0;
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+    text-indent: 105%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 
@@ -324,14 +320,10 @@ header {
 }
 
 
-.resources span, .archives span, .select span {
-	display: inline;
-	height: 0;
-	left: -1000px;
+.resources, .archives, .select {
+	text-indent: 100%;
+	white-space: nowrap;
 	overflow: hidden;
-	position: absolute;
-	top: -1000px;
-	width: 0;
 }
 
 

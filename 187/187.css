@@ -31,8 +31,14 @@ a {
 a:hover {
 	color: #FBBA04;	
 }
-h1, h2, h3 span {
+h1, h2 {
 	display: none;
+}
+
+h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /*------------------------------------------------------
@@ -61,7 +67,7 @@ header {
 .summary {
 	margin: -10px 0 0 30px;
 }
-.summary .p1 {
+.summary p:first-child {
 	display: none;
 }
 .preamble {
@@ -77,7 +83,7 @@ header {
 	height: 20px;
 	background: url(h_preamble.gif) no-repeat;
 }
-.preamble .p1 {
+.preamble p:nth-child(2) {
 	padding: 0;
 	margin: 5px 0 0 0;
 }
@@ -126,10 +132,10 @@ S U P P O R T I N G   T E X T
 .explanation,.participation,.benefits,.requirements {
 	margin-bottom: 30px;
 }
-.p1,.p2,.p3,.p4,.p5 {
+p:nth-child(2),p:nth-child(3),p:nth-child(4),p:nth-child(5),p:nth-child(6) {
 	margin-top: 10px;
 }
-.p5 {
+p:nth-child(6) {
 	padding: 10px;
 	background: #0B1C07;
 }

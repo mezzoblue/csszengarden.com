@@ -120,24 +120,28 @@ header{
 	}
 	
 .summary{
-	margin:-0.9em 0 0 0;
+	margin:0;
 	padding:0;
 }
 	
-.summary .p2{
-	padding:0;
+.summary p:last-child{
+	padding: 0;
 	margin:0 0 0.9em 0;
 	width:396px;
 	height:25px;
 	background:url(pics/download.gif) no-repeat top left;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 	
-.summary .p2 span{
-	visibility:hidden;
-	white-space:nowrap;
+.summary p:last-child {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 	}
 
-.summary .p2 span a{
+.summary p:last-child a{
 	visibility:visible;
 	text-indent:-9000px;
 	display:block;
@@ -204,9 +208,19 @@ footer{
 	
 /*hidden*/
 
-.sidebar h3 span,
+.sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.summary p:first-child, h1, h2 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+	}
+.summary p:first-child,
 header h1,
-header h2,
-.summary p.p1 span{
+header h2 {
 	display:none;
 	}

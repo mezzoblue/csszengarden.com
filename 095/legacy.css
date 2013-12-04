@@ -1,0 +1,224 @@
+/* css Zen Garden submission 095 - 'Corporate ZenWorks', by Derek Hansen, http://www.dejoha.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Derek Hansen */
+/* Added: April 9th, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* HTML Tags */
+body { 
+  background: #999 url(bk.jpg) repeat-x fixed;
+  margin: 0;
+  padding: 0;
+  color: #33140E;
+  font-family: Georgia, Times, serif;
+  font-size: 80%;
+}
+
+h1,h2,h3,h4,h5,h6 { 
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-weight: normal;
+}
+
+h3 { 
+  text-transform: uppercase;
+  font-size: 90%;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  margin-left: -10px;
+  font-weight: bold;
+}
+
+a { 
+  color: #5F524F;
+}
+
+acronym { 
+  font-style: italic;
+  cursor: help;
+  font-weight: bold;
+}
+
+/* Divisions */
+
+#container { 
+  width: 750px;
+  background: url(paper_mid.gif) repeat-y;
+  margin: 50px 0 0 25px;
+  padding-bottom: 20px;
+}
+
+#pageHeader { 
+  height: 100px;
+  padding: 20px 0 20px 50px;
+}
+
+#pageHeader h1 { 
+  height: 90px;
+  width: 340px;
+  background: url(zen_logo.gif) no-repeat;
+}
+
+#pageHeader h2 span,
+#pageHeader h1 span { 
+  display: none;
+}
+
+#pageHeader h2 { 
+  background: url(paper_clip.gif) no-repeat;
+  width: 320px;
+  height: 262px;
+  position: absolute;
+  top: 250px;
+  left: -6px;
+  z-index: 5;
+}
+
+#linkList,
+#supportingText,
+#preamble { 
+  margin: 10px 100px 10px 200px;
+}
+
+#quickSummary { 
+  position: absolute;
+  top: 50px;
+  left: 450px;
+  background: url(subtext.gif) no-repeat;
+  height: 100px;
+  width: 280px;
+}
+
+#quickSummary p.p1 { 
+  display: none;
+}
+
+#quickSummary p.p2 { 
+  padding: 78px 0 0 15px;
+  font-size: 10px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+#extraDiv1 { 
+  position: absolute;
+  top: 10px;
+  left: 23px;
+  width: 750px;
+  height: 50px;
+  background: url(paper_top.gif) no-repeat;
+}
+
+#lfavorites ul,
+#lselect ul { 
+  list-style-type: none;
+}
+
+#lfavorites li,
+#lselect li { 
+  clear: both;
+  border-bottom: 2px dotted #887972;
+  color: #FFF;
+  padding: 4px 0;
+  background: url(doc.gif) no-repeat center center;
+}
+
+#lfavorites a,
+#lselect a { 
+  float: left;
+  text-decoration: none;
+}
+
+#lfavorites a.c,
+#lselect a.c { 
+  float: right;
+  text-decoration: none;
+  font-style: italic;
+}
+
+#footer { 
+  position: absolute;
+  top: 160px;
+  left: 150px;
+  font-size: 80%;
+  border-top: 1px solid #6E512F;
+  padding-top: 3px;
+  width: 575px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+#larchives { 
+  margin: 40px -50px 0 -150px;
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #6E512F;
+}
+
+#larchives h3 { 
+  display: none;
+}
+
+#larchives ul { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#larchives li { 
+  display: inline;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 80%;
+}
+
+#lresources { 
+  position: absolute;
+  top: 600px;
+  left: 10px;
+  width: 200px;
+  height: 257px;
+  background: url(sticky.gif) no-repeat;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  color: #000;
+}
+
+#lresources a { 
+  color: #000;
+}
+
+#lresources h3 { 
+  padding: 40px 10px 0 30px;
+}
+
+#lresources ul { 
+  font-size: 80%;
+}
+
+#lresources li { 
+  padding: 5px;
+}
+
+#extraDiv2 { 
+  position: absolute;
+  top: 900px;
+  left: 700px;
+  background: url(pen.gif) no-repeat;
+  width: 140px;
+  height: 547px;
+}
+
+/* Classes */
+
+.accesskey { 
+  font-weight: bold;
+  text-decoration: underline;
+}

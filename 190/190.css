@@ -1,4 +1,4 @@
-/* css Zen Garden submission 190 - 'Lonely Flower', by Mitja Ribic, http://mitja.impresija.designer-nameom/mic/ */
+/* css Zen Garden submission 190 - 'Lonely Flower', by Mitja Ribic, http://mitja.impresija.com/mic/ */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 /* All associated graphics copyright 2005, Mitja Ribic */
 /* Added: November 10th, 2005 */
@@ -41,17 +41,11 @@ h3 {
 	padding-bottom: 0px;
 	}
 
-.supporting h3 span,.preamble h3 span {
-	padding-bottom: 4px;
+.supporting h3,.preamble h3 {
 	background: url(flower3.gif) no-repeat 0 0;
 	padding-left: 24px;
 	}
 
-.sidebar h3 span {
-	padding-bottom: 4px;
-	background: url(flower2.gif) no-repeat 0 30%;
-	padding-left: 14px;
-	}
 
 a:link { 
 	font-weight: bold; 
@@ -153,16 +147,17 @@ footer {
 	padding-top: 0px;
 	}
 
-.explanation h3 span {
-	margin-top: 20px;
+.explanation h3 {
+	margin-top: 15px;
 	}
 
 .sidebar h3 {
 	font-size: 11px;
-	padding: 3px 3px 3px 1px;
+	padding: 3px 3px 3px 14.5px;
 	color: #E98523;
 	margin-bottom: 10px;
 	margin-top: 20px;
+	background: url(flower2.gif) no-repeat 1px 50%;
 	}
 
 .design-selection ul, .design-archives ul, .zen-resources ul {
@@ -202,11 +197,17 @@ footer {
     padding: 5px 0 5px 15px;
     }
 
-header h1 span,header h2 span,.summary p.p1 {
+.summary p:first-child {
 	display: none;
 	}
 
-.summary p.p2 {
+header h1, header h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.summary p:last-child {
 	text-align: left;
 	color: #ffffff;
 	font: 11px Tahoma;

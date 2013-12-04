@@ -9,13 +9,16 @@
 /* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
 
 
-body {
+
+body {
 	background-color: #FFF;
 	margin: 0px;
 	padding: 10px;
 	font-family:  Georgia, "Times New Roman", Times, serif;
 	font-size: 90%;
-}p {
+}
+
+p {
 	line-height: 180%;
 	}
 .page-wrapper {
@@ -37,8 +40,10 @@ header h1 {
 	background-image: url(headerh1.jpg);
 	background-repeat: no-repeat;
 }
-header h1 span, header h2 span {
-	display: none;
+header h1, header h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 header h2 {
 	background-color: #EDEEF0;
@@ -52,26 +57,24 @@ header h2 abbr {
 	color: #FFF;
 	border-bottom: 1px #FFF dashed;
 }
-.summary p.p1 {
+.summary p:first-child {
 	position: absolute;
 	right: 21px;
 	top: 21px;
 	width: 12em;
-	height: 168px;
-	padding: 0px;
+	height: 165px;
+	padding: 3px 0 0 0;
 	margin: 0px;
 	border: 1px solid #0C2953;
 	text-align: center;
-	font-size: 90%;	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
-	line-height: 110%;	color: #FFF;
+	font-size: 90%;
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	line-height: 110%;
+	color: #FFF;
 	background-image: url(summary.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 100%; 
 	background-color: #0C2953;	
-}
-.summary p.p1 span {
-	display: block;
-	padding: 3px;
 }
 .preamble {
 	padding: 0px 15em 0px 3em;
@@ -88,17 +91,19 @@ header h2 abbr {
 	background-position: 100% 0px;
 	background-color: #F6F7F7;
 }
-.preamble h3 span {
-	display: block;
-	padding: 20px 0px 15px 48px;
+.preamble h3::before {
+	content: " ";
+	display: inline-block;
+	padding: 35px 0px 30px 48px;
 	background-image: url(preambleShell.jpg);
 	background-repeat: no-repeat;
 	background-position: 0px 50%;
+	vertical-align: middle;
 }
 .preamble p {
 	text-align: justify;
 }
-.preamble p.p1, .preamble p.p2 {
+.preamble p:nth-child(2), .preamble p:nth-child(3) {
 	margin: 0px;
 	padding: 10px 20px 2px 6px;
 	background-image: url(bordDroitPreamble.gif);
@@ -106,25 +111,25 @@ header h2 abbr {
 	background-position: 100% 0px;
 	background-color: #F6F7F7;
 }
-.preamble p.p3 {
+.preamble p:nth-child(4) {
 	margin: 0px;
 	padding: 0px;
 	background-image: url(bordBasPreamble.gif);
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
 	background-color: #F6F7F7;
-}
-.preamble p.p1 span, .preamble p.p2 span, .preamble p.p3 span {
-	display: block;
-}
-.preamble p.p3 span {
-	margin: 0px;
 	padding: 10px 20px 20px 6px;
+}
+.preamble p:nth-child(4)::after {
+	content: " ";
+	display: block;
+	margin: 0px;
+	padding: 0 20px 0 6px;
 	background-image: url(bordBasPreambleGauche.gif);
 	background-repeat: no-repeat;
 	background-position: 0% 100%;
 }
-.preamble p:first-letter, .preamble p span:first-letter {
+.preamble p:first-letter {
 	color: #6BA0D2;
 	font-size: 140%;
 	font-weight: bold;
@@ -182,7 +187,7 @@ header h2 abbr {
 	margin: 10px 0px 0px 0px;
 	padding: 1px 3px 2px 3px;
 }
-.supporting p:first-letter, .supporting p span:first-letter {
+.supporting p:first-letter {
 	font-weight: bold;
 }
 .supporting a:link {
@@ -198,7 +203,7 @@ header h2 abbr {
 	font-weight: bold;
 	text-decoration: none;
 }
-.sidebar, .summary p.p2 {
+.sidebar, .summary p:last-child {
 	font-size: 90%;
 	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
 	position: absolute;
@@ -209,16 +214,13 @@ header h2 abbr {
 	margin: 0px;
 	background-color: #A4ACB3;
 }
-.summary p.p2 {
+.summary p:last-child {
 	height: 50px;
 	text-align: center;
 	top: 217px;
-}
-
-.summary p.p2 span {
 	font-size: 90%;
 	display: block;
-	padding: 3px;
+	padding: 3px 0;
 	color: #FFF;
 }
 .sidebar {
@@ -250,7 +252,7 @@ header h2 abbr {
 	background-image: url(resourcesh3.jpg);
 	background-position: 50% 30%;
 }
-.sidebar h3:first-letter, .sidebar h3 span:first-letter {
+.sidebar h3:first-letter {
 	color: #FFF;
 	font-size: 160%;
 }
@@ -271,14 +273,14 @@ header h2 abbr {
 	border: 1px dotted #0C2953;
 	background-color: #6BA0D2;
 }
-.summary p.p2 span a:link {
+.summary p:last-child a:link {
 	color: #FFF;
 	font-weight: bold;
 }
-.summary p.p2 span a:visited {
+.summary p:last-child a:visited {
 	color: #204160;
 }
-.summary p.p2 span a:hover, .summary p.p2 span a:active {
+.summary p:last-child a:hover, .summary p:last-child a:active {
 	color: #FFD800;
 	font-weight: bold;
 	text-decoration: none;

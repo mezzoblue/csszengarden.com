@@ -1,0 +1,474 @@
+/* css Zen Garden submission 025 - 'mnemonic', by Dave Shea, http://www.mezzoblue.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2003, Dave Shea */
+/* Added: July, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+/* Built in Nick Bradbury's wonderful TopStyle Pro - http://www.bradsoft.com/topstyle/ */
+/* See http://www.csszengarden.com/025/025-comments.css for the fully commented version of this file. */
+/* See the last section, MOS Enhancements, on why some things look different between IE and the rest */
+
+
+/* Basic HTML Elements */
+html {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: small;
+	font-family: arial, sans-serif;
+	background: #B0A40B url(bg-1.gif) top left repeat-x;
+	margin: 0px;
+	padding: 0px;
+}
+
+acronym {
+	border-bottom: none;
+}
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a:link {
+	color: #DF0245;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:visited {
+	color: #6F4600;
+	font-weight: normal;
+	text-decoration: underline;
+}
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+
+
+/*Structural Elements */
+#container {
+	background: transparent url(bg-2.gif) top right repeat-y;
+}
+#intro {
+	padding: 0px;
+	margin: 0px;
+}
+
+#pageHeader {
+	height: 171px;
+	padding: 0px;
+	background: transparent url(bg-4.gif) top left repeat-x;
+}
+
+#pageHeader h1 {
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	width: 396px;
+	height: 171px;
+	background: transparent url(cr-tl.jpg) top right no-repeat;
+}
+#pageHeader h1 span {
+	display: none;
+}
+#pageHeader h2 {
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 350px;
+	height: 171px;
+	background: transparent url(cr-tr.gif) top right no-repeat;
+}
+#pageHeader h2 span {
+	display: none;
+}
+
+#quickSummary p.p1 {
+	width: 310px;
+	height: 67px;
+	background: transparent url(cr-r1.png) top right no-repeat;
+	position: absolute;
+	top: 171px;
+	right: 0px;
+	margin: 0px;
+}
+#quickSummary p.p1 span {
+	display: none;
+}
+#quickSummary p.p2 {
+	position: absolute;
+	top: 154px;
+	left: 25px;
+	margin: 0px;
+	font-size: 10px;
+	color: #CDC667;
+	padding-left: 8px;
+	background: transparent url(glitch.gif) center left no-repeat;
+}
+#quickSummary p.p2 a {
+	color: #D9D48C;
+	font-weight: bold;
+	text-decoration: none;
+}
+#quickSummary p.p2 a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#preamble {
+	display: none;
+}
+
+#supportingText {
+	font: 85%/140% arial, sans-serif;
+	color: #302D0A;
+	background-color: #fff;
+	border: solid 1px #997E00;
+	/*height: 350px;
+	overflow: auto;*/
+	margin-left: 21px;
+	margin-right: 310px;
+	padding: 10px 20px;
+}
+
+#explanation h3 {
+	height: 10px;
+	background: transparent url(h_sowhat.gif) top left no-repeat;
+}
+#participation h3 {
+	height: 10px;
+	background: transparent url(h_participation.gif) top left no-repeat;
+}
+#benefits h3 {
+	height: 10px;
+	background: transparent url(h_benefits.gif) top left no-repeat;
+}
+#requirements h3 {
+	height: 10px;
+	background: transparent url(h_requirements.gif) top left no-repeat;
+}
+#explanation h3 span, #participation h3 span, #benefits h3 span, #requirements h3 span {
+	display: none;
+}
+
+#footer {
+	z-index: 1;
+	position: absolute;
+	top: 64px;
+	left: 150px;
+	text-align: center; 
+	width: 257px;
+	background: transparent url(bg-6.png) top left no-repeat;
+	height: 45px;
+	padding-top: 13px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	height: 32px;
+}
+#footer a:link, #footer a:visited {
+	font-size: 10px;
+	font-weight: normal;
+	color: #fff;
+	text-decoration: none;
+	padding: 4px 12px 4px 13px;
+}
+#footer a:hover {
+	background: transparent url(bg-6a.png) center center no-repeat;
+}
+/*#footer a {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	float: left;
+	width: 46px;
+	height: 45px;
+	margin: 0px;
+	margin-right: 10px;
+	background: transparent url(bg-5.png) top left no-repeat;
+}
+#footer a:hover {
+		background: transparent url(bg-5a.png) top left no-repeat;
+}*/
+
+
+/* left hand fooling around */
+#lselect {
+	position: absolute;
+	top: 238px;
+	right: 0px;
+	background: transparent url(cr-r2a.png) top right no-repeat;
+	width: 310px;
+	height: 213px;
+	padding: 10px 60px 10px 55px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 195px;
+	height: 193px;
+  }
+#lselect h3 {
+	height: 15px;
+	background: transparent url(h_select.gif) top left no-repeat;
+	margin: 0px 10px 8px 0px;
+	position: relative;
+	left: -20px;
+}
+#lselect h3 span {
+	display: none;
+}
+#lselect li {
+	font: normal 10px arial, sans-serif;
+	line-height: 170%;
+	text-decoration: none;
+	color: #6D6100;
+	letter-spacing: -1px;
+}
+#lselect a {
+	font: bold 10px arial, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: normal;
+}
+#lselect a.c {
+	font-weight: normal;
+	color: #6D6100;
+	text-transform: lowercase;
+	letter-spacing: -1px;
+}
+#lselect a:hover {
+	text-decoration: underline;
+}
+
+#larchives {
+	position: absolute;
+	line-height: 80%;
+	text-align: center;
+	top: 451px;
+	right: 0px;
+	background: transparent url(cr-r3a.png) top right no-repeat;
+	width: 310px;
+	height: 50px;	
+	padding: 15px 65px 6px 45px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 200px;
+	height: 29px;
+}
+#larchives h3 {
+	display: none;
+}
+#larchives li {
+	font: normal 10px arial, sans-serif;
+	display: inline;
+	padding-right: 6px;
+}
+#larchives li a {
+	color: #443901;
+	text-decoration: none;
+}
+#larchives li a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+  
+#lresources {
+	height: 74px;
+	background: transparent url(bg-7.png) top right repeat-x;
+}
+#lresources h3 {
+	width: 310px;
+	height: 74px;
+	float: right;
+	background: transparent url(cr-br.png) top right no-repeat;
+	margin: 0px;
+}
+#lresources h3 span {
+	display: none;
+}
+#lresources ul {
+	padding: 37px 0px 0px 25px;
+}
+#lresources li {
+	display: inline;
+}
+#lresources li a {
+	color: #fff;
+	font-size: 9px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: lowercase;
+	padding-right: 5px;
+}
+
+#lresources li a:hover {
+	text-decoration: underline;
+}
+
+/* Extra elements */
+#extraDiv1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 750px;
+	height: 118px;
+	background: transparent url(mnemonic.gif) top left no-repeat;
+}
+#extraDiv2 {
+	width: 90px;
+	height: 18px;
+	position: absolute;
+	top: 112px;
+	left: 156px;
+	background: transparent url(ani1.gif) top left no-repeat;
+}
+#extraDiv3 span {
+	width: 61px;
+	height: 51px;
+	position: absolute;
+	top: 13px;
+	left: 315px;
+	background: transparent url(ani2.gif) top left no-repeat;
+}
+#extraDiv4 {
+	width: 256px;
+	height: 6px;
+	position: absolute;
+	top: 45px;
+	left: 98px;
+	background: transparent url(ani3.gif) top left no-repeat;
+}
+#extraDiv5 {
+	width: 100%;
+	position: relative;
+	top: -21px;
+}
+#extraDiv5 span {
+	float: right;
+	width: 209px;
+	height: 2px;
+	background: transparent url(ani4.gif) top left no-repeat;
+	margin-right: 40px;
+}
+
+
+
+
+
+/* 
+
+
+
+	**** Beginning of Advanced Effects ****
+
+
+
+*/
+
+
+
+#lselect ul>li {
+	width: 100px;
+	line-height: 10px;
+}
+#lselect ul>li a {display: block;}
+#lselect ul>li a.c {display: inline;}
+
+#lselect ul>li {position: relative; left: -14px;}
+#lselect ul>li+li {position: relative; left: -12px;}
+#lselect ul>li+li+li {position: relative; left: -10px;}
+#lselect ul>li+li+li+li {position: relative; left: -8px;}
+
+#lselect ul>li+li+li+li+li {position: relative; left: 98px; top: -11em;}
+#lselect ul>li+li+li+li+li+li {position: relative; left: 100px; top: -11em;}
+#lselect ul>li+li+li+li+li+li+li {position: relative; left: 102px; top: -11em;}
+#lselect ul>li+li+li+li+li+li+li+li {position: relative; left: 104px; top: -11em;}
+
+
+#larchives ul>li a[accesskey="p"] {
+	display: block;
+	width: 37px;
+	height: 0;
+	overflow: hidden;
+	padding-top: 18px;
+	background: transparent url(archive-b1a.gif) top left no-repeat;
+	position: absolute;
+	top: 16px;
+	left: 70px;
+	color: #958500;
+}
+#larchives ul>li a[accesskey="p"]:hover {
+	background: transparent url(archive-b1b.gif) top left no-repeat;
+}
+
+#larchives ul>li a[accesskey="n"] {
+	display: block;
+	width: 31px;
+	height: 0;
+	overflow: hidden;
+	padding-top: 18px;
+	background: transparent url(archive-b2a.gif) top left no-repeat;
+	position: absolute;
+	top: 16px;
+	left: 108px;
+	color: #958500;
+}
+#larchives ul>li a[accesskey="n"]:hover {
+	background: transparent url(archive-b2b.gif) top left no-repeat;
+}
+
+
+
+#larchives ul>li+li a[accesskey="w"] {
+	display: block;
+	width: 35px;
+	height: 0;
+	overflow: hidden;
+	padding-top: 18px;
+	background: transparent url(archive-b3a.gif) top left no-repeat;
+	position: absolute;
+	top: 16px;
+	left: 170px;
+	color: #958500;
+}
+#larchives ul>li+li a[accesskey="w"]:hover {
+	background: transparent url(archive-b3b.gif) top left no-repeat;
+}
+
+
+
+#supportingText>div#footer {
+	background: none;
+}
+
+div#footer>a:link, div#footer>a:visited {
+	display: block;
+	width: 46px;
+	height: 45px;
+	padding: 13px 0px 0px 0px;
+	background: transparent url(bg-5.png) top left no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+div#footer>a:hover {
+	background: transparent url(bg-5a.png) top left no-repeat;
+}
+
+div#footer>a+a:link, div#footer>a+a:visited {left: 53px;}
+div#footer>a+a+a:link, div#footer>a+a+a:visited {left: 106px;}
+div#footer>a+a+a+a:link, div#footer>a+a+a+a:visited {left: 159px;}
+div#footer>a+a+a+a+a:link, div#footer>a+a+a+a+a:visited {left: 212px;}
+
+#extraDiv3 {
+	background: transparent url(bg-5a.png) top left no-repeat;
+}

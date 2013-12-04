@@ -74,14 +74,14 @@ a:hover, a:active {
 	float: left;
 }
 
-.summary .p1 {
+.summary p:first-child {
 	font: 12px "Courier New" !important;
 	color: #000;
 	padding: 23px 10px 0 30px;
 	height: 95px;
 }
 
-.summary .p2 {
+.summary p:last-child {
 	position: absolute;
 	top: -20px;
 	left: 35px;
@@ -107,7 +107,7 @@ a:hover, a:active {
 	padding: 20px 45px 0px 150px;
 }
 
-.preamble .p1 {
+.preamble p:nth-child(2) {
 	margin-top: 35px;
 }
 

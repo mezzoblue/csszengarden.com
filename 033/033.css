@@ -67,6 +67,10 @@ color: #800000;
 height: 174px;
 padding: 0;
 margin: 0;
+
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
 }
 
 header h2	{
@@ -74,8 +78,6 @@ padding: 0;
 margin: 0;
 display: none;
 }
-
-header h1 span	{display: none;}
 
 .summary	{
 position: relative;
@@ -109,9 +111,11 @@ width: 350px;
 height: 40px;
 padding: 0;
 margin: 0 0 0 170px;
-}
 
-.preamble h3 span	{display: none;}
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+}
 
 .preamble p	{
 padding: 0;
@@ -120,7 +124,7 @@ padding: 20px 30px 0px 0px;
 text-align: justify;
 }
 
-.preamble p.p3	{
+.preamble p:nth-child(4)	{
 padding-bottom: 20px;
 }
 
@@ -133,9 +137,9 @@ vertical-align: baseline;
 }
 
 
-.preamble p.p1	{margin-left: 200px;}
-.preamble p.p2	{margin-left: 180px;}
-.preamble p.p3	{margin-left: 80px;}
+.preamble p:nth-child(2)	{margin-left: 200px;}
+.preamble p:nth-child(3)	{margin-left: 180px;}
+.preamble p:nth-child(4)	{margin-left: 80px;}
 
 .supporting	{
 float: left;
@@ -161,8 +165,6 @@ background: #fff url(suph3bg.jpg) no-repeat bottom right;
 color: #aaab9c;
 }
 
-.supporting h3 span	{}
-
 .supporting p	{padding: 15px 20px 0 50px; margin: 0;}
 
 .supporting p:first-letter	{
@@ -178,10 +180,9 @@ background: #fff url(sowhatbg.jpg) no-repeat 0% 0%;
 color: #000;
 }
 .explanation h3	{visibility: hidden;}
-.explanation h3 span	{}
-.explanation p.p1	{padding-top: 30px;}
+.explanation p:nth-child(2)	{padding-top: 30px;}
 
-.requirements p.p5	{
+.requirements p:nth-child(6)	{
 text-align: right; 
 padding-bottom: 0; 
 margin-bottom: -180px;
@@ -313,5 +314,5 @@ height: 17px;
 width: 760px;
 }
 
-#extraDiv span .extra2, .extra3, .extra4, .extra5, .extra6	
+.extra2, .extra3, .extra4, .extra5, .extra6	
 {display: none;}

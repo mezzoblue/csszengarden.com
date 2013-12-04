@@ -96,7 +96,7 @@ body {
 	height:100%;
 }
 
-.summary p.p1{
+.summary p:first-child{
 	text-indent:-15000px;
 	overflow:hidden;
 	height:1px;
@@ -216,7 +216,7 @@ footer{
 
 }
 
-.participation p.p3{
+.participation p:nth-child(4){
 	background:transparent url(participationbottom.jpg) no-repeat bottom left;
 	margin:0;
 	padding:10px 15px 30px 25px;
@@ -226,7 +226,7 @@ footer{
 	margin:10px 15px 10px 25px;
 }
 
-.benefits p.p1,.requirements p.p5{
+.benefits p:nth-child(2),.requirements p:nth-child(6){
 	background:transparent url(benbottom.jpg) no-repeat bottom left;
 	margin:0;
 	padding:10px 15px 30px 25px;
@@ -237,7 +237,7 @@ footer{
 	margin:10px 20px 10px 20px;
 }
 
-.preamble p.p3{
+.preamble p:nth-child(4){
 	background:transparent url(preamblebottom.jpg) no-repeat bottom left;
 	margin:0;
 	padding:10px 25px 30px 25px;

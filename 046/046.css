@@ -65,10 +65,10 @@ header h1 {
 	background: url(logo.gif) no-repeat;
 	margin: 0px;
 	padding: 0px;
-}
 
-header span {
-  display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 header h2 {
@@ -82,19 +82,19 @@ header h2 {
 	width: 665px;
 }
 
-.summary .p1 {
+.summary p:first-child {
 	background: url(callout.gif) no-repeat right;
 	height: 160px;
 	margin: 0px;
 	padding: 0px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-.summary .p1 span {
-  display: none;
-}
 
-
-.summary .p2 {
+.summary p:last-child {
 	height: 27px;
 	background: #97a25e;
 	margin: 5px 0 5px 0;
@@ -105,7 +105,7 @@ header h2 {
 	height: 22px;
 }
 
-html>body .summary .p2 {
+html>body .summary p:last-child {
 	height: 22px;
 } 
 
@@ -122,10 +122,10 @@ html>body .summary .p2 {
   height: 19px;
 	margin: 0px;
 	padding: 0px;
-}
 
-.preamble h3 span{
-  display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 
@@ -165,11 +165,13 @@ html>body .summary .p2 {
   height: 15px;
 }
 
-.supporting h3 span{
-  display: none;
+.supporting h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-footer /*.requirements .p5*/ {
+footer /*.requirements p:nth-child(6)*/ {
 	position: absolute;
 	margin: 0;
 	padding: 0;
@@ -189,7 +191,7 @@ to produce the bottom yellow bar */
 }
 
 /* bit of a hack topositiuon the bandwidth text */
-.requirements .p5 {
+.requirements p:nth-child(6) {
 	position: absolute;
 	margin: 0;
 	padding: 0;
@@ -216,10 +218,10 @@ to produce the bottom yellow bar */
 .sidebar h3 {
 	margin: 0px;
 	padding: 0px;
-}
 
-.sidebar h3 span {
-  display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .sidebar ul {

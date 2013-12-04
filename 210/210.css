@@ -42,9 +42,7 @@ li { text-decoration: none; list-style-type: none; display: block; color: #fff; 
 header { margin-bottom: 20px; float: left;	}
 
 
-/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
-
-header h1 { 
+h1 { 
 	background: transparent url(h1.gif) no-repeat top left;  
 	width: 355px; 
 	height: 29px; 
@@ -52,7 +50,7 @@ header h1 {
 	margin: 0px;
 	}
 
-header h2 { 
+h2 { 
 	background: transparent url(h2.gif) no-repeat top left; 
 	width: 167px; 
 	height: 12px; 
@@ -66,16 +64,19 @@ header h2 {
 	padding-top: 50px;
 	}
 
-.summary p.p1 {
+.summary p:first-child {
 	background: transparent url(summary.gif) no-repeat;
 	width: 356px;
 	height: 49px;
 	margin: 0px 0px 6px 0px;
 	}
-.summary p.p1 span, header h2 span, header h1 span 
-{ display: none; }
+.summary p:first-child, h2, h1 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
-.summary p.p2 { width: 355px; display: block; }
+.summary p:last-child { width: 355px; display: block; }
 
 
 
@@ -186,15 +187,18 @@ header h2 {
 	background: transparent url(h3_resources.gif) no-repeat; 
 	}
 
-.preamble h3 span, 
-.explanation h3 span,
-.participation h3 span,
-.benefits h3 span,
-.requirements h3 span,
-.sidebar h3.select span,
-.sidebar h3.archives span,
-.sidebar h3.resources span
-{ display: none; }
+.preamble h3, 
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3,
+.sidebar h3.select,
+.sidebar h3.archives,
+.sidebar h3.resources {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 
 /*------ footer ---------------------------------------------------------------------*/
@@ -213,8 +217,9 @@ footer a:link, footer a:visited {
 /*------ main images -----------------------------------------------------------------*/
 
 
-.extra1, .extra2, .extra3, .extra3 span, .extra4, .extra5, .extra6, .extra6 span
-{ position: absolute;  }
+.extra1, .extra2, .extra3, .extra3::after, .extra4, .extra5, .extra6, .extra6::after {
+	position: absolute;
+}
 
 
 .extra1 { 
@@ -242,7 +247,9 @@ footer a:link, footer a:visited {
 	height: 123px;
 	}
 
-.extra3 span { 
+.extra3::after { 
+	display: block;
+	content: " ";
 	background: url(fish_bottom.gif) no-repeat; 
 	z-index: 3;
 	top: 1000px;
@@ -277,7 +284,9 @@ footer a:link, footer a:visited {
 	background: url(seafloor_bg.jpg) repeat-x left bottom;
 	}
 
-.extra6 span {
+.extra6::after {
+	display: block;
+	content: " ";
 	z-index: 2;
 	top: 0px;
 	left: 0px;

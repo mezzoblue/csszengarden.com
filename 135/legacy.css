@@ -1,0 +1,309 @@
+/* css Zen Garden submission 135 - 'contemporary nouveau', by David Hellsing, http://www.monc.se/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, David Hellsing */
+/* Added: Oct. 22nd, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* ________________ general ________________ */
+
+body
+	{
+	margin: 0;
+	padding: 0;
+	background: #554 url(bg.gif);
+	font: small/1.5em georgia, times, serif;
+	color: #333331;
+	text-align: center;
+	}
+	
+a
+	{
+	color: #c50;
+	text-decoration: none;
+	border-bottom: 1px solid #dca;
+	}
+	
+a:visited
+	{
+	color: #a86;
+	border: none;
+	}
+	
+a:hover
+	{
+	color: #000;
+	border-bottom: 1px solid #333331;
+	}
+	
+acronym
+	{
+	cursor: help;
+	font-style: normal;
+	border: none;
+	}
+	
+h1
+	{
+	display: none;
+	}
+	
+h2
+	{
+	font-size: 2em;
+	font-weight: normal;
+	color: #922;
+	margin: 0 0 0.7em 0;
+	padding: 0;
+	}
+	
+h3
+	{
+	width: 420px;
+	height: 20px;
+	margin: 1.2em 0 0.8em 0;
+	}
+	
+h3 span
+	{
+	display: none;
+	visibility: hidden;
+	}
+	
+p
+	{
+	text-indent: 1.5em;
+	font-size: 88%;
+	margin: 0 0 0.6em 0;
+	}
+
+/* The following hack is to correct paragraph text size in IE/WIN */
+
+/* \*/ * html body p { font-size: 80%; } /* */
+
+
+/* ________________ containers ________________ */
+
+
+#container
+	{
+	position: relative;
+	text-align: left;
+	margin: 0 auto;
+	width: 750px;
+	background: #fff url(main.jpg) repeat-y;
+	border-bottom: 15px solid #000;
+	}
+	
+#intro
+	{
+	width: 750px;
+	background: #fff url(main.jpg) repeat-y;
+	}
+	
+#supportingText
+	{
+	width: 430px;
+	margin-left: 30px;
+	}
+	
+#preamble
+	{
+	margin-left: 30px;
+	width: 430px;
+	}
+	
+#pageHeader
+	{
+	width: 750px;
+	height: 250px;
+	background: #000 url(top.jpg) no-repeat;
+	}
+
+#quickSummary
+	{
+	position: absolute;
+	left: 510px;
+	width: 210px;
+	background: transparent url(h3-download.gif) no-repeat 0 0;
+	border-bottom: 1px solid #923b09;
+	}
+	
+#footer
+	{
+	margin: 3em 0 0 0;
+	font: bold 9px/3em tahoma, verdana, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-bottom: 2em;
+	}
+	
+#linkList
+	{
+	position: absolute;
+	top: 320px;
+	left: 510px;
+	width: 210px;
+	margin-right: 30px;
+	}
+	
+/* ________________ lists & typo ________________ */
+	
+#pageHeader h1,
+#pageHeader h2
+	{
+	display: none;
+	}
+
+#quickSummary p.p2
+	{
+	text-indent: 0;
+	font: 10px/16px tahoma, verdana, sans-serif;
+	color: #efece3;
+	padding: 5px 17px;
+	margin: 25px 0 0 0;
+	background: #bd4d0d url(list-bg.jpg);
+	border-top: 1px solid #923b09;
+	}
+	
+#quickSummary p.p2 a
+	{
+	color: #efece3;
+	border: none;
+	font-weight: bold;
+	}
+	
+#quickSummary p.p2 a:hover
+	{
+	color: #ec9;
+	}
+
+#quickSummary p.p1
+	{
+	display: none;
+	}
+	
+#footer a
+	{
+	background: #cb9;
+	padding: 2px 5px;
+	color: #edb;
+	border: none;
+	margin: 0;
+	}
+	
+#footer a:hover
+	{
+	background: #000;
+	border: none;
+	}
+	
+#linkList h3
+	{
+	width: 210px;
+	height: 25px;
+	margin: 1em 0 0 0;
+	padding: 0;
+	}
+	
+#linkList p,
+#linkList li
+	{
+	font: x-small/1.6em tahoma, verdana, sans-serif;
+	color: #efece3;
+	text-indent: 0;
+	}
+	
+#linkList ul
+	{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #923b09;
+	background: #bd4d0d url(list-bg.jpg);
+	}
+	
+#linkList li
+	{
+	color: #000;
+	border-bottom: 1px solid #923b09;
+	line-height: 1.5em;
+	padding: 0.5em 17px;
+	}
+	
+#linkList li:hover
+	{
+	background: #b64a0b;
+	}
+	
+#linkList li a
+	{
+	display: block;
+	border: none;
+	color: #f4f0e6;
+	font-weight: bold;
+	margin-left: -12px;
+	padding-left: 12px;
+	background: url(arrow.gif) no-repeat 0 60%;
+	}
+	
+#linkList li a:hover
+	{
+	color: #ec9;
+	background-position: -300px 60%;
+	}
+	
+#linkList li a.c
+	{
+	display: inline;
+	padding: 0;
+	margin: 0;
+	background: none;
+	color: #000;
+	font-weight: normal;
+	}
+	
+#linkList li a.c:hover
+	{
+	color: #6e2308;
+	}
+	
+#linkList #larchives li,
+#linkList #lresources li,
+#linkList #lfavorites li
+	{
+	padding: 0.5em 0;
+	}
+
+#linkList #larchives li a,
+#linkList #lresources li a,
+#linkList #lfavorites li a
+	{
+	background: transparent url(bullet.gif) no-repeat 5px 60%;
+	display: inline;
+	padding-left: 17px;
+	margin: 0;
+	}
+	
+#linkList #larchives li a:hover,
+#linkList #lresources li a:hover,
+#linkList #lfavorites li a:hover
+	{
+	background-position: -295px 60%;
+	}
+	
+h3.select { background: transparent url(h3-select.gif) no-repeat;}
+h3.resources { background: transparent url(h3-resources.gif) no-repeat;}
+h3.archives { background: transparent url(h3-archives.gif) no-repeat; }
+h3.favorites { background: transparent url(h3-favorites.gif) no-repeat; }
+
+#preamble h3 { background: url(h3-theroad.gif) no-repeat; margin-top: 0; }
+#explanation h3 { background: url(h3-sowhat.gif) no-repeat; }
+#participation h3 { background: url(h3-participation.gif) no-repeat; }
+#benefits h3 { background: url(h3-benefits.gif) no-repeat; }
+#requirements h3 { background: url(h3-requirements.gif) no-repeat; height: 23px; margin-bottom: 0.7em; }

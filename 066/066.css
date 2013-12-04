@@ -134,27 +134,36 @@ h3 {
 	text-transform: uppercase;
 	color:#fff;
 	font-size:11px;
+	line-height: 12px;
 	font-weight:bold;
 	margin-top:3px;
 	margin-bottom:3px;
-	border-bottom: #fff 1px solid
+	border-bottom: #c00 5px solid;
+	display: inline-block;
+	white-space: nowrap;
 	}
-h3 span {
-	border-bottom: #c00 5px solid
-	}
-
-.explanation h3, .participation h3, .requirements h3, .benefits h3, .summary h3, .preamble h3, .design-selection h3, #lfavorites, .zen-resources h3, .design-archives h3 {
+.explanation h3::after, .participation h3::after, .requirements h3::after, .benefits h3::after, .summary h3::after, .preamble h3::after, .design-selection h3::after, .zen-resources h3::after, .design-archives h3::after {
+	content: " ";
 	background-image:url(h3.gif);
 	background-repeat:no-repeat;
 	background-position:bottom right;
+	width: 19px;
+	height: 15px;
+	display: inline-block;
+	position: absolute;
+	right: 13px;
 	}
-
 p {
 	margin:6px;
 	}
 
+.explanation h3+p, .participation h3+p, .requirements h3+p, .benefits h3+p, .summary h3+p, .preamble h3+p, .design-selection h3+nav, .zen-resources h3+ul, .design-archives h3+nav {
+	border-top: #fff 1px solid;
+	margin-top: -6px;
+	padding-top: 12px;
+}
 
-.requirements p.p5 {
+.requirements p:nth-child(6) {
 	color:#c00;
 	font-weight:bold;
 	}

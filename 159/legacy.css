@@ -1,0 +1,269 @@
+/* css Zen Garden submission 159 - 'Berry Flavour', by Maren Becker, http://www.honeyjazz.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Maren Becker */
+/* Added: Apr. 15th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/* ********************************
+	HTML Tags
+******************************** */
+* {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background:  url(bg.gif) repeat-y center top fixed;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #D48EA8;
+	text-align: center;
+}
+p {
+	line-height: 1.4em;
+}
+a:link, a:visited {
+	color: #858585;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #BF4E77;
+	text-decoration: none;
+}
+acronym {
+	cursor: help;
+	color: #CD9CAE;
+	font-weight: bold;
+	border-bottom: 1px solid #FEF6FA;
+}
+
+
+
+/* ********************************
+	Container, Intro
+******************************** */
+#container {
+	padding: 12px 0px 0px;
+	width: 428px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	text-align: left;
+}
+#intro {
+	margin-top: 0px;
+}
+
+
+
+/* ********************************
+	Page Header 
+******************************** */
+#pageHeader {
+	height: 175px;
+	width: 428px;
+	margin-top: 0px;
+	margin-bottom: 12px;
+	background: url(header.jpg) no-repeat;
+}
+#pageHeader h2 {
+	height: 120px;
+	width: 119px;
+	position: absolute;
+	left: 319px;
+	top: 79px;
+	background-image: url(berryflavour.gif);
+}
+
+
+
+/* ********************************
+	Quick Summary 
+******************************** */
+#quickSummary {
+	background: #FEF6FA url(bg_content.gif) repeat-y;
+	border-top: 1px solid #F6E1EA;
+	border-right: 1px solid #F6E1EA;
+	border-bottom: 1px solid #F6E1EA;
+	position: absolute;
+	top: 199px;
+	left: 0px;
+	padding: 2px 2px 2px 6px;
+	height: 36px;
+	width: 142px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 134px;
+}
+
+
+
+
+/* ********************************
+	Preamble
+******************************** */
+#preamble {
+	border-top: 1px solid #F6E1EA;
+	border-bottom: none;
+}
+#preamble p {
+	padding-left: 7px;
+	padding-right: 7px;
+	margin-top: 7px;
+}
+#preamble h3 {
+	background: url(bg_preamble.gif) no-repeat;
+	height: 29px;
+}
+#preamble p.p3 {
+	padding-bottom: 15px;
+}
+
+
+
+/* ********************************
+	Supporting Text 
+******************************** */
+#supportingText, #preamble {
+	margin-top: 0px;
+	margin-left: 155px;
+	background: #FEF6FA url(bg_content.gif) repeat-y;
+	border-right: 1px solid #F6E1EA;
+	width: 278px; 
+	voice-family: "\"}\""; 
+	voice-family: inherit;
+	width: 271px;
+}
+#supportingText p {
+	margin-top: 7px;
+	padding-right: 7px;
+	padding-left: 7px;
+}
+#explanation h3 {
+	background: url(bg_explanation.gif) no-repeat;
+	background-repeat:;
+	height: 29px;
+}
+#explanation p.p2, #participation p.p3, #benefits p.p1 {
+	margin-bottom: 20px;
+}
+#participation h3 {
+	background: url(bg_participation.gif) no-repeat;
+	height: 29px;
+}
+
+#benefits h3 {
+	background: url(bg_benefits.gif) no-repeat;
+	height: 29px;
+}
+
+#requirements h3 {
+	background: url(bg_requirements.gif) no-repeat;
+	height: 29px;
+}
+#requirements p.p5 {
+	margin-top: 30px;
+}
+
+
+/* ********************************
+	Footer
+******************************** */
+#footer {
+	text-align: right;
+	padding-right: 12px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+}
+
+
+
+/* ********************************
+	Link List 
+******************************** */
+#linkList{
+	position: absolute;
+	top: 251px;
+	left: 0px;
+	width: 142px;
+	font-size: 10px;
+}
+#linkList h3 {
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 14px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	margin-left: 2px;
+}
+#lselect h3 {
+	height: 19px;
+	background: url(bg_select.gif) no-repeat;
+}
+#lresources h3 {
+	height: 19px;
+	background: url(bg_resources.gif) no-repeat;
+}
+#larchives h3 {
+	height: 19px;
+	background: url(bg_archives.gif) no-repeat;
+}
+#lselect, #lresources, #larchives {
+	background: #FEF6FA url(bg_content.gif) repeat-y;
+	border-top: 1px solid #F6E1EA;
+	border-right: 1px solid #F6E1EA;
+	border-bottom: 1px solid #F6E1EA;
+	margin-bottom: 12px;
+}
+#linkList ul {
+	list-style: none;
+	margin: 5px;
+	padding: 0px;
+}	
+#linkList li a	{
+	display: block;
+}
+#linkList li:hover {
+	background-color:#FAEBF1;
+}
+#lselect a {
+	text-transform: uppercase;
+}
+#lselect ul li a.c {
+	display: inline;
+	text-transform: none;
+}
+#lselect li, #larchives li, #lresources li  {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background: url(dots.gif) repeat-x;
+}
+#footer a:link, #footer a:visited {
+	font-weight: bold;
+}
+#footer a:hover, #footer a:visited {
+	padding-bottom: 2px;
+	border-bottom: 4px solid #858585;
+	color: #858585;
+}
+
+
+/* ********************************
+	Hidden
+******************************** */
+#pageHeader h1 span, #pageHeader h2 span, #quickSummary p.p1 span,
+#preamble h3 span, #explanation h3 span, #participation h3 span, 
+#benefits h3 span, #requirements h3 span, #linkList h3 span {
+	display:none;
+}
+
+
+

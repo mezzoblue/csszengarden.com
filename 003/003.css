@@ -76,14 +76,17 @@ a:active, a:hover {
 header h1 {
 	background: transparent url(h1.jpg) no-repeat top left;
 	width: 750px;
-	height: 152px;
+	height: 142px;
 	margin: 0px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-header h1 span {
-	display: none;
-	}
-header h2 span {
-	display: none;
+header h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .summary { 
@@ -96,7 +99,7 @@ html>body .summary {
 	margin-top:-50px; 
 	top: 0;
 	}
-.summary .p1 {
+.summary p:first-child {
 	font-size: 1px;
 	color: white;
 	background: transparent url(panel1-2.jpg) no-repeat top left;
@@ -106,11 +109,12 @@ html>body .summary {
 	voice-family: "\"}\""; 
 	voice-family:inherit;
 	height: 258px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.summary .p1 span {
-	display: none;
-	}
-.summary .p2 {
+.summary p:last-child {
 	color: #7593A7;
 	background: transparent url(panel3.jpg) no-repeat 0 0;
 	padding: 90px 45px 0px 45px;
@@ -121,16 +125,15 @@ html>body .summary {
 	voice-family:inherit;
 	width: 124px;
 	height: 178px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
-.summary .p2 span {
-	letter-spacing: -1px;
-	line-height: 26px;
-	display: block;
-	}
-.summary .p2 a:link, .summary .p2 a:visited {
+.summary p:last-child a:link, .summary p:last-child a:visited {
 	color: #7593A7;
 	}
-.summary .p2 a:hover {
+.summary p:last-child a:hover {
 	color: #85ABC5;
 	}
 

@@ -1,0 +1,308 @@
+/* css Zen Garden submission 184 - 'Peace of Mind', by Carlos Varela, http://www.carlosvarela.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Carlos Varela */
+/* Added: September 16th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+html {
+min-width:750px;
+}
+
+body {
+font:11px/32px Georgia, 'Times New Roman', Times, serif;
+color:#28780A;
+text-align:center;
+background:#fff url(bg.gif) repeat-x;
+margin:0;
+padding:0;
+}
+
+a,a:link,a:visited,a:active {
+text-decoration:none;
+color:#5EA936;
+text-transform:uppercase;
+font-weight:700;
+}
+
+a:hover {
+color:#ABD550;
+}
+
+acronym {
+cursor:help;
+border-bottom:1px dotted #5EA936;
+color:#ABD550;
+font-weight:600;
+letter-spacing:1px;
+text-transform:uppercase;
+}
+
+
+
+h1,h2,h3,ul ,li {
+margin:0;
+padding:0;
+}
+
+
+
+li {
+list-style:none;
+}
+
+p {
+line-height:1.5em;
+margin:0;
+padding:5px 0 0 12px;
+}
+
+
+#benefits h3 {
+background:url(benefits.gif) no-repeat;
+}
+
+#container {
+width:750px;
+height:1500px;
+background:url(girl.jpg) top right no-repeat;
+text-align:left;
+position:relative;
+margin:0 auto;
+padding:0;
+}
+
+#explanation h3 {
+background:url(sowhat.gif) no-repeat;
+}
+
+#explanation,#participation,#benefits {
+background:transparent url(bg_text.jpg) left bottom no-repeat;
+margin:0 0 50px 0;
+padding:0;
+}
+
+
+#footer {
+text-align:center;
+height:50px;
+background:url(footer_bg.png) top right no-repeat;
+margin:0;
+padding:0 0 0 15px;
+font-family: 'Times New Roman', Times, serif;
+letter-spacing: 1.5px;
+font-size: 12px;
+
+}
+
+#footer a {
+text-transform:uppercase;
+color:#96CB18
+}
+
+#footer a:hover { color: #99CC00 }
+
+#intro {
+text-align:center;
+}
+
+#larchives h3 {
+background:url(archives.gif) no-repeat;
+}
+
+#linkList {
+position:absolute;
+width:255px;
+left:444px;
+top:581px;
+margin:0;
+padding:0;
+}
+
+#linkList ul {
+text-align:left;
+list-style:none;
+}
+
+#lresources h3 {
+background:url(resources.gif) no-repeat;
+}
+
+#lselect .c {
+text-transform:capitalize;
+font-size:10px;
+line-height:11px;
+}
+
+#lselect a {
+display:block;
+}
+
+#lselect a.c {
+display:inline;
+line-height:5px;
+margin:0;
+padding:0;
+}
+
+#lselect h3 {
+background:url(select.gif) no-repeat;
+}
+
+#lselect li a {
+text-transform:uppercase;
+font-size:11.5px;
+line-height:13px;
+font-weight:bold;
+background:url(bg_li.gif);
+margin:0;
+font-family:Georgia, 'Times New Roman', Times, serif;
+color: #96CB18
+}
+
+#lselect li a:hover {
+color:#CEC81A;
+}
+
+#lselect li,#lresources li,#larchives li {
+background:url(bg_li.gif);
+margin:0 0 1px;
+padding:8px 0 0 10px;
+}
+
+#lselect,#larchives,#lresoucers {
+margin:0 0 50px;
+}
+
+#larchives li a, #lresources  li a {
+text-transform: lowercase;
+font-size: 11px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+color: #96CB18
+}
+
+#pageHeader {
+position:absolute;
+height:300px;
+width:500px;
+background:transparent url(title.gif) top right no-repeat;
+left:0;
+top:16px;
+z-index:10;
+margin:0;
+padding:0;
+}
+
+#pageHeader span,#preamble h3 span,#explanation h3 span,#participation h3 span,#benefits h3 span,#requirements h3 span,#lselect h3 span,#larchives h3 span,#lresources h3 span,#extradiv3,#extraDiv4,#extraDiv5,#extraDiv6 {
+display:none;
+}
+
+#participation h3 {
+background:url(participation.gif) no-repeat;
+}
+
+#preamble {
+	position:absolute;
+	top:270px;
+	left:12px;
+	text-align:justify;
+	width:390px;
+	background:transparent url(bg_text.jpg) left bottom no-repeat;
+	margin:0 0 50px;
+	padding:0;
+	height: 351px;
+}
+
+#preamble h3 {
+background:url(theroad.gif) no-repeat;
+}
+
+#preamble h3,#explanation h3,#participation h3,#benefits h3,#requirements h3,#lselect h3 ,#larchives h3,#lresources h3 {
+width:380px;
+height:60px;
+}
+
+#preamble p,#explanation p,#participation p,#benefits p,#requirements p {
+text-align:justify;
+font:12px/22px Georgia, 'Times New Roman', Times, serif;
+margin:0;
+padding:10px 0 0 35px;
+}
+
+#quickSummary {
+position:absolute;
+width:300px;
+height:250px;
+background:url(quicksummary_bg.gif) no-repeat;
+font-style:italic;
+font-size:12px;
+left:421px;
+top:325px;
+text-align:center;
+}
+
+#quickSummary .p1 {
+text-indent:-9999px;
+height:200px;
+display:none;
+margin:0;
+padding:0;
+}
+
+#quickSummary .p2 {
+background:transparent;
+font-style:normal;
+text-transform:uppercase;
+font-family:Arial, Helvetica, sans-serif;
+font-size:10px;
+margin:210px 0 0;
+padding:0;
+}
+
+#requirements {
+background:transparent url(bg_text.jpg) left bottom no-repeat;
+margin:0;
+padding:0;
+}
+
+#requirements .p5 {
+height:200px;
+background:url(flower.jpg) center no-repeat;
+text-align:center;
+margin:0;
+padding:135px 0 0;
+}
+
+#requirements h3 {
+background:url(requirements.gif) no-repeat;
+}
+
+#supportingText {
+position:absolute;
+width:390px;
+float:left;
+left:13px;
+top:641px;
+margin:0 70px 0 0;
+padding:0;
+}
+
+#extraDiv1 {
+position:absolute;
+background:url(leaves.jpg) no-repeat;
+height:242px;
+width:332px;
+left:666px; /* 6 6 6 the number of the div! */
+top:1641px;
+
+}
+
+
+
+
+#extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 { display:none }

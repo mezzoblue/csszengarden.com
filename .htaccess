@@ -1,8 +1,25 @@
 RewriteEngine On
 Options +FollowSymlinks
 
+
 # dude built a design browser. Cool.
 # dude ran ads on it. Not as.
 SetEnvIfNoCase Referer ".*coret.org$" BadReferrer
 order deny,allow
 deny from env=BadReferrer
+
+
+# allow submissions.json to be executed as php
+<FilesMatch "^.*submissions\.json$">
+  SetHandler php-script
+</FilesMatch>
+
+
+# permanent redirect of old file
+RedirectMatch 301 ^/zengarden-sample\.css$ /examples/style.css
+
+
+# remove trailing .php from /examples/index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /examples/index.php?/$1 [L]

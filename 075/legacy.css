@@ -1,0 +1,298 @@
+/* css Zen Garden submission 075 - 'Lost HighWay' by Julien Roumagnac - http://www.j-roumagnac.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2003, Julien Roumagnac */
+/* Added: January 18th, 2003 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+
+
+
+/* basic elements ----------------------------------------------------------------------------------------*/
+body { 
+	background: #1D1D1D url(main_bg_pattern.gif) repeat center; 
+	margin: 0; 
+	padding: 0;
+	text-align:center;
+	}
+	
+a:link { 
+	text-decoration: none; 
+	color: #C6C6C6;
+	}
+a:visited { 
+	text-decoration: none; 
+	color: #C6C6C6;
+	}
+a:hover, a:active { 
+	text-decoration: none; 
+	color: #FFFFFF;
+	}
+acronym {
+	border-bottom: 0px dotted; /* Override for netscape that still want to display a dotted underline */
+	cursor:help;
+	font-weight: bold;
+	}
+
+/* Content  ----------------------------------------------------------------------------------------*/
+/* Main Container */
+#container { 
+	position: absolute;
+	width: 638px;
+	top: 18px;
+	left: 50%;
+	text-align: left;
+	margin-left: -319px;
+	background: url(container_bg.gif) repeat-y -4px;
+	z-index: 0;
+	}
+	
+/* Main Container Cap  */
+#extraDiv2 {
+	position: absolute;
+	width: 638px;
+	height: 18px;
+	top: 0px;
+	left: 50%;
+	margin-left: -319px;
+	background: url(container_top.gif) no-repeat -4px;
+	z-index: 0;
+	}
+
+/* Main CSS ZEN GARDEN Title */
+#extraDiv1 {
+	position: absolute;
+	width: 50%;
+	height: 301px;
+	bottom: 15px;
+	left: 0px;
+	background: url(main_title.gif) no-repeat right bottom;
+	margin-left: -317px;
+	z-index: 1;
+	}
+
+/* Hide titles : css Zen Garden, The Beauty of CSS Design, The Road to Enlightenment */	
+h1 span, h2 span, h3 span {
+	display: none;
+}
+
+/* Photo Container */
+#intro {
+	position: absolute;
+	width: 600px;
+	height: 533px;
+	top: 0px;
+	left: 50%;
+	margin-left: -304px;
+	background: url(main_bg_photo.jpg) no-repeat;
+	}
+
+/* A Demonstration ... Summary */	
+#quickSummary {
+	font-size: 9px;
+	font-family: Verdana;
+	color: #E12525;
+	width: 250px;
+	margin-left: 14px;
+	margin-top: 12px;
+	}
+	
+/* The Road Enlightenment Title */
+#preamble {
+	font-size: 12px;
+	font-family: Verdana;
+	color: #AFAFAF;
+	width: 588px;
+	height: 100px;
+	font-style: italic;
+	text-align: right;
+	background: url(title_preamble.gif) no-repeat top right;
+	padding-top: 35px;
+	margin-top: 245px;
+	}
+
+/* the 3 Paragraphs margin */	
+#preamble p.p1, #preamble p.p2, #preamble p.p3  {
+	position: absolute;
+	right: 10px;
+	}
+
+/* "Stairs texte effect */	
+#preamble p.p1 {
+	width: 370px;
+}
+#preamble p.p2 {
+	width: 470px;
+	margin-top: 60px;
+}
+#preamble p.p3 {
+	width: 520px;
+	margin-top: 120px;
+}
+
+/* Main 4 sections beginning */
+#supportingText p {
+	text-indent: 24px;
+	}
+
+/* Links color */	
+#supportingText a:link, #supportingText a:visited {
+	color: #FF2A2A;
+}
+#supportingText a:hover, #supportingText a:active {
+	color: #FF5A5A;
+}
+
+/* Fonts settings */	
+#explanation , #participation, #benefits, #requirements {
+	margin-left: 15px;
+	width: 600px;
+	font-size: 11px;
+	font-family: Verdana;
+	color: #AFAFAF;
+	font-style: italic;
+	}
+
+/* Interval for gif tiltes */	
+#explanation h3, #participation h3, #benefits h3, #requirements h3 {
+	height: 22px;
+	}
+
+/* Paragraphs Settings*/	
+#explanation p, #participation p, #benefits p, #requirements p {
+	margin-left: 12px;
+	width: 580px;
+	margin-bottom: 12px;
+	}
+
+/* Blocks and Titles positioning */
+#explanation {
+	margin-top: 533px;
+	background: url(title_explanation.gif) no-repeat;
+}
+#participation {
+	background: url(title_participation.gif) no-repeat;
+}
+#benefits {
+	background: url(title_benefits.gif) no-repeat;
+}
+#requirements {
+	background: url(title_requirements.gif) no-repeat;
+}
+
+#footer {
+	margin-left: 15px;
+	width: 600px;
+	height: 15px;
+	font-size: 9px;
+	font-family: Verdana;
+	text-align: center;
+	word-spacing: 20px;
+	background: #320000;
+	padding-top: 2px;
+	border-bottom: 1px solid #A12727;
+	border-top: 1px solid #730000;
+	}
+
+/* LISTS  ----------------------------------------------------------------------------------------*/
+/* List Select a Design **************************************************/	
+/* Main positioning and Gif Title */
+#lselect {
+	position: absolute;
+	top: 16px;
+	right: 23px;
+	background: url(list_title_design.gif) no-repeat top right;
+	z-index: 2;
+}
+
+/* Hide non Gif Title */
+#lselect h3 {display:none}
+
+/* Background */
+#lselect ul {
+	width: 187px;
+	height: 261px;
+	background: url(list_bg_design.gif) no-repeat top right;
+	margin: 19px 0px;
+	padding-top: 5px;
+	}
+
+/* Put a Fake Transparent dot to have the same line height in IE and NS */
+/* Use a Background Dot to improve positioning possibility */
+#lselect li {
+	font-family: Verdana;
+	font-size: 9px;
+	color: #E12525;
+	padding: 0px 0px 8px 33px;
+	list-style: none url(list_fake_dot.gif);
+	background: url(list_dot.gif) no-repeat 10px;
+	}
+
+/* Force carriage return before 'by' */
+#lselect li a:link, #lselect li a:visited {display: block;}
+#linkList li a.c:link, #linkList li a.c:visited {display: inline;}
+
+/* List Archives **************************************************/	
+/* Main positioning and Gif Title */
+#larchives {
+	position: absolute;
+	top: 130px;
+	left: 15px;
+	background: url(list_title_archives.gif) no-repeat top left;
+	z-index: 2;
+	}
+/* Hide non Gif Title */
+#larchives h3 {display:none}
+
+/* Background */
+#larchives ul {
+	width: 169px;
+	height: 79px;
+	background: url(list_bg_archives.gif) no-repeat top left;
+	margin: 19px 0px 0px 0px;
+	padding-top: 5px;
+	padding-left: 0px;
+	}
+
+/* Put a Fake Transparent dot to have the same line height in IE and NS */
+#larchives li {
+	font-family: Verdana;
+	font-size: 9px;
+	color: #E12525;
+	padding: 0px 0px 6px 10px;
+	list-style: none url(list_fake_dot.gif);
+	}
+
+/* List Resources **************************************************/	
+/* Main positioning and Gif Title */
+#lresources {
+	position: absolute;
+	top: 212px;
+	left: 15px;
+	background: url(list_title_resources.gif) no-repeat bottom left;
+	z-index: 2;
+	}
+/* Hide non Gif Title */
+#lresources h3 {display:none}
+
+/* Background */
+#lresources ul {
+	width: 169px;
+	height: 109px;
+	background: url(list_bg_resources.gif) no-repeat top left;
+	margin: 0px 0px 0px 0px;
+	padding-top: 5px;
+	padding-left: 0px;
+	}
+
+/* Put a Fake Transparent dot to have the same line height in IE and NS */
+#lresources li {
+	font-family: Verdana;
+	font-size: 9px;
+	color: #E12525;
+	padding: 0px 0px 6px 10px;
+	list-style: none url(list_fake_dot.gif);
+	}

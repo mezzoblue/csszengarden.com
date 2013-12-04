@@ -58,22 +58,21 @@ header {
 	background:url(logo.jpg) no-repeat;
 	z-index:1;
 	}
-h1 span, h2 span, .preamble h3 span, .supporting .explanation h3 span, .supporting .participation h3 span, .supporting .benefits h3 span, .supporting .requirements h3 span, header span, h3.select span, h3.archives span, h3.resources span {
-	visibility:hidden;
-	}
-h1 span, h2 span {
-	position:absolute;
+h1, h2, .preamble h3, .supporting .explanation h3, .supporting .participation h3, .supporting .benefits h3, .supporting .requirements h3, h3.select, h3.archives, h3.resources {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 .summary {
 	margin:0 0 50px 0;
 	}
-.summary p.p1 {
+.summary p:first-child {
 	position:relative;
 	font:normal 15px/17px Georgia, "Times New Roman", Times, serif;
 	color:#C9E2AB;
 	z-index:2;
 	}
-.summary p.p2 {
+.summary p:last-child {
 	position:absolute;
 	top:-100px;
 	left:568px;
@@ -82,7 +81,7 @@ h1 span, h2 span {
 	color:#C9E1AA;
 	z-index:3;
 	}
-.summary p.p2 a:hover {
+.summary p:last-child a:hover {
 	color:#69913E;
 	background-color:#C9E1AA;
 	text-decoration:none;
@@ -104,7 +103,7 @@ h1 span, h2 span {
 	background:url(about.gif) no-repeat;
 	margin:30px 0 -10px -2px;
 	}
-.preamble p.p3 {
+.preamble p:nth-child(4) {
 	margin:12px 0 0 0;
 	}
 .participation h3 {

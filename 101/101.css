@@ -72,10 +72,8 @@ header h1 {
 	left: 25px;
 	top: 165px;
 	
-}
-
-header h1 span {
-	display: none;
+	text-indent: -9999px;
+	overflow: hidden;
 }
 
 header h2 {
@@ -89,10 +87,9 @@ header h2 {
 	left: 225px;
 	top: 40px;
 	opacity: .70;
-}
 
-header h2 span {
-	display: none;
+	text-indent: -9999px;
+	overflow: hidden;
 }
 
 .summary {
@@ -115,9 +112,9 @@ background: #fff;
 	
 }
 
-.preamble h3 span, .explanation h3 span, .participation h3 span, .benefits h3 span, .requirements h3 span {
-	display: none;
-	
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+	text-indent: -9999px;
+	overflow: hidden;
 }
 
 .preamble p, .explanation p, .participation p, .benefits p, .requirements p  {
@@ -281,8 +278,10 @@ footer {
 }
 
 
-.design-selection h3 span, .design-archives h3 span, .zen-resources h3 span {
-	display: none;
+.design-selection h3, .design-archives h3, .zen-resources h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 

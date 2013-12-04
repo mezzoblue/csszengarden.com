@@ -10,7 +10,8 @@
 
 
 /* Lomo Credit: http://andreas.lunde.info/	 | 09.05.03 :: 09.09.03 */
-/* Via: http://sxc.hu/ */ 
+/* Via: http://sxc.hu/ */
+ 
 body { 
 	background: url(bg_top.jpg) no-repeat #FFF; 
 	margin: 0px;
@@ -35,16 +36,16 @@ html>p {
 	width: 271px; /* Be nice to Opera */
 	}
 @media ScReEn { /* HIDE THIS NONSENSE FROM SAFARI */
-	p span { position: relative; top: -1px; padding-bottom: 2px; }
+	p { position: relative; top: -1px; }
 	} 
 /* MORE NONSENSE JUST FOR IE <SHAKES HEAD /> */
-* html p span { position: relative; top: -1px; }
+* html p { position: relative; top: -1px; }
 
-p.p1 { background: url(p1.gif) no-repeat; }
-p.p2 { background: url(p2.gif) no-repeat; }
-p.p3 { background: url(p3.gif) no-repeat; }
-p.p4 { background: url(p4.gif) no-repeat; }
-p.p5 { background: url(p5.gif) no-repeat; }
+p:nth-child(2) { background: url(p1.gif) no-repeat; }
+p:nth-child(3) { background: url(p2.gif) no-repeat; }
+p:nth-child(4) { background: url(p3.gif) no-repeat; }
+p:nth-child(5) { background: url(p4.gif) no-repeat; }
+p:nth-child(6) { background: url(p5.gif) no-repeat; }
 
 a,
 a:visited	{
@@ -70,6 +71,7 @@ abbr {
 	}
 .page-wrapper {
 	width: 744px;
+	margin-bottom: -475px;
 	}
 
 header { z-index: 5000; }
@@ -97,17 +99,21 @@ header h2 {
 	padding: 0px;
 	margin: 0px;
 	}
-header h1 span,
-header h2 span,
-.preamble h3 span,
-.explanation h3 span,
-.participation h3 span,
-.benefits h3 span,
-.requirements h3 span,
-.design-selection h3 span,
-#lfavorites h3 span,
-.design-archives h3 span,
-.zen-resources h3 span	{ display: none; }
+header h1,
+header h2,
+.preamble h3,
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3,
+.design-selection h3,
+#lfavorites h3,
+.design-archives h3,
+.zen-resources h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .summary p { color: #828200; }
 .summary a,
@@ -118,8 +124,8 @@ header h2 span,
 	}
 .summary a:hover { color: #A2A200; border-bottom: 2px solid #C7C600; }
 .summary		{ margin-top: 144px; width: 608px; }
-.summary p.p1	{ background: url(p1_on_yellow.gif) no-repeat; }
-.summary p.p2 	{ background: url(p2_on_yellow.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
+.summary p:first-child	{ background: url(p1_on_yellow.gif) no-repeat; }
+.summary p:last-child 	{ background: url(p2_on_yellow.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
 
 .preamble,
 .explanation,
@@ -140,9 +146,9 @@ footer { position: relative; }
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
 * html*.preamble h3 { left: 53px; }
 /* GOTTA WAKE UP IE5 MAC! */
-.preamble p.p1 { background: url(p1_cropped.gif) no-repeat; }
-.preamble p.p2 { background: url(p2_cropped.gif) no-repeat; }
-.preamble p.p3 { background: url(p3_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
+.preamble p:nth-child(2) { background: url(p1_cropped.gif) no-repeat; }
+.preamble p:nth-child(3) { background: url(p2_cropped.gif) no-repeat; }
+.preamble p:nth-child(4) { background: url(p3_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }
 
 .explanation h3 {
 	position: absolute;
@@ -156,8 +162,8 @@ footer { position: relative; }
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
 * html*.explanation h3 { left: 54px; }
 /* GOTTA WAKE UP IE5 MAC! */
-.explanation p.p1 { background: url(p1_unlabeled.gif) no-repeat; }
-.explanation p.p2 { padding-bottom: 0px; margin-bottom: 16px; }
+.explanation p:nth-child(2) { background: url(p1_unlabeled.gif) no-repeat; }
+.explanation p:nth-child(3) { padding-bottom: 0px; margin-bottom: 16px; }
 
 .participation h3 {
 	position: absolute;
@@ -171,7 +177,7 @@ footer { position: relative; }
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
 * html*.participation h3 { left: 51px; }
 /* GOTTA WAKE UP IE5 MAC! */
-.participation p.p4 { padding-bottom: 0px; margin-bottom: 16px; }
+.participation p:nth-child(5) { padding-bottom: 0px; margin-bottom: 16px; }
 
 .benefits h3 {
 	position: absolute;
@@ -185,7 +191,7 @@ footer { position: relative; }
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
 * html*.benefits h3 { left: 53px; }
 /* GOTTA WAKE UP IE5 MAC! */
-.benefits p.p1 { padding-bottom: 0px; margin-bottom: 16px; }
+.benefits p:nth-child(2) { padding-bottom: 0px; margin-bottom: 16px; }
 
 .requirements h3 {
 	position: absolute;
@@ -199,8 +205,8 @@ footer { position: relative; }
 /* TARGETING IE6 PC, KEEP COMMENT OPEN AS FAR AS IE5 MAC IS CONCERNED \*/
 * html*.requirements h3 { left: 54px; }
 /* GOTTA WAKE UP IE5 MAC! */
-.requirements p.p4 { background: url(p4_on_blue.gif) no-repeat; }	
-.requirements p.p5 { background: url(p5_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }	
+.requirements p:nth-child(5) { background: url(p4_on_blue.gif) no-repeat; }	
+.requirements p:nth-child(6) { background: url(p5_unlabeled.gif) no-repeat; padding-bottom: 0px; margin-bottom: 16px; }	
 
 .sidebar {
 	position: absolute;
@@ -219,40 +225,27 @@ footer { position: relative; }
 .sidebar a:visited { color: #5E5F61; border: none; }
 .sidebar a:hover	{ color: #C1C3C5; }
 
-.design-selection li,
-#lfavorites li		{ margin-top: 8px; }
+.design-selection li { margin-top: 8px; }
 
 .design-selection li a,
-.design-selection li a:visited,
-#lfavorites li a,
-#lfavorites li a:visited	{ display: block; }
+.design-selection li a:visited { display: block; }
 
 .design-selection li a.designer-name,
-.design-selection li a.designer-name:visited,
-#lfavorites li a.designer-name,
-#lfavorites li a.designer-name:visited	{ color: #717375; display: inline; }
-.design-selection li a.designer-name:hover,
-#lfavorites li a.designer-name:hover	{ color: #C1C3C5; }
+.design-selection li a.designer-name:visited { color: #717375; display: inline; }
+.design-selection li a.designer-name:hover { color: #C1C3C5; }
 
 .design-selection h3.select {
 	background: url(select_a_design.gif) no-repeat;
 	width: 112px;
 	height: 44px;
 	}
+
 .design-selection ul { margin-top: -1px; }
 @media ScReEn { /* HIDE THIS NONSENSE FROM SAFARI */
 	.design-selection ul { margin-top: -2px; }
 	}  
 /* MORE NONSENSE JUST FOR IE <SHAKES HEAD /> */
 * html .design-selection ul { margin-top: -2px; }
-
-#lfavorites h3.favorites {
-	background: url(favorites.gif) no-repeat;
-	width: 112px;
-	height: 44px;
-	margin-top: 6px;
-	}
-#lfavorites ul { margin-top: -2px; }
 
 .design-archives h3.archives {
 	background: url(archives.gif) no-repeat;
@@ -292,17 +285,12 @@ footer a	{ padding-bottom: 9px; }
 
 footer,.requirements { z-index: 2; }
 .extra1 {
-	position: relative;
-	height: 1px;
 	z-index: 1;
-	}
-.extra1 span {
-	position: absolute;
-	bottom: -33px;
+	position: relative;
 	left: 0px;
-	background: url(bg_bottom.jpg) no-repeat;
 	width: 100%;
 	height: 508px;
+	background: url(bg_bottom.jpg) no-repeat;
 	}
 .extra2,
 .extra3,

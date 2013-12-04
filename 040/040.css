@@ -45,9 +45,10 @@ h3 {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	}
-h3 span {
-	display: none;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 a:link, a:visited { 
@@ -81,8 +82,10 @@ a:hover, a:active {
 	padding: 0;
 	}
 
-header h1 span, header h2 span, .summary p.p1 span {
-	display: none;
+header h1, header h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	}
 
 .summary {	
@@ -100,6 +103,9 @@ header h1 span, header h2 span, .summary p.p1 span {
 	padding: 0;
 	margin: 0;
 	border: 0;
+	}
+.summary p:first-child {
+	display: none;
 	}
 
 .preamble {	

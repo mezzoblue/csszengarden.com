@@ -1,0 +1,238 @@
+/* css Zen Garden submission 116 - 'Ragged', by Jose Florido, http://www.avidos.net/blogold/ http://www.ovillo.org/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Jose Florido */
+/* Added: Sept. 2nd, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+   
+   
+
+
+/* Hoja de estilos para "Ragged" */
+/* Autor: Jose Florido - jose@avidos.net */
+
+
+
+/* Elementos xhtml */
+body{
+	padding: 0;
+	margin: 0;
+	font-family: "MS Trebuchet", Verdana, Geneva, Arial, Helvetica, sans-serif;	
+	font-size: 75%;
+	line-height: 135%;
+	background-image: url("fondo.gif");
+	color:  #424242;
+	text-align: center;
+}
+
+a{
+	color: #af0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:visited{
+	color: #FF9F9F;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+h3{
+	color: #af0000;
+	font-size: 120%;
+	margin-top: 30px;
+	margin-bottom: 0;
+	position: relative;
+	padding: 0 0 0 25px;
+	background-image: url("bullet.gif");
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+}
+
+h3 span{
+	background-color: #fff;
+}
+
+p{
+	margin: 10px 0 5px 0;
+}
+
+/* ---- divs ---- */
+/* En orden de aparición en el codigo HTML */
+
+#container{
+	position: relative;
+	background-image: url("abajo.gif");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	width: 740px;
+	border: 1px solid #5F5F5F;
+	border-bottom: 0;
+	border-top: 0;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#pageHeader {
+	padding: 5px 0 0 15px;
+}
+
+#pageHeader h1{
+	width: 526px;
+	height: 91px;
+	background-image: url("header1.gif");
+	margin-bottom: 0;
+}
+#pageHeader h1 span {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+#pageHeader h2{
+	width: 279px;
+	height: 33px;
+	background-image: url("header2.gif");
+	margin-top: -22px;
+	margin-bottom: 25px;
+}
+
+#pageHeader h2 span {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+#quickSummary{
+	background-color: #AF0000;
+	color: #fff;
+	margin-bottom: 60px;
+	line-height: 125%;
+	font-size: 110%;
+}
+
+#quickSummary .p1{
+	position: relative;
+	padding: 29px 20px 0 20px;
+	background-color: #AF0000;
+	background-image: url("qsp1.gif"); 
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+#quickSummary .p2{
+	position: relative;
+	padding: 0 20px 25px 20px;
+	background: #AF0000 url("qsp2.gif") no-repeat bottom left ;
+}
+
+#quickSummary a{
+	color: #fff;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#quickSummary a:visited{
+	color: #CCCCCC;
+	text-decoration: none;
+}
+
+#quickSummary a:hover{
+	text-decoration: none;
+}
+
+#preamble{
+	margin-left: 220px;
+	padding-right: 10px;
+	font-size: 90%;
+}
+
+#supportingText{
+	margin-left: 220px;
+	padding-right: 10px;
+	font-size: 90%;
+}
+
+#requirements{
+	position: relative; 
+	margin-left: -180px; 
+	width: 650px;
+}
+
+#requirements .p5{
+	font-size: 80%;
+	margin: 10px;
+}
+
+#footer{
+	position: relative; 
+	left: -180px; 
+	padding: 65px 10px 30px 20px;
+	background-image: url("footer.gif");
+	background-repeat: no-repeat;
+	background-position: 0 55px;
+}
+
+/* Columna izquierda */
+
+#linkList {
+	position: absolute;
+	left: 12px;
+	top: 320px;
+	width: 178px;
+	padding: 0 2px 0 0;
+	font-size: 80%;
+	line-height: 140%;
+	background: #EFEFEF url("linea.gif") top right repeat-y;
+}
+
+#linkList h3{
+	background: #af0000;
+	margin: 0;
+	padding: 5px 0 5px 10px;
+	text-transform: lowercase;
+	color: #fff;
+	font-size: 100%;
+	background-image: url("header3.gif");
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+#linkList h3 span{
+	background: transparent;
+}
+
+#linkList ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding: 20px 10px 20px 10px;
+	background-image: url("izqdaul.gif");
+	background-repeat: repeat-x;
+}
+
+#linkList li{
+	padding-left: 18px; 
+	background: transparent url("flechita2.gif") 0 2px no-repeat;
+	margin-bottom: 7px;	
+	color: #818181;
+}
+
+#linkList li a{
+	color: #af0000;
+}
+
+#linkList li a.c{
+	color: #818181;
+}
+
+#lresources{
+	background: transparent url("izqda.gif") bottom no-repeat;
+	padding-bottom: 20px;
+}

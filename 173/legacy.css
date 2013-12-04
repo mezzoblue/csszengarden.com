@@ -1,0 +1,69 @@
+/* css Zen Garden submission 173 - 'Red Stars', by Shafiq Rizwan, http://www.1988online.net/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Shafiq Rizwan */
+/* Added: July 9th, 2005 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+body { font: 8pt/16pt georgia; color: #fffafa; background: #fff url(blossoms.jpg) no-repeat bottom right; margin: 0px; text-align: center; }
+p { font: 8pt/16pt georgia; margin-top: 0px; text-align: justify; }
+h3 { margin-bottom: 0px; }
+a:link { font-weight: bold; text-decoration: none; color: #B7A5DF; }
+a:visited { font-weight: bold; text-decoration: none; color: #D4CDDC; }
+a:hover, a:active { text-decoration: underline; color: #9685BA;	}
+
+#container { margin: 0 auto; width: 619px; background: url(bg.jpg) repeat-y; text-align:left; }
+#intro { background: url(intro.jpg) no-repeat; }
+
+#pageHeader { position:absolute; width:55px; }
+#pageHeader h1 { background: transparent url(header.gif) no-repeat; text-indent: -5000px; width: 46px; height: 254px; }
+#pageHeader h1 span { display:none }
+#pageHeader h2 { text-indent: -5000px; }
+#pageHeader h2 span { display:none }
+
+#quickSummary { position:absolute; margin-top:90px;	margin-left:322px; height:90px; width:260px; }
+#quickSummary p { font: 10px arial; text-align:center; color : #FFF; }
+
+#preamble {	padding: 205px 0 0 62px; width:335px; }
+#preamble h3 { text-indent:-5000px; background: url(road.jpg) no-repeat; width:344px; height:50px; }
+#preamble p { font-style: italic; margin:0 5px 0 30px; }
+
+#supportingText { padding-left: 73px; width:330px;	}
+#supportingText p {	margin:0 10px 0 20px; }
+#supportingText h3 { margin:0 0 0 7px; }
+
+#explanation, #participation, #benefits, #requirements { margin: 10px 0 0 0; }
+#explanation h3 { background: url(what.jpg) no-repeat; text-indent:-5000px; width:324px; height:40px; }
+#participation h3 {	background: url(participation.jpg) no-repeat; text-indent:-5000px; width:324px; height:40px; }
+
+#benefits h3 { background: url(benefits.jpg) no-repeat; text-indent:-5000px; width:324px; height:40px; }
+
+#requirements h3 { background: url(requirements.jpg) no-repeat; text-indent:-5000px; width:324px; height:40px; }
+
+#footer { background: url(footerbg.jpg) no-repeat; text-align: center; padding:10px; height:28px; }
+#footer a:link, #footer a:visited { margin-right: 20px; }
+
+#linkList { position:absolute; top:197px; margin:0 0 0 400px; width:200px; }
+#linkList2 { font: 10px verdana, sans-serif; background: transparent url(paper-bg.jpg) top left repeat-y; padding: 10px; width: 130px; text-align:left; }
+
+#linkList h3.select { background: url(select.jpg) no-repeat; margin: 10px 0px 5px 0px; width: 177px; height: 40px; }
+#linkList h3.select span { display:none }
+#linkList h3.archives { background: transparent url(archives.jpg) no-repeat; margin: 25px 0px 5px 0px; width:177px; height: 40px; }
+#linkList h3.archives span { display:none }
+#linkList h3.resources { background: transparent url(resources.jpg) no-repeat; margin: 25px 0px 5px 0px; width:177px; height: 40px; }
+#linkList h3.resources span { display:none }
+
+#linkList ul { margin: 0px;	padding: 0px; }
+#linkList li { list-style-type: none; border:1px #761C1C none; width:170px; padding-left:7px; }
+#linkList #lselect li { height:30px; padding-top:5px; }
+#linkList #larchives li, #linkList #lresources li { height:15px; padding-top:3px; }
+
+#linkList a { display:block; }
+#linkList a.c { display:inline; font-weight: normal; color: #FFF; border-bottom: 1px #FFF none; }
+#linkList a.c:hover { text-decoration: none; border-bottom: 1px #FFF dotted; }
+#linkList li:hover { background: url(lbg.jpg) #8F2323 repeat-x;	border:1px #761C1C solid; }

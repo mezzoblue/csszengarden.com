@@ -1,0 +1,30 @@
+<?php
+
+  include($SERVER_ROOT . 'includes/masterlist.php');
+  $callback = isset($_GET['callback']) ? preg_replace('/[^a-z0-9$_]/si', '', $_GET['callback']) : false;
+  header('Content-Type: ' . ($callback ? 'application/javascript' : 'application/json') . ';charset=utf-8');
+
+  // There’s no reason not to allow CORS for public APIs.
+  // See http://annevankesteren.nl/2012/12/cors-101 for details.
+  header('Access-Control-Allow-Origin: *');
+
+  function jsonify($entry) {
+    return array(
+      'submission' => $entry[0],
+      'title' => $entry[1],
+      'author' => $entry[2],
+      'website' => $entry[3]
+    );
+  }
+
+  $jsonDesignList = array_map('jsonify', $designList);
+
+  if ($callback) {
+    echo $callback . '(';
+  }
+  echo json_encode($jsonDesignList);
+  if ($callback) {
+    echo ')';
+  }
+
+?>

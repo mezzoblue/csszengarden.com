@@ -1,0 +1,245 @@
+/* css Zen Garden submission 127 - 'Vivacity', by Soso, http://soso.2037.org/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2004, Soso */
+/* Added: Oct. 21st, 2004 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
+
+
+
+/******************************
+	General page elements
+******************************/
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		font-family: Georgia, 'Trebuchet MS', Verdana, 'Times New Roman', Times, serif;
+		font-size: 10pt;
+		font-style: italic;
+		color: #000;
+		letter-spacing: 1px;
+	}
+	html {
+		background: #6CAADD url('bg.png') top left repeat-x fixed;
+	}
+	h1, h2 {
+		margin: 0;
+		padding: 0;
+	}
+	
+	a:link, a:visited {
+		background-color: #91D434;
+		color: #fff;
+		text-decoration: none;
+	}
+	a:hover {
+		background-color: #5DBEE4;
+	}
+	a:focus, a:active {
+		background-color: #999 !important;
+		color: #fff !important;
+	}
+	abbr, acronym {
+		cursor: help;
+	}
+/*****************
+	Page body
+******************/
+	#container {
+		background: #fff url('bg_container.png') bottom right no-repeat;
+		position: absolute;
+		left: 10%;
+		width: 778px;
+		min-height: 100%;
+		padding: 5px;
+		min-width: 778px;
+		border-left: 2px solid #BA41C3;
+		border-right: 2px solid #F386FB;
+		padding-bottom: 150px;
+	}
+	#pageHeader {
+		width: 776px;
+		height: 229px;
+		background-image: url('logo.png');
+		margin: 0 auto;
+	}
+	#pageHeader h1 span, h2 span {
+		display: none;
+	}
+	#quickSummary {
+		width: 190px;
+		float: right;
+		padding: 5px;
+		min-width: 200px;
+		margin-top: 15px;
+	}
+	div > #quickSummary {
+		margin: 0;
+	}
+	#quickSummary p {
+		letter-spacing: 2px;
+		color: #999;
+		text-align: center;
+	}
+	#quickSummary .p1 {
+		background: url('bg_quickSummary.png') bottom right no-repeat;
+		min-height: 125px;
+	}
+	#preamble {
+		background: url('bg_preamble.png') bottom center no-repeat;
+		padding: 5px;
+		min-height: 270px;
+		margin-top: 15px;
+	}
+	div > #preamble {
+		margin-top: 0;
+	}
+	#preamble h3 span {
+		display: none;
+	}
+	#preamble h3 {
+		width: 500px;
+		height: 40px;
+		background: url('road_to_enlightenment.png') top left no-repeat;
+	}
+	#explanation h3 span {
+		display: none;
+	}
+	#explanation h3 {
+		width: 500px;
+		height: 40px;
+		background: url('what_is_this_about.png') top left no-repeat;
+	}
+	#supportingText {
+		margin-top: -10px;
+		float: left;
+		width: 570px;
+	}
+	div > #supportingText {
+		margin-top:  -26px;
+	}
+	#explanation {
+		background: url('bg_explanation.png') top right no-repeat;
+	}
+	#participation {
+		background: url('bg_participation.png') bottom left no-repeat;
+	}
+	#participation h3 span {
+		display: none;
+	}
+	#participation h3 {
+		width: 500px;
+		height: 40px;
+		background: url('participation.png') top left no-repeat;
+	}
+	#benefits { 
+		background: url('bg_benefits.png') bottom right no-repeat;
+	}
+	#benefits h3 span {
+		display: none;
+	}
+	#benefits h3 {
+		width: 500px;
+		height: 40px;
+		background: url('benefits.png') top left no-repeat;
+	}
+	#requirements {
+		background: url('bg_requirements.png') bottom left no-repeat;
+	}
+	#requirements h3 span {
+		display: none;
+	}
+	#requirements h3 {
+		width: 500px;
+		height: 40px;
+		background: url('requirements.png') top left no-repeat;
+	}
+	#footer {
+		text-align: right;
+		padding-right: 15px;
+	}
+/******************
+	Right menu
+*******************/
+	#linkList {
+		float: right;
+		width: 200px;
+		margin-top: -10px;
+	}
+	
+	#lselect h3 span, #larchives h3 span, #lresources h3 span {
+		display: none;
+	}
+	#lselect h3, #larchives h3, #lresources h3 {
+		width: 200px;
+		height: 40px;
+		margin: 0;
+	}
+	#lselect ul, #larchives ul, #lresources ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	#lselect ul li, #larchives ul li, #lresources ul li {
+		width: 200px;
+		background: url('bg_li.png') top left;
+		display: block;
+		border-top: 1px solid #B942C0;
+		text-align: center;
+		padding: 3px 0;
+		color: #9C26A3;
+	}
+	#lselect ul li:hover, #larchives ul li:hover, #lresources ul li:hover {
+		background: url('bg_li_hover.png') top left;
+		border-top: 1px dashed #B942C0;
+	}
+	
+	#lselect {
+		border-top: 2px solid #B942C0;
+		background-color: #F287F8;
+	}
+	#lselect ul li {
+		min-height: 40px;
+	}
+	#lselect h3 {
+		background: url('select_a_design.png') top left no-repeat;
+	}
+	#lselect ul li a, #lselect ul li a:visited {
+		display: block;
+		background-color: transparent;
+	}
+	#lselect ul li a:hover {
+		color: #5C99E4;
+	}
+	#lselect .c {
+		display: inline;
+	}
+	#larchives {
+		background-color: #F287F8;
+	}
+	#larchives h3 {
+		background: url('archives.png') top left no-repeat;
+	}
+	#larchives ul li a, #larchives ul li a:visited, #lresources ul li a, #lresources ul li a:visited {
+		background-color: transparent;
+	}
+	#larchives ul li a:hover {
+		color: #779B31;
+	}
+	#lresources {
+		background-color: #F287F8;
+		border-bottom: 2px solid #B942C0;
+	}
+	#lresources h3 {
+		background: url('resources.png') top left no-repeat;
+	}
+	#lresources ul li a,#lresources ul li a:visited {
+		background-color: transparent;
+	}
+	#lresources ul li a:hover {
+		color: #BB8724;
+	}
