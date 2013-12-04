@@ -3,7 +3,7 @@
 	$lang = "en";
 
 	$head = array(
-		"title" => "CSS Zen Garden: The Beauty in CSS Design",
+		"title" => "CSS Zen Garden: The Beauty of CSS Design",
 		"description" => "A demonstration of what can be accomplished visually through CSS-based design.",
 
 		// if you'd like translation credit, place it somewhere in this comment
@@ -12,14 +12,17 @@
 	View source is a feature, not a bug. Thanks for your curiosity and
 	interest in participating!
 
-	Here are the submission guielines for the new and improved csszengarden.com:
+	Here are the submission guidelines for the new and improved csszengarden.com:
 
 	- CSS3? Of course! Prefix for ALL browsers where necessary.
 	- go responsive; test your layout at multiple screen sizes.
 	- your browser testing baseline: IE9+, recent Chrome/Firefox/Safari, and iOS/Android
 	- Graceful degradation is acceptable, and in fact highly encouraged.
 	- use classes for styling. Don't use ids.
-	- web fonts are cool, just make sure you have a license to share the files
+	- web fonts are cool, just make sure you have a license to share the files. Hosted 
+	  services that are applied via the CSS file (ie. Google Fonts) will work fine, but
+	  most that require custom HTML won't. TypeKit is supported, see the readme on this
+	  page for usage instructions: https://github.com/mezzoblue/csszengarden.com/
 
 	And a few tips on building your CSS file:
 

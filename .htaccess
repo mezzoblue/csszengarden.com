@@ -15,8 +15,9 @@ deny from env=BadReferrer
 </FilesMatch>
 
 
-# permanent redirect of old file
+# permanent redirect of old example files
 RedirectMatch 301 ^/zengarden-sample\.css$ /examples/style.css
+RedirectMatch 301 ^/zengarden-sample\.html$ /examples/index.html
 
 
 # remove trailing .php from /examples/index.php
