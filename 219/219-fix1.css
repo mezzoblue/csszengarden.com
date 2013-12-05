@@ -1,0 +1,131 @@
+/**
+* all and (min-width: 1367px)
+*
+* Anything more than 1367px.
+*
+* http://www.browserhacks.com/
+*/
+
+@media all and (min-width: 1367px\0) {
+
+    .page-wrapper {
+        overflow-y: auto;
+    }
+
+    /** $intro */
+
+    header,
+    .summary,
+    .preamble {
+        position: fixed;
+    }
+
+    /** $main */
+
+    .main::before,
+    .main::after {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: 640px;
+        content: '';
+    }
+
+    .main::before {
+        top: -600px;
+        height: 600px;
+        background: url(hook3.svg) no-repeat center bottom, url(layer-frame.svg) no-repeat center 541px;
+        -moz-background-size: 520px auto, 640px auto;
+        -o-background-size: 520px auto, 640px auto;
+        -webkit-background-size: 520px auto, 640px auto;
+        background-size: 520px auto, 640px auto;
+        content: '';
+    }
+
+    .main {
+        top: 270px;
+        right: 40px;
+        padding: 0 90px;
+        width: 460px;
+        height: auto;
+        background: url(layer-middle.svg) repeat-y center top;
+        -moz-background-size: 640px auto;
+        -o-background-size: 640px auto;
+        -webkit-background-size: 640px auto;
+        background-size: 640px auto;
+    }
+
+        .main::after {
+            bottom: -59px;
+            height: 59px;
+            background: transparent url(layer-frame.svg) no-repeat center bottom;
+            -moz-background-size: 640px auto;
+            -o-background-size: 640px auto;
+            -webkit-background-size: 640px auto;
+            background-size: 640px auto;
+        }
+
+        .main div[role="article"] {
+            visibility: visible;
+            margin-top: 0;
+            padding: 0;
+            width: auto;
+            height: auto;
+            background: transparent;
+        }
+
+            .main div[role="article"]::before {
+                display: none;
+            }
+
+            .main div[role="article"] h3 {
+                padding: 20px 15px 5px 15px;
+                font-size: 31px;
+                line-height: 35px;
+            }
+
+            .main div[role="article"],
+            .main div[role="article"] p {
+                position: static;
+            }
+
+    footer {
+        position: static;
+        margin: 0 64px;
+        padding: 20px 0;
+        width: 325px;
+        height: 75px;
+    }
+
+    .zen-validate-html,
+    .zen-validate-css,
+    .zen-license,
+    .zen-github,
+    .zen-accessibility {
+        position: static;
+        float: left;
+        width: 65px;
+    }
+
+    .zen-github {
+        width: 55px;
+    }
+
+    /** $sidebar */
+
+    .wrapper,
+    .wrapper:hover {
+        position: fixed;
+        top: 50%;
+        left: 20px;
+        margin-top: -180px;
+    }
+
+    .design-selection li a.designer-name {
+        background: #fff;
+        color: #000;
+        text-indent: 3px;
+        font-weight: normal;
+        font-size: 20px;
+    }
+}

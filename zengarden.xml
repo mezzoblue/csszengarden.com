@@ -11,7 +11,25 @@
 <language>en-ca</language>
 <webMaster>dave@example.com</webMaster>
 
-<lastBuildDate>Thurs, 18 Jul 2013 007:54:00 PST</lastBuildDate>
+<lastBuildDate>Tues, 19 Nov 2013 14:10:00 PST</lastBuildDate>
+
+<item>
+  <title>#218 - 26 Nov 2013</title>
+  <description>'Apothecary' by Trent Walton</description>
+  <link>http://www.csszengarden.com/?cssfile=218/218.css</link>
+</item>
+
+<item>
+  <title>#217 - 19 Nov 2013</title>
+  <description>'Screen Filler' by Elliot Jay Stocks</description>
+  <link>http://www.csszengarden.com/?cssfile=217/217.css</link>
+</item>
+
+<item>
+  <title>#216 - 17 Sept 2013</title>
+  <description>'Fountain Kiss' by Jeremy Carlson</description>
+  <link>http://www.csszengarden.com/?cssfile=216/216.css</link>
+</item>
 
 <item>
   <title>#215 - 18 Jul 2013</title>
@@ -47,12 +65,6 @@
   <title>#210 - 17 Apr 2008</title>
   <description>'Oceanscape' by Justin Gray</description>
   <link>http://www.csszengarden.com/?cssfile=210/210.css</link>
-</item>
-
-<item>
-  <title>#209 - 21 Nov 2007</title>
-  <description>'CSS Co., Ltd.' by Benjamin Klemm</description>
-  <link>http://www.csszengarden.com/?cssfile=209/209.css</link>
 </item>
 
 
