@@ -99,8 +99,7 @@
     // Prep Stylesheet URL
     $currentStyleSheet = "/$currentDesign/$currentDesign.css";
 
-
-	$typekitId = getTypekitId($currentDesign);
+	$typekitId = getTypekitId($currentStyleSheet);
 
 	// determine where in the paging we should be
 	if ($thisPage) {
