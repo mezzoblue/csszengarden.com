@@ -35,11 +35,14 @@
 		// flush return value
 		$return = "";
 
+		// check for language URL
+		global $langURL;
+
 		// begin at the already-established start of the list and loop down
 		for ($i = $start - 1; $i >= ($start - $count); $i--) {
 
 			$id = $list[$i][0];
-			$designURL = "?cssfile=/$id/$id.css";
+			$designURL = $langURL . "/$id/"; // prepend for translation pages
 			$designName = hsc($list[$i][1]);
 			$designerName = hsc($list[$i][2]);
 			$designerURL = hsc($list[$i][3]);
@@ -76,36 +79,27 @@
 
 	// set defaults
 	$numDesigns = 8; // number of designs to show in the nav
+    $currentDesign = '214'; // What is the current main design?
 
 
 	// check the query string to see if:
 	//	 - a specific design has been requested with cssfile
 	//	 - a specific page value been assigned for the navigation
 	if (!$loadCSS) {
-		$loadCSS = $_GET["cssfile"];
+		$loadCSS = $_GET["css"];
 	}
-	$thisPage = intval($_GET["page"]);
+	$thisPage = intval($_GET["pg"]);
 
 
-	// if cssfile is not empty, assign it as the design to load
+	// if $_GET['css'] is not empty, assign it as the design to load
 	if ($loadCSS) {
-
-		// allowing a no-CSS view of the site
-		if ($loadCSS == "none") {
-			$currentDesign = null;
-		} else {
-			$currentDesign = $loadCSS;
-		}
-
-	// if it is empty, assign 214
-	} else {
-		$currentDesign = "/214/214.css";
+		$currentDesign = $loadCSS;
 	}
 
+    // Prep Stylesheet URL
+    $currentStyleSheet = "/$currentDesign/$currentDesign.css";
 
-
-
-	$typekitId = getTypekitId($currentDesign);
+	$typekitId = getTypekitId($currentStyleSheet);
 
 	// determine where in the paging we should be
 	if ($thisPage) {
@@ -122,13 +116,5 @@
 		$listStart = count($designList);
 
 	}
-
-
-
-	// set default language to English if not otherwise specified
-	if (!isset($lang)) {
-		$lang = "en";
-	}
-
 
 ?>
