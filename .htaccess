@@ -32,8 +32,9 @@ RedirectMatch 301 ^/zengarden-sample\.html$ /examples/index.html
 # remove trailing .php from /examples/index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^\/examples\/(.*)$ /examples/index.php?/$1 [L]
-
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L,QSA]
+#rewrite snippet via http://24ways.org/2013/url-rewriting-for-the-fearful/
 
 # REWRITE for CLEANER URL STRUCTURE
 #
