@@ -1,5 +1,6 @@
 RewriteEngine On
-Options +FollowSymlinks
+#Comment the line below if server is already configured to follow symlinks 
+#Options +FollowSymlinks
 RewriteBase /
 
 # Canonical Host
