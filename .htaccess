@@ -1,6 +1,5 @@
 RewriteEngine On
-#Comment the line below if server is already configured to follow symlinks 
-#Options +FollowSymlinks
+Options +FollowSymlinks
 RewriteBase /
 
 # Canonical Host
@@ -28,7 +27,7 @@ deny from env=BadReferrer
 
 # permanent redirect of old example files
 RedirectMatch 301 ^/zengarden-sample\.css$ /examples/style.css
-RedirectMatch 301 ^/zengarden-sample\.html$ /examples/index.html
+RedirectMatch 301 ^/zengarden-sample\.html$ /examples/index
 
 # remove trailing .php from /examples/index.php
 RewriteCond %{REQUEST_FILENAME} !-f
