@@ -56,7 +56,7 @@
 		"participation-h3" => "參與",
 		"participation-p1" => '良好的視覺設計永遠是我們的目標。你必須修改這個頁面，所以得要有良好的<abbr title="Cascading Style Sheets">CSS</abbr>技巧。不過這份範例檔案已經詳盡地加上註解，即使是<abbr title="Cascading Style Sheets">CSS</abbr>初學者也能夠以此為出發點。請參考<a href="' . $zenUrls["zen-resources"] . '" title="CSS相關資源列表"><abbr title="Cascading Style Sheets">CSS</abbr>資源手冊</a>，裡面有相關的進階教學與技巧說明。',
 		"participation-p2" => '你可以用你希望的任何方式修改樣式表，但是別更動<abbr title="HyperText Markup Language">HTML</abbr>檔案。如果你從來都沒有這樣做過，也許會有點心生膽怯。不過你可以參考列表來深入地學習，並且拿範例檔案作為教學指南。',
-		"participation-p3" => '請下載<a href="/zengarden-sample.html" title="這個頁面的HTML程式碼，不該被更動。">HTML</a>跟<a href="/zengarden-sample.css" title="這個頁面的CSS範例檔，你可以更改它。">CSS</a>的範例檔案，並且在自己的電腦上修改。在你完成你的傑作後（請別拿半成品投稿），將<abbr title="Cascading Style Sheets">CSS</abbr>檔案上傳到你的網頁伺服器。把該檔案以及全部使用到的素材包成壓縮檔，並<a href="' . $zenUrls["zen-submit"] . '" title="請用聯絡表單給我們你的CSS檔案">寄給我們連結</a>，如果我們採用你的作品，我們會將其下載並放在我們的伺服器上。',
+		"participation-p3" => '請下載<a href="' . $zenUrls["example-html"] . '" title="這個頁面的HTML程式碼，不該被更動。">HTML</a>跟<a href="/zengarden-sample.css" title="這個頁面的CSS範例檔，你可以更改它。">CSS</a>的範例檔案，並且在自己的電腦上修改。在你完成你的傑作後（請別拿半成品投稿），將<abbr title="Cascading Style Sheets">CSS</abbr>檔案上傳到你的網頁伺服器。把該檔案以及全部使用到的素材包成壓縮檔，並<a href="' . $zenUrls["example-css"] . '" title="請用聯絡表單給我們你的CSS檔案">寄給我們連結</a>，如果我們採用你的作品，我們會將其下載並放在我們的伺服器上。',
 
 		"benefits-h3" => "益處",
 		"benefits-p1" => '你為什麼要參與這項計畫呢？因為可以展現你的實力、激發創作靈感，並作為展示<abbr title="Cascading Style Sheets">CSS</abbr>驚人效果的參考資源。本網站供給現在的網頁工作者一些靈感，給予入門者學習的工具，並提供我們所期待的未來技術的展示。',
