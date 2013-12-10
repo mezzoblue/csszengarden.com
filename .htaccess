@@ -59,7 +59,7 @@ RewriteRule ^([0-9]+)(\/page(.*))?\/$ index.php?css=$1&pg=$3 [L]
 RewriteRule ^(page(.*))?\/$ index.php?pg=$2 [L]
 
 # Send translated page traffic to appropriate place
-RewriteRule ^tr\/([a-z]+)\/([0-9]+)(\/page(.*))?\/$ index.php?css=$2&pg=$4&lang=$1 [L]
+RewriteRule ^tr\/([a-z\-]+)\/([0-9]+)(\/page(.*))?\/$ index.php?css=$2&pg=$4&lang=$1 [L]
 
 # Send translated page traffic (no CSS variable) to appropriate place
-RewriteRule ^tr\/([a-z]+)(\/page(.*))?\/$ index.php?pg=$3&lang=$1 [L]
+RewriteRule ^tr\/([a-z\-]+)(\/page(.*))?\/$ index.php?pg=$3&lang=$1 [L]
