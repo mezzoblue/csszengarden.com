@@ -76,6 +76,8 @@ class Typekit {
 
 						if (strlen($body) < $size) {
 							$data = $body . fread($socket, $size - strlen($body));
+						} else {
+							$data = $body;
 						}
 
 						if ($this->debug) {
