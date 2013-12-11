@@ -6,12 +6,18 @@
 
 <title>css Zen Garden</title>
 
-<description>A demonstration of what can be accomplished visually through CSS-based design. This feed announces the past 8 new entries.</description>
+<description>A demonstration of what can be accomplished visually through CSS-based design. This feed announces new entries.</description>
 <link>http://www.csszengarden.com/</link>
 <language>en-ca</language>
 <webMaster>dave@example.com</webMaster>
 
-<lastBuildDate>Tues, 19 Nov 2013 14:10:00 PST</lastBuildDate>
+<lastBuildDate>Tues, 5 Dec 2013 09:00:00 PST</lastBuildDate>
+
+<item>
+  <title>#219 - 5 Dec 2013</title>
+  <description>'Steel' by Steffen Knoeller</description>
+  <link>http://www.csszengarden.com/219/</link>
+</item>
 
 <item>
   <title>#218 - 26 Nov 2013</title>
@@ -41,30 +47,6 @@
   <title>#214 - 17 Jul 2013</title>
   <description>'Verde Moderna' by Dave Shea</description>
   <link>http://www.csszengarden.com/?cssfile=214/214.css</link>
-</item>
-
-<item>
-  <title>#213 - 17 Apr 2008</title>
-  <description>'Under the Sea!' by Eric Stoltz</description>
-  <link>http://www.csszengarden.com/?cssfile=213/213.css</link>
-</item>
-
-<item>
-  <title>#212 - 17 Apr 2008</title>
-  <description>'Make 'em Proud!' by Michael McAghon and Scotty Reifsnyder</description>
-  <link>http://www.csszengarden.com/?cssfile=212/212.css</link>
-</item>
-
-<item>
-  <title>#211 - 17 Apr 2008</title>
-  <description>'Orchid Beauty' by Kevin Addison</description>
-  <link>http://www.csszengarden.com/?cssfile=211/211.css</link>
-</item>
-
-<item>
-  <title>#210 - 17 Apr 2008</title>
-  <description>'Oceanscape' by Justin Gray</description>
-  <link>http://www.csszengarden.com/?cssfile=210/210.css</link>
 </item>
 
 
