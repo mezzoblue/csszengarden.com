@@ -1,5 +1,9 @@
 <?php
-# URL: ?submission=XXX?token=xxxxxxxx
+
+# URL for kit addition:
+# ?submission=XXX?token=xxxxxxxx
+# submission = three digit submission number
+# token = Zen API token
 
 header('Content-Type: text/plain');
 
