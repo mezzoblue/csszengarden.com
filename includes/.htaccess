@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Basic script protection"
+AuthUserFile /nfs/c02/h05/mnt/22553/domains/csszengarden.com/.htpasswd
+require valid-user
