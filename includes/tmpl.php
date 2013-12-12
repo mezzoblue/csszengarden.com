@@ -148,7 +148,7 @@
 				<h3 class="resources"><?php echo $sidebar["design-resources-h3"]; ?></h3>
 				<ul>
 					<li class="view-css">
-						<a href="<?php echo "/$currentDesign/$currentDesign" ?>" title="<?php echo $sidebar["view-css-title"]; ?>">
+						<a href="<?php echo "$currentStyleSheet" ?>" title="<?php echo $sidebar["view-css-title"]; ?>">
 							<?php echo $sidebar["view-css-text"]; ?>
 						</a>
 					</li>
