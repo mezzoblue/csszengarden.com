@@ -1307,6 +1307,12 @@ $designList = array(
 			"Steffen Knoeller",
 			"http://steffen-knoeller.de",
 	),
+	array(
+			"220",
+			"Garments",
+			"Dan Mall",
+			"http://danielmall.com/",
+	),
 
 );
 
