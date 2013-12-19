@@ -1,86 +1,62 @@
 /*
+CSS ZEN GARDEN
 
- ______   __  __     ______     __    __     ______     ______    
-/\__  _\ /\ \_\ \   /\  __ \   /\ "-./  \   /\  __ \   /\  ___\   
-\/_/\ \/ \ \  __ \  \ \ \/\ \  \ \ \-./\ \  \ \  __ \  \ \___  \  
-   \ \_\  \ \_\ \_\  \ \_____\  \ \_\ \ \_\  \ \_\ \_\  \/\_____\ 
-    \/_/   \/_/\/_/   \/_____/   \/_/  \/_/   \/_/\/_/   \/_____/ 
-                                                                  
- __  __     __     __    __     __  __     ______     ______      
-/\ \/ /    /\ \   /\ "-./  \   /\ \/\ \   /\  == \   /\  __ \     
-\ \  _"-.  \ \ \  \ \ \-./\ \  \ \ \_\ \  \ \  __<   \ \  __ \    
- \ \_\ \_\  \ \_\  \ \_\ \ \_\  \ \_____\  \ \_\ \_\  \ \_\ \_\   
-  \/_/\/_/   \/_/   \/_/  \/_/   \/_____/   \/_/ /_/   \/_/\/_/    
-
-Please don't judge my code. I am pretty new at this and did this
-in a few hours over the weekend.
+SUBMISSION BY THOMAS KIMURA
 
 */
 
+/*Import google fonts to be used*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700);
 
+
+/*Every screen size*/
 @media only screen
 {
+    /*to everything*/
     body{
         font-family: 'Open Sans', sans-serif;
         font-size:16px;
         line-height:30px;
-        color:#444;
+        color:#555;
         margin:0 auto;
         width:100%;
     }
     
     h3
     {
-        padding:0px;
+        font-family: 'Merriweather', serif;
+        font-weight:800;
         padding-top:50px;
-        margin:0px;
-        margin-left:20px;
-        margin-right:20px;
-        font-weight:300;
+        margin: auto;
+        max-width:600px;
+        padding-left:20px;
+        padding-right:20px;
         font-size:28px;
         text-transform:uppercase;
-        color:#222;
+        color:#333;
     }
     
     p
     {
-        margin:0px;
-        margin-left:20px;
-        margin-right:20px;
+        margin:auto;
         padding-top:5px;
         padding-bottom:10px;
+        padding-left:20px;
+        padding-right:20px;
+        max-width:600px;
     }
     
     a
     {
-        color:#444;
-        opacity:0.9;
+        color:#222;
         text-decoration:none;
         font-weight:800;
-        font-size:18px;
     }
     
     a:hover
     {
-        opacity:1;
-    }
-    
-    .summary a
-    {
-        color:#eee;
         opacity:0.5;
-        text-decoration:none;
-        font-weight:600;
-        font-size:18px;
-        background-color:#666;
-        padding:5px;
-    }
-    
-    .summary a:hover
-    {
-        opacity:0.7;
-        color:#eee;   
     }
     
     header
@@ -89,21 +65,25 @@ in a few hours over the weekend.
         padding:10px;
         background-color:#f05253;
         font-size:32px;
-        color:#eee;
+        color:#fff;
         background-size:cover;
     }
     
     header h1
     {
-        font-weight:300;
-        line-height:40px;
+        font-family: 'Merriweather', serif;
+        font-weight:700;
+        font-size:60px;
+        line-height:65px;
+        margin:0px;
+        padding-top:20px;
     }
     
     header h2
     {
-        line-height:0px;
         font-size:24px;
         font-weight:600;
+        margin:0px;
     }
     
     .summary
@@ -111,220 +91,123 @@ in a few hours over the weekend.
         padding-top:50px;
         padding-bottom:50px;
         background-color:#e24951;
-        color:#eee;
-        font-size:18px;
+        color:#fff;
         height:250px;
         margin-bottom:1000px;
-    }
-    
-    .requirements [role=contentinfo]
-    {
-        padding-top:30%;
-        padding-left:10%;
-        padding-right:10%;
-        padding-bottom:30%;
-        font-size: 24px;
+        font-weight:200;
+        font-size:18px;
+        line-height:30px;
         color:#fff;
-        font-weight:600;
-        background-color:#f05253;
-        width:60%;
-        margin:0 auto;
-        margin-top:50px;
-        max-width:600px;
-        max-height:300px;
-    }
-    
-    .requirements [role=contentinfo] a
-    {
-        opacity:0.6;
-        color:#eee;
-        font-weight:600;
-        font-size:24px;
-    }
-    
-    .requirements [role=contentinfo] a:hover
-    {
-        opacity:0.9;
-    }
-    
-    footer
-    {
-        text-align:center;
-        padding-top:50px;
-        padding-bottom:50px;
-        margin:0px;
-    }
-    
-    footer a
-    {
-        font-weight:300;
-        font-size:24px;
-        text-transform:uppercase;
-        padding:20px;
-        color:#f05253;
-    }
-    
-    .select
-    {
-        position:absolute;
-        top:490px;
-        width:100%;
-        margin:0px;
-        text-align:center;
-        background-color:#444;
-        color:#eee;
-        padding-top:20px;
-        padding-bottom:20px;
-        max-width:none;
-    }
-    
-    .design-selection ul  
-    {
-        position:absolute;
-        top:560px;
-        margin: 0 auto;
-        padding:0px;
-        margin-left:5%;
-        margin-right:5%;
-        width:90%;
-    }
-    
-    .design-selection li
-    {
-        width:90%;
-        text-align:center;
-        padding:10px;
-        margin:10px;
-        margin-left:2.5%;
-        margin-right:2.5%;
-        border:1px;
-        border-color:#999;
-        border-style:solid;
     }
 
-    .design-selection ul
+    .summary a
     {
-        list-style-type:none;
-    }
-    
-    .design-selection  li
-    {
-        font-style:italic;
-    }
-    
-    .design-name
-    {
-        font-weight:300;
-        font-size:24px;
-        font-style:normal;
-    }
-    
-    .designer-name
-    {
-        font-style:normal;
-        font-size:20px;
-    }
-    
-    .design-archives h3
-    {
-        display:none;
-    }
-    
-    .design-archives ul li
-    {
-        display:inline;
-        text-align:center;
-    }
-    
-    .design-archives ul
-    {
-        list-style-type:none;
-    }
-    
-    .design-archives a
-    {
-        font-weight:300;
-        font-size:18px;
-    }
-    
-    .next
-    {
-        position:absolute;
-        top:1350px;
-        right:1%;
-    }
-    
-    .previous
-    {
-        position:absolute;
-        top:1300px;
-        right:1%;
-    }
- 
-    .viewall
-    {
-        position:absolute;
-        top:1350px;
-        left:1%;
-    }
-    
-    .zen-resources
-    {
-        padding-left:10%;
-        padding-right:10%;
         color:#fff;
         font-weight:600;
-        width:60%;
-        height:300px;
-        max-width:600px;
-        margin:0 auto;
-        background-color:#f05253;
+        padding:5px;
+        border:1px white solid;
+        white-space: nowrap;
     }
     
-    .zen-resources ul li
-    {
-        list-style:none;
-    }
-    
-    .zen-resources ul
-    {
-        padding:10%;
-    }
-    
-    .zen-resources h3
-    {
-        display:none;
-    }
-    
-    .zen-resources a
-    {
-        color:#fff;
-        margin:5px;
-        font-weight:400;
-        font-size:24px;
-        line-height:30px;
-    }
-    
-    .zen-resources a:hover
+    .summary a:hover
     {
         opacity:0.5;
     }
     
-    .sidebar
+    .requirements [role=contentinfo]
     {
-       height:0px;
+        font-family: 'Merriweather', serif;
+        font-size:30px;
+        line-height:45px;
+        font-weight:400;
+        color:#555;
+        margin:auto;
+        max-width:600px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .requirements [role=contentinfo] a
+    {
+        font-family: 'Merriweather', serif;
+        opacity:1;
+        color:#333;
+        font-weight:800;
     }
     
+    .requirements [role=contentinfo] a:hover
+    {
+        opacity:0.5;
+    }
+
+    footer
+    {
+        padding-left: -left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin:auto;
+        width:600px;
+        max-width:80%;
+        text-transform:uppercase;
+        text-align:center;
+        border-top:1px #ccc solid;
+    }
+    
+    footer a
+    {
+    padding-right:10px;
+    }
+
+    .design-selection
+    {
+        position:absolute;
+        top:500px;
+    }
+    
+    .design-archives
+    {
+        position:absolute;
+        top:850px;
+    }   
+    
+    .zen-resources
+    {
+        margin:auto;
+        max-width:600px;
+        padding-top:50px;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .zen-resources h3
+    {
+        display:none;
+    }
+
+    .zen-resources ul
+    {
+        list-style-type:none;
+        padding:0px;
+    }
+
+    .zen-resources ul li
+    {
+        display: inline;
+        list-style-type: none;
+        padding-right: 20px;
+    }
 }
 
 
-
+/*Screen sizes larger than 800px*/
 @media only screen and (min-width: 800px)
 {
     header
     {
         height:500px;
-        background-image:url('title.png');
+        background-image:url('img/title4.png');
         background-size:cover;
         margin:0 auto;
         padding-left:10%;
@@ -337,104 +220,11 @@ in a few hours over the weekend.
         top:150px;
         left:10%;
         background-color:transparent;
-        color:#eee;
+        color:#fff;
     }
     
     .summary p
     {
         width:400px;
-    }
-        
-    p
-    {
-        font-size:18px;
-        line-height:32px;
-        margin:0 auto;
-        width:60%;
-        max-width:600px;
-        padding-top:10px;
-        padding-bottom:10px;
-    }
-    
-    h3
-    {
-        margin:0 auto;
-        width:60%;
-        max-width:600px;
-    }
-    
-    .select
-    {
-        top:520px;   
-    }
-    
-     .design-selection ul  
-    {
-        top:600px;
-        width:60%;
-        margin-left:20%;
-        margin-right:20%;
-    }
-    
-    .design-selection li
-    {
-        float:left;
-        width:40%;
-        height:80px;
-        padding:2%;
-        margin-left:3%;
-        margin-right:2.5%;
-        text-align:center;
-    }
-    
-    .design-selection li:hover
-    {
-        background-color:#eee;
-        border-color:#eee;
-    }
-    
-    .design-selection li:hover
-    {
-
-    }
-    
-    .next
-    {
-        width:20%;
-        top:1200px;
-        right:20%;
-        font-size:30px;
-    }
-    
-    .previous
-    {
-        position:absolute;
-        width:20%;
-        top:1200px;
-        right:40%;
-        font-size:30px;
-    }
-        
- 
-    .viewall
-    {
-        width:20%;
-        top:1200px;
-        left:20%;
-        font-size:30px;
-    }
-    
-    .requirements [role=contentinfo]
-    {
-        padding-top:10%;
-        padding-bottom:10%;
-    }
-    
-    .zen-resources ul li
-    {
-        display:inline;
-    }
-    
-
-        
+    } 
 }
