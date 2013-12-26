@@ -12,17 +12,26 @@ SUBMISSION BY THOMAS KIMURA
 
 /*Every screen size*/
 @media only screen
-{
+{   
+    /*highlight color*/
+    ::selection{opacity:1;color:#fff; background-color:#f05253;}
+    :-moz-selection{opacity:1;color:#fff; background-color:#f05253;}
+
+body, html {
+  height: 100%;
+}
+
     /*to everything*/
     body{
         font-family: 'Open Sans', sans-serif;
-        font-size:16px;
-        line-height:30px;
+        font-size:1em;
+        line-height:1.75em;
         color:#555;
         margin:0 auto;
         width:100%;
     }
     
+    /*headers*/
     h3
     {
         font-family: 'Merriweather', serif;
@@ -32,11 +41,14 @@ SUBMISSION BY THOMAS KIMURA
         max-width:600px;
         padding-left:20px;
         padding-right:20px;
-        font-size:28px;
-        text-transform:uppercase;
-        color:#333;
+        font-size:2em;
+        line-height: 1.5em;
+        text-transform:capitalize;
+        color:#444;
     }
     
+    /*all paragraphs*/
+    /*max width 600px*/
     p
     {
         margin:auto;
@@ -47,6 +59,7 @@ SUBMISSION BY THOMAS KIMURA
         max-width:600px;
     }
     
+    /*links are darker*/
     a
     {
         color:#222;
@@ -54,71 +67,88 @@ SUBMISSION BY THOMAS KIMURA
         font-weight:800;
     }
     
+    /*links change on hover*/
     a:hover
     {
         opacity:0.5;
     }
     
+    /*header*/
     header
     {
-        height:180px;
-        padding:10px;
-        background-color:#f05253;
-        font-size:32px;
-        color:#fff;
+        padding-top:30px;
+        padding-bottom:30px;
+        padding-left:20px;
+        background-color:#f8efef;
         background-size:cover;
+        color:#f05253;
     }
     
+    /*main title*/
     header h1
     {
         font-family: 'Merriweather', serif;
         font-weight:700;
-        font-size:60px;
+        font-size:4em;
         line-height:65px;
         margin:0px;
         padding-top:20px;
+        padding-left:20px;
     }
     
+    /*subtitle*/
     header h2
     {
-        font-size:24px;
+        font-size:2em;
         font-weight:600;
         margin:0px;
+        padding-left:20px;
     }
     
+    /*summary*/
     .summary
-    {
+    {   
         padding-top:50px;
         padding-bottom:50px;
-        background-color:#e24951;
-        color:#fff;
-        height:250px;
-        margin-bottom:1000px;
+        background-color:#f8efef;
+        color:#555;
+        margin-bottom:1500px; /*leave space to fit design slection,archive and resources*/
         font-weight:200;
-        font-size:18px;
-        line-height:30px;
-        color:#fff;
     }
 
+    /*summary links with border*/
     .summary a
     {
-        color:#fff;
+        color:#555;
         font-weight:600;
         padding:5px;
-        border:1px white solid;
+        border:1px #555 solid;
         white-space: nowrap;
     }
     
+    /*summary hover*/
     .summary a:hover
     {
         opacity:0.5;
+    }
+
+    .summary p
+    {
+        margin-left:20px;
+    }
+
+    /*first paragraph larger*/
+    .summary p:first-child
+    {
+        font-size:2em;
+        line-height:1.5em;
     }
     
     .requirements [role=contentinfo]
     {
         font-family: 'Merriweather', serif;
-        font-size:30px;
-        line-height:45px;
+        font-size:2em;
+        line-height:1.5em;
         font-weight:400;
         color:#555;
         margin:auto;
@@ -132,7 +162,7 @@ SUBMISSION BY THOMAS KIMURA
     {
         font-family: 'Merriweather', serif;
         opacity:1;
-        color:#333;
+        color:#444#;
         font-weight:800;
     }
     
@@ -141,90 +171,229 @@ SUBMISSION BY THOMAS KIMURA
         opacity:0.5;
     }
 
+    /*footer*/
     footer
     {
-        padding-left: -left: 20px;
-        padding-right: 20px;
+        background-color:#f8efef;
         padding-top: 50px;
         padding-bottom: 50px;
         margin:auto;
-        width:600px;
-        max-width:80%;
+        width:100%;
         text-transform:uppercase;
         text-align:center;
-        border-top:1px #ccc solid;
+        font-weight:200;
     }
     
     footer a
     {
-    padding-right:10px;
-    }
-
-    .design-selection
-    {
-        position:absolute;
-        top:500px;
+        padding-right:10px;
+        color:#444;
     }
     
-    .design-archives
-    {
-        position:absolute;
-        top:850px;
-    }   
-    
+    /*resource links*/
     .zen-resources
     {
         margin:auto;
         max-width:600px;
         padding-top:50px;
-        padding-left:20px;
         padding-right:20px;
     }
 
+    /*no resource title*/
     .zen-resources h3
     {
         display:none;
     }
-
-    .zen-resources ul
-    {
-        list-style-type:none;
-        padding:0px;
-    }
-
+    
+    /*float links to left*/
     .zen-resources ul li
     {
         display: inline;
         list-style-type: none;
-        padding-right: 20px;
+        padding:10px;
+        margin-right:10px;
+        float:left;    
+        opacity:0.5;
     }
+    
+    /*spacing above resources*/
+    .zen-resources ul
+    {
+        margin-top:100px;
+    }
+
+    /*sidebar*/
+    .sidebar
+    {
+        position:absolute;
+        top:1000px; /*start 1000px from top*/
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /*sidebar wrapper*/
+    .wrapper
+    {
+        margin: auto;
+        max-width: 600px;
+    }
+    
+    /*all sidebar lists*/
+    .sidebar ul
+    {
+        list-style: none;
+        padding-left: 0px;
+    }
+
+    /*all sidebar list items*/
+    .sidebar li
+    {
+        padding:10px;
+        margin-bottom:10px;
+        border: solid 1px #444;
+    }
+
+    /*sidebar title*/
+    .sidebar h3
+    {
+        font-family: 'Open Sans', sans-serif;
+        padding: 0px;
+        text-align:center;
+        text-transform:uppercase;
+        color:#444;
+    }
+
+    /*designer name*/
+    .designer-name
+    {
+        font-family: 'Merriweather', serif;
+    }
+    
+    /*select a design boxes*/
+        .design-selection li
+    {
+        padding:20px;
+        color:#444;
+        border:1px #f8efef solid;
+    }
+    
+    /*links in design selection*/
+    .design-selection li a
+    {
+        color:#444;
+    }
+    
+    /*hover over boxes*/
+    .design-selection li:hover
+    {
+        background-color:#f8efef;
+    }
+    
+    /*hover links in design selection*/
+    .design-selection li a:hover
+    {
+        opacity:1;
+        color:#f05253;
+    }
+
+    /*archives aligned right*/
+    .design-archives li
+    {
+        border:none;
+        float:right;
+        opacity:0.5;
+    }
+
+    /*archives do not display title*/
+    .archives 
+    {
+    display:none;
+    }
+
 }
 
+/*larger screen sizes*/
+/*move the sidebar and space for sidebar according to screen dimenensions*/
+@media only screen and (min-width: 400px) 
+{
+    .summary
+    {
+        margin-bottom:1500px; /*leave space to fit design slection,archive and resources*/
+    }
+    .sidebar
+    {
+        top:800px;
+    }
+}  
 
-/*Screen sizes larger than 800px*/
-@media only screen and (min-width: 800px)
+@media only screen and (min-width: 500px) 
+{
+    .summary
+    {
+        margin-bottom:1400px; /*leave space to fit design slection,archive and resources*/
+    }
+    .sidebar
+    {
+        top:700px;
+    }
+}  
+
+@media only screen and (min-width: 620px) 
+{
+    .summary
+    {
+        margin-bottom:1300px; /*leave space to fit design slection,archive and resources*/
+    }
+    .sidebar
+    {
+        top:600px;
+    }
+   
+}  
+
+/*shift header over on larger screens*/
+@media only screen and (min-width: 1000px) 
 {
     header
     {
-        height:500px;
-        background-image:url('img/title4.png');
-        background-size:cover;
-        margin:0 auto;
-        padding-left:10%;
-        margin-bottom:750px;
+        
     }
     
+    header h1, header h2
+    {
+        
+    }
+    .summary p 
+    {
+       
+    }
+}  
+
+@media only screen and (min-width: 1000px) 
+{
     .summary
     {
-        position:absolute;
-        top:150px;
-        left:10%;
-        background-color:transparent;
-        color:#fff;
+        margin-bottom:1300px; /*leave space to fit design slection,archive and resources*/
+        /*background-image:url(img/santa2.png);*/
+        background-size:cover;
+        background-repeat:no-repeat;
     }
-    
-    .summary p
+    .sidebar
     {
-        width:400px;
-    } 
-}
+        top:120vh; /*sidebar will sit right below first fold*/
+    }
+    header
+    {
+        height: 15vh;
+        padding-top: 5vh;
+        padding-bottom: 0px;
+    }
+    .summary
+    {
+        height:80vh;
+        padding-top:0vh;
+        padding-bottom:0px;
+        
+    }
+} 
