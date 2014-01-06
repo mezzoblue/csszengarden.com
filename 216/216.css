@@ -34,7 +34,6 @@ body, html {
     /*headers*/
     h3
     {
-        font-family: 'Merriweather', serif;
         font-weight:800;
         padding-top:50px;
         margin: auto;
@@ -87,7 +86,6 @@ body, html {
     /*main title*/
     header h1
     {
-        font-family: 'Merriweather', serif;
         font-weight:700;
         font-size:4em;
         line-height:65px;
@@ -211,8 +209,8 @@ body, html {
         display: inline;
         list-style-type: none;
         padding:10px;
-        margin-right:10px;
-        float:left;    
+        margin-left:10px;
+        float:right;    
         opacity:0.5;
     }
     
@@ -228,8 +226,8 @@ body, html {
         position:absolute;
         top:1000px; /*start 1000px from top*/
         width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     /*sidebar wrapper*/
@@ -310,6 +308,23 @@ body, html {
     {
     display:none;
     }
+    
+    .benefits
+    {
+        background-image: url(img/trophy.png);
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: center;
+        background-position:top;
+        padding-top: 200px;
+        margin-top:200px;
+        margin-bottom: 200px;
+        text-align: center;
+    }
+    .benefits p
+    {
+        max-width:400px;
+    }
 
 }
 
@@ -375,13 +390,14 @@ body, html {
     .summary
     {
         margin-bottom:1300px; /*leave space to fit design slection,archive and resources*/
-        /*background-image:url(img/santa2.png);*/
+        background-image: url(img/title2.png); 
         background-size:cover;
         background-repeat:no-repeat;
     }
     .sidebar
     {
-        top:120vh; /*sidebar will sit right below first fold*/
+        top:100vh; /*sidebar will sit right below first fold*/
+        padding-top:100px;
     }
     header
     {
