@@ -18,10 +18,10 @@
 	- 網頁測試的基本要求：IE9+、最新版本的 Chrome/Firefox/Safari、以及 iOS/Android
 	- 降級支援是可被接受，甚至其實是特別鼓勵的。
 	- 使用 class 做樣式，不要用 ID。
-	- 你也可以使用網頁字型，但請確認你有權利分享字型給瀏覽網頁的使用者。透過添加 CSS 檔案提
-	  供字型的網站 (如 Google Fonts) 是可以使用的，然而需要插入 HTML 的網頁字型服務不能使用
-	  在 CSS Zen Garden 上。TypeKit 是可以使用的，相關步驟請參考以下連結的 readme:
-	  https://github.com/mezzoblue/csszengarden.com/
+	- 你也可以使用網頁字型，但請確認你有權利分享字型給瀏覽網頁的使用者。透過將語法添加在
+	  CSS 檔案提供字型的網站 (如 Google Fonts) 是可以使用的，然而大多數需要插入 HTML 的
+	  網頁字型服務不能使用在 CSS Zen Garden 上。TypeKit 是可以使用的，相關步驟請參考以下
+	  連結的 readme 說明: https://github.com/mezzoblue/csszengarden.com/
 
 	另外也提供幾個建立 CSS 檔案的小技巧：
 
