@@ -31,8 +31,10 @@
 	- 若你仍有圖片取代文字的需求，請使用 Kellum Method 做文字取代。 http://goo.gl/GXxdI
 	- 請不要倚賴本網頁最下面的 div。請使用 ::before 跟 ::after。
 
-	舊版「樣式表禪意花園」翻譯由 @hlb (薛良斌) 與 李士傑 完成。超破爛的翻譯更新由 @medicalwei (魏藥) 接手。
-	The original translation was done by @hlb (Liang-Bin Hsueh) and and Ilya Eric Lee, and the poor update is by @medicalwei (Yao Wei).
+	舊版「樣式表禪意花園」翻譯由 @hlb (薛良斌) 與 李士傑 完成。超破爛的翻譯更新由
+	@medicalwei (魏藥) 接手。
+	The original translation was done by @hlb (Liang-Bin Hsueh) and and Ilya Eric Lee, and
+	the poor update is by @medicalwei (Yao Wei).
 		",
 	);
 
