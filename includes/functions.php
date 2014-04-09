@@ -94,10 +94,19 @@
 	// if $_GET['css'] is not empty, assign it as the design to load
 	if ($loadCSS) {
 		$currentDesign = $loadCSS;
-	}
+		
+		if( is_numeric($loadCSS) ) {
+			// Prep Stylesheet URL
+			$currentStyleSheet = "/$loadCSS/$loadCSS.css";
+		} else {
+			// Prep Stylesheet URL
+			$currentStyleSheet = "$loadCSS";
+		}
+	} else {
 
-    // Prep Stylesheet URL
-    $currentStyleSheet = "/$currentDesign/$currentDesign.css";
+	    // Prep Stylesheet URL
+    	$currentStyleSheet = "/$currentDesign/$currentDesign.css";
+	}
 
 	$typekitId = getTypekitId($currentStyleSheet);
 

@@ -14,7 +14,7 @@
 	<script type="text/javascript"></script>
 	
 	<style type="text/css" media="all">
-		@import "<?php echo $currentDesign; ?>";
+		@import "<?php echo $currentStyleSheet; ?>";
 	</style>
 	
 </head>
