@@ -1,17 +1,6 @@
-php_flag display_errors off
-
 RewriteEngine On
 Options +FollowSymlinks
 RewriteBase /
-
-# Canonical Host
-# Externally redirect non-blank non-canonical hostname request to canonical hostname
-# ----- Dev Hostname -----
-# RewriteCond %{HTTP_HOST} !^(zen)?$
-# RewriteRule ^(.*)$ http://zen/$1 [R=301]
-# ----- Production Hostname -----
-# RewriteCond %{HTTP_HOST} !^(www.csszengarden.com)?$
-# RewriteRule ^(.*)$ http://www.csszengarden.com/$1 [R=301]
 
 
 # dude built a design browser. Cool.
@@ -41,33 +30,41 @@ RewriteRule ^(.+)$ $1.php [L,QSA]
 # REWRITE for CLEANER URL STRUCTURE
 #
 # The below rules accommodate /003/page5/ instead of ?cssfile=/003/003.css&page=5
+# Other URLs in the structure:
+# /003/
+# /tr/zh-tw/
+# /tr/zh-tw/003/
+# /tr/zh-tw/page5/
+# /tr/zh-tw/003/page5/
+# /?css=http://external.css
+# /legacy/?css=http://external.css
+# /legacy/page5/?css=http://external.css
 #
 # Helpful mod_rewrite tips @ http://www.webmasterworld.com/apache/4229371-1-30.htm
 
 # Rewrite requests to older URLs, e.g. ?cssfile=/003/003.css&page=5
 RewriteCond %{QUERY_STRING} ^cssfile\=\/([0-9]+)\/[0-9]+\.css(&(page)\=([0-9]+))?
-RewriteRule ^(.*)$ %1%3%4/? [R=301]
+RewriteRule ^(.*)$ %1/%3%4/? [R=301]
 
 # Resolve missing trailing slash for URLs with no filetype
 RewriteCond $1 !(\.[a-z0-9]{1,5}|/)$ [NC]
 RewriteCond $1 (..*)$ [NC] # so's we don't add a slash onto nothing and end up w/ '//'
 RewriteRule ^(.*)$ $1/ [R=301]
 
+# Remove excess trailing slashes
+RewriteRule ^(.*)\/\/$ $1/ [R=301]
+
 # Send traffic to index.php w/ appropriate variables
 # we have to rename these to avoid creating an infinite loop
-RewriteRule ^([0-9]+)(\/page(.*))?\/$ index.php?css=$1&pg=$3 [L]
+RewriteCond %{QUERY_STRING} !^css
+RewriteRule ^(tr\/([a-z\-]+)\/)?(([0-9]+)\/)?(page(.*)\/)?$ index.php?css=$4&pg=$6&lang=$2 [L]
 
-# Special case: no CSS variable
-RewriteRule ^(page(.*))?\/$ index.php?pg=$2 [L]
-
-# Rewrite requests to externalstylesheets
+## External Stylesheets
 # e.g. ?cssfile=http://www.skybased.com/css-zen-garden/css/screen.css
-# Note: Paging is not accommodated, but sites requiring the legacy code are.
-RewriteCond %{QUERY_STRING} ^cssfile\=(http.+)?
-RewriteRule ^(legacy\/)?(.*)$ $1?css=%1 [R=301]
+RewriteCond %{QUERY_STRING} ^cssfile\=(http[^&]+)
+RewriteRule ^(.*)$ $1?css=%1 [R=301]
 
-# Send translated page traffic to appropriate place
-RewriteRule ^tr\/([a-z\-]+)\/([0-9]+)(\/page(.*))?\/$ index.php?css=$2&pg=$4&lang=$1 [L]
-
-# Send translated page traffic (no CSS variable) to appropriate place
-RewriteRule ^tr\/([a-z\-]+)(\/page(.*))?\/$ index.php?pg=$3&lang=$1 [L]
+## External Stylesheets - send traffic to index.php w/ appropriate variables
+# Note: pages using the legacy code are not translated
+RewriteCond %{QUERY_STRING} ^css\=(http[^&]+)
+RewriteRule ^(legacy\/)?(tr\/([a-z\-]+)\/)?(page([0-9]+)\/)?(.*)?$ $1index.php?css=%1&pg=$5&lang=$3 [L]
