@@ -85,28 +85,15 @@
 	// check the query string to see if:
 	//	 - a specific design has been requested with cssfile
 	//	 - a specific page value been assigned for the navigation
-	if (!$loadCSS) {
-		$loadCSS = $_GET["css"];
+	if ( isset($_GET["css"]) && !empty($_GET["css"]) ) {
+		$currentDesign = $_GET["css"];
 	}
-	$thisPage = intval($_GET["pg"]);
+	$thisPage = (intval($_GET["pg"]) > 0) ? intval($_GET["pg"]) : false;
 
 
 	// if $_GET['css'] is not empty, assign it as the design to load
-	if ($loadCSS) {
-		$currentDesign = $loadCSS;
-		
-		if( is_numeric($loadCSS) ) {
-			// Prep Stylesheet URL
-			$currentStyleSheet = "/$loadCSS/$loadCSS.css";
-		} else {
-			// Prep Stylesheet URL
-			$currentStyleSheet = "$loadCSS";
-		}
-	} else {
-
-	    // Prep Stylesheet URL
-    	$currentStyleSheet = "/$currentDesign/$currentDesign.css";
-	}
+	// If numeric, prepare CSS url
+	$currentStyleSheet = ( is_numeric($currentDesign) ) ? "/$currentDesign/$currentDesign.css" : $currentDesign;
 
 	$typekitId = getTypekitId($currentStyleSheet);
 
