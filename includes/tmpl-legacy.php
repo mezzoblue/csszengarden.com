@@ -127,7 +127,7 @@ echo getDesignList($listStart, $numDesigns, $designList, $sidebar["design-select
 			<div id="lresources">
 				<h3 class="resources"><span><?php echo $sidebar["design-resources-h3"]; ?>:</span></h3>
 				<ul>
-					<li><a href="http://www.csszengarden.com<?php echo $currentDesign ?>" title="<?php echo $sidebar["view-css-title"]; ?>" accesskey="v"><?php echo $sidebar["view-css-text"]; ?></a></li>
+					<li><a href="<?php echo $currentStyleSheet ?>" title="<?php echo $sidebar["view-css-title"]; ?>" accesskey="v"><?php echo $sidebar["view-css-text"]; ?></a></li>
 					<li><a href="<?php echo $zenUrls["zen-resources"]; ?>" title="<?php echo $sidebar["css-resources-title"]; ?>" accesskey="r"><?php echo $sidebar["css-resources-text"]; ?></a></li>
 					<li><a href="<?php echo $zenUrls["zen-faq"]; ?>" title="<?php echo $sidebar["zen-faq-title"]; ?>" accesskey="q"><?php echo $sidebar["zen-faq-text"]; ?></a></li>
 					<li><a href="<?php echo $zenUrls["zen-submit"]; ?>" title="<?php echo $sidebar["zen-submit-title"]; ?>" accesskey="s"><?php echo $sidebar["zen-submit-text"]; ?></a></li>
