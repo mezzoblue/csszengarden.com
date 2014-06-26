@@ -1313,6 +1313,12 @@ $designList = array(
 			"Dan Mall",
 			"http://danielmall.com/",
 	),
+	array(
+			"221",
+			"Mid Century Modern",
+			"Andrew Lohman",
+			"http://andrewlohman.com/",
+	),
 
 );
 
