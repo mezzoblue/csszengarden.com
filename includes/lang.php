@@ -1,6 +1,6 @@
 <?php
     // Check for translations
-    if( isset($_GET['lang']) ) {
+    if( isset($_GET['lang']) && !empty($_GET['lang']) ) {
 
         // Here we look for older, full names of languages from the URL.
         // If none are found, we will just serve up the 2-letter code.
