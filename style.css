@@ -8,16 +8,35 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 
-/* basic elements */
+/* TYPEKIT_KIT_ID: gregmilescohen@gmail.com */
+@font-face {
+    font-family: 'alfa_slab_oneregular';
+    src: url('alfaslabone-regular-webfont.eot');
+    src: url('alfaslabone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alfaslabone-regular-webfont.woff2') format('woff2'),
+         url('alfaslabone-regular-webfont.woff') format('woff'),
+         url('alfaslabone-regular-webfont.ttf') format('truetype'),
+         url('alfaslabone-regular-webfont.svg#alfa_slab_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
 	background-color: #000;
 	color: white;
 	}
-h1,h3 {
+h1,h2,h3 {
 	margin: 0;
 	padding-top: 10px;
+}
+
+h3 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 28px;
 }
 p {
 	margin-bottom: 0;
@@ -28,10 +47,21 @@ ul {
 	padding: 0;
 	list-style-type: none;
 }
-#zen-intro, #zen-summary {
+header {
+	display:none;
+}
+
+#zen-summary {
 	background-color: #2FF7FF;
 	margin-bottom: 80px;
+	text-align: center;
+	margin:0;
+	padding: 70px;
 }
+#zen-summary::before {
+	content: url(main-logo.png);
+}
+
 
 #zen-preamble {
 /*	margin-bottom: -150px;
@@ -41,6 +71,7 @@ ul {
   -o-transform: skewY(2deg);
   transform: skewY(2deg);*/
 	padding: 80px;
+	padding-bottom:180px;
 	background-color: #2A95E5;
 	padding-right: 40%;
 }
@@ -52,6 +83,14 @@ ul {
   transform: skewY(-2deg);*/
 }
 
+#zen-preamble::after {
+    max-width: 100%;
+  content: url(clownfish.png);
+  position: relative;
+  display: block;
+  margin-left: 105%;
+  margin-top: -220px;
+  }
 
 #zen-explanation {
 	margin-top: -120px;
@@ -118,8 +157,9 @@ ul {
   -o-transform: skewY(2deg);
   transform: skewY(2deg);
 	padding: 80px;
-	background-color: #040619;
+	background-color: #090E19;
 	padding-right: 40%;
+	/*border-bottom: 5px solid #5d5d5d;*/
 }
 #zen-requirements h3,#zen-requirements p {
 	-webkit-transform: skewY(-2deg);
