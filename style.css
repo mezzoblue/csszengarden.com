@@ -20,7 +20,88 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'fengardo_neueblack';
+    src: url('fengardoneue_black-webfont.eot');
+    src: url('fengardoneue_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fengardoneue_black-webfont.woff2') format('woff2'),
+         url('fengardoneue_black-webfont.woff') format('woff'),
+         url('fengardoneue_black-webfont.ttf') format('truetype'),
+         url('fengardoneue_black-webfont.svg#fengardo_neueblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fengardo_neueregular';
+    src: url('fengardoneue_regular-webfont.eot');
+    src: url('fengardoneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fengardoneue_regular-webfont.woff2') format('woff2'),
+         url('fengardoneue_regular-webfont.woff') format('woff'),
+         url('fengardoneue_regular-webfont.ttf') format('truetype'),
+         url('fengardoneue_regular-webfont.svg#fengardo_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'economicabold';
+    src: url('economica-bold-otf-webfont.eot');
+    src: url('economica-bold-otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('economica-bold-otf-webfont.woff2') format('woff2'),
+         url('economica-bold-otf-webfont.woff') format('woff'),
+         url('economica-bold-otf-webfont.ttf') format('truetype'),
+         url('economica-bold-otf-webfont.svg#economicabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+
+
+
+@font-face {
+    font-family: 'economicabold_italic';
+    src: url('economica-bolditalic-otf-webfont.eot');
+    src: url('economica-bolditalic-otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('economica-bolditalic-otf-webfont.woff2') format('woff2'),
+         url('economica-bolditalic-otf-webfont.woff') format('woff'),
+         url('economica-bolditalic-otf-webfont.ttf') format('truetype'),
+         url('economica-bolditalic-otf-webfont.svg#economicabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'economicaitalic';
+    src: url('economica-italic-otf-webfont.eot');
+    src: url('economica-italic-otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('economica-italic-otf-webfont.woff2') format('woff2'),
+         url('economica-italic-otf-webfont.woff') format('woff'),
+         url('economica-italic-otf-webfont.ttf') format('truetype'),
+         url('economica-italic-otf-webfont.svg#economicaitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'economicaregular';
+    src: url('economica-regular-otf-webfont.eot');
+    src: url('economica-regular-otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('economica-regular-otf-webfont.woff2') format('woff2'),
+         url('economica-regular-otf-webfont.woff') format('woff'),
+         url('economica-regular-otf-webfont.ttf') format('truetype'),
+         url('economica-regular-otf-webfont.svg#economicaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html, body {
 	margin: 0;
 	padding: 0;
@@ -31,36 +112,88 @@ h1,h2,h3 {
 	margin: 0;
 	padding-top: 10px;
 }
-
+h2 {
+	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
+	font-size: 50px;
+	letter-spacing: 2px;
+	color: #000;
+	padding-top: 30px;
+}
 h3 {
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.summary h3 {
+	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
+	color: #000;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-size: 28px;
 }
 p {
+	font-family: 'economicaregular', Helvetica, sans-serif;
+	font-size: 24px;
+	color: #fff;
 	margin-bottom: 0;
 	padding-bottom: 5px;
-	/*width: 60%;*/
+	margin-top: 0;
+	padding-top: 10px;
+}
+.summary p {
+	font-family: 'economicaregular', Helvetica, sans-serif;
+	font-size: 24px;
+	color: black;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	margin-top: 0;
+	padding-top: 10px;
 }
 ul {
 	padding: 0;
 	list-style-type: none;
 }
+a {
+	text-decoration: none;
+	color: #C5F7FF;
+}
+.summary a {
+	color: #2141B5;
+}
+a:hover {
+	opacity: 0.5;
+}
 header {
+	background-color: #C5F7FF;
+	padding-left: 30%;
+	padding-right: 30%;
+	padding-top: 10%;
+}
+header::before {
+	content: url(main-logo.svg);
+}
+header h1 {
 	display:none;
+}
+header h2 {
+	text-align: center;
+	padding-top: 20px;
+	text-transform: uppercase;
 }
 
 #zen-summary {
-	background-color: #2FF7FF;
+	background-color: #C5F7FF;
 	margin-bottom: 80px;
 	text-align: center;
-	margin:0;
-	padding: 70px;
+	margin: 0;
+	padding-bottom: 70px;
 }
-#zen-summary::before {
-	content: url(main-logo.png);
-}
+/*#zen-summary::before {
+	content: url(main-logo.svg);
+	display: block;
+}*/
 
 
 #zen-preamble {
@@ -205,4 +338,71 @@ footer a:hover {
 	  display: inline-block;
   vertical-align: top;
   padding: 20px;
+}
+
+@-webkit-keyframes sun {
+	0% {
+		right: -999px;
+	}
+	100% {
+		top: 50px;
+  	right: 68px;
+  }
+}
+@-moz-keyframes sun {
+	0% {
+		right: -999px;
+	}
+	100% {
+		top: 50px;
+  	right: 68px;
+  }
+}
+@-webkit-keyframes clouds {
+	0% {
+		left: -999px;
+	}
+	100% {
+		top: 50px;
+  	left: 68px;
+  }
+}
+@-moz-keyframes clouds {
+	0% {
+		left: -999px;
+	}
+	100% {
+		top: 50px;
+  	left: 68px;
+  }
+}
+.extra1 {
+	position: absolute;
+  max-width: 100%;
+  height: 140px;
+  width: 140px;
+	top: 50px;
+	right: 68px;
+  background: url(sun.svg);
+  animation-name: sun;
+  -webkit-animation-name: sun;
+  -moz-animation-name: sun;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+}
+.extra2 {
+	position: absolute;
+  max-width: 100%;
+  height: 210px;
+  width: 390px;
+  top: 50px;
+  left: 68px;
+  background: url(clouds.svg);
+  animation-name: clouds;
+  -webkit-animation-name: clouds;
+  -moz-animation-name: sun;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
 }
