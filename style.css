@@ -8,40 +8,6 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 
-/* TYPEKIT_KIT_ID: gregmilescohen@gmail.com */
-@font-face {
-    font-family: 'alfa_slab_oneregular';
-    src: url('alfaslabone-regular-webfont.eot');
-    src: url('alfaslabone-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('alfaslabone-regular-webfont.woff2') format('woff2'),
-         url('alfaslabone-regular-webfont.woff') format('woff'),
-         url('alfaslabone-regular-webfont.ttf') format('truetype'),
-         url('alfaslabone-regular-webfont.svg#alfa_slab_oneregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'fengardo_neueblack';
-    src: url('fengardoneue_black-webfont.eot');
-    src: url('fengardoneue_black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fengardoneue_black-webfont.woff2') format('woff2'),
-         url('fengardoneue_black-webfont.woff') format('woff'),
-         url('fengardoneue_black-webfont.ttf') format('truetype'),
-         url('fengardoneue_black-webfont.svg#fengardo_neueblack') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'fengardo_neueregular';
-    src: url('fengardoneue_regular-webfont.eot');
-    src: url('fengardoneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fengardoneue_regular-webfont.woff2') format('woff2'),
-         url('fengardoneue_regular-webfont.woff') format('woff'),
-         url('fengardoneue_regular-webfont.ttf') format('truetype'),
-         url('fengardoneue_regular-webfont.svg#fengardo_neueregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 @font-face {
     font-family: 'economicabold';
     src: url('economica-bold-otf-webfont.eot');
@@ -54,10 +20,6 @@
     font-style: normal;
 
 }
-
-
-
-
 @font-face {
     font-family: 'economicabold_italic';
     src: url('economica-bolditalic-otf-webfont.eot');
@@ -70,10 +32,6 @@
     font-style: normal;
 
 }
-
-
-
-
 @font-face {
     font-family: 'economicaitalic';
     src: url('economica-italic-otf-webfont.eot');
@@ -86,10 +44,6 @@
     font-style: normal;
 
 }
-
-
-
-
 @font-face {
     font-family: 'economicaregular';
     src: url('economica-regular-otf-webfont.eot');
@@ -102,6 +56,7 @@
     font-style: normal;
 
 }
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -124,7 +79,7 @@ h3 {
 	color: #fff;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	font-size: 28px;
+	font-size: 32px;
 }
 .summary h3 {
 	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
@@ -150,6 +105,13 @@ p {
 	padding-bottom: 5px;
 	margin-top: 0;
 	padding-top: 10px;
+}
+.summary p:nth-child(2)::after {
+	display: block;
+	font-size: 18px;
+	content: "Go to gregmilescohen.com to see more projects";
+	text-align: center;
+	margin-top: 10px;
 }
 ul {
 	padding: 0;
@@ -188,13 +150,9 @@ header h2 {
 	margin-bottom: 80px;
 	text-align: center;
 	margin: 0;
-	padding-bottom: 70px;
-}
-/*#zen-summary::before {
-	content: url(main-logo.svg);
-	display: block;
-}*/
+	padding: 0 30px 40px 30px;
 
+}
 
 #zen-preamble {
 /*	margin-bottom: -150px;
@@ -308,31 +266,34 @@ footer {
 	padding: 50px;
 }
 footer a {
+	transition: all 1s;
 	text-decoration: none;
+	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
+	letter-spacing: 2px;
+	font-size: 28px;
 	color: white;
 	opacity: 0.5;
 	padding: 15px;
 }
 footer a:hover {
+	transition: all 1s;
 	opacity: 1;
 }
-
 
 .sidebar {
 	position: relative;
 }
+.sidebar a {
+	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
+}
 .wrapper{
-	  position: relative;
+	position: relative;
   background-color: #000;
   width: 673px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
 }
-/*
-.wrapper ul {
-	margin: auto;
-}*/
 
 .design-selection,.design-archives,.zen-resources {
 	  display: inline-block;
@@ -405,4 +366,76 @@ footer a:hover {
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
+}
+
+/*==================================================*/
+/*==================================================*/
+
+@media screen and (max-width: 1054px) {
+	.extra1 {
+		height: 100px;
+  	width: 100px;
+	}
+	.extra2 {
+		height: 100px;
+		width: 180px;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	@-webkit-keyframes sun {
+		0% {
+			right: -999px;
+		}
+		100% {
+			top: 50px;
+	  	right: 10px;
+	  }
+	}
+	@-moz-keyframes sun {
+		0% {
+			right: -999px;
+		}
+		100% {
+			top: 50px;
+	  	right: 10px;
+	  }
+	}
+	@-webkit-keyframes clouds {
+		0% {
+			left: -999px;
+		}
+		100% {
+			top: 50px;
+	  	left: 10px;
+	  }
+	}
+	@-moz-keyframes clouds {
+		0% {
+			left: -999px;
+		}
+		100% {
+			top: 50px;
+	  	left: 10px;
+	  }
+	}
+	.extra1 {
+		height: 60px;
+  	width: 60px;
+  	right: 10px;
+	}
+	.extra2 {
+		height: 65px;
+		width: 120px;
+		left: 10px;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.extra1 {
+		display: none;
+	}
+	.extra2 {
+		display: none;
+	}
 }
