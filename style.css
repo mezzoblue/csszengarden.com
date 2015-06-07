@@ -7,7 +7,6 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
-
 @font-face {
     font-family: 'economicabold';
     src: url('economica-bold-otf-webfont.eot');
@@ -18,7 +17,6 @@
          url('economica-bold-otf-webfont.svg#economicabold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'economicabold_italic';
@@ -30,7 +28,6 @@
          url('economica-bolditalic-otf-webfont.svg#economicabold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'economicaitalic';
@@ -42,7 +39,6 @@
          url('economica-italic-otf-webfont.svg#economicaitalic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'economicaregular';
@@ -54,7 +50,6 @@
          url('economica-regular-otf-webfont.svg#economicaregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 html, body {
@@ -62,7 +57,7 @@ html, body {
 	padding: 0;
 	background-color: #000;
 	color: white;
-	}
+}
 h1,h2,h3 {
 	margin: 0;
 	padding-top: 10px;
@@ -153,6 +148,9 @@ header h2 {
 	padding: 0 30px 40px 30px;
 
 }
+/*#zen-preamble, #zen-supporting {
+	background: url(bubbles.svg) repeat;
+}*/
 
 #zen-preamble {
 /*	margin-bottom: -150px;
@@ -163,8 +161,13 @@ header h2 {
   transform: skewY(2deg);*/
 	padding: 80px;
 	padding-bottom:180px;
-	background-color: #2A95E5;
+	/*background-color: #2A95E5;*/
 	padding-right: 40%;
+	background: url(bubbles.png) repeat, #2A95E5;
+	background-position: bottom left;
+	animation: swim 45s linear 0s infinite forwards;
+	-webkit-animation: swim 45s linear 0s infinite forwards;
+	-moz-animation: swim 45s infinite;
 }
 #zen-preamble h3,#zen-preamble p {
 /*	-webkit-transform: skewY(-2deg);
@@ -175,12 +178,13 @@ header h2 {
 }
 
 #zen-preamble::after {
-    max-width: 100%;
+  max-width: 100%;
   content: url(clownfish.png);
   position: relative;
   display: block;
-  margin-left: 105%;
+  margin-left: 117%;
   margin-top: -220px;
+  padding-bottom: 40px;
   }
 
 #zen-explanation {
@@ -191,9 +195,23 @@ header h2 {
   -o-transform: skewY(-2deg);
   transform: skewY(-2deg);
 	padding: 80px;
-	background-color: #2141B5;
+	/*background-color: #2141B5;*/
 	padding-left: 40%;
+	background: url(bubbles.png) repeat, #2141B5;
+	background-position: top right;
+	animation: swim 45s linear 0s infinite forwards;
+	-webkit-animation: swim 45s linear 0s infinite forwards;
+	-moz-animation: swim 45s infinite;
 }
+#zen-explanation::after {
+  max-width: 100%;
+  content: url(dolphin.png);
+  position: relative;
+  display: block;
+  margin-left: -70%;
+  margin-top: -280px;
+  padding-bottom: 110px;
+  }
 #zen-explanation h3,#zen-explanation p {
 	-webkit-transform: skewY(2deg);
   -moz-transform: skewY(2deg);
@@ -210,9 +228,23 @@ header h2 {
   -o-transform: skewY(2deg);
   transform: skewY(2deg);
 	padding: 80px;
-	background-color: #131E66;
+	/*background-color: #131E66;*/
 	padding-right: 40%;
+	background: url(bubbles.png) repeat, #131E66;
+	background-position: center;
+	animation: swim 45s linear 0s infinite forwards;
+	-webkit-animation: swim 45s linear 0s infinite forwards;
+	-moz-animation: swim 45s infinite;
 }
+#zen-participation::after {
+  max-width: 100%;
+  content: url(dory.png);
+  position: relative;
+  display: block;
+  margin-left: 117%;
+  margin-top: -305px;
+  padding-bottom: 170px;
+  }
 #zen-participation h3,#zen-participation p {
 	-webkit-transform: skewY(-2deg);
   -moz-transform: skewY(-2deg);
@@ -229,9 +261,23 @@ header h2 {
   -o-transform: skewY(-2deg);
   transform: skewY(-2deg);
   padding: 80px;
-	background-color: #0A1036;
+	/*background-color: #0A1036;*/
 	padding-left: 40%;
+	background: url(bubbles.png) repeat, #0A1036;
+	background-position: bottom left;
+	animation: swim 45s linear 0s infinite forwards;
+	-webkit-animation: swim 45s linear 0s infinite forwards;
+	-moz-animation: swim 45s infinite;
 }
+#zen-benefits::after {
+  max-width: 100%;
+  content: url(octapus.png);
+  position: relative;
+  display: block;
+  margin-left: -58%;
+  margin-top: -190px;
+  padding-bottom: 70px;
+  }
 #zen-benefits h3,#zen-benefits p {
 	-webkit-transform: skewY(2deg);
   -moz-transform: skewY(2deg);
@@ -248,10 +294,24 @@ header h2 {
   -o-transform: skewY(2deg);
   transform: skewY(2deg);
 	padding: 80px;
-	background-color: #090E19;
+	background: url(bubbles.png) repeat, #090E19;
+	background-position: bottom right;
+	animation: swim 45s linear 0s infinite forwards;
+	-webkit-animation: swim 45s linear 0s infinite forwards;
+	-moz-animation: swim 45s infinite;
+	/*background-color: #090E19;*/
 	padding-right: 40%;
 	/*border-bottom: 5px solid #5d5d5d;*/
 }
+#zen-requirements::after {
+  max-width: 100%;
+  content: url(glowfish.png);
+  position: relative;
+  display: block;
+  margin-left: 107%;
+  margin-top: -490px;
+  padding-bottom: 260px;
+  }
 #zen-requirements h3,#zen-requirements p {
 	-webkit-transform: skewY(-2deg);
   -moz-transform: skewY(-2deg);
@@ -299,6 +359,12 @@ footer a:hover {
 	  display: inline-block;
   vertical-align: top;
   padding: 20px;
+}
+
+#zen-requirements p:last-child {
+	opacity: 0.6;
+	padding-top: 25px;
+	font-size: 18px;
 }
 
 @-webkit-keyframes sun {
@@ -362,12 +428,40 @@ footer a:hover {
   background: url(clouds.svg);
   animation-name: clouds;
   -webkit-animation-name: clouds;
-  -moz-animation-name: sun;
+  -moz-animation-name: clouds;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
 }
 
+/*.extra3 {
+	opacity:    0.5;
+	-webkit-transition: animation 1s;
+	background: url(bubbles.png) repeat-y;
+	background-size: cover;
+	overflow: hidden;
+	width:      100%;
+	height:     100%;
+	z-index:    10;
+	top:        0;
+	left:       0;
+	position:   fixed;
+	animation: swim 45s linear 0s infinite forwards;
+	-webkit-animation: swim 45s linear 0s infinite forwards;
+	-moz-animation: swim 45s infinite;
+}*/
+@-moz-keyframes swim {
+    0% { background-position: left; }
+    100%  { background-position: right; }
+}
+@-webkit-keyframes swim {
+    0% { background-position: left; }
+    100%  { background-position: right; }
+}
+@keyframes swim {
+    0% { background-position: left; }
+    100%  { background-position: right; }
+}
 /*==================================================*/
 /*==================================================*/
 
@@ -380,6 +474,14 @@ footer a:hover {
 		height: 100px;
 		width: 180px;
 	}
+}
+
+@media screen and (max-width: 950px) {
+	/*Have all text and images go center*/
+}
+
+@media screen and (max-width: 800px) {
+	/*Have footer stack*/
 }
 
 @media screen and (max-width: 690px) {
