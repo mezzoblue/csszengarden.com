@@ -146,22 +146,11 @@ header h2 {
 	text-align: center;
 	margin: 0;
 	padding: 0 30px 40px 30px;
-
 }
-/*#zen-preamble, #zen-supporting {
-	background: url(bubbles.svg) repeat;
-}*/
 
 #zen-preamble {
-/*	margin-bottom: -150px;
-	-webkit-transform: skewY(2deg);
-  -moz-transform: skewY(2deg);
-  -ms-transform: skewY(2deg);
-  -o-transform: skewY(2deg);
-  transform: skewY(2deg);*/
 	padding: 80px;
 	padding-bottom:180px;
-	/*background-color: #2A95E5;*/
 	padding-right: 40%;
 	background: url(bubbles.png) repeat, #2A95E5;
 	background-position: bottom left;
@@ -169,14 +158,6 @@ header h2 {
 	-webkit-animation: swim 45s linear 0s infinite forwards;
 	-moz-animation: swim 45s infinite;
 }
-#zen-preamble h3,#zen-preamble p {
-/*	-webkit-transform: skewY(-2deg);
-  -moz-transform: skewY(-2deg);
-  -ms-transform: skewY(-2deg);
-  -o-transform: skewY(-2deg);
-  transform: skewY(-2deg);*/
-}
-
 #zen-preamble::after {
   max-width: 100%;
   content: url(clownfish.png);
@@ -310,7 +291,7 @@ header h2 {
   display: block;
   margin-left: 107%;
   margin-top: -490px;
-  padding-bottom: 260px;
+  padding-bottom: 340px;
   }
 #zen-requirements h3,#zen-requirements p {
 	-webkit-transform: skewY(-2deg);
@@ -327,17 +308,62 @@ footer {
 }
 footer a {
 	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
 	text-decoration: none;
 	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
 	letter-spacing: 2px;
 	font-size: 28px;
 	color: white;
 	opacity: 0.5;
-	padding: 15px;
+	padding: 15px 15px 15px 15px;
 }
 footer a:hover {
-	transition: all 1s;
+	transition: all 1.5s;
 	opacity: 1;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+}
+footer a:nth-child(1) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	content: url(html5.svg);
+	width: 75px;
+	height: 75px;
+}
+footer a:nth-child(2) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	content: url(css3.svg);
+	width: 75px;
+	height: 75px;
+}
+footer a:nth-child(3) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	content: url(cc.svg);
+	width: 75px;
+	height: 75px;
+}
+footer a:nth-child(4) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	content: url(accessibility.svg);
+	width: 75px;
+	height: 75px;
+}
+footer a:nth-child(5) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	content: url(github.svg);
+	width: 75px;
+	height: 75px;
 }
 
 .sidebar {
@@ -365,6 +391,21 @@ footer a:hover {
 	opacity: 0.6;
 	padding-top: 25px;
 	font-size: 18px;
+}
+
+@-webkit-keyframes fishflop {
+	0% {}
+	25% { transform: 3deg;}
+	50% { transform: -6deg;}
+	75% { transform: 9deg;}
+	100% {transform: -3deg;}
+}
+@-moz-keyframes fishflop {
+	0% {}
+	25% { transform: 3deg;}
+	50% { transform: -6deg;}
+	75% { transform: 9deg;}
+	100% {transform: -3deg;}
 }
 
 @-webkit-keyframes sun {
@@ -477,7 +518,9 @@ footer a:hover {
 }
 
 @media screen and (max-width: 950px) {
-	/*Have all text and images go center*/
+	#zen-preamble {
+		  padding: 80px 30px 222px 30px;
+	}
 }
 
 @media screen and (max-width: 800px) {
