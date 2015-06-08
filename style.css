@@ -19,28 +19,6 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'economicabold_italic';
-    src: url('economica-bolditalic-otf-webfont.eot');
-    src: url('economica-bolditalic-otf-webfont.eot?#iefix') format('embedded-opentype'),
-         url('economica-bolditalic-otf-webfont.woff2') format('woff2'),
-         url('economica-bolditalic-otf-webfont.woff') format('woff'),
-         url('economica-bolditalic-otf-webfont.ttf') format('truetype'),
-         url('economica-bolditalic-otf-webfont.svg#economicabold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'economicaitalic';
-    src: url('economica-italic-otf-webfont.eot');
-    src: url('economica-italic-otf-webfont.eot?#iefix') format('embedded-opentype'),
-         url('economica-italic-otf-webfont.woff2') format('woff2'),
-         url('economica-italic-otf-webfont.woff') format('woff'),
-         url('economica-italic-otf-webfont.ttf') format('truetype'),
-         url('economica-italic-otf-webfont.svg#economicaitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'economicaregular';
     src: url('economica-regular-otf-webfont.eot');
     src: url('economica-regular-otf-webfont.eot?#iefix') format('embedded-opentype'),
