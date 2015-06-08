@@ -1,0 +1,649 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+@font-face {
+    font-family: 'economicabold';
+    src: url('economica-bold-otf-webfont.eot');
+    src: url('economica-bold-otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('economica-bold-otf-webfont.woff2') format('woff2'),
+         url('economica-bold-otf-webfont.woff') format('woff'),
+         url('economica-bold-otf-webfont.ttf') format('truetype'),
+         url('economica-bold-otf-webfont.svg#economicabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'economicaregular';
+    src: url('economica-regular-otf-webfont.eot');
+    src: url('economica-regular-otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('economica-regular-otf-webfont.woff2') format('woff2'),
+         url('economica-regular-otf-webfont.woff') format('woff'),
+         url('economica-regular-otf-webfont.ttf') format('truetype'),
+         url('economica-regular-otf-webfont.svg#economicaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	color: white;
+}
+h1,h2,h3 {
+	margin: 0;
+	padding-top: 10px;
+}
+h2 {
+	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
+	font-size: 50px;
+	letter-spacing: 2px;
+	color: #000;
+	padding-top: 30px;
+}
+h3 {
+	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 32px;
+}
+.summary h3 {
+	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
+	color: #000;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+p {
+	font-family: 'economicaregular', Helvetica, sans-serif;
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	margin-top: 0;
+	padding-top: 10px;
+}
+.summary p {
+	font-family: 'economicaregular', Helvetica, sans-serif;
+	font-size: 24px;
+	color: black;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	margin-top: 0;
+	padding-top: 10px;
+}
+.summary p:nth-child(2)::after {
+	display: block;
+	font-size: 18px;
+	content: "Go to gregmilescohen.com to see more projects";
+	text-align: center;
+	margin-top: 10px;
+}
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: #C5F7FF;
+}
+.summary a {
+	color: #2141B5;
+}
+a:hover {
+	opacity: 0.5;
+}
+header {
+	background-color: #C5F7FF;
+	padding-left: 30%;
+	padding-right: 30%;
+	padding-top: 10%;
+}
+header::before {
+	content: url(main-logo.svg);
+}
+header h1 {
+	display:none;
+}
+header h2 {
+	text-align: center;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+
+#zen-summary {
+	background-color: #C5F7FF;
+	margin-bottom: 80px;
+	text-align: center;
+	margin: 0;
+	padding: 0 30px 40px 30px;
+}
+
+/*PREAMBLE SECTION*/
+#zen-preamble {
+	padding: 80px;
+	padding-bottom:180px;
+	padding-right: 40%;
+	background: url(bubbles.png) repeat, #2A95E5;
+	background-position: bottom left;
+	animation: swim 45s linear 0s infinite alternate forwards;
+	-webkit-animation: swim 45s linear 0s infinite alternate forwards;
+	-moz-animation: swim 45s infinite alternate;
+}
+#zen-preamble::after {
+  max-width: 100%;
+  content: url(clownfish.png);
+  position: relative;
+  display: block;
+  margin-left: 117%;
+  margin-top: -220px;
+  padding-bottom: 40px;
+  }
+
+/*EXPLANATION SECTION*/
+#zen-explanation {
+	margin-top: -120px;
+	-webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+	padding: 80px;
+	padding-left: 40%;
+	background: url(bubbles.png) repeat, #2141B5;
+	background-position: top right;
+	animation: swim 45s linear 0s infinite alternate forwards;
+	-webkit-animation: swim 45s linear 0s infinite alternate forwards;
+	-moz-animation: swim 45s infinite alternate;
+}
+#zen-explanation::after {
+  max-width: 100%;
+  content: url(dolphin.png);
+  position: relative;
+  display: block;
+  margin-left: -70%;
+  margin-top: -280px;
+  padding-bottom: 110px;
+  }
+#zen-explanation h3,#zen-explanation p {
+	-webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+}
+
+/*PARTICIPATION SECTION*/
+#zen-participation {
+	margin-top: -60px;
+	-webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+	padding: 80px;
+	padding-right: 40%;
+	background: url(bubbles.png) repeat, #131E66;
+	background-position: center;
+	animation: swim 45s linear 0s infinite alternate forwards;
+	-webkit-animation: swim 45s linear 0s infinite alternate forwards;
+	-moz-animation: swim 45s infinite alternate;
+}
+#zen-participation::after {
+  max-width: 100%;
+  content: url(dory.png);
+  position: relative;
+  display: block;
+  margin-left: 117%;
+  margin-top: -305px;
+  padding-bottom: 170px;
+  }
+#zen-participation h3,#zen-participation p {
+	-webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+}
+
+/*BENEFITS SECTION*/
+#zen-benefits {
+	margin-top: -50px;
+	-webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  padding: 80px;
+	padding-left: 40%;
+	background: url(bubbles.png) repeat, #0A1036;
+	background-position: bottom left;
+	animation: swim 45s linear 0s infinite alternate forwards;
+	-webkit-animation: swim 45s linear 0s infinite alternate forwards;
+	-moz-animation: swim 45s infinite alternate;
+}
+#zen-benefits::after {
+  max-width: 100%;
+  content: url(octapus.png);
+  position: relative;
+  display: block;
+  margin-left: -58%;
+  margin-top: -190px;
+  padding-bottom: 70px;
+  }
+#zen-benefits h3,#zen-benefits p {
+	-webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+}
+
+/*REQUIREMENTS SECTION*/
+#zen-requirements {
+	margin-top: -60px;
+	-webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+	padding: 80px;
+	background: url(bubbles.png) repeat, #090E19;
+	background-position: bottom right;
+	animation: swim 45s linear 0s infinite alternate forwards;
+	-webkit-animation: swim 45s linear 0s infinite alternate forwards;
+	-moz-animation: swim 45s infinite alternate;
+	padding-right: 40%;
+}
+#zen-requirements::after {
+  max-width: 100%;
+  content: url(glowfish.png);
+  position: relative;
+  display: block;
+  margin-left: 107%;
+  margin-top: -490px;
+  padding-bottom: 340px;
+  }
+#zen-requirements h3,#zen-requirements p {
+	-webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+}
+#zen-requirements p:last-child {
+	opacity: 0.6;
+	padding-top: 25px;
+	font-size: 18px;
+}
+
+
+/*SIDEBAR*/
+.wrapper{
+	position: relative;
+  background-color: #000;
+  padding: 10px;
+  text-align: center;
+}
+.sidebar {
+	position: relative;
+}
+.sidebar a {
+	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
+}
+.design-selection,.design-archives,.zen-resources {
+	display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+}
+
+.design-selection h3,.design-archives h3,.zen-resources h3 {
+  opacity: 0.6;
+}
+
+footer {
+	background-color: #000;
+	text-align: center;
+	padding: 40px 0 0 0px;
+}
+footer a {
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	text-decoration: none;
+	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
+	letter-spacing: 2px;
+	font-size: 28px;
+	color: white;
+	opacity: 0.5;
+	padding: 15px 15px 15px 15px;
+}
+footer a:hover {
+	transition: all 1.5s;
+	opacity: 1;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+}
+footer a:nth-child(1) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	content: url(html5.svg);
+	width: 75px;
+	height: 75px;
+}
+footer a:nth-child(2) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	content: url(css3.svg);
+	width: 75px;
+	height: 75px;
+}
+footer a:nth-child(3) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	content: url(cc.svg);
+	width: 75px;
+	height: 75px;
+}
+footer a:nth-child(4) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	content: url(accessibility.svg);
+	width: 75px;
+	height: 75px;
+}
+footer a:nth-child(5) {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	content: url(github.svg);
+	width: 75px;
+	height: 75px;
+}
+
+/*SUN AND CLOUDS*/
+.extra1 {
+	position: absolute;
+  max-width: 100%;
+  height: 140px;
+  width: 140px;
+	top: 50px;
+	right: 68px;
+  background: url(sun.svg);
+  animation-name: sun;
+  -webkit-animation-name: sun;
+  -moz-animation-name: sun;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+}
+.extra2 {
+	position: absolute;
+  max-width: 100%;
+  height: 210px;
+  width: 390px;
+  top: 50px;
+  left: 68px;
+  background: url(clouds.svg);
+  animation-name: clouds;
+  -webkit-animation-name: clouds;
+  -moz-animation-name: clouds;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+}
+
+/*ANIMATIONS*/
+@-webkit-keyframes fishflop {
+	0% {}
+	25% { transform: 3deg;}
+	50% { transform: -6deg;}
+	75% { transform: 9deg;}
+	100% {transform: -3deg;}
+}
+@-moz-keyframes fishflop {
+	0% {}
+	25% { transform: 3deg;}
+	50% { transform: -6deg;}
+	75% { transform: 9deg;}
+	100% {transform: -3deg;}
+}
+
+@-webkit-keyframes sun {
+	0% {
+		right: -999px;
+	}
+	100% {
+		top: 50px;
+  	right: 68px;
+  }
+}
+@-moz-keyframes sun {
+	0% {
+		right: -999px;
+	}
+	100% {
+		top: 50px;
+  	right: 68px;
+  }
+}
+@-webkit-keyframes clouds {
+	0% {
+		left: -999px;
+	}
+	100% {
+		top: 50px;
+  	left: 68px;
+  }
+}
+@-moz-keyframes clouds {
+	0% {
+		left: -999px;
+	}
+	100% {
+		top: 50px;
+  	left: 68px;
+  }
+}
+
+/*BUBBLES ANIMATION*/
+@-moz-keyframes swim {
+    0% { background-position: left; }
+    100%  { background-position: right; }
+}
+@-webkit-keyframes swim {
+    0% { background-position: left; }
+    100%  { background-position: right; }
+}
+@keyframes swim {
+    0% { background-position: left; }
+    100%  { background-position: right; }
+}
+
+/*MEDIA QUERIES*/
+/*==================================================*/
+/*==================================================*/
+@media screen and (max-width: 1054px) {
+	.extra1 {
+		height: 100px;
+  	width: 100px;
+	}
+	.extra2 {
+		height: 100px;
+		width: 180px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	h3 {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	#zen-preamble {
+		  padding: 30px 30px 80px 30px;
+	}
+	#zen-preamble::before {
+	  content: url(clownfish-small.svg);
+	  height: 88px;
+	  width: 150px;
+	  position: relative;
+	  display: block;
+	  margin: auto;
+	}
+	#zen-preamble::after{
+		content: none;
+	}
+	#zen-preamble p:last-child {
+		padding-bottom: 100px;
+	}
+
+	#zen-explanation {
+		  padding: 40px 30px 80px 30px;
+	}
+	#zen-explanation::after{
+		content: none;
+	}
+	#zen-explanation::before {
+	  content: url(dolphin-small.svg);
+	  height: 59px;
+	  width: 150px;
+	  position: relative;
+	  display: block;
+	  margin: auto;
+	}
+	#zen-explanation p:last-child {
+		padding-bottom: 50px;
+	}
+
+	#zen-participation {
+		  padding: 30px 30px 80px 30px;
+	}
+	#zen-participation::before {
+	  content: url(dory-small.svg);
+	  height: 108px;
+	  width: 150px;
+	  position: relative;
+	  display: block;
+	  margin: auto;
+	}
+	#zen-participation::after{
+		content: none;
+	}
+	#zen-participation p:last-child {
+		padding-bottom: 10px;
+	}
+
+	#zen-benefits {
+		  padding: 30px 30px 80px 30px;
+	}
+	#zen-benefits::before {
+	  content: url(octapus-small.svg);
+	  height: 118px;
+	  width: 150px;
+	  position: relative;
+	  display: block;
+	  margin: auto;
+	}
+	#zen-benefits::after{
+		content: none;
+	}
+	#zen-benefits p:last-child {
+		padding-bottom: 40px;
+	}
+
+	#zen-requirements {
+		  padding: 40px 30px 60px 30px;
+	}
+	#zen-requirements::before {
+	  content: url(glowfish-small.svg);
+	  height: 68px;
+	  width: 150px;
+	  position: relative;
+	  display: block;
+	  margin: auto;
+	}
+	#zen-requirements::after{
+		content: none;
+	}
+	.sidebar {
+		padding: 0;
+	}
+	.sidebar h3 {
+		padding-bottom: 0;
+	}
+	.design-selection, .design-archives, .zen-resources {
+		display: block;
+		text-align: center;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	@-webkit-keyframes sun {
+		0% {
+			right: -999px;
+		}
+		100% {
+			top: 50px;
+	  	right: 10px;
+	  }
+	}
+	@-moz-keyframes sun {
+		0% {
+			right: -999px;
+		}
+		100% {
+			top: 50px;
+	  	right: 10px;
+	  }
+	}
+	@-webkit-keyframes clouds {
+		0% {
+			left: -999px;
+		}
+		100% {
+			top: 50px;
+	  	left: 10px;
+	  }
+	}
+	@-moz-keyframes clouds {
+		0% {
+			left: -999px;
+		}
+		100% {
+			top: 50px;
+	  	left: 10px;
+	  }
+	}
+	.extra1 {
+		height: 60px;
+  	width: 60px;
+  	right: 10px;
+	}
+	.extra2 {
+		height: 65px;
+		width: 120px;
+		left: 10px;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.extra1 {
+		display: none;
+	}
+	.extra2 {
+		display: none;
+	}
+}
