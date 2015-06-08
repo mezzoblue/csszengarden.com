@@ -155,9 +155,9 @@ header h2 {
 	padding-right: 40%;
 	background: url(bubbles.png) repeat, #2A95E5;
 	background-position: bottom left;
-	animation: swim 45s linear 0s infinite forwards;
-	-webkit-animation: swim 45s linear 0s infinite forwards;
-	-moz-animation: swim 45s infinite;
+	animation: swim 45s linear 0s infinite alternate forwards;
+	-webkit-animation: swim 45s linear 0s infinite alternate forwards;
+	-moz-animation: swim 45s infinite alternate;
 }
 #zen-preamble::after {
   max-width: 100%;
@@ -181,9 +181,9 @@ header h2 {
 	padding-left: 40%;
 	background: url(bubbles.png) repeat, #2141B5;
 	background-position: top right;
-	animation: swim 45s linear 0s infinite forwards;
-	-webkit-animation: swim 45s linear 0s infinite forwards;
-	-moz-animation: swim 45s infinite;
+	animation: swim 45s linear 0s infinite alternate forwards;
+	-webkit-animation: swim 45s linear 0s infinite alternate forwards;
+	-moz-animation: swim 45s infinite alternate;
 }
 #zen-explanation::after {
   max-width: 100%;
@@ -214,9 +214,9 @@ header h2 {
 	padding-right: 40%;
 	background: url(bubbles.png) repeat, #131E66;
 	background-position: center;
-	animation: swim 45s linear 0s infinite forwards;
-	-webkit-animation: swim 45s linear 0s infinite forwards;
-	-moz-animation: swim 45s infinite;
+	animation: swim 45s linear 0s infinite alternate forwards;
+	-webkit-animation: swim 45s linear 0s infinite alternate forwards;
+	-moz-animation: swim 45s infinite alternate;
 }
 #zen-participation::after {
   max-width: 100%;
@@ -247,9 +247,9 @@ header h2 {
 	padding-left: 40%;
 	background: url(bubbles.png) repeat, #0A1036;
 	background-position: bottom left;
-	animation: swim 45s linear 0s infinite forwards;
-	-webkit-animation: swim 45s linear 0s infinite forwards;
-	-moz-animation: swim 45s infinite;
+	animation: swim 45s linear 0s infinite alternate forwards;
+	-webkit-animation: swim 45s linear 0s infinite alternate forwards;
+	-moz-animation: swim 45s infinite alternate;
 }
 #zen-benefits::after {
   max-width: 100%;
@@ -279,9 +279,9 @@ header h2 {
 	padding: 80px;
 	background: url(bubbles.png) repeat, #090E19;
 	background-position: bottom right;
-	animation: swim 45s linear 0s infinite forwards;
-	-webkit-animation: swim 45s linear 0s infinite forwards;
-	-moz-animation: swim 45s infinite;
+	animation: swim 45s linear 0s infinite alternate forwards;
+	-webkit-animation: swim 45s linear 0s infinite alternate forwards;
+	-moz-animation: swim 45s infinite alternate;
 	padding-right: 40%;
 }
 #zen-requirements::after {
@@ -605,7 +605,7 @@ footer a:nth-child(5) {
 	.sidebar h3 {
 		padding-bottom: 0;
 	}
-	.design-archives, .design-archives, .zen-resources {
+	.design-selection, .design-archives, .zen-resources {
 		display: block;
 		text-align: center;
 		padding: 0;
