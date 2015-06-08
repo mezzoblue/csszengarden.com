@@ -321,9 +321,13 @@ header h2 {
 	font-family: 'economicabold', "Arial Black", Gadget, sans-serif;
 }
 .design-selection,.design-archives,.zen-resources {
-	  display: inline-block;
+	display: inline-block;
   vertical-align: top;
   padding: 20px;
+}
+
+.design-selection h3,.design-archives h3,.zen-resources h3 {
+  opacity: 0.6;
 }
 
 footer {
