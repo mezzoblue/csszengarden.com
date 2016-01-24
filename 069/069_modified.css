@@ -1,0 +1,168 @@
+body{
+    margin:0;
+    background: url(bg_garden2.jpg) top right no-repeat;
+    font:11px normal 黑体;
+}
+
+.page-wrapper{
+    width:92%;
+    margin-left: 40px;
+    padding-bottom: 40px;
+}
+
+.intro{
+    padding-top: 162px;
+}
+
+header{
+    position: absolute;
+    top:29px;
+    height:116px;
+    width:92%;
+    background: url(header.gif) no-repeat center;
+}
+
+header h1,header h2{
+    display: none;
+}
+
+.summary{
+    width:380px;
+    font-style: italic;
+    border-left: 1px dotted #000;
+    padding-left: 8px;
+}
+
+.preamble,.supporting{
+    width:53%;
+}
+
+h3{
+    font:bold 16px 黑体;
+    background: url(bonsai.gif) no-repeat;
+    padding-left: 28px;
+    height: 23px;
+    margin-top: 14px;
+    margin-bottom: -5px;
+    padding-bottom: 3px;
+    border-bottom: 1px dotted #000;
+    display: inline-block;
+}
+
+p{
+    line-height: 165%;
+}
+
+
+aside{
+    position: absolute;
+    top:300px;
+    right:7%;
+    color:#FFF;
+    font-size: 9px;
+    font-style: italic;
+    text-shadow: 0 0 3px #000;
+}
+
+aside h3{
+    border: none;
+    font:bold 12px 黑体;
+    text-align: center;
+    background-color: #000;
+    background-image: none;
+    position: relative;
+    top:-20px;
+    left:30px;
+    padding:4px 20px;
+    margin-bottom: -30px;
+}
+
+aside ul{
+    margin-top: 0;
+}
+
+aside>div>div{
+    background-image: url(bg_black.gif);
+    margin-bottom: 25px;
+    padding: 3px;
+}
+
+ul{
+    list-style: none;
+    padding:0 0 0 13px;
+    margin:10px 0 0 0;
+}
+
+li{
+    line-height: 16px;
+    padding-bottom: 8px;
+
+}
+
+a{
+    color:#030;
+    font-weight: bold;
+}
+
+aside a{
+    color:#fff;
+    font-size: 12px;
+    text-decoration: none;
+    font-family:verdana, arial;
+    text-shadow:0 0 10px #000;
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+}
+
+aside a.designer-name{
+    color:#EBE2A8;
+    display: inline;
+}
+
+
+
+aside a:hover,a:active{
+    text-decoration: underline;
+}
+
+
+.extra1{
+    background: url(platform.png);
+    position: fixed;
+    top:270px;
+    right:85px;
+    height:184px;
+    width:85px;
+    margin:-85px;
+}
+
+.extra2{
+    background: url(edge_bottom_black.gif) repeat-x bottom;
+    position: fixed;
+    bottom: 0;
+    height:20px;
+    width:100%;
+}
+.extra3{
+    background: url(edge_top_black.gif) repeat-x bottom;
+    position: fixed;
+    top:0;
+    height:20px;
+    width:100%;
+}
+.extra4{
+    background: url(edge_left_black.gif) repeat-y bottom;
+    position: fixed;
+    top:0;
+    width:20px;
+    height:100%;
+}
+.extra5{
+    background: url(edge_right_black.gif) repeat-y bottom;
+    position: fixed;
+    right:0;
+    top:0;
+    height:100%;
+    width:20px;
+}
