@@ -1,0 +1,194 @@
+body{
+	font:12px/16px 黑体;
+	color:#555;
+	background: url(bg_left.gif) repeat-y #fff;
+	margin:0;
+}
+a{
+	text-decoration: none;
+	font-weight: bold;
+	color:#e60;
+}
+abbr{
+	border:0 none;
+}
+
+.page-wrapper{
+	margin:0;
+	padding:0;
+}
+
+.intro{
+	width:303px;
+}
+
+h1{
+	margin:0;
+	width:303px;
+	height:198px;
+	background: url(h1.jpg) no-repeat top left;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+}
+h2{
+	margin:0 0 9px 0;
+	width:303px;
+	height:37px;
+	background: url(h2.gif) no-repeat transparent;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+.summary p,.preamble p{
+	margin: 0;
+	padding:8px 30px 4px 18px;
+}
+
+.summary p:first-child{
+	font-weight: bold;
+	color:#777;
+}
+
+.preamble h3{
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	background: url(the_road.jpg) no-repeat ;
+	margin:5px 0 0;
+	width:303px;
+	height:36px;
+}
+.supporting{
+	position:absolute;
+	top:70px;
+	left:303px;
+	width:320px;
+	margin:0;
+	padding: 0;
+	background: url(support_bg.gif) repeat-y top right;
+}
+
+.supporting h3,.supporting p{
+	margin:0;
+	padding:0 40px 10px 0px;
+}
+
+.supporting h3{
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	margin:0 40px 5px 0px;
+	height:34px;
+	border-bottom: 1px solid #ccc;
+}
+
+.participation h3{
+	background: url(parti.gif) no-repeat transparent;
+
+}
+
+.requirements h3{
+	background: url(req.gif) no-repeat transparent;
+}
+
+.benefits h3{
+	background: url(bene.gif) no-repeat transparent;
+}
+
+.explanation h3{
+	background: url(so_what.jpg) no-repeat transparent;
+	margin:0 15px 20px  0;
+	height:36px;
+	border-bottom: 0 none;
+
+}
+
+.requirements p:nth-child(6){
+	border-top:1px solid #ccc;
+	margin:10px 40px 5px 0;
+	padding:10px 0 0;
+}
+
+.sidebar{
+	position: absolute;
+	top:130px;
+	left:608px;
+	width:200px;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar h3.select{
+	background: url(select.jpg) no-repeat transparent;
+}
+
+.sidebar h3.archives{
+	background: url(archives.jpg) no-repeat transparent;
+}
+
+.sidebar h3.resources{
+	background:url(resources.jpg) no-repeat transparent;
+}
+.sidebar h3{
+	margin:0;
+	padding: 0;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	height:26px;
+}
+
+.sidebar .design-selection a{
+	text-decoration: underline;
+	color:#766;
+	display: block;
+}
+
+.sidebar .design-selection a:visited{
+	color:#aaa;
+}
+
+.sidebar .design-selection a:hover{
+	color:#e60;
+}
+
+.sidebar .design-selection a.designer-name{
+	display: inline;
+	text-decoration: none;
+	color:#888;
+}
+
+.sidebar .design-selection a.designer-name:visited{
+	color:#999;
+}
+.sidebar .design-selection a.designer-name{
+	text-decoration: none;
+	color:#e60;
+}
+
+footer{
+	position: relative;
+	margin:25px 15px 0 -14px;
+	padding:3px 0 0 20px;
+	height: 23px;
+	background: url(foot.jpg);
+}
+
+footer a{
+	color:#fff;
+	vertical-align: middle;
+}
+
+ul{
+	margin:7px 0 7px 20px;
+	padding:0;
+}
+
+li{
+	margin:0 0 5px;
+	padding:0;
+	list-style-type: none;
+
+}
