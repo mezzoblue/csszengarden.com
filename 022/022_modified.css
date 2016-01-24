@@ -1,0 +1,195 @@
+/*basic stuff*/
+body{
+	font:10px/16px 隶书;
+	color:#330033;
+	background: #669999 url(z_bgrnd.gif) repeat-x 0 1px;
+	margin:0;
+}
+
+p{
+	margin:5px 15px 5px 20px;
+	padding:5px 15px 5px 20px;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+h3{
+	color:#336666;
+	background: transparent;
+	font:bold 14px 隶书;
+	letter-spacing: 4px;
+}
+a:link{
+	color:#CFF;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:visited{
+	color:#033;
+	background-color: #699;
+}
+
+a:hover,a:active{
+	color:#066;
+	background-color: #CFF;
+}
+
+/*outermost div*/
+.page-wrapper{
+	position: absolute;
+	top:0;
+	left:0;
+	width:75%;
+	padding-left: 130px;
+	z-index: 2;
+}
+
+header{
+	width:575px;
+	height:65px;
+	position: absolute;
+	left:0;
+	top:0;
+	padding-top: 31px;
+}
+header h1{
+	background: transparent url(zh1_combo.gif);
+	width:575px;
+	height:65px;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	margin:0;
+}
+header h2{
+	display: none;
+}
+.summary{
+	color:#CCC;
+	background: transparent;
+	width:75%;
+	display: block;
+	padding-top: 125px;
+	height:auto;
+}
+.preamble{
+	color:#333;
+	background-color: #9CC;
+	width:70%;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border:1px solid #033;
+}
+.preamble h3{
+	background: #CFF url(h3_preamble.gif) no-repeat left top;
+	height:25px;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	margin:0;
+	border-bottom: 3px solid #033;
+}
+
+.supporting{
+	color:#333;
+	width:70%;
+	height:auto;
+	background: #9CC url(z_twig.gif) no-repeat right bottom;
+	border:1px solid #033;
+}
+
+.supporting h3{
+	color:#033;
+	margin:0;
+	height:25px;
+	border-bottom: 3px solid #033;
+	border-top: 1px solid #033;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+
+}
+
+.explanation h3{
+	background: #CFF url(h3_support1.gif) no-repeat top left;
+}
+
+.participation h3{
+	background: #CFF url(h3_support2.gif) no-repeat top left;
+}
+
+.benefits h3{
+	 background: #CFF url(h3_support3.gif) no-repeat top left;
+ }
+.requirements h3{
+	background: #CFF url(h3_support4.gif) no-repeat top left;
+}
+
+footer{
+	color:#CCC;
+	background-color: #066;
+	text-align: center;
+	background: url(z_trim.png) repeat-x 0 0 ;
+	height:32px;
+}
+
+.sidebar{
+	position: absolute;
+	top:114px;
+	left:0;
+}
+.sidebar .wrapper{
+	width:130px;
+	color:#333;
+	background-color:transparent ;
+	padding:0 0 10px;
+	margin:0 0 10px 0;
+	border-right: 1px solid #033;
+}
+
+.sidebar h3{
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	width:130px;
+}
+.sidebar h3.select{
+	background: transparent url(zh3_select.gif) no-repeat 0 0;
+	margin:0 0 5px;
+	height:100px;
+}
+
+.sidebar h3.archives{
+	background: transparent url(zh3_arch.gif) no-repeat 0 0;
+	margin:25px 0 5px;
+	height:50px;
+}
+.sidebar h3.resources{
+	background: transparent url(zh3_arch.gif) no-repeat 0 0;
+	margin:25px 0 5px;
+	height:50px;
+}
+
+.sidebar ul{
+	margin:0 5px;
+	padding:0 5px;
+}
+.sidebar li{
+	line-height: 2.5ex;
+	list-style-type: none;
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+
+.extra1{
+	position: absolute;
+	top:114px;
+	left:315px;
+	height:299px;
+	width:330px;
+	background: url(z_cont.gif) no-repeat;
+	z-index: 1;
+}
+
+
