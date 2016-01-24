@@ -1,0 +1,232 @@
+body{
+    margin:0;
+    color:#000;
+    background: #000;
+    text-align: center;
+}
+
+.page-wrapper{
+    background: #fff url(fond.jpg) top left repeat-y;
+    width:800px;
+    margin:0 auto;
+    position: relative;
+}
+
+header{
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+header h1{
+    width:800px;
+    height:216px;
+    background: url(zen.jpg) top right no-repeat;
+    text-indent:100%;
+    overflow:hidden;
+    white-space:nowrap;
+    margin:0;
+}
+
+header h2{
+    display:none;
+}
+
+.summary{
+    background: transparent;
+    color:#fff;
+    text-align: center;
+    margin:20px 80px 40px 295px;
+}
+
+.preamble{
+    margin:0 29px 0 235px;
+    background:#fff url(fond1.jpg) repeat-y;
+    width:536px;
+    padding-bottom: 30px;
+}
+
+.explanation{
+    margin:0 29px 0 235px;
+    width:536px;
+    background:#fff url(fond2.jpg) repeat-y top left;
+
+}
+
+.benefits{
+    background:#fff url(fond3.jpg) repeat-y;
+    margin:0 29px 0 235px;
+    width:536px;
+}
+.participation{
+     background:#fff url(fond4.jpg) repeat-y;
+     margin:0 29px 0 235px;
+     width:536px;
+ }
+
+.requirements{
+    background:#fff url(fond5.jpg) repeat-y;
+    margin:0 29px 0 235px;
+    width:536px;
+}
+
+.supporting > div >h3,.intro .preamble h3{
+    margin:0;
+    width:536px;
+    text-indent:100%;
+    overflow:hidden;
+    white-space:nowrap;
+
+}
+
+.preamble h3{
+    background: url(road.jpg) top left no-repeat ;
+    height:125px;
+}
+.explanation h3{
+    background: url(about.jpg) top left no-repeat ;
+    height:168px;
+}
+
+.participation h3{
+    background: url(particip.jpg) top left no-repeat ;
+    height:154px;
+    width:565px;
+
+}
+
+.benefits h3{
+    background: url(benef.jpg) top left no-repeat ;
+    height:171px;
+}
+
+.requirements h3{
+    background: url(req.jpg) top left no-repeat ;
+    height:125px;
+}
+
+.preamble p,.participation p,.requirements p{
+    margin:5px 120px 0 20px;
+    text-align: justify;
+}
+
+.explanation p,.benefits p{
+    margin:5px 20px 0 120px;
+    text-align: justify;
+}
+
+footer{
+    margin:0 29px 0 235px;
+    background: transparent url(fin.jpg) top left no-repeat;
+    width:536px;
+    height:223px;
+    text-decoration: underline;
+    color:#fff;
+}
+
+.extra1{
+    height:119px;
+    width:800px;
+    margin:0 auto 30px auto;
+    text-align: left;
+    background: #b2906d url(bas.jpg) no-repeat top left;
+}
+
+.sidebar{
+    position: absolute;
+    top:0;
+    left:0;
+    width:215px;
+    margin:0;
+    padding:150px 0 0 0;
+    background: url(chat.jpg) top left no-repeat;
+    color:#e5a250;
+    font-size: 80%;
+}
+
+.sidebar h3{
+    text-indent:100%;
+    overflow:hidden;
+    white-space:nowrap;
+    margin:40px 0 20px 0;
+    width:185px;
+    height:76px;
+}
+
+.sidebar h3.select{
+     background: transparent url(select.jpg) no-repeat top left;
+}
+
+.sidebar h3.archives{
+    background: transparent url(archiv.jpg) no-repeat top left;
+}
+
+.sidebar h3.resources{
+    background: transparent url(resou.jpg) no-repeat top left;
+}
+
+.sidebar ul{
+    margin:0 30px 0 20px;
+    padding:7px 2px 5px 2px;
+    background: #000;
+    border:2px solid #b2906d;
+}
+
+.sidebar li{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.sidebar a{
+    color:#e5a250;
+    text-decoration: none;
+    font-size: small;
+}
+
+.sidebar a:hover{
+    color:#99d0dd;
+}
+
+.design-selection li{
+    margin:0 0 10px 0;
+}
+
+.design-selection li a{
+    display: block;
+    margin:0;
+    padding-left: 30px;
+    color: #b2906d;
+}
+
+.design-selection li a:hover{
+    background: url(puce.jpg) no-repeat 0px -3px;
+}
+
+.design-selection li a.designer-name{
+    display: inline;
+}
+
+.design-archives li,.zen-resources li{
+    margin:0 0 15px 0;
+}
+
+.design-archives li a,.zen-resources li a{
+    margin:0px;
+    padding:10px 0  0 20px;
+}
+
+.design-archives a:visited,.zen-resources li a:visited{
+    padding: 5px 0 5px 20px;
+    margin:0;
+}
+
+.design-archives a:hover{
+    background: url(puceherbe.jpg) no-repeat 0 4px;
+}
+
+.zen-resources li a:hover{
+    background: url(puceparenth.jpg) no-repeat 0 4px;
+}
+
+
+
