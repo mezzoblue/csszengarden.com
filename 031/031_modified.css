@@ -1,0 +1,144 @@
+body{
+    margin:0;
+    background: #fff url(bg_tree.gif) repeat-x top left;
+    color:#888;
+}
+
+.page-wrapper{
+    position: relative;
+    margin:0 auto;
+    width:732px;
+}
+
+h1,h3{
+    text-indent:200%;
+    overflow:hidden;
+    white-space:nowrap;
+    margin:0;
+    background-repeat: no-repeat;
+}
+
+h2{
+    display: none;
+}
+
+.intro header h1{
+    background-image: url(nutitle.gif);
+    height:200px;
+}
+
+.summary p:first-child{
+    position: absolute;
+    top:12em;
+    right:15px;
+    width:120px;
+    margin:75px 0  0 580px;
+    text-align: right;
+    font-size: 80%;
+}
+
+.summary p:last-child{
+    position: absolute;
+    top:25em;
+    right:15px;
+    width:120px;
+    margin: 0;
+    text-align: center;
+    background: url(barrow.gif) no-repeat bottom;
+    padding-bottom: 90px;
+}
+
+
+.preamble,.supporting{
+    position: relative;
+    left:195px;
+    width:400px;
+}
+
+.preamble h3,.supporting h3{
+    height:70px;
+}
+
+.preamble h3{
+    background-image: url(road.gif);
+}
+
+.preamble p,.supporting p{
+    width:350px;
+    line-height: 1.5em;
+}
+
+.explanation h3{background-image: url(what.gif);}
+.participation h3{background-image: url(participation.gif);}
+.benefits h3{background-image: url(benefits.gif);}
+.requirements h3{background-image: url(requirements.gif);}
+
+aside{
+    position: absolute;
+    top:200px;
+    left:0;
+    width:190px;
+}
+
+aside h3{
+    height:41px;
+    margin-top: 30px;
+}
+
+h3.select{
+    background-image: url(select.gif);
+}
+h3.archives{background-image: url(archives.gif);}
+h3.resources{background-image: url(resources.gif);}
+
+aside ul{
+    margin:1em 0 1em;
+    padding: 0;
+    font-size: 90%;
+    list-style: none;
+}
+
+.design-archives li,
+.zen-resources li{
+    margin:0 0 0.5em;
+    line-height: 1em;
+}
+
+aside li a{
+    font-size: 90%;
+}
+
+aside .design-selection a{
+    display: block;
+}
+aside .design-selection  a.designer-name{
+    display:inline;
+    text-transform: lowercase;
+    font-weight: normal;
+}
+
+footer{
+    background: #d9d98b;
+    padding:10px 20px;
+    border-top: 1px solid #363;
+    font:85% verdana;
+    text-align: center;
+}
+
+footer a{
+    padding:0 5px;
+    font-weight: normal;
+}
+
+a{
+    color:#090;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#663;
+    text-decoration: underline;
+}
+
+
