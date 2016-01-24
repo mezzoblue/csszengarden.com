@@ -1,0 +1,220 @@
+body{
+    font-size: x-small;
+    background: #F2F4EE url(background.gif) repeat fixed ;
+    margin:0;
+}
+
+.page-wrapper{
+    position: relative;
+    top:0;
+    left:0;
+}
+
+.intro{
+    position: relative;
+    top:0;
+    z-index: 1000;
+}
+
+header{
+    position: relative;
+    background: #fff url(headerBack.jpg) repeat-x left top;
+    height:126px;
+    width:2100px;
+}
+
+header h1{
+    margin:0;
+    background: url(header.jpg) no-repeat;
+    height:100%;
+    text-indent:200%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+header h2{
+    display: none;
+}
+
+.summary{
+    position: absolute;
+    top:126px;
+    left:0;
+    background: url(flower.jpg) no-repeat top left;
+    width:352px;
+    padding-top: 301px;
+    z-index: 500;
+}
+
+.preamble,.supporting>div{
+    position: absolute;
+    top:0;
+    width:257px;
+    background:transparent url(sectionBack_head.png) no-repeat top right;
+}
+
+.preamble p,.supporting>div p{
+    background:transparent url(sectionBack_main.png) repeat-y top right;
+    margin: 0;
+    padding:5px 20px;
+}
+
+.preamble p:last-child,.supporting>div p:last-child{
+    background: url(sectionBack_foot.png) no-repeat bottom right;
+    padding-bottom: 30px;
+}
+
+.preamble h3,.supporting>div>h3{
+    text-indent:200%;
+    overflow:hidden;
+    white-space:nowrap;
+    height:86px;
+    margin:0;
+}
+
+.preamble h3{background: url(title_preamble.jpg) no-repeat;}
+.explanation h3{background: url(title_about.jpg) no-repeat;}
+.participation h3{background: url(title_participation.jpg) no-repeat;}
+.benefits h3{background: url(title_benefits.jpg) no-repeat;}
+.requirements h3{background: url(title_requirements.jpg) no-repeat;}
+
+.preamble{
+    left:370px;
+    top:126px;
+}
+
+.supporting{
+    position: relative;
+    top:0;
+    left:0;
+    background: #fff url(bodyBack.jpg) repeat-x;
+    height:301px;
+    width:2100px;
+    overflow:visible;
+}
+
+.explanation{
+    left:680px;
+}
+
+.participation{
+    left:980px;
+}
+
+.benefits{
+    left:1280px;
+}
+
+.requirements{
+    left:1580px;
+}
+
+footer{
+    position: absolute;
+    left:1880px;
+    margin-top: 5px;
+    width:43px;
+    z-index: 5000;
+}
+
+footer a{
+    display: block;
+    background: url(footer_back.png) no-repeat;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 15px;
+    height:26px;
+}
+
+footer a:hover{
+    background: url(footer_back_hover.png) no-repeat;
+}
+
+aside{
+    position: absolute;
+    top: 67px;
+    left: 750px;
+    z-index: 2000;
+    width:1350px;
+    height:150px;
+}
+
+aside >div>div{
+    float: left;
+}
+
+aside h3{
+    padding:5px;
+    position: relative;
+    margin-bottom: 10px;
+    text-indent:200%;
+    overflow:hidden;
+    white-space:nowrap;
+    padding-right: 25px;
+}
+
+.design-selection h3{
+    background: url(drop_lselect.png) no-repeat;
+    height:36px;
+    width:123px;
+}
+
+.design-archives h3{
+    background: url(drop_archives.png) no-repeat;
+    height:36px;
+    width:123px;
+}
+
+.zen-resources h3{
+    background: url(drop_resources.png) no-repeat;
+    height:36px;
+    width:123px;
+}
+
+aside ul{
+    display: none;
+    width:128px;
+    list-style-type: none;
+    background: url(drop_background.png);
+    margin:5px;
+    padding:5px;
+    border:1px solid #776;
+}
+
+
+aside li{
+    padding:3px;
+    border-bottom: 1px solid #887;
+}
+
+aside li:last-child{
+    border-bottom: none;
+}
+
+aside>div>div:hover ul{
+    display: block;
+}
+
+
+aside a:hover{
+    background: none;
+    border: none;
+    text-decoration: underline;
+}
+a{
+    color:#776;
+    text-decoration: none;
+    padding:0 1px;
+    font-weight: bold;
+}
+
+a:hover,a:active{
+    background: url(link_background.gif) no-repeat;
+    border: 1px solid #776;
+
+}
+
+
+footer a:hover{
+    border: none;
+}
