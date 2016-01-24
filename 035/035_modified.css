@@ -1,0 +1,226 @@
+body{
+    background: #d8d8d8 url(bg.gif) repeat-y top left;
+    margin:0;
+    color:#666;
+}
+
+.page-wrapper{
+    background:url(bg_rel-one.gif) no-repeat bottom right;
+}
+
+.intro{
+    background: url(bg_pattern.gif) repeat top left;
+    border-bottom: 2px solid #fff;
+}
+
+header{
+    background:#9bec37 url(bg_header.gif) repeat-y top left;
+    height:180px;
+    border-bottom: 2px solid #fff;
+}
+
+a{
+    color:#333;
+}
+
+
+h1,h2{
+    display: none;
+}
+
+h3{
+    text-indent:200%;
+    overflow:hidden;
+    white-space:nowrap;
+    margin-bottom: 0;
+}
+
+
+p{
+    font-size: 11px;
+    text-align: justify;
+}
+
+.summary{
+    height:166px;
+    width:735px;
+    background: #100b0a url(bg_sub_header.jpg)  no-repeat top right;
+    color:#fff;
+    border-bottom: 2px solid #fff;
+}
+
+.summary a{
+    color:#fff;
+    text-decoration: none;
+    padding-left: 8px;
+}
+
+
+.summary p:first-child{
+    width:160px;
+    margin:0;
+    padding:14px;
+}
+.summary p:last-child{
+    padding:0 14px 14px 14px;
+    margin:0;
+    width:130px;
+}
+
+.preamble{
+    margin-left: 233px;
+    background: #f90 url(bg_preamble.gif) no-repeat  top right;
+    width:500px;
+    border-right: 2px solid #fff;
+    padding-bottom: 16px;
+    color:#fff;
+}
+
+.preamble h3{
+    background: url(title_road.gif) no-repeat top left;
+    margin-top: 0;
+}
+
+.preamble p:nth-child(2){
+    margin:16px 18px 10px 18px;
+}
+
+.preamble p:nth-child(3){
+    margin:0 18px 10px 18px;
+}
+
+.preamble p:nth-child(4){
+    margin:0 18px 0 18px;
+}
+
+
+
+
+.preamble p,.summary p:last-child{
+    width:300px;
+    line-height: 1.5;
+    font-size: 10px;
+    width:250px;
+}
+
+.supporting{
+    background: url(bg_left.gif) repeat-y top left;
+}
+
+.supporting > div{
+    margin-left: 233px;
+    border: 1px solid #bbb;
+    width:498px;
+    margin-bottom: 2px;
+}
+
+.supporting p{
+    margin:12px 18px;
+}
+
+.supporting p:nth-child(2){
+    margin-top: 16px;
+}
+
+.supporting p:last-child{
+    margin-bottom: 16px;
+}
+
+.supporting h3{
+    width:498px;
+    height:30px;
+    margin:0;
+    background-repeat: no-repeat;
+}
+
+.explanation h3{background-image:url(title_about.gif);}
+.participation h3{background-image:url(title_partici.gif);}
+.benefits h3{background-image:url(title_benef.gif);}
+.requirements h3{background-image:url(title_req.gif);}
+
+.requirements{
+    background: #f5f5f5;
+    margin-bottom: 16px;
+}
+
+footer{
+    border-top: 2px solid #fff;
+    background: #9bec37 url(bg_footer.gif) no-repeat top left;
+    height:12px;
+    padding:14px 0 8px 252px;
+}
+
+footer a{
+    color:#fff;
+    text-decoration: none;
+    padding-left: 8px;
+    background: url(arrow_footer.gif) no-repeat 0 2px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+aside{
+    position: absolute;
+    background: #b5b5b5;
+    top:350px;
+    padding:12px;
+    width:207px;
+    border-right: 2px solid #fff;
+}
+
+aside > div >div {
+    background: #dfdfdf;
+    border:2px solid #fff;
+    padding:12px;
+    margin:0 0 12px 0;
+}
+
+aside ul{
+    font-size: 10px;
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+aside ul li{
+    background: url(bullet_gen.gif) no-repeat 2px 3px;
+    padding:0 0 5px 15px;
+    line-height: 12px;
+    color:#999;
+}
+
+aside .design-selection li{
+    background: url(bullet_design.gif) no-repeat 2px 3px;
+    font-size: 9px;
+}
+
+aside a{
+    display: block;
+    color:#444;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+aside a:hover{
+    text-decoration: underline;
+    color:#333;
+}
+
+aside a.designer-name{
+    display: inline;
+    color:#666;
+    font-size: 9px;
+}
+
+.design-selection h3{
+    background: url(bg_select_des.gif) no-repeat top left;
+}
+
+.design-archives h3{
+    background:url(bg_select_arc.gif) no-repeat top left;
+}
+
+.zen-resources h3{
+    background: url(bg_select_res.gif) no-repeat top left;
+}
