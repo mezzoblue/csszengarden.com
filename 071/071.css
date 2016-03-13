@@ -49,7 +49,7 @@ header h2 {
 }
 .preamble {
 	background: transparent url(crossing.gif) left bottom no-repeat;
-	padding: 0 95px 230px 395px;
+	padding: 0 95px 330px 395px;
 }
 .supporting {
 	position: relative;
@@ -60,7 +60,7 @@ header h2 {
 	padding: 0 395px 0 95px;
 }
 .participation {
-	padding: 0 395px 180px 95px;
+	padding: 0 395px 120px 95px;
 	background: transparent url(wave.gif) left bottom no-repeat;
 }
 .benefits {
@@ -76,7 +76,7 @@ header h2 {
 	padding: 0 95px 0 0;
 }
 footer {
-	padding: 0 95px 5px 395px;
+	padding: 150px 95px 5px 395px;
 	background: transparent url(lines3.gif) left top repeat-y;
 }
 .sidebar {
