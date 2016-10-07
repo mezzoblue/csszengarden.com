@@ -1,0 +1,1589 @@
+/*
+Design and development by @irynastorozhko
+Slightly different design was used for FireFox due to an old FireFox bug 
+preventing dashed border with border-radius to be rendered correctly.
+*/
+
+/*---------------------------FONTS------------------------------*/
+@font-face {
+	font-family: Modern;
+	src: url(fonts/MOD20.ttf);
+}
+@font-face {
+	font-family: HS;
+	src: url(fonts/HelloScriptL.ttf);
+}
+@font-face {
+	font-family: CourierB;
+	src: url(fonts/courbd.ttf);
+}
+/*---------------------end fonts--------------------------------*/
+@-moz-document url-prefix() {
+    .summary {
+        border: 1px solid rgba(99, 41, 7, 1);
+    }
+}
+/*---------------------GENERAL STYLES---------------------------*/
+html {
+	overflow-x: hidden;
+}
+
+body {
+	background-color: rgba(247, 184, 117, 1);
+	height: 100%;
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+
+.page-wrapper {
+	position: relative;
+}
+
+abbr {
+	text-decoration: none;
+}
+
+h3 {
+	font-family: HS;
+	font-size: 2.3em;
+}
+
+p::selection {
+	background-color: rgba(250, 210, 160, 1);
+	color: rgba(99, 41, 7, 1);
+}
+abbr::selection {
+	background-color: rgba(250, 210, 160, 1);
+	color: rgba(99, 41, 7, 1);
+}
+a::selection {
+	background-color: rgba(250, 210, 160, 1);
+	color: rgba(99, 41, 7, 1);
+}
+h3::selection {
+	background-color: rgba(250, 210, 160, 1);
+	color: rgba(99, 41, 7, 1);
+}
+ul::selection {
+	background-color: rgba(250, 210, 160, 1);
+	color: rgba(99, 41, 7, 1);
+}
+li::selection {
+	background-color: rgba(250, 210, 160, 1);
+	color: rgba(99, 41, 7, 1);
+}
+	p::-webkit-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	abbr::-webkit-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	a::-webkit-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	h3::-webkit-selection {
+	background-color: rgba(250, 210, 160, 1);
+	color: rgba(99, 41, 7, 1);
+	}
+	p::-moz-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	abbr::-moz-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	a::-moz-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	h3::-moz-selection {
+	background-color: rgba(250, 210, 160, 1);
+	color: rgba(99, 41, 7, 1);
+	}
+	p::-ms-selection {
+	background-color: rgba(250, 210, 160, 1);
+	color: rgba(99, 41, 7, 1);
+	}
+	abbr::-ms-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	a::-ms-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	h3::-ms-selection {
+	background-color: rgba(250, 210, 160, 1);
+	color: rgba(99, 41, 7, 1);
+	}
+	p::-o-selection {
+	background-color: rgba(250, 210, 160, 1);
+	color: rgba(99, 41, 7, 1);
+	}
+	abbr::-o-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	a::-o-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	h3::-o-selection {
+	background-color: rgba(250, 210, 160, 1);
+	color: rgba(99, 41, 7, 1);
+	}
+	li::-webkit-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	ul::-webkit-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	li::-moz-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	ul::-moz-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	li::-ms-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	ul::-ms-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	li::-o-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+	ul::-o-selection {
+		background-color: rgba(250, 210, 160, 1);
+		color: rgba(99, 41, 7, 1);
+	}
+/*---------------------end general styles-----------------------*/
+
+/*---------------------DOUGHNUT---------------------------------*/
+body::before { /* DOUGHNUT */
+	content: url("img/DoughnutLogo.png");
+	display: block;
+	text-align: center;
+	margin: 100px auto 0 auto;
+}
+/*-----------------end doughnut----------------------------------*/
+
+/*-------------------------SECTION-------------------------------*/
+header {
+	display: none;
+}
+
+.intro {
+	margin: 10% auto auto auto;
+	color: rgba(70, 35, 7, 1);
+	max-width: 70%;
+	font-family: Modern;
+	font-size: 2em;
+	line-height: 1.3em;
+	text-align: center;
+}
+/*--------------------------------------------------------------------------*/
+.summary {
+	box-sizing: border-box;
+	padding: 1em 2em 1em 2em;
+	margin-left: 45%;
+	background-color: rgba(99, 41, 7, 1);
+	border-radius: 20% 30% 10% 25% / 47%;
+	border: 1px dashed rgba(255, 228, 175, 1);
+	box-shadow: 0 0 0 5px rgba(99, 41, 7, 1);
+	color: rgba(250, 210, 160, 1);
+	text-align: left;
+}
+
+_:-moz-tree-row(hover), .summary { /*fix for incorrect rendering of the border in FF (FF bug)*/
+	border: 5px solid rgba(99, 41, 7, 1);
+	box-shadow: none;
+}
+
+.summary p:nth-child(2) {
+	text-align: right;
+}
+
+.summary a:link {
+	color: rgba(2, 170, 206, 1);
+}
+.summary a:visited {
+	color: rgba(2, 170, 206, 1);
+}
+.summary a:hover {
+	color: rgba(255, 228, 175, 1);
+}
+/*------------------------------------------------------------------------*/
+.preamble {
+	padding: 0.5em 2em 2em 1em;
+	margin-top: 7em;
+	margin-right: 30%;
+	border-radius: 10% 30% 47% 25% / 30%;
+	transform: rotate(-3deg);
+	 -webkit-transform: rotate(-3deg);
+	 -moz-transform: rotate(-3deg);
+	 -ms-transform: rotate(-3deg);
+	 -o-transform: rotate(-3deg);
+	background-color: rgba(217, 106, 37, 1);
+	border: 2px dashed rgba(255, 228, 175, 1);
+	box-shadow: 0 0 0 10px rgba(217, 106, 37, 1);
+}
+
+_:-moz-tree-row(hover), .preamble { /*fix for incorrect rendering of the border in FF (FF bug)*/
+	border: 10px solid rgba(217, 106, 37, 1);
+	box-shadow: none;
+}
+
+.preamble h3 {
+	transform: rotate(3deg);
+	 -webkit-transform: rotate(3deg);
+	 -moz-transform: rotate(3deg);
+	 -ms-transform: rotate(3deg);
+	 -o-transform: rotate(3deg);
+}
+
+.preamble p {
+	transform: rotate(3deg);
+	 -webkit-transform: rotate(3deg);
+	 -moz-transform: rotate(3deg);
+	 -ms-transform: rotate(3deg);
+	 -o-transform: rotate(3deg);
+	text-align: left;
+}
+
+.preamble p:nth-child(3) {
+	text-align: right;
+}
+/*---------------------------end section------------------------------------*/
+/*----------------------------DIV .MAIN-------------------------------------*/
+.main {
+	margin: auto;
+	max-width: 70%;
+	font-family: Modern;
+	font-size: 2em;
+	line-height: 1.3em;
+	text-align: center;
+}
+/*-------------------------------------------------------------------------*/
+.explanation {
+	border-radius: 40% 30% 47% 25% / 50%;
+	padding: 0.1em 5em 2em 3em;
+	margin-top: -2em;
+	margin-left: 25%;
+	background-color: rgba(255, 228, 175, 1);
+	color: rgba(99, 41, 7, 1);
+}
+
+.explanation h3 {
+	padding-right: 2.5em;
+	padding-left: 1em;
+	text-align: right;
+	color: rgba(217, 106, 37, 1);
+}
+
+.explanation p::selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+}
+.explanation abbr::selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+}
+.explanation h3::selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+}
+	.explanation p::-webkit-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.explanation abbr::-webkit-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.explanation h3::-webkit-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.explanation p::-moz-selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+	}
+	.explanation abbr::-moz-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.explanation h3::-moz-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.explanation p::-ms-selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+	}
+	.explanation abbr::-ms-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.explanation h3::-ms-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.explanation p::-o-selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+	}
+	.explanation abbr::-o-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.explanation h3::-o-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+/*-------------------------------------------------------------------------*/
+.participation {
+	border-radius: 25% 50% 34% 15% / 50%;
+	padding: 1px 6em 2em 3em;
+	margin-top: 6em;
+	margin-left: 5%;
+	margin-right: 15%;
+	background-color: rgba(99, 41, 7, 1);
+	border: 3px dashed rgba(217, 106, 37, 1);
+	box-shadow: 0 0 0 15px rgba(99, 41, 7, 1);
+	transform: rotate(4deg);
+	 -webkit-transform: rotate(4deg);
+	 -moz-transform: rotate(4deg);
+	 -ms-transform: rotate(4deg);
+	 -o-transform: rotate(4deg);
+	color: rgba(255, 228, 175, 1);
+}
+
+_:-moz-tree-row(hover), .participation { /*fix for incorrect rendering of the border in FF (FF bug)*/
+	border: 15px solid rgba(99, 41, 7, 1);
+	box-shadow: none;
+}
+
+.participation h3 {
+	transform: rotate(-4deg);
+	 -webkit-transform: rotate(-4deg);
+	 -moz-transform: rotate(-4deg);
+	 -ms-transform: rotate(-4deg);
+	 -o-transform: rotate(-4deg);
+	 padding-right: 4em;
+}
+
+.participation p {
+	transform: rotate(-4deg);
+	 -webkit-transform: rotate(-4deg);
+	 -moz-transform: rotate(-4deg);
+	 -ms-transform: rotate(-4deg);
+	 -o-transform: rotate(-4deg);
+}
+
+.participation p:nth-child(3) {
+	text-align: right;
+}
+
+.participation a:link {
+	color: rgba(217, 106, 37, 1);
+}
+.participation a:visited {
+	color: rgba(217, 106, 37, 1);
+}
+.participation a:hover {
+	color: rgba(2, 170, 206, 1);
+}
+/*-------------------------------------------------------------------------*/
+.benefits {
+	box-sizing: border-box;
+	padding: 0 2em 2em 2em;
+	margin-top: 7em;
+	margin-left: 50%;
+	border-radius: 25% 15% 40% 35% / 50%;
+	background-color: rgba(247, 184, 117, 1);
+	border: 3px dashed rgba(217, 106, 37, 1);
+	box-shadow: 0 0 0 6px rgba(247, 184, 117, 1),
+							0 0 0 10px rgba(217, 106, 37, 1);
+	color: rgba(99, 41, 7, 1);
+}
+
+_:-moz-tree-row(hover), .benefits { /*fix for incorrect rendering of the border in FF (FF bug)*/
+	border: 3px solid rgba(217, 106, 37, 1);
+	box-shadow: 0 0 0 16px rgba(247, 184, 117, 1);
+}
+
+.benefits h3 {
+	color: rgba(255, 228, 175, 1);
+}
+
+.benefits p::selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+}
+.benefits h3::selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+}
+.benefits abbr::selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+}
+	.benefits p::-webkit-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.benefits h3::-webkit-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.benefits abbr::-webkit-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.benefits p::-moz-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.benefits h3::-moz-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.benefits abbr::-moz-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.benefits p::-ms-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.benefits h3::-ms-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.benefits abbr::-ms-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.benefits p::-o-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.benefits h3::-o-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.benefits abbr::-o-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+/*-------------------------------------------------------------------------*/
+.requirements p{
+	background-color: rgba(217, 106, 37, 1);
+	color: rgba(255, 228, 175, 1);
+}
+
+.requirements h3 {
+	margin-top: 2em;
+	margin-left: 35%;
+	margin-bottom: 1.5em;
+	padding: 0.7em 0.5em 0.5em 1em;
+	border-radius: 5% 30% 0 0 / 50% 50%;
+	background-color: rgba(217, 106, 37, 1);
+	color: rgba(99, 41, 7, 1);
+}
+
+.requirements a:link {
+	color: rgba(99, 41, 7, 1);
+}
+.requirements a:visited {
+	color: rgba(99, 41, 7, 1);
+}
+.requirements a:hover {
+	color: rgba(255, 228, 175, 1);
+}
+
+.requirements p:nth-child(2) {
+	padding: 1em 3em 2em 3em;
+	margin-top: -4em;
+	margin-left: 35%;
+	border-radius: 0 0 5% 15% / 50%;
+	position: relative;
+	z-index: -2;
+}
+
+.requirements p:nth-child(3) { /*Middle*/
+	padding: 2em 2em 2em 3em;
+	margin-top: -2em;
+	margin-right: 20%;
+	margin-left: 15%;
+	border-radius: 25% 20% 4% 47% / 42%;
+	background-color: rgba(99, 41, 7, 1);
+	border: 1px dashed rgba(255, 228, 175, 1);
+	box-shadow: 0 0 0 7px rgba(99, 41, 7, 1);
+	position: relative;
+	z-index: -1;
+}
+
+_:-moz-tree-row(hover), .requirements p:nth-child(3) { /*fix for incorrect rendering of the border in FF (FF bug)*/
+	border: 7px dashed rgba(99, 41, 7, 1);
+	box-shadow: none;
+}
+
+.requirements p:nth-child(4) {
+	padding: 1.9em 1em 0 1em;
+	margin-top: -1.5em;
+	margin-left: 27%;
+	border-radius: 5% 15% 25% 23% / 50% 50% 25% 45%;
+	box-shadow: 20px 60px 0 60px rgba(217, 106, 37, 1);
+	position: relative;
+	z-index: -2;
+}
+
+.requirements p:nth-child(5) {
+	border-radius: 10% 15% 25% 50% / 42% 50%;
+	padding: 0 0.5em 1em 0.5em;
+	margin: -1em auto auto 30%;
+}
+/*-------------------------------------------------------------------------*/
+.requirements p:nth-child(6) { /*"By Dave"*/
+	max-width: 30%;
+	padding: 1em 1em 1em 2em;
+	margin: 12em auto auto auto;
+	border-radius: 30% 15% 25% 20% / 42% 50%;
+	background-color: rgba(255, 228, 175, 1);
+	border: 1px dashed rgba(99, 41, 7, 1);
+	box-shadow: 0 0 0 4px rgba(255, 228, 175, 1);
+	color: rgba(99, 41, 7, 1);
+}
+
+_:-moz-tree-row(hover), .requirements p:nth-child(6) { /*fix for incorrect rendering of the border in FF (FF bug)*/
+	border: 4px dashed rgba(255, 228, 175, 1);
+	box-shadow: none;
+}
+
+[role="contentinfo"] a:link {
+	color: rgba(217, 106, 37, 1);
+}
+[role="contentinfo"] a:visited {
+	color: rgba(217, 106, 37, 1);
+}
+[role="contentinfo"] a:hover {
+	color: rgba(3, 156, 189, 1);
+}
+/*-------------------------------------------------------------------------*/
+footer { /* source check buttons */
+	max-width: 40%;
+	display: flex;
+		display: -webkit-flex;
+	justify-content: space-between;
+		-webkit-justify-content: space-between;
+	margin: 2em auto 12em auto;
+}
+
+footer a {
+	padding: 0.5em;
+	background-color: rgba(247, 184, 117, 1);
+	border: 1px dashed rgba(99, 41, 7, 1);
+	box-shadow: 0 0 0 1px rgba(247, 184, 117, 1),
+							0 0 0 2px rgba(99, 41, 7, 1);
+}
+
+_:-moz-tree-row(hover), footer a { /*fix for incorrect rendering of the border in FF (FF bug)*/
+	border: 2px solid rgba(255, 228, 175, 1);
+	box-shadow: 0 0 0 3px rgba(247, 184, 117, 1);
+}
+
+.zen-validate-html {
+	border-radius: 30% 35% 15% 30% / 35% 50%;
+}
+
+.zen-validate-css {
+	border-radius: 10% 45% 25% 50% / 50% 40%;
+}
+
+.zen-license {
+	border-radius: 50% 40% 30% 20% / 40%;
+}
+
+.zen-accessibility {
+	border-radius: 23% 32% 25% 40% / 50% 30% 42%;
+}
+
+.zen-github {
+	border-radius: 26% 45% 50% 34% / 30% 40% 50%;
+}
+
+footer a:link {
+	color: rgba(217, 106, 37, 1);
+	text-decoration: none;
+}
+footer a:visited {
+	color: rgba(217, 106, 37, 1);
+	text-decoration: none;
+}
+footer a:hover {
+	color: rgba(2, 170, 206, 1);
+	text-decoration: underline;
+}
+/*---------------------------end div .main----------------------------*/
+/*---------------------------MENUS------------------------------------*/
+.sidebar {
+	max-width: 70%;
+	margin: auto;
+	font-family: Modern;
+	font-size: 2em;
+}
+
+.sidebar h3 {
+	display: none;
+}
+/*--------------------------------------------------------------------*/
+.design-selection {
+	margin: auto;
+	background-color: rgba(99, 41, 7, 1);
+	border: 2px dashed rgba(217, 106, 37, 1);
+	box-shadow: 0 0 0 6px rgba(99, 41, 7, 1);
+	border-radius: 26% 45% 50% 34% / 40% 30%;
+	padding: 1em 3em 2em 3em; 
+}
+
+_:-moz-tree-row(hover), .design-selection { /*fix for incorrect rendering of the border in FF (FF bug)*/
+	border: 6px solid rgba(99, 41, 7, 1);
+	box-shadow: none;
+}
+
+.design-selection ul {
+	padding: 0 1em 0 1em;
+	display: flex;
+		display: -webkit-flex;
+	flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	justify-content: space-around;
+		-webkit-justify-content: space-around;
+}
+
+.design-selection li {
+	min-width: 350px;
+	padding: 0.2em;
+	margin: 0.7em auto 0.7em auto;
+	color: rgba(217, 106, 37, 1);
+	font-size: 1em;
+	list-style-type: none;
+	text-align: center;
+}
+
+.design-selection a:link {
+	color: rgba(217, 106, 37, 1);
+	text-decoration: none;
+	font-family: CourierB;
+}
+.design-selection a:visited {
+	color: rgba(217, 106, 37, 1);
+	text-decoration: none;
+	font-family: CourierB;
+}
+.design-selection a:hover {
+	color: rgba(255, 228, 175, 1);
+	text-decoration: underline;
+	font-family: CourierB;
+}
+
+[role="navigation"] a:nth-child(4n-7) {
+	font-family: HS;
+	color: rgba(161, 212, 100, 1);
+	font-size: 2em;
+	display: block;
+}
+/*--------------------------------------------------------------------*/
+.design-archives {
+	margin-left: 25%;
+}
+
+.design-archives ul {
+	padding: 0 1em 0 1em;
+	text-align: right;
+}
+
+.design-archives li {
+	font-size: 1.2em;
+	list-style-type: none;
+	display: inline-block;
+	padding: 1em;
+}
+
+.design-archives span {
+	display: none;
+}
+
+.design-archives a:link {
+	color: rgba(99, 41, 7, 1);
+}
+.design-archives a:visited {
+	color: rgba(99, 41, 7, 1);
+}
+.design-archives a:hover {
+	color: rgba(255, 228, 175, 1);
+}
+
+.design-archives a::selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+}
+	.design-archives a::-webkit-selection {
+		background-color: rgba(99, 41, 7, 1);
+		color: rgba(255, 228, 175, 1);
+	}
+	.design-archives a::-moz-selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+	}
+	.design-archives a::-ms-selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+	}
+	.design-archives a::-o-selection {
+	background-color: rgba(99, 41, 7, 1);
+	color: rgba(255, 228, 175, 1);
+	}
+/*--------------------------------------------------------------------*/
+.zen-resources li {
+	padding: 0.4em;
+	margin: 0.4em auto;
+	list-style-type: none;
+	font-family: HS;
+	font-size: 2.3em;
+	text-align: center;
+	background-color: rgba(161, 212, 100, 1);
+	border: 2px dashed rgba(255, 228, 175, 1);
+	box-shadow: 0 0 0 6px rgba(161, 212, 100, 1);
+}
+
+_:-moz-tree-row(hover), .zen-resources li { /*fix for incorrect rendering of the border in FF (FF bug)*/
+	border: 2px solid rgba(217, 106, 37, 1);
+	box-shadow: none;
+}
+
+.zen-resources ul {
+	padding: 0;
+	position: absolute;
+	top: 41%;
+	left: 17%;
+}
+
+.zen-resources li:nth-child(1) {
+	max-width: 400px;
+	border-radius: 26% 45% 50% 34% / 30% 40% 50%;
+}
+
+.zen-resources li:nth-child(2) {
+	max-width: 250px;
+	border-radius: 16% 25% 30% 14% / 50%;
+}
+
+.zen-resources li:nth-child(3) {
+	max-width: 100px;
+	border-radius: 46% 45% 20% 24% / 40% 50%;
+}
+
+.zen-resources li:nth-child(4) {
+	max-width: 300px;
+	border-radius: 36% 15% 10% 44% / 45%;
+}
+
+.zen-resources li:nth-child(5) {
+	max-width: 300px;
+	border-radius: 50% 35% 43% 50% / 30%;
+}
+
+.zen-resources a:link {
+	color: rgba(99, 41, 7, 1);
+	text-decoration: none;
+}
+.zen-resources a:visited {
+	color: rgba(99, 41, 7, 1);
+	text-decoration: none;
+}
+.zen-resources a:hover {
+	color: rgba(255, 228, 175, 1);
+	text-decoration: underline;
+}
+/*---------------------------end menus--------------------------------*/
+/*---------------------------CUP OF JAVA------------------------------*/
+.benefits::before {/* CUP OF JAVA */
+	content: "";
+	background-color: rgba(99, 41, 7, 1);
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px rgba(80, 41, 7, 1),
+							0 0 0 25px rgba(70, 35, 7, 1),
+							0 0 0 42px rgba(250, 210, 160, 1),
+							0 0 0 65px rgba(255, 228, 175, 1);
+
+	position: fixed;
+	float: left;
+	z-index: 2;
+	shape-outside: circle() border-box;
+	margin: auto auto -120px -5px;
+	bottom: 0%;
+	left: 17%;
+
+	animation: appear 0.75s 1 ease;
+	-webkit-animation: appear 0.75s 1 ease;
+	-moz-animation: appear 0.75s 1 ease;
+	-ms-animation: appear 0.75s 1 ease;
+	-o-animation: appear 0.75s 1 ease;
+}
+
+@keyframes appear {
+	from{
+		bottom: -60%;
+	}
+	to{
+		bottom: 0%;
+	}
+}
+@-webkit-keyframes appear {
+	from{
+		bottom: -60%;
+	}
+	to{
+		bottom: 0%;
+	}
+}
+@-moz-keyframes appear {
+	from{
+		bottom: -60%;
+	}
+	to{
+		bottom: 0%;
+	}
+}
+@-ms-keyframes appear {
+	from{
+		bottom: -60%;
+	}
+	to{
+		bottom: 0%;
+	}
+}
+@-o-keyframes appear {
+	from{
+		bottom: -60%;
+	}
+	to{
+		bottom: 0%;
+	}
+}
+/*----------------------end cup of java-------------------------*/
+
+/*-----------------------RIPPLES--------------------------------*/
+.benefits::after { /* RIPPLES */
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid rgba(250, 210, 160, 0.4);
+
+	position: fixed;
+	margin: auto auto -100px 90px;
+	bottom: 0%;
+	left: 17%;
+	z-index: 6;
+
+	animation: rings 3s 1s ease-out infinite;
+	-webkit-animation: rings 3s 1s ease-out infinite;
+	-moz-animation: rings 3s 1s ease-out infinite;
+	-ms-animation: rings 3s 1s ease-out infinite;
+	-o-animation: rings 3s 1s ease-out infinite;
+}
+
+@keyframes rings{
+	to{
+		width: 180px;
+		height: 180px;
+		opacity: 0;
+		margin: auto auto -110px 5px;
+	}
+}
+@-webkit-keyframes rings{
+	to{
+		width: 180px;
+		height: 180px;
+		opacity: 0;
+		margin: auto auto -110px 5px;
+	}
+}
+@-moz-keyframes rings{
+	to{
+		width: 180px;
+		height: 180px;
+		opacity: 0;
+		margin: auto auto -110px 5px;
+	}
+}
+@-ms-keyframes rings{
+	to{
+		width: 180px;
+		height: 180px;
+		opacity: 0;
+		margin: auto auto -110px 5px;
+	}
+}
+@-o-keyframes rings{
+	to{
+		width: 180px;
+		height: 180px;
+		opacity: 0;
+		margin: auto auto -110px 5px;
+	}
+}
+/*-----------------------end ripples------------------------------*/
+
+/*--------------------------HANDLE--------------------------------*/
+.requirements::before { /* HANDLE */
+	content: "";
+	background: rgba(255, 228, 175, 1);
+	height: 100px;
+	width: 80px;
+	border-radius: 5px;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+
+	position: fixed;
+	margin: auto auto 70px -85px;
+	bottom: 0%;
+	left: 17%;
+	z-index: 4;
+
+	animation: appear 0.75s 1 ease;
+	-webkit-animation: appear 0.75s 1 ease;
+	-moz-animation: appear 0.75s 1 ease;
+	-ms-animation: appear 0.75s 1 ease;
+	-o-animation: appear 0.75s 1 ease;
+}
+/*------------------------end handle---------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------MEDIUM------------------------------------*/
+@media (max-width: 1500px) {
+	.intro {
+		max-width: 80%;
+	}
+
+	.summary {
+		margin-left: 50%;
+	}
+
+	.preamble {
+		margin: 3em 10% auto 10%;
+	}
+
+	.main {
+		max-width: 80%;
+	}
+
+	.explanation {
+		margin: 3em auto auto 22%;
+	}
+
+	.participation {
+		margin-top: 4em;
+	}
+
+	.benefits {
+		margin-top: 5em;
+	}
+
+	.requirements h3 {
+		margin-left: 15%;
+	}
+
+	.requirements p:nth-child(2) {
+		margin-left: 15%;
+	}
+
+	.requirements p:nth-child(3) { /*middle paragraph*/
+		margin-left: 5%;
+	}
+
+	.requirements p:nth-child(4) {
+		margin: -1em 12% auto 8%;
+	}
+
+	.requirements p:nth-child(5) {
+		margin: 0 12% 0 8%;
+	}
+
+	.requirements p:nth-child(6) { /*'By Dave'*/
+		margin-top: 10em;
+	}
+
+	.sidebar {
+		max-width: 80%;
+	}
+
+	.zen-resources ul{
+		top: 40%;
+		left: 12%;
+	}
+}
+/*----------------SMALL-----------------------------------------*/
+@media (max-width: 1150px) {
+	.intro {
+		max-width: 90%;
+	}
+
+	.summary {
+		margin-left: 35%;
+	}
+
+	.preamble {
+		margin: 8em auto auto auto;
+	}
+
+	.main {
+		max-width: 90%;
+	}
+
+	.explanation {
+		margin-left: auto;
+	}
+
+	.participation {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.benefits {
+		margin-left: 40%;
+	}
+
+	.requirements h3 {
+		margin-left: auto;
+	}
+
+	.requirements p:nth-child(2) {
+		margin-left: auto;
+	}
+
+	.requirements p:nth-child(3) { /*middle paragraph*/
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.requirements p:nth-child(6) { /*'By Dave'*/
+		margin-top: 5em;
+	}
+
+	footer {
+		margin-bottom: 7em;
+	}
+
+	.sidebar {
+		max-width: 90%;
+	}
+
+	.design-archives {
+		font-size: 0.8em;
+	}
+
+	.zen-resources ul{
+		top: 44%;
+		left: 5%;
+	}
+
+	.zen-resources li {
+		font-size: 2em;
+	}
+}
+/*----------------MENUS----------------------------------------*/
+@media (max-width: 999px) {
+	.zen-resources ul{
+		top: 42%;
+	}
+}
+
+@media (max-width: 977px) {
+	.zen-resources ul{
+		top: 39%;
+	}
+
+	.design-selection li {
+		min-width: 250px;
+	}
+}
+/*----------------EXTRA-SMALL-PARAGRAPHS------------------------*/
+@media (max-width: 920px) {
+	.intro {
+		max-width: 97%;
+	}
+
+	.intro p {
+		font-size: 1.3em;
+		line-height: 1.4em;
+	}
+
+	.intro	h3 {
+		line-height: 1.2em;
+	}
+
+	.summary {
+		margin-left: 10%;
+	}
+
+	.preamble {
+		margin: 6em auto auto auto;
+		padding-left: 2em;
+	}
+
+	.main {
+		max-width: 97%;
+	}
+
+	.main p {
+		font-size: 1.3em;
+		line-height: 1.4em;
+	}
+
+	.main	h3 {
+		line-height: 1.2em;
+	}
+
+	.explanation {
+		padding: 0.1em 4em 2em 4em;
+		border-radius: 40% 30% 25% 25% / 35%;
+	}
+
+	.participation {
+		border-radius: 25% 30% 24% 15% / 40%;
+		padding-right: 3em;
+		transform: none;
+		 -webkit-transform: none;
+		 -moz-transform: none;
+		 -ms-transform: none;
+		 -o-transform: none;
+	}
+
+	.participation h3 {
+		transform: none;
+		 -webkit-transform: none;
+		 -moz-transform: none;
+		 -ms-transform: none;
+		 -o-transform: none;
+	}
+
+	.participation p {
+		transform: none;
+		 -webkit-transform: none;
+		 -moz-transform: none;
+		 -ms-transform: none;
+		 -o-transform: none;
+	}
+
+	.benefits {
+		margin-left: auto;
+	}
+
+	.benefits h3 {
+		margin-bottom: 0;
+	}
+
+	.requirements p:nth-child(5) {
+		border-radius: 10% 15% 25% 15% / 42%;
+		padding: 0 2em 1em 2em;
+	}
+
+	.requirements p:nth-child(6) { /*'By Dave'*/
+		max-width: 50%;
+		margin-top: 4em;
+	}
+
+	footer {
+		max-width: 60%;
+		margin-bottom: 5em;
+	}
+
+	footer a {
+		font-weight: bold;
+	}
+
+	.sidebar {
+		max-width: 97%;
+	}
+
+	.wrapper {
+		display: flex;
+			display: -webkit-flex;
+		flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+		justify-content: space-around;
+			-webkit-justify-content: space-around;
+	}
+
+	.zen-resources ul {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+
+	.zen-resources {
+		order: 1;
+			-webkit-order: 1;
+	}
+
+	.design-selection {
+		order: 2;
+			-webkit-order: 2;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		padding: 2em 2em 1em 2em;
+	}
+
+	.design-selection ul {
+		padding: 0;
+	}
+
+	.design-selection li {
+		min-width: 250px;
+	}
+
+	.design-selection li:nth-child(7) {
+		flex: 1 100%;
+			-webkit-flex: 1 100%;
+	}
+
+	.design-archives {
+		margin-left: 27%;
+		order: 3;
+			-webkit-order: 3;
+	}
+}
+
+/*----------------EXTRA-SMALL CUP-----------------------------------*/
+@media (max-width: 773px) {
+	.benefits::before {/* CUP OF JAVA */
+		width: 120px;
+		height: 120px;
+		box-shadow: 0 0 0 6px rgba(80, 41, 7, 1),
+								0 0 0 15px rgba(70, 35, 7, 1),
+								0 0 0 26px rgba(250, 210, 160, 1),
+								0 0 0 39px rgba(255, 228, 175, 1);
+
+		margin: auto auto -72px -1px;
+		bottom: 0%;
+		left: 17%;
+	}
+
+	.benefits::after { /* RIPPLES */
+		width: 6px;
+		height: 6px;
+
+		margin: auto auto -60px 54px;
+		bottom: 0%;
+		left: 17%;
+	}
+
+	@keyframes rings{
+		to{
+			width: 108px;
+			height: 108px;
+			opacity: 0;
+			margin: auto auto -66px 1px;
+		}
+	}
+	@-webkit-keyframes rings{
+		to{
+			width: 108px;
+			height: 108px;
+			opacity: 0;
+			margin: auto auto -66px 1px;
+		}
+	}
+	@-moz-keyframes rings{
+		to{
+			width: 108px;
+			height: 108px;
+			opacity: 0;
+			margin: auto auto -66px 1px;
+		}
+	}
+	@-ms-keyframes rings{
+		to{
+			width: 108px;
+			height: 108px;
+			opacity: 0;
+			margin: auto auto -66px 1px;
+		}
+	}
+	@-o-keyframes rings{
+		to{
+			width: 108px;
+			height: 108px;
+			opacity: 0;
+			margin: auto auto -66px 1px;
+		}
+	}
+
+	.requirements::before { /* HANDLE */
+		height: 60px;
+		width: 48px;
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+
+		margin: auto auto 42px -51px;
+		bottom: 0%;
+		left: 17%;
+	}
+}
+
+/*----------------SUPER-EXTRA-SMALL-----------------------------*/
+@media (max-width: 415px) {
+	body::before { /* DOUGHNUT */
+		content: url("img/DoughnutLogo-sm.png");
+		margin-top: 60px;
+	}
+
+	.benefits::before {/* CUP OF JAVA */
+		width: 100px;
+		height: 100px;
+		box-shadow: 0 0 0 5px rgba(80, 41, 7, 1),
+								0 0 0 13px rgba(70, 35, 7, 1),
+								0 0 0 21px rgba(250, 210, 160, 1),
+								0 0 0 33px rgba(255, 228, 175, 1);
+
+		margin: auto auto -60px -1px;
+		bottom: 0%;
+		left: 23%;
+	}
+
+	.benefits::after { /* RIPPLES */
+		width: 5px;
+		height: 5px;
+
+		margin: auto auto -50px 45px;
+		bottom: 0%;
+		left: 23%;
+	}
+
+	@keyframes rings{
+		to{
+			width: 90px;
+			height: 90px;
+			opacity: 0;
+			margin: auto auto -55px 1px;
+		}
+	}
+	@-webkit-keyframes rings{
+		to{
+			width: 90px;
+			height: 90px;
+			opacity: 0;
+			margin: auto auto -55px 1px;
+		}
+	}
+	@-moz-keyframes rings{
+		to{
+			width: 90px;
+			height: 90px;
+			opacity: 0;
+			margin: auto auto -55px 1px;
+		}
+	}
+	@-ms-keyframes rings{
+		to{
+			width: 90px;
+			height: 90px;
+			opacity: 0;
+			margin: auto auto -55px 1px;
+		}
+	}
+	@-o-keyframes rings{
+		to{
+			width: 90px;
+			height: 90px;
+			opacity: 0;
+			margin: auto auto -55px 1px;
+		}
+	}
+
+	.requirements::before { /* HANDLE */
+		height: 50px;
+		width: 40px;
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+
+		margin: auto auto 37px -40px;
+		bottom: 0%;
+		left: 23%;
+	}
+
+	.intro { /* TEXT */
+		margin-top: 150px;
+		max-width: 100%;
+	}
+
+	.summary {
+		margin-left: 0;
+		border-radius: 20% 10% 7% 23% / 10%;
+		padding: 1em;
+	}
+
+	.preamble {
+		border-radius: 10% 30% 47% 25% / 10%;
+		transform: none;
+		 -webkit-transform: none;
+		 -moz-transform: none;
+		 -ms-transform: none;
+		 -o-transform: none;
+		padding: 0.5em 1em 1em 1em;
+		margin-top: 3em;
+	}
+
+	.preamble p {
+		transform: none;
+		 -webkit-transform: none;
+		 -moz-transform: none;
+		 -ms-transform: none;
+		 -o-transform: none;
+	}
+
+	.preamble h3 {
+		transform: none;
+		 -webkit-transform: none;
+		 -moz-transform: none;
+		 -ms-transform: none;
+		 -o-transform: none;
+	}
+
+	.main {
+		max-width: 100%;
+	}
+
+	.explanation {
+		border-radius: 20% 10% 17% 15% / 10%;
+		padding: 1em;
+	}
+
+	.explanation h3 {
+		padding: 0;
+		text-align: center;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+	.participation {
+		border-radius: 25% 40% 24% 15% / 10%;
+		padding: 1em;
+		margin-top: 3em;
+	}
+
+	.participation h3 {
+		padding: 0;
+	}
+
+	.benefits {
+		border-radius: 25% 15% 40% 35% / 20%;
+		padding: 0 1em;
+		margin-top: 3em;
+	}
+
+	.requirements {
+		margin-top: 3em;
+	}
+
+	.requirements h3 {
+		border-radius: 5% 30% 0 0 / 20%;
+		margin-bottom: auto;
+		margin-top: 0;
+	}
+
+	.requirements p:nth-child(2) {
+		border-radius: 0 0 5% 15% / 10%;
+		padding: 1em;
+		margin-top: -1em;
+		margin-bottom: auto;
+	}
+
+	.requirements p:nth-child(3) { /*Middle*/
+		border-radius: 25% 20% 4% 27% / 12%;
+		padding: 1em;
+		margin-top: 0;
+		margin-bottom: auto;
+	}
+
+	.requirements p:nth-child(4) {
+		border-radius: 20% 15% 15% 13% / 15%;
+		padding: 1em;
+		margin: 0 0 auto 0;
+	}
+
+	.requirements p:nth-child(5) {
+		border-radius: 10% 15% 25% 10% / 10%;
+		padding: 0 1em 1em 1em;
+		margin: -1em 0 auto 0;
+	}
+
+	.requirements p:nth-child(6) {/*"By Dave"*/
+		max-width: none;
+		border-radius: 30% 15% 25% 20% / 10%;
+		padding: 1em;
+		margin-top: 3em;
+	}
+
+	footer { /* source check buttons */
+		max-width: none;
+		flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+		justify-content: center;
+		  -webkit-justify-content: center;
+		margin: 1em auto 3em auto;
+	}
+
+	.sidebar {
+		max-width: 100%;
+	}
+
+	.zen-resources li{
+		font-size: 1.5em;
+		margin-top: 0.6em;
+	}
+
+	.design-selection {
+		border-radius: 16% 25% 30% 14% / 10%;
+		padding: 0.4em; 
+	}
+
+	[role="navigation"] a:nth-child(4n-7) {
+		font-size: 1.7em;
+	}
+
+	.design-archives {
+		font-size: 0.7em;
+		margin-bottom: 70px;
+		margin-left: auto;
+	}
+}
