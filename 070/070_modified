@@ -1,0 +1,202 @@
+body {
+    background: #fff url(BGTile.jpg) repeat left top;
+    margin: 0;
+    font-size: small;
+    text-align: center;
+    font-family: 隶书;
+    line-height: normal;
+}
+
+.page-wrapper {
+    background: url(ContentBG.gif) repeat-y left top;
+    text-align: left;
+    width: 780px;
+    border-bottom: 1px solid #000;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.intro {
+    position: relative;
+}
+
+header {
+    background: url(CSZenLogo.gif) no-repeat left top;
+    height: 444px;
+    z-index: 99;
+}
+
+header h1, header h2, .preamble h3 {
+    display: none;
+}
+
+.preamble {
+    background: url(RoadToEnlightmentBG_2.gif) no-repeat bottom left;
+    position: absolute;
+    left: 410px;
+    top: 15px;
+    width: 405px;
+    font-size: x-small;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.preamble p {
+    padding: 8px 70px 0 70px;
+    margin: 0;
+}
+
+.preamble p:nth-child(2) {
+    background: url(RoadToEnlightmentBG_1.gif) no-repeat right top;
+    padding-top: 10px;
+}
+
+.preamble p:nth-child(4) {
+    padding-bottom: 20px;
+}
+
+.summary{
+    position:absolute;
+    font-size: x-small;
+    left:38px;
+    top:515px;
+    z-index: 5;
+    text-align: right;
+    letter-spacing: 2px;
+    width:250px;
+}
+
+.explanation{
+    background: url(SoWhatIsThisAbout.gif) left top no-repeat;
+    margin:40px 0 0 30px;
+}
+
+.summary h3,.supporting h3{
+    display:none;
+}
+
+.explanation p{
+    margin:0 50px 0 280px;
+}
+
+.participation{
+    background: url(Participation.gif) left top no-repeat;
+    margin:20px 0px 0 150px;
+}
+
+.participation p{
+    margin:0 50px 0 160px;
+}
+
+.benefits{
+    background: url(Benefits.gif) no-repeat left top;
+    margin:40px 0 0 195px;
+}
+.benefits p{
+    margin:0 50px 0 115px;
+}
+
+.requirements{
+    background: url(Requirements.gif) no-repeat left top;
+    margin:40px 0 0 140px;
+}
+.requirements p{
+    margin:0 50px 0 170px;
+}
+
+.sidebar{
+    margin:40px auto;
+    padding: 0;
+    background: url(NavBG.gif) no-repeat left bottom;
+    width:729px;
+    font-size:xx-small;
+}
+
+.sidebar .wrapper{
+    background: url(NavBG_top.gif) no-repeat left top;
+    width:729px;
+    padding:5px 0px;
+}
+
+.sidebar h3{
+    display: none;
+}
+
+.design-selection{
+    background: url(SelectADesign.gif) left center no-repeat;
+    margin:0 0 0 20px;
+}
+
+.design-archives{
+    background: url(Archive.gif) left center no-repeat;
+    margin: 10px 0 10px 20px;
+    padding:8px 0;
+}
+
+.zen-resources{
+    background: url(Resources.gif) left center no-repeat;
+    margin: 10px 0 10px 20px;
+    padding:8px 0;
+}
+
+.sidebar ul{
+    margin:0;
+    padding:0 60px 0 120px;
+    line-height: 20px;
+    display:block;
+}
+
+.sidebar li{
+    display:inline;
+}
+
+.sidebar li:after{
+    content:url(Bullet.gif);
+}
+
+
+footer{
+    margin-left: 310px;
+    font-size:x-small;
+    margin-top:30px;
+
+}
+
+.extra1{
+    position: relative;
+    background:url(Dragon.gif) no-repeat left top;
+    height:206px;
+    width:96px;
+    margin:0 auto;
+    left:-360px;
+    top:-225px;
+}
+
+p:nth-child(6){
+    padding-top:30px;
+    font-size:10px;
+}
+
+a:link{
+    pdding:0 0 1px 0;
+    text-decoration: none;
+    color:#CC3300;
+    background:url(underline.gif) repeat-x bottom left;
+}
+
+a:visited{
+    pdding:0 0 2px 0;
+    text-decoration: none;
+    color:#666;
+    background:url(underline.gif) no-repeat bottom left;
+}
+
+a:hover,a:active{
+    color:#F00;
+    background: none;
+    text-decoration: none;
+}
+
+abbr{
+    border-bottom: none;
+}

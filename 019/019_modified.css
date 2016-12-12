@@ -1,0 +1,165 @@
+body{
+	font:11px/18px 隶书;
+	color:#fff;
+	background: #000 url(body-background.jpg) repeat-x;
+	margin:0 0 20px 0;
+	width:2300px;
+}
+
+header h1{
+	background: url(title.jpg) no-repeat top left;
+	width:2300px;
+	height:85px;
+	margin-top: 70px;
+	text-indent:200%;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+header h2{
+	display: none;
+}
+
+.summary{
+	position: absolute;
+	left:55px;
+	top:170px;
+	width:250px;
+}
+
+.preamble{
+	position: absolute;
+	background: url(femur.jpg) no-repeat bottom left;
+	top:170px;
+	left:545px;
+	width:300px;
+	height: 431px;
+}
+
+.supporting div,footer,aside{
+	position: absolute;
+	top:170px;
+	width:300px;
+}
+
+.supporting div h3{
+	text-indent:200%;
+	overflow:hidden;
+	white-space:nowrap;
+	width:300px;
+	height:25px;
+}
+.explanation{
+	left:865px;
+}
+
+.explanation h3{
+	background: url(so_what.jpg) no-repeat top left;
+}
+
+.participation{
+	left:1185px;
+	background: url(tin_can.jpg) no-repeat top left;
+}
+
+.participation h3{
+	background: url(participation.jpg) no-repeat top left;
+}
+.benefits{
+	left:1505px;
+	background: url(ants.jpg) no-repeat top left;
+}
+.benefits h3{
+	background: url(benefits.jpg) no-repeat top left;
+}
+
+.requirements{
+	left:1825px;
+
+}
+.requirements h3{
+	background: url(requirements.jpg) no-repeat top left;
+}
+footer{
+	left:2145px;
+	width:100px;
+	height:425px;
+	background: url(worm.jpg) no-repeat;
+}
+
+footer a,footer a:visited{
+	display: block;
+}
+
+aside{
+	left:325px;
+	width:200px;
+}
+
+aside>div{
+	font:9px verdana;
+}
+
+aside h3{
+	text-indent:200%;
+	overflow:hidden;
+	white-space:nowrap;
+	height: 25px;
+	width:200px;
+}
+
+.select{
+	background: url(select.jpg) no-repeat top left;
+}
+
+.archives{
+	background: url(archives.jpg) no-repeat top left;
+}
+
+.resources{
+	background: url(resources.jpg) no-repeat top left;
+}
+
+aside ul{
+	margin:0;
+	padding:0;
+}
+
+aside li{
+	line-height: 2.5ex;
+	list-style-type: none;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+
+a{
+	font-weight: bold;
+	text-decoration: none;
+	color:#E8AD62;
+}
+
+a:visited{
+	color:#E0922F;
+}
+
+a:hover,a:active{
+	color:#FC0;
+	text-decoration: underline;
+}
+
+p{
+	font:11px/18px 隶书;
+	margin-top: 0;
+}
+
+.extra1{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 2300px;
+	height: 630px;
+	z-index: 1;
+	background: url(mole.jpg) bottom left no-repeat;
+
+
+}

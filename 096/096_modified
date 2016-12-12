@@ -1,0 +1,192 @@
+body{
+	width:670px;
+	margin:0;
+	background: #FFF url(main_bg.gif) repeat-y left top;
+	color:#666;
+}
+
+.page-wrapper{
+	padding:0 0 20px 0;
+	font-size: 11px;
+	line-height: 1.4;
+	width:661px;
+	background: url(rightside_bg.gif) no-repeat 322px 0px;
+}
+
+header{
+	background: url(logo.gif) no-repeat left top ;
+	height:83px;
+	width:322px;
+	float: left;
+}
+header h1,header h2{
+	display: none;
+}
+.summary{
+	margin:10px 0 0;
+	padding-left:22px;
+	width:301px;
+	float: left;
+}
+
+.summary p:first-child{
+	padding: 2px 0 2px 0;
+	margin:0;
+}
+
+.summary p:last-child{
+	padding: 2px 0 2px 0;
+	margin: 0;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.preamble{
+	padding: 0 0 20px 0;
+	width: 661px;
+	clear:both;
+}
+
+.preamble h3{
+	display: none;
+}
+
+.preamble p{
+	margin:0 0 0 345px;
+	width:301px;
+}
+
+.preamble p:nth-child(2){
+	padding-top: 48px;
+	background: url(tit_01.gif) top left no-repeat;
+}
+
+.preamble p:nth-child(3),.preamble p:nth-child(4){
+	padding: 3px 0;
+}
+
+.supporting{
+	width:661px;
+}
+
+.supporting > div{
+	padding-bottom: 13px;
+}
+
+.supporting > div > h3{
+	display: none;
+}
+
+.supporting > div p:nth-child(2){
+	padding-top: 48px;
+}
+
+.supporting >div p{
+	width:301px;
+	margin:0 0 0 345px;
+}
+
+.explanation p:nth-child(2){
+	background: url(tit_02.gif) no-repeat left top;
+}
+
+.participation p:nth-child(2){
+	background: url(tit_03.gif) no-repeat left top;
+}
+
+.benefits p:nth-child(2){
+	background: url(tit_04.gif) no-repeat left top;
+}
+
+.requirements p:nth-child(2){
+	background: url(tit_05.gif) no-repeat left top;
+}
+
+aside{
+	position: absolute;
+	top:83px;
+	left:10px;
+	width: 214px;
+	background: url(leftside_bg.gif) no-repeat left top;
+}
+
+aside > div{
+	padding: 0 10px 10px 10px;
+}
+
+aside h3{
+	display: none;
+}
+
+.design-selection ul{
+	padding:30px 10px 0;
+	margin:0;
+	list-style-type: none;
+}
+
+.design-archives{
+	background: url(stit_02.gif) no-repeat left top;
+	margin:10px 0 0;
+	padding: 0 10px 10px;
+}
+
+.design-archives ul{
+	padding:20px 10px 0;
+	list-style-type: none;
+	margin:0;
+}
+
+.zen-resources{
+	background: url(stit_03.gif) no-repeat left top;
+	margin:10px 0 0;
+	padding:0 10px 10px;
+}
+
+.zen-resources ul{
+	padding:20px 10px 0;
+	list-style-type: none;
+	margin:0;
+}
+
+footer{
+	margin-left:345px;
+	padding: 3px 0;
+	width:301px;
+}
+
+.extra1{
+	position: absolute;
+	top:83px;
+	left:0;
+	height:208px;
+	width:10px;
+	background: url(bg_01.gif) no-repeat left top;
+
+}
+
+.extra2{
+	position: absolute;
+	top:83px;
+	left:224px;
+	height:423px;
+	width:98px;
+	background: url(bg_02.gif) no-repeat left top;
+}
+
+a:link{
+	color:#960;
+	text-decoration: none;
+}
+
+
+a:hover{
+	text-decoration: underline;
+}
+
+li{
+	margin:0;
+	padding: 2px 0 0 12px;
+	background: url(pointer.gif) no-repeat left top;
+	font-size: 12px;
+	font-weight: bold;
+}

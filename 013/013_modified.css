@@ -1,0 +1,190 @@
+body{
+    font:8pt/16px 仿宋;
+    text-align: center;
+    color:#464128;
+    background: #fff url(coastal2.jpg) bottom center no-repeat;
+    margin:0;
+}
+
+p{
+    text-align: right;
+    margin-top: 0;
+}
+
+h3{
+    text-align: right;
+    margin-bottom: 0;
+    background: url(futz.gif) center right no-repeat;
+    padding-right: 14px;
+}
+
+.intro{
+    background: url(coastal.jpg) top left no-repeat;
+    margin:0 auto;
+    width:700px;
+}
+
+header{
+    text-align: right;
+    padding:70px 60px 0 0;
+}
+
+header h1{
+    background: url(papier.jpg) top left no-repeat;
+    width:192px;
+    height:70px;
+    margin:0 0 0 448px;
+}
+
+header h2{
+    background: url(beauty.gif) top left no-repeat;
+    width:83px;
+    height:14px;
+    margin:0 90px 0 477px;
+    position: relative;
+    top:-17px;
+}
+
+header h1,header h2{
+    text-indent:200%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.preamble{
+    position: relative;
+    top:-80px;
+    padding:0 250px 0 140px;
+}
+
+.preamble p:last-child,.supporting div p:last-child{
+    background: url(filler.gif) bottom center no-repeat;
+    padding-bottom: 25px;
+}
+
+.summary{
+    float: right;
+    text-align: left;
+    padding-right:70px;
+    width:160px;
+}
+
+.summary p{
+    font:13px/18pt 仿宋;
+    text-align: left;
+    color:#A29D66;
+}
+
+.supporting{
+    margin:0 auto;
+    padding:0 250px 0 140px;
+    position: relative;
+    top:-70px;
+    width:310px;
+}
+
+aside{
+    font:italic 9pt/14pt 仿宋;
+    position: absolute;
+    top:33em;
+    left:0;
+    width:100%;
+    text-align: left;
+}
+
+aside .wrapper{
+    padding:0 70px 0 470px;
+    margin:0 auto;
+    width:160px;
+}
+
+aside h3{
+    text-indent:200%;
+    overflow:hidden;
+    white-space:nowrap;
+    margin:25px auto 0 0;
+}
+
+h3.select{
+    width:113px;
+    height:19px;
+    background: url(h-select.gif) top left no-repeat;
+}
+
+h3.archives{
+    width:134px;
+    height:17px;
+    background: url(h-archives.gif) top left no-repeat;
+}
+
+
+h3.resources{
+    width:125px;
+    height:13px;
+    background: url(h-resources.gif) top left no-repeat;
+}
+
+aside a{
+    font:11pt/14pt italic 仿宋;
+    color:#A29D66;
+    text-decoration: none;
+}
+
+aside a:hover{
+    color:#464128;
+    text-decoration: underline;
+}
+
+aside a.designer-name{
+    font:italic 9pt/14pt 仿宋;
+}
+
+aside ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+footer a{
+    font:italic 11pt/14pt 仿宋;
+    color:#A29D66;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+footer a:hover{
+    color:#464128;
+    background: transparent url(fleurdelis.gif) center left no-repeat;
+    text-decoration: none;
+    border: dotted 1px #464128;
+    padding-right: 3px;
+}
+
+
+a{
+    color:#464128;
+}
+
+a:visited{
+    color:#000;
+}
+
+a:hover{
+    color:#A29B66;
+}
+
+.extra1{
+    text-align: center;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+.extra1::before{
+    content: " ";
+    display: block;
+    width:600px;
+    height:82px;
+    margin: 0 auto;
+    background: url(fleur.gif) top right no-repeat;
+}

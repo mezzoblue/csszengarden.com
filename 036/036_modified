@@ -1,0 +1,233 @@
+body,html,div{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font:8pt/16pt 仿宋;
+    color:#000;
+    background:url(lbg.gif) repeat-y;
+}
+
+.page-wrapper{
+    border-top:1px solid #230;
+    border-right:1px solid #230;
+    width: 760px;
+    background:transparent url(topbg.gif) repeat-x;
+}
+
+.intro{
+    margin-top: 20px;
+    width:760px;
+    background: transparent url(lsh.gif) no-repeat 687px 231px;
+}
+
+
+header{
+    position:absolute;
+    left:0;
+    width:355px;
+    height:201px;
+}
+
+header h1{
+    background: transparent url(centerpiece.jpg) no-repeat;
+    width: 355px;
+    height:201px;
+    margin-top:0;
+    float:left;
+    text-indent:100%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+header h2{
+    display: none;
+}
+
+.summary{
+    margin:0 0 0 355px;
+    width:332px;
+    height: 200px;
+    background: #ABBC47 url(quicksumbg.gif);
+    border-right: 1px solid #ABBC47;
+    border-top: 1px solid #ABBC47;
+}
+
+footer{
+    position: absolute;
+    left:0;
+    top:230px;
+    font-size:10px;
+    color:#fff;
+    margin:0 30px 0 400px;
+    width:340px;
+    text-align: right;
+}
+
+.summary p:last-child a,footer a{
+     color:#fff;
+ }
+
+.summary p:first-child{
+    font:bold 11px/14px 仿宋;
+    color:#fff;
+    padding: 100px 30px 2px 30px;
+}
+
+.summary p:last-child{
+    position: absolute;
+    left:0;
+    top:230px;
+    font-size: 10px;
+    color:#fff;
+    margin:0 30px;
+}
+
+.preamble{
+    margin:30px 0 0 355px;
+    padding:50px 30px 30px 30px;
+    border-left:1px solid #ddd;
+    text-align: left;
+    width:343px;
+    background: transparent url(endsection.gif) no-repeat bottom;
+}
+
+.preamble p:nth-child(2){
+    width:270px;
+}
+
+.preamble h3{
+    width:270px;
+    height:36px;
+    border-bottom: 1px solid #ddd;
+    text-indent:100%;
+    overflow:hidden;
+    white-space:nowrap;
+    background: transparent url(h3preamble.gif) no-repeat bottom;
+
+}
+
+.supporting{
+    margin:0px 0 0 355px;
+    padding:50px 30px 0px 30px;
+    border-left:1px solid #ddd;
+    text-align: left;
+    width:343px;
+}
+
+.explanation,.benefits,.participation,.requirements{
+    padding: 0 0 20px 0;
+    margin-bottom: 20px;
+    text-align: left;
+    background: transparent url(endsection.gif) no-repeat bottom;
+}
+
+.explanation h3{
+    background: transparent url(h3explanation.gif) no-repeat bottom left;
+}
+.benefits h3{
+    background: transparent url(h3benefits.gif) no-repeat bottom left;
+
+}
+.participation h3{
+    background: transparent url(h3participation.gif) no-repeat bottom left;
+
+}
+.requirements h3{
+    background: transparent url(h3requirements.gif) no-repeat bottom left;
+}
+
+.supporting h3{
+    text-indent:100%;
+    overflow:hidden;
+    white-space:nowrap;
+    height:36px;
+    min-width:200px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar{
+    position: absolute;
+    left:0px;
+    top:252px;
+    padding:50px 30px 0 130px;
+    background:transparent url(lsh.gif) no-repeat top left;
+    width:195px;
+}
+
+.sider .wrapper{
+    padding:0;
+    overflow: hidden;
+}
+
+h3.select{
+    background:transparent url(h3select.gif) no-repeat bottom left;
+}
+
+h3.archives{
+    background:transparent url(h3archives.gif) no-repeat bottom left;
+}
+
+h3.resources{
+    background:transparent url(h3resources.gif) no-repeat bottom left;
+}
+
+aside h3{
+    text-indent:100%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.design-selection ul{
+    margin:10px 0 0 0;
+    padding:10px;
+}
+
+.design-selection li{
+    list-style-type: none;
+    background:transparent url(bullet.gif) no-repeat 0 7px;
+    padding:5px 0px 5px 25px;
+    margin:5px 0;
+    bottom-bottom:1px solid #eee;
+    line-height: 2.5ex;
+}
+
+.design-selection li a{
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.design-selection li a.designer-name{
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.design-selection li a.designer-name:hover{
+    text-decoration: underline;
+}
+
+a{
+    color:#230;
+}
+
+a:visited{
+    color:#672;
+}
+
+a:hover{
+    color:#ABBC47;
+}
+
+.design-archives ul,.zen-resources ul{
+    margin:10px 0 0 0;
+    padding:10px;
+}
+
+.design-archives li,.zen-resources li{
+    list-style-type: none;
+    background:transparent url(bullet2.gif) no-repeat 2px 7px;
+    padding:0px 0px 0px 25px;
+    margin:0;
+    bottom-bottom:1px solid #eee;
+}

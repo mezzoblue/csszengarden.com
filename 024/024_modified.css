@@ -1,0 +1,179 @@
+/*-----global------*/
+body{
+	background:#fff url(bg.gif) no-repeat fixed top left;
+	font-family: 黑体;
+	margin:0 20px;
+	color:#333;
+}
+/*-----layout------*/
+.page-wrapper{
+	position:relative;
+	background: url(header.jpg) no-repeat top left;
+	margin:0 auto -1px auto;
+	width:710px;
+	padding-top: 144px;
+	border-bottom:5px solid #09345f;
+}
+
+header{
+	display: none;
+}
+
+.summary{
+	width:100%;
+	text-align: right;
+}
+
+.summary p:first-child{
+	display: none;
+
+}
+.summary p:last-child{
+	margin-top: 0%;
+	padding-right: 5px;
+}
+.preamble{
+	margin:22px 0 0 176px;
+}
+.explanation,.participation,.benefits,.requirements{
+	margin:25px 0 0 176px;
+	width:529px;
+}
+
+footer{
+	margin :0 0  5px 0;
+	padding:10px 0 0 0;
+	width:100%;
+	text-align: center;
+}
+aside{
+	position:absolute;
+	top:166px;
+	width:150px;
+	left:5px;
+}
+
+/*-----text------*/
+p{
+	font-size:12px;
+}
+
+.preamble p:nth-child(2),.supporting p:nth-child(2){
+	margin-top:10px;
+}
+
+.preamble p,.supporting p{
+	line-height:18px;
+}
+
+.summary p:last-child{
+	font-size:9px;
+	color:#999;
+}
+
+footer{
+		font-size:9px;
+}
+/*-----list------*/
+.sidebar ul{
+	font-size: 10px;
+	list-style: none;
+	margin:5px 0 0 0;
+	padding:0 0 0 0;
+}
+
+.sidebar ul li{
+	background: url(bullet_single.gif) no-repeat 7px 4px;
+	margin:0;
+	padding-left:17px;
+	line-height: 14px;
+	color:#ccc;
+}
+.sidebar .design-selection li {
+	background: url(bullet_double.gif) no-repeat 5px 2px;
+	font-size:9px;
+}
+
+
+/*-----links------*/
+a,a:link,a:visited{
+	color:#999;
+}
+a:hover,a:active{
+	color:#333;
+}
+.summary a,.summary a:link,.summary a:visited{
+	font-weight:bold;
+	text-decoration: none;
+}
+
+.summary a:hover{
+	text-decoration: underline;
+}
+
+.sidebar a,.sidebar a:link,.sidebar a:visited{
+	color:#666;
+	text-decoration: none;
+}
+.sidebar a:hover{
+	text-decoration: underline;
+}
+a.designer-name:link,a.designer-name:visited{
+	color:#999;
+	display: inline;
+}
+
+/*-----headings ------*/
+h3{
+	margin-bottom:0px;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.supporting h3{
+	width:529px;
+	height:15px;
+}
+
+.sidebar h3{
+	width:150px;
+	height:20px;
+	margin-top: 20px;
+}
+
+.preamble h3{
+	width:529px;
+	height:26px;
+	background: transparent url(h3_theroadtoenlightenment.gif) no-repeat top left;
+}
+
+.explanation h3{
+	background: url(h3_sowhatisthisabout.gif)no-repeat top left;
+}
+
+.participation h3{
+	background: url(h3_participation.gif)no-repeat top left;
+}
+.benefits h3{
+	background: url(h3_benefits.gif)no-repeat top left;
+}
+.requirements h3{
+	background: url(h3_requirements.gif)no-repeat top left;
+}
+.design-selection h3{
+	background: url(h3_selectadesign.gif) no-repeat top left;
+	margin-top:10px;
+}
+.design-archives h3{
+	background: url(h3_archives.gif) no-repeat top left;
+	margin-top:10px;
+}
+.zen-resources h3{
+	background: url(h3_resources.gif) no-repeat top left;
+	margin-top:10px;
+}
+
+abbr{
+	border-width: 0;
+}
+

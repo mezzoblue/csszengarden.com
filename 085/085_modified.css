@@ -1,0 +1,180 @@
+body{
+	font:11px trebuchet ms,arial,helvetica,sans-serif;
+	color:#9F927F;
+	background: #E8E0D5 url(flora.gif) repeat-y center;
+	margin:0;
+}
+
+.page-wrapper{
+	position: relative;
+	margin:0 auto;
+	width:505px;
+	border:11px #B9AA94 solid;
+}
+
+.intro{
+	background: url(zensky.jpg) no-repeat top left;
+	padding-top:340px;
+}
+
+header{
+	background: url(cssdemo.gif) no-repeat top left;
+	height:67px;
+}
+
+h1,h2{
+	display:none;
+}
+
+h3{
+	text-indent:200%;
+	overflow:hidden;
+	white-space:nowrap;
+	margin: 0;
+}
+
+p:nth-child(6){
+	font-size: 9px;
+	margin-top: 15px;
+
+}
+.summary{
+	position: relative;
+	left:199px;
+	padding:14px 14px 0 14px;
+}
+
+.summary p:first-child{
+	display: none;
+}
+
+.summary p:last-child{
+	font-size: 9px;
+}
+
+.preamble,.supporting{
+	position: relative;
+	left:199px;
+	width:278px;
+	padding:0 14px 0 14px;
+}
+
+footer{
+	padding-top:15px;
+}
+
+footer a{
+	font-size: 9px;
+	margin-left: 15px;
+}
+
+aside{
+	position: absolute;
+	top:407px;
+}
+
+aside .wrapper{
+	width:188px;
+	color:#9F927F;
+}
+
+aside h3{
+	margin:0;
+	width:188px;
+	height:42px;
+}
+
+h3.select{
+	background: url(selectdesign.gif) top left no-repeat;
+}
+h3.archives{
+	background: url(archives.gif) top left no-repeat;
+}
+h3.resources{
+	background: url(resources.gif) top left no-repeat;
+}
+
+aside ul{
+	margin:0;
+	padding: 0;
+}
+
+aside li{
+	height:48px;
+	list-style-type: none;
+	background: url(liBG.gif) repeat-x top left;
+	padding-left: 14px;
+}
+
+aside li a{
+	color:#384A5F;
+	font-size: 11px;
+	display: block;
+	padding-top: 9px;
+	background: transparent;
+}
+
+aside li a:hover{
+	color:#746E50;
+	background: transparent;
+}
+
+aside li a.designer-name{
+	display: inline;
+	font-weight: normal;
+	color:#929B70;
+	font-size: 9px;
+}
+
+aside li a.designer-name:hover{
+	color:#746E50;
+	background: transparent;
+}
+
+.design-archives li,.zen-resources li{
+	height:25px;
+	background: #F3F1EC;
+	border-bottom:1px #DFDCD1 solid;
+	padding-left: 14px;
+}
+
+.design-archives a,.zen-resources a{
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
+
+a{
+	background: #EBEEF2;
+	color:#4F6B8B;
+	text-decoration: none;
+	padding:0 2px 0 2px;
+}
+
+a:hover,a:active{
+	background: #F1EFE9;
+	color:#384A5F;
+}
+
+.preamble{
+	background: url(road.gif) top left no-repeat;
+	padding-top: 30px;
+}
+
+.explanation{
+	padding-top: 30px;
+	background: url(allabout.gif) top left no-repeat;
+}
+
+.participation{
+	padding-top: 30px;
+	background: url(participation.gif) top left no-repeat;
+}
+.benefits{
+	padding-top: 30px;
+	background: url(benefits.gif) top left no-repeat;
+}
+.requirements{
+	padding-top: 30px;
+	background: url(requirements.gif) top left no-repeat;
+}
+

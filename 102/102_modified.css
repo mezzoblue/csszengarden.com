@@ -1,0 +1,178 @@
+body{
+	margin:0;
+	background: #e15 url(body_bg.gif) fixed;
+}
+
+p,ul,ol,li,h1,h2,h3{
+	margin:0;
+}
+
+p{
+	margin-bottom: 9px;
+}
+
+.page-wrapper{
+	margin:0 6%;
+	background: #f4f2ea url(container_bg.jpg);
+	border: solid 8px #000;
+	border-bottom: solid 32px #000;
+	border-top:0;
+}
+
+header{
+	background: #000 url(top_bg.jpg);
+	height:462px;
+}
+
+header h1,h3{
+	background: transparent url(top.jpg) no-repeat;
+	width:100%;
+	height:100%;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+header h2,.summary p:first-child{
+	display: none;
+}
+
+.summary p:last-child{
+	margin:10px 30px 0 0;
+	padding:0 0 8px 0;
+	border-bottom: 1px dotted #333
+}
+
+.summary{
+	margin-left: 250px;
+}
+
+.preamble{
+	position: relative;
+	margin-left: 230px;
+	text-align: left;
+}
+
+p:nth-child(2),
+p:nth-child(3),
+p:nth-child(4),
+p:nth-child(5),
+p:nth-child(6){
+	padding:0 30px 0 20px;
+}
+
+h3{
+	heigth:20px;
+	width:240px;
+	margin:20px 0 7px 0;
+}
+
+.supporting{
+	margin-left: 230px;
+}
+
+.preamble h3{
+	background: url(head_theroad.gif) no-repeat;
+}
+
+.explanation h3{
+	background: url(head_sowhat.gif) no-repeat;
+}
+
+.participation h3{
+	background: url(head_participation.gif) no-repeat
+}
+
+.benefits h3{
+	background: url(head_benefits.gif) no-repeat
+}
+
+.requirements h3{
+	background: url(head_requirements.gif) no-repeat
+}
+
+footer{
+	margin:20px 30px 50px 20px;
+	padding-top: 10px;
+	border-top: 1px dotted #000;
+}
+
+footer a{
+	margin:5px 20px 0 0;
+	padding:2px 5px;
+	border: 1px solid #26a;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+footer a:hover{
+	background: #26a;
+	color:#fff;
+}
+
+aside{
+	position: absolute;
+	top:480px;
+	margin-left: 30px;
+	background: url(left_bg2.jpg) repeat-y top left;
+}
+
+aside .wrapper{
+	color:#333;
+	border-bottom: 5px solid #000;
+}
+
+aside ul{
+	list-style-type: none;
+	padding: 0;
+}
+aside h3{
+	width:170px;
+	height:30px;
+	margin:0 0 -1px 0;
+}
+
+.design-selection h3{
+	background: url(left_lselect.gif) no-repeat;
+}
+
+.design-archives h3{
+	background: url(left_larchives.gif) no-repeat;
+}
+
+.zen-resources h3{
+	background: url(left_lresources.gif) no-repeat;
+}
+ 
+aside li{
+	margin:0 15px;
+	border-top: 1px dotted #333;
+	padding: 8px 0;
+}
+
+aside li a{
+	display: block;
+	color:#c32;
+	font:11px/16px georgia,tahoma,verdana,arial;
+}
+
+aside li a.designer-name{
+	display: inline;
+	color:#333;
+	font-size: 9px;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+aside li a.designer-name:hover{
+	color:#888;
+}
+
+.design-archives li a,.zen-resources li a{
+	display: inline;
+	font-size: 9px;
+	line-height: 15px;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}

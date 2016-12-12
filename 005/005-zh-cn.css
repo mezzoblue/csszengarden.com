@@ -1,0 +1,191 @@
+body{
+    font:12px/13px 黑体;
+    margin:0;
+}
+
+p{
+    text-align: justify;
+}
+
+header h1,header h2{
+    text-indent:-2200%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+h3{
+    font:bold 14px 黑体;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: underline;
+    color:#FF4F3E;
+    font-weight: bold;
+}
+
+a:hover,a:active{
+    color:#000;
+}
+
+.page-wrapper{
+    margin:50px 0 0 0;
+    padding:150px 0 0 200px;
+    background: url(bloodlust.gif) no-repeat top left;
+}
+
+
+header h1{
+    position: absolute;
+    top:20px;
+    left:305px;
+    width:461px;
+    height:116px;
+    margin-top:10px;
+    background: url(h1.gif) no-repeat top left;
+}
+
+header h2{
+    position: absolute;
+    top:150px;
+    left:216px;
+    width:253px;
+    height:34px;
+    background: url(h2.gif) no-repeat top left;
+}
+
+.summary p:first-child{
+    font:400 18px/16px 黑体;
+    text-align: right;
+    width:304px;
+    float: left;
+    margin:40px 20px 20px 0;
+}
+
+.summary p:last-child{
+    font:9px/24px 黑体;
+    width:295px;
+    top:20px;
+    left:25px;
+    position: absolute;
+}
+
+.preamble{
+    width:170px;
+    float: right;
+    margin-top:50px;
+    position: relative;
+    top:-270px;
+    clear:left;
+}
+
+.preamble h3{
+    font:12pt/10pt 黑体;
+    text-align: right;
+}
+
+.preamble p{
+    font:10pt/11pt 黑体;
+    text-align: right;
+}
+
+.supporting {
+    clear: left;
+}
+
+.supporting h3{
+    text-indent:-5500%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.explanation h3{
+    font:bold 18px 黑体;
+}
+
+.explanation p:nth-child(2){
+    font:18px 黑体;
+    line-height: 5ex;
+}
+
+.explanation p:nth-child(3){
+    font:11px/16px 黑体;
+    width:220px;
+    float: left;
+}
+
+.participation h3{
+    width:174px;
+    height:66px;
+    margin:0;
+    float: left;
+    background: url(h3.gif) no-repeat top left;
+}
+
+
+.participation p:nth-child(2){
+    font:16px 黑体;
+}
+
+.participation p:nth-child(3){
+    line-height: 16px;
+    text-align: right;
+    float: left;
+    width:200px;
+    margin:0 5px 15px 0;
+}
+
+.participation p:nth-child(4){
+
+}
+
+.benefits h3{
+    width:107px;
+    height:26px;
+    float: left;
+    margin:0;
+    background: url(h4.gif) no-repeat top left;
+}
+
+.requirements h3{
+    font:18px bold 黑体;
+    clear: left;
+    float: right;
+}
+
+.requirements p:nth-child(2){
+    float: left;
+    width:300px;
+    margin-right: 10px;
+    font:11px/16px 楷体;
+}
+
+.requirements p:nth-child(4){
+    font:12px/11px 黑体;
+}
+
+aside{
+    position: absolute;
+    top:0;
+    left:20px;
+}
+
+aside >div {
+    font:12px 黑体;
+    padding:10px;
+    margin-top: 115px;
+    width:130px;
+}
+
+aside li{
+    line-height: 2.5ex;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+aside ul{
+    margin: 0;
+    padding: 0;
+}
+
+

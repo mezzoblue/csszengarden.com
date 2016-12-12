@@ -1,0 +1,170 @@
+/*primary elements*/
+body{
+	background: #000;
+	color:#ccc;
+	margin:0;
+	text-align: center;
+}
+p{
+	text-align: left;
+	font:11pt/16pt 仿宋;
+}
+
+/*links */
+a:link{
+	font-weight: normal;
+	text-decoration: none;
+	color:#bcf;
+}
+a:visited{
+	color:#bde;
+}
+
+a:hover,a:active{
+	color:#fff;
+	text-decoration: underline;
+}
+
+/*body content*/
+.page-wrapper{
+	position: relative;
+	margin:0 auto;
+	padding:1px;
+	font:8pt/12pt 仿宋;
+	color:#ddd;
+	background: #000 url(backdrop.title.jpg) no-repeat top left;
+	width:750px;
+}
+
+.intro{
+	position: relative;
+	margin:225px 39px 10px  218px;
+	padding:10px 10px 0px 10px;
+}
+
+
+header{
+	display: none;
+}
+
+.summary{
+	float: left;
+	clear:both;
+	margin:0 7px 0 0;
+	width:175px;
+}
+
+.summary p{
+	font:italic 10px/22pt 仿宋;
+	text-align: center;
+	margin: 4px;
+}
+
+.premble{
+	clear:right;
+	padding:0;
+}
+
+.intro h3{
+	margin:0 0 15px 0;
+	padding:1px 0 3px 0px;
+	font:14pt 仿宋;
+	text-align: left;
+	color: #fff;
+}
+
+.supporting{
+	margin: 0 39px 10px 218px;
+	padding: 0;
+}
+
+.supporting h3{
+	margin:15px 0;
+	padding: 1px 0 3px 0;
+	border-top:1px solid #fff;
+	border-bottom: 1px solid #fff;
+	font: 14pt 仿宋;
+	color:#fff;
+}
+
+footer{
+	margin:30px 0;
+	text-align: center;
+	color:#fff;
+	border-top:1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+footer a:link,footer a:visited{
+		margin:0 10px;
+}
+
+/*link list*/
+
+aside{
+	position:absolute;
+	top: 435px;
+	left:50px;
+	width: 150px;
+	margin:0;
+	padding:0;
+	text-align: left;
+}
+
+aside h3.select{
+	background: url(linkhead-select.jpg) no-repeat top left;
+	margin:0;
+	width:150px;
+	height: 21px;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+aside h3.archives{
+	background: url(linkhead-archives.jpg) no-repeat top left;
+	margin-left:10px;
+	width:150px;
+	height: 21px;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+aside h3.resources{
+	background: url(linkhead-resources.jpg) no-repeat top left;
+	margin-left:10px;
+	width:150px;
+	height: 21px;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+
+aside ul{
+	margin:0 0 10px 10px;
+	padding: 0;
+}
+
+aside li{
+	list-style-type: none;
+	background: url(docbullet.gif) no-repeat 0 7px;
+	line-height: 2.5ex;
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	padding-left:11px;
+}
+
+.design-selection a{
+	text-transform: lowercase;
+	display: block;
+}
+
+.design-selection a.designer-name{
+	display: inline;
+	text-transform: none;
+}
+
+

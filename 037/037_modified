@@ -1,0 +1,269 @@
+body {
+    width: 2048px;
+    margin: 0;
+    font: 11px/1.5em 黑体
+}
+
+div.extra2 {
+    background: url(bg_face.jpg) no-repeat left bottom;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 600px;
+    width: 265px;
+    z-index: 2;
+}
+
+div.extra3 {
+    background: url(bg_white.png);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 225px;
+    z-index: 1;
+}
+
+header {
+    position: relative;
+    left: 220px;
+    width: 1828px;
+}
+
+header h1 {
+    width: 493px;
+    height: 83px;
+    margin: 20px 0 0;
+    background-image: url(csszengarden.jpg);
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+header h2{
+    width:1826px;
+    height:27px;
+    background: url(thebeautyofcssdesign.jpg) no-repeat right;
+    margin-top:-10px;
+    text-indent:100%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.summary {
+    position: absolute;
+    width: 1300px;
+    left: 228px;
+    top: 98px;
+    letter-spacing: 0.1em;
+    color: #A5A3B5;
+    background: transparent;
+}
+
+div.summary p:last-child, div.summary p:first-child {
+    display: inline;
+    margin: 0;
+}
+
+div.extra1 {
+    position: absolute;
+    left: 225px;
+    top: 90px;
+    height: 1px;
+    width: 1823px;
+    background: #A5A3B5;
+}
+
+.preamble {
+    position: absolute;
+    left: 375px;
+    top: 160px;
+    width: 200px;
+    text-align: justify;
+}
+
+.preamble h3 {
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    height: 25px;
+    background-image: url(theroad.jpg);
+    margin: 0 0 0.5em;
+}
+
+.preamble p {
+    margin: 0 0.5em 0.5em;
+}
+
+div.explanation, div.participation, div.benefits, div.requirements {
+    position: absolute;
+    top: 160px;
+    width: 200px;
+    text-align: justify;
+}
+
+div.explanation {
+    left: 625px;
+}
+
+div.participation {
+    left: 875px;
+}
+
+div.benefits {
+    left: 1125px;
+}
+
+div.requirements {
+    width:400px;
+    left: 1375px;
+}
+
+div.explanation h3, div.participation h3, div.benefits h3, div.requirements h3 {
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    height: 25px;
+    margin: 0 0 0.5em;
+}
+
+div.explanation h3 {
+    background-image: url(sowhatisthisabout.jpg);
+}
+
+div.participation h3 {
+    background-image: url(participation.jpg);
+}
+
+div.benefits h3 {
+    background-image: url(benefits.jpg);
+}
+
+div.requirements h3 {
+    background-image: url(requirements.jpg);
+    width:400px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+div.explanation p, div.participation p, div.benefits p, div.requirements p {
+    margin:0 0.5em 0.5em;
+}
+.sidebar {
+    position: absolute;
+    left:1828px;
+    top:160px;
+    width:220px;
+    background: url(bg_linklist.jpg) repeat-y;
+}
+
+.design-selection li a:link,
+.design-selection li a:visited{
+    display: block;
+    margin-left: -10px;
+    padding-left: 26px;
+    color:#8B879E;
+    border-top:1px solid #C6C6D2;
+    background:url(linklistlink.jpg) no-repeat;
+}
+
+.design-selection li a.designer-name:link,
+.design-selection li a.designer-name:visited{
+    background-image: none;
+    display:inline;
+    color:#A52A2A;
+    margin: 0px;
+    padding: 0;
+    border:none;
+}
+
+a:link,a:visited{
+    color:#A52A2A;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    margin:0 0 0 25px;
+    padding:0;
+}
+
+.sidebar li{
+    padding-left: 10px;
+}
+
+.design-selection h3{
+    float:left;
+    margin-top:0;
+    width:25px;
+    height:200px;
+    background:url(selectadesign.jpg) no-repeat;
+    text-indent:100%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+div.design-archives,div.zen-resources{
+    clear:left;
+    margin-top:0;
+    border-top: 10px solid #D9D6E7;
+}
+
+div.design-archives h3,div.zen-resources h3{
+    float:left;
+    margin-top:0;
+    width:25px;
+    height:81px;
+    text-indent:100%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+div.design-archives h3 {
+    background: url(archives.jpg) no-repeat;
+}
+div.zen-resources h3{
+     background: url(ressources.jpg) no-repeat;
+}
+
+footer{
+    position: absolute;
+    left:1828px;
+    top:3px;
+    width:220px;
+    height:20px;
+    text-align: center;
+    word-spacing: 0.1em;
+    overflow: hidden;
+}
+
+footer a:link,footer a:visited{
+    color:#B2AFC0;
+    background: transparent;
+}
+
+.extra4{
+    position: absolute;
+    left:1828px;
+    top:20px;
+    width:214px;
+    height:65px;
+    background: #d9d6e7 url(transition.jpg);
+}
+
+.extra5{
+    position: absolute;
+    left:1828px;
+    top:0px;
+    width:220px;
+    height:666px;
+    background: #d9d6e7 url(bg_body.jpg);
+    z-index: -1;
+}
+
+

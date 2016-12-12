@@ -1,0 +1,186 @@
+body{
+    margin:0;
+    background: #EBE8D0 url(bg_body.gif) repeat-x top left;
+    color:#333;
+    text-align: center;
+    font-size: small;
+}
+
+.page-wrapper{
+    position: relative;
+    width:732px;
+    text-align: left;
+    margin:0 auto;
+}
+
+.intro{
+    border:1px solid #A79355;
+    border-width: 0 1px;
+}
+
+h1,h2,h3,.summary p:first-child{
+    margin:0;
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-indent:200%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+header h1{
+    height:71px;
+    background:url(bg_zengarden.gif) no-repeat 35px 42px;
+}
+
+header h2{
+    height:115px;
+    background: url(bg_beautyof.jpg);
+}
+
+.summary p:first-child{
+    height: 76px;
+    margin:0;
+    background: url(bg_quicksum.gif) no-repeat 35px 18px;
+}
+
+.summary p:last-child{
+    position: absolute;
+    top:78px;
+    right: 35px;
+    width:200px;
+    font-size: 93%;
+    line-height: 1.3em;
+    text-align: right;
+    color:#A79355;
+}
+
+.summary a{
+    white-space: nowrap;
+    font:bold 92%/1.3em verdana;
+}
+
+.preamble{
+    position: absolute;
+    top:304px;
+    width:180px;
+    right:0;
+}
+
+.preamble h3{
+    height: 44px;
+    background-image: url(bg_road.gif);
+}
+
+.preamble p{
+    margin:5em 0;
+    font-size: 93%;
+    font-style: italic;
+    color:#66472E;
+}
+
+.supporting{
+    margin:0 200px;
+    border:1px solid #A79355;
+    border-width: 0 1px;
+    padding-bottom: 8px;
+    border-bottom: 8px solid #BDAF83;
+}
+
+.supporting p{
+    margin:.75em 0;
+    padding:0 20px;
+    line-height: 1.5em;
+}
+.supporting h3{
+    height:40px;
+    border:1px solid #A79355;
+    border-width: 1px 0;
+    margin:1em 0 .5em;
+}
+
+.explanation h3{
+    background-image: url(bg_what.jpg);
+    height:80px;
+    border-top-width: 0;
+    margin: 0 0 10px;
+}
+
+.participation h3{background-image: url(bg_participation.jpg);}
+.benefits h3{background-image: url(bg_benefits.jpg);}
+.requirements h3{background-image: url(bg_requirements.jpg);}
+aside{
+    position: absolute;
+    top:306px;
+    left:0;
+    width:180px;
+}
+
+aside h3{
+    height:23px;
+}
+
+.design-selection h3{
+    height: 41px;
+    background-image: url(bg_select.gif);
+}
+
+.design-archives h3{
+    background-image: url(bg_archives.gif);
+}
+
+.zen-resources h3{
+    background-image: url(bg_resources.gif);
+}
+
+aside ul{
+    margin:1em 0 1.5em;
+    padding:0;
+    font-size: 93%;
+    list-style: none;
+}
+
+aside li{
+    background: url(icon_diamond.gif) no-repeat 2px 50%;
+    margin:0 0 .5em;
+    padding: 0 0 0 14px;
+    line-height: 1.5em;
+}
+
+aside a{
+    font-family: verdana, arial;
+    font-weight: bold;
+}
+
+aside .design-selection li{
+    background: url(icon_pg.gif) no-repeat 0 15%;
+    color:#A79355;
+}
+
+.design-selection a{
+    display: block;
+}
+.design-selection a.designer-name{
+    display: inline;
+    color:#616623;
+    font-family: Georgia;
+}
+
+footer{
+    background: #D9D98b url(bg_pattern.gif);
+    margin:1.75em 0 0;
+    padding:10px 20px;
+    border:1px solid #A79355;
+    border-width: 1px 0;
+    text-align: center;
+}
+
+a{
+    color:#703F0E;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#616623;
+    text-decoration: underline;
+}

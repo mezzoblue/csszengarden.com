@@ -1,0 +1,180 @@
+body{
+	font:10pt/16pt vardana;
+	color:#333;
+	margin:0;
+	background: url(bg_blue1.gif) repeat-y left;
+}
+
+p{
+	line-height: 1.5454;
+	font-size: 11px;
+}
+
+.page-wrapper{
+	background: url(bg.jpg) no-repeat scroll left top;
+	margin: 0;
+	position: absolute;
+	top:0;
+	left:0;
+	height: 497px;
+	width:788px;
+}
+
+.intro{
+	margin-top: 85px;
+	margin-left: 172px;
+}
+
+h1,h2,h3{
+	text-indent:200%;
+	overflow:hidden;
+	white-space:nowrap;
+}
+header h1{
+	height: 103px;
+	width:602px;
+	background: url(csszengarden.gif) no-repeat left top;
+}
+
+header h2{
+	height: 13px;
+	width:263px;
+	background: url(thebeauty.gif) no-repeat left top;
+}
+
+.summary {
+	width:300px;
+	padding:0 10px 20px 0;
+}
+
+.summary p{
+	color:#fff;
+}
+
+.preamble{
+	color:#666;
+	width:490px;
+}
+
+.preamble h3{
+	background: url(h1.gif) left top no-repeat;
+	height:39px;
+	width:537px;
+	padding:0 0 3px;
+	position: relative;
+}
+
+.preamble p{
+	position: relative;
+	left:27px;
+	margin:0  0 5px;
+}
+
+.supporting p{
+	width:490px;
+	position: relative;
+	left:200px;
+	margin:0 0 5px;
+}
+
+.supporting h3{
+	width:709px;
+	height:55px;
+	background-position: 172px 5px;
+	background-repeat: no-repeat;
+}
+.explanation h3{
+	background-image:url(h2.gif);
+}
+
+.participation h3{
+	background-image: url(h3.gif);
+}
+
+.benefits h3{
+	background-image:url(h4.gif);
+}
+
+.requirements h3{
+	background-image:url(h5.gif);
+}
+
+footer{
+	position: relative;
+	left:200px;
+	padding: 10px 10px 10px 0;
+	line-height: 15px;
+	font-size: 9px;
+}
+
+aside{
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+aside>div{
+	font-size: 10px;
+	margin-top: 340px;
+	width:133px;
+}
+
+aside ul{
+	margin:0;
+	padding:0;
+	background:url(lightblue.gif) repeat-y;
+}
+
+aside li{
+	line-height: 2.5ex;
+	list-style-type: none;
+	padding:  5px 12px 5px 15px;
+	margin:0 0 5px 0;
+	border-top: 1px solid #C5D2E6;
+	color:#9CF;
+}
+
+aside li a:link{
+	color:#FFF;
+	font-weight: bold;
+}
+
+aside li a:visited{
+	color:#9CF;
+}
+
+aside h3{
+	width:95px;
+	height:7px;
+}
+
+aside h3.select{
+	background: url(selectdesign.gif) no-repeat top left;
+	margin:0 0 5px 7px;
+}
+
+aside h3.archives{
+	background: url(archives.gif) no-repeat top left;
+	margin:30px 0 5px 7px;
+}
+
+aside h3.resources{
+	background: url(resources.gif) no-repeat top left;
+	margin:30px 0 5px 7px;
+}
+
+a{
+	font-weight: bold;
+	color:#9CF;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.supporting a{
+	color:#316DBD;
+
+}
+
