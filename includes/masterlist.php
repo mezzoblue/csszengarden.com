@@ -1319,6 +1319,10 @@ $designList = array(
 			"Andrew Lohman",
 			"http://andrewlohman.com/",
 	),
+	array(
+			"Jazzy Orange",
+			"Donald Maness",
+	),
 
 );
 
