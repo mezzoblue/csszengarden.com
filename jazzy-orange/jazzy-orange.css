@@ -1,0 +1,337 @@
+/* Meyer's Reset to remove all default styling */ 
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*End Of Meyers Reset*/
+
+/*
+=============================================
+
+Background Color
+
+=============================================
+*/
+
+body {
+    background-color: #F8F5DD;
+    color: #666;
+}
+
+/*
+=============================================
+
+General Positioning
+
+=============================================
+*/
+
+p {
+    margin-bottom: 16px;
+}
+
+div {
+    margin-bottom: 24px;
+    box-sizing: border-box;
+}
+
+.design-selection li,
+.sidebar h3{
+    text-align: center;
+}
+
+.designer-name {
+    display: block;
+}
+
+.designer-name {
+    margin-bottom: 16px;
+}
+
+.page-wrapper {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.main{
+    display: inline-block;
+    width: 70%;
+    padding-right: 24px;
+}
+
+.sidebar{
+    display: inline-block;
+    width: 29%;
+}
+
+.preamble h3 {
+    text-align: center;
+}
+
+/*
+==============================================
+
+Header
+
+==============================================
+*/
+.intro header {
+    display: inline-block;
+    width: 20%;
+    border-right: 4px double #CC3405;
+    margin-top: 48px;
+}
+
+.intro h1,
+.intro h2 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.intro h1 {
+    letter-spacing: -0.1em;
+    font-size: 56px;
+}
+
+.intro h2 {
+    font-size: 16px;
+}
+
+.summary {
+    padding-left: 16px;
+    display: inline-block;
+    width:78%;
+}
+
+.summary p:last-child {
+    font-size: 12px;
+    text-align: center;
+}
+/*
+==============================================
+
+Fonts
+
+==============================================
+*/
+
+p, li{
+    font: 16px/1.5em "Roboto", sans-serif;
+}
+
+h3 {
+    display: inline-block;
+    width: 96%;
+    color:#CC3405;
+    font: 100 24px/1.5 "Libre Franklin", sans-serif;
+    text-transform: uppercase;
+    margin-bottom:8px;
+}
+
+.main h3 {
+    padding-left:24px;
+}
+
+.sidebar h3, 
+.main h3, 
+.preamble h3 {
+    border-bottom: 1px solid #CC3405;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+.designer-name {
+    font-weight: 600;
+}
+.requirements {
+    width: 900px;
+}
+
+.requirements p:last-child {
+    margin-top: 32px;
+    
+}
+
+footer {
+    word-spacing: 3em;
+}
+
+footer,
+.requirements p:last-child{
+    font-size: 12px;
+}
+
+/*
+=============================================
+
+Links
+
+=============================================
+*/
+
+a {
+    text-decoration: none;
+    color: #CC3405;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*
+============================================
+
+Responsive Design Queries
+
+============================================
+*/
+
+@media screen and (max-width: 900px) {
+    .requirements {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 890px){
+    .intro header {
+        display: inline-block;
+        width: 30%;
+        border-right: 4px double #CC3405;
+        margin-top: 48px;
+    }
+    
+    .summary {
+        padding-left: 16px;
+        display: inline-block;
+        width:68%;
+    }
+    .preamble p,
+    .main p {
+        padding-left: 8px;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px){
+    .main,
+    .requirements {
+        width:100%;
+        padding-right: 0;
+    }
+    
+    .preamble h3 {
+        width: 100%
+    }
+    
+    .main h3 {
+        padding-left:0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .explanation {
+        width: 100%;
+    }
+
+    .sidebar{
+        display: block;
+        width:100%;
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .sidebar h3 {
+        font-size: 20px;
+    }
+    
+    .design-selection,
+    .design-archives,
+    .zen-resources {
+        text-align: left;
+        display:inline-block;
+        width: 33%;
+    }
+    
+    .wrapper li,
+    .wrapper h3 {
+        padding-left: 8px;
+        text-align: left;
+    }
+    .wrapper h3 {
+        width: 100%
+    }
+    
+}
+
+
+@media screen and (max-width: 600px){
+    .intro header {
+        width: 100%;
+        border-right: none;
+        border-bottom: 4px double #CC3405;
+        padding-bottom: 4px;
+        margin-bottom: 16px;
+    }
+    
+    .summary {
+        width:100%;
+    }
+    
+    .design-selection,
+    .design-archives,
+    .zen-resources {
+        width: 100%;
+    }
+}
