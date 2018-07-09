@@ -1,0 +1,310 @@
+/* .wrapper class is inside the .sidebar class.
+  Taskbar has to be a flexbox container.
+  Therefore .wrapper becomes a flex container for StartBt, Cornata, and System tray flex items.
+  Moveover, StartBt, Cortana, and System tray have to become flexbox containers themselves */
+
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+/* Taskbar flexbox items general styles*/
+
+.wrapper>div {
+  margin-right: .06em;
+  margin-left: .06em;
+  font-size: 1em;
+  background: black;
+  color: white;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  max-height: 40px;
+}
+
+/* Flex items individual styles */
+/* Start with StartBt flex item styles */
+
+.wrapper div:nth-child(1) {
+-webkit-box-flex: 6;
+-ms-flex: 6;
+flex: 6;
+}
+
+/* Cortana flex item styles */
+
+.wrapper div:nth-child(2) {
+-webkit-box-flex: 10;
+-ms-flex: 10;
+flex: 10;
+}
+
+/* System tray flex item styles */
+
+.wrapper div:nth-child(3) {
+-webkit-box-flex: 2;
+-ms-flex: 2;
+flex: 2;
+}
+
+/* Turn each taskbar flex item (StartBt, Cortana, and System tray) into an flex container of its own */
+/* StartBtutton - .design-selection*/
+
+.design-selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  /* By default containers start from left */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 800px;
+  /* Height property may need to be responsive */
+  max-height: 200px;
+  /* Center settings icon */
+  position: relative;
+}
+
+/* Pop-up paragraphs become flex items */
+/* Flex items styles */
+
+.design-selection>h3, .design-selection>nav {
+  padding: .1em;
+  margin: .05em;
+  font-size: 1em;
+  background: rgba(102, 153, 255, .95);
+  color: white;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 200px;
+  /* Must have */
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+/* StartBt icon background change */
+
+.design-selection::before {
+  background: black;
+  content: url("images/WindowsIcon1.png");
+  visibility: visible;
+}
+.design-selection:hover::before {
+  content: url("images/WindowsIcon2.png");
+}
+
+/* Before click/unclick effets are applied, all pop-up elements are moved */
+
+.design-selection>h3, .design-selection>nav {
+  -webkit-transform: translate(40px, -323px);
+  transform: translate(40px, -323px);
+}
+
+/* Click/Unclick effect */
+/* Include .page-wrapper(entire body) for click/unclick */
+
+.page-wrapper .design-selection>h3, .page-wrapper .design-selection>nav {
+  color: white;
+  visibility: hidden;
+  /* Click */
+  -webkit-transition: all 0s 1000s;
+  transition: all 0s 1000s;
+}
+
+/* Click */
+
+.design-selection:active>h3, .design-selection:active>nav {
+  visibility: visible;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+/* Unclick */
+
+.page-wrapper:active .design-selection>h3, .page-wrapper:active .design-selection>nav {
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+}
+
+/* Cortana */
+/* Pop-up paragraphs go flex container */
+
+.design-archives {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  /* By default containers start from left */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 800px;
+  /* heigh property may need to be responsive */
+  max-height: 200px;
+  /*center settings icon*/
+  position: relative;
+}
+
+/* Cortana flex items styles */
+
+.design-archives>h3, .design-archives>nav {
+  padding: .1em;
+  margin: .05em;
+  font-size: 1em;
+  background: rgba(102, 153, 255, .95);
+  color: white;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 200px;
+  /*must have*/
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+/* Cortana icon background change */
+
+.design-archives::before {
+  background: black;
+  content: url("images/Cortana1.png");
+  visibility: visible;
+}
+
+.design-archives:hover::before {
+  content: url("images/Cortana2.png");
+}
+
+/* Before click/unclick effets are applied, all pop-up elements are moved */
+
+.design-archives>h3, .design-archives>nav {
+  -webkit-transform: translate(0px, -153px);
+  transform: translate(0px, -153px);
+}
+
+/* Click/Unclick effect */
+
+/* Include .page-wrapper(entire body) for click/unclick */
+
+.page-wrapper .design-archives>h3, .page-wrapper .design-archives>nav {
+  color: white;
+  visibility: hidden;
+  /* Click */
+  -webkit-transition: all 0s 1000s;
+  transition: all 0s 1000s;
+}
+
+/* Click */
+
+.design-archives:active>h3, .design-archives:active>nav {
+  visibility: visible;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+/* Unclick */
+
+.page-wrapper:active .design-archives>h3, .page-wrapper:active .design-archives>nav {
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+}
+
+/* System tray item goes flex container */
+
+.zen-resources {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  /* By default containers start from left */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 800px;
+  /* Heigh property may need to be responsive */
+  max-height: 200px;
+  /* Center settings icon */
+  position: relative;
+}
+
+/* System tray flex items styles */
+
+.zen-resources>h3, .zen-resources > ul/*, .zen-resources > li*/ {
+  padding: .1em;
+  margin: .05em;
+  font-size: 1em;
+  background: rgba(102, 153, 255, .95);
+  color: white;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 200px;
+  /*must have*/
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+/* System tray icon background change */
+
+.zen-resources::before {
+  background: black;
+  content: url("images/SystemTray1.png");
+  visibility: visible;
+}
+
+.zen-resources:hover::before {
+  content: url("images/SystemTray2.png");
+}
+
+/* Before click/unclick effets are applied, all pop-up elements are moved */
+
+.zen-resources>h3, .zen-resources>ul {
+  -webkit-transform: translate(0px, -163px);
+  transform: translate(0px, -163px);
+}
+
+/* Click/Unclick effect */
+/* Include .page-wrapper(entire body) for click/unclick */
+
+.page-wrapper .zen-resources>h3, .page-wrapper .zen-resources>ul {
+  color: white;
+  visibility: hidden;
+  /*Click*/
+  -webkit-transition: all 0s 1000s;
+  transition: all 0s 1000s;
+}
+
+/* Click */
+
+.zen-resources:active>h3, .zen-resources:active>ul {
+  visibility: visible;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+/* Unclick */
+
+.page-wrapper:active .zen-resources>h3, .page-wrapper:active .zen-resources>ul {
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+}
+
+/* Remove bullet circles from all unordered lists */
+ul {
+  list-style-type: none;
+}
