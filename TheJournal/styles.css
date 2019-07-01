@@ -1,0 +1,951 @@
+/*CSS Zen Garden submission  - "The Journal" developed by Ana Luisa Sampaio, Design composition and Art by Ana Luisa Sampaio & Enrique Hervas */
+/*CSS released under creative commons license - https://creativecommons.org/licenses/by-nc-sa/4.0/ */
+/* All associated graphics copyright 2019, Enrique Hervas */
+
+/* Production notes:
+
+* Text fonts used are Google Fonts
+
+* The icons are a custom web font built with icomoon.io, a technique I saw in Dave Shea's submission 'Verdemoderna'.
+
+* All images are .png and are either added as a background to an element or using :before and :after pseudo elements.
+
+* The design is responsive and compatible the most commonly used browsers and device resolutions. Some Browser hacks were necessary due method used for positioning elements
+
+* To achieve the desired design and element positioning, the positioning of elements, use of margins and paddings is a quite messy however, especiallwhen it comes to the sidebar elements. Tried using flexbox for that but due to the HTML structure of the containers I could not achieve the desired effect. Any comments on possible improvements in this regard are appreciated.
+
+*/
+
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Patrick+Hand|Patrick+Hand+SC&display=swap');
+
+/* icon fonts */
+@font-face {
+	font-family: 'journal';
+	src:url('journal.eot');
+	src:url('journal.eot?#iefix') format('embedded-opentype'),
+		url('journal.woff') format('woff'),
+		url('journal.ttf') format('truetype'),
+		url('journal.svg#journal') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+                       
+/*Global Styles*/
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+	font-family: "Patrick Hand";
+	text-align: center;
+}
+
+.page-wrapper   {
+	display: inline-block;
+	padding-bottom: 800px; /* Adding space at the end of the page*/
+}
+
+a {
+	color: #A9026D;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+a:hover {
+	background-color: rgba(222,255,0,0.42);
+	text-decoration: underline;
+}
+
+p {
+	margin: auto;
+	margin-bottom:10px;
+	max-width: 800px; /*Keeping the main text limited to the center of the page */
+}
+
+#zen-preamble p , #zen-participation p, #zen-benefits p, #zen-requirements p{
+	text-align: justify;
+}
+/*Adding background marker image all subtitles except the Design Selection*/
+
+h3:not(.select) {
+	font-family: Pacifico;
+	background-image: url(SubtitleBG.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+/*Adding images before and after all subtitles except the Design Selection*/
+
+h3:not(.select)::before  {
+	background-image: url(SubtitleMarksLeft.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+h3:not(.select)::after {
+	background-image: url(SubtitleMarksRight.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	margin-left: 5px;
+}
+
+/*Adding top left rainbow image*/
+.page-wrapper #zen-intro::before  {
+	background-image: url(TopLeft.png);
+	content: " ";
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-position: left center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/*Adding Flying Heart Image */
+
+#zen-intro header::after{
+	background-image: url(Flying_Heart.png);
+	content: " ";
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	background-position: left center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	bottom: 40px;
+	right: 0px;
+}
+
+
+#zen-intro header {
+	position: relative;
+}
+
+/*Styling CSS Zen Garden header*/
+
+#zen-intro header h1 {
+	font-size: 50px;
+	margin-top:60px;
+	margin-bottom: 15px;
+	position: relative;
+	font-family: Pacifico;
+}
+
+/*Adding title marks before and after header text */
+#zen-intro header h1::before {
+	content: " ";
+	position: relative;
+	background-image: url(TitleMarksLeft.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+}
+#zen-intro header h1::after {
+	content: " ";
+	position: relative;
+	background-image: url(TitleMarksRight.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+}
+
+/* Positioning Tag Line*/
+#zen-intro header h2 {
+	font-size: 20px;
+	margin-top: 0px;
+	position: relative;
+	margin-bottom: 50px;
+	font-family: Pacifico;
+}
+/* Adding subtitle marks to h2 in header with :before and :after */
+
+#zen-intro header h2::before {
+	background-image: url(SubtitleMarksLeft.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	margin-right: 5px;
+}
+#zen-intro header h2::after {
+	background-image: url(SubtitleMarksRight.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	margin-left: 5px;
+}
+
+/* Styling Summary section*/
+
+#zen-summary   {
+	font-family: "Patrick Hand SC";
+	margin-bottom: 60px;
+}
+
+/* Adding background image to second paragraph of zen-summary*/
+
+#zen-summary p:nth-of-type(2)  {
+	background-image: url(YellowBox.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	margin-top: 30px;
+	margin-bottom:100px;
+}
+
+#zen-preamble {
+	position: relative;
+	
+}
+
+/* Adding "Important" image */
+
+#zen-preamble::before {
+	background-image: url(Important.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: -100px;
+	display: inline-block;
+	left: 0px;
+	
+}
+
+/*Adding Section separator*/
+
+.page-wrapper #zen-supporting #zen-benefits::after {
+	width: 800px;
+	height: 200px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	background-image: url(SeparatorLeaves.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+}
+
+/*Adding space before next Section separator*/
+
+.page-wrapper #zen-supporting #zen-benefits p {
+	margin-bottom: 50px;
+}
+
+/*Adding Section separator*/
+
+.page-wrapper #zen-supporting #zen-explanation::after {
+	background-image: url(SeparatorArrow.png);
+	content: " ";
+	display: block;
+	width: 800px;
+	height: 100px;
+	background-position: center center;
+	background-size: contain;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+}
+
+/*Justify all text*/
+
+.page-wrapper #zen-supporting #zen-explanation p {
+	text-align: justify;
+}
+
+/* Adding space after section separator*/
+
+#zen-supporting #zen-explanation p:last-of-type {
+	margin-bottom: 400px;
+}
+
+/* Styling and moving Design Selection from Sidebar */
+
+.sidebar .design-selection  {
+	display: inline-block;
+	background-image: url(Box.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	min-width: 400px;
+	min-height: 305px;
+	position: absolute;
+	top: 850px;
+	right: 0px;
+	left: 0px;
+}
+
+.sidebar .wrapper #design-selection nav {
+	display: inline-block;
+}
+
+.sidebar .wrapper #design-selection .select {
+	font-family: "Patrick Hand SC";
+	margin-top: 0px;
+	padding-top: 10px;
+	margin-bottom: 0px;
+
+}
+
+/* Setting color of Designer & Design names to black in Design Selection*/
+ul li .design-name , .designer-name{
+	color: #000000;
+}
+
+/* Adding colourful bullet points for each item in Design selection*/
+.design-selection nav ul li {
+	font-size:18px;
+
+}
+.design-selection nav ul li:nth-of-type(1)   {
+	text-align: left;
+	list-style-image: url(Bullet_blue.png);
+
+	vertical-align: baseline;
+}
+
+.design-selection nav ul li:nth-of-type(2)   {
+	text-align: justify;
+	list-style-image: url(Bullet_green.png);
+	
+	vertical-align: baseline;
+}
+
+.design-selection nav ul li:nth-of-type(3)  {
+	text-align: justify;
+	list-style-image: url(Bullet_Orange.png);
+	
+	vertical-align: baseline;
+}
+
+.design-selection nav ul li:nth-of-type(4)  {
+	text-align: justify;
+	list-style-image: url(Bullet_yellow.png);
+	
+	vertical-align: baseline;
+}
+.design-selection nav ul li:nth-of-type(5)  {
+	text-align: justify;
+	list-style-image: url(Bullet_Pink.png);
+	
+	vertical-align: baseline;
+}
+
+/* Bullet styles for after first 5 */
+
+.design-selection nav ul li:nth-of-type(1n+6)    {
+	text-align: justify;
+	list-style-image: url(Bullet_blue.png);	
+}
+
+.design-selection nav ul li:nth-of-type(2n+7)    {
+	text-align: justify;
+	list-style-image: url(Bullet_green.png);
+}
+
+.design-selection nav ul li:nth-of-type(3n+8)    {
+	text-align: justify;
+	list-style-image: url(Bullet_Orange.png);
+}
+
+.design-selection nav ul li:nth-of-type(4n+9)    {
+	text-align: justify;
+	list-style-image: url(Bullet_yellow.png);
+}
+
+.design-selection nav ul li:nth-of-type(5n+10)    {
+	text-align: justify;
+	list-style-image: url(Bullet_Pink.png);
+}
+
+
+#zen-supporting #zen-requirements {
+	position: relative;
+}
+
+/* Separating last paragrapgh from requirements section */
+#zen-supporting #zen-requirements p:last-of-type  {
+	text-align: left;
+	margin-top: 50px;
+}
+
+/*Styling Footer*/
+
+footer {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+	text-align: center;
+	margin-top: 50px;
+	display: inline-block;
+	
+/* icomoon.io defaults */
+
+  	font-family: 'journal';
+  	speak: none;
+  	font-weight: normal;
+  	font-variant: normal;
+  	text-transform: none;
+  	line-height: 70px;
+  	-webkit-font-smoothing: antialiased;
+}
+
+footer a {
+	display:inline-block;
+	font-size:30px;
+	width:30px;
+	height:30px;
+	color: rgba(0,0,0,0.0);
+}
+
+/* Remove default hover effect on a tags*/
+
+footer a:hover {
+	background-color:rgba(0,0,0,0.0);
+}
+
+
+footer a::before {
+	color: rgba(169,2,109,0.50);
+	overflow: visible;
+	padding: 5px 0;
+}
+
+footer a:hover::before {
+	color: rgba(169,2,109,1.00);
+	background-color: rgba(222,255,0,0.42);
+}
+
+/* icomoon.io icons */
+
+footer .zen-validate-html::before {content:"\eae5";}
+footer .zen-validate-css::before {content:"\eae6";}
+footer .zen-license::before {content:"\e902";}
+footer .zen-accessibility::before {content:"\e901";}
+footer .zen-github::before {content:"\eab0";}
+
+/* Styling Remaining sidebar elements at bottom of page  */
+
+/*Adding border*/
+
+#design-archives  , #zen-resources {
+	border: 3px solid black;
+	margin: 20px  auto;
+	max-width: 400px;
+	min-width: 300px;
+}
+
+/* override h3 set styles, no background image */
+
+#design-archives h3  , #zen-resources h3  {
+	background-image: none;
+	margin-top: 20px;
+	display: block;
+}
+
+/* Aligning content */
+
+#design-archives nav ul , .wrapper #zen-resources ul{
+	padding-left: 0px;
+	display: inline-block;
+	margin: 0 auto 20px auto;
+	width: 200px;
+}
+
+#design-archives .viewall{
+	margin-bottom:20px;
+}
+
+/* List style with yellow bullets*/
+
+#design-archives nav ul li  ,  #zen-resources ul li   {
+	display: list-item;
+	list-style-image: url(Bullet_yellow.png);
+	list-style-position: inside;
+	text-align: left;
+}
+
+
+/* Adding Design name and info */
+
+footer::after {
+	content: "The Journal";
+	position: absolute;
+	bottom: -700px;
+	width: 300px;
+	font-family: Pacifico;
+	font-size: 30px;
+	background-image: url(SubtitleBG.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	left: 50%;
+	margin-left: -150px;
+}
+
+.requirements::after {
+	content: "Developed by Ana Luisa Sampaio. Art and Design by Ana Luisa Sampaio & Enrique Hervas";
+	width: 300px;
+	color: #000000;
+	position: absolute;
+	left: 50%;
+	bottom: -860px;
+	font-size: 13px;
+	margin-left: -150px;
+}
+/* Browser hacks for IE9+ & Edge*/
+@media (min-width: 0\0) {
+  .requirements::after {
+   	bottom: -930px;
+  }  
+}
+
+_:-ms-lang(x), _:-webkit-full-screen, .requirements::after
+{ 
+  bottom: -930px;
+}
+
+/*Adding Design Logo*/
+
+#zen-resources {
+	position: relative;
+}
+
+#zen-resources::after {
+	background-image: url(ZenGardenLogo.png);
+	content: " ";
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	bottom: -630px;
+	left: 50%;
+	margin-left: -150px;
+}
+
+
+
+/*Media Queries for Responsiveness*/
+
+/*For mobile devices*/
+
+@media (max-width:600px){
+	
+#zen-summary p:nth-of-type(2)  {
+	font-size: 13px;
+	margin-bottom:50px;
+	width:300px;
+	height:80px;
+}
+/* h3 font size not including Design selection*/
+
+h3:not(.select) {
+	font-size: 16px;
+}
+
+/* Resizing and repositioning flying heart image */
+#zen-intro header::after {
+   	right: -30px;
+	width: 150px;
+    height: 100px;
+	bottom: 48px;
+}
+
+/* Header h1 font-size */
+#zen-intro header h1 {
+    font-size: 25px;
+}
+
+/* Resize Header h1 marks  */
+#zen-intro header h1::before {
+    width: 25px;
+    height: 25px;
+}
+#zen-intro header h1::after {
+    width: 25px;
+    height: 25px;
+}
+
+/* Resize Header h2 marks  */
+#zen-intro header h2::before {
+    width: 35px;
+    height: 15px;
+}
+
+#zen-intro header h2::after {
+    width: 35px;
+    height: 15px;
+}
+
+/* Header h2 font-size */
+#zen-intro header h2 {
+    font-size: 15px;
+}
+
+/* Resizing Rainbow image top left corner*/
+.page-wrapper #zen-intro::before {
+    width: 150px;
+    height: 200px; 
+}
+
+/* removing "Important" image*/
+
+#zen-preamble::before{
+	background-image:none;
+}
+
+.wrapper {
+	position: relative;
+}
+
+/*  widths for text */
+
+p  , .design-archives, .zen-resources{
+	max-width: 300px;
+	font-size:16px;
+}
+
+/* Adjustments to Design selection position*/
+
+.sidebar .design-selection {
+	top: -2520px;
+	left: 50%;
+	width: 100px;
+	margin-left: -200px;
+}
+
+/* Resizing Separators to fit smaller screens*/
+
+.page-wrapper #zen-supporting #zen-explanation::after {
+	width: 300px;
+}
+
+.page-wrapper #zen-supporting #zen-benefits::after {
+	width: 300px;
+}
+
+/*remove extra space before and after leaves section separator*/
+
+.page-wrapper #zen-supporting #zen-benefits p {
+	margin-bottom: 0px;
+}
+
+.page-wrapper #zen-supporting #zen-requirements h3{
+	margin-top: 0px;
+}
+
+/* No background border image for Design selection */
+.sidebar .design-selection {
+    background-image: none;
+	
+}
+
+	
+}
+
+	
+/*Style to apply to small screens*/
+
+@media (min-width:601px) and (max-width:739px){
+
+#zen-summary p:nth-of-type(2)  {
+	font-size: 13px;
+}
+/* h3 font size not including Design selection*/
+
+h3:not(.select) {
+	font-size: 16px;
+}
+
+/* Resizing and repositioning flying heart image */
+#zen-intro header::after {
+   	right: -100px;
+	width: 150px;
+    height: 100px;
+	bottom: 48px;
+}
+
+/* Header h1 font-size */
+#zen-intro header h1 {
+    font-size: 25px;
+}
+
+/* Resize Header h1 marks  */
+#zen-intro header h1::before {
+    width: 25px;
+    height: 25px;
+}
+#zen-intro header h1::after {
+    width: 25px;
+    height: 25px;
+}
+
+/* Resize Header h2 marks  */
+#zen-intro header h2::before {
+    width: 35px;
+    height: 15px;
+}
+
+#zen-intro header h2::after {
+    width: 35px;
+    height: 15px;
+}
+
+/* Header h2 font-size */
+#zen-intro header h2 {
+    font-size: 15px;
+}
+
+/* Resizing Rainbow image top left corner*/
+.page-wrapper #zen-intro::before {
+    width: 300px;
+    height: 350px; 
+}
+
+.wrapper {
+	position: relative;
+}
+
+/*  widths for text */
+
+p  , .design-archives, .zen-resources{
+	max-width: 400px;
+	font-size:16px;
+}
+
+
+/* Adjustments to Design selection position*/
+
+.sidebar .design-selection {
+	top: -2250px;
+	left: 50%;
+	width: 100px;
+	margin-left: -200px;
+}
+
+/* Resizing Separators to fit smaller screens*/
+
+.page-wrapper #zen-supporting #zen-explanation::after {
+	width: 300px;
+}
+
+.page-wrapper #zen-supporting #zen-benefits::after {
+	width: 300px;
+}
+
+/*remove extra space before and after leaves section separator*/
+
+.page-wrapper #zen-supporting #zen-benefits p {
+	margin-bottom: 0px;
+}
+
+.page-wrapper #zen-supporting #zen-requirements h3{
+	margin-top: 0px;
+}
+
+/* No background border image for Design selection */
+.sidebar .design-selection {
+    background-image: none;
+	
+}
+
+
+}
+
+	
+
+	
+/*Style to apply to small to medium screens*/
+
+@media (min-width:740px) and (max-width:971px){
+	
+.wrapper {
+	position: relative;
+}
+
+/* Resizing Rainbow image top left corner*/
+.page-wrapper #zen-intro::before {
+    width: 300px;
+    height: 350px; 
+}
+
+/* Adjustments to Design selection position*/
+.sidebar .design-selection {
+	position: absolute;
+	top: -2170px;
+	left: 50%;
+	width: 400px;
+	margin-left: -200px;
+}
+
+/* Reduce widths for text */
+p , footer, .design-archives, .zen-resources{
+	max-width: 500px;
+}
+
+/* Move flying heart */
+#zen-intro header::after {
+	right: -80px;
+}
+
+/* Resizing Separators to fit smaller screens*/
+.page-wrapper #zen-supporting #zen-explanation::after {
+	width: 500px;
+}
+
+.page-wrapper #zen-supporting #zen-benefits::after {
+	width: 500px;
+}
+
+/*Adding pink arrows to the sides of Archive and Resources*/
+
+#design-archives {
+	position: relative;
+}
+
+#design-archives::before {
+	background-image: url(Arrows_left_down.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	width: 100px;
+	height: 400px;
+	position: absolute;
+	left: -150px;
+}
+
+#design-archives::after {
+	background-image: url(Arrows_right_down.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	width: 100px;
+	height: 400px;
+	position: absolute;
+	top: 0px;
+	right: -150px;
+}
+
+}
+
+
+/*Styling to apply to bigger screens only*/
+
+@media (min-width: 972px){
+
+/* Resizing Rainbow image top left corner*/
+.page-wrapper #zen-intro::before {
+    width: 400px;
+    height: 450px; 
+}
+
+/* Resizing "Download" paragraph for bigger screens*/
+#zen-summary p:nth-of-type(2)  {
+	background-size:cover;
+	width:500px;
+	height:95px;
+}
+/*Positioning Design selection under #zen-explanation section*/
+
+.sidebar .design-selection {
+	top: 1200px;
+}
+
+p {
+	font-size:20px;
+}
+
+.page-wrapper #zen-supporting #zen-explanation p:last-of-type {
+	margin-bottom: 400px;
+
+}
+
+footer a{
+	margin-right:20px;
+}
+/*Adding pink arrows to the sides of Archive and Resources*/
+
+#design-archives {
+	position: relative;
+}
+
+#design-archives::before {
+	background-image: url(Arrows_left_down.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	width: 100px;
+	height: 400px;
+	position: absolute;
+	left: -150px;
+}
+
+#design-archives::after {
+	background-image: url(Arrows_right_down.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	width: 100px;
+	height: 400px;
+	position: absolute;
+	top: 0px;
+	right: -150px;
+}
+
+
+}
