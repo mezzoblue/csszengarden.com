@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title><?php echo $head["title"]; ?></title>
 
-	<link rel="stylesheet" media="screen" href="<?php echo $currentStyleSheet; ?>?v=8may2013">
+	<link rel="stylesheet" media="screen" href="<?php echo htmlentities($currentStyleSheet); ?>?v=8may2013">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo $zenUrls["zen-rss"]; ?>">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
