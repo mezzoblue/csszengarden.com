@@ -7,188 +7,882 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
-
 /* basic elements */
-html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
+@media only screen and (min-width: 992px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+    /* background: url(../images/about.svg); */
+    background-image: linear-gradient(to right, #000, #000);
+    position: fixed;
+    border: 1px solid black;
+  }
 
+  a {
+    text-decoration: none;
+    color: #f94aff;
+    font-size: 16px;
+  }
 
-/* specific divs */
-.page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
+  header {
+    background-repeat: no-repeat;
+    /* border-radius: 2em; */
+    /* border-color: white; */
+    /* border: thick; */
+    /* border-style: solid; */
 
-.intro { 
-	min-width: 470px;
-	width: 100%;
-	}
+    height: 28em;
+    text-align: right;
+    background-position: 7% 20%;
+    margin: 4% 20% 15% 5%;
+    padding-top: 5em;
+    z-index: -3;
+    background-image: url(../images/download.svg);
+    background-size: 40em;
+    animation: mymove 5s ease-in-out;
+  }
+  @keyframes mymove {
+    70% {
+      background-position: 30% 20%;
+    }
+  }
+  header h1 {
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+  }
+  header h2 {
+    margin: -1em 1em 0em 0em;
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  .summary {
+    z-index: 1;
+    font-size: 1em;
+    margin: -29% 20% 9% 55%;
+  }
+  .summary p {
+    font-size: 14px;
+    color: rgb(201, 201, 201);
+  }
+  .preamble {
+    /* float: left; */
+    background-image: url(../images/wave2.svg);
+    background-color: #f9e4fa;
+    height: 16em;
+    text-align: center;
+    padding: 5em 4em 0em 4em;
 
-header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
+    margin-top: 2.2em;
+    color: #000;
+    border-bottom: 3px solid rgb(128, 128, 128);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+  .preamble p {
+    color: #000;
+    z-index: 2;
+  }
+  .supporting {
+    background-color: #000;
+    background-image: url(../images/wave.svg);
+    background-repeat: no-repeat;
+    background-position: 0 38%;
+  }
+  .explanation {
+    float: left;
+    /* background-color: #c195b3; */
+    height: 20em;
+    text-align: center;
+    padding-top: 5em;
+    margin-left: 42em;
+    margin-right: 6em;
+    margin-top: 1em;
+    z-index: -1;
+    color: rgb(202, 202, 202);
+  }
+  .participation {
+    text-align: center;
+    padding-left: 5%;
+    height: 300px;
+    padding-top: 33%;
+    /* border-top: 5px solid rgb(129, 129, 129); */
+    background-image: url(../images/about.svg);
+    background-repeat: no-repeat;
+    background-position: 10% 25%;
+    background-size: 35em;
+    margin-right: 10em;
+    z-index: 11;
+    content: " ";
+    color: rgb(202, 202, 202);
+  }
+  .participation::after {
+    padding-left: 88%;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 2%;
+    margin-top: -248px;
+    border-bottom: 1px solid rgb(0, 255, 255);
+  }
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
+  .benefits {
+    /* float: left; */
+    background-image: url(../images/use.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 15%;
+    background-size: 31em;
+    background-color: #000;
+    height: 20em;
+    text-align: center;
+    padding: 6em 40em 0em 10em;
+    margin-top: 8.2em;
+    color: rgb(201, 201, 201);
+    /* border-top: 2px solid rgb(128, 128, 128); */
+    border-bottom: 2px solid rgb(0, 255, 255);
+  }
+  .benefits p {
+    /* margin-top: -14em; */
+    line-height: 180%;
+    margin-left: 19em;
+  }
+  .benefits h3 {
+    margin-top: -15em;
+    margin-left: 15em;
+  }
+  .benefits::before {
+    padding-left: 11em;
+    content: "";
+    display: block;
+    margin-top: 1em;
+    height: 100%;
+    margin-left: -5em;
+    background-image: url(../images/benefit.svg);
+    background-size: 45%;
+    background-repeat: no-repeat;
+  }
+  .requirements {
+    /* float: left; */
+    background-color: #f9e4fa;
+    height: 30em;
+    text-align: center;
+    padding: 5em 4em 0em 4em;
+    background-image: url(../images/wave3.svg);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    margin-top: 2.2em;
+    color: rgb(26, 26, 26);
+    border-bottom: 3px solid rgb(0, 255, 255);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header {
-	padding-top: 20px;
-	height: 87px;
+  footer {
+    height: 4em;
+    padding-top: 2em;
+    background-color: #000;
+    text-align: center;
+    word-spacing: 50px;
+  }
+
+  footer a {
+    font-size: 22px;
+  }
+
+  .wrapper {
+    background-color: #000;
+    height: 15em;
+    padding: 5em 4em 0em 0em;
+    color: rgb(129, 129, 129);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+
+  .design-selection {
+    float: left;
+    margin-left: 12%;
+  }
+  .design-selection h3 {
+    margin-left: 24%;
+  }
+  .design-archives {
+    text-align: center;
+    margin-right: 33%;
+  }
+  .zen-resources {
+    float: right;
+    margin-right: 16%;
+    margin-top: -7%;
+  }
+  .zen-resources h3 {
+    margin-left: 34%;
+    margin-top: -7%;
+  }
+  li {
+    list-style: none;
+  }
 }
+@media only screen and (max-width: 992px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+    /* background: url(../images/about.svg); */
+    background-image: linear-gradient(to right, #000, #000);
+    position: fixed;
+    border: 1px solid black;
+  }
 
-.summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
-	}
+  a {
+    text-decoration: none;
+    color: #f94aff;
+    font-size: 16px;
+  }
 
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
+  header {
+    background-repeat: no-repeat;
+    height: 41em;
+    text-align: right;
+    background-position: 7% 20%;
+    margin: 4% 20% 15% 5%;
+    padding-top: 5em;
+    z-index: -3;
+    background-image: url(../images/download.svg);
+    background-size: 40em;
+    animation: mymove 5s ease-in-out;
+  }
+  @keyframes mymove {
+    70% {
+      background-position: 30% 20%;
+    }
+  }
+  header h1 {
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    margin: 69% 20% 0 -10%;
+  }
+  header h2 {
+    margin: 1em 5em 0em 0em;
+    z-index: 1;
+    color: white;
+    font-size: 1em;
+  }
+  .summary {
+    z-index: 1;
+    font-size: 1em;
+    margin: -15% 35% 9% 30%;
+  }
+  .summary p {
+    font-size: 14px;
+    color: rgb(201, 201, 201);
+  }
+  .preamble {
+    /* float: left; */
+    background-image: url(../images/wave2.svg);
+    background-repeat: no-repeat;
+    background-color: #f9e4fa;
+    height: 16em;
+    text-align: center;
+    padding: 5em 4em 0em 4em;
 
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
+    margin-top: 2.2em;
+    color: #000;
+    border-bottom: 3px solid rgb(128, 128, 128);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+  .preamble p {
+    color: #000;
+    z-index: 2;
+  }
+  .supporting {
+    background-color: #000;
+    background-image: url(../images/wave.svg);
+    background-repeat: no-repeat;
+    background-position: 0 38%;
+  }
+  .explanation {
+    /* background-color: #c195b3; */
+    height: 20em;
+    text-align: center;
+    padding-top: 3em;
+    margin-left: 2em;
+    margin-right: 6em;
+    margin-top: 0em;
+    z-index: -1;
+    color: rgb(202, 202, 202);
+  }
+  .participation {
+    margin-top: -6em;
+    text-align: center;
+    padding-left: 5%;
+    height: 450px;
+    padding-top: 0%;
+    /* border-top: 5px solid rgb(129, 129, 129); */
+    background-image: url(../images/about.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 120%;
+    background-size: 30em;
+    margin-right: 10em;
+    z-index: 11;
+    content: " ";
+    color: rgb(202, 202, 202);
+  }
+  .participation::after {
+    padding-left: 88%;
+    content: "";
 
-.sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
+    margin: 0 auto;
+    width: 2%;
+    margin-top: 200px;
+  }
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
+  .benefits {
+    /* float: left; */
+    background-image: url(../images/use.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 35%;
+    background-size: 25em;
+    background-color: #000;
+    height: 20em;
+    text-align: center;
+    padding: 6em 0em 3em 0em;
+    margin-top: 9.2em;
+    color: rgb(201, 201, 201);
+    /* border-top: 2px solid rgb(128, 128, 128); */
+    border-bottom: 2px solid rgb(0, 255, 255);
+  }
+  .benefits p {
+    /* margin-top: -14em; */
+    line-height: 180%;
+    margin-left: 2em;
+    margin-right: 25em;
+    margin-top: -1em;
+  }
+  .benefits h3 {
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 20em;
+  }
+  /* .benefits::before {
+	  padding-left: 11em;
+	  content: "";
+	  display: block;
+	  margin-top: 1em;
+	  height: 100%;
+	  margin-left: -5em;
+	  background-image: url(../images/benefit.svg);
+	  background-size: 45%;
+	  background-repeat: no-repeat;
+	} */
+  .requirements {
+    /* float: left; */
+    background-color: #f9e4fa;
+    height: 30em;
+    text-align: center;
+    padding: 5em 4em 0em 4em;
+    background-image: url(../images/wave3.svg);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    margin-top: 2.2em;
+    color: rgb(26, 26, 26);
+    border-bottom: 3px solid rgb(0, 255, 255);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
+  footer {
+    height: 4em;
+    padding-top: 2em;
+    background-color: #000;
+    text-align: center;
+    word-spacing: 50px;
+  }
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
+  footer a {
+    font-size: 22px;
+  }
 
+  .wrapper {
+    background-color: #000;
+    height: 15em;
+    padding: 5em 4em 0em 0em;
+    color: rgb(129, 129, 129);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
 
-.sidebar ul {
-	margin: 0;
-	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
+  .design-selection {
+    margin-left: 42%;
+  }
+  .design-selection h3 {
+    margin-left: 22%;
+  }
+  .design-archives {
+    margin-left: 42%;
+    margin-top: 5%;
+  }
+  .design-archives h3 {
+    margin-left: 22%;
+  }
+  .zen-resources {
+    margin-left: 42%;
+    margin-top: 5%;
+  }
+  .zen-resources h3 {
+    margin-left: 22%;
+    margin-top: 5%;
+  }
+  li {
+    list-style: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+    /* background: url(../images/about.svg); */
+    background-image: linear-gradient(to right, #000, #000);
+    position: fixed;
+    border: 1px solid black;
+  }
 
+  a {
+    text-decoration: none;
+    color: #f94aff;
+    font-size: 16px;
+  }
 
-.extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+  header {
+    background-repeat: no-repeat;
+    height: 41em;
+    text-align: right;
+    background-position: 7% 20%;
+    margin: 4% 20% 15% 5%;
+    padding-top: 5em;
+    z-index: -3;
+    background-image: url(../images/download.svg);
+    background-size: 25em;
+    animation: mymove 5s ease-in-out;
+  }
+  /* @keyframes mymove {
+	  80% {
+		background-position: 22% 30%;
+	  }
+	} */
+  header h1 {
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 03em;
+    margin: 110% 18% 0% 0%;
+  }
+  header h2 {
+    margin: 0em 5em 0em 5em;
+    z-index: 1;
+    color: white;
+    font-size: 1em;
+  }
+  .summary {
+    z-index: 1;
+    font-size: 1em;
+    margin: -33% 10% 9% 10%;
+  }
+  .summary p {
+    font-size: 14px;
+    color: rgb(201, 201, 201);
+  }
+  .preamble {
+    /* float: left; */
+    background-image: url(../images/wave2.svg);
+    background-repeat: no-repeat;
+    background-color: #f9e4fa;
+    height: 24em;
+    text-align: center;
+    padding: 5em 4em 0em 4em;
+
+    margin-top: 2.2em;
+    color: #000;
+    border-bottom: 3px solid rgb(128, 128, 128);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+  .preamble p {
+    color: #000;
+    z-index: 2;
+  }
+  .supporting {
+    background-color: #000;
+    background-image: url(../images/wave.svg);
+    background-repeat: no-repeat;
+    background-position: 0 44%;
+  }
+  .explanation {
+    /* background-color: #c195b3; */
+    height: 43em;
+    text-align: center;
+    padding-top: 3em;
+    margin-left: 2em;
+    margin-right: 4em;
+    margin-top: 0em;
+    z-index: -1;
+    color: rgb(202, 202, 202);
+  }
+  .participation {
+    margin-top: -19em;
+    text-align: center;
+    padding-left: 2em;
+    height: 450px;
+    padding-top: 0%;
+    /* border-top: 5px solid rgb(129, 129, 129); */
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 30em;
+    margin-right: 4em;
+    z-index: 11;
+    content: " ";
+    color: rgb(202, 202, 202);
+  }
+  .participation::after {
+    padding-left: 88%;
+    content: "";
+    margin: 0 auto;
+    width: 2%;
+    margin-top: 200px;
+  }
+
+  .benefits {
+    /* float: left; */
+    background-image: url(../images/use.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 66%;
+    background-size: 25em;
+    background-color: #000;
+    height: 33em;
+    text-align: center;
+    padding: 6em 0em 3em 0em;
+    margin-top: 9.2em;
+    color: rgb(201, 201, 201);
+    /* border-top: 2px solid rgb(128, 128, 128); */
+    border-bottom: 2px solid rgb(0, 255, 255);
+  }
+  .benefits p {
+    /* margin-top: -14em; */
+    line-height: 180%;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: -1em;
+  }
+  .benefits h3 {
+    margin-top: -8em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  /* .benefits::before {
+	  padding-left: 11em;
+	  content: "";
+	  display: block;
+	  margin-top: 1em;
+	  height: 100%;
+	  margin-left: -5em;
+	  background-image: url(../images/benefit.svg);
+	  background-size: 45%;
+	  background-repeat: no-repeat;
+	} */
+  .requirements {
+    /* float: left; */
+    background-color: #f9e4fa;
+    height: 60em;
+    text-align: center;
+    padding: 5em 4em 0em 4em;
+    background-image: url(../images/wave3.svg);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    margin-top: 2.2em;
+    color: rgb(26, 26, 26);
+    border-bottom: 3px solid rgb(0, 255, 255);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+
+  footer {
+    height: 4em;
+    padding-top: 2em;
+    background-color: #000;
+    text-align: center;
+    word-spacing: 2em;
+  }
+
+  footer a {
+    font-size: 22px;
+  }
+
+  .wrapper {
+    background-color: #000;
+    height: 15em;
+    padding: 5em 4em 0em 0em;
+    color: rgb(129, 129, 129);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+
+  .design-selection {
+    margin-left: 28%;
+  }
+  .design-selection h3 {
+    margin-left: 22%;
+  }
+  .design-archives {
+    margin-left: 28%;
+    margin-top: 5%;
+  }
+  .design-archives h3 {
+    margin-left: 22%;
+  }
+  .zen-resources {
+    margin-left: 28%;
+    margin-top: 5%;
+  }
+  .zen-resources h3 {
+    margin-left: 22%;
+    margin-top: 5%;
+  }
+  li {
+    list-style: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+    /* background: url(../images/about.svg); */
+    background-image: linear-gradient(to right, #000, #000);
+    position: fixed;
+    border: 1px solid black;
+  }
+
+  a {
+    text-decoration: none;
+    color: #f94aff;
+    font-size: 16px;
+  }
+
+  header {
+    background-repeat: no-repeat;
+    height: 41em;
+    text-align: right;
+    background-position: 7% 20%;
+    margin: 4% 20% 15% 5%;
+    padding-top: 5em;
+    z-index: -3;
+    background-image: url(../images/download.svg);
+    background-size: 25em;
+    animation: mymove 5s ease-in-out;
+  }
+  /* @keyframes mymove {
+	  80% {
+		background-position: 22% 30%;
+	  }
+	} */
+  header h1 {
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 03em;
+    margin: 140% 18% 0% 0%;
+  }
+  header h2 {
+    margin: 0em 5em 0em 5em;
+    z-index: 1;
+    color: white;
+    font-size: 1em;
+  }
+  .summary {
+    z-index: 1;
+    font-size: 1em;
+    margin: -33% 10% 9% 10%;
+  }
+  .summary p {
+    font-size: 14px;
+    color: rgb(201, 201, 201);
+  }
+  .preamble {
+    /* float: left; */
+    background-image: url(../images/wave2.svg);
+    background-repeat: no-repeat;
+    background-color: #f9e4fa;
+    height: 28em;
+    text-align: center;
+    padding: 5em 4em 0em 4em;
+
+    margin-top: 2.2em;
+    color: #000;
+    border-bottom: 3px solid rgb(128, 128, 128);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+  .preamble p {
+    color: #000;
+    z-index: 2;
+  }
+  .supporting {
+    background-color: #000;
+    background-image: url(../images/wave.svg);
+    background-repeat: no-repeat;
+    background-position: 0 44%;
+  }
+  .explanation {
+    /* background-color: #c195b3; */
+    height: 50em;
+    text-align: center;
+    padding-top: 3em;
+    margin-left: 2em;
+    margin-right: 4em;
+    margin-top: 0em;
+    z-index: -1;
+    color: rgb(202, 202, 202);
+  }
+  .participation {
+    margin-top: -22em;
+    text-align: center;
+    padding-left: 2em;
+    height: 450px;
+    padding-top: 0%;
+    /* border-top: 5px solid rgb(129, 129, 129); */
+    /* background-image: url(); */
+    /* background-repeat: no-repeat;
+	  background-position: 50% 100%;
+	  background-size: 30em; */
+    margin-right: 4em;
+    z-index: 11;
+    /* content: " "; */
+    color: rgb(202, 202, 202);
+  }
+  /* .participation::after {
+	  padding-left: 88%;
+	  content: "";
+	  margin: 0 auto;
+	  width: 2%;
+	  margin-top: 200px;
+	} */
+
+  .benefits {
+    /* float: left; */
+    /* background-image: url(../images/use.svg); */
+    background-repeat: no-repeat;
+    background-position: 90% 66%;
+    background-size: 28em;
+    background-color: #000;
+    height: 33em;
+    text-align: center;
+    padding: 6em 0em 3em 0em;
+    margin-top: 9.2em;
+    color: rgb(201, 201, 201);
+    /* border-top: 2px solid rgb(128, 128, 128); */
+    border-bottom: 2px solid rgb(0, 255, 255);
+  }
+  .benefits p {
+    /* margin-top: -14em; */
+    line-height: 180%;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: -1em;
+  }
+  .benefits h3 {
+    margin-top: -8em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  /* .benefits::before {
+	  padding-left: 11em;
+	  content: "";
+	  display: block;
+	  margin-top: 1em;
+	  height: 100%;
+	  margin-left: -5em;
+	  background-image: url(../images/benefit.svg);
+	  background-size: 45%;
+	  background-repeat: no-repeat;
+	} */
+  .requirements {
+    /* float: left; */
+    background-color: #f9e4fa;
+    height: 67em;
+    text-align: center;
+    padding: 5em 4em 0em 4em;
+    background-image: url(../images/wave3.svg);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    margin-top: 2.2em;
+    color: rgb(26, 26, 26);
+    border-bottom: 3px solid rgb(0, 255, 255);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+
+  footer {
+    height: 4em;
+    padding-top: 2em;
+    background-color: #000;
+    text-align: center;
+    word-spacing: 1em;
+  }
+
+  footer a {
+    font-size: 22px;
+  }
+
+  .wrapper {
+    background-color: #000;
+    height: 15em;
+    padding: 5em 4em 0em 0em;
+    color: rgb(129, 129, 129);
+    border-top: 3px solid rgb(0, 255, 255);
+  }
+
+  .design-selection {
+    margin-left: 20%;
+  }
+  .design-selection h3 {
+    margin-left: 22%;
+  }
+  .design-archives {
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+  .design-archives h3 {
+    margin-left: 22%;
+  }
+  .zen-resources {
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+  .zen-resources h3 {
+    margin-left: 22%;
+    margin-top: 5%;
+  }
+  li {
+    list-style: none;
+  }
+}
