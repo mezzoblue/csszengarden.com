@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: Raleway-Light;
+}
+
+@font-face {
+    src: url(Raleway-Light.ttf);
+    font-family: Raleway-Light;
+}
+
+/* Sidebar*/
+
+header {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    padding: 15px;
+    border-right: 1px solid #dcdcdc;
+}
+
+header h1 {
+    position: absolute;
+    top: 62px;
+    font-size: 24px;
+}
+
+header h2 {
+    position: relative;
+    top: 24px;
+    font-size: 16px;
+    color: #797979;
+}
+
+.summary {
+    padding: 15px;
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 105px;
+}
+
+.summary p:nth-of-type(2) {
+    margin-top: 30px;
+}
+
+.summary a {
+    display: block;
+    padding: 10px;
+    width: 75px;
+    margin: 10px 0;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #797979;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: #000;
+}
+
+.summary a:hover {
+    background: #e760ce;
+    border: 1px solid transparent;;
+    color: #fff;
+    transition: .3s;
+}
+
+.summary a:nth-of-type(2) {
+    position: relative;
+    top: -26px; 
+}
+
+#zen-summary p {
+    color: #535353;
+}
+
+/* Content */
+
+.page-wrapper {
+    position: absolute;
+    left: 330px;
+    background: #f4f4f4;
+}
+
+abbr,
+a {
+    text-decoration: none;
+    color: #e760ce;
+}
+
+.preamble,
+.main div {
+    width: 80%;
+    background: #fff;
+    margin: auto;
+    margin-top: 35px;
+    border: 1px solid #dcdcdc;
+}
+
+.preamble p,h3,
+.main div p,h3 {
+    margin: 0 20px;
+}
+
+.preamble h3,
+.main div h3 {
+    margin-bottom: 20px;
+}
+
+.preamble p:last-child,
+.main div p:last-child {
+    margin-bottom: 20px;
+}
+
+.preamble h3::before,
+.main div h3::before {
+    content: "";
+    width: 100%;
+    height: 240px;
+    display: block;
+    margin: 0 -20px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px 20px;
+}
+
+.preamble h3::before {
+    background-image: url(slike/slika1.jpg);
+}
+
+.main div:nth-child(1) h3::before {
+    background-image: url(slike/slika2.jpg);
+}
+
+.main div:nth-of-type(2) h3::before {
+    background-image: url(slike/slika3.jpg);
+}
+
+.main div:nth-of-type(3) h3::before {
+    background-image: url(slike/slika4.jpg);
+}
+
+.main div:nth-of-type(4) h3::before {
+    background-image: url(slike/slika5.jpg);
+}
+
+/* Table */
+
+.design-selection,
+.design-archives,
+.zen-resources {
+    width: 80%;
+    background: #fff;
+    margin: auto;
+    margin-top: 35px;
+    border: 1px solid #dcdcdc;
+}
+
+.design-selection h3,
+.design-archives h3,
+.zen-resources h3 {
+    display: none;
+}
+
+.design-selection ul,
+.design-archives ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.design-selection ul li {
+    display: inline-block;
+    height: 100px;
+    width: 18%;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    text-align: center;
+    padding: 20px;
+    padding-top: 95px;
+}
+
+.design-selection ul li:nth-child(4) {
+    border-right: none;
+}
+
+
+.design-selection ul li:nth-child(8) {
+    border-right: none;
+}
+
+.design-archives ul {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.design-archives ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.design-archives ul .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.design-archives ul .next a::before {
+    content: " ";
+    height: 25px;
+    width: 30px;
+    display: block;
+    background-image: url(slike/right-arrow.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.design-archives ul .next a {
+    font-size: 0;
+}
+
+.design-archives ul li:nth-of-type(2) {
+    width: 68%;
+    text-align: left;
+    border-right: 1px solid #dcdcdc;
+}
+
+.design-archives ul li a,
+.zen-resources ul li a,
+.zen-resources ul li abbr {
+    color: #000;
+}
+
+.design-archives ul li a:hover,
+.zen-resources ul li a:hover,
+.zen-resources ul li abbr:hover {
+    color: #e760ce;
+    transition: .3s;
+}
+
+.zen-resources {
+    margin-bottom: 150px;
+}
+
+.zen-resources ul {
+    list-style-type: none;
+}
+
+.zen-resources ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.requirements {
+    padding-bottom: 20px;
+}
+
+/* Footer */ 
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0 60px 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 0 10px;
+    font-size: 0;
+}
+
+footer a::before {
+    content: " ";
+    height: 25px;
+    width: 25px;
+    display: block;
+}
+
+.zen-validate-html,
+.zen-validate-css,
+.zen-license,
+.zen-accessibility,
+.zen-github {
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.zen-validate-html {
+    background-image: url(slike/html-5-logo.png);
+}
+
+.zen-validate-css {
+    background-image: url(slike/css-3-logo.png);
+}
+
+.zen-license {
+    background-image: url(slike/creative-commons.png);
+}
+
+.zen-accessibility {
+    width: 20px;
+    background-image: url(slike/icon.png);
+}
+
+.zen-github {
+    background-image: url(slike/github-logo.png);
+}
+
+.requirements p:last-of-type {
+    width: 100%;
+    position: absolute;
+    bottom: 7px;
+    left: -20px;
+    text-align: center;
+    z-index: 1;
+}
+
+
+/* Media query */ 
+
+@media only screen and (max-width: 1060px) {
+    
+    footer {
+        padding-bottom: 80px;
+    }
+    
+    .design-selection ul li {
+        border-left: 1px solid #dcdcdc;
+    }
+    
+    .design-selection ul li:nth-child(4) {
+        border-right: 1px solid #dcdcdc;
+    }
+    
+    .design-selection ul li:nth-child(8) {
+        border-right: 1px solid #dcdcdc;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    header {
+        width: 100%;
+        height: 220px;
+        position: absolute;
+        top: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #dcdcdc;
+        border-right: 0 solid #dcdcdc;
+    }
+
+    header h1 {
+        top: 58px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    header h2 {
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .summary {
+        padding: 0;
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+
+    .summary p:nth-of-type(2) {
+        margin-top: 10px;
+    }
+
+    .summary a {
+        display: inline-block;
+    }
+
+    .summary a:nth-of-type(2) {
+        position: relative;
+        top: 0px; 
+        left: -31px;
+    }
+    
+    .page-wrapper {
+        position: absolute;
+        left: 0px;
+    }
+    
+    .design-selection ul li:nth-child(4) {
+        border-right: 0px solid #dcdcdc;
+    }
+    
+    .design-selection ul li:nth-child(8) {
+        border-right: 0px solid #dcdcdc;
+    }
+    
+    .preamble {
+        margin-top: 265px;
+    }
+    
+    .design-selection ul li {
+        border-left: 0px solid #dcdcdc;
+    }
+    
+    .requirements p:last-of-type {
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    .design-selection ul li {
+        display: block;
+        height: 100px;
+        width: 100%;
+        border: 1px solid #dcdcdc;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+     .summary a {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .summary a:nth-of-type(1) {
+        margin-top: 10px;
+    }
+    
+    .summary a:nth-of-type(2) {
+        position: relative;
+        top: -15px; 
+        left: 0;
+    }
+
+    header {
+        height: 285px;
+    }
+    
+    .preamble {
+        margin-top: 345px;
+    }
+}
