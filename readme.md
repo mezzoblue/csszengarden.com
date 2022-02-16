@@ -45,5 +45,5 @@ Just open an html file in a subdirectory.
 likely comfortable with issuing a pull request from GitHub -- please feel free
 to do it that way. 
 
-~~Everyone else can just use this submission form: 
-http://www.mezzoblue.com/zengarden/submit/
+~~Everyone else can just use this submission form:~~ 
+~~http://www.mezzoblue.com/zengarden/submit/~~
