@@ -1,4 +1,4 @@
-# <a href="cvoadmin.github.io/css-zen-garden-mirror">Live Demo</a>
+# <a href="https://cvoadmin.github.io/css-zen-garden-mirror/">Live Demo</a>
 # csszengarden.com
 
 The ~~official repo~~ fork of the CSS Zen Garden.
