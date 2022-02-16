@@ -1,7 +1,7 @@
 # <a href="https://cvoadmin.github.io/css-zen-garden-mirror/">Live Demo</a>
 # csszengarden.com
 
-The ~~official repo~~ fork of the CSS Zen Garden.
+The ~~official repo~~ <b>fork</b> of the CSS Zen Garden.
 
 Pull requests with improvements welcomed, ~~but remember that changes to the
 HTML file affect the entire archive of 200+ designs~~ nope theres an HTML file in every subdirectory now.
@@ -44,12 +44,12 @@ repo up and running. (You're on your own if you're on Windows, most of the
 actions are relevant but I have no idea what crazy install/config voodoo
 you'll need to make it work.)
 
-~~* Install git if you need to. http://git-scm.org/
-~~* Open a terminal window. Use 'cd' to browse to the parent folder you want the 
-  repo to exist in. Hit Cmd+V and Return.
-~~* That'll take a while. While it's downloading, go get and install a localhost 
-  server environment like MAMP (http://www.mamp.info/en/index.html) -- or 
-  configure your local Apache/PHP if you prefer.
+~~* Install git if you need to. http://git-scm.org/~~
+~~* Open a terminal window. Use 'cd' to browse to the parent folder you want the~~
+  ~~repo to exist in. Hit Cmd+V and Return.~~
+~~* That'll take a while. While it's downloading, go get and install a localhost ~~
+  ~~server environment like MAMP (http://www.mamp.info/en/index.html) -- ~~or 
+  ~~configure your local Apache/PHP if you prefer.
 You'll want to point your server to the files you've downloaded. In MAMP, 
   open up the Preferences screen, choose the Apache tab, and hit Select to 
   choose a document root location. Point this to the root folder where this
