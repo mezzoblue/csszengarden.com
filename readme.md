@@ -37,25 +37,7 @@ submission, do not hesitate to contact support@typekit.com.~~
 
 ## Running a local copy
 
-Just open ano html file in a subdirectory.
-
-~~Here's an incomplete list of steps for getting a localhost version of this
-repo up and running. (You're on your own if you're on Windows, most of the
-actions are relevant but I have no idea what crazy install/config voodoo
-you'll need to make it work.)
-
-~~* Install git if you need to. http://git-scm.org/~~
-~~* Open a terminal window. Use 'cd' to browse to the parent folder you want the~~
-  ~~repo to exist in. Hit Cmd+V and Return.~~
-~~* That'll take a while. While it's downloading, go get and install a localhost ~~
-  ~~server environment like MAMP (http://www.mamp.info/en/index.html) -- ~~or 
-  ~~configure your local Apache/PHP if you prefer.
-You'll want to point your server to the files you've downloaded. In MAMP, 
-  open up the Preferences screen, choose the Apache tab, and hit Select to 
-  choose a document root location. Point this to the root folder where this
-  repo's files live. If you've done it right you'll be able to point your 
-  browser to http://localhost/ and should see a fully navigable version of the
-  CSS Zen Garden.
+Just open an html file in a subdirectory.
 
 ## Submitting Designs
 
