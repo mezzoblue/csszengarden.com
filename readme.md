@@ -1,5 +1,5 @@
 # <a href="https://cvoadmin.github.io/css-zen-garden-mirror/">Live Demo</a>
-# csszengarden.com
+# css Zen Garden Mirror
 
 The ~~official repo~~ <b>fork</b> of the CSS Zen Garden.
 
