@@ -11,16 +11,18 @@
                 break;
             default:
                 $lang = $_GET['lang'];
-        }        
+        }
 
         // Create URL prepend for links
         $langURL = '/tr/' . $lang;
-    }    
-    
-    // Check for language file
-	if(file_exists($SERVER_ROOT . "lang/$lang.php")) {
-	    include($SERVER_ROOT . "lang/$lang.php");
+    }
+
+  // Check for language file
+  if(isset($lang)) {
+      if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/lang/$lang.php")) {
+      	  include($_SERVER['DOCUMENT_ROOT'] . "/lang/$lang.php");
+      }
 	} else {
-	    include($SERVER_ROOT . "lang/en.php"); // default language
+	    include($_SERVER['DOCUMENT_ROOT'] . "/lang/en.php"); // default language
 	}
 ?>

@@ -1,12 +1,13 @@
 <?php
 
 // master URL control file
+global $zenUrls;
 $zenUrls = array(
 
 	// the example files, used in multiple places
 	"example-html" => "/examples/index",
 	"example-css" => "/examples/style.css",
-	
+
 
 	// the reference to the kellum method in the HTML comment
 	"comment-kellum" => "http://goo.gl/GXxdI",
@@ -34,7 +35,6 @@ $zenUrls = array(
 	"zen-credits-creator" => "http://www.mezzoblue.com/",
 	"zen-credits-hosting" => "http://www.mediatemple.net/",
 	"zen-credits-book" => "http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/",
-
 
 );
 

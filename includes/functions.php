@@ -52,9 +52,9 @@
 
 			// pull in the correct partial template for design listings
 			if (isset($legacyMode)) {
-				include($SERVER_ROOT . "tmpl-design-link-legacy.php");
+				include($_SERVER['DOCUMENT_ROOT'] . "/includes/tmpl-design-link-legacy.php");
 			} else {
-				include($SERVER_ROOT . "tmpl-design-link.php");
+				include($_SERVER['DOCUMENT_ROOT'] . "/includes/tmpl-design-link.php");
 			}
 
 			// dump and close buffering
