@@ -768,8 +768,15 @@ $designList = array(
 			"http://www.cactuslab.com/",
 	),
 
-	// 129 removed for reasons lost in the mists of time
-
+	// original 129 removed for reasons lost in the mists of time...
+	// so let's right a historical wrong
+	array(
+			"129",
+			"Geocities 1996",
+			"Bruce Lawson",
+			"https://brucelawson.co.uk/",
+	),
+	
 	array(
 			"130",
 			"Pseudo Sahara",

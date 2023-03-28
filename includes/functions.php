@@ -78,8 +78,8 @@
 
 
 	// set defaults
-	$numDesigns = 8; // number of designs to show in the nav
-    $currentDesign = '214'; // What is the current main design?
+	$numDesigns = 18; // number of designs to show in the nav
+  $currentDesign = '214'; // What is the current main design?
 
 
 	// check the query string to see if:
@@ -88,7 +88,11 @@
 	if ( isset($_GET["css"]) && !empty($_GET["css"]) ) {
 		$currentDesign = $_GET["css"];
 	}
-	$thisPage = (intval($_GET["pg"]) > 0) ? intval($_GET["pg"]) : false;
+	if ( isset($_GET["pg"])) {
+		$thisPage = (intval($_GET["pg"]) > 0) ? intval($_GET["pg"]) : false;
+	} else {
+		$thisPage = false;
+	}
 
 
 	// if $_GET['css'] is not empty, assign it as the design to load

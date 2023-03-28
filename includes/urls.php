@@ -14,12 +14,13 @@ $zenUrls = array(
 
 
 	// sidebar links, some used in a few places
-	"zen-view-all" => "http://www.mezzoblue.com/zengarden/alldesigns/",
-	"zen-resources" => "http://www.mezzoblue.com/zengarden/resources/",
-	"zen-submit" => "http://www.mezzoblue.com/zengarden/submit/",
-	"zen-faq" => "http://www.mezzoblue.com/zengarden/faq/",
-	"zen-translations" => "http://www.mezzoblue.com/zengarden/translations/",
-	"zen-guidelines" => "http://www.mezzoblue.com/zengarden/submit/guidelines/",
+	"zen-view-all" => "/pages/alldesigns.php",
+	"zen-resources" => "/pages/resources.php",
+	"zen-submit" => "/pages/submit.php",
+	"zen-faq" => "/pages/faq.php",
+	"zen-translations" => "/pages/translations.php",
+	"zen-guidelines" => "/pages/submit/guidelines.php",
+	"zen-about" => "/pages/about.php",
 
 
 	// footer links, some used in multiple places

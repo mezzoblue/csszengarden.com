@@ -8,7 +8,7 @@
 ob_start();
 
 // pull in the source file for output, assign to $file variable
-include($SERVER_ROOT . "src.php");
+include($_SERVER['DOCUMENT_ROOT'] . "src.php");
 $file = ob_get_contents();
 
 // close up buffering

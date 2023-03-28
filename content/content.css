@@ -1,0 +1,576 @@
+/* css Zen Garden content styling, by Dave Shea, http://www.daveshea.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Nunito+Sans:wght@200;400;700;900&family=Ubuntu:wght@400;700&display=swap');
+
+
+/*
+
+  colour variables
+
+*/
+:root {
+  --bright-1: #0D8BA1;
+  --bright-2: #409BAA;
+  --bright-3: #6EADB4;
+  --bright-4: #9AC1C3;
+  --bright-5: #C1D6D4;
+
+  --main-1: #3D767C;
+  --main-2: #5E8E92;
+  --main-3: #80A6A7;
+  --main-4: #A1BDBD;
+  --main-5: #C3D5D2;
+
+  --secondary-1: #335050;
+  --secondary-2: #5D7575;
+  --secondary-3: #819896;
+  --secondary-4: #A3B7B5;
+  --secondary-5: #C3D4D0;
+
+
+  --d-column-width: 15rem;
+}
+::selection {
+  color: var(--main-1);
+  background: var(--bright-4);
+}
+
+
+/*
+
+  base CSS properties
+
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+html {
+  color: var(--secondary-1);
+  background: var(--main-4);
+}
+body {
+  border-bottom: solid 10px var(--main-4);
+  background: linear-gradient(
+    to bottom,
+    var(--main-4),
+    #E5EDE8 20rem,
+    #fff
+  );
+  font-family: 'Lora', serif;
+}
+a {
+  display: inline-block;
+  color: var(--main-2);
+  /* text-decoration: none; */
+}
+a:visited {
+  color: var(--main-3);
+}
+a:hover, a:focus {
+  color: var(--bright-1);
+  text-decoration: underline;
+  transition: all 0.25s ease-out;
+}
+a:focus {
+  outline: 5px solid var(--bright-1);
+  border-radius: 48px;
+  text-decoration: none;
+}
+  p a {
+    margin: -0.1rem -0.2rem;
+    padding: 0.1rem 0.2rem;
+  }
+  p a:focus, li a:focus {
+    border-radius: 4px;
+  }
+
+abbr {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.05rem;
+}
+abbr[title] {
+  cursor: help;
+  padding: 0 0.125rem;
+  text-decoration: underline dotted;
+}
+  a abbr {
+    text-decoration: underline;
+  }
+
+h1, h2 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 1.4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow:
+    0 0 120px rgba(19, 67, 71, 1),
+    0 0 40px rgba(19, 67, 71, 0.8),
+    0 0 10px rgba(19, 67, 71, 0.4),
+    0 0 2px rgba(19, 67, 71, 0.3),
+    0 0 1px rgba(19, 67, 71, 0.6)
+  ;
+}
+h2 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 200;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+  color: var(--main-1);
+  background-color: #000;
+}
+h3 {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--main-2);
+}
+p {
+  margin: 0 0 0.75em 0;
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+  h3 + p {
+    margin-top: 0.25rem;
+  }
+  p + h3 {
+    margin-top: 3rem;
+  }
+li {
+  margin: 0 0 0.75em 0;
+  font-size: 1.2em;
+  line-height: 1.8;
+  list-style-type: circle;
+}
+img {
+  display: block;
+}
+
+
+/*
+
+  responsive type adjustments
+
+*/
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 5em;
+  }
+}
+
+
+
+/*
+
+  responsive page layout properties
+
+*/
+.page-wrapper {
+  padding: 5rem 2rem 2rem 2rem;
+}
+.design-list .design-preview {
+  width: 100%;
+  max-height: 20rem;
+}
+.design-list {
+  display: grid;
+  grid-gap: 4rem 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+.page-body {
+  display: grid;
+  padding-top: 1rem;
+}
+  /* pull nav above content on smaller screens */
+  .page-main {order: 2;}
+  .page-sidebar {order: 1;}
+.page-banner .return {
+  display: block;
+  position: absolute;
+  top: 1.45rem;
+  left: 0;
+}
+.page-banner .return span {
+  padding: 0.5rem 1rem;
+  margin: 0 -1rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .page-wrapper {
+    width: 750px;
+    padding: 5rem 0 2rem 0;
+    margin: 0 auto;
+  }
+  .page-body {
+    /*
+      2 column layout, fixed sidebar with the main content taking up whatever
+      space is left at various resolutions
+    */
+    grid-template-columns: 1fr var(--d-column-width);
+    grid-gap: 0 5rem;
+  }
+    /* reset nav / content order on larger screens */
+    .page-main {order: 1;}
+    .page-sidebar {order: 2;}
+
+  .page-banner .return {
+    left: auto;
+    top: 0.15rem;
+    right: 0;
+    width: var(--d-column-width);
+    padding: 0 1rem;
+  }
+  .page-banner .return:focus {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page-banner .return span {
+    margin: 0;
+    white-space: nowrap;
+    transition:
+      background-color 0.5s ease-out,
+      box-shadow 0.5s ease-out,
+      ;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .page-wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .design-list {
+    grid-gap: 4rem 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .page-wrapper {
+    width: 1200px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .page-wrapper {
+    width: 1600px;
+    padding: 5rem 0;
+    margin: 0 auto;
+  }
+  .design-list {
+    grid-gap: 4rem;
+  }
+  .design-list .design-preview {
+    max-height: 30rem;
+  }
+}
+
+
+/*
+
+  header banner
+
+*/
+.page-banner {
+  position: relative;
+}
+.page-banner h1 {
+  padding-bottom: 4rem;
+}
+.page-banner .return {
+  text-decoration: none;
+}
+.page-banner .return span {
+  display: inline-block;
+  border-radius: 50px;
+
+  color: var(--main-2);
+  background-color: var(--main-5);
+  background-color: transparent;
+
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: normal;
+  font-size: 0.8rem;
+  text-transform: lowercase;
+  line-height: 1;
+}
+.page-banner .return:hover span, .page-banner .return:focus span {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--bright-2);
+  box-shadow:
+    0 0 100px rgba(24, 160, 202, 1),
+    0 0 6px rgba(24, 160, 202, 0.5)
+  ;
+}
+.page-banner .return:focus span {
+  width: 100%;
+}
+
+
+
+/*
+
+  sidebar
+
+ */
+.page-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 1rem;
+  margin: 1rem -1rem 2rem -1rem;
+  padding: 1rem 1rem;
+  border-radius: 24px;
+  background-color: var(--bright-5);
+}
+.page-nav li {
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  border-radius: 12px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.4;
+}
+.page-nav li a {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  border-radius: 12px;
+  color: var(--main-1);
+  background-color: #transparent;
+  text-decoration: none;
+  transition:
+    background-color 0.5s ease-out,
+    box-shadow 0.5s ease-out,
+    ;
+}
+.page-nav li:hover {
+  z-index: 2;
+}
+.page-nav li a:hover, .page-nav li a:focus {
+  text-decoration: none;
+
+  color: #fff;
+  background-color: var(--bright-2);
+
+  box-shadow:
+    0 0 100px rgba(24, 160, 202, 1),
+    0 0 6px rgba(24, 160, 202, 0.5)
+  ;
+}
+/*
+  kinda silly and would be much cleaner re-written in the PHP layer as a
+  'current' class on the right <li>, but tbh can't be bothered
+*/
+.page-all .page-nav .all,
+.page-about .page-nav .about,
+.page-faq .page-nav .faq,
+.page-resources .page-nav .resources,
+.page-submit .page-nav .submit,
+.page-translations .page-nav .translations {
+  color: var(--main-1);
+  background-color: var(--bright-4);
+}
+.page-all .page-nav .all a:focus,
+.page-about .page-nav .about a:focus,
+.page-faq .page-nav .faq a:focus,
+.page-resources .page-nav .resources a:focus,
+.page-submit .page-nav .submit a:focus,
+.page-translations .page-nav .translations a:focus {
+  color: var(--main-1);
+}
+
+@media only screen and (min-width: 800px) {
+  .page-nav {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .page-nav li {
+    margin: 0;
+    border-radius: 48px;
+    font-size: 1.4rem;
+  }
+  .page-nav li a {
+    padding: 1rem 2rem;
+    border-radius: 48px;
+  }
+  .page-all .page-nav .all a,
+  .page-about .page-nav .about a,
+  .page-faq .page-nav .faq a,
+  .page-resources .page-nav .resources a,
+  .page-submit .page-nav .submit a,
+  .page-translations .page-nav .translations a {
+    background-color: #fff;
+  }
+  .page-all .page-nav .all a:hover,
+  .page-about .page-nav .about a:hover,
+  .page-faq .page-nav .faq a:hover,
+  .page-resources .page-nav .resources a:hover,
+  .page-submit .page-nav .submit a:hover,
+  .page-translations .page-nav .translations a:hover {
+    background-color: var(--bright-2);
+  }
+}
+
+
+
+
+
+/*
+
+  design list
+  -
+  18 total, so that we can evenly divide into 2 & 3 columns
+  at various resolutions
+
+ */
+.design-list {
+  padding: 0;
+  margin: 0;
+}
+.design-list li {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 1;
+}
+.design-list h3 {
+  line-height: 1.2;
+  margin: 0 0 0.5rem 0;
+}
+.design-list .design-preview {
+  /* flipping the thumbnail order */
+  order: 1;
+
+  z-index: 1;
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  margin-bottom: 1rem;
+  border: solid 1px rgba(96, 116, 119, 0.15);
+  border-radius: 8px;
+
+  box-shadow: 0 3px 2px rgba(96, 116, 119, 0.05);
+  will-change: scale; /* let's make that few-pixel grow transition as smooth as possible */
+}
+.design-list .design-preview img {
+  width: 100%;
+}
+.design-list .design-preview:hover, .design-list .design-preview:focus {
+  transform: scale(1.01) translateY(-1px);
+  transition-timing-function: ease-in-out;
+  z-index: 2;
+  border-color: #E5EDE8;
+  box-shadow:
+    0 0 200px rgba(24, 160, 202, 0.25),
+    0 0 100px rgba(24, 160, 202, 0.5),
+    0 0 6px rgba(24, 160, 202, 0.25)
+  ;
+}
+.design-list .design-credits {
+  /* placing the credits below preview so wrapping lines don't cause layout issues */
+  order: 2;
+}
+.design-list a:focus {
+  /* resetting this so links don't look weird */
+  border-radius: 5px;
+}
+
+
+/*
+  bottom design list pagination
+*/
+.design-nav {
+  padding: 4rem 0 0 0;
+  margin: 0;
+  text-align: center;
+  user-select: none;
+}
+.design-nav li {
+  display: inline;
+  list-style: none;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.design-nav li a {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 0.25rem 0.25rem 0;
+  border: solid 1px transparent;
+  border-radius: 8px;
+
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.5rem;
+
+  background-color: #fff;
+  transition:
+    background-color 0.25s ease-out,
+    box-shadow 1.25s ease-out
+  ;
+}
+.design-nav li.current a {
+  box-shadow: 0 5px 20px #D3E1DD;
+}
+.design-nav li a:hover, .design-nav li a:focus {
+  z-index: 0;
+  color: #fff;
+  background-color: var(--bright-3);
+  text-decoration: none;
+  box-shadow: 0 5px 40px #A1BDBD;
+}
+
+
+/*
+  footer copyright
+*/
+.copyright {
+  padding: 0 4rem;
+  margin: 6rem 0 0 0;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--main-4);
+}
+.copyright a {
+  white-space: nowrap;
+}

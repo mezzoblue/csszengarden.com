@@ -1,6 +1,6 @@
 <?php
 
-  include($SERVER_ROOT . 'includes/masterlist.php');
+  include($_SERVER['DOCUMENT_ROOT'] . 'includes/masterlist.php');
   $callback = isset($_GET['callback']) ? preg_replace('/[^a-z0-9$_]/si', '', $_GET['callback']) : false;
   header('Content-Type: ' . ($callback ? 'application/javascript' : 'application/json') . ';charset=utf-8');
 

@@ -13,15 +13,21 @@
                 $lang = $_GET['lang'];
         }
 
-        // Create URL prepend for links
-        $langURL = '/tr/' . $lang;
     }
 
-  // Check for language file
-  if(isset($lang)) {
-      if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/lang/$lang.php")) {
-      	  include($_SERVER['DOCUMENT_ROOT'] . "/lang/$lang.php");
-      }
+
+    $supportedLang = array('zh-cn', 'zh-tw', 'nl', 'en', 'fr', 'de', 'ru');
+
+    // Create URL prepend for links
+    if (in_array($lang, $supportedLang)) {
+      $langURL = '/tr/' . $lang;
+    } else {
+      $langURL = '/';
+    }
+
+    // Check for language file
+	if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/lang/$lang.php")) {
+	    include($_SERVER['DOCUMENT_ROOT'] . "/lang/$lang.php");
 	} else {
 	    include($_SERVER['DOCUMENT_ROOT'] . "/lang/en.php"); // default language
 	}

@@ -1,0 +1,364 @@
+/* css Zen Garden submission 129 - 'Geocities 1996', by Bruce Lawson, https://www.brucelawson.co.uk/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* Added: Apr. 1st, 2023 */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the
+   designer's written permission. However, feel free to study the CSS and use
+   techniques you learn from it elsewhere. */
+
+
+
+ /* Bruce Lawson www.brucelawson.co.uk - images public domain
+
+ Inspired by Guinness, boredom, a desire to hone my css skills and a stupid sense of humour.
+ Ah, to be hired by Microsoft to do their CSS redesign, eh? It could be just like this!
+
+ More about the making of at www.brucelawson.co.uk/garden
+
+ Thanks to Matt Machell, www.eclecticdreams.com, for answering my stupid css questions.
+
+ First up, here's the global styles of gorgeousness */
+
+ /* Tweaked 8 May 2021 -the 18th birthday of the Zen Garden - to resurrect this design, as Dave Shea changed some of the ID and class names so the CSS broke. Other than that, it's as it was when I made it in 2003. */
+
+ html {background: #88D2FB url('zenimages/flower1.gif') fixed; }
+
+ body {	font-family: "Comic Sans MS", "Lucida Handwriting", cursive;
+ 	background:white;
+ 	position:relative;
+ 	max-width:800px; margin:0 auto;}
+
+ acronym {text-decoration: none;} /*how the f**k do you kill this in Moz? */
+
+ h1, h2, h3, h4 {font-family: "Lucida Handwriting", cursive}
+
+ a:hover {
+ 	background: url('zenimages/bugging.gif') no-repeat center;
+ 	}
+
+ /* ooh! centered */
+
+ #zen-container {
+ 	position: relative;
+ 	text-align: center;
+ 	width: 760px;
+ 	margin: 0px auto 55px;
+ 	color: #333333;
+ }
+
+ .page-wrapper {	background: url('zenimages/strip19.gif') repeat-y;
+ 	padding: 20px 20px 105px 60px;}
+
+ /*main  loveliness in almost same order as html*/
+
+ #zen-pageHeader {
+ 	width:90%;
+ 	height: auto;
+ 	margin-bottom: 20px;
+ }
+
+
+  h1 {
+ 	background: url('zenimages/csszengarden.jpg') no-repeat left;
+ 	padding-top: 20px;
+ 	height: 80px;
+ 	margin: 0px auto;
+ 	text-align: left; color:transparent;
+ 	}
+
+ #zen-pageHeader h1 span {
+ 	margin-left:-5000px;}
+
+  h2 {
+ 	text-decoration: none;
+ 	height:auto;
+ 	color: black;
+ 	text-align: center;
+ 	background: url('zenimages/lovely-divider.gif') no-repeat center;
+ }
+
+
+ #zen-summary {
+ 	text-align: left;
+ 	height:160px;
+ 	background:  url('zenimages/abcdone4.gif') no-repeat;
+ 	padding-left: 185px;
+ 	margin-left: 20px;
+ }
+
+ #zen-quickSummary p.p2 {
+ 	font-size: large; /* can increase twice in Moz/ IE without breaking */
+ 	color: #FF0000;
+ 	text-decoration: blink;  /* curse you, IE, for not blinking !*/
+ 	text-align: center; /* curse you, America, for spelling "centre" wrong */
+ }
+
+
+
+ #zen-preamble {
+ 	width: 60%;
+ 	float: left;
+ 	background:  url('zenimages/heyyou.gif') no-repeat right top;
+ 	text-align: center;
+ 	color: #FF00CC;
+ 	font-family:"Comic Sans MS", "Lucida Handwriting";
+ 	padding:80px 10px 10px 10px;
+ 	font-weight: bolder;
+ }
+
+
+
+
+ #zen-preamble h3 {
+ 	text-align: center;
+ 	color: #00CC66;
+ }
+
+
+
+ #zen-explanation {width:60%; float:left;
+ 	background: #fff url('zenimages/buzzing-fly.gif') no-repeat 50% 50%;
+ 	color: #FF0066;
+ 	font-family: "Courier New", Courier, mono;
+ 	text-align: left;
+ 	border: medium dashed #FF6666;
+ 	padding: 10px;
+ 	}
+
+ #zen-explanation h3 {
+ 	background: url('zenimages/handl.gif') no-repeat right center;
+ 	text-align: center;
+ 	font-weight: 700;
+ 	color: #99CC00;
+ 	text-decoration: blink;
+ }
+
+
+ #zen-explanation .p2 {
+ 	font-family:Geneva, Arial, Helvetica, sans-serif;
+ 	text-transform: capitalize;
+ 	color: #660066;
+ 	font-style: italic;
+ 	padding-left: 85px;
+ 	font-weight: 800;
+ 	text-align: right;
+ 	background: url('zenimages/roses.gif') no-repeat left bottom;
+ }
+
+
+ #zen-participation {clear:both; background: transparent; padding: 8px;}
+
+
+ #zen-participation h3 {
+ 	background: url('zenimages/participation.gif') no-repeat;
+ 	height:90px;color:transparent;
+ }
+
+
+
+ #zen-participation p:first-of-type {
+ 	background: #fff url('zenimages/broken-picture.gif') no-repeat 15px 15px;
+ 	min-height: 160px;
+ 	padding-left: 155px;
+ 	color: #00FF66;
+ 	border: medium solid #CCCCCC;
+ 	margin-top:6px;
+ 	margin-right: 40%;
+ 	cursor: help;
+ 	font-family: "Times New Roman", Times, serif;
+ }
+
+ #zen-participation .p1 a {color:#FF33CC;}
+
+ #zen-participation p:nth-of-type(2) {
+ 	font-style: italic;
+ 	text-transform: uppercase;
+ 	color: #FF0066;
+ 	text-align: justify;
+ 	margin-right: 40%;
+ 	background: #FFFF33 url('zenimages/girltwist.gif') no-repeat right center;
+ 	padding-left:30px; padding-right:70px; padding-top:30px; padding-bottom:30px
+ 	}
+
+ #zen-participation p:nth-of-type(3) {
+ 	background: #000 url('zenimages/madenet1.gif') no-repeat left center;
+ 	padding: 10px 10px 10px 170px;
+ 	color: #FFFFFF;
+ 	text-align: justify;
+ 	}
+
+ #zen-participation .p3 a {color:#FFFF00;}
+
+
+
+ #zen-benefits {
+ 	background: url('zenimages/horrid.gif');
+ 	border-top: thick solid #00FFFF;
+ 	border-right: thick solid #FF0099;
+ 	border-bottom: thick solid #FFFF00;
+ 	border-left: thick solid #FF9966;
+ 	margin-bottom: 10px;
+ 	}
+
+ #zen-benefits h3 {background: url('zenimages/benefits.jpg') no-repeat center center;
+ 	height:90px; color:transparent;}
+
+ #zen-requirements {
+ 	width:auto;
+ 	color: #000;
+ 	text-align: justify;
+ 	height:250px;
+ 	border:  medium none;
+ 	font-size: large;
+ 	padding: 3%;
+ 	overflow: scroll;
+ 	background: url('zenimages/lily.gif');
+ 	clear: both;
+ 	}
+
+ /* dandy faux-buttons in the footer */
+
+
+ footer {
+ 	margin-top:15px;
+ 	background: url('zenimages/handr.gif') no-repeat 15%;
+ 	}
+
+ footer a {
+ 	font:bold 15px Arial, Helvetica, sans-serif;
+ 	text-decoration: none;
+ 	text-align: center;
+ 	padding: 5px;
+ 	width: 90px;
+ 	margin: 10px;
+ 	height: 30px;
+ 	text-transform: uppercase;
+ 	border: thick #CCCC66 outset;
+ 	}
+
+ footer a:link {
+ 	color: #fff;
+ 	background: #CCCC66;
+ 	border: outset;
+ 	}
+
+ footer a:hover, #zen-footer a:active {
+ 	text-transform: uppercase;
+ 	color: #FF33CC;
+ 	background: #FFFF66 ;
+ 	}
+
+
+
+ /* positions of those tricky abolute positioned bits
+ haven't compensated for IE, cos (a) I'm lazy and (b) it's not awful */
+
+
+ .design-selection {
+ 	width:80%
+ 	margin: 20px auto;
+ 	}
+
+ .design-selection nav {
+ 	background:  url('zenimages/hearts.jpg') repeat left;
+ 	margin: 10px;
+ 	padding: 5px;
+ 	width: auto;
+ 	border: medium ridge #E4E0FA;
+ 	}
+
+ .design-selection h3 {
+ 	background: url('zenimages/head1.gif') no-repeat center top;
+ 	height:65px;
+ color:transparent;}
+
+ #zen-lselect h3 span {margin-left: -5000px}
+
+
+ .design-selection ul {
+ 	cursor: crosshair; list-style-image:url('zenimages/flower.gif');
+ 	font-style:italic; font-variant:small-caps; font-weight:normal;
+ 	font-size:x-large; font-family:Times New Roman, Times, serif
+ 	}
+
+
+ .design-archives {
+ 	background: url('zenimages/bg_pulsating_star.gif') repeat;
+ 	}
+
+ .design-archives  h3 {
+ 	background: url('zenimages/archives.gif') no-repeat center; height: 40px;
+ 	color:transparent;}
+
+ #zen-larchives h3 span {margin-left:-5000px;}
+
+ .design-archives  ul {
+ 	 list-style-image:url('zenimages/smallwow.gif');}
+
+ .design-archives  a {line-height:25px;text-decoration:none;color:#9900FF;}
+
+ .design-archives  a:hover {
+ 	background: url('zenimages/Arrows.gif')  center;
+ 	color: black;
+ 	cursor: w-resize;}
+
+ .zen-resources {
+ 	background: url('zenimages/geocitie.gif') no-repeat center bottom;
+ 	padding-bottom: 115px;}
+
+
+ .zen-resources h3 { height:145px;
+ 	background:  url('zenimages/css-resources.gif') no-repeat center; color:transparent;}
+
+ #zen-lresources h3 span {margin-left:-5000px;}
+
+
+ .zen-resources ul {
+ 	padding-left: 15px;
+ 	list-style: url('zenimages/cool3.gif');}
+
+ .zen-resources a {text-decoration:none;color:#FF6600;}
+
+ .zen-resources a:hover {
+ 	color: #FAFAE2;
+ 	background: url('zenimages/SMALLeyes18.gif') no-repeat center top;}
+
+
+
+ /*lovely decorative thingies in the order I thought of them*/
+
+
+ .extra1 {
+ 	position:absolute;
+ 	bottom :40px;
+ 	left: 150px;
+ 	width:128px; height: 40px;
+ 	background: url('zenimages/constr16.gif');
+ }
+ * html #zen-extraDiv1 {bottom:80px;}
+
+ .extra3 {
+ 	position:absolute;
+ 	bottom :40px;
+ 	left:80%;
+ 	background: url('zenimages/counter.gif');
+ 	width:91px; height:45px;
+ }
+ * html #zen-extraDiv3 {bottom:80px;}
+
+ .extra4 {
+ 	position:absolute;
+ 	bottom :40px;	left:50%;
+ 	width:88px;
+ 	height:31px;
+ 	background-image: url('zenimages/netscapenow.gif');}
+ * html #zen-extraDiv4 {bottom:80px;}
+
+ .extra5 {position:absolute;
+ 	top :360px;	left:15%;
+ 	width:107px;
+ 	height:69px;
+ 	background-image: url('zenimages/2hulagirls.gif');}
+
+ /* and that's it. If we could add JavaScript, I'd have added some autoplay midi and a lovely unicorn to follow the mouse. But I can't. Sob. */

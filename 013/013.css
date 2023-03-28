@@ -12,25 +12,25 @@
 /* These illustrations were done by hand in Photoshop. No photos harmed in the
     making of this design. They were put together about two years ago for a former
     portfolio site, and luckily I still had the .PSD on hand. It felt like a good
-    idea to convert this into a Zen Garden design. 
-	
+    idea to convert this into a Zen Garden design.
+
     It has been said that this particular combination of objects has a west-coast
     British Columbia feel to it. I'm inclined to agree.
     */
 
 /* basic elements */
-body { 
-	font: 8pt/16pt georgia, serif; 
+body {
+	font: 8pt/16pt georgia, serif;
 	text-align: center;
 	color: #464128;
-	background: #fff url(coastal2.jpg) bottom center no-repeat; 
+	background: #fff url(coastal2.jpg) bottom center no-repeat;
 	margin: 0px;
 }
-p { 
-	font: 8pt/16pt georgia, serif; 
+p {
+	font: 8pt/16pt georgia, serif;
 	color: #464128;
 	background-color: transparent;
-	margin-top: 0px; 
+	margin-top: 0px;
 	text-align: right;
 }
 h3 {
@@ -41,7 +41,7 @@ h3 {
 	padding-right: 14px;
 }
 a {
-	color: #464128; 
+	color: #464128;
 	background-color: transparent;
 }
 a:visited {
@@ -59,7 +59,7 @@ abbr {
 
 /* specific elements */
 .intro {
-	background: transparent url(coastal.jpg) top left no-repeat; 
+	background: transparent url(coastal.jpg) top left no-repeat;
 	width: 700px;
 	margin-left: auto;
 	margin-right: auto;
@@ -103,7 +103,7 @@ header h2 {
 	text-align: left;
 	padding-right: 70px;
 	width: 230px;
-	voice-family: "\"}\""; 
+	voice-family: "\"}\"";
 	voice-family: inherit;
 	width: 160px;
 }
@@ -122,7 +122,7 @@ header h2 {
 	position: relative;
 	top: -70px;
 	width: 700px;
-	voice-family: "\"}\""; 
+	voice-family: "\"}\"";
 	voice-family: inherit;
 	width: 310px;
 }
@@ -146,14 +146,14 @@ header h2 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 700px;
-	voice-family: "\"}\""; 
+	voice-family: "\"}\"";
 	voice-family: inherit;
 	width: 160px;
 }
 .sidebar h3 {
 	font: italic 12pt/15pt garamond, georgia, serif;
 	text-transform: capitalize;
-	color: #464128; 
+	color: #464128;
 	background-color: transparent;
 	text-align: left;
 	background-image: none;
@@ -187,7 +187,7 @@ header h2 {
 	margin-left: 0px;
 	margin-top: 25px;
 
-	text-indent: 100%;
+	text-indent: 125%;
 	white-space: nowrap;
 	overflow: hidden;
 }
@@ -247,7 +247,7 @@ footer a:hover {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 100%;	
+	width: 100%;
 }
 .extra1::before {
 	content: " ";
