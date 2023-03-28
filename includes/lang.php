@@ -22,7 +22,7 @@
     if (in_array($lang, $supportedLang)) {
       $langURL = '/tr/' . $lang;
     } else {
-      $langURL = '/';
+      $langURL = '';
     }
 
     // Check for language file
