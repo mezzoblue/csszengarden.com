@@ -21,11 +21,16 @@ RedirectMatch 301 ^/zengarden-sample\.css$ /examples/style.css
 RedirectMatch 301 ^/zengarden-sample\.html$ /examples/index.html
 
 # remove trailing .php from /examples/index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.+)$ $1.php [L,QSA]
-#rewrite snippet via http://24ways.org/2013/url-rewriting-for-the-fearful/
+RedirectMatch 301 ^/examples/index/$ /examples/index.php
+
+# clean up content page URLs
+# RedirectMatch 301 ^/pages/alldesigns/$ /pages/alldesigns.php
+# RedirectMatch 301 ^/pages/faq/$ /pages/faq.php
+# RedirectMatch 301 ^/pages/resources/$ /pages/resources.php
+# RedirectMatch 301 ^/pages/submit/$ /pages/submit.php
+
+
+
 
 # REWRITE for CLEANER URL STRUCTURE
 #
