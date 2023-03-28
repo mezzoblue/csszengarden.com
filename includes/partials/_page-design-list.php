@@ -22,6 +22,10 @@
 			} else {
 				$listStart = $totalDesignCount - 1;
 			}
+		} else {
+			// PHP8 requirement to test for set URL parameters means no easy fallback,
+			// there needs to be explicit handling for when one doesn't exist
+			$listStart = $totalDesignCount - 1;
 		}
 
 		// begin at the already-established start of the list and loop down
