@@ -23,18 +23,18 @@
 				$listStart = $totalDesignCount - 1;
 			}
 		}
-	
+
 		// begin at the already-established start of the list and loop down
-		for ($i = $listStart; $i > ($listStart - $numDesigns); $i--) {
+		for ($i = $listStart + 1; $i > ($listStart - $numDesigns); $i--) {
 
 			// stop when we've hit the end
-			if ($i >= 0) {
+			if ($i >= 1) {
 
-				$designId = $designList[$i][0];
+				$designId = $designList[$i - 1][0];
 				$designURL = $langURL . "/$designId/"; // prepend for translation pages
-				$designName = hsc($designList[$i][1]);
-				$designerName = hsc($designList[$i][2]);
-				$designerURL = hsc($designList[$i][3]);
+				$designName = hsc($designList[$i - 1][1]);
+				$designerName = hsc($designList[$i - 1][2]);
+				$designerURL = hsc($designList[$i - 1][3]);
 
 ?>
 	<li>
