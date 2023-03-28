@@ -2,7 +2,11 @@
   <ul class="design-nav">
   <?php
 
-  	$numPages = floor($totalDesignCount / $numDesigns);
+    // bring global variables in scope
+    global $totalDesigns;
+
+
+  	$numPages = floor($totalDesignCount / $totalDesigns);
 
   	// generate the paginated list
     // (starting at 1 for human-friendly numbering)

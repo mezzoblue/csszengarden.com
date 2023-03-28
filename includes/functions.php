@@ -78,7 +78,8 @@
 
 
 	// set defaults
-	$numDesigns = 18; // number of designs to show in the nav
+	$numDesigns = 8; // number of designs to show in nav of the main page of the site
+	$totalDesigns = 18; // total number of designs to show in the supplementary page design list
   $currentDesign = '214'; // What is the current main design?
 
 

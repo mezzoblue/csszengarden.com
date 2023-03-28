@@ -1,8 +1,9 @@
 <ul class="design-list">
 <?php
 
-		// check for language URL
+		// bring global variables in scope
 		global $langURL;
+		global $totalDesigns;
 
 		// get total number of designs available
 		$totalDesignCount = count($designList);
@@ -18,7 +19,7 @@
 				// need to subtract 1 to reset to zero index. Also subtracting 1
 				// from the total count to start the next page after the design the
 				// previous page left off with
-				$listStart = $totalDesignCount - ($_GET['pg'] - 1) * $numDesigns - 1;
+				$listStart = $totalDesignCount - ($_GET['pg'] - 1) * $totalDesigns - 1;
 			} else {
 				$listStart = $totalDesignCount - 1;
 			}
@@ -29,7 +30,7 @@
 		}
 
 		// begin at the already-established start of the list and loop down
-		for ($i = $listStart + 1; $i > ($listStart - $numDesigns); $i--) {
+		for ($i = $listStart + 1; $i > ($listStart - $totalDesigns + 1); $i--) {
 
 			// stop when we've hit the end
 			if ($i >= 1) {
