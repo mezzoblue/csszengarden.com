@@ -14,13 +14,13 @@ $zenUrls = array(
 
 
 	// sidebar links, some used in a few places
-	"zen-view-all" => "/pages/alldesigns.php",
-	"zen-resources" => "/pages/resources.php",
-	"zen-submit" => "/pages/submit.php",
-	"zen-faq" => "/pages/faq.php",
-	"zen-translations" => "/pages/translations.php",
-	"zen-guidelines" => "/pages/submit/guidelines.php",
-	"zen-about" => "/pages/about.php",
+	"zen-view-all" => "/pages/alldesigns/",
+	"zen-resources" => "/pages/resources/",
+	"zen-submit" => "/pages/submit/",
+	"zen-faq" => "/pages/faq/",
+	"zen-translations" => "/pages/translations/",
+	"zen-guidelines" => "/pages/submit/guidelines/",
+	"zen-about" => "/pages/about/",
 
 
 	// footer links, some used in multiple places

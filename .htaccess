@@ -24,13 +24,8 @@ RedirectMatch 301 ^/zengarden-sample\.html$ /examples/index.html
 RedirectMatch 301 ^/examples/index/$ /examples/index.php
 
 # clean up content page URLs
-# RedirectMatch 301 ^/pages/alldesigns/$ /pages/alldesigns.php
-# RedirectMatch 301 ^/pages/faq/$ /pages/faq.php
-# RedirectMatch 301 ^/pages/resources/$ /pages/resources.php
-# RedirectMatch 301 ^/pages/submit/$ /pages/submit.php
-
-
-
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
 
 # REWRITE for CLEANER URL STRUCTURE
 #
