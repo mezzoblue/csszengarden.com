@@ -6,7 +6,7 @@
 		"title" => "CSS Zen Garden: Submit a Design",
 		"description" => "A demonstration of what can be accomplished visually through CSS-based design.",
 		"class" => "submit"
-);
+	);
 
 
 	$pageIntro = array(
