@@ -30,7 +30,7 @@
     - 若需要图片代替文字，请使用 Kellum 方法，详见：http://goo.gl/GXxdI
     - 请别依赖页面最下方所给出的 div 标签；请使用 ::before 和 ::after 取而代之。
 
-    本翻译来自 炜哥David(david.shejio@gmail.com)，请指正。
+    本翻译来自 炜伯伯David(geek@lzw.name)，请指正。
         ",
     );
 
