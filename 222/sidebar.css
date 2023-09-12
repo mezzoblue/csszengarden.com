@@ -1,0 +1,239 @@
+/* Sidebar (.intro) Grid Cell Styles.
+  The sidebar contains 3 elemets, the rollout text, the settings icon, and the arrow icon. */
+
+.intro {
+  background: black;
+  color: white;
+}
+
+/* Hamburger icon = .role-banner */
+/* banner styles */
+
+[role="banner"] {
+  display: inline-block;
+  border-collapse: collapse;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+[role="banner"] h1, [role="banner"] h2 {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  text-align: center;
+}
+
+[role="banner"] h1 {
+  visibility: hidden;
+  /* distance between the icon and rolling text */
+  width: 3em;
+}
+
+/* Hamburger icon setup */
+
+[role="banner"] h1::before {
+  content: url("images/HamburgerIcon1.png");
+  visibility: visible;
+  line-height: initial;
+}
+
+/* Rolling text (h2) setup */
+
+[role="banner"] h1::before, [role="banner"] h2 {
+  text-align: left;
+  display: inherit;
+  margin-top: .6em;
+  border: 0;
+  line-height: 3em;
+}
+
+[role="banner"] h2 {
+  display: none;
+}
+
+[role='banner']:hover h2 {
+  display: inline-block;
+}
+
+/* Change hamburgar Icon background to lighter gray on hover */
+
+[role='banner'] h1::before {
+  -webkit-transition: content;
+  transition: content;
+}
+
+[role='banner']:hover h1::before {
+  content: url("images/HamburgerIcon2.png");
+}
+
+/* Decorate and animate the rolling text */
+
+[role="banner"] h2 {
+  margin: auto;
+  font: italic bold 1.9em serif;
+  -webkit-animation: rollOut 2s steps(50, end);
+  animation: rollOut 2s steps(50, end);
+  /* Adding a stroke/outline to the rolling text via shadow */
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: .6px white;
+}
+@-webkit-keyframes rollOut {
+  from {
+    width: 0;
+  }
+  to {
+    width: 16em;
+  }
+}
+@keyframes rollOut {
+  from {
+    width: 0;
+  }
+  to {
+    width: 16em;
+  }
+}
+
+/* end decorating rolling text */
+
+/* Settings Icon = .summary */
+
+.summary {
+  /* centering icon vertically in relation to its parent - sidebar cell of the grid layout */
+  position: relative;
+  top: 30%;
+}
+
+/* settings icon styles */
+
+.summary>p {
+  padding: .1em;
+  margin: .05em;
+  font-size: 1em;
+  background: black;
+  min-width: 200px;
+  z-index: 1;
+}
+
+/* Settings icon background change to lighter gray on hover */
+
+.summary::before {
+  background: black;
+  content: url("images/SettingsIcon1.png");
+  visibility: visible;
+}
+
+.summary:hover::before {
+  content: url("images/SettingsIcon2.png");
+}
+
+/* settings icon click/unclick functionality */
+/* include .page-wrapper(entire body) for click/unclick */
+
+.page-wrapper .summary>p {
+  color: white;
+  visibility: hidden;
+  /* Click */
+  -webkit-transition: all 0s 1000s;
+  transition: all 0s 1000s;
+  position: relative;
+}
+
+/* before click/unclick effets are applied, all pop-up elements are moved */
+
+.summary>p {
+  -webkit-transform: translate(43px, -40px);
+  transform: translate(43px, -40px);
+}
+
+/* Click */
+
+.summary:active>p {
+  visibility: visible;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+/* Unclick */
+
+.page-wrapper:active .summary>p {
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+}
+
+/* Arrow icon = .preamble */
+
+.preamble {
+  /* popup menue width control */
+  max-width: 400px;
+  /* place popup menue in the lower corner */
+  max-height: 50px;
+  /* centering icon vertically in relation to its parent - sidebar cell of the grid layout */
+  position: absolute;
+  bottom: 50px;
+}
+
+/* arrow's popup menue styles */
+
+.preamble * {
+  padding: .1em;
+  margin: .05em;
+  font-size: 1em;
+  background: black;
+  color: black;
+  min-width: 200px;
+  z-index: 1;
+}
+
+/* Arrow background change to lighter gray on hover */
+
+.preamble::before {
+  background: black;
+  content: url("images/Arrow1.png");
+  visibility: visible;
+}
+
+.preamble:hover::before {
+  content: url("images/Arrow2.png");
+}
+
+/* arrow click/unclick functionality */
+/* include .page-wrapper(entire body) for click/unclick */
+
+.page-wrapper .preamble>p, .page-wrapper .preamble>h3 {
+  color: white;
+  visibility: hidden;
+  /* Click */
+  -webkit-transition: all 0s 1000s;
+  transition: all 0s 1000s;
+  position: relative;
+}
+
+/* Arrow icon centering */
+
+.preamble::before {
+  position: absolute;
+}
+
+/* before click/unclick effets are applied, all pop-up elements are moved */
+
+.preamble>p, .preamble>h3 {
+  -webkit-transform: translate(43px, -166px);
+  transform: translate(43px, -166px);
+}
+
+/* Click */
+
+.preamble:active>p, .preamble:active>h3 {
+  visibility: visible;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+/* Unclick */
+
+.page-wrapper:active .preamble>p, .page-wrapper:active .preamble>h3 {
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+}

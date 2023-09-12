@@ -1,0 +1,76 @@
+/* General layout of the page is a Grid layout with 3 containers/items.
+  The containers are for the Sidebar, the Tiles, and the Taskbar.
+  For separation of concerns the code for each grid container/item is
+  exported to its own file, and named accordingly. */
+
+@import "sidebar.css";
+@import "tiles.css";
+@import "taskbar.css";
+/* All grids go responsive */
+
+* {
+  box-sizing: border-box;
+}
+/* Custom font */
+
+@font-face {
+  font-family: 'msFont';
+  src: url('Segoe UI.ttf');
+}
+* {
+   font-family: 'msFont';
+   font-size: .973em;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* General Layout - Grid container/item = .page-wrapper */
+
+.page-wrapper {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto;
+  grid-template-columns: 40px auto;
+  -ms-grid-rows: auto 40px;
+  grid-template-rows: auto 40px;
+  background: maroon url('images/Wallp1.jpg') no-repeat scroll left center;
+}
+
+/* Sidebar, Tiles, and Taskbar grid items */
+/* Sidebar = .intro */
+
+.intro {
+  /* grid cell columns and rows span are set to 1 and span 1 track by default */
+  margin-top: 10%;
+}
+
+/* Tiles = .main.supporting */
+
+.main.supporting {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  /* desktop and tablet screen zise-compatible by default */
+  margin: 80px 0px 30px 80px;
+}
+
+/* phone screen responsiveness */
+
+@media only screen and (max-width: 500px) {
+  .main.supporting {
+    margin: 80px 0px 10px 50px;
+  }
+}
+
+/* Taskbar = .sidebar */
+
+.sidebar {
+  -ms-grid-column-span: 2;
+  -ms-grid-column: 1;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}

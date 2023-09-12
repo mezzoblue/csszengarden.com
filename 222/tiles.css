@@ -1,0 +1,541 @@
+/* Styling the grid item for Tiles = .main.supporting.
+  The Tiles grid item becomes its own grid container.
+  Each tile is a grid item and it also becomes a flex container,
+  whose flex items become the popup paragraphs */
+
+
+.main.supporting {
+  display: -ms-grid;
+  display: grid;
+  /* tile sizes */
+  -ms-grid-columns: 120px 120px;
+  grid-template-columns: 120px 120px;
+  -ms-grid-rows: 120px 120px 120px;
+  grid-template-rows: 120px 120px 120px;
+  grid-gap: 10px;
+  position: absolute;
+  bottom: 10%;
+}
+
+/* Grid item for 1st tile */
+
+.explanation {
+  /* grid-columns and rows are set to 1 and span 1 track by default */
+  font-size: 1em;
+  background: rgba(204, 204, 0, 1);
+  color: white;
+  content: "Explanation";
+}
+
+/*Grid item for 2nd tile */
+
+.participation {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  font-size: 1em;
+  background: rgba(202, 149, 240, 0.27);
+  color: white;
+  content: "Participation";
+}
+
+/* Grid item for 3rd tile */
+
+.benefits {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-size: 1em;
+  background: rgba(202, 149, 240, 0.27);
+  color: white;
+  content: "Benefits";
+}
+
+/* Grid item for 4th tile */
+
+.requirements {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  font-size: 1em;
+  background: rgba(202, 149, 240, 0.27);
+  color: white;
+  content: "Requirements";
+  content: "Requirements";
+}
+
+/* Grid item for 5th tile */
+
+footer {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  font-size: 1em;
+  background: rgba(202, 149, 240, 0.27);
+  color: white;
+  content: "Sources";
+}
+
+/* Turn tiles (grid items) into flex containers, whose contents are the popup paragraphs */
+
+.explanation, .participation, .benefits, .requirements, footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  /* default - starts containers from left */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 120px;
+  max-height: 120px;
+  position: relative;
+}
+
+/* Tile slide-and-fade right away */
+
+/* Add each tile animation delay, tile name and logo */
+
+.explanation:before {
+  -webkit-animation: slideAndFade1 8s .5s infinite ease-in-out forwards;
+  animation: slideAndFade1 8s .5s infinite ease-in-out forwards;
+  background: -webkit-linear-gradient(top, rgba(204, 204, 0, 0.2), rgba(204, 204, 0, 0.6)), url('../ZenGardenCSS/images/explanationIcon.png'), no-repeat bottom;
+  background: linear-gradient(to bottom, rgba(204, 204, 0, 0.2), rgba(204, 204, 0, 0.6)), url('../ZenGardenCSS/images/explanationIcon.png'), no-repeat bottom;
+  content: "Explanation";
+  background-size: cover;
+  position: absolute;
+  /* slide-in background image to fit in the element */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.participation:before {
+  -webkit-animation: slideAndFade2 18s 2s infinite ease-in-out forwards;
+  animation: slideAndFade2 18s 2s infinite ease-in-out forwards;
+  background: -webkit-linear-gradient(top, rgba(0, 51, 204, 0.2), rgba(0, 51, 204, 0.6)), url('../ZenGardenCSS/images/participationIcon.png'), no-repeat bottom;
+  background: linear-gradient(to bottom, rgba(0, 51, 204, 0.2), rgba(0, 51, 204, 0.6)), url('../ZenGardenCSS/images/participationIcon.png'), no-repeat bottom;
+  content: "Participation";
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.benefits:before {
+  -webkit-animation: slideAndFade3 18s .1s infinite ease-in-out forwards;
+  animation: slideAndFade3 18s .1s infinite ease-in-out forwards;
+  background: -webkit-linear-gradient(top, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.6)), url("../ZenGardenCSS/images/storeIcon.png"), no-repeat bottom;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.6)), url("../ZenGardenCSS/images/storeIcon.png"), no-repeat bottom;
+  content: "Benefits";
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.requirements:before {
+  -webkit-animation: slideAndFade4 20s 2.5s infinite ease-in-out forwards;
+  animation: slideAndFade4 20s 2.5s infinite ease-in-out forwards;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../ZenGardenCSS/images/requirementsIcon2.png"), no-repeat bottom;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../ZenGardenCSS/images/requirementsIcon2.png"), no-repeat bottom;
+  content: "Requirements";
+  content: "Requirements";
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+footer:before {
+  -webkit-animation: slideAndFade5 10s 5s infinite ease-in forwards;
+  animation: slideAndFade5 10s 5s infinite ease-in forwards;
+  background: -webkit-linear-gradient(top, rgba(255, 100, 0, 0.2), rgba(255, 100, 0, 0.6)), url("../ZenGardenCSS/images/sourcesIcon.png"), no-repeat bottom;
+  background: linear-gradient(to bottom, rgba(255, 100, 0, 0.2), rgba(255, 100, 0, 0.6)), url("../ZenGardenCSS/images/sourcesIcon.png"), no-repeat bottom;
+  content: "Sources";
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+@-webkit-keyframes slideAndFade1 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  5% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  95% {
+    content: url("../ZenGardenCSS/images/face2.png");
+    text-align: center;
+    top: auto;
+  }
+}
+
+@keyframes slideAndFade1 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  5% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  95% {
+    content: url("../ZenGardenCSS/images/face2.png");
+    text-align: center;
+    top: auto;
+  }
+}
+
+@keyframes slideAndFade2 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  5% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  95% {
+    content: url("../ZenGardenCSS/images/face1.png");
+    text-align: center;
+    top: auto;
+  }
+}
+@-webkit-keyframes slideAndFade2 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  5% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  95% {
+    content: url("../ZenGardenCSS/images/face1.png");
+    text-align: center;
+    top: auto;
+  }
+}
+
+@-webkit-keyframes slideAndFade3 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  5% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  95% {
+    content: url("../ZenGardenCSS/images/face5.png");
+    text-align: center;
+    top: auto;
+  }
+}
+@keyframes slideAndFade3 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  5% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  95% {
+    content: url("../ZenGardenCSS/images/face5.png");
+    text-align: center;
+    top: auto;
+  }
+}
+
+@-webkit-keyframes slideAndFade4 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  5% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  95% {
+    content: url("../ZenGardenCSS/images/face7.png");
+    text-align: center;
+    top: auto;
+  }
+}
+@keyframes slideAndFade4 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  5% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  95% {
+    content: url("../ZenGardenCSS/images/face7.png");
+    text-align: center;
+    top: auto;
+  }
+}
+@-webkit-keyframes slideAndFade5 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  5% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  95% {
+    content: url("../ZenGardenCSS/images/face6.png");
+    text-align: center;
+    top: auto;
+  }
+}
+@keyframes slideAndFade5 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  5% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  95% {
+    content: url("../ZenGardenCSS/images/face6.png");
+    text-align: center;
+    top: auto;
+  }
+}
+
+/* Breathing effect on hover, before clicking the tile */
+
+.explanation:hover:before, .participation:hover:before, .benefits:hover:before, .requirements:hover:before, footer:hover:before {
+  -webkit-animation: breathing 900ms ease-in-out 10ms infinite alternate forwards;
+  animation: breathing 900ms ease-in-out 10ms infinite alternate forwards;
+  z-index: 1;
+}
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  85%-90% {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  }
+  100% {
+    background-color: rgba(100, 100, 100, 1);
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+}
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  85%-90% {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  }
+  100% {
+    background-color: rgba(100, 100, 100, 1);
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+}
+
+/* White border at hover - separated from breathing effect */
+
+.explanation:hover, .participation:hover, .benefits:hover, .requirements:hover, footer:hover {
+  border: .07em solid white;
+}
+
+/* Pop-up paragraphs styles */
+
+.benefits *, footer * {
+  background: black;
+  color: white;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 200px;
+  height: auto;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  visibility: hidden;
+  z-index: 1;
+  margin: .05px;
+}
+
+/* Short popup paragraphs that need min height */
+
+footer * {
+  min-height: 40px;
+}
+
+/* Wide popup paragraphs need more styles */
+
+.explanation *, .participation *, .requirements * {
+  background: black;
+  color: white;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 420px;
+  height: auto;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  visibility: hidden;
+  z-index: 1;
+  margin: .05px;
+}
+
+/* Before click/unclick effets are applied, all pop-up elements are moved */
+
+.explanation *, .participation *, .benefits *, .requirements *, footer * {
+  -webkit-transform: translate(40px, -325px);
+  transform: translate(40px, -325px);
+}
+
+/* Click/Unclick effect */
+/* Include .page-wrapper(entire body) for click/unclick */
+
+.page-wrapper .explanation *, .page-wrapper .participation *, .page-wrapper .benefits *, .page-wrapper .requirements *, .page-wrapper footer * {
+  color: white;
+  visibility: hidden;
+  /*Click*/
+  -webkit-transition: all 0s 1000s;
+  transition: all 0s 1000s;
+  position: relative;
+}
+
+/* Click - top-left tile */
+
+.explanation:active * {
+  visibility: visible;
+  -webkit-transform: translate(-36px, -55px);
+  transform: translate(-36px, -55px);
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+/* Click - top-right tile */
+
+.participation:active * {
+  visibility: visible;
+  -webkit-transform: translate(-113px, -55px);
+  transform: translate(-113px, -55px);
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+/* Click - mid-left tile */
+
+.benefits:active * {
+  visibility: visible;
+  -webkit-transform: translate(-36px, -150px);
+  transform: translate(-36px, -150px);
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+/* Click - mid-right tile - phone/tablet */
+
+.requirements:active * {
+  visibility: visible;
+  -webkit-transform: translate(-113px, -240px);
+  transform: translate(-113px, -240px);
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+/* Click - mid-right tile - desctop */
+
+@media only screen and (max-width: 480px) {
+  .main.supporting {
+    visibility: visible;
+    -webkit-transform: translate(-113px, -233px);
+    transform: translate(-113px, -233px);
+    -webkit-transition: all 0s;
+    transition: all 0s;
+  }
+}
+
+/* Click - bottom-left tile */
+
+footer:active * {
+  visibility: visible;
+  -webkit-transform: translate(-36px, -60px);
+  transform: translate(-36px, -60px);
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+/* Unclick */
+
+.page-wrapper:active .explanation *, .page-wrapper:active .participation *, .page-wrapper:active .benefits *, .page-wrapper:active .requirements *, .page-wrapper:active footer * {
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+}
