@@ -1,0 +1,128 @@
+/* Hard Pixel Font - Jovanny Lemonad - https://www.1001fonts.com/users/gladkikh/
+ghost.png - Gaming icons created by Smashicons - Flaticon - https://www.flaticon.com/free-icons/gaming */
+/* css and all original art released under Creative Commons License - https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en */
+
+@font-face {
+    font-family: hardpixel;
+    src: url(Hardpixel.OTF);
+  }
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
+    margin: 0;
+    width: 95%;
+}
+
+h1 {
+    color: #db4161;
+    font-family: hardpixel;
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+header h2 {
+    background-color: gray;
+    display: inline-block;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.intro {
+    width: 75%;
+}
+
+.summary{
+    display: inline-block;
+}
+
+.preamble {
+    padding-top: 66px;
+    background-image: url('edible-dots.png');
+    background-repeat: repeat-x;
+    background-position-y: top;
+}
+
+.sidebar {
+    display: inline-block;
+    position: absolute;
+    width: 20%;
+}
+
+abbr {
+    text-decoration-line: none;
+}
+
+ul {
+    list-style-image: url('ghost.png');
+    list-style-position: inside;
+}
+
+a {
+    color: skyblue;
+}
+
+.design-name {
+    text-decoration-line: none;
+    color: inherit;
+    font-weight: bolder;
+}
+
+.design-name:hover {
+    text-decoration-line: underline;
+}
+
+aside div h3 {
+    padding-left: 2ch;
+}
+
+.main {
+    display: inline-block;
+    width: 75%
+}
+
+.main div:nth-child(odd) {
+    background-image: url('girder.png'), url('ladder.png');
+    background-repeat: repeat-x, repeat-y;
+    background-position-y: top, top;
+    background-position-x: left, left;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+.main div:nth-child(even) {
+    background-image: url('girder.png'), url('ladder.png');
+    background-repeat: repeat-x, repeat-y;
+    background-position-y: top, top;
+    background-position-x: left, right;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+
+.main p:last-of-type{
+    margin-bottom: 0;
+}
+
+.main h3 {
+    margin-top: 0;
+}
+
+footer {
+    width: 100%;
+    padding-top: 66px;
+    text-align: center;
+    background-image: url('edible-dots.png');
+    background-repeat: repeat-x;
+    background-position-y: top;
+}
+
+footer a {
+    font-weight: bolder;
+}
+
+::selection {
+    background: gray;
+}
