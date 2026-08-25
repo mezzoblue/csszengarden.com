@@ -1,0 +1,483 @@
+@charset "utf-8";
+/* ==========================================================================
+   CSS Zen Garden — "Mighty Kariba"
+   Design & CSS: Roy Gitonga
+   Photograph: "Mighty Kariba" — Kariba Dam, shot by Roy Gitonga (own work).
+
+   Brand palette, four colours only:
+     Green  #198A00   rgb(25, 138, 0)     cmyk(82, 0, 100, 46)
+     Red    #DE2010   rgb(222, 32, 16)    cmyk(0, 86, 93, 13)
+     Black  #000000   rgb(0, 0, 0)        cmyk(0, 0, 0, 100)
+     Orange #EF7D00   rgb(239, 125, 0)    cmyk(0, 48, 100, 6)
+   (#FFFFFF is used for body text only.)
+
+   CSS-only: no image assets beyond the photograph. Content is placed
+   around the subject — title in the escarpment, summary over the water,
+   everything else on scrimmed panels.
+   Released under Creative Commons — http://creativecommons.org/licenses/by-nc-sa/3.0/
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Karla:ital,wght@0,400;0,600;1,400&display=swap");
+
+/* --------------------------------------------------------------------------
+   1. Brand tokens
+   -------------------------------------------------------------------------- */
+:root {
+	--ke-black:      #000000;
+	--ke-red:        #de2010;
+	--ke-red-deep:   #a8180c; /* #DE2010 darkened for panels */
+	--ke-green:      #198a00;
+	--ke-green-deep: #106000; /* #198A00 darkened for rules */
+	--ke-orange:     #ef7d00;
+	--ke-white:      #ffffff; /* text only */
+
+	--ink:      #000000;
+	--ink-soft: rgba(0, 0, 0, 0.64);
+	--rule:     rgba(0, 0, 0, 0.14);
+
+	--panel:    rgba(0, 0, 0, 0.82);
+	--panel-hi: rgba(255, 255, 255, 0.08);
+
+	--display: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+	--text:    "Karla", Georgia, serif;
+
+	--gap: clamp(1rem, 2.4vw, 2rem);
+	--pad: clamp(1.25rem, 2.8vw, 2.5rem);
+
+	--beads: repeating-linear-gradient(90deg,
+		var(--ke-black) 0 14px,
+		var(--ke-red) 14px 28px,
+		var(--ke-orange) 28px 42px,
+		var(--ke-green) 42px 56px,
+		var(--ke-black) 56px 70px);
+}
+
+/* --------------------------------------------------------------------------
+   2. Basics — the photograph is the page
+   -------------------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { margin: 0; padding: 0; }
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 400 1.0625rem/1.7 var(--text);
+	color: var(--ke-white);
+	background-color: var(--ke-black);
+	background-image: url("mighty-kariba-web.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+	background-size: cover;
+	background-attachment: fixed;
+	text-wrap: pretty;
+}
+
+p { margin: 0 0 1.05em; text-align: left; }
+p:last-child { margin-bottom: 0; }
+
+h3 {
+	font-family: var(--display);
+	font-weight: 800;
+	font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+	line-height: 1.08;
+	letter-spacing: -0.02em;
+	margin: 0 0 0.8rem;
+	color: var(--ke-white);
+}
+
+abbr { border-bottom: 1px dotted currentColor; text-decoration: none; cursor: help; }
+
+a {
+	color: var(--ke-white);
+	font-weight: 600;
+	text-decoration: none;
+	background-image: linear-gradient(var(--ke-orange), var(--ke-orange));
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	background-size: 100% 2px;
+	transition: background-size 0.18s ease, color 0.18s ease;
+}
+a:visited { color: rgba(255, 255, 255, 0.72); }
+a:hover, a:focus, a:active { color: var(--ke-white); background-size: 100% 100%; }
+a:focus-visible { outline: 3px solid var(--ke-orange); outline-offset: 2px; }
+
+/* --------------------------------------------------------------------------
+   3. Page frame
+   -------------------------------------------------------------------------- */
+.page-wrapper {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+/* --------------------------------------------------------------------------
+   4. Hero — title in the open sky, summary down on the grass
+   -------------------------------------------------------------------------- */
+.intro {
+	--edge: clamp(1.25rem, 4vw, 4rem);
+	min-width: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, minmax(0, 1fr));
+	grid-template-rows: minmax(min-content, auto) 1fr auto auto;
+	gap: var(--gap) var(--gap);
+	padding: 0;
+	background-image:
+		linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.26) 24%, rgba(0, 0, 0, 0.02) 46%, rgba(0, 0, 0, 0.45) 100%),
+		url("mighty-kariba-web.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: 50% 0, 50% 45%;
+	background-size: cover, cover;
+}
+.intro > header[role="banner"],
+.intro > .summary { margin-inline: var(--edge); }
+.intro::before {
+	content: "";
+	grid-column: 1 / -1;
+	grid-row: 1 / 4;
+	min-height: 96vh;
+	pointer-events: none;
+}
+
+/* masthead: upper-left, clear of the figure and the acacia canopy */
+header[role="banner"] {
+	grid-column: 1 / span 7;
+	grid-row: 1;
+	align-self: start;
+	margin-top: clamp(1.75rem, 5vh, 4rem);
+	max-width: 34rem;
+	position: relative;
+	height: auto;
+	padding: 0 0 0 clamp(0.9rem, 1.6vw, 1.4rem);
+	border-left: 10px solid transparent;
+	border-image: linear-gradient(180deg,
+		var(--ke-green) 0 33.3%,
+		var(--ke-black) 33.3% 36%,
+		var(--ke-red) 36% 64%,
+		var(--ke-black) 64% 66.7%,
+		var(--ke-orange) 66.7% 100%) 1;
+}
+header h1,
+header h2 {
+	margin: 0;
+	float: none;
+	width: auto;
+	height: auto;
+	background: none;
+	text-indent: 0;
+	white-space: normal;
+	overflow: visible;
+	font-family: var(--display);
+	color: var(--ke-white);
+}
+header h1 {
+	font-weight: 800;
+	font-size: clamp(2.5rem, 7vw, 5.25rem);
+	line-height: 0.9;
+	letter-spacing: -0.045em;
+	text-shadow: 0 2px 24px rgba(0, 0, 0, 0.55);
+}
+header h2 {
+	margin-top: 0.75rem;
+	font-weight: 400;
+	font-size: clamp(0.8rem, 1.3vw, 1.05rem);
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	text-shadow: 0 1px 14px rgba(0, 0, 0, 0.6);
+}
+header h2 abbr { border-bottom: none; }
+
+/* summary: lower-right, over open grass, away from the figure */
+.summary {
+	grid-column: 7 / span 6;
+	grid-row: 3;
+	align-self: end;
+	justify-self: end;
+	max-width: 32rem;
+	margin-bottom: clamp(2rem, 6vh, 5rem);
+	clear: none;
+	float: none;
+	width: auto;
+	margin: 0;
+	padding: var(--pad);
+	position: relative;
+	background: rgba(0, 0, 0, 0.72);
+	color: var(--ke-white);
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	border-radius: 3px;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(3px);
+}
+.summary::before {
+	content: "";
+	position: absolute;
+	inset: 0 0 auto 0;
+	height: 6px;
+	border-radius: 3px 3px 0 0;
+	background: var(--beads);
+	background-size: 70px 6px;
+}
+.summary p {
+	font: 400 clamp(1rem, 1.4vw, 1.2rem)/1.6 var(--text);
+	text-align: left;
+}
+.summary p:first-of-type::first-letter {
+	float: left;
+	font-family: var(--display);
+	font-weight: 800;
+	font-size: 2.6em;
+	line-height: 0.8;
+	padding: 0.08em 0.12em 0 0;
+	color: var(--ke-orange);
+}
+.summary a { color: var(--ke-orange); }
+.summary a:visited { color: rgba(255, 255, 255, 0.72); }
+.summary a:hover, .summary a:focus { color: var(--ke-black); }
+
+/* --------------------------------------------------------------------------
+   5. Preamble — full-width black band that ends the hero
+   -------------------------------------------------------------------------- */
+.preamble {
+	grid-column: 1 / -1;
+	grid-row: 4;
+	clear: none;
+	padding: clamp(2.5rem, 6vw, 5rem) clamp(1rem, 4vw, 4rem);
+	background: var(--panel);
+	border-top: 6px solid var(--ke-orange);
+	color: var(--ke-white);
+}
+.preamble h3 {
+	font-size: clamp(1.9rem, 4.5vw, 3.25rem);
+	max-width: 22ch;
+	margin-bottom: 1.5rem;
+}
+.preamble p { max-width: 66ch; color: rgba(255, 255, 255, 0.86); }
+.preamble p + p { margin-top: 0; }
+@media (min-width: 60rem) {
+	.preamble {
+		display: grid;
+		grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+		column-gap: clamp(2rem, 5vw, 4rem);
+		align-items: start;
+	}
+	.preamble h3 { grid-column: 1; grid-row: 1 / span 3; margin-bottom: 0; }
+}
+
+/* --------------------------------------------------------------------------
+   6. Main — asymmetric panels, photo showing through the gaps
+   -------------------------------------------------------------------------- */
+.main.supporting {
+	padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 4rem);
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(12, minmax(0, 1fr));
+	gap: var(--gap);
+	align-items: start;
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements {
+	position: relative;
+	padding: var(--pad);
+	border-radius: 3px;
+	background: var(--panel);
+	border: 1px solid var(--panel-hi);
+	color: rgba(255, 255, 255, 0.88);
+	backdrop-filter: blur(3px);
+}
+.explanation::before,
+.participation::before,
+.benefits::before,
+.requirements::before {
+	content: "";
+	position: absolute;
+	inset: 0 0 auto 0;
+	height: 4px;
+	border-radius: 3px 3px 0 0;
+	background: var(--beads);
+	background-size: 70px 4px;
+}
+
+/* left-weighted lead, then a tall column, then a wide close */
+.explanation   { grid-column: 1 / span 7;  grid-row: 1; }
+.benefits      { grid-column: 8 / span 5;  grid-row: 1; background: rgba(168, 24, 12, 0.88); }
+.benefits::before { background: linear-gradient(90deg, var(--ke-black), var(--ke-orange)); }
+.benefits h3   { color: var(--ke-white); }
+.participation { grid-column: 1 / span 5;  grid-row: 2; }
+.requirements  { grid-column: 6 / span 7; grid-row: 2; }
+footer         { grid-row: 3; }
+
+.requirements p[role="contentinfo"] {
+	margin-top: 1.4rem;
+	padding-top: 1rem;
+	border-top: 1px solid var(--panel-hi);
+	font-size: 0.9375rem;
+	color: rgba(255, 255, 255, 0.66);
+}
+
+/* --------------------------------------------------------------------------
+   7. Footer badges
+   -------------------------------------------------------------------------- */
+footer {
+	grid-column: 1 / -1;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+	justify-content: center;
+	text-align: center;
+	padding: 0.5rem 0 0;
+}
+footer a, footer a:link, footer a:visited {
+	margin: 0;
+	padding: 0.5rem 1.05rem;
+	border-radius: 999px;
+	font-family: var(--display);
+	font-size: 0.8125rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--ke-white);
+	background-color: rgba(0, 0, 0, 0.6);
+	background-image: none;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+footer a:hover, footer a:focus {
+	color: var(--ke-black);
+	background-color: var(--ke-white);
+	border-color: var(--ke-orange);
+}
+
+/* --------------------------------------------------------------------------
+   8. Sidebar — closing three-column band, not a rail
+   -------------------------------------------------------------------------- */
+.sidebar {
+	position: static;
+	margin: 0;
+	top: auto;
+	right: auto;
+	background: rgba(0, 0, 0, 0.9);
+	border-top: 6px solid var(--ke-green);
+}
+.sidebar .wrapper {
+	font: 400 0.9375rem/1.55 var(--text);
+	width: auto;
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 4vw, 4rem);
+	background: none;
+	display: grid;
+	grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.85fr) minmax(0, 1.1fr);
+	gap: clamp(1.5rem, 4vw, 3rem);
+	align-items: start;
+}
+
+.sidebar h3,
+.sidebar h3.select,
+.sidebar h3.archives,
+.sidebar h3.resources {
+	width: auto;
+	height: auto;
+	margin: 0 0 0.9rem;
+	padding-bottom: 0.5rem;
+	background: none;
+	border-bottom: 3px solid var(--ke-red);
+	text-indent: 0;
+	white-space: normal;
+	overflow: visible;
+	font-family: var(--display);
+	font-weight: 700;
+	font-size: 0.8125rem;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: var(--ke-white);
+}
+.sidebar h3.archives  { border-bottom-color: var(--ke-green-deep); }
+.sidebar h3.resources { border-bottom-color: var(--ke-orange); }
+
+.sidebar ul { margin: 0; padding: 0; list-style: none; }
+.sidebar li {
+	position: relative;
+	display: block;
+	background: none;
+	list-style-type: none;
+	line-height: 1.45;
+	margin: 0;
+	padding: 0.55rem 0 0.55rem 1.1rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 0.875rem;
+}
+.sidebar li:last-child { border-bottom: none; }
+.sidebar li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 1.1em;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--ke-red);
+}
+.sidebar li:nth-child(3n+2)::before { background: var(--ke-green-deep); }
+.sidebar li:nth-child(3n)::before   { background: var(--ke-orange); }
+
+.sidebar a, .sidebar li a:link {
+	color: var(--ke-white);
+	background-image: linear-gradient(var(--ke-red), var(--ke-red));
+	background-size: 0 2px;
+}
+.sidebar li a:visited { color: rgba(255, 255, 255, 0.68); }
+.sidebar a:hover, .sidebar a:focus { color: var(--ke-orange); background-size: 100% 2px; }
+.sidebar .design-name { font-weight: 600; }
+.sidebar .designer-name { font-weight: 400; font-size: 0.8125rem; }
+.design-archives .next a .indicator { color: var(--ke-orange); }
+
+/* --------------------------------------------------------------------------
+   9. Decorative catch-alls
+   -------------------------------------------------------------------------- */
+.extra1 {
+	position: fixed;
+	inset: 0 0 auto 0;
+	height: 8px;
+	background: var(--beads);
+	background-size: 70px 8px;
+	z-index: 10;
+	pointer-events: none;
+}
+.extra2 {
+	position: fixed;
+	inset: auto 0 0 0;
+	height: 6px;
+	background: linear-gradient(90deg,
+		var(--ke-black) 0 25%,
+		var(--ke-red) 25% 50%,
+		var(--ke-orange) 50% 75%,
+		var(--ke-green) 75% 100%);
+	z-index: 10;
+	pointer-events: none;
+}
+.extra3, .extra4, .extra5, .extra6 { display: none; }
+
+/* --------------------------------------------------------------------------
+   10. Responsive
+   -------------------------------------------------------------------------- */
+@media (max-width: 60rem) {
+	body { background-attachment: scroll; background-position: 60% 0; }
+	.intro::before { min-height: 78vh; }
+	header[role="banner"] { grid-column: 1 / -1; max-width: none; }
+	.summary { grid-column: 1 / -1; justify-self: stretch; max-width: none; }
+	.main.supporting { grid-template-columns: minmax(0, 1fr); }
+	.explanation, .benefits, .participation, .requirements, footer {
+		grid-column: 1 / -1;
+		grid-row: auto;
+	}
+	.sidebar .wrapper { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* { transition: none !important; }
+}
