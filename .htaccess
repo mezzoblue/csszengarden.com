@@ -23,9 +23,11 @@ RedirectMatch 301 ^/zengarden-sample\.html$ /examples/index.html
 # remove trailing .php from /examples/index.php
 RedirectMatch 301 ^/examples/index/$ /examples/index.php
 
-# clean up content page URLs
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+# Clean up content page URLs. Navigation uses trailing slashes, so strip an
+# optional final slash before testing the corresponding PHP file.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^(.+?)/?$ $1.php [QSA,L]
 
 # REWRITE for CLEANER URL STRUCTURE
 #
@@ -57,7 +59,7 @@ RewriteRule ^(.*)\/\/$ $1/ [R=301]
 # Send traffic to index.php w/ appropriate variables
 # we have to rename these to avoid creating an infinite loop
 RewriteCond %{QUERY_STRING} !^css
-RewriteRule ^(tr\/([a-z\-]+)\/)?(([0-9]+)\/)?(page(.*)\/)?$ index.php?css=$4&pg=$6&lang=$2 [L]
+RewriteRule ^(tr\/([a-z\-]+)\/)?(([a-z0-9-]+)\/)?(page(.*)\/)?$ index.php?css=$4&pg=$6&lang=$2 [L]
 
 ## External Stylesheets
 # e.g. ?cssfile=http://www.skybased.com/css-zen-garden/css/screen.css

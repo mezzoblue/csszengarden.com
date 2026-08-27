@@ -96,9 +96,13 @@
 	}
 
 
-	// if $_GET['css'] is not empty, assign it as the design to load
-	// If numeric, prepare CSS url
-	$currentStyleSheet = ( is_numeric($currentDesign) ) ? "/$currentDesign/$currentDesign.css" : $currentDesign;
+	// Numeric and named in-repository designs use the conventional
+	// /<design>/<design>.css path. External stylesheet URLs pass through.
+	$namedDesignPath = __DIR__ . "/../$currentDesign/$currentDesign.css";
+	$currentStyleSheet = (is_numeric($currentDesign) ||
+		(preg_match('/^[a-z0-9-]+$/i', $currentDesign) && file_exists($namedDesignPath)))
+		? "/$currentDesign/$currentDesign.css"
+		: $currentDesign;
 
 	$typekitId = getTypekitId($currentStyleSheet);
 
