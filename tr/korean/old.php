@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 include '../../includes/masterlist.php';
 $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m");
@@ -20,8 +20,8 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 	<style type="text/css" title="currentStyle">
 		@import "<?php echo $loadCSS; ?>";
 	</style>
-	<link rel="Shortcut Icon" type="image/x-icon" href="http://www.csszengarden.com/favicon.ico" />	
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml" />
+	<link rel="Shortcut Icon" type="image/x-icon" href="https://www.csszengarden.com/favicon.ico" />	
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.csszengarden.com/zengarden.xml" />
 </head>
 
 <!--
@@ -165,7 +165,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 				<ul>
 <?php
 					echo "\t\t\t\t\t";
-					echo "<li><a href=\"http://www.csszengarden.com/${currentDesign}\" title=\"View the source CSS file for the currently-viewed design, AccessKey: v\" accesskey=\"v\"><span class=\"accesskey\">V</span>iew This Design&#8217;s <acronym title=\"Cascading Style Sheets\">CSS</acronym></a></li>";
+					echo "<li><a href=\"https://www.csszengarden.com/${currentDesign}\" title=\"View the source CSS file for the currently-viewed design, AccessKey: v\" accesskey=\"v\"><span class=\"accesskey\">V</span>iew This Design&#8217;s <acronym title=\"Cascading Style Sheets\">CSS</acronym></a></li>";
 ?>
 					<li><a href="http://www.mezzoblue.com/zengarden/resources/" title="Links to great sites with information on using CSS. AccessKey: r" accesskey="r">디자인의 CSS 보기</a></li>
 					<li><a href="http://www.mezzoblue.com/zengarden/faq/" title="A list of Frequently Asked Questions about the Zen Garden. AccessKey: q" accesskey="q"><acronym title="Frequently Asked Questions">FA<span class="accesskey">Q</span></acronym></a></li>

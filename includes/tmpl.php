@@ -13,7 +13,7 @@
 	<meta name="robots" content="all">
 
 <?php if ($typekitId) { ?>
-	<script src="http://use.typekit.net/<?php echo $typekitId; ?>.js"></script>
+	<script src="https://use.typekit.net/<?php echo $typekitId; ?>.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 <?php } ?>
 

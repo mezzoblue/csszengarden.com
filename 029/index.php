@@ -1,3 +1,3 @@
 <?
-header("Location: http://www.csszengarden.com/?cssfile=029/029.css");
+header("Location: https://www.csszengarden.com/?cssfile=029/029.css");
 ?>

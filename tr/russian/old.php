@@ -22,7 +22,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 		@import "<?php echo $loadCSS; ?>";
 
 	</style>
-	<link rel="Shortcut Icon" type="image/x-icon" href="http://www.csszengarden.com/favicon.ico" />	
+	<link rel="Shortcut Icon" type="image/x-icon" href="https://www.csszengarden.com/favicon.ico" />	
 </head>
 
 <!--
@@ -151,7 +151,7 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 				<ul>
 <?php
 					echo "\t\t\t\t\t";
-					echo "<li><a href=\"http://www.csszengarden.com/${currentDesign}\" title=\"Посмотреть исходный CSS-файл для текущего дизайна, AccessKey: v\" accesskey=\"v\">Посмотреть <acronym title=\"Cascading Style Sheets\">CSS</acronym>  от этого дизайна</a></li>";
+					echo "<li><a href=\"https://www.csszengarden.com/${currentDesign}\" title=\"Посмотреть исходный CSS-файл для текущего дизайна, AccessKey: v\" accesskey=\"v\">Посмотреть <acronym title=\"Cascading Style Sheets\">CSS</acronym>  от этого дизайна</a></li>";
 ?>
 					<li><a href="http://www.mezzoblue.com/zengarden/resources/" title="Ссылки на отличные сайты с информацией об использовании CSS. AccessKey: r" accesskey="r"><acronym title="Cascading Style Sheets">CSS</acronym>-ресурсы</a></li>
 					<li><a href="http://www.mezzoblue.com/zengarden/faq/" title="Список часто задаваемых вопросов про Сад css-Дзен. AccessKey: q" accesskey="q"><acronym title="Часто Задаваемые Вопросы">ЧАВО</acronym></a>&nbsp;</li>
