@@ -1,0 +1,2758 @@
+/*
+Hello, stylesheet splunker,
+
+Usually I'd say 'No! Don't look!' to a passerby stylesheet snooper like yourself.
+I'm good at CSS, but there is a chance you're better and that you might see right
+through my hacks. However, this is CSS Zen Garden. If ever there was a place for
+peeling back the curtain, this is it.
+
+It is my true pleasure to have you here reading this stylesheet. I've commented it
+for your learning and pleasure, and I hope you enjoy it. Thanks for taking a look.
+
+I release this stylesheet under the Attribution-NonCommercial-ShareAlike 4.0
+International (CC BY-NC-SA 4.0) license.
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Your friend,
+- Declan Chidlow (https://vale.rocks)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap");
+
+/*	=================================================================
+	CSS Reset
+	https://vale.rocks/posts/css-reset
+	================================================================= */
+
+@layer {
+	*,
+	::before,
+	::after,
+	::details-content {
+		box-sizing: border-box;
+		background-repeat: no-repeat;
+	}
+
+	* {
+		padding: 0;
+		margin: 0;
+	}
+
+	html {
+		-webkit-text-size-adjust: none;
+		text-size-adjust: none;
+		line-height: 1.5;
+		-webkit-font-smoothing: antialiased;
+		block-size: 100%;
+	}
+
+	body {
+		min-block-size: 100%;
+	}
+
+	img,
+	iframe,
+	audio,
+	video,
+	canvas {
+		display: block;
+		max-inline-size: 100%;
+		block-size: auto;
+	}
+
+	svg {
+		max-inline-size: 100%;
+	}
+
+	svg:not([fill]) {
+		fill: currentColor;
+	}
+
+	input,
+	button,
+	textarea,
+	select {
+		font: inherit;
+	}
+
+	textarea {
+		resize: vertical;
+	}
+
+	fieldset,
+	iframe {
+		border: none;
+	}
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		overflow-wrap: break-word;
+	}
+
+	p {
+		text-wrap: pretty;
+		font-variant-numeric: proportional-nums;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-variant-numeric: lining-nums;
+	}
+
+	p,
+	blockquote,
+	q,
+	figcaption,
+	li {
+		hanging-punctuation: first allow-end last;
+	}
+
+	input,
+	label,
+	button,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		line-height: 1.1;
+	}
+
+	math,
+	time,
+	table {
+		font-variant-numeric: tabular-nums lining-nums slashed-zero;
+	}
+
+	code {
+		font-variant-numeric: slashed-zero;
+	}
+
+	table {
+		border-collapse: collapse;
+	}
+
+	abbr {
+		font-variant-caps: all-small-caps;
+		text-decoration: none;
+
+		&[title] {
+			cursor: help;
+			text-decoration: underline dotted;
+		}
+	}
+
+	sup,
+	sub {
+		line-height: 0;
+	}
+
+	:disabled {
+		opacity: 0.8;
+		cursor: not-allowed;
+	}
+
+	:focus-visible {
+		outline-offset: 0.2rem;
+	}
+}
+
+/*	=================================================================
+	Core styles
+	================================================================= */
+
+:root {
+	color-scheme: light dark;
+	--mesh-white: light-dark(oklch(1 0 0 / 0.38), oklch(1 0 0 / 0.08));
+	--mesh-cyan: light-dark(oklch(0.865 0.115 207.1 / 0.28), oklch(from var(--cyan) l c h / 0.12));
+	--mesh-mint: light-dark(oklch(0.696 0.149 162.5 / 0.22), oklch(from var(--mint) l c h / 0.1));
+	--mesh-soft: light-dark(oklch(1 0 0 / 0.2), oklch(1 0 0 / 0.05));
+	/* A tight, soft white halo keeps dark text legible over glass. */
+	--text-halo: 0 0 0.625rem oklch(1 0 0 / 0.75);
+	--text-halo-strong: 0 0 0.0625rem oklch(1 0 0 / 0.8), 0 0 0.1875rem oklch(1 0 0 / 0.4), 0 0.0625rem 0.375rem oklch(1 0 0 / 0.2);
+
+	/* Shared palette */
+	--white: oklch(1 0 0);
+	--clear: oklch(0 0 0 / 0);
+	--ink: oklch(0.252 0.054 239.6);
+	--ink-raised: oklch(0.274 0.058 237);
+	--ink-copy: oklch(0.236 0.045 228.6);
+	--ink-heading: oklch(0.287 0.053 230.6);
+	--ink-h1: oklch(0.331 0.063 230.7);
+	--ink-h2: oklch(0.395 0.072 224.5);
+	--link: oklch(0.28 0.08 230);
+	--link-hover: oklch(0.25 0.09 238);
+	--cyan-soft: oklch(0.865 0.115 207.1);
+	--cyan: oklch(0.754 0.139 232.7);
+	--sky: oklch(0.711 0.129 219);
+	--sky-light: oklch(0.828 0.101 230.3);
+	--mint: oklch(0.696 0.149 162.5);
+	--ocean: oklch(0.546 0.131 242.7);
+	--forest: oklch(0.508 0.105 165.6);
+	--indigo: oklch(0.68 0.158 276.9);
+	--orange: oklch(0.625 0.191 35.7);
+	--orange-light: oklch(0.673 0.185 41.2);
+	--orange-deep: oklch(0.5 0.18 35.7);
+	--rebeccapurple: oklch(0.44 0.16 303.4);
+	--rebeccapurple-deep: oklch(0.33 0.13 303.4);
+	--rebeccapurple-light: oklch(0.68 0.15 303.4);
+	--shadow: oklch(0.233 0.068 251.2);
+	--shadow-deep: oklch(0.193 0.045 244);
+
+	/* Theme roles */
+	--text-body: light-dark(var(--ink), oklch(0.951 0.025 236.8));
+	--text-strong: light-dark(var(--ink), var(--white));
+	--text-copy: light-dark(var(--ink-copy), oklch(0.951 0.025 236.8));
+	--text-heading: light-dark(var(--ink-heading), var(--white));
+	--text-h1: light-dark(var(--ink-h1), var(--white));
+	--text-h2: light-dark(var(--ink-h2), oklch(0.901 0.055 230.9));
+	--text-resource: light-dark(oklch(0.27 0.051 228.1), oklch(0.951 0.025 236.8));
+	--text-link: light-dark(var(--link), var(--cyan));
+	--text-link-hover: light-dark(var(--link-hover), var(--cyan));
+	--text-sidebar-hover: light-dark(var(--link), var(--sky-light));
+	--text-footer-hover: light-dark(var(--link), var(--white));
+	--text-card-hover: light-dark(var(--ink), var(--white));
+	--focus-ring: light-dark(var(--ink), var(--white));
+	--text-soft: oklch(from var(--text-body) l c h / 0.82);
+	--text-caption: oklch(from var(--text-body) l c h / 0.8);
+	--nav-divider: light-dark(oklch(from var(--ink) l c h / 0.18), oklch(from var(--cyan) l c h / 0.25));
+	--heading-rule: light-dark(oklch(from var(--ink) l c h / 0.22), oklch(from var(--cyan) l c h / 0.25));
+
+	/* Surfaces */
+	--page-bg:
+		radial-gradient(circle at 15% 20%, oklch(1 0 0 / 0.5) 0%, var(--clear) 35%), radial-gradient(circle at 85% 80%, oklch(from var(--mint) l c h / 0.35) 0%, var(--clear) 45%),
+		linear-gradient(135deg, var(--sky) 0%, var(--ocean) 50%, var(--forest) 100%);
+	--intro-border: light-dark(oklch(1 0 0 / 0.5), oklch(from var(--cyan) l c h / 0.22));
+	--intro-bg:
+		radial-gradient(120% 90% at 100% 0%, light-dark(oklch(from var(--cyan-soft) l c h / 0.16), oklch(from var(--cyan) l c h / 0.14)) 0%, var(--clear) 55%),
+		radial-gradient(100% 90% at 0% 100%, oklch(from var(--mint) l c h / 0.12) 0%, var(--clear) 55%),
+		linear-gradient(
+			160deg,
+			light-dark(oklch(1 0 0 / 0.3), oklch(from var(--ink) l c h / 0.52)) 0%,
+			light-dark(oklch(1 0 0 / 0.14), oklch(from var(--ink-raised) l c h / 0.34)) 55%,
+			light-dark(oklch(1 0 0 / 0.2), oklch(from var(--ink) l c h / 0.44)) 100%
+		);
+	--intro-shadow:
+		inset 0 0.0625rem 0 light-dark(oklch(1 0 0 / 0.8), oklch(1 0 0 / 0.18)), 0 1.875rem 3.75rem -1.5rem light-dark(oklch(from var(--shadow) l c h / 0.35), oklch(from var(--shadow-deep) l c h / 0.75));
+	--panel-bg: linear-gradient(
+		160deg,
+		light-dark(oklch(1 0 0 / 0.4), oklch(from var(--ink) l c h / 0.65)) 0%,
+		light-dark(oklch(1 0 0 / 0.22), oklch(from var(--ink) l c h / 0.65)) 60%,
+		light-dark(oklch(1 0 0 / 0.28), oklch(from var(--ink) l c h / 0.65)) 100%
+	);
+	--panel-border: light-dark(oklch(1 0 0 / 0.7), oklch(from var(--cyan) l c h / 0.25));
+	/* Solid tint for the joined intro panels, so their edges meet without a gradient seam. */
+	--panel-solid-bg: light-dark(oklch(1 0 0 / 0.28), oklch(from var(--ink) l c h / 0.65));
+	--panel-lift: 0 1.5rem 3rem -0.75rem light-dark(oklch(from var(--shadow) l c h / 0.35), oklch(from var(--shadow-deep) l c h / 0.7));
+	--panel-shadow:
+		inset 0 0.0625rem 0.0625rem 0 light-dark(oklch(1 0 0 / 0.95), oklch(1 0 0 / 0.3)),
+		inset 0 -0.5rem 1.5rem -0.375rem light-dark(oklch(from var(--sky) l c h / 0.25), oklch(from var(--sky) l c h / 0.35)), var(--panel-lift);
+	--panel-gloss: linear-gradient(180deg, light-dark(oklch(1 0 0 / 0.5), oklch(1 0 0 / 0.18)) 0%, oklch(1 0 0 / 0) 100%);
+	--sidebar-panel-bg: linear-gradient(
+		160deg,
+		light-dark(oklch(1 0 0 / 0.34), oklch(from var(--ink-raised) l c h / 0.55)) 0%,
+		light-dark(oklch(1 0 0 / 0.16), oklch(from var(--ink-raised) l c h / 0.55)) 100%
+	);
+	--resource-bg: light-dark(oklch(1 0 0 / 0.32), oklch(from var(--ink-raised) l c h / 0.55));
+	--resource-border: light-dark(oklch(1 0 0 / 0.62), oklch(from var(--cyan) l c h / 0.25));
+	--resource-hover-bg: light-dark(oklch(1 0 0 / 0.52), oklch(from var(--sky) l c h / 0.3));
+	--label-bg: light-dark(oklch(1 0 0 / 0.4), oklch(from var(--ink-raised) l c h / 0.55));
+	--label-border: light-dark(oklch(1 0 0 / 0.62), oklch(from var(--cyan) l c h / 0.25));
+	--label-shadow: inset 0 0.0625rem 0 light-dark(oklch(1 0 0 / 0.8), oklch(1 0 0 / 0.18));
+	--label-text-shadow: 0 0 0.9375rem light-dark(oklch(1 0 0 / 0.75), var(--clear)), 0 0.0625rem 0 light-dark(var(--clear), oklch(0 0 0 / 0.4));
+	--footer-bg: linear-gradient(180deg, light-dark(oklch(1 0 0 / 0.28), oklch(1 0 0 / 0.18)) 0%, light-dark(oklch(1 0 0 / 0.28), oklch(1 0 0 / 0)) 100%);
+	--footer-hover-bg: linear-gradient(0deg, light-dark(oklch(1 0 0 / 0.52), var(--ink-raised)) 0%, light-dark(oklch(1 0 0 / 0.52), oklch(from var(--sky) l c h / 0.5)) 100%);
+	--footer-text-shadow: 0 0 0.9375rem light-dark(oklch(1 0 0 / 0.75), var(--clear)), 0 0.0625rem 0.25rem light-dark(var(--clear), oklch(0 0 0 / 0.4));
+
+	--icon-code: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16'/%3E%3C/svg%3E");
+	--icon-braces: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 4H6a2 2 0 0 0-2 2v3a2 2 0 0 1-2 2 2 2 0 0 1 2 2v3a2 2 0 0 0 2 2h2M16 4h2a2 2 0 0 1 2 2v3a2 2 0 0 0 2 2 2 2 0 0 1-2 2v3a2 2 0 0 1-2 2h-2'/%3E%3C/svg%3E");
+	--icon-license: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M15 9.5a4 4 0 1 0 0 5'/%3E%3C/svg%3E");
+	--icon-accessibility: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='4' r='2'/%3E%3Cpath d='M4 8h16M12 8v6m0 0-3 6m3-6 3 6'/%3E%3C/svg%3E");
+	--icon-github: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3E%3Cpath d='M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.8 4.8 18.8 5 18.8 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z'/%3E%3C/svg%3E");
+	--icon-sheet: url("colour-icon-spritesheet.svg");
+}
+
+html {
+	overflow-inline: clip;
+	scrollbar-color: light-dark(var(--sky), var(--forest)) transparent;
+}
+
+body {
+	position: relative;
+	isolation: isolate; /* Creates a stacking context to avoid z-index hell with the mesh. */
+	min-block-size: 100dvh;
+	overflow-inline: clip;
+	/* Hind is the closest Google Fonts match to Frutiger I could find. */
+	font-family: "Hind", "Frutiger", "Frutiger Linotype", "Segoe UI Variable Text", "Segoe UI", "Myriad Pro", Myriad, Corbel, Calibri, system-ui, sans-serif;
+	color: var(--text-body);
+	background-color: light-dark(var(--ocean), var(--ink));
+	background-image: var(--page-bg);
+	background-attachment: fixed;
+	line-height: 1.7;
+
+	/* A subtle, parallaxing mesh sits underneath the original gradient. */
+	&::before {
+		content: "";
+		position: fixed;
+		inset-block: -18vmax;
+		inset-inline: -18vmax;
+		z-index: -2;
+		background-image:
+			radial-gradient(36% 38% at 17% 22%, var(--mesh-white) 0%, var(--clear) 72%), radial-gradient(34% 32% at 82% 17%, var(--mesh-cyan) 0%, var(--clear) 72%),
+			radial-gradient(30% 36% at 79% 78%, var(--mesh-mint) 0%, var(--clear) 72%), radial-gradient(28% 30% at 23% 82%, var(--mesh-soft) 0%, var(--clear) 75%);
+		background-size: 146% 146%;
+		background-position: 32% 28%;
+		filter: blur(2.125rem) saturate(1.08);
+		opacity: 0.6;
+		pointer-events: none;
+		animation: mesh-drift 34s ease-in-out infinite alternate;
+	}
+}
+
+/* Move the mesh with a compositor-friendly translate instead of repainting the gradient positions every frame. That'll set your computer on fire... */
+@keyframes mesh-drift {
+	from {
+		translate: 0 0;
+	}
+
+	to {
+		translate: -10% -7%;
+	}
+}
+
+/*	=================================================================
+	Page layout grid
+	================================================================= */
+
+.page-wrapper {
+	position: relative;
+	max-inline-size: 80rem;
+	margin-inline: auto;
+	padding-block: 3rem;
+	padding-inline: 2rem;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 21.25rem;
+	grid-template-areas:
+		"intro intro"
+		"main sidebar";
+	gap: 2.5rem;
+}
+
+.intro {
+	grid-area: intro;
+	position: relative;
+	z-index: 0;
+	isolation: isolate;
+	min-inline-size: 0;
+	display: grid;
+	grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+	grid-template-areas:
+		"masthead masthead"
+		"summary preamble"
+		"downloads preamble";
+	gap: 2.5rem 0;
+	align-items: start;
+	padding: 2.5rem;
+	border: 0.0625rem solid var(--intro-border);
+	border-radius: 2rem;
+	background: var(--intro-bg);
+	box-shadow: var(--intro-shadow);
+
+	/* Keep the glass effect on a pseudo-element so the fixed heading can escape the intro's containing block. */
+	&::after {
+		content: "";
+		position: absolute;
+		inset-block: 0;
+		inset-inline: 0;
+		z-index: -1;
+		border-radius: inherit;
+		backdrop-filter: blur(1.25rem) saturate(1.1);
+		pointer-events: none;
+	}
+}
+
+/* Let the summary's description and download cards participate directly in the intro grid so the squares can sit beside the preamble card. */
+.summary {
+	display: contents;
+}
+
+.main.supporting {
+	grid-area: main;
+	min-inline-size: 0;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	align-self: start;
+	min-inline-size: 0;
+	position: sticky;
+	inset-block-start: 2rem;
+
+	nav {
+		ul {
+			list-style: none;
+		}
+
+		li {
+			position: relative;
+			/* Negative margins make it full bleed, and then padding returns the... padding. */
+			margin-inline: -1.5rem;
+			padding-block: 0.75rem;
+			padding-inline: 1.5rem;
+
+			&::after {
+				content: "";
+				position: absolute;
+				inset-inline: 1.5rem;
+				inset-block-end: 0;
+				block-size: 0.0625rem;
+				background: var(--nav-divider);
+				pointer-events: none;
+			}
+
+			&:last-child::after {
+				display: none;
+			}
+		}
+	}
+
+	a.design-name {
+		color: var(--text-strong);
+		text-shadow: var(--text-halo);
+
+		&:is(:hover, :focus-visible) {
+			color: var(--text-sidebar-hover);
+		}
+	}
+}
+
+/*	=================================================================
+	Glass Panels
+	================================================================= */
+
+.summary > p:first-child,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+.sidebar .wrapper > div {
+	position: relative;
+	z-index: 0;
+	background: var(--panel-bg);
+	backdrop-filter: blur(1rem) saturate(1.08);
+	border: 0.0625rem solid var(--panel-border);
+	border-radius: 1.5rem;
+	padding: 2.5rem;
+	margin-block-end: 2rem;
+	box-shadow: var(--panel-shadow);
+
+	/* Glossy top highlight sweep */
+	&::before {
+		content: "";
+		position: absolute;
+		inset-block-start: 0;
+		inset-inline: 0;
+		z-index: -1;
+		block-size: 45%;
+		background: var(--panel-gloss);
+		border-start-start-radius: inherit;
+		border-start-end-radius: inherit;
+		pointer-events: none;
+	}
+
+	/* A tooltip is allowed to leave its pane, so don't clip it. Only the pane that owns the balloon should be lifted in the paint order. */
+	&:has(abbr[title]:hover) {
+		z-index: 10;
+	}
+}
+
+.sidebar .wrapper > div {
+	--panel-bg: var(--sidebar-panel-bg);
+	padding: 1.5rem;
+	margin-block-end: 1.5rem;
+	border-radius: 1.125rem;
+
+	&:last-child {
+		margin-block-end: 0;
+	}
+}
+
+.intro:has(abbr[title]:hover) {
+	z-index: 10;
+}
+
+.intro > :last-child {
+	margin-block-end: 0;
+}
+
+.summary > p:first-child {
+	grid-area: summary;
+	margin-block-end: 0;
+}
+
+.preamble {
+	grid-area: preamble;
+	margin-block-end: 0;
+	block-size: 100%;
+}
+
+/* On wide screens the summary and preamble share one L-shaped glass surface. So much tricky handling here to make this work. */
+@media (min-width: 60.001rem) {
+	.summary > p:first-child,
+	.preamble {
+		/* A solid tint and only the lifted shadow keep the shared edge from showing a seam. */
+		background: var(--panel-solid-bg);
+		box-shadow: var(--panel-lift);
+	}
+
+	.summary > p:first-child {
+		anchor-name: --intro-summary;
+		z-index: 1;
+		border-start-end-radius: 0;
+		border-end-end-radius: 0;
+		border-inline-end: 0;
+		/* Clip the shadow on the shared edge so it doesn't darken the preamble. */
+		clip-path: inset(-10rem 0 -10rem -10rem);
+	}
+
+	:dir(rtl) .summary > p:first-child {
+		clip-path: inset(-10rem -10rem -10rem 0);
+	}
+
+	.preamble {
+		border-start-start-radius: 0;
+		border-inline-start: 0;
+
+		/* Pick up the left border after the inner fillet, then run it to the bottom-left radius. */
+		&::after {
+			content: "";
+			position: absolute;
+			inset-block-start: calc(anchor(--intro-summary bottom) + 1.5rem);
+			inset-block-end: 1.5rem;
+			inset-inline-start: 0;
+			inline-size: 0;
+			border-inline-start: 0.0625rem solid var(--panel-border);
+			pointer-events: none;
+		}
+	}
+
+	/* A small quarter-round fillet fills the inside of the L and joins the summary to the preamble. */
+	@supports (anchor-name: --x) {
+		.intro::before {
+			content: "";
+			position: absolute;
+			inset-block-start: calc(anchor(--intro-summary bottom) - 0.0625rem);
+			inset-inline-start: calc(anchor(--intro-summary right) - 1.5rem);
+			z-index: 2;
+			inline-size: 1.5rem;
+			block-size: 1.5rem;
+			/*
+			 * For (stupid) reasons beyond my comprehension, a tiny Safari layer can fill a gradient mask or border with the wrong colour until it is rasterised at a larger zoom.
+			 * Drawing the finished fillet as an image avoids that rasterisation path entirely. This is so dumb.
+			 */
+			--fillet-fill: light-dark(oklch(0.7162 0.0857 220.7), oklch(0.2505 0.0516 236.2));
+			background-color: var(--fillet-fill);
+			mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0H24V24A24 24 0 0 0 0 0Z' fill='white'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
+			pointer-events: none;
+
+			@media (prefers-reduced-transparency: reduce) {
+				--fillet-fill: light-dark(oklch(0.9 0.025 230), oklch(0.24 0.035 240));
+			}
+
+			@media (prefers-contrast: more) {
+				--fillet-fill: light-dark(oklch(0.965 0.012 230), oklch(0.18 0.025 240));
+			}
+		}
+
+		/* Mirror the fillet when the writing direction is RTL. */
+		:dir(rtl) .intro::before {
+			inset-inline-start: auto;
+			inset-inline-end: anchor(--intro-summary left);
+			transform: scaleX(-1);
+		}
+	}
+
+	/* Matching gloss heights keep the vertical highlight continuous across the join. */
+	:is(.summary > p:first-child, .preamble)::before {
+		block-size: 4rem;
+	}
+
+	@supports (anchor-name: --x) {
+		/* The summary's gloss moves to its background so its ::before can draw the fillet's arc. */
+		.summary > p:first-child {
+			background-image: var(--panel-gloss);
+			background-size: 100% 4rem;
+			background-repeat: no-repeat;
+		}
+
+		.summary > p:first-child::before {
+			content: "";
+			position: absolute;
+			inset-block-start: 100%;
+			inset-inline-start: auto;
+			inset-inline-end: 0;
+			z-index: 2;
+			inline-size: 1.5rem;
+			block-size: 1.5rem;
+			background: var(--panel-border);
+			mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0.5A23.5 23.5 0 0 1 23.5 24' fill='none' stroke='white' stroke-width='1'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
+			border-radius: 0;
+			pointer-events: none;
+		}
+
+		:dir(rtl) .summary > p:first-child::before {
+			inset-inline-start: 0;
+			inset-inline-end: auto;
+			transform: scaleX(-1);
+		}
+	}
+}
+
+/* Each ribbon is a radial gradient whose centre and size are set with `<percentage>` properties. Registering them like this makes them interpolable so they can be animated directly.  */
+
+@property --r1-x {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 44%;
+}
+@property --r1-y {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 170%;
+}
+@property --r1-w {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 112%;
+}
+@property --r1-h {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 275%;
+}
+@property --r2-x {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 89%;
+}
+@property --r2-y {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 196%;
+}
+@property --r2-w {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 94%;
+}
+@property --r2-h {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 240%;
+}
+@property --r3-x {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 82%;
+}
+@property --r3-y {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 8%;
+}
+@property --r3-w {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 46%;
+}
+@property --r3-h {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 110%;
+}
+
+@keyframes ribbon-a {
+	0%,
+	100% {
+		--r1-x: 44%;
+		--r1-y: 170%;
+		--r1-w: 112%;
+		--r1-h: 275%;
+	}
+
+	20% {
+		--r1-x: 49%;
+		--r1-y: 176%;
+		--r1-w: 120%;
+		--r1-h: 284%;
+	}
+
+	40% {
+		--r1-x: 41%;
+		--r1-y: 166%;
+		--r1-w: 106%;
+		--r1-h: 266%;
+	}
+
+	60% {
+		--r1-x: 46%;
+		--r1-y: 181%;
+		--r1-w: 117%;
+		--r1-h: 280%;
+	}
+
+	80% {
+		--r1-x: 39%;
+		--r1-y: 163%;
+		--r1-w: 109%;
+		--r1-h: 268%;
+	}
+}
+
+@keyframes ribbon-b {
+	0%,
+	100% {
+		--r2-x: 89%;
+		--r2-y: 196%;
+		--r2-w: 94%;
+		--r2-h: 240%;
+	}
+
+	20% {
+		--r2-x: 94%;
+		--r2-y: 203%;
+		--r2-w: 102%;
+		--r2-h: 252%;
+	}
+
+	40% {
+		--r2-x: 84%;
+		--r2-y: 190%;
+		--r2-w: 88%;
+		--r2-h: 231%;
+	}
+
+	60% {
+		--r2-x: 92%;
+		--r2-y: 207%;
+		--r2-w: 99%;
+		--r2-h: 247%;
+	}
+
+	80% {
+		--r2-x: 86%;
+		--r2-y: 193%;
+		--r2-w: 91%;
+		--r2-h: 235%;
+	}
+}
+
+@keyframes ribbon-c {
+	0%,
+	100% {
+		--r3-x: 82%;
+		--r3-y: 8%;
+		--r3-w: 46%;
+		--r3-h: 110%;
+	}
+
+	25% {
+		--r3-x: 87%;
+		--r3-y: 13%;
+		--r3-w: 52%;
+		--r3-h: 118%;
+	}
+
+	50% {
+		--r3-x: 78%;
+		--r3-y: 4%;
+		--r3-w: 42%;
+		--r3-h: 103%;
+	}
+
+	75% {
+		--r3-x: 85%;
+		--r3-y: 11%;
+		--r3-w: 50%;
+		--r3-h: 116%;
+	}
+}
+
+header[role="banner"] {
+	--heading-size: 3.5rem;
+	--heading-line: 3.85rem;
+	--heading-travel: 5.85rem;
+	--heading-block-start: 7.5rem;
+	--heading-inline-start: max(4.5rem, calc((100vi - 80rem) / 2 + 4.5rem));
+	--heading-fixed-block-start: calc(max(1rem, env(safe-area-inset-top)) + 0.65rem);
+	--heading-fixed-inline-start: max(2rem, calc((100vi - 80rem) / 2 + 2rem));
+	--heading-fixed-size: clamp(1.05rem, 1.8vi, 1.5rem);
+	--heading-inline-shift: calc(var(--heading-fixed-inline-start) - var(--heading-inline-start));
+
+	&:dir(rtl) {
+		--heading-inline-shift: calc(var(--heading-inline-start) - var(--heading-fixed-inline-start));
+	}
+
+	grid-area: masthead;
+	position: relative;
+	isolation: isolate;
+	padding-block: 2rem;
+
+	&::before {
+		content: "";
+		position: absolute;
+		/* Leave transparent padding around the ribbons so Safari clips the blur into it instead of cutting a hard edge. */
+		inset-block-start: -5rem;
+		inset-block-end: -4rem;
+		inset-inline: -4rem;
+		padding: 2rem;
+		z-index: -1;
+		background-image:
+			radial-gradient(
+				ellipse var(--r1-w, 112%) var(--r1-h, 275%) at var(--r1-x, 44%) var(--r1-y, 170%),
+				var(--clear) 0 51.5%,
+				oklch(1 0 0 / 0.5) 54%,
+				oklch(from var(--cyan) l c h / 0.38) 55.5%,
+				oklch(from var(--indigo) l c h / 0.24) 57%,
+				var(--clear) 60%
+			),
+			radial-gradient(
+				ellipse var(--r2-w, 94%) var(--r2-h, 240%) at var(--r2-x, 89%) var(--r2-y, 196%),
+				var(--clear) 0 56.5%,
+				oklch(0.905 0.089 164.2 / 0.4) 59%,
+				oklch(from var(--sky-light) l c h / 0.28) 61%,
+				var(--clear) 64%
+			),
+			radial-gradient(ellipse var(--r3-w, 46%) var(--r3-h, 110%) at var(--r3-x, 82%) var(--r3-y, 8%), oklch(from var(--indigo) l c h / 0.2) 0%, var(--clear) 72%);
+		background-origin: content-box;
+		background-clip: content-box;
+		filter: blur(0.625rem);
+		opacity: 1;
+		pointer-events: none;
+		animation:
+			ribbon-a 29s ease-in-out infinite,
+			ribbon-b 37s ease-in-out infinite,
+			ribbon-c 31s ease-in-out infinite;
+	}
+
+	h1 {
+		font-size: var(--heading-size);
+		font-weight: 700;
+		color: var(--text-h1);
+		text-shadow: var(--text-halo-strong);
+		letter-spacing: -0.03em;
+		margin-block-end: 0.5rem;
+	}
+
+	h2 {
+		font-size: 1.35rem;
+		color: var(--text-h2);
+		font-weight: 500;
+		text-shadow: var(--text-halo);
+	}
+
+	@media (max-width: 60rem) {
+		--heading-size: 2.8rem;
+		--heading-line: 3.08rem;
+		--heading-travel: 3.85rem;
+		--heading-block-start: 5.5rem;
+		--heading-inline-start: 3.5rem;
+		--heading-fixed-inline-start: 1.5rem;
+
+		&::before {
+			animation: none;
+		}
+	}
+
+	@media (max-width: 35rem) {
+		--heading-size: 2.2rem;
+		--heading-line: 2.42rem;
+		--heading-travel: 2.85rem;
+		--heading-block-start: 4.5rem;
+		--heading-inline-start: 2.5rem;
+	}
+
+	@media (max-width: 21rem) {
+		--heading-size: 1.8rem;
+		--heading-line: 1.98rem;
+	}
+}
+
+/*	=================================================================
+	Typography and light mode readability optimisations
+	================================================================= */
+
+h3 {
+	font-size: 1.6rem;
+	color: var(--text-heading);
+	text-shadow: var(--text-halo-strong);
+	border-block-end: 0.0625rem solid var(--heading-rule);
+	padding-block-end: 0.75rem;
+	margin-block-end: 1.25rem;
+}
+
+p,
+li {
+	color: var(--text-copy);
+	font-size: 1.05rem;
+	font-weight: 500;
+	text-shadow: var(--text-halo);
+}
+
+/*  Keep long-form copy at a readable length without shrinking the panels themselves. Exclude the credit grid as it is a layout container and not prose. */
+.main.supporting > :is(.explanation, .participation, .benefits, .requirements) > p:not([role="contentinfo"]) {
+	max-inline-size: 70ch;
+}
+
+p {
+	margin-block-end: 1.2rem;
+
+	&:last-child {
+		margin-block-end: 0;
+	}
+}
+
+a {
+	color: var(--text-link);
+	text-decoration: none;
+	font-weight: 600;
+	text-shadow: var(--text-halo);
+	transition:
+		color 0.2s ease,
+		text-shadow 0.2s ease;
+
+	&:hover {
+		color: var(--text-link-hover);
+		text-decoration: underline;
+		text-shadow: var(--text-halo);
+	}
+
+	&:focus-visible {
+		text-decoration: underline;
+	}
+}
+
+header[role="banner"],
+.zen-resources {
+	abbr {
+		font-variant-caps: normal;
+	}
+}
+
+/*	=================================================================
+	Sidebar resources
+	================================================================= */
+
+.zen-resources {
+	ul {
+		list-style: none;
+	}
+
+	li {
+		margin-block-end: 0.75rem;
+	}
+
+	a {
+		position: relative;
+		display: block;
+		padding-block: 0.5rem;
+		padding-inline: 3rem 0.75rem;
+		background: var(--resource-bg);
+		border: 0.0625rem solid var(--resource-border);
+		border-radius: 0.625rem;
+		box-shadow: inset 0 0.0625rem 0 oklch(1 0 0 / 0.8);
+		color: var(--text-resource);
+		transition: all 0.2s ease;
+
+		&:hover {
+			transform: translateX(0.25rem);
+		}
+
+		&:is(:hover, :focus-visible) {
+			background: var(--resource-hover-bg);
+			color: var(--text-link-hover);
+			text-decoration: none;
+		}
+
+		/* Colour icons. Centred on the first text line so it handles the case of a translated label wrapping. */
+		&::before {
+			content: "";
+			position: absolute;
+			inset-block-start: calc(0.5rem + 0.5lh);
+			inset-inline-start: 0.7rem;
+			inline-size: 1.8rem;
+			block-size: 1.8rem;
+			transform: translateY(-50%);
+			background: var(--icon-sheet) var(--icon-x, 0) center / auto 1.45rem no-repeat;
+			filter: drop-shadow(0 0.0625rem 0.125rem oklch(0.2 0.04 240 / 0.35));
+			transition: filter 0.2s ease;
+		}
+
+		&:hover::before,
+		&:focus-visible::before {
+			filter: brightness(1.06) saturate(1.06) drop-shadow(0 0.125rem 0.2rem oklch(0.2 0.04 240 / 0.4));
+		}
+	}
+
+	.view-css {
+		--icon-x: -6.324rem;
+	}
+
+	.css-resources {
+		--icon-x: -8.5rem;
+	}
+
+	.zen-faq {
+		--icon-x: -4.148rem;
+	}
+
+	.zen-submit {
+		--icon-x: -1.972rem;
+	}
+
+	.zen-translations {
+		--icon-x: 0.204rem;
+	}
+}
+
+/*	=================================================================
+	Footer
+	================================================================= */
+
+.main.supporting footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1.5rem;
+	margin-block-start: 3rem;
+	padding: 1.5rem;
+	container-name: footer;
+	container-type: inline-size;
+
+	a {
+		--footer-accent: currentColor;
+		position: relative;
+		flex: 1 1 7rem;
+		min-inline-size: 5.5rem;
+		max-inline-size: 8.5rem;
+		aspect-ratio: 1;
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.6rem;
+		text-align: center;
+		color: var(--text-body);
+		padding-block: 1rem;
+		padding-inline: 0.85rem;
+		border-radius: 1.25rem;
+		border: 0.0625rem solid oklch(1 0 0 / 0.7);
+		background: var(--footer-bg);
+		box-shadow:
+			inset 0 0.0625rem 0 oklch(1 0 0 / 0.9),
+			0 0.75rem 1.5rem -1rem oklch(from var(--shadow) l c h / 0.5);
+		text-shadow: var(--footer-text-shadow);
+		text-decoration: none;
+		transition:
+			background 0.2s ease,
+			border-color 0.2s ease,
+			box-shadow 0.2s ease,
+			color 0.2s ease,
+			transform 0.2s ease,
+			flex-grow 0.35s ease,
+			max-inline-size 0.35s ease,
+			padding-block-end 0.35s ease;
+
+		&::before {
+			content: "";
+			flex: 0 0 auto;
+			inline-size: 1.5rem;
+			block-size: 1.5rem;
+			background-color: var(--footer-accent);
+			mask: var(--icon) center / contain no-repeat;
+			opacity: 0.85;
+			transition:
+				background-color 0.2s ease,
+				opacity 0.2s ease;
+		}
+
+		/* The caption lives outside the flow so it can fade in without changing the resting card. */
+		&::after {
+			position: absolute;
+			inset-block-end: 0.85rem;
+			inset-inline: 0.4rem;
+			color: currentColor;
+			font-size: 0.62rem;
+			font-weight: 700;
+			letter-spacing: 0.14em;
+			line-height: 1.2;
+			text-align: center;
+			text-transform: uppercase;
+			white-space: nowrap;
+			opacity: 0;
+			translate: 0 0.25rem;
+			pointer-events: none;
+			transition:
+				opacity 0.2s ease,
+				translate 0.25s ease;
+		}
+
+		&:is(:hover, :focus-visible) {
+			background: var(--footer-hover-bg);
+			border-color: var(--footer-accent);
+			color: var(--text-footer-hover);
+			text-decoration: none;
+			transform: translateY(-0.125rem);
+			box-shadow:
+				inset 0 0.0625rem 0 oklch(1 0 0 / 0.9),
+				0 1rem 2rem -1rem oklch(from var(--shadow) l c h / 0.55),
+				0 0 1.25rem oklch(from var(--footer-accent) l c h / 0.25);
+
+			&::before {
+				opacity: 1;
+			}
+		}
+
+		&:focus-visible {
+			outline: 0.1875rem solid var(--focus-ring);
+			outline-offset: 0.2rem;
+		}
+
+		&:active {
+			transform: translateY(0) scale(0.98);
+		}
+
+		&.zen-validate-html {
+			--icon: var(--icon-code);
+			--footer-accent: light-dark(var(--orange-deep), var(--orange-light));
+
+			&::after {
+				content: "Validate";
+			}
+		}
+
+		&.zen-validate-css {
+			--icon: var(--icon-braces);
+			--footer-accent: light-dark(var(--rebeccapurple), var(--rebeccapurple-light));
+
+			&::after {
+				content: "Validate";
+			}
+		}
+
+		&.zen-license {
+			--icon: var(--icon-license);
+			--footer-accent: light-dark(var(--forest), var(--mint));
+
+			&::after {
+				content: "License";
+			}
+		}
+
+		&.zen-accessibility {
+			--icon: var(--icon-accessibility);
+			--footer-accent: light-dark(var(--link), var(--sky-light));
+
+			&::after {
+				content: "Read";
+			}
+		}
+
+		&.zen-github {
+			--icon: var(--icon-github);
+			--footer-accent: light-dark(var(--ink), var(--white));
+
+			&::after {
+				content: "Source";
+			}
+		}
+	}
+}
+
+/* When one link is engaged, the others tighten around it and its caption appears in the reclaimed space. */
+@container footer (min-width: 32rem) {
+	.main.supporting footer a {
+		flex-basis: 0;
+		min-inline-size: 5rem;
+		block-size: clamp(7rem, 18cqw, 8.5rem);
+		aspect-ratio: auto;
+	}
+
+	.main.supporting footer:has(a:hover) a,
+	.main.supporting footer:not(:has(a:hover)):has(a:focus-visible) a {
+		flex-grow: 0.35;
+		max-inline-size: 5.5rem;
+	}
+
+	.main.supporting footer:has(a:hover) a:hover,
+	.main.supporting footer:not(:has(a:hover)):has(a:focus-visible) a:focus-visible {
+		flex-grow: 3;
+		max-inline-size: 24rem;
+		padding-block-end: 2.25rem;
+
+		&::after {
+			opacity: 0.7;
+			translate: 0 0;
+		}
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.main.supporting footer a {
+		transition: none;
+	}
+
+	.main.supporting footer a:is(:hover, :focus-visible) {
+		transform: none;
+	}
+}
+
+/*	=================================================================
+	Hover sheen effect
+	================================================================= */
+
+@keyframes glass-sheen {
+	from {
+		background-position: 200% 0;
+	}
+
+	to {
+		background-position: -100% 0;
+	}
+}
+
+/* Each needs its own clipping and stacking context for the sheen. */
+:is(.summary > p:nth-child(2) > a, .sidebar :is(.design-selection, .design-archives) li) {
+	--sheen-angle: 100deg;
+	--sheen-duration: 0.65s;
+
+	position: relative;
+	isolation: isolate;
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset-block: 0;
+		inset-inline: 0;
+		z-index: -1;
+		background-image: linear-gradient(var(--sheen-angle), var(--clear) 30%, oklch(1 0 0 / 0.12) 42%, oklch(1 0 0 / 0.55) 50%, oklch(1 0 0 / 0.12) 58%, var(--clear) 70%);
+		background-position: 200% 0;
+		background-size: 200% 100%;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		&::before {
+			display: none;
+		}
+	}
+}
+
+/* Keep focus outlines visible beyond the row while the sweep stays clipped. */
+.sidebar :is(.design-selection, .design-archives) li {
+	overflow: clip;
+
+	&:hover::before,
+	&:focus-within::before {
+		opacity: 1;
+		animation: glass-sheen var(--sheen-duration) ease-out forwards;
+	}
+}
+
+.sidebar :is(.design-selection, .design-archives) h3 {
+	margin: 0;
+}
+
+.summary > p:nth-child(2) > a {
+	/* Diagonal sweep for the download cards. */
+	--sheen-angle: 120deg;
+
+	&:hover::before,
+	&:focus-visible::before {
+		opacity: 1;
+		animation: glass-sheen var(--sheen-duration) ease-out forwards;
+	}
+}
+
+/* Stretch the row's main link over the whole item but lift the designer name above it so it keeps its own destination. */
+.sidebar .design-selection li > a.design-name::after,
+.sidebar .design-archives li > a::after {
+	content: "";
+	position: absolute;
+	inset-block: 0;
+	inset-inline: 0;
+	z-index: 1;
+	border-radius: inherit;
+}
+
+.sidebar .design-selection li > a.designer-name {
+	position: relative;
+	z-index: 2;
+}
+
+/*	=================================================================
+	Dark mode smoked glass effect
+	================================================================= */
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--page-bg:
+			radial-gradient(circle at 15% 15%, oklch(from var(--sky) l c h / 0.25) 0%, var(--clear) 45%), radial-gradient(circle at 85% 85%, oklch(from var(--mint) l c h / 0.2) 0%, var(--clear) 55%),
+			linear-gradient(135deg, oklch(0.275 0.06 239.4) 0%, var(--shadow-deep) 50%, oklch(0.306 0.054 179.5) 100%);
+	}
+
+	header[role="banner"] h1,
+	h3,
+	.sidebar a.design-name {
+		text-shadow: 0 0.125rem 1rem oklch(0 0 0 / 0.6);
+	}
+
+	header[role="banner"] h2 {
+		text-shadow: 0 0.0625rem 0.5rem oklch(0 0 0 / 0.5);
+	}
+
+	p,
+	li {
+		text-shadow: 0 0.0625rem 0.125rem oklch(0 0 0 / 0.4);
+	}
+
+	a {
+		text-shadow: 0 0.0625rem 0 oklch(0 0 0 / 0.5);
+
+		&:hover {
+			text-shadow: 0 0.0625rem 0.25rem oklch(from var(--cyan) l c h / 0.6);
+		}
+	}
+}
+
+/*	=================================================================
+	Media queries
+	================================================================= */
+
+@media (max-width: 60rem) {
+	.page-wrapper {
+		grid-template-columns: minmax(0, 1fr);
+		grid-template-areas:
+			"intro"
+			"main"
+			"sidebar";
+		padding: 1.5rem;
+	}
+
+	.sidebar {
+		position: static;
+	}
+
+	.intro {
+		grid-template-columns: minmax(0, 1fr);
+		grid-template-areas:
+			"masthead"
+			"summary"
+			"downloads"
+			"preamble";
+		padding: 2rem;
+	}
+}
+
+@media (max-width: 35rem) {
+	.intro {
+		padding: 1rem;
+	}
+
+	.summary > p:first-child,
+	.preamble,
+	.explanation,
+	.participation,
+	.benefits,
+	.requirements,
+	.sidebar .wrapper > div {
+		padding: 1.5rem;
+	}
+
+	.main.supporting footer {
+		gap: 0.75rem;
+	}
+}
+
+@media (max-width: 47.5rem) {
+	.intro {
+		gap: 2rem;
+	}
+}
+
+/*	=================================================================
+	Additional content
+	================================================================= */
+
+.explanation p:first-of-type::before {
+	content: "";
+	display: block;
+	float: inline-end;
+	block-size: 7lh;
+	aspect-ratio: 3 / 2;
+	border-radius: 1rem;
+	margin-inline-start: 2rem;
+	margin-block-end: 0.5rem;
+	background-image: url("/222/zen-rocks.avif"); /* Photograph by Sean Stratton on Unsplash (https://unsplash.com/photos/black-stacking-stones-on-gray-surface-ObpCE_X3j6U) */
+	background-size: cover;
+
+	box-shadow:
+		inset 0 0.0625rem 0.0625rem 0 oklch(1 0 0 / 0.3),
+		inset 0 -0.5rem 1.5rem -0.375rem oklch(0.241 0.055 159.8 / 0.35),
+		0 0.625rem 2.5rem -0.75rem oklch(0.788 0.149 174.8 / 0.5);
+}
+
+.requirements {
+	p:nth-child(-n + 3) {
+		font-size: 0.8rem;
+		text-decoration: line-through 0.1rem;
+
+		abbr {
+			text-decoration: line-through 0.1rem;
+		}
+	}
+
+	p:nth-child(4)::before {
+		content: "This is the future. See? It is all made of glass. Futuristic! Internet Explorer is dead! We are freed from its tyranny. This theme works on recent browsers as of 2026! Numbered CSS versions? I spit at the concept. We've got a living standard now. It grows such that we struggle to contain it, and despite best efforts we're having trouble keeping it fed. I'm told by the working group that things will turn out alright, though.";
+		display: block;
+		margin-block-end: 1rem;
+	}
+}
+
+/*	=================================================================
+	Abbreviation balloon (tooltip)
+	================================================================= */
+
+abbr[title] {
+	--tooltip-edge: oklch(0.77 0.136 89.1 / 0.9);
+
+	position: relative;
+	display: inline-block;
+	font-size: inherit;
+
+	&:hover::after,
+	&:focus::after {
+		content: attr(title);
+		position: absolute;
+		inset-block-end: calc(100% + 0.625rem);
+		inset-inline-start: 50%;
+		transform: translateX(-50%);
+		inline-size: max-content;
+		max-inline-size: 16.25rem;
+		padding-block: 0.4375rem;
+		padding-inline: 0.875rem;
+		font-size: 0.9rem;
+		font-family: inherit;
+		color: oklch(0.393 0.081 80.5);
+		text-align: center;
+		font-variant-caps: normal;
+		background: linear-gradient(180deg, oklch(0.995 0.026 106.9 / 0.96) 0%, oklch(0.947 0.088 95.8 / 0.9) 100%);
+		backdrop-filter: blur(0.5rem);
+		border: 0.0625rem solid var(--tooltip-edge);
+		border-radius: 0.375rem;
+		box-shadow:
+			0 0.5rem 1.5rem oklch(0.764 0.146 85.5 / 0.3),
+			inset 0 0.0625rem 0 var(--white),
+			inset 0 -0.125rem 0.25rem oklch(0.816 0.134 88.9 / 0.4);
+
+		z-index: 1000;
+		pointer-events: none;
+		animation: aeroPop 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+	}
+
+	/* Tooltip arrow */
+	&:hover::before,
+	&:focus::before {
+		content: "";
+		position: absolute;
+		inset-block-end: calc(100% + 0.25rem);
+		inset-inline-start: 50%;
+		transform: translateX(-50%);
+		border-block-start: 0.375rem solid var(--tooltip-edge);
+		border-block-end: 0 solid var(--clear);
+		border-inline: 0.375rem solid var(--clear);
+		z-index: 1001;
+		pointer-events: none;
+	}
+}
+
+/* Smooth spring animation */
+@keyframes aeroPop {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, 0.375rem) scale(0.95);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(-50%, 0) scale(1);
+	}
+}
+
+/*	=================================================================
+	Scroll-driven fixed heading
+	================================================================= */
+
+/*
+ * Animate the heading's movement with transforms rather than inset properties. WebKit groups inset properties together across animations on the same element, so the vertical ride and the horizontal morph would otherwise cancel each other.
+ */
+@keyframes heading-ride {
+	from {
+		translate: 0 0;
+	}
+	to {
+		translate: 0 calc(var(--heading-fixed-block-start) - var(--heading-block-start));
+	}
+}
+
+@keyframes heading-morph {
+	from {
+		transform: translateX(0);
+		font-size: var(--heading-size);
+	}
+	to {
+		transform: translateX(var(--heading-inline-shift));
+		font-size: var(--heading-fixed-size);
+	}
+}
+
+@keyframes heading-subtitle-out {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes heading-backdrop {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* h1 moves to the corner, the subtitle fades away, and the blur fades in all based on scroll position. */
+@supports (animation-timeline: scroll()) {
+	@media (prefers-reduced-motion: no-preference) {
+		.intro {
+			z-index: 1;
+		}
+
+		.sidebar {
+			z-index: 2;
+		}
+
+		header[role="banner"] {
+			z-index: 100;
+			padding-block-start: calc(2rem + var(--heading-line) + 0.5rem);
+		}
+
+		header[role="banner"] h1 {
+			position: fixed;
+			inset-block-start: var(--heading-block-start);
+			inset-inline-start: var(--heading-inline-start);
+			z-index: 100;
+			inline-size: max-content;
+			margin: 0;
+			white-space: nowrap;
+			pointer-events: none;
+			animation:
+				heading-ride linear both,
+				heading-morph linear both;
+			animation-timeline: scroll(root block), scroll(root block);
+			animation-range:
+				0 var(--heading-travel),
+				var(--heading-travel) calc(var(--heading-travel) + 16rem);
+		}
+
+		header[role="banner"] h2 {
+			animation: heading-subtitle-out linear both;
+			animation-timeline: scroll(root block);
+			animation-range: 0 var(--heading-travel);
+		}
+
+		/* One shared blur layer is cheaper than stacking three. */
+		header[role="banner"]::after {
+			content: "";
+			position: fixed;
+			inset-block-start: 0;
+			inset-inline: 0;
+			z-index: -1;
+			block-size: 6rem;
+			backdrop-filter: blur(1rem) saturate(1.08);
+			mask: linear-gradient(0deg, var(--clear) 0%, oklch(0 0 0) 32%);
+			pointer-events: none;
+			opacity: 0;
+			animation: heading-backdrop linear both;
+			animation-timeline: scroll(root block);
+			animation-range: var(--heading-travel) calc(var(--heading-travel) + 10rem);
+		}
+
+		/* Scroll-driven agitation is an enhancement, not a requirement. */
+		body::before {
+			animation:
+				mesh-drift 34s ease-in-out infinite alternate,
+				mesh-parallax linear both;
+			animation-timeline: auto, scroll(root block);
+			animation-range:
+				normal,
+				0 110dvh;
+		}
+	}
+}
+
+@keyframes mesh-parallax {
+	to {
+		transform: translate3d(-2%, -3%, 0) scale(1.04);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	body::before {
+		animation: none;
+	}
+
+	header[role="banner"]::before {
+		animation: none;
+	}
+}
+
+/*	=================================================================
+	Example file download cards
+	================================================================= */
+
+.summary > p:nth-child(2) {
+	grid-area: downloads;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	column-gap: 1rem;
+	min-inline-size: 0;
+	margin: 0;
+	/* Keep the download cards clear of the preamble's shared edge. */
+	@media (min-width: 60.001rem) {
+		margin-inline-end: 2.5rem;
+	}
+	font-size: 0;
+	line-height: 0;
+
+	&::before {
+		content: "Download the example files:";
+		grid-row: 1;
+		grid-column: 1 / -1;
+		justify-self: start;
+		margin-block-end: 0.9rem;
+		padding-block: 0.35rem;
+		padding-inline: 0.7rem;
+		border: 0.0625rem solid var(--label-border);
+		border-radius: 62.4375rem;
+		background: var(--label-bg);
+		box-shadow: var(--label-shadow);
+		color: var(--text-soft);
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.16em;
+		line-height: 1.4;
+		text-transform: uppercase;
+		text-shadow: var(--label-text-shadow);
+	}
+
+	> a {
+		--download-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-opacity='.45' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2'/%3E%3C/svg%3E");
+		--card-base: light-dark(oklch(1 0 0 / 0.65), oklch(from var(--shadow-deep) l c h / 0.65));
+		--card-sheen: light-dark(oklch(1 0 0 / 0.56), oklch(1 0 0 / 0.12));
+		--card-caption: light-dark(var(--text-soft), var(--text-caption));
+		--card-text-shadow: 0 0 0.9375rem light-dark(oklch(1 0 0 / 0.75), var(--clear)), 0 0.0625rem 0.125rem light-dark(var(--clear), oklch(0 0 0 / 0.45));
+		--card-shadow:
+			inset 0 0.0625rem 0 light-dark(oklch(1 0 0 / 0.95), oklch(1 0 0 / 0.28)), inset 0 -0.625rem 1.25rem -0.75rem var(--card-accent-deep),
+			0 0.75rem 1.625rem -1rem light-dark(oklch(from var(--shadow) l c h / 0.55), oklch(from var(--shadow-deep) l c h / 0.8));
+		--card-hover-shadow:
+			inset 0 0.0625rem 0 light-dark(var(--white), oklch(1 0 0 / 0.35)), inset 0 -0.625rem 1.375rem -0.625rem var(--card-glow), 0 1.25rem 2.125rem -1.125rem light-dark(
+				oklch(from var(--shadow) l c h / 0.65),
+				oklch(from var(--shadow-deep) l c h / 0.9)
+			),
+			0 0 0 0.0625rem light-dark(var(--card-accent), var(--card-glow)), 0 0 1.75rem var(--card-glow);
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-end;
+		gap: 0.35rem;
+		aspect-ratio: 1 / 1;
+		min-block-size: 0;
+		padding-block: 1.35rem;
+		padding-inline: 1.45rem;
+		border: 0.0625rem solid var(--card-border);
+		border-radius: 1.25rem;
+		background-color: var(--card-base);
+		background-image:
+			var(--card-art), var(--download-glyph), radial-gradient(130% 170% at 100% 0%, var(--card-glow) 0%, var(--clear) 58%),
+			linear-gradient(150deg, var(--card-sheen) 0%, var(--card-tint) 55%, var(--card-tint-deep) 100%);
+		background-position:
+			-0.35rem -0.35rem,
+			calc(100% - 1.35rem) calc(100% - 1.35rem),
+			0 0,
+			0 0;
+		background-size:
+			88% auto,
+			3.2rem 3.2rem,
+			auto,
+			auto;
+		box-shadow: var(--card-shadow);
+		color: var(--text-body);
+		font-size: 1.05rem;
+		font-weight: 700;
+		line-height: 1.25;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		text-decoration: none;
+		text-shadow: var(--card-text-shadow);
+		overflow: hidden;
+		transition:
+			transform 0.22s ease,
+			border-color 0.22s ease,
+			box-shadow 0.22s ease;
+
+		&::after {
+			position: relative;
+			color: var(--card-caption);
+			font-size: 0.8rem;
+			font-weight: 500;
+			letter-spacing: 0.01em;
+			line-height: 1.35;
+			text-transform: none;
+			text-shadow: none;
+		}
+
+		&:nth-of-type(1) {
+			--card-accent: light-dark(var(--orange), var(--orange-light));
+			--card-accent-deep: light-dark(var(--orange-deep), var(--orange));
+			--card-art: url("html-sheet.avif");
+			--card-glow: oklch(from var(--orange) l c h / 0.34);
+			--card-tint: light-dark(oklch(from var(--orange) l c h / 0.65), oklch(from var(--orange-light) l c h / 0.26));
+			--card-tint-deep: light-dark(oklch(from var(--orange-deep) l c h / 0.5), oklch(from var(--orange) l c h / 0.34));
+			--card-border: light-dark(oklch(from var(--orange-deep) l c h / 0.55), oklch(from var(--orange-light) l c h / 0.5));
+			grid-row: 2;
+			grid-column: 1;
+
+			&::after {
+				content: "The page structure";
+			}
+		}
+
+		&:nth-of-type(2) {
+			/* I chose rebeccapurple both because it is now the colour of the CSS logo, and also because it is the right colour to choose. */
+			--card-accent: light-dark(var(--rebeccapurple), var(--rebeccapurple-light));
+			--card-accent-deep: light-dark(var(--rebeccapurple-deep), var(--rebeccapurple));
+			--card-art: url("css-sheet.avif");
+			--card-glow: oklch(from var(--rebeccapurple) l c h / 0.34);
+			--card-tint: light-dark(oklch(from var(--rebeccapurple) l c h / 0.55), oklch(from var(--rebeccapurple-light) l c h / 0.26));
+			--card-tint-deep: light-dark(oklch(from var(--rebeccapurple-deep) l c h / 0.4), oklch(from var(--rebeccapurple) l c h / 0.34));
+			--card-border: light-dark(oklch(from var(--rebeccapurple) l c h / 0.48), oklch(from var(--rebeccapurple-light) l c h / 0.45));
+			grid-row: 2;
+			grid-column: 2;
+
+			&::after {
+				content: "Your blank canvas";
+			}
+		}
+
+		&:hover,
+		&:focus-visible {
+			border-color: var(--card-accent);
+			color: var(--text-card-hover);
+			text-decoration: none;
+			transform: translateY(-0.1875rem);
+			box-shadow: var(--card-hover-shadow);
+		}
+	}
+
+	@media (max-width: 23.75rem) {
+		grid-template-columns: minmax(0, 1fr);
+
+		> a:nth-of-type(1) {
+			grid-row: 2;
+			grid-column: 1;
+		}
+
+		> a:nth-of-type(2) {
+			grid-row: 3;
+			grid-column: 1;
+			margin-block-start: 1rem;
+		}
+	}
+}
+
+/* Move the download glyph to the opposite corner when the writing direction is RTL. */
+:dir(rtl) .summary > p:nth-child(2) > a {
+	background-position:
+		-0.35rem -0.35rem,
+		1.35rem calc(100% - 1.35rem),
+		0 0,
+		0 0;
+}
+
+/*	=================================================================
+	Credit panes
+	================================================================= */
+
+.requirements {
+	margin-block-end: 18rem;
+	/* The panel's blur lives on a pseudo-element. The panel itself mustn't establish a backdrop root or a stacking context or the fixed credit popover becomes trapped inside it while it fades out. */
+	z-index: auto;
+	backdrop-filter: none;
+
+	&::after {
+		content: "";
+		position: absolute;
+		inset-block: 0;
+		inset-inline: 0;
+		z-index: -1;
+		border-radius: inherit;
+		backdrop-filter: blur(1rem) saturate(1.08);
+		pointer-events: none;
+	}
+}
+
+/* On hover/focus, fixed-position pseudos grow from the neighbouring tile using anchor positioning while everything else fades in. No JavaScript *or* markup!  */
+.requirements > p[role="contentinfo"] {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-rows: auto;
+	column-gap: 1rem;
+	grid-auto-rows: 0;
+	margin-block-start: 5rem;
+	margin-block-end: 0;
+	color: var(--clear);
+	font-size: 0;
+	line-height: 0;
+	text-shadow: none;
+	position: absolute;
+	inset-block-start: 100%;
+	inset-inline: 0;
+
+	/* Shared with the spinning artwork overlay below. */
+	--credit-modal-block: clamp(1rem, 5dvh, 3rem);
+	--credit-modal-inline: clamp(1rem, 5vi, 4rem);
+	--credit-modal-padding: clamp(1.5rem, 4vi, 3.5rem);
+	--credit-modal-content-vp: calc(100vi - 2 * var(--credit-modal-inline) - 2 * var(--credit-modal-padding));
+	--credit-art-width-vp: clamp(4.5rem, calc(var(--credit-modal-content-vp) * 0.22), 19rem);
+	--credit-copy-gap-vp: clamp(1.25rem, 3vi, 3rem);
+	--credit-copy-width-vp: min(40rem, calc(var(--credit-modal-content-vp) - var(--credit-art-width-vp) - var(--credit-copy-gap-vp)));
+	--credit-group-width-vp: calc(var(--credit-art-width-vp) + var(--credit-copy-gap-vp) + var(--credit-copy-width-vp));
+	--credit-group-offset-vp: max(0rem, calc((var(--credit-modal-content-vp) - var(--credit-group-width-vp)) / 2));
+	--credit-spin-ratio: 1;
+	--credit-spin-image: none;
+	--credit-spin-shadow: none;
+	--credit-reveal-delay: 0.5s;
+	/* Width of one credit card. Percentages in background-size resolve against the paint box, so the artwork needs a real length to animate from. */
+	--credit-card-width: calc((min(100vi, 80rem) - 29.75rem - 0.125rem) / 3);
+	/* At this width the layout drops its sidebar, which changes the card width. */
+	@media (max-width: 60rem) {
+		--credit-card-width: calc((100vi - 5rem - 0.125rem) / 3);
+	}
+
+	> a {
+		--credit-gloss: linear-gradient(180deg, oklch(1 0 0 / 0.28) 0%, oklch(1 0 0 / 0.02) 38%, oklch(1 0 0 / 0.12) 100%);
+		--credit-ink: var(--text-strong);
+		--credit-muted: oklch(from var(--credit-ink) l c h / 0.8);
+		--credit-border: oklch(1 0 0 / 0.6);
+		--credit-border-hover: oklch(1 0 0 / 0.9);
+		--credit-glow: oklch(from var(--cyan) l c h / 0.4);
+		--credit-tint: linear-gradient(160deg, oklch(1 0 0 / 0.42) 0%, oklch(1 0 0 / 0.18) 100%);
+		--credit-image: linear-gradient(145deg, oklch(0.78 0.05 230) 0%, oklch(0.55 0.07 240) 100%);
+		--credit-text-shadow: 0 0.0625rem 0 oklch(1 0 0 / 0.6);
+
+		/* (Annoying) 'modal' geometry and column maths. Inherited so that the copy and artwork line up while transitioning. */
+		--credit-modal-block: clamp(1rem, 5dvh, 3rem);
+		--credit-modal-inline: clamp(1rem, 5vi, 4rem);
+		--credit-modal-padding: clamp(1.5rem, 4vi, 3.5rem);
+		--credit-modal-copy: clamp(0.95rem, 1.3vi, 1.15rem);
+		--credit-modal-title: clamp(1.5rem, 2.6vi, 2.4rem);
+		--credit-modal-width: calc(100% - 2 * var(--credit-modal-inline));
+		--credit-modal-left: max(var(--credit-modal-inline), calc((100% - var(--credit-modal-width)) / 2));
+
+		/* Viewport-relative column maths. The artwork lives on a background layer, where percentages resolve against the paint box rather than the viewport, so it needs set lengths. */
+		--credit-modal-content-vp: calc(100vi - 2 * var(--credit-modal-inline) - 2 * var(--credit-modal-padding));
+		--credit-art-width-vp: clamp(4.5rem, calc(var(--credit-modal-content-vp) * 0.22), 19rem);
+		--credit-copy-gap-vp: clamp(1.25rem, 3vi, 3rem);
+		--credit-copy-width-vp: min(40rem, calc(var(--credit-modal-content-vp) - var(--credit-art-width-vp) - var(--credit-copy-gap-vp)));
+		--credit-group-width-vp: calc(var(--credit-art-width-vp) + var(--credit-copy-gap-vp) + var(--credit-copy-width-vp));
+		--credit-group-offset-vp: max(0rem, calc((var(--credit-modal-content-vp) - var(--credit-group-width-vp)) / 2));
+		--credit-heading-top: calc(var(--credit-modal-block) + 0.0625rem + 0.4 * (100dvh - 2 * var(--credit-modal-block)));
+		--credit-copy-top: calc(var(--credit-heading-top) + var(--credit-modal-title) * 1.1 + clamp(0.75rem, 2dvh, 1.5rem));
+
+		position: relative;
+		display: block;
+		min-block-size: 9rem;
+		padding: 1rem;
+		border: 0.0625rem solid var(--credit-border);
+		border-radius: 1.15rem;
+		background-image: var(--credit-image), var(--credit-gloss), var(--credit-tint);
+		background-position:
+			center,
+			0 0,
+			0 0,
+			0 0,
+			0 0;
+		background-size: contain, auto, auto, auto, auto;
+		background-origin: content-box, padding-box, padding-box, padding-box, padding-box;
+		background-clip: padding-box;
+		box-shadow:
+			inset 0 0.0625rem 0 oklch(1 0 0 / 0.55),
+			inset 0 -0.75rem 1.5rem -0.9rem var(--credit-glow),
+			0 1rem 2rem -1.25rem oklch(from var(--shadow) l c h / 0.55);
+		color: var(--credit-ink);
+		font-size: 0;
+		font-weight: 700;
+		line-height: 1.2;
+		letter-spacing: -0.015em;
+		text-decoration: none;
+		text-shadow: var(--credit-text-shadow);
+		text-wrap: balance;
+		transition:
+			border-color 0.22s ease,
+			box-shadow 0.22s ease;
+
+		/* The expanded pane. It stays fixed at its open size in the resting state and is transparent there, so hover-out can fade it away instead of collapsing the layout instantly. */
+		&::before {
+			content: "";
+			position: fixed;
+			inset-block-start: var(--credit-modal-block);
+			inset-inline-start: var(--credit-modal-left);
+			z-index: 1001;
+			inline-size: var(--credit-modal-width);
+			block-size: calc(100% - 2 * var(--credit-modal-block));
+			padding-block: calc(0.4 * (100dvh - 2 * var(--credit-modal-block))) var(--credit-modal-padding);
+			padding-inline: calc(var(--credit-modal-padding) + var(--credit-group-offset-vp) + var(--credit-art-width-vp) + var(--credit-copy-gap-vp)) var(--credit-modal-padding);
+			border: 0.0625rem solid var(--credit-border-hover);
+			border-radius: 1.5rem;
+			background-color: oklch(1 0 0 / 0.16);
+			background-image: var(--credit-image), var(--credit-gloss), var(--credit-expanded-tint, var(--credit-tint));
+			background-position:
+				calc(var(--credit-modal-padding) + var(--credit-group-offset-vp)) center,
+				0 0,
+				0 0,
+				0 0,
+				0 0;
+			background-size:
+				var(--credit-art-width-vp) calc(var(--credit-art-width-vp) / var(--credit-spin-ratio)),
+				100% 100%,
+				100% 100%,
+				100% 100%,
+				100% 100%;
+			background-origin: padding-box;
+			background-clip: padding-box;
+			box-shadow:
+				inset 0 0.0625rem 0 oklch(1 0 0 / 0.7),
+				inset 0 -0.75rem 1.5rem -0.75rem var(--credit-glow),
+				0 1.4rem 2.5rem -1.25rem oklch(from var(--shadow) l c h / 0.65),
+				0 0 1.5rem var(--credit-glow);
+			backdrop-filter: blur(1.5rem) saturate(1.12);
+			color: var(--credit-ink);
+			font-size: var(--credit-modal-title);
+			font-weight: 700;
+			line-height: 1.1;
+			letter-spacing: -0.015em;
+			text-shadow: var(--credit-text-shadow);
+			text-wrap: balance;
+			overflow: hidden;
+			opacity: 0;
+			visibility: hidden;
+			scale: 0.97;
+			pointer-events: none;
+			transition:
+				opacity 0.3s ease,
+				scale 0.3s ease,
+				visibility 0s 0.3s;
+		}
+
+		/* The expanded copy is a separate fixed layer so it can keep its position while it fades out. */
+		&::after {
+			content: "";
+			position: fixed;
+			inset-block-start: var(--credit-copy-top);
+			inset-block-end: var(--credit-modal-block);
+			inset-inline-start: calc(var(--credit-modal-inline) + 0.0625rem + var(--credit-modal-padding) + var(--credit-group-offset-vp) + var(--credit-art-width-vp) + var(--credit-copy-gap-vp));
+			inline-size: var(--credit-copy-width-vp);
+			z-index: 1002;
+			display: block;
+			color: var(--credit-muted);
+			font-size: var(--credit-modal-copy);
+			font-weight: 500;
+			line-height: 1.65;
+			letter-spacing: normal;
+			text-align: start;
+			text-transform: none;
+			text-shadow: none;
+			white-space: pre-line;
+			overflow: auto;
+			opacity: 0;
+			visibility: hidden;
+			translate: 0 0.5rem;
+			pointer-events: none;
+			transition:
+				opacity 0.28s ease,
+				translate 0.28s ease,
+				visibility 0s 0.28s;
+		}
+
+		/* Only the fixed pane and its copy need to react to the pointer. The resting link stays put underneath the dimmer. */
+		&:is(:hover, :focus-visible)::before {
+			opacity: 1;
+			visibility: visible;
+			scale: 1;
+			pointer-events: auto;
+			transition:
+				opacity 0s,
+				scale 0.25s ease,
+				visibility 0s;
+			animation:
+				credit-card-open 0.3s ease-out both,
+				credit-art-swap var(--credit-reveal-delay) step-end both;
+		}
+
+		&:is(:hover, :focus-visible)::after {
+			opacity: 1;
+			visibility: visible;
+			translate: 0 0;
+			pointer-events: auto;
+			/* Let the pane finish growing before the copy arrives. */
+			transition:
+				opacity 0.15s ease var(--credit-reveal-delay),
+				translate 0.15s ease var(--credit-reveal-delay),
+				visibility 0s;
+		}
+
+		&:hover,
+		&:focus-visible {
+			/* The fixed pane is now the visible card. Hide the resting tile underneath so the pane reads as the card growing. */
+			border-color: transparent;
+			background-color: transparent;
+			background-image: none;
+			box-shadow: none;
+		}
+
+		&:focus-visible {
+			outline: 0.1875rem solid var(--credit-ink);
+			outline-offset: 0.2rem;
+		}
+	}
+
+	> a:nth-of-type(1) {
+		grid-area: 1 / 1;
+		anchor-name: --credit-dave;
+		--credit-grow-animation: credit-card-grow-1;
+		--credit-tint: radial-gradient(120% 130% at 12% 0%, oklch(0.8 0.07 240 / 0.32) 0%, var(--clear) 58%), linear-gradient(155deg, oklch(0.4744 0.0813 249.9) 0% 58%, oklch(0.3992 0.0669 249.15) 100%);
+		--credit-expanded-tint:
+			radial-gradient(120% 130% at 12% 0%, oklch(0.8 0.07 240 / 0.25) 0%, var(--clear) 58%), linear-gradient(155deg, oklch(0.4744 0.0813 249.9 / 0.82) 0% 58%, oklch(0.3992 0.0669 249.15 / 0.78) 100%);
+		--credit-gloss: linear-gradient(180deg, oklch(1 0 0 / 0.18) 0%, oklch(1 0 0 / 0) 40%, oklch(1 0 0 / 0.08) 100%);
+		--credit-ink: oklch(0.9862 0.0068 247.89);
+		--credit-muted: oklch(0.9 0.035 240 / 0.84);
+		--credit-border: oklch(1 0 0 / 0.55);
+		--credit-border-hover: oklch(1 0 0 / 0.85);
+		--credit-glow: oklch(0.72 0.09 240 / 0.5);
+		--credit-image: url("dave-shea-logo.svg");
+		--credit-text-shadow: 0 0.0625rem 0.25rem oklch(0.2 0.04 240 / 0.38);
+
+		&::before {
+			content: "Dave Shea";
+		}
+
+		&::after {
+			content: "Dave Shea created CSS Zen Garden back in 2003. From roughly 2003 to 2005 he blogged near-daily at mezzoblue.com, sharing his knowledge. He now resides on cyberspace at daveshea.com.";
+		}
+	}
+
+	> a:nth-of-type(2) {
+		grid-area: 1 / 2;
+		anchor-name: --credit-mediatemple;
+		--credit-grow-animation: credit-card-grow-2;
+		--credit-tint:
+			repeating-linear-gradient(90deg, oklch(1 0 0 / 0.06) 0 0.0625rem, var(--clear) 0.0625rem 0.25rem), radial-gradient(120% 100% at 15% 0%, oklch(1 0 0 / 0.95) 0%, var(--clear) 48%),
+			linear-gradient(
+				180deg,
+				oklch(0.9931 0.0034 247.86),
+				oklch(0.9148 0.0129 244.26),
+				oklch(0.8046 0.0222 245.91) 40%,
+				oklch(0.9864 0.0042 236.5),
+				oklch(0.6891 0.0249 246.17) 70%,
+				var(--white) 80%,
+				oklch(0.7636 0.0225 245.93)
+			);
+		--credit-expanded-tint:
+			repeating-linear-gradient(90deg, oklch(1 0 0 / 0.06) 0 0.0625rem, var(--clear) 0.0625rem 0.25rem), radial-gradient(120% 100% at 15% 0%, oklch(1 0 0 / 0.86) 0%, var(--clear) 48%),
+			linear-gradient(
+				180deg,
+				oklch(0.9931 0.0034 247.86 / 0.88),
+				oklch(0.9148 0.0129 244.26 / 0.82) 16%,
+				oklch(0.8046 0.0222 245.91 / 0.78) 34%,
+				oklch(0.9864 0.0042 236.5 / 0.84) 48%,
+				oklch(0.6891 0.0249 246.17 / 0.78) 52%,
+				oklch(0.943 0.0093 242.84 / 0.84) 65%,
+				oklch(1 0 0 / 0.9) 78%,
+				oklch(0.7636 0.0225 245.93 / 0.8) 100%
+			);
+		--credit-gloss: linear-gradient(180deg, oklch(1 0 0 / 0.18) 0%, oklch(1 0 0 / 0.02) 32%, oklch(1 0 0 / 0.06) 100%);
+		--credit-ink: oklch(0.3416 0.045 243.51);
+		--credit-muted: oklch(0.4 0.04 235 / 0.82);
+		--credit-border: oklch(1 0 0 / 0.8);
+		--credit-border-hover: oklch(1 0 0 / 1);
+		--credit-glow: oklch(0.78 0.015 240 / 0.4);
+		--credit-image: url("media-temple-logo.svg");
+		--credit-text-shadow: 0 0.0625rem 0 oklch(1 0 0 / 0.75);
+
+		&::before {
+			content: "MediaTemple";
+		}
+
+		&::after {
+			content: "The bandwidth for this site was once graciously donated by MediaTemple (and DreamFire Studios before them). MediaTemple was killed by GoDaddy in 2023. Rest in peace.";
+		}
+	}
+
+	> a:nth-of-type(3) {
+		grid-area: 1 / 3;
+		--credit-grow-animation: credit-card-grow-3;
+		--credit-tint:
+			radial-gradient(120% 130% at 8% 0%, oklch(0.98 0.09 96 / 0.4) 0%, var(--clear) 58%),
+			linear-gradient(
+				180deg,
+				oklch(0.8117 0.0272 242.82),
+				oklch(0.8507 0.0199 240.77),
+				oklch(0.9281 0.0671 96.39) 30%,
+				oklch(0.9354 0.0323 95.41) 70%,
+				oklch(0.8982 0.0076 164.92),
+				oklch(0.8117 0.0272 242.82)
+			);
+		--credit-expanded-tint:
+			radial-gradient(120% 130% at 8% 0%, oklch(0.98 0.09 96 / 0.36) 0%, var(--clear) 58%),
+			linear-gradient(
+				145deg,
+				oklch(0.9281 0.0671 96.39 / 0.86) 0%,
+				oklch(0.9354 0.0323 95.41 / 0.82) 32%,
+				oklch(0.8982 0.0076 164.92 / 0.8) 58%,
+				oklch(0.8507 0.0199 240.77 / 0.78) 78%,
+				oklch(0.8117 0.0272 242.82 / 0.8) 100%
+			);
+		--credit-ink: oklch(0.3511 0.0351 244.16);
+		--credit-muted: oklch(0.42 0.035 235 / 0.8);
+		--credit-border: oklch(1 0 0 / 0.72);
+		--credit-border-hover: oklch(1 0 0 / 0.95);
+		--credit-glow: oklch(0.8 0.07 95 / 0.4);
+		--credit-image: url("/222/the-zen-of-css-design.avif");
+		--credit-text-shadow: 0 0.0625rem 0 oklch(1 0 0 / 0.75);
+		padding-block: 0.5rem;
+
+		&::before {
+			content: "The Zen of CSS Design";
+		}
+
+		&::after {
+			content: "The classic 2005 publication with case studies into 36 different designs featured on CSS Zen Garden, and all the tips, tricks, and hacks used to make them as brilliant as they are.";
+			letter-spacing: 0;
+		}
+	}
+}
+
+/* A duplicate of the artwork that can spin in 3D. It appears once the pane has grown. The pane's actual artwork is hidden while this is on top, then returns under the fading overlay on hover-out. */
+.requirements > p[role="contentinfo"]::after {
+	content: "";
+	position: fixed;
+	inset-block-start: calc(50% - (var(--credit-art-width-vp) / var(--credit-spin-ratio)) / 2);
+	inset-inline-start: calc(var(--credit-modal-inline) + 0.0625rem + var(--credit-modal-padding) + var(--credit-group-offset-vp));
+	z-index: 1003;
+	inline-size: var(--credit-art-width-vp);
+	block-size: calc(var(--credit-art-width-vp) / var(--credit-spin-ratio));
+	background-image: var(--credit-spin-image);
+	background-position: center;
+	background-size: contain;
+	filter: var(--credit-spin-shadow);
+	opacity: 0;
+	visibility: hidden;
+	translate: none;
+	pointer-events: none;
+	transition:
+		opacity 0.2s ease,
+		visibility 0s 0.2s;
+}
+
+.requirements > p[role="contentinfo"]:has(> a:is(:hover, :focus-visible))::after {
+	opacity: 1;
+	visibility: visible;
+	transition:
+		opacity 0s var(--credit-reveal-delay),
+		visibility 0s var(--credit-reveal-delay);
+	animation: credit-book-spin 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) var(--credit-reveal-delay) both;
+}
+
+.requirements > p[role="contentinfo"]:has(> a:nth-of-type(1):is(:hover, :focus-visible)) {
+	--credit-spin-image: url("dave-shea-logo.svg");
+	--credit-spin-ratio: 1.3125;
+}
+
+.requirements > p[role="contentinfo"]:has(> a:nth-of-type(2):is(:hover, :focus-visible)) {
+	--credit-spin-image: url("media-temple-logo.svg");
+	--credit-spin-ratio: 2.5543;
+}
+
+.requirements > p[role="contentinfo"]:has(> a:nth-of-type(3):is(:hover, :focus-visible)) {
+	--credit-spin-image: url("/222/the-zen-of-css-design.avif");
+	--credit-spin-ratio: 0.919;
+	--credit-spin-shadow: 0 1.5rem 2.5rem -1rem oklch(0.2 0.04 240 / 0.55);
+}
+
+@keyframes credit-art-swap {
+	from {
+		background-image: var(--credit-image), var(--credit-gloss), var(--credit-expanded-tint, var(--credit-tint));
+	}
+
+	to {
+		background-image: linear-gradient(var(--clear), var(--clear)), var(--credit-gloss), var(--credit-expanded-tint, var(--credit-tint));
+	}
+}
+
+@keyframes credit-book-spin {
+	from {
+		transform: perspective(60rem) rotateY(-360deg);
+	}
+}
+
+/* The dimmer is always present in the paint tree so it can fade in and out instead of being added and removed in a single frame. */
+.requirements > p[role="contentinfo"]::before {
+	content: "";
+	position: fixed;
+	inset-block: 0;
+	inset-inline: 0;
+	z-index: 999;
+	background: oklch(0.14 0.025 240 / 0.62);
+	backdrop-filter: blur(0.3rem) saturate(0.85);
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	transition:
+		opacity 0.3s ease,
+		visibility 0s 0.3s;
+}
+
+.requirements > p[role="contentinfo"]:has(> a:is(:hover, :focus-visible))::before {
+	opacity: 1;
+	visibility: visible;
+	transition:
+		opacity 0.3s ease,
+		visibility 0s;
+}
+
+@keyframes credit-card-open {
+	from {
+		opacity: 0;
+		scale: 0.9;
+	}
+}
+
+/* On wide screens each card grows from the slot of its neighbouring anchor card. */
+@media (min-width: 48rem) {
+	.requirements > p[role="contentinfo"] {
+		--credit-reveal-delay: 0.65s;
+	}
+
+	.requirements > p[role="contentinfo"] > a::before {
+		/* The pane is already full-size when the grow animation runs, so it must not inherit the small-screen scale-in. */
+		scale: 1;
+		/* Keep the title on one line while the pane grows. Re-wrapping mid-morph makes it jump which looks awful. */
+		white-space: nowrap;
+	}
+
+	.requirements > p[role="contentinfo"] > a:is(:hover, :focus-visible)::before {
+		animation:
+			var(--credit-grow-animation) 0.65s cubic-bezier(0.65, 0, 0.35, 1) both,
+			credit-art-swap var(--credit-reveal-delay) step-end both;
+	}
+}
+
+@keyframes credit-card-grow-1 {
+	from {
+		inset-block-start: anchor(--credit-mediatemple top);
+		inset-inline-start: calc(anchor(--credit-mediatemple left) - anchor-size(--credit-mediatemple inline) - 1rem);
+		inline-size: anchor-size(--credit-mediatemple inline);
+		block-size: anchor-size(--credit-mediatemple block);
+		padding: 1rem;
+		border-radius: 1.15rem;
+		/* Fade the heading in as it slides out from the tile instead of popping into view. */
+		color: transparent;
+		text-shadow: 0 0 transparent;
+		background-position:
+			center,
+			0 0,
+			0 0,
+			0 0,
+			0 0;
+		/* Match the resting tile's contained artwork, then let it scale smoothly with the pane. */
+		background-size:
+			calc((9rem - 2rem - 0.125rem) * 1.3125) calc(9rem - 2rem - 0.125rem),
+			100% 100%,
+			100% 100%,
+			100% 100%,
+			100% 100%;
+	}
+}
+
+@keyframes credit-card-grow-2 {
+	from {
+		inset-block-start: anchor(--credit-dave top);
+		inset-inline-start: calc(anchor(--credit-dave left) + anchor-size(--credit-dave inline) + 1rem);
+		inline-size: anchor-size(--credit-dave inline);
+		block-size: anchor-size(--credit-dave block);
+		padding: 1rem;
+		border-radius: 1.15rem;
+		color: transparent;
+		text-shadow: 0 0 transparent;
+		background-position:
+			center,
+			0 0,
+			0 0,
+			0 0,
+			0 0;
+		background-size:
+			calc(var(--credit-card-width) - 2rem - 0.125rem) calc((var(--credit-card-width) - 2rem - 0.125rem) / 2.5543),
+			100% 100%,
+			100% 100%,
+			100% 100%,
+			100% 100%;
+	}
+}
+
+@keyframes credit-card-grow-3 {
+	from {
+		inset-block-start: anchor(--credit-mediatemple top);
+		inset-inline-start: calc(anchor(--credit-mediatemple left) + anchor-size(--credit-mediatemple inline) + 1rem);
+		inline-size: anchor-size(--credit-mediatemple inline);
+		block-size: anchor-size(--credit-mediatemple block);
+		padding: 1rem;
+		border-radius: 1.15rem;
+		color: transparent;
+		text-shadow: 0 0 transparent;
+		background-position:
+			center,
+			0 0,
+			0 0,
+			0 0,
+			0 0;
+		background-size:
+			calc((9rem - 2rem - 0.125rem) * 0.919) calc(9rem - 2rem - 0.125rem),
+			100% 100%,
+			100% 100%,
+			100% 100%,
+			100% 100%;
+	}
+}
+
+/* Let the artwork spin in as the card grows. The pane's static copy of the artwork is hidden immediately so the spinning overlay is the only one. */
+@supports (anchor-name: --x) {
+	@media (min-width: 48rem) {
+		.requirements > p[role="contentinfo"] > a:is(:hover, :focus-visible)::before {
+			animation:
+				var(--credit-grow-animation) 0.65s cubic-bezier(0.65, 0, 0.35, 1) both,
+				credit-art-swap 0s step-end both;
+		}
+
+		.requirements > p[role="contentinfo"]:has(> a:nth-of-type(1):is(:hover, :focus-visible))::after {
+			transition:
+				opacity 0s,
+				visibility 0s;
+			animation:
+				credit-art-grow-1 0.65s cubic-bezier(0.65, 0, 0.35, 1) both,
+				credit-book-spin 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+		}
+
+		.requirements > p[role="contentinfo"]:has(> a:nth-of-type(2):is(:hover, :focus-visible))::after {
+			transition:
+				opacity 0s,
+				visibility 0s;
+			animation:
+				credit-art-grow-2 0.65s cubic-bezier(0.65, 0, 0.35, 1) both,
+				credit-book-spin 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+		}
+
+		.requirements > p[role="contentinfo"]:has(> a:nth-of-type(3):is(:hover, :focus-visible))::after {
+			transition:
+				opacity 0s,
+				visibility 0s;
+			animation:
+				credit-art-grow-3 0.65s cubic-bezier(0.65, 0, 0.35, 1) both,
+				credit-book-spin 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+		}
+	}
+}
+
+@keyframes credit-art-grow-1 {
+	from {
+		inset-block-start: calc(anchor(--credit-mediatemple top) + 1rem + 0.0625rem);
+		inset-inline-start: calc(anchor(--credit-mediatemple left) - anchor-size(--credit-mediatemple inline) + 0.0625rem);
+		inline-size: calc(anchor-size(--credit-mediatemple inline) - 2rem - 0.125rem);
+		block-size: calc(anchor-size(--credit-mediatemple block) - 2rem - 0.125rem);
+	}
+}
+
+@keyframes credit-art-grow-2 {
+	from {
+		inset-block-start: calc(anchor(--credit-dave top) + 1rem + 0.0625rem);
+		inset-inline-start: calc(anchor(--credit-dave left) + anchor-size(--credit-dave inline) + 2rem + 0.0625rem);
+		inline-size: calc(anchor-size(--credit-dave inline) - 2rem - 0.125rem);
+		block-size: calc(anchor-size(--credit-dave block) - 2rem - 0.125rem);
+	}
+}
+
+@keyframes credit-art-grow-3 {
+	from {
+		inset-block-start: calc(anchor(--credit-mediatemple top) + 0.5rem + 0.0625rem);
+		inset-inline-start: calc(anchor(--credit-mediatemple left) + anchor-size(--credit-mediatemple inline) + 2rem + 0.0625rem);
+		inline-size: calc(anchor-size(--credit-mediatemple inline) - 2rem - 0.125rem);
+		block-size: calc(anchor-size(--credit-mediatemple block) - 1rem - 0.125rem);
+	}
+}
+
+/* On narrow screens make it so the cover sits above the copy and the pane can scroll. */
+@media (max-width: 47.5rem) {
+	.requirements {
+		margin-block-end: 38rem;
+
+		> p[role="contentinfo"] {
+			--credit-art-band: clamp(4rem, 15dvh, 7rem);
+			grid-template-columns: minmax(0, 1fr);
+			grid-template-rows: repeat(3, auto);
+			row-gap: 1rem;
+
+			> a:nth-of-type(1) {
+				grid-area: 1 / 1;
+			}
+
+			> a:nth-of-type(2) {
+				grid-area: 2 / 1;
+			}
+
+			> a:nth-of-type(3) {
+				grid-area: 3 / 1;
+			}
+
+			> a {
+				--credit-art-band: clamp(4rem, 15dvh, 7rem);
+
+				&::before {
+					background-position:
+						center var(--credit-modal-padding),
+						0 0,
+						0 0,
+						0 0,
+						0 0;
+					background-size:
+						auto var(--credit-art-band),
+						auto,
+						auto,
+						auto,
+						auto;
+				}
+
+				&::after {
+					inset-block-start: calc(
+						var(--credit-modal-block) +
+						0.0625rem +
+						var(--credit-modal-padding) +
+						var(--credit-art-band) +
+						clamp(0.75rem, 2dvh, 1.5rem) +
+						var(--credit-modal-title) *
+						1.1 +
+						clamp(0.75rem, 2dvh, 1.5rem)
+					);
+					inset-inline-start: calc(var(--credit-modal-left) + 0.0625rem + var(--credit-modal-padding));
+					inline-size: calc(var(--credit-modal-width) - 2 * var(--credit-modal-padding));
+					padding: 0;
+				}
+
+				&:is(:hover, :focus-visible)::after {
+					transition:
+						opacity 0.3s ease 0.2s,
+						translate 0.3s ease 0.2s,
+						visibility 0s;
+				}
+			}
+		}
+	}
+
+	.requirements > p[role="contentinfo"] > a:is(:hover, :focus-visible)::before {
+		padding-block-start: calc(var(--credit-modal-padding) + var(--credit-art-band) + clamp(0.75rem, 2dvh, 1.5rem));
+		padding-inline: var(--credit-modal-padding);
+	}
+
+	.requirements > p[role="contentinfo"]::after {
+		inset-block-start: calc(var(--credit-modal-block) + var(--credit-modal-padding));
+		inset-inline-start: 50%;
+		inline-size: calc(var(--credit-art-band) * var(--credit-spin-ratio));
+		block-size: var(--credit-art-band);
+		translate: -50% 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.requirements > p[role="contentinfo"] > a::before {
+		scale: 1;
+		animation: none !important;
+		transition:
+			opacity 0.2s ease,
+			visibility 0s 0.2s;
+	}
+
+	.requirements > p[role="contentinfo"] > a::after {
+		translate: none;
+		transition:
+			opacity 0.2s ease,
+			visibility 0s 0.2s;
+	}
+
+	.requirements > p[role="contentinfo"] > a:is(:hover, :focus-visible)::before,
+	.requirements > p[role="contentinfo"] > a:is(:hover, :focus-visible)::after {
+		animation: none !important;
+		transition:
+			opacity 0.2s ease,
+			visibility 0s;
+	}
+
+	.requirements > p[role="contentinfo"]::after {
+		animation: none !important;
+		transition:
+			opacity 0.2s ease,
+			visibility 0s 0.2s;
+	}
+
+	.requirements > p[role="contentinfo"]::before {
+		transition:
+			opacity 0.2s ease,
+			visibility 0s 0.2s;
+	}
+}
+
+/*	=================================================================
+	Contrast and transparency preferences
+	================================================================= */
+
+.summary > p:first-child::after {
+	display: none;
+	inline-size: fit-content;
+	max-inline-size: 100%;
+	margin-block-start: 1rem;
+	padding-block: 0.35rem;
+	padding-inline: 0.7rem;
+	border: 0.0625rem solid var(--label-border);
+	border-radius: 0.5rem;
+	background: var(--label-bg);
+	color: var(--text-soft);
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	line-height: 1.4;
+	text-transform: uppercase;
+	text-shadow: var(--label-text-shadow);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+	:root {
+		--panel-bg: light-dark(oklch(0.9 0.025 230), oklch(0.24 0.035 240));
+		--sidebar-panel-bg: light-dark(oklch(0.88 0.025 230), oklch(0.26 0.04 240));
+		--intro-bg: light-dark(oklch(0.84 0.035 228), oklch(0.28 0.045 240));
+		--resource-bg: light-dark(oklch(0.82 0.03 228), oklch(0.34 0.04 240));
+		--resource-hover-bg: light-dark(oklch(0.88 0.025 228), oklch(0.4 0.04 240));
+		--label-bg: light-dark(oklch(0.82 0.03 228), oklch(0.34 0.04 240));
+		--footer-bg: light-dark(oklch(0.86 0.02 230), oklch(0.3 0.035 240));
+		--footer-hover-bg: light-dark(oklch(0.9 0.02 230), oklch(0.36 0.04 240));
+		--panel-gloss: none;
+		--panel-solid-bg: var(--panel-bg);
+		--transparency-notice: "Reduced transparency preference detected. ";
+	}
+
+	body::before,
+	header[role="banner"]::before {
+		display: none;
+	}
+
+	header[role="banner"]::after {
+		background: var(--panel-bg);
+		backdrop-filter: none;
+	}
+
+	.summary > p:first-child,
+	.preamble,
+	.explanation,
+	.participation,
+	.benefits,
+	.requirements,
+	.requirements::after,
+	.sidebar .wrapper > div,
+	.intro::after,
+	.requirements > p[role="contentinfo"] > a,
+	.requirements > p[role="contentinfo"] > a::before,
+	.requirements > p[role="contentinfo"]::after,
+	abbr[title]::after {
+		backdrop-filter: none;
+	}
+
+	.summary > p:nth-child(2) > a {
+		--card-base: light-dark(oklch(0.86 0.03 228), oklch(0.24 0.04 240));
+	}
+
+	.requirements > p[role="contentinfo"] > a {
+		background-color: light-dark(oklch(0.9 0.02 230), oklch(0.24 0.03 240));
+	}
+
+	.requirements > p[role="contentinfo"] > a::before {
+		background-color: light-dark(oklch(0.9 0.02 230), oklch(0.24 0.03 240));
+	}
+
+	.requirements > p[role="contentinfo"]:has(> a:is(:hover, :focus-visible))::before {
+		background: oklch(0.14 0.025 240 / 0.85);
+		backdrop-filter: none;
+	}
+}
+
+@media (prefers-contrast: more) {
+	:root {
+		--contrast-notice: "Increased contrast preference detected. ";
+		--text-halo: none;
+		--text-halo-strong: none;
+		--text-soft: var(--text-body);
+		--text-caption: var(--text-body);
+		--panel-bg: light-dark(oklch(0.965 0.012 230), oklch(0.18 0.025 240));
+		--sidebar-panel-bg: light-dark(oklch(0.965 0.012 230), oklch(0.18 0.025 240));
+		--intro-bg: light-dark(oklch(0.94 0.018 230), oklch(0.2 0.03 240));
+		--panel-border: light-dark(oklch(0.3 0.05 240 / 0.8), oklch(1 0 0 / 0.6));
+		--intro-border: light-dark(oklch(0.3 0.05 240 / 0.8), oklch(1 0 0 / 0.6));
+		--resource-bg: light-dark(oklch(0.9 0.02 230), oklch(0.28 0.03 240));
+		--resource-border: light-dark(oklch(0.3 0.05 240 / 0.8), oklch(1 0 0 / 0.6));
+		--resource-hover-bg: light-dark(oklch(0.96 0.015 230), oklch(0.36 0.035 240));
+		--label-bg: light-dark(oklch(0.9 0.02 230), oklch(0.28 0.03 240));
+		--label-border: light-dark(oklch(0.3 0.05 240 / 0.8), oklch(1 0 0 / 0.6));
+		--label-shadow: none;
+		--label-text-shadow: none;
+		--footer-bg: light-dark(oklch(0.94 0.015 230), oklch(0.24 0.03 240));
+		--footer-hover-bg: light-dark(oklch(0.98 0.01 230), oklch(0.34 0.04 240));
+		--footer-text-shadow: none;
+		--panel-gloss: none;
+		--panel-solid-bg: var(--panel-bg);
+		--panel-shadow: none;
+		--panel-lift: none;
+		--intro-shadow: none;
+		--nav-divider: light-dark(oklch(from var(--ink) l c h / 0.45), oklch(from var(--cyan) l c h / 0.45));
+		--heading-rule: light-dark(oklch(from var(--ink) l c h / 0.45), oklch(from var(--cyan) l c h / 0.45));
+	}
+
+	body {
+		background-image: none;
+		background-color: light-dark(oklch(0.94 0.012 230), oklch(0.14 0.015 240));
+	}
+
+	body::before,
+	header[role="banner"]::before {
+		display: none;
+	}
+
+	header[role="banner"]::after {
+		background: light-dark(oklch(0.94 0.012 230 / 0.96), oklch(0.14 0.015 240 / 0.96));
+		backdrop-filter: none;
+	}
+
+	.summary > p:first-child,
+	.preamble,
+	.explanation,
+	.participation,
+	.benefits,
+	.requirements,
+	.requirements::after,
+	.sidebar .wrapper > div,
+	.intro::after,
+	.requirements > p[role="contentinfo"] > a,
+	.requirements > p[role="contentinfo"] > a::before,
+	.requirements > p[role="contentinfo"]::after {
+		backdrop-filter: none;
+	}
+
+	.requirements > p[role="contentinfo"]:has(> a:is(:hover, :focus-visible))::before {
+		background: oklch(0.14 0.025 240 / 0.85);
+		backdrop-filter: none;
+	}
+
+	.main.supporting footer a {
+		border-color: light-dark(var(--ink), var(--white));
+	}
+}
+
+@media (prefers-contrast: less) {
+	:root {
+		--contrast-notice: "Reduced contrast preference detected. ";
+		--text-halo: none;
+		--text-halo-strong: none;
+		--footer-text-shadow: none;
+		--label-text-shadow: none;
+		--panel-gloss: none;
+		--panel-shadow: none;
+		--panel-lift: none;
+		--intro-shadow: none;
+		--label-shadow: none;
+		--panel-border: light-dark(oklch(1 0 0 / 0.32), oklch(from var(--cyan) l c h / 0.16));
+		--intro-border: light-dark(oklch(1 0 0 / 0.3), oklch(from var(--cyan) l c h / 0.16));
+		--resource-border: light-dark(oklch(1 0 0 / 0.3), oklch(from var(--cyan) l c h / 0.16));
+		--label-border: light-dark(oklch(1 0 0 / 0.3), oklch(from var(--cyan) l c h / 0.16));
+		--nav-divider: light-dark(oklch(from var(--ink) l c h / 0.12), oklch(from var(--cyan) l c h / 0.16));
+		--heading-rule: light-dark(oklch(from var(--ink) l c h / 0.12), oklch(from var(--cyan) l c h / 0.16));
+	}
+
+	.main.supporting footer a {
+		border-color: oklch(1 0 0 / 0.4);
+	}
+}
+
+@media (prefers-contrast: more), (prefers-contrast: less) {
+	header[role="banner"] h1,
+	header[role="banner"] h2,
+	h3,
+	p,
+	li,
+	a,
+	.sidebar a.design-name,
+	.main.supporting footer a,
+	.summary > p:nth-child(2) > a,
+	.requirements > p[role="contentinfo"] > a,
+	.requirements > p[role="contentinfo"] > a::before,
+	.requirements > p[role="contentinfo"] > a::after {
+		text-shadow: none;
+	}
+}
+
+@media (prefers-contrast: more), (prefers-contrast: less), (prefers-reduced-transparency: reduce) {
+	.summary > p:first-child::after {
+		display: block;
+		content: var(--contrast-notice, "") var(--transparency-notice, "");
+		background-color: oklch(0.947 0.088 95.8 / 0.9);
+		color: var(--ink);
+	}
+}
+
+/*
+You made it through! I hope you picked up a trick or two. Again, thank you so
+much. Not just to you for reading and exploring these styles, but to all the
+people over the years who've made CSS what it is today, and to Dave and CSS
+Zen Garden for being such wonderful resources.
+
+Long live the web!
+*/
