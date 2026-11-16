@@ -1,7 +1,7 @@
 <?php
 
 // kludgy hack, but it works
-// (adapted from http://php.net/manual/en/function.readfile.php)
+// (adapted from https://www.php.net/manual/en/function.readfile.php)
 
 
 // kick in output buffering
