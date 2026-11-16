@@ -21,8 +21,8 @@ $letterarray = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 	<style type="text/css" title="currentStyle">
 		@import "<?php echo $loadCSS; ?>";
 	</style>
-	<link rel="Shortcut Icon" type="image/x-icon" href="http://www.csszengarden.com/favicon.ico" />	
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml" />
+	<link rel="Shortcut Icon" type="image/x-icon" href="https://www.csszengarden.com/favicon.ico" />	
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.csszengarden.com/zengarden.xml" />
 </head>
 
 <!--

@@ -20,7 +20,7 @@ include '../../includes/masterlist.php';
 	<style type="text/css" title="currentStyle">
 		@import "<?php echo $loadCSS; ?>";
 	</style>
-	<link rel="Shortcut Icon" type="image/x-icon" href="http://www.csszengarden.com/favicon.ico" />	
+	<link rel="Shortcut Icon" type="image/x-icon" href="https://www.csszengarden.com/favicon.ico" />	
 	
 </head>
 
@@ -144,7 +144,7 @@ include '../../includes/masterlist.php';
 				<ul>
 <?php
 					echo "\t\t\t\t\t";
-					echo "<li><a href=\"http://www.csszengarden.com/${currentDesign}\" title=\"View the source CSS file for the currently-viewed design\">View This Design&#8217;s <acronym title=\"Cascading Style Sheets\">CSS</acronym></a></li>";
+					echo "<li><a href=\"https://www.csszengarden.com/${currentDesign}\" title=\"View the source CSS file for the currently-viewed design\">View This Design&#8217;s <acronym title=\"Cascading Style Sheets\">CSS</acronym></a></li>";
 ?>
 					<li><a href="http://www.mezzoblue.com/zengarden/resources/" title="Links to great sites with information on using CSS"><acronym title="Cascading Style Sheets">CSS</acronym> Resources</a></li>
 					<li><a href="http://www.mezzoblue.com/zengarden/faq/" title="A list of Frequently Asked Questions about the Zen Garden"><acronym title="Frequently Asked Questions">FAQ</acronym></a>&nbsp;</li>

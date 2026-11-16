@@ -29,8 +29,8 @@ if($isNN4) {
 }
 
 ?>
-	<link rel="Shortcut Icon" type="image/x-icon" href="http://www.csszengarden.com/favicon.ico" />	
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml" />
+	<link rel="Shortcut Icon" type="image/x-icon" href="https://www.csszengarden.com/favicon.ico" />	
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.csszengarden.com/zengarden.xml" />
 </head>
 
 <!--
@@ -57,7 +57,7 @@ if($isNN4) {
 
 		<div id="quickSummary">
 			<p class="p1"><span>Ukázka èeho se dá vizuálnì dosáhnout designem založeném na <acronym title="Cascading Style Sheets - Šablony kaskádových stylù">CSS</acronym>. Vyberte si jakoukoliv šablonu stylu ze seznamu, která se má nahrát do této stránky.</span></p>
-			<p class="p2"><span>Stáhnìte si ukázkový pøíklad <a href="http://www.csszengarden.com/zengarden-sample.html" title="Zdrojový HTML kód této stránky, nesmíte mìnit.">html souboru</a> a <a href="http://www.csszengarden.com/zengarden-sample.css" title="Ukázkový CSS soubor této stránky, tento soubor mùžete mìnit.">css souboru</a></span></p>
+			<p class="p2"><span>Stáhnìte si ukázkový pøíklad <a href="https://www.csszengarden.com/zengarden-sample.html" title="Zdrojový HTML kód této stránky, nesmíte mìnit.">html souboru</a> a <a href="https://www.csszengarden.com/zengarden-sample.css" title="Ukázkový CSS soubor této stránky, tento soubor mùžete mìnit.">css souboru</a></span></p>
 		</div>
 
 		<div id="preamble">
@@ -79,7 +79,7 @@ if($isNN4) {
 			<h3><span>Spoluúèast</span></h3>
 			<p class="p1"><span>Pouze pro grafiky, prosím. Abyste mohli modifikovat tuto stránku, je nezbytná detailní znalost <acronym title="Cascading Style Sheets - Šablony kaskádových stylù">CSS</acronym>, ale vzorové soubory jsou dostateènì dobøe okomentované, aby je i nováèek v <acronym title="Cascading Style Sheets - Šablony kaskádových stylù">CSS</acronym> mohl použít jako startovní bod. Prosím, podívejte se na <a href="http://www.mezzoblue.com/zengarden/resources.asp" title="Seznam zdrojù souvisejících s CSS">zdrojovou pøíruèku <acronym title="Cascading Style Sheets - Šablony kaskádových stylù">CSS</acronym></a> pro pokroèilé procvièování a tipy pro práci s <acronym title="Cascading Style Sheets - Šablony kaskádových stylù">CSS</acronym>.</span></p>
 			<p class="p2"><span>Mùžete modifikovat šablonu stylu, jak chcete, ale ne <acronym title="HyperText Markup Language">HTML</acronym>. Zprvu to mùže vypadat znepokojivì, pokud jste tímto zpùsobem dosud nepracovali. Držte se odkazù v seznamu, abyste se nauèily víc a používejte vzorové soubory jako návod.</span></p>
-			<p class="p3"><span>Stáhnìte si ukázkový pøíklad <a href="http://www.csszengarden.com/zengarden-sample.html" title="Zdrojový HTML kód této stránky, nesmíte mìnit.">html souboru</a> a <a href="http://www.csszengarden.com/zengarden-sample.css" title="Ukázkový CSS soubor této stránky, tento soubor mùžete mìnit.">css souboru</a> kvùli práci s lokální kopií. Jakmile jste dokonèili Vaše veledílo (a prosím, neodevzdávejte napùl rozpracovanou práci) nahrajte Váš .css soubor na webový server pod Vaší kontrolou. <a href="http://www.mezzoblue.com/zengarden/sendfile.asp" title="Použijte kontaktní formuláø k poslaní Vašeho CSS souboru">Pošlete nám adresu</a> k souboru a když se ho rozhodneme použít, pøekopírujeme si i pøipojené obrázky. Koneèné designy budou umístìny na našem serveru.</span></p>
+			<p class="p3"><span>Stáhnìte si ukázkový pøíklad <a href="https://www.csszengarden.com/zengarden-sample.html" title="Zdrojový HTML kód této stránky, nesmíte mìnit.">html souboru</a> a <a href="https://www.csszengarden.com/zengarden-sample.css" title="Ukázkový CSS soubor této stránky, tento soubor mùžete mìnit.">css souboru</a> kvùli práci s lokální kopií. Jakmile jste dokonèili Vaše veledílo (a prosím, neodevzdávejte napùl rozpracovanou práci) nahrajte Váš .css soubor na webový server pod Vaší kontrolou. <a href="http://www.mezzoblue.com/zengarden/sendfile.asp" title="Použijte kontaktní formuláø k poslaní Vašeho CSS souboru">Pošlete nám adresu</a> k souboru a když se ho rozhodneme použít, pøekopírujeme si i pøipojené obrázky. Koneèné designy budou umístìny na našem serveru.</span></p>
 			<p class="p4"><span>poslední: Hledám pøekladatele. Pokud jste schopni mluvit plynule v angliètinì a jiném jazyku, toto je jiný zpùsob, jak se zapojit do projektu. Prosím <a href="http://www.mezzoblue.com/contact/" title="Pošlete mi e-mail a zmiòte se, v kterých jazicích jste dobøí.">kontaktujte mì</a> kvùli detailùm. Do èeštiny pøeložil <a href="mailto:vaclav.macinka@post.cz">Václav "MaTZ" Macinka</a>.</span></p>
 		</div>
 

@@ -29,7 +29,7 @@ $zenUrls = array(
 	"zen-license" => "http://creativecommons.org/licenses/by-nc-sa/3.0/",
 	"zen-accessibility" => "http://mezzoblue.com/zengarden/faq/#aaa",
 	"zen-github" => "https://github.com/mezzoblue/csszengarden.com",
-	"zen-rss" => "http://www.csszengarden.com/zengarden.xml",
+	"zen-rss" => "https://www.csszengarden.com/zengarden.xml",
 
 
 	// bottom of the page links
