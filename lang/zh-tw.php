@@ -71,7 +71,7 @@
 		"requirements-p2" => '幸好，這樣的設計可以展示現今不同的瀏覽器實作<abbr title="Cascading Style Sheets">CSS</abbr>有多完整。若你遵照方針來設計網頁，你應該可以在大多數現代瀏覽器上面看到接近一致的效果。由於現在瀏覽器種類繁多，尤其將行動裝置納入考慮時更是如此，因此不太可能在各平台上做出精準的樣式。這點沒關係，但是盡可能的測試不同瀏覽器。你的設計應該至少要在IE9+，以及最新版本的Chrome、Firefox、iOS、Android瀏覽器上運作正常（超過 90% 以上的人們使用）。',
 		"requirements-p3" => '我們要求你提出原創作品；請遵守著作權法規，盡可能不要使用有爭議的素材，並納入獨特且有趣的視覺題材到你的作品中；我們不太需要另一個跟花園有關的設計。',
 		"requirements-p4" => '這是個示範，也是學習用的練習題。你可以保留圖片的完整著作權（具有有限度的例外，請參考<a href="' . $zenUrls["zen-guidelines"] . '">投稿方針</a>），但我們要求你用<a href="' . $zenUrls["zen-license"] . '" title="檢視Zen Garden的版權聲明。">與本網站相同</a>的創用CC授權釋出你的<abbr title="Cascading Style Sheets">CSS</abbr>作品，讓其他人可以從中學習。',
-		"requirements-p5" => '由<a href="' . $zenUrls["zen-credits-creator"] . '">Dave Shea</a>提供。頻寬由<a href="' . $zenUrls["zen-credits-hosting"] . '">mediatemple</a>慷慨贊助。<a href="' . $zenUrls["zen-credits-book"] . '">Zen Garden之書</a>，現正販售中。',
+		"requirements-p5" => '由<a href="' . $zenUrls["zen-credits-creator"] . '">Dave Shea</a>提供。<a href="' . $zenUrls["zen-credits-book"] . '">Zen Garden之書</a>，現正販售中。',
 	);
 
 	// if you decide to localize any of these, keep the link text <4 characters if possible

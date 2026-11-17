@@ -67,7 +67,7 @@
         "requirements-p2" => '幸运的是，这样的设计可以展示目前各种浏览器对 <abbr title="Cascading Style Sheets">CSS</abbr> 的支持有多完善。若你遵守指导方针，你应该会在大多数的现代浏览器上看到相当一致的效果。由于当前网络上用户端种类繁多，尤其考虑上可移动设备，因此要达到所有平台通用的像素级的精准布局不太可能。这没关系，只要尽可能多的测试兼容性就够了。你的设计应该至少在 IE9+ 和最新版的 Chrome、Firefox、iOS 和 Android 浏览器上正常工作（超过90%以上的使用者）',
         "requirements-p3" => '我们要求你提交的是原创作品。请遵守著作权法规。请尽可能不使用具有争议性的素材，并尝试纳入独特而有趣的视觉题材于你的作品中；我们并不需要另一个和花园有关的设计。',
         "requirements-p4" => '这是一个范例，同时又是一个学习练习。你可以保留图片的完整著作权（有限的例外情况，请参见 <a href="' . $zenUrls["zen-guidelines"] . '">投稿方针</a>），但是我们要求你使用 <a href="' . $zenUrls["zen-license"] . '" title="查看禅意花园的许可信息。">与本站相同</a>的知识共享授权公开发布你的 <abbr title="Cascading Style Sheets">CSS</abbr> 作品，以便他人可以从中学习。',
-        "requirements-p5" => '由 <a href="' . $zenUrls["zen-credits-creator"] . '">Dave Shea</a> 提供。带宽由 <a href="' . $zenUrls["zen-credits-hosting"] . '">mediatemple</a> 友情赞助。<a href="' . $zenUrls["zen-credits-book"] . '">禅意花园之书</a>，火热发行中。',
+        "requirements-p5" => '由 <a href="' . $zenUrls["zen-credits-creator"] . '">Dave Shea</a> 提供。<a href="' . $zenUrls["zen-credits-book"] . '">禅意花园之书</a>，火热发行中。',
     );
 
     // if you decide to localize any of these, keep the link text <4 characters if possible
