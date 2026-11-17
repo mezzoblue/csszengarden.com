@@ -34,7 +34,6 @@ $zenUrls = array(
 
 	// bottom of the page links
 	"zen-credits-creator" => "https://daveshea.com/",
-	"zen-credits-hosting" => "https://web.archive.org/web/20110401031843/http://mediatemple.net/",
 	"zen-credits-book" => "https://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/",
 
 );
