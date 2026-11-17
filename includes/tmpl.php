@@ -128,7 +128,7 @@
         }
 ?>
 						<li class="previous">
-							<a href="<?php echo htmlentities("$langURL/$currentDesign/$prevPage) ?>">
+							<a href="<?php echo htmlentities("$langURL/$currentDesign/$prevPage") ?>">
 								<span class="indicator">&lsaquo;</span> <?php echo $sidebar["design-archives-previous"]; ?>
 							</a>
 						</li>
