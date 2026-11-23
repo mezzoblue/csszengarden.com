@@ -299,7 +299,7 @@ position:absolute;
 background:url(leaves.jpg) no-repeat;
 height:242px;
 width:332px;
-left:666px; /* 6 6 6 the number of the div! */
+left:55%; /* fix new resolutions! */
 top:1641px;
 
 }
@@ -308,3 +308,4 @@ top:1641px;
 
 
 .extra2, .extra3, .extra4, .extra5, .extra6 { display:none }
+
